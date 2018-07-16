@@ -8,6 +8,8 @@
     "build": "next build",
     "start": "next start",
     "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "build-gh-pages": "build-storybook -c .storybook -o docs"
   },
   "dependencies": {
     "next": "^6.1.1",
