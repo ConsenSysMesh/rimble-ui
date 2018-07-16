@@ -8,8 +8,6 @@
     "build": "next build",
     "start": "next start",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "deploy-storybook": "storybook-to-ghpages"
   },
   "dependencies": {
     "next": "^6.1.1",
@@ -23,7 +21,6 @@
     "@storybook/addon-links": "^3.4.7",
     "@storybook/addons": "^3.4.7",
     "@storybook/react": "^3.4.7",
-    "@storybook/storybook-deployer": "^2.3.0",
     "babel-core": "^6.26.3",
     "babel-plugin-styled-components": "^1.5.1",
     "babel-runtime": "^6.26.0"
