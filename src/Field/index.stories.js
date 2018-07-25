@@ -6,7 +6,7 @@ import Field from '../Field'
 import Input from '../Input'
 
 storiesOf('Field', module)
-  .add('text', () => (
+  .add('default', () => (
     <Field label='label'>
       <Input type='text' />
     </Field>
