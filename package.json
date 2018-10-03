@@ -14,7 +14,7 @@
   "dependencies": {
     "@d8660091/react-popper": "^1.0.4",
     "ethereum-blockies": "^0.1.1",
-    "next": "^6.1.1",
+    "next": "^7.0.1",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "styled-components": "^3.3.3",
