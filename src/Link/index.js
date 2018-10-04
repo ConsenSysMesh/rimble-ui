@@ -2,6 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Link = styled.a`
-  font-family: sans-serif;
+  color: ${ props => props.theme.colors.primary }
 `
 export default Link
