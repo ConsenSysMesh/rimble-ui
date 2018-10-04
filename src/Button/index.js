@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import styled from 'styled-components'
 
-import { tint } from 'polished'
+import { tint, shade } from 'polished'
 
 import {
   space,
@@ -89,6 +89,9 @@ const Button = styled.button`
   }
   &:disabled {
     opacity: 0.25;
+  }
+  &:active {
+    background-color: ${props => shade(0.1, props.theme.colors.primary)};
   }
 `
 
