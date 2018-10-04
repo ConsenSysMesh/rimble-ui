@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react'
 
 import Textarea from '../Textarea'
 
-storiesOf('Textarea', module)
+storiesOf('Form/Textarea', module)
   .add('default', () => (
     <Textarea rows={4} defaultValue='Hello' />
   ))

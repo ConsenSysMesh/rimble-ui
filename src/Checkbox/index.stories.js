@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react'
 
 import Checkbox from '../Checkbox'
 
-storiesOf('Checkbox', module).add('default', () => (
+storiesOf('Form/Checkbox', module).add('default', () => (
   <div>
     <label htmlFor="">
       <Checkbox id="blue" name="pill"/>

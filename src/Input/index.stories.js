@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react'
 
 import Input from '../Input'
 
-storiesOf('Input', module)
+storiesOf('Form/Input', module)
   .add('text', () => (
     <Input type='text' />
   )).add('email', () => (

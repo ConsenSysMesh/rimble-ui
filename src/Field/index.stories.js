@@ -5,7 +5,7 @@ import { storiesOf } from '@storybook/react'
 import Field from '../Field'
 import Input from '../Input'
 
-storiesOf('Field', module)
+storiesOf('Form/Field', module)
   .add('default', () => (
     <Field label='label'>
       <Input type='text' />

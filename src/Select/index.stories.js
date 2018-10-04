@@ -10,7 +10,7 @@ const items = [
   'Ancient Paper',
 ]
 
-storiesOf('Select', module)
+storiesOf('Form/Select', module)
   .add('default', () => (
     <Select items={items} />
   ))
