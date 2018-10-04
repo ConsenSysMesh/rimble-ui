@@ -1,89 +1,118 @@
 import React from 'react'
+import PropTypes from 'prop-types';
+
 import styled from 'styled-components'
-import { color } from 'styled-system'
 
-import theme from '../theme'
+import { tint } from 'polished'
 
-const fullWidth = (props) => (props.fullWidth ? { width: '100%' } : null)
+import {
+  space,
+  color,
+  bgColor,
+  fontWeight ,
+  borders,
+  borderColor,
+  borderRadius,
+  boxShadow
+} from 'styled-system'
+
+// import theme from '../theme'
+
+const fullWidth = (props) => (
+  props.fullWidth ? { width: '100%' } : null
+)
 
 const size = (props) => {
   switch (props.size) {
     case 'small':
       return `
-        font-size: .5rem;
-        padding: .25rem .5rem;
+        font-size: 12px;
+        height: 24px;
       `
     case 'medium':
       return `
-        font-size: 1rem;
-        padding: .5rem 1rem;
+        font-size: 16px;
+        height: 48px;
       `
     case 'large':
       return `
-        font-size: 2rem;
-        padding: 1rem 2rem;
+        font-size: 24px;
+        height: 64px;
       `
     default:
       return `
-        font-size: 1rem;
-        padding: .5rem 1rem;
-      `
-  }
-}
-
-const mode = (props) => {
-  switch (props.mode) {
-    case 'solid':
-      return `
-        color: ${theme.colors.white};
-        background-color: ${theme.colors.blue};
-      `
-    case 'outline':
-      return `
-        color: ${theme.colors.blue};
-        background-color: none;
-        border-width: 2px;
-      `
-    case 'text':
-      return `
-        color: ${theme.colors.blue};
-        background-color: none;
-        border-width: 0;
-      `
-    default:
-      return `
-        color: ${theme.colors.white};
-        background-color: ${theme.colors.blue};
+        font-size: 16px;
+        height: 48px;
       `
   }
 }
 
 const Button = styled.button`
   -webkit-font-smoothing: antialiased;
+  position: relative;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
   text-decoration: none;
-  font-family: inherit;
-  font-weight: 600;
-  line-height: 1.5;
+  font: inherit;
+  line-height: 1;
+  color: inherit;
   cursor: pointer;
-
-  border-radius: 8px;
-
+  white-space: nowrap;
+  border-width: 0;
   border-style: solid;
-  border-color: inherit;
 
-  ${mode}
-  ${size}
-  ${fullWidth}
+  box-shadow:
+    0 4px 6px rgba(50,50,93,.11),
+    0 1px 3px rgba(0,0,0,.08)
+  ;
+  transition: all .15s ease;
+  transform-origin: center;
 
+  ${size} ${fullWidth}
+
+  ${space}
   ${color}
+  ${bgColor}
+  ${fontWeight}
+  ${borders}
+  ${borderColor}
+  ${borderRadius}
 
+  &:hover {
+    background-color: ${props => tint(0.1, props.theme.colors.primary)};
+    transform: translateY(-1px);
+    box-shadow:
+      0 7px 14px rgba(50,50,93,.1),
+      0 3px 6px rgba(0,0,0,.08)
+    ;
+  }
   &:disabled {
     opacity: 0.25;
   }
-
 `
+
+Button.propTypes = {
+  ...fontWeight.propTypes,
+  ...borders.propTypes,
+  ...borderColor.propTypes,
+  ...borderRadius.propTypes,
+  // ...buttonStyle.propTypes,
+}
+
+Button.defaultProps = {
+  as: 'button',
+  fontSize: 'inherit',
+  fontWeight: 'bold',
+  m: 0,
+  px: 3,
+  py: 0,
+  color: 'white',
+  bg: 'primary',
+  border: 'none',
+  borderRadius: 1,
+}
+
+Button.displayName = 'Button'
 
 export default Button
