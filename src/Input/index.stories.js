@@ -6,9 +6,15 @@ import Input from '../Input'
 
 storiesOf('Form/Input', module)
   .add('text', () => (
-    <Input type='text' />
+    <div>
+      <Input type='text' />
+      <Input type='text' disabled/>
+    </div>
   )).add('email', () => (
-    <Input type='email' name='email' id='email' placeholder='you@example.com'/>
+    <div>
+      <Input type='email' name='email' id='email' placeholder='you@example.com'/>
+      <Input type='email' name='email' id='email' placeholder='you@example.com' disabled/>
+    </div>
   )).add('number', () => (
     <Input type='number'/>
   )).add('password', () => (
