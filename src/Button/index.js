@@ -89,9 +89,12 @@ const Button = styled.button`
   }
   &:disabled {
     opacity: 0.25;
+    pointer-events: none;
+    cursor: not-allowed;
   }
   &:active {
     background-color: ${props => shade(0.1, props.theme.colors.primary)};
+    box-shadow: none;
   }
 `
 
@@ -113,7 +116,7 @@ Button.defaultProps = {
   color: 'white',
   bg: 'primary',
   border: 'none',
-  borderRadius: 1,
+  borderRadius: 0,
 }
 
 Button.displayName = 'Button'

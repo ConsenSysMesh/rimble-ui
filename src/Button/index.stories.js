@@ -9,6 +9,7 @@ storiesOf('Button/Default', module)
       <Button size='small'>Small Button</Button>
       <Button size='medium'>Medium Button</Button>
       <Button size='large'>Large Button</Button>
+      <Button disabled >disabled Button</Button>
     </div>
   ))
   .add('full width', () => (
