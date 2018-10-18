@@ -1,4 +1,4 @@
-# literate-sniffle
+# Rimble 
 
 ## Install it and run:
 
