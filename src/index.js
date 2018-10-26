@@ -1,22 +1,18 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-
-import styles from './styles.css'
-
-export default class ExampleComponent extends Component {
-  static propTypes = {
-    text: PropTypes.string
-  }
-
-  render() {
-    const {
-      text
-    } = this.props
-
-    return (
-      <div className={styles.test}>
-        Example Component: {text}
-      </div>
-    )
-  }
-}
+export { default as Button } from './Button'
+export { default as Avatar } from './Avatar'
+export { default as Blockie } from './Blockie'
+export { default as Checkbox } from './Checkbox'
+export { default as Field } from './Field'
+export { default as Heading } from './Heading'
+export { default as Input } from './Input'
+export { default as Link } from './Link'
+export { default as OutlineButton } from './OutlineButton'
+export { default as Progress } from './Progress'
+export { default as Radio } from './Radio'
+export { default as Select } from './Select'
+export { default as Slider } from './Slider'
+export { default as Table } from './Table'
+export { default as Text } from './Text'
+export { default as Textarea } from './Textarea'
+export { default as TextButton } from './TextButton'
+export { default as Tooltip } from './Tooltip'
