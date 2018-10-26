@@ -1,31 +1,27 @@
-# lif-snif-t2
+# Rimble 
 
-> components
-
-[![NPM](https://img.shields.io/npm/v/lif-snif-t2.svg)](https://www.npmjs.com/package/lif-snif-t2) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-
-## Install
+## Install it and run:
 
 ```bash
-npm install --save lif-snif-t2
+npm install
+npm run dev
+# or
+yarn
+yarn dev
 ```
 
-## Usage
+## Run Storybook
 
-```jsx
-import React, { Component } from 'react'
-
-import MyComponent from 'lif-snif-t2'
-
-class Example extends Component {
-  render () {
-    return (
-      <MyComponent />
-    )
-  }
-}
+```bash
+npm run storybook
+# or
+yarn storybook
 ```
 
-## License
+## Build Static Storybook
 
-MIT © [gesquinca](https://github.com/gesquinca)
+```bash
+npm run build-storybook
+# or
+yarn build-storybook
+```
