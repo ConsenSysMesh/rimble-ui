@@ -28,4 +28,4 @@ class Example extends Component {
 
 ## License
 
-MIT © [gesquinca](https://github.com/gesquinca)
+MIT © [ConsenSys](https://github.com/ConsenSys)
