@@ -1,13 +1,19 @@
 import React from 'react'
 import styled from 'styled-components'
-import { color } from 'styled-system'
+
+import theme from '../theme'
 
 const Avatar = styled.div`
   height: 2rem;
   width: 2rem;
   border-radius: 100%;
-  
-  ${color};
+  background-color: ${ props => props.theme.colors.primary };
 `
 
-export default () => <Avatar bg='blue' />
+Avatar.defaultProps = {
+  theme: theme
+}
+
+Avatar.displayName = 'Avatar'
+
+export default Avatar

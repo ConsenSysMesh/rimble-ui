@@ -1,8 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 
-// import { Tooltip } from 'react-tippy'
-// import ReactARIAToolTip from 'react-aria-tooltip'
 import Popper from '@d8660091/react-popper'
 
 const StyledContentDiv = styled.div`

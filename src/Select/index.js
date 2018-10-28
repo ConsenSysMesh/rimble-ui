@@ -1,8 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import theme from '../theme'
+
 const StyledSelect = styled.select`
-  ${'' /* display: block; */}
   appearance: none;
   font-size: 1rem;
   border-radius: ${ props => props.theme.radii[0] };
@@ -37,6 +38,10 @@ const Select = (props) => {
       (item, i) => (<option key={i} value={item}>{item}</option>)
     )}
   </StyledSelect>
+}
+
+StyledSelect.defaultProps = {
+  theme: theme
 }
 
 export default Select

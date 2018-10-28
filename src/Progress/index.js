@@ -3,6 +3,8 @@ import styled from 'styled-components'
 
 import { tint } from 'polished'
 
+import theme from '../theme'
+
 const Progress = styled.progress`
   & {
     display: inline-block;
@@ -20,4 +22,9 @@ const Progress = styled.progress`
     border-radius: ${props => props.theme.radii[1]};
   }
 `
+
+Progress.defaultProps = {
+  theme: theme
+}
+
 export default Progress

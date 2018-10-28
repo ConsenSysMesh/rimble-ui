@@ -5,6 +5,8 @@ import { tint } from 'polished'
 
 import Button from '../Button'
 
+import theme from '../theme'
+
 const TextButton = styled(Button)`
   & {
     box-shadow: none;
@@ -20,6 +22,7 @@ TextButton.defaultProps = {
   bg: 'transparent',
   border: 'none',
   borderRadius: 'none',
+  theme: theme
 }
 
 TextButton.displayName = 'TextButton'

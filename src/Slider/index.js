@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import theme from '../theme'
+
 const Slider = styled.input.attrs({ type: 'range' })`
   & {
     appearance: none;
@@ -28,7 +30,7 @@ const Slider = styled.input.attrs({ type: 'range' })`
     width: 1.5rem;
     border-radius: 100%;
     cursor: grab;
-    
+
     &:hover {
       box-shadow: ${ props => props.theme.shadows[0] };
     }
@@ -38,5 +40,9 @@ const Slider = styled.input.attrs({ type: 'range' })`
     }
   }
 `
+
+Slider.defaultProps = {
+  theme: theme
+}
 
 export default Slider

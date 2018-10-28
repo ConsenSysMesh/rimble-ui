@@ -1,27 +1,31 @@
-# Rimble 
+# rimble-ui
 
-## Install it and run:
+> Rimble Design System&#x27;s react component library.
 
-```bash
-npm install
-npm run dev
-# or
-yarn
-yarn dev
-```
+[![NPM](https://img.shields.io/npm/v/rimble-ui.svg)](https://www.npmjs.com/package/rimble-ui) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-## Run Storybook
+## Install
 
 ```bash
-npm run storybook
-# or
-yarn storybook
+npm install --save rimble-ui
 ```
 
-## Build Static Storybook
+## Usage
 
-```bash
-npm run build-storybook
-# or
-yarn build-storybook
+```jsx
+import React, { Component } from 'react'
+
+import MyComponent from 'rimble-ui'
+
+class Example extends Component {
+  render () {
+    return (
+      <MyComponent />
+    )
+  }
+}
 ```
+
+## License
+
+MIT © [ConsenSys](https://github.com/ConsenSys)
