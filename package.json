@@ -21,15 +21,17 @@
     "predeploy": "cd example && yarn install && yarn run build",
     "deploy": "gh-pages -d example/build"
   },
-  "peerDependencies": {
-    "prop-types": "^15.5.4",
-    "react": "^15.0.0 || ^16.0.0",
-    "react-dom": "^15.0.0 || ^16.0.0",
-    "styled-components": ">= 4",
+  "dependencies": {
     "styled-system": "^2.3.6",
     "polished": "^2.2.0",
     "ethereum-blockies": "^0.1.1",
     "@d8660091/react-popper": "^1.0.4"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.5.4",
+    "react": "^15.0.0 || ^16.0.0",
+    "react-dom": "^15.0.0 || ^16.0.0",
+    "styled-components": ">= 4"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
@@ -58,11 +60,7 @@
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-postcss": "^1.6.2",
     "rollup-plugin-url": "^1.4.0",
-    "styled-components": "^4.0.2",
-    "styled-system": "^2.3.6",
-    "polished": "^2.2.0",
-    "ethereum-blockies": "^0.1.1",
-    "@d8660091/react-popper": "^1.0.4"
+    "styled-components": "^4.0.2"
   },
   "files": [
     "dist"
