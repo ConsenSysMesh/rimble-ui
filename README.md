@@ -2,7 +2,8 @@
 
 > Rimble Design System&#x27;s react component library.
 
-[![NPM](https://img.shields.io/npm/v/rimble-ui.svg)](https://www.npmjs.com/package/rimble-ui) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/rimble-ui.svg)](https://www.npmjs.com/package/rimble-ui) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![Join the community on Spectrum](https://withspectrum.github.io/badge/badge.svg)](https://spectrum.chat/rimble)
+
 
 ## Install
 
