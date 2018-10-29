@@ -25,7 +25,9 @@ export default class App extends Component {
   render () {
     return (
       <div>
-        <Button>Click</Button>
+        <Button size={'medium'}>
+          Click me!
+        </Button>
         <OutlineButton>Click</OutlineButton>
         <TextButton>Click</TextButton>
 

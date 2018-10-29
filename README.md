@@ -15,12 +15,14 @@ npm install --save rimble-ui
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'rimble-ui'
+import { Button } from 'rimble-ui'
 
 class Example extends Component {
   render () {
     return (
-      <MyComponent />
+      <Button size={'medium'}>
+        Click me!
+      </Button>
     )
   }
 }
