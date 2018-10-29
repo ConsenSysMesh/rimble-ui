@@ -10,7 +10,7 @@ const Table = styled.table`
 export default () => <Table>
   <thead>
     <tr>
-      <th colspan="2">The table header</th>
+      <th colSpan="2">The table header</th>
     </tr>
   </thead>
   <tbody>
@@ -21,7 +21,7 @@ export default () => <Table>
   </tbody>
   <tfoot>
     <tr>
-      <td colspan="2">The table footer</td>
+      <td colSpan="2">The table footer</td>
     </tr>
   </tfoot>
 </Table>

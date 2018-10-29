@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import theme from '../theme'
+
 const Input = styled.input`
   appearance: none;
   ${'' /* font-weight: bold; */}
@@ -31,5 +33,9 @@ const Input = styled.input`
     pointer-events: none;
   }
 `
+
+Input.defaultProps = {
+  theme: theme
+}
 
 export default Input

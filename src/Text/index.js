@@ -1,14 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { injectGlobal } from 'styled-components';
+import { injectGlobal } from 'styled-components'
 
-injectGlobal`
-  :root {
-    font-family: "Inter UI";
-    font-size: 16px;
-  }
-`
+// injectGlobal`
+//   :root {
+//     font-family: "Inter UI";
+//     font-size: 16px;
+//   }
+// `
 
 import {
   fontSize,
@@ -16,8 +16,6 @@ import {
   color,
   responsiveStyle
 } from 'styled-system'
-
-
 
 const Text = styled.div`
   ${fontSize} ${space} ${color}

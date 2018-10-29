@@ -1,6 +1,5 @@
 import React from 'react'
 
-//
 import styled from 'styled-components'
 import Text from '../Text'
 
@@ -44,6 +43,5 @@ Heading.h6.defaultProps = {
   fontSize: 1,
   my: 3,
 }
-
 
 export default Heading

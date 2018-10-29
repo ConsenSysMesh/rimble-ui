@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 
 import styled from 'styled-components'
 
@@ -16,7 +16,7 @@ import {
   boxShadow
 } from 'styled-system'
 
-// import theme from '../theme'
+import theme from '../theme'
 
 const fullWidth = (props) => (
   props.fullWidth ? { width: '100%' } : null
@@ -117,6 +117,7 @@ Button.defaultProps = {
   bg: 'primary',
   border: 'none',
   borderRadius: 0,
+  theme: theme
 }
 
 Button.displayName = 'Button'

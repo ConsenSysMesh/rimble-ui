@@ -3,6 +3,8 @@ import styled from 'styled-components'
 
 import Input from '../Input'
 
+import theme from '../theme'
+
 const Textarea = styled.textarea`
   appearance: none;
   font-size: 1rem;
@@ -29,5 +31,15 @@ const Textarea = styled.textarea`
     pointer-events: none;
   }
 `
+
+Textarea.defaultProps = {
+  color: 'primary',
+  bg: 'transparent',
+  border: 'none',
+  borderRadius: 'none',
+  theme: theme
+}
+
+Textarea.displayName = 'Textarea'
 
 export default Textarea
