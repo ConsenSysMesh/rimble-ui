@@ -25,7 +25,7 @@
     "prop-types": "^15.5.4",
     "react": "^15.0.0 || ^16.0.0",
     "react-dom": "^15.0.0 || ^16.0.0",
-    "styled-components": "^4.0.2",
+    "styled-components": ">= 4",
     "styled-system": "^2.3.6",
     "polished": "^2.2.0",
     "ethereum-blockies": "^0.1.1",
