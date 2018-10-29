@@ -7,7 +7,7 @@
 ## Install
 
 ```bash
-npm install --save rimble-ui
+npm install --save rimble-ui styled-components
 ```
 
 ## Usage
