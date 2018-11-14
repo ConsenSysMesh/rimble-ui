@@ -17,14 +17,16 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public -o .out",
+    "deploy-storybook": "npm run build-storybook"
   },
   "devDependencies": {
-    "@storybook/react": "^4.0.4",
+    "@babel/core": "^7.1.5",
     "@storybook/addon-actions": "^4.0.4",
     "@storybook/addon-links": "^4.0.4",
     "@storybook/addons": "^4.0.4",
-    "@babel/core": "^7.1.5",
+    "@storybook/react": "^4.0.4",
+    "@storybook/storybook-deployer": "^2.3.0",
     "babel-loader": "^8.0.4"
   }
 }
