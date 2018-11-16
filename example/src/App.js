@@ -18,13 +18,14 @@ import {
   Text,
   Textarea,
   Blockie,
-  Tooltip
+  Tooltip,
+  ThemeProvider
 } from 'rimble-ui'
 
 export default class App extends Component {
   render () {
     return (
-      <div>
+      <ThemeProvider>
         <Button size={'medium'}>
           Click me!
         </Button>
@@ -96,7 +97,7 @@ export default class App extends Component {
         <Tooltip message='Your custom message'>hover me</Tooltip>
 
         <Table></Table>
-      </div>
+      </ThemeProvider>
     )
   }
 }
