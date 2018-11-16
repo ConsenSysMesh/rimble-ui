@@ -12,11 +12,27 @@ Rimble components use [styled-system](https://github.com/jxnblk/styled-system) t
 import React from 'react'
 import { ThemeProvider } from 'styled-components'
 import theme from './theme'
+
 const App = props => (
   <ThemeProvider theme={theme}>
     {/* application elements */}
   </ThemeProvider>
 )
+
+export default App
+```
+
+**Use Rimble's `ThemeProvider`**
+```jsx
+import React from 'react'
+import { ThemeProvider } from 'rimble-ui'
+
+const App = props => (
+  <ThemeProvider>
+    {/* application elements */}
+  </ThemeProvider>
+)
+
 export default App
 ```
 
