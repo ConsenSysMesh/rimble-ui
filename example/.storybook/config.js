@@ -1,9 +1,24 @@
-import { configure } from '@storybook/react';
+import { configure, addDecorator } from '@storybook/react'
+import { withInfo } from '@storybook/addon-info'
 
-const req = require.context('../src/stories', true, /\.stories\.js$/);
+import React from 'react';
+import { ThemeProvider } from 'rimble-ui'
+
+addDecorator(
+  withInfo({
+    inline: true
+  })
+)
+
+addDecorator((story) => (
+  <ThemeProvider>
+    {story()}
+  </ThemeProvider>
+))
 
 function loadStories() {
-  req.keys().forEach(filename => req(filename));
+  const req = require.context('../src/stories', true, /\.stories\.js$/)
+  req.keys().forEach(filename => req(filename))
 }
 
-configure(loadStories, module);
+configure(loadStories, module)
