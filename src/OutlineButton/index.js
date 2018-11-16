@@ -20,6 +20,7 @@ OutlineButton.defaultProps = {
   bg: 'transparent',
   border: 1,
   theme: theme,
+  borderRadius: 1,
 }
 
 OutlineButton.displayName = 'OutlineButton'

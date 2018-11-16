@@ -15,6 +15,21 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public",
+    "deploy-storybook": "storybook-to-ghpages"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.5",
+    "@storybook/addon-actions": "^4.0.4",
+    "@storybook/addon-info": "^4.0.6",
+    "@storybook/addon-links": "^4.0.4",
+    "@storybook/addon-options": "^4.0.7",
+    "@storybook/addons": "^4.0.4",
+    "@storybook/react": "^4.0.4",
+    "@storybook/storybook-deployer": "^2.3.0",
+    "babel-loader": "^8.0.4",
+    "storybook-readme": "^4.0.2"
   }
 }

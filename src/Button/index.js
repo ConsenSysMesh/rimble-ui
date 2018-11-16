@@ -27,7 +27,7 @@ const size = (props) => {
     case 'small':
       return `
         font-size: 12px;
-        height: 24px;
+        height: 32px;
       `
     case 'medium':
       return `
@@ -81,7 +81,7 @@ const Button = styled.button`
 
   &:hover {
     background-color: ${props => tint(0.1, props.theme.colors.primary)};
-    transform: translateY(-1px);
+    /* transform: translateY(-1px); */
     box-shadow:
       0 7px 14px rgba(50,50,93,.1),
       0 3px 6px rgba(0,0,0,.08)
