@@ -6,7 +6,7 @@ import { ThemeProvider } from 'rimble-ui'
 
 addDecorator(
   withInfo({
-    inline: true
+    inline: false
   })
 )
 
