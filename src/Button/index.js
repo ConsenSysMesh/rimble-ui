@@ -27,45 +27,39 @@ const size = (props) => {
     case 'small':
       return `
         font-size: 12px;
-        height: 32px;
+        height: ${theme.fontSizes[5]}px;
       `
     case 'medium':
       return `
         font-size: 16px;
-        height: 48px;
+        height: ${theme.fontSizes[6]}px;
       `
     case 'large':
       return `
         font-size: 24px;
-        height: 64px;
+        height: ${theme.fontSizes[7]}px;
       `
     default:
       return `
         font-size: 16px;
-        height: 48px;
+        height: ${theme.fontSizes[6]}px;
       `
   }
 }
 
 const Button = styled.button`
   -webkit-font-smoothing: antialiased;
+  cursor: pointer;
   position: relative;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
   text-decoration: none;
-  font: inherit;
-  line-height: 1;
-  color: inherit;
-  cursor: pointer;
   white-space: nowrap;
-  border-width: 0;
-  border-style: solid;
+  line-height: 1;
+  font: inherit;
+  color: inherit;
 
-  box-shadow:
-    0 4px 6px rgba(50,50,93,.11),
-    0 1px 3px rgba(0,0,0,.08)
-  ;
   transition: all .15s ease;
   transform-origin: center;
 
@@ -74,27 +68,24 @@ const Button = styled.button`
   ${space}
   ${color}
   ${bgColor}
-  ${fontWeight}
   ${borders}
   ${borderColor}
   ${borderRadius}
+  ${fontWeight}
+  ${boxShadow}
 
   &:hover {
     background-color: ${props => tint(0.1, props.theme.colors.primary)};
-    /* transform: translateY(-1px); */
-    box-shadow:
-      0 7px 14px rgba(50,50,93,.1),
-      0 3px 6px rgba(0,0,0,.08)
-    ;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  &:active {
+    background-color: ${props => shade(0.1, props.theme.colors.primary)};
+    box-shadow: none;
   }
   &:disabled {
     opacity: 0.25;
     pointer-events: none;
     cursor: not-allowed;
-  }
-  &:active {
-    background-color: ${props => shade(0.1, props.theme.colors.primary)};
-    box-shadow: none;
   }
 `
 
@@ -108,16 +99,17 @@ Button.propTypes = {
 
 Button.defaultProps = {
   as: 'button',
+  theme: theme,
   fontSize: 'inherit',
-  fontWeight: 'bold',
+  fontWeight: 3,
   m: 0,
-  px: 3,
+  px: 4,
   py: 0,
   color: 'white',
   bg: 'primary',
   border: 'none',
-  borderRadius: 0,
-  theme: theme
+  borderRadius: 1,
+  boxShadow: 1
 }
 
 Button.displayName = 'Button'

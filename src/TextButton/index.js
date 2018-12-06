@@ -12,17 +12,26 @@ const TextButton = styled(Button)`
     box-shadow: none;
   }
   &:hover {
+    color: #7165D8;
     background-color: transparent;
+    text-decoration: underline;
     box-shadow: none;
+  }
+  &:active {
+    color: #332A80;
+    text-decoration: none;
   }
 `
 
 TextButton.defaultProps = {
+  theme: theme,
+  fontSize: 'inherit',
+  fontWeight: '600',
   color: 'primary',
   bg: 'transparent',
   border: 'none',
-  borderRadius: 'none',
-  theme: theme
+  px: 2,
+  py: 0
 }
 
 TextButton.displayName = 'TextButton'
