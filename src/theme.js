@@ -6,6 +6,7 @@ export default {
     white: '#fff',
     blue: '#007ce0',
     navy: '#004175',
+    grey: '#CCC'
   },
   fontSizes: [
     12, 14, 16, 20, 24, 32, 48, 64
