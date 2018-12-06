@@ -32,7 +32,7 @@ OutlineButton.defaultProps = {
   color: 'primary',
   bg: 'white',
   border: 1,
-  px: 3,
+  px: 4,
   py: 0,
   borderRadius: 1,
 }
