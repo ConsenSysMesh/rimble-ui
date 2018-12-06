@@ -10,8 +10,8 @@ storiesOf('Form/Input', module)
   .addDecorator(withDocs(MyREADME))
   .add('text', () => (
     <div>
-      <Input type='text' />
-      <Input type='text' disabled/>
+      <Input type='text' placeholder='Lorem ipsum dolor sit.'/>
+      <Input type='text' placeholder='Lorem ipsum dolor sit.' disabled/>
     </div>
   )).add('email', () => (
     <div>
