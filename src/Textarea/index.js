@@ -21,7 +21,10 @@ Textarea.defaultProps = {
   as: 'textarea',
   theme: theme,
   p: 3,
-  borderRadius: 0
+  borders: 1,
+  borderColor: 'grey',
+  borderRadius: 1,
+  boxShadow: 1
 }
 
 Textarea.displayName = 'Textarea'

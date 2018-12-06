@@ -6,7 +6,8 @@ import theme from '../theme'
 import {
   borders,
   borderColor,
-  borderRadius
+  borderRadius,
+  boxShadow
 } from 'styled-system'
 
 const Input = styled.input`
@@ -17,21 +18,20 @@ const Input = styled.input`
   height: 48px;
   padding: 0 1rem;
 
-  /* Rectangle 3: */
+  border: 1px solid;
   background: #FFFFFF;
-  border: 1px solid #CCCCCC;
-  /* box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10); */
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 
+  ${borders}
+  ${borderColor}
   ${borderRadius}
+  ${boxShadow}
 
   &:hover {
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
   }
   &:focus {
     outline: none;
-    /* border-color: ${ props => props.theme.colors.primary } */
-    border: 1px solid #5436D6;
+    border-color: #5436D6;
   }
   &:active {
 
@@ -44,7 +44,10 @@ const Input = styled.input`
 
 Input.defaultProps = {
   theme: theme,
-  borderRadius: 0
+  borders: 0,
+  borderColor: 'grey',
+  borderRadius: 1,
+  boxShadow: 1
 }
 
 Input.displayName = 'Input'
