@@ -1,8 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import CheckBoxIcon from '../Icon/baseline-check_box-24px'
-import CheckBoxOutlineIcon from '../Icon/baseline-check_box_outline_blank-24px'
+import theme from '../theme'
+
+import { ReactComponent as IconChecked } from '../svg/baseline-check_box-24px.svg'
+import { ReactComponent as IconUnchecked } from '../svg/baseline-check_box_outline_blank-24px.svg'
 
 const StyledWrapper = styled.div`
   & {
@@ -21,12 +23,10 @@ const StyledWrapper = styled.div`
     margin: 0;
     font-weight: bold;
   }
-  > input:checked + svg.checked {
-    display: block;
-  }
 
   > svg {
     position: absolute;
+    z-index: 0;
     top: 0;
     left: 0;
     right: 0;
@@ -34,19 +34,32 @@ const StyledWrapper = styled.div`
     height: 100%;
     width: 100%;
     pointer-events: none;
+    fill: ${theme.colors.grey};
   }
 
-  > svg.checked {
+  > svg[name="checked"] {
     display: none;
+    z-index: 1;
+    fill: ${theme.colors.primary};
+  }
+
+  > input:checked ~ svg[name="checked"] {
+    display: block;
   }
 `
 
-const Checkbox = ({}) => (
-  <StyledWrapper>
-    <input type="checkbox"/>
-    <CheckBoxIcon className='checked'/>
-    <CheckBoxOutlineIcon className='unchecked'/>
+const Checkbox = (props) => (
+  <StyledWrapper className={props.className}>
+    <input type="checkbox" {...props} />
+    <IconChecked name='checked' />
+    <IconUnchecked />
   </StyledWrapper>
 )
+
+Checkbox.defaultProps = {
+  theme: theme
+}
+
+Checkbox.displayName = 'Checkbox'
 
 export default Checkbox
