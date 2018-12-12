@@ -20,6 +20,7 @@ import {
   Blockie,
   Tooltip,
   ThemeProvider
+  PublicAddress
 } from 'rimble-ui'
 
 export default class App extends Component {

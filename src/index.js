@@ -18,3 +18,4 @@ export { default as TextButton } from './TextButton'
 export { default as Tooltip } from './Tooltip'
 
 export { default as ThemeProvider } from './ThemeProvider'
+export { default as PublicAddress } from './PublicAddress'
