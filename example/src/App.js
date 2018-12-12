@@ -19,7 +19,9 @@ import {
   Textarea,
   Blockie,
   Tooltip,
-  ThemeProvider
+  ThemeProvider,
+  Icon,
+  IconButton,
   PublicAddress
 } from 'rimble-ui'
 

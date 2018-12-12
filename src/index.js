@@ -16,6 +16,7 @@ export { default as Text } from './Text'
 export { default as Textarea } from './Textarea'
 export { default as TextButton } from './TextButton'
 export { default as Tooltip } from './Tooltip'
-
 export { default as ThemeProvider } from './ThemeProvider'
+export { default as Icon } from 'rmdi/lib/Icon'
+export { default as IconButton } from './IconButton'
 export { default as PublicAddress } from './PublicAddress'
