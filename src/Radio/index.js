@@ -3,8 +3,8 @@ import styled from 'styled-components'
 
 import theme from '../theme'
 
-import { ReactComponent as IconChecked } from '../svg/baseline-radio_button_checked-24px.svg'
-import { ReactComponent as IconUnchecked } from '../svg/baseline-radio_button_unchecked-24px.svg'
+import RadioButtonChecked from 'rmdi/lib/RadioButtonChecked'
+import RadioButtonUnchecked from 'rmdi/lib/RadioButtonUnchecked'
 
 const StyledWrapper = styled.div`
   & {
@@ -51,8 +51,8 @@ const StyledWrapper = styled.div`
 const Radio = (props) => (
   <StyledWrapper className={props.className}>
     <input type="radio" {...props} />
-    <IconChecked name='checked' />
-    <IconUnchecked />
+    <RadioButtonChecked name='checked' />
+    <RadioButtonUnchecked />
   </StyledWrapper>
 )
 

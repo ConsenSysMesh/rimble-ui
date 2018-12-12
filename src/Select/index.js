@@ -10,17 +10,29 @@ import {
 
 import theme from '../theme'
 
-import IconExpandMore from '../svg/baseline-expand_more-24px.svg'
+import ExpandMore from 'rmdi/lib/ExpandMore'
+
+const Wrapper = styled.span`
+  & {
+    position: relative;
+  }
+
+  > svg {
+    position: absolute;
+    right: 1rem;
+    top: 0;
+    bottom: 0;
+    pointer-events: none;
+    margin: auto;
+  }
+`
 
 const StyledSelect = styled.select`
   appearance: none;
   font-size: 1rem;
-
   height: 48px;
   padding: 0 3rem 0 1rem;
-
-  background: #FFFFFF calc(100% - 1rem) center no-repeat;
-  background-image: url('${IconExpandMore}');
+  background: #FFF;
 
   ${borders}
   ${borderColor}
@@ -35,7 +47,6 @@ const StyledSelect = styled.select`
     border-color: #5436D6;
   }
   &:active {
-
   }
   &:disabled {
     opacity: 0.4;
@@ -44,11 +55,14 @@ const StyledSelect = styled.select`
 `
 
 const Select = (props) => (
-  <StyledSelect {...props}>
-    {props.items.map(
-      (item, i) => (<option key={i} value={item}>{item}</option>)
-    )}
-  </StyledSelect>
+  <Wrapper>
+    <StyledSelect {...props}>
+      {props.items.map(
+        (item, i) => (<option key={i} value={item}>{item}</option>)
+      )}
+    </StyledSelect>
+    <ExpandMore />
+  </Wrapper>
 )
 
 Select.defaultProps = {

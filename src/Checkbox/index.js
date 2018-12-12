@@ -3,8 +3,8 @@ import styled from 'styled-components'
 
 import theme from '../theme'
 
-import { ReactComponent as IconChecked } from '../svg/baseline-check_box-24px.svg'
-import { ReactComponent as IconUnchecked } from '../svg/baseline-check_box_outline_blank-24px.svg'
+import CheckBox from 'rmdi/lib/CheckBox'
+import CheckBoxOutlineBlank from 'rmdi/lib/CheckBoxOutlineBlank'
 
 const StyledWrapper = styled.div`
   & {
@@ -51,8 +51,8 @@ const StyledWrapper = styled.div`
 const Checkbox = (props) => (
   <StyledWrapper className={props.className}>
     <input type="checkbox" {...props} />
-    <IconChecked name='checked' />
-    <IconUnchecked />
+    <CheckBox name='checked' />
+    <CheckBoxOutlineBlank />
   </StyledWrapper>
 )
 
