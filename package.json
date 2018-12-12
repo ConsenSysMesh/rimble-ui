@@ -27,6 +27,7 @@
     "@svgr/rollup": "^4.1.0",
     "ethereum-blockies": "^0.1.1",
     "polished": "^2.2.0",
+    "rmdi": "^1.0.1",
     "styled-system": "^2.3.6"
   },
   "peerDependencies": {
