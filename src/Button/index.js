@@ -1,21 +1,17 @@
 import React from 'react'
-
 import styled from 'styled-components'
-
-import { tint, shade } from 'polished'
-
-import Icon from 'rmdi/lib/Icon'
-
 import {
-  space,
-  color,
-  bgColor,
-  fontWeight ,
-  borders,
-  borderColor,
-  borderRadius,
+  fontWeight,
   boxShadow
 } from 'styled-system'
+
+import {
+  tint,
+  shade
+} from 'polished'
+
+import Box from '../Box'
+import Icon from '../Icon'
 
 import theme from '../theme'
 
@@ -52,48 +48,34 @@ const size = (props) => {
   }
 }
 
-const MyButton = React.forwardRef((props, ref) => (
-  <button {...props} ref={ref} className={props.className}>
+const ProtoButton = React.forwardRef((props, ref) => (
+  <Box as="button" type="button" ref={ref} {...props} >
     { props.icon && !props.iconpos && <Icon name={props.icon} /> }
     { props.icon && props.iconpos === 'left' && <Icon name={props.icon} /> }
     { props.children && <span>{props.children}</span> }
     { props.icon && props.iconpos === 'right' && <Icon name={props.icon} /> }
-  </button>
+  </Box>
 ))
 
-const Button = styled(MyButton)`
-  ${size} ${fullWidth}
-  ${space}
-  ${color}
-  ${bgColor}
-  ${borders}
-  ${borderColor}
-  ${borderRadius}
-  ${fontWeight}
-  ${boxShadow}
-
+const Button = styled(ProtoButton)`
   & {
-    -webkit-font-smoothing: antialiased;
-    display: inline-block;
     position: relative;
     cursor: pointer;
-    vertical-align: middle;
-    text-align: center;
     text-decoration: none;
-    white-space: nowrap;
+    text-align: center;
+    vertical-align: middle;
     line-height: 1;
-    ${'' /* font: inherit; */}
-    ${'' /* color: inherit; */}
     overflow: hidden;
-
-    transition: all .15s ease;
+    white-space: nowrap;
+    -webkit-font-smoothing: antialiased;
 
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    transition: all .15s ease;
+
     padding: ${props => props.icononly ? '0' : props.p };
   }
-
   &:hover {
     background-color: ${props => tint(0.1, props.theme.colors.primary)};
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
@@ -122,20 +104,27 @@ const Button = styled(MyButton)`
   svg:first-child:last-child {
     margin: 0;
   }
+
+  ${size}
+  ${fullWidth}
+
+  ${fontWeight}
+  ${boxShadow}
 `
 
 Button.defaultProps = {
   theme: theme,
-  fontSize: 'inherit',
-  fontWeight: 3,
+  color: 'white',
+  bg: 'primary',
   m: 0,
   px: 4,
   py: 0,
-  color: 'white',
-  bg: 'primary',
-  border: 'none',
+  border: 0,
+  borderColor: 'none',
   borderRadius: 1,
-  boxShadow: 1
+  boxShadow: 1,
+  fontSize: 'inherit',
+  fontWeight: 3
 }
 
 Button.displayName = 'Button'
