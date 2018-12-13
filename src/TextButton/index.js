@@ -30,7 +30,7 @@ TextButton.defaultProps = {
   color: 'primary',
   bg: 'transparent',
   border: 'none',
-  px: 2,
+  px: 4,
   py: 0
 }
 
