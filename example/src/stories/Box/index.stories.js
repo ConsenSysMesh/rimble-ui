@@ -9,7 +9,12 @@ import { Box } from 'rimble-ui'
 storiesOf('Box', module)
   .addDecorator(withDocs(MyREADME))
   .add('Default', () => (
-    <Box my='2' mx='auto' p='3' bg='grey' color='primary'>
-      This is a box
+    <Box
+      p={5}
+      fontSize={4}
+      width={[ 1, 1, 1/2 ]}
+      color='white'
+      bg='salmon'>
+      This is a Box
     </Box>
   ))
