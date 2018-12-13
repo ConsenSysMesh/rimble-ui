@@ -5,10 +5,11 @@ The `Icon` component renders Material Design Icons. Built with [rmdi](https://gi
 
 ### Usage
 <!-- component example here -->
-
 ```jsx
 import { Icon } from 'rimble-ui'
+```
 
+```jsx
 <Icon name='Star' />
 <Icon name='Star' color='primary' />
 <Icon name='Star' color='tomato' size='80' />
