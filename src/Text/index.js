@@ -52,7 +52,6 @@ Text.propTypes = {
     PropTypes.string,
     PropTypes.array
   ]),
-  align: PropTypes.oneOf(['left', 'center', 'right', 'justify']),
   caps: PropTypes.bool,
   regular: PropTypes.bool,
   bold: PropTypes.bool,
