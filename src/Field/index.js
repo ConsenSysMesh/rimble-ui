@@ -1,25 +1,17 @@
 import React from 'react'
-import styled from 'styled-components'
 
-const Label = styled.label`
-  & {
-    display: flex;
-    flex-flow: column;
-    align-items: flex-start;
-    font-weight: 600;
-    font-size: 14px;
-  }
+import Box from '../Box'
+import Text from '../Text'
 
-  > input {
-    margin-top: .5rem;
-  }
-`
-
-const Field = ({ children, label, ...props }) => {
-  return <Label htmlFor="">
-    {label}
+const Field = ({ children, label, ...props }) => (
+  <Box as='label' display='flex' flexDirection='column' alignItems='flex-start' htmlFor='' {...props}>
+    <Text fontSize={1} fontWeight={3} mb={2}>
+      {label}
+    </Text>
     {children}
-  </Label>
-}
+  </Box>
+)
+
+Field.displayName = 'Field'
 
 export default Field
