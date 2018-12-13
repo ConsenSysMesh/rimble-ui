@@ -2,7 +2,12 @@ import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
-import { fontSize, space, color, responsiveStyle } from 'styled-system'
+import {
+  fontSize,
+  space,
+  color,
+  textAlign
+} from 'styled-system'
 
 import theme from '../theme'
 
@@ -21,10 +26,15 @@ export const bold = props =>
 
 export const italic = props => (props.italic ? { fontStyle: 'italic' } : null)
 
-const align = responsiveStyle('text-align', 'align')
-
 const Text = styled.div`
-  ${italic} ${fontSize} ${space} ${color} ${caps} ${regular} ${bold} ${align};
+  ${space}
+  ${color}
+  ${fontSize}
+  ${textAlign};
+  ${caps}
+  ${regular}
+  ${bold}
+  ${italic}
 `
 
 const numberStringOrArray = PropTypes.oneOfType([
