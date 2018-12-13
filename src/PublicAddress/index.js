@@ -12,11 +12,6 @@ import Field from '../Field'
 
 import theme from '../theme'
 
-const StyledPublicAddress = styled(Input)`
-  text-overflow: ellipsis;
-  white-space: nowrap;
-`
-
 const slideIn = keyframes`
   from {
     opacity: 0;
@@ -35,6 +30,11 @@ const fadeOut = keyframes`
   to {
     opacity: 1;
   }
+`
+
+const StyledPublicAddress = styled(Input)`
+  text-overflow: ellipsis;
+  white-space: nowrap;
 `
 
 const StyledButton = styled(Button)`
@@ -101,20 +101,24 @@ const StyledWrapper = styled.div`
 `
 
 class PublicAddress extends Component {
-
+  constructor(props) {
+    super(props);
+    this.inputRef = React.createRef()
+    this.buttonRef = React.createRef()
+  }
   handleClick = (e) => {
     e.preventDefault()
-    this.inputEl.select()
+    this.inputRef.current.select()
     document.execCommand('copy')
-    this.buttonEl.classList.add('-is-copied')
+    this.buttonRef.current.classList.add('-is-copied')
   }
 
   render() {
     return (
       <Field label="Public Address" width={'100%'}>
         <StyledWrapper mt={2} w={'100%'}>
-          <StyledPublicAddress readOnly value={this.props.address} ref={n => this.inputEl = n} />
-          <StyledButton onClick={this.handleClick} ref={(n) => (this.buttonEl = n)} size='small' px={3}>
+          <StyledPublicAddress readOnly value={this.props.address} ref={this.inputRef} />
+          <StyledButton size='small' px={3} onClick={this.handleClick} ref={this.buttonRef} >
             Copy
           </StyledButton>
         </StyledWrapper>
