@@ -11,11 +11,12 @@ export default {
   fontSizes: [
     12, 14, 16, 20, 24, 32, 48, 64
   ],
-  fontWeights: [ 0, 300, 400, 600, 700 ],
+  fontWeights: [
+    0, 300, 400, 600, 700
+  ],
   fonts: {
     serif: 'athelas, georgia, times, serif',
-    sansSerif:
-      '"Source Sans Pro", -apple-system, sans-serif',
+    sansSerif: '"Source Sans Pro", -apple-system, sans-serif',
   },
   space: [
     0, 4, 8, 16, 32, 64, 128, 256
@@ -24,6 +25,7 @@ export default {
     '0', '4px', '8px', '16px'
   ],
   borders: [
+    0,
     '1px solid'
   ],
   shadows: [
