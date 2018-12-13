@@ -10,5 +10,7 @@ import { Icon } from 'rimble-ui'
 
 <!-- component example here -->
 ```jsx
-<Icon name="Check" />
+<Icon name='Star' />
+<Icon name='Star' color='primary' />
+<Icon name='Star' color='tomato' size='80' />
 ```
