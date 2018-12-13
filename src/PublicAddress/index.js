@@ -1,16 +1,10 @@
 import React, { Component } from 'react';
-import styled, {keyframes} from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 
-import {
-  space,
-  width
-} from 'styled-system'
-
+import Box from '../Box'
 import Button from '../Button'
 import Input from '../Input'
 import Field from '../Field'
-
-import theme from '../theme'
 
 const slideIn = keyframes`
   from {
@@ -32,7 +26,7 @@ const fadeOut = keyframes`
   }
 `
 
-const StyledPublicAddress = styled(Input)`
+const StyledInput = styled(Input)`
   text-overflow: ellipsis;
   white-space: nowrap;
 `
@@ -78,25 +72,23 @@ const StyledButton = styled(Button)`
 `
 
 
-const StyledWrapper = styled.div`
-  ${space}
-  ${width}
-
+const StyledWrapper = styled(Box)`
   & {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
     position: relative;
   }
 
   > input {
     width: 100%;
-    padding-right: 5rem;
+    padding-right: 5.25rem;
   }
 
   > button {
     position: absolute;
-    margin: auto;
     right: .75rem;
-    top: 0;
-    bottom: 0;
   }
 `
 
@@ -106,6 +98,7 @@ class PublicAddress extends Component {
     this.inputRef = React.createRef()
     this.buttonRef = React.createRef()
   }
+
   handleClick = (e) => {
     e.preventDefault()
     this.inputRef.current.select()
@@ -115,9 +108,9 @@ class PublicAddress extends Component {
 
   render() {
     return (
-      <Field label="Public Address" width={'100%'}>
-        <StyledWrapper mt={2} w={'100%'}>
-          <StyledPublicAddress readOnly value={this.props.address} ref={this.inputRef} />
+      <Field label="Public Address" >
+        <StyledWrapper>
+          <StyledInput readOnly value={this.props.address} ref={this.inputRef} />
           <StyledButton size='small' px={3} onClick={this.handleClick} ref={this.buttonRef} >
             Copy
           </StyledButton>
