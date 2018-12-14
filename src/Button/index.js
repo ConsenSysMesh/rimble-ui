@@ -2,7 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import {
   fontWeight,
-  boxShadow
+  boxShadow,
+  opacity
 } from 'styled-system'
 
 import {
@@ -24,26 +25,26 @@ const size = (props) => {
     case 'small':
       return `
         font-size: 12px;
-        height: ${theme.fontSizes[5]}px;
-        min-width: ${theme.fontSizes[5]}px;
+        height: ${props.theme.fontSizes[5]}px;
+        min-width: ${props.theme.fontSizes[5]}px;
       `
     case 'medium':
       return `
         font-size: 16px;
-        height: ${theme.fontSizes[6]}px;
-        min-width: ${theme.fontSizes[6]}px;
+        height: ${props.theme.fontSizes[6]}px;
+        min-width: ${props.theme.fontSizes[6]}px;
       `
     case 'large':
       return `
         font-size: 24px;
-        height: ${theme.fontSizes[7]}px;
-        min-width: ${theme.fontSizes[7]}px;
+        height: ${props.theme.fontSizes[7]}px;
+        min-width: ${props.theme.fontSizes[7]}px;
       `
     default:
       return `
         font-size: 16px;
-        height: ${theme.fontSizes[6]}px;
-        min-width: ${theme.fontSizes[6]}px;
+        height: ${props.theme.fontSizes[6]}px;
+        min-width: ${props.theme.fontSizes[6]}px;
       `
   }
 }
@@ -85,8 +86,7 @@ const Button = styled(ProtoButton)`
     box-shadow: none;
   }
   &:disabled {
-    opacity: 0.25;
-    pointer-events: none;
+    opacity: ${props => props.theme.opacity.disabled};
     cursor: not-allowed;
   }
 
@@ -110,6 +110,7 @@ const Button = styled(ProtoButton)`
 
   ${fontWeight}
   ${boxShadow}
+  ${opacity}
 `
 
 Button.defaultProps = {
