@@ -5,18 +5,15 @@ import { withDocs } from 'storybook-readme';
 import MyREADME from './README.md';
 
 import { Checkbox } from 'rimble-ui'
+import { Field } from 'rimble-ui'
 
 storiesOf('Form/Checkbox', module)
   .addDecorator(withDocs(MyREADME))
   .add('default', () => (
     <div>
-      <label htmlFor="">
-        <Checkbox id="blue" name="pill"/>
-        Blue Pill
-      </label>
-      <label htmlFor="">
-        <Checkbox id="red" name="pill" />
-        Red Pill
-      </label>
+      <Checkbox label="Checkbox default" />
+      <Checkbox checked label="Checkbox checked" />
+      <Checkbox disabled label="Checkbox disabled" />
+      <Checkbox disabled checked label="Checkbox checked disabled" />
     </div>
   ))
