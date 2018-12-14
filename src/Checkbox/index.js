@@ -6,7 +6,10 @@ import theme from '../theme'
 import CheckBox from 'rmdi/lib/CheckBox'
 import CheckBoxOutlineBlank from 'rmdi/lib/CheckBoxOutlineBlank'
 
-const StyledWrapper = styled.div`
+import Box from '../Box'
+import Text from '../Text'
+
+const StyledWrapper = styled(Box)`
   & {
     position: relative;
     display: inline-block;
@@ -48,12 +51,17 @@ const StyledWrapper = styled.div`
   }
 `
 
-const Checkbox = (props) => (
-  <StyledWrapper className={props.className}>
-    <input type="checkbox" {...props} />
-    <CheckBox name='checked' />
-    <CheckBoxOutlineBlank />
-  </StyledWrapper>
+const Checkbox = ({className, ...props}) => (
+  <Box as="label" className={props.className} htmlFor={props.id} display="flex" alignItems="center">
+    <StyledWrapper>
+      <input type="checkbox" {...props} />
+      <CheckBox name='checked' />
+      <CheckBoxOutlineBlank />
+    </StyledWrapper>
+    <Text fontSize={1} fontWeight={3} ml={1} mr={2}>
+      {props.label}
+    </Text>
+  </Box>
 )
 
 Checkbox.defaultProps = {
