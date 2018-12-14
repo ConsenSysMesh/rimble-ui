@@ -32,5 +32,8 @@ export default {
     '0',
     '0px 2px 4px rgba(0, 0, 0, 0.1)',
     '0 7px 14px rgba(50,50,93,.1)'
-  ]
+  ],
+  opacity: {
+    disabled: 0.4
+  }
 }
