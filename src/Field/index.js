@@ -4,7 +4,7 @@ import Box from '../Box'
 import Text from '../Text'
 
 const Field = ({ children, label, ...props }) => (
-  <Box as='label' display='flex' flexDirection='column' alignItems='flex-start' htmlFor='' {...props}>
+  <Box as='label' display='flex' flexDirection='column' alignItems='flex-start' {...props}>
     <Text fontSize={1} fontWeight={3} mb={2}>
       {label}
     </Text>
