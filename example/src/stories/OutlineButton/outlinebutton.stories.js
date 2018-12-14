@@ -6,8 +6,8 @@ import MyREADME from './README.md';
 
 import { OutlineButton } from 'rimble-ui'
 
-storiesOf('Button/OutlineButton', module)
+storiesOf('Button', module)
   .addDecorator(withDocs(MyREADME))
-  .add('default', () => (
+  .add('OutlineButton', () => (
     <OutlineButton>OutlineButton</OutlineButton>
   ))
