@@ -6,22 +6,22 @@ import theme from '../theme'
 import RadioButtonChecked from 'rmdi/lib/RadioButtonChecked'
 import RadioButtonUnchecked from 'rmdi/lib/RadioButtonUnchecked'
 
+import Box from '../Box'
+import Text from '../Text'
+
 const StyledWrapper = styled.div`
   & {
     position: relative;
     display: inline-block;
-    vertical-align: middle;
   }
 
   > input {
     position: relative;
     display: block;
     appearance: none;
-    background: white;
     height: 1.5rem;
     width: 1.5rem;
     margin: 0;
-    font-weight: bold;
   }
 
   > svg {
@@ -48,12 +48,17 @@ const StyledWrapper = styled.div`
   }
 `
 
-const Radio = (props) => (
-  <StyledWrapper className={props.className}>
-    <input type="radio" {...props} />
-    <RadioButtonChecked name='checked' />
-    <RadioButtonUnchecked />
-  </StyledWrapper>
+const Radio = ({className, ...props}) => (
+  <Box as="label" className={className} {...props} htmlFor={props.id} display="flex" alignItems="center">
+    <StyledWrapper>
+      <input type="checkbox" {...props} />
+      <RadioButtonChecked name='checked' />
+      <RadioButtonUnchecked />
+    </StyledWrapper>
+    <Text fontSize={1} fontWeight={3} ml={1} mr={2}>
+      {props.label}
+    </Text>
+  </Box>
 )
 
 Radio.defaultProps = {
