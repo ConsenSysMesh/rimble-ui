@@ -6,9 +6,9 @@ import MyREADME from './README.md';
 
 import { Radio } from 'rimble-ui'
 
-storiesOf('Form/Radio', module)
+storiesOf('Form', module)
   .addDecorator(withDocs(MyREADME))
-  .add('default', () => (
+  .add('Radio', () => (
     <div>
       <Radio label="Radio default" my={2} />
       <Radio checked label="Radio checked" my={2} />

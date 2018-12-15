@@ -12,8 +12,8 @@ const items = [
   'Ancient Paper',
 ]
 
-storiesOf('Form/Select', module)
+storiesOf('Form', module)
   .addDecorator(withDocs(MyREADME))
-  .add('default', () => (
+  .add('Select', () => (
     <Select items={items} />
   ))

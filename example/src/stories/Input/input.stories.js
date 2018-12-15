@@ -6,9 +6,9 @@ import MyREADME from './README.md';
 
 import { Input } from 'rimble-ui'
 
-storiesOf('Form/Input', module)
+storiesOf('Form', module)
   .addDecorator(withDocs(MyREADME))
-  .add('text', () => (
+  .add('Input', () => (
     <div>
       <Input type='text' placeholder='Lorem ipsum dolor sit.'/>
       <Input type='text' placeholder='Lorem ipsum dolor sit.' disabled/>

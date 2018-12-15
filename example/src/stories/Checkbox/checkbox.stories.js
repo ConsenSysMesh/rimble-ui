@@ -7,9 +7,9 @@ import MyREADME from './README.md';
 import { Checkbox } from 'rimble-ui'
 import { Field } from 'rimble-ui'
 
-storiesOf('Form/Checkbox', module)
+storiesOf('Form', module)
   .addDecorator(withDocs(MyREADME))
-  .add('default', () => (
+  .add('Checkbox', () => (
     <div>
       <Checkbox label="Checkbox default" my={2} />
       <Checkbox checked label="Checkbox checked" my={2} />
