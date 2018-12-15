@@ -99,6 +99,8 @@ const Box = styled.div`
   ${borderColor}
   ${borderRadius}
   ${'' /* typography */}
+  ${'' /* misc */}
+  ${opacity}
 `
 
 Box.displayName = 'Box'

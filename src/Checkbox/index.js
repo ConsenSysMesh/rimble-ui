@@ -49,7 +49,7 @@ const StyledWrapper = styled.div`
 `
 
 const Checkbox = ({className, ...props}) => (
-  <Box as="label" className={className} {...props} htmlFor={props.id} display="flex" alignItems="center">
+  <Box as="label" className={className} {...props} htmlFor={props.id} display="flex" alignItems="center" opacity={props.disabled ? 0.4 : 1 }>
     <StyledWrapper>
       <input type="checkbox" {...props} />
       <CheckBox name='checked' />
