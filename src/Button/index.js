@@ -60,6 +60,7 @@ const ProtoButton = React.forwardRef((props, ref) => (
 
 const Button = styled(ProtoButton)`
   & {
+    font-family: inherit;
     position: relative;
     cursor: pointer;
     text-decoration: none;
