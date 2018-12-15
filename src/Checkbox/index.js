@@ -9,22 +9,19 @@ import CheckBoxOutlineBlank from 'rmdi/lib/CheckBoxOutlineBlank'
 import Box from '../Box'
 import Text from '../Text'
 
-const StyledWrapper = styled(Box)`
+const StyledWrapper = styled.div`
   & {
     position: relative;
     display: inline-block;
-    vertical-align: middle;
   }
 
   > input {
     position: relative;
     display: block;
     appearance: none;
-    background: white;
     height: 1.5rem;
     width: 1.5rem;
     margin: 0;
-    font-weight: bold;
   }
 
   > svg {
@@ -52,7 +49,7 @@ const StyledWrapper = styled(Box)`
 `
 
 const Checkbox = ({className, ...props}) => (
-  <Box as="label" className={props.className} htmlFor={props.id} display="flex" alignItems="center">
+  <Box as="label" className={className} {...props} htmlFor={props.id} display="flex" alignItems="center">
     <StyledWrapper>
       <input type="checkbox" {...props} />
       <CheckBox name='checked' />
