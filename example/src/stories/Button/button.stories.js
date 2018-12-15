@@ -17,14 +17,13 @@ storiesOf('Button', module)
   ))
   .add('sizes', () => (
     <div>
-      <Button size='small'>Small Button</Button>
+      <Button size='small' mb={3}>Small Button</Button>
       <br/>
-      <Button size='medium'>Medium Button</Button>
+      <Button size='medium' mb={3}>Medium Button</Button>
       <br/>
-      <Button size='large'>Large Button</Button>
+      <Button size='large' mb={3}>Large Button</Button>
       <br/>
       <Button fullWidth>Full-width Button</Button>
-      <br/>
     </div>
   ))
   .add('Disabled', () => (
@@ -36,7 +35,10 @@ storiesOf('Button', module)
       <br/>
       <Button icon="Check" iconpos="right"  mb="3">Click me!</Button>
       <br/>
-      <Button icon='MoreHoriz' icononly  mb="3" />
+      <Button icon='MoreHoriz' icononly  mb="3" mr={2}/>
+      <OutlineButton icon='MoreHoriz' icononly  mb="3" mr={2}/>
+      <TextButton icon='MoreHoriz' icononly  mb="3" />
+
 
     </div>
   ))
