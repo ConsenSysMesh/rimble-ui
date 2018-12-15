@@ -61,6 +61,7 @@ const StyledButton = styled(Button)`
     position: absolute;
     width: 100%;
     background: inherit;
+    transition: all 500ms ease;
   }
 
   &.-is-copied::after {
@@ -100,10 +101,19 @@ class PublicAddress extends Component {
   }
 
   handleClick = (e) => {
+    const {
+      inputRef,
+      buttonRef
+    } = this
+
     e.preventDefault()
-    this.inputRef.current.select()
+    inputRef.current.select()
     document.execCommand('copy')
-    this.buttonRef.current.classList.add('-is-copied')
+    buttonRef.current.classList.add('-is-copied')
+
+    setTimeout(() => {
+      buttonRef.current.classList.remove('-is-copied')
+    }, 5000)
   }
 
   render() {
