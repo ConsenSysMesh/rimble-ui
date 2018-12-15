@@ -11,9 +11,9 @@ storiesOf('Form/Checkbox', module)
   .addDecorator(withDocs(MyREADME))
   .add('default', () => (
     <div>
-      <Checkbox label="Checkbox default" />
-      <Checkbox checked label="Checkbox checked" />
-      <Checkbox disabled label="Checkbox disabled" />
-      <Checkbox disabled checked label="Checkbox checked disabled" />
+      <Checkbox label="Checkbox default" my={2} />
+      <Checkbox checked label="Checkbox checked" my={2} />
+      <Checkbox disabled label="Checkbox disabled" my={2} />
+      <Checkbox disabled checked label="Checkbox checked disabled" my={2} />
     </div>
   ))
