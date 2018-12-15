@@ -12,7 +12,7 @@ import { normalize, transparentize } from 'polished'
 
 export const Base = styled.div`
   & {
-    font-size: 16px;
+    font-size: 1em;
     font-family: ${props => props.theme.fonts.sansSerif};
   }
 `
