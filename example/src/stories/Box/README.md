@@ -1,5 +1,5 @@
 # Box
-Responsive box-model layout component.
+The `Box` renders a responsive box-model layout component.
 
 <!-- STORY -->
 

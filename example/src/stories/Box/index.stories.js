@@ -6,9 +6,9 @@ import MyREADME from './README.md';
 
 import { Box } from 'rimble-ui'
 
-storiesOf('Box', module)
+storiesOf('Layout', module)
   .addDecorator(withDocs(MyREADME))
-  .add('Default', () => (
+  .add('Box', () => (
     <Box
       p={5}
       fontSize={4}
