@@ -1,5 +1,5 @@
 # Radio
-The `Radio` component provides a styled version of the HTML `<input type='radio'>`.
+The `Radio` component maps to a radio input and a label.
 
 <!-- STORY -->
 

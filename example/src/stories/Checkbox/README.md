@@ -1,5 +1,5 @@
 # Checkbox
-The `Checkbox` component provides a styled version of the HTML `<input type='checkbox'>`.
+The `Checkbox` component maps to a checkbox input and a label.
 
 <!-- STORY -->
 
