@@ -1,6 +1,5 @@
 # Button
-The `Button` components accept props defining their size.
-
+The `Button` component maps to a `<button type='button'>` element. It contains a label and optional icons before or after the label.
 <!-- STORY -->
 
 ### Usage
