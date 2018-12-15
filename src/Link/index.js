@@ -1,14 +1,26 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import theme from '../theme'
+import Text from '../Text'
 
-const Link = styled.a`
-  color: ${ props => props.theme.colors.primary }
+const Link = styled(Text)`
+  &:hover {
+    color: #6755F3;
+    text-decoration: underline;
+  }
+  &:active {
+    color: #3223A9;
+    text-decoration: none;
+  }
 `
 
 Link.defaultProps = {
-  theme: theme
+  as: 'a',
+  fontSize: 1,
+  fontWeight: 3,
+  color: 'primary',
 }
+
+Link.displayName = 'Link'
 
 export default Link
