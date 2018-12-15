@@ -10,7 +10,9 @@ storiesOf('Form/Radio', module)
   .addDecorator(withDocs(MyREADME))
   .add('default', () => (
     <div>
-      <label htmlFor=""><Radio id="blue" name="pill"/>Blue Pill</label>
-      <label htmlFor=""><Radio id="red" name="pill" />Red Pill</label>
+      <Radio label="Radio default" my={2} />
+      <Radio checked label="Radio checked" my={2} />
+      <Radio disabled label="Radio disabled" my={2} />
+      <Radio disabled checked label="Radio checked disabled" my={2} />
     </div>
   ))
