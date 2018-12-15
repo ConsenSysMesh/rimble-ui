@@ -17,7 +17,7 @@ import { Icon } from 'rimble-ui'
 
 ### List of Icons
 
-See the [icon list](ICONS.md) for a complete list of all icons available
+See the [icon list](https://github.com/jxnblk/rmdi/blob/master/ICONS.md) for a complete list of all icons available
 
 ### Props
 
