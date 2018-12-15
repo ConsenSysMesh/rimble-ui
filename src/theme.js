@@ -6,7 +6,8 @@ export default {
     white: '#fff',
     blue: '#007ce0',
     navy: '#004175',
-    grey: '#CCC'
+    grey: '#CCC',
+    copyColor: '#3F3D4B'
   },
   fontSizes: [
     12, 14, 16, 20, 24, 32, 48, 64
@@ -14,6 +15,11 @@ export default {
   fontWeights: [
     0, 300, 400, 600, 700
   ],
+  lineHeights: {
+    solid: 1,
+    title: 1.25,
+    copy: 1.5,
+  },
   fonts: {
     serif: 'athelas, georgia, times, serif',
     sansSerif: '"Source Sans Pro", -apple-system, sans-serif',
