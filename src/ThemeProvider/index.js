@@ -8,19 +8,23 @@ import styled, {
 
 import theme from '../theme'
 
-import { transparentize } from 'polished'
+import { normalize, transparentize } from 'polished'
 
 export const Base = styled.div`
   & {
     font-size: 16px;
     font-family: ${props => props.theme.fonts.sansSerif};
   }
-  * {
-    box-sizing: border-box;
-  }
 `
 
 const GlobalStyle = createGlobalStyle`
+  ${normalize()}
+  html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
   ::selection {
     background: ${ props => transparentize(0.7, props.theme.colors.primary) };
   }
@@ -30,8 +34,8 @@ const ThemeProvider = ({ ...props }) => {
   return (
     <StyledThemeProvider theme={theme}>
       <React.Fragment>
-        <Base {...props} />
         <GlobalStyle />
+        <Base {...props} />
       </React.Fragment>
     </StyledThemeProvider>
   )
