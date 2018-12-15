@@ -6,14 +6,18 @@ import styled, {
   ThemeProvider as StyledThemeProvider
 } from 'styled-components'
 
-import theme from '../theme'
+import {
+  normalize,
+  transparentize
+} from 'polished'
 
-import { normalize, transparentize } from 'polished'
+import theme from '../theme'
 
 export const Base = styled.div`
   & {
     font-size: 1em;
     font-family: ${props => props.theme.fonts.sansSerif};
+    color: ${props => props.theme.colors.copyColor}
   }
 `
 
