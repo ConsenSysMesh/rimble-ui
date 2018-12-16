@@ -3,27 +3,35 @@ import styled from 'styled-components'
 
 import theme from '../theme'
 
+import {
+  borders,
+  borderColor,
+  borderRadius,
+  boxShadow
+} from 'styled-system'
+
 const Input = styled.input`
   appearance: none;
-  ${'' /* font-weight: bold; */}
   font-size: 1rem;
   line-height: 1;
-  border-radius: ${ props => props.theme.radii[0] };
 
   height: 48px;
   padding: 0 1rem;
 
-  /* Rectangle 3: */
+  border: 1px solid;
   background: #FFFFFF;
-  border: 1px solid #CCCCCC;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+
+  ${borders}
+  ${borderColor}
+  ${borderRadius}
+  ${boxShadow}
 
   &:hover {
-
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
   }
   &:focus {
     outline: none;
-    border-color: ${ props => props.theme.colors.primary }
+    border-color: #5436D6;
   }
   &:active {
 
@@ -35,7 +43,13 @@ const Input = styled.input`
 `
 
 Input.defaultProps = {
-  theme: theme
+  theme: theme,
+  borders: 0,
+  borderColor: 'grey',
+  borderRadius: 1,
+  boxShadow: 1
 }
+
+Input.displayName = 'Input'
 
 export default Input

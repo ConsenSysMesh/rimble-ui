@@ -4,10 +4,10 @@ import { withDocs } from 'storybook-readme';
 
 import MyREADME from './README.md';
 
-import { Progress } from 'rimble-ui'
+import { PublicAddress } from 'rimble-ui'
 
-storiesOf('Form', module)
+storiesOf('PublicAddress', module)
   .addDecorator(withDocs(MyREADME))
-  .add('Progress', () => (
-    <Progress value={0.5} />
+  .add('PublicAddress', () => (
+    <PublicAddress address={'0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2'} />
   ))
