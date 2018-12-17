@@ -1,6 +1,5 @@
 # Button
-The `Button` components accept props defining their size.
-
+The `Button` component maps to a `<button type='button'>` element. It contains a label and optional icons before or after the label.
 <!-- STORY -->
 
 ### Usage
@@ -16,14 +15,17 @@ import { Button } from 'rimble-ui'
 <Button size="small">Small Button</Button>
 <Button size="medium">Medium Button</Button>
 <Button size="large">Large Button</Button>
+<Button fullWidth>Full-width Button</Button>
 ```
 <!-- Disabled button here -->
 ```jsx
 <Button disabled>disabled Button</Button>
 ```
-<!-- Full-width button here -->
+
 ```jsx
-<Button fullWidth>Full-width Button</Button>
+<Button icon="Check">Click me!</Button>
+<Button icon="Check" iconpos="right">Click me!</Button>
+<Button icon='MoreHoriz' icononly/>
 ```
 
 ### Props
@@ -32,3 +34,6 @@ import { Button } from 'rimble-ui'
 | `size`      | string  |         | Sets button size to small, medium, or large |
 | `fullWidth` | boolean |         | Sets button width to fullWidth              |
 | `disabled`  | boolean |         | Sets button style to disabled               |
+|`icon`|string| | Adds `Icon` to button. See [icon list](https://github.com/jxnblk/rmdi/blob/master/ICONS.md).|
+|`iconpos`|string|left|Sets `Icon` position inside button.|
+|`icononly`|boolean|false| Sets `Button` dimensions for icon-only buttons.

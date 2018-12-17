@@ -1,20 +1,18 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-
 import styled from 'styled-components'
-
-import { tint, shade } from 'polished'
+import {
+  fontWeight,
+  boxShadow,
+  opacity
+} from 'styled-system'
 
 import {
-  space,
-  color,
-  bgColor,
-  fontWeight ,
-  borders,
-  borderColor,
-  borderRadius,
-  boxShadow
-} from 'styled-system'
+  tint,
+  shade
+} from 'polished'
+
+import Box from '../Box'
+import Icon from '../Icon'
 
 import theme from '../theme'
 
@@ -27,97 +25,108 @@ const size = (props) => {
     case 'small':
       return `
         font-size: 12px;
-        height: 32px;
+        height: ${props.theme.fontSizes[5]}px;
+        min-width: ${props.theme.fontSizes[5]}px;
       `
     case 'medium':
       return `
         font-size: 16px;
-        height: 48px;
+        height: ${props.theme.fontSizes[6]}px;
+        min-width: ${props.theme.fontSizes[6]}px;
       `
     case 'large':
       return `
         font-size: 24px;
-        height: 64px;
+        height: ${props.theme.fontSizes[7]}px;
+        min-width: ${props.theme.fontSizes[7]}px;
       `
     default:
       return `
         font-size: 16px;
-        height: 48px;
+        height: ${props.theme.fontSizes[6]}px;
+        min-width: ${props.theme.fontSizes[6]}px;
       `
   }
 }
 
-const Button = styled.button`
-  -webkit-font-smoothing: antialiased;
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-  text-align: center;
-  text-decoration: none;
-  font: inherit;
-  line-height: 1;
-  color: inherit;
-  cursor: pointer;
-  white-space: nowrap;
-  border-width: 0;
-  border-style: solid;
+const ProtoButton = React.forwardRef((props, ref) => (
+  <Box as="button" type="button" ref={ref} {...props} >
+    { props.icon && !props.iconpos && <Icon name={props.icon} /> }
+    { props.icon && props.iconpos === 'left' && <Icon name={props.icon} /> }
+    { props.children && <span>{props.children}</span> }
+    { props.icon && props.iconpos === 'right' && <Icon name={props.icon} /> }
+  </Box>
+))
 
-  box-shadow:
-    0 4px 6px rgba(50,50,93,.11),
-    0 1px 3px rgba(0,0,0,.08)
-  ;
-  transition: all .15s ease;
-  transform-origin: center;
+const Button = styled(ProtoButton)`
+  & {
+    font-family: inherit;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    -webkit-font-smoothing: antialiased;
 
-  ${size} ${fullWidth}
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .15s ease;
 
-  ${space}
-  ${color}
-  ${bgColor}
-  ${fontWeight}
-  ${borders}
-  ${borderColor}
-  ${borderRadius}
-
+    padding: ${props => props.icononly ? '0' : props.p };
+  }
   &:hover {
     background-color: ${props => tint(0.1, props.theme.colors.primary)};
-    /* transform: translateY(-1px); */
-    box-shadow:
-      0 7px 14px rgba(50,50,93,.1),
-      0 3px 6px rgba(0,0,0,.08)
-    ;
-  }
-  &:disabled {
-    opacity: 0.25;
-    pointer-events: none;
-    cursor: not-allowed;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
   }
   &:active {
     background-color: ${props => shade(0.1, props.theme.colors.primary)};
     box-shadow: none;
   }
+  &:disabled {
+    opacity: ${props => props.theme.opacity.disabled};
+    cursor: not-allowed;
+  }
+
+  svg {
+    display: block;
+  }
+  svg:first-child {
+    margin-left: -1rem;
+    margin-right: .5rem;
+  }
+  svg:last-child {
+    margin-left: .5rem;
+    margin-right: -1rem;
+  }
+  svg:first-child:last-child {
+    margin: 0;
+  }
+
+  ${size}
+  ${fullWidth}
+
+  ${fontWeight}
+  ${boxShadow}
+  ${opacity}
 `
 
-Button.propTypes = {
-  ...fontWeight.propTypes,
-  ...borders.propTypes,
-  ...borderColor.propTypes,
-  ...borderRadius.propTypes,
-  // ...buttonStyle.propTypes,
-}
-
 Button.defaultProps = {
-  as: 'button',
-  fontSize: 'inherit',
-  fontWeight: 'bold',
-  m: 0,
-  px: 3,
-  py: 0,
+  theme: theme,
   color: 'white',
   bg: 'primary',
-  border: 'none',
-  borderRadius: 0,
-  theme: theme
+  m: 0,
+  px: 4,
+  py: 0,
+  border: 0,
+  borderColor: 'none',
+  borderRadius: 1,
+  boxShadow: 1,
+  fontSize: 'inherit',
+  fontWeight: 3
 }
 
 Button.displayName = 'Button'

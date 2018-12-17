@@ -1,15 +1,8 @@
 import { configure, addDecorator } from '@storybook/react'
-import { withInfo } from '@storybook/addon-info'
 import { withOptions } from '@storybook/addon-options';
 
 import React from 'react';
 import { ThemeProvider } from 'rimble-ui'
-
-addDecorator(
-  withInfo({
-    inline: false
-  })
-)
 
 addDecorator(
   withOptions({

@@ -6,7 +6,7 @@ import MyREADME from './README.md';
 
 import { Heading } from 'rimble-ui'
 
-storiesOf('Typography/Heading', module)
+storiesOf('Heading', module)
   .addDecorator(withDocs(MyREADME))
   .add('H1-H6', () => (
     <div>

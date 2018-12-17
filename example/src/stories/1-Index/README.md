@@ -1,7 +1,3 @@
-# Rimble Component Documentation
-
-<!-- STORY -->
-
 # Theming
 Rimble components use [styled-system](https://github.com/jxnblk/styled-system) to support theme-based variables.
 
@@ -142,3 +138,5 @@ fontSizes: [
   12, 14, 16, 20, 24, 32, 48, 64
 ]
 ```
+
+<!-- STORY -->

@@ -6,7 +6,7 @@ import MyREADME from './README.md';
 
 import { Text } from 'rimble-ui'
 
-storiesOf('Typography/Text', module)
+storiesOf('Text', module)
   .addDecorator(withDocs(MyREADME))
   .add('default', () => (
     <Text>

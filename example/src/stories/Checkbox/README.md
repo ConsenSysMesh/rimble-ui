@@ -1,5 +1,5 @@
 # Checkbox
-The `Checkbox` component provides a styled version of the HTML `<input type='checkbox'>`.
+The `Checkbox` component maps to a checkbox input and a label.
 
 <!-- STORY -->
 
@@ -10,8 +10,10 @@ import { Checkbox } from 'rimble-ui'
 
 <!-- Checkbox example here -->
 ```jsx
-<Checkbox id="blue" name="pill"/>
-<Checkbox id="red" name="pill" />
+<Checkbox label="Checkbox default" />
+<Checkbox checked label="Checkbox checked" />
+<Checkbox disabled label="Checkbox disabled" />
+<Checkbox disabled checked label="Checkbox checked disabled" />
 ```
 
 <!-- Checkbox component props -->

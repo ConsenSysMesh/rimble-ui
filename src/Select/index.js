@@ -1,30 +1,52 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import {
+  borders,
+  borderColor,
+  borderRadius,
+  boxShadow
+} from 'styled-system'
+
 import theme from '../theme'
+
+import ExpandMore from 'rmdi/lib/ExpandMore'
+
+const Wrapper = styled.span`
+  & {
+    position: relative;
+  }
+
+  > svg {
+    position: absolute;
+    right: 1rem;
+    top: 0;
+    bottom: 0;
+    pointer-events: none;
+    margin: auto;
+  }
+`
 
 const StyledSelect = styled.select`
   appearance: none;
   font-size: 1rem;
-  border-radius: ${ props => props.theme.radii[0] };
-
   height: 48px;
   padding: 0 3rem 0 1rem;
+  background: #FFF;
 
-  /* Rectangle 3: */
-  background: #FFFFFF;
-  border: 1px solid #CCCCCC;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+  ${borders}
+  ${borderColor}
+  ${borderRadius}
+  ${boxShadow}
 
   &:hover {
-
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
   }
   &:focus {
     outline: none;
-    border-color: ${ props => props.theme.colors.primary }
+    border-color: #5436D6;
   }
   &:active {
-
   }
   &:disabled {
     opacity: 0.4;
@@ -32,16 +54,25 @@ const StyledSelect = styled.select`
   }
 `
 
-const Select = (props) => {
-  return <StyledSelect>
-    {props.items.map(
-      (item, i) => (<option key={i} value={item}>{item}</option>)
-    )}
-  </StyledSelect>
+const Select = (props) => (
+  <Wrapper>
+    <StyledSelect {...props}>
+      {props.items.map(
+        (item, i) => (<option key={i} value={item}>{item}</option>)
+      )}
+    </StyledSelect>
+    <ExpandMore />
+  </Wrapper>
+)
+
+Select.defaultProps = {
+  theme: theme,
+  borders: 1,
+  borderColor: 'grey',
+  borderRadius: 1,
+  boxShadow: 1
 }
 
-StyledSelect.defaultProps = {
-  theme: theme
-}
+Select.displayName = 'Select'
 
 export default Select

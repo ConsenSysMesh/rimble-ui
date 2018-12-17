@@ -6,8 +6,8 @@ import MyREADME from './README.md';
 
 import { Textarea } from 'rimble-ui'
 
-storiesOf('Form/Textarea', module)
+storiesOf('Form', module)
   .addDecorator(withDocs(MyREADME))
-  .add('default', () => (
+  .add('Textarea', () => (
     <Textarea rows={4} defaultValue='Hello' />
   ))

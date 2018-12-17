@@ -1,3 +1,5 @@
+export { default as Box } from './Box'
+export { default as Flex } from './Flex'
 export { default as Button } from './Button'
 export { default as Avatar } from './Avatar'
 export { default as Blockie } from './Blockie'
@@ -16,5 +18,6 @@ export { default as Text } from './Text'
 export { default as Textarea } from './Textarea'
 export { default as TextButton } from './TextButton'
 export { default as Tooltip } from './Tooltip'
-
 export { default as ThemeProvider } from './ThemeProvider'
+export { default as Icon } from './Icon'
+export { default as PublicAddress } from './PublicAddress'
