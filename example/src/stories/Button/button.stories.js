@@ -9,7 +9,8 @@ import {
   OutlineButton,
   TextButton,
   MetaMaskButton,
-  Icon
+  Icon,
+  Loader
 } from 'rimble-ui'
 
 storiesOf('Button', module)
@@ -44,6 +45,13 @@ storiesOf('Button', module)
       <TextButton icon='MoreHoriz' icononly  mb="3" />
 
 
+    </div>
+  ))
+  .add('Loader', () => (
+    <div>
+      <Button>
+        <Loader color='white'/>
+      </Button>
     </div>
   ))
   .add('MetaMask', () => (
