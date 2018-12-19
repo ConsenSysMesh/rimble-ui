@@ -12,18 +12,12 @@ storiesOf('Loader', module)
     <div>
       <Loader />
       <Loader color="white" bg="primary" />
-      <Loader color="black" />
 
       <Loader size="40px" />
       <Loader size="80px" color="red" />
       <Loader size="80px" color="white" bg="primary" />
 
+      <Loader color="black" />
       <Loader color="white" bg="grey" />
-      <Loader color="white" bg="grey" />
-      <Loader color="white" bg="grey" />
-
-      <Button fullWidth>
-        <Loader color="white" />
-      </Button>
     </div>
   ))
