@@ -7,12 +7,11 @@ import theme from '../theme'
 
 const Progress = styled.progress`
   & {
-    display: inline-block;
     appearance: none;
+    display: inline-block;
     overflow: hidden;
-    border-radius: ${props => props.theme.radii[1]};
-
     height: 8px;
+    border-radius: ${props => props.theme.radii[1]};
   }
   &::-webkit-progress-bar {
     background-color: ${props => transparentize('0.75', props.theme.colors.primary)};
