@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { tint } from 'polished'
+import { transparentize } from 'polished'
 
 import theme from '../theme'
 
@@ -15,7 +15,7 @@ const Progress = styled.progress`
     height: 8px;
   }
   &::-webkit-progress-bar {
-    background-color: #ccc;
+    background-color: ${props => transparentize('0.75', props.theme.colors.primary)};
   }
   &::-webkit-progress-value {
     background-color: ${props => props.theme.colors.primary};
