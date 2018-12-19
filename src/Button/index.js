@@ -91,18 +91,18 @@ const Button = styled(ProtoButton)`
     cursor: not-allowed;
   }
 
-  svg {
+  > svg {
     display: block;
   }
-  svg:first-child {
+  > svg:first-child {
     margin-left: -1rem;
     margin-right: .5rem;
   }
-  svg:last-child {
+  > svg:last-child {
     margin-left: .5rem;
     margin-right: -1rem;
   }
-  svg:first-child:last-child {
+  > svg:first-child:last-child {
     margin: 0;
   }
 
