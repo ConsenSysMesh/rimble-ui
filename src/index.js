@@ -1,6 +1,7 @@
 export { default as Box } from './Box'
 export { default as Flex } from './Flex'
 export { default as Button } from './Button'
+export { default as MetaMaskButton } from './MetaMaskButton'
 export { default as Avatar } from './Avatar'
 export { default as Blockie } from './Blockie'
 export { default as Checkbox } from './Checkbox'
