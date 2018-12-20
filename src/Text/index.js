@@ -58,7 +58,33 @@ Text.defaultProps = {
 Text.displayName = 'Text'
 
 Text.span = Text.withComponent('span')
+Text.span.defaultProps = {
+  color: 'copyColor',
+  fontFamily: 'sansSerif',
+  fontSize: 2,
+  fontWeight: 2,
+  lineHeight: 'copy',
+  textAlign: 'left'
+}
+
 Text.p = Text.withComponent('p')
+Text.p.defaultProps = {
+  color: 'copyColor',
+  fontFamily: 'sansSerif',
+  fontSize: 2,
+  fontWeight: 2,
+  lineHeight: 'copy',
+  textAlign: 'left'
+}
+
 Text.s = Text.withComponent('s')
+Text.s.defaultProps = {
+  color: 'copyColor',
+  fontFamily: 'sansSerif',
+  fontSize: 2,
+  fontWeight: 2,
+  lineHeight: 'copy',
+  textAlign: 'left'
+}
 
 export default Text
