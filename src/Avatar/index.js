@@ -45,7 +45,8 @@ const Avatar = styled(Box)`
 Avatar.defaultProps = {
   theme: theme,
   ratio: 1,
-  size: '2rem'
+  size: '2rem',
+  alt: 'Avatar'
 }
 
 Avatar.displayName = 'Avatar'
