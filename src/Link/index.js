@@ -4,6 +4,9 @@ import styled from 'styled-components'
 import Text from '../Text'
 
 const Link = styled(Text)`
+  & {
+    text-decoration: none;
+  }
   &:hover {
     color: #6755F3;
     text-decoration: underline;
