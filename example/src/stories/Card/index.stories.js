@@ -29,13 +29,12 @@ storiesOf('Card', module)
         This is a Card
       </Card>
 
-
-      <Card width={'420px'} mx={'auto'} px={4} display="flex" flexDirection="column">
-        <Text fontSize={0} fontWeight={4} caps mb={3} display={'flex'} alignItems={'center'} >
+      <Card width={'420px'} mx={'auto'} px={4}>
+        <Text caps fontSize={0} fontWeight={4} mb={3} display={'flex'} alignItems={'center'} >
           <Icon name={'AccountBalanceWallet'} mr={2}></Icon>
           Connect your Wallet:
         </Text>
-        <MetaMaskButton.outline>Install MetaMask</MetaMaskButton.outline>
+        <MetaMaskButton.outline fullWidth>Install MetaMask</MetaMaskButton.outline>
       </Card>
 
     </div>
