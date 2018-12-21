@@ -63,12 +63,13 @@ import {
 import {
   Card,
   Box,
+  Flex,
   Image,
   Heading,
   TextButton
 } from 'rimble-ui'
 
-<Card width={'420px'} p={'0'} mx={'auto'}>
+<Card width={'420px'} mx={'auto'} my={5}  p={0}>
   <Image
     width={1}
     src='https://source.unsplash.com/random/1280x720'
@@ -77,7 +78,10 @@ import {
   <Box px={4} py={3}>
     <Heading.h2>Card title</Heading.h2>
     <Heading.h5 color='#666'>Card sub-title</Heading.h5>
-    <TextButton p='0'>Text Button</TextButton>
   </Box>
+  <Flex px={4} height={3} borderTop={1} borderColor={'#E8E8E8'}>
+    <TextButton p={'0'} mr={4} height={'auto'}>Text Button</TextButton>
+    <TextButton p={'0'} height={'auto'}>Text Button</TextButton>
+  </Flex>
 </Card>
 ```

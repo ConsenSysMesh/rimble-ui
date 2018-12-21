@@ -36,7 +36,7 @@ storiesOf('Card', module)
     </div>
   )).add('Examples', () => (
     <div>
-      <Card width={'420px'} mx={'auto'} px={4}>
+      <Card width={'420px'} mx={'auto'} my={5} px={4}>
         <Text caps fontSize={0} fontWeight={4} mb={3} display={'flex'} alignItems={'center'} >
           <Icon name={'AccountBalanceWallet'} mr={2}></Icon>
           Connect your Wallet:
@@ -44,7 +44,7 @@ storiesOf('Card', module)
         <MetaMaskButton.outline fullWidth>Install MetaMask</MetaMaskButton.outline>
       </Card>
 
-      <Card width={'420px'} mx={'auto'} px={4} >
+      <Card width={'420px'} mx={'auto'} my={5} px={4} >
         <Heading>Heading</Heading>
         <Text mb={4}>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam autem ratione doloribus quidem neque provident eius error dignissimos delectus architecto nemo quos alias sunt voluptate impedit, facilis sequi tempore. Amet!
@@ -53,7 +53,7 @@ storiesOf('Card', module)
         <OutlineButton>Cancel</OutlineButton>
       </Card>
 
-      <Card width={'420px'} p={0} mx={'auto'}>
+      <Card width={'420px'} mx={'auto'} my={5}  p={0}>
         <Image
           width={1}
           src='https://source.unsplash.com/random/1280x720'
