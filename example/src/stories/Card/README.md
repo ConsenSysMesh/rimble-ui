@@ -1,5 +1,5 @@
 # Card
-The `Card` renders a responsive box-model layout component.
+The `Card` renders a responsive box-model layout component. Inherits props from `Box` component.
 
 <!-- STORY -->
 
@@ -10,15 +10,21 @@ import { Card } from 'rimble-ui'
 
 <!-- component example here -->
 ```jsx
-<Card />
-<Card color="white" bg="primary" />
+<Card>
+  This is a Card
+</Card>
 
-<Card size="40px" />
-<Card size="80px" color="red" />
-<Card size="80px" color="white" bg="primary" />
+<Card color="white" bg="primary">
+  This is a Card
+</Card>
 
-<Card color="black" />
-<Card color="white" bg="grey" />
+<Card size="80px" color="red">
+  This is a Card
+</Card>
+
+<Card size="80px" color="white" bg="primary">
+  This is a Card
+</Card>
 ```
 
 ```jsx
