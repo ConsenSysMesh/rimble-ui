@@ -58,3 +58,26 @@ import {
   <OutlineButton>Cancel</OutlineButton>
 </Card>
 ```
+
+```jsx
+import {
+  Card,
+  Box,
+  Image,
+  Heading,
+  TextButton
+} from 'rimble-ui'
+
+<Card width={'420px'} p={'0'} mx={'auto'}>
+  <Image
+    width={1}
+    src='https://source.unsplash.com/random/1280x720'
+    alt='random image from unsplash.com'
+  />
+  <Box px={4} py={3}>
+    <Heading.h2>Card title</Heading.h2>
+    <Heading.h5 color='#666'>Card sub-title</Heading.h5>
+    <TextButton p='0'>Text Button</TextButton>
+  </Box>
+</Card>
+```
