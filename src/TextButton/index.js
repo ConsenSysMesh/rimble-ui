@@ -29,6 +29,7 @@ TextButton.defaultProps = {
   fontWeight: '600',
   color: 'primary',
   bg: 'transparent',
+  height: '48px',
   border: 'none',
   px: 4,
   py: 0

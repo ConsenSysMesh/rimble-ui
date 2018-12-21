@@ -43,8 +43,7 @@ const size = (props) => {
       `
     default:
       return `
-        font-size: 16px;
-        height: ${props.theme.fontSizes[6]}px;
+        font-size: 1rem;
         min-width: ${props.theme.fontSizes[6]}px;
       `
   }
@@ -66,7 +65,6 @@ const Button = styled(ProtoButton)`
     cursor: pointer;
     text-decoration: none;
     text-align: center;
-    vertical-align: middle;
     line-height: 1;
     overflow: hidden;
     white-space: nowrap;
@@ -107,18 +105,19 @@ const Button = styled(ProtoButton)`
     margin: 0;
   }
 
-  ${size}
-  ${fullWidth}
-
   ${fontWeight}
   ${boxShadow}
   ${opacity}
+
+  ${size}
+  ${fullWidth}
 `
 
 Button.defaultProps = {
   theme: theme,
   color: 'white',
   bg: 'primary',
+  height: '48px',
   m: 0,
   px: 4,
   py: 0,
