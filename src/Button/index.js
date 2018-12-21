@@ -119,6 +119,7 @@ Button.defaultProps = {
   theme: theme,
   color: 'white',
   bg: 'primary',
+  height: '48px',
   m: 0,
   px: 4,
   py: 0,
