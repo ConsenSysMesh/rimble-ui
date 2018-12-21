@@ -4,7 +4,12 @@ import { withDocs } from 'storybook-readme';
 
 import MyREADME from './README.md';
 
-import { Card } from 'rimble-ui'
+import {
+  Card,
+  Text,
+  Icon,
+  MetaMaskButton
+} from 'rimble-ui'
 
 storiesOf('Card', module)
   .addDecorator(withDocs(MyREADME))
@@ -17,11 +22,21 @@ storiesOf('Card', module)
         This is a Card
       </Card>
 
-      <Card size="40px" />
-      <Card size="80px" color="red" />
-      <Card size="80px" color="white" bg="primary" />
+      <Card size="80px" color="red">
+        This is a Card
+      </Card>
+      <Card size="80px" color="white" bg="primary" >
+        This is a Card
+      </Card>
 
-      <Card color="black" />
-      <Card color="white" bg="grey" />
+
+      <Card width={'320px'} mx={'auto'} px={4} display="flex" flexDirection="column">
+        <Text fontSize={0} fontWeight={4} caps mb={3} display={'flex'} alignItems={'center'} >
+          <Icon name={'AccountBalanceWallet'} mr={2}></Icon>
+          Connect your Wallet:
+        </Text>
+        <MetaMaskButton.outline>Install MetaMask</MetaMaskButton.outline>
+      </Card>
+
     </div>
   ))
