@@ -21,17 +21,14 @@ storiesOf('Card', module)
       <Card>
         This is a Card
       </Card>
+
       <Card color="white" bg="primary" >
         This is a Card
       </Card>
 
-      <Card size="80px" color="red">
+      <Card size="300px" color="white" bg="black" >
         This is a Card
       </Card>
-      <Card size="80px" color="white" bg="primary" >
-        This is a Card
-      </Card>
-
     </div>
   )).add('Examples', () => (
     <div>

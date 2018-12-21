@@ -18,11 +18,7 @@ import { Card } from 'rimble-ui'
   This is a Card
 </Card>
 
-<Card size="80px" color="red">
-  This is a Card
-</Card>
-
-<Card size="80px" color="white" bg="primary">
+<Card size="300px" color="white" bg="black">
   This is a Card
 </Card>
 ```
