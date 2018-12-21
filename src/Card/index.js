@@ -4,15 +4,19 @@ import styled from 'styled-components'
 import Box from '../Box'
 
 const Card = styled(Box)`
-
-
-  ${'' /* background: #FFFFFF; */}
-  border: 1px solid #D6D6D6;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  & {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 300ms ease;
+  }
+  &:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+  }
 `
 
 Card.defaultProps = {
   bg: 'white',
+  border: 1,
+  borderColor: '#D6D6D6',
   mx: 0,
   my: 2,
   width: '100%',
