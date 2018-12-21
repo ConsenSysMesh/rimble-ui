@@ -30,7 +30,7 @@ storiesOf('Card', module)
       </Card>
 
 
-      <Card width={'320px'} mx={'auto'} px={4} display="flex" flexDirection="column">
+      <Card width={'420px'} mx={'auto'} px={4} display="flex" flexDirection="column">
         <Text fontSize={0} fontWeight={4} caps mb={3} display={'flex'} alignItems={'center'} >
           <Icon name={'AccountBalanceWallet'} mr={2}></Icon>
           Connect your Wallet:
