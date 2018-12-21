@@ -40,11 +40,9 @@ storiesOf('Button', module)
       <br/>
       <Button icon="Check" iconpos="right"  mb="3">Click me!</Button>
       <br/>
-      <Button icon='MoreHoriz' icononly  mb="3" mr={2}/>
-      <OutlineButton icon='MoreHoriz' icononly  mb="3" mr={2}/>
+      <Button icon='MoreHoriz' icononly mb="3" mr={2}/>
+      <OutlineButton icon='MoreHoriz' icononly mb="3" mr={2}/>
       <TextButton icon='MoreHoriz' icononly  mb="3" />
-
-
     </div>
   ))
   .add('Loader', () => (

@@ -4,14 +4,7 @@ import { withDocs } from 'storybook-readme';
 
 import MyREADME from './README.md';
 
-import {
-  Button,
-  OutlineButton,
-  TextButton,
-  MetaMaskButton,
-  Icon,
-  Loader
-} from 'rimble-ui'
+import { MetaMaskButton } from 'rimble-ui'
 
 storiesOf('Button', module)
   .addDecorator(withDocs(MyREADME))

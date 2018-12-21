@@ -30,7 +30,7 @@ const Wrapper = styled.span`
 const StyledSelect = styled.select`
   appearance: none;
   font-size: 1rem;
-  height: 48px;
+  line-height: 48px;
   padding: 0 3rem 0 1rem;
   background: #FFF;
 
