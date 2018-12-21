@@ -43,3 +43,22 @@ import {
   <MetaMaskButton.outline fullWidth>Install MetaMask</MetaMaskButton.outline>
 </Card>
 ```
+
+```jsx
+import {
+  Card,
+  Heading,
+  Text,
+  Button,
+  OutlineButton
+} from 'rimble-ui'
+
+<Card width={'420px'} mx={'auto'} px={4}>
+  <Heading>Heading</Heading>
+  <Text mb={4}>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam autem ratione doloribus quidem neque provident eius error dignissimos delectus architecto nemo quos alias sunt voluptate impedit, facilis sequi tempore. Amet!
+  </Text>
+  <Button mr={3}>Accept</Button>
+  <OutlineButton>Cancel</OutlineButton>
+</Card>
+```
