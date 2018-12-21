@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
-
+import { textAlign } from 'styled-system'
 import Box from '../Box'
 
 const Card = styled(Box)`
@@ -11,6 +11,8 @@ const Card = styled(Box)`
   &:hover {
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
   }
+
+  ${textAlign}
 `
 
 Card.defaultProps = {
@@ -24,6 +26,7 @@ Card.defaultProps = {
   height: 'auto',
   minHeight: 1,
   p: 4,
+  textAlign: 'left'
 }
 
 Card.displayName = 'Card'
