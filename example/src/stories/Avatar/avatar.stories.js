@@ -11,20 +11,20 @@ storiesOf('Avatar', module)
   .add('Default', () => (
     <div>
       <Avatar />
-      <Avatar src='https://material-ui.com/static/images/avatar/1.jpg' />
+      <Avatar src='https://miro.medium.com/fit/c/240/240/1*1ByDBR2I219gNx76GLSJgg.jpeg' />
 
-      <Avatar size='100px' src='https://material-ui.com/static/images/avatar/1.jpg' />
+      <Avatar size='100px' src='https://miro.medium.com/fit/c/240/240/1*1ByDBR2I219gNx76GLSJgg.jpeg' />
       <Avatar
         size='large'
-        src='https://material-ui.com/static/images/avatar/1.jpg'
+        src='https://miro.medium.com/fit/c/240/240/1*1ByDBR2I219gNx76GLSJgg.jpeg'
       />
       <Avatar
         size='medium'
-        src='https://material-ui.com/static/images/avatar/1.jpg'
+        src='https://miro.medium.com/fit/c/240/240/1*1ByDBR2I219gNx76GLSJgg.jpeg'
       />
       <Avatar
         size='small'
-        src='https://material-ui.com/static/images/avatar/1.jpg'
+        src='https://miro.medium.com/fit/c/240/240/1*1ByDBR2I219gNx76GLSJgg.jpeg'
       />
     </div>
   ))
