@@ -27,6 +27,7 @@ const size = (props) => {
         font-size: 12px;
         height: ${props.theme.fontSizes[5]}px;
         min-width: ${props.theme.fontSizes[5]}px;
+        padding: 0 ${props.theme.space[3]}px ;
       `
     case 'medium':
       return `
