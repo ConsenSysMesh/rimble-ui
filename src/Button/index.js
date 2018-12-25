@@ -27,6 +27,7 @@ const size = (props) => {
         font-size: 12px;
         height: ${props.theme.fontSizes[5]}px;
         min-width: ${props.theme.fontSizes[5]}px;
+        padding: 0 ${props.theme.space[3]}px ;
       `
     case 'medium':
       return `
@@ -42,8 +43,7 @@ const size = (props) => {
       `
     default:
       return `
-        font-size: 16px;
-        height: ${props.theme.fontSizes[6]}px;
+        font-size: 1rem;
         min-width: ${props.theme.fontSizes[6]}px;
       `
   }
@@ -65,7 +65,6 @@ const Button = styled(ProtoButton)`
     cursor: pointer;
     text-decoration: none;
     text-align: center;
-    vertical-align: middle;
     line-height: 1;
     overflow: hidden;
     white-space: nowrap;
@@ -91,33 +90,34 @@ const Button = styled(ProtoButton)`
     cursor: not-allowed;
   }
 
-  svg {
+  > svg {
     display: block;
   }
-  svg:first-child {
+  > svg:first-child {
     margin-left: -1rem;
     margin-right: .5rem;
   }
-  svg:last-child {
+  > svg:last-child {
     margin-left: .5rem;
     margin-right: -1rem;
   }
-  svg:first-child:last-child {
+  > svg:first-child:last-child {
     margin: 0;
   }
-
-  ${size}
-  ${fullWidth}
 
   ${fontWeight}
   ${boxShadow}
   ${opacity}
+
+  ${size}
+  ${fullWidth}
 `
 
 Button.defaultProps = {
   theme: theme,
   color: 'white',
   bg: 'primary',
+  height: '48px',
   m: 0,
   px: 4,
   py: 0,

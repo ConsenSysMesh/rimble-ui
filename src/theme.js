@@ -30,6 +30,12 @@ export default {
   radii: [
     '0', '4px', '8px', '16px'
   ],
+  width: [0, 16, 32, 64, 128, 256],
+  minWidths: [0, 16, 32, 64, 128, 256],
+  maxWidths: [16, 32, 64, 128, 256, 512, 768, 1024, 1536],
+  heights: [0, 16, 32, 64, 128, 256],
+  minHeights: [0, 16, 32, 64, 128, 256],
+  maxHeights: [0, 16, 32, 64, 128, 256],
   borders: [
     0,
     '1px solid'

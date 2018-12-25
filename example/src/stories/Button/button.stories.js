@@ -4,16 +4,21 @@ import { withDocs } from 'storybook-readme';
 
 import MyREADME from './README.md';
 
-import { Button } from 'rimble-ui'
-import { OutlineButton } from 'rimble-ui'
-import { TextButton } from 'rimble-ui'
-
-import { Icon } from 'rimble-ui'
+import {
+  Button,
+  OutlineButton,
+  TextButton,
+  MetaMaskButton,
+  Icon,
+  Loader
+} from 'rimble-ui'
 
 storiesOf('Button', module)
   .addDecorator(withDocs(MyREADME))
   .add('default', () => (
-    <Button>Click Me</Button>
+    <div>
+      <Button>Click Me</Button>
+    </div>
   ))
   .add('sizes', () => (
     <div>
@@ -35,10 +40,15 @@ storiesOf('Button', module)
       <br/>
       <Button icon="Check" iconpos="right"  mb="3">Click me!</Button>
       <br/>
-      <Button icon='MoreHoriz' icononly  mb="3" mr={2}/>
-      <OutlineButton icon='MoreHoriz' icononly  mb="3" mr={2}/>
+      <Button icon='MoreHoriz' icononly mb="3" mr={2}/>
+      <OutlineButton icon='MoreHoriz' icononly mb="3" mr={2}/>
       <TextButton icon='MoreHoriz' icononly  mb="3" />
-
-
+    </div>
+  ))
+  .add('Loader', () => (
+    <div>
+      <Button>
+        <Loader color='white'/>
+      </Button>
     </div>
   ))
