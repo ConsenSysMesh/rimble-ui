@@ -24,6 +24,7 @@ const StyledTooltip = styled.div`
 
     line-height: 24px;
     font-size: 14px;
+    z-index: 999999;
   }
 
   ${'' /* &:after, &:before {
@@ -62,7 +63,7 @@ const Tooltip = (props) => {
   )
 
   return (
-    <Popper options={options} renderRef={triggerElement}>
+    <Popper renderRef={triggerElement} options={options} style={{zIndex: 99999}}>
       <StyledTooltip variant={props.variant}>
         {props.message}
       </StyledTooltip>
