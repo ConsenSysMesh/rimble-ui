@@ -10,12 +10,7 @@ import { ToastMessage } from 'rimble-ui'
 
 <!-- component example here -->
 ```jsx
-<ToastMessage
-  p={5}
-  fontSize={4}
-  width={[ 1, 1, 1/2 ]}
-  color='white'
-  bg='salmon'>
+<ToastMessage>
   This is a ToastMessage
 </ToastMessage>
 ```
