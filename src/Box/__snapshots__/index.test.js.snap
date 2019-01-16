@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Box component has default styles 1`] = `
+.c0 {
+  box-sizing: border-box;
+}
+
+<div
+  className="c0"
+/>
+`;
