@@ -1,16 +1,16 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
+import 'jest-styled-components'
 
 import Box from './'
 
 describe('Box component', () => {
-  it('Has name', () => {
+  it('has name', () => {
     expect(Box.displayName).toBe('Box')
   })
 
-  it('has default styles', () => {
+  it('matches default snapshot', () => {
     const tree = renderer.create(<Box />).toJSON()
     expect(tree).toMatchSnapshot()
-    expect(tree).toHaveStyleRule('box-sizing', 'border-box')
   })
 })
