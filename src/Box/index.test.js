@@ -1,10 +1,6 @@
-import React from 'react'
-import renderer from 'react-test-renderer'
-import 'jest-styled-components'
-
 import Box from './'
 
-describe('Box component', () => {
+describe('Box component sanity', () => {
   it('has name', () => {
     expect(Box.displayName).toBe('Box')
   })

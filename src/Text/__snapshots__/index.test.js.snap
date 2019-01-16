@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text component matches default snapshot 1`] = `
+.c0 {
+  color: copyColor;
+  font-size: 16px;
+  font-size: 16px;
+  font-family: sansSerif;
+  font-weight: 2;
+  text-align: left;
+  line-height: copy;
+}
+
+.c0 {
+  box-sizing: border-box;
+}
+
+<div
+  className="c0"
+  color="copyColor"
+  fontFamily="sansSerif"
+  fontSize={2}
+  fontWeight={2}
+/>
+`;
+
+exports[`Text component sanity matches default snapshot 1`] = `
+.c0 {
+  color: copyColor;
+  font-size: 16px;
+  font-size: 16px;
+  font-family: sansSerif;
+  font-weight: 2;
+  text-align: left;
+  line-height: copy;
+}
+
+.c0 {
+  box-sizing: border-box;
+}
+
+<div
+  className="c0"
+  color="copyColor"
+  fontFamily="sansSerif"
+  fontSize={2}
+  fontWeight={2}
+/>
+`;
