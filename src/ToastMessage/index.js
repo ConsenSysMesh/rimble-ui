@@ -6,6 +6,11 @@ import Icon from '../Icon'
 import Text from '../Text'
 import TextButton from '../TextButton'
 
+import { ReactComponent as IconPositive } from './icon-positive.svg'
+import { ReactComponent as IconNegative } from './icon-negative.svg'
+import { ReactComponent as IconProcessing } from './icon-processing.svg'
+
+
 const getColors = (props) => {
   switch (props.variant) {
     case 'dark':
@@ -98,11 +103,64 @@ const ToastMessage = ({className, ...props}) => (
   </StyledToastMessage>
 );
 
+const SuccessToastMessage = ({className, ...props}) => (
+  <StyledToastMessage className={className} {...props}>
+    <Box size={'32px'} mr={2} flex={'0 0'} >
+      <IconPositive width={'32px'} height={'32px'} />
+    </Box>
+    <Box flex={'1 0'} mx={2}>
+      { props.message && <Text fontSize={1} fontWeight={3} color={'inherit'}>{props.message}</Text> }
+      { props.secondaryMessage && <Text fontSize={1} color={'#666'}>{props.secondaryMessage}</Text> }
+    </Box>
+    <TextButton flex={'0 0 auto'} p={'0'} color={'primary'}>
+      { props.actionText }
+    </TextButton>
+    <TextButton icononly size={'small'} alignSelf={'flex-start'} >
+      <Icon name={'Close'} size={'16px'} color={'grey'} flex={'0 0'} />
+    </TextButton>
+  </StyledToastMessage>
+)
+
+const FailureToastMessage = ({className, ...props}) => (
+  <StyledToastMessage className={className} {...props}>
+    <Box size={'32px'} mr={2} flex={'0 0'} >
+      <IconNegative width={'32px'} height={'32px'} />
+    </Box>
+    <Box flex={'1 0'} mx={2}>
+      { props.message && <Text fontSize={1} fontWeight={3} color={'inherit'}>{props.message}</Text> }
+      { props.secondaryMessage && <Text fontSize={1} color={'#666'}>{props.secondaryMessage}</Text> }
+    </Box>
+    <TextButton flex={'0 0 auto'} p={'0'} color={'primary'}>
+      { props.actionText }
+    </TextButton>
+    <TextButton icononly size={'small'} alignSelf={'flex-start'} >
+      <Icon name={'Close'} size={'16px'} color={'grey'} flex={'0 0'} />
+    </TextButton>
+  </StyledToastMessage>
+)
+
+const ProcessingToastMessage = ({className, ...props}) => (
+  <StyledToastMessage className={className} {...props}>
+    <Box size={'32px'} mr={2} flex={'0 0'} >
+      <IconProcessing width={'32px'} height={'32px'} />
+    </Box>
+    <Box flex={'1 0'} mx={2}>
+      { props.message && <Text fontSize={1} fontWeight={3} color={'inherit'}>{props.message}</Text> }
+      { props.secondaryMessage && <Text fontSize={1} color={'#666'}>{props.secondaryMessage}</Text> }
+    </Box>
+    <TextButton flex={'0 0 auto'} p={'0'} color={'primary'}>
+      { props.actionText }
+    </TextButton>
+    <TextButton icononly size={'small'} alignSelf={'flex-start'} >
+      <Icon name={'Close'} size={'16px'} color={'grey'} flex={'0 0'} />
+    </TextButton>
+  </StyledToastMessage>
+)
+
 class ToastContainer extends React.Component {
   constructor(props) {
     super(props);
-    // create a ref to store the textInput DOM element
-    this.closeBttn = React.createRef();
+    // this.closeBttn = React.createRef();
   }
 
   handleClose = (e) => {
@@ -120,15 +178,14 @@ class ToastContainer extends React.Component {
     return (
       <StyledToastContainer p={3}>
 
-
-        <ToastMessage
+        <ToastMessage.Processing
           onClick={this.handleClose}
+          message={'Processing Payment…'}
+          secondaryMessage={''}
+          actionText={'View Details'}
           mt={2}
-          message={'primary message'}
-          secondaryMessage={'secondary message'}
-          icon={'InfoOutline'}
-
          />
+
       </StyledToastContainer>
     )
   }
@@ -136,15 +193,22 @@ class ToastContainer extends React.Component {
 
 ToastMessage.Container = ToastContainer;
 
-ToastMessage.defaultProps = {
+ToastMessage.Success = SuccessToastMessage;
+ToastMessage.Failure = FailureToastMessage;
+ToastMessage.Processing = ProcessingToastMessage;
+
+StyledToastMessage.defaultProps = {
   display: 'flex',
   flexDirection: 'row nowrap',
   alignItems: 'center',
   borderRadius: 1,
   py: 0,
   pl: 3,
-  height: '3rem',
+  // height: '3rem',
   maxWidth: 6,
+}
+
+ToastMessage.defaultProps = {
   message:'Generic Message',
   secondaryMessage: '',
   actionText: 'Action',

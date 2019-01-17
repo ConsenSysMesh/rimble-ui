@@ -34,20 +34,19 @@ storiesOf('ToastMessage', module)
 
           <hr/>
 
-          <ToastMessage
+          <ToastMessage.Processing
             my={3}
             icon={'Sync'}
-            message={'Processing Payment'}
+            message={'Processing Payment…'}
             actionText={'View Details'}
           />
-          <ToastMessage
+          <ToastMessage.Success
             my={3}
-            icon={'Check'}
             message={'Payment Confirmed'}
             secondaryMessage={'6efd...5909'}
             actionText={'View Details'}
           />
-          <ToastMessage
+          <ToastMessage.Failure
             my={3}
             icon={'Warning'}
             message={'Payment Failed'}
