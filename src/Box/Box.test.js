@@ -6,7 +6,7 @@ describe('Box component sanity', () => {
   })
 
   it('matches default snapshot', () => {
-    const tree = renderer.create(<Box />).toJSON()
-    expect(tree).toMatchSnapshot()
+    const component = render(<Box />)
+    expect(component).toMatchSnapshot()
   })
 })

@@ -35,4 +35,6 @@ const Flex = styled(Box)`
   ${justifyContent}
 `
 
+Flex.displayName = 'Flex'
+
 export default Flex

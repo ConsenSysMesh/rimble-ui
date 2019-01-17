@@ -6,7 +6,7 @@ describe('Text component sanity', () => {
   })
 
   it('matches default snapshot', () => {
-    const tree = renderer.create(<Text />).toJSON()
-    expect(tree).toMatchSnapshot()
+    const component = render(<Text />)
+    expect(component).toMatchSnapshot()
   })
 })

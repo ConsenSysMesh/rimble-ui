@@ -64,4 +64,6 @@ Heading.h6.defaultProps = {
   my: 3
 }
 
+Heading.displayName = 'Heading'
+
 export default Heading
