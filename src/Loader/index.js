@@ -56,4 +56,6 @@ Loader.defaultProps = {
 //   : PropTypes.
 // };
 
-export default Loader;;
+Loader.displayName = 'Loader'
+
+export default Loader

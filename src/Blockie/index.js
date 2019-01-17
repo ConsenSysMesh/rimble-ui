@@ -26,4 +26,6 @@ class BlockiesIdenticon extends Component {
   }
 }
 
+BlockiesIdenticon.displayName = "BlockiesIdenticon"
+
 export default BlockiesIdenticon

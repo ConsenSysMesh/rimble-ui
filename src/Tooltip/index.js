@@ -23,4 +23,7 @@ const Tooltip = (props) => {
     <StyledContentDiv>Popper content</StyledContentDiv>
   </Popper>
 }
+
+Tooltip.displayName = 'Tooltip'
+
 export default Tooltip

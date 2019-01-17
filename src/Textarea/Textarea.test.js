@@ -2,7 +2,7 @@ import Textarea from './'
 
 describe('Textarea component sanity', () => {
   it('has name', () => {
-      expect(Textarea.displayName).toBe('Textarea')
+    expect(Textarea.displayName).toBe('Textarea')
   })
 
   it('matches default snapshot', () => {
