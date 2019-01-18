@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components'
 
 import Box from '../Box'
@@ -21,27 +21,6 @@ const getColors = (props) => {
         svg:first-child {fill: #FFF}
       `;
       break;
-    // case 'warning':
-    //   return `
-    //     color: #3F3D4B;
-    //     background-color: #FEF2E4;
-    //     // svg {fill: #FD9D28}
-    //   `;
-    //   break;
-    // case 'danger':
-    //   return`
-    //     color: #3F3D4B;
-    //     background-color: #FBEAE7;
-    //     // svg {fill: #DC2C10}
-    //   `;
-    //   break;
-    // case 'info':
-    //   return`
-    //     color: #3F3D4B;
-    //     background-color: #E3F3FA;
-    //     // svg {fill: #41AFDE}
-    //   `;
-    //   break;
     default:
       return`
         color: #000;
@@ -86,6 +65,8 @@ const StyledToastMessage = styled(Box)`
 
   ${getColors}
 `
+
+
 
 const ToastMessage = ({className, ...props}) => (
   <StyledToastMessage className={className} {...props}>
@@ -139,8 +120,8 @@ const FailureToastMessage = ({className, ...props}) => (
   </StyledToastMessage>
 )
 
-const ProcessingToastMessage = ({className, ...props}) => (
-  <StyledToastMessage className={className} {...props}>
+const ProcessingToastMessage = React.forwardRef((props, ref) => (
+  <StyledToastMessage ref={ref} {...props}>
     <Box size={'32px'} mr={2} flex={'0 0'} >
       <IconProcessing width={'32px'} height={'32px'} />
     </Box>
@@ -148,25 +129,69 @@ const ProcessingToastMessage = ({className, ...props}) => (
       { props.message && <Text fontSize={1} fontWeight={3} color={'inherit'}>{props.message}</Text> }
       { props.secondaryMessage && <Text fontSize={1} color={'#666'}>{props.secondaryMessage}</Text> }
     </Box>
-    <TextButton flex={'0 0 auto'} p={'0'} color={'primary'}>
+    <TextButton onClick={() => (console.log('Action link!'))} color={'primary'} p={'0'} flex={'0 0 auto'}>
       { props.actionText }
     </TextButton>
-    <TextButton icononly size={'small'} alignSelf={'flex-start'} >
+    <TextButton onClick={() => (console.log('Close me!'))} icononly size={'small'} alignSelf={'flex-start'} >
       <Icon name={'Close'} size={'16px'} color={'grey'} flex={'0 0'} />
     </TextButton>
   </StyledToastMessage>
-)
+));
 
-class ToastContainer extends React.Component {
+// wip
+class ProtoToastMessage extends Component {
   constructor(props) {
     super(props);
-    // this.closeBttn = React.createRef();
+    this.toastNode = React.createRef();
   }
 
   handleClose = (e) => {
     e.preventDefault();
-    e.currentTarget.remove()
-    console.log('close!', e.target);
+    console.log('close!');
+    console.log(this.toastNode.current);
+  }
+
+  handleAction = (e) => {
+    e.preventDefault();
+    console.log('action!');
+  }
+
+  render() {
+    const props = this.props;
+    return (
+      <StyledToastMessage ref={this.toastNode}>
+        <Box size={'32px'} mr={2} flex={'0 0'} >
+          <IconProcessing width={'32px'} height={'32px'} />
+        </Box>
+        <Box flex={'1 0'} mx={2}>
+          { props.message && <Text fontSize={1} fontWeight={3} color={'inherit'}>{props.message}</Text> }
+          { props.secondaryMessage && <Text fontSize={1} color={'#666'}>{props.secondaryMessage}</Text> }
+        </Box>
+        <TextButton onClick={this.handleAction} color={'primary'} p={'0'} flex={'0 0 auto'}>
+          { props.actionText }
+        </TextButton>
+        <TextButton onClick={this.handleClose} icononly size={'small'} alignSelf={'flex-start'} >
+          <Icon name={'Close'} size={'16px'} color={'grey'} flex={'0 0'} />
+        </TextButton>
+      </StyledToastMessage>
+    );
+  }
+
+}
+
+class ToastContainer extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isOpen: false
+    }
+    this.closeBttn = React.createRef();
+  }
+
+  handleClose = (e) => {
+    e.preventDefault();
+    // this.closeBttn.current.remove()
+    console.log('close!', this.closeBttn);
   }
 
   handleAction = (e) => {
@@ -178,11 +203,11 @@ class ToastContainer extends React.Component {
     return (
       <StyledToastContainer p={3}>
 
-        <ToastMessage.Processing
-          onClick={this.handleClose}
+        <ProtoToastMessage
           message={'Processing Payment…'}
           secondaryMessage={''}
           actionText={'View Details'}
+
           mt={2}
          />
 
@@ -204,7 +229,6 @@ StyledToastMessage.defaultProps = {
   borderRadius: 1,
   py: 0,
   pl: 3,
-  // height: '3rem',
   maxWidth: 6,
 }
 
