@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styled from 'styled-components'
+import styled, {keyframes} from 'styled-components'
 
 import Box from '../Box'
 import Icon from '../Icon'
@@ -30,6 +30,37 @@ const getColors = (props) => {
   }
 }
 
+const slideIn = keyframes`
+  from {
+    transform: translateY(100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+`;
+
+const animOutKeyFrames = keyframes`
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(150%);
+  }
+`
+
+const ToastSlideIn = styled.div`
+  animation-name: ${props => props.direction ? (animOutKeyFrames) : (slideIn)};
+  animation-duration: 300ms;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  ${'' /* animation-play-state: running; */}
+`
+
 const StyledToastContainer = styled('div')`
   & {
     display: block;
@@ -58,6 +89,7 @@ const StyledToastMessage = styled(Box)`
     border-radius: 4px;
 
     pointer-events: all;
+
   }
   &:hover {
 
@@ -183,9 +215,32 @@ class ToastContainer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isOpen: false
+      isOpen: true
     }
     this.closeBttn = React.createRef();
+  }
+
+  addMessage = (e) => {
+    e && e.stopPropagation();
+    console.log('added message');
+
+    this.setState((state, props) => ({
+      isOpen: true
+    }));
+  }
+
+
+  removeMessage = (e) => {
+    e && e.stopPropagation();
+
+    console.log('removed message');
+
+    this.setState((state, props) => ({
+      isOpen: false
+    }));
+
+    console.log(this.state.isOpen);
+
   }
 
   handleClose = (e) => {
@@ -203,13 +258,29 @@ class ToastContainer extends React.Component {
     return (
       <StyledToastContainer p={3}>
 
-        <ProtoToastMessage
-          message={'Processing Payment…'}
-          secondaryMessage={''}
-          actionText={'View Details'}
+        {this.state.isOpen ? (
+          <ToastSlideIn>
 
-          mt={2}
-         />
+            <ProtoToastMessage
+              message={'Processing Payment…'}
+              secondaryMessage={''}
+              actionText={'View Details'}
+              mt={2}
+            />
+
+          </ToastSlideIn>
+        ) : (
+          <ToastSlideIn direction={'out'}>
+
+            <ProtoToastMessage
+              message={'Processing Payment…'}
+              secondaryMessage={''}
+              actionText={'View Details'}
+              mt={2}
+            />
+
+          </ToastSlideIn>
+        )}
 
       </StyledToastContainer>
     )

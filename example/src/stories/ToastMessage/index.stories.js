@@ -7,7 +7,8 @@ import MyREADME from './README.md';
 import {
   Flex,
   Box,
-  ToastMessage
+  ToastMessage,
+  Button
 } from 'rimble-ui'
 
 storiesOf('ToastMessage', module)
@@ -76,7 +77,11 @@ storiesOf('ToastMessage', module)
         </Box>
       </Flex>
 
-      <ToastMessage.Container>
+      <Button mb={3} onClick={(e) => window.childComponent.addMessage(e)}>"addMessage"</Button>
+      <br/>
+      <Button onClick={(e) => window.childComponent.removeMessage()}>"removeMessage"</Button>
+
+      <ToastMessage.Container ref={(childComponent) => {window.childComponent = childComponent}}>
 
       </ToastMessage.Container>
 
