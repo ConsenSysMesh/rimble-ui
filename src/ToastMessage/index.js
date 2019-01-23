@@ -250,24 +250,29 @@ class ToastContainer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      unMount: false,
       isOpen: true,
       datetime: new Date(),
-      currentMsg: {}
+      currentMsg: {},
     }
+    this.timer = {}
   }
 
   addMessage = (msg, data) => {
     event.stopPropagation();
 
     this.setState((state, props) => ({
-      isOpen: false,
+      unMount: true
     }), () => {
       setTimeout(() => {
         this.setState((state, props) => ({
+          unMount: false,
           isOpen: true,
           datetime: Date.now(),
           currentMsg: data
-        }));
+        }), () => {
+          this.handleTimer()
+        });
       }, 900);
     });
 
@@ -281,10 +286,18 @@ class ToastContainer extends React.Component {
     e && e.stopPropagation();
 
     this.setState((state, props) => ({
-      isOpen: false
+      unMount: true,
     }));
 
     console.log('removed message');
+  }
+
+  handleTimer = () => {
+    clearTimeout(this.timer)
+
+    this.timer = setTimeout(() => {
+      this.removeMessage()
+    }, 3000)
   }
 
   handleClose = (e) => {
@@ -307,15 +320,9 @@ class ToastContainer extends React.Component {
     return (
       <StyledToastContainer p={3}>
 
-        {this.state.isOpen ? (
-          <ToastSlideIn>
-            {this.renderMessage()}
-          </ToastSlideIn>
-        ) : (
-          <ToastSlideIn direction={'out'}>
-            {this.renderMessage()}
-          </ToastSlideIn>
-        )}
+        <ToastSlideIn direction={this.state.unMount ? 'out' : null}>
+          { this.renderMessage() }
+        </ToastSlideIn>
 
       </StyledToastContainer>
     )
