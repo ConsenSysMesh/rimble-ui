@@ -4,6 +4,7 @@ import styled, {keyframes} from 'styled-components'
 import Box from '../Box'
 import Icon from '../Icon'
 import Text from '../Text'
+import Link from '../Link'
 import TextButton from '../TextButton'
 
 import { ReactComponent as IconPositive } from './icon-positive.svg'
@@ -177,6 +178,15 @@ class ProtoToastMessage extends Component {
     this.toastNode = React.createRef();
   }
 
+  // Set default props
+  static defaultProps = {
+    message: 'Message text… ',
+    secondaryMessage: '',
+    actionHref: '',
+    actionText: '',
+    variant: 'default'
+  }
+
   handleClose = (e) => {
     e.preventDefault();
     console.log('close!');
@@ -188,20 +198,43 @@ class ProtoToastMessage extends Component {
     console.log('action!');
   }
 
+  renderIcon = (variant) => {
+
+    const getIcon = (variant) => {
+      switch (variant) {
+        case 'processing':
+          return <IconProcessing width={'32px'} height={'32px'} />
+          break;
+        case 'success':
+          return <IconPositive width={'32px'} height={'32px'} />
+          break;
+        case 'failure':
+          return <IconNegative width={'32px'} height={'32px'} />
+          break;
+        default:
+          return ''
+      }
+    }
+
+    return (
+      <Box flex={'0 0'} mr={2}>
+        {getIcon(variant)}
+      </Box>
+    )
+  }
+
   render() {
     const props = this.props;
     return (
       <StyledToastMessage ref={this.toastNode}>
-        <Box size={'32px'} mr={2} flex={'0 0'} >
-          <IconProcessing width={'32px'} height={'32px'} />
-        </Box>
-        <Box flex={'1 0'} mx={2}>
+        { props.variant && this.renderIcon(props.variant) }
+        <Box flex={'1 1'} mx={2}>
           { props.message && <Text fontSize={1} fontWeight={3} color={'inherit'}>{props.message}</Text> }
           { props.secondaryMessage && <Text fontSize={1} color={'#666'}>{props.secondaryMessage}</Text> }
         </Box>
-        <TextButton onClick={this.handleAction} color={'primary'} p={'0'} flex={'0 0 auto'}>
-          { props.actionText }
-        </TextButton>
+        <Box flex={'0 0 auto'} mr={2}>
+          { props.actionText && props.actionHref && <Link href={props.actionHref} target={'_blank'}>{props.actionText}</Link>}
+        </Box>
         <TextButton onClick={this.handleClose} icononly size={'small'} alignSelf={'flex-start'} >
           <Icon name={'Close'} size={'16px'} color={'grey'} flex={'0 0'} />
         </TextButton>
@@ -215,37 +248,47 @@ class ToastContainer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isOpen: true
+      isOpen: true,
+      datetime: new Date(),
+      currentMsg: {}
     }
-    this.closeBttn = React.createRef();
   }
 
-  addMessage = (e) => {
-    e && e.stopPropagation();
-    console.log('added message');
+  addMessage = (msg, data) => {
+    event.stopPropagation();
+
+    // let protoMsg = {
+    //   message: '[Processing…]',
+    //   secondaryMessage: '[date]',
+    //   actionHref: '',
+    //   actionText: '',
+    //   type: '',
+    // }
 
     this.setState((state, props) => ({
-      isOpen: true
+      isOpen: true,
+      datetime: Date.now(),
+      currentMsg: data
     }));
+
+    console.log('added message');
+    console.log(msg, data);
+    console.log(this.state.datetime);
   }
 
 
   removeMessage = (e) => {
     e && e.stopPropagation();
 
-    console.log('removed message');
-
     this.setState((state, props) => ({
       isOpen: false
     }));
 
-    console.log(this.state.isOpen);
-
+    console.log('removed message');
   }
 
   handleClose = (e) => {
     e.preventDefault();
-    // this.closeBttn.current.remove()
     console.log('close!', this.closeBttn);
   }
 
@@ -254,31 +297,23 @@ class ToastContainer extends React.Component {
     console.log('action!');
   }
 
+  renderMessage = (data) => {
+    return (
+      <ProtoToastMessage {...data}/>
+    );
+  }
+
   render() {
     return (
       <StyledToastContainer p={3}>
 
         {this.state.isOpen ? (
           <ToastSlideIn>
-
-            <ProtoToastMessage
-              message={'Processing Payment…'}
-              secondaryMessage={''}
-              actionText={'View Details'}
-              mt={2}
-            />
-
+            {this.renderMessage(this.state.currentMsg)}
           </ToastSlideIn>
         ) : (
           <ToastSlideIn direction={'out'}>
-
-            <ProtoToastMessage
-              message={'Processing Payment…'}
-              secondaryMessage={''}
-              actionText={'View Details'}
-              mt={2}
-            />
-
+            {this.renderMessage()}
           </ToastSlideIn>
         )}
 

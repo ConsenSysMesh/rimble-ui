@@ -77,11 +77,61 @@ storiesOf('ToastMessage', module)
         </Box>
       </Flex>
 
-      <Button mb={3} onClick={(e) => window.childComponent.addMessage(e)}>"addMessage"</Button>
+      <Button
+        mb={3}
+        onClick={(e) => window.toastProvider.addMessage('Your notification here', {
+            message: '[Processing… ]',
+            secondaryMessage: (Date.now()),
+            actionHref: 'https://etherscan.io/tx/0xcbc921418c360b03b96585ae16f906cbd48c8d6c2cc7b82c6db430390a9fcfed',
+            actionText: 'View on Etherscan',
+            variant: 'processing',
+          })
+        }
+      >
+        "addMessage.processing"
+      </Button>
       <br/>
-      <Button onClick={(e) => window.childComponent.removeMessage()}>"removeMessage"</Button>
+      <Button
+        mb={3}
+        onClick={(e) => window.toastProvider.addMessage('Your notification here', {
+            message: '[Complete… ]',
+            secondaryMessage: (Date.now()),
+            actionHref: 'https://etherscan.io/tx/0xcbc921418c360b03b96585ae16f906cbd48c8d6c2cc7b82c6db430390a9fcfed',
+            actionText: 'View on Etherscan',
+            variant: 'success',
+          })
+        }
+      >
+        "addMessage.success"
+      </Button>
+      <br/>
+      <Button
+        mb={3}
+        onClick={(e) => window.toastProvider.addMessage('Your notification here', {
+            message: '[Failed… ]',
+            secondaryMessage: (Date.now()),
+            actionHref: 'https://etherscan.io/tx/0xcbc921418c360b03b96585ae16f906cbd48c8d6c2cc7b82c6db430390a9fcfed',
+            actionText: 'View on Etherscan',
+            variant: 'failure',
+          })
+        }
+      >
+        "addMessage.failure"
+      </Button>
+      <br/>
+      <Button
+        mb={3}
+        onClick={(e) => window.toastProvider.addMessage('', {
+          message: '[Your message here… ]'
+        })
+        }
+      >
+        "addMessage.default"
+      </Button>
+      <br/>
+      <Button onClick={(e) => window.toastProvider.removeMessage()}>"removeMessage"</Button>
 
-      <ToastMessage.Container ref={(childComponent) => {window.childComponent = childComponent}}>
+      <ToastMessage.Container ref={(toastProvider) => {window.toastProvider = toastProvider}}>
 
       </ToastMessage.Container>
 
