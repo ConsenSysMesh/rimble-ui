@@ -43,11 +43,13 @@ const slideIn = keyframes`
 
 const animOutKeyFrames = keyframes`
   from {
+    opacity: 1;
     transform: translateX(0);
   }
 
   to {
-    transform: translateX(150%);
+    opacity: 0;
+    transform: translateX(120%);
   }
 `
 
@@ -257,19 +259,17 @@ class ToastContainer extends React.Component {
   addMessage = (msg, data) => {
     event.stopPropagation();
 
-    // let protoMsg = {
-    //   message: '[Processing…]',
-    //   secondaryMessage: '[date]',
-    //   actionHref: '',
-    //   actionText: '',
-    //   type: '',
-    // }
-
     this.setState((state, props) => ({
-      isOpen: true,
-      datetime: Date.now(),
-      currentMsg: data
-    }));
+      isOpen: false,
+    }), () => {
+      setTimeout(() => {
+        this.setState((state, props) => ({
+          isOpen: true,
+          datetime: Date.now(),
+          currentMsg: data
+        }));
+      }, 900);
+    });
 
     console.log('added message');
     console.log(msg, data);
@@ -297,9 +297,9 @@ class ToastContainer extends React.Component {
     console.log('action!');
   }
 
-  renderMessage = (data) => {
+  renderMessage = () => {
     return (
-      <ProtoToastMessage {...data}/>
+      <ProtoToastMessage {...this.state.currentMsg}/>
     );
   }
 
@@ -309,7 +309,7 @@ class ToastContainer extends React.Component {
 
         {this.state.isOpen ? (
           <ToastSlideIn>
-            {this.renderMessage(this.state.currentMsg)}
+            {this.renderMessage()}
           </ToastSlideIn>
         ) : (
           <ToastSlideIn direction={'out'}>
