@@ -31,7 +31,7 @@ const getColors = (props) => {
   }
 }
 
-const slideIn = keyframes`
+const animInKeyframes = keyframes`
   from {
     transform: translateY(100%);
   }
@@ -41,7 +41,7 @@ const slideIn = keyframes`
   }
 `;
 
-const animOutKeyFrames = keyframes`
+const animOutKeyframes = keyframes`
   from {
     opacity: 1;
     transform: translateX(0);
@@ -53,8 +53,8 @@ const animOutKeyFrames = keyframes`
   }
 `
 
-const ToastSlideIn = styled.div`
-  animation-name: ${props => props.direction ? (animOutKeyFrames) : (slideIn)};
+const AnimationWrapper = styled.div`
+  animation-name: ${props => props.direction ? (animOutKeyframes) : (animInKeyframes)};
   animation-duration: 300ms;
   animation-timing-function: ease;
   animation-delay: 0s;
@@ -73,8 +73,8 @@ const StyledToastContainer = styled('div')`
     left: auto;
     right: 0;
     width: 480px;
-    pointer-events: none;
     padding: 1rem;
+    pointer-events: none;
   }
 `
 
@@ -92,7 +92,6 @@ const StyledToastMessage = styled(Box)`
     border-radius: 4px;
 
     pointer-events: all;
-
   }
   &:hover {
 
@@ -228,7 +227,7 @@ class ProtoToastMessage extends Component {
   render() {
     const props = this.props;
     return (
-      <StyledToastMessage ref={this.toastNode}>
+      <StyledToastMessage ref={this.toastNode} {...props}>
         { props.variant && this.renderIcon(props.variant) }
         <Box flex={'1 1'} mx={2}>
           { props.message && <Text fontSize={1} fontWeight={3} color={'inherit'}>{props.message}</Text> }
@@ -259,8 +258,6 @@ class ToastContainer extends React.Component {
   }
 
   addMessage = (msg, data) => {
-    event.stopPropagation();
-
     this.setState((state, props) => ({
       unMount: true
     }), () => {
@@ -271,7 +268,7 @@ class ToastContainer extends React.Component {
           datetime: Date.now(),
           currentMsg: data
         }), () => {
-          this.handleTimer()
+          this.startTimer()
         });
       }, 900);
     });
@@ -282,9 +279,7 @@ class ToastContainer extends React.Component {
   }
 
 
-  removeMessage = (e) => {
-    e && e.stopPropagation();
-
+  removeMessage = () => {
     this.setState((state, props) => ({
       unMount: true,
     }));
@@ -292,27 +287,40 @@ class ToastContainer extends React.Component {
     console.log('removed message');
   }
 
-  handleTimer = () => {
+  startTimer = () => {
     clearTimeout(this.timer)
-
     this.timer = setTimeout(() => {
       this.removeMessage()
     }, 3000)
   }
 
   handleClose = (e) => {
-    e.preventDefault();
-    console.log('close!', this.closeBttn);
+    e.preventDefault()
+    console.log('close!', this.closeBttn)
   }
 
   handleAction = (e) => {
-    e.preventDefault();
-    console.log('action!');
+    e.preventDefault()
+    console.log('action!')
+  }
+
+  handleEnter = (e) => {
+    e.preventDefault()
+    clearTimeout(this.timer)
+  }
+
+  handleLeave = (e) => {
+    e.preventDefault()
+    this.startTimer()
   }
 
   renderMessage = () => {
     return (
-      <ProtoToastMessage {...this.state.currentMsg}/>
+      <ProtoToastMessage
+        {...this.state.currentMsg}
+        onMouseEnter={this.handleEnter}
+        onMouseLeave={this.handleLeave}
+      />
     );
   }
 
@@ -320,9 +328,9 @@ class ToastContainer extends React.Component {
     return (
       <StyledToastContainer p={3}>
 
-        <ToastSlideIn direction={this.state.unMount ? 'out' : null}>
+        <AnimationWrapper direction={this.state.unMount ? 'out' : null}>
           { this.renderMessage() }
-        </ToastSlideIn>
+        </AnimationWrapper>
 
       </StyledToastContainer>
     )
