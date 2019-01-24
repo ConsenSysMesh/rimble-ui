@@ -241,6 +241,18 @@ class ToastContainer extends React.Component {
     this.setState((state, props) => ({
       isReady: true
     }))
+
+    window.onfocus = () => {
+      this.startTimer()
+    }
+    window.onblur = () => {
+      this.clearTimer()
+    }
+  }
+
+  componentWillUnmount() {
+    window.onfocus = null
+    window.onblur = null
   }
 
   addMessage = (data) => {
@@ -259,9 +271,9 @@ class ToastContainer extends React.Component {
       }, 900);
     });
 
-    console.log('added message');
+    console.log('added toast message');
     console.log(data);
-    console.log(this.state.datetime);
+    // console.log(this.state.datetime);
   }
 
 
@@ -269,15 +281,18 @@ class ToastContainer extends React.Component {
     this.setState((state, props) => ({
       isOpen: false
     }));
-
-    console.log('removed message');
+    console.log('removed toast message');
   }
 
   startTimer = () => {
-    clearTimeout(this.timer)
+    this.clearTimer()
     this.timer = setTimeout(() => {
       this.removeMessage()
     }, 3000)
+  }
+
+  clearTimer = () => {
+    clearTimeout(this.timer)
   }
 
   handleClose = (e) => {
@@ -292,7 +307,7 @@ class ToastContainer extends React.Component {
 
   handleEnter = (e) => {
     e.preventDefault()
-    clearTimeout(this.timer)
+    this.clearTimer()
   }
 
   handleLeave = (e) => {
