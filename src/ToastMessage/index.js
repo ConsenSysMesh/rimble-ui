@@ -249,12 +249,19 @@ class ToastContainer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      unMount: false,
-      isOpen: true,
+      isReady: false,
+      unMount: true,
+      isOpen: false,
       datetime: new Date(),
       currentMsg: {},
     }
     this.timer = {}
+  }
+
+  componentDidMount() {
+    this.setState((state, props) => ({
+      isReady: true
+    }))
   }
 
   addMessage = (msg, data) => {
@@ -281,7 +288,7 @@ class ToastContainer extends React.Component {
 
   removeMessage = () => {
     this.setState((state, props) => ({
-      unMount: true,
+      isOpen: false
     }));
 
     console.log('removed message');
@@ -325,13 +332,16 @@ class ToastContainer extends React.Component {
   }
 
   render() {
+    if (!this.state.isReady) {
+      return null
+    }
     return (
       <StyledToastContainer p={3}>
-
-        <AnimationWrapper direction={this.state.unMount ? 'out' : null}>
-          { this.renderMessage() }
-        </AnimationWrapper>
-
+        {!this.state.unMount &&
+          <AnimationWrapper direction={this.state.isOpen ? null : 'out' }>
+            { this.renderMessage() }
+          </AnimationWrapper>
+        }
       </StyledToastContainer>
     )
   }
