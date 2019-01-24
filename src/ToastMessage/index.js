@@ -115,6 +115,11 @@ const StyledToastMessage = styled(Box)`
     ${'' /* border-top: 1px solid #D6D6D6; */}
     ${'' /* border-radius: 4px; */}
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    transition: all .15s ease;
+  }
+
+  &:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
   }
 
   > .iconBox {
@@ -159,61 +164,6 @@ const ToastMessage = ({className, ...props}) => (
   </StyledToastMessage>
 );
 
-const SuccessToastMessage = ({className, ...props}) => (
-  <StyledToastMessage className={className} {...props}>
-    <Box size={'32px'} mr={2} flex={'0 0'} >
-      <IconPositive width={'32px'} height={'32px'} />
-    </Box>
-    <Box flex={'1 0'} mx={2}>
-      { props.message && <Text fontSize={1} fontWeight={3} color={'inherit'}>{props.message}</Text> }
-      { props.secondaryMessage && <Text fontSize={1} color={'#666'}>{props.secondaryMessage}</Text> }
-    </Box>
-    <TextButton flex={'0 0 auto'} p={'0'} color={'primary'}>
-      { props.actionText }
-    </TextButton>
-    <TextButton icononly size={'small'} alignSelf={'flex-start'} >
-      <Icon name={'Close'} size={'16px'} color={'grey'} flex={'0 0'} />
-    </TextButton>
-  </StyledToastMessage>
-)
-
-const FailureToastMessage = ({className, ...props}) => (
-  <StyledToastMessage className={className} {...props}>
-    <Box size={'32px'} mr={2} flex={'0 0'} >
-      <IconNegative width={'32px'} height={'32px'} />
-    </Box>
-    <Box flex={'1 0'} mx={2}>
-      { props.message && <Text fontSize={1} fontWeight={3} color={'inherit'}>{props.message}</Text> }
-      { props.secondaryMessage && <Text fontSize={1} color={'#666'}>{props.secondaryMessage}</Text> }
-    </Box>
-    <TextButton flex={'0 0 auto'} p={'0'} color={'primary'}>
-      { props.actionText }
-    </TextButton>
-    <TextButton icononly size={'small'} alignSelf={'flex-start'} >
-      <Icon name={'Close'} size={'16px'} color={'grey'} flex={'0 0'} />
-    </TextButton>
-  </StyledToastMessage>
-)
-
-const ProcessingToastMessage = React.forwardRef((props, ref) => (
-  <StyledToastMessage ref={ref} {...props}>
-    <Box size={'32px'} mr={2} flex={'0 0'} >
-      <IconProcessing width={'32px'} height={'32px'} />
-    </Box>
-    <Box flex={'1 0'} mx={2}>
-      { props.message && <Text fontSize={1} fontWeight={3} color={'inherit'}>{props.message}</Text> }
-      { props.secondaryMessage && <Text fontSize={1} color={'#666'}>{props.secondaryMessage}</Text> }
-    </Box>
-    <TextButton onClick={() => (console.log('Action link!'))} color={'primary'} p={'0'} flex={'0 0 auto'}>
-      { props.actionText }
-    </TextButton>
-    <TextButton onClick={() => (console.log('Close me!'))} icononly size={'small'} alignSelf={'flex-start'} >
-      <Icon name={'Close'} size={'16px'} color={'grey'} flex={'0 0'} />
-    </TextButton>
-  </StyledToastMessage>
-));
-
-// wip
 class ProtoToastMessage extends Component {
   constructor(props) {
     super(props);
@@ -235,41 +185,29 @@ class ProtoToastMessage extends Component {
     console.log(this.toastNode.current);
   }
 
-  handleAction = (e) => {
-    e.preventDefault();
-    console.log('action!');
-  }
-
   renderIcon = (variant) => {
-
-    const getIcon = (variant) => {
-      switch (variant) {
-        case 'processing':
-          return <IconProcessing width={'32px'} height={'32px'} />
-          break;
-        case 'success':
-          return <IconPositive width={'32px'} height={'32px'} />
-          break;
-        case 'failure':
-          return <IconNegative width={'32px'} height={'32px'} />
-          break;
-        default:
-          return ''
-      }
+    switch (variant) {
+      case 'processing':
+        return <IconProcessing width={'32px'} height={'32px'} />
+        break;
+      case 'success':
+        return <IconPositive width={'32px'} height={'32px'} />
+        break;
+      case 'failure':
+        return <IconNegative width={'32px'} height={'32px'} />
+        break;
+      default:
+        return ''
     }
-
-    return (
-      <Box className={'iconBox'} flex={'0 0'} mr={2}>
-        { getIcon(variant) }
-      </Box>
-    )
   }
 
   render() {
     const props = this.props;
     return (
       <StyledToastMessage ref={this.toastNode} {...props}>
-        { props.variant && this.renderIcon(props.variant) }
+        <Box className={'iconBox'} flex={'0 0'} mr={2}>
+          { props.variant && this.renderIcon(props.variant) }
+        </Box>
         <Box flex={'1 0'} mx={2}>
           { props.message && <Text fontSize={1} fontWeight={3} color={'inherit'}>{props.message}</Text> }
           { props.secondaryMessage && <Text fontSize={1} color={'#666'}>{props.secondaryMessage}</Text> }
@@ -305,7 +243,7 @@ class ToastContainer extends React.Component {
     }))
   }
 
-  addMessage = (msg, data) => {
+  addMessage = (data) => {
     this.setState((state, props) => ({
       unMount: true
     }), () => {
@@ -322,7 +260,7 @@ class ToastContainer extends React.Component {
     });
 
     console.log('added message');
-    console.log(msg, data);
+    console.log(data);
     console.log(this.state.datetime);
   }
 
@@ -388,11 +326,19 @@ class ToastContainer extends React.Component {
   }
 };
 
-ToastMessage.Container = ToastContainer;
+ToastMessage.Success = (props) => (
+  <ProtoToastMessage {...props} variant={'success'} />
+)
 
-ToastMessage.Success = SuccessToastMessage;
-ToastMessage.Failure = FailureToastMessage;
-ToastMessage.Processing = ProcessingToastMessage;
+ToastMessage.Failure = (props) => (
+  <ProtoToastMessage {...props} variant={'failure'} />
+)
+
+ToastMessage.Processing = (props) => (
+  <ProtoToastMessage {...props} variant={'processing'} />
+)
+
+ToastMessage.Container = ToastContainer;
 
 StyledToastMessage.defaultProps = {
   display: 'flex',

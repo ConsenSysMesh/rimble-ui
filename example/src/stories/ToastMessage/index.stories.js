@@ -37,22 +37,23 @@ storiesOf('ToastMessage', module)
 
           <ToastMessage.Processing
             my={3}
-            icon={'Sync'}
             message={'Processing Payment…'}
             actionText={'View Details'}
+            actionHref={'#!'}
           />
           <ToastMessage.Success
             my={3}
             message={'Payment Confirmed'}
             secondaryMessage={'6efd...5909'}
             actionText={'View Details'}
+            actionHref={'#!'}
           />
           <ToastMessage.Failure
             my={3}
-            icon={'Warning'}
             message={'Payment Failed'}
             secondaryMessage={'6efd...5909'}
             actionText={'View Details'}
+            actionHref={'#!'}
           />
 
         </Box>
@@ -79,7 +80,7 @@ storiesOf('ToastMessage', module)
 
       <Button
         mb={3}
-        onClick={(e) => window.toastProvider.addMessage('Your notification here', {
+        onClick={(e) => window.toastProvider.addMessage({
             message: '[Processing… ]',
             secondaryMessage: (Date.now()),
             actionHref: 'https://etherscan.io/tx/0xcbc921418c360b03b96585ae16f906cbd48c8d6c2cc7b82c6db430390a9fcfed',
@@ -93,7 +94,7 @@ storiesOf('ToastMessage', module)
       <br/>
       <Button
         mb={3}
-        onClick={(e) => window.toastProvider.addMessage('Your notification here', {
+        onClick={(e) => window.toastProvider.addMessage({
             message: '[Complete… ]',
             secondaryMessage: (Date.now()),
             actionHref: 'https://etherscan.io/tx/0xcbc921418c360b03b96585ae16f906cbd48c8d6c2cc7b82c6db430390a9fcfed',
@@ -107,7 +108,7 @@ storiesOf('ToastMessage', module)
       <br/>
       <Button
         mb={3}
-        onClick={(e) => window.toastProvider.addMessage('Your notification here', {
+        onClick={(e) => window.toastProvider.addMessage({
             message: '[Failed… ]',
             secondaryMessage: (Date.now()),
             actionHref: 'https://etherscan.io/tx/0xcbc921418c360b03b96585ae16f906cbd48c8d6c2cc7b82c6db430390a9fcfed',
@@ -121,7 +122,7 @@ storiesOf('ToastMessage', module)
       <br/>
       <Button
         mb={3}
-        onClick={(e) => window.toastProvider.addMessage('', {
+        onClick={(e) => window.toastProvider.addMessage({
           message: '[Your message here… ]'
         })
         }
@@ -129,7 +130,7 @@ storiesOf('ToastMessage', module)
         "addMessage.default"
       </Button>
       <br/>
-      <Button onClick={(e) => window.toastProvider.removeMessage()}>"removeMessage"</Button>
+      <Button onClick={() => window.toastProvider.removeMessage()}>"removeMessage"</Button>
 
       <ToastMessage.Container ref={(toastProvider) => {window.toastProvider = toastProvider}}>
 
