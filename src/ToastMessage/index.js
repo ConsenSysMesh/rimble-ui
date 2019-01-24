@@ -285,6 +285,7 @@ class ToastContainer extends React.Component {
   }
 
   startTimer = () => {
+    if (!document.hasFocus()) { return null }
     this.clearTimer()
     this.timer = setTimeout(() => {
       this.removeMessage()
