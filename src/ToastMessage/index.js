@@ -153,9 +153,9 @@ const ToastMessage = ({className, ...props}) => (
       { props.message && <Text fontSize={1} fontWeight={3} color={'inherit'}>{props.message}</Text> }
       { props.secondaryMessage && <Text fontSize={1} color={'#666'}>{props.secondaryMessage}</Text> }
     </Box>
-    <TextButton flex={'0 0 auto'} p={'0'} color={'primary'}>
-      { props.actionText }
-    </TextButton>
+    <Box flex={'0 1 auto'} mr={2}>
+      { props.actionText && props.actionHref && <Link href={props.actionHref} target={'_blank'}>{props.actionText}</Link>}
+    </Box>
     <TextButton icononly size={'small'} alignSelf={'flex-start'} >
       <Icon name={'Close'} size={'16px'} color={'grey'} flex={'0 0'} />
     </TextButton>

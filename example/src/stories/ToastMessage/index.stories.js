@@ -26,11 +26,15 @@ storiesOf('ToastMessage', module)
           <ToastMessage
             icon={'InfoOutline'}
             my={3}
+            actionText={'Action'}
+            actionHref={'#!'}
           />
           <ToastMessage
             secondaryMessage={'Lorem ipsum dolor sit.'}
             icon={'InfoOutline'}
             my={3}
+            actionText={'Action'}
+            actionHref={'#!'}
           />
 
           <hr/>
@@ -68,12 +72,16 @@ storiesOf('ToastMessage', module)
             icon={'InfoOutline'}
             variant={'dark'}
             my={3}
+            actionText={'Action'}
+            actionHref={'#!'}
           />
           <ToastMessage
             secondaryMessage={'Lorem ipsum dolor sit.'}
             icon={'InfoOutline'}
             variant={'dark'}
             my={3}
+            actionText={'Action'}
+            actionHref={'#!'}
           />
         </Box>
       </Flex>
