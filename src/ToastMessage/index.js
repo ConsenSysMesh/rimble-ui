@@ -146,8 +146,6 @@ const StyledToastMessage = styled(Box)`
   ${getColors}
 `
 
-
-
 const ToastMessage = ({className, ...props}) => (
   <StyledToastMessage className={className} {...props}>
     { props.icon && <Icon name={props.icon} color={'primary'} size={'32px'} mr={2} flex={'0 0'} /> }
@@ -299,11 +297,6 @@ class ToastContainer extends React.Component {
   handleClose = (e) => {
     e.preventDefault()
     console.log('close!', this.closeBttn)
-  }
-
-  handleAction = (e) => {
-    e.preventDefault()
-    console.log('action!')
   }
 
   handleEnter = (e) => {
