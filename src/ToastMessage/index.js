@@ -80,7 +80,7 @@ const AnimationWrapper = styled.div`
   }
 `
 
-const StyledToastContainer = styled('div')`
+const StyledToastContainer = styled.div`
   & {
     display: block;
     position: fixed;
