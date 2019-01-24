@@ -11,7 +11,6 @@ import { ReactComponent as IconPositive } from './icon-positive.svg'
 import { ReactComponent as IconNegative } from './icon-negative.svg'
 import { ReactComponent as IconProcessing } from './icon-processing.svg'
 
-
 const getColors = (props) => {
   switch (props.variant) {
     case 'dark':
@@ -39,9 +38,21 @@ const animInKeyframes = keyframes`
   to {
     transform: translateY(0);
   }
-`;
+`
 
 const animOutKeyframes = keyframes`
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(120%);
+  }
+`
+
+const animOutKeyframesDesktop = keyframes`
   from {
     opacity: 1;
     transform: translateX(0);
@@ -54,14 +65,19 @@ const animOutKeyframes = keyframes`
 `
 
 const AnimationWrapper = styled.div`
-  animation-name: ${props => props.direction ? (animOutKeyframes) : (animInKeyframes)};
-  animation-duration: 300ms;
-  animation-timing-function: ease;
-  animation-delay: 0s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
-  ${'' /* animation-play-state: running; */}
+  & {
+    animation-name: ${props => props.direction ? (animOutKeyframes) : (animInKeyframes)};
+    animation-duration: 300ms;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+  }
+  @media screen and (min-width: 420px) {
+    animation-name: ${props => props.direction ? (animOutKeyframesDesktop) : (animInKeyframes)};
+  }
 `
 
 const StyledToastContainer = styled('div')`
@@ -72,29 +88,54 @@ const StyledToastContainer = styled('div')`
     bottom: 0;
     left: auto;
     right: 0;
-    width: 480px;
-    padding: 1rem;
+    width: 100%;
+    max-width: 100%;
     pointer-events: none;
+  }
+
+  @media screen and (min-width: 420px) {
+    width: 420px;
+    padding: 1rem;
+  }
+
+  > div {
+    width: 100%;
   }
 `
 
 const StyledToastMessage = styled(Box)`
   & {
+    pointer-events: all;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     user-select: none;
     height: 80px;
-
-    ${'' /* background: #FFFFFF; */}
-    border: 1px solid #D6D6D6;
+    padding: 0 1rem;
+    ${'' /* border-top: 1px solid #D6D6D6; */}
+    ${'' /* border-radius: 4px; */}
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-
-    pointer-events: all;
   }
-  &:hover {
 
+  > .iconBox {
+    display: none;
+  }
+  > .closeBttn {
+    display: none;
+  }
+
+  @media screen and (min-width: 420px) {
+    & {
+      padding: 0 0 0 1rem;
+      border: 1px solid #D6D6D6;
+      border-radius: 4px;
+    }
+    > .iconBox {
+      display: block;
+    }
+    > .closeBttn {
+      display: flex;
+    }
   }
 
   ${getColors}
@@ -218,8 +259,8 @@ class ProtoToastMessage extends Component {
     }
 
     return (
-      <Box flex={'0 0'} mr={2}>
-        {getIcon(variant)}
+      <Box className={'iconBox'} flex={'0 0'} mr={2}>
+        { getIcon(variant) }
       </Box>
     )
   }
@@ -229,14 +270,14 @@ class ProtoToastMessage extends Component {
     return (
       <StyledToastMessage ref={this.toastNode} {...props}>
         { props.variant && this.renderIcon(props.variant) }
-        <Box flex={'1 1'} mx={2}>
+        <Box flex={'1 0'} mx={2}>
           { props.message && <Text fontSize={1} fontWeight={3} color={'inherit'}>{props.message}</Text> }
           { props.secondaryMessage && <Text fontSize={1} color={'#666'}>{props.secondaryMessage}</Text> }
         </Box>
-        <Box flex={'0 0 auto'} mr={2}>
+        <Box flex={'0 1 auto'} mr={2}>
           { props.actionText && props.actionHref && <Link href={props.actionHref} target={'_blank'}>{props.actionText}</Link>}
         </Box>
-        <TextButton onClick={this.handleClose} icononly size={'small'} alignSelf={'flex-start'} >
+        <TextButton className={'closeBttn'} onClick={this.handleClose} icononly size={'small'} alignSelf={'flex-start'} >
           <Icon name={'Close'} size={'16px'} color={'grey'} flex={'0 0'} />
         </TextButton>
       </StyledToastMessage>
@@ -336,7 +377,7 @@ class ToastContainer extends React.Component {
       return null
     }
     return (
-      <StyledToastContainer p={3}>
+      <StyledToastContainer>
         {!this.state.unMount &&
           <AnimationWrapper direction={this.state.isOpen ? null : 'out' }>
             { this.renderMessage() }
@@ -357,10 +398,7 @@ StyledToastMessage.defaultProps = {
   display: 'flex',
   flexDirection: 'row nowrap',
   alignItems: 'center',
-  borderRadius: 1,
   py: 0,
-  pl: 3,
-  // maxWidth: 6,
 }
 
 ToastMessage.defaultProps = {
