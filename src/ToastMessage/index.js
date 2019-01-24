@@ -350,7 +350,7 @@ StyledToastMessage.defaultProps = {
   borderRadius: 1,
   py: 0,
   pl: 3,
-  maxWidth: 6,
+  // maxWidth: 6,
 }
 
 ToastMessage.defaultProps = {
