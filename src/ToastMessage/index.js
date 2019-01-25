@@ -276,9 +276,8 @@ class ToastContainer extends React.Component {
     super(props);
     this.state = {
       isReady: false,
-      unMount: true,
       isOpen: false,
-      datetime: new Date(),
+      unMount: true,
       currentMsg: {},
     }
     this.timer = {}
@@ -303,32 +302,31 @@ class ToastContainer extends React.Component {
   }
 
   addMessage = (data) => {
-    this.setState((state, props) => ({
-      unMount: true
+    this.setState(() => ({
+      isOpen: false,
     }), () => {
       setTimeout(() => {
-        this.setState((state, props) => ({
-          unMount: false,
+        this.setState(() => ({
           isOpen: true,
-          datetime: Date.now(),
-          currentMsg: data
+          unMount: false,
+          currentMsg: data,
         }), () => {
           this.startTimer()
         });
       }, 900);
     });
-
     console.log('added toast message');
     console.log(data);
-    // console.log(this.state.datetime);
   }
 
 
   removeMessage = () => {
-    this.setState((state, props) => ({
-      isOpen: false
-    }));
-    console.log('removed toast message');
+    if (this.state.isOpen) {
+      this.setState((state, props) => ({
+        isOpen: false
+      }));
+      console.log('removed toast message');
+    }
   }
 
   startTimer = () => {
