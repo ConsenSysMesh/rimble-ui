@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import styled, {keyframes} from 'styled-components'
+import styled, { keyframes } from 'styled-components'
+import { timingFunctions } from 'polished'
 
 import Box from '../Box'
 import Icon from '../Icon'
@@ -114,9 +115,9 @@ const animOutKeyframesDesktop = keyframes`
 
 const AnimationWrapper = styled.div`
   & {
-    animation-name: ${props => props.direction ? (animOutKeyframes) : (animInKeyframes)};
-    animation-duration: 300ms;
-    animation-timing-function: ease;
+    animation-name: ${ props => props.direction ? animOutKeyframes : animInKeyframes };
+    animation-duration: ${ props => props.direction ? '500ms' : '300ms' };
+    animation-timing-function: ${ props => props.direction ? timingFunctions('easeOutSine') : 'ease' };
     animation-delay: 0s;
     animation-iteration-count: 1;
     animation-direction: normal;
