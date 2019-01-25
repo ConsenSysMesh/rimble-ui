@@ -394,7 +394,7 @@ ToastMessage.Processing = (props) => (
   <ProtoToastMessage {...props} variant={'processing'} />
 )
 
-ToastMessage.Container = ToastContainer;
+ToastMessage.Provider = ToastContainer;
 
 StyledToastMessage.defaultProps = {
   display: 'flex',
