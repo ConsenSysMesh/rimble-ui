@@ -217,7 +217,8 @@ class ProtoToastMessage extends Component {
     this.toastNode = React.createRef();
   }
 
-  // Set default props
+  static displayName = 'Proto Toast Message'
+
   static defaultProps = {
     message: 'Message text… ',
     secondaryMessage: '',
@@ -272,7 +273,7 @@ class ProtoToastMessage extends Component {
 
 }
 
-class ToastContainer extends React.Component {
+class ToastProvider extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -283,6 +284,8 @@ class ToastContainer extends React.Component {
     }
     this.timer = {}
   }
+
+  static displayName = 'Toast Message Provider'
 
   static defaultProps = {
     delay: 3000
@@ -398,7 +401,7 @@ ToastMessage.Processing = (props) => (
   <ProtoToastMessage {...props} variant={'processing'} />
 )
 
-ToastMessage.Provider = ToastContainer;
+ToastMessage.Provider = ToastProvider;
 
 StyledToastMessage.defaultProps = {
   display: 'flex',
