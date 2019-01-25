@@ -11,6 +11,54 @@ import { ReactComponent as IconPositive } from './icon-positive.svg'
 import { ReactComponent as IconNegative } from './icon-negative.svg'
 import { ReactComponent as IconProcessing } from './icon-processing.svg'
 
+
+const flicker = keyframes`
+  0% {
+    opacity: 0.1;
+    transform: translateY(-1px);
+  }
+  20% {
+    opacity: 0.6;
+  }
+  40% {
+    opacity: 0.9;
+    transform: translateY(1px);
+  }
+  60% {
+    opacity: 0.5;
+    transform: translateY(2px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(3px);
+  }
+`
+
+const IconProcessingAnim = styled(IconProcessing).attrs({
+  seed: Math.floor(1000 + Math.random() * 7000),
+  seeda: Math.floor((Date.now().toString().substring(2,6)) + Math.random() * 9000).toString().substring(0,4),
+  seedb: Math.floor((Date.now().toString().substring(0,4)) + Math.random() * 4500).toString().substring(0,4)
+})`
+  > * {
+    animation-name: ${flicker};
+    animation-duration: ${props => props.seed + 'ms'};
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+  }
+  > *:nth-child(4n+0) {
+    animation-duration: ${props => props.seeda + 'ms'};
+    animation-delay: ${props => props.seeda + 'ms'};
+  }
+  > *:nth-child(2n+0) {
+    animation-duration: ${props => props.seedb + 'ms'};
+  }
+  > *:nth-child(3n+0) {
+    animation-duration: ${props => props.seeda + 'ms'};
+    animation-delay: ${props => props.seedb + 'ms'};
+  }
+`
+
 const getColors = (props) => {
   switch (props.variant) {
     case 'dark':
@@ -186,7 +234,8 @@ class ProtoToastMessage extends Component {
   renderIcon = (variant) => {
     switch (variant) {
       case 'processing':
-        return <IconProcessing width={'32px'} height={'32px'} />
+        // return <IconProcessing width={'32px'} height={'32px'} />
+        return <IconProcessingAnim width={'32px'} height={'32px'} />
         break;
       case 'success':
         return <IconPositive width={'32px'} height={'32px'} />
