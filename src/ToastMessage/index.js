@@ -279,9 +279,13 @@ class ToastContainer extends React.Component {
       isReady: false,
       isOpen: false,
       unMount: true,
-      currentMsg: {},
+      currentMsg: {}
     }
     this.timer = {}
+  }
+
+  static defaultProps = {
+    delay: 3000
   }
 
   componentDidMount() {
@@ -314,7 +318,7 @@ class ToastContainer extends React.Component {
         }), () => {
           this.startTimer()
         });
-      }, 900);
+      }, 500);
     });
     console.log('added toast message');
     console.log(data);
@@ -322,12 +326,11 @@ class ToastContainer extends React.Component {
 
 
   removeMessage = () => {
-    if (this.state.isOpen) {
-      this.setState((state, props) => ({
-        isOpen: false
-      }));
-      console.log('removed toast message');
-    }
+    if (!this.state.isOpen) { return null }
+    this.setState((state, props) => ({
+      isOpen: false
+    }));
+    console.log('removed toast message');
   }
 
   startTimer = () => {
@@ -335,7 +338,7 @@ class ToastContainer extends React.Component {
     this.clearTimer()
     this.timer = setTimeout(() => {
       this.removeMessage()
-    }, 3000)
+    }, this.props.delay)
   }
 
   clearTimer = () => {
