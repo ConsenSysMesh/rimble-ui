@@ -140,7 +140,7 @@ storiesOf('ToastMessage', module)
       <br/>
       <Button onClick={() => window.toastProvider.removeMessage()}>"removeMessage"</Button>
 
-      <ToastMessage.Provider ref={(toastProvider) => {window.toastProvider = toastProvider}} />
+      <ToastMessage.Provider ref={(node) => (window.toastProvider = node)} />
 
     </div>
   ))
