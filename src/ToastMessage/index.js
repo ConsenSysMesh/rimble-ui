@@ -195,26 +195,45 @@ const StyledToastMessage = styled(Box)`
   ${getColors}
 `
 
-const ToastMessage = ({className, ...props}) => (
-  <StyledToastMessage className={className} {...props}>
-    { props.icon && <Icon name={props.icon} color={'primary'} size={'32px'} mr={2} flex={'0 0'} /> }
-    <Box flex={'1 0'} mx={2}>
-      { props.message && <Text fontSize={1} fontWeight={3} color={'inherit'}>{props.message}</Text> }
-      { props.secondaryMessage && <Text fontSize={1} color={'#666'}>{props.secondaryMessage}</Text> }
-    </Box>
-    <Box flex={'0 1 auto'} mr={2}>
-      { props.actionText && props.actionHref && <Link href={props.actionHref} target={'_blank'}>{props.actionText}</Link>}
-    </Box>
-    <TextButton icononly size={'small'} alignSelf={'flex-start'} >
-      <Icon name={'Close'} size={'16px'} color={'grey'} flex={'0 0'} />
-    </TextButton>
-  </StyledToastMessage>
-);
+const ToastMessage = ({className, ...props}) => {
+  const renderFigure = ({figureNode, icon}) => {
+    if (figureNode) {
+      return (
+        <Box className={'iconBox'} flex={'0 0'} mr={2}>
+          { figureNode }
+        </Box>
+      )
+    } else if (icon) {
+      return (
+        <Box className={'iconBox'} flex={'0 0'} mr={2}>
+          <Icon name={icon} color={'primary'} size={'32px'} />
+        </Box>
+      )
+    } else {
+      return null;
+    }
+  }
+
+  return (
+    <StyledToastMessage className={className} {...props}>
+      { renderFigure(props) }
+      <Box flex={'1 0'} mx={2}>
+        { props.message && <Text fontSize={1} fontWeight={3} color={'inherit'}>{props.message}</Text> }
+        { props.secondaryMessage && <Text fontSize={1} color={'#666'}>{props.secondaryMessage}</Text> }
+      </Box>
+      <Box flex={'0 1 auto'} mr={2}>
+        { props.actionText && props.actionHref && <Link href={props.actionHref} target={'_blank'}>{props.actionText}</Link>}
+      </Box>
+      <TextButton className={'closeBttn'} icononly size={'small'} alignSelf={'flex-start'} >
+        <Icon name={'Close'} size={'16px'} color={'grey'} flex={'0 0'} />
+      </TextButton>
+    </StyledToastMessage>
+  );
+}
 
 class ProtoToastMessage extends Component {
   constructor(props) {
     super(props);
-    this.toastNode = React.createRef();
   }
 
   static displayName = 'Proto Toast Message'
@@ -224,16 +243,16 @@ class ProtoToastMessage extends Component {
     secondaryMessage: '',
     actionHref: '',
     actionText: '',
-    variant: 'default'
+    variant: 'default',
+    icon: ''
   }
 
   handleClose = (e) => {
     e.preventDefault();
-    console.log('close!');
-    console.log(this.toastNode.current);
+    console.log('…handling close!');
   }
 
-  renderIcon = (variant) => {
+  renderFigureNode = (variant) => {
     switch (variant) {
       case 'processing':
         // return <IconProcessing width={'32px'} height={'32px'} />
@@ -251,23 +270,23 @@ class ProtoToastMessage extends Component {
   }
 
   render() {
-    const props = this.props;
+    const {
+      message,
+      secondaryMessage,
+      actionHref,
+      actionText,
+      variant,
+      icon
+    } = this.props;
     return (
-      <StyledToastMessage ref={this.toastNode} {...props}>
-        <Box className={'iconBox'} flex={'0 0'} mr={2}>
-          { props.variant && this.renderIcon(props.variant) }
-        </Box>
-        <Box flex={'1 0'} mx={2}>
-          { props.message && <Text fontSize={1} fontWeight={3} color={'inherit'}>{props.message}</Text> }
-          { props.secondaryMessage && <Text fontSize={1} color={'#666'}>{props.secondaryMessage}</Text> }
-        </Box>
-        <Box flex={'0 1 auto'} mr={2}>
-          { props.actionText && props.actionHref && <Link href={props.actionHref} target={'_blank'}>{props.actionText}</Link>}
-        </Box>
-        <TextButton className={'closeBttn'} onClick={this.handleClose} icononly size={'small'} alignSelf={'flex-start'} >
-          <Icon name={'Close'} size={'16px'} color={'grey'} flex={'0 0'} />
-        </TextButton>
-      </StyledToastMessage>
+      <ToastMessage
+        message={message}
+        secondaryMessage={secondaryMessage}
+        actionHref={actionHref}
+        actionText={actionText}
+        figureNode={this.renderFigureNode(variant)}
+        {...this.props}
+      />
     );
   }
 
