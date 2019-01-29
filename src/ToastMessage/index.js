@@ -180,7 +180,7 @@ const StyledToastMessage = styled(Box)`
 
   @media screen and (min-width: 420px) {
     & {
-      padding: 0 0 0 1rem;
+      ${'' /* padding: 0 0 0 1rem; */}
       border: 1px solid #D6D6D6;
       border-radius: 4px;
     }
@@ -210,7 +210,19 @@ const ToastMessage = ({className, ...props}) => {
         </Box>
       )
     } else {
-      return null;
+      return null
+    }
+  }
+
+  const renderCloseBttn = ({closeElem}) => {
+    if (closeElem) {
+      return (
+        <TextButton className={'closeBttn'} icononly size={'small'} alignSelf={'flex-start'} >
+          <Icon name={'Close'} size={'16px'} color={'grey'} flex={'0 0'} />
+        </TextButton>
+      )
+    } else {
+      return null
     }
   }
 
@@ -224,9 +236,7 @@ const ToastMessage = ({className, ...props}) => {
       <Box flex={'0 1 auto'} mr={2}>
         { props.actionText && props.actionHref && <Link href={props.actionHref} target={'_blank'}>{props.actionText}</Link>}
       </Box>
-      <TextButton className={'closeBttn'} icononly size={'small'} alignSelf={'flex-start'} >
-        <Icon name={'Close'} size={'16px'} color={'grey'} flex={'0 0'} />
-      </TextButton>
+      { renderCloseBttn(props) }
     </StyledToastMessage>
   );
 }
@@ -299,7 +309,7 @@ class ToastProvider extends React.Component {
       isReady: false,
       isOpen: false,
       unMount: true,
-      currentMsg: {}
+      currentMsg: this.props.messageData
     }
     this.timer = {}
   }
@@ -307,6 +317,14 @@ class ToastProvider extends React.Component {
   static displayName = 'Toast Message Provider'
 
   static defaultProps = {
+    messageData: {
+      message: '[…Placeholder Message…]',
+      secondaryMessage: '',
+      actionHref: '',
+      actionText: '',
+      icon: '',
+      variant: 'default'
+    },
     delay: 3000
   }
 
@@ -328,7 +346,9 @@ class ToastProvider extends React.Component {
     window.onblur = null
   }
 
-  addMessage = (data) => {
+  addMessage = (msg, data) => {
+    if (!msg) { return false }
+
     this.setState(() => ({
       isOpen: false,
     }), () => {
@@ -336,14 +356,18 @@ class ToastProvider extends React.Component {
         this.setState(() => ({
           isOpen: true,
           unMount: false,
-          currentMsg: data,
+          currentMsg: {
+            message: msg,
+            ...data
+          },
         }), () => {
           this.startTimer()
         });
       }, 500);
     });
+
     console.log('added toast message');
-    console.log(data);
+    console.log(this.state.currentMsg);
   }
 
 
@@ -425,15 +449,17 @@ ToastMessage.Provider = ToastProvider;
 StyledToastMessage.defaultProps = {
   display: 'flex',
   flexDirection: 'row nowrap',
-  alignItems: 'center',
-  py: 0,
+  alignItems: 'center'
 }
 
 ToastMessage.defaultProps = {
-  message:'Generic Message',
+  message:'Generic message',
   secondaryMessage: '',
-  actionText: 'Action',
-  icon: false
+  actionHref: '',
+  actionText: '',
+  variant: 'default',
+  icon: false,
+  closeElem: false
 }
 
 ToastMessage.displayName = 'ToastMessage'

@@ -88,8 +88,7 @@ storiesOf('ToastMessage', module)
 
       <Button
         mb={3}
-        onClick={(e) => window.toastProvider.addMessage({
-            message: '[Processing… ]',
+        onClick={(e) => window.toastProvider.addMessage('[Processing… ]', {
             secondaryMessage: (Date.now()),
             actionHref: 'https://etherscan.io/tx/0xcbc921418c360b03b96585ae16f906cbd48c8d6c2cc7b82c6db430390a9fcfed',
             actionText: 'View on Etherscan',
@@ -102,8 +101,7 @@ storiesOf('ToastMessage', module)
       <br/>
       <Button
         mb={3}
-        onClick={(e) => window.toastProvider.addMessage({
-            message: '[Complete… ]',
+        onClick={(e) => window.toastProvider.addMessage('[Complete… ]', {
             secondaryMessage: (Date.now()),
             actionHref: 'https://etherscan.io/tx/0xcbc921418c360b03b96585ae16f906cbd48c8d6c2cc7b82c6db430390a9fcfed',
             actionText: 'View on Etherscan',
@@ -116,8 +114,7 @@ storiesOf('ToastMessage', module)
       <br/>
       <Button
         mb={3}
-        onClick={(e) => window.toastProvider.addMessage({
-            message: '[Failed… ]',
+        onClick={(e) => window.toastProvider.addMessage('[Failed… ]', {
             secondaryMessage: (Date.now()),
             actionHref: 'https://etherscan.io/tx/0xcbc921418c360b03b96585ae16f906cbd48c8d6c2cc7b82c6db430390a9fcfed',
             actionText: 'View on Etherscan',
@@ -130,12 +127,18 @@ storiesOf('ToastMessage', module)
       <br/>
       <Button
         mb={3}
-        onClick={(e) => window.toastProvider.addMessage({
-          message: '[Your message here… ]'
-        })
-        }
+        onClick={(e) => window.toastProvider.addMessage('[Your message here… ]')}
       >
         "addMessage.default"
+      </Button>
+      <br/>
+      <Button
+        mb={3}
+        onClick={(e) => window.toastProvider.addMessage('[Your message here… ]', {
+          icon: 'Info'
+        })}
+      >
+        "addMessage.default with Icon"
       </Button>
       <br/>
       <Button onClick={() => window.toastProvider.removeMessage()}>"removeMessage"</Button>
