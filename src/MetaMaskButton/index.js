@@ -62,4 +62,6 @@ const MetaMaskButton = MetaMaskButtonSolid;
 
 MetaMaskButton.outline = MetaMaskButtonOutline
 
+MetaMaskButton.displayName = 'MetaMaskButton'
+
 export default MetaMaskButton;

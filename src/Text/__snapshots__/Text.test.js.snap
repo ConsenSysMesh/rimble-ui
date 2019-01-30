@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text component sanity matches default snapshot 1`] = `
+.c0 {
+  color: copyColor;
+  font-size: 16px;
+  font-size: 16px;
+  font-family: sansSerif;
+  font-weight: 2;
+  text-align: left;
+  line-height: copy;
+}
+
+.c0 {
+  box-sizing: border-box;
+}
+
+<div
+  class="c0"
+  color="copyColor"
+  font-family="sansSerif"
+  font-size="2"
+  font-weight="2"
+>
+  
+</div>
+`;
