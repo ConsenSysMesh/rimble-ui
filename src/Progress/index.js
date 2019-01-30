@@ -26,4 +26,6 @@ Progress.defaultProps = {
   theme: theme
 }
 
+Progress.displayName = 'Progress'
+
 export default Progress

@@ -45,4 +45,6 @@ Slider.defaultProps = {
   theme: theme
 }
 
+Slider.displayName = 'Slider'
+
 export default Slider

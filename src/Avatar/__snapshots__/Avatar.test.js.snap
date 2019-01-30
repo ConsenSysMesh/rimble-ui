@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Avatar component sanity matches default snapshot 1`] = `
+.c0 {
+  height: 2rem;
+  width: 2rem;
+}
+
+.c0 {
+  box-sizing: border-box;
+}
+
+.c0 {
+  position: relative;
+  overflow: hidden;
+  border-radius: 100%;
+  background: center no-repeat;
+  background-size: cover;
+  background-color: #CCC;
+  background-image: url();
+}
+
+<div
+  alt="Avatar"
+  class="c0"
+>
+  
+</div>
+`;
