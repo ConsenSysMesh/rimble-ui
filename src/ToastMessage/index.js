@@ -35,7 +35,11 @@ const flicker = keyframes`
   }
 `
 
-const IconProcessingAnim = styled(IconProcessing).attrs({
+const WrappedIconProcessing = ({className}) => (
+  <IconProcessing className={className} />
+)
+
+const AnimatedIconProcessing = styled(WrappedIconProcessing).attrs({
   seed: Math.floor(1000 + Math.random() * 7000),
   seeda: Math.floor((Date.now().toString().substring(2,6)) + Math.random() * 9000).toString().substring(0,4),
   seedb: Math.floor((Date.now().toString().substring(0,4)) + Math.random() * 4500).toString().substring(0,4)
@@ -265,8 +269,7 @@ class ProtoToastMessage extends Component {
   renderFigureNode = (variant) => {
     switch (variant) {
       case 'processing':
-        // return <IconProcessing width={'32px'} height={'32px'} />
-        return <IconProcessingAnim width={'32px'} height={'32px'} />
+        return <AnimatedIconProcessing width={'32px'} height={'32px'} />
         break;
       case 'success':
         return <IconPositive width={'32px'} height={'32px'} />
