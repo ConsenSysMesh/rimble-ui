@@ -1,0 +1,740 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ToastMessage component sanity matches failure snapshot 1`] = `
+.c1 {
+  margin-left: 8px;
+  margin-right: 8px;
+  -webkit-flex: 1 0;
+  -ms-flex: 1 0;
+  flex: 1 0;
+}
+
+.c1 {
+  box-sizing: border-box;
+}
+
+.c3 {
+  margin-right: 8px;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+}
+
+.c3 {
+  box-sizing: border-box;
+}
+
+.c2 {
+  color: inherit;
+  font-size: 14px;
+  font-size: 14px;
+  font-family: sansSerif;
+  font-weight: 3;
+  text-align: left;
+  line-height: copy;
+}
+
+.c2 {
+  box-sizing: border-box;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row nowrap;
+  -ms-flex-direction: row nowrap;
+  flex-direction: row nowrap;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #000;
+  background-color: #FFF;
+}
+
+.c0 {
+  box-sizing: border-box;
+}
+
+.c0 {
+  pointer-events: all;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height: 80px;
+  padding: 0 1rem;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+}
+
+.c0:hover {
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.15);
+}
+
+.c0 > .iconBox {
+  display: none;
+}
+
+.c0 > .closeBttn {
+  display: none;
+}
+
+@media screen and (min-width:420px) {
+  .c0 {
+    border: 1px solid #D6D6D6;
+    border-radius: 4px;
+  }
+
+  .c0 > .iconBox {
+    display: block;
+  }
+
+  .c0 > .closeBttn {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+<div
+  class="c0"
+  display="flex"
+>
+  <div
+    class="c1"
+  >
+    <div
+      class="c2"
+      color="inherit"
+      font-family="sansSerif"
+      font-size="1"
+      font-weight="3"
+    >
+      Generic message
+    </div>
+  </div>
+  <div
+    class="c3"
+  >
+    
+  </div>
+</div>
+`;
+
+exports[`ToastMessage component sanity matches full component snapshot 1`] = `
+.c3 {
+  margin-left: 8px;
+  margin-right: 8px;
+  -webkit-flex: 1 0;
+  -ms-flex: 1 0;
+  flex: 1 0;
+}
+
+.c3 {
+  box-sizing: border-box;
+}
+
+.c6 {
+  margin-right: 8px;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+}
+
+.c6 {
+  box-sizing: border-box;
+}
+
+.c1 {
+  margin-right: 8px;
+  -webkit-flex: 0 0;
+  -ms-flex: 0 0;
+  flex: 0 0;
+}
+
+.c1 {
+  box-sizing: border-box;
+}
+
+.c2 {
+  color: primary;
+}
+
+.c4 {
+  color: inherit;
+  font-size: 14px;
+  font-size: 14px;
+  font-family: sansSerif;
+  font-weight: 3;
+  text-align: left;
+  line-height: copy;
+}
+
+.c4 {
+  box-sizing: border-box;
+}
+
+.c5 {
+  color: #666;
+  font-size: 14px;
+  font-size: 14px;
+  font-family: sansSerif;
+  font-weight: 2;
+  text-align: left;
+  line-height: copy;
+}
+
+.c5 {
+  box-sizing: border-box;
+}
+
+.c7 {
+  color: primary;
+  font-size: 14px;
+  font-size: 14px;
+  font-weight: 3;
+}
+
+.c7 {
+  box-sizing: border-box;
+}
+
+.c7 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c7:hover {
+  color: #6755F3;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c7:active {
+  color: #3223A9;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row nowrap;
+  -ms-flex-direction: row nowrap;
+  flex-direction: row nowrap;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #000;
+  background-color: #FFF;
+}
+
+.c0 {
+  box-sizing: border-box;
+}
+
+.c0 {
+  pointer-events: all;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height: 80px;
+  padding: 0 1rem;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+}
+
+.c0:hover {
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.15);
+}
+
+.c0 > .iconBox {
+  display: none;
+}
+
+.c0 > .closeBttn {
+  display: none;
+}
+
+@media screen and (min-width:420px) {
+  .c0 {
+    border: 1px solid #D6D6D6;
+    border-radius: 4px;
+  }
+
+  .c0 > .iconBox {
+    display: block;
+  }
+
+  .c0 > .closeBttn {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+<div
+  class="c0"
+  display="flex"
+>
+  <div
+    class="iconBox c1"
+  >
+    <svg
+      class="c2"
+      color="primary"
+      display="block"
+      fill="currentcolor"
+      height="32px"
+      viewBox="0 0 24 24"
+      width="32px"
+    >
+      <path
+        d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z"
+      >
+        
+      </path>
+    </svg>
+  </div>
+  <div
+    class="c3"
+  >
+    <div
+      class="c4"
+      color="inherit"
+      font-family="sansSerif"
+      font-size="1"
+      font-weight="3"
+    >
+      message
+    </div>
+    <div
+      class="c5"
+      color="#666"
+      font-family="sansSerif"
+      font-size="1"
+      font-weight="2"
+    >
+      secondary message
+    </div>
+  </div>
+  <div
+    class="c6"
+  >
+    <a
+      class="c7"
+      color="primary"
+      font-size="1"
+      font-weight="3"
+      href="http://test.com"
+      target="_blank"
+    >
+      Link
+    </a>
+  </div>
+</div>
+`;
+
+exports[`ToastMessage component sanity matches generic snapshot 1`] = `
+.c1 {
+  margin-left: 8px;
+  margin-right: 8px;
+  -webkit-flex: 1 0;
+  -ms-flex: 1 0;
+  flex: 1 0;
+}
+
+.c1 {
+  box-sizing: border-box;
+}
+
+.c3 {
+  margin-right: 8px;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+}
+
+.c3 {
+  box-sizing: border-box;
+}
+
+.c2 {
+  color: inherit;
+  font-size: 14px;
+  font-size: 14px;
+  font-family: sansSerif;
+  font-weight: 3;
+  text-align: left;
+  line-height: copy;
+}
+
+.c2 {
+  box-sizing: border-box;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row nowrap;
+  -ms-flex-direction: row nowrap;
+  flex-direction: row nowrap;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #000;
+  background-color: #FFF;
+}
+
+.c0 {
+  box-sizing: border-box;
+}
+
+.c0 {
+  pointer-events: all;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height: 80px;
+  padding: 0 1rem;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+}
+
+.c0:hover {
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.15);
+}
+
+.c0 > .iconBox {
+  display: none;
+}
+
+.c0 > .closeBttn {
+  display: none;
+}
+
+@media screen and (min-width:420px) {
+  .c0 {
+    border: 1px solid #D6D6D6;
+    border-radius: 4px;
+  }
+
+  .c0 > .iconBox {
+    display: block;
+  }
+
+  .c0 > .closeBttn {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+<div
+  class="c0"
+  display="flex"
+>
+  <div
+    class="c1"
+  >
+    <div
+      class="c2"
+      color="inherit"
+      font-family="sansSerif"
+      font-size="1"
+      font-weight="3"
+    >
+      Generic message
+    </div>
+  </div>
+  <div
+    class="c3"
+  >
+    
+  </div>
+</div>
+`;
+
+exports[`ToastMessage component sanity matches processing snapshot 1`] = `
+.c1 {
+  margin-left: 8px;
+  margin-right: 8px;
+  -webkit-flex: 1 0;
+  -ms-flex: 1 0;
+  flex: 1 0;
+}
+
+.c1 {
+  box-sizing: border-box;
+}
+
+.c3 {
+  margin-right: 8px;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+}
+
+.c3 {
+  box-sizing: border-box;
+}
+
+.c2 {
+  color: inherit;
+  font-size: 14px;
+  font-size: 14px;
+  font-family: sansSerif;
+  font-weight: 3;
+  text-align: left;
+  line-height: copy;
+}
+
+.c2 {
+  box-sizing: border-box;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row nowrap;
+  -ms-flex-direction: row nowrap;
+  flex-direction: row nowrap;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #000;
+  background-color: #FFF;
+}
+
+.c0 {
+  box-sizing: border-box;
+}
+
+.c0 {
+  pointer-events: all;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height: 80px;
+  padding: 0 1rem;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+}
+
+.c0:hover {
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.15);
+}
+
+.c0 > .iconBox {
+  display: none;
+}
+
+.c0 > .closeBttn {
+  display: none;
+}
+
+@media screen and (min-width:420px) {
+  .c0 {
+    border: 1px solid #D6D6D6;
+    border-radius: 4px;
+  }
+
+  .c0 > .iconBox {
+    display: block;
+  }
+
+  .c0 > .closeBttn {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+<div
+  class="c0"
+  display="flex"
+>
+  <div
+    class="c1"
+  >
+    <div
+      class="c2"
+      color="inherit"
+      font-family="sansSerif"
+      font-size="1"
+      font-weight="3"
+    >
+      Generic message
+    </div>
+  </div>
+  <div
+    class="c3"
+  >
+    
+  </div>
+</div>
+`;
+
+exports[`ToastMessage component sanity matches success snapshot 1`] = `
+.c1 {
+  margin-left: 8px;
+  margin-right: 8px;
+  -webkit-flex: 1 0;
+  -ms-flex: 1 0;
+  flex: 1 0;
+}
+
+.c1 {
+  box-sizing: border-box;
+}
+
+.c3 {
+  margin-right: 8px;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+}
+
+.c3 {
+  box-sizing: border-box;
+}
+
+.c2 {
+  color: inherit;
+  font-size: 14px;
+  font-size: 14px;
+  font-family: sansSerif;
+  font-weight: 3;
+  text-align: left;
+  line-height: copy;
+}
+
+.c2 {
+  box-sizing: border-box;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row nowrap;
+  -ms-flex-direction: row nowrap;
+  flex-direction: row nowrap;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #000;
+  background-color: #FFF;
+}
+
+.c0 {
+  box-sizing: border-box;
+}
+
+.c0 {
+  pointer-events: all;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height: 80px;
+  padding: 0 1rem;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+}
+
+.c0:hover {
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.15);
+}
+
+.c0 > .iconBox {
+  display: none;
+}
+
+.c0 > .closeBttn {
+  display: none;
+}
+
+@media screen and (min-width:420px) {
+  .c0 {
+    border: 1px solid #D6D6D6;
+    border-radius: 4px;
+  }
+
+  .c0 > .iconBox {
+    display: block;
+  }
+
+  .c0 > .closeBttn {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+<div
+  class="c0"
+  display="flex"
+>
+  <div
+    class="c1"
+  >
+    <div
+      class="c2"
+      color="inherit"
+      font-family="sansSerif"
+      font-size="1"
+      font-weight="3"
+    >
+      Generic message
+    </div>
+  </div>
+  <div
+    class="c3"
+  >
+    
+  </div>
+</div>
+`;

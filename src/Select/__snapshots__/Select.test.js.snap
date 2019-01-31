@@ -72,6 +72,7 @@ exports[`Select component sanity matches default snapshot 1`] = `
           256,
         ],
         "maxWidths": Array [
+          0,
           16,
           32,
           64,
