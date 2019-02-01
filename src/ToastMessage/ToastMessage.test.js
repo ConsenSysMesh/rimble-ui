@@ -56,7 +56,7 @@ describe('ToastMessage component unit tests', () => {
 
   it('displays icon', () => {
     const toastMessage = shallow(
-      <ToastMessage icon={'Info'} variant={false} />
+      <ToastMessage icon={'Info'} />
     ).dive()
     expect(toastMessage.exists('Icon')).toEqual(true)
   })

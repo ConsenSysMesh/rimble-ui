@@ -2828,13 +2828,8 @@ exports[`ToastMessage component sanity matches generic snapshot 1`] = `
   icon={false}
   message="[Your generic message]"
   secondaryMessage=""
-  variant="default"
+  variant={false}
 >
-  <Box
-    className="iconBox"
-    flex="0 0"
-    mr={2}
-  />
   <Styled(Box)
     flex="1 1 auto"
     mx={2}
