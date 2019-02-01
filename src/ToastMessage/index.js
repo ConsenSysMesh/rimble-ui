@@ -130,6 +130,7 @@ const StyledToastMessage = styled(Box)`
   @media screen and (min-width: 420px) {
     & {
       border-radius: 4px;
+      padding: ${props => props.closeElem ? '0 0 0 1rem' : '0 1rem' };
     }
 
     > .iconBox {
@@ -145,11 +146,27 @@ const StyledToastMessage = styled(Box)`
 const ToastMessage = ({className, ...props}) => {
   const themeIsDark = (props.colorTheme === 'dark' ? true : false);
 
-  const renderFigure = ({figureNode, icon}) => {
-    if (figureNode) {
+  const renderVariantSvg = (variant) => {
+    switch (variant) {
+      case 'processing':
+        return <AnimatedIconProcessing width={'32px'} height={'32px'} />
+        break;
+      case 'success':
+        return <IconPositive width={'32px'} height={'32px'} />
+        break;
+      case 'failure':
+        return <IconNegative width={'32px'} height={'32px'} />
+        break;
+      default:
+        return ''
+    }
+  }
+
+  const renderFigure = ({variant, icon}) => {
+    if (variant) {
       return (
         <Box className={'iconBox'} flex={'0 0'} mr={2}>
-          { figureNode }
+          { renderVariantSvg(variant) }
         </Box>
       )
     } else if (icon) {
@@ -163,11 +180,21 @@ const ToastMessage = ({className, ...props}) => {
     }
   }
 
-  const renderCloseBttn = ({closeElem}) => {
+  const renderCloseBttn = ({closeElem, closeFunction}) => {
     if (closeElem) {
       return (
-        <TextButton className={'closeBttn'} icononly size={'small'} alignSelf={'flex-start'} >
-          <Icon name={'Close'} size={'16px'} color={ !themeIsDark ? '#666' : '#afafaf' } flex={'0 0'} />
+        <TextButton
+          onClick={closeFunction}
+          className={'closeBttn'}
+          size={'small'}
+          icononly
+          alignSelf={'flex-start'}
+        >
+          <Icon
+            name={'Close'}
+            size={'16px'}
+            color={ !themeIsDark ? '#666' : '#afafaf' }
+          />
         </TextButton>
       )
     } else {
@@ -202,28 +229,14 @@ class ProtoToastMessage extends Component {
     secondaryMessage: '',
     actionHref: '',
     actionText: '',
-    variant: 'default',
-    icon: ''
+    variant: '',
+    icon: false,
+    colorTheme: false,
+    closeElem: true
   }
 
   handleClose = (e) => {
     e.preventDefault();
-  }
-
-  renderFigureNode = (variant) => {
-    switch (variant) {
-      case 'processing':
-        return <AnimatedIconProcessing width={'32px'} height={'32px'} />
-        break;
-      case 'success':
-        return <IconPositive width={'32px'} height={'32px'} />
-        break;
-      case 'failure':
-        return <IconNegative width={'32px'} height={'32px'} />
-        break;
-      default:
-        return ''
-    }
   }
 
   render() {
@@ -241,7 +254,6 @@ class ProtoToastMessage extends Component {
         secondaryMessage={secondaryMessage}
         actionHref={actionHref}
         actionText={actionText}
-        figureNode={this.renderFigureNode(variant)}
         {...this.props}
       />
     );
@@ -317,6 +329,7 @@ class ToastProvider extends React.Component {
 
   removeMessage = () => {
     if (!this.state.isOpen) { return null }
+    this.clearTimer()
     this.setState((state, props) => ({
       isOpen: false
     }));
@@ -354,6 +367,7 @@ class ToastProvider extends React.Component {
         {...this.state.currentMsg}
         onMouseEnter={this.handleEnter}
         onMouseLeave={this.handleLeave}
+        closeFunction={this.removeMessage}
       />
     );
   }
@@ -375,15 +389,15 @@ class ToastProvider extends React.Component {
 };
 
 ToastMessage.Success = (props) => (
-  <ProtoToastMessage {...props} variant={'success'} />
+  <ToastMessage {...props} variant={'success'} />
 )
 
 ToastMessage.Failure = (props) => (
-  <ProtoToastMessage {...props} variant={'failure'} />
+  <ToastMessage {...props} variant={'failure'} />
 )
 
 ToastMessage.Processing = (props) => (
-  <ProtoToastMessage {...props} variant={'processing'} />
+  <ToastMessage {...props} variant={'processing'} />
 )
 
 ToastMessage.Provider = ToastProvider;
@@ -401,8 +415,8 @@ ToastMessage.defaultProps = {
   actionText: '',
   variant: 'default',
   icon: false,
-  closeElem: false,
-  colorTheme: ''
+  colorTheme: '',
+  closeElem: false
 }
 
 ToastMessage.displayName = 'ToastMessage'
