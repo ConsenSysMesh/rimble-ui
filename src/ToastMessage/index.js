@@ -9,9 +9,8 @@ import Link from '../Link'
 import TextButton from '../TextButton'
 
 import AnimatedIconProcessing from './AnimatedIconProcessing.js'
-import { ReactComponent as IconPositive } from './icon-positive.svg'
-import { ReactComponent as IconNegative } from './icon-negative.svg'
-
+import IconPositive from './IconPositive'
+import IconNegative from './IconNegative'
 
 const animInKeyframes = keyframes`
   from {

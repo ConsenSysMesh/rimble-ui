@@ -1,5 +1,6 @@
 import ToastMessage from './'
-import { ThemeProvider } from 'styled-components'
+// import { ReactWrapper } from 'enzyme';
+
 
 describe('ToastMessage component sanity', () => {
   it('has name', () => {
@@ -7,26 +8,31 @@ describe('ToastMessage component sanity', () => {
   })
 
   it('matches generic snapshot', () => {
-    const toastMessage = render(<ToastMessage />)
+    const toastMessage = shallow(<ToastMessage />).dive()
     expect(toastMessage).toMatchSnapshot()
   })
 
   it('matches processing snapshot', () => {
-    const toastMessage = render(<ToastMessage variant={'processing'} />)
+    const toastMessage = shallow(<ToastMessage.Processing />).dive()
     expect(toastMessage).toMatchSnapshot()
   })
 
   it('matches success snapshot', () => {
-    const toastMessage = render(<ToastMessage variant={'success'} />)
+    const toastMessage = shallow(<ToastMessage.Success />).dive()
     expect(toastMessage).toMatchSnapshot()
   })
 
   it('matches failure snapshot', () => {
-    const toastMessage = render(<ToastMessage variant={'failure'} />)
+    const toastMessage = shallow(<ToastMessage.Failure />).dive()
     expect(toastMessage).toMatchSnapshot()
   })
 
-  it('matches full component snapshot', () => {
+  it('matches full component shallow snapshot', () => {
+    const toastMessage = shallow(<ToastMessage variant={'default'} message={'message'} secondaryMessage={'secondary message'} actionHref={'http://test.com'} actionText={'Link'} icon={'InfoOutline'} />).dive()
+    expect(toastMessage).toMatchSnapshot()
+  })
+
+  it('matches full component mount snapshot', () => {
     const toastMessage = mount(<ToastMessage variant={'default'} message={'message'} secondaryMessage={'secondary message'} actionHref={'http://test.com'} actionText={'Link'} icon={'InfoOutline'} />)
     expect(toastMessage).toMatchSnapshot()
     toastMessage.unmount()
@@ -50,7 +56,7 @@ describe('ToastMessage component unit tests', () => {
 
   it('displays icon', () => {
     const toastMessage = shallow(
-      <ToastMessage message={''} icon={'InfoOutline'} />
+      <ToastMessage icon={'Info'} variant={false} />
     ).dive()
     expect(toastMessage.exists('Icon')).toEqual(true)
   })
@@ -63,20 +69,41 @@ describe('ToastMessage component unit tests', () => {
     expect(toastMessage.find('Link').text()).toBe('link text')
   })
 
-  it('displays processing with processing icon', () => {
-    // Not passing
-    // const toastMessage = mount(
-    //   <ToastMessage variant={'processing'} />
-    // )
-    // console.log(toastMessage.find('.iconBox').type() )
-    // expect(toastMessage.exists('AnimatedIconProcessing')).toEqual(true)
+  it('displays as processing', () => {
+    const toastMessage = shallow(
+      <ToastMessage.Processing />
+    ).dive()
+    expect(toastMessage.prop('variant')).toEqual('processing')
   })
 
   it('displays as success', () => {
-
+    const toastMessage = shallow(
+      <ToastMessage.Success />
+    ).dive()
+    expect(toastMessage.prop('variant')).toEqual('success')
   })
 
   it('displays as failure', () => {
+    const toastMessage = shallow(
+      <ToastMessage.Failure />
+    ).dive()
+    expect(toastMessage.prop('variant')).toEqual('failure')
+  })
+
+  it('shows close button', () => {
+    
+  })
+
+
+  it('closes when close button clicked', () => {
+
+  })
+
+  it('only shows one toast at a time', () => {
+
+  })
+
+  it('auto closes the toast', () => {
 
   })
 
@@ -93,18 +120,5 @@ describe('ToastMessage component unit tests', () => {
 })
 
 describe('ToastMessage theme applied correctly', () => {
-  // Not passing
-  // let toastMessage;
-
-  // beforeEach(() => {
-  //   toastMessage = mount(
-  //     <ThemeProvider theme={myTheme}>
-  //       <ToastMessage variant={'dark'} />
-  //     </ThemeProvider>
-  //   )
-  // })
-
-  // it('displays as dark variant of default', () => {
-  //   expect(toastMessage).toHaveStyleRule("background-color", myTheme.colors.dark)
-  // })
+  // No theme tests
 })
