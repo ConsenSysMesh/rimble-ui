@@ -67,25 +67,6 @@ const AnimatedIconProcessing = styled(WrappedIconProcessing).attrs({
   }
 `
 
-const getColors = (props) => {
-  switch (props.variant) {
-    case 'dark':
-      return `
-        color: #FFF;
-        background-color: #000;
-        button {color: #9387FF}
-        svg:first-child {fill: #FFF}
-      `;
-      break;
-    default:
-      return`
-        color: #000;
-        background-color: #FFF;
-        // svg {fill: #999999}
-      `;
-  }
-}
-
 const animInKeyframes = keyframes`
   from {
     transform: translateY(100%);
@@ -168,8 +149,6 @@ const StyledToastMessage = styled(Box)`
     user-select: none;
     height: 80px;
     padding: 0 1rem;
-    ${'' /* border-top: 1px solid #D6D6D6; */}
-    ${'' /* border-radius: 4px; */}
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
     transition: all .15s ease;
   }
@@ -198,11 +177,11 @@ const StyledToastMessage = styled(Box)`
       display: flex;
     }
   }
-
-  ${getColors}
 `
 
 const ToastMessage = ({className, ...props}) => {
+  const themeIsDark = (props.colorTheme === 'dark' ? true : false);
+
   const renderFigure = ({figureNode, icon}) => {
     if (figureNode) {
       return (
@@ -213,7 +192,7 @@ const ToastMessage = ({className, ...props}) => {
     } else if (icon) {
       return (
         <Box className={'iconBox'} flex={'0 0'} mr={2}>
-          <Icon name={icon} color={'primary'} size={'32px'} />
+          <Icon name={icon} color={ !themeIsDark ? 'primary' : 'white' } size={'32px'} />
         </Box>
       )
     } else {
@@ -225,7 +204,7 @@ const ToastMessage = ({className, ...props}) => {
     if (closeElem) {
       return (
         <TextButton className={'closeBttn'} icononly size={'small'} alignSelf={'flex-start'} >
-          <Icon name={'Close'} size={'16px'} color={'grey'} flex={'0 0'} />
+          <Icon name={'Close'} size={'16px'} color={ !themeIsDark ? '#666' : '#afafaf' } flex={'0 0'} />
         </TextButton>
       )
     } else {
@@ -234,14 +213,14 @@ const ToastMessage = ({className, ...props}) => {
   }
 
   return (
-    <StyledToastMessage className={className} {...props}>
+    <StyledToastMessage className={className} {...props} bg={ !themeIsDark ? 'white' : 'black' } >
       { renderFigure(props) }
       <Box flex={'1 0'} mx={2}>
-        { props.message && <Text fontSize={1} fontWeight={3} color={'inherit'}>{props.message}</Text> }
-        { props.secondaryMessage && <Text fontSize={1} color={'#666'}>{props.secondaryMessage}</Text> }
+        { props.message && <Text fontSize={1} fontWeight={3} color={ !themeIsDark ? 'black' : 'white' }>{props.message}</Text> }
+        { props.secondaryMessage && <Text fontSize={1} color={ !themeIsDark ? '#666' : '#afafaf' }>{props.secondaryMessage}</Text> }
       </Box>
       <Box flex={'0 1 auto'} mr={2}>
-        { props.actionText && props.actionHref && <Link href={props.actionHref} target={'_blank'}>{props.actionText}</Link>}
+        { props.actionText && props.actionHref && <Link href={props.actionHref} target={'_blank'} color={ !themeIsDark ? 'primary' : '#9387FF' }>{props.actionText}</Link>}
       </Box>
       { renderCloseBttn(props) }
     </StyledToastMessage>
@@ -459,13 +438,14 @@ StyledToastMessage.defaultProps = {
 }
 
 ToastMessage.defaultProps = {
-  message:'Generic message',
+  message:'[Your generic message]',
   secondaryMessage: '',
   actionHref: '',
   actionText: '',
   variant: 'default',
   icon: false,
-  closeElem: false
+  closeElem: false,
+  colorTheme: ''
 }
 
 ToastMessage.displayName = 'ToastMessage'

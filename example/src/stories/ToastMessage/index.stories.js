@@ -62,15 +62,15 @@ storiesOf('ToastMessage', module)
 
         </Box>
         <Box width={'50%'}>
-          <ToastMessage variant={'dark'} my={3}/>
+          <ToastMessage colorTheme={'dark'} my={3}/>
           <ToastMessage
             secondaryMessage={'Lorem ipsum dolor sit.'}
-            variant={'dark'}
+            colorTheme={'dark'}
             my={3}
           />
           <ToastMessage
             icon={'InfoOutline'}
-            variant={'dark'}
+            colorTheme={'dark'}
             my={3}
             actionText={'Action'}
             actionHref={'#!'}
@@ -78,7 +78,7 @@ storiesOf('ToastMessage', module)
           <ToastMessage
             secondaryMessage={'Lorem ipsum dolor sit.'}
             icon={'InfoOutline'}
-            variant={'dark'}
+            colorTheme={'dark'}
             my={3}
             actionText={'Action'}
             actionHref={'#!'}
