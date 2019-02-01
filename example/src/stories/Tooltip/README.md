@@ -8,9 +8,37 @@ A simple styled tooltip. The`Tooltip` component uses [react-popper](https://gith
 import { Tooltip } from 'rimble-ui'
 ```
 
-<!-- Tooltip example here -->
+<!-- component example here -->
 ```jsx
-<Tooltip message='Your custom message'>hover me</Tooltip>
+<Text textAlign='center' my={3}>
+  <Tooltip variant='dark' message='Your custom message' placement='top'>
+      hover me
+  </Tooltip>
+</Text>
+<Text textAlign='center' my={3}>
+  <Tooltip message='Your custom message' placement='right'>
+    hover me
+  </Tooltip>
+</Text>
+<Text textAlign='center' my={3}>
+  <Tooltip message='Your custom message' placement='bottom'>
+    hover me
+  </Tooltip>
+</Text>
+<Text textAlign='center' my={3}>
+  <Tooltip message='Your custom message' placement='left'>
+    hover me
+  </Tooltip>
+</Text>
+
 ```
 
-<!-- Tooltip component props -->
+```jsx
+<Flex size='80px' borderRadius='100%' mx='auto' my='5' bg='#ccc' alignItems='center' justifyContent='center'>
+  <Tooltip message='Wrap me around your tooltip trigger'>
+    <Icon name='Info' />
+  </Tooltip>
+</Flex>
+```
+
+<!-- component props -->

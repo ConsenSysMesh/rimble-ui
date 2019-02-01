@@ -15,7 +15,8 @@ import {
   Button,
   TextButton,
   OutlineButton,
-  MetaMaskButton
+  MetaMaskButton,
+  ToastMessage
 } from 'rimble-ui'
 
 storiesOf('Card', module)
@@ -68,6 +69,5 @@ storiesOf('Card', module)
           <TextButton p={'0'} height={'auto'}>Text Button</TextButton>
         </Flex>
       </Card>
-
     </div>
   ))
