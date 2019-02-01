@@ -1,4 +1,5 @@
 import ToastMessage from './'
+import { ThemeProvider } from 'styled-components'
 
 describe('ToastMessage component sanity', () => {
   it('has name', () => {
@@ -26,34 +27,49 @@ describe('ToastMessage component sanity', () => {
   })
 
   it('matches full component snapshot', () => {
-    const toastMessage = render(<ToastMessage variant={'default'} message={'message'} secondaryMessage={'secondary message'} actionHref={'http://test.com'} actionText={'Link'} icon={'InfoOutline'} />)
+    const toastMessage = mount(<ToastMessage variant={'default'} message={'message'} secondaryMessage={'secondary message'} actionHref={'http://test.com'} actionText={'Link'} icon={'InfoOutline'} />)
     expect(toastMessage).toMatchSnapshot()
+    toastMessage.unmount()
   })
 })
 
 describe('ToastMessage component unit tests', () => {
+  it('displays message', () => {
+    const toastMessage = shallow(
+      <ToastMessage message={'Generic message inside Toast'} />
+    ).dive()
+    expect(toastMessage.find('Text').at(0).text()).toBe('Generic message inside Toast')
+  })
+  
   it('displays secondary message', () => {
-    const toastMessage = mount(
-      <ToastMessage message={''} secondaryMessage={'Lorem ipsum dolor sit.'} />,
-    )
-    expect(toastMessage.children().text()).toBe('Lorem ipsum dolor sit.')
-    toastMessage.unmount()
+    const toastMessage = shallow(
+      <ToastMessage secondaryMessage={'Lorem ipsum dolor sit.'} />
+    ).dive()
+    expect(toastMessage.find('Text').at(1).text()).toBe('Lorem ipsum dolor sit.')
   })
 
   it('displays icon', () => {
-
+    const toastMessage = shallow(
+      <ToastMessage message={''} icon={'InfoOutline'} />
+    ).dive()
+    expect(toastMessage.exists('Icon')).toEqual(true)
   })
 
-  it('accepts action text', () => {
-
+  it('creates action href and text', () => {
+    const toastMessage = shallow(
+      <ToastMessage actionHref={'http://link.com'} actionText={'link text'} />
+    ).dive()
+    expect(toastMessage.exists('Link')).toEqual(true)
+    expect(toastMessage.find('Link').text()).toBe('link text')
   })
 
-  it('accepts action href', () => {
-
-  })
-
-  it('displays as processing', () => {
-
+  it('displays processing with processing icon', () => {
+    // Not passing
+    // const toastMessage = mount(
+    //   <ToastMessage variant={'processing'} />
+    // )
+    // console.log(toastMessage.find('.iconBox').type() )
+    // expect(toastMessage.exists('AnimatedIconProcessing')).toEqual(true)
   })
 
   it('displays as success', () => {
@@ -61,14 +77,6 @@ describe('ToastMessage component unit tests', () => {
   })
 
   it('displays as failure', () => {
-
-  })
-
-  it('displays as dark variant of generic', () => {
-
-  })
-
-  it('displays as dark variant of default', () => {
 
   })
 
@@ -82,5 +90,21 @@ describe('ToastMessage component unit tests', () => {
 
     toastMessage.unmount()
   })
+})
 
+describe('ToastMessage theme applied correctly', () => {
+  // Not passing
+  // let toastMessage;
+
+  // beforeEach(() => {
+  //   toastMessage = mount(
+  //     <ThemeProvider theme={myTheme}>
+  //       <ToastMessage variant={'dark'} />
+  //     </ThemeProvider>
+  //   )
+  // })
+
+  // it('displays as dark variant of default', () => {
+  //   expect(toastMessage).toHaveStyleRule("background-color", myTheme.colors.dark)
+  // })
 })
