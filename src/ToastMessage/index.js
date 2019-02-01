@@ -208,7 +208,6 @@ class ProtoToastMessage extends Component {
 
   handleClose = (e) => {
     e.preventDefault();
-    console.log('…handling close!');
   }
 
   renderFigureNode = (variant) => {
@@ -313,9 +312,6 @@ class ToastProvider extends React.Component {
         });
       }, 500);
     });
-
-    console.log('added toast message');
-    console.log(this.state.currentMsg);
   }
 
 
@@ -324,7 +320,6 @@ class ToastProvider extends React.Component {
     this.setState((state, props) => ({
       isOpen: false
     }));
-    console.log('removed toast message');
   }
 
   startTimer = () => {
@@ -341,7 +336,6 @@ class ToastProvider extends React.Component {
 
   handleClose = (e) => {
     e.preventDefault()
-    console.log('close!', this.closeBttn)
   }
 
   handleEnter = (e) => {
