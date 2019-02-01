@@ -35,8 +35,8 @@ const flicker = keyframes`
   }
 `
 
-const WrappedIconProcessing = ({className}) => (
-  <IconProcessing className={className} />
+const WrappedIconProcessing = (props) => (
+  <IconProcessing {...props} />
 )
 
 const AnimatedIconProcessing = styled(WrappedIconProcessing).attrs({
@@ -44,6 +44,9 @@ const AnimatedIconProcessing = styled(WrappedIconProcessing).attrs({
   seeda: Math.floor((Date.now().toString().substring(2,6)) + Math.random() * 9000).toString().substring(0,4),
   seedb: Math.floor((Date.now().toString().substring(0,4)) + Math.random() * 4500).toString().substring(0,4)
 })`
+  & {
+    display: block;
+  }
   > * {
     animation-name: ${flicker};
     animation-duration: ${props => props.seed + 'ms'};
