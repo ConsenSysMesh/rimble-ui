@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled, { keyframes } from 'styled-components'
-import { timingFunctions } from 'polished'
+import { timingFunctions, ellipsis } from 'polished'
 
 import Box from '../Box'
 import Icon from '../Icon'
@@ -140,13 +140,18 @@ const StyledToastContainer = styled.div`
   }
 `
 
+const StyledTextCell = styled(Box)`
+  & {
+    ${ellipsis()}
+    text-align: left;
+  }
+`
+
 const StyledToastMessage = styled(Box)`
   & {
     pointer-events: all;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
     user-select: none;
+    overflow: hidden;
     height: 80px;
     padding: 0 1rem;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
@@ -160,19 +165,31 @@ const StyledToastMessage = styled(Box)`
   > .iconBox {
     display: none;
   }
+
   > .closeBttn {
     display: none;
   }
 
+  > ${StyledTextCell} > ${Text} {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-wrap: normal;
+  }
+
+  @media screen and (max-width: 420px) {
+    border-color: transparent;
+  }
+
   @media screen and (min-width: 420px) {
     & {
-      ${'' /* padding: 0 0 0 1rem; */}
-      border: 1px solid #D6D6D6;
       border-radius: 4px;
     }
+
     > .iconBox {
       display: block;
     }
+
     > .closeBttn {
       display: flex;
     }
@@ -213,15 +230,15 @@ const ToastMessage = ({className, ...props}) => {
   }
 
   return (
-    <StyledToastMessage className={className} {...props} bg={ !themeIsDark ? 'white' : 'black' } >
+    <StyledToastMessage className={className} bg={ !themeIsDark ? 'white' : 'black' } border={1} borderColor={ !themeIsDark ? '#D6D6D6' : 'transparent' } {...props}>
       { renderFigure(props) }
-      <Box flex={'1 0'} mx={2}>
+      <StyledTextCell flex={'1 1 auto'} mx={2}>
         { props.message && <Text fontSize={1} fontWeight={3} color={ !themeIsDark ? 'black' : 'white' }>{props.message}</Text> }
         { props.secondaryMessage && <Text fontSize={1} color={ !themeIsDark ? '#666' : '#afafaf' }>{props.secondaryMessage}</Text> }
-      </Box>
-      <Box flex={'0 1 auto'} mr={2}>
+      </StyledTextCell>
+      <Text flex={'0 1'} mr={2} textAlign={'right'} lineHeight={'18px'}>
         { props.actionText && props.actionHref && <Link href={props.actionHref} target={'_blank'} color={ !themeIsDark ? 'primary' : '#9387FF' }>{props.actionText}</Link>}
-      </Box>
+      </Text>
       { renderCloseBttn(props) }
     </StyledToastMessage>
   );
