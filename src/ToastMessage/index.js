@@ -413,7 +413,7 @@ ToastMessage.defaultProps = {
   secondaryMessage: '',
   actionHref: '',
   actionText: '',
-  variant: 'default',
+  variant: false,
   icon: false,
   colorTheme: '',
   closeElem: false
