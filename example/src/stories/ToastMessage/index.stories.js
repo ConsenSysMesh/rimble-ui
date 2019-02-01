@@ -36,28 +36,21 @@ storiesOf('ToastMessage', module)
             actionText={'Action'}
             actionHref={'#!'}
           />
-
-          <hr/>
-
           <ToastMessage.Processing
             my={3}
-            message={'Processing Payment…'}
-            actionText={'View Details'}
-            actionHref={'#!'}
+            message={'Processing {0.00018} ETH payment'}
           />
           <ToastMessage.Success
             my={3}
-            message={'Payment Confirmed'}
-            secondaryMessage={'6efd...5909'}
-            actionText={'View Details'}
+            message={'ETH sent'}
+            secondaryMessage={'You have {1.03} ETH remaining'}
+            actionText={'View on Etherscan'}
             actionHref={'#!'}
           />
           <ToastMessage.Failure
             my={3}
-            message={'Payment Failed'}
-            secondaryMessage={'6efd...5909'}
-            actionText={'View Details'}
-            actionHref={'#!'}
+            message={'Payment failed'}
+            secondaryMessage={'Make sure you have enough ETH and try again'}
           />
 
         </Box>
@@ -139,6 +132,16 @@ storiesOf('ToastMessage', module)
         })}
       >
         "addMessage.default with Icon"
+      </Button>
+      <br/>
+      <Button
+        mb={3}
+        onClick={(e) => window.toastProvider.addMessage('[Your message here… ]', {
+          icon: 'VpnKey',
+          colorTheme: 'dark'
+        })}
+      >
+        "addMessage.default dark colors with Icon"
       </Button>
       <br/>
       <Button onClick={() => window.toastProvider.removeMessage()}>"removeMessage"</Button>
