@@ -5,7 +5,7 @@ import { tint } from 'polished'
 
 import Button from '../Button'
 
-import theme from '../theme'
+// import theme from '../theme'
 
 const OutlineButton = styled(Button)`
   & {
@@ -27,7 +27,7 @@ const OutlineButton = styled(Button)`
 `
 
 OutlineButton.defaultProps = {
-  theme: theme,
+  // theme: theme,
   fontWeight: 3,
   color: 'primary',
   bg: 'white',

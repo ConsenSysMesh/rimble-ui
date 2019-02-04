@@ -14,7 +14,7 @@ import {
 import Box from '../Box'
 import Icon from '../Icon'
 
-import theme from '../theme'
+// import theme from '../theme'
 
 const fullWidth = (props) => (
   props.fullWidth ? { width: '100%' } : null
@@ -114,7 +114,7 @@ const Button = styled(ProtoButton)`
 `
 
 Button.defaultProps = {
-  theme: theme,
+  // theme: theme,
   color: 'white',
   bg: 'primary',
   height: '48px',

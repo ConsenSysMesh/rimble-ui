@@ -36,7 +36,7 @@ const GlobalStyle = createGlobalStyle`
 
 const ThemeProvider = ({ ...props }) => {
   return (
-    <StyledThemeProvider theme={theme}>
+    <StyledThemeProvider theme={theme} {...props}>
       <React.Fragment>
         <GlobalStyle />
         <Base {...props} />
