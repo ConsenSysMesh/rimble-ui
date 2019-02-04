@@ -1,93 +1,4 @@
-# ToastMessage
-The `ToastMessage` renders a responsive box-model layout component.
-
-<!-- STORY -->
-
-### Usage
-```jsx
-import { ToastMessage } from 'rimble-ui'
-```
-
-<!-- component example here -->
-```jsx
-<ToastMessage>
-  This is a ToastMessage
-</ToastMessage>
-
-<ToastMessage secondaryMessage={'Lorem ipsum dolor sit.'} />
-
-<ToastMessage
-  icon={'InfoOutline'}
-  actionText={'Action'}
-  actionHref={'#!'}
-/>
-
-<ToastMessage
-  secondaryMessage={'Lorem ipsum dolor sit.'}
-  icon={'InfoOutline'}
-  actionText={'Action'}
-  actionHref={'#!'}
-/>
-
-<ToastMessage.Processing message={'Processing {0.00018} ETH payment' />
-
-<ToastMessage.Success
-  message={'ETH sent'}
-  secondaryMessage={'You have {1.03} ETH remaining'}
-  actionText={'View on Etherscan'}
-  actionHref={'#!'}
-/>
-
-<ToastMessage.Failure
-  message={'Payment failed'}
-  secondaryMessage={'Make sure you have enough ETH and try again'}
-/>
-
-<ToastMessage colorTheme={'dark'} />
-
-<ToastMessage
-  secondaryMessage={'Lorem ipsum dolor sit.'}
-  colorTheme={'dark'}
-/>
-
-<ToastMessage
-  icon={'InfoOutline'}
-  colorTheme={'dark'}
-  actionText={'Action'}
-  actionHref={'#!'}
-/>
-
-<ToastMessage
-  secondaryMessage={'Lorem ipsum dolor sit.'}
-  icon={'InfoOutline'}
-  colorTheme={'dark'}
-  actionText={'Action'}
-  actionHref={'#!'}
-/>
-
-<Button onClick={(e) => window.toastProvider.addMessage('[Processing… ]', {
-    secondaryMessage: (Date.now()),
-    actionHref: 'https://etherscan.io/tx/0xcbc921418c360b03b96585ae16f906cbd48c8d6c2cc7b82c6db430390a9fcfed',
-    actionText: 'View on Etherscan',
-    variant: 'processing',
-  })}
->
-  "addMessage.processing"
-</Button>
-
-<Button onClick={(e) => window.toastProvider.addMessage('[Your message here… ]', {
-    icon: 'VpnKey',
-    colorTheme: 'dark'
-  })}
->
-  "addMessage.default dark colors with Icon"
-</Button>
-
-
-<ToastMessage.Provider ref={(node) => (window.toastProvider = node)} />
-```
-
-# Generic toast component documentation
+# Toast component documentation
 
 - Documentation acceptance criteria
 
@@ -119,7 +30,7 @@ Toast messages are small alerts that provide updates about a process. Use toast 
 ## How they work
 
 - They dismiss automatically
-- User are able to dismiss them manually
+- User can dismiss them manually
 - They display one at a time, so if multiple messages are necessary, each one should appear after the previous message.
 
 # Rimble's generic toast components:
@@ -128,7 +39,15 @@ Toast messages are small alerts that provide updates about a process. Use toast 
 
 *For when you want to just provide a quick process update like a confirmation*
 
+![](Untitled-9b6efe62-4bec-4591-9ad9-35824b249a77.png)
+
+![](Untitled-84191bdd-19ce-4997-a55b-18fab6d120a8.png)
+
 Example of a toast telling the user something that's happening
+
+![](Untitled-22f5d567-3b4e-4a0c-a8ce-1f8a04cb8649.png)
+
+![](Untitled-8f740211-7a77-4459-a84f-8af26e1acf78.png)
 
 Example of a toast telling the user something that's happened
 **
@@ -143,13 +62,37 @@ Example of a toast telling the user something that's happened
 - A transaction has started
 - You're now logged in to your wallet
 
+## Code
+
+
+
+## Code (with icon)
+
+
+
 ---
+
+-
 
 ## Title and subtext (+ optional icon)
 
 *For when you want to provide more value through extra helpful information. Ask yourself when implementing your toast: is there anything else I could tell the user that would be useful?*
 
+![](Untitled-597750c8-114c-4ec7-a4ac-b999922e87ff.png)
+
+![](Untitled-73442bbe-91aa-4297-95a3-6f66b674d329.png)
+
 Example of a toast telling the user something is happening with extra helpful information
+
+![](Untitled-7fa64970-7621-4413-8438-77d5e6eb5a3d.png)
+
+![](Untitled-2cceb19b-81eb-4d9b-8bab-125722dea622.png)
 
 Example of a toast telling the user something that's happened with extra helpful information
 **
+
+## Code
+
+
+
+## Code (with icon)

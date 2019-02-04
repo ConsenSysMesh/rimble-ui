@@ -2,7 +2,8 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withDocs } from 'storybook-readme';
 
-import MyREADME from './README.md';
+import READMEa from './README.md';
+import READMEb from './README-B.md';
 
 import {
   Flex,
@@ -12,8 +13,13 @@ import {
 } from 'rimble-ui'
 
 storiesOf('ToastMessage', module)
-  .addDecorator(withDocs(MyREADME))
-  .add('ToastMessage', () => (
+  // .addDecorator(withDocs(MyREADME))
+  .add('ToastMessage Guide', withDocs(READMEa, () => (
+    <div>
+      hello
+    </div>
+  )))
+  .add('ToastMessage Usage', withDocs(READMEb, () => (
     <div>
       <Flex>
         <Box width={'50%'} mr={4}>
@@ -149,4 +155,4 @@ storiesOf('ToastMessage', module)
       <ToastMessage.Provider ref={(node) => (window.toastProvider = node)} />
 
     </div>
-  ))
+  )))
