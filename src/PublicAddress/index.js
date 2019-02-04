@@ -28,7 +28,7 @@ const fadeOut = keyframes`
 
 const StyledInput = styled(Input)`
   text-overflow: ellipsis;
-  white-space: nowrap;
+  white-space: no-wrap;
 `
 
 const StyledButton = styled(Button)`
@@ -72,7 +72,6 @@ const StyledButton = styled(Button)`
   }
 `
 
-
 const StyledWrapper = styled(Box)`
   & {
     display: flex;
@@ -95,7 +94,7 @@ const StyledWrapper = styled(Box)`
 
 class PublicAddress extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.inputRef = React.createRef()
     this.buttonRef = React.createRef()
   }
@@ -118,7 +117,7 @@ class PublicAddress extends Component {
 
   render() {
     return (
-      <Field label="Public Address" >
+      <Field label='Public Address' >
         <StyledWrapper>
           <StyledInput readOnly value={this.props.address} ref={this.inputRef} />
           <StyledButton size='small' px={3} onClick={this.handleClick} ref={this.buttonRef} >
@@ -126,9 +125,10 @@ class PublicAddress extends Component {
           </StyledButton>
         </StyledWrapper>
       </Field>
-    );
+    )
   }
-
 }
 
-export default PublicAddress;
+PublicAddress.displayName = 'PublicAddress'
+
+export default PublicAddress
