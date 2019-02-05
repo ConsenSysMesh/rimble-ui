@@ -89,28 +89,11 @@ import { ToastMessage } from 'rimble-ui'
 <ToastMessage.Provider ref={(node) => (window.toastProvider = node)} />
 ```
 
-# Generic toast component documentation
-
-- Documentation acceptance criteria
-
-- What should a user know after reading this documentation?
-    - When to use a toast component
-        - And have a good idea when to use the different variations
-    - The way the component works
-    - The code to implement the component
-    - What kind of content is best suited to this component
-
----
-
-[https://www.figma.com/file/n6FLTlQudooEbEXxVLp5V0/Rimble-Components-Working-File?node-id=701%3A0](https://www.figma.com/file/n6FLTlQudooEbEXxVLp5V0/Rimble-Components-Working-File?node-id=701%3A0)
-
----
+# `ToastMessage` usage
 
 # **When should toasts be used?**
 
 > For non-critical messages and actions that should be helpful but ultimately ignorable without any impact on what the user wants to get done.
-
-Toast messages are small alerts that provide updates about a process. Use toast messages for non-critical information about what’s happening within your dApp. They shouldn't be used to notify the user that they ***need*** to do something. For that [see Modals](#).
 
 ## General usage guidelines
 
@@ -124,16 +107,11 @@ Toast messages are small alerts that provide updates about a process. Use toast 
 - User are able to dismiss them manually
 - They display one at a time, so if multiple messages are necessary, each one should appear after the previous message.
 
-# Rimble's generic toast components:
+# Digging into the components:
 
 ## Title only (+ optional icon)
 
 *For when you want to just provide a quick process update like a confirmation*
-
-Example of a toast telling the user something that's happening
-
-Example of a toast telling the user something that's happened
-**
 
 **Generic message:** should clearly state the update in human terms, referencing the process if possible. NOTE: you very rarely need to use words like "Successfully", the state should speak for itself.
 
@@ -151,7 +129,13 @@ Example of a toast telling the user something that's happened
 
 *For when you want to provide more value through extra helpful information. Ask yourself when implementing your toast: is there anything else I could tell the user that would be useful?*
 
-Example of a toast telling the user something is happening with extra helpful information
+**Generic message:** should clearly state the update in human terms.
 
-Example of a toast telling the user something that's happened with extra helpful information
-**
+**Generic subtext:** should provide additional information that adds value.
+
+**Action:** should relate to what you're communicating and is optional. If your subtext is advice or a suggestion, try and include an action that gets the user on their way. If no action is required or relevant, leave it out. 
+
+**Example scenarios:**
+
+- A transaction was sent successfully and you'd like to tell the user how much ETH they have left for future transactions. ACTION: *none*
+- You want to tell the user that they're on the Rinkeby network and want to remind them that to use your dApp for real they should switch to Mainnet. ACTION: Switch to Mainnet
