@@ -1,5 +1,7 @@
 # ToastMessage
-The `ToastMessage` renders a responsive box-model layout component. This is another test.
+Toast messages are small alerts that provide updates about a process. Use toast messages for non-critical information about what’s happening within your dApp. They shouldn't be used to notify the user that they need to do something. The `ToastMessage` component renders a responsive box-model layout component.
+
+For the code, usage guidance and examples, keep scrolling. 
 
 <!-- STORY -->
 
