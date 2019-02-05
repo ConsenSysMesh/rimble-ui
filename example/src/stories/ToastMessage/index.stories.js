@@ -20,7 +20,7 @@ storiesOf('ToastMessage', module)
           <ToastMessage my={3} />
 
           <ToastMessage
-            message={'this is what the "message" property of this component is for, if you do not pass one, we render a placeholder message'}
+            message={'Process update'}
             secondaryMessage={'Supporting information for update'}
             my={3}
           />
@@ -31,6 +31,7 @@ storiesOf('ToastMessage', module)
             actionHref={'#!'}
           />
           <ToastMessage
+            message={'Process update'}
             secondaryMessage={'Supporting information for update'}
             icon={'InfoOutline'}
             my={3}
@@ -56,6 +57,7 @@ storiesOf('ToastMessage', module)
         <Box width={'50%'}>
           <ToastMessage colorTheme={'dark'} my={3}/>
           <ToastMessage
+            message={'Process update'}
             secondaryMessage={'Supporting information for update'}
             colorTheme={'dark'}
             my={3}
@@ -68,6 +70,7 @@ storiesOf('ToastMessage', module)
             actionHref={'#!'}
           />
           <ToastMessage
+            message={'Process update'}
             secondaryMessage={'Supporting information for update'}
             icon={'InfoOutline'}
             colorTheme={'dark'}
