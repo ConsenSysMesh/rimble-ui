@@ -30,7 +30,7 @@ storiesOf('ToastMessage', module)
             actionHref={'#!'}
           />
           <ToastMessage
-            secondaryMessage={'Lorem ipsum dolor sit.'}
+            secondaryMessage={'Lorem ipsum dolor sit. TEST'}
             icon={'InfoOutline'}
             my={3}
             actionText={'Action'}
