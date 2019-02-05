@@ -20,6 +20,7 @@ storiesOf('ToastMessage', module)
           <ToastMessage my={3} />
 
           <ToastMessage
+            message={'this is what the "message" property of this component is for, if you do not pass one, we render a placeholder message'}
             secondaryMessage={'Supporting information for update'}
             my={3}
           />
