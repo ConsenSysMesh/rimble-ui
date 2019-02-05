@@ -20,7 +20,7 @@ storiesOf('ToastMessage', module)
           <ToastMessage my={3} />
 
           <ToastMessage
-            secondaryMessage={'Lorem ipsum dolor sit.'}
+            secondaryMessage={'Supporting information for update'}
             my={3}
           />
           <ToastMessage
@@ -30,7 +30,7 @@ storiesOf('ToastMessage', module)
             actionHref={'#!'}
           />
           <ToastMessage
-            secondaryMessage={'Lorem ipsum dolor sit. TEST'}
+            secondaryMessage={'Supporting information for update'}
             icon={'InfoOutline'}
             my={3}
             actionText={'Action'}
@@ -38,26 +38,24 @@ storiesOf('ToastMessage', module)
           />
           <ToastMessage.Processing
             my={3}
-            message={'Processing {0.00018} ETH payment'}
+            message={'Processing 0.00018 ETH payment'}
           />
           <ToastMessage.Success
             my={3}
             message={'ETH sent'}
-            secondaryMessage={'You have {1.03} ETH remaining'}
-            actionText={'View on Etherscan'}
-            actionHref={'#!'}
+            secondaryMessage={'You have 1.03 Ether (ETH) remaining'}
           />
           <ToastMessage.Failure
             my={3}
             message={'Payment failed'}
-            secondaryMessage={'Make sure you have enough ETH and try again'}
+            secondaryMessage={'Make sure you have enough Ether and try again'}
           />
 
         </Box>
         <Box width={'50%'}>
           <ToastMessage colorTheme={'dark'} my={3}/>
           <ToastMessage
-            secondaryMessage={'Lorem ipsum dolor sit.'}
+            secondaryMessage={'Supporting information for update'}
             colorTheme={'dark'}
             my={3}
           />
@@ -69,7 +67,7 @@ storiesOf('ToastMessage', module)
             actionHref={'#!'}
           />
           <ToastMessage
-            secondaryMessage={'Lorem ipsum dolor sit.'}
+            secondaryMessage={'Supporting information for update'}
             icon={'InfoOutline'}
             colorTheme={'dark'}
             my={3}
@@ -96,8 +94,6 @@ storiesOf('ToastMessage', module)
         mb={3}
         onClick={(e) => window.toastProvider.addMessage('[Complete… ]', {
             secondaryMessage: (Date.now()),
-            actionHref: 'https://etherscan.io/tx/0xcbc921418c360b03b96585ae16f906cbd48c8d6c2cc7b82c6db430390a9fcfed',
-            actionText: 'View on Etherscan',
             variant: 'success',
           })
         }
@@ -109,8 +105,6 @@ storiesOf('ToastMessage', module)
         mb={3}
         onClick={(e) => window.toastProvider.addMessage('[Failed… ]', {
             secondaryMessage: (Date.now()),
-            actionHref: 'https://etherscan.io/tx/0xcbc921418c360b03b96585ae16f906cbd48c8d6c2cc7b82c6db430390a9fcfed',
-            actionText: 'View on Etherscan',
             variant: 'failure',
           })
         }
