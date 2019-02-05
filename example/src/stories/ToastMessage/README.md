@@ -133,7 +133,7 @@ import { ToastMessage } from 'rimble-ui'
 
 **`secondaryMessage`:** should provide additional information that adds value.
 
-**`ActionText`:** should relate to what you're communicating and is optional. If your subtext is advice or a suggestion, try and include an action that gets the user on their way. If no action is required or relevant, leave it out. 
+**`actionText`:** should relate to what you're communicating and is optional. If your subtext is advice or a suggestion, try and include an action that gets the user on their way. If no action is required or relevant, leave it out. 
 
 **Example scenarios:**
 
