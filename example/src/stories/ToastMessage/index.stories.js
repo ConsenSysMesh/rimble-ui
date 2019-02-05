@@ -20,8 +20,8 @@ storiesOf('ToastMessage', module)
           <ToastMessage my={3} />
 
           <ToastMessage
-            message={'Process update'}
-            secondaryMessage={'Supporting information for update'}
+            message={'Write update here [Required]'}
+            secondaryMessage={'Supporting information for update [Optional]'}
             my={3}
           />
           <ToastMessage
@@ -31,8 +31,8 @@ storiesOf('ToastMessage', module)
             actionHref={'#!'}
           />
           <ToastMessage
-            message={'Process update'}
-            secondaryMessage={'Supporting information for update'}
+            message={'Write update here [Required]'}
+            secondaryMessage={'Supporting information for update [Optional]'}
             icon={'InfoOutline'}
             my={3}
             actionText={'Action'}
@@ -57,8 +57,8 @@ storiesOf('ToastMessage', module)
         <Box width={'50%'}>
           <ToastMessage colorTheme={'dark'} my={3}/>
           <ToastMessage
-            message={'Process update'}
-            secondaryMessage={'Supporting information for update'}
+            message={'Write update here [Required]'}
+            secondaryMessage={'Supporting information for update [Optional]'}
             colorTheme={'dark'}
             my={3}
           />
@@ -70,8 +70,8 @@ storiesOf('ToastMessage', module)
             actionHref={'#!'}
           />
           <ToastMessage
-            message={'Process update'}
-            secondaryMessage={'Supporting information for update'}
+            message={'Write update here [Required]'}
+            secondaryMessage={'Supporting information for update [Optional]'}
             icon={'InfoOutline'}
             colorTheme={'dark'}
             my={3}
