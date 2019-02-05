@@ -1,5 +1,5 @@
 # ToastMessage
-The `ToastMessage` renders a responsive box-model layout component.
+The `ToastMessage` renders a responsive box-model layout component. This is another test.
 
 <!-- STORY -->
 
