@@ -113,9 +113,9 @@ import { ToastMessage } from 'rimble-ui'
 
 *For when you want to just provide a quick process update like a confirmation*
 
-**Generic message:** should clearly state the update in human terms, referencing the process if possible. NOTE: you very rarely need to use words like "Successfully", the state should speak for itself.
+**`message`:** should clearly state the update in human terms, referencing the process if possible. NOTE: you very rarely need to use words like "Successfully", the state should speak for itself.
 
-**Action:** should relate to what you're communicating and is optional. If the message is a reversible action, "undo" is often a good choice. If no action is required or relevant, leave it out.
+**`actionText`:** should relate to what you're communicating and is optional. If the message is a reversible action, "undo" is often a good choice. If no action is required or relevant, leave it out.
 
 **Example scenarios:**
 
@@ -129,11 +129,11 @@ import { ToastMessage } from 'rimble-ui'
 
 *For when you want to provide more value through extra helpful information. Ask yourself when implementing your toast: is there anything else I could tell the user that would be useful?*
 
-**Generic message:** should clearly state the update in human terms.
+**`message`:** should clearly state the update in human terms.
 
-**Generic subtext:** should provide additional information that adds value.
+**`secondaryMessage`:** should provide additional information that adds value.
 
-**Action:** should relate to what you're communicating and is optional. If your subtext is advice or a suggestion, try and include an action that gets the user on their way. If no action is required or relevant, leave it out. 
+**`ActionText`:** should relate to what you're communicating and is optional. If your subtext is advice or a suggestion, try and include an action that gets the user on their way. If no action is required or relevant, leave it out. 
 
 **Example scenarios:**
 
