@@ -83,20 +83,20 @@ storiesOf('ToastMessage', module)
 
       <Button
         mb={3}
-        onClick={(e) => window.toastProvider.addMessage('[Processing… ]', {
-            secondaryMessage: (Date.now()),
+        onClick={(e) => window.toastProvider.addMessage('[Processing payment...]', {
+            secondaryMessage: 'test',
             actionHref: 'https://etherscan.io/tx/0xcbc921418c360b03b96585ae16f906cbd48c8d6c2cc7b82c6db430390a9fcfed',
             actionText: 'View on Etherscan',
             variant: 'processing',
           })
         }
       >
-        "addMessage.processing"
+        "Preview addMessage.processing"
       </Button>
       <br/>
       <Button
         mb={3}
-        onClick={(e) => window.toastProvider.addMessage('[Complete… ]', {
+        onClick={(e) => window.toastProvider.addMessage('[ETH sent ]', {
             secondaryMessage: (Date.now()),
             variant: 'success',
           })
@@ -107,7 +107,7 @@ storiesOf('ToastMessage', module)
       <br/>
       <Button
         mb={3}
-        onClick={(e) => window.toastProvider.addMessage('[Failed… ]', {
+        onClick={(e) => window.toastProvider.addMessage('[Payment failed ]', {
             secondaryMessage: (Date.now()),
             variant: 'failure',
           })
@@ -118,14 +118,14 @@ storiesOf('ToastMessage', module)
       <br/>
       <Button
         mb={3}
-        onClick={(e) => window.toastProvider.addMessage('[Your message here… ]')}
+        onClick={(e) => window.toastProvider.addMessage('Write update here [Required]')}
       >
         "addMessage.default"
       </Button>
       <br/>
       <Button
         mb={3}
-        onClick={(e) => window.toastProvider.addMessage('[Your message here… ]', {
+        onClick={(e) => window.toastProvider.addMessage('Write update here [Required]', {
           icon: 'Info'
         })}
       >
@@ -134,7 +134,7 @@ storiesOf('ToastMessage', module)
       <br/>
       <Button
         mb={3}
-        onClick={(e) => window.toastProvider.addMessage('[Your message here… ]', {
+        onClick={(e) => window.toastProvider.addMessage('Write update here [Required]', {
           icon: 'VpnKey',
           colorTheme: 'dark'
         })}
