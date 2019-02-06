@@ -50,7 +50,7 @@ storiesOf('ToastMessage', module)
           <ToastMessage.Failure
             my={3}
             message={'Payment failed'}
-            secondaryMessage={'You don't have enough Ether (ETH)'}
+            secondaryMessage={'You don&#39;t have enough Ether (ETH)'}
             actionText={'Buy ETH'}
             actionHref={'#!'}
           />
