@@ -52,7 +52,7 @@ storiesOf('ToastMessage', module)
             message={'Payment failed'}
             secondaryMessage={'You don't have enough Ether (ETH)'}
             actionText={'Buy ETH'}
-            actionHref={'https://coinbase.com'}
+            actionHref={'#!'}
           />
 
         </Box>
