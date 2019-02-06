@@ -50,7 +50,7 @@ storiesOf('ToastMessage', module)
           <ToastMessage.Failure
             my={3}
             message={'Payment failed'}
-            secondaryMessage={'Make sure you have enough Ether and try again'}
+            secondaryMessage={'You don&#39;t have enough Ether (ETH)'}
           />
 
         </Box>
@@ -108,12 +108,14 @@ storiesOf('ToastMessage', module)
       <Button
         mb={3}
         onClick={(e) => window.toastProvider.addMessage('[Payment failed]', {
-            secondaryMessage: 'Make sure you have enough Ether and try again',
+            secondaryMessage: '[You don&#39;t have enough Ether (ETH)]',
+            actionHref: 'https://www.coinbase.com/',
+            actionText: 'Buy ETH',     
             variant: 'failure',
           })
         }
       >
-        'Preview "addMessage.failure"'
+        Preview "addMessage.failure"
       </Button>
       <br/>
       <Button
