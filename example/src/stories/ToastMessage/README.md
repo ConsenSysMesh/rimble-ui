@@ -1,14 +1,17 @@
 # ToastMessage
+
 The `ToastMessage` renders a responsive box-model layout component.
 
 <!-- STORY -->
 
 ### Usage
+
 ```jsx
-import { ToastMessage } from 'rimble-ui'
+import { ToastMessage } from "rimble-ui";
 ```
 
 <!-- component example here -->
+
 ```jsx
 <ToastMessage>
   This is a ToastMessage
@@ -34,7 +37,7 @@ import { ToastMessage } from 'rimble-ui'
 <ToastMessage.Success
   message={'ETH sent'}
   secondaryMessage={'You have {1.03} ETH remaining'}
-  actionText={'View on Etherscan'}
+  actionText={'Action'}
   actionHref={'#!'}
 />
 
@@ -67,8 +70,8 @@ import { ToastMessage } from 'rimble-ui'
 
 <Button onClick={(e) => window.toastProvider.addMessage('[Processing… ]', {
     secondaryMessage: (Date.now()),
-    actionHref: 'https://etherscan.io/tx/0xcbc921418c360b03b96585ae16f906cbd48c8d6c2cc7b82c6db430390a9fcfed',
-    actionText: 'View on Etherscan',
+    actionHref: '#!',
+    actionText: 'Action',
     variant: 'processing',
   })}
 >
@@ -92,11 +95,11 @@ import { ToastMessage } from 'rimble-ui'
 - Documentation acceptance criteria
 
 - What should a user know after reading this documentation?
-    - When to use a toast component
-        - And have a good idea when to use the different variations
-    - The way the component works
-    - The code to implement the component
-    - What kind of content is best suited to this component
+  - When to use a toast component
+    - And have a good idea when to use the different variations
+  - The way the component works
+  - The code to implement the component
+  - What kind of content is best suited to this component
 
 ---
 
@@ -108,7 +111,7 @@ import { ToastMessage } from 'rimble-ui'
 
 > For non-critical messages and actions that should be helpful but ultimately ignorable without any impact on what the user wants to get done.
 
-Toast messages are small alerts that provide updates about a process. Use toast messages for non-critical information about what’s happening within your dApp. They shouldn't be used to notify the user that they ***need*** to do something. For that [see Modals](#).
+Toast messages are small alerts that provide updates about a process. Use toast messages for non-critical information about what’s happening within your dApp. They shouldn't be used to notify the user that they **_need_** to do something. For that [see Modals](#).
 
 ## General usage guidelines
 
@@ -126,12 +129,12 @@ Toast messages are small alerts that provide updates about a process. Use toast 
 
 ## Title only (+ optional icon)
 
-*For when you want to just provide a quick process update like a confirmation*
+_For when you want to just provide a quick process update like a confirmation_
 
 Example of a toast telling the user something that's happening
 
 Example of a toast telling the user something that's happened
-**
+\*\*
 
 **Generic message:** should clearly state the update in human terms, referencing the process if possible. NOTE: you very rarely need to use words like "Successfully", the state should speak for itself.
 
@@ -147,9 +150,9 @@ Example of a toast telling the user something that's happened
 
 ## Title and subtext (+ optional icon)
 
-*For when you want to provide more value through extra helpful information. Ask yourself when implementing your toast: is there anything else I could tell the user that would be useful?*
+_For when you want to provide more value through extra helpful information. Ask yourself when implementing your toast: is there anything else I could tell the user that would be useful?_
 
 Example of a toast telling the user something is happening with extra helpful information
 
 Example of a toast telling the user something that's happened with extra helpful information
-**
+\*\*
