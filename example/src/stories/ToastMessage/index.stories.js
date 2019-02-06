@@ -50,7 +50,9 @@ storiesOf('ToastMessage', module)
           <ToastMessage.Failure
             my={3}
             message={'Payment failed'}
-            secondaryMessage={'You don&#39;t have enough Ether (ETH)'}
+            secondaryMessage={'You don't have enough Ether (ETH)'}
+            actionText={'Buy ETH'}
+            actionHref={'https://coinbase.com'}
           />
 
         </Box>
@@ -91,7 +93,7 @@ storiesOf('ToastMessage', module)
           })
         }
       >
-        'Preview "addMessage.processing"'
+        Preview "addMessage.processing"
       </Button>
       <br/>
       <Button
@@ -102,13 +104,13 @@ storiesOf('ToastMessage', module)
           })
         }
       >
-        'Preview "addMessage.success"'
+        Preview "addMessage.success"
       </Button>
       <br/>
       <Button
         mb={3}
         onClick={(e) => window.toastProvider.addMessage('[Payment failed]', {
-            secondaryMessage: '[You don&#39;t have enough Ether (ETH)]',
+            secondaryMessage: '[You don't have enough Ether (ETH)]',
             actionHref: 'https://www.coinbase.com/',
             actionText: 'Buy ETH',     
             variant: 'failure',
@@ -122,7 +124,7 @@ storiesOf('ToastMessage', module)
         mb={3}
         onClick={(e) => window.toastProvider.addMessage('Write update here [Required]')}
       >
-        "addMessage.default"
+        Preview "addMessage.default"
       </Button>
       <br/>
       <Button
@@ -131,7 +133,7 @@ storiesOf('ToastMessage', module)
           icon: 'Info'
         })}
       >
-        "addMessage.default with Icon"
+        Preview "addMessage.default with Icon"
       </Button>
       <br/>
       <Button
@@ -141,10 +143,10 @@ storiesOf('ToastMessage', module)
           colorTheme: 'dark'
         })}
       >
-        "addMessage.default dark colors with Icon"
+        Preview "addMessage.default dark colors with Icon"
       </Button>
       <br/>
-      <Button onClick={() => window.toastProvider.removeMessage()}>"removeMessage"</Button>
+      <Button onClick={() => window.toastProvider.removeMessage()}>Preview "RemoveMessage"</Button>
 
       <ToastMessage.Provider ref={(node) => (window.toastProvider = node)} />
 
