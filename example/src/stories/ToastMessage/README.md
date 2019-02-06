@@ -139,3 +139,11 @@ import { ToastMessage } from 'rimble-ui'
 
 - A transaction was sent successfully and you'd like to tell the user how much ETH they have left for future transactions. ACTION: *none*
 - You want to tell the user that they're on the Rinkeby network and want to remind them that to use your dApp for real they should switch to Mainnet. ACTION: Switch to Mainnet
+
+# How to write `Processing`, `success` and `failure` messages
+
+This is just some general guidance if you don't know where to start. 
+
+- `processing` messages should be in the present tense, like "Processing" or "Sending". An ellipses `...` at the end of the message can help indicate to the user that something is happening and is yet to be resolved. If possible, "Processing..." or "Sending..." should echo the language in the CTA that the user pressed to initiate the process.  
+- `success` messages should describe what's happened e.g. "Payment sent" not just a generic "SUCCESS!". Try and echo the words used in the CTA that started the process. For example, if the user was sending ETH to an address and the CTA was "Send", have the toast message echo that language: "ETH sent". If you describe what's happened you don't need words like "successfully" at the end which add to word count. 
+- `failure` messages, where possible, should explain the reason for failure and offer a suggestion of what to do next. Again echo the language used in the action the user was trying to do. For example, if the user was sending ETH to an address and the CTA was "Send", have the failure message echo that language: "Failed to send ETH" or "Couldn't send ETH". Then use the `secondaryMessage` to explain why or a suggestion on how to fix the problem. Try not to leave the user with no understanding of why something has failed or what to do next.
