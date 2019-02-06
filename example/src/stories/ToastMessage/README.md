@@ -140,7 +140,7 @@ import { ToastMessage } from 'rimble-ui'
 - A transaction was sent successfully and you'd like to tell the user how much ETH they have left for future transactions. ACTION: *none*
 - You want to tell the user that they're on the Rinkeby network and want to remind them that to use your dApp for real they should switch to Mainnet. ACTION: Switch to Mainnet
 
-# How to write `Processing`, `success` and `failure` messages
+## How to write `Processing`, `success` and `failure` messages
 
 This is just some general guidance if you don't know where to start. 
 
