@@ -110,7 +110,7 @@ storiesOf('ToastMessage', module)
       <Button
         mb={3}
         onClick={(e) => window.toastProvider.addMessage('[Payment failed]', {
-            secondaryMessage: '[You don't have enough Ether (ETH)]',
+            secondaryMessage: '[You don&#39;t have enough Ether (ETH)]',
             actionHref: 'https://www.coinbase.com/',
             actionText: 'Buy ETH',     
             variant: 'failure',
