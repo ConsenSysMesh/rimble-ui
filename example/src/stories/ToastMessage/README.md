@@ -91,7 +91,7 @@ import { ToastMessage } from 'rimble-ui'
 
 # `ToastMessage` content and design guidelines
 
-# **When should a `ToastMessage` be used?**
+## **When should they be used?**
 
 > For non-critical messages and actions that should be helpful but ultimately ignorable without any impact on what the user wants to get done.
 
