@@ -16,7 +16,7 @@ import { ToastMessage } from 'rimble-ui'
   This is a ToastMessage
 </ToastMessage>
 
-<ToastMessage secondaryMessage={'Lorem ipsum dolor sit.'} />
+<ToastMessage secondaryMessage={'Supporting information for update [Optional]'} />
 
 <ToastMessage
   icon={'InfoOutline'}
@@ -25,30 +25,32 @@ import { ToastMessage } from 'rimble-ui'
 />
 
 <ToastMessage
-  secondaryMessage={'Lorem ipsum dolor sit.'}
+  secondaryMessage={'Supporting information for update [Optional]''}
   icon={'InfoOutline'}
   actionText={'Action'}
   actionHref={'#!'}
 />
 
-<ToastMessage.Processing message={'Processing {0.00018} ETH payment' />
+<ToastMessage.Processing message={'Processing 0.00018 ETH payment'} />
 
 <ToastMessage.Success
   message={'ETH sent'}
-  secondaryMessage={'You have {1.03} ETH remaining'}
-  actionText={'View on Etherscan'}
+  secondaryMessage={'You have 1.03 ETH remaining'}
+  actionText={'Action'}
   actionHref={'#!'}
 />
 
 <ToastMessage.Failure
   message={'Payment failed'}
-  secondaryMessage={'Make sure you have enough ETH and try again'}
+  secondaryMessage={'You don't have enough ETH'}
+  actionText={'Action'}
+  actionHref={'#!'}
 />
 
 <ToastMessage colorTheme={'dark'} />
 
 <ToastMessage
-  secondaryMessage={'Lorem ipsum dolor sit.'}
+  secondaryMessage={'Supporting information for update [Optional]'}
   colorTheme={'dark'}
 />
 
@@ -60,15 +62,15 @@ import { ToastMessage } from 'rimble-ui'
 />
 
 <ToastMessage
-  secondaryMessage={'Lorem ipsum dolor sit.'}
+  secondaryMessage={'Supporting information for update [Optional]'}
   icon={'InfoOutline'}
   colorTheme={'dark'}
   actionText={'Action'}
   actionHref={'#!'}
 />
 
-<Button onClick={(e) => window.toastProvider.addMessage('[Processing… ]', {
-    secondaryMessage: (Date.now()),
+<Button onClick={(e) => window.toastProvider.addMessage('Processing… ', {
+    secondaryMessage: '',
     actionHref: 'https://etherscan.io/tx/0xcbc921418c360b03b96585ae16f906cbd48c8d6c2cc7b82c6db430390a9fcfed',
     actionText: 'View on Etherscan',
     variant: 'processing',
@@ -77,7 +79,7 @@ import { ToastMessage } from 'rimble-ui'
   "addMessage.processing"
 </Button>
 
-<Button onClick={(e) => window.toastProvider.addMessage('[Your message here… ]', {
+<Button onClick={(e) => window.toastProvider.addMessage('Write update here [Required]', {
     icon: 'VpnKey',
     colorTheme: 'dark'
   })}
