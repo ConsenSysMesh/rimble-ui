@@ -27,26 +27,26 @@ StyledOverlay.defaultProps = {
 }
 
 class Modal extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isOpen: (this.props.isOpen || false)
-    }
-  }
-
-  closeModal = (e) => {
-    e.preventDefault()
-    this.setState((state, props) => ({
-      isOpen: false
-    }))
-  }
-
-  openModal = (e) => {
-    e.preventDefault()
-    this.setState((state, props) => ({
-      isOpen: true
-    }))
-  }
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {
+  //     isOpen: (this.props.isOpen || false)
+  //   }
+  // }
+  //
+  // closeModal = (e) => {
+  //   e.preventDefault()
+  //   this.setState((state, props) => ({
+  //     isOpen: false
+  //   }))
+  // }
+  //
+  // openModal = (e) => {
+  //   e.preventDefault()
+  //   this.setState((state, props) => ({
+  //     isOpen: true
+  //   }))
+  // }
 
   render() {
     if (!this.props.isOpen) {return null}
