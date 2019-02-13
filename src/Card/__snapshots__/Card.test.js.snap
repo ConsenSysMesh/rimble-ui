@@ -12,6 +12,7 @@ exports[`Card component sanity matches default snapshot 1`] = `
   min-width: 1px;
   height: auto;
   min-height: 1px;
+  position: relative;
   border: 1px solid;
   border-color: #D6D6D6;
   text-align: left;
