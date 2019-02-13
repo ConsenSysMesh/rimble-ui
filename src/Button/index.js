@@ -58,9 +58,8 @@ const ProtoButton = React.forwardRef((props, ref) => (
 
 const Button = styled(ProtoButton)`
   & {
-    font-family: inherit;
-    position: relative;
     cursor: pointer;
+    font-family: inherit;
     text-decoration: none;
     text-align: center;
     line-height: 1;
@@ -112,6 +111,7 @@ const Button = styled(ProtoButton)`
 `
 
 Button.defaultProps = {
+  position: 'relative',
   color: 'white',
   bg: 'primary',
   height: '48px',

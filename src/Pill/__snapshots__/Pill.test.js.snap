@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pill component sanity matches default snapshot 1`] = `
+.c0 {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  color: blue;
+  font-size: 14px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 2px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 3px;
+}
+
+.c0 {
+  box-sizing: border-box;
+}
+
+.c0 {
+  cursor: pointer;
+  border: none;
+  border-color: none;
+  background-color: #e0e0ff;
+}
+
+.c0:hover {
+  border-color: transparent;
+  background-color: #ccf;
+}
+
+<div
+  class="c0"
+  color="blue"
+  display="inline-flex"
+  font-size="1"
+  height="2"
+  tintlevel="0.88"
+>
+  
+</div>
+`;

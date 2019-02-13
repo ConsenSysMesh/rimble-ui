@@ -408,7 +408,7 @@ StyledToastMessage.defaultProps = {
 }
 
 ToastMessage.defaultProps = {
-  message:'[Your generic message]',
+  message:'Write update here [Required]',
   secondaryMessage: '',
   actionHref: '',
   actionText: '',
