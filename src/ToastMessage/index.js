@@ -66,6 +66,7 @@ const StyledToastContainer = styled.div`
   & {
     display: block;
     position: fixed;
+    z-index: 9999;
     top: auto;
     bottom: 0;
     left: auto;

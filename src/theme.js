@@ -1,14 +1,5 @@
 // theme.js
 export default {
-  colors: {
-    primary: '#4E3FCE',
-    black: '#000e1a',
-    white: '#fff',
-    blue: '#007ce0',
-    navy: '#004175',
-    grey: '#CCC',
-    copyColor: '#3F3D4B'
-  },
   fontSizes: [
     12, 14, 16, 20, 24, 32, 48, 64
   ],
@@ -47,5 +38,53 @@ export default {
   ],
   opacity: {
     disabled: 0.4
+  },
+  colors: {
+    primary: '#4E3FCE',
+    blue: '#007ce0',
+    navy: '#004175',
+    copyColor: '#3F3D4B',
+    // black: '#000',
+    black: '#000e1a',
+      'near-black': '#111',
+      'dark-gray': '#333',
+      'mid-gray': '#555',
+    // gray: ' #777',
+    grey: '#CCC',
+    silver: '#999',
+      'light-silver': '#aaa',
+      'moon-gray': '#ccc',
+      'light-gray': '#eee',
+      'near-white': '#f4f4f4',
+    white: '#fff',
+    transparent: 'transparent',
+    blacks: [
+      'rgba(0,0,0,.0125)',
+      'rgba(0,0,0,.025)',
+      'rgba(0,0,0,.05)',
+      'rgba(0,0,0,.1)',
+      'rgba(0,0,0,.2)',
+      'rgba(0,0,0,.3)',
+      'rgba(0,0,0,.4)',
+      'rgba(0,0,0,.5)',
+      'rgba(0,0,0,.6)',
+      'rgba(0,0,0,.7)',
+      'rgba(0,0,0,.8)',
+      'rgba(0,0,0,.9)',
+    ],
+    whites: [
+      'rgba(255,255,255,.0125)',
+      'rgba(255,255,255,.025)',
+      'rgba(255,255,255,.05)',
+      'rgba(255,255,255,.1)',
+      'rgba(255,255,255,.2)',
+      'rgba(255,255,255,.3)',
+      'rgba(255,255,255,.4)',
+      'rgba(255,255,255,.5)',
+      'rgba(255,255,255,.6)',
+      'rgba(255,255,255,.7)',
+      'rgba(255,255,255,.8)',
+      'rgba(255,255,255,.9)',
+    ]
   }
 }
