@@ -31,6 +31,7 @@ exports[`PublicAddress component sanity matches default snapshot 1`] = `
   height: 48px;
   height: small;
   width: small;
+  position: relative;
   border: 0;
   border-color: none;
   border-radius: 4px;
@@ -96,9 +97,8 @@ exports[`PublicAddress component sanity matches default snapshot 1`] = `
 }
 
 .c4 {
-  font-family: inherit;
-  position: relative;
   cursor: pointer;
+  font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
   text-align: center;
