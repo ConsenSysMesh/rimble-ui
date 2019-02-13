@@ -1,11 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
+import { space } from 'styled-system'
 
 import Input from '../Input'
-
-import theme from '../theme'
-
-import { space } from 'styled-system'
 
 const Textarea = styled(Input)`
   appearance: none;
@@ -19,7 +16,6 @@ const Textarea = styled(Input)`
 
 Textarea.defaultProps = {
   as: 'textarea',
-  theme: theme,
   p: 3,
   borders: 1,
   borderColor: 'grey',

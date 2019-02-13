@@ -1,0 +1,2969 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ToastMessage component sanity matches failure snapshot 1`] = `
+<Styled(Box)
+  actionHref=""
+  actionText=""
+  alignItems="center"
+  bg="white"
+  border={1}
+  borderColor="#D6D6D6"
+  closeElem={false}
+  colorTheme=""
+  display="flex"
+  flexDirection="row nowrap"
+  icon={false}
+  message="[Your generic message]"
+  secondaryMessage=""
+  variant="failure"
+>
+  <Box
+    className="iconBox"
+    flex="0 0"
+    mr={2}
+  >
+    <Styled(WrappedIconNegative)
+      height="32px"
+      width="32px"
+    />
+  </Box>
+  <Styled(Box)
+    flex="1 1 auto"
+    mx={2}
+  >
+    <Text
+      color="black"
+      fontFamily="sansSerif"
+      fontSize={1}
+      fontWeight={3}
+      lineHeight="copy"
+      textAlign="left"
+    >
+      [Your generic message]
+    </Text>
+  </Styled(Box)>
+  <Text
+    color="copyColor"
+    flex="0 1"
+    fontFamily="sansSerif"
+    fontSize={2}
+    fontWeight={2}
+    lineHeight="18px"
+    mr={2}
+    textAlign="right"
+  />
+</Styled(Box)>
+`;
+
+exports[`ToastMessage component sanity matches full component mount snapshot 1`] = `
+.c1 {
+  margin-right: 8px;
+  -webkit-flex: 0 0;
+  -ms-flex: 0 0;
+  flex: 0 0;
+}
+
+.c1 {
+  box-sizing: border-box;
+}
+
+.c5 {
+  color: black;
+  font-size: 14px;
+  font-size: 14px;
+  font-family: sansSerif;
+  font-weight: 3;
+  text-align: left;
+  line-height: copy;
+}
+
+.c5 {
+  box-sizing: border-box;
+}
+
+.c6 {
+  color: #666;
+  font-size: 14px;
+  font-size: 14px;
+  font-family: sansSerif;
+  font-weight: 2;
+  text-align: left;
+  line-height: copy;
+}
+
+.c6 {
+  box-sizing: border-box;
+}
+
+.c7 {
+  margin-right: 8px;
+  color: copyColor;
+  font-size: 16px;
+  -webkit-flex: 0 1;
+  -ms-flex: 0 1;
+  flex: 0 1;
+  font-size: 16px;
+  font-family: sansSerif;
+  font-weight: 2;
+  text-align: right;
+  line-height: 18px;
+}
+
+.c7 {
+  box-sizing: border-box;
+}
+
+.c8 {
+  color: primary;
+  font-size: 14px;
+  font-size: 14px;
+  font-weight: 3;
+}
+
+.c8 {
+  box-sizing: border-box;
+}
+
+.c8 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c8:hover {
+  color: #6755F3;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c8:active {
+  color: #3223A9;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c3 {
+  margin-left: 8px;
+  margin-right: 8px;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.c3 {
+  box-sizing: border-box;
+}
+
+.c3 {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  text-align: left;
+}
+
+.c0 {
+  background-color: white;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row nowrap;
+  -ms-flex-direction: row nowrap;
+  flex-direction: row nowrap;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px solid;
+  border-color: #D6D6D6;
+}
+
+.c0 {
+  box-sizing: border-box;
+}
+
+.c0 {
+  pointer-events: all;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  overflow: hidden;
+  height: 80px;
+  padding: 0 1rem;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+}
+
+.c0:hover {
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.15);
+}
+
+.c0 > .iconBox {
+  display: none;
+}
+
+.c0 > .closeBttn {
+  display: none;
+}
+
+.c0 > .c2 > .c4 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-wrap: normal;
+}
+
+@media screen and (max-width:420px) {
+  .c0 {
+    border-color: transparent;
+  }
+}
+
+@media screen and (min-width:420px) {
+  .c0 {
+    border-radius: 4px;
+    padding: 0 1rem;
+  }
+
+  .c0 > .iconBox {
+    display: block;
+  }
+
+  .c0 > .closeBttn {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+<ToastMessage
+  actionHref="http://test.com"
+  actionText="Link"
+  closeElem={false}
+  colorTheme=""
+  icon="InfoOutline"
+  message="message"
+  secondaryMessage="secondary message"
+  variant="default"
+>
+  <Styled(Box)
+    actionHref="http://test.com"
+    actionText="Link"
+    alignItems="center"
+    bg="white"
+    border={1}
+    borderColor="#D6D6D6"
+    closeElem={false}
+    colorTheme=""
+    display="flex"
+    flexDirection="row nowrap"
+    icon="InfoOutline"
+    message="message"
+    secondaryMessage="secondary message"
+    variant="default"
+  >
+    <StyledComponent
+      actionHref="http://test.com"
+      actionText="Link"
+      alignItems="center"
+      bg="white"
+      border={1}
+      borderColor="#D6D6D6"
+      closeElem={false}
+      colorTheme=""
+      display="flex"
+      flexDirection="row nowrap"
+      forwardedClass={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": undefined,
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-iIQDRA",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+          & {
+            box-sizing: border-box;
+          }
+          ",
+              "
+          ",
+              [Function],
+              "
+          ",
+              [Function],
+              "
+          ",
+              [Function],
+              "
+          ",
+              [Function],
+              "
+          ",
+              "
+          ",
+              [Function],
+              "
+          ",
+              [Function],
+              "
+          ",
+              [Function],
+              "
+          ",
+              [Function],
+              "
+          ",
+              [Function],
+              "
+          ",
+              [Function],
+              "
+          ",
+              [Function],
+              "
+          ",
+              "
+          ",
+              [Function],
+              "
+          ",
+              [Function],
+              "
+          ",
+              [Function],
+              "
+          ",
+              [Function],
+              "
+          ",
+              [Function],
+              "
+          ",
+              [Function],
+              "
+          ",
+              [Function],
+              "
+          ",
+              [Function],
+              "
+          ",
+              [Function],
+              "
+          ",
+              [Function],
+              "
+          ",
+              [Function],
+              "
+          ",
+              "
+          ",
+              [Function],
+              "
+          ",
+              [Function],
+              "
+          ",
+              [Function],
+              "
+          ",
+              [Function],
+              "
+          ",
+              [Function],
+              "
+          ",
+              [Function],
+              "
+          ",
+              "
+          ",
+              [Function],
+              "
+          ",
+              [Function],
+              "
+          ",
+              [Function],
+              "
+          ",
+              "
+          ",
+              "
+          ",
+              [Function],
+              "
+        ",
+              "
+          & {
+            pointer-events: all;
+            user-select: none;
+            overflow: hidden;
+            height: 80px;
+            padding: 0 1rem;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+            transition: all .15s ease;
+          }
+        
+          &:hover {
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+          }
+        
+          > .iconBox {
+            display: none;
+          }
+        
+          > .closeBttn {
+            display: none;
+          }
+        
+          > ",
+              ".c2",
+              " > ",
+              ".c4",
+              " {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            word-wrap: normal;
+          }
+        
+          @media screen and (max-width: 420px) {
+            border-color: transparent;
+          }
+        
+          @media screen and (min-width: 420px) {
+            & {
+              border-radius: 4px;
+              padding: ",
+              [Function],
+              ";
+            }
+        
+            > .iconBox {
+              display: block;
+            }
+        
+            > .closeBttn {
+              display: flex;
+            }
+          }
+        ",
+            ],
+          },
+          "defaultProps": Object {
+            "alignItems": "center",
+            "display": "flex",
+            "flexDirection": "row nowrap",
+          },
+          "displayName": "Styled(Box)",
+          "render": [Function],
+          "styledComponentId": "sc-iIQDRA",
+          "target": "div",
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      icon="InfoOutline"
+      message="message"
+      secondaryMessage="secondary message"
+      variant="default"
+    >
+      <div
+        className="c0"
+        display="flex"
+      >
+        <Box
+          className="iconBox"
+          flex="0 0"
+          mr={2}
+        >
+          <StyledComponent
+            className="iconBox"
+            flex="0 0"
+            forwardedClass={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": undefined,
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+                & {
+                  box-sizing: border-box;
+                }
+                ",
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    "
+                ",
+                    "
+                ",
+                    [Function],
+                    "
+              ",
+                  ],
+                },
+                "displayName": "Box",
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "div",
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            mr={2}
+          >
+            <div
+              className="iconBox c1"
+            />
+          </StyledComponent>
+        </Box>
+        <Styled(Box)
+          flex="1 1 auto"
+          mx={2}
+        >
+          <StyledComponent
+            flex="1 1 auto"
+            forwardedClass={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": undefined,
+                "componentStyle": ComponentStyle {
+                  "componentId": "c2",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "
+                & {
+                  box-sizing: border-box;
+                }
+                ",
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    "
+                ",
+                    "
+                ",
+                    [Function],
+                    "
+              ",
+                    "
+                & {
+                  ",
+                    "display: inline-block; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; word-wrap: normal;",
+                    "
+                  text-align: left;
+                }
+              ",
+                  ],
+                },
+                "displayName": "Styled(Box)",
+                "render": [Function],
+                "styledComponentId": "c2",
+                "target": "div",
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            mx={2}
+          >
+            <div
+              className="c2 c3"
+            >
+              <Text
+                color="black"
+                fontFamily="sansSerif"
+                fontSize={1}
+                fontWeight={3}
+                lineHeight="copy"
+                textAlign="left"
+              >
+                <StyledComponent
+                  color="black"
+                  fontFamily="sansSerif"
+                  fontSize={1}
+                  fontWeight={3}
+                  forwardedClass={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": undefined,
+                      "componentStyle": ComponentStyle {
+                        "componentId": "c4",
+                        "isStatic": false,
+                        "lastClassName": "c7",
+                        "rules": Array [
+                          "
+                      & {
+                        box-sizing: border-box;
+                      }
+                      ",
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          "
+                      ",
+                          "
+                      ",
+                          [Function],
+                          "
+                    ",
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                    
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                    ",
+                        ],
+                      },
+                      "defaultProps": Object {
+                        "color": "copyColor",
+                        "fontFamily": "sansSerif",
+                        "fontSize": 2,
+                        "fontWeight": 2,
+                        "lineHeight": "copy",
+                        "textAlign": "left",
+                      },
+                      "displayName": "Text",
+                      "p": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": undefined,
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-gQORMK",
+                          "isStatic": false,
+                          "rules": Array [
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                    
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                    ",
+                          ],
+                        },
+                        "defaultProps": Object {
+                          "color": "copyColor",
+                          "fontFamily": "sansSerif",
+                          "fontSize": 2,
+                          "fontWeight": 2,
+                          "lineHeight": "copy",
+                          "textAlign": "left",
+                        },
+                        "displayName": "styled.p",
+                        "render": [Function],
+                        "styledComponentId": "sc-gQORMK",
+                        "target": "p",
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      },
+                      "render": [Function],
+                      "s": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": undefined,
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-eiqfgm",
+                          "isStatic": false,
+                          "rules": Array [
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                    
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                    ",
+                          ],
+                        },
+                        "defaultProps": Object {
+                          "color": "copyColor",
+                          "fontFamily": "sansSerif",
+                          "fontSize": 2,
+                          "fontWeight": 2,
+                          "lineHeight": "copy",
+                          "textAlign": "left",
+                        },
+                        "displayName": "styled.s",
+                        "render": [Function],
+                        "styledComponentId": "sc-eiqfgm",
+                        "target": "s",
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      },
+                      "span": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": undefined,
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-jZIEzD",
+                          "isStatic": false,
+                          "rules": Array [
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                    
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                    ",
+                          ],
+                        },
+                        "defaultProps": Object {
+                          "color": "copyColor",
+                          "fontFamily": "sansSerif",
+                          "fontSize": 2,
+                          "fontWeight": 2,
+                          "lineHeight": "copy",
+                          "textAlign": "left",
+                        },
+                        "displayName": "styled.span",
+                        "render": [Function],
+                        "styledComponentId": "sc-jZIEzD",
+                        "target": "span",
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      },
+                      "styledComponentId": "c4",
+                      "target": "div",
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  lineHeight="copy"
+                  textAlign="left"
+                >
+                  <div
+                    className="c4 c5"
+                    color="black"
+                    fontFamily="sansSerif"
+                    fontSize={1}
+                    fontWeight={3}
+                  >
+                    message
+                  </div>
+                </StyledComponent>
+              </Text>
+              <Text
+                color="#666"
+                fontFamily="sansSerif"
+                fontSize={1}
+                fontWeight={2}
+                lineHeight="copy"
+                textAlign="left"
+              >
+                <StyledComponent
+                  color="#666"
+                  fontFamily="sansSerif"
+                  fontSize={1}
+                  fontWeight={2}
+                  forwardedClass={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": undefined,
+                      "componentStyle": ComponentStyle {
+                        "componentId": "c4",
+                        "isStatic": false,
+                        "lastClassName": "c7",
+                        "rules": Array [
+                          "
+                      & {
+                        box-sizing: border-box;
+                      }
+                      ",
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          "
+                      ",
+                          "
+                      ",
+                          [Function],
+                          "
+                    ",
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                    
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                    ",
+                        ],
+                      },
+                      "defaultProps": Object {
+                        "color": "copyColor",
+                        "fontFamily": "sansSerif",
+                        "fontSize": 2,
+                        "fontWeight": 2,
+                        "lineHeight": "copy",
+                        "textAlign": "left",
+                      },
+                      "displayName": "Text",
+                      "p": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": undefined,
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-gQORMK",
+                          "isStatic": false,
+                          "rules": Array [
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                    
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                    ",
+                          ],
+                        },
+                        "defaultProps": Object {
+                          "color": "copyColor",
+                          "fontFamily": "sansSerif",
+                          "fontSize": 2,
+                          "fontWeight": 2,
+                          "lineHeight": "copy",
+                          "textAlign": "left",
+                        },
+                        "displayName": "styled.p",
+                        "render": [Function],
+                        "styledComponentId": "sc-gQORMK",
+                        "target": "p",
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      },
+                      "render": [Function],
+                      "s": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": undefined,
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-eiqfgm",
+                          "isStatic": false,
+                          "rules": Array [
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                    
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                    ",
+                          ],
+                        },
+                        "defaultProps": Object {
+                          "color": "copyColor",
+                          "fontFamily": "sansSerif",
+                          "fontSize": 2,
+                          "fontWeight": 2,
+                          "lineHeight": "copy",
+                          "textAlign": "left",
+                        },
+                        "displayName": "styled.s",
+                        "render": [Function],
+                        "styledComponentId": "sc-eiqfgm",
+                        "target": "s",
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      },
+                      "span": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": undefined,
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-jZIEzD",
+                          "isStatic": false,
+                          "rules": Array [
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                    
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                    ",
+                          ],
+                        },
+                        "defaultProps": Object {
+                          "color": "copyColor",
+                          "fontFamily": "sansSerif",
+                          "fontSize": 2,
+                          "fontWeight": 2,
+                          "lineHeight": "copy",
+                          "textAlign": "left",
+                        },
+                        "displayName": "styled.span",
+                        "render": [Function],
+                        "styledComponentId": "sc-jZIEzD",
+                        "target": "span",
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      },
+                      "styledComponentId": "c4",
+                      "target": "div",
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  lineHeight="copy"
+                  textAlign="left"
+                >
+                  <div
+                    className="c4 c6"
+                    color="#666"
+                    fontFamily="sansSerif"
+                    fontSize={1}
+                    fontWeight={2}
+                  >
+                    secondary message
+                  </div>
+                </StyledComponent>
+              </Text>
+            </div>
+          </StyledComponent>
+        </Styled(Box)>
+        <Text
+          color="copyColor"
+          flex="0 1"
+          fontFamily="sansSerif"
+          fontSize={2}
+          fontWeight={2}
+          lineHeight="18px"
+          mr={2}
+          textAlign="right"
+        >
+          <StyledComponent
+            color="copyColor"
+            flex="0 1"
+            fontFamily="sansSerif"
+            fontSize={2}
+            fontWeight={2}
+            forwardedClass={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": undefined,
+                "componentStyle": ComponentStyle {
+                  "componentId": "c4",
+                  "isStatic": false,
+                  "lastClassName": "c7",
+                  "rules": Array [
+                    "
+                & {
+                  box-sizing: border-box;
+                }
+                ",
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    "
+                ",
+                    "
+                ",
+                    [Function],
+                    "
+              ",
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+              
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+                ",
+                    [Function],
+                    "
+              ",
+                  ],
+                },
+                "defaultProps": Object {
+                  "color": "copyColor",
+                  "fontFamily": "sansSerif",
+                  "fontSize": 2,
+                  "fontWeight": 2,
+                  "lineHeight": "copy",
+                  "textAlign": "left",
+                },
+                "displayName": "Text",
+                "p": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": undefined,
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-gQORMK",
+                    "isStatic": false,
+                    "rules": Array [
+                      "
+                ",
+                      [Function],
+                      "
+                ",
+                      [Function],
+                      "
+                ",
+                      [Function],
+                      "
+                ",
+                      [Function],
+                      "
+                ",
+                      [Function],
+                      "
+                ",
+                      [Function],
+                      "
+                ",
+                      [Function],
+                      "
+              
+                ",
+                      [Function],
+                      "
+                ",
+                      [Function],
+                      "
+                ",
+                      [Function],
+                      "
+                ",
+                      [Function],
+                      "
+              ",
+                    ],
+                  },
+                  "defaultProps": Object {
+                    "color": "copyColor",
+                    "fontFamily": "sansSerif",
+                    "fontSize": 2,
+                    "fontWeight": 2,
+                    "lineHeight": "copy",
+                    "textAlign": "left",
+                  },
+                  "displayName": "styled.p",
+                  "render": [Function],
+                  "styledComponentId": "sc-gQORMK",
+                  "target": "p",
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                },
+                "render": [Function],
+                "s": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": undefined,
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-eiqfgm",
+                    "isStatic": false,
+                    "rules": Array [
+                      "
+                ",
+                      [Function],
+                      "
+                ",
+                      [Function],
+                      "
+                ",
+                      [Function],
+                      "
+                ",
+                      [Function],
+                      "
+                ",
+                      [Function],
+                      "
+                ",
+                      [Function],
+                      "
+                ",
+                      [Function],
+                      "
+              
+                ",
+                      [Function],
+                      "
+                ",
+                      [Function],
+                      "
+                ",
+                      [Function],
+                      "
+                ",
+                      [Function],
+                      "
+              ",
+                    ],
+                  },
+                  "defaultProps": Object {
+                    "color": "copyColor",
+                    "fontFamily": "sansSerif",
+                    "fontSize": 2,
+                    "fontWeight": 2,
+                    "lineHeight": "copy",
+                    "textAlign": "left",
+                  },
+                  "displayName": "styled.s",
+                  "render": [Function],
+                  "styledComponentId": "sc-eiqfgm",
+                  "target": "s",
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                },
+                "span": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": undefined,
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-jZIEzD",
+                    "isStatic": false,
+                    "rules": Array [
+                      "
+                ",
+                      [Function],
+                      "
+                ",
+                      [Function],
+                      "
+                ",
+                      [Function],
+                      "
+                ",
+                      [Function],
+                      "
+                ",
+                      [Function],
+                      "
+                ",
+                      [Function],
+                      "
+                ",
+                      [Function],
+                      "
+              
+                ",
+                      [Function],
+                      "
+                ",
+                      [Function],
+                      "
+                ",
+                      [Function],
+                      "
+                ",
+                      [Function],
+                      "
+              ",
+                    ],
+                  },
+                  "defaultProps": Object {
+                    "color": "copyColor",
+                    "fontFamily": "sansSerif",
+                    "fontSize": 2,
+                    "fontWeight": 2,
+                    "lineHeight": "copy",
+                    "textAlign": "left",
+                  },
+                  "displayName": "styled.span",
+                  "render": [Function],
+                  "styledComponentId": "sc-jZIEzD",
+                  "target": "span",
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                },
+                "styledComponentId": "c4",
+                "target": "div",
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            lineHeight="18px"
+            mr={2}
+            textAlign="right"
+          >
+            <div
+              className="c4 c7"
+              color="copyColor"
+              fontFamily="sansSerif"
+              fontSize={2}
+              fontWeight={2}
+            >
+              <Link
+                as="a"
+                color="primary"
+                fontSize={1}
+                fontWeight={3}
+                href="http://test.com"
+                target="_blank"
+              >
+                <StyledComponent
+                  as="a"
+                  color="primary"
+                  fontSize={1}
+                  fontWeight={3}
+                  forwardedClass={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": undefined,
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-bGbZqa",
+                        "isStatic": false,
+                        "lastClassName": "c8",
+                        "rules": Array [
+                          "
+                      & {
+                        box-sizing: border-box;
+                      }
+                      ",
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          "
+                      ",
+                          "
+                      ",
+                          [Function],
+                          "
+                    ",
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                    
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                      ",
+                          [Function],
+                          "
+                    ",
+                          "
+                      & {
+                        text-decoration: none;
+                      }
+                      &:hover {
+                        color: #6755F3;
+                        text-decoration: underline;
+                      }
+                      &:active {
+                        color: #3223A9;
+                        text-decoration: none;
+                      }
+                    ",
+                        ],
+                      },
+                      "defaultProps": Object {
+                        "as": "a",
+                        "color": "primary",
+                        "fontSize": 1,
+                        "fontWeight": 3,
+                      },
+                      "displayName": "Link",
+                      "p": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": undefined,
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-gQORMK",
+                          "isStatic": false,
+                          "rules": Array [
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                    
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                    ",
+                          ],
+                        },
+                        "defaultProps": Object {
+                          "color": "copyColor",
+                          "fontFamily": "sansSerif",
+                          "fontSize": 2,
+                          "fontWeight": 2,
+                          "lineHeight": "copy",
+                          "textAlign": "left",
+                        },
+                        "displayName": "styled.p",
+                        "render": [Function],
+                        "styledComponentId": "sc-gQORMK",
+                        "target": "p",
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      },
+                      "render": [Function],
+                      "s": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": undefined,
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-eiqfgm",
+                          "isStatic": false,
+                          "rules": Array [
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                    
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                    ",
+                          ],
+                        },
+                        "defaultProps": Object {
+                          "color": "copyColor",
+                          "fontFamily": "sansSerif",
+                          "fontSize": 2,
+                          "fontWeight": 2,
+                          "lineHeight": "copy",
+                          "textAlign": "left",
+                        },
+                        "displayName": "styled.s",
+                        "render": [Function],
+                        "styledComponentId": "sc-eiqfgm",
+                        "target": "s",
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      },
+                      "span": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": undefined,
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-jZIEzD",
+                          "isStatic": false,
+                          "rules": Array [
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                    
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                      ",
+                            [Function],
+                            "
+                    ",
+                          ],
+                        },
+                        "defaultProps": Object {
+                          "color": "copyColor",
+                          "fontFamily": "sansSerif",
+                          "fontSize": 2,
+                          "fontWeight": 2,
+                          "lineHeight": "copy",
+                          "textAlign": "left",
+                        },
+                        "displayName": "styled.span",
+                        "render": [Function],
+                        "styledComponentId": "sc-jZIEzD",
+                        "target": "span",
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      },
+                      "styledComponentId": "sc-bGbZqa",
+                      "target": "div",
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  href="http://test.com"
+                  target="_blank"
+                >
+                  <a
+                    className="c8"
+                    color="primary"
+                    fontSize={1}
+                    fontWeight={3}
+                    href="http://test.com"
+                    target="_blank"
+                  >
+                    Link
+                  </a>
+                </StyledComponent>
+              </Link>
+            </div>
+          </StyledComponent>
+        </Text>
+      </div>
+    </StyledComponent>
+  </Styled(Box)>
+</ToastMessage>
+`;
+
+exports[`ToastMessage component sanity matches full component shallow snapshot 1`] = `
+<StyledComponent
+  actionHref="http://test.com"
+  actionText="Link"
+  alignItems="center"
+  bg="white"
+  border={1}
+  borderColor="#D6D6D6"
+  closeElem={false}
+  colorTheme=""
+  display="flex"
+  flexDirection="row nowrap"
+  forwardedClass={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": undefined,
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-iIQDRA",
+        "isStatic": false,
+        "rules": Array [
+          "
+      & {
+        box-sizing: border-box;
+      }
+      ",
+          "
+      ",
+          [Function],
+          "
+      ",
+          [Function],
+          "
+      ",
+          [Function],
+          "
+      ",
+          [Function],
+          "
+      ",
+          "
+      ",
+          [Function],
+          "
+      ",
+          [Function],
+          "
+      ",
+          [Function],
+          "
+      ",
+          [Function],
+          "
+      ",
+          [Function],
+          "
+      ",
+          [Function],
+          "
+      ",
+          [Function],
+          "
+      ",
+          "
+      ",
+          [Function],
+          "
+      ",
+          [Function],
+          "
+      ",
+          [Function],
+          "
+      ",
+          [Function],
+          "
+      ",
+          [Function],
+          "
+      ",
+          [Function],
+          "
+      ",
+          [Function],
+          "
+      ",
+          [Function],
+          "
+      ",
+          [Function],
+          "
+      ",
+          [Function],
+          "
+      ",
+          [Function],
+          "
+      ",
+          "
+      ",
+          [Function],
+          "
+      ",
+          [Function],
+          "
+      ",
+          [Function],
+          "
+      ",
+          [Function],
+          "
+      ",
+          [Function],
+          "
+      ",
+          [Function],
+          "
+      ",
+          "
+      ",
+          [Function],
+          "
+      ",
+          [Function],
+          "
+      ",
+          [Function],
+          "
+      ",
+          "
+      ",
+          "
+      ",
+          [Function],
+          "
+    ",
+          "
+      & {
+        pointer-events: all;
+        user-select: none;
+        overflow: hidden;
+        height: 80px;
+        padding: 0 1rem;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+        transition: all .15s ease;
+      }
+    
+      &:hover {
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+      }
+    
+      > .iconBox {
+        display: none;
+      }
+    
+      > .closeBttn {
+        display: none;
+      }
+    
+      > ",
+          ".sc-hJwwgy",
+          " > ",
+          ".sc-gyfYDX",
+          " {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        word-wrap: normal;
+      }
+    
+      @media screen and (max-width: 420px) {
+        border-color: transparent;
+      }
+    
+      @media screen and (min-width: 420px) {
+        & {
+          border-radius: 4px;
+          padding: ",
+          [Function],
+          ";
+        }
+    
+        > .iconBox {
+          display: block;
+        }
+    
+        > .closeBttn {
+          display: flex;
+        }
+      }
+    ",
+        ],
+      },
+      "defaultProps": Object {
+        "alignItems": "center",
+        "display": "flex",
+        "flexDirection": "row nowrap",
+      },
+      "displayName": "Styled(Box)",
+      "render": [Function],
+      "styledComponentId": "sc-iIQDRA",
+      "target": "div",
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
+  icon="InfoOutline"
+  message="message"
+  secondaryMessage="secondary message"
+  variant="default"
+>
+  <Box
+    className="iconBox"
+    flex="0 0"
+    mr={2}
+  />
+  <Styled(Box)
+    flex="1 1 auto"
+    mx={2}
+  >
+    <Text
+      color="black"
+      fontFamily="sansSerif"
+      fontSize={1}
+      fontWeight={3}
+      lineHeight="copy"
+      textAlign="left"
+    >
+      message
+    </Text>
+    <Text
+      color="#666"
+      fontFamily="sansSerif"
+      fontSize={1}
+      fontWeight={2}
+      lineHeight="copy"
+      textAlign="left"
+    >
+      secondary message
+    </Text>
+  </Styled(Box)>
+  <Text
+    color="copyColor"
+    flex="0 1"
+    fontFamily="sansSerif"
+    fontSize={2}
+    fontWeight={2}
+    lineHeight="18px"
+    mr={2}
+    textAlign="right"
+  >
+    <Link
+      as="a"
+      color="primary"
+      fontSize={1}
+      fontWeight={3}
+      href="http://test.com"
+      target="_blank"
+    >
+      Link
+    </Link>
+  </Text>
+</StyledComponent>
+`;
+
+exports[`ToastMessage component sanity matches generic snapshot 1`] = `
+<StyledComponent
+  actionHref=""
+  actionText=""
+  alignItems="center"
+  bg="white"
+  border={1}
+  borderColor="#D6D6D6"
+  closeElem={false}
+  colorTheme=""
+  display="flex"
+  flexDirection="row nowrap"
+  forwardedClass={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": undefined,
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-iIQDRA",
+        "isStatic": false,
+        "rules": Array [
+          "
+      & {
+        box-sizing: border-box;
+      }
+      ",
+          "
+      ",
+          [Function],
+          "
+      ",
+          [Function],
+          "
+      ",
+          [Function],
+          "
+      ",
+          [Function],
+          "
+      ",
+          "
+      ",
+          [Function],
+          "
+      ",
+          [Function],
+          "
+      ",
+          [Function],
+          "
+      ",
+          [Function],
+          "
+      ",
+          [Function],
+          "
+      ",
+          [Function],
+          "
+      ",
+          [Function],
+          "
+      ",
+          "
+      ",
+          [Function],
+          "
+      ",
+          [Function],
+          "
+      ",
+          [Function],
+          "
+      ",
+          [Function],
+          "
+      ",
+          [Function],
+          "
+      ",
+          [Function],
+          "
+      ",
+          [Function],
+          "
+      ",
+          [Function],
+          "
+      ",
+          [Function],
+          "
+      ",
+          [Function],
+          "
+      ",
+          [Function],
+          "
+      ",
+          "
+      ",
+          [Function],
+          "
+      ",
+          [Function],
+          "
+      ",
+          [Function],
+          "
+      ",
+          [Function],
+          "
+      ",
+          [Function],
+          "
+      ",
+          [Function],
+          "
+      ",
+          "
+      ",
+          [Function],
+          "
+      ",
+          [Function],
+          "
+      ",
+          [Function],
+          "
+      ",
+          "
+      ",
+          "
+      ",
+          [Function],
+          "
+    ",
+          "
+      & {
+        pointer-events: all;
+        user-select: none;
+        overflow: hidden;
+        height: 80px;
+        padding: 0 1rem;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+        transition: all .15s ease;
+      }
+    
+      &:hover {
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+      }
+    
+      > .iconBox {
+        display: none;
+      }
+    
+      > .closeBttn {
+        display: none;
+      }
+    
+      > ",
+          ".sc-hJwwgy",
+          " > ",
+          ".sc-gyfYDX",
+          " {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        word-wrap: normal;
+      }
+    
+      @media screen and (max-width: 420px) {
+        border-color: transparent;
+      }
+    
+      @media screen and (min-width: 420px) {
+        & {
+          border-radius: 4px;
+          padding: ",
+          [Function],
+          ";
+        }
+    
+        > .iconBox {
+          display: block;
+        }
+    
+        > .closeBttn {
+          display: flex;
+        }
+      }
+    ",
+        ],
+      },
+      "defaultProps": Object {
+        "alignItems": "center",
+        "display": "flex",
+        "flexDirection": "row nowrap",
+      },
+      "displayName": "Styled(Box)",
+      "render": [Function],
+      "styledComponentId": "sc-iIQDRA",
+      "target": "div",
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
+  icon={false}
+  message="[Your generic message]"
+  secondaryMessage=""
+  variant={false}
+>
+  <Styled(Box)
+    flex="1 1 auto"
+    mx={2}
+  >
+    <Text
+      color="black"
+      fontFamily="sansSerif"
+      fontSize={1}
+      fontWeight={3}
+      lineHeight="copy"
+      textAlign="left"
+    >
+      [Your generic message]
+    </Text>
+  </Styled(Box)>
+  <Text
+    color="copyColor"
+    flex="0 1"
+    fontFamily="sansSerif"
+    fontSize={2}
+    fontWeight={2}
+    lineHeight="18px"
+    mr={2}
+    textAlign="right"
+  />
+</StyledComponent>
+`;
+
+exports[`ToastMessage component sanity matches processing snapshot 1`] = `
+<Styled(Box)
+  actionHref=""
+  actionText=""
+  alignItems="center"
+  bg="white"
+  border={1}
+  borderColor="#D6D6D6"
+  closeElem={false}
+  colorTheme=""
+  display="flex"
+  flexDirection="row nowrap"
+  icon={false}
+  message="[Your generic message]"
+  secondaryMessage=""
+  variant="processing"
+>
+  <Box
+    className="iconBox"
+    flex="0 0"
+    mr={2}
+  >
+    <Styled(WrappedIconProcessing)
+      height="32px"
+      width="32px"
+    />
+  </Box>
+  <Styled(Box)
+    flex="1 1 auto"
+    mx={2}
+  >
+    <Text
+      color="black"
+      fontFamily="sansSerif"
+      fontSize={1}
+      fontWeight={3}
+      lineHeight="copy"
+      textAlign="left"
+    >
+      [Your generic message]
+    </Text>
+  </Styled(Box)>
+  <Text
+    color="copyColor"
+    flex="0 1"
+    fontFamily="sansSerif"
+    fontSize={2}
+    fontWeight={2}
+    lineHeight="18px"
+    mr={2}
+    textAlign="right"
+  />
+</Styled(Box)>
+`;
+
+exports[`ToastMessage component sanity matches success snapshot 1`] = `
+<Styled(Box)
+  actionHref=""
+  actionText=""
+  alignItems="center"
+  bg="white"
+  border={1}
+  borderColor="#D6D6D6"
+  closeElem={false}
+  colorTheme=""
+  display="flex"
+  flexDirection="row nowrap"
+  icon={false}
+  message="[Your generic message]"
+  secondaryMessage=""
+  variant="success"
+>
+  <Box
+    className="iconBox"
+    flex="0 0"
+    mr={2}
+  >
+    <Styled(WrappedIconPositive)
+      height="32px"
+      width="32px"
+    />
+  </Box>
+  <Styled(Box)
+    flex="1 1 auto"
+    mx={2}
+  >
+    <Text
+      color="black"
+      fontFamily="sansSerif"
+      fontSize={1}
+      fontWeight={3}
+      lineHeight="copy"
+      textAlign="left"
+    >
+      [Your generic message]
+    </Text>
+  </Styled(Box)>
+  <Text
+    color="copyColor"
+    flex="0 1"
+    fontFamily="sansSerif"
+    fontSize={2}
+    fontWeight={2}
+    lineHeight="18px"
+    mr={2}
+    textAlign="right"
+  />
+</Styled(Box)>
+`;

@@ -8,8 +8,6 @@ import {
   boxShadow
 } from 'styled-system'
 
-import theme from '../theme'
-
 import ExpandMore from 'rmdi/lib/ExpandMore'
 
 const Wrapper = styled.span`
@@ -44,7 +42,7 @@ const StyledSelect = styled.select`
   }
   &:focus {
     outline: none;
-    border-color: #5436D6;
+    border-color: ${props => props.theme.colors.primary};
   }
   &:active {
   }
@@ -66,7 +64,6 @@ const Select = (props) => (
 )
 
 Select.defaultProps = {
-  theme: theme,
   borders: 1,
   borderColor: 'grey',
   borderRadius: 1,

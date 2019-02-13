@@ -71,6 +71,8 @@ const Tooltip = (props) => {
   )
 }
 
+Tooltip.displayName = 'Tooltip'
+
 Tooltip.defaultProps = {
   placement: 'bottom',
   offset: '0, 0',
