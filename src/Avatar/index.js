@@ -1,8 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import { themeGet } from 'styled-system'
-
-import theme from '../theme'
 
 import Box from '../Box'
 
@@ -43,7 +40,6 @@ const Avatar = styled(Box)`
 `
 
 Avatar.defaultProps = {
-  theme: theme,
   ratio: 1,
   size: '2rem',
   alt: 'Avatar'

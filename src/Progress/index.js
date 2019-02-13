@@ -3,8 +3,6 @@ import styled from 'styled-components'
 
 import { transparentize } from 'polished'
 
-import theme from '../theme'
-
 const Progress = styled.progress`
   & {
     appearance: none;
@@ -21,10 +19,6 @@ const Progress = styled.progress`
     border-radius: ${props => props.theme.radii[1]};
   }
 `
-
-Progress.defaultProps = {
-  theme: theme
-}
 
 Progress.displayName = 'Progress'
 

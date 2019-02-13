@@ -1,4 +1,6 @@
 import TextButton from './'
+import ThemeProvider from '../ThemeProvider'
+import theme from '../theme'
 
 describe('TextButton component sanity', () => {
   it('has name', () => {
@@ -6,7 +8,11 @@ describe('TextButton component sanity', () => {
   })
 
   it('matches default snapshot', () => {
-    const component = render(<TextButton />)
+    const component = render(
+      <ThemeProvider theme={theme}>
+        <TextButton />
+      </ThemeProvider>
+    )
     expect(component).toMatchSnapshot()
   })
 })

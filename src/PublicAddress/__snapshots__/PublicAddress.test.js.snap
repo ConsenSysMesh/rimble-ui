@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`PublicAddress component sanity matches default snapshot 1`] = `
-.c0 {
+exports[`PublicAddress component sanity matches themed snapshot 1`] = `
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -15,11 +15,12 @@ exports[`PublicAddress component sanity matches default snapshot 1`] = `
   align-items: flex-start;
 }
 
-.c0 {
+.c1 {
   box-sizing: border-box;
+  text-align: left;
 }
 
-.c5 {
+.c6 {
   margin: 0px;
   padding-left: 16px;
   padding-right: 16px;
@@ -31,31 +32,34 @@ exports[`PublicAddress component sanity matches default snapshot 1`] = `
   height: 48px;
   height: small;
   width: small;
+  position: relative;
   border: 0;
   border-color: none;
   border-radius: 4px;
 }
 
-.c5 {
+.c6 {
   box-sizing: border-box;
-}
-
-.c1 {
-  margin-bottom: 8px;
-  color: copyColor;
-  font-size: 14px;
-  font-size: 14px;
-  font-family: sansSerif;
-  font-weight: 3;
   text-align: left;
-  line-height: copy;
 }
 
-.c1 {
+.c2 {
+  margin-bottom: 8px;
+  color: #3F3D4B;
+  font-size: 14px;
+  font-size: 14px;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-weight: 600;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.c2 {
   box-sizing: border-box;
+  text-align: left;
 }
 
-.c3 {
+.c4 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -65,6 +69,7 @@ exports[`PublicAddress component sanity matches default snapshot 1`] = `
   padding: 0 1rem;
   border: 1px solid;
   background: #FFFFFF;
+  color: #4E3FCE;
   border-color: #CCC;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
@@ -72,21 +77,21 @@ exports[`PublicAddress component sanity matches default snapshot 1`] = `
   white-space: no-wrap;
 }
 
-.c3:hover {
+.c4:hover {
   box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
 }
 
-.c3:focus {
+.c4:focus {
   outline: none;
-  border-color: #5436D6;
+  border-color: #4E3FCE;
 }
 
-.c3:disabled {
+.c4:disabled {
   opacity: 0.4;
   pointer-events: none;
 }
 
-.c4 {
+.c5 {
   font-weight: 600;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-size: 12px;
@@ -95,10 +100,9 @@ exports[`PublicAddress component sanity matches default snapshot 1`] = `
   padding: 0 16px;
 }
 
-.c4 {
-  font-family: inherit;
-  position: relative;
+.c5 {
   cursor: pointer;
+  font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
   text-align: center;
@@ -122,40 +126,40 @@ exports[`PublicAddress component sanity matches default snapshot 1`] = `
   transition: all .15s ease;
 }
 
-.c4:hover {
+.c5:hover {
   background-color: #5f52d2;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
 }
 
-.c4:active {
+.c5:active {
   background-color: #4638b9;
   box-shadow: none;
 }
 
-.c4:disabled {
+.c5:disabled {
   opacity: 0.4;
   cursor: not-allowed;
 }
 
-.c4 > svg {
+.c5 > svg {
   display: block;
 }
 
-.c4 > svg:first-child {
+.c5 > svg:first-child {
   margin-left: -1rem;
   margin-right: .5rem;
 }
 
-.c4 > svg:last-child {
+.c5 > svg:last-child {
   margin-left: .5rem;
   margin-right: -1rem;
 }
 
-.c4 > svg:first-child:last-child {
+.c5 > svg:first-child:last-child {
   margin: 0;
 }
 
-.c4 {
+.c5 {
   position: relative;
   overflow: hidden;
   display: -webkit-box;
@@ -172,7 +176,7 @@ exports[`PublicAddress component sanity matches default snapshot 1`] = `
   justify-content: center;
 }
 
-.c4.-is-copied::before {
+.c5.-is-copied::before {
   content: '';
   position: absolute;
   width: 100%;
@@ -187,7 +191,7 @@ exports[`PublicAddress component sanity matches default snapshot 1`] = `
   animation-timing-function: linear;
 }
 
-.c4::after {
+.c5::after {
   opacity: 0;
   content: 'Copied!';
   position: absolute;
@@ -197,7 +201,7 @@ exports[`PublicAddress component sanity matches default snapshot 1`] = `
   transition: all 500ms ease;
 }
 
-.c4.-is-copied::after {
+.c5.-is-copied::after {
   opacity: 1;
   -webkit-animation-name: kcJLrX;
   animation-name: kcJLrX;
@@ -207,11 +211,12 @@ exports[`PublicAddress component sanity matches default snapshot 1`] = `
   animation-timing-function: ease;
 }
 
-.c2 {
+.c3 {
   box-sizing: border-box;
+  text-align: left;
 }
 
-.c2 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -227,50 +232,61 @@ exports[`PublicAddress component sanity matches default snapshot 1`] = `
   position: relative;
 }
 
-.c2 > input {
+.c3 > input {
   width: 100%;
   padding-right: 5.25rem;
 }
 
-.c2 > button {
+.c3 > button {
   position: absolute;
   right: .75rem;
 }
 
-<label
+.c0 {
+  font-size: 1em;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  color: #3F3D4B;
+}
+
+<div
   class="c0"
-  display="flex"
 >
-  <div
+  <label
     class="c1"
-    color="copyColor"
-    font-family="sansSerif"
-    font-size="1"
-    font-weight="3"
+    display="flex"
   >
-    Public Address
-  </div>
-  <div
-    class="c2"
-  >
-    <input
-      class="c3"
-      readonly=""
-    >
-      
-    </input>
-    <button
-      class="c4 c5"
-      color="white"
-      font-size="inherit"
+    <div
+      class="c2"
+      color="copyColor"
+      font-family="sansSerif"
+      font-size="1"
       font-weight="3"
-      height="48px"
-      type="button"
     >
-      <span>
-        Copy
-      </span>
-    </button>
-  </div>
-</label>
+      Public Address
+    </div>
+    <div
+      class="c3"
+    >
+      <input
+        class="c4"
+        color="primary"
+        readonly=""
+      >
+        
+      </input>
+      <button
+        class="c5 c6"
+        color="white"
+        font-size="inherit"
+        font-weight="3"
+        height="48px"
+        type="button"
+      >
+        <span>
+          Copy
+        </span>
+      </button>
+    </div>
+  </label>
+</div>
 `;

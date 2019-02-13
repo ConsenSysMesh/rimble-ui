@@ -1,9 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import theme from '../theme'
-
 import {
+  color,
   borders,
   borderColor,
   borderRadius,
@@ -21,6 +20,7 @@ const Input = styled.input`
   border: 1px solid;
   background: #FFFFFF;
 
+  ${color}
   ${borders}
   ${borderColor}
   ${borderRadius}
@@ -31,7 +31,7 @@ const Input = styled.input`
   }
   &:focus {
     outline: none;
-    border-color: #5436D6;
+    border-color: ${props => props.theme.colors.primary};
   }
   &:active {
 
@@ -43,7 +43,7 @@ const Input = styled.input`
 `
 
 Input.defaultProps = {
-  theme: theme,
+  color: 'primary',
   borders: 0,
   borderColor: 'grey',
   borderRadius: 1,

@@ -17,6 +17,7 @@ exports[`Field component sanity matches default snapshot 1`] = `
 
 .c0 {
   box-sizing: border-box;
+  text-align: left;
 }
 
 .c1 {
@@ -32,6 +33,7 @@ exports[`Field component sanity matches default snapshot 1`] = `
 
 .c1 {
   box-sizing: border-box;
+  text-align: left;
 }
 
 <label

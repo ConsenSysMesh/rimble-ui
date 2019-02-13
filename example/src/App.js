@@ -21,14 +21,66 @@ import {
   Tooltip,
   ThemeProvider,
   Icon,
-  IconButton,
   PublicAddress
 } from 'rimble-ui'
+
+// theme.js
+const theme = {
+  colors: {
+    primary: '#345AD6',
+    black: '#000e1a',
+    white: '#fff',
+    blue: '#007ce0',
+    navy: '#004175',
+    grey: '#CCC',
+    copyColor: '#3F3D4B'
+  },
+  fontSizes: [
+    12, 14, 16, 20, 24, 32, 48, 64
+  ],
+  fontWeights: [
+    0, 300, 400, 600, 700
+  ],
+  lineHeights: {
+    solid: 1,
+    title: 1.25,
+    copy: 1.5,
+  },
+  fonts: {
+    serif: 'athelas, georgia, times, serif',
+    sansSerif: '"Source Sans Pro", -apple-system, sans-serif',
+  },
+  space: [
+    0, 4, 8, 16, 32, 64, 128, 256
+  ],
+  radii: [
+    '0', '4px', '8px', '16px'
+  ],
+  width: [0, 16, 32, 64, 128, 256],
+  minWidths: [0, 16, 32, 64, 128, 256],
+  maxWidths: [0, 16, 32, 64, 128, 256, 512, 768, 1024, 1536],
+  heights: [0, 16, 32, 64, 128, 256],
+  minHeights: [0, 16, 32, 64, 128, 256],
+  maxHeights: [0, 16, 32, 64, 128, 256],
+  borders: [
+    0,
+    '1px solid'
+  ],
+  shadows: [
+    '0',
+    '0px 2px 4px rgba(0, 0, 0, 0.1)',
+    '0 7px 14px rgba(50,50,93,.1)'
+  ],
+  opacity: {
+    disabled: 0.4
+  }
+}
+
 
 export default class App extends Component {
   render () {
     return (
-      <ThemeProvider>
+      <ThemeProvider theme={theme}>
         <Button size={'medium'}>
           Click me!
         </Button>
@@ -65,23 +117,15 @@ export default class App extends Component {
 
         <Textarea rows={4} defaultValue='Type here…' />
 
-        <Field htmlFor="">
-          <Checkbox id="blue" name="pill"/>
-          Blue Pill
-        </Field>
-        <Field htmlFor="">
-          <Checkbox id="red" name="pill" />
-          Red Pill
-        </Field>
+        <Checkbox label="Checkbox default" />
+        <Checkbox checked label="Checkbox checked" />
+        <Checkbox disabled label="Checkbox disabled" />
+        <Checkbox disabled checked label="Checkbox checked disabled" />
 
-        <label htmlFor="">
-          <Radio id="blue" name="pill"/>
-          Blue Pill
-        </label>
-        <label htmlFor="">
-          <Radio id="red" name="pill" />
-          Red Pill
-        </label>
+        <Radio label="Radio default" />
+        <Radio checked label="Radio checked" />
+        <Radio disabled label="Radio disabled" />
+        <Radio disabled checked label="Radio checked disabled" />
 
         <Select items={['Wandering Thunder','Black Wildflower','Ancient Paper',]} />
 
@@ -100,6 +144,10 @@ export default class App extends Component {
         <Tooltip message='Your custom message'>hover me</Tooltip>
 
         <Table></Table>
+
+        <Icon name={'Info'} color={'primary'} />
+
+        <PublicAddress address={"0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2"} />
       </ThemeProvider>
     )
   }

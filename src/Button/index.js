@@ -14,8 +14,6 @@ import {
 import Box from '../Box'
 import Icon from '../Icon'
 
-import theme from '../theme'
-
 const fullWidth = (props) => (
   props.fullWidth ? { width: '100%' } : null
 )
@@ -60,9 +58,8 @@ const ProtoButton = React.forwardRef((props, ref) => (
 
 const Button = styled(ProtoButton)`
   & {
-    font-family: inherit;
-    position: relative;
     cursor: pointer;
+    font-family: inherit;
     text-decoration: none;
     text-align: center;
     line-height: 1;
@@ -114,7 +111,7 @@ const Button = styled(ProtoButton)`
 `
 
 Button.defaultProps = {
-  theme: theme,
+  position: 'relative',
   color: 'white',
   bg: 'primary',
   height: '48px',
