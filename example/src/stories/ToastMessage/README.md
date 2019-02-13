@@ -1,25 +1,99 @@
-# Toast component documentation
+# ToastMessage
+Toast messages are small alerts that provide updates about a process. Use toast messages for non-critical information about what’s happening within your dApp. They shouldn't be used to notify the user that they need to do something. The `ToastMessage` component renders a responsive box-model layout component.
 
-- Documentation acceptance criteria
+For the code, usage guidance and examples, keep scrolling.
 
-- What should a user know after reading this documentation?
-    - When to use a toast component
-        - And have a good idea when to use the different variations
-    - The way the component works
-    - The code to implement the component
-    - What kind of content is best suited to this component
+<!-- STORY -->
 
----
+### Usage
+```jsx
+import { ToastMessage } from 'rimble-ui'
+```
 
-[https://www.figma.com/file/n6FLTlQudooEbEXxVLp5V0/Rimble-Components-Working-File?node-id=701%3A0](https://www.figma.com/file/n6FLTlQudooEbEXxVLp5V0/Rimble-Components-Working-File?node-id=701%3A0)
+<!-- component example here -->
+```jsx
+<ToastMessage>
+  This is a ToastMessage
+</ToastMessage>
 
----
+<ToastMessage secondaryMessage={'Lorem ipsum dolor sit.'} />
+
+<ToastMessage
+  icon={'InfoOutline'}
+  actionText={'Action'}
+  actionHref={'#!'}
+/>
+
+<ToastMessage
+  secondaryMessage={'Lorem ipsum dolor sit.'}
+  icon={'InfoOutline'}
+  actionText={'Action'}
+  actionHref={'#!'}
+/>
+
+<ToastMessage.Processing message={'Processing {0.00018} ETH payment' />
+
+<ToastMessage.Success
+  message={'ETH sent'}
+  secondaryMessage={'You have {1.03} ETH remaining'}
+  actionText={'View on Etherscan'}
+  actionHref={'#!'}
+/>
+
+<ToastMessage.Failure
+  message={'Payment failed'}
+  secondaryMessage={'Make sure you have enough ETH and try again'}
+/>
+
+<ToastMessage colorTheme={'dark'} />
+
+<ToastMessage
+  secondaryMessage={'Lorem ipsum dolor sit.'}
+  colorTheme={'dark'}
+/>
+
+<ToastMessage
+  icon={'InfoOutline'}
+  colorTheme={'dark'}
+  actionText={'Action'}
+  actionHref={'#!'}
+/>
+
+<ToastMessage
+  secondaryMessage={'Lorem ipsum dolor sit.'}
+  icon={'InfoOutline'}
+  colorTheme={'dark'}
+  actionText={'Action'}
+  actionHref={'#!'}
+/>
+
+<Button onClick={(e) => window.toastProvider.addMessage('[Processing… ]', {
+    secondaryMessage: (Date.now()),
+    actionHref: 'https://etherscan.io/tx/0xcbc921418c360b03b96585ae16f906cbd48c8d6c2cc7b82c6db430390a9fcfed',
+    actionText: 'View on Etherscan',
+    variant: 'processing',
+  })}
+>
+  "addMessage.processing"
+</Button>
+
+<Button onClick={(e) => window.toastProvider.addMessage('[Your message here… ]', {
+    icon: 'VpnKey',
+    colorTheme: 'dark'
+  })}
+>
+  "addMessage.default dark colors with Icon"
+</Button>
+
+
+<ToastMessage.Provider ref={(node) => (window.toastProvider = node)} />
+```
+
+# `ToastMessage` usage
 
 # **When should toasts be used?**
 
 > For non-critical messages and actions that should be helpful but ultimately ignorable without any impact on what the user wants to get done.
-
-Toast messages are small alerts that provide updates about a process. Use toast messages for non-critical information about what’s happening within your dApp. They shouldn't be used to notify the user that they ***need*** to do something. For that [see Modals](#).
 
 ## General usage guidelines
 
@@ -33,28 +107,15 @@ Toast messages are small alerts that provide updates about a process. Use toast 
 - User can dismiss them manually
 - They display one at a time, so if multiple messages are necessary, each one should appear after the previous message.
 
-# Rimble's generic toast components:
+# Digging into the components:
 
 ## Title only (+ optional icon)
 
 *For when you want to just provide a quick process update like a confirmation*
 
-![](Untitled-9b6efe62-4bec-4591-9ad9-35824b249a77.png)
+**`message`:** should clearly state the update in human terms, referencing the process if possible.
 
-![](Untitled-84191bdd-19ce-4997-a55b-18fab6d120a8.png)
-
-Example of a toast telling the user something that's happening
-
-![](Untitled-22f5d567-3b4e-4a0c-a8ce-1f8a04cb8649.png)
-
-![](Untitled-8f740211-7a77-4459-a84f-8af26e1acf78.png)
-
-Example of a toast telling the user something that's happened
-**
-
-**Generic message:** should clearly state the update in human terms, referencing the process if possible. NOTE: you very rarely need to use words like "Successfully", the state should speak for itself.
-
-**Action:** should relate to what you're communicating and is optional. If the message is a reversible action, "undo" is often a good choice. If no action is required or relevant, leave it out.
+**`actionText`:** should relate to what you're communicating and is optional. If the message is a reversible action, "undo" is often a good choice. If no action is required or relevant, leave it out.
 
 **Example scenarios:**
 
@@ -78,21 +139,23 @@ Example of a toast telling the user something that's happened
 
 *For when you want to provide more value through extra helpful information. Ask yourself when implementing your toast: is there anything else I could tell the user that would be useful?*
 
-![](Untitled-597750c8-114c-4ec7-a4ac-b999922e87ff.png)
+**`message`:** should clearly state the update in human terms.
 
-![](Untitled-73442bbe-91aa-4297-95a3-6f66b674d329.png)
+**`secondaryMessage`:** should provide additional information that adds value.
 
-Example of a toast telling the user something is happening with extra helpful information
+**`actionText`:** should relate to what you're communicating and is optional. If your `secondarymessage` is advice or a suggestion, try and include an action that gets the user on their way. If no action is required or relevant, leave it out.
 
-![](Untitled-7fa64970-7621-4413-8438-77d5e6eb5a3d.png)
+**Example scenarios:**
 
-![](Untitled-2cceb19b-81eb-4d9b-8bab-125722dea622.png)
+- A transaction was sent successfully and you'd like to tell the user how much ETH they have left for future transactions. ACTION: *none required*
+- You want to tell the user that they're on the Rinkeby network and want to remind them that to use your dApp for real they should switch to Mainnet. ACTION: Switch to Mainnet
 
-Example of a toast telling the user something that's happened with extra helpful information
-**
+---
 
-## Code
+## How to write `Processing`, `success` and `failure` messages
 
+This is just some general guidance if you don't know where to start.
 
-
-## Code (with icon)
+- `processing` messages should be in the present tense and, if possible, reference what's being processed like "Processing payment" or "Sending ETH". This will give the user confidence that what they're trying to do is happening. An ellipses (...) at the end of the message can help confirm to the user that something is actively happening behind the scenes. If possible, "Processing..." or "Sending..." should echo the language in the CTA that the user pressed to initiate the process.  
+- `success` messages should describe what's happened e.g. "Payment sent" or "Payment accepted" not just a generic "SUCCESS!". Try and echo the words used in the CTA that started the process. For example, if the user was sending ETH to an address and the CTA was "Send", have the toast message echo that language: "ETH sent". If you describe what's happened you don't need words like "successfully" at the end which add to word count.
+- `failure` messages, where possible, should explain the reason for failure and offer a suggestion of what to do next. Again echo the language used in the action the user was trying to do. If the user was trying to pay for something and the CTA was "Pay 0.13 ETH", have the failure message echo that language: "Payment failed". Then use the `secondaryMessage` to explain why ("Not enough ETH") or a suggestion on how to fix the problem ("Buy more ETH"). Try not to leave the user with no understanding of why something has failed or what to do next. The `action` should be used to help the user take the next step in overcoming the failure.

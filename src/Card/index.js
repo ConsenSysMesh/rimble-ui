@@ -16,6 +16,7 @@ const Card = styled(Box)`
 `
 
 Card.defaultProps = {
+  position: 'relative',
   bg: 'white',
   border: 1,
   borderColor: '#D6D6D6',

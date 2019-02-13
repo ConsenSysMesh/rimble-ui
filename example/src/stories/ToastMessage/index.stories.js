@@ -26,7 +26,8 @@ storiesOf('ToastMessage', module)
           <ToastMessage my={3} />
 
           <ToastMessage
-            secondaryMessage={'Lorem ipsum dolor sit.'}
+            message={'Write update here [Required]'}
+            secondaryMessage={'Supporting information for update [Optional]'}
             my={3}
           />
           <ToastMessage
@@ -36,7 +37,8 @@ storiesOf('ToastMessage', module)
             actionHref={'#!'}
           />
           <ToastMessage
-            secondaryMessage={'Lorem ipsum dolor sit.'}
+            message={'Write update here [Required]'}
+            secondaryMessage={'Supporting information for update [Optional]'}
             icon={'InfoOutline'}
             my={3}
             actionText={'Action'}
@@ -44,26 +46,27 @@ storiesOf('ToastMessage', module)
           />
           <ToastMessage.Processing
             my={3}
-            message={'Processing {0.00018} ETH payment'}
+            message={'Processing 0.00018 ETH payment'}
           />
           <ToastMessage.Success
             my={3}
             message={'ETH sent'}
-            secondaryMessage={'You have {1.03} ETH remaining'}
-            actionText={'View on Etherscan'}
-            actionHref={'#!'}
+            secondaryMessage={'You have 1.03 Ether (ETH) remaining'}
           />
           <ToastMessage.Failure
             my={3}
             message={'Payment failed'}
-            secondaryMessage={'Make sure you have enough ETH and try again'}
+            secondaryMessage={'You don&#39;t have enough Ether (ETH)'}
+            actionText={'Buy ETH'}
+            actionHref={'#!'}
           />
 
         </Box>
         <Box width={'50%'}>
           <ToastMessage colorTheme={'dark'} my={3}/>
           <ToastMessage
-            secondaryMessage={'Lorem ipsum dolor sit.'}
+            message={'Write update here [Required]'}
+            secondaryMessage={'Supporting information for update [Optional]'}
             colorTheme={'dark'}
             my={3}
           />
@@ -75,7 +78,8 @@ storiesOf('ToastMessage', module)
             actionHref={'#!'}
           />
           <ToastMessage
-            secondaryMessage={'Lorem ipsum dolor sit.'}
+            message={'Write update here [Required]'}
+            secondaryMessage={'Supporting information for update [Optional]'}
             icon={'InfoOutline'}
             colorTheme={'dark'}
             my={3}
@@ -87,70 +91,68 @@ storiesOf('ToastMessage', module)
 
       <Button
         mb={3}
-        onClick={(e) => window.toastProvider.addMessage('[Processing… ]', {
-            secondaryMessage: (Date.now()),
+        onClick={(e) => window.toastProvider.addMessage('[Processing payment...]', {
+            secondaryMessage: '',
             actionHref: 'https://etherscan.io/tx/0xcbc921418c360b03b96585ae16f906cbd48c8d6c2cc7b82c6db430390a9fcfed',
             actionText: 'View on Etherscan',
             variant: 'processing',
           })
         }
       >
-        "addMessage.processing"
+        Preview "addMessage.processing"
       </Button>
       <br/>
       <Button
         mb={3}
-        onClick={(e) => window.toastProvider.addMessage('[Complete… ]', {
-            secondaryMessage: (Date.now()),
-            actionHref: 'https://etherscan.io/tx/0xcbc921418c360b03b96585ae16f906cbd48c8d6c2cc7b82c6db430390a9fcfed',
-            actionText: 'View on Etherscan',
+        onClick={(e) => window.toastProvider.addMessage('[ETH sent]', {
+            secondaryMessage: '[You have 1.03 Ether remaining]',
             variant: 'success',
           })
         }
       >
-        "addMessage.success"
+        Preview "addMessage.success"
       </Button>
       <br/>
       <Button
         mb={3}
-        onClick={(e) => window.toastProvider.addMessage('[Failed… ]', {
-            secondaryMessage: (Date.now()),
-            actionHref: 'https://etherscan.io/tx/0xcbc921418c360b03b96585ae16f906cbd48c8d6c2cc7b82c6db430390a9fcfed',
-            actionText: 'View on Etherscan',
+        onClick={(e) => window.toastProvider.addMessage('[Payment failed]', {
+            secondaryMessage: '[You don&#39;t have enough Ether (ETH)]',
+            actionHref: 'https://www.coinbase.com/',
+            actionText: 'Buy ETH',     
             variant: 'failure',
           })
         }
       >
-        "addMessage.failure"
+        Preview "addMessage.failure"
       </Button>
       <br/>
       <Button
         mb={3}
-        onClick={(e) => window.toastProvider.addMessage('[Your message here… ]')}
+        onClick={(e) => window.toastProvider.addMessage('Write update here [Required]')}
       >
-        "addMessage.default"
+        Preview "addMessage.default"
       </Button>
       <br/>
       <Button
         mb={3}
-        onClick={(e) => window.toastProvider.addMessage('[Your message here… ]', {
+        onClick={(e) => window.toastProvider.addMessage('Write update here [Required]', {
           icon: 'Info'
         })}
       >
-        "addMessage.default with Icon"
+        Preview "addMessage.default with Icon"
       </Button>
       <br/>
       <Button
         mb={3}
-        onClick={(e) => window.toastProvider.addMessage('[Your message here… ]', {
+        onClick={(e) => window.toastProvider.addMessage('Write update here [Required]', {
           icon: 'VpnKey',
           colorTheme: 'dark'
         })}
       >
-        "addMessage.default dark colors with Icon"
+        Preview "addMessage.default dark colors with Icon"
       </Button>
       <br/>
-      <Button onClick={() => window.toastProvider.removeMessage()}>"removeMessage"</Button>
+      <Button onClick={() => window.toastProvider.removeMessage()}>Preview "RemoveMessage"</Button>
 
       <ToastMessage.Provider ref={(node) => (window.toastProvider = node)} />
 

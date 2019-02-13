@@ -1,30 +1,30 @@
 import React from 'react'
-
 import styled from 'styled-components'
-import { tint } from 'polished'
+import {
+  tint,
+  shade
+} from 'polished'
 
 import Button from '../Button'
-
-import theme from '../theme'
 
 const TextButton = styled(Button)`
   & {
     box-shadow: none;
   }
   &:hover {
-    color: #7165D8;
+    color: ${props => tint(0.2, props.theme.colors.primary)};
     background-color: transparent;
     text-decoration: underline;
     box-shadow: none;
   }
   &:active {
-    color: #332A80;
+    color: ${props => shade(0.2, props.theme.colors.primary)};
     text-decoration: none;
+    background-color: transparent;
   }
 `
 
 TextButton.defaultProps = {
-  theme: theme,
   fontSize: 'inherit',
   fontWeight: '600',
   color: 'primary',
