@@ -24,9 +24,8 @@ exports[`OutlineButton component sanity matches default snapshot 1`] = `
 }
 
 .c0 {
-  font-family: inherit;
-  position: relative;
   cursor: pointer;
+  font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
   text-align: center;

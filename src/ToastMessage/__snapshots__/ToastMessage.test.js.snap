@@ -13,7 +13,7 @@ exports[`ToastMessage component sanity matches failure snapshot 1`] = `
   display="flex"
   flexDirection="row nowrap"
   icon={false}
-  message="[Your generic message]"
+  message="Write update here [Required]"
   secondaryMessage=""
   variant="failure"
 >
@@ -39,7 +39,7 @@ exports[`ToastMessage component sanity matches failure snapshot 1`] = `
       lineHeight="copy"
       textAlign="left"
     >
-      [Your generic message]
+      Write update here [Required]
     </Text>
   </Styled(Box)>
   <Text
@@ -2826,7 +2826,7 @@ exports[`ToastMessage component sanity matches generic snapshot 1`] = `
   }
   forwardedRef={null}
   icon={false}
-  message="[Your generic message]"
+  message="Write update here [Required]"
   secondaryMessage=""
   variant={false}
 >
@@ -2842,7 +2842,7 @@ exports[`ToastMessage component sanity matches generic snapshot 1`] = `
       lineHeight="copy"
       textAlign="left"
     >
-      [Your generic message]
+      Write update here [Required]
     </Text>
   </Styled(Box)>
   <Text
@@ -2871,7 +2871,7 @@ exports[`ToastMessage component sanity matches processing snapshot 1`] = `
   display="flex"
   flexDirection="row nowrap"
   icon={false}
-  message="[Your generic message]"
+  message="Write update here [Required]"
   secondaryMessage=""
   variant="processing"
 >
@@ -2897,7 +2897,7 @@ exports[`ToastMessage component sanity matches processing snapshot 1`] = `
       lineHeight="copy"
       textAlign="left"
     >
-      [Your generic message]
+      Write update here [Required]
     </Text>
   </Styled(Box)>
   <Text
@@ -2926,7 +2926,7 @@ exports[`ToastMessage component sanity matches success snapshot 1`] = `
   display="flex"
   flexDirection="row nowrap"
   icon={false}
-  message="[Your generic message]"
+  message="Write update here [Required]"
   secondaryMessage=""
   variant="success"
 >
@@ -2952,7 +2952,7 @@ exports[`ToastMessage component sanity matches success snapshot 1`] = `
       lineHeight="copy"
       textAlign="left"
     >
-      [Your generic message]
+      Write update here [Required]
     </Text>
   </Styled(Box)>
   <Text
