@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Slider component sanity matches default snapshot 1`] = `
-.c0 {
+exports[`Slider component sanity matches themed snapshot 1`] = `
+.c1 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -11,7 +11,7 @@ exports[`Slider component sanity matches default snapshot 1`] = `
   min-width: 200px;
 }
 
-.c0::-webkit-slider-runnable-track {
+.c1::-webkit-slider-runnable-track {
   box-sizing: border-box;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -30,7 +30,7 @@ exports[`Slider component sanity matches default snapshot 1`] = `
   align-items: center;
 }
 
-.c0::-webkit-slider-thumb {
+.c1::-webkit-slider-thumb {
   box-sizing: border-box;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -45,21 +45,31 @@ exports[`Slider component sanity matches default snapshot 1`] = `
   cursor: grab;
 }
 
-.c0::-webkit-slider-thumb:hover {
+.c1::-webkit-slider-thumb:hover {
   box-shadow: 0;
 }
 
-.c0::-webkit-slider-thumb:active {
+.c1::-webkit-slider-thumb:active {
   cursor: -webkit-grabbing;
   cursor: -moz-grabbing;
   cursor: grabbing;
   border-color: #4E3FCE;
 }
 
-<input
+.c0 {
+  font-size: 1em;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  color: #3F3D4B;
+}
+
+<div
   class="c0"
-  type="range"
 >
-  
-</input>
+  <input
+    class="c1"
+    type="range"
+  >
+    
+  </input>
+</div>
 `;

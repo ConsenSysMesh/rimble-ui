@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`OutlineButton component sanity matches default snapshot 1`] = `
-.c1 {
+exports[`OutlineButton component sanity matches themed snapshot 1`] = `
+.c2 {
   padding-left: 32px;
   padding-right: 32px;
   padding-top: 0px;
@@ -13,17 +13,18 @@ exports[`OutlineButton component sanity matches default snapshot 1`] = `
   border-radius: 4px;
 }
 
-.c1 {
+.c2 {
   box-sizing: border-box;
+  text-align: left;
 }
 
-.c0 {
+.c1 {
   font-weight: 600;
   font-size: 1rem;
   min-width: 48px;
 }
 
-.c0 {
+.c1 {
   cursor: pointer;
   font-family: inherit;
   -webkit-text-decoration: none;
@@ -49,63 +50,73 @@ exports[`OutlineButton component sanity matches default snapshot 1`] = `
   transition: all .15s ease;
 }
 
-.c0:hover {
+.c1:hover {
   background-color: #5f52d2;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
 }
 
-.c0:active {
+.c1:active {
   background-color: #4638b9;
   box-shadow: none;
 }
 
-.c0:disabled {
+.c1:disabled {
   opacity: 0.4;
   cursor: not-allowed;
 }
 
-.c0 > svg {
+.c1 > svg {
   display: block;
 }
 
-.c0 > svg:first-child {
+.c1 > svg:first-child {
   margin-left: -1rem;
   margin-right: .5rem;
 }
 
-.c0 > svg:last-child {
+.c1 > svg:last-child {
   margin-left: .5rem;
   margin-right: -1rem;
 }
 
-.c0 > svg:first-child:last-child {
+.c1 > svg:first-child:last-child {
   margin: 0;
 }
 
-.c0 {
+.c1 {
   background: #FFFFFF;
   border: 1px solid #CCCCCC;
 }
 
-.c0:hover {
-  color: #7165D8;
-  border-color: #7165D8;
+.c1:hover {
+  color: #7165d7;
+  border-color: #7165d7;
   background-color: #FFF;
 }
 
-.c0:active {
-  color: #332A80;
-  border-color: #332A80;
-  background-color: #EDECFA;
+.c1:active {
+  color: #3e32a4;
+  border-color: #3e32a4;
+  background-color: #edebfa;
 }
 
-<button
-  class="c0 c1"
-  color="primary"
-  font-weight="3"
-  height="48px"
-  type="button"
+.c0 {
+  font-size: 1em;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  color: #3F3D4B;
+}
+
+<div
+  class="c0"
 >
-  
-</button>
+  <button
+    class="c1 c2"
+    color="primary"
+    font-weight="3"
+    height="48px"
+    type="button"
+  >
+    
+  </button>
+</div>
 `;

@@ -1,16 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Avatar component sanity matches default snapshot 1`] = `
-.c0 {
+exports[`Avatar component sanity matches themed snapshot 1`] = `
+.c1 {
   height: 2rem;
   width: 2rem;
 }
 
-.c0 {
+.c1 {
   box-sizing: border-box;
+  text-align: left;
 }
 
-.c0 {
+.c1 {
   position: relative;
   overflow: hidden;
   border-radius: 100%;
@@ -20,10 +21,20 @@ exports[`Avatar component sanity matches default snapshot 1`] = `
   background-image: url();
 }
 
+.c0 {
+  font-size: 1em;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  color: #3F3D4B;
+}
+
 <div
-  alt="Avatar"
   class="c0"
 >
-  
+  <div
+    alt="Avatar"
+    class="c1"
+  >
+    
+  </div>
 </div>
 `;
