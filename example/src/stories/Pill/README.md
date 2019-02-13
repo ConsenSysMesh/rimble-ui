@@ -1,5 +1,5 @@
 # Pill
-The `Pill` component renders XYZ…
+The `Pill` component renders text with a colored background. Useful for showing transaction status.
 
 <!-- STORY -->
 

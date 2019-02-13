@@ -1,5 +1,5 @@
 # Modal
-The `Modal` component renders XYZ…
+The `Modal` component displays a message with buttons.
 
 <!-- STORY -->
 
@@ -50,9 +50,9 @@ class YourModal extends Component {
               onClick={this.closeModal}
             />
             <Box p={4} mb={3}>
-              <Heading.h3>Confirm that thing</Heading.h3>
+              <Heading.h3>Confirm {Action Name}</Heading.h3>
               <Text>
-                Do you reaaaaaally want to do that thing you just said that you wanted to do?
+                Are you sure you want to {action name}?
               </Text>
             </Box>
             <Flex px={4} py={3} borderTop={1} borderColor={'#E8E8E8'} justifyContent={'flex-end'}>
