@@ -28,7 +28,7 @@ import {
 // theme.js
 const theme = {
   colors: {
-    primary: 'red',
+    primary: '#345AD6',
     black: '#000e1a',
     white: '#fff',
     blue: '#007ce0',
@@ -81,7 +81,7 @@ const theme = {
 export default class App extends Component {
   render () {
     return (
-      <ThemeProvider theme={theme}>''
+      <ThemeProvider theme={theme}>
         <Button size={'medium'}>
           Click me!
         </Button>

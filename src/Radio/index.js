@@ -1,8 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import theme from '../theme'
-
 import RadioButtonChecked from 'rmdi/lib/RadioButtonChecked'
 import RadioButtonUnchecked from 'rmdi/lib/RadioButtonUnchecked'
 
@@ -34,13 +32,13 @@ const StyledWrapper = styled.div`
     height: 100%;
     width: 100%;
     pointer-events: none;
-    fill: ${theme.colors.grey};
+    fill: ${props => props.theme.colors.grey};
   }
 
   > svg[name="checked"] {
     display: none;
     z-index: 1;
-    fill: ${theme.colors.primary};
+    fill: ${props => props.theme.colors.primary};
   }
 
   > input:checked ~ svg[name="checked"] {
@@ -62,7 +60,7 @@ const Radio = ({className, ...props}) => (
 )
 
 Radio.defaultProps = {
-  theme: theme
+  color: 'primary'
 }
 
 Radio.displayName = 'Radio'
