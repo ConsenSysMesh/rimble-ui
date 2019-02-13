@@ -11,8 +11,6 @@ import {
   letterSpacing,
 } from 'styled-system'
 
-import theme from '../theme'
-
 import Box from '../Box'
 
 export const caps = props =>

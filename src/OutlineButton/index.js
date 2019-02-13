@@ -1,11 +1,9 @@
 import React from 'react'
 
 import styled from 'styled-components'
-import { tint } from 'polished'
+import { tint, shade } from 'polished'
 
 import Button from '../Button'
-
-import theme from '../theme'
 
 const OutlineButton = styled(Button)`
   & {
@@ -13,24 +11,21 @@ const OutlineButton = styled(Button)`
     border: 1px solid #CCCCCC;
   }
   &:hover {
-    // background-color: ${props => tint(0.9, props.theme.colors.primary)};
-
-    color: #7165D8;
-    border-color: #7165D8;
+    color: ${props => tint(0.2, props.theme.colors.primary)};
+    border-color: ${props => tint(0.2, props.theme.colors.primary)};
     background-color: #FFF;
   }
   &:active {
-    color: #332A80;
-    border-color: #332A80;
-    background-color: #EDECFA;
+    color: ${props => shade(0.2, props.theme.colors.primary)};
+    border-color: ${props => shade(0.2, props.theme.colors.primary)};
+    background-color: ${props => tint(0.9, props.theme.colors.primary)};
   }
 `
 
 OutlineButton.defaultProps = {
-  theme: theme,
-  fontWeight: 3,
   color: 'primary',
   bg: 'white',
+  fontWeight: 3,
   height: '48px',
   border: 1,
   px: 4,

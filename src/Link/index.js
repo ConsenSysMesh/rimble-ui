@@ -1,5 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
+import {
+  tint,
+  shade
+} from 'polished'
 
 import Text from '../Text'
 
@@ -8,11 +12,11 @@ const Link = styled(Text)`
     text-decoration: none;
   }
   &:hover {
-    color: #6755F3;
+    color: ${props => tint(0.2, props.theme.colors.primary)};
     text-decoration: underline;
   }
   &:active {
-    color: #3223A9;
+    color: ${props => shade(0.2, props.theme.colors.primary)};
     text-decoration: none;
   }
 `

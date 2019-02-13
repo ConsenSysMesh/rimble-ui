@@ -41,4 +41,41 @@ import { Tooltip } from 'rimble-ui'
 </Flex>
 ```
 
+### Tooltip with Icon Button
+```jsx
+<Tooltip variant='dark' message='Edit'>
+  <TextButton icononly icon='Edit' color='#666' />
+</Tooltip>
+```
+
+### Tooltip to show some content
+```jsx
+<Tooltip variant='dark' message='Learn more about feature'>
+  <TextButton icononly icon='Info' color='#666' />
+</Tooltip>
+```
+
+### Appearance
+```jsx
+<Tooltip message='Edit'>
+  <Button icononly icon='Edit' />
+</Tooltip>
+
+<Tooltip variant='light' message='Edit'>
+  <Button icononly icon='Edit' />
+</Tooltip>
+
+<Tooltip variant='dark' message='Edit'>
+  <Button icononly icon='Edit' />
+</Tooltip>
+```
+
+### Position
+```jsx
+<Tooltip message='Your custom message' placement='left'>
+  hover me
+</Tooltip>
+```
+
+
 <!-- component props -->

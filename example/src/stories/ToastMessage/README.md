@@ -1,7 +1,7 @@
 # ToastMessage
 Toast messages are small alerts that provide updates about a process. Use toast messages for non-critical information about what’s happening within your dApp. They shouldn't be used to notify the user that they need to do something. The `ToastMessage` component renders a responsive box-model layout component.
 
-For the code, usage guidance and examples, keep scrolling. 
+For the code, usage guidance and examples, keep scrolling.
 
 <!-- STORY -->
 
@@ -106,7 +106,7 @@ import { ToastMessage } from 'rimble-ui'
 ## How they work
 
 - They dismiss automatically
-- User are able to dismiss them manually
+- User can dismiss them manually
 - They display one at a time, so if multiple messages are necessary, each one should appear after the previous message.
 
 # Digging into the components:
@@ -125,7 +125,17 @@ import { ToastMessage } from 'rimble-ui'
 - A transaction has started
 - You're now logged in to your wallet
 
+## Code
+
+
+
+## Code (with icon)
+
+
+
 ---
+
+-
 
 ## Title and subtext (+ optional icon)
 
@@ -135,7 +145,7 @@ import { ToastMessage } from 'rimble-ui'
 
 **`secondaryMessage`:** should provide additional information that adds value.
 
-**`actionText`:** should relate to what you're communicating and is optional. If your `secondarymessage` is advice or a suggestion, try and include an action that gets the user on their way. If no action is required or relevant, leave it out. 
+**`actionText`:** should relate to what you're communicating and is optional. If your `secondarymessage` is advice or a suggestion, try and include an action that gets the user on their way. If no action is required or relevant, leave it out.
 
 **Example scenarios:**
 
@@ -149,5 +159,5 @@ import { ToastMessage } from 'rimble-ui'
 This is just some general guidance if you don't know where to start.
 
 - `processing` messages should be in the present tense and, if possible, reference what's being processed like "Processing payment" or "Sending ETH". This will give the user confidence that what they're trying to do is happening. An ellipses (...) at the end of the message can help confirm to the user that something is actively happening behind the scenes. If possible, "Processing..." or "Sending..." should echo the language in the CTA that the user pressed to initiate the process.  
-- `success` messages should describe what's happened e.g. "Payment sent" or "Payment accepted" not just a generic "SUCCESS!". Try and echo the words used in the CTA that started the process. For example, if the user was sending ETH to an address and the CTA was "Send", have the toast message echo that language: "ETH sent". If you describe what's happened you don't need words like "successfully" at the end which add to word count. 
+- `success` messages should describe what's happened e.g. "Payment sent" or "Payment accepted" not just a generic "SUCCESS!". Try and echo the words used in the CTA that started the process. For example, if the user was sending ETH to an address and the CTA was "Send", have the toast message echo that language: "ETH sent". If you describe what's happened you don't need words like "successfully" at the end which add to word count.
 - `failure` messages, where possible, should explain the reason for failure and offer a suggestion of what to do next. Again echo the language used in the action the user was trying to do. If the user was trying to pay for something and the CTA was "Pay 0.13 ETH", have the failure message echo that language: "Payment failed". Then use the `secondaryMessage` to explain why ("Not enough ETH") or a suggestion on how to fix the problem ("Buy more ETH"). Try not to leave the user with no understanding of why something has failed or what to do next. The `action` should be used to help the user take the next step in overcoming the failure.
