@@ -1,5 +1,5 @@
 # QR
-The `QR` component renders XYZ…
+The `QR` component renders a generated QR code for a provided string.
 
 <!-- STORY -->
 
