@@ -21,7 +21,6 @@ import {
   Tooltip,
   ThemeProvider,
   Icon,
-  IconButton,
   PublicAddress
 } from 'rimble-ui'
 
@@ -118,23 +117,15 @@ export default class App extends Component {
 
         <Textarea rows={4} defaultValue='Type here…' />
 
-        <Field htmlFor="">
-          <Checkbox id="blue" name="pill"/>
-          Blue Pill
-        </Field>
-        <Field htmlFor="">
-          <Checkbox id="red" name="pill" />
-          Red Pill
-        </Field>
+        <Checkbox label="Checkbox default" />
+        <Checkbox checked label="Checkbox checked" />
+        <Checkbox disabled label="Checkbox disabled" />
+        <Checkbox disabled checked label="Checkbox checked disabled" />
 
-        <label htmlFor="">
-          <Radio id="blue" name="pill"/>
-          Blue Pill
-        </label>
-        <label htmlFor="">
-          <Radio id="red" name="pill" />
-          Red Pill
-        </label>
+        <Radio label="Radio default" />
+        <Radio checked label="Radio checked" />
+        <Radio disabled label="Radio disabled" />
+        <Radio disabled checked label="Radio checked disabled" />
 
         <Select items={['Wandering Thunder','Black Wildflower','Ancient Paper',]} />
 
@@ -153,6 +144,10 @@ export default class App extends Component {
         <Tooltip message='Your custom message'>hover me</Tooltip>
 
         <Table></Table>
+
+        <Icon name={'Info'} color={'primary'} />
+
+        <PublicAddress address={"0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2"} />
       </ThemeProvider>
     )
   }
