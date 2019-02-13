@@ -2377,6 +2377,7 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
           "
       & {
         box-sizing: border-box;
+        text-align: left;
       }
       ",
           "
@@ -2642,6 +2643,7 @@ exports[`ToastMessage component sanity matches generic snapshot 1`] = `
           "
       & {
         box-sizing: border-box;
+        text-align: left;
       }
       ",
           "

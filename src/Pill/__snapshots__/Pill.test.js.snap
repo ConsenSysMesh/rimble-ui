@@ -22,6 +22,7 @@ exports[`Pill component sanity matches default snapshot 1`] = `
 
 .c0 {
   box-sizing: border-box;
+  text-align: left;
 }
 
 .c0 {
