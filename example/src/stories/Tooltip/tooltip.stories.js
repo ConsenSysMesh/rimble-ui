@@ -8,38 +8,61 @@ import {
   Tooltip,
   Icon,
   Flex,
-  Text
+  Text,
+  Button,
+  OutlineButton,
+  TextButton
 } from 'rimble-ui'
 
 storiesOf('Tooltip', module)
   .addDecorator(withDocs(MyREADME))
   .add('default', () => (
     <div>
-      <Text textAlign='center' my={3}>
+      <Flex justifyContent='space-between' p='4' bg='#f1f1f1'>
         <Tooltip variant='dark' message='Your custom message' placement='top'>
-            hover me
+          <OutlineButton>
+            "Top"
+          </OutlineButton>
         </Tooltip>
-      </Text>
-      <Text textAlign='center' my={3}>
         <Tooltip message='Your custom message' placement='right'>
-          hover me
+          <OutlineButton>
+            "Right"
+          </OutlineButton>
         </Tooltip>
-      </Text>
-      <Text textAlign='center' my={3}>
         <Tooltip message='Your custom message' placement='bottom'>
-          hover me
+          <OutlineButton>
+            "Bottom"
+          </OutlineButton>
         </Tooltip>
-      </Text>
-      <Text textAlign='center' my={3}>
         <Tooltip message='Your custom message' placement='left'>
-          hover me
-        </Tooltip>
-      </Text>
-
-      <Flex size='80px' borderRadius='100%' mx='auto' my='5' bg='#ccc' alignItems='center' justifyContent='center'>
-        <Tooltip message='Wrap me around your tooltip trigger'>
-          <Icon name='Info' />
+          <OutlineButton>
+            "Left"
+          </OutlineButton>
         </Tooltip>
       </Flex>
+
+      <Flex size='80px' mx='auto' my='2' alignItems='center' justifyContent='center'>
+        <Tooltip variant='dark' message='Learn more about feature'>
+          <Button icononly icon='Info' />
+        </Tooltip>
+      </Flex>
+      <Flex size='80px' mx='auto' my='2' alignItems='center' justifyContent='center'>
+        <Tooltip variant='dark' message='Learn more about feature'>
+          <OutlineButton icononly icon='Info' />
+        </Tooltip>
+      </Flex>
+
+      <Flex size='100px' mx='auto' my='3' alignItems='center' justifyContent='center'>
+        <Tooltip variant='dark' message='Learn more about feature'>
+          <TextButton icononly icon='Info' color='#666' mx='2' />
+        </Tooltip>
+        <Tooltip variant='dark' message='Show more options'>
+          <TextButton icononly icon='MoreHoriz' color='#666' mx='2' />
+        </Tooltip>
+        <Tooltip variant='dark' message='Edit'>
+          <TextButton icononly icon='Edit' color='#666' mx='2' />
+        </Tooltip>
+      </Flex>
+
     </div>
   ))

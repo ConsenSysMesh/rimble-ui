@@ -1,6 +1,6 @@
 import ToastMessage from './'
-// import { ReactWrapper } from 'enzyme';
-
+import ThemeProvider from '../ThemeProvider'
+import theme from '../theme'
 
 describe('ToastMessage component sanity', () => {
   it('has name', () => {
@@ -33,7 +33,18 @@ describe('ToastMessage component sanity', () => {
   })
 
   it('matches full component mount snapshot', () => {
-    const toastMessage = mount(<ToastMessage variant={'default'} message={'message'} secondaryMessage={'secondary message'} actionHref={'http://test.com'} actionText={'Link'} icon={'InfoOutline'} />)
+    const toastMessage = mount(
+      <ThemeProvider theme={theme}>
+        <ToastMessage 
+          variant={'default'} 
+          message={'message'} 
+          secondaryMessage={'secondary message'} 
+          actionHref={'http://test.com'} 
+          actionText={'Link'} 
+          icon={'InfoOutline'}
+        />
+      </ThemeProvider>
+    )
     expect(toastMessage).toMatchSnapshot()
     toastMessage.unmount()
   })

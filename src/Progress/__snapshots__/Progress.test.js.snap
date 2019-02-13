@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Progress component sanity matches default snapshot 1`] = `
-.c0 {
+exports[`Progress component sanity matches themed snapshot 1`] = `
+.c1 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -11,18 +11,28 @@ exports[`Progress component sanity matches default snapshot 1`] = `
   border-radius: 4px;
 }
 
-.c0::-webkit-progress-bar {
+.c1::-webkit-progress-bar {
   background-color: rgba(78,63,206,0.25);
 }
 
-.c0::-webkit-progress-value {
+.c1::-webkit-progress-value {
   background-color: #4E3FCE;
   border-radius: 4px;
 }
 
-<progress
+.c0 {
+  font-size: 1em;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  color: #3F3D4B;
+}
+
+<div
   class="c0"
 >
-  
-</progress>
+  <progress
+    class="c1"
+  >
+    
+  </progress>
+</div>
 `;
