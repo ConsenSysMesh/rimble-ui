@@ -6,7 +6,7 @@ import { tint } from "polished";
 import Box from "../Box";
 
 const Pill = styled(Box).attrs({
-  tintLevel: props => (props.selected ? "0.75" : "0.88")
+  tintlevel: props => (props.selected ? "0.75" : "0.88")
 })`
   & {
     cursor: pointer;
@@ -14,7 +14,7 @@ const Pill = styled(Box).attrs({
     border-color: ${props => (props.selected ? props.color : "none")};
     background-color: ${props =>
       tint(
-        props.tintLevel,
+        props.tintlevel,
         themeGet("colors." + props.color, props.color)(props)
       )};
   }
