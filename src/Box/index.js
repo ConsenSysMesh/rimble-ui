@@ -61,7 +61,6 @@ import {
 const Box = styled.div`
   & {
     box-sizing: border-box;
-    text-align: left;
   }
   ${'' /* core */}
   ${space}
@@ -100,9 +99,14 @@ const Box = styled.div`
   ${borderColor}
   ${borderRadius}
   ${'' /* typography */}
+  ${textAlign}
   ${'' /* misc */}
   ${opacity}
 `
+
+Box.defaultProps = {
+  textAlign: left
+}
 
 Box.displayName = 'Box'
 
