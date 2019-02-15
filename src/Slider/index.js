@@ -1,7 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
+import { themeGet } from 'styled-system'
 
-const Slider = styled.input.attrs({ type: 'range' })`
+const Slider = styled.input.attrs({
+  type: 'range',
+  primarycolor: props => themeGet('colors.primary', '#000')(props)
+})`
   & {
     appearance: none;
     margin: 0;
@@ -14,7 +18,7 @@ const Slider = styled.input.attrs({ type: 'range' })`
     appearance: none;
     border: none;
     border-radius: 4px;
-    background: ${ props => props.theme.colors.primary };
+    background: ${ props => props.primarycolor };
     height: 4px;
     display: flex;
     align-items: center;
@@ -30,11 +34,11 @@ const Slider = styled.input.attrs({ type: 'range' })`
     cursor: grab;
 
     &:hover {
-      box-shadow: ${ props => props.theme.shadows[0] };
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     }
     &:active {
       cursor: grabbing;
-      border-color: ${ props => props.theme.colors.primary }
+      border-color: ${ props => props.primarycolor }
     }
   }
 `
