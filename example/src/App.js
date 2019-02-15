@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 import {
   Avatar,
@@ -23,28 +23,33 @@ import {
   ThemeProvider,
   Icon,
   PublicAddress
-} from 'rimble-ui'
+} from "rimble-ui";
 
 const myTheme = {
   ...theme,
   colors: {
     ...theme.colors,
-    primary: 'red'
+    primary: "red"
   }
-}
+};
 
 export default class App extends Component {
-  render () {
+  render() {
     return (
-      <div >
-        <Button size={'medium'}>
-          Click me!
-        </Button>
-        <OutlineButton>Click</OutlineButton>
-        <TextButton>Click</TextButton>
-
-        
+      <div>
+        <div>
+          <Button size={"medium"}>Click me!</Button>
+          <OutlineButton>Click</OutlineButton>
+          <TextButton>Click</TextButton>
+          <Link>I'm a Link!</Link>
+        </div>
+        <ThemeProvider theme={myTheme}>
+          <Button size={"medium"}>Click me!</Button>
+          <OutlineButton>Click</OutlineButton>
+          <TextButton>Click</TextButton>
+          <Link>I'm a Link!</Link>
+        </ThemeProvider>
       </div>
-    )
+    );
   }
 }
