@@ -21,7 +21,7 @@ exports[`ToastMessage component sanity matches failure snapshot 1`] = `
     className="iconBox"
     flex="0 0"
     mr={2}
-    textAlign={[Function]}
+    textAlign="left"
   >
     <Styled(WrappedIconNegative)
       height="32px"
@@ -31,7 +31,7 @@ exports[`ToastMessage component sanity matches failure snapshot 1`] = `
   <Styled(Box)
     flex="1 1 auto"
     mx={2}
-    textAlign={[Function]}
+    textAlign="left"
   >
     <Text
       color="black"
@@ -63,16 +63,17 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   -webkit-flex: 0 0;
   -ms-flex: 0 0;
   flex: 0 0;
+  text-align: left;
 }
 
 .c2 {
   box-sizing: border-box;
-  text-align: left;
 }
 
 .c6 {
   color: #000e1a;
   font-size: 14px;
+  text-align: left;
   font-size: 14px;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-weight: 600;
@@ -82,12 +83,12 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
 
 .c6 {
   box-sizing: border-box;
-  text-align: left;
 }
 
 .c7 {
   color: #666;
   font-size: 14px;
+  text-align: left;
   font-size: 14px;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-weight: 400;
@@ -97,7 +98,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
 
 .c7 {
   box-sizing: border-box;
-  text-align: left;
 }
 
 .c8 {
@@ -107,6 +107,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   -webkit-flex: 0 1;
   -ms-flex: 0 1;
   flex: 0 1;
+  text-align: right;
   font-size: 16px;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-weight: 400;
@@ -116,7 +117,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
 
 .c8 {
   box-sizing: border-box;
-  text-align: left;
 }
 
 .c9 {
@@ -128,7 +128,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
 
 .c9 {
   box-sizing: border-box;
-  text-align: left;
 }
 
 .c9 {
@@ -154,11 +153,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
+  text-align: left;
 }
 
 .c4 {
   box-sizing: border-box;
-  text-align: left;
 }
 
 .c4 {
@@ -190,7 +189,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
 
 .c1 {
   box-sizing: border-box;
-  text-align: left;
 }
 
 .c1 {
@@ -974,7 +972,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                         "
                     & {
                       box-sizing: border-box;
-                      text-align: left;
                     }
                     ",
                         "
@@ -1080,6 +1077,9 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                         [Function],
                         "
                     ",
+                        "
+                    ",
+                        [Function],
                         "
                     ",
                         "
@@ -1171,6 +1171,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                     className="iconBox"
                     flex="0 0"
                     mr={2}
+                    textAlign="left"
                   >
                     <StyledComponent
                       className="iconBox"
@@ -1187,7 +1188,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                               "
                           & {
                             box-sizing: border-box;
-                            text-align: left;
                           }
                           ",
                               "
@@ -1295,12 +1295,18 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                           ",
                               "
                           ",
+                              [Function],
+                              "
+                          ",
                               "
                           ",
                               [Function],
                               "
                         ",
                             ],
+                          },
+                          "defaultProps": Object {
+                            "textAlign": "left",
                           },
                           "displayName": "Box",
                           "render": [Function],
@@ -1312,6 +1318,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                       }
                       forwardedRef={null}
                       mr={2}
+                      textAlign="left"
                     >
                       <div
                         className="iconBox c2"
@@ -1321,6 +1328,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                   <Styled(Box)
                     flex="1 1 auto"
                     mx={2}
+                    textAlign="left"
                   >
                     <StyledComponent
                       flex="1 1 auto"
@@ -1336,7 +1344,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                               "
                           & {
                             box-sizing: border-box;
-                            text-align: left;
                           }
                           ",
                               "
@@ -1442,6 +1449,9 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                               [Function],
                               "
                           ",
+                              "
+                          ",
+                              [Function],
                               "
                           ",
                               "
@@ -1459,6 +1469,9 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                         ",
                             ],
                           },
+                          "defaultProps": Object {
+                            "textAlign": "left",
+                          },
                           "displayName": "Styled(Box)",
                           "render": [Function],
                           "styledComponentId": "c3",
@@ -1469,6 +1482,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                       }
                       forwardedRef={null}
                       mx={2}
+                      textAlign="left"
                     >
                       <div
                         className="c3 c4"
@@ -1498,7 +1512,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                     "
                                 & {
                                   box-sizing: border-box;
-                                  text-align: left;
                                 }
                                 ",
                                     "
@@ -1604,6 +1617,9 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                     [Function],
                                     "
                                 ",
+                                    "
+                                ",
+                                    [Function],
                                     "
                                 ",
                                     "
@@ -1885,7 +1901,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                     "
                                 & {
                                   box-sizing: border-box;
-                                  text-align: left;
                                 }
                                 ",
                                     "
@@ -1991,6 +2006,9 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                     [Function],
                                     "
                                 ",
+                                    "
+                                ",
+                                    [Function],
                                     "
                                 ",
                                     "
@@ -2278,7 +2296,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                               "
                           & {
                             box-sizing: border-box;
-                            text-align: left;
                           }
                           ",
                               "
@@ -2384,6 +2401,9 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                               [Function],
                               "
                           ",
+                              "
+                          ",
+                              [Function],
                               "
                           ",
                               "
@@ -2653,7 +2673,9 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                             forwardedClass={
                               Object {
                                 "$$typeof": Symbol(react.forward_ref),
-                                "attrs": undefined,
+                                "attrs": Object {
+                                  "primarycolor": [Function],
+                                },
                                 "componentStyle": ComponentStyle {
                                   "componentId": "sc-bGbZqa",
                                   "isStatic": false,
@@ -2662,7 +2684,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                     "
                                 & {
                                   box-sizing: border-box;
-                                  text-align: left;
                                 }
                                 ",
                                     "
@@ -2768,6 +2789,9 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                     [Function],
                                     "
                                 ",
+                                    "
+                                ",
+                                    [Function],
                                     "
                                 ",
                                     "
@@ -3034,6 +3058,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                               fontSize={1}
                               fontWeight={3}
                               href="http://test.com"
+                              primarycolor="#4E3FCE"
                               target="_blank"
                             >
                               Link
@@ -3272,12 +3297,12 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
     className="iconBox"
     flex="0 0"
     mr={2}
-    textAlign={[Function]}
+    textAlign="left"
   />
   <Styled(Box)
     flex="1 1 auto"
     mx={2}
-    textAlign={[Function]}
+    textAlign="left"
   >
     <Text
       color="black"
@@ -3541,7 +3566,7 @@ exports[`ToastMessage component sanity matches generic snapshot 1`] = `
   <Styled(Box)
     flex="1 1 auto"
     mx={2}
-    textAlign={[Function]}
+    textAlign="left"
   >
     <Text
       color="black"
@@ -3588,7 +3613,7 @@ exports[`ToastMessage component sanity matches processing snapshot 1`] = `
     className="iconBox"
     flex="0 0"
     mr={2}
-    textAlign={[Function]}
+    textAlign="left"
   >
     <Styled(WrappedIconProcessing)
       height="32px"
@@ -3598,7 +3623,7 @@ exports[`ToastMessage component sanity matches processing snapshot 1`] = `
   <Styled(Box)
     flex="1 1 auto"
     mx={2}
-    textAlign={[Function]}
+    textAlign="left"
   >
     <Text
       color="black"
@@ -3645,7 +3670,7 @@ exports[`ToastMessage component sanity matches success snapshot 1`] = `
     className="iconBox"
     flex="0 0"
     mr={2}
-    textAlign={[Function]}
+    textAlign="left"
   >
     <Styled(WrappedIconPositive)
       height="32px"
@@ -3655,7 +3680,7 @@ exports[`ToastMessage component sanity matches success snapshot 1`] = `
   <Styled(Box)
     flex="1 1 auto"
     mx={2}
-    textAlign={[Function]}
+    textAlign="left"
   >
     <Text
       color="black"

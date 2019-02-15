@@ -13,11 +13,11 @@ exports[`PublicAddress component sanity matches themed snapshot 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  text-align: left;
 }
 
 .c1 {
   box-sizing: border-box;
-  text-align: left;
 }
 
 .c6 {
@@ -36,17 +36,18 @@ exports[`PublicAddress component sanity matches themed snapshot 1`] = `
   border: 0;
   border-color: none;
   border-radius: 4px;
+  text-align: left;
 }
 
 .c6 {
   box-sizing: border-box;
-  text-align: left;
 }
 
 .c2 {
   margin-bottom: 8px;
   color: #3F3D4B;
   font-size: 14px;
+  text-align: left;
   font-size: 14px;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-weight: 600;
@@ -56,7 +57,6 @@ exports[`PublicAddress component sanity matches themed snapshot 1`] = `
 
 .c2 {
   box-sizing: border-box;
-  text-align: left;
 }
 
 .c4 {
@@ -95,9 +95,9 @@ exports[`PublicAddress component sanity matches themed snapshot 1`] = `
   font-weight: 600;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-size: 12px;
-  height: 32px;
-  min-width: 32px;
-  padding: 0 16px;
+  height: 2rem;
+  min-width: 2rem;
+  padding: 0 1rem;
 }
 
 .c5 {
@@ -124,6 +124,7 @@ exports[`PublicAddress component sanity matches themed snapshot 1`] = `
   justify-content: center;
   -webkit-transition: all .15s ease;
   transition: all .15s ease;
+  background-color: #4E3FCE;
 }
 
 .c5:hover {
@@ -212,8 +213,11 @@ exports[`PublicAddress component sanity matches themed snapshot 1`] = `
 }
 
 .c3 {
-  box-sizing: border-box;
   text-align: left;
+}
+
+.c3 {
+  box-sizing: border-box;
 }
 
 .c3 {
@@ -270,6 +274,7 @@ exports[`PublicAddress component sanity matches themed snapshot 1`] = `
       <input
         class="c4"
         color="primary"
+        primarycolor="#4E3FCE"
         readonly=""
       >
         

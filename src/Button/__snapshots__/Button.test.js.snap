@@ -15,18 +15,18 @@ exports[`Button component sanity matches themed snapshot 1`] = `
   border: 0;
   border-color: none;
   border-radius: 4px;
+  text-align: left;
 }
 
 .c2 {
   box-sizing: border-box;
-  text-align: left;
 }
 
 .c1 {
   font-weight: 600;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-size: 1rem;
-  min-width: 48px;
+  min-width: 3rem;
 }
 
 .c1 {
@@ -53,6 +53,7 @@ exports[`Button component sanity matches themed snapshot 1`] = `
   justify-content: center;
   -webkit-transition: all .15s ease;
   transition: all .15s ease;
+  background-color: #4E3FCE;
 }
 
 .c1:hover {

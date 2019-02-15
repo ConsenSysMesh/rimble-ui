@@ -43,6 +43,7 @@ exports[`Input component sanity matches themed snapshot 1`] = `
   <input
     class="c1"
     color="primary"
+    primarycolor="#4E3FCE"
   >
     
   </input>

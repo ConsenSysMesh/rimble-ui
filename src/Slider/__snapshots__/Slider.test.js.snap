@@ -46,7 +46,7 @@ exports[`Slider component sanity matches themed snapshot 1`] = `
 }
 
 .c1::-webkit-slider-thumb:hover {
-  box-shadow: 0;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
 }
 
 .c1::-webkit-slider-thumb:active {
@@ -67,6 +67,7 @@ exports[`Slider component sanity matches themed snapshot 1`] = `
 >
   <input
     class="c1"
+    primarycolor="#4E3FCE"
     type="range"
   >
     

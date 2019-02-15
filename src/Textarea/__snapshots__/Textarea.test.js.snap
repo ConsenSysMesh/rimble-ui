@@ -49,6 +49,7 @@ exports[`Textarea component sanity matches themed snapshot 1`] = `
 >
   <textarea
     class="c1"
+    primarycolor="#4E3FCE"
   >
     
   </textarea>

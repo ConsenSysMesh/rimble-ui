@@ -105,7 +105,7 @@ const Box = styled.div`
 `
 
 Box.defaultProps = {
-  textAlign: left
+  textAlign: 'left'
 }
 
 Box.displayName = 'Box'
