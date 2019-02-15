@@ -8,7 +8,6 @@ exports[`Avatar component sanity matches themed snapshot 1`] = `
 
 .c1 {
   box-sizing: border-box;
-  text-align: left;
 }
 
 .c1 {

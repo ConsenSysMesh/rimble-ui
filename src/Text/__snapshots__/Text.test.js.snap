@@ -4,6 +4,7 @@ exports[`Text component sanity matches default snapshot 1`] = `
 .c0 {
   color: copyColor;
   font-size: 16px;
+  text-align: left;
   font-size: 16px;
   font-family: sansSerif;
   font-weight: 2;
@@ -13,7 +14,6 @@ exports[`Text component sanity matches default snapshot 1`] = `
 
 .c0 {
   box-sizing: border-box;
-  text-align: left;
 }
 
 <div

@@ -21,6 +21,7 @@ exports[`ToastMessage component sanity matches failure snapshot 1`] = `
     className="iconBox"
     flex="0 0"
     mr={2}
+    textAlign={[Function]}
   >
     <Styled(WrappedIconNegative)
       height="32px"
@@ -30,6 +31,7 @@ exports[`ToastMessage component sanity matches failure snapshot 1`] = `
   <Styled(Box)
     flex="1 1 auto"
     mx={2}
+    textAlign={[Function]}
   >
     <Text
       color="black"
@@ -3075,7 +3077,6 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
           "
       & {
         box-sizing: border-box;
-        text-align: left;
       }
       ",
           "
@@ -3181,6 +3182,9 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
           [Function],
           "
       ",
+          "
+      ",
+          [Function],
           "
       ",
           "
@@ -3268,10 +3272,12 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
     className="iconBox"
     flex="0 0"
     mr={2}
+    textAlign={[Function]}
   />
   <Styled(Box)
     flex="1 1 auto"
     mx={2}
+    textAlign={[Function]}
   >
     <Text
       color="black"
@@ -3341,7 +3347,6 @@ exports[`ToastMessage component sanity matches generic snapshot 1`] = `
           "
       & {
         box-sizing: border-box;
-        text-align: left;
       }
       ",
           "
@@ -3447,6 +3452,9 @@ exports[`ToastMessage component sanity matches generic snapshot 1`] = `
           [Function],
           "
       ",
+          "
+      ",
+          [Function],
           "
       ",
           "
@@ -3533,6 +3541,7 @@ exports[`ToastMessage component sanity matches generic snapshot 1`] = `
   <Styled(Box)
     flex="1 1 auto"
     mx={2}
+    textAlign={[Function]}
   >
     <Text
       color="black"
@@ -3579,6 +3588,7 @@ exports[`ToastMessage component sanity matches processing snapshot 1`] = `
     className="iconBox"
     flex="0 0"
     mr={2}
+    textAlign={[Function]}
   >
     <Styled(WrappedIconProcessing)
       height="32px"
@@ -3588,6 +3598,7 @@ exports[`ToastMessage component sanity matches processing snapshot 1`] = `
   <Styled(Box)
     flex="1 1 auto"
     mx={2}
+    textAlign={[Function]}
   >
     <Text
       color="black"
@@ -3634,6 +3645,7 @@ exports[`ToastMessage component sanity matches success snapshot 1`] = `
     className="iconBox"
     flex="0 0"
     mr={2}
+    textAlign={[Function]}
   >
     <Styled(WrappedIconPositive)
       height="32px"
@@ -3643,6 +3655,7 @@ exports[`ToastMessage component sanity matches success snapshot 1`] = `
   <Styled(Box)
     flex="1 1 auto"
     mx={2}
+    textAlign={[Function]}
   >
     <Text
       color="black"
