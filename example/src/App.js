@@ -42,18 +42,24 @@ export default class App extends Component {
           <OutlineButton>Click</OutlineButton>
           <TextButton>Click</TextButton>
           <Link>I'm a Link!</Link>
-          <PublicAddress></PublicAddress>
+          <PublicAddress address="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2"/>
           <Input></Input>
           <Icon name={'Info'}></Icon>
+          <Tooltip variant='dark' message='Your custom message'>
+            hover me
+          </Tooltip>
         </div>
         <ThemeProvider theme={myTheme}>
           <Button size={"medium"}>Click me!</Button>
           <OutlineButton>Click</OutlineButton>
           <TextButton>Click</TextButton>
           <Link>I'm a Link!</Link>
-          <PublicAddress></PublicAddress>
+          <PublicAddress address="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2"/>
           <Input></Input>
           <Icon name={'Info'}></Icon>
+          <Tooltip variant='dark' message='Your custom message'>
+              hover me
+          </Tooltip>
         </ThemeProvider>
       </div>
     );
