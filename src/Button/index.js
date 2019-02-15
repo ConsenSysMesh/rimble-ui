@@ -3,7 +3,8 @@ import styled from 'styled-components'
 import {
   fontWeight,
   boxShadow,
-  opacity
+  opacity,
+  themeGet
 } from 'styled-system'
 
 import {
@@ -11,6 +12,7 @@ import {
   shade
 } from 'polished'
 
+import defaultTheme from '../theme'
 import Box from '../Box'
 import Icon from '../Icon'
 
@@ -23,26 +25,26 @@ const size = (props) => {
     case 'small':
       return `
         font-size: 12px;
-        height: ${props.theme.fontSizes[5]}px;
-        min-width: ${props.theme.fontSizes[5]}px;
-        padding: 0 ${props.theme.space[3]}px ;
+        height: ${themeGet('fontSizes[5]', '1rem')};
+        min-width: ${themeGet('fontSizes[5]', '1rem')};
+        padding: 0 ${themeGet('space[3]', '1rem')};
       `
     case 'medium':
       return `
         font-size: 16px;
-        height: ${props.theme.fontSizes[6]}px;
-        min-width: ${props.theme.fontSizes[6]}px;
+        height: ${themeGet('fontSizes[6]', '1rem')};
+        min-width: ${themeGet('fontSizes[6]', '1rem')};
       `
     case 'large':
       return `
         font-size: 24px;
-        height: ${props.theme.fontSizes[7]}px;
-        min-width: ${props.theme.fontSizes[7]}px;
+        height: ${themeGet('fontSizes[7]', '1rem')};
+        min-width: ${themeGet('fontSizes[7]', '1rem')};
       `
     default:
       return `
         font-size: 1rem;
-        min-width: ${props.theme.fontSizes[6]}px;
+        min-width: ${themeGet('fontSizes[6]', '1rem')};
       `
   }
 }
@@ -56,7 +58,9 @@ const ProtoButton = React.forwardRef((props, ref) => (
   </Box>
 ))
 
-const Button = styled(ProtoButton)`
+const Button = styled(ProtoButton).attrs({
+  hovercolor: props => themeGet('colors.primary', 'black')(props)
+})`
   & {
     cursor: pointer;
     font-family: inherit;
@@ -73,17 +77,18 @@ const Button = styled(ProtoButton)`
     transition: all .15s ease;
 
     padding: ${props => props.icononly ? '0' : props.p };
+    background-color: ${props => props.hovercolor};
   }
   &:hover {
-    background-color: ${props => tint(0.1, props.theme.colors.primary)};
+    background-color: ${props => tint(0.1, props.hovercolor)};
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
   }
   &:active {
-    background-color: ${props => shade(0.1, props.theme.colors.primary)};
+    background-color: ${props => shade(0.1, props.hovercolor)};
     box-shadow: none;
   }
   &:disabled {
-    opacity: ${props => props.theme.opacity.disabled};
+    opacity: ${props => themeGet('opacity.disabled', '0.5')};
     cursor: not-allowed;
   }
 
