@@ -7,6 +7,10 @@ describe('Checkbox component sanity', () => {
     expect(Checkbox.displayName).toBe('Checkbox')
   })
 
+  it('matches default snapshot', () => {
+    const component = render(<Checkbox />)
+    expect(component).toMatchSnapshot()
+  })
   it('matches themed snapshot', () => {
     const component = render(
       <ThemeProvider theme={theme}>

@@ -7,6 +7,11 @@ describe('OutlineButton component sanity', () => {
     expect(OutlineButton.displayName).toBe('OutlineButton')
   })
 
+  it('matches default snapshot', () => {
+    const component = render( <OutlineButton /> )
+    expect(component).toMatchSnapshot()
+  })
+
   it('matches themed snapshot', () => {
     const component = render(
       <ThemeProvider theme={theme}>

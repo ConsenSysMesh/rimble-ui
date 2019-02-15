@@ -8,6 +8,11 @@ describe('TextButton component sanity', () => {
   })
 
   it('matches default snapshot', () => {
+    const component = render( <TextButton /> )
+    expect(component).toMatchSnapshot()
+  })
+
+  it('matches themed snapshot', () => {
     const component = render(
       <ThemeProvider theme={theme}>
         <TextButton />

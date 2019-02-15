@@ -7,6 +7,11 @@ describe('Input component sanity', () => {
     expect(Input.displayName).toBe('Input')
   })
 
+  it('matches default snapshot', () => {
+    const component = render( <Input /> )
+    expect(component).toMatchSnapshot()
+  })
+
   it('matches themed snapshot', () => {
     const component = render(
       <ThemeProvider theme={theme}>

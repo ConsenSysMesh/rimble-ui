@@ -1,24 +1,27 @@
 import React from 'react'
 
 import styled from 'styled-components'
+import { themeGet } from 'styled-system'
 import { tint, shade } from 'polished'
 
 import Button from '../Button'
 
-const OutlineButton = styled(Button)`
+const OutlineButton = styled(Button).attrs({
+  primarycolor: props => themeGet('colors.primary', '#000')(props)
+})`
   & {
     background: #FFFFFF;
     border: 1px solid #CCCCCC;
   }
   &:hover {
-    color: ${props => tint(0.2, props.theme.colors.primary)};
-    border-color: ${props => tint(0.2, props.theme.colors.primary)};
+    color: ${props => tint(0.2, props.primarycolor)};
+    border-color: ${props => tint(0.2, props.primarycolor)};
     background-color: #FFF;
   }
   &:active {
-    color: ${props => shade(0.2, props.theme.colors.primary)};
-    border-color: ${props => shade(0.2, props.theme.colors.primary)};
-    background-color: ${props => tint(0.9, props.theme.colors.primary)};
+    color: ${props => shade(0.2, props.primarycolor)};
+    border-color: ${props => shade(0.2, props.primarycolor)};
+    background-color: ${props => tint(0.9, props.primarycolor)};
   }
 `
 

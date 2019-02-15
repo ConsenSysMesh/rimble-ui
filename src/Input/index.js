@@ -6,10 +6,13 @@ import {
   borders,
   borderColor,
   borderRadius,
-  boxShadow
+  boxShadow,
+  themeGet
 } from 'styled-system'
 
-const Input = styled.input`
+const Input = styled.input.attrs({
+  primarycolor: props => themeGet('colors.primary', '#000')(props)
+})`
   appearance: none;
   font-size: 1rem;
   line-height: 1;
@@ -31,7 +34,7 @@ const Input = styled.input`
   }
   &:focus {
     outline: none;
-    border-color: ${props => props.theme.colors.primary};
+    border-color: ${props => props.primarycolor};
   }
   &:active {
 

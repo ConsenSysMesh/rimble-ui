@@ -7,6 +7,10 @@ describe('Link component sanity', () => {
     expect(Link.displayName).toBe('Link')
   })
 
+  it('matches default snapshot', () => {
+    const component = render( <Link /> )
+    expect(component).toMatchSnapshot()
+  })
   it('matches themed snapshot', () => {
     const component = render(
       <ThemeProvider theme={theme}>
