@@ -50,6 +50,8 @@ export default class App extends Component {
           </Tooltip>
           <Blockie opts={{seed: "foo", color: "#dfe", bgcolor: "#a71", size: 15, scale: 3, spotcolor: "#4E3FCE"}} />
           <Textarea rows={4} defaultValue='Type here…' />
+          <Text>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta quibusdam, assumenda officiis.</Text>
+
         </div>
         <ThemeProvider theme={myTheme}>
           <Button size={"medium"}>Click me!</Button>
@@ -64,6 +66,8 @@ export default class App extends Component {
           </Tooltip>
           <Blockie opts={{seed: "foo", color: "#dfe", bgcolor: "#a71", size: 15, scale: 3, spotcolor: "#4E3FCE"}} />
           <Textarea rows={4} defaultValue='Type here…' />
+          <Text>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta quibusdam, assumenda officiis.</Text>
+
         </ThemeProvider>
       </div>
     );
