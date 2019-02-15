@@ -1,27 +1,38 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import { themeGet } from "styled-system";
-import { tint } from "polished";
 
 import Box from "../Box";
 
 const Pill = styled(Box).attrs({
-  tintlevel: props => (props.selected ? "0.75" : "0.88")
+  tintlevel: props => (props.selected ? "0.25" : "0.12")
 })`
   & {
+    position: relative;
     cursor: pointer;
     border: ${props => (props.selected ? "1px solid" : "none")};
     border-color: ${props => (props.selected ? props.color : "none")};
-    background-color: ${props =>
-      tint(
-        props.tintlevel,
-        themeGet("colors." + props.color, props.color)(props)
-      )};
+    background: none;
+    overflow: hidden;
   }
   &:hover {
     border-color: transparent;
-    background-color: ${props =>
-      tint(0.8, themeGet("colors." + props.color, props.color)(props))};
+    &::before {
+      opacity: 0.2;
+    }
+  }
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: currentColor;
+    opacity: ${props => props.tintlevel}
   }
 `;
 
