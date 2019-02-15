@@ -1,24 +1,24 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import { themeGet } from 'styled-system'
 import Box from '../Box'
 
 const size = (props) => {
   switch (props.size) {
     case 'small':
       return `
-        height: ${props.theme.space[3]}px;
-        width: ${props.theme.space[3]}px;
+        height: 2em;
+        width: 2em;
       `
     case 'medium':
       return `
-        height: ${props.theme.space[4]}px;
-        width: ${props.theme.space[4]}px;
+        height: 3em;
+        width: 3em;
       `
     case 'large':
       return `
-        height: ${props.theme.space[5]}px;
-        width: ${props.theme.space[5]}px;
+        height: 4em;
+        width: 4em;
       `
     default:
       return ``
@@ -32,7 +32,7 @@ const Avatar = styled(Box)`
     border-radius: 100%;
     background: center no-repeat;
     background-size: cover;
-    background-color: ${ props => props.theme.colors.grey };
+    background-color: ${ props => themeGet('colors.grey', '#000') };
     background-image: url(${props => props.src});
   }
 
