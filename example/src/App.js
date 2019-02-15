@@ -51,7 +51,8 @@ export default class App extends Component {
           <Blockie opts={{seed: "foo", color: "#dfe", bgcolor: "#a71", size: 15, scale: 3, spotcolor: "#4E3FCE"}} />
           <Textarea rows={4} defaultValue='Type here…' />
           <Text>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta quibusdam, assumenda officiis.</Text>
-           <Slider />
+          <Slider />
+          <Select items={['Wandering Thunder','Black Wildflower','Ancient Paper',]} />
         </div>
         <ThemeProvider theme={myTheme}>
           <Button size={"medium"}>Click me!</Button>
@@ -67,7 +68,8 @@ export default class App extends Component {
           <Blockie opts={{seed: "foo", color: "#dfe", bgcolor: "#a71", size: 15, scale: 3, spotcolor: "#4E3FCE"}} />
           <Textarea rows={4} defaultValue='Type here…' />
           <Text>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta quibusdam, assumenda officiis.</Text>
-           <Slider />
+          <Slider />
+          <Select items={['Wandering Thunder','Black Wildflower','Ancient Paper',]} />
         </ThemeProvider>
       </div>
     );
