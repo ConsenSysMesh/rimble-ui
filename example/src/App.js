@@ -48,6 +48,7 @@ export default class App extends Component {
           <Tooltip variant='dark' message='Your custom message'>
             hover me
           </Tooltip>
+          <Blockie opts={{seed: "foo", color: "#dfe", bgcolor: "#a71", size: 15, scale: 3, spotcolor: "#4E3FCE"}} />
         </div>
         <ThemeProvider theme={myTheme}>
           <Button size={"medium"}>Click me!</Button>
@@ -60,6 +61,7 @@ export default class App extends Component {
           <Tooltip variant='dark' message='Your custom message'>
               hover me
           </Tooltip>
+          <Blockie opts={{seed: "foo", color: "#dfe", bgcolor: "#a71", size: 15, scale: 3, spotcolor: "#4E3FCE"}} />
         </ThemeProvider>
       </div>
     );
