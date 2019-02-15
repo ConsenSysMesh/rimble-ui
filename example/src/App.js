@@ -100,6 +100,10 @@ export default class App extends Component {
           <Loader />
           <QR value="test" />
           <Modal />
+          <ToastMessage />
+          <ToastMessage.Processing />
+          <ToastMessage.Success />
+          <ToastMessage.Failure />
         </div>
         <ThemeProvider theme={myTheme}>
           <Button size={"medium"}>Click me!</Button>
@@ -154,6 +158,10 @@ export default class App extends Component {
           <Loader />
           <QR value="test" />
           <Modal />
+          <ToastMessage />
+          <ToastMessage.Processing />
+          <ToastMessage.Success />
+          <ToastMessage.Failure />
         </ThemeProvider>
       </div>
     );
