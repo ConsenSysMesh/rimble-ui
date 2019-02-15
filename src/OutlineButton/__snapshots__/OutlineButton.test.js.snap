@@ -11,17 +11,17 @@ exports[`OutlineButton component sanity matches themed snapshot 1`] = `
   height: 48px;
   border: 1px solid;
   border-radius: 4px;
+  text-align: left;
 }
 
 .c2 {
   box-sizing: border-box;
-  text-align: left;
 }
 
 .c1 {
   font-weight: 600;
   font-size: 1rem;
-  min-width: 48px;
+  min-width: 3rem;
 }
 
 .c1 {
@@ -48,6 +48,7 @@ exports[`OutlineButton component sanity matches themed snapshot 1`] = `
   justify-content: center;
   -webkit-transition: all .15s ease;
   transition: all .15s ease;
+  background-color: #4E3FCE;
 }
 
 .c1:hover {

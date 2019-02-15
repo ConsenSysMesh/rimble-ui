@@ -8,7 +8,7 @@ exports[`Progress component sanity matches themed snapshot 1`] = `
   display: inline-block;
   overflow: hidden;
   height: 8px;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 
 .c1::-webkit-progress-bar {
@@ -17,7 +17,7 @@ exports[`Progress component sanity matches themed snapshot 1`] = `
 
 .c1::-webkit-progress-value {
   background-color: #4E3FCE;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 
 .c0 {
@@ -31,6 +31,7 @@ exports[`Progress component sanity matches themed snapshot 1`] = `
 >
   <progress
     class="c1"
+    primarycolor="#4E3FCE"
   >
     
   </progress>

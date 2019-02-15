@@ -11,17 +11,17 @@ exports[`TextButton component sanity matches default snapshot 1`] = `
   font-size: inherit;
   height: 48px;
   border: none;
+  text-align: left;
 }
 
 .c2 {
   box-sizing: border-box;
-  text-align: left;
 }
 
 .c1 {
   font-weight: 600;
   font-size: 1rem;
-  min-width: 48px;
+  min-width: 3rem;
 }
 
 .c1 {
@@ -48,6 +48,7 @@ exports[`TextButton component sanity matches default snapshot 1`] = `
   justify-content: center;
   -webkit-transition: all .15s ease;
   transition: all .15s ease;
+  background-color: #4E3FCE;
 }
 
 .c1:hover {
@@ -84,6 +85,7 @@ exports[`TextButton component sanity matches default snapshot 1`] = `
 }
 
 .c1 {
+  background-color: transparent;
   box-shadow: none;
 }
 

@@ -43,6 +43,7 @@ exports[`Link component sanity matches themed snapshot 1`] = `
     color="primary"
     font-size="1"
     font-weight="3"
+    primarycolor="#4E3FCE"
   >
     
   </a>
