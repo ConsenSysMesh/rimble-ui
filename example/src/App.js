@@ -104,6 +104,17 @@ export default class App extends Component {
           <ToastMessage.Processing />
           <ToastMessage.Success />
           <ToastMessage.Failure />
+          <Pill mr={'2'} mb={'3'}>{'Pending'}</Pill>
+          <Pill selected={true} mr={'2'} mb={'3'}>{'Pending'}</Pill>
+
+          <Pill color={'primary'} mr={'2'} mb={'3'}>{'Pending'}</Pill>
+          <Pill selected={true} color={'primary'} mr={'2'} mb={'3'}>{'Pending'}</Pill>
+
+          <Pill color={'red'} mr={'2'} mb={'3'}>{'Pending'}</Pill>
+          <Pill selected={true} color={'red'} mr={'2'} mb={'3'}>{'Pending'}</Pill>
+
+          <Pill color={'blue'} mr={'2'} mb={'3'}>{'Pending'}</Pill>
+          <Pill selected={true} color={'blue'} mr={'2'} mb={'3'}>{'Pending'}</Pill>
         </div>
         <ThemeProvider theme={myTheme}>
           <Button size={"medium"}>Click me!</Button>
@@ -162,6 +173,17 @@ export default class App extends Component {
           <ToastMessage.Processing />
           <ToastMessage.Success />
           <ToastMessage.Failure />
+          <Pill mr={'2'} mb={'3'}>{'Pending'}</Pill>
+          <Pill selected={true} mr={'2'} mb={'3'}>{'Pending'}</Pill>
+
+          <Pill color={'primary'} mr={'2'} mb={'3'}>{'Pending'}</Pill>
+          <Pill selected={true} color={'primary'} mr={'2'} mb={'3'}>{'Pending'}</Pill>
+
+          <Pill color={'red'} mr={'2'} mb={'3'}>{'Pending'}</Pill>
+          <Pill selected={true} color={'red'} mr={'2'} mb={'3'}>{'Pending'}</Pill>
+
+          <Pill color={'blue'} mr={'2'} mb={'3'}>{'Pending'}</Pill>
+          <Pill selected={true} color={'blue'} mr={'2'} mb={'3'}>{'Pending'}</Pill>
         </ThemeProvider>
       </div>
     );
