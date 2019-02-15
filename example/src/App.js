@@ -43,6 +43,7 @@ export default class App extends Component {
           <TextButton>Click</TextButton>
           <Link>I'm a Link!</Link>
           <PublicAddress></PublicAddress>
+          <Input></Input>
         </div>
         <ThemeProvider theme={myTheme}>
           <Button size={"medium"}>Click me!</Button>
@@ -50,6 +51,7 @@ export default class App extends Component {
           <TextButton>Click</TextButton>
           <Link>I'm a Link!</Link>
           <PublicAddress></PublicAddress>
+          <Input></Input>
         </ThemeProvider>
       </div>
     );
