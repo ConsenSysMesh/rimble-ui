@@ -54,6 +54,17 @@ export default class App extends Component {
           <Slider />
           <Select items={['Wandering Thunder','Black Wildflower','Ancient Paper',]} />
           <Progress value={0.5} />
+          <Heading.h1>Quick zephyrs blow, vexing daft Jim.</Heading.h1>
+
+          <Heading.h2>Quick zephyrs blow, vexing daft Jim.</Heading.h2>
+
+          <Heading.h3>Quick zephyrs blow, vexing daft Jim.</Heading.h3>
+
+          <Heading.h4>Quick zephyrs blow, vexing daft Jim.</Heading.h4>
+
+          <Heading.h5>Quick zephyrs blow, vexing daft Jim.</Heading.h5>
+
+          <Heading.h6>Quick zephyrs blow, vexing daft Jim.</Heading.h6>
         </div>
         <ThemeProvider theme={myTheme}>
           <Button size={"medium"}>Click me!</Button>
@@ -72,6 +83,17 @@ export default class App extends Component {
           <Slider />
           <Select items={['Wandering Thunder','Black Wildflower','Ancient Paper',]} />
           <Progress value={0.5} />
+          <Heading.h1>Quick zephyrs blow, vexing daft Jim.</Heading.h1>
+
+          <Heading.h2>Quick zephyrs blow, vexing daft Jim.</Heading.h2>
+
+          <Heading.h3>Quick zephyrs blow, vexing daft Jim.</Heading.h3>
+
+          <Heading.h4>Quick zephyrs blow, vexing daft Jim.</Heading.h4>
+
+          <Heading.h5>Quick zephyrs blow, vexing daft Jim.</Heading.h5>
+
+          <Heading.h6>Quick zephyrs blow, vexing daft Jim.</Heading.h6>
         </ThemeProvider>
       </div>
     );
