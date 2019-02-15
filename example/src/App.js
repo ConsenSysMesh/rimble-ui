@@ -53,6 +53,7 @@ export default class App extends Component {
           <Text>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta quibusdam, assumenda officiis.</Text>
           <Slider />
           <Select items={['Wandering Thunder','Black Wildflower','Ancient Paper',]} />
+          <Progress value={0.5} />
         </div>
         <ThemeProvider theme={myTheme}>
           <Button size={"medium"}>Click me!</Button>
@@ -70,6 +71,7 @@ export default class App extends Component {
           <Text>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta quibusdam, assumenda officiis.</Text>
           <Slider />
           <Select items={['Wandering Thunder','Black Wildflower','Ancient Paper',]} />
+          <Progress value={0.5} />
         </ThemeProvider>
       </div>
     );

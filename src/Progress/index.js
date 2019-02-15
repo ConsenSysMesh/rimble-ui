@@ -1,22 +1,25 @@
 import React from 'react'
 import styled from 'styled-components'
+import { themeGet } from 'styled-system'
 
 import { transparentize } from 'polished'
 
-const Progress = styled.progress`
+const Progress = styled.progress.attrs({
+  primarycolor: props => themeGet('colors.primary', '#000')(props)
+})`
   & {
     appearance: none;
     display: inline-block;
     overflow: hidden;
     height: 8px;
-    border-radius: ${props => props.theme.radii[1]};
+    border-radius: 8px;
   }
   &::-webkit-progress-bar {
-    background-color: ${props => transparentize('0.75', props.theme.colors.primary)};
+    background-color: ${props => transparentize('0.75', props.primarycolor)};
   }
   &::-webkit-progress-value {
-    background-color: ${props => props.theme.colors.primary};
-    border-radius: ${props => props.theme.radii[1]};
+    background-color: ${props => props.primarycolor};
+    border-radius: 8px;
   }
 `
 
