@@ -1,5 +1,33 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Progress component sanity matches default snapshot 1`] = `
+.c0 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  overflow: hidden;
+  height: 8px;
+  border-radius: 8px;
+}
+
+.c0::-webkit-progress-bar {
+  background-color: rgba(0,0,0,0.25);
+}
+
+.c0::-webkit-progress-value {
+  background-color: #000;
+  border-radius: 8px;
+}
+
+<progress
+  class="c0"
+  primarycolor="#000"
+>
+  
+</progress>
+`;
+
 exports[`Progress component sanity matches themed snapshot 1`] = `
 .c1 {
   -webkit-appearance: none;
@@ -8,7 +36,7 @@ exports[`Progress component sanity matches themed snapshot 1`] = `
   display: inline-block;
   overflow: hidden;
   height: 8px;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 
 .c1::-webkit-progress-bar {
@@ -17,7 +45,7 @@ exports[`Progress component sanity matches themed snapshot 1`] = `
 
 .c1::-webkit-progress-value {
   background-color: #4E3FCE;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 
 .c0 {
@@ -31,6 +59,7 @@ exports[`Progress component sanity matches themed snapshot 1`] = `
 >
   <progress
     class="c1"
+    primarycolor="#4E3FCE"
   >
     
   </progress>

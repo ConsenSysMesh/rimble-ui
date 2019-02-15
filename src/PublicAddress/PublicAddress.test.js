@@ -7,6 +7,11 @@ describe('PublicAddress component sanity', () => {
     expect(PublicAddress.displayName).toBe('PublicAddress')
   })
 
+  it('matches default snapshot', () => {
+    const component = render( <PublicAddress /> )
+    expect(component).toMatchSnapshot()
+  })
+
   it('matches themed snapshot', () => {
     const component = render(
       <ThemeProvider theme={theme}>

@@ -7,6 +7,11 @@ describe('Progress component sanity', () => {
     expect(Progress.displayName).toBe('Progress')
   })
 
+  it('matches default snapshot', () => {
+    const component = render( <Progress /> )
+    expect(component).toMatchSnapshot()
+  })
+
   it('matches themed snapshot', () => {
     const component = render(
       <ThemeProvider theme={theme}>

@@ -7,6 +7,13 @@ describe('Avatar component sanity', () => {
     expect(Avatar.displayName).toBe('Avatar')
   })
 
+  it('matches default snapshot', () => {
+    const component = render(
+      <Avatar />
+    )
+    expect(component).toMatchSnapshot()
+  })
+
   it('matches themed snapshot', () => {
     const component = render(
       <ThemeProvider theme={theme}>

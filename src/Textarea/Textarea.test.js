@@ -7,6 +7,11 @@ describe('Textarea component sanity', () => {
     expect(Textarea.displayName).toBe('Textarea')
   })
 
+  it('matches default snapshot', () => {
+    const component = render( <Textarea /> )
+    expect(component).toMatchSnapshot()
+  })
+
   it('matches themed snapshot', () => {
     const component = render(
       <ThemeProvider theme={theme}>

@@ -7,6 +7,11 @@ describe('Radio component sanity', () => {
     expect(Radio.displayName).toBe('Radio')
   })
 
+  it('matches default snapshot', () => {
+    const component = render( <Radio /> )
+    expect(component).toMatchSnapshot()
+  })
+
   it('matches themed snapshot', () => {
     const component = render(
       <ThemeProvider theme={theme}>

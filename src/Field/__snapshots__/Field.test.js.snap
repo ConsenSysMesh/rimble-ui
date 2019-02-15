@@ -13,17 +13,18 @@ exports[`Field component sanity matches default snapshot 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  text-align: left;
 }
 
 .c0 {
   box-sizing: border-box;
-  text-align: left;
 }
 
 .c1 {
   margin-bottom: 8px;
   color: copyColor;
   font-size: 14px;
+  text-align: left;
   font-size: 14px;
   font-family: sansSerif;
   font-weight: 3;
@@ -33,7 +34,6 @@ exports[`Field component sanity matches default snapshot 1`] = `
 
 .c1 {
   box-sizing: border-box;
-  text-align: left;
 }
 
 <label

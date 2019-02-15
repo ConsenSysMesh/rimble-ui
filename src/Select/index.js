@@ -5,7 +5,8 @@ import {
   borders,
   borderColor,
   borderRadius,
-  boxShadow
+  boxShadow,
+  themeGet
 } from 'styled-system'
 
 import ExpandMore from 'rmdi/lib/ExpandMore'
@@ -25,7 +26,9 @@ const Wrapper = styled.span`
   }
 `
 
-const StyledSelect = styled.select`
+const StyledSelect = styled.select.attrs({
+  primarycolor: props => themeGet('colors.primary', '#000')(props)
+})`
   appearance: none;
   font-size: 1rem;
   line-height: 48px;
@@ -42,7 +45,7 @@ const StyledSelect = styled.select`
   }
   &:focus {
     outline: none;
-    border-color: ${props => props.theme.colors.primary};
+    border-color: ${props => props.primarycolor};
   }
   &:active {
   }

@@ -7,6 +7,13 @@ describe('Button component sanity', () => {
     expect(Button.displayName).toBe('Button')
   })
 
+  it('matches default snapshot', () => {
+    const component = render(
+      <Button />
+    )
+    expect(component).toMatchSnapshot()
+  })
+
   it('matches themed snapshot', () => {
     const component = render(
       <ThemeProvider theme={theme}>

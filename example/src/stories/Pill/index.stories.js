@@ -4,17 +4,21 @@ import { withDocs } from 'storybook-readme';
 
 import MyREADME from './README.md';
 
-import { Pill, Box } from 'rimble-ui'
+import {
+  Pill,
+  Box,
+  Text
+} from 'rimble-ui'
 
 storiesOf('Pill', module)
   .addDecorator(withDocs(MyREADME))
   .add('default', () => (
-    <Box>
-      <Box mb={'4'} mx={'auto'}>
-        <span style={{display:'inline-block', width:'80px', textAlign:'center'}}>Pill</span>
-        <span>Selected Pill</span>
+    <Box textAlign={'left'}>
+      <Box mb={'4'} display={'flex'}>
+        <Text minWidth={'80px'} textAlign={'center'}>Pill</Text>
+        <Text minWidth={'80px'} textAlign={'center'}>Selected Pill</Text>
       </Box>
-      
+
       <Pill mr={'2'} mb={'3'}>{'Pending'}</Pill>
       <Pill selected={true} mr={'2'} mb={'3'}>{'Pending'}</Pill>
 
