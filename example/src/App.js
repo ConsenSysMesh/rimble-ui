@@ -97,6 +97,9 @@ export default class App extends Component {
           <Table></Table>
           <Image />
           <MetaMaskButton />
+          <Loader />
+          <QR value="test" />
+          <Modal />
         </div>
         <ThemeProvider theme={myTheme}>
           <Button size={"medium"}>Click me!</Button>
@@ -148,6 +151,9 @@ export default class App extends Component {
           <Table></Table>
           <Image />
           <MetaMaskButton />
+          <Loader />
+          <QR value="test" />
+          <Modal />
         </ThemeProvider>
       </div>
     );
