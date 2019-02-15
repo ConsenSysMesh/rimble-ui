@@ -25,26 +25,26 @@ const size = (props) => {
     case 'small':
       return `
         font-size: 12px;
-        height: ${themeGet('fontSizes[5]', '1rem')};
-        min-width: ${themeGet('fontSizes[5]', '1rem')};
-        padding: 0 ${themeGet('space[3]', '1rem')};
+        height: 2rem;
+        min-width: 2rem;
+        padding: 0 1rem;
       `
     case 'medium':
       return `
         font-size: 16px;
-        height: ${themeGet('fontSizes[6]', '1rem')};
-        min-width: ${themeGet('fontSizes[6]', '1rem')};
+        height: 3rem;
+        min-width: 3rem;
       `
     case 'large':
       return `
         font-size: 24px;
-        height: ${themeGet('fontSizes[7]', '1rem')};
-        min-width: ${themeGet('fontSizes[7]', '1rem')};
+        height: 4rem;
+        min-width: 4rem;
       `
     default:
       return `
         font-size: 1rem;
-        min-width: ${themeGet('fontSizes[6]', '1rem')};
+        min-width: 3rem;
       `
   }
 }
