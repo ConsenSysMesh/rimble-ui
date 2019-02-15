@@ -44,6 +44,7 @@ export default class App extends Component {
           <Link>I'm a Link!</Link>
           <PublicAddress></PublicAddress>
           <Input></Input>
+          <Icon name={'Info'}></Icon>
         </div>
         <ThemeProvider theme={myTheme}>
           <Button size={"medium"}>Click me!</Button>
@@ -52,6 +53,7 @@ export default class App extends Component {
           <Link>I'm a Link!</Link>
           <PublicAddress></PublicAddress>
           <Input></Input>
+          <Icon name={'Info'}></Icon>
         </ThemeProvider>
       </div>
     );
