@@ -83,6 +83,14 @@ export default class App extends Component {
           <Field label='label'>
             <Input type='text' />
           </Field>
+          <Radio label="Radio default" />
+          <Radio checked label="Radio checked" />
+          <Radio disabled label="Radio disabled" />
+          <Radio disabled checked label="Radio checked disabled" />
+          <Checkbox label="Checkbox default" />
+          <Checkbox checked label="Checkbox checked" />
+          <Checkbox disabled label="Checkbox disabled" />
+          <Checkbox disabled checked label="Checkbox checked disabled" />
         </div>
         <ThemeProvider theme={myTheme}>
           <Button size={"medium"}>Click me!</Button>
@@ -120,6 +128,14 @@ export default class App extends Component {
           <Field label='label'>
             <Input type='text' />
           </Field>
+          <Radio label="Radio default" />
+          <Radio checked label="Radio checked" />
+          <Radio disabled label="Radio disabled" />
+          <Radio disabled checked label="Radio checked disabled" />
+          <Checkbox label="Checkbox default" />
+          <Checkbox checked label="Checkbox checked" />
+          <Checkbox disabled label="Checkbox disabled" />
+          <Checkbox disabled checked label="Checkbox checked disabled" />
         </ThemeProvider>
       </div>
     );
