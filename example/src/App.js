@@ -42,12 +42,14 @@ export default class App extends Component {
           <OutlineButton>Click</OutlineButton>
           <TextButton>Click</TextButton>
           <Link>I'm a Link!</Link>
+          <PublicAddress></PublicAddress>
         </div>
         <ThemeProvider theme={myTheme}>
           <Button size={"medium"}>Click me!</Button>
           <OutlineButton>Click</OutlineButton>
           <TextButton>Click</TextButton>
           <Link>I'm a Link!</Link>
+          <PublicAddress></PublicAddress>
         </ThemeProvider>
       </div>
     );
