@@ -65,6 +65,9 @@ export default class App extends Component {
           <Heading.h5>Quick zephyrs blow, vexing daft Jim.</Heading.h5>
 
           <Heading.h6>Quick zephyrs blow, vexing daft Jim.</Heading.h6>
+          <Field label='label'>
+            <Input type='text' />
+          </Field>
         </div>
         <ThemeProvider theme={myTheme}>
           <Button size={"medium"}>Click me!</Button>
@@ -94,6 +97,9 @@ export default class App extends Component {
           <Heading.h5>Quick zephyrs blow, vexing daft Jim.</Heading.h5>
 
           <Heading.h6>Quick zephyrs blow, vexing daft Jim.</Heading.h6>
+          <Field label='label'>
+            <Input type='text' />
+          </Field>
         </ThemeProvider>
       </div>
     );
