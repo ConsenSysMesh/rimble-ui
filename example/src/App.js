@@ -56,6 +56,23 @@ export default class App extends Component {
           <Avatar size="medium"/>
           <Avatar size="large"/>
           <Checkbox />
+          <Slider />
+          <Select items={['Wandering Thunder','Black Wildflower','Ancient Paper',]} />
+          <Progress value={0.5} />
+          <Heading.h1>Quick zephyrs blow, vexing daft Jim.</Heading.h1>
+
+          <Heading.h2>Quick zephyrs blow, vexing daft Jim.</Heading.h2>
+
+          <Heading.h3>Quick zephyrs blow, vexing daft Jim.</Heading.h3>
+
+          <Heading.h4>Quick zephyrs blow, vexing daft Jim.</Heading.h4>
+
+          <Heading.h5>Quick zephyrs blow, vexing daft Jim.</Heading.h5>
+
+          <Heading.h6>Quick zephyrs blow, vexing daft Jim.</Heading.h6>
+          <Field label='label'>
+            <Input type='text' />
+          </Field>
         </div>
         <ThemeProvider theme={myTheme}>
           <Button size={"medium"}>Click me!</Button>
@@ -76,6 +93,23 @@ export default class App extends Component {
           <Avatar size="medium"/>
           <Avatar size="large"/>
           <Checkbox />
+          <Slider />
+          <Select items={['Wandering Thunder','Black Wildflower','Ancient Paper',]} />
+          <Progress value={0.5} />
+          <Heading.h1>Quick zephyrs blow, vexing daft Jim.</Heading.h1>
+
+          <Heading.h2>Quick zephyrs blow, vexing daft Jim.</Heading.h2>
+
+          <Heading.h3>Quick zephyrs blow, vexing daft Jim.</Heading.h3>
+
+          <Heading.h4>Quick zephyrs blow, vexing daft Jim.</Heading.h4>
+
+          <Heading.h5>Quick zephyrs blow, vexing daft Jim.</Heading.h5>
+
+          <Heading.h6>Quick zephyrs blow, vexing daft Jim.</Heading.h6>
+          <Field label='label'>
+            <Input type='text' />
+          </Field>
         </ThemeProvider>
       </div>
     );
