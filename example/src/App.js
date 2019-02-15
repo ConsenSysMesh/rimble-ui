@@ -91,6 +91,12 @@ export default class App extends Component {
           <Checkbox checked label="Checkbox checked" />
           <Checkbox disabled label="Checkbox disabled" />
           <Checkbox disabled checked label="Checkbox checked disabled" />
+          <Box></Box>
+          <Card></Card>
+          <Flex></Flex>
+          <Table></Table>
+          <Image />
+          <MetaMaskButton />
         </div>
         <ThemeProvider theme={myTheme}>
           <Button size={"medium"}>Click me!</Button>
@@ -136,6 +142,12 @@ export default class App extends Component {
           <Checkbox checked label="Checkbox checked" />
           <Checkbox disabled label="Checkbox disabled" />
           <Checkbox disabled checked label="Checkbox checked disabled" />
+          <Box></Box>
+          <Card></Card>
+          <Flex></Flex>
+          <Table></Table>
+          <Image />
+          <MetaMaskButton />
         </ThemeProvider>
       </div>
     );
