@@ -91,16 +91,19 @@ export default class App extends Component {
           <Checkbox checked label="Checkbox checked" />
           <Checkbox disabled label="Checkbox disabled" />
           <Checkbox disabled checked label="Checkbox checked disabled" />
-          <Pill mr={'2'} mb={'3'}>{'Pending'}</Pill>
-          <Pill selected={true} mr={'2'} mb={'3'}>{'Pending'}</Pill>
-
-          <Pill color={'primary'} mr={'2'} mb={'3'}>{'Pending'}</Pill>
-          <Pill selected={true} color={'primary'} mr={'2'} mb={'3'}>{'Pending'}</Pill>
-
-          <Pill color={'red'} mr={'2'} mb={'3'}>{'Pending'}</Pill>
-          <Pill selected={true} color={'red'} mr={'2'} mb={'3'}>{'Pending'}</Pill>
-
-          <Pill color={'blue'} mr={'2'} mb={'3'}>{'Pending'}</Pill>
+          <Box></Box>
+          <Card></Card>
+          <Flex></Flex>
+          <Table></Table>
+          <Image />
+          <MetaMaskButton />
+          <Loader />
+          <QR value="test" />
+          <Modal />
+          <ToastMessage />
+          <ToastMessage.Processing />
+          <ToastMessage.Success />
+          <ToastMessage.Failure />
         </div>
         <ThemeProvider theme={myTheme}>
           <Button size={"medium"}>Click me!</Button>
@@ -146,17 +149,19 @@ export default class App extends Component {
           <Checkbox checked label="Checkbox checked" />
           <Checkbox disabled label="Checkbox disabled" />
           <Checkbox disabled checked label="Checkbox checked disabled" />
-          <Pill mr={'2'} mb={'3'}>{'Pending'}</Pill>
-          <Pill selected={true} mr={'2'} mb={'3'}>{'Pending'}</Pill>
-
-          <Pill color={'primary'} mr={'2'} mb={'3'}>{'Pending'}</Pill>
-          <Pill selected={true} color={'primary'} mr={'2'} mb={'3'}>{'Pending'}</Pill>
-
-          <Pill color={'red'} mr={'2'} mb={'3'}>{'Pending'}</Pill>
-          <Pill selected={true} color={'red'} mr={'2'} mb={'3'}>{'Pending'}</Pill>
-
-          <Pill color={'blue'} mr={'2'} mb={'3'}>{'Pending'}</Pill>
-          <Pill selected={true} color={'blue'} mr={'2'} mb={'3'}>{'Pending'}</Pill>
+          <Box></Box>
+          <Card></Card>
+          <Flex></Flex>
+          <Table></Table>
+          <Image />
+          <MetaMaskButton />
+          <Loader />
+          <QR value="test" />
+          <Modal />
+          <ToastMessage />
+          <ToastMessage.Processing />
+          <ToastMessage.Success />
+          <ToastMessage.Failure />
         </ThemeProvider>
       </div>
     );
