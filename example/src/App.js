@@ -55,6 +55,7 @@ export default class App extends Component {
           <Avatar size="small"/>
           <Avatar size="medium"/>
           <Avatar size="large"/>
+          <Checkbox />
         </div>
         <ThemeProvider theme={myTheme}>
           <Button size={"medium"}>Click me!</Button>
@@ -74,6 +75,7 @@ export default class App extends Component {
           <Avatar size="small"/>
           <Avatar size="medium"/>
           <Avatar size="large"/>
+          <Checkbox />
         </ThemeProvider>
       </div>
     );

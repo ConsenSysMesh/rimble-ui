@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { themeGet } from 'styled-system'
 
 import CheckBox from 'rmdi/lib/CheckBox'
 import CheckBoxOutlineBlank from 'rmdi/lib/CheckBoxOutlineBlank'
@@ -32,13 +33,13 @@ const StyledWrapper = styled.div`
     height: 100%;
     width: 100%;
     pointer-events: none;
-    fill: ${props => props.theme.colors.grey};
+    fill: ${props => themeGet('colors.grey', '#000')};
   }
 
   > svg[name="checked"] {
     display: none;
     z-index: 1;
-    fill: ${props => props.theme.colors.primary};
+    fill: ${props => themeGet('colors.grey', '#000')};
   }
 
   > input:checked ~ svg[name="checked"] {
