@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import { triangle } from 'polished'
 
 import Popper from '@d8660091/react-popper'
 
