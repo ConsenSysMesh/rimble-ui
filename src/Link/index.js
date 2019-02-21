@@ -24,9 +24,10 @@ const Link = styled(Text).attrs({
 `;
 
 Link.defaultProps = {
-  as: "a",
   theme: defaultTheme,
+  as: "a",
   color: "primary",
+  fontFamily: 'sansSerif',
   fontSize: 1,
   fontWeight: 3
 };

@@ -2,11 +2,11 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import { themeGet } from "styled-system";
 
-import Box from "../Box";
+import Text from "../Text";
 
 import defaultTheme from '../theme'
 
-const Pill = styled(Box).attrs({
+const Pill = styled(Text).attrs({
   tintlevel: props => (props.selected ? "0.25" : "0.12")
 })`
   & {
@@ -44,6 +44,7 @@ Pill.defaultProps = {
   px: 3,
   py: 1,
   fontSize: 1,
+  fontFamily: 'sansSerif',
   height: 2,
   lineHeight: "solid",
   borderRadius: 3,

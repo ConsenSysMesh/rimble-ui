@@ -17,6 +17,7 @@ Textarea.defaultProps = {
   as: 'textarea',
   color: 'copyColor',
   bg: 'white',
+  fontFamily: 'sansSerif',
   fontSize: '1rem',
   lineHeight: 'solid',
   height: 'auto',

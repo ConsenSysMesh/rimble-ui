@@ -34,6 +34,7 @@ TextButton.defaultProps = {
   theme: defaultTheme,
   fontSize: 'inherit',
   fontWeight: 3,
+  fontFamily: 'sansSerif',
   color: 'primary',
   bg: 'transparent',
   height: '48px',

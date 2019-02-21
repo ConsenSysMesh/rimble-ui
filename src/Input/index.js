@@ -3,6 +3,8 @@ import styled from 'styled-components'
 
 import {
   themeGet,
+  fontSize,
+  fontFamily,
   boxShadow
 } from 'styled-system'
 
@@ -31,6 +33,8 @@ const Input = styled(Box)`
   }
 
   ${boxShadow}
+  ${fontSize}
+  ${fontFamily}
 `
 
 Input.defaultProps = {
@@ -38,6 +42,7 @@ Input.defaultProps = {
   as: 'input',
   color: 'copyColor',
   bg: 'white',
+  fontFamily: 'sansSerif',
   fontSize: '1rem',
   lineHeight: 'solid',
   height: '3rem',

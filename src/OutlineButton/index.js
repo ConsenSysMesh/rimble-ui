@@ -31,6 +31,7 @@ OutlineButton.defaultProps = {
   color: 'primary',
   bg: 'white',
   fontWeight: 3,
+  fontFamily: 'sansSerif',
   height: '48px',
   border: 1,
   borderColor: 'grey',

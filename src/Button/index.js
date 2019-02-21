@@ -1,7 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import {
+  fontFamily,
   fontWeight,
+  fontSize,
   boxShadow,
   opacity,
   themeGet
@@ -64,7 +66,6 @@ const Button = styled(ProtoButton).attrs({
 })`
   & {
     cursor: pointer;
-    font-family: inherit;
     text-decoration: none;
     text-align: center;
     line-height: 1;
@@ -108,7 +109,9 @@ const Button = styled(ProtoButton).attrs({
     margin: 0;
   }
 
+  ${fontSize}
   ${fontWeight}
+  ${fontFamily}
   ${boxShadow}
   ${opacity}
 
@@ -130,6 +133,7 @@ Button.defaultProps = {
   borderRadius: 1,
   boxShadow: 1,
   fontSize: 'inherit',
+  fontFamily: 'sansSerif',
   fontWeight: 3
 }
 
