@@ -93,7 +93,7 @@ const testComponents = (props) => (
     <Card></Card>
     <Flex></Flex>
     <Table></Table>
-    <Image />
+    <Image src="https://source.unsplash.com/random/1280x720" />
     <MetaMaskButton />
     <Loader />
     <QR value="test" />
