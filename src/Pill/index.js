@@ -4,6 +4,8 @@ import { themeGet } from "styled-system";
 
 import Box from "../Box";
 
+import defaultTheme from '../theme'
+
 const Pill = styled(Box).attrs({
   tintlevel: props => (props.selected ? "0.25" : "0.12")
 })`
@@ -37,6 +39,7 @@ const Pill = styled(Box).attrs({
 `;
 
 Pill.defaultProps = {
+  theme: defaultTheme,
   color: "dark-gray",
   px: 3,
   py: 1,

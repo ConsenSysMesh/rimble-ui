@@ -8,7 +8,9 @@ import RadioButtonUnchecked from 'rmdi/lib/RadioButtonUnchecked'
 import Box from '../Box'
 import Text from '../Text'
 
-const StyledWrapper = styled.div`
+import defaultTheme from '../theme'
+
+const StyledWrapper = styled(Box)`
   & {
     position: relative;
     display: inline-block;
@@ -61,6 +63,7 @@ const Radio = ({className, ...props}) => (
 )
 
 Radio.defaultProps = {
+  theme: defaultTheme,
   color: 'primary'
 }
 

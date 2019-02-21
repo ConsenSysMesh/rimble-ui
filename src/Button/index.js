@@ -12,9 +12,10 @@ import {
   shade
 } from 'polished'
 
-import defaultTheme from '../theme'
 import Box from '../Box'
 import Icon from '../Icon'
+
+import defaultTheme from '../theme'
 
 const fullWidth = (props) => (
   props.fullWidth ? { width: '100%' } : null
@@ -116,6 +117,7 @@ const Button = styled(ProtoButton).attrs({
 `
 
 Button.defaultProps = {
+  theme: defaultTheme,
   position: 'relative',
   color: 'white',
   bg: 'primary',

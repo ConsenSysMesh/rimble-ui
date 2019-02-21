@@ -4,20 +4,24 @@ import { space } from 'styled-system'
 
 import Input from '../Input'
 
-const Textarea = styled(Input)`
-  appearance: none;
-  font-size: 1rem;
-  line-height: 1;
-  height: auto;
-  background: #FFFFFF;
+import defaultTheme from '../theme'
 
-  ${space}
+const Textarea = styled(Input)`
+  & {
+    appearance: none;
+  }
 `
 
 Textarea.defaultProps = {
+  theme: defaultTheme,
   as: 'textarea',
+  color: 'copyColor',
+  bg: 'white',
+  fontSize: '1rem',
+  lineHeight: 'solid',
+  height: 'auto',
   p: 3,
-  borders: 1,
+  border: 1,
   borderColor: 'grey',
   borderRadius: 1,
   boxShadow: 1

@@ -2,39 +2,25 @@ import React from 'react'
 import styled from 'styled-components'
 
 import {
-  color,
-  borders,
-  borderColor,
-  borderRadius,
-  boxShadow,
-  themeGet
+  themeGet,
+  boxShadow
 } from 'styled-system'
 
-const Input = styled.input.attrs({
-  primarycolor: props => themeGet('colors.primary', '#000')(props)
-})`
-  appearance: none;
-  font-size: 1rem;
-  line-height: 1;
+import Box from '../Box'
 
-  height: 48px;
-  padding: 0 1rem;
+import defaultTheme from '../theme'
 
-  border: 1px solid;
-  background: #FFFFFF;
-
-  ${color}
-  ${borders}
-  ${borderColor}
-  ${borderRadius}
-  ${boxShadow}
+const Input = styled(Box)`
+  & {
+    appearance: none;
+  }
 
   &:hover {
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
   }
   &:focus {
     outline: none;
-    border-color: ${props => props.primarycolor};
+    border-color: ${themeGet('colors.primary', '#000')};
   }
   &:active {
 
@@ -43,11 +29,21 @@ const Input = styled.input.attrs({
     opacity: 0.4;
     pointer-events: none;
   }
+
+  ${boxShadow}
 `
 
 Input.defaultProps = {
-  color: 'primary',
-  borders: 0,
+  theme: defaultTheme,
+  as: 'input',
+  color: 'copyColor',
+  bg: 'white',
+  fontSize: '1rem',
+  lineHeight: 'solid',
+  height: '3rem',
+  px: 3,
+  py: 0,
+  border: 1,
   borderColor: 'grey',
   borderRadius: 1,
   boxShadow: 1

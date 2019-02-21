@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
+
 import {
   fontSize,
   fontFamily,
@@ -12,6 +13,8 @@ import {
 } from 'styled-system'
 
 import Box from '../Box'
+
+import defaultTheme from '../theme'
 
 export const caps = props =>
   props.caps
@@ -43,8 +46,8 @@ const Text = styled(Box)`
   ${italic}
 `
 
-
 Text.defaultProps = {
+  theme: defaultTheme,
   color: 'copyColor',
   fontFamily: 'sansSerif',
   fontSize: 2,
