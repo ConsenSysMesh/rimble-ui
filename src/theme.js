@@ -29,7 +29,7 @@ export default {
   maxHeights: [0, 16, 32, 64, 128, 256],
   borders: [
     0,
-    '1px solid'
+    '1px solid transparent'
   ],
   shadows: [
     '0',
