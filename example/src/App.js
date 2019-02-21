@@ -54,7 +54,7 @@ const testComponents = (props) => (
     <Icon name={'Info'}></Icon>
     <Icon name={'Info'} color='primary'></Icon>
     <Tooltip variant='dark' message='Your custom message'>
-      hover me
+      <Text.span>hover me</Text.span>
     </Tooltip>
     <Blockie opts={{seed: "foo", color: "#dfe", bgcolor: "#a71", size: 15, scale: 3, spotcolor: "#4E3FCE"}} />
     <Textarea rows={4} defaultValue='Type here…' />
