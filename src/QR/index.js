@@ -5,4 +5,6 @@ const QR = (props) => {
   return <QRCode {...props} />
 }
 
+QR.displayName = 'QR';
+
 export default QR;

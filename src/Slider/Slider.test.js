@@ -7,6 +7,11 @@ describe('Slider component sanity', () => {
       expect(Slider.displayName).toBe('Slider')
   })
 
+  it('matches default snapshot', () => {
+    const component = render( <Slider /> )
+    expect(component).toMatchSnapshot()
+  })
+
   it('matches themed snapshot', () => {
     const component = render(
       <ThemeProvider theme={theme}>

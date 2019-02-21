@@ -14,6 +14,7 @@ import {
   shade
 } from 'polished'
 
+import defaultTheme from '../theme'
 import Box from '../Box'
 import Icon from '../Icon'
 

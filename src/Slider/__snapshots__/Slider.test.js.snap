@@ -1,5 +1,70 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Slider component sanity matches default snapshot 1`] = `
+.c0 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+  padding: 0;
+  height: 2rem;
+  min-width: 200px;
+}
+
+.c0::-webkit-slider-runnable-track {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  border-radius: 4px;
+  background: #000;
+  height: 4px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0::-webkit-slider-thumb {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid #ccc;
+  background: white;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 100%;
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+  cursor: grab;
+}
+
+.c0::-webkit-slider-thumb:hover {
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+}
+
+.c0::-webkit-slider-thumb:active {
+  cursor: -webkit-grabbing;
+  cursor: -moz-grabbing;
+  cursor: grabbing;
+  border-color: #000;
+}
+
+<input
+  class="c0"
+  primarycolor="#000"
+  type="range"
+>
+  
+</input>
+`;
+
 exports[`Slider component sanity matches themed snapshot 1`] = `
 .c1 {
   -webkit-appearance: none;

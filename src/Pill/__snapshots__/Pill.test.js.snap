@@ -25,15 +25,34 @@ exports[`Pill component sanity matches default snapshot 1`] = `
 }
 
 .c0 {
+  position: relative;
   cursor: pointer;
   border: none;
   border-color: none;
-  background-color: #e0e0ff;
+  background: none;
+  overflow: hidden;
 }
 
 .c0:hover {
   border-color: transparent;
-  background-color: #ccf;
+}
+
+.c0:hover::before {
+  opacity: 0.2;
+}
+
+.c0::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: currentColor;
+  opacity: 0.12;
 }
 
 <div
@@ -42,7 +61,7 @@ exports[`Pill component sanity matches default snapshot 1`] = `
   display="inline-flex"
   font-size="1"
   height="2"
-  tintlevel="0.88"
+  tintlevel="0.12"
 >
   
 </div>

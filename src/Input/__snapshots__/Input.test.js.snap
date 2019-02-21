@@ -1,5 +1,45 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Input component sanity matches default snapshot 1`] = `
+.c0 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: 1rem;
+  line-height: 1;
+  height: 48px;
+  padding: 0 1rem;
+  border: 1px solid;
+  background: #FFFFFF;
+  color: primary;
+  border-color: grey;
+  border-radius: 1px;
+  box-shadow: 1;
+}
+
+.c0:hover {
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
+}
+
+.c0:focus {
+  outline: none;
+  border-color: #000;
+}
+
+.c0:disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+<input
+  class="c0"
+  color="primary"
+  primarycolor="#000"
+>
+  
+</input>
+`;
+
 exports[`Input component sanity matches themed snapshot 1`] = `
 .c1 {
   -webkit-appearance: none;
