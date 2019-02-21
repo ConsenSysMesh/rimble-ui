@@ -5,6 +5,7 @@ import Box from '../Box'
 import Button from '../Button'
 import Input from '../Input'
 import Field from '../Field'
+import ShortAddress from './ShortAddress'
 
 const slideIn = keyframes`
   from {
@@ -130,5 +131,7 @@ class PublicAddress extends Component {
 }
 
 PublicAddress.displayName = 'PublicAddress'
+
+PublicAddress.short = ShortAddress
 
 export default PublicAddress
