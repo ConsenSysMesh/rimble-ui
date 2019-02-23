@@ -42,7 +42,7 @@ Input.defaultProps = {
   as: 'input',
   color: 'copyColor',
   bg: 'white',
-  fontFamily: 'saxsrif',
+  fontFamily: 'sansSerif',
   fontSize: '1rem',
   lineHeight: 'solid',
   height: '3rem',

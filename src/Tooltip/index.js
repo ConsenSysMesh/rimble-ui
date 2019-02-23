@@ -1,9 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
-
 import Popper from '@d8660091/react-popper'
 
-const StyledTooltip = styled.div`
+import Text from '../Text'
+
+import defaultTheme from '../theme'
+
+const StyledTooltip = styled(Text)`
   & {
     background: ${ props => props.variant === 'dark' ? '#000' : '#FFF' };
     color: ${ props => props.variant === 'dark' ? '#FFF' : '#666' };
@@ -50,6 +53,11 @@ const Tooltip = (props) => {
       </StyledTooltip>
     </Popper>
   )
+}
+
+StyledTooltip.defaultProps = {
+  theme: defaultTheme,
+  fontFamily: 'sansSerif'
 }
 
 Tooltip.displayName = 'Tooltip'
