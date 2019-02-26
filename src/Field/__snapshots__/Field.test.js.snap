@@ -51,3 +51,65 @@ exports[`Field component sanity matches default snapshot 1`] = `
   </div>
 </label>
 `;
+
+exports[`Field component sanity matches themed snapshot 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.c1 {
+  box-sizing: border-box;
+}
+
+.c2 {
+  margin-bottom: 8px;
+  color: #3F3D4B;
+  font-size: 14px;
+  text-align: left;
+  font-size: 14px;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-weight: 600;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.c2 {
+  box-sizing: border-box;
+}
+
+.c0 {
+  font-size: 1em;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  color: #3F3D4B;
+}
+
+<div
+  class="c0"
+>
+  <label
+    class="c1"
+    display="flex"
+  >
+    <div
+      class="c2"
+      color="copyColor"
+      font-family="sansSerif"
+      font-size="1"
+      font-weight="3"
+    >
+      
+    </div>
+  </label>
+</div>
+`;

@@ -26,3 +26,40 @@ exports[`Text component sanity matches default snapshot 1`] = `
   
 </div>
 `;
+
+exports[`Text component sanity matches themed snapshot 1`] = `
+.c1 {
+  color: #3F3D4B;
+  font-size: 16px;
+  text-align: left;
+  font-size: 16px;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-weight: 400;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.c1 {
+  box-sizing: border-box;
+}
+
+.c0 {
+  font-size: 1em;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  color: #3F3D4B;
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1"
+    color="copyColor"
+    font-family="sansSerif"
+    font-size="2"
+    font-weight="2"
+  >
+    
+  </div>
+</div>
+`;

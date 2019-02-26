@@ -204,3 +204,118 @@ exports[`Select component sanity matches default snapshot 1`] = `
   />
 </styled.span>
 `;
+
+exports[`Select component sanity matches themed snapshot 1`] = `
+.c1 {
+  position: relative;
+}
+
+.c1 > .c3 {
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  bottom: 0;
+  pointer-events: none;
+  margin: auto;
+}
+
+.c2 {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  color: #3F3D4B;
+  background-color: #fff;
+  font-size: 1rem;
+  height: 3rem;
+  border: 1px solid transparent;
+  border-color: #CCC;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+  font-size: 1rem;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+}
+
+.c2 {
+  box-sizing: border-box;
+}
+
+.c2 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.c2:hover {
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
+}
+
+.c2:focus {
+  outline: none;
+  border-color: #4E3FCE;
+}
+
+.c2:disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.c2 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0 3rem 0 1rem;
+}
+
+.c0 {
+  font-size: 1em;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  color: #3F3D4B;
+}
+
+<div
+  class="c0"
+>
+  <span
+    class="c1"
+  >
+    <select
+      as="select"
+      class="c2"
+      color="copyColor"
+      font-family="sansSerif"
+      font-size="1rem"
+      height="3rem"
+    >
+      <option
+        value="Wandering Thunder"
+      >
+        Wandering Thunder
+      </option>
+      <option
+        value="Black Wildflower"
+      >
+        Black Wildflower
+      </option>
+      <option
+        value="Ancient Paper"
+      >
+        Ancient Paper
+      </option>
+    </select>
+    <svg
+      class="c3 "
+      fill="currentcolor"
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+    >
+      <path
+        d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+      >
+        
+      </path>
+    </svg>
+  </span>
+</div>
+`;

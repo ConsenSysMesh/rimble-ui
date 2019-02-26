@@ -9,3 +9,23 @@ exports[`QR component sanity matches default snapshot 1`] = `
   
 </canvas>
 `;
+
+exports[`QR component sanity matches themed snapshot 1`] = `
+.c0 {
+  font-size: 1em;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  color: #3F3D4B;
+}
+
+<div
+  class="c0"
+>
+  <canvas
+    height="128"
+    style="height:128px;width:128px"
+    width="128"
+  >
+    
+  </canvas>
+</div>
+`;

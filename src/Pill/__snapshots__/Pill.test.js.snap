@@ -70,3 +70,84 @@ exports[`Pill component sanity matches default snapshot 1`] = `
   
 </div>
 `;
+
+exports[`Pill component sanity matches themed snapshot 1`] = `
+.c1 {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  color: #007ce0;
+  font-size: 14px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 32px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 16px;
+  font-size: 14px;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  line-height: 1;
+}
+
+.c1 {
+  box-sizing: border-box;
+}
+
+.c1 {
+  position: relative;
+  cursor: pointer;
+  border: none;
+  border-color: none;
+  background: none;
+  overflow: hidden;
+}
+
+.c1:hover {
+  border-color: transparent;
+}
+
+.c1:hover::before {
+  opacity: 0.2;
+}
+
+.c1::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: currentColor;
+  opacity: 0.12;
+}
+
+.c0 {
+  font-size: 1em;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  color: #3F3D4B;
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1"
+    color="blue"
+    display="inline-flex"
+    font-family="sansSerif"
+    font-size="1"
+    height="2"
+    tintlevel="0.12"
+  >
+    
+  </div>
+</div>
+`;

@@ -19,3 +19,33 @@ exports[`Image component sanity matches default snapshot 1`] = `
   
 </img>
 `;
+
+exports[`Image component sanity matches themed snapshot 1`] = `
+.c1 {
+  background-color: #eee;
+  width: 100%;
+  display: block;
+}
+
+.c1 {
+  box-sizing: border-box;
+}
+
+.c0 {
+  font-size: 1em;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  color: #3F3D4B;
+}
+
+<div
+  class="c0"
+>
+  <img
+    class="c1"
+    display="block"
+    width="100%"
+  >
+    
+  </img>
+</div>
+`;
