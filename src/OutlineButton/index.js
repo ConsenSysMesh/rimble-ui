@@ -6,12 +6,13 @@ import { tint, shade } from 'polished'
 
 import Button from '../Button'
 
+import defaultTheme from '../theme'
+
 const OutlineButton = styled(Button).attrs({
   primarycolor: props => themeGet('colors.primary', '#000')(props)
 })`
   & {
-    background: #FFFFFF;
-    border: 1px solid #CCCCCC;
+    background: white;
   }
   &:hover {
     color: ${props => tint(0.2, props.primarycolor)};
@@ -26,11 +27,14 @@ const OutlineButton = styled(Button).attrs({
 `
 
 OutlineButton.defaultProps = {
+  theme: defaultTheme,
   color: 'primary',
   bg: 'white',
   fontWeight: 3,
+  fontFamily: 'sansSerif',
   height: '48px',
   border: 1,
+  borderColor: 'grey',
   px: 4,
   py: 0,
   borderRadius: 1,

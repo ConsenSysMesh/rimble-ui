@@ -1,7 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled, { keyframes } from 'styled-components'
-import {ratio, themeGet} from 'styled-system'
+import { themeGet } from 'styled-system'
+
 import Box from '../Box'
 
 const rotate = keyframes`
@@ -15,10 +16,11 @@ const rotate = keyframes`
 `;
 
 const Rotate = styled(Box)`
-  display: block;
-  position: relative;
-  overflow: hidden;
-
+  & {
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
 
   > svg {
     fill: currentColor;
@@ -51,10 +53,6 @@ Loader.defaultProps = {
   bg: 'transparent',
   size: '1rem',
 }
-
-// Loader.propTypes = {
-//   : PropTypes.
-// };
 
 Loader.displayName = 'Loader'
 

@@ -1,14 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
-import { triangle } from 'polished'
-
 import Popper from '@d8660091/react-popper'
 
-const StyledTooltip = styled.div`
-  ${'' /* background: black;
-  color: white;
-  padding: .5rem 1rem;
-  border-radius: 4px; */}
+import Text from '../Text'
+
+import defaultTheme from '../theme'
+
+const StyledTooltip = styled(Text)`
   & {
     background: ${ props => props.variant === 'dark' ? '#000' : '#FFF' };
     color: ${ props => props.variant === 'dark' ? '#FFF' : '#666' };
@@ -26,20 +24,6 @@ const StyledTooltip = styled.div`
     font-size: 14px;
     z-index: 999999;
   }
-
-  ${'' /* &:after, &:before {
-    content: '';
-    position: absolute;
-    margin: auto;
-    bottom: calc(100% - 1px);
-    left: 0;
-    right: 0;
-    ${triangle({ pointingDirection: 'top', width: '16px', height: '8px', foregroundColor: 'white' })}
-  }
-  &:before {
-    bottom: 100%;
-    ${triangle({ pointingDirection: 'top', width: '16px', height: '8px', foregroundColor: '#CCC' })}
-  } */}
 `
 
 const Tooltip = (props) => {
@@ -69,6 +53,11 @@ const Tooltip = (props) => {
       </StyledTooltip>
     </Popper>
   )
+}
+
+StyledTooltip.defaultProps = {
+  theme: defaultTheme,
+  fontFamily: 'sansSerif'
 }
 
 Tooltip.displayName = 'Tooltip'
