@@ -6,26 +6,18 @@ import { theme } from 'rimble-ui'
 
 const theme1 = {
   ...theme,
-  name: 'Rimble'
+  name: 'Rimble Theme'
 }
 const theme2 = {
   ...theme,
-  name: 'ConsenSys',
+  name: 'Blue Theme',
   colors: {
     ...theme.colors,
     primary: '#2c56dd'
   }
 }
-const theme3 = {
-  ...theme,
-  name: 'Salmon',
-  colors: {
-    ...theme.colors,
-    primary: 'salmon'
-  }
-}
 
-const themes = [theme1, theme2, theme3];
+const themes = [theme1, theme2];
 
 addDecorator(
   withOptions({
