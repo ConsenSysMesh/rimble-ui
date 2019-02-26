@@ -7,7 +7,8 @@ exports[`Heading component sanity matches default snapshot 1`] = `
   font-size: 24px;
   text-align: left;
   font-size: 24px;
-  font-weight: 3;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-weight: 600;
   text-align: left;
 }
 
@@ -17,6 +18,7 @@ exports[`Heading component sanity matches default snapshot 1`] = `
 
 <h3
   class="c0"
+  font-family="sansSerif"
   font-size="4"
   font-weight="3"
 >

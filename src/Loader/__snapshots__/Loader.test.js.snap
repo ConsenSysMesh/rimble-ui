@@ -2,18 +2,21 @@
 
 exports[`Loader component sanity matches default snapshot 1`] = `
 .c0 {
-  color: primary;
+  color: #4E3FCE;
   background-color: transparent;
   height: 1rem;
   width: 1rem;
   text-align: left;
-  display: block;
-  position: relative;
-  overflow: hidden;
 }
 
 .c0 {
   box-sizing: border-box;
+}
+
+.c0 {
+  display: block;
+  position: relative;
+  overflow: hidden;
 }
 
 .c0 > svg {

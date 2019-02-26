@@ -2,26 +2,27 @@
 
 exports[`Textarea component sanity matches default snapshot 1`] = `
 .c0 {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  font-size: 1rem;
-  line-height: 1;
-  height: 48px;
-  padding: 0 1rem;
-  border: 1px solid;
-  background: #FFFFFF;
-  border-color: grey;
-  border-radius: 1px;
-  box-shadow: 1;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  font-size: 1rem;
-  line-height: 1;
-  height: auto;
-  background: #FFFFFF;
   padding: 16px;
+  color: #3F3D4B;
+  background-color: #fff;
+  font-size: 1rem;
+  height: auto;
+  border: 1px solid transparent;
+  border-color: #CCC;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+  font-size: 1rem;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+}
+
+.c0 {
+  box-sizing: border-box;
+}
+
+.c0 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .c0:hover {
@@ -30,7 +31,7 @@ exports[`Textarea component sanity matches default snapshot 1`] = `
 
 .c0:focus {
   outline: none;
-  border-color: #000;
+  border-color: #4E3FCE;
 }
 
 .c0:disabled {
@@ -38,9 +39,18 @@ exports[`Textarea component sanity matches default snapshot 1`] = `
   pointer-events: none;
 }
 
+.c0 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 <textarea
   class="c0"
-  primarycolor="#000"
+  color="copyColor"
+  font-family="sansSerif"
+  font-size="1rem"
+  height="auto"
 >
   
 </textarea>
@@ -48,26 +58,27 @@ exports[`Textarea component sanity matches default snapshot 1`] = `
 
 exports[`Textarea component sanity matches themed snapshot 1`] = `
 .c1 {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+  padding: 16px;
+  color: #3F3D4B;
+  background-color: #fff;
   font-size: 1rem;
-  line-height: 1;
-  height: 48px;
-  padding: 0 1rem;
-  border: 1px solid;
-  background: #FFFFFF;
+  height: auto;
+  border: 1px solid transparent;
   border-color: #CCC;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+  font-size: 1rem;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+}
+
+.c1 {
+  box-sizing: border-box;
+}
+
+.c1 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  font-size: 1rem;
-  line-height: 1;
-  height: auto;
-  background: #FFFFFF;
-  padding: 16px;
 }
 
 .c1:hover {
@@ -84,6 +95,12 @@ exports[`Textarea component sanity matches themed snapshot 1`] = `
   pointer-events: none;
 }
 
+.c1 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 .c0 {
   font-size: 1em;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
@@ -95,7 +112,10 @@ exports[`Textarea component sanity matches themed snapshot 1`] = `
 >
   <textarea
     class="c1"
-    primarycolor="#4E3FCE"
+    color="copyColor"
+    font-family="sansSerif"
+    font-size="1rem"
+    height="auto"
   >
     
   </textarea>

@@ -2,16 +2,13 @@
 
 exports[`Image component sanity matches default snapshot 1`] = `
 .c0 {
+  background-color: #eee;
   width: 100%;
   display: block;
 }
 
 .c0 {
   box-sizing: border-box;
-}
-
-.c0 {
-  background: #F7F7F7;
 }
 
 <img

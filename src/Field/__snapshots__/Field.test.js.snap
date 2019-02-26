@@ -22,14 +22,14 @@ exports[`Field component sanity matches default snapshot 1`] = `
 
 .c1 {
   margin-bottom: 8px;
-  color: copyColor;
+  color: #3F3D4B;
   font-size: 14px;
   text-align: left;
   font-size: 14px;
-  font-family: sansSerif;
-  font-weight: 3;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-weight: 600;
   text-align: left;
-  line-height: copy;
+  line-height: 1.5;
 }
 
 .c1 {

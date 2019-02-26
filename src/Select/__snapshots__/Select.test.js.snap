@@ -2,17 +2,182 @@
 
 exports[`Select component sanity matches default snapshot 1`] = `
 <styled.span>
-  <styled.select
+  <Styled(Input)
+    as="select"
+    bg="white"
+    border={1}
     borderColor="grey"
     borderRadius={1}
-    borders={1}
     boxShadow={1}
+    color="copyColor"
+    fontFamily="sansSerif"
+    fontSize="1rem"
+    height="3rem"
     items={
       Array [
         "Wandering Thunder",
         "Black Wildflower",
         "Ancient Paper",
       ]
+    }
+    lineHeight="solid"
+    px={3}
+    py={0}
+    theme={
+      Object {
+        "borders": Array [
+          0,
+          "1px solid transparent",
+        ],
+        "colors": Object {
+          "black": "#000e1a",
+          "blacks": Array [
+            "rgba(0,0,0,.0125)",
+            "rgba(0,0,0,.025)",
+            "rgba(0,0,0,.05)",
+            "rgba(0,0,0,.1)",
+            "rgba(0,0,0,.2)",
+            "rgba(0,0,0,.3)",
+            "rgba(0,0,0,.4)",
+            "rgba(0,0,0,.5)",
+            "rgba(0,0,0,.6)",
+            "rgba(0,0,0,.7)",
+            "rgba(0,0,0,.8)",
+            "rgba(0,0,0,.9)",
+          ],
+          "blue": "#007ce0",
+          "copyColor": "#3F3D4B",
+          "dark-gray": "#333",
+          "grey": "#CCC",
+          "light-gray": "#eee",
+          "light-silver": "#aaa",
+          "mid-gray": "#555",
+          "moon-gray": "#ccc",
+          "navy": "#004175",
+          "near-black": "#111",
+          "near-white": "#f4f4f4",
+          "primary": "#4E3FCE",
+          "silver": "#999",
+          "transparent": "transparent",
+          "white": "#fff",
+          "whites": Array [
+            "rgba(255,255,255,.0125)",
+            "rgba(255,255,255,.025)",
+            "rgba(255,255,255,.05)",
+            "rgba(255,255,255,.1)",
+            "rgba(255,255,255,.2)",
+            "rgba(255,255,255,.3)",
+            "rgba(255,255,255,.4)",
+            "rgba(255,255,255,.5)",
+            "rgba(255,255,255,.6)",
+            "rgba(255,255,255,.7)",
+            "rgba(255,255,255,.8)",
+            "rgba(255,255,255,.9)",
+          ],
+        },
+        "fontSizes": Array [
+          12,
+          14,
+          16,
+          20,
+          24,
+          32,
+          48,
+          64,
+        ],
+        "fontWeights": Array [
+          0,
+          300,
+          400,
+          600,
+          700,
+        ],
+        "fonts": Object {
+          "sansSerif": "\\"Source Sans Pro\\", -apple-system, sans-serif",
+          "serif": "athelas, georgia, times, serif",
+        },
+        "heights": Array [
+          0,
+          16,
+          32,
+          64,
+          128,
+          256,
+        ],
+        "lineHeights": Object {
+          "copy": 1.5,
+          "solid": 1,
+          "title": 1.25,
+        },
+        "maxHeights": Array [
+          0,
+          16,
+          32,
+          64,
+          128,
+          256,
+        ],
+        "maxWidths": Array [
+          0,
+          16,
+          32,
+          64,
+          128,
+          256,
+          512,
+          768,
+          1024,
+          1536,
+        ],
+        "minHeights": Array [
+          0,
+          16,
+          32,
+          64,
+          128,
+          256,
+        ],
+        "minWidths": Array [
+          0,
+          16,
+          32,
+          64,
+          128,
+          256,
+        ],
+        "opacity": Object {
+          "disabled": 0.4,
+        },
+        "radii": Array [
+          "0",
+          "4px",
+          "8px",
+          "16px",
+        ],
+        "shadows": Array [
+          "0",
+          "0px 2px 4px rgba(0, 0, 0, 0.1)",
+          "0 7px 14px rgba(50,50,93,.1)",
+        ],
+        "space": Array [
+          0,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256,
+        ],
+        "width": Array [
+          0,
+          16,
+          32,
+          64,
+          128,
+          256,
+        ],
+      }
     }
   >
     <option
@@ -33,7 +198,7 @@ exports[`Select component sanity matches default snapshot 1`] = `
     >
       Ancient Paper
     </option>
-  </styled.select>
+  </Styled(Input)>
   <ExpandMoreIcon
     size={24}
   />

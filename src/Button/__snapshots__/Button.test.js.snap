@@ -7,14 +7,14 @@ exports[`Button component sanity matches default snapshot 1`] = `
   padding-right: 32px;
   padding-top: 0px;
   padding-bottom: 0px;
-  color: white;
-  background-color: primary;
+  color: #fff;
+  background-color: #4E3FCE;
   font-size: inherit;
   height: 48px;
   position: relative;
   border: 0;
   border-color: none;
-  border-radius: 1px;
+  border-radius: 4px;
   text-align: left;
 }
 
@@ -23,15 +23,16 @@ exports[`Button component sanity matches default snapshot 1`] = `
 }
 
 .c0 {
-  font-weight: 3;
-  box-shadow: 1;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-size: 1rem;
   min-width: 3rem;
 }
 
 .c0 {
   cursor: pointer;
-  font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
   text-align: center;
@@ -53,21 +54,21 @@ exports[`Button component sanity matches default snapshot 1`] = `
   justify-content: center;
   -webkit-transition: all .15s ease;
   transition: all .15s ease;
-  background-color: black;
+  background-color: #4E3FCE;
 }
 
 .c0:hover {
-  background-color: #191919;
+  background-color: #5f52d2;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
 }
 
 .c0:active {
-  background-color: #000;
+  background-color: #4638b9;
   box-shadow: none;
 }
 
 .c0:disabled {
-  opacity: 0.5;
+  opacity: 0.4;
   cursor: not-allowed;
 }
 
@@ -92,6 +93,7 @@ exports[`Button component sanity matches default snapshot 1`] = `
 <button
   class="c0 c1"
   color="white"
+  font-family="sansSerif"
   font-size="inherit"
   font-weight="3"
   height="48px"
@@ -124,7 +126,9 @@ exports[`Button component sanity matches themed snapshot 1`] = `
 }
 
 .c1 {
+  font-size: inherit;
   font-weight: 600;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-size: 1rem;
   min-width: 3rem;
@@ -132,7 +136,6 @@ exports[`Button component sanity matches themed snapshot 1`] = `
 
 .c1 {
   cursor: pointer;
-  font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
   text-align: center;
@@ -202,6 +205,7 @@ exports[`Button component sanity matches themed snapshot 1`] = `
   <button
     class="c1 c2"
     color="white"
+    font-family="sansSerif"
     font-size="inherit"
     font-weight="3"
     height="48px"

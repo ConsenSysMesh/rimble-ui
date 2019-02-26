@@ -12,17 +12,17 @@ exports[`Progress component sanity matches default snapshot 1`] = `
 }
 
 .c0::-webkit-progress-bar {
-  background-color: rgba(0,0,0,0.25);
+  background-color: rgba(78,63,206,0.25);
 }
 
 .c0::-webkit-progress-value {
-  background-color: #000;
+  background-color: #4E3FCE;
   border-radius: 8px;
 }
 
 <progress
   class="c0"
-  primarycolor="#000"
+  primarycolor="#4E3FCE"
 >
   
 </progress>

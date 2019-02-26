@@ -2,14 +2,14 @@
 
 exports[`Text component sanity matches default snapshot 1`] = `
 .c0 {
-  color: copyColor;
+  color: #3F3D4B;
   font-size: 16px;
   text-align: left;
   font-size: 16px;
-  font-family: sansSerif;
-  font-weight: 2;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-weight: 400;
   text-align: left;
-  line-height: copy;
+  line-height: 1.5;
 }
 
 .c0 {
