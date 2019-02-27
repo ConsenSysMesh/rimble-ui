@@ -2,14 +2,14 @@ import React from 'react'
 import styled from 'styled-components'
 import { themeGet } from 'styled-system'
 
+import defaultTheme from '../theme'
+
 const Slider = styled.input.attrs({
   type: 'range',
   primarycolor: props => themeGet('colors.primary', '#000')(props)
 })`
   & {
     appearance: none;
-    margin: 0;
-    padding: 0;
     height: 2rem;
     min-width: 200px;
   }
@@ -42,6 +42,12 @@ const Slider = styled.input.attrs({
     }
   }
 `
+
+Slider.defaultProps = {
+  theme: defaultTheme,
+  m: 0,
+  p: 0,
+}
 
 Slider.displayName = 'Slider'
 

@@ -2,7 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import { tint, shade } from "polished";
 import { themeGet } from "styled-system";
+
 import Text from "../Text";
+
+import defaultTheme from "../theme";
 
 const Link = styled(Text).attrs({
   primarycolor: props => themeGet("colors.primary", "black")(props)
@@ -21,10 +24,12 @@ const Link = styled(Text).attrs({
 `;
 
 Link.defaultProps = {
+  theme: defaultTheme,
   as: "a",
+  color: "primary",
+  fontFamily: "sansSerif",
   fontSize: 1,
-  fontWeight: 3,
-  color: "primary"
+  fontWeight: 3
 };
 
 Link.displayName = "Link";

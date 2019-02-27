@@ -8,6 +8,8 @@ import {
 
 import Button from '../Button'
 
+import defaultTheme from '../theme'
+
 const TextButton = styled(Button).attrs({
   primarycolor: props => themeGet('colors.primary', '#000')(props)
 })`
@@ -29,8 +31,10 @@ const TextButton = styled(Button).attrs({
 `
 
 TextButton.defaultProps = {
+  theme: defaultTheme,
   fontSize: 'inherit',
-  fontWeight: '600',
+  fontWeight: 3,
+  fontFamily: 'sansSerif',
   color: 'primary',
   bg: 'transparent',
   height: '48px',

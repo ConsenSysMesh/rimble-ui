@@ -15,3 +15,29 @@ exports[`Box component sanity matches default snapshot 1`] = `
   
 </div>
 `;
+
+exports[`Box component sanity matches themed snapshot 1`] = `
+.c1 {
+  text-align: left;
+}
+
+.c1 {
+  box-sizing: border-box;
+}
+
+.c0 {
+  font-size: 1em;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  color: #3F3D4B;
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    
+  </div>
+</div>
+`;

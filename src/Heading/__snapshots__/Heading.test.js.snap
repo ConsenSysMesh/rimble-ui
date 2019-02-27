@@ -7,7 +7,8 @@ exports[`Heading component sanity matches default snapshot 1`] = `
   font-size: 24px;
   text-align: left;
   font-size: 24px;
-  font-weight: 3;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-weight: 600;
   text-align: left;
 }
 
@@ -17,9 +18,46 @@ exports[`Heading component sanity matches default snapshot 1`] = `
 
 <h3
   class="c0"
+  font-family="sansSerif"
   font-size="4"
   font-weight="3"
 >
   
 </h3>
+`;
+
+exports[`Heading component sanity matches themed snapshot 1`] = `
+.c1 {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-size: 24px;
+  text-align: left;
+  font-size: 24px;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-weight: 600;
+  text-align: left;
+}
+
+.c1 {
+  box-sizing: border-box;
+}
+
+.c0 {
+  font-size: 1em;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  color: #3F3D4B;
+}
+
+<div
+  class="c0"
+>
+  <h3
+    class="c1"
+    font-family="sansSerif"
+    font-size="4"
+    font-weight="3"
+  >
+    
+  </h3>
+</div>
 `;

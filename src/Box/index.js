@@ -58,6 +58,8 @@ import {
   left
 } from 'styled-system'
 
+import defaultTheme from '../theme'
+
 const Box = styled.div`
   & {
     box-sizing: border-box;
@@ -105,6 +107,7 @@ const Box = styled.div`
 `
 
 Box.defaultProps = {
+  theme: defaultTheme,
   textAlign: 'left'
 }
 

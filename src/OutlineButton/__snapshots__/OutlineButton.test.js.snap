@@ -6,11 +6,12 @@ exports[`OutlineButton component sanity matches default snapshot 1`] = `
   padding-right: 32px;
   padding-top: 0px;
   padding-bottom: 0px;
-  color: primary;
-  background-color: white;
+  color: #4E3FCE;
+  background-color: #fff;
   height: 48px;
-  border: 1px solid;
-  border-radius: 1px;
+  border: 1px solid transparent;
+  border-color: #CCC;
+  border-radius: 4px;
   text-align: left;
 }
 
@@ -19,14 +20,14 @@ exports[`OutlineButton component sanity matches default snapshot 1`] = `
 }
 
 .c0 {
-  font-weight: 3;
+  font-weight: 600;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 1rem;
   min-width: 3rem;
 }
 
 .c0 {
   cursor: pointer;
-  font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
   text-align: center;
@@ -48,21 +49,21 @@ exports[`OutlineButton component sanity matches default snapshot 1`] = `
   justify-content: center;
   -webkit-transition: all .15s ease;
   transition: all .15s ease;
-  background-color: black;
+  background-color: #4E3FCE;
 }
 
 .c0:hover {
-  background-color: #191919;
+  background-color: #5f52d2;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
 }
 
 .c0:active {
-  background-color: #000;
+  background-color: #4638b9;
   box-shadow: none;
 }
 
 .c0:disabled {
-  opacity: 0.5;
+  opacity: 0.4;
   cursor: not-allowed;
 }
 
@@ -85,25 +86,25 @@ exports[`OutlineButton component sanity matches default snapshot 1`] = `
 }
 
 .c0 {
-  background: #FFFFFF;
-  border: 1px solid #CCCCCC;
+  background: white;
 }
 
 .c0:hover {
-  color: #333;
-  border-color: #333;
+  color: #7165d7;
+  border-color: #7165d7;
   background-color: #FFF;
 }
 
 .c0:active {
-  color: #000;
-  border-color: #000;
-  background-color: #e5e5e5;
+  color: #3e32a4;
+  border-color: #3e32a4;
+  background-color: #edebfa;
 }
 
 <button
   class="c0 c1"
   color="primary"
+  font-family="sansSerif"
   font-weight="3"
   height="48px"
   type="button"
@@ -121,7 +122,8 @@ exports[`OutlineButton component sanity matches themed snapshot 1`] = `
   color: #4E3FCE;
   background-color: #fff;
   height: 48px;
-  border: 1px solid;
+  border: 1px solid transparent;
+  border-color: #CCC;
   border-radius: 4px;
   text-align: left;
 }
@@ -132,13 +134,13 @@ exports[`OutlineButton component sanity matches themed snapshot 1`] = `
 
 .c1 {
   font-weight: 600;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 1rem;
   min-width: 3rem;
 }
 
 .c1 {
   cursor: pointer;
-  font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
   text-align: center;
@@ -197,8 +199,7 @@ exports[`OutlineButton component sanity matches themed snapshot 1`] = `
 }
 
 .c1 {
-  background: #FFFFFF;
-  border: 1px solid #CCCCCC;
+  background: white;
 }
 
 .c1:hover {
@@ -225,6 +226,7 @@ exports[`OutlineButton component sanity matches themed snapshot 1`] = `
   <button
     class="c1 c2"
     color="primary"
+    font-family="sansSerif"
     font-weight="3"
     height="48px"
     type="button"

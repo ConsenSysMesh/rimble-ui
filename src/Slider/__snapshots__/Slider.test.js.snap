@@ -5,8 +5,6 @@ exports[`Slider component sanity matches default snapshot 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  margin: 0;
-  padding: 0;
   height: 2rem;
   min-width: 200px;
 }
@@ -18,7 +16,7 @@ exports[`Slider component sanity matches default snapshot 1`] = `
   appearance: none;
   border: none;
   border-radius: 4px;
-  background: #000;
+  background: #4E3FCE;
   height: 4px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -53,12 +51,12 @@ exports[`Slider component sanity matches default snapshot 1`] = `
   cursor: -webkit-grabbing;
   cursor: -moz-grabbing;
   cursor: grabbing;
-  border-color: #000;
+  border-color: #4E3FCE;
 }
 
 <input
   class="c0"
-  primarycolor="#000"
+  primarycolor="#4E3FCE"
   type="range"
 >
   
@@ -70,8 +68,6 @@ exports[`Slider component sanity matches themed snapshot 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  margin: 0;
-  padding: 0;
   height: 2rem;
   min-width: 200px;
 }

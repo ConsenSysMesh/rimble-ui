@@ -2,9 +2,11 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import { themeGet } from "styled-system";
 
-import Box from "../Box";
+import Text from "../Text";
 
-const Pill = styled(Box).attrs({
+import defaultTheme from '../theme'
+
+const Pill = styled(Text).attrs({
   tintlevel: props => (props.selected ? "0.25" : "0.12")
 })`
   & {
@@ -37,10 +39,12 @@ const Pill = styled(Box).attrs({
 `;
 
 Pill.defaultProps = {
+  theme: defaultTheme,
   color: "dark-gray",
   px: 3,
   py: 1,
   fontSize: 1,
+  fontFamily: 'sansSerif',
   height: 2,
   lineHeight: "solid",
   borderRadius: 3,

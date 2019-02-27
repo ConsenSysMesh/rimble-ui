@@ -1,7 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import {
+  fontFamily,
   fontWeight,
+  fontSize,
   boxShadow,
   opacity,
   themeGet
@@ -12,9 +14,10 @@ import {
   shade
 } from 'polished'
 
-import defaultTheme from '../theme'
 import Box from '../Box'
 import Icon from '../Icon'
+
+import defaultTheme from '../theme'
 
 const fullWidth = (props) => (
   props.fullWidth ? { width: '100%' } : null
@@ -63,7 +66,6 @@ const Button = styled(ProtoButton).attrs({
 })`
   & {
     cursor: pointer;
-    font-family: inherit;
     text-decoration: none;
     text-align: center;
     line-height: 1;
@@ -107,7 +109,9 @@ const Button = styled(ProtoButton).attrs({
     margin: 0;
   }
 
+  ${fontSize}
   ${fontWeight}
+  ${fontFamily}
   ${boxShadow}
   ${opacity}
 
@@ -116,6 +120,7 @@ const Button = styled(ProtoButton).attrs({
 `
 
 Button.defaultProps = {
+  theme: defaultTheme,
   position: 'relative',
   color: 'white',
   bg: 'primary',
@@ -128,6 +133,7 @@ Button.defaultProps = {
   borderRadius: 1,
   boxShadow: 1,
   fontSize: 'inherit',
+  fontFamily: 'sansSerif',
   fontWeight: 3
 }
 
