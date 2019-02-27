@@ -1,8 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import { themeGet } from 'styled-system'
-
 import { transparentize } from 'polished'
+
+import defaultTheme from '../theme'
 
 const Progress = styled.progress.attrs({
   primarycolor: props => themeGet('colors.primary', '#000')(props)
@@ -22,6 +23,10 @@ const Progress = styled.progress.attrs({
     border-radius: 8px;
   }
 `
+
+Progress.defaultProps = {
+  theme: defaultTheme
+}
 
 Progress.displayName = 'Progress'
 

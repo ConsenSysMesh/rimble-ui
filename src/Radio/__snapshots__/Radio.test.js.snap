@@ -2,7 +2,7 @@
 
 exports[`Radio component sanity matches default snapshot 1`] = `
 .c0 {
-  color: primary;
+  color: #4E3FCE;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -22,17 +22,25 @@ exports[`Radio component sanity matches default snapshot 1`] = `
 .c2 {
   margin-left: 4px;
   margin-right: 8px;
-  color: copyColor;
+  color: #3F3D4B;
   font-size: 14px;
   text-align: left;
   font-size: 14px;
-  font-family: sansSerif;
-  font-weight: 3;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-weight: 600;
   text-align: left;
-  line-height: copy;
+  line-height: 1.5;
 }
 
 .c2 {
+  box-sizing: border-box;
+}
+
+.c1 {
+  text-align: left;
+}
+
+.c1 {
   box-sizing: border-box;
 }
 
@@ -68,7 +76,7 @@ exports[`Radio component sanity matches default snapshot 1`] = `
 .c1 > svg[name="checked"] {
   display: none;
   z-index: 1;
-  fill: #000;
+  fill: #4E3FCE;
 }
 
 .c1 > input:checked ~ svg[name="checked"] {
@@ -86,6 +94,7 @@ exports[`Radio component sanity matches default snapshot 1`] = `
   >
     <input
       color="primary"
+      theme="[object Object]"
       type="checkbox"
     >
       
@@ -167,6 +176,14 @@ exports[`Radio component sanity matches themed snapshot 1`] = `
 }
 
 .c2 {
+  text-align: left;
+}
+
+.c2 {
+  box-sizing: border-box;
+}
+
+.c2 {
   position: relative;
   display: inline-block;
 }
@@ -225,6 +242,7 @@ exports[`Radio component sanity matches themed snapshot 1`] = `
     >
       <input
         color="primary"
+        theme="[object Object]"
         type="checkbox"
       >
         

@@ -29,6 +29,7 @@
     "@storybook/react": "^4.0.4",
     "@storybook/storybook-deployer": "^2.3.0",
     "babel-loader": "^8.0.4",
+    "storybook-addon-styled-component-theme": "^1.1.1",
     "storybook-readme": "^4.0.2"
   }
 }

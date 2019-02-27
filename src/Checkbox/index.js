@@ -8,7 +8,9 @@ import CheckBoxOutlineBlank from 'rmdi/lib/CheckBoxOutlineBlank'
 import Box from '../Box'
 import Text from '../Text'
 
-const StyledWrapper = styled.div`
+import defaultTheme from '../theme'
+
+const StyledWrapper = styled(Box)`
   & {
     position: relative;
     display: inline-block;
@@ -61,6 +63,7 @@ const Checkbox = ({className, ...props}) => (
 )
 
 Checkbox.defaultProps = {
+  theme: defaultTheme,
   color: 'primary'
 }
 

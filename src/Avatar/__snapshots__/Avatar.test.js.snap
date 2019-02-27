@@ -16,7 +16,7 @@ exports[`Avatar component sanity matches default snapshot 1`] = `
   border-radius: 100%;
   background: center no-repeat;
   background-size: cover;
-  background-color: #000;
+  background-color: #CCC;
   background-image: url();
 }
 
