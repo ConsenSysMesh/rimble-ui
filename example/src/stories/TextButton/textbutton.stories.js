@@ -6,8 +6,8 @@ import MyREADME from './README.md';
 
 import { TextButton } from 'rimble-ui'
 
-storiesOf('Button/TextButton', module)
+storiesOf('Button', module)
   .addDecorator(withDocs(MyREADME))
-  .add('default', () => (
+  .add('TextButton', () => (
     <TextButton>TextButton</TextButton>
   ))

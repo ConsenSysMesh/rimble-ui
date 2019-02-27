@@ -1,43 +1,31 @@
 import React from 'react'
 import styled from 'styled-components'
+import { space } from 'styled-system'
 
 import Input from '../Input'
 
-import theme from '../theme'
+import defaultTheme from '../theme'
 
-const Textarea = styled.textarea`
-  appearance: none;
-  font-size: 1rem;
-  line-height: 1;
-  border-radius: ${ props => props.theme.radii[0] };
-
-  padding: 1rem;
-  background: #FFFFFF;
-  border: 1px solid #CCCCCC;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
-
-  &:hover {
-
-  }
-  &:focus {
-    outline: none;
-    border-color: ${ props => props.theme.colors.primary }
-  }
-  &:active {
-
-  }
-  &:disabled {
-    opacity: 0.4;
-    pointer-events: none;
+const Textarea = styled(Input)`
+  & {
+    appearance: none;
   }
 `
 
 Textarea.defaultProps = {
-  color: 'primary',
-  bg: 'transparent',
-  border: 'none',
-  borderRadius: 'none',
-  theme: theme
+  theme: defaultTheme,
+  as: 'textarea',
+  color: 'copyColor',
+  bg: 'white',
+  fontFamily: 'sansSerif',
+  fontSize: '1rem',
+  lineHeight: 'solid',
+  height: 'auto',
+  p: 3,
+  border: 1,
+  borderColor: 'grey',
+  borderRadius: 1,
+  boxShadow: 1
 }
 
 Textarea.displayName = 'Textarea'

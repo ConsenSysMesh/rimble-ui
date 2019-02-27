@@ -1,11 +1,17 @@
 import React from 'react'
-import styled from 'styled-components'
 
-const Field = ({ children, label, ...props }) => {
-  return <label htmlFor="">
-    {label}
+import Box from '../Box'
+import Text from '../Text'
+
+const Field = ({ children, label, ...props }) => (
+  <Box as='label' display='flex' flexDirection='column' alignItems='flex-start' {...props}>
+    <Text fontSize={1} fontWeight={3} mb={2}>
+      {label}
+    </Text>
     {children}
-  </label>
-}
+  </Box>
+)
+
+Field.displayName = 'Field'
 
 export default Field

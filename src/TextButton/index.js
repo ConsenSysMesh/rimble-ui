@@ -1,28 +1,46 @@
 import React from 'react'
-
 import styled from 'styled-components'
-import { tint } from 'polished'
+import { themeGet } from 'styled-system'
+import {
+  tint,
+  shade
+} from 'polished'
 
 import Button from '../Button'
 
-import theme from '../theme'
+import defaultTheme from '../theme'
 
-const TextButton = styled(Button)`
+const TextButton = styled(Button).attrs({
+  primarycolor: props => themeGet('colors.primary', '#000')(props)
+})`
   & {
+    background-color: transparent;
     box-shadow: none;
   }
   &:hover {
+    color: ${props => tint(0.2, props.primarycolor)};
     background-color: transparent;
+    text-decoration: underline;
     box-shadow: none;
+  }
+  &:active {
+    color: ${props => shade(0.2, props.primarycolor)};
+    text-decoration: none;
+    background-color: transparent;
   }
 `
 
 TextButton.defaultProps = {
+  theme: defaultTheme,
+  fontSize: 'inherit',
+  fontWeight: 3,
+  fontFamily: 'sansSerif',
   color: 'primary',
   bg: 'transparent',
+  height: '48px',
   border: 'none',
-  borderRadius: 'none',
-  theme: theme
+  px: 4,
+  py: 0
 }
 
 TextButton.displayName = 'TextButton'

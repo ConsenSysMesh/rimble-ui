@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link component sanity matches default snapshot 1`] = `
+.c0 {
+  color: #4E3FCE;
+  font-size: 14px;
+  font-size: 14px;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-weight: 600;
+}
+
+.c0 {
+  box-sizing: border-box;
+}
+
+.c0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:hover {
+  color: #7165d7;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c0:active {
+  color: #3e32a4;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<a
+  class="c0"
+  color="primary"
+  font-family="sansSerif"
+  font-size="1"
+  font-weight="3"
+  primarycolor="#4E3FCE"
+>
+  
+</a>
+`;
+
+exports[`Link component sanity matches themed snapshot 1`] = `
+.c1 {
+  color: #4E3FCE;
+  font-size: 14px;
+  font-size: 14px;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-weight: 600;
+}
+
+.c1 {
+  box-sizing: border-box;
+}
+
+.c1 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c1:hover {
+  color: #7165d7;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c1:active {
+  color: #3e32a4;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 {
+  font-size: 1em;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  color: #3F3D4B;
+}
+
+<div
+  class="c0"
+>
+  <a
+    class="c1"
+    color="primary"
+    font-family="sansSerif"
+    font-size="1"
+    font-weight="3"
+    primarycolor="#4E3FCE"
+  >
+    
+  </a>
+</div>
+`;

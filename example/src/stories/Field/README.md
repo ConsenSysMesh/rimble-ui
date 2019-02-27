@@ -10,7 +10,7 @@ import { Field } from 'rimble-ui'
 
 ```jsx
 <Field label='label'>
-  <Select items={items} />
+  <Input type='text' />
 </Field>
 ```
 

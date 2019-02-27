@@ -1,47 +1,52 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import theme from '../theme'
+import ExpandMore from 'rmdi/lib/ExpandMore'
 
-const StyledSelect = styled.select`
-  appearance: none;
-  font-size: 1rem;
-  border-radius: ${ props => props.theme.radii[0] };
+import Input from '../Input'
 
-  height: 48px;
-  padding: 0 3rem 0 1rem;
+import defaultTheme from '../theme'
 
-  /* Rectangle 3: */
-  background: #FFFFFF;
-  border: 1px solid #CCCCCC;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
-
-  &:hover {
-
+const StyledWrapper = styled.span`
+  & {
+    position: relative;
   }
-  &:focus {
-    outline: none;
-    border-color: ${ props => props.theme.colors.primary }
-  }
-  &:active {
 
-  }
-  &:disabled {
-    opacity: 0.4;
+  > ${ExpandMore} {
+    position: absolute;
+    right: 1rem;
+    top: 0;
+    bottom: 0;
     pointer-events: none;
+    margin: auto;
   }
 `
 
-const Select = (props) => {
-  return <StyledSelect>
-    {props.items.map(
-      (item, i) => (<option key={i} value={item}>{item}</option>)
-    )}
-  </StyledSelect>
+const StyledSelect = styled(Input).attrs({
+  as: 'select'
+})`
+  & {
+    appearance: none;
+    padding: 0 3rem 0 1rem;
+  }
+`
+
+const Select = (props) => (
+  <StyledWrapper>
+    <StyledSelect {...props}>
+      {props.items.map(
+        (item, i) => (<option key={i} value={item}>{item}</option>)
+      )}
+    </StyledSelect>
+    <ExpandMore />
+  </StyledWrapper>
+)
+
+Select.defaultProps = {
+  theme: defaultTheme,
+  as: 'select'
 }
 
-StyledSelect.defaultProps = {
-  theme: theme
-}
+Select.displayName = 'Select'
 
 export default Select

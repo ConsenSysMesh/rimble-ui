@@ -1,103 +1,132 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 import {
   Avatar,
+  Blockie,
+  Box,
   Button,
+  Card,
   Checkbox,
-  Radio,
-  TextButton,
-  OutlineButton,
   Field,
+  Flex,
   Heading,
+  Icon,
+  Image,
   Input,
   Link,
+  Loader,
+  MetaMaskButton,
+  Modal,
+  OutlineButton,
+  Pill,
   Progress,
+  PublicAddress,
+  QR,
+  Radio,
   Select,
   Slider,
   Table,
   Text,
   Textarea,
-  Blockie,
+  TextButton,
+  ThemeProvider,
+  ToastMessage,
   Tooltip,
-  ThemeProvider
-} from 'rimble-ui'
+  theme
+} from "rimble-ui";
+
+const myTheme = {
+  ...theme,
+  colors: {
+    ...theme.colors,
+    primary: "red"
+  }
+};
+
+const testComponents = (props) => (
+  <React.Fragment>
+    <Button size={"medium"}>Click me!</Button>
+    <OutlineButton>Click</OutlineButton>
+    <TextButton>Click</TextButton>
+    <Link>I'm a Link!</Link>
+    <PublicAddress address="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2"/>
+    <Input></Input>
+    <Icon name={'Info'}></Icon>
+    <Icon name={'Info'} color='primary'></Icon>
+    <Tooltip variant='dark' message='Your custom message'>
+      <Text.span>hover me</Text.span>
+    </Tooltip>
+    <Blockie opts={{seed: "foo", color: "#dfe", bgcolor: "#a71", size: 15, scale: 3, spotcolor: "#4E3FCE"}} />
+    <Textarea rows={4} defaultValue='Type here…' />
+    <Text>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta quibusdam, assumenda officiis.</Text>
+    <Avatar/>
+    <Avatar size="small"/>
+    <Avatar size="medium"/>
+    <Avatar size="large"/>
+
+    <Slider />
+    <Select items={['Wandering Thunder','Black Wildflower','Ancient Paper',]} />
+    <Progress value={0.5} />
+    <Heading.h1>Quick zephyrs blow, vexing daft Jim.</Heading.h1>
+
+    <Heading.h2>Quick zephyrs blow, vexing daft Jim.</Heading.h2>
+
+    <Heading.h3>Quick zephyrs blow, vexing daft Jim.</Heading.h3>
+
+    <Heading.h4>Quick zephyrs blow, vexing daft Jim.</Heading.h4>
+
+    <Heading.h5>Quick zephyrs blow, vexing daft Jim.</Heading.h5>
+
+    <Heading.h6>Quick zephyrs blow, vexing daft Jim.</Heading.h6>
+    <Field label='label'>
+      <Input type='text' />
+    </Field>
+    <Radio label="Radio default" />
+    <Radio checked label="Radio checked" />
+    <Radio disabled label="Radio disabled" />
+    <Radio disabled checked label="Radio checked disabled" />
+    <Checkbox label="Checkbox default" />
+    <Checkbox checked label="Checkbox checked" />
+    <Checkbox disabled label="Checkbox disabled" />
+    <Checkbox disabled checked label="Checkbox checked disabled" />
+    <Box></Box>
+    <Card></Card>
+    <Flex></Flex>
+    <Table></Table>
+    <Image src="https://source.unsplash.com/random/1280x720" />
+    <MetaMaskButton />
+    <Loader />
+    <QR value="test" />
+    <Modal />
+    <ToastMessage />
+    <ToastMessage.Processing />
+    <ToastMessage.Success />
+    <ToastMessage.Failure />
+    <Pill mr={'2'} mb={'3'}>{'Pending'}</Pill>
+    <Pill selected={true} mr={'2'} mb={'3'}>{'Pending'}</Pill>
+
+    <Pill color={'primary'} mr={'2'} mb={'3'}>{'Pending'}</Pill>
+    <Pill selected={true} color={'primary'} mr={'2'} mb={'3'}>{'Pending'}</Pill>
+
+    <Pill color={'red'} mr={'2'} mb={'3'}>{'Pending'}</Pill>
+    <Pill selected={true} color={'red'} mr={'2'} mb={'3'}>{'Pending'}</Pill>
+
+    <Pill color={'blue'} mr={'2'} mb={'3'}>{'Pending'}</Pill>
+    <Pill selected={true} color={'blue'} mr={'2'} mb={'3'}>{'Pending'}</Pill>
+  </React.Fragment>
+)
 
 export default class App extends Component {
-  render () {
+  render() {
     return (
-      <ThemeProvider>
-        <Button size={'medium'}>
-          Click me!
-        </Button>
-        <OutlineButton>Click</OutlineButton>
-        <TextButton>Click</TextButton>
-
-        <Heading.h1>
-          Quick zephyrs blow, vexing daft Jim.
-        </Heading.h1>
-        <Heading.h2>
-          Quick zephyrs blow, vexing daft Jim.
-        </Heading.h2>
-        <Heading.h3>
-          Quick zephyrs blow, vexing daft Jim.
-        </Heading.h3>
-        <Heading.h4>
-          Quick zephyrs blow, vexing daft Jim.
-        </Heading.h4>
-        <Heading.h5>
-          Quick zephyrs blow, vexing daft Jim.
-        </Heading.h5>
-        <Heading.h6>
-          Quick zephyrs blow, vexing daft Jim.
-        </Heading.h6>
-
-        <Text>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta quibusdam, assumenda officiis.</Text>
-
-        <Link href='#!'>Click me!</Link>
-
-        <Input type='text' />
-        <Input type='text' disabled/>
-        <Input type='email' name='email' id='email' placeholder='you@example.com'/>
-        <Input type='email' name='email' id='email' placeholder='you@example.com' disabled/>
-
-        <Textarea rows={4} defaultValue='Type here…' />
-
-        <Field htmlFor="">
-          <Checkbox id="blue" name="pill"/>
-          Blue Pill
-        </Field>
-        <Field htmlFor="">
-          <Checkbox id="red" name="pill" />
-          Red Pill
-        </Field>
-
-        <label htmlFor="">
-          <Radio id="blue" name="pill"/>
-          Blue Pill
-        </label>
-        <label htmlFor="">
-          <Radio id="red" name="pill" />
-          Red Pill
-        </label>
-
-        <Select items={['Wandering Thunder','Black Wildflower','Ancient Paper',]} />
-
-        <Slider />
-
-        <Progress value={0.5} />
-
-        <Field label='label'>
-          <Input type='text' />
-        </Field>
-
-        <Avatar />
-
-        <Blockie opts={{seed: "foo", color: "#dfe", bgcolor: "#a71", size: 15, scale: 3, spotcolor: "#000"}} />
-
-        <Tooltip message='Your custom message'>hover me</Tooltip>
-
-        <Table></Table>
-      </ThemeProvider>
-    )
+      <React.Fragment>
+        <div>
+          { testComponents() }
+        </div>
+        <ThemeProvider theme={myTheme}>
+          { testComponents() }
+        </ThemeProvider>
+      </React.Fragment>
+    );
   }
 }

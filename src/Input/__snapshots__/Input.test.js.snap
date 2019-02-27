@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input component sanity matches default snapshot 1`] = `
+.c0 {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  color: #3F3D4B;
+  background-color: #fff;
+  font-size: 1rem;
+  height: 3rem;
+  border: 1px solid transparent;
+  border-color: #CCC;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+  font-size: 1rem;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+}
+
+.c0 {
+  box-sizing: border-box;
+}
+
+.c0 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.c0:hover {
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
+}
+
+.c0:focus {
+  outline: none;
+  border-color: #4E3FCE;
+}
+
+.c0:disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+<input
+  class="c0"
+  color="copyColor"
+  font-family="sansSerif"
+  font-size="1rem"
+  height="3rem"
+>
+  
+</input>
+`;
+
+exports[`Input component sanity matches themed snapshot 1`] = `
+.c1 {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  color: #3F3D4B;
+  background-color: #fff;
+  font-size: 1rem;
+  height: 3rem;
+  border: 1px solid transparent;
+  border-color: #CCC;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+  font-size: 1rem;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+}
+
+.c1 {
+  box-sizing: border-box;
+}
+
+.c1 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.c1:hover {
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
+}
+
+.c1:focus {
+  outline: none;
+  border-color: #4E3FCE;
+}
+
+.c1:disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.c0 {
+  font-size: 1em;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  color: #3F3D4B;
+}
+
+<div
+  class="c0"
+>
+  <input
+    class="c1"
+    color="copyColor"
+    font-family="sansSerif"
+    font-size="1rem"
+    height="3rem"
+  >
+    
+  </input>
+</div>
+`;

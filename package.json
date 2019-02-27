@@ -1,6 +1,6 @@
 {
   "name": "rimble-ui",
-  "version": "0.1.2",
+  "version": "0.4.2",
   "description": "Rimble Design System react component library.",
   "author": "ConsenSys Design",
   "homepage": "https://rimble.consensys.design/",
@@ -23,10 +23,14 @@
     "deploy": "gh-pages -d example/build"
   },
   "dependencies": {
-    "styled-system": "^2.3.6",
-    "polished": "^2.2.0",
+    "@d8660091/react-popper": "^1.0.4",
+    "@svgr/rollup": "^4.1.0",
     "ethereum-blockies": "^0.1.1",
-    "@d8660091/react-popper": "^1.0.4"
+    "jest-styled-components": "^6.3.1",
+    "polished": "^2.3.3",
+    "qrcode.react": "^0.9.2",
+    "rmdi": "^1.0.1",
+    "styled-system": "^3.1.11"
   },
   "peerDependencies": {
     "prop-types": "^15.5.4",
@@ -42,6 +46,9 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "cross-env": "^5.1.4",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.7.1",
+    "enzyme-to-json": "^3.3.5",
     "eslint": "^5.0.1",
     "eslint-config-standard": "^11.0.0",
     "eslint-config-standard-react": "^6.0.0",
@@ -51,8 +58,8 @@
     "eslint-plugin-react": "^7.10.0",
     "eslint-plugin-standard": "^3.1.0",
     "gh-pages": "^1.2.0",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
     "react-scripts": "^1.1.4",
     "rollup": "^0.64.1",
     "rollup-plugin-babel": "^3.0.7",
@@ -65,5 +72,10 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  }
 }

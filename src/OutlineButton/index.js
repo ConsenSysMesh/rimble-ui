@@ -1,25 +1,42 @@
 import React from 'react'
 
 import styled from 'styled-components'
-import { tint } from 'polished'
+import { themeGet } from 'styled-system'
+import { tint, shade } from 'polished'
 
 import Button from '../Button'
 
-import theme from '../theme'
+import defaultTheme from '../theme'
 
-const OutlineButton = styled(Button)`
+const OutlineButton = styled(Button).attrs({
+  primarycolor: props => themeGet('colors.primary', '#000')(props)
+})`
   & {
+    background: white;
   }
   &:hover {
-    background-color: ${props => tint(0.9, props.theme.colors.primary)};
+    color: ${props => tint(0.2, props.primarycolor)};
+    border-color: ${props => tint(0.2, props.primarycolor)};
+    background-color: #FFF;
+  }
+  &:active {
+    color: ${props => shade(0.2, props.primarycolor)};
+    border-color: ${props => shade(0.2, props.primarycolor)};
+    background-color: ${props => tint(0.9, props.primarycolor)};
   }
 `
 
 OutlineButton.defaultProps = {
+  theme: defaultTheme,
   color: 'primary',
-  bg: 'transparent',
+  bg: 'white',
+  fontWeight: 3,
+  fontFamily: 'sansSerif',
+  height: '48px',
   border: 1,
-  theme: theme,
+  borderColor: 'grey',
+  px: 4,
+  py: 0,
   borderRadius: 1,
 }
 

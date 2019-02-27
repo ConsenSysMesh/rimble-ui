@@ -1,15 +1,23 @@
 import { configure, addDecorator } from '@storybook/react'
-import { withInfo } from '@storybook/addon-info'
 import { withOptions } from '@storybook/addon-options';
+import { withThemesProvider } from 'storybook-addon-styled-component-theme';
 
-import React from 'react';
-import { ThemeProvider } from 'rimble-ui'
+import { theme } from 'rimble-ui'
 
-addDecorator(
-  withInfo({
-    inline: false
-  })
-)
+const theme1 = {
+  ...theme,
+  name: 'Rimble Theme'
+}
+const theme2 = {
+  ...theme,
+  name: 'Blue Theme',
+  colors: {
+    ...theme.colors,
+    primary: '#2c56dd'
+  }
+}
+
+const themes = [theme1, theme2];
 
 addDecorator(
   withOptions({
@@ -18,11 +26,7 @@ addDecorator(
   })
 )
 
-addDecorator((story) => (
-  <ThemeProvider>
-    {story()}
-  </ThemeProvider>
-))
+addDecorator(withThemesProvider(themes));
 
 function loadStories() {
   const req = require.context('../src/stories', true, /\.stories\.js$/)

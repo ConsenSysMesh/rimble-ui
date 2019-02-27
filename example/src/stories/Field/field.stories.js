@@ -7,9 +7,9 @@ import MyREADME from './README.md';
 import { Field } from 'rimble-ui'
 import { Input } from 'rimble-ui'
 
-storiesOf('Form/Field', module)
+storiesOf('Form', module)
   .addDecorator(withDocs(MyREADME))
-  .add('default', () => (
+  .add('Field', () => (
     <Field label='label'>
       <Input type='text' />
     </Field>

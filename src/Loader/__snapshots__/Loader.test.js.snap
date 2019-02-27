@@ -1,0 +1,175 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Loader component sanity matches default snapshot 1`] = `
+.c0 {
+  color: #4E3FCE;
+  background-color: transparent;
+  height: 1rem;
+  width: 1rem;
+  text-align: left;
+}
+
+.c0 {
+  box-sizing: border-box;
+}
+
+.c0 {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.c0 > svg {
+  fill: currentColor;
+  height: 100%;
+  width: 100%;
+  display: block;
+  -webkit-animation: bAyNlV 1000ms linear infinite;
+  animation: bAyNlV 1000ms linear infinite;
+  -webkit-animation-timing-function: cubic-bezier(0.445,0.05,0.55,0.95);
+  animation-timing-function: cubic-bezier(0.445,0.05,0.55,0.95);
+}
+
+<div
+  class="c0"
+  color="primary"
+>
+  <svg
+    fill="currentColor"
+    height="24"
+    viewBox="0 0 24 24"
+    width="24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      clip-rule="evenodd"
+      d="M12 20.5714C16.7339 20.5714 20.5714 16.7339 20.5714 12C20.5714 7.26613 16.7339 3.42857 12 3.42857C7.26613 3.42857 3.42857 7.26613 3.42857 12C3.42857 16.7339 7.26613 20.5714 12 20.5714ZM12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z"
+      fill="currentColor"
+      fill-rule="evenodd"
+      opacity="0.25"
+    >
+      
+    </path>
+    <mask
+      height="24"
+      id="mask0"
+      mask-type="alpha"
+      maskUnits="userSpaceOnUse"
+      width="24"
+      x="0"
+      y="0"
+    >
+      <path
+        clip-rule="evenodd"
+        d="M12 20.5714C16.7339 20.5714 20.5714 16.7339 20.5714 12C20.5714 7.26613 16.7339 3.42857 12 3.42857C7.26613 3.42857 3.42857 7.26613 3.42857 12C3.42857 16.7339 7.26613 20.5714 12 20.5714ZM12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z"
+        fill="currentColor"
+        fill-rule="evenodd"
+      >
+        
+      </path>
+    </mask>
+    <g
+      mask="url(#mask0)"
+    >
+      <path
+        d="M12 24V15.8824V12H24V24H12Z"
+        fill="currentColor"
+      >
+        
+      </path>
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`Loader component sanity matches themed snapshot 1`] = `
+.c1 {
+  color: #4E3FCE;
+  background-color: transparent;
+  height: 1rem;
+  width: 1rem;
+  text-align: left;
+}
+
+.c1 {
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.c1 > svg {
+  fill: currentColor;
+  height: 100%;
+  width: 100%;
+  display: block;
+  -webkit-animation: bAyNlV 1000ms linear infinite;
+  animation: bAyNlV 1000ms linear infinite;
+  -webkit-animation-timing-function: cubic-bezier(0.445,0.05,0.55,0.95);
+  animation-timing-function: cubic-bezier(0.445,0.05,0.55,0.95);
+}
+
+.c0 {
+  font-size: 1em;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  color: #3F3D4B;
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1"
+    color="primary"
+  >
+    <svg
+      fill="currentColor"
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        clip-rule="evenodd"
+        d="M12 20.5714C16.7339 20.5714 20.5714 16.7339 20.5714 12C20.5714 7.26613 16.7339 3.42857 12 3.42857C7.26613 3.42857 3.42857 7.26613 3.42857 12C3.42857 16.7339 7.26613 20.5714 12 20.5714ZM12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z"
+        fill="currentColor"
+        fill-rule="evenodd"
+        opacity="0.25"
+      >
+        
+      </path>
+      <mask
+        height="24"
+        id="mask0"
+        mask-type="alpha"
+        maskUnits="userSpaceOnUse"
+        width="24"
+        x="0"
+        y="0"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 20.5714C16.7339 20.5714 20.5714 16.7339 20.5714 12C20.5714 7.26613 16.7339 3.42857 12 3.42857C7.26613 3.42857 3.42857 7.26613 3.42857 12C3.42857 16.7339 7.26613 20.5714 12 20.5714ZM12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z"
+          fill="currentColor"
+          fill-rule="evenodd"
+        >
+          
+        </path>
+      </mask>
+      <g
+        mask="url(#mask0)"
+      >
+        <path
+          d="M12 24V15.8824V12H24V24H12Z"
+          fill="currentColor"
+        >
+          
+        </path>
+      </g>
+    </svg>
+  </div>
+</div>
+`;
