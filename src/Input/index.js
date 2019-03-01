@@ -24,12 +24,24 @@ const Input = styled(Box)`
     outline: none;
     border-color: ${themeGet('colors.primary', '#000')};
   }
-  &:active {
 
-  }
+  &:active {}
+
   &:disabled {
     opacity: 0.4;
     pointer-events: none;
+  }
+
+  &:focus:required:valid {
+    border-color: green;
+  }
+
+  &:focus:required:invalid {
+    border-color: red;
+  }
+
+  &:required {
+
   }
 
   ${boxShadow}
