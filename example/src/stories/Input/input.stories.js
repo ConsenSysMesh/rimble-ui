@@ -41,7 +41,7 @@ storiesOf('Form/Input', module)
 storiesOf('Form/Validation', module)
 .add('Form', () => (
   <div>
-    <form>
+    <form onSubmit={(event) => event.preventDefault()}>
       <Field for="choose" label='Would you prefer a banana or cherry?'>
         <Input id="choose" name="i_like" required />
       </Field>
@@ -71,12 +71,12 @@ storiesOf('Form/Validation', module)
 .add('Form with Card', () => (
   <div>
     <Card>
-      <form action="">
+      <form onSubmit={(event) => event.preventDefault()}>
         <Field label='Email' width={1}>
-          <Input required width={1}/>
+          <Input type="email" required width={1}/>
         </Field>
         <Field label='Password' width={1}>
-          <Input required width={1}/>
+          <Input type="password" required width={1}/>
         </Field>
         <Checkbox label="Remember me?" mb={3} />
         <Button type="submit" width={1}>Sign Up</Button>
