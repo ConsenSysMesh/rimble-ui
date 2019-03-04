@@ -43,7 +43,7 @@ storiesOf('Form/Validation', module)
   <div>
     <form onSubmit={(event) => event.preventDefault()}>
       <Field for="choose" label='Would you prefer a banana or cherry?'>
-        <Input id="choose" name="i_like" required />
+        <Input id="choose" name="i_like" required pattern="banana|cherry" />
       </Field>
       <Field label='Would you prefer a red or blue?'>
         <Input id="choose" name="i_like" />
