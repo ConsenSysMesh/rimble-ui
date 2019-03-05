@@ -4,12 +4,6 @@ import styled from 'styled-components'
 import Box from '../Box'
 import Text from '../Text'
 
-const WithValidationIcon = styled(Box)`
-  & {
-    
-  }
-`
-
 const RequiredLabel = styled(Text)`
   &:after {
     content: ' (required)'

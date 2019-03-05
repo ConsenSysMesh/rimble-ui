@@ -9,8 +9,32 @@ import {
 } from 'styled-system'
 
 import Box from '../Box'
+import Icon from '../Icon'
 
 import defaultTheme from '../theme'
+
+const StyledIconWrapper = styled(Box)`
+  & {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  > svg {
+    position: absolute;
+    right: 1rem;
+    visibility: hidden;
+  }
+`
+
+const WithIconWrapper = ({className, ...props}) => {
+  return  (
+    <StyledIconWrapper className={className} {...props} >
+      <Input className={className} {...props} />
+      <Icon className={'icon-valid'} name={'CheckCircle'} color={'#28C081'} />
+      <Icon className={'icon-invalid'} name={'Warning'} color={'#DC2C10'} />
+    </StyledIconWrapper>
+  )
+}
 
 const Input = styled(Box)`
   & {
@@ -33,15 +57,22 @@ const Input = styled(Box)`
   }
 
   &:focus:required:valid {
-    border-color: green;
+    border-color: #28C081;
   }
 
   &:focus:required:invalid {
     border-color: red;
   }
 
-  &:required {
+  ${'' /* &:required {
+  } */}
 
+  &:focus:required:valid ~ svg.icon-valid {
+    visibility: visible;
+  }
+
+  &:focus:required:invalid ~ svg.icon-invalid {
+    visibility: visible;
   }
 
   ${boxShadow}
@@ -68,4 +99,4 @@ Input.defaultProps = {
 
 Input.displayName = 'Input'
 
-export default Input
+export default WithIconWrapper
