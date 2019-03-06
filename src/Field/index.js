@@ -4,9 +4,9 @@ import styled from 'styled-components'
 import Box from '../Box'
 import Text from '../Text'
 
-const RequiredLabel = styled(Text)`
+const OptionalLabel = styled(Text)`
   &:after {
-    content: ' (required)'
+    content: ' (optional)'
   }
 `
 
@@ -22,8 +22,8 @@ const Field = ({ children, label, ...props }) => {
       {...props}
     >
 
-      {!children.props.required && <Text fontSize={1} fontWeight={3} mb={2}>{label}</Text> }
-      {children.props.required && <RequiredLabel fontSize={1} fontWeight={3} mb={2}>{label}</RequiredLabel> }
+      {children.props.required && <Text fontSize={1} fontWeight={3} mb={2}>{label}</Text> }
+      {!children.props.required && <OptionalLabel fontSize={1} fontWeight={3} mb={2}>{label}</OptionalLabel> }
       {children}
     </Box>
   )
