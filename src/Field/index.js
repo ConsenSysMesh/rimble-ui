@@ -6,12 +6,34 @@ import Text from '../Text'
 
 const OptionalLabel = styled(Text)`
   &:after {
-    content: ' (optional)'
+    content: ' (optional)';
+    font-weight: normal;
+    font-style: italic;
   }
 `
 
-const Field = ({ children, label, ...props }) => {
-  console.log(children.props.required)
+const Field = ({ label, children, ...props }) => {
+
+  const isRequired = (children) => {
+    let value = false
+    React.Children.forEach(children, child => {
+      if (child.props.required) { value = true }
+    })
+    return value
+  }
+
+  const renderLabel = (required) => {
+    if (required) {
+      return (
+        <Text fontSize={1} fontWeight={3} mb={2}>{label}</Text>
+      )
+    } else {
+      return (
+        <OptionalLabel fontSize={1} fontWeight={3} mb={2}>{label}</OptionalLabel>
+      )
+    }
+  }
+
   return (
     <Box
       as='label'
@@ -21,10 +43,8 @@ const Field = ({ children, label, ...props }) => {
       mb={3}
       {...props}
     >
-
-      {children.props.required && <Text fontSize={1} fontWeight={3} mb={2}>{label}</Text> }
-      {!children.props.required && <OptionalLabel fontSize={1} fontWeight={3} mb={2}>{label}</OptionalLabel> }
-      {children}
+      { renderLabel(isRequired(children)) }
+      { children }
     </Box>
   )
 }
