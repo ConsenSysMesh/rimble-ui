@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { storiesOf } from '@storybook/react'
 import { withDocs } from 'storybook-readme';
 
@@ -11,8 +11,29 @@ import { Field } from 'rimble-ui'
 import { Checkbox } from 'rimble-ui'
 import { Image } from 'rimble-ui'
 import { Flex } from 'rimble-ui'
-
 import { Card } from 'rimble-ui'
+
+class MyCustomForm extends Component {
+
+  render() {
+    return (
+      <form onSubmit={(event) => event.preventDefault()}>
+        <Field label='Email' width={1}>
+          <Input type="email" required width={1}/>
+        </Field>
+        <Field label='Password' width={1}>
+          <Input type="password" required width={1}/>
+        </Field>
+        <Checkbox label="Remember me?" mb={3} />
+        <Button type="submit" width={1}>Sign Up</Button>
+      </form>
+    );
+  }
+
+}
+
+
+
 
 storiesOf('Form/Input', module)
   .addDecorator(withDocs(MyREADME))
@@ -71,16 +92,7 @@ storiesOf('Form/Validation', module)
 .add('Form with Card', () => (
   <div>
     <Card>
-      <form onSubmit={(event) => event.preventDefault()}>
-        <Field label='Email' width={1}>
-          <Input type="email" required width={1}/>
-        </Field>
-        <Field label='Password' width={1}>
-          <Input type="password" required width={1}/>
-        </Field>
-        <Checkbox label="Remember me?" mb={3} />
-        <Button type="submit" width={1}>Sign Up</Button>
-      </form>
+      <MyCustomForm />
     </Card>
   </div>
 ))
