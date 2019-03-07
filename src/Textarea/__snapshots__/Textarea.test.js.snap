@@ -39,6 +39,22 @@ exports[`Textarea component sanity matches default snapshot 1`] = `
   pointer-events: none;
 }
 
+.was-validated .c0:valid {
+  border-color: #28C081;
+}
+
+.was-validated .c0:valid ~ svg.icon-valid {
+  visibility: visible;
+}
+
+.was-validated .c0:invalid {
+  border-color: #EC9081;
+}
+
+.was-validated .c0:invalid ~ svg.icon-invalid {
+  visibility: visible;
+}
+
 .c0 {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -93,6 +109,22 @@ exports[`Textarea component sanity matches themed snapshot 1`] = `
 .c1:disabled {
   opacity: 0.4;
   pointer-events: none;
+}
+
+.was-validated .c1:valid {
+  border-color: #28C081;
+}
+
+.was-validated .c1:valid ~ svg.icon-valid {
+  visibility: visible;
+}
+
+.was-validated .c1:invalid {
+  border-color: #EC9081;
+}
+
+.was-validated .c1:invalid ~ svg.icon-invalid {
+  visibility: visible;
 }
 
 .c1 {
