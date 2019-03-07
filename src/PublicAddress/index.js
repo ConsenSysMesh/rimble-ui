@@ -26,7 +26,7 @@ const fadeOut = keyframes`
   }
 `
 
-const StyledInput = styled(Input)`
+const StyledInput = styled(Input.InputOnly)`
   text-overflow: ellipsis;
   white-space: no-wrap;
 `
