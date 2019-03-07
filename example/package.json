@@ -5,10 +5,10 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "prop-types": "^15.6.2",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
-    "react-scripts": "^1.1.4",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-scripts": "^2.1.8",
     "rimble-ui": "link:.."
   },
   "scripts": {
@@ -21,15 +21,15 @@
     "deploy-storybook": "storybook-to-ghpages"
   },
   "devDependencies": {
-    "@babel/core": "^7.1.5",
-    "@storybook/addon-actions": "^4.0.4",
-    "@storybook/addon-links": "^4.0.4",
-    "@storybook/addon-options": "^4.0.7",
-    "@storybook/addons": "^4.0.4",
-    "@storybook/react": "^4.0.4",
-    "@storybook/storybook-deployer": "^2.3.0",
-    "babel-loader": "^8.0.4",
+    "@babel/core": "^7.3.4",
+    "@storybook/addon-actions": "^5.0.0",
+    "@storybook/addon-links": "^5.0.0",
+    "@storybook/addon-options": "^5.0.0",
+    "@storybook/addons": "^5.0.0",
+    "@storybook/react": "^5.0.0",
+    "@storybook/storybook-deployer": "^2.8.1",
+    "babel-loader": "^8.0.5",
     "storybook-addon-styled-component-theme": "^1.1.1",
-    "storybook-readme": "^4.0.2"
+    "storybook-readme": "^4.0.5"
   }
 }
