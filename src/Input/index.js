@@ -13,6 +13,45 @@ import Icon from '../Icon'
 
 import defaultTheme from '../theme'
 
+const Input = styled(Box)`
+  & {
+    appearance: none;
+  }
+
+  &:hover {
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+  }
+
+  &:focus {
+    outline: none;
+    border-color: ${themeGet('colors.primary', '#000')};
+  }
+
+  &:disabled {
+    opacity: 0.4;
+    pointer-events: none;
+  }
+
+  .was-validated & {
+    &:valid {
+      border-color: #28C081;
+    }
+    &:valid ~ svg.icon-valid {
+      visibility: visible;
+    }
+    &:invalid {
+      border-color: #EC9081;
+    }
+    &:invalid ~ svg.icon-invalid {
+      visibility: visible;
+    }
+  }
+
+  ${boxShadow}
+  ${fontSize}
+  ${fontFamily}
+`
+
 const StyledIconWrapper = styled(Box)`
   & {
     position: relative;
@@ -36,50 +75,6 @@ const WithIconWrapper = ({className, ...props}) => {
   )
 }
 
-const Input = styled(Box)`
-  & {
-    appearance: none;
-  }
-
-  &:hover {
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
-  }
-  &:focus {
-    outline: none;
-    border-color: ${themeGet('colors.primary', '#000')};
-  }
-
-  &:active {}
-
-  &:disabled {
-    opacity: 0.4;
-    pointer-events: none;
-  }
-
-  &:focus:required:valid {
-    border-color: #28C081;
-  }
-
-  &:focus:required:invalid {
-    border-color: red;
-  }
-
-  ${'' /* &:required {
-  } */}
-
-  &:focus:required:valid ~ svg.icon-valid {
-    visibility: visible;
-  }
-
-  &:focus:required:invalid ~ svg.icon-invalid {
-    visibility: visible;
-  }
-
-  ${boxShadow}
-  ${fontSize}
-  ${fontFamily}
-`
-
 Input.defaultProps = {
   theme: defaultTheme,
   as: 'input',
@@ -98,5 +93,7 @@ Input.defaultProps = {
 }
 
 Input.displayName = 'Input'
+
+Input.InputOnly = Input;
 
 export default WithIconWrapper
