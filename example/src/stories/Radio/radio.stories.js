@@ -6,7 +6,7 @@ import MyREADME from './README.md';
 
 import { Radio } from 'rimble-ui'
 
-storiesOf('Form', module)
+storiesOf('Form/Inputs', module)
   .addDecorator(withDocs(MyREADME))
   .add('Radio', () => (
     <div>
