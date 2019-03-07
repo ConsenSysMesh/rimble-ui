@@ -6,7 +6,12 @@ import { tint, shade } from 'polished'
 import Button from '../Button'
 import { ReactComponent as UPortLogo } from './icon.svg'
 
-const uPortBrandColor = '#5c50ca'
+const uPortBrandColor = {
+  baseColor: '#5c50ca',
+  hoverColor: tint(0.1, '#5c50ca'),
+  activeColor: shade(0.1, '#5c50ca'),
+  foregroundColor: '#FFFFFF',
+}
 
 const ProtoButton = ({className, ...props}) => {
   return (
@@ -23,7 +28,7 @@ const StyledButton = styled(ProtoButton)`
   }
 
   > span {
-    display: inherit;
+    display: flex;
     align-items: center;
   }
 
@@ -37,18 +42,17 @@ const StyledButton = styled(ProtoButton)`
 
 const UPortButtonSolid = styled(StyledButton)`
   & {
-    color: white;
-    background: ${uPortBrandColor};
+    color: ${uPortBrandColor.foregroundColor};
+    background: ${uPortBrandColor.baseColor};
   }
   &:hover {
-    background-color: ${tint(0.1, uPortBrandColor)};
+    background-color: ${uPortBrandColor.hoverColor};
   }
   &:active {
-    background-color: ${shade(0.1, uPortBrandColor)};
+    background-color: ${uPortBrandColor.activeColor};
   }
-
   > span > svg:first-child {
-    fill: white;
+    ${uPortBrandColor.foregroundColor}
   }
 `
 
