@@ -1,10 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import styled from 'styled-components'
+import { tint, shade } from 'polished'
 
 import Button from '../Button'
 import { ReactComponent as UPortLogo } from './icon.svg'
+
+const uPortBrandColor = '#5c50ca'
 
 const ProtoButton = ({className, ...props}) => {
   return (
@@ -16,6 +18,10 @@ const ProtoButton = ({className, ...props}) => {
 }
 
 const StyledButton = styled(ProtoButton)`
+  & {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
   > span {
     display: inherit;
     align-items: center;
@@ -32,14 +38,17 @@ const StyledButton = styled(ProtoButton)`
 const UPortButtonSolid = styled(StyledButton)`
   & {
     color: white;
-    background: rebeccapurple;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    background: ${uPortBrandColor};
   }
   &:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: ${tint(0.1, uPortBrandColor)};
   }
   &:active {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: ${shade(0.1, uPortBrandColor)};
+  }
+
+  > span > svg:first-child {
+    fill: white;
   }
 `
 
@@ -48,7 +57,6 @@ const UPortButtonOutline = styled(StyledButton)`
     color: #333333;
     background: #FFFFFF;
     border: 1px solid #CCCCCC;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   }
   &:hover {
     background-color: #F3F2F2;
@@ -60,6 +68,9 @@ const UPortButtonOutline = styled(StyledButton)`
 
 const UPortButton = UPortButtonOutline;
 
-UPortButton.displayName = 'MetaMaskButton'
+UPortButton.Solid = UPortButtonSolid
+UPortButton.Outline = UPortButtonOutline
+
+UPortButton.displayName = 'UPortButton'
 
 export default UPortButton;

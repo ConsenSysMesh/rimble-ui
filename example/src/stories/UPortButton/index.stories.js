@@ -10,6 +10,7 @@ storiesOf('Button', module)
   .addDecorator(withDocs(MyREADME))
   .add('UPortButton', () => (
     <div>
-      <UPortButton>Connect with uPort</UPortButton>
+      <UPortButton mb={3}>Connect with uPort</UPortButton>
+      <UPortButton.Solid>Connect with uPort</UPortButton.Solid>
     </div>
   ))
