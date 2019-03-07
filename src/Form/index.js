@@ -30,6 +30,8 @@ Form.defaultProps = {
   validated: false
 };
 
+Form.displayName = 'Form'
+
 Form.Input = Input;
 Form.Field = Field;
 Form.Check = Checkbox;
