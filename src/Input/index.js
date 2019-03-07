@@ -94,6 +94,6 @@ Input.defaultProps = {
 
 Input.displayName = 'Input'
 
-Input.InputOnly = Input;
+WithIconWrapper.InputOnly = Input;
 
 export default WithIconWrapper

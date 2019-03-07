@@ -6,7 +6,7 @@ import Input from '../Input'
 
 import defaultTheme from '../theme'
 
-const Textarea = styled(Input)`
+const Textarea = styled(Input.InputOnly)`
   & {
     appearance: none;
   }

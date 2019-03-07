@@ -1,9 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import ExpandMore from 'rmdi/lib/ExpandMore'
-
 import Input from '../Input'
+import ExpandMore from 'rmdi/lib/ExpandMore'
 
 import defaultTheme from '../theme'
 
@@ -22,9 +21,7 @@ const StyledWrapper = styled.span`
   }
 `
 
-const StyledSelect = styled(Input).attrs({
-  as: 'select'
-})`
+const StyledSelect = styled(Input.InputOnly)`
   & {
     appearance: none;
     padding: 0 3rem 0 1rem;
@@ -33,7 +30,7 @@ const StyledSelect = styled(Input).attrs({
 
 const Select = (props) => (
   <StyledWrapper>
-    <StyledSelect {...props}>
+    <StyledSelect {...props} as={'select'}>
       {props.items.map(
         (item, i) => (<option key={i} value={item}>{item}</option>)
       )}
