@@ -1,8 +1,23 @@
-import { configure, addDecorator } from '@storybook/react'
-import { withOptions } from '@storybook/addon-options';
+import { configure, addDecorator, addParameters } from '@storybook/react'
+import { create } from '@storybook/theming';
 import { withThemesProvider } from 'storybook-addon-styled-component-theme';
 
 import { theme } from 'rimble-ui'
+
+addParameters({
+  options: {
+    theme: create({
+      base: 'light',
+      brandTitle: 'Rimble UI',
+      brandUrl: 'https://rimble.consensys.design/',
+      // To control appearance:
+      // brandImage: 'http://url.of/some.svg',
+    }),
+    isFullscreen: false,
+    showPanel: false,
+    panelPosition: 'bottom',
+  },
+});
 
 const theme1 = {
   ...theme,
@@ -18,13 +33,6 @@ const theme2 = {
 }
 
 const themes = [theme1, theme2];
-
-addDecorator(
-  withOptions({
-    name: 'Rimble UI',
-    url: 'https://rimble.consensys.design/',
-  })
-)
 
 addDecorator(withThemesProvider(themes));
 
