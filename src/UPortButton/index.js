@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components'
 import { tint, shade } from 'polished'
 
@@ -52,7 +51,7 @@ const UPortButtonSolid = styled(StyledButton)`
     background-color: ${uPortBrandColor.activeColor};
   }
   > span > svg:first-child {
-    ${uPortBrandColor.foregroundColor}
+    fill: ${uPortBrandColor.foregroundColor};
   }
 `
 
@@ -70,8 +69,17 @@ const UPortButtonOutline = styled(StyledButton)`
   }
 `
 
-const UPortButton = UPortButtonOutline;
+const defaultProps = {
+  width: [1, 'auto']
+}
 
+UPortButtonSolid.defaultProps = defaultProps;
+UPortButtonOutline.defaultProps = defaultProps;
+
+
+let UPortButton;
+
+UPortButton = UPortButtonOutline
 UPortButton.Solid = UPortButtonSolid
 UPortButton.Outline = UPortButtonOutline
 
