@@ -1303,6 +1303,22 @@
     prop-types "^15.6.2"
     qs "^6.5.2"
 
+"@storybook/addon-viewport@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-viewport/-/addon-viewport-5.0.0.tgz#7033daf3041116d7d960a3fd4ecfc1994de6f791"
+  integrity sha512-ksi6Svm7NhPXwVTkeAOf/aJ8d3DN1P9TGwsF/6ZyfSBKscTtz8rJ0AIlpxQhiAVwpixLojXZXNH+1UM+C1L/PQ==
+  dependencies:
+    "@storybook/addons" "5.0.0"
+    "@storybook/client-logger" "5.0.0"
+    "@storybook/components" "5.0.0"
+    "@storybook/core-events" "5.0.0"
+    "@storybook/theming" "5.0.0"
+    core-js "^2.6.2"
+    global "^4.3.2"
+    memoizerific "^1.11.3"
+    prop-types "^15.6.2"
+    util-deprecate "^1.0.2"
+
 "@storybook/addons@5.0.0", "@storybook/addons@^5.0.0":
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/@storybook/addons/-/addons-5.0.0.tgz#543b7d7166b9e2dd46467a3bc8f68074fa156cce"
