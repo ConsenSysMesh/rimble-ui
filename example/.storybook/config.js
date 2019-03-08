@@ -11,7 +11,7 @@ addParameters({
       brandTitle: 'Rimble UI',
       brandUrl: 'https://rimble.consensys.design/',
       // To control appearance:
-      // brandImage: 'http://url.of/some.svg',
+      brandImage: './rimble-logotype.svg',
     }),
     isFullscreen: false,
     showPanel: false,
