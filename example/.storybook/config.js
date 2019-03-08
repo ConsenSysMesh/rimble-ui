@@ -4,6 +4,10 @@ import { withThemesProvider } from 'storybook-addon-styled-component-theme';
 
 import { theme } from 'rimble-ui'
 
+addParameters({ viewport: {
+  defaultViewport: 'responsive'
+} });
+
 addParameters({
   options: {
     theme: create({
