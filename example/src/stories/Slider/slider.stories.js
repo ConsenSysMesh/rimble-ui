@@ -6,6 +6,6 @@ import MyREADME from './README.md';
 
 import { Slider } from 'rimble-ui'
 
-storiesOf('Form', module)
+storiesOf('Form/Inputs', module)
   .addDecorator(withDocs(MyREADME))
   .add('Slider', () => <Slider />)

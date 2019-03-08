@@ -5,9 +5,8 @@ import { withDocs } from 'storybook-readme';
 import MyREADME from './README.md';
 
 import { Checkbox } from 'rimble-ui'
-import { Field } from 'rimble-ui'
 
-storiesOf('Form', module)
+storiesOf('Form/Inputs', module)
   .addDecorator(withDocs(MyREADME))
   .add('Checkbox', () => (
     <div>
