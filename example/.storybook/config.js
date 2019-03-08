@@ -22,7 +22,7 @@ addParameters({
     }),
     isFullscreen: false,
     showPanel: false,
-    panelPosition: 'bottom',
+    panelPosition: 'right',
   },
 });
 
