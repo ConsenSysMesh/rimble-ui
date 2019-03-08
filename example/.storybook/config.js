@@ -1,8 +1,11 @@
 import { configure, addDecorator, addParameters } from '@storybook/react'
 import { create } from '@storybook/theming';
+import { withA11y } from '@storybook/addon-a11y';
 import { withThemesProvider } from 'storybook-addon-styled-component-theme';
 
 import { theme } from 'rimble-ui'
+
+addDecorator(withA11y)
 
 addParameters({ viewport: {
   defaultViewport: 'responsive'
