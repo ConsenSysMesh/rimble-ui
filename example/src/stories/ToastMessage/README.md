@@ -123,10 +123,6 @@ import { ToastMessage } from 'rimble-ui'
 - A transaction has started
 - You're now logged in to your wallet
 
----
-
--
-
 ## Title and subtext (+ optional icon)
 
 *For when you want to provide more value through extra helpful information. Ask yourself when implementing your toast: is there anything else I could tell the user that would be useful?*
@@ -143,8 +139,6 @@ import { ToastMessage } from 'rimble-ui'
 - You want to tell the user that they're on the Rinkeby network and want to remind them that to use your dApp for real they should switch to Mainnet. ACTION: Switch to Mainnet
 
 ---
-
--
 
 ## How to write `Processing`, `success` and `failure` messages
 
