@@ -1,25 +1,25 @@
 import React from 'react';
-import styled from 'styled-components'
-import { tint, shade } from 'polished'
+import styled from 'styled-components';
+import { tint, shade } from 'polished';
 
-import Button from '../Button'
-import { ReactComponent as UPortLogo } from './icon.svg'
+import Button from '../Button';
+import { ReactComponent as UPortLogo } from './icon.svg';
 
 const uPortBrandColor = {
   baseColor: '#5c50ca',
   hoverColor: tint(0.1, '#5c50ca'),
   activeColor: shade(0.1, '#5c50ca'),
   foregroundColor: '#FFFFFF',
-}
+};
 
-const ProtoButton = ({className, ...props}) => {
+const ProtoButton = ({ className, ...props }) => {
   return (
     <Button className={className} {...props}>
       <UPortLogo />
       {props.children}
     </Button>
   );
-}
+};
 
 const StyledButton = styled(ProtoButton)`
   & {
@@ -33,11 +33,11 @@ const StyledButton = styled(ProtoButton)`
 
   > span > svg:first-child {
     display: block;
-    height: ${ props => props.size === 'small' ? '16px' : '24px'};
-    width: ${ props => props.size === 'small' ? '16px' : '24px'};
-    margin-right: .5rem;
+    height: ${props => (props.size === 'small' ? '16px' : '24px')};
+    width: ${props => (props.size === 'small' ? '16px' : '24px')};
+    margin-right: 0.5rem;
   }
-`
+`;
 
 const UPortButtonSolid = styled(StyledButton)`
   & {
@@ -53,36 +53,35 @@ const UPortButtonSolid = styled(StyledButton)`
   > span > svg:first-child {
     fill: ${uPortBrandColor.foregroundColor};
   }
-`
+`;
 
 const UPortButtonOutline = styled(StyledButton)`
   & {
     color: #333333;
-    background: #FFFFFF;
-    border: 1px solid #CCCCCC;
+    background: #ffffff;
+    border: 1px solid #cccccc;
   }
   &:hover {
-    background-color: #F3F2F2;
+    background-color: #f3f2f2;
   }
   &:active {
-    background-color: #E4E4E4;
+    background-color: #e4e4e4;
   }
-`
+`;
 
 const defaultProps = {
-  width: [1, 'auto']
-}
+  width: [1, 'auto'],
+};
 
 UPortButtonSolid.defaultProps = defaultProps;
 UPortButtonOutline.defaultProps = defaultProps;
 
-
 let UPortButton;
 
-UPortButton = UPortButtonOutline
-UPortButton.Solid = UPortButtonSolid
-UPortButton.Outline = UPortButtonOutline
+UPortButton = UPortButtonOutline;
+UPortButton.Solid = UPortButtonSolid;
+UPortButton.Outline = UPortButtonOutline;
 
-UPortButton.displayName = 'UPortButton'
+UPortButton.displayName = 'UPortButton';
 
 export default UPortButton;

@@ -1,25 +1,22 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 import styled, {
   createGlobalStyle,
-  ThemeProvider as StyledThemeProvider
-} from 'styled-components'
+  ThemeProvider as StyledThemeProvider,
+} from 'styled-components';
 
-import {
-  normalize,
-  transparentize
-} from 'polished'
+import { normalize, transparentize } from 'polished';
 
-import theme from '../theme'
+import theme from '../theme';
 
 export const Base = styled.div`
   & {
     font-size: 1em;
     font-family: ${props => props.theme.fonts.sansSerif};
-    color: ${props => props.theme.colors.copyColor}
+    color: ${props => props.theme.colors.copyColor};
   }
-`
+`;
 
 const GlobalStyle = createGlobalStyle`
   ${normalize()}
@@ -30,9 +27,9 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: inherit;
   }
   ::selection {
-    background: ${ props => transparentize(0.7, props.theme.colors.primary) };
+    background: ${props => transparentize(0.7, props.theme.colors.primary)};
   }
-`
+`;
 
 const ThemeProvider = ({ ...props }) => {
   return (
@@ -42,10 +39,9 @@ const ThemeProvider = ({ ...props }) => {
         <Base {...props} />
       </React.Fragment>
     </StyledThemeProvider>
-  )
-}
+  );
+};
 
-ThemeProvider.propTypes = {
-}
+ThemeProvider.propTypes = {};
 
-export default ThemeProvider
+export default ThemeProvider;

@@ -1,18 +1,18 @@
-import UPortButton from "./";
-import ThemeProvider from "../ThemeProvider";
-import theme from "../theme";
+import UPortButton from './';
+import ThemeProvider from '../ThemeProvider';
+import theme from '../theme';
 
-describe("UPortButton component sanity", () => {
-  it("has name", () => {
-    expect(UPortButton.displayName).toBe("UPortButton");
+describe('UPortButton component sanity', () => {
+  it('has name', () => {
+    expect(UPortButton.displayName).toBe('UPortButton');
   });
 
-  it("matches default snapshot", () => {
+  it('matches default snapshot', () => {
     const component = shallow(<UPortButton />);
     expect(component).toMatchSnapshot();
   });
 
-  it("matches themed snapshot", () => {
+  it('matches themed snapshot', () => {
     const component = shallow(
       <ThemeProvider theme={theme}>
         <UPortButton />

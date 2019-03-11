@@ -1,17 +1,12 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
-import {
-  themeGet,
-  fontSize,
-  fontFamily,
-  boxShadow
-} from 'styled-system'
+import { themeGet, fontSize, fontFamily, boxShadow } from 'styled-system';
 
-import Box from '../Box'
-import Icon from '../Icon'
+import Box from '../Box';
+import Icon from '../Icon';
 
-import defaultTheme from '../theme'
+import defaultTheme from '../theme';
 
 const Input = styled(Box)`
   & {
@@ -50,7 +45,7 @@ const Input = styled(Box)`
   ${boxShadow}
   ${fontSize}
   ${fontFamily}
-`
+`;
 
 const StyledIconWrapper = styled(Box)`
   & {
@@ -63,17 +58,17 @@ const StyledIconWrapper = styled(Box)`
     right: 1rem;
     visibility: hidden;
   }
-`
+`;
 
-const WithIconWrapper = ({className, ...props}) => {
-  return  (
-    <StyledIconWrapper className={className} {...props} >
+const WithIconWrapper = ({ className, ...props }) => {
+  return (
+    <StyledIconWrapper className={className} {...props}>
       <Input className={className} {...props} />
       <Icon className={'icon-valid'} name={'CheckCircle'} color={'#28C081'} />
       <Icon className={'icon-invalid'} name={'Warning'} color={'#DC2C10'} />
     </StyledIconWrapper>
-  )
-}
+  );
+};
 
 Input.defaultProps = {
   theme: defaultTheme,
@@ -89,11 +84,11 @@ Input.defaultProps = {
   border: 1,
   borderColor: 'grey',
   borderRadius: 1,
-  boxShadow: 1
-}
+  boxShadow: 1,
+};
 
-Input.displayName = 'Input'
+Input.displayName = 'Input';
 
 WithIconWrapper.InputOnly = Input;
 
-export default WithIconWrapper
+export default WithIconWrapper;

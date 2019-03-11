@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import styled from "styled-components";
+import React, { Component } from 'react';
+import styled from 'styled-components';
 
-import Box from "../Box";
-import Card from "../Card";
+import Box from '../Box';
+import Card from '../Card';
 
 const StyledOverlay = styled(Box)`
   & {
@@ -21,30 +21,30 @@ const StyledOverlay = styled(Box)`
 `;
 
 StyledOverlay.defaultProps = {
-  bg: "blacks.10",
+  bg: 'blacks.10',
   px: 3,
-  py: 3
+  py: 3,
 };
 
 class Modal extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isOpen: this.props.isOpen || false
+      isOpen: this.props.isOpen || false,
     };
   }
 
   closeModal = e => {
     e.preventDefault();
     this.setState((state, props) => ({
-      isOpen: false
+      isOpen: false,
     }));
   };
 
   openModal = e => {
     e.preventDefault();
     this.setState((state, props) => ({
-      isOpen: true
+      isOpen: true,
     }));
   };
 
@@ -57,6 +57,6 @@ class Modal extends Component {
   }
 }
 
-Modal.displayName = "Modal";
+Modal.displayName = 'Modal';
 
 export default Modal;
