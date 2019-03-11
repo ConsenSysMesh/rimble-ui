@@ -260,6 +260,22 @@ exports[`Select component sanity matches themed snapshot 1`] = `
   pointer-events: none;
 }
 
+.was-validated .c2:valid {
+  border-color: #28C081;
+}
+
+.was-validated .c2:valid ~ svg.icon-valid {
+  visibility: visible;
+}
+
+.was-validated .c2:invalid {
+  border-color: #EC9081;
+}
+
+.was-validated .c2:invalid ~ svg.icon-invalid {
+  visibility: visible;
+}
+
 .c2 {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -280,7 +296,6 @@ exports[`Select component sanity matches themed snapshot 1`] = `
     class="c1"
   >
     <select
-      as="select"
       class="c2"
       color="copyColor"
       font-family="sansSerif"
