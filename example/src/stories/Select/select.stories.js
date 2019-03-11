@@ -12,7 +12,7 @@ const items = [
   'Ancient Paper',
 ]
 
-storiesOf('Form', module)
+storiesOf('Form/Inputs', module)
   .addDecorator(withDocs(MyREADME))
   .add('Select', () => (
     <Select items={items} />

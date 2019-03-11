@@ -1,31 +1,37 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { storiesOf } from '@storybook/react'
 import { withDocs } from 'storybook-readme';
 
 import MyREADME from './README.md';
 
-import { Input } from 'rimble-ui'
+import {
+  Flex,
+  Card,
+  Image,
+  Button,
+  Form,
+} from 'rimble-ui'
 
-storiesOf('Form', module)
+storiesOf('Form/Inputs', module)
   .addDecorator(withDocs(MyREADME))
   .add('Input', () => (
     <div>
-      <Input type='text' placeholder='Lorem ipsum dolor sit.'/>
-      <Input type='text' placeholder='Lorem ipsum dolor sit.' disabled/>
+      <Form.Input type='text' placeholder='Lorem ipsum dolor sit.'/>
+      <Form.Input type='text' placeholder='Lorem ipsum dolor sit.' disabled/>
     </div>
   )).add('email', () => (
     <div>
-      <Input type='email' name='email' id='email' placeholder='you@example.com'/>
-      <Input type='email' name='email' id='email' placeholder='you@example.com' disabled/>
+      <Form.Input type='email' name='email' id='email' placeholder='you@example.com'/>
+      <Form.Input type='email' name='email' id='email' placeholder='you@example.com' disabled/>
     </div>
   )).add('number', () => (
-    <Input type='number'/>
+    <Form.Input type='number'/>
   )).add('password', () => (
-    <Input type='password'/>
+    <Form.Input type='password'/>
   )).add('search', () => (
-    <Input type='search'/>
+    <Form.Input type='search'/>
   )).add('tel', () => (
-    <Input type='tel'/>
+    <Form.Input type='tel'/>
   )).add('url', () => (
-    <Input type='url'/>
+    <Form.Input type='url'/>
   ))

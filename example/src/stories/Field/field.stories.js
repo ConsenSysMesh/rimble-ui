@@ -4,10 +4,12 @@ import { withDocs } from 'storybook-readme';
 
 import MyREADME from './README.md';
 
-import { Field } from 'rimble-ui'
-import { Input } from 'rimble-ui'
+import {
+  Input,
+  Field
+} from 'rimble-ui'
 
-storiesOf('Form', module)
+storiesOf('Form/Field Component', module)
   .addDecorator(withDocs(MyREADME))
   .add('Field', () => (
     <Field label='label'>
