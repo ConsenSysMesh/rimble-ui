@@ -3,97 +3,11 @@ Toast messages are small alerts that provide updates about a process. They shoul
 
 <!-- STORY -->
 
-### Usage
-```jsx
-import { ToastMessage } from 'rimble-ui'
-```
-
-<!-- component example here -->
-```jsx
-<ToastMessage>
-  This is a ToastMessage
-</ToastMessage>
-
-<ToastMessage secondaryMessage={'Supporting information for update [Optional]'} />
-
-<ToastMessage
-  icon={'InfoOutline'}
-  actionText={'Action'}
-  actionHref={'#!'}
-/>
-
-<ToastMessage
-  secondaryMessage={'Supporting information for update [Optional]''}
-  icon={'InfoOutline'}
-  actionText={'Action'}
-  actionHref={'#!'}
-/>
-
-<ToastMessage.Processing message={'Processing 0.00018 ETH payment'} />
-
-<ToastMessage.Success
-  message={'ETH sent'}
-  secondaryMessage={'You have 1.03 ETH remaining'}
-  actionText={'Action'}
-  actionHref={'#!'}
-/>
-
-<ToastMessage.Failure
-  message={'Payment failed'}
-  secondaryMessage={'You don't have enough ETH'}
-  actionText={'Action'}
-  actionHref={'#!'}
-/>
-
-<ToastMessage colorTheme={'dark'} />
-
-<ToastMessage
-  secondaryMessage={'Supporting information for update [Optional]'}
-  colorTheme={'dark'}
-/>
-
-<ToastMessage
-  icon={'InfoOutline'}
-  colorTheme={'dark'}
-  actionText={'Action'}
-  actionHref={'#!'}
-/>
-
-<ToastMessage
-  secondaryMessage={'Supporting information for update [Optional]'}
-  icon={'InfoOutline'}
-  colorTheme={'dark'}
-  actionText={'Action'}
-  actionHref={'#!'}
-/>
-
-<Button onClick={(e) => window.toastProvider.addMessage('Processing… ', {
-    secondaryMessage: '',
-    actionHref: 'https://etherscan.io/tx/0xcbc921418c360b03b96585ae16f906cbd48c8d6c2cc7b82c6db430390a9fcfed',
-    actionText: 'View on Etherscan',
-    variant: 'processing',
-  })}
->
-  "addMessage.processing"
-</Button>
-
-<Button onClick={(e) => window.toastProvider.addMessage('Write update here [Required]', {
-    icon: 'VpnKey',
-    colorTheme: 'dark'
-  })}
->
-  "addMessage.default dark colors with Icon"
-</Button>
-
-
-<ToastMessage.Provider ref={(node) => (window.toastProvider = node)} />
-```
-
 # `ToastMessage` content and design guidelines
 
 ## **When should they be used?**
 
-> For non-critical messages and actions that should be helpful but ultimately ignorable without any impact on what the user wants to get done.
+> For messages and actions that should be helpful but ultimately ignorable without any impact on what the user wants to get done.
 
 ## General usage guidelines
 
