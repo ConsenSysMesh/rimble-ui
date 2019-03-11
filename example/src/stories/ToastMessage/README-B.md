@@ -2,8 +2,6 @@
 
 The `ToastMessage` component extends `Box`.
 
-Toast messages are small alerts that provide updates about a process. Use toast messages for non-critical information about what’s happening within your dApp. They shouldn't be used to notify the user that they need to do something.
-
 <!-- STORY -->
 
 ### Usage
