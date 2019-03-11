@@ -2,7 +2,10 @@
 
 > Rimble Design System&#x27;s react component library.
 
-[![NPM](https://img.shields.io/npm/v/rimble-ui.svg)](https://www.npmjs.com/package/rimble-ui) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![Join the community on Spectrum](https://withspectrum.github.io/badge/badge.svg)](https://spectrum.chat/rimble)
+[![NPM](https://img.shields.io/npm/v/rimble-ui.svg)](https://www.npmjs.com/package/rimble-ui)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![Travis Build Status](https://travis-ci.com/ConsenSys/rimble-ui.svg?branch=master)](https://travis-ci.com/ConsenSys/rimble-ui)
+[![Join the community on Spectrum](https://withspectrum.github.io/badge/badge.svg)](https://spectrum.chat/rimble)
 
 Rimble is a project from Consensys Design, aiming to provide adaptable components and design standards for decentralized applications (dApps). Our goal is simply to to make it easier to build dApps with outstanding user experience. If you're interested, we have written a bit more about [our rationale and approach to building Rimble](https://blog.prototypr.io/this-is-rimble-d0f1ad26b8b6).
 

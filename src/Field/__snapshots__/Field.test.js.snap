@@ -2,6 +2,7 @@
 
 exports[`Field component sanity matches default snapshot 1`] = `
 .c0 {
+  margin-bottom: 16px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -36,6 +37,12 @@ exports[`Field component sanity matches default snapshot 1`] = `
   box-sizing: border-box;
 }
 
+.c1:after {
+  content: ' (optional)';
+  font-weight: normal;
+  font-style: italic;
+}
+
 <label
   class="c0"
   display="flex"
@@ -54,6 +61,7 @@ exports[`Field component sanity matches default snapshot 1`] = `
 
 exports[`Field component sanity matches themed snapshot 1`] = `
 .c1 {
+  margin-bottom: 16px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -86,6 +94,12 @@ exports[`Field component sanity matches themed snapshot 1`] = `
 
 .c2 {
   box-sizing: border-box;
+}
+
+.c2:after {
+  content: ' (optional)';
+  font-weight: normal;
+  font-style: italic;
 }
 
 .c0 {
