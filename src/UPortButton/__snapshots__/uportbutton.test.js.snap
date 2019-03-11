@@ -1,0 +1,474 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UPortButton component sanity matches default snapshot 1`] = `
+<StyledComponent
+  forwardedClass={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "Outline": [Circular],
+      "Solid": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": undefined,
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-gQORMK",
+          "isStatic": false,
+          "rules": Array [
+            "
+      & {
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+      }
+    
+      > span {
+        display: flex;
+        align-items: center;
+      }
+    
+      > span > svg:first-child {
+        display: block;
+        height: ",
+            [Function],
+            ";
+        width: ",
+            [Function],
+            ";
+        margin-right: .5rem;
+      }
+    ",
+            "
+      & {
+        color: ",
+            "#FFFFFF",
+            ";
+        background: ",
+            "#5c50ca",
+            ";
+      }
+      &:hover {
+        background-color: ",
+            "#6c61cf",
+            ";
+      }
+      &:active {
+        background-color: ",
+            "#5248b5",
+            ";
+      }
+      > span > svg:first-child {
+        fill: ",
+            "#FFFFFF",
+            ";
+      }
+    ",
+          ],
+        },
+        "defaultProps": Object {
+          "width": Array [
+            1,
+            "auto",
+          ],
+        },
+        "displayName": "Styled(Styled(ProtoButton))",
+        "render": [Function],
+        "styledComponentId": "sc-gQORMK",
+        "target": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+        Symbol(Symbol.hasInstance): [Function],
+      },
+      "attrs": undefined,
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-eiqfgm",
+        "isStatic": false,
+        "rules": Array [
+          "
+      & {
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+      }
+    
+      > span {
+        display: flex;
+        align-items: center;
+      }
+    
+      > span > svg:first-child {
+        display: block;
+        height: ",
+          [Function],
+          ";
+        width: ",
+          [Function],
+          ";
+        margin-right: .5rem;
+      }
+    ",
+          "
+      & {
+        color: #333333;
+        background: #FFFFFF;
+        border: 1px solid #CCCCCC;
+      }
+      &:hover {
+        background-color: #F3F2F2;
+      }
+      &:active {
+        background-color: #E4E4E4;
+      }
+    ",
+        ],
+      },
+      "defaultProps": Object {
+        "width": Array [
+          1,
+          "auto",
+        ],
+      },
+      "displayName": "UPortButton",
+      "render": [Function],
+      "styledComponentId": "sc-eiqfgm",
+      "target": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+      Symbol(Symbol.hasInstance): [Function],
+    }
+  }
+  forwardedRef={null}
+  width={
+    Array [
+      1,
+      "auto",
+    ]
+  }
+/>
+`;
+
+exports[`UPortButton component sanity matches themed snapshot 1`] = `
+<ThemeProvider
+  theme={
+    Object {
+      "borders": Array [
+        0,
+        "1px solid transparent",
+      ],
+      "colors": Object {
+        "black": "#000e1a",
+        "blacks": Array [
+          "rgba(0,0,0,.0125)",
+          "rgba(0,0,0,.025)",
+          "rgba(0,0,0,.05)",
+          "rgba(0,0,0,.1)",
+          "rgba(0,0,0,.2)",
+          "rgba(0,0,0,.3)",
+          "rgba(0,0,0,.4)",
+          "rgba(0,0,0,.5)",
+          "rgba(0,0,0,.6)",
+          "rgba(0,0,0,.7)",
+          "rgba(0,0,0,.8)",
+          "rgba(0,0,0,.9)",
+        ],
+        "blue": "#007ce0",
+        "copyColor": "#3F3D4B",
+        "dark-gray": "#333",
+        "grey": "#CCC",
+        "light-gray": "#eee",
+        "light-silver": "#aaa",
+        "mid-gray": "#555",
+        "moon-gray": "#ccc",
+        "navy": "#004175",
+        "near-black": "#111",
+        "near-white": "#f4f4f4",
+        "primary": "#4E3FCE",
+        "silver": "#999",
+        "transparent": "transparent",
+        "white": "#fff",
+        "whites": Array [
+          "rgba(255,255,255,.0125)",
+          "rgba(255,255,255,.025)",
+          "rgba(255,255,255,.05)",
+          "rgba(255,255,255,.1)",
+          "rgba(255,255,255,.2)",
+          "rgba(255,255,255,.3)",
+          "rgba(255,255,255,.4)",
+          "rgba(255,255,255,.5)",
+          "rgba(255,255,255,.6)",
+          "rgba(255,255,255,.7)",
+          "rgba(255,255,255,.8)",
+          "rgba(255,255,255,.9)",
+        ],
+      },
+      "fontSizes": Array [
+        12,
+        14,
+        16,
+        20,
+        24,
+        32,
+        48,
+        64,
+      ],
+      "fontWeights": Array [
+        0,
+        300,
+        400,
+        600,
+        700,
+      ],
+      "fonts": Object {
+        "sansSerif": "\\"Source Sans Pro\\", -apple-system, sans-serif",
+        "serif": "athelas, georgia, times, serif",
+      },
+      "heights": Array [
+        0,
+        16,
+        32,
+        64,
+        128,
+        256,
+      ],
+      "lineHeights": Object {
+        "copy": 1.5,
+        "solid": 1,
+        "title": 1.25,
+      },
+      "maxHeights": Array [
+        0,
+        16,
+        32,
+        64,
+        128,
+        256,
+      ],
+      "maxWidths": Array [
+        0,
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        768,
+        1024,
+        1536,
+      ],
+      "minHeights": Array [
+        0,
+        16,
+        32,
+        64,
+        128,
+        256,
+      ],
+      "minWidths": Array [
+        0,
+        16,
+        32,
+        64,
+        128,
+        256,
+      ],
+      "opacity": Object {
+        "disabled": 0.4,
+      },
+      "radii": Array [
+        "0",
+        "4px",
+        "8px",
+        "16px",
+      ],
+      "shadows": Array [
+        "0",
+        "0px 2px 4px rgba(0, 0, 0, 0.1)",
+        "0 7px 14px rgba(50,50,93,.1)",
+      ],
+      "space": Array [
+        0,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+      ],
+      "width": Array [
+        0,
+        16,
+        32,
+        64,
+        128,
+        256,
+      ],
+    }
+  }
+>
+  <GlobalStyleComponent
+    suppressMultiMountWarning={false}
+  />
+  <styled.div
+    theme={
+      Object {
+        "borders": Array [
+          0,
+          "1px solid transparent",
+        ],
+        "colors": Object {
+          "black": "#000e1a",
+          "blacks": Array [
+            "rgba(0,0,0,.0125)",
+            "rgba(0,0,0,.025)",
+            "rgba(0,0,0,.05)",
+            "rgba(0,0,0,.1)",
+            "rgba(0,0,0,.2)",
+            "rgba(0,0,0,.3)",
+            "rgba(0,0,0,.4)",
+            "rgba(0,0,0,.5)",
+            "rgba(0,0,0,.6)",
+            "rgba(0,0,0,.7)",
+            "rgba(0,0,0,.8)",
+            "rgba(0,0,0,.9)",
+          ],
+          "blue": "#007ce0",
+          "copyColor": "#3F3D4B",
+          "dark-gray": "#333",
+          "grey": "#CCC",
+          "light-gray": "#eee",
+          "light-silver": "#aaa",
+          "mid-gray": "#555",
+          "moon-gray": "#ccc",
+          "navy": "#004175",
+          "near-black": "#111",
+          "near-white": "#f4f4f4",
+          "primary": "#4E3FCE",
+          "silver": "#999",
+          "transparent": "transparent",
+          "white": "#fff",
+          "whites": Array [
+            "rgba(255,255,255,.0125)",
+            "rgba(255,255,255,.025)",
+            "rgba(255,255,255,.05)",
+            "rgba(255,255,255,.1)",
+            "rgba(255,255,255,.2)",
+            "rgba(255,255,255,.3)",
+            "rgba(255,255,255,.4)",
+            "rgba(255,255,255,.5)",
+            "rgba(255,255,255,.6)",
+            "rgba(255,255,255,.7)",
+            "rgba(255,255,255,.8)",
+            "rgba(255,255,255,.9)",
+          ],
+        },
+        "fontSizes": Array [
+          12,
+          14,
+          16,
+          20,
+          24,
+          32,
+          48,
+          64,
+        ],
+        "fontWeights": Array [
+          0,
+          300,
+          400,
+          600,
+          700,
+        ],
+        "fonts": Object {
+          "sansSerif": "\\"Source Sans Pro\\", -apple-system, sans-serif",
+          "serif": "athelas, georgia, times, serif",
+        },
+        "heights": Array [
+          0,
+          16,
+          32,
+          64,
+          128,
+          256,
+        ],
+        "lineHeights": Object {
+          "copy": 1.5,
+          "solid": 1,
+          "title": 1.25,
+        },
+        "maxHeights": Array [
+          0,
+          16,
+          32,
+          64,
+          128,
+          256,
+        ],
+        "maxWidths": Array [
+          0,
+          16,
+          32,
+          64,
+          128,
+          256,
+          512,
+          768,
+          1024,
+          1536,
+        ],
+        "minHeights": Array [
+          0,
+          16,
+          32,
+          64,
+          128,
+          256,
+        ],
+        "minWidths": Array [
+          0,
+          16,
+          32,
+          64,
+          128,
+          256,
+        ],
+        "opacity": Object {
+          "disabled": 0.4,
+        },
+        "radii": Array [
+          "0",
+          "4px",
+          "8px",
+          "16px",
+        ],
+        "shadows": Array [
+          "0",
+          "0px 2px 4px rgba(0, 0, 0, 0.1)",
+          "0 7px 14px rgba(50,50,93,.1)",
+        ],
+        "space": Array [
+          0,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256,
+        ],
+        "width": Array [
+          0,
+          16,
+          32,
+          64,
+          128,
+          256,
+        ],
+      }
+    }
+  >
+    <UPortButton
+      width={
+        Array [
+          1,
+          "auto",
+        ]
+      }
+    />
+  </styled.div>
+</ThemeProvider>
+`;

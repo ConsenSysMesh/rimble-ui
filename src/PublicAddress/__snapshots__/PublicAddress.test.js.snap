@@ -2,6 +2,7 @@
 
 exports[`PublicAddress component sanity matches default snapshot 1`] = `
 .c0 {
+  margin-bottom: 16px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -59,6 +60,12 @@ exports[`PublicAddress component sanity matches default snapshot 1`] = `
   box-sizing: border-box;
 }
 
+.c1:after {
+  content: ' (optional)';
+  font-weight: normal;
+  font-style: italic;
+}
+
 .c3 {
   padding-left: 16px;
   padding-right: 16px;
@@ -100,6 +107,22 @@ exports[`PublicAddress component sanity matches default snapshot 1`] = `
 .c3:disabled {
   opacity: 0.4;
   pointer-events: none;
+}
+
+.was-validated .c3:valid {
+  border-color: #28C081;
+}
+
+.was-validated .c3:valid ~ svg.icon-valid {
+  visibility: visible;
+}
+
+.was-validated .c3:invalid {
+  border-color: #EC9081;
+}
+
+.was-validated .c3:invalid ~ svg.icon-invalid {
+  visibility: visible;
 }
 
 .c4 {
@@ -303,6 +326,7 @@ exports[`PublicAddress component sanity matches default snapshot 1`] = `
 
 exports[`PublicAddress component sanity matches themed snapshot 1`] = `
 .c1 {
+  margin-bottom: 16px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -360,6 +384,12 @@ exports[`PublicAddress component sanity matches themed snapshot 1`] = `
   box-sizing: border-box;
 }
 
+.c2:after {
+  content: ' (optional)';
+  font-weight: normal;
+  font-style: italic;
+}
+
 .c4 {
   padding-left: 16px;
   padding-right: 16px;
@@ -401,6 +431,22 @@ exports[`PublicAddress component sanity matches themed snapshot 1`] = `
 .c4:disabled {
   opacity: 0.4;
   pointer-events: none;
+}
+
+.was-validated .c4:valid {
+  border-color: #28C081;
+}
+
+.was-validated .c4:valid ~ svg.icon-valid {
+  visibility: visible;
+}
+
+.was-validated .c4:invalid {
+  border-color: #EC9081;
+}
+
+.was-validated .c4:invalid ~ svg.icon-invalid {
+  visibility: visible;
 }
 
 .c5 {

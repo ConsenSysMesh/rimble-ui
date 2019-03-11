@@ -1,21 +1,21 @@
-import WithIconWrapper from "./";
+import UPortButton from "./";
 import ThemeProvider from "../ThemeProvider";
 import theme from "../theme";
 
-describe("Input component sanity", () => {
+describe("UPortButton component sanity", () => {
   it("has name", () => {
-    expect(WithIconWrapper.InputOnly.displayName).toBe("Input");
+    expect(UPortButton.displayName).toBe("UPortButton");
   });
 
   it("matches default snapshot", () => {
-    const component = render(<WithIconWrapper.InputOnly />);
+    const component = shallow(<UPortButton />);
     expect(component).toMatchSnapshot();
   });
 
   it("matches themed snapshot", () => {
-    const component = render(
+    const component = shallow(
       <ThemeProvider theme={theme}>
-        <WithIconWrapper.InputOnly />
+        <UPortButton />
       </ThemeProvider>
     );
     expect(component).toMatchSnapshot();
