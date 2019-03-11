@@ -826,8 +826,8 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   height: 80px;
   padding: 0 1rem;
   box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
-  -webkit-transition: all .15s ease;
-  transition: all .15s ease;
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease;
 }
 
 .c1:hover {
@@ -1374,7 +1374,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                 ";
               color: ",
                 [Function],
-                "
+                ";
             }
           ",
               ],
@@ -1720,7 +1720,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                       height: 80px;
                       padding: 0 1rem;
                       box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-                      transition: all .15s ease;
+                      transition: all 0.15s ease;
                     }
                   
                     &:hover {
@@ -6650,7 +6650,7 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
         height: 80px;
         padding: 0 1rem;
         box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-        transition: all .15s ease;
+        transition: all 0.15s ease;
       }
     
       &:hover {
@@ -7857,7 +7857,7 @@ exports[`ToastMessage component sanity matches generic snapshot 1`] = `
         height: 80px;
         padding: 0 1rem;
         box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-        transition: all .15s ease;
+        transition: all 0.15s ease;
       }
     
       &:hover {

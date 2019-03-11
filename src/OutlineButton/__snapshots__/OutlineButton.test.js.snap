@@ -92,7 +92,7 @@ exports[`OutlineButton component sanity matches default snapshot 1`] = `
 .c0:hover {
   color: #7165d7;
   border-color: #7165d7;
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 .c0:active {
@@ -205,7 +205,7 @@ exports[`OutlineButton component sanity matches themed snapshot 1`] = `
 .c1:hover {
   color: #7165d7;
   border-color: #7165d7;
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 .c1:active {

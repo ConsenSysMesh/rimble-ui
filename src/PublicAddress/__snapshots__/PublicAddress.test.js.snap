@@ -278,7 +278,7 @@ exports[`PublicAddress component sanity matches default snapshot 1`] = `
 
 .c2 > button {
   position: absolute;
-  right: .75rem;
+  right: 0.75rem;
 }
 
 <label
@@ -602,7 +602,7 @@ exports[`PublicAddress component sanity matches themed snapshot 1`] = `
 
 .c3 > button {
   position: absolute;
-  right: .75rem;
+  right: 0.75rem;
 }
 
 .c0 {
