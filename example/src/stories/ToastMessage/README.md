@@ -1,5 +1,5 @@
 # ToastMessage
-Toast messages are small alerts that provide updates about a process. They shouldn't be used to notify the user that they need to do something. The `ToastMessage` component renders a responsive box-model layout component.
+Toast messages are small alerts that provide updates about a process. They shouldn't be used to notify the user that they need to do something. 
 
 <!-- STORY -->
 
