@@ -1,34 +1,56 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
+import {
+  themeGet,
+  height,
+  fontFamily,
+  boxShadow
+} from 'styled-system';
 
-const Table = () => (
-  <table>
-    <thead>
-      <tr>
-        <th colSpan='2'>The table header</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>The table body</td>
-        <td>with two columns</td>
-      </tr>
-    </tbody>
-    <tfoot>
-      <tr>
-        <td colSpan='2'>The table footer</td>
-      </tr>
-    </tfoot>
-  </table>
-)
+import Box from '../Box';
+import defaultTheme from '../theme';
 
-const StyledTable = styled(Table)`
-  &,
-  td {
-    border: 1px solid #333;
+const Table = styled(Box)`
+  & {
+    table-layout: fixed;
+    border-collapse: collapse;
   }
+
+  th,
+  td {
+    border: solid;
+    border-width: 1px 0;
+    border-color: inherit;
+    font-weight: inherit;
+  }
+
+  tbody tr {
+    height: ${themeGet('height[3]', '4rem')};
+  }
+
+  thead tr,
+  tfoot tr {
+    height: ${themeGet('height[2]', '3rem')};
+  }
+
+  ${fontFamily}
+  ${height}
+  ${boxShadow}
 `
 
-Table.displayName = 'Table'
+Table.defaultProps = {
+  theme: defaultTheme,
+  as: 'table',
+  width: 1,
+  border: 1,
+  borderColor: 'grey',
+  fontSize: 1,
+  fontWeight: 2,
+  fontFamily: 'sansSerif',
+  color: 'dark-gray',
+  boxShadow: 1
+};
 
-export default Table
+Table.displayName = 'Table';
+
+export default Table;
