@@ -22,6 +22,8 @@ We follow the "fork-and-pull" Git workflow.
 Copyright and Licensing
 -----------------------
 
+All contributions to this codebase will be under the MIT License.
+
 MIT License
 
 Copyright (c) 2018-2019 ConsenSys
