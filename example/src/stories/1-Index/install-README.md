@@ -8,9 +8,13 @@ npm install --save rimble-ui styled-components
 
 ```jsx
 import React, { Component } from 'react'
+```
 
+```jsx
 import { Button } from 'rimble-ui'
+```
 
+```jsx
 class Example extends Component {
   render () {
     return (
