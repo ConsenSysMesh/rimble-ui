@@ -21,7 +21,8 @@ const Table = styled(Box)`
     border: solid;
     border-width: 1px 0;
     border-color: inherit;
-    font-weight: inherit;
+    text-align: left;
+    padding: 0 2rem;
   }
 
   tbody tr {
@@ -31,6 +32,11 @@ const Table = styled(Box)`
   thead tr,
   tfoot tr {
     height: ${themeGet('height[2]', '3rem')};
+  }
+
+  thead th {
+    font-weight: ${themeGet('fontWeights.3', 'bold')};
+    text-transform: uppercase;
   }
 
   ${fontFamily}
