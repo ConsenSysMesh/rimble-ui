@@ -33,7 +33,8 @@ storiesOf('Table', module)
         </tr>
         <tr>
           <td>3</td>
-          <td colSpan="2">Larry the Bird</td>
+          <td>Larry</td>
+          <td>Bird</td>
           <td>@twitter</td>
         </tr>
       </tbody>
