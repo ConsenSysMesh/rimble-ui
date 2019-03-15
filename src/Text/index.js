@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import PropTypes from 'prop-types';
+import React from 'react'
+import styled from 'styled-components'
+import PropTypes from 'prop-types'
 
 import {
   fontSize,
@@ -10,26 +10,26 @@ import {
   textAlign,
   lineHeight,
   letterSpacing,
-} from 'styled-system';
+} from 'styled-system'
 
-import Box from '../Box';
+import Box from '../Box'
 
-import defaultTheme from '../theme';
+import defaultTheme from '../theme'
 
 export const caps = props =>
   props.caps
     ? {
-        textTransform: 'uppercase',
+        textTransform: 'uppercase'
       }
-    : null;
+    : null
 
 export const regular = props =>
-  props.regular ? { fontWeight: props.theme.regular } : null;
+  props.regular ? { fontWeight: props.theme.fontWeights[1] } : null
 
 export const bold = props =>
-  props.bold ? { fontWeight: props.theme.bold } : null;
+  props.bold ? { fontWeight: props.theme.fontWeights[3] } : null
 
-export const italic = props => (props.italic ? { fontStyle: 'italic' } : null);
+export const italic = props => (props.italic ? { fontStyle: 'italic' } : null)
 
 const Text = styled(Box)`
   ${fontSize}
@@ -44,7 +44,7 @@ const Text = styled(Box)`
   ${regular}
   ${bold}
   ${italic}
-`;
+`
 
 Text.defaultProps = {
   theme: defaultTheme,
@@ -53,39 +53,39 @@ Text.defaultProps = {
   fontSize: 2,
   fontWeight: 2,
   lineHeight: 'copy',
-  textAlign: 'left',
-};
+  textAlign: 'left'
+}
 
-Text.displayName = 'Text';
+Text.displayName = 'Text'
 
-Text.span = Text.withComponent('span');
+Text.span = Text.withComponent('span')
 Text.span.defaultProps = {
   color: 'copyColor',
   fontFamily: 'sansSerif',
   fontSize: 2,
   fontWeight: 2,
   lineHeight: 'copy',
-  textAlign: 'left',
-};
+  textAlign: 'left'
+}
 
-Text.p = Text.withComponent('p');
+Text.p = Text.withComponent('p')
 Text.p.defaultProps = {
   color: 'copyColor',
   fontFamily: 'sansSerif',
   fontSize: 2,
   fontWeight: 2,
   lineHeight: 'copy',
-  textAlign: 'left',
-};
+  textAlign: 'left'
+}
 
-Text.s = Text.withComponent('s');
+Text.s = Text.withComponent('s')
 Text.s.defaultProps = {
   color: 'copyColor',
   fontFamily: 'sansSerif',
   fontSize: 2,
   fontWeight: 2,
   lineHeight: 'copy',
-  textAlign: 'left',
-};
+  textAlign: 'left'
+}
 
-export default Text;
+export default Text
