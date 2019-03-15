@@ -1,39 +1,162 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Table component sanity matches default snapshot 1`] = `
-<table>
+.c0 {
+  color: #333;
+  width: 100%;
+  font-size: 14px;
+  border: 1px solid transparent;
+  border-color: #CCC;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+}
+
+.c0 {
+  box-sizing: border-box;
+}
+
+.c0 {
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.c0 th,
+.c0 td {
+  border: solid;
+  border-width: 1px 0;
+  border-color: inherit;
+  text-align: left;
+  padding: 0 2rem;
+}
+
+.c0 tbody tr {
+  height: 4rem;
+}
+
+.c0 thead tr,
+.c0 tfoot tr {
+  height: 3rem;
+}
+
+.c0 thead th {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+<table
+  class="c0"
+  color="dark-gray"
+  font-family="sansSerif"
+  font-size="1"
+  font-weight="2"
+  width="1"
+>
   <thead>
     <tr>
-      <th
-        colspan="2"
-      >
-        The table header
+      <th>
+        #
+      </th>
+      <th>
+        First Name
+      </th>
+      <th>
+        Last Name
+      </th>
+      <th>
+        Username
       </th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>
-        The table body
+        1
       </td>
       <td>
-        with two columns
+        Mark
+      </td>
+      <td>
+        Otto
+      </td>
+      <td>
+        @mdo
+      </td>
+    </tr>
+    <tr>
+      <td>
+        2
+      </td>
+      <td>
+        Jacob
+      </td>
+      <td>
+        Thornton
+      </td>
+      <td>
+        @fat
+      </td>
+    </tr>
+    <tr>
+      <td>
+        3
+      </td>
+      <td>
+        Larry
+      </td>
+      <td>
+        Bird
+      </td>
+      <td>
+        @twitter
       </td>
     </tr>
   </tbody>
-  <tfoot>
-    <tr>
-      <td
-        colspan="2"
-      >
-        The table footer
-      </td>
-    </tr>
-  </tfoot>
 </table>
 `;
 
 exports[`Table component sanity matches themed snapshot 1`] = `
+.c1 {
+  color: #333;
+  width: 100%;
+  font-size: 14px;
+  border: 1px solid transparent;
+  border-color: #CCC;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+}
+
+.c1 {
+  box-sizing: border-box;
+}
+
+.c1 {
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.c1 th,
+.c1 td {
+  border: solid;
+  border-width: 1px 0;
+  border-color: inherit;
+  text-align: left;
+  padding: 0 2rem;
+}
+
+.c1 tbody tr {
+  height: 4rem;
+}
+
+.c1 thead tr,
+.c1 tfoot tr {
+  height: 3rem;
+}
+
+.c1 thead th {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
 .c0 {
   font-size: 1em;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
@@ -43,35 +166,74 @@ exports[`Table component sanity matches themed snapshot 1`] = `
 <div
   class="c0"
 >
-  <table>
+  <table
+    class="c1"
+    color="dark-gray"
+    font-family="sansSerif"
+    font-size="1"
+    font-weight="2"
+    width="1"
+  >
     <thead>
       <tr>
-        <th
-          colspan="2"
-        >
-          The table header
+        <th>
+          #
+        </th>
+        <th>
+          First Name
+        </th>
+        <th>
+          Last Name
+        </th>
+        <th>
+          Username
         </th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td>
-          The table body
+          1
         </td>
         <td>
-          with two columns
+          Mark
+        </td>
+        <td>
+          Otto
+        </td>
+        <td>
+          @mdo
+        </td>
+      </tr>
+      <tr>
+        <td>
+          2
+        </td>
+        <td>
+          Jacob
+        </td>
+        <td>
+          Thornton
+        </td>
+        <td>
+          @fat
+        </td>
+      </tr>
+      <tr>
+        <td>
+          3
+        </td>
+        <td>
+          Larry
+        </td>
+        <td>
+          Bird
+        </td>
+        <td>
+          @twitter
         </td>
       </tr>
     </tbody>
-    <tfoot>
-      <tr>
-        <td
-          colspan="2"
-        >
-          The table footer
-        </td>
-      </tr>
-    </tfoot>
   </table>
 </div>
 `;
