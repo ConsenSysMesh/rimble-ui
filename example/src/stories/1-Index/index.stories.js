@@ -1,13 +1,10 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { withDocs } from 'storybook-readme';
+import { doc } from 'storybook-readme';
 
-import MyREADME from './README.md';
+import themingREADME from './theming-README.md';
+import installREADME from './install-README.md';
 
 storiesOf('Getting Started', module)
-  .addDecorator(withDocs(MyREADME))
-  .add(
-    'Theming',
-    () => (false),
-    { info: { disable: true } }
-  )
+  .add('Installation', doc(installREADME))
+  .add('Theming', doc(themingREADME))
