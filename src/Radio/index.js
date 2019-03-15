@@ -1,14 +1,14 @@
-import React from 'react'
-import styled from 'styled-components'
-import { themeGet } from 'styled-system'
+import React from 'react';
+import styled from 'styled-components';
+import { themeGet } from 'styled-system';
 
-import RadioButtonChecked from 'rmdi/lib/RadioButtonChecked'
-import RadioButtonUnchecked from 'rmdi/lib/RadioButtonUnchecked'
+import RadioButtonChecked from 'rmdi/lib/RadioButtonChecked';
+import RadioButtonUnchecked from 'rmdi/lib/RadioButtonUnchecked';
 
-import Box from '../Box'
-import Text from '../Text'
+import Box from '../Box';
+import Text from '../Text';
 
-import defaultTheme from '../theme'
+import defaultTheme from '../theme';
 
 const StyledWrapper = styled(Box)`
   & {
@@ -38,35 +38,43 @@ const StyledWrapper = styled(Box)`
     fill: ${props => themeGet('colors.grey', '#CCC')};
   }
 
-  > svg[name="checked"] {
+  > svg[name='checked'] {
     display: none;
     z-index: 1;
     fill: ${props => themeGet('colors.primary', '#000')};
   }
 
-  > input:checked ~ svg[name="checked"] {
+  > input:checked ~ svg[name='checked'] {
     display: block;
   }
-`
+`;
 
-const Radio = ({className, ...props}) => (
-  <Box as="label" className={className} {...props} htmlFor={props.id} display="flex" alignItems="center" opacity={props.disabled ? 0.4 : 1 }>
+const Radio = ({ className, ...props }) => (
+  <Box
+    as="label"
+    className={className}
+    {...props}
+    htmlFor={props.id}
+    display="flex"
+    alignItems="center"
+    opacity={props.disabled ? 0.4 : 1}
+  >
     <StyledWrapper>
       <input type="checkbox" {...props} />
-      <RadioButtonChecked name='checked' />
+      <RadioButtonChecked name="checked" />
       <RadioButtonUnchecked />
     </StyledWrapper>
     <Text fontSize={1} fontWeight={3} ml={1} mr={2}>
       {props.label}
     </Text>
   </Box>
-)
+);
 
 Radio.defaultProps = {
   theme: defaultTheme,
-  color: 'primary'
-}
+  color: 'primary',
+};
 
-Radio.displayName = 'Radio'
+Radio.displayName = 'Radio';
 
-export default Radio
+export default Radio;

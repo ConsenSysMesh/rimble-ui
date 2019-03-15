@@ -1,16 +1,16 @@
-import React from 'react'
-import styled from 'styled-components'
-import { space } from 'styled-system'
+import React from 'react';
+import styled from 'styled-components';
+import { space } from 'styled-system';
 
-import Input from '../Input'
+import Input from '../Input';
 
-import defaultTheme from '../theme'
+import defaultTheme from '../theme';
 
 const Textarea = styled(Input.InputOnly)`
   & {
     appearance: none;
   }
-`
+`;
 
 Textarea.defaultProps = {
   theme: defaultTheme,
@@ -25,9 +25,9 @@ Textarea.defaultProps = {
   border: 1,
   borderColor: 'grey',
   borderRadius: 1,
-  boxShadow: 1
-}
+  boxShadow: 1,
+};
 
-Textarea.displayName = 'Textarea'
+Textarea.displayName = 'Textarea';
 
-export default Textarea
+export default Textarea;

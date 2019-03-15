@@ -31,7 +31,7 @@ exports[`UPortButton component sanity matches default snapshot 1`] = `
         width: ",
             [Function],
             ";
-        margin-right: .5rem;
+        margin-right: 0.5rem;
       }
     ",
             "
@@ -98,20 +98,20 @@ exports[`UPortButton component sanity matches default snapshot 1`] = `
         width: ",
           [Function],
           ";
-        margin-right: .5rem;
+        margin-right: 0.5rem;
       }
     ",
           "
       & {
         color: #333333;
-        background: #FFFFFF;
-        border: 1px solid #CCCCCC;
+        background: #ffffff;
+        border: 1px solid #cccccc;
       }
       &:hover {
-        background-color: #F3F2F2;
+        background-color: #f3f2f2;
       }
       &:active {
-        background-color: #E4E4E4;
+        background-color: #e4e4e4;
       }
     ",
         ],

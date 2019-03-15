@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 import {
   // core
   space,
@@ -55,10 +55,10 @@ import {
   top,
   right,
   bottom,
-  left
-} from 'styled-system'
+  left,
+} from 'styled-system';
 
-import defaultTheme from '../theme'
+import defaultTheme from '../theme';
 
 const Box = styled.div`
   & {
@@ -104,13 +104,13 @@ const Box = styled.div`
   ${textAlign}
   ${'' /* misc */}
   ${opacity}
-`
+`;
 
 Box.defaultProps = {
   theme: defaultTheme,
-  textAlign: 'left'
-}
+  textAlign: 'left',
+};
 
-Box.displayName = 'Box'
+Box.displayName = 'Box';
 
-export default Box
+export default Box;

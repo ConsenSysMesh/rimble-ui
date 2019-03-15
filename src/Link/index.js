@@ -1,14 +1,14 @@
-import React from "react";
-import styled from "styled-components";
-import { tint, shade } from "polished";
-import { themeGet } from "styled-system";
+import React from 'react';
+import styled from 'styled-components';
+import { tint, shade } from 'polished';
+import { themeGet } from 'styled-system';
 
-import Text from "../Text";
+import Text from '../Text';
 
-import defaultTheme from "../theme";
+import defaultTheme from '../theme';
 
 const Link = styled(Text).attrs({
-  primarycolor: props => themeGet("colors.primary", "black")(props)
+  primarycolor: props => themeGet('colors.primary', 'black')(props),
 })`
   & {
     text-decoration: none;
@@ -25,13 +25,13 @@ const Link = styled(Text).attrs({
 
 Link.defaultProps = {
   theme: defaultTheme,
-  as: "a",
-  color: "primary",
-  fontFamily: "sansSerif",
+  as: 'a',
+  color: 'primary',
+  fontFamily: 'sansSerif',
   fontSize: 1,
-  fontWeight: 3
+  fontWeight: 3,
 };
 
-Link.displayName = "Link";
+Link.displayName = 'Link';
 
 export default Link;

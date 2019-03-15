@@ -1,12 +1,12 @@
-import React from 'react'
-import styled from 'styled-components'
-import { themeGet } from 'styled-system'
-import { transparentize } from 'polished'
+import React from 'react';
+import styled from 'styled-components';
+import { themeGet } from 'styled-system';
+import { transparentize } from 'polished';
 
-import defaultTheme from '../theme'
+import defaultTheme from '../theme';
 
 const Progress = styled.progress.attrs({
-  primarycolor: props => themeGet('colors.primary', '#000')(props)
+  primarycolor: props => themeGet('colors.primary', '#000')(props),
 })`
   & {
     appearance: none;
@@ -22,12 +22,12 @@ const Progress = styled.progress.attrs({
     background-color: ${props => props.primarycolor};
     border-radius: 8px;
   }
-`
+`;
 
 Progress.defaultProps = {
-  theme: defaultTheme
-}
+  theme: defaultTheme,
+};
 
-Progress.displayName = 'Progress'
+Progress.displayName = 'Progress';
 
-export default Progress
+export default Progress;
