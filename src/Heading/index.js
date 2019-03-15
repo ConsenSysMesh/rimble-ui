@@ -1,12 +1,12 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
-import Text from '../Text'
+import Text from '../Text';
 
-import defaultTheme from '../theme'
+import defaultTheme from '../theme';
 
 // body size + 6 headings
-const Heading = styled(Text)``
+const Heading = styled(Text)``;
 Heading.defaultProps = {
   theme: defaultTheme,
   as: 'h3',
@@ -14,10 +14,10 @@ Heading.defaultProps = {
   fontSize: 4,
   fontWeight: 3,
   textAlign: 'left',
-  my: 3
-}
+  my: 3,
+};
 
-Heading.h1 = styled(Heading)``
+Heading.h1 = styled(Heading)``;
 Heading.h1.defaultProps = {
   theme: defaultTheme,
   as: 'h1',
@@ -25,10 +25,10 @@ Heading.h1.defaultProps = {
   fontSize: 6,
   fontWeight: 3,
   textAlign: 'left',
-  my: 3
-}
+  my: 3,
+};
 
-Heading.h2 = styled(Heading)``
+Heading.h2 = styled(Heading)``;
 Heading.h2.defaultProps = {
   theme: defaultTheme,
   as: 'h2',
@@ -36,9 +36,9 @@ Heading.h2.defaultProps = {
   fontSize: 5,
   fontWeight: 3,
   textAlign: 'left',
-  my: 3
-}
-Heading.h3 = styled(Heading)``
+  my: 3,
+};
+Heading.h3 = styled(Heading)``;
 Heading.h3.defaultProps = {
   theme: defaultTheme,
   as: 'h3',
@@ -46,9 +46,9 @@ Heading.h3.defaultProps = {
   fontSize: 4,
   fontWeight: 3,
   textAlign: 'left',
-  my: 3
-}
-Heading.h4 = styled(Heading)``
+  my: 3,
+};
+Heading.h4 = styled(Heading)``;
 Heading.h4.defaultProps = {
   theme: defaultTheme,
   as: 'h4',
@@ -56,9 +56,9 @@ Heading.h4.defaultProps = {
   fontSize: 3,
   fontWeight: 3,
   textAlign: 'left',
-  my: 3
-}
-Heading.h5 = styled(Heading)``
+  my: 3,
+};
+Heading.h5 = styled(Heading)``;
 Heading.h5.defaultProps = {
   theme: defaultTheme,
   as: 'h5',
@@ -66,9 +66,9 @@ Heading.h5.defaultProps = {
   fontSize: 2,
   fontWeight: 3,
   textAlign: 'left',
-  my: 3
-}
-Heading.h6 = styled(Heading)``
+  my: 3,
+};
+Heading.h6 = styled(Heading)``;
 Heading.h6.defaultProps = {
   theme: defaultTheme,
   as: 'h6',
@@ -76,9 +76,9 @@ Heading.h6.defaultProps = {
   fontSize: 1,
   fontWeight: 3,
   textAlign: 'left',
-  my: 3
-}
+  my: 3,
+};
 
-Heading.displayName = 'Heading'
+Heading.displayName = 'Heading';
 
-export default Heading
+export default Heading;

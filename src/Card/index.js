@@ -1,7 +1,7 @@
 import React from 'react';
-import styled from 'styled-components'
-import { textAlign } from 'styled-system'
-import Box from '../Box'
+import styled from 'styled-components';
+import { textAlign } from 'styled-system';
+import Box from '../Box';
 
 const Card = styled(Box)`
   & {
@@ -13,7 +13,7 @@ const Card = styled(Box)`
   }
 
   ${textAlign}
-`
+`;
 
 Card.defaultProps = {
   position: 'relative',
@@ -27,9 +27,9 @@ Card.defaultProps = {
   height: 'auto',
   minHeight: 1,
   p: 4,
-  textAlign: 'left'
-}
+  textAlign: 'left',
+};
 
-Card.displayName = 'Card'
+Card.displayName = 'Card';
 
 export default Card;

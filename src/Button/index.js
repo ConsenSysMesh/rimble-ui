@@ -1,29 +1,24 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 import {
   fontFamily,
   fontWeight,
   fontSize,
   boxShadow,
   opacity,
-  themeGet
-} from 'styled-system'
+  themeGet,
+} from 'styled-system';
 
-import {
-  tint,
-  shade
-} from 'polished'
+import { tint, shade } from 'polished';
 
-import Box from '../Box'
-import Icon from '../Icon'
+import Box from '../Box';
+import Icon from '../Icon';
 
-import defaultTheme from '../theme'
+import defaultTheme from '../theme';
 
-const fullWidth = (props) => (
-  props.fullWidth ? { width: '100%' } : null
-)
+const fullWidth = props => (props.fullWidth ? { width: '100%' } : null);
 
-const size = (props) => {
+const size = props => {
   switch (props.size) {
     case 'small':
       return `
@@ -31,38 +26,38 @@ const size = (props) => {
         height: 2rem;
         min-width: 2rem;
         padding: 0 1rem;
-      `
+      `;
     case 'medium':
       return `
         font-size: 16px;
         height: 3rem;
         min-width: 3rem;
-      `
+      `;
     case 'large':
       return `
         font-size: 24px;
         height: 4rem;
         min-width: 4rem;
-      `
+      `;
     default:
       return `
         font-size: 1rem;
         min-width: 3rem;
-      `
+      `;
   }
-}
+};
 
 const ProtoButton = React.forwardRef((props, ref) => (
-  <Box as="button" type="button" ref={ref} {...props} >
-    { props.icon && !props.iconpos && <Icon name={props.icon} /> }
-    { props.icon && props.iconpos === 'left' && <Icon name={props.icon} /> }
-    { props.children && <span>{props.children}</span> }
-    { props.icon && props.iconpos === 'right' && <Icon name={props.icon} /> }
+  <Box as="button" type="button" ref={ref} {...props}>
+    {props.icon && !props.iconpos && <Icon name={props.icon} />}
+    {props.icon && props.iconpos === 'left' && <Icon name={props.icon} />}
+    {props.children && <span>{props.children}</span>}
+    {props.icon && props.iconpos === 'right' && <Icon name={props.icon} />}
   </Box>
-))
+));
 
 const Button = styled(ProtoButton).attrs({
-  hovercolor: props => themeGet('colors.primary', 'black')(props)
+  hovercolor: props => themeGet('colors.primary', 'black')(props),
 })`
   & {
     cursor: pointer;
@@ -78,7 +73,7 @@ const Button = styled(ProtoButton).attrs({
     justify-content: center;
     transition: all .15s ease;
 
-    padding: ${props => props.icononly ? '0' : props.p };
+    padding: ${props => (props.icononly ? '0' : props.p)};
     background-color: ${props => props.hovercolor};
   }
   &:hover {
@@ -117,7 +112,7 @@ const Button = styled(ProtoButton).attrs({
 
   ${size}
   ${fullWidth}
-`
+`;
 
 Button.defaultProps = {
   theme: defaultTheme,
@@ -134,9 +129,9 @@ Button.defaultProps = {
   boxShadow: 1,
   fontSize: 'inherit',
   fontFamily: 'sansSerif',
-  fontWeight: 3
-}
+  fontWeight: 3,
+};
 
-Button.displayName = 'Button'
+Button.displayName = 'Button';
 
-export default Button
+export default Button;

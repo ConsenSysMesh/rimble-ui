@@ -73,13 +73,13 @@ exports[`Checkbox component sanity matches default snapshot 1`] = `
   fill: #CCC;
 }
 
-.c1 > svg[name="checked"] {
+.c1 > svg[name='checked'] {
   display: none;
   z-index: 1;
   fill: #4E3FCE;
 }
 
-.c1 > input:checked ~ svg[name="checked"] {
+.c1 > input:checked ~ svg[name='checked'] {
   display: block;
 }
 
@@ -212,13 +212,13 @@ exports[`Checkbox component sanity matches themed snapshot 1`] = `
   fill: #CCC;
 }
 
-.c2 > svg[name="checked"] {
+.c2 > svg[name='checked'] {
   display: none;
   z-index: 1;
   fill: #4E3FCE;
 }
 
-.c2 > input:checked ~ svg[name="checked"] {
+.c2 > input:checked ~ svg[name='checked'] {
   display: block;
 }
 

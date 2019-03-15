@@ -24,7 +24,7 @@ exports[`MetaMaskButton component sanity matches default snapshot 1`] = `
         width: ",
           [Function],
           ";
-        margin-right: .5rem;
+        margin-right: 0.5rem;
       }
     ",
           "
@@ -64,21 +64,21 @@ exports[`MetaMaskButton component sanity matches default snapshot 1`] = `
         width: ",
             [Function],
             ";
-        margin-right: .5rem;
+        margin-right: 0.5rem;
       }
     ",
             "
       & {
         color: #333333;
-        background: #FFFFFF;
-        border: 1px solid #CCCCCC;
+        background: #ffffff;
+        border: 1px solid #cccccc;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
       }
       &:hover {
-        background-color: #F3F2F2;
+        background-color: #f3f2f2;
       }
       &:active {
-        background-color: #E4E4E4;
+        background-color: #e4e4e4;
       }
     ",
           ],

@@ -1,8 +1,8 @@
-import Icon from 'rmdi/lib/Icon'
+import Icon from 'rmdi/lib/Icon';
 
 Icon.defaultProps = {
   display: 'block',
-  size: '24px'
-}
+  size: '24px',
+};
 
-export default Icon
+export default Icon;

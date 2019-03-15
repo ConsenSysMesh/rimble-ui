@@ -1,11 +1,9 @@
-import React, { Component } from 'react'
-import styled from 'styled-components'
-import { ReactComponent as PositiveIcon } from './icon-positive.svg'
+import React, { Component } from 'react';
+import styled from 'styled-components';
+import { ReactComponent as PositiveIcon } from './icon-positive.svg';
 
-const WrappedIconPositive = (props) => (
-  <PositiveIcon {...props} />
-)
+const WrappedIconPositive = props => <PositiveIcon {...props} />;
 
-const IconPositive = styled(WrappedIconPositive)``
+const IconPositive = styled(WrappedIconPositive)``;
 
-export default IconPositive
+export default IconPositive;
