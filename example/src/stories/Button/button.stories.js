@@ -2,7 +2,8 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withDocs } from 'storybook-readme';
 
-import MyREADME from './README.md';
+import UsageDoc from './USAGE.md';
+import GuidelinesDoc from './GUIDELINES.md';
 
 import {
   Button,
@@ -14,7 +15,7 @@ import {
 } from 'rimble-ui'
 
 storiesOf('Button', module)
-  .addDecorator(withDocs(MyREADME))
+  // .addDecorator(withDocs(UsageDoc))
   .add('default', () => (
     <div>
       <Button>Click Me</Button>
@@ -52,3 +53,8 @@ storiesOf('Button', module)
       </Button>
     </div>
   ))
+  .add('Guidelines',withDocs(GuidelinesDoc, () => (
+    <div>
+      <Button>Click Me</Button>
+    </div>
+  )))
