@@ -20,7 +20,7 @@ Button uses all the props from [`Box`](https://consensys.github.io/rimble-ui/?pa
 | --------- | ------- | ---------------------------------------------------------------- | ------- | --------------------------------------------------------------------------------------------------------------- |
 | size      | String  | small, medium, large                                             | medium  | Sets button size to small, medium or large                                                                      |
 | fullWidth | boolean | true, false                                                      | true    | Sets button width to fullWidth                                                                                  |
-| disabled  | boolean | true, false                                                      | true    | Sets button style to disabled to indicate the user has to do something prior to being able to press this button |
+| disabled  | boolean | true, false                                                      | true    | Sets button style to disabled |
 | icon      | string  | [icon list](https://github.com/jxnblk/rmdi/blob/master/ICONS.md) | none    | Adds Icon to button                                                                                             |
 | iconPos   | string  | left, right                                                      | left    | Sets Icon position inside button                                                                                |
 | iconOnly  | boolean | true, false                                                      | true    | Sets Button dimensions for icon-only buttons                                                                    |
