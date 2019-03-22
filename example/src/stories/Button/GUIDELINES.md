@@ -34,6 +34,7 @@ Keep copy concise – don’t use articles (a, the, an) in button microcopy. Thi
 **Don’t**: Add a wallet
 
 Make sure you explain the next step and not the end goal. The user should understand exactly what will happen once they press the button  
+
 If you have a button that launches a QR code for you to scan with your mobile...  
 
 **Do**: Show QR code  
