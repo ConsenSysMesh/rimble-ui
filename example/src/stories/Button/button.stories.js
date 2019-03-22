@@ -15,7 +15,7 @@ import {
 } from 'rimble-ui'
 
 storiesOf('Button', module)
-  // .addDecorator(withDocs(UsageDoc))
+  .addDecorator(withDocs(UsageDoc))
   .add('Documentation', withDocs(UsageDoc, ()=> (
     <div>
       <Button>Click Me</Button>
@@ -47,6 +47,7 @@ storiesOf('Button', module)
       </Button>
     </div>
   ))
+  .addDecorator(withDocs(GuidelinesDoc))
   .add('Guidelines',withDocs(GuidelinesDoc, () => (
     <div>
       <Button>Click Me</Button>
@@ -80,5 +81,4 @@ storiesOf('Button', module)
         <Loader color='white'/>
       </Button>
     </div>
-
   )))
