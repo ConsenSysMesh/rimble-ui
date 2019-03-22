@@ -4,9 +4,9 @@ import { doc } from 'storybook-readme';
 
 import themingREADME from './theming-README.md';
 import installREADME from './install-README.md';
-import welcome from './welcome.md';
+import welcomeREADME from './welcome.md';
 
 storiesOf('Getting Started', module)
   .add('Installation', doc(installREADME))
   .add('Theming', doc(themingREADME))
-  .add('Welcome', doc(welcome))
+  .add('Welcome', doc(welcomeREADME))
