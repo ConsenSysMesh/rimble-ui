@@ -13,6 +13,7 @@ import {
   Icon,
   Loader,
   Text,
+  Heading,
   Box,
   Flex,
 } from 'rimble-ui';
@@ -46,6 +47,8 @@ storiesOf('Button', module)
             Large Button
           </Button>
           <br />
+          <Heading.h5>Full-width Button</Heading.h5>
+          <Text.p>This is a full-width button</Text.p>
           <Button fullWidth>Full-width Button</Button>
         </div>
         <div>
