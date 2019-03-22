@@ -5,9 +5,9 @@ import { transparentize } from 'polished';
 
 import defaultTheme from '../theme';
 
-const Progress = styled.progress.attrs({
-  primarycolor: props => themeGet('colors.primary', '#000')(props),
-})`
+const Progress = styled.progress.attrs(props => ({
+  primarycolor: themeGet('colors.primary', '#000')(props),
+}))`
   & {
     appearance: none;
     display: inline-block;
