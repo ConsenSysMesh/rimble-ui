@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 import {
   Avatar,
@@ -32,40 +32,54 @@ import {
   ThemeProvider,
   ToastMessage,
   Tooltip,
-  theme
-} from "rimble-ui";
+  theme,
+} from 'rimble-ui';
 
 const myTheme = {
   ...theme,
   colors: {
     ...theme.colors,
-    primary: "red"
-  }
+    primary: 'red',
+  },
 };
 
-const testComponents = (props) => (
+const testComponents = props => (
   <React.Fragment>
-    <Button size={"medium"}>Click me!</Button>
+    <Button size={'medium'}>Click me!</Button>
     <OutlineButton>Click</OutlineButton>
     <TextButton>Click</TextButton>
     <Link>I'm a Link!</Link>
-    <PublicAddress address="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2"/>
-    <Input></Input>
-    <Icon name={'Info'}></Icon>
-    <Icon name={'Info'} color='primary'></Icon>
-    <Tooltip variant='dark' message='Your custom message'>
+    <PublicAddress address="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2" />
+    <Input />
+    <Icon name={'Info'} />
+    <Icon name={'Info'} color="primary" />
+    <Tooltip variant="dark" message="Your custom message">
       <Text.span>hover me</Text.span>
     </Tooltip>
-    <Blockie opts={{seed: "foo", color: "#dfe", bgcolor: "#a71", size: 15, scale: 3, spotcolor: "#4E3FCE"}} />
-    <Textarea rows={4} defaultValue='Type here…' />
-    <Text>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta quibusdam, assumenda officiis.</Text>
-    <Avatar/>
-    <Avatar size="small"/>
-    <Avatar size="medium"/>
-    <Avatar size="large"/>
+    <Blockie
+      opts={{
+        seed: 'foo',
+        color: '#dfe',
+        bgcolor: '#a71',
+        size: 15,
+        scale: 3,
+        spotcolor: '#4E3FCE',
+      }}
+    />
+    <Textarea rows={4} defaultValue="Type here…" />
+    <Text>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
+      quibusdam, assumenda officiis.
+    </Text>
+    <Avatar />
+    <Avatar size="small" />
+    <Avatar size="medium" />
+    <Avatar size="large" />
 
     <Slider />
-    <Select items={['Wandering Thunder','Black Wildflower','Ancient Paper',]} />
+    <Select
+      items={['Wandering Thunder', 'Black Wildflower', 'Ancient Paper']}
+    />
     <Progress value={0.5} />
     <Heading.h1>Quick zephyrs blow, vexing daft Jim.</Heading.h1>
 
@@ -78,21 +92,21 @@ const testComponents = (props) => (
     <Heading.h5>Quick zephyrs blow, vexing daft Jim.</Heading.h5>
 
     <Heading.h6>Quick zephyrs blow, vexing daft Jim.</Heading.h6>
-    <Field label='label'>
-      <Input type='text' />
+    <Field label="label">
+      <Input type="text" />
     </Field>
-    <Radio label="Radio default" />
-    <Radio checked label="Radio checked" />
-    <Radio disabled label="Radio disabled" />
-    <Radio disabled checked label="Radio checked disabled" />
-    <Checkbox label="Checkbox default" />
-    <Checkbox checked label="Checkbox checked" />
-    <Checkbox disabled label="Checkbox disabled" />
-    <Checkbox disabled checked label="Checkbox checked disabled" />
-    <Box></Box>
-    <Card></Card>
-    <Flex></Flex>
-    <Table></Table>
+    <Radio label="Radio default" readOnly />
+    <Radio checked label="Radio checked" readOnly />
+    <Radio disabled label="Radio disabled" readOnly />
+    <Radio disabled checked label="Radio checked disabled" readOnly />
+    <Checkbox label="Checkbox default" readOnly />
+    <Checkbox checked label="Checkbox checked" readOnly />
+    <Checkbox disabled label="Checkbox disabled" readOnly />
+    <Checkbox disabled checked label="Checkbox checked disabled" readOnly />
+    <Box />
+    <Card />
+    <Flex />
+    <Table />
     <Image src="https://source.unsplash.com/random/1280x720" />
     <MetaMaskButton />
     <Loader />
@@ -102,30 +116,42 @@ const testComponents = (props) => (
     <ToastMessage.Processing />
     <ToastMessage.Success />
     <ToastMessage.Failure />
-    <Pill mr={'2'} mb={'3'}>{'Pending'}</Pill>
-    <Pill selected={true} mr={'2'} mb={'3'}>{'Pending'}</Pill>
+    <Pill mr={'2'} mb={'3'}>
+      {'Pending'}
+    </Pill>
+    <Pill selected={true} mr={'2'} mb={'3'}>
+      {'Pending'}
+    </Pill>
 
-    <Pill color={'primary'} mr={'2'} mb={'3'}>{'Pending'}</Pill>
-    <Pill selected={true} color={'primary'} mr={'2'} mb={'3'}>{'Pending'}</Pill>
+    <Pill color={'primary'} mr={'2'} mb={'3'}>
+      {'Pending'}
+    </Pill>
+    <Pill selected={true} color={'primary'} mr={'2'} mb={'3'}>
+      {'Pending'}
+    </Pill>
 
-    <Pill color={'red'} mr={'2'} mb={'3'}>{'Pending'}</Pill>
-    <Pill selected={true} color={'red'} mr={'2'} mb={'3'}>{'Pending'}</Pill>
+    <Pill color={'red'} mr={'2'} mb={'3'}>
+      {'Pending'}
+    </Pill>
+    <Pill selected={true} color={'red'} mr={'2'} mb={'3'}>
+      {'Pending'}
+    </Pill>
 
-    <Pill color={'blue'} mr={'2'} mb={'3'}>{'Pending'}</Pill>
-    <Pill selected={true} color={'blue'} mr={'2'} mb={'3'}>{'Pending'}</Pill>
+    <Pill color={'blue'} mr={'2'} mb={'3'}>
+      {'Pending'}
+    </Pill>
+    <Pill selected={true} color={'blue'} mr={'2'} mb={'3'}>
+      {'Pending'}
+    </Pill>
   </React.Fragment>
-)
+);
 
 export default class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <div>
-          { testComponents() }
-        </div>
-        <ThemeProvider theme={myTheme}>
-          { testComponents() }
-        </ThemeProvider>
+        <div>{testComponents()}</div>
+        <ThemeProvider theme={myTheme}>{testComponents()}</ThemeProvider>
       </React.Fragment>
     );
   }

@@ -8,9 +8,9 @@ import Button from '../Button';
 
 import defaultTheme from '../theme';
 
-const OutlineButton = styled(Button).attrs({
-  primarycolor: props => themeGet('colors.primary', '#000')(props),
-})`
+const OutlineButton = styled(Button).attrs(props => ({
+  primarycolor: themeGet('colors.primary', '#000')(props),
+}))`
   & {
     background: white;
   }

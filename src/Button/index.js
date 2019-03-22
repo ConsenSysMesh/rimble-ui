@@ -56,9 +56,9 @@ const ProtoButton = React.forwardRef((props, ref) => (
   </Box>
 ));
 
-const Button = styled(ProtoButton).attrs({
-  hovercolor: props => themeGet('colors.primary', 'black')(props),
-})`
+const Button = styled(ProtoButton).attrs(props => ({
+  hovercolor: themeGet('colors.primary', 'black')(props),
+}))`
   & {
     cursor: pointer;
     text-decoration: none;
