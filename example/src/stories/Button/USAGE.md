@@ -1,27 +1,26 @@
 # Button documentation
-Use the `Button` component when you want users to perform an action like connecting their Ethereum account or starting a transaction. It contains a label with an optional icon before or after the label. It maps to a `<button type='button'>` element and extends [`Box`](https://consensys.github.io/rimble-ui/?path=/story/layout--box).
+Use the `Button` component when you want users to perform an action like connecting their Ethereum account or starting a transaction. It contains a label with an optional icon before or after the label. It maps to a `<button type='button'>` element and extends [`Box`](https://consensys.github.io/rimble-ui/?path=/story/layout--box).  
 
 _Want to understand best practices for using this component?_ Read [`Button` design guidelines](https://github.com/ConsenSys/rimble-ui/blob/rc-button-docs/example/src/stories/Button/GUIDELINES.md)
 
 <!-- STORY -->
 
-### Usage
+### Usage 
 Copy/paste the following code snippets to see `Button` in action.
 
-**Import component**
+**Import component** 
 
 ```jsx
 import { Button } from 'rimble-ui'
 ```
 
-**Default button**
+**Default button**   
 
 <!-- Default button example here -->
 ```jsx
 <Button>Click Me</Button>
 ```
-**Different button sizes**
-
+**Different button sizes**  
 This will cover small, medium, large and full-width buttons.
 
 <!-- Large,Medium, and Small buttons here -->
@@ -38,7 +37,7 @@ This will cover small, medium, large and full-width buttons.
 <Button disabled>disabled Button</Button>
 ```
 
-**Button with icon**
+**Button with icon**  
 This will cover a default button with icon, a button with an icon to the right of the label and a button with an icon only.
 
 ```jsx
