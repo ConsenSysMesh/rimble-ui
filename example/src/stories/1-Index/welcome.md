@@ -16,7 +16,7 @@ Rimble is completely open source.
 How to contribute or request components.
 
 ### Rimble demo app  
-Alongside our UI components, we're also building a demo app to showcase how you can plug these components into Web 3.0 technologies. 
+Alongside our UI components, we're also building a demo app to showcase how you can plug these components into Web 3.0. 
 
 [Try the demo out](https://mikelockz.github.io/rimble-app-demo/)
 
@@ -26,11 +26,9 @@ It currently covers:
 - How to keep your user aware of their transaction's status
 - How to warn your user they have no funds in their account
 
-
 ### Rimble latest
 - Release v0.5.0 (22 Feb 2019)
   - Updated [Table component](https://consensys.github.io/rimble-ui/?path=/story/table--default)
 - Release v0.4.9 (date)
-  -
 
 
