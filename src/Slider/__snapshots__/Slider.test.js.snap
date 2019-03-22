@@ -56,7 +56,6 @@ exports[`Slider component sanity matches default snapshot 1`] = `
 
 <input
   class="c0"
-  primarycolor="#4E3FCE"
   type="range"
 >
   
@@ -128,7 +127,6 @@ exports[`Slider component sanity matches themed snapshot 1`] = `
 >
   <input
     class="c1"
-    primarycolor="#4E3FCE"
     type="range"
   >
     
