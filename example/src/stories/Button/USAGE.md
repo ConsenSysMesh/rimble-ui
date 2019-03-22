@@ -3,48 +3,13 @@ Use the `Button` component when you want users to perform an action like connect
 
 _Want to understand best practices for using this component?_ Read [`Button` design guidelines](https://github.com/ConsenSys/rimble-ui/blob/rc-button-docs/example/src/stories/Button/GUIDELINES.md)
 
-<!-- STORY -->
-
-### Usage  
-Copy/paste the following code snippets to see `Button` in action.
-
-**Import component** 
+**Import component**
 
 ```jsx
 import { Button } from 'rimble-ui'
 ```
 
-**Default button**   
-
-<!-- Default button example here -->
-```jsx
-<Button>Click Me</Button>
-```
-**Different button sizes**  
-This will cover small, medium, large and full-width buttons.
-
-<!-- Large,Medium, and Small buttons here -->
-```jsx
-<Button size="small">Small Button</Button>
-<Button size="medium">Medium Button</Button>
-<Button size="large">Large Button</Button>
-<Button fullWidth>Full-width Button</Button>
-```
-**Disabled button**
-
-<!-- Disabled button here -->
-```jsx
-<Button disabled>disabled Button</Button>
-```
-
-**Button with icon**  
-This will cover a default button with icon, a button with an icon to the right of the label and a button with an icon only.
-
-```jsx
-<Button icon="Check">Click me!</Button>
-<Button icon="Check" iconpos="right">Click me!</Button>
-<Button icon='MoreHoriz' icononly/>
-```
+<!-- STORY -->
 
 ### Component props and theming  
 Button uses all the props from [`Box`](https://consensys.github.io/rimble-ui/?path=/story/layout--box) and its icon property is inherited from [`Icon`](https://consensys.github.io/rimble-ui/?path=/story/icon--default), but also includes these:
