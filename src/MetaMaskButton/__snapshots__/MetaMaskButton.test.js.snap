@@ -2,10 +2,10 @@
 
 exports[`MetaMaskButton component sanity matches default snapshot 1`] = `
 <StyledComponent
-  forwardedClass={
+  forwardedComponent={
     Object {
       "$$typeof": Symbol(react.forward_ref),
-      "attrs": undefined,
+      "attrs": Array [],
       "componentStyle": ComponentStyle {
         "componentId": "sc-gQORMK",
         "isStatic": false,
@@ -43,9 +43,12 @@ exports[`MetaMaskButton component sanity matches default snapshot 1`] = `
         ],
       },
       "displayName": "MetaMaskButton",
+      "foldedComponentIds": Array [
+        "sc-jZIEzD",
+      ],
       "outline": Object {
         "$$typeof": Symbol(react.forward_ref),
-        "attrs": undefined,
+        "attrs": Array [],
         "componentStyle": ComponentStyle {
           "componentId": "sc-eiqfgm",
           "isStatic": false,
@@ -84,9 +87,13 @@ exports[`MetaMaskButton component sanity matches default snapshot 1`] = `
           ],
         },
         "displayName": "Styled(Styled(ProtoButton))",
+        "foldedComponentIds": Array [
+          "sc-jZIEzD",
+        ],
         "render": [Function],
         "styledComponentId": "sc-eiqfgm",
         "target": [Function],
+        "toString": [Function],
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
         Symbol(Symbol.hasInstance): [Function],
@@ -94,6 +101,7 @@ exports[`MetaMaskButton component sanity matches default snapshot 1`] = `
       "render": [Function],
       "styledComponentId": "sc-gQORMK",
       "target": [Function],
+      "toString": [Function],
       "warnTooManyClasses": [Function],
       "withComponent": [Function],
       Symbol(Symbol.hasInstance): [Function],
@@ -262,9 +270,7 @@ exports[`MetaMaskButton component sanity matches themed snapshot 1`] = `
     }
   }
 >
-  <GlobalStyleComponent
-    suppressMultiMountWarning={false}
-  />
+  <GlobalStyleComponent />
   <styled.div
     theme={
       Object {
