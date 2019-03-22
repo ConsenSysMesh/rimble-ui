@@ -77,7 +77,7 @@ Default: false
 Theme: none
 
 ### Styled-system props  
-Button uses all the style props from [`Box`](https://consensys.github.io/rimble-ui/?path=/story/layout--box, but also includes these:
+Button uses all the style props from [`Box`](https://consensys.github.io/rimble-ui/?path=/story/layout--box), but also includes these:
 
 **position**  
 prop: ?  
