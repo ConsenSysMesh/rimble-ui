@@ -28,22 +28,22 @@ Some best practices for using `Button` in your product.
 ### Content guidelines  
 Some best practices for writing `Button` microcopy.
 
-- Keep copy concise – don’t use articles (a, the, an) in button microcopy. This will make your button quicker to scan and shorter
+Keep copy concise – don’t use articles (a, the, an) in button microcopy. This will make your button quicker to scan and shorter
 
-**Do**: Add wallet  
-**Don’t**: Add a wallet
+- **Do**: Add wallet  
+- **Don’t**: Add a wallet
 
-- Make sure you explain the next step and not the end goal. The user should understand exactly what will happen once they press the button  
+Make sure you explain the next step and not the end goal. The user should understand exactly what will happen once they press the button  
 
 _If you have a button that launches a QR code for you to scan with your mobile..._  
 
-**Do**: Show QR code  
-**Don’t**: Scan QR code  
+- **Do**: Show QR code  
+- **Don’t**: Scan QR code  
 
-- Lead with a verb and follow with a noun. Don’t rely on the rest of the interface to inform the user about what their action relates to. Universally understood actions like "Save", "Next" and "Previous" etc may not need the noun  
+Lead with a verb and follow with a noun. Don’t rely on the rest of the interface to inform the user about what their action relates to. Universally understood actions like "Save", "Next" and "Previous" etc may not need the noun  
 
-**Do**: Add wallet / Send Ether  
-**Don’t**: Add / Send 
+- **Do**: Add wallet / Send Ether  
+- **Don’t**: Add / Send 
 
 ### Related components 
 - [`MetaMaskButton`](https://consensys.github.io/rimble-ui/?path=/story/button--metamaskbutton) – a ready-styled button to tell your users that they can connect with MetaMask 
