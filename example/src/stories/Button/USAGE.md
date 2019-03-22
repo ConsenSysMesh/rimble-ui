@@ -21,6 +21,7 @@ import { Button } from 'rimble-ui'
 <Button>Click Me</Button>
 ```
 **Different button sizes**
+
 This will cover small, medium, large and full-width buttons.
 
 <!-- Large,Medium, and Small buttons here -->
