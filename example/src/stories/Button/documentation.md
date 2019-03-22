@@ -16,32 +16,14 @@ import { Button } from 'rimble-ui';
 
 Button uses all the props from [`Box`](https://consensys.github.io/rimble-ui/?path=/story/layout--box) and its icon property is inherited from [`Icon`](https://consensys.github.io/rimble-ui/?path=/story/icon--default), but also includes these:
 
-**Size** (`string`)  
-Sets button size to small, medium or large  
-Theme: none
-
-**fullWidth** (`boolean`)  
-Sets button width to fullWidth  
-Theme: none
-
-**Disabled** (`boolean`)  
-Sets button style to disabled to indicate the user has to do something prior to being able to press this button  
-Default: true  
-Theme: none
-
-**Icon** (`string`)  
-Adds Icon to button. See [icon list](https://github.com/jxnblk/rmdi/blob/master/ICONS.md)  
-Theme: none
-
-**Iconpos** (`string`)  
-Sets Icon position inside button.  
-Default: left  
-Theme: none
-
-**Icononly** (`boolean`)  
-Sets Button dimensions for icon-only buttons.  
-Default: false  
-Theme: none
+| Prop      | Type    | Values                                                           | Default | Description                                                                                                     |
+| --------- | ------- | ---------------------------------------------------------------- | ------- | --------------------------------------------------------------------------------------------------------------- |
+| size      | String  | small, medium, large                                             | medium  | Sets button size to small, medium or large                                                                      |
+| fullWidth | boolean | true, false                                                      | true    | Sets button width to fullWidth                                                                                  |
+| disabled  | boolean | true, false                                                      | true    | Sets button style to disabled to indicate the user has to do something prior to being able to press this button |
+| icon      | string  | [icon list](https://github.com/jxnblk/rmdi/blob/master/ICONS.md) | none    | Adds Icon to button                                                                                             |
+| iconPos   | string  | left, right                                                      | left    | Sets Icon position inside button                                                                                |
+| iconOnly  | boolean | true, false                                                      | true    | Sets Button dimensions for icon-only buttons                                                                    |
 
 ### Styled-system props
 
