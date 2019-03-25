@@ -16,6 +16,8 @@ import {
   Heading,
   Box,
   Flex,
+  Modal,
+  Card,
 } from 'rimble-ui';
 
 storiesOf('Button', module)
@@ -134,51 +136,92 @@ storiesOf('Button', module)
     ))
   )
   .add(
-    'Guidelines',
+    'Design guidelines',
     withDocs(Guidelines, () => (
-      <div>
-        <div>
-          <Button>Click Me</Button>
-        </div>
-        <div>
-          <Button>Click Me</Button>
-        </div>
-        <div>
-          <Button size="small" mb={3}>
-            Small Button
-          </Button>
-          <br />
-          <Button size="medium" mb={3}>
-            Medium Button
-          </Button>
-          <br />
-          <Button size="large" mb={3}>
-            Large Button
-          </Button>
-          <br />
-          <Button fullWidth>Full-width Button</Button>
-        </div>
-        <div>
-          <Button disabled>disabled Button</Button>
-        </div>
-        <div>
-          <Button icon="Check" mb="3">
-            Click me!
-          </Button>
-          <br />
-          <Button icon="Check" iconpos="right" mb="3">
-            Click me!
-          </Button>
-          <br />
-          <Button icon="MoreHoriz" icononly mb="3" mr={2} />
-          <OutlineButton icon="MoreHoriz" icononly mb="3" mr={2} />
-          <TextButton icon="MoreHoriz" icononly mb="3" />
-        </div>
-        <div>
-          <Button>
-            <Loader color="white" />
-          </Button>
-        </div>
-      </div>
+    <Box textAlign={'left'}>
+    <Box>
+      <Heading.h2>Design</Heading.h2>
+      <Text>Some best practices for using <code>{'Button'}</code> in your product.</Text>
+    </Box>
+    <Box>
+    <ul>
+    <li>
+    <Text>Don’t use buttons for navigational links, they're for action-based tasks. Use <a href="https://consensys.github.io/rimble-ui/?path=/story/button--textbutton"><code>{'textButton'}</code></a> instead</Text></li></ul>
+    </Box>
+    <Box>
+    <ul>
+    <li>
+    <Text>Keep button position consistent so that users know where to look when they want to perform actions</Text></li>
+    </ul>
+    </Box>
+    <Box>
+    <ul>
+    <li>
+    <Text>Don’t use too many buttons together on one piece of interface: prioritise the most important action. Use <a href="https://consensys.github.io/rimble-ui/?path=/story/button--textbutton"><code>{'textButton'}</code></a> and <a href="https://consensys.github.io/rimble-ui/?path=/story/button--outlinebutton"><code>{'outlineButton'}</code></a> to give your actions visual hierarchy</Text></li></ul>
+    </Box>
+    <Box>
+    <ul>
+    <li><Text>If a user needs to do something prior to performing an action, it’s better to set the Disabled prop to True than to use this component and follow it up with an error message</Text></li></ul>
+    </Box>
+    <br /><br />
+      <Box>
+        <Heading.h2>Content</Heading.h2>
+        <Text>Some best practices for writing <code>{'Button'}</code> microcopy.</Text>
+      </Box>
+      <Box>
+        <Heading.h4>Keep copy concise</Heading.h4>
+        <Text>Don’t use articles (a, the, an) in button microcopy. This will make your button quicker to scan and shorter.</Text>
+      </Box>
+      <br />
+      <Flex>
+        <Box width={1/2}>
+          <Heading.h6>Do</Heading.h6>
+          <Button size="medium">Add wallet</Button>
+        </Box>
+        <Box width={1/2}>
+          <Heading.h6>Don't</Heading.h6>
+          <Button size="medium">Add a wallet</Button>
+        </Box>
+      </Flex>
+      <br />
+      <Box>
+        <Heading.h4>Explain the next step, not the end goal</Heading.h4>
+        <Text>The user should understand exactly what will happen once they press the button.</Text><br />
+        <Text>For example, if you have a button that launches a QR code for you to scan with your mobile...</Text>
+      </Box>
+      <br />
+      <Flex>
+        <Box width={1/2}>
+          <Heading.h6>Do</Heading.h6>
+          <Button size="medium">Show QR code</Button>
+        </Box>
+        <Box width={1/2}>
+          <Heading.h6>Don't</Heading.h6>
+          <Button size="medium">Scan QR code</Button>
+        </Box>
+        <br />
+      </Flex>
+      <br />
+      <Box>
+        <Heading.h4>Lead with a verb</Heading.h4>
+        <Text>And follow with a noun. Don’t rely on the rest of the interface to inform the user about what their action relates to.</Text>
+      </Box>
+      <br />
+      <Flex>
+        <Box width={1/2}>
+          <Heading.h6>Do</Heading.h6>
+          <Button size="medium">Add wallet</Button><br /><br  />
+          <Button size="medium">Send Ether</Button>
+        </Box>
+        <Box width={1/2}>
+          <Heading.h6>Don't</Heading.h6>
+          <Button icon="AddCircle">Add</Button><br /><br />
+          <Button icon="Send" mb="3">Send</Button>
+        </Box>
+      </Flex>
+      <Box>
+      <Text>Universally understood actions like "Save", "Next" and "Previous" etc may not need the noun.</Text>
+      </Box>
+      </Box>
     ))
   );
