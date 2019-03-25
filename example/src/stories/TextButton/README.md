@@ -5,11 +5,11 @@ _Want to understand best practices for using a button component?_ Read [`Button`
 
 **Import component**
 ```jsx
-<TextButton>TextButton</TextButton>
+import { TextButton } from 'rimble-ui'
 ```
 <!-- STORY -->
 
-### Component props and theming
+### Component props
 
 Button uses all the props from [`Button`](https://consensys.github.io/rimble-ui/?path=/story/button--documentation).
 

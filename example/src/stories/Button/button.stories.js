@@ -20,7 +20,7 @@ import {
   Card,
 } from 'rimble-ui';
 
-storiesOf('Button', module)
+storiesOf('Buttons/Button', module)
   .add(
     'Documentation',
     withDocs(Documentation, () => (

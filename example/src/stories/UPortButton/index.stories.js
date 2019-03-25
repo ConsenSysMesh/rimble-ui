@@ -6,9 +6,9 @@ import MyREADME from './README.md';
 
 import { UPortButton, Flex, Box, Heading, Text, Button } from 'rimble-ui'
 
-storiesOf('Button', module)
+storiesOf('Buttons/UPortButton', module)
   .addDecorator(withDocs(MyREADME))
-  .add('UPortButton', () => (
+  .add('Documentation', () => (
     <Box textAlign={'left'}>
     <Box>
       <Heading.h2>UPortButton examples</Heading.h2>

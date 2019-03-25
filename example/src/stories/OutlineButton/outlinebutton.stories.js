@@ -17,9 +17,9 @@ Flex,
 Modal,
 Card, } from 'rimble-ui'
 
-storiesOf('Button', module)
+storiesOf('Buttons/OutlineButton', module)
   .addDecorator(withDocs(MyREADME))
-  .add('OutlineButton', () => (
+  .add('Documentation', () => (
     <Box textAlign={'left'}>
     <Box>
       <Heading.h2>OutlineButton examples</Heading.h2>
@@ -28,68 +28,68 @@ storiesOf('Button', module)
     </Box>
     <Box>
     <Heading.h4>Default</Heading.h4>
-    <OutlineButton mb={3}>OutlineButton</OutlineButton>
+    <OutlineButton mb={3}>Scan QR code</OutlineButton>
     </Box>
     <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-      <code>{'<OutlineButton>OutlineButton</OutlineButton>'}</code>
+      <code>{'<OutlineButton>Scan QR code</OutlineButton>'}</code>
     </Box>
     <br />
     <Box>
       <Heading.h4>Different sizes</Heading.h4>
       <OutlineButton size="small" mb={3}>
-        Connect wallet
+        Scan QR code
       </OutlineButton>
     </Box>
       <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>{'<OutlineButton size="small">Connect wallet</OutlineButton>'}</code>
+        <code>{'<OutlineButton size="small">Scan QR code</OutlineButton>'}</code>
       </Box>
       <br />
     <Box>
       <OutlineButton size="medium" mb={3}>
-        Connect wallet
+        Scan QR code
       </OutlineButton>
     </Box>
       <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>{'<OutlineButton size="medium">Connect wallet</OutlineButton>'}</code>
+        <code>{'<OutlineButton size="medium">Scan QR code</OutlineButton>'}</code>
       </Box>
       <br />
     <Box>
       <OutlineButton size="large" mb={3}>
-        Connect wallet
+        Scan QR code
       </OutlineButton>
     </Box>
       <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>{'<OutlineButton size="large">Connect wallet</OutlineButton>'}</code>
+        <code>{'<OutlineButton size="large">Scan QR code</OutlineButton>'}</code>
       </Box>
       <br />
       <Box>
         <Heading.h4>Full-width button</Heading.h4>
         <OutlineButton fullWidth mb={3}>
-          Connect wallet
+          Scan QR code
         </OutlineButton>
       </Box>
       <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>{'<OutlineButton fullWidth>Connect wallet</OutlineButton>'}</code>
+        <code>{'<OutlineButton fullWidth>Scan QR code</OutlineButton>'}</code>
       </Box>
       <br />
       <Box>
         <Heading.h4>Disabled button</Heading.h4>
         <OutlineButton disabled mb={3}>
-          Connect wallet
+          Scan QR code
         </OutlineButton>
       </Box>
       <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>{'<OutlineButton disabled>Connect wallet</OutlineButton>'}</code>
+        <code>{'<OutlineButton disabled>Scan QR code</OutlineButton>'}</code>
       </Box>
       <br />
       <Box>
         <Heading.h4>Icon</Heading.h4>
-        <OutlineButton icon="Send" mb="3">
-          Send Ether
+        <OutlineButton icon="CameraAlt" mb="3">
+          Scan QR code
         </OutlineButton>
       </Box>
       <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>{'<OutlineButton icon="Send">Connect wallet</OutlineButton>'}</code>
+        <code>{'<OutlineButton icon="CameraAlt">Scan QR code</OutlineButton>'}</code>
       </Box>
       <br />
     </Box>

@@ -10,7 +10,7 @@ import { OutlineButton } from 'rimble-ui'
 
 <!-- STORY -->
 
-### Component props and theming
+### Component props
 
 Button uses all the props from [`Button`](https://consensys.github.io/rimble-ui/?path=/story/button--documentation).
 

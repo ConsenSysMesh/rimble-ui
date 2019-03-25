@@ -6,9 +6,9 @@ import MyREADME from './README.md';
 
 import { MetaMaskButton, Box, Heading, Text } from 'rimble-ui'
 
-storiesOf('Button', module)
+storiesOf('Buttons/MetaMaskButton', module)
   .addDecorator(withDocs(MyREADME))
-  .add('MetaMaskButton', () => (
+  .add('Documentation', () => (
     <Box textAlign={'left'}>
     <Box>
       <Heading.h2>MetaMaskButton examples</Heading.h2>

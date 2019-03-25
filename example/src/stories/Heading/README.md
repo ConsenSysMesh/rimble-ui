@@ -1,27 +1,29 @@
-# Heading
-The `Heading` component extends `Text` component to provide default heading styles for H1-H6.
+# Heading documentation
+Use the `Heading` component to give users scannable titles on your interface. A user should be able to understand what a page is for just by reading the headings. This components extends the [`Text`](https://consensys.github.io/rimble-ui/?path=/story/text--default) component to provide default heading styles for H1-H6.
 
-<!-- STORY -->
-
-### Usage
+**Import component**
 ```jsx
 import { Heading } from 'rimble-ui'
 ```
 
-To render different HTML heading elements, use the following:
-<!-- H1-H6 examples -->
-```jsx
-<Heading.h1>Quick zephyrs blow, vexing daft Jim.</Heading.h1>
+<!-- STORY -->
 
-<Heading.h2>Quick zephyrs blow, vexing daft Jim.</Heading.h2>
+### Component props
+Heading uses all the props from [`Text`](https://consensys.github.io/rimble-ui/?path=/story/text--default).
 
-<Heading.h3>Quick zephyrs blow, vexing daft Jim.</Heading.h3>
-
-<Heading.h4>Quick zephyrs blow, vexing daft Jim.</Heading.h4>
-
-<Heading.h5>Quick zephyrs blow, vexing daft Jim.</Heading.h5>
-
-<Heading.h6>Quick zephyrs blow, vexing daft Jim.</Heading.h6>
-```
-
-<!-- H1-H6 component props -->
+### Accessibility
+- Headings should be used `h1` through to `h6` without skipping
+- An `h1` should appear at the beginning of the page content so screen readers can skip straight to the first `Header` and start reading the page content
+- A good, accessible structure looks like:
+  - `h1`
+    - `h2`
+      - `h3`
+        - `h4`
+      - `h3`
+        - `h4`
+          - `h5`
+            - `h6`
+      - `h3`
+        - `h4`
+    - `h2`
+- `h3` to `h6` are typically only used for long-form content
