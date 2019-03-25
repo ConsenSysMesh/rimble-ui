@@ -1,18 +1,15 @@
-import React from 'react'
-import styled from 'styled-components'
-import { themeGet } from 'styled-system'
-import {
-  tint,
-  shade
-} from 'polished'
+import React from 'react';
+import styled from 'styled-components';
+import { themeGet } from 'styled-system';
+import { tint, shade } from 'polished';
 
-import Button from '../Button'
+import Button from '../Button';
 
-import defaultTheme from '../theme'
+import defaultTheme from '../theme';
 
-const TextButton = styled(Button).attrs({
-  primarycolor: props => themeGet('colors.primary', '#000')(props)
-})`
+const TextButton = styled(Button).attrs(props => ({
+  primarycolor: themeGet('colors.primary', '#000')(props),
+}))`
   & {
     background-color: transparent;
     box-shadow: none;
@@ -28,7 +25,7 @@ const TextButton = styled(Button).attrs({
     text-decoration: none;
     background-color: transparent;
   }
-`
+`;
 
 TextButton.defaultProps = {
   theme: defaultTheme,
@@ -40,9 +37,9 @@ TextButton.defaultProps = {
   height: '48px',
   border: 'none',
   px: 4,
-  py: 0
-}
+  py: 0,
+};
 
-TextButton.displayName = 'TextButton'
+TextButton.displayName = 'TextButton';
 
-export default TextButton
+export default TextButton;

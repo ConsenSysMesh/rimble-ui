@@ -1,13 +1,13 @@
-import React from 'react'
-import styled from 'styled-components'
-import { themeGet } from 'styled-system'
+import React from 'react';
+import styled from 'styled-components';
+import { themeGet } from 'styled-system';
 
-import defaultTheme from '../theme'
+import defaultTheme from '../theme';
 
-const Slider = styled.input.attrs({
+const Slider = styled.input.attrs(props => ({
   type: 'range',
-  primarycolor: props => themeGet('colors.primary', '#000')(props)
-})`
+  primarycolor: themeGet('colors.primary', '#000')(props),
+}))`
   & {
     appearance: none;
     height: 2rem;
@@ -18,7 +18,7 @@ const Slider = styled.input.attrs({
     appearance: none;
     border: none;
     border-radius: 4px;
-    background: ${ props => props.primarycolor };
+    background: ${props => props.primarycolor};
     height: 4px;
     display: flex;
     align-items: center;
@@ -38,17 +38,17 @@ const Slider = styled.input.attrs({
     }
     &:active {
       cursor: grabbing;
-      border-color: ${ props => props.primarycolor }
+      border-color: ${props => props.primarycolor};
     }
   }
-`
+`;
 
 Slider.defaultProps = {
   theme: defaultTheme,
   m: 0,
   p: 0,
-}
+};
 
-Slider.displayName = 'Slider'
+Slider.displayName = 'Slider';
 
-export default Slider
+export default Slider;

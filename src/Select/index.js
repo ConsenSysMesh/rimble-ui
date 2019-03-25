@@ -1,10 +1,10 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
-import Input from '../Input'
-import ExpandMore from 'rmdi/lib/ExpandMore'
+import Input from '../Input';
+import ExpandMore from 'rmdi/lib/ExpandMore';
 
-import defaultTheme from '../theme'
+import defaultTheme from '../theme';
 
 const StyledWrapper = styled.span`
   & {
@@ -19,31 +19,33 @@ const StyledWrapper = styled.span`
     pointer-events: none;
     margin: auto;
   }
-`
+`;
 
 const StyledSelect = styled(Input.InputOnly)`
   & {
     appearance: none;
     padding: 0 3rem 0 1rem;
   }
-`
+`;
 
-const Select = (props) => (
+const Select = props => (
   <StyledWrapper>
     <StyledSelect {...props} as={'select'}>
-      {props.items.map(
-        (item, i) => (<option key={i} value={item}>{item}</option>)
-      )}
+      {props.items.map((item, i) => (
+        <option key={i} value={item}>
+          {item}
+        </option>
+      ))}
     </StyledSelect>
     <ExpandMore />
   </StyledWrapper>
-)
+);
 
 Select.defaultProps = {
   theme: defaultTheme,
-  as: 'select'
-}
+  as: 'select',
+};
 
-Select.displayName = 'Select'
+Select.displayName = 'Select';
 
-export default Select
+export default Select;

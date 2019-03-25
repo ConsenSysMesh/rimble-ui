@@ -1,20 +1,17 @@
 import React, { Component } from 'react';
 
-import Box from '../Box'
-import Input from '../Input'
-import Field from '../Field'
-import Checkbox from '../Checkbox'
+import Box from '../Box';
+import Input from '../Input';
+import Field from '../Field';
+import Checkbox from '../Checkbox';
 
 class Form extends Component {
-
   render() {
-    let {
-      className,
-      children,
-      validated
-    } = this.props;
+    let { className, children, validated } = this.props;
 
-    if (validated) { className += ' was-validated' }
+    if (validated) {
+      className += ' was-validated';
+    }
 
     return (
       <Box className={className} {...this.props}>
@@ -22,15 +19,14 @@ class Form extends Component {
       </Box>
     );
   }
-
 }
 
 Form.defaultProps = {
   as: 'form',
-  validated: false
+  validated: false,
 };
 
-Form.displayName = 'Form'
+Form.displayName = 'Form';
 
 Form.Input = Input;
 Form.Field = Field;

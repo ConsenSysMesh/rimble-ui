@@ -228,13 +228,13 @@ exports[`Form component sanity matches themed snapshot 1`] = `
   fill: #CCC;
 }
 
-.c9 > svg[name="checked"] {
+.c9 > svg[name='checked'] {
   display: none;
   z-index: 1;
   fill: #4E3FCE;
 }
 
-.c9 > input:checked ~ svg[name="checked"] {
+.c9 > input:checked ~ svg[name='checked'] {
   display: block;
 }
 
@@ -651,13 +651,13 @@ exports[`Form component sanity renders children elements 1`] = `
   fill: #CCC;
 }
 
-.c8 > svg[name="checked"] {
+.c8 > svg[name='checked'] {
   display: none;
   z-index: 1;
   fill: #4E3FCE;
 }
 
-.c8 > input:checked ~ svg[name="checked"] {
+.c8 > input:checked ~ svg[name='checked'] {
   display: block;
 }
 

@@ -826,8 +826,8 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   height: 80px;
   padding: 0 1rem;
   box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
-  -webkit-transition: all .15s ease;
-  transition: all .15s ease;
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease;
 }
 
 .c1:hover {
@@ -1195,9 +1195,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
       }
     }
   >
-    <GlobalStyleComponent
-      suppressMultiMountWarning={false}
-    />
+    <GlobalStyleComponent />
     <styled.div
       theme={
         Object {
@@ -1357,10 +1355,10 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
       }
     >
       <StyledComponent
-        forwardedClass={
+        forwardedComponent={
           Object {
             "$$typeof": Symbol(react.forward_ref),
-            "attrs": undefined,
+            "attrs": Array [],
             "componentStyle": ComponentStyle {
               "componentId": "sc-fgITWd",
               "isStatic": false,
@@ -1374,15 +1372,17 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                 ";
               color: ",
                 [Function],
-                "
+                ";
             }
           ",
               ],
             },
             "displayName": "styled.div",
+            "foldedComponentIds": Array [],
             "render": [Function],
             "styledComponentId": "sc-fgITWd",
             "target": "div",
+            "toString": [Function],
             "warnTooManyClasses": [Function],
             "withComponent": [Function],
           }
@@ -1585,10 +1585,10 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                 colorTheme=""
                 display="flex"
                 flexDirection="row nowrap"
-                forwardedClass={
+                forwardedComponent={
                   Object {
                     "$$typeof": Symbol(react.forward_ref),
-                    "attrs": undefined,
+                    "attrs": Array [],
                     "componentStyle": ComponentStyle {
                       "componentId": "sc-iIQDRA",
                       "isStatic": false,
@@ -1720,7 +1720,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                       height: 80px;
                       padding: 0 1rem;
                       box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-                      transition: all .15s ease;
+                      transition: all 0.15s ease;
                     }
                   
                     &:hover {
@@ -1775,9 +1775,13 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                       "flexDirection": "row nowrap",
                     },
                     "displayName": "Styled(Box)",
+                    "foldedComponentIds": Array [
+                      "sc-bdVaJa",
+                    ],
                     "render": [Function],
                     "styledComponentId": "sc-iIQDRA",
                     "target": "div",
+                    "toString": [Function],
                     "warnTooManyClasses": [Function],
                     "withComponent": [Function],
                   }
@@ -1957,10 +1961,10 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                     <StyledComponent
                       className="iconBox"
                       flex="0 0"
-                      forwardedClass={
+                      forwardedComponent={
                         Object {
                           "$$typeof": Symbol(react.forward_ref),
-                          "attrs": undefined,
+                          "attrs": Array [],
                           "componentStyle": ComponentStyle {
                             "componentId": "sc-bdVaJa",
                             "isStatic": false,
@@ -2244,9 +2248,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                             },
                           },
                           "displayName": "Box",
+                          "foldedComponentIds": Array [],
                           "render": [Function],
                           "styledComponentId": "sc-bdVaJa",
                           "target": "div",
+                          "toString": [Function],
                           "warnTooManyClasses": [Function],
                           "withComponent": [Function],
                         }
@@ -2579,10 +2585,10 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                   >
                     <StyledComponent
                       flex="1 1 auto"
-                      forwardedClass={
+                      forwardedComponent={
                         Object {
                           "$$typeof": Symbol(react.forward_ref),
-                          "attrs": undefined,
+                          "attrs": Array [],
                           "componentStyle": ComponentStyle {
                             "componentId": "c3",
                             "isStatic": false,
@@ -2874,9 +2880,13 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                             },
                           },
                           "displayName": "Styled(Box)",
+                          "foldedComponentIds": Array [
+                            "sc-bdVaJa",
+                          ],
                           "render": [Function],
                           "styledComponentId": "c3",
                           "target": "div",
+                          "toString": [Function],
                           "warnTooManyClasses": [Function],
                           "withComponent": [Function],
                         }
@@ -3213,10 +3223,10 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                             fontFamily="sansSerif"
                             fontSize={1}
                             fontWeight={3}
-                            forwardedClass={
+                            forwardedComponent={
                               Object {
                                 "$$typeof": Symbol(react.forward_ref),
-                                "attrs": undefined,
+                                "attrs": Array [],
                                 "componentStyle": ComponentStyle {
                                   "componentId": "c5",
                                   "isStatic": false,
@@ -3541,9 +3551,12 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                   },
                                 },
                                 "displayName": "Text",
+                                "foldedComponentIds": Array [
+                                  "sc-bdVaJa",
+                                ],
                                 "p": Object {
                                   "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": undefined,
+                                  "attrs": Array [],
                                   "componentStyle": ComponentStyle {
                                     "componentId": "sc-gQORMK",
                                     "isStatic": false,
@@ -3595,16 +3608,18 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                     "textAlign": "left",
                                   },
                                   "displayName": "styled.p",
+                                  "foldedComponentIds": Array [],
                                   "render": [Function],
                                   "styledComponentId": "sc-gQORMK",
                                   "target": "p",
+                                  "toString": [Function],
                                   "warnTooManyClasses": [Function],
                                   "withComponent": [Function],
                                 },
                                 "render": [Function],
                                 "s": Object {
                                   "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": undefined,
+                                  "attrs": Array [],
                                   "componentStyle": ComponentStyle {
                                     "componentId": "sc-eiqfgm",
                                     "isStatic": false,
@@ -3656,15 +3671,17 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                     "textAlign": "left",
                                   },
                                   "displayName": "styled.s",
+                                  "foldedComponentIds": Array [],
                                   "render": [Function],
                                   "styledComponentId": "sc-eiqfgm",
                                   "target": "s",
+                                  "toString": [Function],
                                   "warnTooManyClasses": [Function],
                                   "withComponent": [Function],
                                 },
                                 "span": Object {
                                   "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": undefined,
+                                  "attrs": Array [],
                                   "componentStyle": ComponentStyle {
                                     "componentId": "sc-jZIEzD",
                                     "isStatic": false,
@@ -3716,14 +3733,17 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                     "textAlign": "left",
                                   },
                                   "displayName": "styled.span",
+                                  "foldedComponentIds": Array [],
                                   "render": [Function],
                                   "styledComponentId": "sc-jZIEzD",
                                   "target": "span",
+                                  "toString": [Function],
                                   "warnTooManyClasses": [Function],
                                   "withComponent": [Function],
                                 },
                                 "styledComponentId": "c5",
                                 "target": "div",
+                                "toString": [Function],
                                 "warnTooManyClasses": [Function],
                                 "withComponent": [Function],
                               }
@@ -4068,10 +4088,10 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                             fontFamily="sansSerif"
                             fontSize={1}
                             fontWeight={2}
-                            forwardedClass={
+                            forwardedComponent={
                               Object {
                                 "$$typeof": Symbol(react.forward_ref),
-                                "attrs": undefined,
+                                "attrs": Array [],
                                 "componentStyle": ComponentStyle {
                                   "componentId": "c5",
                                   "isStatic": false,
@@ -4396,9 +4416,12 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                   },
                                 },
                                 "displayName": "Text",
+                                "foldedComponentIds": Array [
+                                  "sc-bdVaJa",
+                                ],
                                 "p": Object {
                                   "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": undefined,
+                                  "attrs": Array [],
                                   "componentStyle": ComponentStyle {
                                     "componentId": "sc-gQORMK",
                                     "isStatic": false,
@@ -4450,16 +4473,18 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                     "textAlign": "left",
                                   },
                                   "displayName": "styled.p",
+                                  "foldedComponentIds": Array [],
                                   "render": [Function],
                                   "styledComponentId": "sc-gQORMK",
                                   "target": "p",
+                                  "toString": [Function],
                                   "warnTooManyClasses": [Function],
                                   "withComponent": [Function],
                                 },
                                 "render": [Function],
                                 "s": Object {
                                   "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": undefined,
+                                  "attrs": Array [],
                                   "componentStyle": ComponentStyle {
                                     "componentId": "sc-eiqfgm",
                                     "isStatic": false,
@@ -4511,15 +4536,17 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                     "textAlign": "left",
                                   },
                                   "displayName": "styled.s",
+                                  "foldedComponentIds": Array [],
                                   "render": [Function],
                                   "styledComponentId": "sc-eiqfgm",
                                   "target": "s",
+                                  "toString": [Function],
                                   "warnTooManyClasses": [Function],
                                   "withComponent": [Function],
                                 },
                                 "span": Object {
                                   "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": undefined,
+                                  "attrs": Array [],
                                   "componentStyle": ComponentStyle {
                                     "componentId": "sc-jZIEzD",
                                     "isStatic": false,
@@ -4571,14 +4598,17 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                     "textAlign": "left",
                                   },
                                   "displayName": "styled.span",
+                                  "foldedComponentIds": Array [],
                                   "render": [Function],
                                   "styledComponentId": "sc-jZIEzD",
                                   "target": "span",
+                                  "toString": [Function],
                                   "warnTooManyClasses": [Function],
                                   "withComponent": [Function],
                                 },
                                 "styledComponentId": "c5",
                                 "target": "div",
+                                "toString": [Function],
                                 "warnTooManyClasses": [Function],
                                 "withComponent": [Function],
                               }
@@ -4929,10 +4959,10 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                       fontFamily="sansSerif"
                       fontSize={2}
                       fontWeight={2}
-                      forwardedClass={
+                      forwardedComponent={
                         Object {
                           "$$typeof": Symbol(react.forward_ref),
-                          "attrs": undefined,
+                          "attrs": Array [],
                           "componentStyle": ComponentStyle {
                             "componentId": "c5",
                             "isStatic": false,
@@ -5257,9 +5287,12 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                             },
                           },
                           "displayName": "Text",
+                          "foldedComponentIds": Array [
+                            "sc-bdVaJa",
+                          ],
                           "p": Object {
                             "$$typeof": Symbol(react.forward_ref),
-                            "attrs": undefined,
+                            "attrs": Array [],
                             "componentStyle": ComponentStyle {
                               "componentId": "sc-gQORMK",
                               "isStatic": false,
@@ -5311,16 +5344,18 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                               "textAlign": "left",
                             },
                             "displayName": "styled.p",
+                            "foldedComponentIds": Array [],
                             "render": [Function],
                             "styledComponentId": "sc-gQORMK",
                             "target": "p",
+                            "toString": [Function],
                             "warnTooManyClasses": [Function],
                             "withComponent": [Function],
                           },
                           "render": [Function],
                           "s": Object {
                             "$$typeof": Symbol(react.forward_ref),
-                            "attrs": undefined,
+                            "attrs": Array [],
                             "componentStyle": ComponentStyle {
                               "componentId": "sc-eiqfgm",
                               "isStatic": false,
@@ -5372,15 +5407,17 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                               "textAlign": "left",
                             },
                             "displayName": "styled.s",
+                            "foldedComponentIds": Array [],
                             "render": [Function],
                             "styledComponentId": "sc-eiqfgm",
                             "target": "s",
+                            "toString": [Function],
                             "warnTooManyClasses": [Function],
                             "withComponent": [Function],
                           },
                           "span": Object {
                             "$$typeof": Symbol(react.forward_ref),
-                            "attrs": undefined,
+                            "attrs": Array [],
                             "componentStyle": ComponentStyle {
                               "componentId": "sc-jZIEzD",
                               "isStatic": false,
@@ -5432,14 +5469,17 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                               "textAlign": "left",
                             },
                             "displayName": "styled.span",
+                            "foldedComponentIds": Array [],
                             "render": [Function],
                             "styledComponentId": "sc-jZIEzD",
                             "target": "span",
+                            "toString": [Function],
                             "warnTooManyClasses": [Function],
                             "withComponent": [Function],
                           },
                           "styledComponentId": "c5",
                           "target": "div",
+                          "toString": [Function],
                           "warnTooManyClasses": [Function],
                           "withComponent": [Function],
                         }
@@ -5783,12 +5823,12 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                             fontFamily="sansSerif"
                             fontSize={1}
                             fontWeight={3}
-                            forwardedClass={
+                            forwardedComponent={
                               Object {
                                 "$$typeof": Symbol(react.forward_ref),
-                                "attrs": Object {
-                                  "primarycolor": [Function],
-                                },
+                                "attrs": Array [
+                                  [Function],
+                                ],
                                 "componentStyle": ComponentStyle {
                                   "componentId": "sc-bGbZqa",
                                   "isStatic": false,
@@ -6129,9 +6169,13 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                   },
                                 },
                                 "displayName": "Link",
+                                "foldedComponentIds": Array [
+                                  "sc-bdVaJa",
+                                  "c5",
+                                ],
                                 "p": Object {
                                   "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": undefined,
+                                  "attrs": Array [],
                                   "componentStyle": ComponentStyle {
                                     "componentId": "sc-gQORMK",
                                     "isStatic": false,
@@ -6183,16 +6227,18 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                     "textAlign": "left",
                                   },
                                   "displayName": "styled.p",
+                                  "foldedComponentIds": Array [],
                                   "render": [Function],
                                   "styledComponentId": "sc-gQORMK",
                                   "target": "p",
+                                  "toString": [Function],
                                   "warnTooManyClasses": [Function],
                                   "withComponent": [Function],
                                 },
                                 "render": [Function],
                                 "s": Object {
                                   "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": undefined,
+                                  "attrs": Array [],
                                   "componentStyle": ComponentStyle {
                                     "componentId": "sc-eiqfgm",
                                     "isStatic": false,
@@ -6244,15 +6290,17 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                     "textAlign": "left",
                                   },
                                   "displayName": "styled.s",
+                                  "foldedComponentIds": Array [],
                                   "render": [Function],
                                   "styledComponentId": "sc-eiqfgm",
                                   "target": "s",
+                                  "toString": [Function],
                                   "warnTooManyClasses": [Function],
                                   "withComponent": [Function],
                                 },
                                 "span": Object {
                                   "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": undefined,
+                                  "attrs": Array [],
                                   "componentStyle": ComponentStyle {
                                     "componentId": "sc-jZIEzD",
                                     "isStatic": false,
@@ -6304,14 +6352,17 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                     "textAlign": "left",
                                   },
                                   "displayName": "styled.span",
+                                  "foldedComponentIds": Array [],
                                   "render": [Function],
                                   "styledComponentId": "sc-jZIEzD",
                                   "target": "span",
+                                  "toString": [Function],
                                   "warnTooManyClasses": [Function],
                                   "withComponent": [Function],
                                 },
                                 "styledComponentId": "sc-bGbZqa",
                                 "target": "div",
+                                "toString": [Function],
                                 "warnTooManyClasses": [Function],
                                 "withComponent": [Function],
                               }
@@ -6477,13 +6528,12 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                             }
                           >
                             <a
-                              className="c9"
+                              className="c5 c9"
                               color="primary"
                               fontFamily="sansSerif"
                               fontSize={1}
                               fontWeight={3}
                               href="http://test.com"
-                              primarycolor="#4E3FCE"
                               target="_blank"
                             >
                               Link
@@ -6516,10 +6566,10 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
   colorTheme=""
   display="flex"
   flexDirection="row nowrap"
-  forwardedClass={
+  forwardedComponent={
     Object {
       "$$typeof": Symbol(react.forward_ref),
-      "attrs": undefined,
+      "attrs": Array [],
       "componentStyle": ComponentStyle {
         "componentId": "sc-iIQDRA",
         "isStatic": false,
@@ -6650,7 +6700,7 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
         height: 80px;
         padding: 0 1rem;
         box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-        transition: all .15s ease;
+        transition: all 0.15s ease;
       }
     
       &:hover {
@@ -6705,9 +6755,13 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
         "flexDirection": "row nowrap",
       },
       "displayName": "Styled(Box)",
+      "foldedComponentIds": Array [
+        "sc-bdVaJa",
+      ],
       "render": [Function],
       "styledComponentId": "sc-iIQDRA",
       "target": "div",
+      "toString": [Function],
       "warnTooManyClasses": [Function],
       "withComponent": [Function],
     }
@@ -7723,10 +7777,10 @@ exports[`ToastMessage component sanity matches generic snapshot 1`] = `
   colorTheme=""
   display="flex"
   flexDirection="row nowrap"
-  forwardedClass={
+  forwardedComponent={
     Object {
       "$$typeof": Symbol(react.forward_ref),
-      "attrs": undefined,
+      "attrs": Array [],
       "componentStyle": ComponentStyle {
         "componentId": "sc-iIQDRA",
         "isStatic": false,
@@ -7857,7 +7911,7 @@ exports[`ToastMessage component sanity matches generic snapshot 1`] = `
         height: 80px;
         padding: 0 1rem;
         box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-        transition: all .15s ease;
+        transition: all 0.15s ease;
       }
     
       &:hover {
@@ -7912,9 +7966,13 @@ exports[`ToastMessage component sanity matches generic snapshot 1`] = `
         "flexDirection": "row nowrap",
       },
       "displayName": "Styled(Box)",
+      "foldedComponentIds": Array [
+        "sc-bdVaJa",
+      ],
       "render": [Function],
       "styledComponentId": "sc-iIQDRA",
       "target": "div",
+      "toString": [Function],
       "warnTooManyClasses": [Function],
       "withComponent": [Function],
     }

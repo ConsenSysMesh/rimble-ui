@@ -24,10 +24,10 @@ export const caps = props =>
     : null
 
 export const regular = props =>
-  props.regular ? { fontWeight: props.theme.regular } : null
+  props.regular ? { fontWeight: props.theme.fontWeights[1] } : null
 
 export const bold = props =>
-  props.bold ? { fontWeight: props.theme.bold } : null
+  props.bold ? { fontWeight: props.theme.fontWeights[3] } : null
 
 export const italic = props => (props.italic ? { fontStyle: 'italic' } : null)
 

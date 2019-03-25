@@ -2,13 +2,13 @@
 
 exports[`UPortButton component sanity matches default snapshot 1`] = `
 <StyledComponent
-  forwardedClass={
+  forwardedComponent={
     Object {
       "$$typeof": Symbol(react.forward_ref),
       "Outline": [Circular],
       "Solid": Object {
         "$$typeof": Symbol(react.forward_ref),
-        "attrs": undefined,
+        "attrs": Array [],
         "componentStyle": ComponentStyle {
           "componentId": "sc-gQORMK",
           "isStatic": false,
@@ -31,7 +31,7 @@ exports[`UPortButton component sanity matches default snapshot 1`] = `
         width: ",
             [Function],
             ";
-        margin-right: .5rem;
+        margin-right: 0.5rem;
       }
     ",
             "
@@ -68,14 +68,18 @@ exports[`UPortButton component sanity matches default snapshot 1`] = `
           ],
         },
         "displayName": "Styled(Styled(ProtoButton))",
+        "foldedComponentIds": Array [
+          "sc-jZIEzD",
+        ],
         "render": [Function],
         "styledComponentId": "sc-gQORMK",
         "target": [Function],
+        "toString": [Function],
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
         Symbol(Symbol.hasInstance): [Function],
       },
-      "attrs": undefined,
+      "attrs": Array [],
       "componentStyle": ComponentStyle {
         "componentId": "sc-eiqfgm",
         "isStatic": false,
@@ -98,20 +102,20 @@ exports[`UPortButton component sanity matches default snapshot 1`] = `
         width: ",
           [Function],
           ";
-        margin-right: .5rem;
+        margin-right: 0.5rem;
       }
     ",
           "
       & {
         color: #333333;
-        background: #FFFFFF;
-        border: 1px solid #CCCCCC;
+        background: #ffffff;
+        border: 1px solid #cccccc;
       }
       &:hover {
-        background-color: #F3F2F2;
+        background-color: #f3f2f2;
       }
       &:active {
-        background-color: #E4E4E4;
+        background-color: #e4e4e4;
       }
     ",
         ],
@@ -123,9 +127,13 @@ exports[`UPortButton component sanity matches default snapshot 1`] = `
         ],
       },
       "displayName": "UPortButton",
+      "foldedComponentIds": Array [
+        "sc-jZIEzD",
+      ],
       "render": [Function],
       "styledComponentId": "sc-eiqfgm",
       "target": [Function],
+      "toString": [Function],
       "warnTooManyClasses": [Function],
       "withComponent": [Function],
       Symbol(Symbol.hasInstance): [Function],
@@ -300,9 +308,7 @@ exports[`UPortButton component sanity matches themed snapshot 1`] = `
     }
   }
 >
-  <GlobalStyleComponent
-    suppressMultiMountWarning={false}
-  />
+  <GlobalStyleComponent />
   <styled.div
     theme={
       Object {

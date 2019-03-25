@@ -1,14 +1,14 @@
-import React from 'react'
-import styled from 'styled-components'
-import { themeGet } from 'styled-system'
+import React from 'react';
+import styled from 'styled-components';
+import { themeGet } from 'styled-system';
 
-import CheckBox from 'rmdi/lib/CheckBox'
-import CheckBoxOutlineBlank from 'rmdi/lib/CheckBoxOutlineBlank'
+import CheckBox from 'rmdi/lib/CheckBox';
+import CheckBoxOutlineBlank from 'rmdi/lib/CheckBoxOutlineBlank';
 
-import Box from '../Box'
-import Text from '../Text'
+import Box from '../Box';
+import Text from '../Text';
 
-import defaultTheme from '../theme'
+import defaultTheme from '../theme';
 
 const StyledWrapper = styled(Box)`
   & {
@@ -38,35 +38,43 @@ const StyledWrapper = styled(Box)`
     fill: ${props => themeGet('colors.grey', '#CCC')};
   }
 
-  > svg[name="checked"] {
+  > svg[name='checked'] {
     display: none;
     z-index: 1;
     fill: ${props => themeGet('colors.primary', '#000')};
   }
 
-  > input:checked ~ svg[name="checked"] {
+  > input:checked ~ svg[name='checked'] {
     display: block;
   }
-`
+`;
 
-const Checkbox = ({className, ...props}) => (
-  <Box as="label" className={className} {...props} htmlFor={props.id} display="flex" alignItems="center" opacity={props.disabled ? 0.4 : 1 }>
+const Checkbox = ({ className, ...props }) => (
+  <Box
+    as="label"
+    className={className}
+    {...props}
+    htmlFor={props.id}
+    display="flex"
+    alignItems="center"
+    opacity={props.disabled ? 0.4 : 1}
+  >
     <StyledWrapper>
       <input type="checkbox" {...props} />
-      <CheckBox name='checked' />
+      <CheckBox name="checked" />
       <CheckBoxOutlineBlank />
     </StyledWrapper>
     <Text fontSize={1} fontWeight={3} ml={1} mr={2}>
       {props.label}
     </Text>
   </Box>
-)
+);
 
 Checkbox.defaultProps = {
   theme: defaultTheme,
-  color: 'primary'
-}
+  color: 'primary',
+};
 
-Checkbox.displayName = 'Checkbox'
+Checkbox.displayName = 'Checkbox';
 
-export default Checkbox
+export default Checkbox;

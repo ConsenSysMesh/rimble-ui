@@ -22,7 +22,6 @@ exports[`Progress component sanity matches default snapshot 1`] = `
 
 <progress
   class="c0"
-  primarycolor="#4E3FCE"
 >
   
 </progress>
@@ -59,7 +58,6 @@ exports[`Progress component sanity matches themed snapshot 1`] = `
 >
   <progress
     class="c1"
-    primarycolor="#4E3FCE"
   >
     
   </progress>

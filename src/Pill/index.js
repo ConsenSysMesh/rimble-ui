@@ -1,19 +1,19 @@
-import React, { Component } from "react";
-import styled from "styled-components";
-import { themeGet } from "styled-system";
+import React, { Component } from 'react';
+import styled from 'styled-components';
+import { themeGet } from 'styled-system';
 
-import Text from "../Text";
+import Text from '../Text';
 
-import defaultTheme from '../theme'
+import defaultTheme from '../theme';
 
-const Pill = styled(Text).attrs({
-  tintlevel: props => (props.selected ? "0.25" : "0.12")
-})`
+const Pill = styled(Text).attrs(props => ({
+  tintlevel: props.selected ? '0.25' : '0.12',
+}))`
   & {
     position: relative;
     cursor: pointer;
-    border: ${props => (props.selected ? "1px solid" : "none")};
-    border-color: ${props => (props.selected ? props.color : "none")};
+    border: ${props => (props.selected ? '1px solid' : 'none')};
+    border-color: ${props => (props.selected ? props.color : 'none')};
     background: none;
     overflow: hidden;
   }
@@ -34,25 +34,25 @@ const Pill = styled(Text).attrs({
     height: 100%;
     width: 100%;
     background-color: currentColor;
-    opacity: ${props => props.tintlevel}
+    opacity: ${props => props.tintlevel};
   }
 `;
 
 Pill.defaultProps = {
   theme: defaultTheme,
-  color: "dark-gray",
+  color: 'dark-gray',
   px: 3,
   py: 1,
   fontSize: 1,
   fontFamily: 'sansSerif',
   height: 2,
-  lineHeight: "solid",
+  lineHeight: 'solid',
   borderRadius: 3,
-  display: "inline-flex",
-  alignItems: "center",
-  selected: false
+  display: 'inline-flex',
+  alignItems: 'center',
+  selected: false,
 };
 
-Pill.displayName = "Pill";
+Pill.displayName = 'Pill';
 
 export default Pill;
