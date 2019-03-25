@@ -3,8 +3,9 @@ import { storiesOf } from '@storybook/react'
 import { withDocs } from 'storybook-readme';
 
 import MyREADME from './README.md';
+import Guidelines from './GUIDELINES.md';
 
-import { Heading, Box, Text } from 'rimble-ui'
+import { Heading, Box, Text, Flex, } from 'rimble-ui'
 
 storiesOf('Heading', module)
   .addDecorator(withDocs(MyREADME))
@@ -82,3 +83,72 @@ storiesOf('Heading', module)
       </Box>
     </Box>
   ))
+  .add(
+    'Design guidelines',
+    withDocs(Guidelines, () => (
+    <Box textAlign={'left'}>
+    <Box>
+      <Heading.h2>Design</Heading.h2>
+      <Text>Some best practices for using <code>{'Heading'}</code> in your product.</Text>
+    </Box>
+    <Box>
+    <ul>
+    <li>
+    <Text>Only use one <code>{'h1'}</code> per page</Text></li></ul>
+    </Box>
+    <Box>
+    <ul>
+    <li>
+    <Text>Headings should explain the content below</Text></li>
+    </ul>
+    </Box>
+    <Box>
+    <ul>
+    <li>
+    <Text>Keep headings short for scannability</Text></li></ul>
+    </Box>
+    <Box>
+    <ul>
+    <li>
+    <Text>Headings should appear at the top of the section of the interface they're introducing</Text></li></ul>
+    </Box>
+    <br /><br />
+      <Box>
+        <Heading.h2>Content</Heading.h2>
+        <Text>Some best practices for writing <code>{'Heading'}</code> components.</Text>
+      </Box>
+      <Box>
+        <Heading.h4>Avoid articles</Heading.h4>
+        <Text>Don’t use articles (a, the, an) in headings. This will make your heading shorter and quicker to scan.</Text>
+      </Box>
+      <br />
+      <Flex>
+        <Box width={1/2}>
+          <Heading.h6>Do</Heading.h6>
+          <Heading.h2>Add wallet</Heading.h2>
+        </Box>
+        <Box width={1/2}>
+          <Heading.h6>Don't</Heading.h6>
+          <Heading.h2>Add a wallet</Heading.h2>
+        </Box>
+      </Flex>
+      <br />
+      <Box>
+        <Heading.h4>Keep copy short</Heading.h4>
+        <Text>The shorter your copy, the more scannable it will be. Just ensure the user will understand what to expect from the content or action below the heading.</Text>
+      </Box>
+      <br />
+      <Flex>
+        <Box width={1/2}>
+          <Heading.h6>Do</Heading.h6>
+          <Heading.h2>Transactions</Heading.h2>
+        </Box>
+        <Box width={1/2}>
+          <Heading.h6>Don't</Heading.h6>
+          <Heading.h2>Your latest transactions</Heading.h2>
+        </Box>
+      </Flex>
+      <br />
+      </Box>
+    ))
+  );
