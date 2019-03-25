@@ -29,14 +29,14 @@ Button uses all the props from [`Box`](https://consensys.github.io/rimble-ui/?pa
 
 Button uses all the style props from [`Box`](https://consensys.github.io/rimble-ui/?path=/story/layout--box), but also includes these:
 
-| Prop         | CSS property                   | Function     | Theme Field   |
+| Prop         | CSS property                   | Function     | Theme field   |
 | ------------ | ------------------------------ | ------------ | ------------- |
 | position     | position                       | position     | none          |
 | color        | color                          | color        | colors        |
 | bg           | background-color               | bg           | none          |
 | height       | height                         | height       | heights?      |
 | m            | margin                         | space        | space         |
-| px           | padding-right and padding-left | px           | spacde        |
+| px           | padding-right and padding-left | px           | space        |
 | py           | padding-top and padding-bottom | py           | space         |
 | border       | border-width                   | border       | borderWidths? |
 | borderColor  | border-color                   | borderColor  | colors        |
