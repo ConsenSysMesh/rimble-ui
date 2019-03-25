@@ -77,15 +77,14 @@ storiesOf('Button', module)
         <Box>
           <Heading.h4>Disabled button</Heading.h4>
           <Text.p>
-            Use to tell the user that they need to do something before they can
-            perform the action. If possible, use the button copy to explain what
-            they need to do or why the button is disabled.
+            Use to indicate to the user that they need to do something before they can
+            perform the action.
           </Text.p>
           <Button disabled mb={3}>
-            Switch to MainNet
+            Connect wallet
           </Button>
           <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-            <code>{'<Button disabled>disabled Button</Button>'}</code>
+            <code>{'<Button disabled>Connect wallet</Button>'}</code>
           </Box>
         </Box>
         <br />

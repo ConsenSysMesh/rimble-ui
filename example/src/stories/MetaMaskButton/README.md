@@ -1,40 +1,19 @@
-# MetaMaskButton
-The `MetaMaskButton` component maps to a `<button type='button'>` element. Inherits props from `Button`.
-<!-- STORY -->
+# MetaMaskButton documentation
+Use the `MetaMaskButton` component to let users know they can connect to your dApp using MetaMask. `MetaMaskButton` maps to a `<button type='button'>` element and inherits props from `Button`.
 
-### Usage
+_Want to understand best practices for using a button component?_ Read [`Button` design guidelines](https://consensys.github.io/rimble-ui/?path=/story/button--design--guidelines)
+
+**Import component**
 ```jsx
 import { MetaMaskButton } from 'rimble-ui'
 ```
-<!-- component example here -->
-```jsx
 
-<MetaMaskButton mb={3}>Connect with MetaMask</MetaMaskButton>
+<!-- STORY -->
 
-<MetaMaskButton.outline mb={3}>Connect with MetaMask</MetaMaskButton.outline>
+### Component props and theming
 
-<MetaMaskButton fullWidth mb={3}>Connect with MetaMask</MetaMaskButton>
+Button uses all the props from [`Button`](https://consensys.github.io/rimble-ui/?path=/story/button--documentation).
 
-<MetaMaskButton.outline fullWidth mb={3} >Connect with MetaMask</MetaMaskButton.outline>
+### Styled-system props
 
-
-<MetaMaskButton size="small" mb={3} mr={3}>Connect with MetaMask</MetaMaskButton>
-<MetaMaskButton.outline size="small" mb={3}>Connect with MetaMask</MetaMaskButton.outline>
-
-<MetaMaskButton size="medium" mb={3} mr={3}>Connect with MetaMask</MetaMaskButton>
-<MetaMaskButton.outline size="medium" mb={3}>Connect with MetaMask</MetaMaskButton.outline>
-
-<MetaMaskButton size="large" mb={3} mr={3}>Connect with MetaMask</MetaMaskButton>
-<MetaMaskButton.outline size="large" mb={3}>Connect with MetaMask</MetaMaskButton.outline>
-```
-
-
-### Props
-
-Inherits props from `Button`.
-
-| Name        | Type    | Default | Description                                 |
-| ----------- | ------- | ------- | ------------------------------------------- |
-| `size`      | string  |         | Sets button size to small, medium, or large |
-| `fullWidth` | boolean |         | Sets button width to fullWidth              |
-| `disabled`  | boolean |         | Sets button style to disabled               |
+Button uses all the style props from [`Button`](https://consensys.github.io/rimble-ui/?path=/story/button--documentation).

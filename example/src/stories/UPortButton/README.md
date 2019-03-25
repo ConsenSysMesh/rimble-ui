@@ -1,5 +1,5 @@
 # UPortButton documentation
-Use the `UPortButton` component when you want users to know they can connect to your dApp using their uPort account. `UPortButton` maps to a `<button type='button'>` element and inherits props from [`Button`](https://consensys.github.io/rimble-ui/?path=/story/button--documentation).
+Use the `UPortButton` component to let users know they can connect to your dApp using their uPort account. `UPortButton` maps to a `<button type='button'>` element and inherits props from [`Button`](https://consensys.github.io/rimble-ui/?path=/story/button--documentation).
 
 _Want to understand best practices for using a button component?_ Read [`Button` design guidelines](https://consensys.github.io/rimble-ui/?path=/story/button--design--guidelines)
 
