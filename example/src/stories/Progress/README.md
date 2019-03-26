@@ -1,16 +1,15 @@
 # Progress
 The `Progress` component provides a styled version of the HTML `<progress>`.
 
-<!-- STORY -->
-
-### Usage
+**Import component**
 ```jsx
 import { Progress } from 'rimble-ui'
 ```
 
+<!-- STORY -->
+
+### Component props
+
 <!-- Progress example here -->
-```jsx
-<Progress value={0.5} />
-```
 
 <!-- Progress component props -->

@@ -1,19 +1,11 @@
-# Checkbox
-The `Checkbox` component maps to a checkbox input and a label.
+# Checkbox documentation
+Use the `Checkbox` component when users can choose 0 or more than 1 options from a list. `Checkbox` maps to a checkbox input and a label.
 
-<!-- STORY -->
-
-### Usage
+**Import component**
 ```jsx
 import { Checkbox } from 'rimble-ui'
 ```
 
-<!-- Checkbox example here -->
-```jsx
-<Checkbox label="Checkbox default" />
-<Checkbox checked label="Checkbox checked" />
-<Checkbox disabled label="Checkbox disabled" />
-<Checkbox disabled checked label="Checkbox checked disabled" />
-```
+<!-- STORY -->
 
-<!-- Checkbox component props -->
+### Component props

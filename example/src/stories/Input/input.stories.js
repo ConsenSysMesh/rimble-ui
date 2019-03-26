@@ -3,6 +3,7 @@ import { storiesOf } from '@storybook/react'
 import { withDocs } from 'storybook-readme';
 
 import MyREADME from './README.md';
+import Guidelines from './GUIDELINES.md';
 
 import {
   Flex,
@@ -35,7 +36,7 @@ storiesOf('Form/Inputs', module)
     </Field>
     </Box>
     <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-      <code>insert code</code>
+      <code>{'<Input type="text" required="true" placeholder="e.g. My hodl wallet" />'}</code>
     </Box>
     <br />
     <Box>
@@ -45,7 +46,7 @@ storiesOf('Form/Inputs', module)
     </Field>
     </Box>
     <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-      <code>insert code</code>
+      <code>{'<Input type="text" placeholder="e.g. My hodl wallet" required="true" disabled />'}</code>
     </Box>
     <br />
     <Box>
@@ -56,7 +57,7 @@ storiesOf('Form/Inputs', module)
     </Field>
     </Box>
     <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-      <code>insert code</code>
+      <code>{'<Input type="text" placeholder="e.g. My hodl wallet" />'}</code>
     </Box>
     <br />
 
@@ -68,11 +69,11 @@ storiesOf('Form/Inputs', module)
     <Heading.h4>Text input</Heading.h4>
     <Text.p>Brings up a standard keyboard.</Text.p>
 <Field label='Public address'>
-      <Form.Input type='text' mb={2} required='true' placeholder='e.g. 0xAc03BB73b6a9e108530AFf4Df5077c2B3D481e5A'/>
+      <Form.Input type='text' required='true' placeholder='e.g. 0xAc03BB73b6a9e108530AFf4Df5077c2B3D481e5A'/>
 </Field>
     </Box>
     <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-      <code>insert code</code>
+      <code>{'<Form.Input type="text" required="true" placeholder="e.g. 0xAc03BB73b6a9e108530AFf4Df5077c2B3D481e5A" />'}</code>
     </Box>
 
 <br />
@@ -80,11 +81,11 @@ storiesOf('Form/Inputs', module)
     <Heading.h4>Email input</Heading.h4>
     <Text.p>Gives you an @ on your keyboard.</Text.p>
 <Field label='Email'>
-      <Form.Input type='email' name='email' mb={2} id='email' required='true' placeholder='you@example.com'/>
+      <Form.Input type='email' name='email' id='email' required='true' placeholder='you@example.com'/>
 </Field>
     </Box>
     <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-      <code>insert code</code>
+      <code>{'<Form.Input type="email" required="true" placeholder="you@example.com" />'}</code>
     </Box>
 <br />
 <Box>
@@ -95,7 +96,7 @@ storiesOf('Form/Inputs', module)
 </Field>
 </Box>
 <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-  <code>insert code</code>
+  <code>{'<Form.Input type="password" required="true" />'}</code>
 </Box>
 <br />
     <Box>
@@ -106,7 +107,7 @@ storiesOf('Form/Inputs', module)
 </Field>
     </Box>
     <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-      <code>insert code</code>
+      <code>{'<Form.Input type="number" required="true" placeholder="e.g. 123" />'}</code>
     </Box>
 <br />
     <Box>
@@ -117,7 +118,7 @@ storiesOf('Form/Inputs', module)
 </Field>
     </Box>
     <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-      <code>insert code</code>
+      <code>{'<Form.Input type="search" required="true" placeholder="e.g. Ethereum" />'}</code>
     </Box>
 <br />
     <Box>
@@ -128,7 +129,7 @@ storiesOf('Form/Inputs', module)
 </Field>
     </Box>
     <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-      <code>insert code</code>
+      <code>{'<Form.Input type="tel" required="true" placeholder="e.g. +445575242519" />'}</code>
     </Box>
 <br />
     <Box>
@@ -139,7 +140,63 @@ storiesOf('Form/Inputs', module)
 </Field>
     </Box>
     <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-      <code>insert code</code>
+      <code>{'<Form.Input type="url" required="true" placeholder="e.g. rimble.consensys.design" />'}</code>
     </Box>
     </Box>
   ))
+  .add(
+    'Design guidelines',
+    withDocs(Guidelines, () => (
+    <Box textAlign={'left'}>
+    <Box>
+      <Heading.h2>Design</Heading.h2>
+      <Text>Some best practices for using <code>{'Input'}</code> in your product.</Text>
+    </Box>
+    <Box>
+    <ul>
+    <li>
+    <Text>1</Text></li></ul>
+    </Box>
+    <Box>
+    <ul>
+    <li>
+    <Text>2</Text></li>
+    </ul>
+    </Box>
+    <Box>
+    <ul>
+    <li>
+    <Text>3</Text></li></ul>
+    </Box>
+    <Box>
+    <ul>
+    <li>
+    <Text>4</Text></li></ul>
+    </Box>
+    <br /><br />
+      <Box>
+        <Heading.h2>Content</Heading.h2>
+        <Text>Some best practices for writing <code>{'Input'}</code> components.</Text>
+      </Box>
+      <Box>
+        <Heading.h4>Don't use placeholders instead of labels</Heading.h4>
+        <Text>Placeholders disappear as the user enters the field. This makes reviewing form entries difficult as you lose the explanation of the expected input.</Text>
+      </Box>
+      <br />
+    <Flex>
+      <Box width={1/2}>
+        <Heading.h6>Do</Heading.h6>
+        <Field label="Public address">
+        <Input type="text" required="true" placeholder="e.g. 0xAc03BB73b6a9e108530AFf4Df5077c2B3D481e5A" />
+        </Field>
+      </Box>
+      <Box width={1/2}>
+        <Heading.h6>Don't</Heading.h6>
+        <Field>
+        <Input type="text" required="true" placeholder="Public address"/>
+        </Field>
+      </Box>
+    </Flex>
+    </Box>
+    ))
+  );

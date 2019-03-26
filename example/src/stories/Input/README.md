@@ -1,4 +1,4 @@
-# Input
+# Input documentation
 The `Input` component provides a styled version of HTML `<input>`.
 
 **Import component**
