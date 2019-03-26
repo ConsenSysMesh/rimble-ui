@@ -1,4 +1,4 @@
-# Avatar
+# Avatar documentation
 A basic avatar component.
 
 **Import component**

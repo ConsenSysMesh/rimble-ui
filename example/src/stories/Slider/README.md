@@ -1,8 +1,9 @@
 # Slider
 The `Slider` component provides a styled slider control for the HTML `<input type="range">`.
 
-**Import component**
-```import { Slider } from 'rimble-ui'
+**Import component**  
+```jsx
+import { Slider } from 'rimble-ui'
 ```
 
 <!-- STORY -->

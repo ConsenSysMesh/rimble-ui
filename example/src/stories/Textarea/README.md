@@ -1,16 +1,15 @@
 # Textarea
 The `Textarea` component provides a styled version of the HTML `<textarea>`.
 
-<!-- STORY -->
-
-### Usage
-```jsx
-import { Textarea } from 'rimble-ui'
-```
-
-<!-- Slider example here -->
+**Import component**  
 ```jsx
 <Textarea rows={4} defaultValue='Type here…' />
 ```
+
+<!-- STORY -->
+
+### Component props
+
+### Styled-system props
 
 <!-- Textarea component props -->
