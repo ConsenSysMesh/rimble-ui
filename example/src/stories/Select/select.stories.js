@@ -4,16 +4,18 @@ import { withDocs } from 'storybook-readme';
 
 import MyREADME from './README.md';
 
-import { Select } from 'rimble-ui'
+import { Select, Field } from 'rimble-ui'
 
 const items = [
-  'Wandering Thunder',
-  'Black Wildflower',
-  'Ancient Paper',
+  'Wallet #1',
+  'Wallet #2',
+  'Wallet #3',
 ]
 
-storiesOf('Form/Inputs', module)
+storiesOf('Form', module)
   .addDecorator(withDocs(MyREADME))
   .add('Select', () => (
-    <Select items={items} />
+  <Field label='Choose your wallet'>
+    <Select items={items} required='false'/>
+  </Field>
   ))

@@ -6,8 +6,8 @@ import MyREADME from './README.md';
 
 import { Progress } from 'rimble-ui'
 
-storiesOf('Form/Inputs', module)
+storiesOf('Form', module)
   .addDecorator(withDocs(MyREADME))
-  .add('Progress', () => (
+  .add('Progress bar', () => (
     <Progress value={0.5} />
   ))

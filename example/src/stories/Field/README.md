@@ -1,17 +1,14 @@
-# Field
+# Field documentation
 The `Field` component provides a convenient way to add a label to a form component.
 
-<!-- STORY -->
+**Import component**
 
-### Usage
 ```jsx
 import { Field } from 'rimble-ui'
 ```
 
-```jsx
-<Field label='label'>
-  <Input type='text' />
-</Field>
-```
+<!-- STORY -->
 
-<!-- Field component props -->
+### Component props
+
+### Styled-system props

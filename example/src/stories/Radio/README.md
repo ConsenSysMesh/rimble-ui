@@ -1,19 +1,11 @@
 # Radio
 The `Radio` component maps to a radio input and a label.
 
-<!-- STORY -->
+**Import component**
 
-### Usage
 ```jsx
 import { Radio } from 'rimble-ui'
 ```
+<!-- STORY -->
 
-<!-- component example here -->
-```jsx
-<Radio label="Radio default" />
-<Radio checked label="Radio checked" />
-<Radio disabled label="Radio disabled" />
-<Radio disabled checked label="Radio checked disabled" />
-```
-
-<!-- component props -->
+### Component props
