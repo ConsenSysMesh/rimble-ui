@@ -1,22 +1,13 @@
 # Loader
 The `Loader` renders a responsive box-model layout component.
 
-<!-- STORY -->
-
-### Usage
+**Import component**
 ```jsx
 import { Loader } from 'rimble-ui'
 ```
 
-<!-- component example here -->
-```jsx
-<Loader />
-<Loader color="white" bg="primary" />
+<!-- STORY -->
 
-<Loader size="40px" />
-<Loader size="80px" color="red" />
-<Loader size="80px" color="white" bg="primary" />
+### Component props
 
-<Loader color="black" />
-<Loader color="white" bg="grey" />
-```
+### Styled-system props

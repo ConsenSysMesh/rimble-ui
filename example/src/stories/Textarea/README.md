@@ -1,4 +1,4 @@
-# Textarea
+# Textarea documentation
 The `Textarea` component provides a styled version of the HTML `<textarea>`.
 
 **Import component**  

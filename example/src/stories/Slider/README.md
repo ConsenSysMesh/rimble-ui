@@ -1,4 +1,4 @@
-# Slider
+# Slider documentation
 The `Slider` component provides a styled slider control for the HTML `<input type="range">`.
 
 **Import component**  

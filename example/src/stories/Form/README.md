@@ -1,4 +1,4 @@
-# Form
+# Form documentation
 The `Form` component provides a wrapped version of the HTML `<form>` element.
 
 ## Native HTML5 form validation
