@@ -7,9 +7,9 @@ import Text from '../Text';
 
 import defaultTheme from '../theme';
 
-const Link = styled(Text).attrs({
-  primarycolor: props => themeGet('colors.primary', 'black')(props),
-})`
+const Link = styled(Text).attrs(props => ({
+  primarycolor: themeGet('colors.primary', 'black')(props),
+}))`
   & {
     text-decoration: none;
   }

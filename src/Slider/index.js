@@ -4,10 +4,10 @@ import { themeGet } from 'styled-system';
 
 import defaultTheme from '../theme';
 
-const Slider = styled.input.attrs({
+const Slider = styled.input.attrs(props => ({
   type: 'range',
-  primarycolor: props => themeGet('colors.primary', '#000')(props),
-})`
+  primarycolor: themeGet('colors.primary', '#000')(props),
+}))`
   & {
     appearance: none;
     height: 2rem;
