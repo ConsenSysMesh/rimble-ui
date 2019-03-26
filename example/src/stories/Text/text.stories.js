@@ -4,24 +4,51 @@ import { withDocs } from 'storybook-readme';
 
 import MyREADME from './README.md';
 
-import { Text } from 'rimble-ui'
+import { Text, Box, Heading } from 'rimble-ui'
 
 storiesOf('Text', module)
   .addDecorator(withDocs(MyREADME))
-  .add('default', () => (
+  .add('Documentation', () => (
+  <Box textAlign={'left'}>
+    <Box>
+    <Heading.h4>Default text</Heading.h4>
+    <Text>By default, the Text component will render a <code>{'<div>'}</code> element.</Text><br />
     <Text>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam delectus unde porro doloribus, accusantium quasi illum aperiam architecto adipisci voluptatibus illo velit modi expedita ipsa perspiciatis sed iste sit repellat, alias. Soluta sed, cumque, fugit est odit ipsam inventore porro officia repellendus voluptatem neque error. Mollitia quam cupiditate doloribus aliquid. Dolore praesentium, rerum, consequatur tenetur sapiente aliquid distinctio expedita repudiandae dolor quas maxime. Molestiae aspernatur ea beatae velit ratione neque, commodi blanditiis voluptate corporis ex cum dolores eaque animi eveniet odit assumenda deleniti unde corrupti facere veniam quibusdam. Ex at repudiandae iure quae, natus illum eveniet eaque, autem rem dicta, aliquid! Nobis voluptates, ut quae soluta laborum eius cumque minima perferendis ab suscipit. Accusamus atque optio amet esse assumenda, illum temporibus sit veniam minima qui est explicabo error placeat consectetur, ea corporis dignissimos aliquam tempore nobis nemo impedit illo recusandae sint. Eligendi laboriosam, neque fuga, debitis, quasi et corporis ipsam nihil tempora perspiciatis, impedit at! Quam atque nemo maiores rem repellat quae, aliquid, tempora sed ipsam adipisci tenetur explicabo, deleniti debitis. Iure sequi, illo, cum sit obcaecati nostrum molestias aspernatur odio aliquam adipisci esse cupiditate quis nulla nobis impedit qui ab magni natus voluptas saepe et! Ipsum praesentium in tempora.
+      The intent of Ethereum is to create an alternative protocol for building decentralized applications, providing a different set of tradeoffs that we believe will be very useful for a large class of decentralized applications, with particular emphasis on situations where rapid development time, security for small and rarely used applications, and the ability of different applications to very efficiently interact, are important. Ethereum does this by building what is essentially the ultimate abstract foundational layer: a blockchain with a built-in Turing-complete programming language, allowing anyone to write smart contracts and decentralized applications where they can create their own arbitrary rules for ownership, transaction formats and state transition functions. A bare-bones version of Namecoin can be written in two lines of code, and other protocols like currencies and reputation systems can be built in under twenty. Smart contracts, cryptographic "boxes" that contain value and only unlock it if certain conditions are met, can also be built on top of the platform, with vastly more power than that offered by Bitcoin scripting because of the added powers of Turing-completeness, value-awareness, blockchain-awareness and state.
     </Text>
-  )).add('with span', () => (
+    </Box>
+    <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
+    <code>{'<Text>The intent of Ethereum is to...</Text>'}</code>
+    </Box>
+    <br />
+    <Box>
+    <Heading.h4>Text with span</Heading.h4>
+    <Text>Render a <code>{'span'}</code> element.</Text><br />
     <Text.span>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam delectus unde porro doloribus, accusantium quasi illum aperiam architecto adipisci voluptatibus illo velit modi expedita ipsa perspiciatis sed iste sit repellat, alias. Soluta sed, cumque, fugit est odit ipsam inventore porro officia repellendus voluptatem neque error. Mollitia quam cupiditate doloribus aliquid. Dolore praesentium, rerum, consequatur tenetur sapiente aliquid distinctio expedita repudiandae dolor quas maxime. Molestiae aspernatur ea beatae velit ratione neque, commodi blanditiis voluptate corporis ex cum dolores eaque animi eveniet odit assumenda deleniti unde corrupti facere veniam quibusdam. Ex at repudiandae iure quae, natus illum eveniet eaque, autem rem dicta, aliquid! Nobis voluptates, ut quae soluta laborum eius cumque minima perferendis ab suscipit. Accusamus atque optio amet esse assumenda, illum temporibus sit veniam minima qui est explicabo error placeat consectetur, ea corporis dignissimos aliquam tempore nobis nemo impedit illo recusandae sint. Eligendi laboriosam, neque fuga, debitis, quasi et corporis ipsam nihil tempora perspiciatis, impedit at! Quam atque nemo maiores rem repellat quae, aliquid, tempora sed ipsam adipisci tenetur explicabo, deleniti debitis. Iure sequi, illo, cum sit obcaecati nostrum molestias aspernatur odio aliquam adipisci esse cupiditate quis nulla nobis impedit qui ab magni natus voluptas saepe et! Ipsum praesentium in tempora.
+      The intent of Ethereum is to create an alternative protocol for building decentralized applications, providing a different set of tradeoffs that we believe will be very useful for a large class of decentralized applications, with particular emphasis on situations where rapid development time, security for small and rarely used applications, and the ability of different applications to very efficiently interact, are important. Ethereum does this by building what is essentially the ultimate abstract foundational layer: a blockchain with a built-in Turing-complete programming language, allowing anyone to write smart contracts and decentralized applications where they can create their own arbitrary rules for ownership, transaction formats and state transition functions. A bare-bones version of Namecoin can be written in two lines of code, and other protocols like currencies and reputation systems can be built in under twenty. Smart contracts, cryptographic "boxes" that contain value and only unlock it if certain conditions are met, can also be built on top of the platform, with vastly more power than that offered by Bitcoin scripting because of the added powers of Turing-completeness, value-awareness, blockchain-awareness and state.
     </Text.span>
-  )).add('with p', () => (
+    </Box>
+    <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
+    <code>{'<Text.span>The intent of Ethereum is to...</Text.span>'}</code>
+    </Box>
+    <br />
+    <Box>
+    <Heading.h4>Paragraph text</Heading.h4>
+    <Text>Renders a <code>{'p'}</code> element.</Text>
     <Text.p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam delectus unde porro doloribus, accusantium quasi illum aperiam architecto adipisci voluptatibus illo velit modi expedita ipsa perspiciatis sed iste sit repellat, alias. Soluta sed, cumque, fugit est odit ipsam inventore porro officia repellendus voluptatem neque error. Mollitia quam cupiditate doloribus aliquid. Dolore praesentium, rerum, consequatur tenetur sapiente aliquid distinctio expedita repudiandae dolor quas maxime. Molestiae aspernatur ea beatae velit ratione neque, commodi blanditiis voluptate corporis ex cum dolores eaque animi eveniet odit assumenda deleniti unde corrupti facere veniam quibusdam. Ex at repudiandae iure quae, natus illum eveniet eaque, autem rem dicta, aliquid! Nobis voluptates, ut quae soluta laborum eius cumque minima perferendis ab suscipit. Accusamus atque optio amet esse assumenda, illum temporibus sit veniam minima qui est explicabo error placeat consectetur, ea corporis dignissimos aliquam tempore nobis nemo impedit illo recusandae sint. Eligendi laboriosam, neque fuga, debitis, quasi et corporis ipsam nihil tempora perspiciatis, impedit at! Quam atque nemo maiores rem repellat quae, aliquid, tempora sed ipsam adipisci tenetur explicabo, deleniti debitis. Iure sequi, illo, cum sit obcaecati nostrum molestias aspernatur odio aliquam adipisci esse cupiditate quis nulla nobis impedit qui ab magni natus voluptas saepe et! Ipsum praesentium in tempora.
-    </Text.p>
-  )).add('with s', () => (
+    The intent of Ethereum is to create an alternative protocol for building decentralized applications, providing a different set of tradeoffs that we believe will be very useful for a large class of decentralized applications, with particular emphasis on situations where rapid development time, security for small and rarely used applications, and the ability of different applications to very efficiently interact, are important. Ethereum does this by building what is essentially the ultimate abstract foundational layer: a blockchain with a built-in Turing-complete programming language, allowing anyone to write smart contracts and decentralized applications where they can create their own arbitrary rules for ownership, transaction formats and state transition functions. A bare-bones version of Namecoin can be written in two lines of code, and other protocols like currencies and reputation systems can be built in under twenty. Smart contracts, cryptographic "boxes" that contain value and only unlock it if certain conditions are met, can also be built on top of the platform, with vastly more power than that offered by Bitcoin scripting because of the added powers of Turing-completeness, value-awareness, blockchain-awareness and state.    </Text.p>
+</Box>
+<Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
+<code>{'<Text.p>The intent of Ethereum is to...</Text.p>'}</code>
+</Box>
+<br />
+<Box>
+<Heading.h4>Text with strikethrough</Heading.h4>
     <Text.s>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam delectus unde porro doloribus, accusantium quasi illum aperiam architecto adipisci voluptatibus illo velit modi expedita ipsa perspiciatis sed iste sit repellat, alias. Soluta sed, cumque, fugit est odit ipsam inventore porro officia repellendus voluptatem neque error. Mollitia quam cupiditate doloribus aliquid. Dolore praesentium, rerum, consequatur tenetur sapiente aliquid distinctio expedita repudiandae dolor quas maxime. Molestiae aspernatur ea beatae velit ratione neque, commodi blanditiis voluptate corporis ex cum dolores eaque animi eveniet odit assumenda deleniti unde corrupti facere veniam quibusdam. Ex at repudiandae iure quae, natus illum eveniet eaque, autem rem dicta, aliquid! Nobis voluptates, ut quae soluta laborum eius cumque minima perferendis ab suscipit. Accusamus atque optio amet esse assumenda, illum temporibus sit veniam minima qui est explicabo error placeat consectetur, ea corporis dignissimos aliquam tempore nobis nemo impedit illo recusandae sint. Eligendi laboriosam, neque fuga, debitis, quasi et corporis ipsam nihil tempora perspiciatis, impedit at! Quam atque nemo maiores rem repellat quae, aliquid, tempora sed ipsam adipisci tenetur explicabo, deleniti debitis. Iure sequi, illo, cum sit obcaecati nostrum molestias aspernatur odio aliquam adipisci esse cupiditate quis nulla nobis impedit qui ab magni natus voluptas saepe et! Ipsum praesentium in tempora.
-    </Text.s>
+    The intent of Ethereum is to create an alternative protocol for building decentralized applications, providing a different set of tradeoffs that we believe will be very useful for a large class of decentralized applications, with particular emphasis on situations where rapid development time, security for small and rarely used applications, and the ability of different applications to very efficiently interact, are important. Ethereum does this by building what is essentially the ultimate abstract foundational layer: a blockchain with a built-in Turing-complete programming language, allowing anyone to write smart contracts and decentralized applications where they can create their own arbitrary rules for ownership, transaction formats and state transition functions. A bare-bones version of Namecoin can be written in two lines of code, and other protocols like currencies and reputation systems can be built in under twenty. Smart contracts, cryptographic "boxes" that contain value and only unlock it if certain conditions are met, can also be built on top of the platform, with vastly more power than that offered by Bitcoin scripting because of the added powers of Turing-completeness, value-awareness, blockchain-awareness and state.    </Text.s>
+    </Box>
+    <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
+    <code>{'<Text.s>The intent of Ethereum is to...</Text.s>'}</code>
+    </Box>
+    </Box>
   ))

@@ -16,7 +16,7 @@ import {
 
 storiesOf('Tooltip', module)
   .addDecorator(withDocs(MyREADME))
-  .add('default', () => (
+  .add('Documentation', () => (
     <div>
       <Flex justifyContent='space-between' p='4' bg='#f1f1f1'>
         <Tooltip variant='dark' message='Your custom message' placement='top'>

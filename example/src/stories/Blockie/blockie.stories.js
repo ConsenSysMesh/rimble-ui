@@ -8,4 +8,4 @@ import { Blockie } from 'rimble-ui'
 
 storiesOf('Blockie', module)
   .addDecorator(withDocs(MyREADME))
-  .add('Default', () => <Blockie  opts={{seed: "foo", color: "#dfe", bgcolor: "#a71", size: 15, scale: 3, spotcolor: "#000"}} /> )
+  .add('Documentation', () => <Blockie  opts={{seed: "foo", color: "#dfe", bgcolor: "#a71", size: 15, scale: 3, spotcolor: "#000"}} /> )

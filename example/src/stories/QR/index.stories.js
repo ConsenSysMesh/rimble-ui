@@ -8,6 +8,6 @@ import { QR } from 'rimble-ui'
 
 storiesOf('QR Code', module)
   .addDecorator(withDocs(MyREADME))
-  .add('Default', () => (
+  .add('Documentation', () => (
     <QR value="http://facebook.github.io/react/" />
   ))

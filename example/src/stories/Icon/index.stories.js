@@ -8,7 +8,7 @@ import { Icon } from 'rimble-ui'
 
 storiesOf('Icon', module)
   .addDecorator(withDocs(MyREADME))
-  .add('Default', () => (
+  .add('Documentation', () => (
     <div>
       <Icon name='Star' />
       <br/>

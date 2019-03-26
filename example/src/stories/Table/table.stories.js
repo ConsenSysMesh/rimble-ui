@@ -8,7 +8,7 @@ import { Table } from 'rimble-ui'
 
 storiesOf('Table', module)
   .addDecorator(withDocs(MyREADME))
-  .add('default', () => (
+  .add('Documentation', () => (
     <Table>
       <thead>
         <tr>

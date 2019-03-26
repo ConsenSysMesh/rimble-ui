@@ -8,7 +8,7 @@ import { Avatar, Box, Heading, Text } from 'rimble-ui'
 
 storiesOf('Avatar', module)
   .addDecorator(withDocs(MyREADME))
-  .add('Default', () => (
+  .add('Documentation', () => (
     <Box textAlign={'left'}>
       <Box>
         <Heading.h2>Avatar examples</Heading.h2>

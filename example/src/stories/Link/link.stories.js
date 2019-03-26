@@ -8,6 +8,6 @@ import { Link } from 'rimble-ui'
 
 storiesOf('Link', module)
   .addDecorator(withDocs(MyREADME))
-  .add('default', () => (
+  .add('Documentation', () => (
     <Link href='#!'>Click me!</Link>
   ))

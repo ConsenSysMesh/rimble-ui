@@ -12,7 +12,7 @@ import {
 
 storiesOf('Pill', module)
   .addDecorator(withDocs(MyREADME))
-  .add('default', () => (
+  .add('Documentation', () => (
     <Box textAlign={'left'}>
       <Box mb={'4'} display={'flex'}>
         <Text minWidth={'80px'} textAlign={'center'}>Pill</Text>

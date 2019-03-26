@@ -77,7 +77,7 @@ class YourModal extends Component {
 
 storiesOf('Modal', module)
   .addDecorator(withDocs(MyREADME))
-  .add('Default', () => {
+  .add('Documentation', () => {
 
     return (
       <YourModal></YourModal>

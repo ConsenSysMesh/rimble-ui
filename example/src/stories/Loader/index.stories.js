@@ -8,7 +8,7 @@ import { Loader, Button, Box, Heading, Text, } from 'rimble-ui'
 
 storiesOf('Loader', module)
   .addDecorator(withDocs(MyREADME))
-  .add('Default', () => (
+  .add('Documentation', () => (
     <Box textAlign={'left'}>
       <Box>
         <Heading.h2>Loader examples</Heading.h2>

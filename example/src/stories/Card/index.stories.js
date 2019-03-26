@@ -21,7 +21,7 @@ import {
 
 storiesOf('Card', module)
   .addDecorator(withDocs(MyREADME))
-  .add('Default', () => (
+  .add('Documentation', () => (
     <div>
       <Card>
         This is a Card

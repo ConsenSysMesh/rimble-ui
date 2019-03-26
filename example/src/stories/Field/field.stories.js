@@ -14,7 +14,7 @@ import {
 
 storiesOf('Form/Field Component', module)
   .addDecorator(withDocs(MyREADME))
-  .add('Field', () => (
+  .add('Documentation', () => (
     <Box textAlign={'left'}>
     <Box>
     <Field label='Public address'>
