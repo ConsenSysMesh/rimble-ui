@@ -1,12 +1,14 @@
-# Tooltip
+# Tooltip documentation
 A simple styled tooltip. The`Tooltip` component uses [react-popper](https://github.com/d8660091/react-popper).
 
-<!-- STORY -->
-
-### Usage
+**Import component**
 ```jsx
 import { Tooltip } from 'rimble-ui'
 ```
+
+<!-- STORY -->
+
+
 
 <!-- component example here -->
 ```jsx
