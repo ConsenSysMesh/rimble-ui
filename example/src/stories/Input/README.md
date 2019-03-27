@@ -1,6 +1,8 @@
 # Input documentation
 The `Input` component provides a styled version of HTML `<input>`.
 
+_Want to understand best practices for using an Input component?_ Read [`Input` design guidelines](https://consensys.github.io/rimble-ui/?path=/story/input--design--guidelines)
+
 **Import component**
 ```jsx
 import { Input } from 'rimble-ui'

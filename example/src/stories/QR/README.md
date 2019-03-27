@@ -1,16 +1,12 @@
-# QR
-The `QR` component renders a generated QR code for a provided string.
+# QR documentation
+Use the `QR` component to renders a QR code for a provided string.
 
-<!-- STORY -->
-
-### Usage
+**Import component**  
 ```jsx
 import { QR } from 'rimble-ui'
 ```
+<!-- STORY -->
 
-<!-- component example here -->
-```jsx
-<QRCode value="http://facebook.github.io/react/" />
-```
+### Component props
 
-<!-- component props here -->
+### Styled-system props

@@ -1,5 +1,7 @@
 # Tooltip documentation
-A simple styled tooltip. The`Tooltip` component uses [react-popper](https://github.com/d8660091/react-popper).
+Use a `Tooltip` to give your user extra information about something on the interface. This component is a simple styled tooltip that uses [react-popper](https://github.com/d8660091/react-popper).
+
+_Want to understand best practices for using a Tooltip component?_ Read [`Tooltip` design guidelines](https://consensys.github.io/rimble-ui/?path=/story/tooltip--design--guidelines)
 
 **Import component**
 ```jsx

@@ -9,45 +9,157 @@ import {
   Flex,
   Box,
   ToastMessage,
-  Button
+  Button,
+  Heading,
+  Text
 } from 'rimble-ui'
 
 storiesOf('ToastMessage', module)
   // .addDecorator(withDocs(MyREADME))
-  .add('ToastMessage Usage Guide', withDocs(READMEa, () => (
-    <div>
+  .add('Documentation', withDocs(READMEa, () => (
+    <Box textAlign={'left'}>
+    <Box>
+    <Heading.h2>ToastMessage examples</Heading.h2>
+    <Text>Different ways to use the ToastMessage component</Text>
+    <br />
+    </Box>
+    <Box>
+    <Heading.h4>Standard toast</Heading.h4>
+    <Text>For when you want to just provide a quick process update like a confirmation</Text>
+    </Box>
+    <Box>
       <Flex>
         <Box width={'50%'} mr={4}>
-          <ToastMessage my={3} />
+          <ToastMessage
+            message={'Transaction started'}
+            my={3} />
+            <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
+            <code>{'<ToastMessage message={"Transaction started"} />'}</code>
+            </Box>
+        </Box>
+        <Box width={'50%'} mr={4}>
+      <ToastMessage
+          message={'0xAc0...e5A connected'}
+          colorTheme={'dark'} my={3}/>
+          <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
+          <code>{'<ToastMessage message={"0xAc0...e5A connected"} colorTheme={"dark"} />'}</code>
+          </Box>
+        </Box>
+      </Flex>
+      <Box>
+      <Heading.h4>Standard toast with subtitle</Heading.h4>
+      <Text>For when you want to provide more value through extra helpful information. Ask yourself when implementing your toast: is there anything else I could tell the user that would be useful?</Text>
+      </Box>
+      <Flex>
+      <Box width={'50%'} mr={4}>
+          <ToastMessage
+            message={'Transaction complete'}
+            secondaryMessage={'You have 4.20 ETH remaining'}
+            my={3}
+          />
+          <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
+          <code>{'<ToastMessage message={"Transaction complete"} secondaryMessage="{"You have 4.20 ETH remaining"} />'}</code>
+          </Box>
+      </Box>
+      <Box width={'50%'} mr={4}>
+          <ToastMessage
+            message={'Switched network'}
+            secondaryMessage={'You are now on Rinkeby'}
+            colorTheme={'dark'}
+            my={3}
+          />
+          <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
+          <code>{'<ToastMessage message={"Transaction complete"} secondaryMessage="{"You have 4.20 ETH remaining"} colorTheme={"dark"} />'}</code>
+          </Box>
+      </Box>
+      </Flex>
 
+      <Box>
+      <Heading.h4>Icon</Heading.h4>
+      <Text>When you want to reinforce your message with a visual</Text>
+      </Box>
+      <Flex>
+      <Box width={'50%'} mr={4}>
+          <ToastMessage
+            message={'Welcome to my dApp'}
+            icon={'Mood'}
+            my={3}
+          />
+          <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
+          <code>{'<ToastMessage message={"Welcome to my dApp"} icon={"Mood"}" />'}</code>
+          </Box>
+      </Box>
+      <Box width={'50%'} mr={4}>
+          <ToastMessage
+            message={'Welcome to my dApp'}
+            icon={'Mood'}
+            my={3}
+            colorTheme={'dark'}
+          />
+          <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
+          <code>{'<ToastMessage message={"Welcome to my dApp"} icon={"Mood"}" colorTheme={"dark"} />'}</code>
+          </Box>
+      </Box>
+      </Flex>
+
+
+      <br />
+      <Box>
+      <Heading.h4>Link</Heading.h4>
+      <Text>When your Toast message has a link to support it. Note: this link should only take users to optional, supporting info.</Text>
+      </Box>
+<Flex>
+      <Box width={'50%'} mr={4}>
+          <ToastMessage
+
+            message={'Transaction started'}
+            secondaryMessage={'Check on its progress using Etherscan'}
+            my={3}
+            actionText={'Check'}
+            actionHref={'#!'}
+          />
+          <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
+          <code>{'<ToastMessage message={"Transaction started"} actionText={"Check"} actionHref={"add link here"} />'}</code>
+          </Box>
+      </Box>
+      <Box width={'50%'} mr={4}>
           <ToastMessage
             message={'Write update here [Required]'}
             secondaryMessage={'Supporting information for update [Optional]'}
-            my={3}
-          />
-          <ToastMessage
             icon={'InfoOutline'}
             my={3}
-            actionText={'Action'}
+            actionText={'Link'}
             actionHref={'#!'}
+            colorTheme={'dark'}
           />
-          <ToastMessage
-            message={'Write update here [Required]'}
-            secondaryMessage={'Supporting information for update [Optional]'}
-            icon={'InfoOutline'}
-            my={3}
-            actionText={'Action'}
-            actionHref={'#!'}
-          />
+          <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
+          <code>{'<ToastMessage message={"Transaction started"} actionText={"Check"} actionHref={"add link here"} colorTheme={"dark"} />'}</code>
+          </Box>
+      </Box>
+</Flex><br />
+      <Box>
+      <Heading.h4>Process toasts</Heading.h4>
+      <Text>Ready-made messages to help users understand what's happening with a process they initiate, like a transaction.</Text>
+      </Box>
+      <Box width={'50%'} mr={4}>
+      <Heading.h5>Processing</Heading.h5>
           <ToastMessage.Processing
             my={3}
             message={'Processing 0.00018 ETH payment'}
           />
+          <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
+          <code>{'<ToastMessage.Processing message={"Processing 0.00018 ETH payment"} />'}</code>
+          </Box><br />
+          <Heading.h5>Success</Heading.h5>
           <ToastMessage.Success
             my={3}
             message={'ETH sent'}
             secondaryMessage={'You have 1.03 Ether (ETH) remaining'}
           />
+          <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
+          <code>{'<ToastMessage.Success message={"ETH sent"} secondaryMessage={"You have 1.03 Ether (ETH) remaining"} />'}</code>
+          </Box><br />
+          <Heading.h5>Failure</Heading.h5>
           <ToastMessage.Failure
             my={3}
             message={'Payment failed'}
@@ -55,34 +167,15 @@ storiesOf('ToastMessage', module)
             actionText={'Buy ETH'}
             actionHref={'#!'}
           />
+          <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
+          <code>{'<ToastMessage.Failure message={"Payment failed"} secondaryMessage={"You don\'t have enough Ether (ETH)"} actionText={"Buy ETH"} actionHref={"add link"} />'}</code>
+          </Box>
+        </Box>
+
+
 
         </Box>
-        <Box width={'50%'}>
-          <ToastMessage colorTheme={'dark'} my={3}/>
-          <ToastMessage
-            message={'Write update here [Required]'}
-            secondaryMessage={'Supporting information for update [Optional]'}
-            colorTheme={'dark'}
-            my={3}
-          />
-          <ToastMessage
-            icon={'InfoOutline'}
-            colorTheme={'dark'}
-            my={3}
-            actionText={'Action'}
-            actionHref={'#!'}
-          />
-          <ToastMessage
-            message={'Write update here [Required]'}
-            secondaryMessage={'Supporting information for update [Optional]'}
-            icon={'InfoOutline'}
-            colorTheme={'dark'}
-            my={3}
-            actionText={'Action'}
-            actionHref={'#!'}
-          />
-        </Box>
-      </Flex>
+
 
       <Button
         mb={3}
@@ -151,10 +244,10 @@ storiesOf('ToastMessage', module)
 
       <ToastMessage.Provider ref={(node) => (window.toastProvider = node)} />
 
-    </div>
+    </Box>
   )))
-  .add('ToastMessage Component', withDocs(READMEb, () => (
-    <div>
+  .add('Design guidelines', withDocs(READMEb, () => (
+    <Box>
 
         <Box maxWidth={6}>
           <ToastMessage
@@ -282,5 +375,5 @@ storiesOf('ToastMessage', module)
 
       <ToastMessage.Provider ref={(node) => (window.toastProvider = node)} />
 
-    </div>
+    </Box>
   )))
