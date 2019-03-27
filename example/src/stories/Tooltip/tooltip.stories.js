@@ -11,50 +11,60 @@ import {
   Text,
   Button,
   OutlineButton,
-  TextButton
+  TextButton,
+  Box,
+  Heading,
 } from 'rimble-ui'
 
 storiesOf('Tooltip', module)
   .addDecorator(withDocs(MyREADME))
   .add('Documentation', () => (
-    <div>
-      <Flex justifyContent='space-between' p='4' bg='#f1f1f1'>
-        <Tooltip variant='dark' message='Your custom message' placement='top'>
-          <OutlineButton>
+    <Box textAlign={'left'}>
+    <Box>
+    <Heading.h2>Tooltip examples</Heading.h2>
+    <Text>Different ways to use the tooltip component</Text>
+    <br />
+    </Box>
+    <Box>
+    <Heading.h4>Placement</Heading.h4>
+    <Text.p>Adjust where your tooltip appears on hover</Text.p>
+        <Tooltip message='Your custom message' placement='top'>
+          <OutlineButton mb={3}>
             "Top"
           </OutlineButton>
-        </Tooltip>
+        </Tooltip><br />
         <Tooltip message='Your custom message' placement='right'>
-          <OutlineButton>
+          <OutlineButton mb={3}>
             "Right"
           </OutlineButton>
-        </Tooltip>
+        </Tooltip><br />
         <Tooltip message='Your custom message' placement='bottom'>
-          <OutlineButton>
+          <OutlineButton mb={3}>
             "Bottom"
           </OutlineButton>
-        </Tooltip>
+        </Tooltip><br />
         <Tooltip message='Your custom message' placement='left'>
-          <OutlineButton>
+          <OutlineButton mb={3}>
             "Left"
           </OutlineButton>
         </Tooltip>
-      </Flex>
-
-      <Flex size='80px' mx='auto' my='2' alignItems='center' justifyContent='center'>
+      </Box>
+      <Box>
+      <Heading.h4>Colour</Heading.h4>
+      <Text.p>Choose the colour of your tooltip</Text.p>
         <Tooltip variant='dark' message='Learn more about feature'>
-          <Button icononly icon='Info' />
+          <Button mb={3}>Dark</Button>
+        </Tooltip><br />
+        <Tooltip variant='dark' message='Learn more about feature'>
+          <OutlineButton>Light</OutlineButton>
         </Tooltip>
-      </Flex>
-      <Flex size='80px' mx='auto' my='2' alignItems='center' justifyContent='center'>
-        <Tooltip variant='dark' message='Learn more about feature'>
-          <OutlineButton icononly icon='Info' />
-        </Tooltip>
-      </Flex>
-
-      <Flex size='100px' mx='auto' my='3' alignItems='center' justifyContent='center'>
-        <Tooltip variant='dark' message='Learn more about feature'>
-          <TextButton icononly icon='Info' color='#666' mx='2' />
+      </Box>
+      <br />
+      <Box>
+      <Heading.h4>Explanation content</Heading.h4>
+      <Text.p>Use a tooltip to explain an icon</Text.p>
+        <Tooltip variant='dark' message='Transaction fees pay for your transaction to be added to the blockchain'>
+            <TextButton icon="Help" iconpos="right" color='#666' mx='2'>Transaction fee</TextButton>
         </Tooltip>
         <Tooltip variant='dark' message='Show more options'>
           <TextButton icononly icon='MoreHoriz' color='#666' mx='2' />
@@ -62,7 +72,6 @@ storiesOf('Tooltip', module)
         <Tooltip variant='dark' message='Edit'>
           <TextButton icononly icon='Edit' color='#666' mx='2' />
         </Tooltip>
-      </Flex>
-
-    </div>
+      </Box>
+    </Box>
   ))

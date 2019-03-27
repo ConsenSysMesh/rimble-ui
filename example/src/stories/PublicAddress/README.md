@@ -1,16 +1,12 @@
 # Public Address
-The `PublicAddress` component provides an easy way to display an Ethereum Public Address and add copy-to-clipboard functionality. 
+Use the `PublicAddress` component to display an Ethereum Public Address and offer copy-to-clipboard functionality.
 
-<!-- STORY -->
-
-### Usage
+**Import component**
 ```jsx
 import { PublicAddress } from 'rimble-ui'
 ```
+<!-- STORY -->
 
-```jsx
-<PublicAddress address="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2"/>
+### Component props
 
-```
-
-<!-- component props -->
+### Styled-system props

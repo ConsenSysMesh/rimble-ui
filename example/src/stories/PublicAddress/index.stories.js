@@ -4,10 +4,17 @@ import { withDocs } from 'storybook-readme';
 
 import MyREADME from './README.md';
 
-import { PublicAddress } from 'rimble-ui'
+import { PublicAddress, Box, Text } from 'rimble-ui'
 
 storiesOf('PublicAddress', module)
   .addDecorator(withDocs(MyREADME))
-  .add('PublicAddress', () => (
+  .add('Documentation', () => (
+  <Box>
+  <Box>
     <PublicAddress address={'0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2'} />
+  </Box>
+  <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
+    <code>{'<PublicAddress address="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2"/>'}</code>
+  </Box>
+  </Box>
   ))
