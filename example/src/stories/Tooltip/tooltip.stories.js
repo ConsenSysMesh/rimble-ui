@@ -61,7 +61,19 @@ storiesOf('Tooltip', module)
         </Tooltip>
         </Box>
         </Flex>
+      <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
+      <code>{'<Tooltip message="Top tooltip" placement="top"><OutlineButton>Show top</OutlineButton></Tooltip>'}</code>
       </Box>
+      <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
+      <code>{'<Tooltip message="Left tooltip" placement="left"><OutlineButton>Show left</OutlineButton></Tooltip>'}</code>
+      </Box>
+      <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
+      <code>{'<Tooltip message="Bottom tooltip" placement="bottom"><OutlineButton>Show bottom</OutlineButton></Tooltip>'}</code>
+      </Box>
+      <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
+      <code>{'<Tooltip message="Right tooltip" placement="right"><OutlineButton>Show right</OutlineButton></Tooltip>'}</code>
+      </Box>
+      </Box><br />
       <Box>
       <Heading.h4>Colour</Heading.h4>
       <Text.p>Choose the colour of your tooltip</Text.p>
@@ -72,20 +84,20 @@ storiesOf('Tooltip', module)
           <OutlineButton>Show light</OutlineButton>
         </Tooltip>
       </Box>
-      <br />
-      <Box>
-      <Heading.h4>Explanation content</Heading.h4>
-      <Text.p>Use a tooltip to explain an icon</Text.p>
-        <Tooltip variant='dark' message='Transaction fees pay for your transaction to be added to the blockchain' placement='right'>
-            <TextButton icon="Help" iconpos="right" color='#666' mx='2'>Transaction fee</TextButton>
-        </Tooltip><br />
-        <Tooltip variant='dark' message='Show more options' placement='right'>
-          <TextButton icononly icon='MoreHoriz' color='#666' mx='2' />
-        </Tooltip><br />
-        <Tooltip variant='dark' message='Edit' placement='right'>
-          <TextButton icononly icon='Edit' color='#666' mx='2' />
-        </Tooltip>
+      <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
+      <code>{'<Tooltip variant="dark" message="Dark tooltip" placement="right"><Button>Show dark</Button></Tooltip>'}
+      </code>
       </Box>
+      <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
+      <code>{'<Tooltip variant="light" message="Light tooltip" placement="right"><OutlineButton>Show light</OutlineButton></Tooltip>'}
+      </code>
+      </Box><br />
+      <Flex size='80px' borderRadius='100%' mx='auto' my='5' bg='#ccc' alignItems='center' justifyContent='center'>
+        <Tooltip message='Wrap me around your tooltip trigger'>
+          <Icon name='Info' />
+        </Tooltip>
+      </Flex>
+
     </Box>
   ))
   .add(
