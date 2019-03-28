@@ -7,3 +7,7 @@
 <ToastMessage.Provider ref={node => window.toastProvider = node} />
 ```
 <!-- STORY -->
+
+### API
+
+API props
