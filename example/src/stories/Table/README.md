@@ -18,3 +18,6 @@ import { Table } from 'rimble-ui'
 ### Styled-system props
 
 `Table` uses all the props from [`Box`](https://consensys.github.io/rimble-ui/?path=/story/layout--box), but also includes these:
+
+### Accessibility
+- All tables must use `<th>` and `<td>` – this helps those using assistive technologies understand which data relates to each table header

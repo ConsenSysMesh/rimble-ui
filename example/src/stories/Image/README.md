@@ -1,18 +1,24 @@
 # Image
 
-The `Image` component renders the `<img>` HTML element. Inherits props from the `Box` component.
-<!-- STORY -->
+Use the `Image` component to display an image in your product. This renders the `<img>` HTML element and extends the `Box` component.
 
-### Usage
+**Import component**
 ```jsx
 import { Image } from 'rimble-ui'
 ```
 
-<!-- component example here -->
-```jsx
-<Image
-  width={[ 1, 1, 1/2 ]}
-  src='https://source.unsplash.com/random/1280x720'
-  borderRadius={3}
-/>
-```
+<!-- STORY -->
+
+### Component props
+`Image` uses all the props from [`Box`](https://consensys.github.io/rimble-ui/?path=/story/layout--box), but also includes these:
+
+| Prop      | Type    | Values                                                           | Default | Description                                                                                                     |
+| --------- | ------- | ---------------------------------------------------------------- | ------- | --------------------------------------------------------------------------------------------------------------- |
+| src      | String  |                                              |   | References the image you want to display
+| alt | String | | | Explains the image with text for screen readers               
+
+
+### Styled-system props
+
+### Accessibility
+- Always include an alt prop so that screen readers can describe the image to those with visual impairments

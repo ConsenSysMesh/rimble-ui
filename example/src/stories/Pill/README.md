@@ -1,26 +1,13 @@
 # Pill
 The `Pill` component renders text with a colored background. Useful for showing transaction status.
 
-<!-- STORY -->
-
-### Usage
+**Import component**
 ```jsx
 import { Pill } from 'rimble-ui'
 ```
 
-<!-- component example here -->
-```jsx
-<Pill mr={'2'} mb={'3'}>{'Pending'}</Pill>
-<Pill selected={true} mr={'2'} mb={'3'}>{'Pending'}</Pill>
+<!-- STORY -->
 
-<Pill color={'primary'} mr={'2'} mb={'3'}>{'Pending'}</Pill>
-<Pill selected={true} color={'primary'} mr={'2'} mb={'3'}>{'Pending'}</Pill>
+### Component props
 
-<Pill color={'red'} mr={'2'} mb={'3'}>{'Pending'}</Pill>
-<Pill selected={true} color={'red'} mr={'2'} mb={'3'}>{'Pending'}</Pill>
-
-<Pill color={'blue'} mr={'2'} mb={'3'}>{'Pending'}</Pill>
-<Pill selected={true} color={'blue'} mr={'2'} mb={'3'}>{'Pending'}</Pill>
-```
-
-<!-- component props here -->
+### Styled-system props

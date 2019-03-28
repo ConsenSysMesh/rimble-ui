@@ -3,8 +3,9 @@ import { storiesOf } from '@storybook/react'
 import { withDocs } from 'storybook-readme';
 
 import MyREADME from './README.md';
+import Guidelines from './GUIDELINES.md';
 
-import { Table, Box, Icon } from 'rimble-ui'
+import { Table, Box, Icon, Heading, Text, } from 'rimble-ui'
 
 storiesOf('Table', module)
   .addDecorator(withDocs(MyREADME))
@@ -76,3 +77,17 @@ storiesOf('Table', module)
     </Box>
     </Box>
   ))
+    .add('Design guidelines', withDocs(Guidelines, () => (
+      <Box textAlign={'left'}>
+        <Box>
+        <Heading.h2>Design and content</Heading.h2>
+        <Text.p>Some best practice for using Tables</Text.p>
+        <Heading.h4>Don't use tables for layout</Heading.h4>
+        <Heading.h4>Consider more responsive options</Heading.h4>
+        <Heading.h4>Wrap don't truncate</Heading.h4>
+        <Heading.h4>More rows than columns is easier to read</Heading.h4>
+        <Heading.h4>Headings should clearly summarise the data within each column</Heading.h4>
+        </Box>
+      </Box>
+    ))
+  );

@@ -1,32 +1,21 @@
 # Icon
 The `Icon` component renders Material Design Icons. Built with [rmdi](https://github.com/jxnblk/rmdi).
 
-<!-- STORY -->
-
-### Usage
-<!-- component example here -->
+**Import component**
 ```jsx
 import { Icon } from 'rimble-ui'
 ```
 
-```jsx
-<Icon name='Star' />
-<Icon name='Star' color='primary' />
-<Icon name='Star' color='tomato' size='80' />
-```
+<!-- STORY -->
 
-### List of Icons
-
-See the [icon list](https://github.com/jxnblk/rmdi/blob/master/ICONS.md) for a complete list of all icons available
-
-### Props
+### Component props
 
 Prop | Type | Description
 ---|---|---
 `size` | number | width and height in pixels
 `color` | string | fill color, uses Styled System's [`color`][color] function
 
-### Spacing Props
+### Styled-system props
 
 Margin can be applied with the following props, which use Styled System's [`space`][space] function.
 Margin props accept numbers for pixel values, strings with CSS units, or arrays for [responsive][responsive] margin
@@ -46,9 +35,10 @@ Prop | Description
 [responsive]: https://github.com/jxnblk/styled-system#responsive-styles
 
 
-# Icons (970)
+### Icons (970)
+See the [icon list](https://github.com/jxnblk/rmdi/blob/master/ICONS.md) for a complete list of all icons available
 
-- `AcUnit`
+- `AcUnit` 
 - `AccessAlarm`
 - `AccessAlarms`
 - `AccessTime`

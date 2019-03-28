@@ -4,6 +4,7 @@ import { withDocs } from 'storybook-readme';
 
 import READMEa from './README.md';
 import READMEb from './README-B.md';
+import Provider from './Provider.md';
 
 import {
   Flex,
@@ -11,7 +12,8 @@ import {
   ToastMessage,
   Button,
   Heading,
-  Text
+  Text,
+  OutlineButton
 } from 'rimble-ui'
 
 storiesOf('ToastMessage', module)
@@ -176,74 +178,6 @@ storiesOf('ToastMessage', module)
 
         </Box>
 
-
-      <Button
-        mb={3}
-        onClick={(e) => window.toastProvider.addMessage('[Processing payment...]', {
-            secondaryMessage: '',
-            actionHref: 'https://etherscan.io/tx/0xcbc921418c360b03b96585ae16f906cbd48c8d6c2cc7b82c6db430390a9fcfed',
-            actionText: 'View on Etherscan',
-            variant: 'processing',
-          })
-        }
-      >
-        Preview "addMessage.processing"
-      </Button>
-      <br/>
-      <Button
-        mb={3}
-        onClick={(e) => window.toastProvider.addMessage('[ETH sent]', {
-            secondaryMessage: '[You have 1.03 Ether remaining]',
-            variant: 'success',
-          })
-        }
-      >
-        Preview "addMessage.success"
-      </Button>
-      <br/>
-      <Button
-        mb={3}
-        onClick={(e) => window.toastProvider.addMessage('[Payment failed]', {
-            secondaryMessage: '[You don\'t have enough Ether (ETH)]',
-            actionHref: 'https://www.coinbase.com/',
-            actionText: 'Buy ETH',
-            variant: 'failure',
-          })
-        }
-      >
-        Preview "addMessage.failure"
-      </Button>
-      <br/>
-      <Button
-        mb={3}
-        onClick={(e) => window.toastProvider.addMessage('Write update here [Required]')}
-      >
-        Preview "addMessage.default"
-      </Button>
-      <br/>
-      <Button
-        mb={3}
-        onClick={(e) => window.toastProvider.addMessage('Write update here [Required]', {
-          icon: 'Info'
-        })}
-      >
-        Preview "addMessage.default with Icon"
-      </Button>
-      <br/>
-      <Button
-        mb={3}
-        onClick={(e) => window.toastProvider.addMessage('Write update here [Required]', {
-          icon: 'VpnKey',
-          colorTheme: 'dark'
-        })}
-      >
-        Preview "addMessage.default dark colors with Icon"
-      </Button>
-      <br/>
-      <Button onClick={() => window.toastProvider.removeMessage()}>Preview "RemoveMessage"</Button>
-
-      <ToastMessage.Provider ref={(node) => (window.toastProvider = node)} />
-
     </Box>
   )))
   .add('Design guidelines', withDocs(READMEb, () => (
@@ -375,5 +309,190 @@ storiesOf('ToastMessage', module)
 
       <ToastMessage.Provider ref={(node) => (window.toastProvider = node)} />
 
+    </Box>
+  )))
+
+  .add('Provider documentation', withDocs(Provider, () => (
+    <Box textAlign={'left'}>
+    <Box>
+    <Heading.h2>ToastMessage.provider previews</Heading.h2>
+    <Text.p> Preview each ToastMessage and see how to call it</Text.p>
+    </Box><br />
+    <Box>
+    <Heading.h4>addMessage.processing</Heading.h4>
+    <Text.p>Calls a processing ToastMessage</Text.p>
+    <Button mb={3} onClick={(e) => window.toastProvider.addMessage('Processing payment...', {
+          secondaryMessage: 'Check progress on Etherscan',
+          actionHref: 'https://etherscan.io/tx/0xcbc921418c360b03b96585ae16f906cbd48c8d6c2cc7b82c6db430390a9fcfed',
+          actionText: 'Check',
+          variant: 'processing',})}>Preview</Button>
+</Box>
+<Box>
+<Heading.h6>How to call</Heading.h6>
+</Box>
+<Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
+<code>{'<Button'}</code><br />
+  <code>{'onClick={(e) => window.toastProvider.addMessage("Processing payment...", {'}</code><br />
+    <code>{'secondaryMessage: "Check progress on Etherscan",'}</code><br />
+    <code>{'actionHref: "https://etherscan.io/tx/0xcbc921418c360b03b96585ae16f906cbd48c8d6c2cc7b82c6db430390a9fcfed",'}</code><br />
+    <code>{'actionText: "Check",'}</code><br />
+    <code>{'variant: "processing",'}</code><br />
+  <code>{'})}>'}</code><br />
+  <code>{'Preview'}</code><br />
+<code>{'</Button>'}</code>
+</Box>
+    <br/>
+    <Box>
+    <Heading.h4>addMessage.success</Heading.h4>
+    <Text.p>Calls a success ToastMessage</Text.p>
+    <Button
+      mb={3}
+      onClick={(e) => window.toastProvider.addMessage('ETH sent', {
+          secondaryMessage: 'You have 1.03 Ether remaining',
+          variant: 'success',
+        })
+      }
+    >
+      Preview
+    </Button>
+    </Box>
+    <Box>
+    <Heading.h6>How to call</Heading.h6>
+    </Box>
+    <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
+    <code>{'<Button'}</code><br />
+      <code>{'onClick={(e) => window.toastProvider.addMessage("ETH sent", {'}</code><br />
+        <code>{'secondaryMessage: "You have 1.03 Ether remaining",'}</code><br />
+        <code>{'variant: "success",'}</code><br />
+      <code>{'})}>'}</code><br />
+      <code>{'Preview'}</code><br />
+    <code>{'</Button>'}</code>
+    </Box>
+    <br/>
+    <Box>
+    <Heading.h4>addMessage.failure</Heading.h4>
+    <Text.p>Calls a failure ToastMessage</Text.p>
+    <Button
+      mb={3}
+      onClick={(e) => window.toastProvider.addMessage('Payment failed', {
+          secondaryMessage: 'You don\'t have enough Ether (ETH)',
+          actionHref: 'https://www.coinbase.com/',
+          actionText: 'Buy',
+          variant: 'failure',
+        })}
+    >
+      Preview
+    </Button>
+    </Box>
+    <Box>
+    <Heading.h6>How to call</Heading.h6>
+    </Box>
+    <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
+    <code>{'<Button'}</code><br />
+      <code>{'onClick={(e) => window.toastProvider.addMessage("Payment failed", {'}</code><br />
+        <code>{'secondaryMessage: "You don\t have enough Ether (ETH)",'}</code><br />
+        <code>{'actionHref: "https://www.coinbase.com/",'}</code><br />
+        <code>{'actionText: "Buy",'}</code><br />
+        <code>{'variant: "failure",'}</code><br />
+      <code>{'})}>'}</code><br />
+      <code>{'Preview'}</code><br />
+    <code>{'</Button>'}</code>
+    </Box>
+    <br/>
+    <Box>
+    <Heading.h4>addMessage.default</Heading.h4>
+    <Text.p>Calls a default ToastMessage</Text.p>
+    <Button
+      mb={3}
+      onClick={(e) => window.toastProvider.addMessage('Transaction started')}
+    >
+      Preview
+    </Button>
+    </Box>
+    <Box>
+    <Heading.h6>How to call</Heading.h6>
+    </Box>
+    <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
+    <code>{'<Button'}</code><br />
+      <code>{'onClick={(e) => window.toastProvider.addMessage("Transaction started")}>'}</code><br />
+    <code>{'Preview'}</code><br />
+    <code>{'</Button'}</code>
+    </Box>
+    <br/>
+    <Box>
+    <Heading.h4>addMessage.default with icon</Heading.h4>
+    <Text.p>Calls a default ToastMessage with an icon</Text.p>
+    <Button
+      mb={3}
+      onClick={(e) => window.toastProvider.addMessage('Welcome to my dApp', {
+        icon: 'Mood'
+      })}
+    >
+      Preview
+    </Button>
+    </Box>
+    <Box>
+    <Heading.h6>How to call</Heading.h6>
+    </Box>
+    <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
+    <code>{'<Button'}</code><br />
+      <code>{'onClick={(e) => window.toastProvider.addMessage("Welcome to my dApp", {'}</code><br />
+        <code>{'icon: "Mood",'}</code><br />
+      <code>{'})}>'}</code><br />
+    <code>{'Preview'}</code><br />
+    <code>{'</Button>'}</code>
+    </Box>
+    <br/>
+    <Box>
+    <Heading.h4>addMessage.default dark colors with Icon</Heading.h4>
+    <Text.p>Calls a default dark ToastMessage with an icon</Text.p>
+    <Button
+      mb={3}
+      onClick={(e) => window.toastProvider.addMessage('Welcome to my dApp', {
+        icon: 'Mood',
+        colorTheme: 'dark'
+      })}
+    >
+      Preview
+    </Button>
+    </Box>
+    <Box>
+    <Heading.h6>How to call</Heading.h6>
+    </Box>
+    <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
+    <code>{'<Button'}</code><br />
+      <code>{'onClick={(e) => window.toastProvider.addMessage("Welcome to my dApp", {'}</code><br />
+        <code>{'icon: "Mood",'}</code><br />
+        <code>{'colorTheme: "dark"'}</code><br />
+      <code>{'})}>'}</code><br />
+    <code>{'Preview'}</code><br />
+    <code>{'</Button>'}</code>
+    </Box>
+    <br/>
+    <Box>
+    <Heading.h4>removeMessage</Heading.h4>
+    <Text.p>Removes a ToastMessage</Text.p>
+    <OutlineButton
+      mb={3}
+      mr={3}
+      onClick={(e) => window.toastProvider.addMessage('Welcome to my dApp', {
+        icon: 'Mood',
+        colorTheme: 'dark'
+      })}
+    >
+      Call toast
+    </OutlineButton>
+    <Button onClick={() => window.toastProvider.removeMessage()}>Remove it</Button>
+
+    <ToastMessage.Provider ref={(node) => (window.toastProvider = node)} />
+    </Box>
+    <Box>
+    <Heading.h6>How to call</Heading.h6>
+    </Box>
+    <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
+    <code>{'<Button onClick={() => window.toastProvider.removeMessage()}>'}</code><br />
+    <code>{'Preview'}</code><br />
+    <code>{'</Button>'}</code>
+    </Box>
     </Box>
   )))
