@@ -9,7 +9,7 @@ import { QR, Box, Text } from 'rimble-ui'
 storiesOf('QR Code', module)
   .addDecorator(withDocs(MyREADME))
   .add('Documentation', () => (
-    <Box>
+    <Box textAlign={'left'}>
       <Box>
       <QR value="0xAc03BB73b6a9e108530AFf4Df5077c2B3D481e5A" />
       </Box>
