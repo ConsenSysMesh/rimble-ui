@@ -55,7 +55,13 @@ storiesOf('Form/Select', module)
         <Box>
           <Heading.h4>1</Heading.h4>
           <Text>Content guidance</Text>
-        </Box>
+        </Box><br /><br />
+        <Text textAlign={'center'}>(ﾉ◕ヮ◕)ﾉ*:・ﾟ✧</Text><br />
+        <Card color="white" bg="primary">
+        <Heading.h2  color="white">Are we missing anything?</Heading.h2>
+        <Text color="white">If you have any extra insight you'd like to add, please raise an issue in Github.</Text><br />
+        <OutlineButton Large>Raise issue</OutlineButton><br /><br />
+        </Card><br />
         </Box>
   ))
 );

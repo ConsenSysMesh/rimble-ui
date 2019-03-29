@@ -197,6 +197,13 @@ storiesOf('Form/Inputs', module)
         </Field>
       </Box>
     </Flex>
+    <br /><br />
+    <Text textAlign={'center'}>(ﾉ◕ヮ◕)ﾉ*:・ﾟ✧</Text><br />
+    <Card color="white" bg="primary">
+    <Heading.h2  color="white">Are we missing anything?</Heading.h2>
+    <Text color="white">If you have any extra insight you'd like to add, please raise an issue in Github.</Text><br />
+    <OutlineButton Large>Raise issue</OutlineButton><br /><br />
+    </Card><br />
     </Box>
     ))
   );

@@ -5,7 +5,7 @@ import { withDocs } from 'storybook-readme';
 import MyREADME from './README.md';
 import Guidelines from './GUIDELINES.md';
 
-import { Heading, Box, Text, Flex, } from 'rimble-ui'
+import { Heading, Box, Text, Flex, Card, OutlineButton} from 'rimble-ui'
 
 storiesOf('Heading', module)
   .addDecorator(withDocs(MyREADME))
@@ -147,8 +147,13 @@ storiesOf('Heading', module)
           <Heading.h6>Don't</Heading.h6>
           <Heading.h2>Your latest transactions</Heading.h2>
         </Box>
-      </Flex>
-      <br />
+      </Flex><br /><br />
+      <Text textAlign={'center'}>(ﾉ◕ヮ◕)ﾉ*:・ﾟ✧</Text><br />
+      <Card color="white" bg="primary">
+      <Heading.h2  color="white">Are we missing anything?</Heading.h2>
+      <Text color="white">If you have any extra insight you'd like to add, please raise an issue in Github.</Text><br />
+      <OutlineButton Large>Raise issue</OutlineButton><br /><br />
+      </Card><br />
       </Box>
     ))
   );

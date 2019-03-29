@@ -220,7 +220,13 @@ storiesOf('Buttons/Button', module)
       </Flex>
       <Box>
       <Text>Universally understood actions like "Save", "Next" and "Previous" etc may not need the noun.</Text>
-      </Box>
+      </Box><br /><br />
+      <Text textAlign={'center'}>(ﾉ◕ヮ◕)ﾉ*:・ﾟ✧</Text><br />
+      <Card color="white" bg="primary">
+      <Heading.h2  color="white">Are we missing anything?</Heading.h2>
+      <Text color="white">If you have any extra insight you'd like to add, please raise an issue in Github.</Text><br />
+      <OutlineButton Large>Raise issue</OutlineButton><br /><br />
+      </Card><br />
       </Box>
     ))
   );

@@ -5,7 +5,7 @@ import { withDocs } from 'storybook-readme';
 import MyREADME from './README.md';
 import Guidelines from './GUIDELINES.md';
 
-import { Blockie, Box, Heading, Text } from 'rimble-ui'
+import { Blockie, Box, Heading, Text, Card, OutlineButton } from 'rimble-ui'
 
 storiesOf('Blockie', module)
   .addDecorator(withDocs(MyREADME))
@@ -36,7 +36,13 @@ storiesOf('Blockie', module)
 <Box>
 <Heading.h2>Research</Heading.h2>
 <Text>We have some anecdotal evidence that blockies are not effectively helping users of Ethereum wallets or dApps as they are being implemented in many cases. We have chosen to include the pattern in Rimble because of its broad adoption and lack of alternatives. However, we believe further research, better usage guidelines, and potentially alternative patterns are needed.</Text>
-</Box>
+</Box><br /><br />
+<Text textAlign={'center'}>(ﾉ◕ヮ◕)ﾉ*:・ﾟ✧</Text><br />
+<Card color="white" bg="primary">
+<Heading.h2  color="white">Are we missing anything?</Heading.h2>
+<Text color="white">If you have any extra insight you'd like to add, please raise an issue in Github.</Text><br />
+<OutlineButton Large>Raise issue</OutlineButton><br /><br />
+</Card><br />
 </Box>
 ))
 );
