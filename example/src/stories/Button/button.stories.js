@@ -139,7 +139,7 @@ storiesOf('Buttons', module)
   .add(
     'Design guidelines',
     withDocs(Guidelines, () => (
-    <Box textAlign={'left'}>
+    <Box ml={6} textAlign={'left'}>
     <Box>
       <Heading.h2>Design</Heading.h2>
       <Text>Some best practices for using <code>{'Button'}</code> in your product.</Text>
