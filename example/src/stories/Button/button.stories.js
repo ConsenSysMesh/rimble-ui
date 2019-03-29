@@ -18,6 +18,7 @@ import {
   Flex,
   Modal,
   Card,
+  Pill
 } from 'rimble-ui';
 
 storiesOf('Buttons/Button', module)
@@ -191,14 +192,14 @@ storiesOf('Buttons', module)
       </Box>
       <br />
       <Flex>
-        <Box width={1/2}>
-          <Heading.h6>Do</Heading.h6>
-          <Button size="medium">Add wallet</Button>
-        </Box>
-        <Box width={1/2}>
-          <Heading.h6>Don't</Heading.h6>
-          <Button size="medium">Add a wallet</Button>
-        </Box>
+      <Card mx={'auto'} my={3} px={4} width="400px">
+        <Pill mb={3} color={"green"}>{"Do"}</Pill><br /><br />
+          <Button my={3} size="medium">Add wallet</Button>
+        </Card>
+        <Card mx={'auto'} my={3} px={4} width="400px">
+          <Pill mb={3} color={"red"}>{"Don't"}</Pill><br /><br />
+          <Button my={3} size="medium">Add a wallet</Button>
+        </Card>
       </Flex>
       <br />
       <Box>
@@ -208,14 +209,14 @@ storiesOf('Buttons', module)
       </Box>
       <br />
       <Flex>
-        <Box width={1/2}>
-          <Heading.h6>Do</Heading.h6>
-          <Button size="medium">Show QR code</Button>
-        </Box>
-        <Box width={1/2}>
-          <Heading.h6>Don't</Heading.h6>
-          <Button size="medium">Scan QR code</Button>
-        </Box>
+      <Card mx={'auto'} my={3} px={4} width="400px">
+        <Pill mb={3} color={"green"}>{"Do"}</Pill><br /><br />
+          <Button my={3} size="medium">Show QR code</Button>
+        </Card>
+        <Card mx={'auto'} my={3} px={4} width="400px">
+          <Pill mb={3} color={"red"}>{"Don't"}</Pill><br /><br />
+          <Button my={3} size="medium">Scan QR code</Button>
+        </Card>
         <br />
       </Flex>
       <br />
@@ -225,17 +226,17 @@ storiesOf('Buttons', module)
       </Box>
       <br />
       <Flex>
-        <Box width={1/2}>
-          <Heading.h6>Do</Heading.h6>
+      <Card mx={'auto'} my={3} px={4} width="400px">
+        <Pill mb={3} color={"green"}>{"Do"}</Pill><br /><br />
           <Button size="medium">Add wallet</Button><br /><br  />
           <Button size="medium">Send Ether</Button>
-        </Box>
-        <Box width={1/2}>
-          <Heading.h6>Don't</Heading.h6>
+        </Card>
+        <Card mx={'auto'} my={3} px={4} width="400px">
+          <Pill mb={3} color={"red"}>{"Don't"}</Pill><br /><br />
           <Button icon="AddCircle">Add</Button><br /><br />
           <Button icon="Send" mb="3">Send</Button>
-        </Box>
-      </Flex>
+        </Card>
+      </Flex><br />
       <Box>
       <Text>Universally understood actions like "Save", "Next" and "Previous" etc may not need the noun.</Text>
       </Box><br /><br />
