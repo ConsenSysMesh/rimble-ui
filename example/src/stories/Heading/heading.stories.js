@@ -86,7 +86,7 @@ storiesOf('Heading', module)
   .add(
     'Design guidelines',
     withDocs(Guidelines, () => (
-    <Box textAlign={'left'}>
+    <Box ml={3} textAlign={'left'}>
     <Box>
       <Heading.h2>Design</Heading.h2>
       <Text>Some best practices for using <code>{'Heading'}</code> in your product.</Text>

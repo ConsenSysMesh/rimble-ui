@@ -78,7 +78,7 @@ storiesOf('Table', module)
     </Box>
   ))
     .add('Design guidelines', withDocs(Guidelines, () => (
-      <Box textAlign={'left'}>
+      <Box ml={3} textAlign={'left'}>
         <Box>
         <Heading.h2>Design and content</Heading.h2>
         <Text.p>Some best practice for using Tables</Text.p>

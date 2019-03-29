@@ -184,7 +184,7 @@ storiesOf('ToastMessage', module)
     </Box>
   )))
   .add('Design guidelines', withDocs(READMEb, () => (
-    <Box textAlign={'left'}>
+    <Box ml={3} textAlign={'left'}>
     <Box>
       <Heading.h2>Design</Heading.h2>
       <Text>Some best practices for using <code>{'ToastMessage'}</code>.</Text>

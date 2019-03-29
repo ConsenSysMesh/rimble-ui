@@ -22,7 +22,7 @@ storiesOf('Blockie', module)
 .add(
   'Design guidelines',
   withDocs(Guidelines, () => (
-<Box textAlign={'left'}>
+<Box ml={3} textAlign={'left'}>
 <Box>
 <Heading.h2>Design</Heading.h2>
 <Text.p>Some best practice for using blockies</Text.p>

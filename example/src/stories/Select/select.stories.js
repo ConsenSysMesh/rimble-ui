@@ -28,7 +28,7 @@ storiesOf('Form/Select', module)
 .add(
     'Design guidelines',
     withDocs(Guidelines, () => (
-    <Box textAlign={'left'}>
+    <Box ml={3} textAlign={'left'}>
       <Box>
         <Heading.h2>Design</Heading.h2>
         <Text>Some best practices for using <code>{'Select'}</code> in your product.</Text>
