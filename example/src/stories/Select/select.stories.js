@@ -5,23 +5,25 @@ import { withDocs } from 'storybook-readme';
 import MyREADME from './README.md';
 import Guidelines from './GUIDELINES.md';
 
-import { Select, Field, Box, Heading, Text, Flex, Card, Pill, OutlineButton } from 'rimble-ui'
+import { Select, Field, Box, Heading, Text, Flex, Card, Pill, OutlineButton, Radio } from 'rimble-ui'
 
 const items = [
-  'Wallet #1',
-  'Wallet #2',
-  'Wallet #3',
+  'ETH - Ether',
+  'BTC - Bitcoin',
+  'GNO - Gnosis',
+  'GNT - Golem',
+  'REP - Augur',
 ]
 
 storiesOf('Form/Select', module)
   .addDecorator(withDocs(MyREADME))
   .add('Documentation', () => (
-  <Box>
-  <Field label='Choose your wallet'>
+  <Box ml={3} textAlign={'left'}>
+  <Field label='Choose your currency'>
     <Select items={items} required='false' />
   </Field>
   <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-  <code>{'<Select items={["Wallet #1","Wallet #2","Wallet #3",]} />'}</code>
+  <code>{'<Select items={["ETH - Ether","BTC - Bitcoin","GNO - Gnosis","GNT - Golem","REP - Augur"]} />'}</code>
   </Box>
   </Box>
 ))
@@ -35,27 +37,22 @@ storiesOf('Form/Select', module)
       </Box>
       <Box>
         <Heading.h4>It's better to show your options</Heading.h4>
-        <Text>Only use the <code>{'Select'}</code> component when you have a lot of options that would clutter your interface. If you've only got a few options to choose from it might be better to show them to the user with a <code>{'Radio'}</code> component.</Text>
+        <Text>Only use the <code>{'Select'}</code> component when you have a lot of options that would clutter your interface. If you've only got a few options to choose from it might be better to show them to the user with a <code>{'Radio'}</code> component.</Text><br />
       </Box>
       <Flex>
-        <Box width={1/2}>
-          <Heading.h6>Do</Heading.h6>
-          <Select items={["Wallet #1","Wallet #2","Wallet #3", "Wallet #4", "Wallet #5", "Wallet #6", "Wallet #7", "Wallet #8", "Wallet #9", "Wallet #10", "Wallet #11", "Wallet #12", "Wallet #13", "Wallet #14",]} />
-          </Box>
-        <Box width={1/2}>
-          <Heading.h6>Don't</Heading.h6>
-          <Select items={["Wallet #1","Wallet #2",]} />
-        </Box>
+      <Card mx={'auto'} my={3} px={4} width="400px">
+        <Pill mb={3} color={"green"}>{"Do"}</Pill><br /><br />
+          <Select items={["ETH - Ether","BTC - Bitcoin","GNO - Gnosis","GNT - Golem","REP - Augur"]} /><br /><br />
+          <Radio label="ETH - Ether" my={2} required='false'/>
+          <Radio label="FIAT e.g. USD" my={2} required='false'/>
+          </Card>
+          <Card mx={'auto'} my={3} px={4} width="400px">
+            <Pill mb={3} color={"red"}>{"Don't"}</Pill><br /><br />
+          <Select items={["ETH - Ether","FIAT e.g. USD",]} />
+        </Card>
       </Flex>
-      <br /><br />
-        <Box>
-          <Heading.h2>Content</Heading.h2>
-          <Text>Some best practices for writing <code>{'Select'}</code> components.</Text>
-        </Box>
-        <Box>
-          <Heading.h4>1</Heading.h4>
-          <Text>Content guidance</Text>
-        </Box><br /><br />
+
+        <br /><br />
         <Text textAlign={'center'}>(ﾉ◕ヮ◕)ﾉ*:・ﾟ✧</Text><br />
         <Card color="white" bg="primary">
         <Heading.h2  color="white">Are we missing anything?</Heading.h2>

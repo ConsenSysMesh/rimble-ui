@@ -9,7 +9,7 @@ import { Checkbox, Box, Text, Field } from 'rimble-ui'
 storiesOf('Form', module)
   .addDecorator(withDocs(MyREADME))
   .add('Checkboxes', () => (
-    <Box>
+    <Box ml={3} textAlign={'left'}>
     <Field label='Check all that apply'>
       <Checkbox label="Checkbox default" required="true" my={2} />
       <Checkbox checked label="Checkbox checked" required="true" my={2} />

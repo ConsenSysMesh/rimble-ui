@@ -25,7 +25,7 @@ storiesOf('Buttons/Button', module)
   .add(
     'Documentation',
     withDocs(Documentation, () => (
-      <Box textAlign={'left'}>
+      <Box ml={3} textAlign={'left'}>
         <Box>
           <Heading.h2>Button examples</Heading.h2>
           <Text>Different ways to use the button component</Text>

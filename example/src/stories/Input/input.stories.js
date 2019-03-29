@@ -23,7 +23,7 @@ import {
 storiesOf('Form/Inputs', module)
   .addDecorator(withDocs(MyREADME))
   .add('Documentation', () => (
-    <Box textAlign={'left'}>
+    <Box ml={3} textAlign={'left'}>
     <Box>
     <Heading.h2>Input examples</Heading.h2>
     <Text>Different ways to use the Input component. <b>Note</b>: these examples use the <a href="form-field-component--field">Field</a> component to render associated labels.</Text>
@@ -154,50 +154,24 @@ storiesOf('Form/Inputs', module)
       <Heading.h2>Design</Heading.h2>
       <Text>Some best practices for using <code>{'Input'}</code> in your product.</Text>
     </Box>
-    <Box>
-    <ul>
-    <li>
-    <Text>1</Text></li></ul>
-    </Box>
-    <Box>
-    <ul>
-    <li>
-    <Text>2</Text></li>
-    </ul>
-    </Box>
-    <Box>
-    <ul>
-    <li>
-    <Text>3</Text></li></ul>
-    </Box>
-    <Box>
-    <ul>
-    <li>
-    <Text>4</Text></li></ul>
-    </Box>
-    <br /><br />
-      <Box>
-        <Heading.h2>Content</Heading.h2>
-        <Text>Some best practices for writing <code>{'Input'}</code> components.</Text>
-      </Box>
       <Box>
         <Heading.h4>Don't use placeholders instead of labels</Heading.h4>
         <Text>Placeholders disappear as the user enters the field. This makes reviewing form entries difficult as you lose the explanation of the expected input.</Text>
       </Box>
       <br />
     <Flex>
-      <Box width={1/2}>
-        <Heading.h6>Do</Heading.h6>
+    <Card mx={'auto'} my={3} px={4} width="400px">
+      <Pill mb={3} color={"green"}>{"Do"}</Pill><br /><br />
         <Field label="Public address">
-        <Input type="text" required="true" placeholder="e.g. 0xAc03BB73b6a9e108530AFf4Df5077c2B3D481e5A" />
+        <Input type="text" width="100%" required="true" placeholder="e.g. 0xAc03BB73b6a9e108530AFf4Df5077c2B3D481e5A" />
         </Field>
-      </Box>
-      <Box width={1/2}>
-        <Heading.h6>Don't</Heading.h6>
+      </Card>
+      <Card mx={'auto'} my={3} px={4} width="400px">
+        <Pill mb={3} color={"red"}>{"Don't"}</Pill><br /><br />
         <Field>
-        <Input type="text" required="true" placeholder="Public address"/>
+        <Input type="text" width="100%" required="true" placeholder="Public address"/>
         </Field>
-      </Box>
+      </Card>
     </Flex>
     <br /><br />
     <Text textAlign={'center'}>(ﾉ◕ヮ◕)ﾉ*:・ﾟ✧</Text><br />

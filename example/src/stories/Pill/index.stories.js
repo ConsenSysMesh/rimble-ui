@@ -14,7 +14,7 @@ import {
 storiesOf('Pill', module)
   .addDecorator(withDocs(MyREADME))
   .add('Documentation', () => (
-    <Box textAlign={'left'}>
+    <Box ml={3} textAlign={'left'}>
     <Box>
     <Heading.h2>Pill examples</Heading.h2>
     <Text.p>Different ways to use the pill component</Text.p>

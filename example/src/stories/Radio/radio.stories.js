@@ -9,7 +9,7 @@ import { Radio, Field, Input, Box } from 'rimble-ui'
 storiesOf('Form', module)
   .addDecorator(withDocs(MyREADME))
   .add('Radio buttons', () => (
-    <Box>
+    <Box ml={3} textAlign={'left'}>
     <Field label='Choose transaction speed'>
       <Radio label="Quick" my={2} required='false'/>
       <Radio checked label="Standard" my={2} required='false'/>

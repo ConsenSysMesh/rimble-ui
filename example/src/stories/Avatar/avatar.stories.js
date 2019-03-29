@@ -10,7 +10,7 @@ import { Avatar, Box, Heading, Text, Flex, OutlineButton, Card, Pill } from 'rim
 storiesOf('Avatar', module)
   .addDecorator(withDocs(MyREADME))
   .add('Documentation', () => (
-    <Box textAlign={'left'}>
+    <Box ml={3} textAlign={'left'}>
       <Box>
         <Heading.h2>Avatar examples</Heading.h2>
         <Text>Different ways to use the Avatar component</Text>

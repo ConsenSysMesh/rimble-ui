@@ -10,7 +10,7 @@ import { Heading, Box, Text, Flex, Card, OutlineButton, Pill} from 'rimble-ui'
 storiesOf('Heading', module)
   .addDecorator(withDocs(MyREADME))
   .add('Documentation', () => (
-    <Box>
+    <Box ml={3} textAlign={'left'}>
     <Box>
       <Heading.h2>Heading examples</Heading.h2>
       <Text>Different ways to use the Heading component</Text>

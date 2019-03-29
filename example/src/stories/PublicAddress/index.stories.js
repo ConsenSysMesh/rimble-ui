@@ -9,7 +9,7 @@ import { PublicAddress, Box, Text } from 'rimble-ui'
 storiesOf('PublicAddress', module)
   .addDecorator(withDocs(MyREADME))
   .add('Documentation', () => (
-  <Box>
+  <Box ml={3} textAlign={'left'}>
   <Box>
     <PublicAddress address={'0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2'} />
   </Box>

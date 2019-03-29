@@ -5,12 +5,12 @@ import { withDocs } from 'storybook-readme';
 import MyREADME from './README.md';
 import Guidelines from './GUIDELINES.md';
 
-import { Blockie, Avatar, Box, Heading, Text, Card, OutlineButton, Pill, Flex, Image } from 'rimble-ui'
+import { Blockie, Avatar, Box, Heading, Text, Card, OutlineButton, Pill, Flex, Image, Icon } from 'rimble-ui'
 
 storiesOf('Blockie', module)
   .addDecorator(withDocs(MyREADME))
   .add('Documentation', () => (
-  <Box textAlign={'left'}>
+  <Box ml={3} textAlign={'left'}>
   <Box>
   <Blockie  opts={{seed: "foo", color: "#dfe", bgcolor: "#a71", size: 15, scale: 3, spotcolor: "#000"}} />
   </Box>
