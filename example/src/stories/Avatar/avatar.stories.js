@@ -5,7 +5,7 @@ import { withDocs } from 'storybook-readme';
 import MyREADME from './README.md';
 import Guidelines from './GUIDELINES.md';
 
-import { Avatar, Box, Heading, Text, Flex, OutlineButton, Card } from 'rimble-ui'
+import { Avatar, Box, Heading, Text, Flex, OutlineButton, Card, Pill } from 'rimble-ui'
 
 storiesOf('Avatar', module)
   .addDecorator(withDocs(MyREADME))
@@ -89,23 +89,23 @@ storiesOf('Avatar', module)
 </Box>
 <Heading.h4>Use with labels</Heading.h4>
 <Text>Labels will help solidify the relationship between the entity and the avatar. This will also make your product more accessible to those using assistive technologies</Text><br />
+
 <Flex>
-  <Box width={1/2}>
-    <Heading.h6>Do</Heading.h6>
+  <Card mx={'auto'} my={3} px={4} width="400px">
+    <Pill mb={3} color={"green"}>{"Do"}</Pill>
     <Avatar
       size='medium'
       src='https://airswap-token-images.s3.amazonaws.com/DAI.png'
     /><Text.span>1.98 DAI</Text.span>
-
-  </Box>
-  <Box width={1/2}>
-    <Heading.h6>Don't</Heading.h6>
+</Card>
+  <Card mx={'auto'} my={3} px={4} width="400px">
+    <Pill mb={3} color={"red"}>{"Don't"}</Pill>
     <Avatar
       mb={3}
       size='medium'
       src='https://airswap-token-images.s3.amazonaws.com/DAI.png'
     />
-  </Box>
+</Card>
 </Flex><br /><br />
 <Text textAlign={'center'}>(ﾉ◕ヮ◕)ﾉ*:・ﾟ✧</Text><br />
 <Card color="white" bg="primary">

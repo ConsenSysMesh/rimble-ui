@@ -16,6 +16,7 @@ import {
   OutlineButton,
   Link,
   Card,
+  Pill,
 } from 'rimble-ui'
 
 storiesOf('ToastMessage', module)
@@ -257,22 +258,22 @@ icon={'Mood'}
     <Box>
     <Heading.h4>Use for non-critical information</Heading.h4>
     <Text.p>Don't use toast messages for information that will directly impact the success of completing a task, for example a network failure. They dismiss automatically so things can be missed easily. Note: users are able to dismiss them immediately manually. For critical information, use <Link href="#">Modal</Link> to bring that info to the user's attention.</Text.p>
-    </Box>
+    </Box><br />
     <Flex>
-    <Box width={1/2}>
-    <Heading.h6>Do</Heading.h6>
+    <Card mx={'auto'} my={3} px={4} width="420px">
+      <Pill mb={3} color={"green"}>{"Do"}</Pill>
     <ToastMessage
       message={'Transaction started'}
       my={3}
       mr={3} />
-    </Box>
-    <Box width={1/2}>
-    <Heading.h6>Don't</Heading.h6>
+    </Card>
+    <Card mx={'auto'} my={3} px={4} width="420px">
+      <Pill mb={3} color={"red"}>{"Don't"}</Pill>
     <ToastMessage
       message={'Switch to the Main Network to start the transaction'}
       my={3}
       mr={3} />
-    </Box>
+    </Card>
     </Flex><br />
     <Box>
     <Heading.h4>Think about placement</Heading.h4>
@@ -281,10 +282,10 @@ icon={'Mood'}
     <Box>
     <Heading.h4>Stick to one optional action</Heading.h4>
     <Text.p>This action should support your update and must be optional. This might be to provide further information (like linking to Etherscan) or something that can affect the process (like cancelling while your payment is in a processing state). Action copy should ideally be verb-led like "Check", "View", "Buy" or "Change".</Text.p>
-    </Box>
+    </Box><br />
     <Flex>
-    <Box width={1/2}>
-    <Heading.h6>Do</Heading.h6>
+    <Card mx={'auto'} my={3} px={4} width="420px">
+      <Pill mb={3} color={"green"}>{"Do"}</Pill>
     <ToastMessage
       message={'Transaction started'}
       secondaryMessage={'Check on its progress at Etherscan'}
@@ -292,16 +293,16 @@ icon={'Mood'}
       actionHref={'#'}
       my={3}
       mr={3} />
-    </Box>
-    <Box width={1/2}>
-    <Heading.h6>Don't</Heading.h6>
+    </Card>
+    <Card mx={'auto'} my={3} px={4} width="420px">
+      <Pill mb={3} color={"red"}>{"Don't"}</Pill>
     <ToastMessage
       message={'Connect to start this transaction'}
       actionText={'Connect'}
       actionHref={'#'}
       my={3}
       mr={3} />
-    </Box>
+    </Card>
     </Flex><br />
     <Box>
     <Heading.h2>Content</Heading.h2>
@@ -312,23 +313,23 @@ icon={'Mood'}
     </Box>
     <Box>
     <Heading.h4>Keep things short</Heading.h4>
-    <Text>Toast messages are only around a short while so keep the copy short to make them readable in the time they're on screen.</Text>
+    <Text>Toast messages are only around a short while so keep the copy short to make them readable in the time they're on screen.</Text><br />
     <Flex>
-    <Box width={1/2}>
-    <Heading.h6>Do</Heading.h6>
+    <Card mx={'auto'} my={3} px={4} width="420px">
+      <Pill mb={3} color={"green"}>{"Do"}</Pill>
     <ToastMessage
       message={'Transaction started'}
       my={3}
       mr={3} />
-    </Box>
-    <Box width={1/2}>
-    <Heading.h6>Don't</Heading.h6>
+    </Card>
+    <Card mx={'auto'} my={3} px={4} width="420px">
+      <Pill mb={3} color={"red"}>{"Don't"}</Pill>
     <ToastMessage
       message={'We\'ve started your transaction'}
       my={3}
       mr={3} />
-    </Box>
-    </Flex>
+    </Card>
+    </Flex><br />
     </Box>
     <Box>
     <Heading.h3>Transaction messages (processing, success and failure)</Heading.h3>
@@ -336,133 +337,151 @@ icon={'Mood'}
     <Box>
     <Heading.h4>Processing messages</Heading.h4>
     <Text>Keep them in the present tense and reference what's being processed to give the user reassurance that what they've initiated is happening. An ellipsis can help indicate that something's happening</Text>
-    </Box>
+    </Box><br />
     <Flex>
-    <Box width={1/2}>
-    <Heading.h6>Do</Heading.h6>
+    <Card mx={'auto'} my={3} px={4} width="420px">
+      <Pill mb={3} color={"green"}>{"Do"}</Pill>
     <ToastMessage
       message={'Processing payment...'}
       my={3}
       mr={3}
       variant={'processing'} />
-    </Box>
-    <Box width={1/2}>
-    <Heading.h6>Don't</Heading.h6>
+    </Card>
+    <Card mx={'auto'} my={3} px={4} width="420px">
+      <Pill mb={3} color={"red"}>{"Don't"}</Pill>
     <ToastMessage
       message={'Processing started'}
       my={3}
       mr={3}
       variant={'processing'} />
-    </Box>
+    </Card>
     </Flex><br />
     <Box>
     <Heading.h4>Success messages</Heading.h4>
     <Text>Describe what's happened and avoid generic "Success!" messages.Ethereum actions can take a while to it makes sense to remind the user of the action that has succeeded.</Text></Box>
+
+    <br />
     <Flex>
-    <Box width={1/2}>
-    <Heading.h6>Do</Heading.h6>
-    <ToastMessage
-      message={'0.4 Ether sent!'}
-      my={3}
-      mr={3}
-      variant={'success'} />
-    </Box>
-    <Box width={1/2}>
-    <Heading.h6>Don't</Heading.h6>
-    <ToastMessage
-      message={'Success!'}
-      my={3}
-      mr={3}
-      variant={'success'} />
-    </Box>
+      <Card mx={'auto'} my={3} px={4} width="420px">
+        <Pill mb={3} color={"green"}>{"Do"}</Pill>
+        <ToastMessage
+          message={'0.4 Ether sent!'}
+          my={3}
+          mr={3}
+          variant={'success'} />
+    </Card>
+      <Card mx={'auto'} my={3} px={4} width="420px">
+        <Pill mb={3} color={"red"}>{"Don't"}</Pill>
+        <ToastMessage
+          message={'Success!'}
+          my={3}
+          mr={3}
+          variant={'success'} />
+    </Card>
     </Flex><br />
+
+
+
     <Box>
     <Text>Echo the language the user interacted with to initiate the action in the success message. So if the button copy was "Send Ether":</Text></Box>
+
+    <br />
     <Flex>
-    <Box width={1/2}>
-    <Heading.h6>Do</Heading.h6>
-    <ToastMessage
-      message={'Ether sent'}
-      my={3}
-      mr={3}
-      variant={'success'} />
-    </Box>
-    <Box width={1/2}>
-    <Heading.h6>Don't</Heading.h6>
-    <ToastMessage
-      message={'Ether transferred'}
-      my={3}
-      mr={3}
-      variant={'success'} />
-    </Box>
+      <Card mx={'auto'} my={3} px={4} width="420px">
+        <Pill mb={3} color={"green"}>{"Do"}</Pill>
+        <ToastMessage
+          message={'Ether sent'}
+          my={3}
+          mr={3}
+          variant={'success'} />
+    </Card>
+      <Card mx={'auto'} my={3} px={4} width="420px">
+        <Pill mb={3} color={"red"}>{"Don't"}</Pill>
+        <ToastMessage
+          message={'Ether transferred'}
+          my={3}
+          mr={3}
+          variant={'success'} />
+    </Card>
     </Flex><br />
+
+
+
     <Box>
     <Text>If you explain what's happened you don't need to use terms like "successfully" which will help keep your content shorter</Text>
     </Box>
+    <br />
     <Flex>
-    <Box width={1/2}>
-    <Heading.h6>Do</Heading.h6>
-    <ToastMessage
-      message={'Transaction confirmed'}
-      my={3}
-      mr={3}
-      variant={'success'} />
-    </Box>
-    <Box width={1/2}>
-    <Heading.h6>Don't</Heading.h6>
-    <ToastMessage
-      message={'Transaction confirmed successfully'}
-      my={3}
-      mr={3}
-      variant={'success'} />
-    </Box>
-    </Flex>
+      <Card mx={'auto'} my={3} px={4} width="420px">
+        <Pill mb={3} color={"green"}>{"Do"}</Pill>
+        <ToastMessage
+          message={'Transaction confirmed'}
+          my={3}
+          mr={3}
+          variant={'success'} />
+    </Card>
+      <Card mx={'auto'} my={3} px={4} width="420px">
+        <Pill mb={3} color={"red"}>{"Don't"}</Pill>
+        <ToastMessage
+          message={'Transaction confirmed successfully'}
+          my={3}
+          mr={3}
+          variant={'success'} />
+    </Card>
+    </Flex><br />
+
+
+
+
     <Box>
     <Heading.h4>Failure messages</Heading.h4>
     <Text><em>Note: it may be preferable to use alternative components like <Link href="#">Modal</Link> to bring a transaction failure to a user's attention, as they can't be missed and provide more space for explanation.</em></Text><br />
     <Text>Where possible, explain the reason for failure and offer a suggestion of what to do next. And use the action to help the user remedy the situation. </Text>
-    </Box>
+    </Box><br />
     <Flex>
-    <Box width={1/2}>
-    <Heading.h6>Do</Heading.h6>
-    <ToastMessage
-      message={'Transaction failed'}
-      secondaryMessage={'You didn\'t have enough Ether'}
-      actionText={'Buy ETH'}
-      actionHref={'#'}
-      my={3}
-      mr={3}
-      variant={'failure'} />
-    </Box>
-    <Box width={1/2}>
-    <Heading.h6>Don't</Heading.h6>
-    <ToastMessage
-      message={'Transaction failed'}
-      my={3}
-      mr={3}
-      variant={'failure'} />
-    </Box>
-    </Flex><br />
+      <Card mx={'auto'} my={3} px={4} width="420px">
+        <Pill mb={3} color={"green"}>{"Do"}</Pill>
+        <ToastMessage
+          message={'Transaction failed'}
+          secondaryMessage={'You didn\'t have enough Ether'}
+          actionText={'Buy ETH'}
+          actionHref={'#'}
+          my={3}
+          mr={3}
+          variant={'failure'} />
+    </Card>
+      <Card mx={'auto'} my={3} px={4} width="420px">
+        <Pill mb={3} color={"red"}>{"Don't"}</Pill>
+        <ToastMessage
+          message={'Transaction failed'}
+          my={3}
+          mr={3}
+          variant={'failure'} />
+    </Card>
+    </Flex>
+
+    <br />
     <Box>
-    <Text>Echo the language the user interacted with to initiate the action in the failure message. So if the button copy was "Pay 0.13 Ether":</Text></Box>
+    <Text>Echo the language the user interacted with to initiate the action in the failure message. So if the button copy was "Pay 0.13 Ether":</Text></Box><br /><br />
     <Flex>
-    <Box width={1/2}>
-    <Heading.h6>Do</Heading.h6>
-    <ToastMessage
-      message={'Payment failed'}
-      my={3}
-      mr={3}
-      variant={'failure'} />
-    </Box>
-    <Box width={1/2}>
-    <Heading.h6>Don't</Heading.h6>
-    <ToastMessage
-      message={'Transaction failed'}
-      my={3}
-      mr={3}
-      variant={'failure'} />
-    </Box>
-    </Flex><br /><br />
+      <Card mx={'auto'} my={3} px={4} width="420px">
+        <Pill mb={3} color={"green"}>{"Do"}</Pill>
+        <ToastMessage
+          message={'Payment failed'}
+          my={3}
+          mr={3}
+          variant={'failure'} />
+    </Card>
+      <Card mx={'auto'} my={3} px={4} width="420px">
+        <Pill mb={3} color={"red"}>{"Don't"}</Pill>
+        <ToastMessage
+          message={'Transaction failed'}
+          my={3}
+          mr={3}
+          variant={'failure'} />
+    </Card>
+    </Flex>
+    <br /><br />
     <Text textAlign={'center'}>(ﾉ◕ヮ◕)ﾉ*:・ﾟ✧</Text><br />
     <Card color="white" bg="primary">
     <Heading.h2  color="white">Are we missing anything?</Heading.h2>

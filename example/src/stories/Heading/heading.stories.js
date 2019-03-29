@@ -5,7 +5,7 @@ import { withDocs } from 'storybook-readme';
 import MyREADME from './README.md';
 import Guidelines from './GUIDELINES.md';
 
-import { Heading, Box, Text, Flex, Card, OutlineButton} from 'rimble-ui'
+import { Heading, Box, Text, Flex, Card, OutlineButton, Pill} from 'rimble-ui'
 
 storiesOf('Heading', module)
   .addDecorator(withDocs(MyREADME))
@@ -122,32 +122,36 @@ storiesOf('Heading', module)
         <Text>Don’t use articles (a, the, an) in headings. This will make your heading shorter and quicker to scan.</Text>
       </Box>
       <br />
+
       <Flex>
-        <Box width={1/2}>
-          <Heading.h6>Do</Heading.h6>
+        <Card mx={'auto'} my={3} px={4} width="400px">
+          <Pill mb={3} color={"green"}>{"Do"}</Pill>
           <Heading.h2>Add wallet</Heading.h2>
-        </Box>
-        <Box width={1/2}>
-          <Heading.h6>Don't</Heading.h6>
+      </Card>
+        <Card mx={'auto'} my={3} px={4} width="400px">
+          <Pill mb={3} color={"red"}>{"Don't"}</Pill>
           <Heading.h2>Add a wallet</Heading.h2>
-        </Box>
+      </Card>
       </Flex>
+
       <br />
       <Box>
         <Heading.h4>Keep copy short</Heading.h4>
         <Text>The shorter your copy, the more scannable it will be. Just ensure the user will understand what to expect from the content or action below the heading.</Text>
       </Box>
       <br />
+
       <Flex>
-        <Box width={1/2}>
-          <Heading.h6>Do</Heading.h6>
+        <Card mx={'auto'} my={3} px={4} width="400px">
+          <Pill mb={3} color={"green"}>{"Do"}</Pill>
           <Heading.h2>Transactions</Heading.h2>
-        </Box>
-        <Box width={1/2}>
-          <Heading.h6>Don't</Heading.h6>
+      </Card>
+        <Card mx={'auto'} my={3} px={4} width="400px">
+          <Pill mb={3} color={"red"}>{"Don't"}</Pill>
           <Heading.h2>Your latest transactions</Heading.h2>
-        </Box>
-      </Flex><br /><br />
+      </Card>
+      </Flex>
+<br /><br />
       <Text textAlign={'center'}>(ﾉ◕ヮ◕)ﾉ*:・ﾟ✧</Text><br />
       <Card color="white" bg="primary">
       <Heading.h2  color="white">Are we missing anything?</Heading.h2>
