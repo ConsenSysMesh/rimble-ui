@@ -12,7 +12,7 @@ import {
   Text,
 } from 'rimble-ui'
 
-storiesOf('Form/Field Component', module)
+storiesOf('Form/Field', module)
   .addDecorator(withDocs(MyREADME))
   .add('Documentation', () => (
     <Box textAlign={'left'}>

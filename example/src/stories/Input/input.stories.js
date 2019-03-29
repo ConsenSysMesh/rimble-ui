@@ -16,6 +16,8 @@ import {
   Field,
   Text,
   Input,
+  OutlineButton,
+  Pill,
 } from 'rimble-ui'
 
 storiesOf('Form/Inputs', module)
@@ -103,7 +105,7 @@ storiesOf('Form/Inputs', module)
     <Heading.h4>Number input</Heading.h4>
     <Text.p>Opens the number page of your keyboard. Allows you to easily increase/decrease the value on desktop too.</Text.p>
 <Field label='Number'>
-    <Form.Input required='true' type='number' placeholder='e.g. 123'/>
+    <Form.Input required='true' type='number' placeholder='e.g. 0.00001234'/>
 </Field>
     </Box>
     <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>

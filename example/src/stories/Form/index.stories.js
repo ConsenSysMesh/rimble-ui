@@ -44,9 +44,9 @@ class MyCustomForm extends Component {
 
 }
 
-storiesOf('Form/Form Validation', module)
+storiesOf('Form/Form', module)
   .addDecorator(withDocs(MyREADME))
-  .add('HTML 5 Validation', () => (
+  .add('Documentation', () => (
     <div>
       <Card>
         <MyCustomForm />

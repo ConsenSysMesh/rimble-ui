@@ -5,7 +5,7 @@ import { withDocs } from 'storybook-readme';
 import MyREADME from './README.md';
 import Guidelines from './GUIDELINES.md';
 
-import { Select, Field, Box, Heading, Text, Flex } from 'rimble-ui'
+import { Select, Field, Box, Heading, Text, Flex, Card, Pill, OutlineButton } from 'rimble-ui'
 
 const items = [
   'Wallet #1',
