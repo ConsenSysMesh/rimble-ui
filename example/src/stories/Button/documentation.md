@@ -14,7 +14,7 @@ import { Button } from 'rimble-ui';
 
 ### Component props
 
-Button uses all the props from [`Box`](https://consensys.github.io/rimble-ui/?path=/story/layout--box) and its icon property is inherited from [`Icon`](https://consensys.github.io/rimble-ui/?path=/story/icon--default), but also includes these:
+Button's icon inherits all the props from [`Icon`](https://consensys.github.io/rimble-ui/?path=/story/icon--default), but also includes these:
 
 | Prop      | Type    | Values                                                           | Default | Description                                  |
 | --------- | ------- | ---------------------------------------------------------------- | ------- | -------------------------------------------- |

@@ -12,6 +12,8 @@ import { Avatar } from 'rimble-ui';
 
 ### Component props
 
+Avatar will pass any props that are defined on its component including:
+
 | Name    | Type   | Default | Description                                  |
 | ------- | ------ | ------- | -------------------------------------------- |
 | `alt`   | string | avatar  | Sets alt property on image for accessibility |
@@ -21,4 +23,4 @@ import { Avatar } from 'rimble-ui';
 
 ### Styled-system props
 
-Button uses all the style props from [`Box`](https://consensys.github.io/rimble-ui/?path=/story/layout--box), but also includes these:
+Avatar uses all the style props from [`Box`](https://consensys.github.io/rimble-ui/?path=/story/layout--box).
