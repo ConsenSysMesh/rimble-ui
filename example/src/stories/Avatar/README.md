@@ -1,19 +1,24 @@
 # Avatar documentation
+
 A basic avatar component.
 
 **Import component**
+
 ```jsx
-import { Avatar } from 'rimble-ui'
+import { Avatar } from 'rimble-ui';
 ```
 
 <!-- STORY -->
 
-
-
-<!-- Avatar example here -->
-
 ### Component props
-| Name   | Type   | Default | Description                                 |
-| ------ | ------ | ------- | ------------------------------------------- |
-| `size` | string |         | Sets avatar size to small, medium, or large |
-|`src`|string|| Sets avatar `background-image`
+
+| Name    | Type   | Default | Description                                  |
+| ------- | ------ | ------- | -------------------------------------------- |
+| `alt`   | string | avatar  | Sets alt property on image for accessibility |
+| `size`  | string | small   | Sets avatar size to small, medium, or large  |
+| `src`   | string |         | Sets avatar `background-image`               |
+| `ratio` | int    | 1       | Sets height and width ratio of the avatar    |
+
+### Styled-system props
+
+Button uses all the style props from [`Box`](https://consensys.github.io/rimble-ui/?path=/story/layout--box), but also includes these:
