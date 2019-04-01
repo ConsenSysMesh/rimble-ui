@@ -114,53 +114,79 @@ storiesOf('Avatar', module)
       <br />
     </Box>
   ))
-  .add('Design guidelines',
-  withDocs(Guidelines, () => (
-  <Box mx={3} textAlign={'left'}>
-<Box>
-<Heading.h2>Design</Heading.h2>
-<Text.p>Some best practice for using avatars</Text.p>
-</Box>
-<Heading.h4>Use with labels</Heading.h4>
-<Text>Labels will help solidify the relationship between the entity and the avatar. This will also make your product more accessible to those using assistive technologies</Text><br />
+  .add(
+    'Design guidelines',
+    withDocs(Guidelines, () => (
+      <Box>
+        <Box mx={3} textAlign={'left'}>
+          <Box>
+            <Heading.h2>Design</Heading.h2>
+            <Text.p>Some best practice for using avatars</Text.p>
+          </Box>
 
-<Flex>
-  <Card mx={'auto'} my={3} px={4} width="400px">
-    <Pill mb={3} color={"green"}>{"Do"}</Pill>
-    <Avatar
-      size='medium'
-      src='https://airswap-token-images.s3.amazonaws.com/DAI.png'
-    /><Text.span>1.98 DAI</Text.span>
-</Card>
-  <Card mx={'auto'} my={3} px={4} width="400px">
-    <Pill mb={3} color={"red"}>{"Don't"}</Pill>
-    <Avatar
-      mb={3}
-      size='medium'
-      src='https://airswap-token-images.s3.amazonaws.com/DAI.png'
-    />
-</Card>
-</Flex><br /><br />
-<Text textAlign={'center'}>(ﾉ◕ヮ◕)ﾉ*:・ﾟ✧</Text><br />
-<Card color="white" bg="primary">
-<Heading.h2  color="white">Are we missing anything?</Heading.h2>
-<Text color="white">If you have any extra insight you'd like to add, please raise an issue in Github.</Text><br />
-<OutlineButton Large>Raise issue</OutlineButton><br /><br />
-</Card><br />
+          <Heading.h4>Use with labels</Heading.h4>
+          <Text>
+            Labels will help solidify the relationship between the entity and
+            the avatar. This will also make your product more accessible to
+            those using assistive technologies
+          </Text>
+          <br />
 
-</Box>
+          <Flex>
+            <Card mx={'auto'} my={3} px={4} width="400px">
+              <Pill mb={3} color={'green'}>
+                {'Do'}
+              </Pill>
+              <Avatar
+                size="medium"
+                src="https://airswap-token-images.s3.amazonaws.com/DAI.png"
+              />
+              <Text.span>1.98 DAI</Text.span>
+            </Card>
+
+            <Card mx={'auto'} my={3} px={4} width="400px">
+              <Pill mb={3} color={'red'}>
+                {"Don't"}
+              </Pill>
+              <Avatar
+                mb={3}
+                size="medium"
+                src="https://airswap-token-images.s3.amazonaws.com/DAI.png"
+              />
+            </Card>
+          </Flex>
+          <br />
+          <br />
+
+          <Text textAlign={'center'}>(ﾉ◕ヮ◕)ﾉ*:・ﾟ✧</Text>
+          <br />
+          <Card color="white" bg="primary">
+            <Heading.h2 color="white">Are we missing anything?</Heading.h2>
+            <Text color="white">
+              If you have any extra insight you'd like to add, please raise an
+              issue in Github.
+            </Text>
+            <br />
+            <OutlineButton Large>Raise issue</OutlineButton>
+            <br />
+            <br />
+          </Card>
+          <br />
+        </Box>
 
         <Flex>
           <Card mx={'auto'} my={3} px={4} width="400px">
             <Pill mb={3} color={'green'}>
               {'Do'}
             </Pill>
+
             <Avatar
               size="medium"
               src="https://airswap-token-images.s3.amazonaws.com/DAI.png"
             />
             <Text.span>1.98 DAI</Text.span>
           </Card>
+
           <Card mx={'auto'} my={3} px={4} width="400px">
             <Pill mb={3} color={'red'}>
               {"Don't"}
@@ -174,6 +200,7 @@ storiesOf('Avatar', module)
         </Flex>
         <br />
         <br />
+
         <Text textAlign={'center'}>(ﾉ◕ヮ◕)ﾉ*:・ﾟ✧</Text>
         <br />
         <Card color="white" bg="primary">
