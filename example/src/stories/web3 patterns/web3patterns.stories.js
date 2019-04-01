@@ -26,7 +26,7 @@ import {
 } from 'rimble-ui'
 
 
-storiesOf('Web 3 patterns', module)
+storiesOf('dApp patterns', module)
   .add('Transaction states', () => (
     <Box mx={3} textAlign={'left'}>
     <Box>

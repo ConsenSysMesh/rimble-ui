@@ -6,10 +6,10 @@ import MyREADME from './README.md';
 
 import { Slider, Box } from 'rimble-ui'
 
-storiesOf('Form', module)
+storiesOf('Form/Slider', module)
   .addDecorator(withDocs(MyREADME))
-  .add('Slider', () =>
-  <Box textAlign={'left'}>
+  .add('Documentation', () =>
+    <Box mx={3} textAlign={'left'}>
   <Box>
   <Slider /><br />
   </Box>

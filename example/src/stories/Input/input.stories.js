@@ -23,7 +23,7 @@ import {
 storiesOf('Form/Inputs', module)
   .addDecorator(withDocs(MyREADME))
   .add('Documentation', () => (
-    <Box ml={3} textAlign={'left'}>
+      <Box mx={3} textAlign={'left'}>
     <Box>
     <Heading.h2>Input examples</Heading.h2>
     <Text>Different ways to use the Input component. <b>Note</b>: these examples use the <a href="form-field-component--field">Field</a> component to render associated labels.</Text>
@@ -149,7 +149,7 @@ storiesOf('Form/Inputs', module)
   .add(
     'Design guidelines',
     withDocs(Guidelines, () => (
-    <Box ml={3} textAlign={'left'}>
+    <Box mx={3} textAlign={'left'}>
     <Box>
       <Heading.h2>Design</Heading.h2>
       <Text>Some best practices for using <code>{'Input'}</code> in your product.</Text>

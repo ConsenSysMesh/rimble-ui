@@ -5,12 +5,12 @@ import { withDocs } from 'storybook-readme';
 import MyREADME from './README.md';
 import Guidelines from './GUIDELINES.md';
 
-import { Table, Box, Icon, Heading, Text, Card, OutlineButton } from 'rimble-ui'
+import { Table, Box, Icon, Heading, Text, Card, OutlineButton, Pill, Flex} from 'rimble-ui'
 
 storiesOf('Table', module)
   .addDecorator(withDocs(MyREADME))
   .add('Documentation', () => (
-    <Box textAlign={'left'}>
+      <Box mx={3} textAlign={'left'}>
 <Box>
     <Table>
       <thead>
@@ -78,7 +78,7 @@ storiesOf('Table', module)
     </Box>
   ))
     .add('Design guidelines', withDocs(Guidelines, () => (
-      <Box ml={3} textAlign={'left'}>
+        <Box mx={3} textAlign={'left'}>
         <Box>
         <Heading.h2>Design and content</Heading.h2>
         <Text.p>Some best practice for using Tables</Text.p>
@@ -86,6 +86,65 @@ storiesOf('Table', module)
         <Heading.h4>Consider more responsive options</Heading.h4>
         <Heading.h4>Wrap don't truncate</Heading.h4>
         <Heading.h4>More rows than columns is easier to read</Heading.h4>
+
+        <Flex>
+        <Card mx={'auto'} my={3} px={4} width="400px">
+          <Pill mb={3} color={"green"}>{"Do"}</Pill><br /><br />
+          <Table>
+            <thead>
+              <tr>
+                <th>1</th>
+                <th>2</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1st</td>
+                <td>row</td>
+              </tr>
+              <tr>
+                <td>2nd</td>
+                <td>row</td>
+              </tr>
+              <tr>
+                <td>3rd</td>
+                <td>row</td>
+              </tr>
+            </tbody>
+          </Table>
+            </Card>
+            <Card mx={'auto'} my={3} px={4} width="400px">
+              <Pill mb={3} color={"red"}>{"Don't"}</Pill><br /><br />
+              <Table>
+                <thead>
+                  <tr>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1st</td>
+                    <td>r</td>
+                    <td>o</td>
+                    <td>w</td>
+
+                  </tr>
+                  <tr>
+                    <td>2nd</td>
+                    <td>r</td>
+                    <td>o</td>
+                    <td>w</td>
+
+                  </tr>
+                </tbody>
+              </Table>
+          </Card>
+        </Flex>
+
+
         <Heading.h4>Headings should clearly summarise the data within each column</Heading.h4>
         </Box>
         <br /><br />

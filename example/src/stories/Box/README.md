@@ -1,24 +1,12 @@
 # Box
-The `Box` renders a responsive box-model layout component.
+The `Box` renders a responsive box-model layout component. 
 
-<!-- STORY -->
-
-### Usage
+**Import component**
 ```jsx
 import { Box } from 'rimble-ui'
 ```
 
-<!-- component example here -->
-```jsx
-<Box
-  p={5}
-  fontSize={4}
-  width={[ 1, 1, 1/2 ]}
-  color='white'
-  bg='salmon'>
-  This is a Box
-</Box>
-```
+<!-- STORY -->
 
 ## Margin & Padding
 

@@ -15,7 +15,7 @@ import {
 storiesOf('Form/Field', module)
   .addDecorator(withDocs(MyREADME))
   .add('Documentation', () => (
-    <Box ml={3} textAlign={'left'}>
+    <Box mx={3} textAlign={'left'}>
     <Box>
     <Field label='Public address'>
       <Input type='text' required='true'/>

@@ -9,7 +9,7 @@ import { MetaMaskButton, Box, Heading, Text } from 'rimble-ui'
 storiesOf('MetaMaskButton', module)
   .addDecorator(withDocs(MyREADME))
   .add('Documentation', () => (
-    <Box ml={3} textAlign={'left'}>
+    <Box mx={3} textAlign={'left'}>
     <Box>
       <Heading.h2>MetaMaskButton examples</Heading.h2>
       <Text>Different ways to use the MetaMaskButton component</Text>

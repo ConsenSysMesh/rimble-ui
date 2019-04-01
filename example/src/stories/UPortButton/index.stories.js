@@ -9,7 +9,7 @@ import { UPortButton, Flex, Box, Heading, Text, Button } from 'rimble-ui'
 storiesOf('UPortButton', module)
   .addDecorator(withDocs(MyREADME))
   .add('Documentation', () => (
-    <Box textAlign={'left'}>
+      <Box mx={3} textAlign={'left'}>
     <Box>
       <Heading.h2>UPortButton examples</Heading.h2>
       <Text>Different ways to use the UPortButton component</Text>
