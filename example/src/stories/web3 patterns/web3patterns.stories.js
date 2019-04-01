@@ -26,21 +26,14 @@ import {
 } from 'rimble-ui'
 
 
-storiesOf('Transaction states', module)
-  .add('Documentation', () => (
+storiesOf('Web 3 patterns', module)
+  .add('Transaction states', () => (
     <Box mx={3} textAlign={'left'}>
     <Box>
     <Heading.h1>Transaction states</Heading.h1>
 
     <Heading.h2>Well-designed transaction states will build trust and confidence in your dApp by helping users understand what's going on and setting their expectations.</Heading.h2>
     <Text.p>Transactions are such a crucial part of dApp UX because they're so different to what we're used to in Web 2. While ridding the process of a "middleperson" might have given us more personal autonomy, it has left us with less immediacy and more complexity to design for.</Text.p>
-
-
-    <Text.p>
-        - Transactions are weird in blockchain – they're different from Web2
-        - They're not immediate
-        - There's a slew of new way they can go wrong</Text.p>
-
 
     <Text.p>We built a demo to show rather than tell. Check it out, then read our guidelines below for some advice on giving your users the most helpful transaction experience.</Text.p><br />
     <Button>Try the demo</Button></Box><br /><br />
@@ -95,19 +88,14 @@ storiesOf('Transaction states', module)
     <Text><b>3.</b> If your users are more experienced in blockchain, you may want to signal when you can confirm the transaction has been taken on by a miner. Note: this could cause confusion for new and inexperienced users, so consider skipping until the transaction has been a success or failure. </Text><br />
 <Text.p><em>Example</em></Text.p>
 <ToastMessage.Processing width={[ 1, 1, 1/2 ]} message={'First block confirmed'} secondaryMessage={'Your change is in progress'} /><br /><br />
-    <Text><b>4.</b>Let users know once the transaction is complete and successful.</Text><br />
+    <Text><b>4.</b> Let users know once the transaction is complete and successful.</Text><br />
 <Text.p><em>Example</em></Text.p>
 <ToastMessage.Success width={[ 1, 1, 1/2 ]} message={'Smart contract value changed'} /><br /><br />
-    <Text><b>5.</b>Let the user know if something has gone wrong and the transaction can't be completed. Include why the transaction failed and how to remedy the situation (if possible). Consider other UI for this state as it may require action from the user.</Text><br />
+    <Text><b>5.</b> Let the user know if something has gone wrong and the transaction can't be completed. Include why the transaction failed and how to remedy the situation (if possible). Consider other UI for this state as it may require action from the user.</Text><br />
 <Text.p><em>Example</em></Text.p>
 <ToastMessage.Failure width={[ 1, 1, 1/2 ]} message={'Value change failed'} secondaryMessage={'Insert reason why or how to fix'} />
     </Card>
 
-    <Card>
-    <Heading.h3>Direct users to their wallet when they need to interact</Heading.h3>
-<Text.p>
-    - Don't rely on your wallet to do the work – for example, MetaMask windows won't always appear as you'd expect</Text.p>
-    </Card>
 
     <Card>
     <Heading.h3>Show states persistently too</Heading.h3>
@@ -118,30 +106,34 @@ storiesOf('Transaction states', module)
 <thead>
 <tr>
 <th>Transaction hash</th>
-<th>Status</th>
 <th>Time</th>
+<th>Status</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>0xeb2317a1ae818be05c1bfdc818d5e2a5aa7ec61b389a7df6268bfd0d5d8e8cc0</td>
+<td></td>
 <td><Pill mx={3} color={"blue"}>{"Started"}</Pill><br /></td>
-<td></td>
+
 </tr>
 <tr>
 <td>0xeb2317a1ae818be05c1bfdc818d5e2a5aa7ec61b389a7df6268bfd0d5d8e8cc0</td>
+<td></td>
 <td><Pill mx={3} color={"orange"}> {"Processing"}</Pill><br /></td>
-<td></td>
+
 </tr>
 <tr>
 <td>0xeb2317a1ae818be05c1bfdc818d5e2a5aa7ec61b389a7df6268bfd0d5d8e8cc0</td>
+<td></td>
 <td><Pill mx={3} color={"green"}>{"Confirmed"}</Pill><br /></td>
-<td></td>
+
 </tr>
 <tr>
 <td>0xeb2317a1ae818be05c1bfdc818d5e2a5aa7ec61b389a7df6268bfd0d5d8e8cc0</td>
-<td><Pill mx={3} color={"red"}>{"Failed"}</Pill><br /></td>
 <td></td>
+<td><Pill mx={3} color={"red"}>{"Failed"}</Pill><br /></td>
+
 </tr>
 </tbody>
 </Table>
@@ -151,13 +143,32 @@ storiesOf('Transaction states', module)
     <Card>
     <Heading.h3>Make your updates contextual to action</Heading.h3>
 
-    <Text.p>- Avoid 'transaction' started, be specific to what the user is trying to do</Text.p>
+    <Text.p>Use specific language throughout the transaction lifecycle. If the transaction is actually transfering a crypto asset, refer to that. Or if your users are casting a vote on the blockchain, reference the vote. This will spare users having to make connections in their head. Echo the language you'd use in the button to initiate the transaction e.g. Send Cryptokitty or Cast vote.</Text.p><br />
+
+    <Pill mb={3} color={"green"}><Icon name="Check" /> {"Do"}</Pill><br />
+    <Text>• Sending Ether...</Text>
+    <Text>• Vote cast</Text>
+    <Text>• Cryptokitty failed to send</Text><br /><br />
+    <Pill mb={3} color={"red"}><Icon name="Close" /> {"Don't"}</Pill><br />
+    <Text>• Processing transaction...</Text>
+    <Text>• Transaction confirmed</Text>
+    <Text>• Transaction failed</Text>
+
     </Card>
 
     <Card>
-    <Heading.h3>Don't use transaction states to show errors like wrong network and no funds, block the initiation instead</Heading.h3>
+    <Heading.h3>Don't let a user initiate a transaction if the conditions aren't right</Heading.h3>
 
-<Text.p>Because you have to connect your Ethereum account, your dApp should already know if the user has enough funds to complete the transaction... this is actually better UX than web2 where you can only let a user know after trying to complete a transaction that their bank rejected the payment.</Text.p></Card>
+<Text.p>Your dApp can detect a network as long as there's a web 3 provider. And once the user has connected their Ethereum address with your dApp you can read the account balance. Don't wait until a transaction to tell your user about an incorrect network or a 0 ETH balance. This is not what the failed state is for. </Text.p>
+
+<Pill mb={3} color={"green"}><Icon name="Check" /> {"Do"}</Pill><br />
+<ToastMessage.Failure width={[ 1, 1, 1/2 ]} message={'Smart contract failed'} secondaryMessage={'You didn\'t sign the contract in MetaMask'} /><br /><br />
+<Pill mb={3} color={"red"}><Icon name="Close" /> {"Don't"}</Pill><br />
+<ToastMessage.Failure width={[ 1, 1, 1/2 ]} message={'Smart contract failed'} secondaryMessage={'You were on the wrong network'} /><br />
+<ToastMessage.Failure width={[ 1, 1, 1/2 ]} message={'Smart contract failed'} secondaryMessage={'Your balance is 0 Ether'} />
+
+
+</Card>
 
 <Card>
 <Heading.h3>Handle errors with care</Heading.h3>
