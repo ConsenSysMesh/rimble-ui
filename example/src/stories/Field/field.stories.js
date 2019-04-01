@@ -9,7 +9,6 @@ import { Input, Field, Box, Heading, Text } from 'rimble-ui';
 storiesOf('Form/Field', module)
   .addDecorator(withDocs(MyREADME))
   .add('Documentation', () => (
-<<<<<<< HEAD
     <Box ml={3} textAlign={'left'}>
       <Box>
         <Field label="Public address">
@@ -25,12 +24,5 @@ storiesOf('Form/Field', module)
           }
         </code>
       </Box>
-=======
-    <Box mx={3} textAlign={'left'}>
-    <Box>
-    <Field label='Public address'>
-      <Input type='text' required='true'/>
-    </Field>
->>>>>>> 573d453b8d50b4606384187b1880ffb2730c2a8e
     </Box>
   ));
