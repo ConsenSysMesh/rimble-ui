@@ -26,7 +26,7 @@ import {
 storiesOf('Tooltip', module)
   .addDecorator(withDocs(MyREADME))
   .add('Documentation', () => (
-    <Box textAlign={'left'}>
+    <Box mx={3} textAlign={'left'}>
     <Box>
     <Heading.h2>Tooltip examples</Heading.h2>
     <Text>Different ways to use the tooltip component</Text>
@@ -106,7 +106,7 @@ storiesOf('Tooltip', module)
   .add(
     'Design guidelines',
     withDocs(Guidelines, () => (
-    <Box ml={3} textAlign={'left'}>
+      <Box mx={3} textAlign={'left'}>
     <Box>
     <Heading.h2>Design and content</Heading.h2>
     <Text>Some best practices for using <code>{'Tooltip'}</code> in your product.</Text>

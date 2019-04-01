@@ -10,7 +10,7 @@ import { Blockie, Avatar, Box, Heading, Text, Card, OutlineButton, Pill, Flex, I
 storiesOf('Blockie', module)
   .addDecorator(withDocs(MyREADME))
   .add('Documentation', () => (
-  <Box ml={3} textAlign={'left'}>
+  <Box mx={3} textAlign={'left'}>
   <Box>
   <Blockie  opts={{seed: "foo", color: "#dfe", bgcolor: "#a71", size: 15, scale: 3, spotcolor: "#000"}} />
   </Box>
@@ -22,7 +22,7 @@ storiesOf('Blockie', module)
 .add(
   'Design guidelines',
   withDocs(Guidelines, () => (
-<Box ml={3} textAlign={'left'}>
+  <Box mx={3} textAlign={'left'}>
 <Box>
 <Heading.h2>Design</Heading.h2>
 <Text.p>Some best practice for using blockies</Text.p>

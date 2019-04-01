@@ -25,7 +25,7 @@ storiesOf('Buttons/Button', module)
   .add(
     'Documentation',
     withDocs(Documentation, () => (
-      <Box ml={3} textAlign={'left'}>
+      <Box mx={3} textAlign={'left'}>
         <Box>
           <Heading.h2>Button examples</Heading.h2>
           <Text>Different ways to use the button component</Text>
@@ -139,7 +139,7 @@ storiesOf('Buttons', module)
   .add(
     'Design guidelines',
     withDocs(Guidelines, () => (
-    <Box ml={3} textAlign={'left'}>
+      <Box mx={3} textAlign={'left'}>
     <Box>
       <Heading.h2>Design</Heading.h2>
       <Text>Some best practices for using <code>{'Button'}</code> in your product.</Text>

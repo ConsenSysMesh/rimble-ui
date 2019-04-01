@@ -22,7 +22,7 @@ import {
 storiesOf('ToastMessage', module)
   // .addDecorator(withDocs(MyREADME))
   .add('Documentation', withDocs(READMEa, () => (
-    <Box textAlign={'left'}>
+      <Box mx={3} textAlign={'left'}>
     <Box>
     <Heading.h2>ToastMessage examples</Heading.h2>
     <Text>Different ways to use the ToastMessage component</Text>
@@ -184,7 +184,7 @@ storiesOf('ToastMessage', module)
     </Box>
   )))
   .add('Design guidelines', withDocs(READMEb, () => (
-    <Box ml={3} textAlign={'left'}>
+      <Box mx={3} textAlign={'left'}>
     <Box>
       <Heading.h2>Design</Heading.h2>
       <Text>Some best practices for using <code>{'ToastMessage'}</code>.</Text>
@@ -494,7 +494,7 @@ icon={'Mood'}
   )))
 
   .add('Provider documentation', withDocs(Provider, () => (
-    <Box textAlign={'left'}>
+      <Box mx={3} textAlign={'left'}>
     <Box>
     <Heading.h2>ToastMessage.provider previews</Heading.h2>
     <Text.p> Preview each ToastMessage and see how to call it</Text.p>

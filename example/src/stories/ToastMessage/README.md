@@ -23,19 +23,3 @@ colorTheme | | | | |
 
 
 ### Styled-system props
-
-```jsx
-<ToastMessage.Processing message={'Processing 0.00018 ETH payment'} />
-
-<ToastMessage.Success
-  message={'ETH sent'}
-  secondaryMessage={'You have 1.03 Ether (ETH) remaining'}
-/>
-
-<ToastMessage.Failure
-  message={'Payment failed'}
-  secondaryMessage={'You don&#39;t have enough Ether (ETH)'}
-  actionText={'Buy ETH'}
-  actionHref={'#!'}
-/>
-```

@@ -9,7 +9,7 @@ import { Text, Box, Heading } from 'rimble-ui'
 storiesOf('Text', module)
   .addDecorator(withDocs(MyREADME))
   .add('Documentation', () => (
-  <Box textAlign={'left'}>
+    <Box mx={3} textAlign={'left'}>
     <Box>
     <Heading.h4>Default text</Heading.h4>
     <Text>By default, the Text component will render a <code>{'<div>'}</code> element.</Text><br />

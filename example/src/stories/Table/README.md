@@ -1,5 +1,7 @@
-# Table
+# Table documentation
 The `Table` component renders the `<table>` HTML element. Inherits props from the `Box` component.
+
+_Want to build this component?_ Read [`Table` documentation](https://consensys.github.io/rimble-ui/?path=/story/Table--documentation)
 
 **Import component**
 ```jsx

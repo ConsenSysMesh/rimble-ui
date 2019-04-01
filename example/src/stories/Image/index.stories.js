@@ -9,7 +9,7 @@ import { Image, Box, Text } from 'rimble-ui'
 storiesOf('Image', module)
   .addDecorator(withDocs(MyREADME))
   .add('Documentation', () => (
-    <Box ml={3} textAlign={'left'}>
+    <Box mx={3} textAlign={'left'}>
     <Box>
     <Image
       width={[ 1, 1, 1/2 ]}

@@ -6,9 +6,11 @@ import MyREADME from './README.md';
 
 import { Flex, Box } from 'rimble-ui'
 
-storiesOf('Layout', module)
+storiesOf('Layout/Flex', module)
   .addDecorator(withDocs(MyREADME))
-  .add('Flex', () => (
+  .add('Documentation', () => (
+<Box mx={3} textAlign={'left'}>
+
     <Flex>
       <Box
         p={3}
@@ -24,5 +26,25 @@ storiesOf('Layout', module)
         bg='salmon'>
         Box
       </Box>
-    </Flex>
+    </Flex><br />
+
+<Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
+<code>{'<Flex>'}</code><br />
+      <code>{'<Box'}</code><br />
+        <code>{'p={3}'}</code><br />
+        <code>{'width={1/2}'}</code><br />
+      <code>{'color="salmon"'}</code><br />
+        <code>{'bg="black">'}</code><br />
+        <code>{'Flex'}</code><br />
+        <code>{'</Box>'}</code><br />
+      <code>{'<Box'}</code><br />
+        <code>{'p={3}'}</code><br />
+          <code>{'width={1/2}'}</code><br />
+        <code>{'color="white"'}</code><br />
+          <code>{'bg="salmon">'}</code><br />
+          <code>{'Box'}</code><br />
+        <code>{'</Box>'}</code><br />
+      <code>{'</Flex>'}</code><br />
+    </Box>
+    </Box>
   ))

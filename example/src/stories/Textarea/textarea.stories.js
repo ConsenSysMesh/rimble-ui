@@ -6,9 +6,9 @@ import MyREADME from './README.md';
 
 import { Textarea, Box } from 'rimble-ui'
 
-storiesOf('Form', module)
+storiesOf('Form/Text area', module)
   .addDecorator(withDocs(MyREADME))
-  .add('Textarea', () => (
+  .add('Documentation', () => (
 <Box textAlign={'left'}>
 <Box>
 <Textarea rows={4} defaultValue='Start typing...' />

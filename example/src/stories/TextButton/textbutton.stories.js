@@ -9,7 +9,7 @@ import { TextButton, Box, Button, Heading, Text, } from 'rimble-ui'
 storiesOf('Buttons/TextButton', module)
   .addDecorator(withDocs(MyREADME))
   .add('Documentation', () => (
-    <Box textAlign={'left'}>
+      <Box mx={3} textAlign={'left'}>
     <Box>
       <Heading.h2>TextButton examples</Heading.h2>
       <Text>Different ways to use the TextButton component</Text>
