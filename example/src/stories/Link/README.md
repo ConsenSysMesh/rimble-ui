@@ -1,16 +1,31 @@
 # Link
+
 The `Link` component provides a basic styled link.
+
+**Import component**
+
+```jsx
+import { Link } from 'rimble-ui';
+```
 
 <!-- STORY -->
 
-### Usage
 ```jsx
-import { Link } from 'rimble-ui'
+<Link href="#!" target="_blank" title="This link goes somewhere">
+  Click me!
+</Link>
 ```
 
-<!-- Link example here -->
-```jsx
-<Link href='#!'>Click me!</Link>
-```
+### Component props
 
-<!-- Link component props -->
+Link will pass any props that are defined on its component and uses the following:
+
+| Prop   | Type   | Values | Default | Description                                    |
+| ------ | ------ | ------ | ------- | ---------------------------------------------- |
+| href   | string |        | none    | Navigates the user to the value                |
+| target | string |        | none    | Determines the target attribute for the anchor |
+| title  | string |        | none    | Displays the title for accessibility           |
+
+### Styled-system props
+
+Link uses all the style props from [`Text`](https://consensys.github.io/rimble-ui/?path=/story/text--default).
