@@ -18,7 +18,7 @@ import { Link } from 'rimble-ui';
 
 ### Component props
 
-Link will pass any props that are defined on its component and uses the following:
+`Link` will pass any props that are defined on its component and uses the following:
 
 | Prop   | Type   | Values | Default | Description                                    |
 | ------ | ------ | ------ | ------- | ---------------------------------------------- |
@@ -28,4 +28,4 @@ Link will pass any props that are defined on its component and uses the followin
 
 ### Styled-system props
 
-Link uses all the style props from [`Text`](https://consensys.github.io/rimble-ui/?path=/story/text--default).
+`Link` uses all the style props from [`Text`](https://consensys.github.io/rimble-ui/?path=/story/text--default).

@@ -2,6 +2,7 @@
 export default {
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64],
   fontWeights: [0, 300, 400, 600, 700],
+  letterSpacings: [0, 1, 2, 4, 8],
   lineHeights: {
     solid: 1,
     title: 1.25,

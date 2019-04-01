@@ -21,8 +21,8 @@ import { Flex, Box } from 'rimble-ui';
 
 ### Component props
 
-Flex does not have any props but will pass on props that are defined on its component.
+`Flex` does not have any props but will pass on props that are defined on its component.
 
 ### Styled-system props
 
-Flex uses all the style props from [`Box`](https://consensys.github.io/rimble-ui/?path=/story/layout--box).
+`Flex` uses all the style props from [`Box`](https://consensys.github.io/rimble-ui/?path=/story/layout--box).

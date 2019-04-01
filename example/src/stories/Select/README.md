@@ -23,4 +23,4 @@ Select will pass any props that are defined on its component and uses the follow
 
 ### Styled-system props
 
-Select does not use any styled-system props and is wrapped by a span element.
+Public Address uses all the style props from [`Box`](https://consensys.github.io/rimble-ui/?path=/story/layout--box).
