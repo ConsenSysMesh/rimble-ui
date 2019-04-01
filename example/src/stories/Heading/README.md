@@ -14,11 +14,11 @@ import { Heading } from 'rimble-ui';
 
 ### Component props
 
-Heading does not have any props but will pass on props that are defined on its component.
+`Heading` does not have any props but will pass on props that are defined on its component.
 
 ### Styled-system props
 
-Heading uses all the style props from [`Text`](https://consensys.github.io/rimble-ui/?path=/story/text--default).
+`Heading` uses all the style props from [`Text`](https://consensys.github.io/rimble-ui/?path=/story/text--default).
 
 ### Accessibility
 
