@@ -292,7 +292,7 @@ exports[`PublicAddress component sanity matches default snapshot 1`] = `
     font-size="1"
     font-weight="3"
   >
-    Public Address
+    Public address
   </div>
   <div
     class="c2"
@@ -625,7 +625,7 @@ exports[`PublicAddress component sanity matches themed snapshot 1`] = `
       font-size="1"
       font-weight="3"
     >
-      Public Address
+      Public address
     </div>
     <div
       class="c3"

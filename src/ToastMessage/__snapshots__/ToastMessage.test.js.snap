@@ -24,6 +24,12 @@ exports[`ToastMessage component sanity matches failure snapshot 1`] = `
     textAlign="left"
     theme={
       Object {
+        "borderWidths": Array [
+          "0",
+          "1px",
+          "2px",
+          "4px",
+        ],
         "borders": Array [
           0,
           "1px solid transparent",
@@ -103,6 +109,13 @@ exports[`ToastMessage component sanity matches failure snapshot 1`] = `
           128,
           256,
         ],
+        "letterSpacings": Array [
+          0,
+          1,
+          2,
+          4,
+          8,
+        ],
         "lineHeights": Object {
           "copy": 1.5,
           "solid": 1,
@@ -175,6 +188,13 @@ exports[`ToastMessage component sanity matches failure snapshot 1`] = `
           64,
           128,
           256,
+        ],
+        "zIndices": Array [
+          0,
+          9,
+          99,
+          999,
+          9999,
         ],
       }
     }
@@ -190,6 +210,12 @@ exports[`ToastMessage component sanity matches failure snapshot 1`] = `
     textAlign="left"
     theme={
       Object {
+        "borderWidths": Array [
+          "0",
+          "1px",
+          "2px",
+          "4px",
+        ],
         "borders": Array [
           0,
           "1px solid transparent",
@@ -269,6 +295,13 @@ exports[`ToastMessage component sanity matches failure snapshot 1`] = `
           128,
           256,
         ],
+        "letterSpacings": Array [
+          0,
+          1,
+          2,
+          4,
+          8,
+        ],
         "lineHeights": Object {
           "copy": 1.5,
           "solid": 1,
@@ -342,6 +375,13 @@ exports[`ToastMessage component sanity matches failure snapshot 1`] = `
           128,
           256,
         ],
+        "zIndices": Array [
+          0,
+          9,
+          99,
+          999,
+          9999,
+        ],
       }
     }
   >
@@ -354,6 +394,12 @@ exports[`ToastMessage component sanity matches failure snapshot 1`] = `
       textAlign="left"
       theme={
         Object {
+          "borderWidths": Array [
+            "0",
+            "1px",
+            "2px",
+            "4px",
+          ],
           "borders": Array [
             0,
             "1px solid transparent",
@@ -433,6 +479,13 @@ exports[`ToastMessage component sanity matches failure snapshot 1`] = `
             128,
             256,
           ],
+          "letterSpacings": Array [
+            0,
+            1,
+            2,
+            4,
+            8,
+          ],
           "lineHeights": Object {
             "copy": 1.5,
             "solid": 1,
@@ -506,6 +559,13 @@ exports[`ToastMessage component sanity matches failure snapshot 1`] = `
             128,
             256,
           ],
+          "zIndices": Array [
+            0,
+            9,
+            99,
+            999,
+            9999,
+          ],
         }
       }
     >
@@ -523,6 +583,12 @@ exports[`ToastMessage component sanity matches failure snapshot 1`] = `
     textAlign="right"
     theme={
       Object {
+        "borderWidths": Array [
+          "0",
+          "1px",
+          "2px",
+          "4px",
+        ],
         "borders": Array [
           0,
           "1px solid transparent",
@@ -602,6 +668,13 @@ exports[`ToastMessage component sanity matches failure snapshot 1`] = `
           128,
           256,
         ],
+        "letterSpacings": Array [
+          0,
+          1,
+          2,
+          4,
+          8,
+        ],
         "lineHeights": Object {
           "copy": 1.5,
           "solid": 1,
@@ -674,6 +747,13 @@ exports[`ToastMessage component sanity matches failure snapshot 1`] = `
           64,
           128,
           256,
+        ],
+        "zIndices": Array [
+          0,
+          9,
+          99,
+          999,
+          9999,
         ],
       }
     }
@@ -882,6 +962,12 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
 <ThemeProvider
   theme={
     Object {
+      "borderWidths": Array [
+        "0",
+        "1px",
+        "2px",
+        "4px",
+      ],
       "borders": Array [
         0,
         "1px solid transparent",
@@ -961,6 +1047,13 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
         128,
         256,
       ],
+      "letterSpacings": Array [
+        0,
+        1,
+        2,
+        4,
+        8,
+      ],
       "lineHeights": Object {
         "copy": 1.5,
         "solid": 1,
@@ -1034,12 +1127,25 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
         128,
         256,
       ],
+      "zIndices": Array [
+        0,
+        9,
+        99,
+        999,
+        9999,
+      ],
     }
   }
 >
   <ThemeProvider
     theme={
       Object {
+        "borderWidths": Array [
+          "0",
+          "1px",
+          "2px",
+          "4px",
+        ],
         "borders": Array [
           0,
           "1px solid transparent",
@@ -1119,6 +1225,13 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
           128,
           256,
         ],
+        "letterSpacings": Array [
+          0,
+          1,
+          2,
+          4,
+          8,
+        ],
         "lineHeights": Object {
           "copy": 1.5,
           "solid": 1,
@@ -1192,6 +1305,13 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
           128,
           256,
         ],
+        "zIndices": Array [
+          0,
+          9,
+          99,
+          999,
+          9999,
+        ],
       }
     }
   >
@@ -1199,6 +1319,12 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
     <styled.div
       theme={
         Object {
+          "borderWidths": Array [
+            "0",
+            "1px",
+            "2px",
+            "4px",
+          ],
           "borders": Array [
             0,
             "1px solid transparent",
@@ -1278,6 +1404,13 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
             128,
             256,
           ],
+          "letterSpacings": Array [
+            0,
+            1,
+            2,
+            4,
+            8,
+          ],
           "lineHeights": Object {
             "copy": 1.5,
             "solid": 1,
@@ -1351,6 +1484,13 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
             128,
             256,
           ],
+          "zIndices": Array [
+            0,
+            9,
+            99,
+            999,
+            9999,
+          ],
         }
       }
     >
@@ -1390,6 +1530,12 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
         forwardedRef={null}
         theme={
           Object {
+            "borderWidths": Array [
+              "0",
+              "1px",
+              "2px",
+              "4px",
+            ],
             "borders": Array [
               0,
               "1px solid transparent",
@@ -1469,6 +1615,13 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
               128,
               256,
             ],
+            "letterSpacings": Array [
+              0,
+              1,
+              2,
+              4,
+              8,
+            ],
             "lineHeights": Object {
               "copy": 1.5,
               "solid": 1,
@@ -1541,6 +1694,13 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
               64,
               128,
               256,
+            ],
+            "zIndices": Array [
+              0,
+              9,
+              99,
+              999,
+              9999,
             ],
           }
         }
@@ -1803,6 +1963,12 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                     textAlign="left"
                     theme={
                       Object {
+                        "borderWidths": Array [
+                          "0",
+                          "1px",
+                          "2px",
+                          "4px",
+                        ],
                         "borders": Array [
                           0,
                           "1px solid transparent",
@@ -1882,6 +2048,13 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                           128,
                           256,
                         ],
+                        "letterSpacings": Array [
+                          0,
+                          1,
+                          2,
+                          4,
+                          8,
+                        ],
                         "lineHeights": Object {
                           "copy": 1.5,
                           "solid": 1,
@@ -1954,6 +2127,13 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                           64,
                           128,
                           256,
+                        ],
+                        "zIndices": Array [
+                          0,
+                          9,
+                          99,
+                          999,
+                          9999,
                         ],
                       }
                     }
@@ -2093,6 +2273,12 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                           "defaultProps": Object {
                             "textAlign": "left",
                             "theme": Object {
+                              "borderWidths": Array [
+                                "0",
+                                "1px",
+                                "2px",
+                                "4px",
+                              ],
                               "borders": Array [
                                 0,
                                 "1px solid transparent",
@@ -2172,6 +2358,13 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                 128,
                                 256,
                               ],
+                              "letterSpacings": Array [
+                                0,
+                                1,
+                                2,
+                                4,
+                                8,
+                              ],
                               "lineHeights": Object {
                                 "copy": 1.5,
                                 "solid": 1,
@@ -2245,6 +2438,13 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                 128,
                                 256,
                               ],
+                              "zIndices": Array [
+                                0,
+                                9,
+                                99,
+                                999,
+                                9999,
+                              ],
                             },
                           },
                           "displayName": "Box",
@@ -2262,6 +2462,12 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                       textAlign="left"
                       theme={
                         Object {
+                          "borderWidths": Array [
+                            "0",
+                            "1px",
+                            "2px",
+                            "4px",
+                          ],
                           "borders": Array [
                             0,
                             "1px solid transparent",
@@ -2341,6 +2547,13 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                             128,
                             256,
                           ],
+                          "letterSpacings": Array [
+                            0,
+                            1,
+                            2,
+                            4,
+                            8,
+                          ],
                           "lineHeights": Object {
                             "copy": 1.5,
                             "solid": 1,
@@ -2414,6 +2627,13 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                             128,
                             256,
                           ],
+                          "zIndices": Array [
+                            0,
+                            9,
+                            99,
+                            999,
+                            9999,
+                          ],
                         }
                       }
                     >
@@ -2428,6 +2648,12 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                     textAlign="left"
                     theme={
                       Object {
+                        "borderWidths": Array [
+                          "0",
+                          "1px",
+                          "2px",
+                          "4px",
+                        ],
                         "borders": Array [
                           0,
                           "1px solid transparent",
@@ -2507,6 +2733,13 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                           128,
                           256,
                         ],
+                        "letterSpacings": Array [
+                          0,
+                          1,
+                          2,
+                          4,
+                          8,
+                        ],
                         "lineHeights": Object {
                           "copy": 1.5,
                           "solid": 1,
@@ -2579,6 +2812,13 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                           64,
                           128,
                           256,
+                        ],
+                        "zIndices": Array [
+                          0,
+                          9,
+                          99,
+                          999,
+                          9999,
                         ],
                       }
                     }
@@ -2725,6 +2965,12 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                           "defaultProps": Object {
                             "textAlign": "left",
                             "theme": Object {
+                              "borderWidths": Array [
+                                "0",
+                                "1px",
+                                "2px",
+                                "4px",
+                              ],
                               "borders": Array [
                                 0,
                                 "1px solid transparent",
@@ -2804,6 +3050,13 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                 128,
                                 256,
                               ],
+                              "letterSpacings": Array [
+                                0,
+                                1,
+                                2,
+                                4,
+                                8,
+                              ],
                               "lineHeights": Object {
                                 "copy": 1.5,
                                 "solid": 1,
@@ -2877,6 +3130,13 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                 128,
                                 256,
                               ],
+                              "zIndices": Array [
+                                0,
+                                9,
+                                99,
+                                999,
+                                9999,
+                              ],
                             },
                           },
                           "displayName": "Styled(Box)",
@@ -2896,6 +3156,12 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                       textAlign="left"
                       theme={
                         Object {
+                          "borderWidths": Array [
+                            "0",
+                            "1px",
+                            "2px",
+                            "4px",
+                          ],
                           "borders": Array [
                             0,
                             "1px solid transparent",
@@ -2975,6 +3241,13 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                             128,
                             256,
                           ],
+                          "letterSpacings": Array [
+                            0,
+                            1,
+                            2,
+                            4,
+                            8,
+                          ],
                           "lineHeights": Object {
                             "copy": 1.5,
                             "solid": 1,
@@ -3048,6 +3321,13 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                             128,
                             256,
                           ],
+                          "zIndices": Array [
+                            0,
+                            9,
+                            99,
+                            999,
+                            9999,
+                          ],
                         }
                       }
                     >
@@ -3063,6 +3343,12 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                           textAlign="left"
                           theme={
                             Object {
+                              "borderWidths": Array [
+                                "0",
+                                "1px",
+                                "2px",
+                                "4px",
+                              ],
                               "borders": Array [
                                 0,
                                 "1px solid transparent",
@@ -3142,6 +3428,13 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                 128,
                                 256,
                               ],
+                              "letterSpacings": Array [
+                                0,
+                                1,
+                                2,
+                                4,
+                                8,
+                              ],
                               "lineHeights": Object {
                                 "copy": 1.5,
                                 "solid": 1,
@@ -3214,6 +3507,13 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                 64,
                                 128,
                                 256,
+                              ],
+                              "zIndices": Array [
+                                0,
+                                9,
+                                99,
+                                999,
+                                9999,
                               ],
                             }
                           }
@@ -3396,6 +3696,12 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                   "lineHeight": "copy",
                                   "textAlign": "left",
                                   "theme": Object {
+                                    "borderWidths": Array [
+                                      "0",
+                                      "1px",
+                                      "2px",
+                                      "4px",
+                                    ],
                                     "borders": Array [
                                       0,
                                       "1px solid transparent",
@@ -3475,6 +3781,13 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                       128,
                                       256,
                                     ],
+                                    "letterSpacings": Array [
+                                      0,
+                                      1,
+                                      2,
+                                      4,
+                                      8,
+                                    ],
                                     "lineHeights": Object {
                                       "copy": 1.5,
                                       "solid": 1,
@@ -3547,6 +3860,13 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                       64,
                                       128,
                                       256,
+                                    ],
+                                    "zIndices": Array [
+                                      0,
+                                      9,
+                                      99,
+                                      999,
+                                      9999,
                                     ],
                                   },
                                 },
@@ -3753,6 +4073,12 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                             textAlign="left"
                             theme={
                               Object {
+                                "borderWidths": Array [
+                                  "0",
+                                  "1px",
+                                  "2px",
+                                  "4px",
+                                ],
                                 "borders": Array [
                                   0,
                                   "1px solid transparent",
@@ -3832,6 +4158,13 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                   128,
                                   256,
                                 ],
+                                "letterSpacings": Array [
+                                  0,
+                                  1,
+                                  2,
+                                  4,
+                                  8,
+                                ],
                                 "lineHeights": Object {
                                   "copy": 1.5,
                                   "solid": 1,
@@ -3905,6 +4238,13 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                   128,
                                   256,
                                 ],
+                                "zIndices": Array [
+                                  0,
+                                  9,
+                                  99,
+                                  999,
+                                  9999,
+                                ],
                               }
                             }
                           >
@@ -3928,6 +4268,12 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                           textAlign="left"
                           theme={
                             Object {
+                              "borderWidths": Array [
+                                "0",
+                                "1px",
+                                "2px",
+                                "4px",
+                              ],
                               "borders": Array [
                                 0,
                                 "1px solid transparent",
@@ -4007,6 +4353,13 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                 128,
                                 256,
                               ],
+                              "letterSpacings": Array [
+                                0,
+                                1,
+                                2,
+                                4,
+                                8,
+                              ],
                               "lineHeights": Object {
                                 "copy": 1.5,
                                 "solid": 1,
@@ -4079,6 +4432,13 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                 64,
                                 128,
                                 256,
+                              ],
+                              "zIndices": Array [
+                                0,
+                                9,
+                                99,
+                                999,
+                                9999,
                               ],
                             }
                           }
@@ -4261,6 +4621,12 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                   "lineHeight": "copy",
                                   "textAlign": "left",
                                   "theme": Object {
+                                    "borderWidths": Array [
+                                      "0",
+                                      "1px",
+                                      "2px",
+                                      "4px",
+                                    ],
                                     "borders": Array [
                                       0,
                                       "1px solid transparent",
@@ -4340,6 +4706,13 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                       128,
                                       256,
                                     ],
+                                    "letterSpacings": Array [
+                                      0,
+                                      1,
+                                      2,
+                                      4,
+                                      8,
+                                    ],
                                     "lineHeights": Object {
                                       "copy": 1.5,
                                       "solid": 1,
@@ -4412,6 +4785,13 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                       64,
                                       128,
                                       256,
+                                    ],
+                                    "zIndices": Array [
+                                      0,
+                                      9,
+                                      99,
+                                      999,
+                                      9999,
                                     ],
                                   },
                                 },
@@ -4618,6 +4998,12 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                             textAlign="left"
                             theme={
                               Object {
+                                "borderWidths": Array [
+                                  "0",
+                                  "1px",
+                                  "2px",
+                                  "4px",
+                                ],
                                 "borders": Array [
                                   0,
                                   "1px solid transparent",
@@ -4697,6 +5083,13 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                   128,
                                   256,
                                 ],
+                                "letterSpacings": Array [
+                                  0,
+                                  1,
+                                  2,
+                                  4,
+                                  8,
+                                ],
                                 "lineHeights": Object {
                                   "copy": 1.5,
                                   "solid": 1,
@@ -4770,6 +5163,13 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                   128,
                                   256,
                                 ],
+                                "zIndices": Array [
+                                  0,
+                                  9,
+                                  99,
+                                  999,
+                                  9999,
+                                ],
                               }
                             }
                           >
@@ -4798,6 +5198,12 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                     textAlign="right"
                     theme={
                       Object {
+                        "borderWidths": Array [
+                          "0",
+                          "1px",
+                          "2px",
+                          "4px",
+                        ],
                         "borders": Array [
                           0,
                           "1px solid transparent",
@@ -4877,6 +5283,13 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                           128,
                           256,
                         ],
+                        "letterSpacings": Array [
+                          0,
+                          1,
+                          2,
+                          4,
+                          8,
+                        ],
                         "lineHeights": Object {
                           "copy": 1.5,
                           "solid": 1,
@@ -4949,6 +5362,13 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                           64,
                           128,
                           256,
+                        ],
+                        "zIndices": Array [
+                          0,
+                          9,
+                          99,
+                          999,
+                          9999,
                         ],
                       }
                     }
@@ -5132,6 +5552,12 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                             "lineHeight": "copy",
                             "textAlign": "left",
                             "theme": Object {
+                              "borderWidths": Array [
+                                "0",
+                                "1px",
+                                "2px",
+                                "4px",
+                              ],
                               "borders": Array [
                                 0,
                                 "1px solid transparent",
@@ -5211,6 +5637,13 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                 128,
                                 256,
                               ],
+                              "letterSpacings": Array [
+                                0,
+                                1,
+                                2,
+                                4,
+                                8,
+                              ],
                               "lineHeights": Object {
                                 "copy": 1.5,
                                 "solid": 1,
@@ -5283,6 +5716,13 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                 64,
                                 128,
                                 256,
+                              ],
+                              "zIndices": Array [
+                                0,
+                                9,
+                                99,
+                                999,
+                                9999,
                               ],
                             },
                           },
@@ -5490,6 +5930,12 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                       textAlign="right"
                       theme={
                         Object {
+                          "borderWidths": Array [
+                            "0",
+                            "1px",
+                            "2px",
+                            "4px",
+                          ],
                           "borders": Array [
                             0,
                             "1px solid transparent",
@@ -5569,6 +6015,13 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                             128,
                             256,
                           ],
+                          "letterSpacings": Array [
+                            0,
+                            1,
+                            2,
+                            4,
+                            8,
+                          ],
                           "lineHeights": Object {
                             "copy": 1.5,
                             "solid": 1,
@@ -5642,6 +6095,13 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                             128,
                             256,
                           ],
+                          "zIndices": Array [
+                            0,
+                            9,
+                            99,
+                            999,
+                            9999,
+                          ],
                         }
                       }
                     >
@@ -5662,6 +6122,12 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                           target="_blank"
                           theme={
                             Object {
+                              "borderWidths": Array [
+                                "0",
+                                "1px",
+                                "2px",
+                                "4px",
+                              ],
                               "borders": Array [
                                 0,
                                 "1px solid transparent",
@@ -5741,6 +6207,13 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                 128,
                                 256,
                               ],
+                              "letterSpacings": Array [
+                                0,
+                                1,
+                                2,
+                                4,
+                                8,
+                              ],
                               "lineHeights": Object {
                                 "copy": 1.5,
                                 "solid": 1,
@@ -5813,6 +6286,13 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                 64,
                                 128,
                                 256,
+                              ],
+                              "zIndices": Array [
+                                0,
+                                9,
+                                99,
+                                999,
+                                9999,
                               ],
                             }
                           }
@@ -6014,6 +6494,12 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                   "fontSize": 1,
                                   "fontWeight": 3,
                                   "theme": Object {
+                                    "borderWidths": Array [
+                                      "0",
+                                      "1px",
+                                      "2px",
+                                      "4px",
+                                    ],
                                     "borders": Array [
                                       0,
                                       "1px solid transparent",
@@ -6093,6 +6579,13 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                       128,
                                       256,
                                     ],
+                                    "letterSpacings": Array [
+                                      0,
+                                      1,
+                                      2,
+                                      4,
+                                      8,
+                                    ],
                                     "lineHeights": Object {
                                       "copy": 1.5,
                                       "solid": 1,
@@ -6165,6 +6658,13 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                       64,
                                       128,
                                       256,
+                                    ],
+                                    "zIndices": Array [
+                                      0,
+                                      9,
+                                      99,
+                                      999,
+                                      9999,
                                     ],
                                   },
                                 },
@@ -6372,6 +6872,12 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                             target="_blank"
                             theme={
                               Object {
+                                "borderWidths": Array [
+                                  "0",
+                                  "1px",
+                                  "2px",
+                                  "4px",
+                                ],
                                 "borders": Array [
                                   0,
                                   "1px solid transparent",
@@ -6451,6 +6957,13 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                   128,
                                   256,
                                 ],
+                                "letterSpacings": Array [
+                                  0,
+                                  1,
+                                  2,
+                                  4,
+                                  8,
+                                ],
                                 "lineHeights": Object {
                                   "copy": 1.5,
                                   "solid": 1,
@@ -6523,6 +7036,13 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                   64,
                                   128,
                                   256,
+                                ],
+                                "zIndices": Array [
+                                  0,
+                                  9,
+                                  99,
+                                  999,
+                                  9999,
                                 ],
                               }
                             }
@@ -6779,6 +7299,12 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
     textAlign="left"
     theme={
       Object {
+        "borderWidths": Array [
+          "0",
+          "1px",
+          "2px",
+          "4px",
+        ],
         "borders": Array [
           0,
           "1px solid transparent",
@@ -6858,6 +7384,13 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
           128,
           256,
         ],
+        "letterSpacings": Array [
+          0,
+          1,
+          2,
+          4,
+          8,
+        ],
         "lineHeights": Object {
           "copy": 1.5,
           "solid": 1,
@@ -6930,6 +7463,13 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
           64,
           128,
           256,
+        ],
+        "zIndices": Array [
+          0,
+          9,
+          99,
+          999,
+          9999,
         ],
       }
     }
@@ -6940,6 +7480,12 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
     textAlign="left"
     theme={
       Object {
+        "borderWidths": Array [
+          "0",
+          "1px",
+          "2px",
+          "4px",
+        ],
         "borders": Array [
           0,
           "1px solid transparent",
@@ -7019,6 +7565,13 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
           128,
           256,
         ],
+        "letterSpacings": Array [
+          0,
+          1,
+          2,
+          4,
+          8,
+        ],
         "lineHeights": Object {
           "copy": 1.5,
           "solid": 1,
@@ -7091,6 +7644,13 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
           64,
           128,
           256,
+        ],
+        "zIndices": Array [
+          0,
+          9,
+          99,
+          999,
+          9999,
         ],
       }
     }
@@ -7104,6 +7664,12 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
       textAlign="left"
       theme={
         Object {
+          "borderWidths": Array [
+            "0",
+            "1px",
+            "2px",
+            "4px",
+          ],
           "borders": Array [
             0,
             "1px solid transparent",
@@ -7183,6 +7749,13 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
             128,
             256,
           ],
+          "letterSpacings": Array [
+            0,
+            1,
+            2,
+            4,
+            8,
+          ],
           "lineHeights": Object {
             "copy": 1.5,
             "solid": 1,
@@ -7255,6 +7828,13 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
             64,
             128,
             256,
+          ],
+          "zIndices": Array [
+            0,
+            9,
+            99,
+            999,
+            9999,
           ],
         }
       }
@@ -7270,6 +7850,12 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
       textAlign="left"
       theme={
         Object {
+          "borderWidths": Array [
+            "0",
+            "1px",
+            "2px",
+            "4px",
+          ],
           "borders": Array [
             0,
             "1px solid transparent",
@@ -7349,6 +7935,13 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
             128,
             256,
           ],
+          "letterSpacings": Array [
+            0,
+            1,
+            2,
+            4,
+            8,
+          ],
           "lineHeights": Object {
             "copy": 1.5,
             "solid": 1,
@@ -7421,6 +8014,13 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
             64,
             128,
             256,
+          ],
+          "zIndices": Array [
+            0,
+            9,
+            99,
+            999,
+            9999,
           ],
         }
       }
@@ -7439,6 +8039,12 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
     textAlign="right"
     theme={
       Object {
+        "borderWidths": Array [
+          "0",
+          "1px",
+          "2px",
+          "4px",
+        ],
         "borders": Array [
           0,
           "1px solid transparent",
@@ -7518,6 +8124,13 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
           128,
           256,
         ],
+        "letterSpacings": Array [
+          0,
+          1,
+          2,
+          4,
+          8,
+        ],
         "lineHeights": Object {
           "copy": 1.5,
           "solid": 1,
@@ -7591,6 +8204,13 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
           128,
           256,
         ],
+        "zIndices": Array [
+          0,
+          9,
+          99,
+          999,
+          9999,
+        ],
       }
     }
   >
@@ -7604,6 +8224,12 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
       target="_blank"
       theme={
         Object {
+          "borderWidths": Array [
+            "0",
+            "1px",
+            "2px",
+            "4px",
+          ],
           "borders": Array [
             0,
             "1px solid transparent",
@@ -7683,6 +8309,13 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
             128,
             256,
           ],
+          "letterSpacings": Array [
+            0,
+            1,
+            2,
+            4,
+            8,
+          ],
           "lineHeights": Object {
             "copy": 1.5,
             "solid": 1,
@@ -7755,6 +8388,13 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
             64,
             128,
             256,
+          ],
+          "zIndices": Array [
+            0,
+            9,
+            99,
+            999,
+            9999,
           ],
         }
       }
@@ -7989,6 +8629,12 @@ exports[`ToastMessage component sanity matches generic snapshot 1`] = `
     textAlign="left"
     theme={
       Object {
+        "borderWidths": Array [
+          "0",
+          "1px",
+          "2px",
+          "4px",
+        ],
         "borders": Array [
           0,
           "1px solid transparent",
@@ -8068,6 +8714,13 @@ exports[`ToastMessage component sanity matches generic snapshot 1`] = `
           128,
           256,
         ],
+        "letterSpacings": Array [
+          0,
+          1,
+          2,
+          4,
+          8,
+        ],
         "lineHeights": Object {
           "copy": 1.5,
           "solid": 1,
@@ -8141,6 +8794,13 @@ exports[`ToastMessage component sanity matches generic snapshot 1`] = `
           128,
           256,
         ],
+        "zIndices": Array [
+          0,
+          9,
+          99,
+          999,
+          9999,
+        ],
       }
     }
   >
@@ -8153,6 +8813,12 @@ exports[`ToastMessage component sanity matches generic snapshot 1`] = `
       textAlign="left"
       theme={
         Object {
+          "borderWidths": Array [
+            "0",
+            "1px",
+            "2px",
+            "4px",
+          ],
           "borders": Array [
             0,
             "1px solid transparent",
@@ -8232,6 +8898,13 @@ exports[`ToastMessage component sanity matches generic snapshot 1`] = `
             128,
             256,
           ],
+          "letterSpacings": Array [
+            0,
+            1,
+            2,
+            4,
+            8,
+          ],
           "lineHeights": Object {
             "copy": 1.5,
             "solid": 1,
@@ -8305,6 +8978,13 @@ exports[`ToastMessage component sanity matches generic snapshot 1`] = `
             128,
             256,
           ],
+          "zIndices": Array [
+            0,
+            9,
+            99,
+            999,
+            9999,
+          ],
         }
       }
     >
@@ -8322,6 +9002,12 @@ exports[`ToastMessage component sanity matches generic snapshot 1`] = `
     textAlign="right"
     theme={
       Object {
+        "borderWidths": Array [
+          "0",
+          "1px",
+          "2px",
+          "4px",
+        ],
         "borders": Array [
           0,
           "1px solid transparent",
@@ -8401,6 +9087,13 @@ exports[`ToastMessage component sanity matches generic snapshot 1`] = `
           128,
           256,
         ],
+        "letterSpacings": Array [
+          0,
+          1,
+          2,
+          4,
+          8,
+        ],
         "lineHeights": Object {
           "copy": 1.5,
           "solid": 1,
@@ -8473,6 +9166,13 @@ exports[`ToastMessage component sanity matches generic snapshot 1`] = `
           64,
           128,
           256,
+        ],
+        "zIndices": Array [
+          0,
+          9,
+          99,
+          999,
+          9999,
         ],
       }
     }
@@ -8504,6 +9204,12 @@ exports[`ToastMessage component sanity matches processing snapshot 1`] = `
     textAlign="left"
     theme={
       Object {
+        "borderWidths": Array [
+          "0",
+          "1px",
+          "2px",
+          "4px",
+        ],
         "borders": Array [
           0,
           "1px solid transparent",
@@ -8583,6 +9289,13 @@ exports[`ToastMessage component sanity matches processing snapshot 1`] = `
           128,
           256,
         ],
+        "letterSpacings": Array [
+          0,
+          1,
+          2,
+          4,
+          8,
+        ],
         "lineHeights": Object {
           "copy": 1.5,
           "solid": 1,
@@ -8655,6 +9368,13 @@ exports[`ToastMessage component sanity matches processing snapshot 1`] = `
           64,
           128,
           256,
+        ],
+        "zIndices": Array [
+          0,
+          9,
+          99,
+          999,
+          9999,
         ],
       }
     }
@@ -8670,6 +9390,12 @@ exports[`ToastMessage component sanity matches processing snapshot 1`] = `
     textAlign="left"
     theme={
       Object {
+        "borderWidths": Array [
+          "0",
+          "1px",
+          "2px",
+          "4px",
+        ],
         "borders": Array [
           0,
           "1px solid transparent",
@@ -8749,6 +9475,13 @@ exports[`ToastMessage component sanity matches processing snapshot 1`] = `
           128,
           256,
         ],
+        "letterSpacings": Array [
+          0,
+          1,
+          2,
+          4,
+          8,
+        ],
         "lineHeights": Object {
           "copy": 1.5,
           "solid": 1,
@@ -8822,6 +9555,13 @@ exports[`ToastMessage component sanity matches processing snapshot 1`] = `
           128,
           256,
         ],
+        "zIndices": Array [
+          0,
+          9,
+          99,
+          999,
+          9999,
+        ],
       }
     }
   >
@@ -8834,6 +9574,12 @@ exports[`ToastMessage component sanity matches processing snapshot 1`] = `
       textAlign="left"
       theme={
         Object {
+          "borderWidths": Array [
+            "0",
+            "1px",
+            "2px",
+            "4px",
+          ],
           "borders": Array [
             0,
             "1px solid transparent",
@@ -8913,6 +9659,13 @@ exports[`ToastMessage component sanity matches processing snapshot 1`] = `
             128,
             256,
           ],
+          "letterSpacings": Array [
+            0,
+            1,
+            2,
+            4,
+            8,
+          ],
           "lineHeights": Object {
             "copy": 1.5,
             "solid": 1,
@@ -8986,6 +9739,13 @@ exports[`ToastMessage component sanity matches processing snapshot 1`] = `
             128,
             256,
           ],
+          "zIndices": Array [
+            0,
+            9,
+            99,
+            999,
+            9999,
+          ],
         }
       }
     >
@@ -9003,6 +9763,12 @@ exports[`ToastMessage component sanity matches processing snapshot 1`] = `
     textAlign="right"
     theme={
       Object {
+        "borderWidths": Array [
+          "0",
+          "1px",
+          "2px",
+          "4px",
+        ],
         "borders": Array [
           0,
           "1px solid transparent",
@@ -9082,6 +9848,13 @@ exports[`ToastMessage component sanity matches processing snapshot 1`] = `
           128,
           256,
         ],
+        "letterSpacings": Array [
+          0,
+          1,
+          2,
+          4,
+          8,
+        ],
         "lineHeights": Object {
           "copy": 1.5,
           "solid": 1,
@@ -9154,6 +9927,13 @@ exports[`ToastMessage component sanity matches processing snapshot 1`] = `
           64,
           128,
           256,
+        ],
+        "zIndices": Array [
+          0,
+          9,
+          99,
+          999,
+          9999,
         ],
       }
     }
@@ -9185,6 +9965,12 @@ exports[`ToastMessage component sanity matches success snapshot 1`] = `
     textAlign="left"
     theme={
       Object {
+        "borderWidths": Array [
+          "0",
+          "1px",
+          "2px",
+          "4px",
+        ],
         "borders": Array [
           0,
           "1px solid transparent",
@@ -9264,6 +10050,13 @@ exports[`ToastMessage component sanity matches success snapshot 1`] = `
           128,
           256,
         ],
+        "letterSpacings": Array [
+          0,
+          1,
+          2,
+          4,
+          8,
+        ],
         "lineHeights": Object {
           "copy": 1.5,
           "solid": 1,
@@ -9336,6 +10129,13 @@ exports[`ToastMessage component sanity matches success snapshot 1`] = `
           64,
           128,
           256,
+        ],
+        "zIndices": Array [
+          0,
+          9,
+          99,
+          999,
+          9999,
         ],
       }
     }
@@ -9351,6 +10151,12 @@ exports[`ToastMessage component sanity matches success snapshot 1`] = `
     textAlign="left"
     theme={
       Object {
+        "borderWidths": Array [
+          "0",
+          "1px",
+          "2px",
+          "4px",
+        ],
         "borders": Array [
           0,
           "1px solid transparent",
@@ -9430,6 +10236,13 @@ exports[`ToastMessage component sanity matches success snapshot 1`] = `
           128,
           256,
         ],
+        "letterSpacings": Array [
+          0,
+          1,
+          2,
+          4,
+          8,
+        ],
         "lineHeights": Object {
           "copy": 1.5,
           "solid": 1,
@@ -9503,6 +10316,13 @@ exports[`ToastMessage component sanity matches success snapshot 1`] = `
           128,
           256,
         ],
+        "zIndices": Array [
+          0,
+          9,
+          99,
+          999,
+          9999,
+        ],
       }
     }
   >
@@ -9515,6 +10335,12 @@ exports[`ToastMessage component sanity matches success snapshot 1`] = `
       textAlign="left"
       theme={
         Object {
+          "borderWidths": Array [
+            "0",
+            "1px",
+            "2px",
+            "4px",
+          ],
           "borders": Array [
             0,
             "1px solid transparent",
@@ -9594,6 +10420,13 @@ exports[`ToastMessage component sanity matches success snapshot 1`] = `
             128,
             256,
           ],
+          "letterSpacings": Array [
+            0,
+            1,
+            2,
+            4,
+            8,
+          ],
           "lineHeights": Object {
             "copy": 1.5,
             "solid": 1,
@@ -9667,6 +10500,13 @@ exports[`ToastMessage component sanity matches success snapshot 1`] = `
             128,
             256,
           ],
+          "zIndices": Array [
+            0,
+            9,
+            99,
+            999,
+            9999,
+          ],
         }
       }
     >
@@ -9684,6 +10524,12 @@ exports[`ToastMessage component sanity matches success snapshot 1`] = `
     textAlign="right"
     theme={
       Object {
+        "borderWidths": Array [
+          "0",
+          "1px",
+          "2px",
+          "4px",
+        ],
         "borders": Array [
           0,
           "1px solid transparent",
@@ -9763,6 +10609,13 @@ exports[`ToastMessage component sanity matches success snapshot 1`] = `
           128,
           256,
         ],
+        "letterSpacings": Array [
+          0,
+          1,
+          2,
+          4,
+          8,
+        ],
         "lineHeights": Object {
           "copy": 1.5,
           "solid": 1,
@@ -9835,6 +10688,13 @@ exports[`ToastMessage component sanity matches success snapshot 1`] = `
           64,
           128,
           256,
+        ],
+        "zIndices": Array [
+          0,
+          9,
+          99,
+          999,
+          9999,
         ],
       }
     }
