@@ -2,13 +2,13 @@
 
 A basic avatar component.
 
-<!-- STORY -->
-
 **Import component**
 
 ```jsx
 import { Avatar } from 'rimble-ui';
 ```
+
+<!-- STORY -->
 
 ### Component props
 

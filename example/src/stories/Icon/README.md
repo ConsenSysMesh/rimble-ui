@@ -1,44 +1,49 @@
 # Icon
+
 The `Icon` component renders Material Design Icons. Built with [rmdi](https://github.com/jxnblk/rmdi).
 
 **Import component**
+
 ```jsx
-import { Icon } from 'rimble-ui'
+import { Icon } from 'rimble-ui';
 ```
 
 <!-- STORY -->
 
 ### Component props
 
-Prop | Type | Description
----|---|---
-`size` | number | width and height in pixels
-`color` | string | fill color, uses Styled System's [`color`][color] function
+Icon will pass any props that are defined on its component and uses the following:
+
+| Prop  | Type   | Values                                                           | Default | Description                     |
+| ----- | ------ | ---------------------------------------------------------------- | ------- | ------------------------------- |
+| size  | number |                                                                  | 24      | Width and height in pixels      |
+| color | string |                                                                  | black   | Fills inside of icon with color |
+| name  | string | [icon list](https://github.com/jxnblk/rmdi/blob/master/ICONS.md) | none    | Name of the icon to render      |
 
 ### Styled-system props
 
 Margin can be applied with the following props, which use Styled System's [`space`][space] function.
 Margin props accept numbers for pixel values, strings with CSS units, or arrays for [responsive][responsive] margin
 
-Prop | Description
----|---
-`m` | margin
-`mt` | margin-top
-`mr` | margin-right
-`mb` | margin-bottom
-`ml` | margin-left
-`mx` | margin-left and margin-right
-`my` | margin-top and margin-bottom
+| Prop             | CSS property                 | Function | Theme field |
+| ---------------- | ---------------------------- | -------- | ----------- |
+| m, margin        | margin                       | space    | space       |
+| mt, marginTop    | margin-top                   | space    | space       |
+| mr, marginRight  | margin-right                 | space    | space       |
+| mb, marginBottom | margin-bottom                | space    | space       |
+| ml, marginLeft   | margin-left                  | space    | space       |
+| mx               | margin-left and margin-right | space    | space       |
+| my               | margin-top and margin-bottom | space    | space       |
 
 [color]: https://github.com/jxnblk/styled-system#color-responsive
 [space]: https://github.com/jxnblk/styled-system#space-responsive
 [responsive]: https://github.com/jxnblk/styled-system#responsive-styles
 
-
 ### Icons (970)
+
 See the [icon list](https://github.com/jxnblk/rmdi/blob/master/ICONS.md) for a complete list of all icons available
 
-- `AcUnit` 
+- `AcUnit`
 - `AccessAlarm`
 - `AccessAlarms`
 - `AccessTime`
