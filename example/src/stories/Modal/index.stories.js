@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { storiesOf } from '@storybook/react'
+import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
 
 import MyREADME from './README.md';
@@ -13,30 +13,30 @@ import {
   Text,
   Button,
   TextButton,
-  OutlineButton
-} from 'rimble-ui'
+  OutlineButton,
+} from 'rimble-ui';
 
 class YourModal extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isOpen: false
-    }
+      isOpen: false,
+    };
   }
 
-  closeModal = (e) => {
-    e.preventDefault()
+  closeModal = e => {
+    e.preventDefault();
     this.setState((state, props) => ({
-      isOpen: false
-    }))
-  }
+      isOpen: false,
+    }));
+  };
 
-  openModal = (e) => {
-    e.preventDefault()
+  openModal = e => {
+    e.preventDefault();
     this.setState((state, props) => ({
-      isOpen: true
-    }))
-  }
+      isOpen: true,
+    }));
+  };
 
   render() {
     return (
@@ -57,12 +57,20 @@ class YourModal extends Component {
               onClick={this.closeModal}
             />
             <Box p={4} mb={3}>
-              <Heading.h3>Confirm {'{'}Action Name{'}'}</Heading.h3>
+              <Heading.h3>
+                Confirm {'{'}Action Name{'}'}
+              </Heading.h3>
               <Text>
                 Are you sure you want to {'{'}Action Name{'}'}?
               </Text>
             </Box>
-            <Flex px={4} py={3} borderTop={1} borderColor={'#E8E8E8'} justifyContent={'flex-end'}>
+            <Flex
+              px={4}
+              py={3}
+              borderTop={1}
+              borderColor={'#E8E8E8'}
+              justifyContent={'flex-end'}
+            >
               <OutlineButton>Cancel</OutlineButton>
               <Button ml={3}>Confirm</Button>
             </Flex>
@@ -71,15 +79,10 @@ class YourModal extends Component {
       </React.Fragment>
     );
   }
-
 }
-
 
 storiesOf('Modal', module)
   .addDecorator(withDocs(MyREADME))
   .add('Documentation', () => {
-
-    return (
-      <YourModal></YourModal>
-    )
-  })
+    return <YourModal />;
+  });
