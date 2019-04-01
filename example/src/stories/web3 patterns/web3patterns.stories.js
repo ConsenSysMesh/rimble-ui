@@ -79,7 +79,7 @@ storiesOf('Web 3 patterns', module)
     <Heading.h3>Keep the user in the loop</Heading.h3>
 <Text.p>
     Ethereum transactions are complicated. Explaining everything under the hood isn't necessary, but you should stll make sure your user is aware of big changes in the transaction life cycle.</Text.p>
-    <Text><b>1.</b> Confirm that button they pressed to initiate the transaction worked. Be sure to point them to their wallet if they need to confirm the transaction there.</Text><br />
+    <Text><b>1.</b> Confirm that the button they pressed to initiate the transaction worked. Be sure to point them to their wallet if they need to confirm the transaction there.</Text><br />
 <Text.p><em>Example</em></Text.p>
 <ToastMessage width={[ 1, 1, 1/2 ]} message={"Change submitted"} secondaryMessage={'Confirm in MetaMask'} /><br /><br />
     <Text><b>2.</b> Indicate that the transaction process is happening. </Text><br />
@@ -88,7 +88,7 @@ storiesOf('Web 3 patterns', module)
     <Text><b>3.</b> If your users are more experienced in blockchain, you may want to signal when you can confirm the transaction has been taken on by a miner. Note: this could cause confusion for new and inexperienced users, so consider skipping until the transaction has been a success or failure. </Text><br />
 <Text.p><em>Example</em></Text.p>
 <ToastMessage.Processing width={[ 1, 1, 1/2 ]} message={'First block confirmed'} secondaryMessage={'Your change is in progress'} /><br /><br />
-    <Text><b>4.</b> Let users know once the transaction is complete and successful.</Text><br />
+    <Text><b>4.</b> Let users know once the thing they set out to do by pressing the button has happened. In the case of our demo, it was that the value of the smart contract had changed.</Text><br />
 <Text.p><em>Example</em></Text.p>
 <ToastMessage.Success width={[ 1, 1, 1/2 ]} message={'Smart contract value changed'} /><br /><br />
     <Text><b>5.</b> Let the user know if something has gone wrong and the transaction can't be completed. Include why the transaction failed and how to remedy the situation (if possible). Consider other UI for this state as it may require action from the user.</Text><br />
@@ -141,7 +141,7 @@ storiesOf('Web 3 patterns', module)
     </Card>
 
     <Card>
-    <Heading.h3>Make your updates contextual to action</Heading.h3>
+    <Heading.h3>Reference the action, not transaction</Heading.h3>
 
     <Text.p>Use specific language throughout the transaction lifecycle. If the transaction is actually transfering a crypto asset, refer to that. Or if your users are casting a vote on the blockchain, reference the vote. This will spare users having to make connections in their head. Echo the language you'd use in the button to initiate the transaction e.g. Send Cryptokitty or Cast vote.</Text.p><br />
 
@@ -157,15 +157,15 @@ storiesOf('Web 3 patterns', module)
     </Card>
 
     <Card>
-    <Heading.h3>Don't let a user initiate a transaction if the conditions aren't right</Heading.h3>
+    <Heading.h3>Ensure the conditions are right pre-transaction</Heading.h3>
 
 <Text.p>Your dApp can detect a network as long as there's a web 3 provider. And once the user has connected their Ethereum address with your dApp you can read the account balance. Don't wait until a transaction to tell your user about an incorrect network or a 0 ETH balance. This is not what the failed state is for. </Text.p>
 
 <Pill mb={3} color={"green"}><Icon name="Check" /> {"Do"}</Pill><br />
-<ToastMessage.Failure width={[ 1, 1, 1/2 ]} message={'Smart contract failed'} secondaryMessage={'You didn\'t sign the contract in MetaMask'} /><br /><br />
+<ToastMessage.Failure width={[ 1, 1, 1/2 ]} message={'Payment failed'} secondaryMessage={'You didn\'t sign the contract in MetaMask'} /><br /><br />
 <Pill mb={3} color={"red"}><Icon name="Close" /> {"Don't"}</Pill><br />
-<ToastMessage.Failure width={[ 1, 1, 1/2 ]} message={'Smart contract failed'} secondaryMessage={'You were on the wrong network'} /><br />
-<ToastMessage.Failure width={[ 1, 1, 1/2 ]} message={'Smart contract failed'} secondaryMessage={'Your balance is 0 Ether'} />
+<ToastMessage.Failure width={[ 1, 1, 1/2 ]} message={'Payment failed'} secondaryMessage={'You were on the wrong network'} /><br />
+<ToastMessage.Failure width={[ 1, 1, 1/2 ]} message={'Payment failed'} secondaryMessage={'Your balance is 0 Ether'} />
 
 
 </Card>
