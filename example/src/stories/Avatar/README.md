@@ -2,17 +2,17 @@
 
 A basic avatar component.
 
+<!-- STORY -->
+
 **Import component**
 
 ```jsx
 import { Avatar } from 'rimble-ui';
 ```
 
-<!-- STORY -->
-
 ### Component props
 
-Avatar will pass any props that are defined on its component including:
+Avatar will pass any props that are defined on its component and uses the following:
 
 | Name    | Type   | Default | Description                                  |
 | ------- | ------ | ------- | -------------------------------------------- |

@@ -2,13 +2,13 @@
 
 The `Box` renders a responsive box-model layout component.
 
+<!-- STORY -->
+
 ### Usage
 
 ```jsx
 import { Box } from 'rimble-ui';
 ```
-
-<!-- STORY -->
 
 ```jsx
 <Box p={3} fontSize={4} width={[1, 1, 1 / 2]} color="white" bg="salmon">
@@ -93,7 +93,7 @@ All styled-system functions accept arrays as values to set styles responsively u
 
 ### Component props
 
-Box will pass any props that are defined on its component.
+Box does not have any props but will pass on props that are defined on its component.
 
 ### Styled-system props
 

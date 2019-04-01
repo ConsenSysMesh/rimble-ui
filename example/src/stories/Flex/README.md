@@ -2,13 +2,13 @@
 
 The `Flex` component renders a responsive flexbox layout component. Extends: [`Box`](https://consensys.github.io/rimble-ui/?path=/story/layout--box).
 
+<!-- STORY -->
+
 ### Usage
 
 ```jsx
 import { Flex, Box } from 'rimble-ui';
 ```
-
-<!-- STORY -->
 
 ```jsx
 <Flex>
@@ -23,7 +23,7 @@ import { Flex, Box } from 'rimble-ui';
 
 ### Component props
 
-Flex will pass any props that are defined on its component.
+Flex does not have any props but will pass on props that are defined on its component.
 
 ### Styled-system props
 
