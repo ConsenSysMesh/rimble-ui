@@ -40,7 +40,7 @@ storiesOf('Getting started', module)
   <Text.p color="white">Rimble is completely open source.
   [Add instructions for contributing]</Text.p>
   <OutlineButton>Contribute</OutlineButton>
-</Card></Box>
+</Card></Box><br />
 <Box>
 <Card>
   <Pill mb={3} color={"primary"}>{"NEW"}</Pill><br />
