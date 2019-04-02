@@ -32,5 +32,11 @@
     "babel-loader": "^8.0.5",
     "storybook-addon-styled-component-theme": "^1.1.1",
     "storybook-readme": "^5.0.1"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
