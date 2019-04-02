@@ -28,10 +28,8 @@ storiesOf('Blockie', module)
 <Text.p>Some best practice for using blockies</Text.p>
 </Box>
 <Box>
-<Heading.h4>Don't use blockies as avatars</Heading.h4>
-</Box>
-<Box>
 <Heading.h4>Don't make blockies circular</Heading.h4>
+<Text>This obscures some of the blockie, making it more difficult for users to visually identify their Ethereum address. This means they're not a good idea to use in place of avatars.</Text>
 </Box>
 
 
