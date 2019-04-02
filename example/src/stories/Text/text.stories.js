@@ -22,7 +22,7 @@ import {
   Pill,
 } from 'rimble-ui';
 
-storiesOf('Rimble-UI/Text', module)
+storiesOf('Components/Text', module)
   .addDecorator(withDocs(MyREADME))
   .add('Documentation', () => (
     <Box mx={3} textAlign={'left'}>

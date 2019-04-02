@@ -19,7 +19,7 @@ import {
   MetaMaskButton,
 } from 'rimble-ui';
 
-storiesOf('Rimble-UI/Card', module)
+storiesOf('Components/Card', module)
   .add(
     'Documentation',
     withDocs(MyREADME, () => (

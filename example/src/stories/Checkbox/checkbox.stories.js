@@ -7,7 +7,7 @@ import Guidelines from './GUIDELINES.md';
 
 import { Checkbox, Box, Text, Field, Heading, Flex, Card, Pill, OutlineButton } from 'rimble-ui'
 
-storiesOf('Rimble-UI/Form/Checkboxes', module)
+storiesOf('Components/Form/Checkboxes', module)
   .addDecorator(withDocs(MyREADME))
   .add('Documentation', () => (
     <Box mx={3} textAlign={'left'}>

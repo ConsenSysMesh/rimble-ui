@@ -6,7 +6,7 @@ import MyREADME from './README.md';
 
 import { Box } from 'rimble-ui';
 
-storiesOf('Rimble-UI/Layout/Box', module)
+storiesOf('Components/Layout/Box', module)
   .addDecorator(withDocs(MyREADME))
   .add('Documentation', () => (
     <div>

@@ -20,7 +20,7 @@ import {
   Pill,
 } from 'rimble-ui'
 
-storiesOf('Rimble-UI/Form/Inputs', module)
+storiesOf('Components/Form/Inputs', module)
   .addDecorator(withDocs(MyREADME))
   .add('Documentation', () => (
       <Box mx={3} textAlign={'left'}>

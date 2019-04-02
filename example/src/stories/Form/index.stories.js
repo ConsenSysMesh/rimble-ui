@@ -44,7 +44,7 @@ class MyCustomForm extends Component {
 
 }
 
-storiesOf('Rimble-UI/Form/Form', module)
+storiesOf('Components/Form/Form', module)
   .addDecorator(withDocs(MyREADME))
   .add('Documentation', () => (
     <div>

@@ -19,7 +19,7 @@ import {
   Pill,
 } from 'rimble-ui';
 
-storiesOf('Rimble-UI/ToastMessage', module)
+storiesOf('Components/ToastMessage', module)
   // .addDecorator(withDocs(MyREADME))
   .add(
     'Documentation',

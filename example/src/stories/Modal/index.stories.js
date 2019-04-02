@@ -80,7 +80,7 @@ class YourModal extends Component {
   }
 }
 
-storiesOf('Rimble-UI/Modal', module)
+storiesOf('Components/Modal', module)
   .addDecorator(withDocs(MyREADME))
   .add('Documentation', () => {
     return <YourModal />;

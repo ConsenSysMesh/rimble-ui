@@ -7,7 +7,7 @@ import Guidelines from './GUIDELINES.md';
 
 import { QR, Box, Text, OutlineButton, Flex, Card, Pill, Heading, PublicAddress } from 'rimble-ui';
 
-storiesOf('Rimble-UI/QR Code', module)
+storiesOf('Components/QR Code', module)
   .addDecorator(withDocs(MyREADME))
   .add('Documentation', () => (
     <Box mx={3} textAlign={'left'}>

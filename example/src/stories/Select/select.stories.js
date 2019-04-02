@@ -26,7 +26,7 @@ const items = [
   'REP - Augur',
 ];
 
-storiesOf('Rimble-UI/Form/Select', module)
+storiesOf('Components/Form/Select', module)
   .addDecorator(withDocs(MyREADME))
   .add('Documentation', () => (
     <Box ml={3} textAlign={'left'}>

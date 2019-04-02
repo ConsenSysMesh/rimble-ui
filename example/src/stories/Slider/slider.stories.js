@@ -35,7 +35,7 @@ class MyCustomSlider extends Component {
   }
 }
 
-storiesOf('Rimble-UI/Form/Slider', module)
+storiesOf('Components/Form/Slider', module)
   .addDecorator(withDocs(MyREADME))
   .add('Documentation', () => (
     <Box mx={3} textAlign={'left'}>
