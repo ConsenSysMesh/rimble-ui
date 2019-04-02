@@ -7,7 +7,7 @@ import Guidelines from './GUIDELINES.md';
 
 import { Blockie, Avatar, Box, Heading, Text, Card, OutlineButton, Pill, Flex, Image, Icon } from 'rimble-ui'
 
-storiesOf('Blockie', module)
+storiesOf('Rimble-UI/Blockie', module)
   .addDecorator(withDocs(MyREADME))
   .add('Documentation', () => (
   <Box mx={3} textAlign={'left'}>

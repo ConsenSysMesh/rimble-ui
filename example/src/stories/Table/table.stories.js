@@ -7,7 +7,7 @@ import Guidelines from './GUIDELINES.md';
 
 import { Table, Box, Icon, Heading, Text, Card, OutlineButton, Pill, Flex, Link} from 'rimble-ui'
 
-storiesOf('Table', module)
+storiesOf('Rimble-UI/Table', module)
   .addDecorator(withDocs(MyREADME))
   .add('Documentation', () => (
       <Box mx={3} textAlign={'left'}>

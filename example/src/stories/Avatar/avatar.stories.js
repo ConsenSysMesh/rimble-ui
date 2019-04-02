@@ -16,7 +16,7 @@ import {
   Pill,
 } from 'rimble-ui';
 
-storiesOf('Avatar', module)
+storiesOf('Rimble-UI/Avatar', module)
   .addDecorator(withDocs(MyREADME))
   .add('Documentation', () => (
     <Box mx={3} textAlign={'left'}>
