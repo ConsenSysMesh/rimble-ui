@@ -2,7 +2,7 @@
 
 The `Table` component renders the `<table>` HTML element. Inherits props from the `Box` component.
 
-_Want to build this component?_ Read [`Table` documentation](https://consensys.github.io/rimble-ui/?path=/story/Table--documentation)
+_Want to understand best practices for using a Table component?_ Read [`Table` design guidelines](https://consensys.github.io/rimble-ui/?path=/story/table--design--guidelines)
 
 **Import component**
 

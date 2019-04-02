@@ -8,7 +8,7 @@ import { Box } from 'rimble-ui';
 
 storiesOf('Layout/Box', module)
   .addDecorator(withDocs(MyREADME))
-  .add('Box', () => (
+  .add('Documentation', () => (
     <div>
       <Box p={3} fontSize={4} width={[1, 1, 1 / 2]} color="white" bg="salmon">
         This is a Box

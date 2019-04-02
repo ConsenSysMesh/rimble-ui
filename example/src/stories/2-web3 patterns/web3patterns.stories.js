@@ -38,18 +38,6 @@ storiesOf('dApp patterns', module)
     <Text.p>We built a demo to show rather than tell. Check it out, then read our guidelines below for some advice on giving your users the most helpful transaction experience.</Text.p><br />
     <Button>Try the demo</Button></Box><br /><br />
 
-<Box>
-<Heading.h2>Demo walk-through</Heading.h2>
-<Text.p>
-• User initiates transaction<br />
-• Transaction started<br />
-• Transaction is pending<br />
-• Transaction is confirmed<br />
-• Transaction succeeds<br />
-• Transaction fails
-</Text.p>
-    </Box><br />
-
 <Heading.h2>Guidance</Heading.h2>
 <Text.p>Our demo doesn't cover everything, so here's some extra advice for you to work into your product.</Text.p><br />
 
@@ -169,16 +157,5 @@ storiesOf('dApp patterns', module)
 
 
 </Card>
-
-<Card>
-<Heading.h3>Handle errors with care</Heading.h3>
-
-    <Text.p>- If there's an error explain how to resolve it</Text.p></Card>
-
-    <Card>
-    <Heading.h3>MetaMask signatures</Heading.h3>
-
-<Text.p>[https://medium.com/metamask/eip712-is-coming-what-to-expect-and-how-to-use-it-bb92fd1a7a26](https://medium.com/metamask/eip712-is-coming-what-to-expect-and-how-to-use-it-bb92fd1a7a26)</Text.p></Card>
-
-    </Box>
+</Box>
   ));

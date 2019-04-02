@@ -1,7 +1,9 @@
 # Welcome to Rimble  
-Rimble is a set of adaptable components and design standards to help you get your decentralized application off the ground, fast. 
+Rimble is a set of adaptable components and design standards to help you get your decentralized application off the ground, fast.
 
 Within you'll find documentation and design guidelines for most standard UI components plus some you'll need in a Web 3.0 world. Your tech stack and workflow are yours to decide. We impose as few constraints as possible.
+
+<!-- STORY -->
 
 ### Jump straight into Web 3.0
 - [MetaMask Button](https://consensys.github.io/rimble-ui/?path=/story/button--metamaskbutton) – Let your users know they can connect with MetaMask
@@ -12,11 +14,11 @@ Within you'll find documentation and design guidelines for most standard UI comp
 
 ### Component requests
 
-Rimble is completely open source. 
+Rimble is completely open source.
 How to contribute or request components.
 
 ### Rimble demo app  
-Alongside our UI components, we're also building a demo app to showcase how you can plug these components into Web 3.0. 
+Alongside our UI components, we're also building a demo app to showcase how you can plug these components into Web 3.0.
 
 [Try the demo out](https://mikelockz.github.io/rimble-app-demo/)
 
@@ -30,5 +32,3 @@ It currently covers:
 - Release v0.5.0 (22 Feb 2019)
   - Updated [Table component](https://consensys.github.io/rimble-ui/?path=/story/table--default)
 - Release v0.4.9 (date)
-
-
