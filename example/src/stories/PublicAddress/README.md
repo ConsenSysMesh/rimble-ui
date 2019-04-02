@@ -1,5 +1,4 @@
-# Public Address
-
+# PublicAddress documentation
 Use the `PublicAddress` component to display an Ethereum Public Address and offer copy-to-clipboard functionality.
 
 **Import component**

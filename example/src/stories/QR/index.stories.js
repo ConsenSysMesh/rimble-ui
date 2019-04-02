@@ -28,7 +28,7 @@ storiesOf('QR Code', module)
         <Box mx={3} textAlign={'left'}>
           <Box>
             <Heading.h2>Design</Heading.h2>
-            <Text.p>Some best practice for using QR</Text.p>
+            <Text.p>Some best practice for using a QR code</Text.p>
           </Box>
 
           <Heading.h4>Explain what it is</Heading.h4>

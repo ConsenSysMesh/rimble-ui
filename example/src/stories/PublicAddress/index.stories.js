@@ -3,8 +3,9 @@ import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
 
 import MyREADME from './README.md';
+import Guidelines from './GUIDELINES.md';
 
-import { PublicAddress, Box, Text } from 'rimble-ui';
+import { PublicAddress, Box, Text, Heading, Flex, Card, Pill, OutlineButton, QR } from 'rimble-ui';
 
 storiesOf('PublicAddress', module)
   .addDecorator(withDocs(MyREADME))
@@ -19,4 +20,42 @@ storiesOf('PublicAddress', module)
         </code>
       </Box>
     </Box>
-  ));
+  ))
+  .add(
+    'Design guidelines',
+    withDocs(Guidelines, () => (
+      <Box mx={3} textAlign={'left'}>
+      <Box>
+        <Heading.h2>Design</Heading.h2>
+        <Text.p>Some best practice for using <code>{'PublicAddress'}</code></Text.p>
+      </Box>
+      <Box>
+      <Heading.h4>Consider showing a QR code too</Heading.h4>
+      <Text>
+        Although the copy-to-clipboard functionality makes it relatively easy to do stuff with a public address, you may want to consider showing a QR code of the address so that users can scan to send things to that address using a mobile wallet.
+      </Text></Box>
+      <br />
+
+        <Card mx={'auto'} my={3} px={4}>
+        <Heading.h5>Your connected account:</Heading.h5>
+        <QR value="0xAc03BB73b6a9e108530AFf4Df5077c2B3D481e5A" /><br /><br />
+        <PublicAddress required="false" address="0xAc03BB73b6a9e108530AFf4Df5077c2B3D481e5A" />
+        </Card>
+      <br />
+      <br />
+
+      <Text textAlign={'center'}>(ﾉ◕ヮ◕)ﾉ*:・ﾟ✧</Text>
+      <br />
+      <Card color="white" bg="primary">
+        <Heading.h2 color="white">Are we missing anything?</Heading.h2>
+        <Text color="white">
+          If you have any extra insight you'd like to add, please raise an
+          issue in Github.
+        </Text>
+        <br />
+        <OutlineButton Large>Raise issue</OutlineButton>
+        <br />
+        <br />
+      </Card>
+      </Box>
+    )));
