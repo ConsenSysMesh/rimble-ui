@@ -1,6 +1,6 @@
 # QR documentation
 
-Use the `QR` component to renders a QR code for a provided string.
+Use the `QR` component to renders a QR code for a provided string. Can be used as a shortcut to input a public Ethereum address or link to a specific website.
 
 **Import component**
 

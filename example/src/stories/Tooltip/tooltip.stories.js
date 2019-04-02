@@ -220,6 +220,14 @@ storiesOf('Tooltip', module)
           </Flex>
           <br />
           <Box>
+            <Heading.h4>Keep tooltips short</Heading.h4>
+            <Text>
+              Don't include too much text in a tooltip. They're for short clarification or elaboration. If you need more than a couple of sentences, consider using a <Link href="./story/Modal--documentation"><code>{'modal'}</code></Link>.
+            </Text>
+            <br />
+</Box>
+
+          <Box>
             <Heading.h4>Some suggested uses</Heading.h4>
             <br />
             <Tooltip
@@ -233,11 +241,8 @@ storiesOf('Tooltip', module)
             <br />
 
             <Text>
-              This will include a small{' '}
-              <Tooltip message="This pays for your transaction to be added to the blockchain">
-                <strong>transaction fee</strong>
-              </Tooltip>{' '}
-              which we'll include in your transaction summary
+              This will include a small{' '}<Tooltip message="This pays for your transaction to be added to the blockchain">
+                <strong>transaction fee</strong></Tooltip>{' '} which we'll include in your transaction summary
             </Text>
           </Box>
         </Box>
