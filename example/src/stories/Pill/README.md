@@ -1,6 +1,6 @@
-# Pill
+# Pill documentation
 
-The `Pill` component renders text with a colored background. Useful for showing transaction status.
+Use the `Pill` component to indicate information is contextual and grouped under a single taxonomy. It renders text with a colored background. Useful for showing transaction status.
 
 **Import component**
 
