@@ -2,7 +2,7 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { doc } from 'storybook-readme';
 
-import { Box, Heading, Text, Card, Pill, Flex, Image, Link, OutlineButton, Button } from 'rimble-ui';
+import { Box, Heading, Text, Card, Pill, Flex, Image, Link, OutlineButton, Button, TextButton } from 'rimble-ui';
 import MyREADME from './welcome.md';
 
 import themingREADME from './theming-README.md';
@@ -17,11 +17,6 @@ storiesOf('Getting started', module)
 <Heading.h3>Rimble is a set of adaptable components and design standards to help you get your decentralized application off the ground, fast.</Heading.h3>
 
 <Text.p>Within you'll find documentation and design guidelines for most standard UI components plus some you'll need in a Web 3.0 world. Your tech stack and workflow are yours to decide. We impose as few constraints as possible.</Text.p>
-</Box><br />
-<Box>
-<Heading.h3>Get started</Heading.h3>
-<Text.p>Install Rimble and start checking out the documentation for our components.</Text.p>
-<Button>To installation instructions</Button>
 </Box><br />
 <Box>
 <Heading.h3> dApp components </Heading.h3>
