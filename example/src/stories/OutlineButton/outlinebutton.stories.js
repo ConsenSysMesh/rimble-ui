@@ -17,7 +17,7 @@ Flex,
 Modal,
 Card, } from 'rimble-ui'
 
-storiesOf('Buttons/OutlineButton', module)
+storiesOf('Rimble-UI/Buttons/OutlineButton', module)
   .addDecorator(withDocs(MyREADME))
   .add('Documentation', () => (
     <Box mx={3} textAlign={'left'}>

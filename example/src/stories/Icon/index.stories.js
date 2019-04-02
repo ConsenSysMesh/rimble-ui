@@ -6,7 +6,7 @@ import MyREADME from './README.md';
 
 import { Icon, Box, Heading, Text } from 'rimble-ui'
 
-storiesOf('Icon', module)
+storiesOf('Rimble-UI/Icon', module)
   .addDecorator(withDocs(MyREADME))
   .add('Documentation', () => (
     <Box mx={3} textAlign={'left'}>

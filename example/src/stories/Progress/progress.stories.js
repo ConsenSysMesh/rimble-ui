@@ -6,7 +6,7 @@ import MyREADME from './README.md';
 
 import { Progress, Box, Text } from 'rimble-ui';
 
-storiesOf('Form/Progress bar', module)
+storiesOf('Rimble-UI/Form/Progress bar', module)
   .addDecorator(withDocs(MyREADME))
   .add('Documentation', () => (
     <Box mx={3} textAlign={'left'}>

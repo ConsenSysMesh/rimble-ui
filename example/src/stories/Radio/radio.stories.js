@@ -20,7 +20,7 @@ import {
   OutlineButton,
 } from 'rimble-ui';
 
-storiesOf('Form/Radio buttons', module)
+storiesOf('Rimble-UI/Form/Radio buttons', module)
   .addDecorator(withDocs(MyREADME))
   .add('Documentation', () => (
     <Box mx={3} textAlign={'left'}>

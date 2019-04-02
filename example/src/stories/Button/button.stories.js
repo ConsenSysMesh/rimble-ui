@@ -21,7 +21,7 @@ import {
   Pill
 } from 'rimble-ui';
 
-storiesOf('Buttons/Button', module)
+storiesOf('Rimble-UI/Buttons/Button', module)
   .add(
     'Documentation',
     withDocs(Documentation, () => (
@@ -135,7 +135,7 @@ storiesOf('Buttons/Button', module)
       </Box>
     ))
   )
-storiesOf('Buttons', module)
+storiesOf('Rimble-UI/Buttons', module)
   .add(
     'Design guidelines',
     withDocs(Guidelines, () => (
