@@ -1,6 +1,6 @@
 # Loader
 
-The `Loader` renders a responsive box-model layout component.
+Use the `Loader` component to let the user know that a process is happening or something is loading. The `Loader` renders a responsive box-model layout component.
 
 **Import component**
 

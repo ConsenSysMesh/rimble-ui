@@ -42,7 +42,6 @@ class YourModal extends Component {
     return (
       <React.Fragment>
         <Button onClick={this.openModal}>Open Modal</Button>
-
         <Modal isOpen={this.state.isOpen}>
           <Card width={'420px'} p={0}>
             <TextButton

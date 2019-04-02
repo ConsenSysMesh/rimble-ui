@@ -39,8 +39,8 @@ storiesOf('Card', module)
   .add(
     'Design Guidelines',
     withDocs(guidelines, () => (
-      <div>
-        <Card width={'420px'} mx={'auto'} my={5} px={4}>
+      <Box mx={3} textAlign={'left'}>
+        <Card width={'420px'} my={5} px={4}>
           <Text
             caps
             fontSize={0}
@@ -50,14 +50,14 @@ storiesOf('Card', module)
             alignItems={'center'}
           >
             <Icon name={'AccountBalanceWallet'} mr={2} />
-            Connect your Wallet:
+            Connect wallet:
           </Text>
-          <MetaMaskButton.outline fullWidth>
-            Install MetaMask
-          </MetaMaskButton.outline>
+          <MetaMaskButton fullWidth>
+            Connect with MetaMask
+          </MetaMaskButton>
         </Card>
 
-        <Card width={'420px'} mx={'auto'} my={5} px={4}>
+        <Card width={'420px'} my={5} px={4}>
           <Heading>Heading</Heading>
           <Text mb={4}>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam
@@ -69,7 +69,7 @@ storiesOf('Card', module)
           <OutlineButton>Cancel</OutlineButton>
         </Card>
 
-        <Card width={'420px'} mx={'auto'} my={5} p={0}>
+        <Card width={'420px'} my={5} p={0}>
           <Image
             width={1}
             src="https://source.unsplash.com/random/1280x720"
@@ -88,6 +88,6 @@ storiesOf('Card', module)
             </TextButton>
           </Flex>
         </Card>
-      </div>
+      </Box>
     ))
   );

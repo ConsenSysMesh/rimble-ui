@@ -10,11 +10,6 @@ import { Link } from 'rimble-ui';
 
 <!-- STORY -->
 
-```jsx
-<Link href="#!" target="_blank" title="This link goes somewhere">
-  Click me!
-</Link>
-```
 
 ### Component props
 

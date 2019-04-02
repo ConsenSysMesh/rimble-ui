@@ -178,10 +178,10 @@ storiesOf('Buttons', module)
     <Heading.h4>Consider visual hierarchy of buttons</Heading.h4>
     <Text>Don’t use too many buttons together on one piece of interface: prioritise the most important action. Use <a href="https://consensys.github.io/rimble-ui/?path=/story/button--textbutton"><code>{'textButton'}</code></a> and <a href="https://consensys.github.io/rimble-ui/?path=/story/button--outlinebutton"><code>{'outlineButton'}</code></a> to give your actions visual hierarchy</Text>
     </Box><br />
-    <Card width={'600px'} px={4}>
-  <Heading>Lesson #1: What's Gas?</Heading>
+    <Card width={'600px'} mx={'auto'} px={4}>
+  <Heading>What's a transaction fee?</Heading>
   <Text mb={4}>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam autem ratione doloribus quidem neque provident eius error dignissimos delectus architecto nemo quos alias sunt voluptate impedit, facilis sequi tempore. Amet!
+    Every blockchain action requires a fee. This pays for someone in the network to update the blockchain. It doesn’t go to us. Be sure to save some ETH aside for fees.
   </Text>
   <Flex>
   <Box width={1/2}>
@@ -192,7 +192,8 @@ storiesOf('Buttons', module)
   <Button mr={3}>Next</Button>
   </Box>
   </Flex>
-</Card><br />
+</Card>
+<br />
     <Box>
     <Heading.h4>Use the disabled state to block actions</Heading.h4>
     <Text>If a user needs to do something prior to performing an action, it’s better to set the Disabled prop to True than to use this component and follow it up with an error message</Text>

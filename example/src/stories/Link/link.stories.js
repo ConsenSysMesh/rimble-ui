@@ -4,12 +4,19 @@ import { withDocs } from 'storybook-readme';
 
 import MyREADME from './README.md';
 
-import { Link } from 'rimble-ui';
+import { Link, Box } from 'rimble-ui';
 
 storiesOf('Link', module)
   .addDecorator(withDocs(MyREADME))
   .add('Documentation', () => (
+    <Box mx={3} textAlign={'left'}>
+    <Box>
     <Link href="#!" target="_blank" title="This link goes somewhere">
       Click me!
     </Link>
+    </Box>
+    <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
+    <code>{'<Link href="#!" target="_blank" title="This link goes somewhere">Click me!</Link>'}</code>
+    </Box>
+    </Box>
   ));

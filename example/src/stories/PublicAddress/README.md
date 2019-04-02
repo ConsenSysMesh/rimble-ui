@@ -17,7 +17,7 @@ Public Address will pass any props that are defined on its component and uses th
 | Prop        | Type     | Values | Default | Description                                         |
 | ----------- | -------- | ------ | ------- | --------------------------------------------------- |
 | address     | string   |        |         | Sets the address that is displayed in the component |
-| handleClick | function |        |         | Adds a -is-copied class to component                |
+| handleClick | function |        |         | Adds an is-copied class to component                |
 
 ### Styled-system props
 

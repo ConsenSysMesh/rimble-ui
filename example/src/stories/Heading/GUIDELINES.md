@@ -6,4 +6,4 @@ _Want to build this component?_ Read [`Heading` documentation](https://github.co
 <!-- STORY -->
 
 ### Related components
-- 
+- [`Text`](./story/text--documentation) – For regular text where you can control font size, weight, alignment, and color.

@@ -2,13 +2,14 @@
 
 The `Modal` component displays any content fixed positioned in the screen center with a background color.
 
-<!-- STORY -->
-
-### Usage
-
+**Import component**
 ```jsx
 import { Modal } from 'rimble-ui';
 ```
+
+<!-- STORY -->
+
+### Usage
 
 ```jsx
 class YourModal extends Component {

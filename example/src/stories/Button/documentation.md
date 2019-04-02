@@ -4,13 +4,15 @@ Use the `Button` component when you want users to perform an action like connect
 
 _Want to understand best practices for using this component?_ Read [`Button` design guidelines](https://github.com/ConsenSys/rimble-ui/blob/rc-button-docs/example/src/stories/Button/GUIDELINES.md)
 
-<!-- STORY -->
-
 **Import component**
 
 ```jsx
 import { Button } from 'rimble-ui';
 ```
+
+<!-- STORY -->
+
+
 
 ### Component props
 

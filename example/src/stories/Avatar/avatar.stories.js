@@ -174,47 +174,6 @@ storiesOf('Avatar', module)
           <br />
         </Box>
 
-        <Flex>
-          <Card mx={'auto'} my={3} px={4} width="400px">
-            <Pill mb={3} color={'green'}>
-              {'Do'}
-            </Pill>
-
-            <Avatar
-              size="medium"
-              src="https://airswap-token-images.s3.amazonaws.com/DAI.png"
-            />
-            <Text.span>1.98 DAI</Text.span>
-          </Card>
-
-          <Card mx={'auto'} my={3} px={4} width="400px">
-            <Pill mb={3} color={'red'}>
-              {"Don't"}
-            </Pill>
-            <Avatar
-              mb={3}
-              size="medium"
-              src="https://airswap-token-images.s3.amazonaws.com/DAI.png"
-            />
-          </Card>
-        </Flex>
-        <br />
-        <br />
-
-        <Text textAlign={'center'}>(ﾉ◕ヮ◕)ﾉ*:・ﾟ✧</Text>
-        <br />
-        <Card color="white" bg="primary">
-          <Heading.h2 color="white">Are we missing anything?</Heading.h2>
-          <Text color="white">
-            If you have any extra insight you'd like to add, please raise an
-            issue in Github.
-          </Text>
-          <br />
-          <OutlineButton Large>Raise issue</OutlineButton>
-          <br />
-          <br />
-        </Card>
-        <br />
       </Box>
     ))
   );

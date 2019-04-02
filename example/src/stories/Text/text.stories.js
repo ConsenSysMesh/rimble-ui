@@ -26,7 +26,7 @@ storiesOf('Text', module)
       <Box>
         <Heading.h4>Text with span</Heading.h4>
         <Text>
-          Render a <code>{'span'}</code> element.
+          Renders a <code>{'span'}</code> element.
         </Text>
         <br />
         <Text.span>The intent of Ethereum is to...</Text.span>
@@ -41,7 +41,7 @@ storiesOf('Text', module)
           Renders a <code>{'p'}</code> element.
         </Text>
         <Text.p>The intent of Ethereum is to ... </Text.p>
-      </Box>
+      </Box><br />
       <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
         <code>{'<Text.p>The intent of Ethereum is to...</Text.p>'}</code>
       </Box>
@@ -52,7 +52,7 @@ storiesOf('Text', module)
       </Box>
       <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
         <code>{'<Text.s>The intent of Ethereum is to...</Text.s>'}</code>
-      </Box>
+      </Box><br />
 
       <Box>
         <Heading.h4>Bold Text</Heading.h4>
@@ -60,7 +60,7 @@ storiesOf('Text', module)
       </Box>
       <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
         <code>{'<Text bold>The intent of Ethereum is to...</Text>'}</code>
-      </Box>
+      </Box><br />
 
       <Box>
         <Heading.h4>Italic Text</Heading.h4>
@@ -68,7 +68,7 @@ storiesOf('Text', module)
       </Box>
       <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
         <code>{'<Text italic>The intent of Ethereum is to...</Text>'}</code>
-      </Box>
+      </Box><br />
 
       <Box>
         <Heading.h4>Caps Text</Heading.h4>

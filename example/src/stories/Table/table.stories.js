@@ -5,7 +5,7 @@ import { withDocs } from 'storybook-readme';
 import MyREADME from './README.md';
 import Guidelines from './GUIDELINES.md';
 
-import { Table, Box, Icon, Heading, Text, Card, OutlineButton, Pill, Flex} from 'rimble-ui'
+import { Table, Box, Icon, Heading, Text, Card, OutlineButton, Pill, Flex, Link} from 'rimble-ui'
 
 storiesOf('Table', module)
   .addDecorator(withDocs(MyREADME))
@@ -81,14 +81,17 @@ storiesOf('Table', module)
         <Box mx={3} textAlign={'left'}>
         <Box>
         <Heading.h2>Design and content</Heading.h2>
-        <Text.p>Some best practice for using Tables</Text.p>
-        <Heading.h4>Don't use tables for layout</Heading.h4>
+        <Text.p>Some best practice for using <code>{'Table'}</code></Text.p><br />
+        <Heading.h4>Only use tables for data</Heading.h4>
+        <Text.p>Data tables are more screen reader-friendly. Screen readers will identify the number of columns and rows, plus they'll read column and row headers. Layout tables are just read in source code order, which can create serious confusion for those using screen readers. For more explanation, <Link href="https://webaim.org/techniques/tables/">read about accessible tables</Link>.</Text.p><br />
         <Heading.h4>Consider more responsive options</Heading.h4>
-        <Heading.h4>Wrap don't truncate</Heading.h4>
+        <Text.p>Tables are hard to read and navigate on mobile devices, especially if there are lots of columns. Consider whether your information really needs to be presented in a table before committing to one. </Text.p><br />
+        <Heading.h4>Wrap don't truncate</Heading.h4></Box>
+        <Text.p>Truncation prevents users from comparing data accurately. For example, if all data in a particular column starts with the same word, they'll all appear the same unless wrapped.</Text.p><br />
+        <Box>
         <Heading.h4>More rows than columns is easier to read</Heading.h4>
 
-        <Flex>
-        <Card mx={'auto'} my={3} px={4} width="400px">
+        <Card mx={'auto'} my={3} px={4}>
           <Pill mb={3} color={"green"}>{"Do"}</Pill><br /><br />
           <Table>
             <thead>
@@ -113,7 +116,7 @@ storiesOf('Table', module)
             </tbody>
           </Table>
             </Card>
-            <Card mx={'auto'} my={3} px={4} width="400px">
+            <Card mx={'auto'} my={3} px={4}>
               <Pill mb={3} color={"red"}>{"Don't"}</Pill><br /><br />
               <Table>
                 <thead>
@@ -142,11 +145,65 @@ storiesOf('Table', module)
                 </tbody>
               </Table>
           </Card>
-        </Flex>
+        </Box><br />
 
-
+        <Box>
         <Heading.h4>Headings should clearly summarise the data within each column</Heading.h4>
+        <Text.p>Make sure your headings are clear and give the user enough information about what to expect in the data that follows.</Text.p>
         </Box>
+        <Card mx={'auto'} my={3} px={4}>
+          <Pill mb={3} color={"green"}>{"Do"}</Pill><br /><br />
+          <Table>
+            <thead>
+              <tr>
+                <th>Currency</th>
+                <th>Value change</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>ETH</td>
+                <td>Up 10%</td>
+              </tr>
+              <tr>
+                <td>BTC</td>
+                <td>Up 8%</td>
+              </tr>
+              <tr>
+                <td>DAI</td>
+                <td>Up 2%</td>
+              </tr>
+            </tbody>
+          </Table>
+            </Card>
+
+            <Card mx={'auto'} my={3} px={4}>
+              <Pill mb={3} color={"red"}>{"Don't"}</Pill><br /><br />
+              <Table>
+              <thead>
+                <tr>
+                  <th>$</th>
+                  <th>%</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>ETH</td>
+                  <td>Up 10%</td>
+                </tr>
+                <tr>
+                  <td>BTC</td>
+                  <td>Up 8%</td>
+                </tr>
+                <tr>
+                  <td>DAI</td>
+                  <td>Up 2%</td>
+                </tr>
+              </tbody>
+              </Table>
+          </Card>
+
+
         <br /><br />
         <Text textAlign={'center'}>(ﾉ◕ヮ◕)ﾉ*:・ﾟ✧</Text><br />
         <Card color="white" bg="primary">
