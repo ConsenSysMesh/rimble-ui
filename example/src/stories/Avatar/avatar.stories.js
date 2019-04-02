@@ -173,7 +173,6 @@ storiesOf('Avatar', module)
           </Card>
           <br />
         </Box>
-
       </Box>
     ))
   );

@@ -162,7 +162,7 @@ storiesOf('Buttons', module)
     <Flex>
     <Card mx={'auto'} my={3} px={4} width="400px">
       <Pill mb={3} color={"green"}>{"Do"}</Pill><br /><br />
-        <TextButton mb="3">Transation history</TextButton>
+        <TextButton mb="3">Transaction history</TextButton>
       </Card>
       <Card mx={'auto'} my={3} px={4} width="400px">
         <Pill mb={3} color={"red"}>{"Don't"}</Pill><br /><br />
