@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
 import { linkTo } from '@storybook/addon-links';
 
-import Documentation from './documentation.md';
+import Documentation from './Documentation.md';
 import Guidelines from './Guidelines.md';
 
 import {

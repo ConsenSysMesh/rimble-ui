@@ -2,9 +2,9 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
 
-import Documentation from './documentation.md';
-import Guidelines from './guidelines.md';
-import ProviderDocumentation from './providerDocumentation.md';
+import Documentation from './Documentation.md';
+import Guidelines from './Guidelines.md';
+import ProviderDocumentation from './ProviderDocumentation.md';
 
 import {
   Flex,
