@@ -3,8 +3,8 @@ import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
 import { linkTo } from '@storybook/addon-links';
 
-import documentation from './documentation.md';
-import guidelines from './guidelines.md';
+import Documentation from './documentation.md';
+import Guidelines from './Guidelines.md';
 
 import {
   Button,
@@ -25,7 +25,7 @@ import {
 
 storiesOf('Components/Buttons/Button', module).add(
   'Documentation',
-  withDocs(documentation, () => (
+  withDocs(Documentation, () => (
     <Box mx={3} textAlign={'left'}>
       <Box>
         <Heading.h2>Button examples</Heading.h2>
@@ -138,7 +138,7 @@ storiesOf('Components/Buttons/Button', module).add(
 );
 storiesOf('Components/Buttons', module).add(
   'Design guidelines',
-  withDocs(guidelines, () => (
+  withDocs(Guidelines, () => (
     <Box mx={3} textAlign={'left'}>
       <Box>
         <Heading.h2>Design</Heading.h2>

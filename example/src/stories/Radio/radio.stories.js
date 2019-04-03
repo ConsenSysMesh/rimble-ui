@@ -2,8 +2,8 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
 
-import documentation from './documentation.md';
-import guidelines from './guidelines.md';
+import Documentation from './documentation.md';
+import Guidelines from './Guidelines.md';
 
 import {
   Radio,
@@ -22,7 +22,7 @@ import {
 } from 'rimble-ui';
 
 storiesOf('Components/Form/Radio buttons', module)
-  .addDecorator(withDocs(documentation))
+  .addDecorator(withDocs(Documentation))
   .add('Documentation', () => (
     <Box mx={3} textAlign={'left'}>
       <Field label="Choose transaction speed">
@@ -44,7 +44,7 @@ storiesOf('Components/Form/Radio buttons', module)
   ))
   .add(
     'Design guidelines',
-    withDocs(guidelines, () => (
+    withDocs(Guidelines, () => (
       <Box mx={3} textAlign={'left'}>
         <Box>
           <Heading.h2>Design</Heading.h2>

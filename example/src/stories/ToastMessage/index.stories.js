@@ -2,9 +2,9 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
 
-import documentation from './documentation.md';
-import guidelines from './guidelines.md';
-import providerDocumentation from './providerDocumentation.md';
+import Documentation from './documentation.md';
+import Guidelines from './guidelines.md';
+import ProviderDocumentation from './providerDocumentation.md';
 
 import {
   Flex,
@@ -22,7 +22,7 @@ import {
 storiesOf('Components/ToastMessage', module)
   .add(
     'Documentation',
-    withDocs(documentation, () => (
+    withDocs(Documentation, () => (
       <Box mx={3} textAlign={'left'}>
         <Box>
           <Heading.h2>ToastMessage examples</Heading.h2>
@@ -241,7 +241,7 @@ storiesOf('Components/ToastMessage', module)
   )
   .add(
     'Design guidelines',
-    withDocs(guidelines, () => (
+    withDocs(Guidelines, () => (
       <Box mx={3} textAlign={'left'}>
         <Box>
           <Heading.h2>Design</Heading.h2>
@@ -695,7 +695,7 @@ storiesOf('Components/ToastMessage', module)
 
   .add(
     'Provider documentation',
-    withDocs(providerDocumentation, () => (
+    withDocs(ProviderDocumentation, () => (
       <Box mx={3} textAlign={'left'}>
         <Box>
           <Heading.h2>ToastMessage.provider previews</Heading.h2>

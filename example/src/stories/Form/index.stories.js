@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
 
-import documentation from './documentation.md';
+import Documentation from './documentation.md';
 
 import { Flex, Card, Image, Button, Form } from 'rimble-ui';
 
@@ -54,7 +54,7 @@ class MyCustomForm extends Component {
 }
 
 storiesOf('Components/Form/Form', module)
-  .addDecorator(withDocs(documentation))
+  .addDecorator(withDocs(Documentation))
   .add('Documentation', () => (
     <div>
       <Card>
