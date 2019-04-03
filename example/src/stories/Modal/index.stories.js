@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
 
-import Documentation from './Documentation.md';
+import Documentation from './docs.md';
 
 import {
   Modal,

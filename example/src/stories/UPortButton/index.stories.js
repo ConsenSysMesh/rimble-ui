@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
 
-import Documentation from './Documentation.md';
+import Documentation from './docs.md';
 
 import { UPortButton, Flex, Box, Heading, Text, Button } from 'rimble-ui';
 

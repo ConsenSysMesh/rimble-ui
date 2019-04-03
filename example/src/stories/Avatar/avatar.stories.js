@@ -2,8 +2,8 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
 
-import Documentation from './Documentation.md';
-import Guidelines from './Guidelines.md';
+import Documentation from './docs.md';
+import Guidelines from './guide.md';
 
 import {
   Avatar,

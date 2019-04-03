@@ -3,8 +3,8 @@ import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
 import { linkTo } from '@storybook/addon-links';
 
-import Documentation from './Documentation.md';
-import Guidelines from './Guidelines.md';
+import Documentation from './docs.md';
+import Guidelines from './guide.md';
 
 import {
   Button,

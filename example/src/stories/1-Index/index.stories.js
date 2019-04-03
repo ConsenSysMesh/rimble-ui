@@ -17,8 +17,8 @@ import {
   TextButton,
 } from 'rimble-ui';
 
-import Theming from './Theming.md';
-import Install from './Install.md';
+import theme from './theme.md';
+import installing from './installing.md';
 
 storiesOf('Getting started', module)
   .add('Welcome', () => (
@@ -146,5 +146,5 @@ storiesOf('Getting started', module)
       </Box>
     </Box>
   ))
-  .add('Installation', doc(Install))
-  .add('Theming', doc(Theming));
+  .add('Installation', doc(installing))
+  .add('Theming', doc(theme));
