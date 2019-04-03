@@ -2,12 +2,12 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
 
-import MyREADME from './README.md';
+import documentation from './documentation.md';
 
 import { UPortButton, Flex, Box, Heading, Text, Button } from 'rimble-ui';
 
 storiesOf('Components/UPortButton', module)
-  .addDecorator(withDocs(MyREADME))
+  .addDecorator(withDocs(documentation))
   .add('Documentation', () => (
     <Box mx={3} textAlign={'left'}>
       <Box>

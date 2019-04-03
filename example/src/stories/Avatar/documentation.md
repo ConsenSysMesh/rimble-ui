@@ -12,7 +12,7 @@ import { Avatar } from 'rimble-ui';
 
 ### Component props
 
-Avatar will pass any props that are defined on its component and uses the following:
+`Avatar` will pass any props that are defined on its component and uses the following:
 
 | Name    | Type   | Default | Description                                  |
 | ------- | ------ | ------- | -------------------------------------------- |
@@ -23,4 +23,4 @@ Avatar will pass any props that are defined on its component and uses the follow
 
 ### Styled-system props
 
-Avatar uses all the style props from [`Box`](https://consensys.github.io/rimble-ui/?path=/story/layout--box).
+`Avatar` uses all the style props from [`Box`](https://consensys.github.io/rimble-ui/?path=/story/components-layout-box--documentation).

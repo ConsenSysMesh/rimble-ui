@@ -23,7 +23,7 @@ import { Text } from 'rimble-ui';
 
 ### Styled-system props
 
-`Text` uses all the style props from [`Box`](https://consensys.github.io/rimble-ui/?path=/story/layout--box), but also includes these:
+`Text` uses all the style props from [`Box`](https://consensys.github.io/rimble-ui/?path=/story/components-layout-box--documentation), but also includes these:
 
 | Prop          | CSS property   | Function      | Theme field    |
 | ------------- | -------------- | ------------- | -------------- |

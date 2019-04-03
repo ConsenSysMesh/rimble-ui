@@ -2,12 +2,12 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
 
-import MyREADME from './README.md';
+import documentation from './documentation.md';
 
 import { Box } from 'rimble-ui';
 
 storiesOf('Components/Layout/Box', module)
-  .addDecorator(withDocs(MyREADME))
+  .addDecorator(withDocs(documentation))
   .add('Documentation', () => (
     <div>
       <Box p={3} fontSize={4} width={[1, 1, 1 / 2]} color="white" bg="salmon">

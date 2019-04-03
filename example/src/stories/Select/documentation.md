@@ -23,4 +23,4 @@ import { Select } from 'rimble-ui';
 
 ### Styled-system props
 
-`Select` uses all the style props from [`Box`](https://consensys.github.io/rimble-ui/?path=/story/layout--box).
+`Select` uses all the style props from [`Box`](https://consensys.github.io/rimble-ui/?path=/story/components-layout-box--documentation).

@@ -18,7 +18,7 @@ import { Table } from 'rimble-ui';
 
 ### Styled-system props
 
-`Table` uses all the style props from [`Box`](https://consensys.github.io/rimble-ui/?path=/story/layout--box), but also includes these:
+`Table` uses all the style props from [`Box`](https://consensys.github.io/rimble-ui/?path=/story/components-layout-box--documentation), but also includes these:
 
 | Prop       | CSS property | Function   | Theme field |
 | ---------- | ------------ | ---------- | ----------- |

@@ -2,8 +2,8 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
 
-import MyREADME from './README.md';
-import guidelines from './GUIDELINES.md';
+import documentation from './documentation.md';
+import guidelines from './guidelines.md';
 
 import {
   Card,
@@ -22,7 +22,7 @@ import {
 storiesOf('Components/Card', module)
   .add(
     'Documentation',
-    withDocs(MyREADME, () => (
+    withDocs(documentation, () => (
       <div>
         <Card>This is a Card</Card>
 
@@ -52,9 +52,7 @@ storiesOf('Components/Card', module)
             <Icon name={'AccountBalanceWallet'} mr={2} />
             Connect wallet:
           </Text>
-          <MetaMaskButton fullWidth>
-            Connect with MetaMask
-          </MetaMaskButton>
+          <MetaMaskButton fullWidth>Connect with MetaMask</MetaMaskButton>
         </Card>
 
         <Card width={'420px'} my={5} px={4}>

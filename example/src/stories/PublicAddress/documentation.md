@@ -22,4 +22,4 @@ Public Address will pass any props that are defined on its component and uses th
 
 ### Styled-system props
 
-Public Address uses all the style props from [`Box`](https://consensys.github.io/rimble-ui/?path=/story/layout--box).
+Public Address uses all the style props from [`Box`](https://consensys.github.io/rimble-ui/?path=/story/components-layout-box--documentation).

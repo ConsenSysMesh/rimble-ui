@@ -2,9 +2,9 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
 
-import READMEa from './README.md';
-import READMEb from './README-B.md';
-import Provider from './Provider.md';
+import documentation from './documentation.md';
+import guidelines from './guidelines.md';
+import providerDocumentation from './providerDocumentation.md';
 
 import {
   Flex,
@@ -20,10 +20,9 @@ import {
 } from 'rimble-ui';
 
 storiesOf('Components/ToastMessage', module)
-  // .addDecorator(withDocs(MyREADME))
   .add(
     'Documentation',
-    withDocs(READMEa, () => (
+    withDocs(documentation, () => (
       <Box mx={3} textAlign={'left'}>
         <Box>
           <Heading.h2>ToastMessage examples</Heading.h2>
@@ -242,7 +241,7 @@ storiesOf('Components/ToastMessage', module)
   )
   .add(
     'Design guidelines',
-    withDocs(READMEb, () => (
+    withDocs(guidelines, () => (
       <Box mx={3} textAlign={'left'}>
         <Box>
           <Heading.h2>Design</Heading.h2>
@@ -679,7 +678,13 @@ storiesOf('Components/ToastMessage', module)
             issue in Github.
           </Text>
           <br />
-          <OutlineButton Large>Raise issue</OutlineButton>
+          <Link
+            href="https://github.com/ConsenSys/rimble-ui/issues"
+            title="GitHub Issues for Rimble UI"
+            target="_blank"
+          >
+            <OutlineButton Large>Raise issue</OutlineButton>
+          </Link>
           <br />
           <br />
         </Card>
@@ -690,7 +695,7 @@ storiesOf('Components/ToastMessage', module)
 
   .add(
     'Provider documentation',
-    withDocs(Provider, () => (
+    withDocs(providerDocumentation, () => (
       <Box mx={3} textAlign={'left'}>
         <Box>
           <Heading.h2>ToastMessage.provider previews</Heading.h2>

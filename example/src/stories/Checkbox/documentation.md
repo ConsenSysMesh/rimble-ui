@@ -24,4 +24,4 @@ Checkbox will pass any props that are defined on its component and uses the foll
 
 ### Styled-system props
 
-Checkbox uses all the style props from [`Box`](https://consensys.github.io/rimble-ui/?path=/story/layout--box).
+Checkbox uses all the style props from [`Box`](https://consensys.github.io/rimble-ui/?path=/story/components-layout-box--documentation).

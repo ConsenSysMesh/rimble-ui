@@ -1,65 +1,73 @@
-import React from 'react'
-import { storiesOf } from '@storybook/react'
+import React from 'react';
+import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
 
-import MyREADME from './README.md';
+import documentation from './documentation.md';
 
-import { Button,
-OutlineButton,
-TextButton,
-MetaMaskButton,
-Icon,
-Loader,
-Text,
-Heading,
-Box,
-Flex,
-Modal,
-Card, } from 'rimble-ui'
+import {
+  Button,
+  OutlineButton,
+  TextButton,
+  MetaMaskButton,
+  Icon,
+  Loader,
+  Text,
+  Heading,
+  Box,
+  Flex,
+  Modal,
+  Card,
+} from 'rimble-ui';
 
 storiesOf('Components/Buttons/OutlineButton', module)
-  .addDecorator(withDocs(MyREADME))
+  .addDecorator(withDocs(documentation))
   .add('Documentation', () => (
     <Box mx={3} textAlign={'left'}>
-    <Box>
-      <Heading.h2>OutlineButton examples</Heading.h2>
-      <Text>Different ways to use the OutlineButton component</Text>
-      <br />
-    </Box>
-    <Box>
-    <Heading.h4>Default</Heading.h4>
-    <OutlineButton mb={3}>Scan QR code</OutlineButton>
-    </Box>
-    <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-      <code>{'<OutlineButton>Scan QR code</OutlineButton>'}</code>
-    </Box>
-    <br />
-    <Box>
-      <Heading.h4>Different sizes</Heading.h4>
-      <OutlineButton size="small" mb={3}>
-        Scan QR code
-      </OutlineButton>
-    </Box>
+      <Box>
+        <Heading.h2>OutlineButton examples</Heading.h2>
+        <Text>Different ways to use the OutlineButton component</Text>
+        <br />
+      </Box>
+      <Box>
+        <Heading.h4>Default</Heading.h4>
+        <OutlineButton mb={3}>Scan QR code</OutlineButton>
+      </Box>
       <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>{'<OutlineButton size="small">Scan QR code</OutlineButton>'}</code>
+        <code>{'<OutlineButton>Scan QR code</OutlineButton>'}</code>
       </Box>
       <br />
-    <Box>
-      <OutlineButton size="medium" mb={3}>
-        Scan QR code
-      </OutlineButton>
-    </Box>
+      <Box>
+        <Heading.h4>Different sizes</Heading.h4>
+        <OutlineButton size="small" mb={3}>
+          Scan QR code
+        </OutlineButton>
+      </Box>
       <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>{'<OutlineButton size="medium">Scan QR code</OutlineButton>'}</code>
+        <code>
+          {'<OutlineButton size="small">Scan QR code</OutlineButton>'}
+        </code>
       </Box>
       <br />
-    <Box>
-      <OutlineButton size="large" mb={3}>
-        Scan QR code
-      </OutlineButton>
-    </Box>
+      <Box>
+        <OutlineButton size="medium" mb={3}>
+          Scan QR code
+        </OutlineButton>
+      </Box>
       <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>{'<OutlineButton size="large">Scan QR code</OutlineButton>'}</code>
+        <code>
+          {'<OutlineButton size="medium">Scan QR code</OutlineButton>'}
+        </code>
+      </Box>
+      <br />
+      <Box>
+        <OutlineButton size="large" mb={3}>
+          Scan QR code
+        </OutlineButton>
+      </Box>
+      <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
+        <code>
+          {'<OutlineButton size="large">Scan QR code</OutlineButton>'}
+        </code>
       </Box>
       <br />
       <Box>
@@ -89,8 +97,10 @@ storiesOf('Components/Buttons/OutlineButton', module)
         </OutlineButton>
       </Box>
       <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>{'<OutlineButton icon="CameraAlt">Scan QR code</OutlineButton>'}</code>
+        <code>
+          {'<OutlineButton icon="CameraAlt">Scan QR code</OutlineButton>'}
+        </code>
       </Box>
       <br />
     </Box>
-  ))
+  ));

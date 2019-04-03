@@ -16,11 +16,9 @@ import {
   Button,
   TextButton,
 } from 'rimble-ui';
-import MyREADME from './welcome.md';
 
-import themingREADME from './theming-README.md';
-import installREADME from './install-README.md';
-import welcomeREADME from './welcome.md';
+import theming from './theming.md';
+import install from './install.md';
 
 storiesOf('Getting started', module)
   .add('Welcome', () => (
@@ -115,8 +113,8 @@ storiesOf('Getting started', module)
         <Card color="white" bg="primary">
           <Heading>Contribute to Rimble</Heading>
           <Text.p color="white">
-            Rimble is completely open source. [Add instructions for
-            contributing]
+            Rimble is completely open source. Create a new issue for feature and
+            component requests or to report a bug.
           </Text.p>
           <Link
             href="https://github.com/ConsenSys/rimble-ui"
@@ -145,5 +143,5 @@ storiesOf('Getting started', module)
       </Box>
     </Box>
   ))
-  .add('Installation', doc(installREADME))
-  .add('Theming', doc(themingREADME));
+  .add('Installation', doc(install))
+  .add('Theming', doc(theming));

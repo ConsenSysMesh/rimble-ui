@@ -2,8 +2,8 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
 
-import MyREADME from './README.md';
-import Guidelines from './GUIDELINES.md';
+import documentation from './documentation.md';
+import guidelines from './guidelines.md';
 
 import {
   Select,
@@ -16,6 +16,7 @@ import {
   Pill,
   OutlineButton,
   Radio,
+  Link,
 } from 'rimble-ui';
 
 const items = [
@@ -27,7 +28,7 @@ const items = [
 ];
 
 storiesOf('Components/Form/Select', module)
-  .addDecorator(withDocs(MyREADME))
+  .addDecorator(withDocs(documentation))
   .add('Documentation', () => (
     <Box ml={3} textAlign={'left'}>
       <Field label="Choose your currency">
@@ -44,7 +45,7 @@ storiesOf('Components/Form/Select', module)
   ))
   .add(
     'Design guidelines',
-    withDocs(Guidelines, () => (
+    withDocs(guidelines, () => (
       <Box mx={3} textAlign={'left'}>
         <Box>
           <Heading.h2>Design</Heading.h2>
@@ -105,7 +106,13 @@ storiesOf('Components/Form/Select', module)
             issue in Github.
           </Text>
           <br />
-          <OutlineButton Large>Raise issue</OutlineButton>
+          <Link
+            href="https://github.com/ConsenSys/rimble-ui/issues"
+            title="GitHub Issues for Rimble UI"
+            target="_blank"
+          >
+            <OutlineButton Large>Raise issue</OutlineButton>
+          </Link>
           <br />
           <br />
         </Card>

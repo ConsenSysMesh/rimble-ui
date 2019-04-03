@@ -2,8 +2,8 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
 
-import MyREADME from './README.md';
-import Guidelines from './GUIDELINES.md';
+import documentation from './documentation.md';
+import guidelines from './guidelines.md';
 
 import {
   Tooltip,
@@ -23,7 +23,7 @@ import {
 } from 'rimble-ui';
 
 storiesOf('Components/Tooltip', module)
-  .addDecorator(withDocs(MyREADME))
+  .addDecorator(withDocs(documentation))
   .add('Documentation', () => (
     <Box mx={3} textAlign={'left'}>
       <Box>
@@ -133,7 +133,7 @@ storiesOf('Components/Tooltip', module)
   ))
   .add(
     'Design guidelines',
-    withDocs(Guidelines, () => (
+    withDocs(guidelines, () => (
       <Box mx={3} textAlign={'left'}>
         <Box>
           <Heading.h2>Design and content</Heading.h2>
@@ -222,10 +222,16 @@ storiesOf('Components/Tooltip', module)
           <Box>
             <Heading.h4>Keep tooltips short</Heading.h4>
             <Text>
-              Don't include too much text in a tooltip. They're for short clarification or elaboration. If you need more than a couple of sentences, consider using a <Link href="./story/Modal--documentation"><code>{'modal'}</code></Link>.
+              Don't include too much text in a tooltip. They're for short
+              clarification or elaboration. If you need more than a couple of
+              sentences, consider using a{' '}
+              <Link href="./story/Modal--documentation">
+                <code>{'modal'}</code>
+              </Link>
+              .
             </Text>
             <br />
-</Box>
+          </Box>
 
           <Box>
             <Heading.h4>Some suggested uses</Heading.h4>
@@ -241,8 +247,11 @@ storiesOf('Components/Tooltip', module)
             <br />
 
             <Text>
-              This will include a small{' '}<Tooltip message="This pays for your transaction to be added to the blockchain">
-                <strong>transaction fee</strong></Tooltip>{' '} which we'll include in your transaction summary
+              This will include a small{' '}
+              <Tooltip message="This pays for your transaction to be added to the blockchain">
+                <strong>transaction fee</strong>
+              </Tooltip>{' '}
+              which we'll include in your transaction summary
             </Text>
           </Box>
         </Box>
@@ -257,7 +266,13 @@ storiesOf('Components/Tooltip', module)
             issue in Github.
           </Text>
           <br />
-          <OutlineButton Large>Raise issue</OutlineButton>
+          <Link
+            href="https://github.com/ConsenSys/rimble-ui/issues"
+            title="GitHub Issues for Rimble UI"
+            target="_blank"
+          >
+            <OutlineButton Large>Raise issue</OutlineButton>
+          </Link>
           <br />
           <br />
         </Card>

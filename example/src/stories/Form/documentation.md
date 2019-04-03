@@ -77,4 +77,4 @@ Form will pass any props that are defined on its component and uses the followin
 
 ### Styled-system props
 
-Form uses all the style props from [`Box`](https://consensys.github.io/rimble-ui/?path=/story/layout--box).
+Form uses all the style props from [`Box`](https://consensys.github.io/rimble-ui/?path=/story/components-layout-box--documentation).

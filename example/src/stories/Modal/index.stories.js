@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
 
-import MyREADME from './README.md';
+import documentation from './documentation.md';
 
 import {
   Modal,
@@ -81,7 +81,7 @@ class YourModal extends Component {
 }
 
 storiesOf('Components/Modal', module)
-  .addDecorator(withDocs(MyREADME))
+  .addDecorator(withDocs(documentation))
   .add('Documentation', () => {
     return <YourModal />;
   });

@@ -2,8 +2,8 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
 
-import MyREADME from './README.md';
-import Guidelines from './GUIDELINES.md';
+import documentation from './documentation.md';
+import guidelines from './guidelines.md';
 
 import {
   Avatar,
@@ -14,10 +14,11 @@ import {
   OutlineButton,
   Card,
   Pill,
+  Link,
 } from 'rimble-ui';
 
 storiesOf('Components/Avatar', module)
-  .addDecorator(withDocs(MyREADME))
+  .addDecorator(withDocs(documentation))
   .add('Documentation', () => (
     <Box mx={3} textAlign={'left'}>
       <Box>
@@ -116,7 +117,7 @@ storiesOf('Components/Avatar', module)
   ))
   .add(
     'Design guidelines',
-    withDocs(Guidelines, () => (
+    withDocs(guidelines, () => (
       <Box>
         <Box mx={3} textAlign={'left'}>
           <Box>
@@ -167,7 +168,13 @@ storiesOf('Components/Avatar', module)
               issue in Github.
             </Text>
             <br />
-            <OutlineButton Large>Raise issue</OutlineButton>
+            <Link
+              href="https://github.com/ConsenSys/rimble-ui/issues"
+              title="GitHub Issues for Rimble UI"
+              target="_blank"
+            >
+              <OutlineButton Large>Raise issue</OutlineButton>
+            </Link>
             <br />
             <br />
           </Card>

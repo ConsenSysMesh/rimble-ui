@@ -1,6 +1,6 @@
 # Button documentation
 
-Use the `Button` component when you want users to perform an action like connecting their Ethereum account or starting a transaction. It contains a label with an optional icon before or after the label. It maps to a `<button type='button'>` element and extends [`Box`](https://consensys.github.io/rimble-ui/?path=/story/layout--box).
+Use the `Button` component when you want users to perform an action like connecting their Ethereum account or starting a transaction. It contains a label with an optional icon before or after the label. It maps to a `<button type='button'>` element and extends [`Box`](https://consensys.github.io/rimble-ui/?path=/story/components-layout-box--documentation).
 
 _Want to understand best practices for using this component?_ Read [`Button` design guidelines](https://github.com/ConsenSys/rimble-ui/blob/rc-button-docs/example/src/stories/Button/GUIDELINES.md)
 
@@ -29,7 +29,7 @@ Button's icon inherits all the props from [`Icon`](https://consensys.github.io/r
 
 ### Styled-system props
 
-Button uses all the style props from [`Box`](https://consensys.github.io/rimble-ui/?path=/story/layout--box), but also includes these:
+Button uses all the style props from [`Box`](https://consensys.github.io/rimble-ui/?path=/story/components-layout-box--documentation), but also includes these:
 
 | Prop         | CSS property                   | Function     | Theme field  |
 | ------------ | ------------------------------ | ------------ | ------------ |

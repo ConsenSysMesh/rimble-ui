@@ -21,4 +21,4 @@ Blockie will pass any props that are defined on its component and uses the follo
 
 ### Styled-system props
 
-Blockie uses all the style props from [`Box`](https://consensys.github.io/rimble-ui/?path=/story/layout--box).
+Blockie uses all the style props from [`Box`](https://consensys.github.io/rimble-ui/?path=/story/components-layout-box--documentation).

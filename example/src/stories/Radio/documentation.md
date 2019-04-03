@@ -24,4 +24,4 @@ Radio will pass any props that are defined on its component and uses the followi
 
 ### Styled-system props
 
-Radio uses all the style props from [`Box`](https://consensys.github.io/rimble-ui/?path=/story/layout--box).
+Radio uses all the style props from [`Box`](https://consensys.github.io/rimble-ui/?path=/story/components-layout-box--documentation).

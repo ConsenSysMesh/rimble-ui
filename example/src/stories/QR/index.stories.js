@@ -2,13 +2,24 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
 
-import MyREADME from './README.md';
-import Guidelines from './GUIDELINES.md';
+import documentation from './documentation.md';
+import guidelines from './guidelines.md';
 
-import { QR, Box, Text, OutlineButton, Flex, Card, Pill, Heading, PublicAddress } from 'rimble-ui';
+import {
+  QR,
+  Box,
+  Text,
+  OutlineButton,
+  Flex,
+  Card,
+  Pill,
+  Heading,
+  PublicAddress,
+  Link,
+} from 'rimble-ui';
 
 storiesOf('Components/QR Code', module)
-  .addDecorator(withDocs(MyREADME))
+  .addDecorator(withDocs(documentation))
   .add('Documentation', () => (
     <Box mx={3} textAlign={'left'}>
       <Box>
@@ -23,7 +34,7 @@ storiesOf('Components/QR Code', module)
   ))
   .add(
     'Design guidelines',
-    withDocs(Guidelines, () => (
+    withDocs(guidelines, () => (
       <Box>
         <Box mx={3} textAlign={'left'}>
           <Box>
@@ -33,7 +44,9 @@ storiesOf('Components/QR Code', module)
 
           <Heading.h4>Explain what it is</Heading.h4>
           <Text>
-            Let your user know what the QR code represents and what will happen once they scan the QR code. Don't just assume your user is famliar with the pattern of QR codes being used for public addresses.
+            Let your user know what the QR code represents and what will happen
+            once they scan the QR code. Don't just assume your user is famliar
+            with the pattern of QR codes being used for public addresses.
           </Text>
           <br />
 
@@ -41,24 +54,32 @@ storiesOf('Components/QR Code', module)
             <Card mx={'auto'} my={3} px={4} width="400px">
               <Pill mb={3} color={'green'}>
                 {'Do'}
-              </Pill><br />
-            <Heading.h5>Scan to send funds to your wallet</Heading.h5>
+              </Pill>
+              <br />
+              <Heading.h5>Scan to send funds to your wallet</Heading.h5>
 
-            <QR value="0xAc03BB73b6a9e108530AFf4Df5077c2B3D481e5A" />
+              <QR value="0xAc03BB73b6a9e108530AFf4Df5077c2B3D481e5A" />
             </Card>
 
             <Card mx={'auto'} my={3} px={4} width="400px">
               <Pill mb={3} color={'red'}>
                 {"Don't"}
-              </Pill><br /><br /><br />
+              </Pill>
+              <br />
+              <br />
+              <br />
               <Box textAlign={'center'}>
-              <QR value="0xAc03BB73b6a9e108530AFf4Df5077c2B3D481e5A" /></Box>
+                <QR value="0xAc03BB73b6a9e108530AFf4Df5077c2B3D481e5A" />
+              </Box>
             </Card>
           </Flex>
 
           <Heading.h4>Provide an alternative</Heading.h4>
           <Text>
-            If you're using a QR code to represent a public address, always give the user the ability to copy/paste the address manually too. They may not want to grant your dApp access to their camera or they may be at desktop set-up where scanning QR codes is inconvenient.
+            If you're using a QR code to represent a public address, always give
+            the user the ability to copy/paste the address manually too. They
+            may not want to grant your dApp access to their camera or they may
+            be at desktop set-up where scanning QR codes is inconvenient.
           </Text>
           <br />
 
@@ -66,16 +87,24 @@ storiesOf('Components/QR Code', module)
             <Card mx={'auto'} my={3} px={4} width="400px">
               <Pill mb={3} color={'green'}>
                 {'Do'}
-              </Pill><br />
-            <Heading.h5>Your connected account:</Heading.h5>
-            <QR value="0xAc03BB73b6a9e108530AFf4Df5077c2B3D481e5A" /><br /><br />
-            <PublicAddress required="false" address="0xAc03BB73b6a9e108530AFf4Df5077c2B3D481e5A" />
+              </Pill>
+              <br />
+              <Heading.h5>Your connected account:</Heading.h5>
+              <QR value="0xAc03BB73b6a9e108530AFf4Df5077c2B3D481e5A" />
+              <br />
+              <br />
+              <PublicAddress
+                required="false"
+                address="0xAc03BB73b6a9e108530AFf4Df5077c2B3D481e5A"
+              />
             </Card>
 
             <Card mx={'auto'} my={3} px={4} width="400px">
               <Pill mb={3} color={'red'}>
                 {"Don't"}
-              </Pill><br /><br />
+              </Pill>
+              <br />
+              <br />
               <Heading.h5>Your connected account</Heading.h5>
 
               <QR value="0xAc03BB73b6a9e108530AFf4Df5077c2B3D481e5A" />
@@ -93,7 +122,13 @@ storiesOf('Components/QR Code', module)
               issue in Github.
             </Text>
             <br />
-            <OutlineButton Large>Raise issue</OutlineButton>
+            <Link
+              href="https://github.com/ConsenSys/rimble-ui/issues"
+              title="GitHub Issues for Rimble UI"
+              target="_blank"
+            >
+              <OutlineButton Large>Raise issue</OutlineButton>
+            </Link>
             <br />
             <br />
           </Card>
