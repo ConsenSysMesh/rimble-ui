@@ -18,7 +18,7 @@ Button's icon inherits all the props from [`Icon`](https://consensys.github.io/r
 
 | Prop      | Type    | Values                                                           | Default | Description                                  |
 | --------- | ------- | ---------------------------------------------------------------- | ------- | -------------------------------------------- |
-| size      | String  | small, medium, large                                             | medium  | Sets button size to small, medium or large   |
+| size      | string  | small, medium, large                                             | medium  | Sets button size to small, medium or large   |
 | fullWidth | boolean | true, false                                                      | true    | Sets button width to fullWidth               |
 | disabled  | boolean | true, false                                                      | true    | Sets button style to disabled                |
 | icon      | string  | [icon list](https://github.com/jxnblk/rmdi/blob/master/ICONS.md) | none    | Adds Icon to button                          |
