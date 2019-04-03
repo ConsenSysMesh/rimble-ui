@@ -2,12 +2,12 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
 
-import documentation from './documentation.md';
+import Documentation from './documentation.md';
 
 import { Input, Field, Box, Heading, Text } from 'rimble-ui';
 
 storiesOf('Components/Form/Field', module)
-  .addDecorator(withDocs(documentation))
+  .addDecorator(withDocs(Documentation))
   .add('Documentation', () => (
     <Box ml={3} textAlign={'left'}>
       <Box>

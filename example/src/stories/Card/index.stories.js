@@ -2,8 +2,8 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
 
-import documentation from './documentation.md';
-import guidelines from './guidelines.md';
+import Documentation from './documentation.md';
+import Guidelines from './Guidelines.md';
 
 import {
   Card,
@@ -22,7 +22,7 @@ import {
 storiesOf('Components/Card', module)
   .add(
     'Documentation',
-    withDocs(documentation, () => (
+    withDocs(Documentation, () => (
       <div>
         <Card>This is a Card</Card>
 
@@ -38,7 +38,7 @@ storiesOf('Components/Card', module)
   )
   .add(
     'Design Guidelines',
-    withDocs(guidelines, () => (
+    withDocs(Guidelines, () => (
       <Box mx={3} textAlign={'left'}>
         <Card width={'420px'} my={5} px={4}>
           <Text

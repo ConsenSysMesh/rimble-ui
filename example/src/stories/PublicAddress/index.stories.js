@@ -2,8 +2,8 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
 
-import documentation from './documentation.md';
-import guidelines from './guidelines.md';
+import Documentation from './documentation.md';
+import Guidelines from './Guidelines.md';
 
 import {
   PublicAddress,
@@ -19,7 +19,7 @@ import {
 } from 'rimble-ui';
 
 storiesOf('Components/PublicAddress', module)
-  .addDecorator(withDocs(documentation))
+  .addDecorator(withDocs(Documentation))
   .add('Documentation', () => (
     <Box mx={3} textAlign={'left'}>
       <PublicAddress address={'0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2'} />
@@ -34,7 +34,7 @@ storiesOf('Components/PublicAddress', module)
   ))
   .add(
     'Design guidelines',
-    withDocs(guidelines, () => (
+    withDocs(Guidelines, () => (
       <Box mx={3} textAlign={'left'}>
         <Box>
           <Heading.h2>Design</Heading.h2>
