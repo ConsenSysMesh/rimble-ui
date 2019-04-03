@@ -2,7 +2,7 @@
 
 The `Input` component provides a styled version of HTML `<input>`.
 
-_Want to understand best practices for using an Input component?_ Read [`Input` design guidelines](https://consensys.github.io/rimble-ui/?path=/story/input--design--guidelines)
+_Want to understand best practices for using an Input component?_ Read [`Input` design guidelines](https://consensys.github.io/rimble-ui/?path=/story/components-form-inputs--design-guidelines)
 
 **Import component**
 

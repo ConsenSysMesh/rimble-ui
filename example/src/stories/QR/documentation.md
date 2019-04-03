@@ -2,7 +2,7 @@
 
 Use the `QR` component to renders a QR code for a provided string. Can be used as a shortcut to input a public Ethereum address or link to a specific website.
 
-_Want to understand best practices for using a `QR` component?_ Read [`QR` design guidelines](https://consensys.github.io/rimble-ui/?path=/story/QR--design--guidelines)
+_Want to understand best practices for using a `QR` component?_ Read [`QR` design guidelines](https://consensys.github.io/rimble-ui/?path=/story/components-qr-code--design-guidelines)
 
 **Import component**
 

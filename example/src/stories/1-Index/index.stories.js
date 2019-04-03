@@ -46,7 +46,7 @@ storiesOf('Getting started', module)
         <Text>
           •{' '}
           <Link
-            onClick={linkTo('metamaskbutton', 'documentation')}
+            onClick={linkTo('components-metamaskbutton', 'documentation')}
             title="Rimble UI MetaMask Button component"
             href="javascript:;"
           >
@@ -55,7 +55,7 @@ storiesOf('Getting started', module)
         </Text>
         <Text />•{' '}
         <Link
-          onClick={linkTo('uportbutton', 'documentation')}
+          onClick={linkTo('components-uportbutton', 'documentation')}
           title="Rimble UI UPort Button component"
           href="javascript:;"
         >
@@ -64,7 +64,7 @@ storiesOf('Getting started', module)
         <Text>
           •{' '}
           <Link
-            onClick={linkTo('publicaddress', 'documentation')}
+            onClick={linkTo('components-publicaddress', 'documentation')}
             title="Rimble UI Public Address component"
             href="javascript:;"
           >
@@ -74,7 +74,7 @@ storiesOf('Getting started', module)
         <Text>
           •{' '}
           <Link
-            onClick={linkTo('qr-code', 'documentation')}
+            onClick={linkTo('components-qr-code', 'documentation')}
             title="Rimble UI QR Code component"
             href="javascript:;"
           >
@@ -84,7 +84,10 @@ storiesOf('Getting started', module)
         <Text>
           •{' '}
           <Link
-            onClick={linkTo('toastmessage', 'provider-documentation')}
+            onClick={linkTo(
+              'components-toastmessage',
+              'provider-documentation'
+            )}
             title="Rimble UI Toast Message Provider component"
             href="javascript:;"
           >

@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
+import { linkTo } from '@storybook/addon-links';
 
 import documentation from './documentation.md';
 import guidelines from './guidelines.md';
@@ -171,9 +172,13 @@ storiesOf('Components/Buttons', module).add(
         <Heading.h4>Don’t use buttons for navigational links</Heading.h4>
         <Text>
           Buttons are for action-based tasks. Use{' '}
-          <a href="https://consensys.github.io/rimble-ui/?path=/story/button--textbutton">
-            <code>{'textButton'}</code>
-          </a>{' '}
+          <Link
+            onClick={linkTo('components-buttons-textbutton', 'documentation')}
+            title="Rimble UI Text Button component"
+            href="javascript:;"
+          >
+            TextButton
+          </Link>{' '}
           instead.
         </Text>
       </Box>
@@ -209,13 +214,24 @@ storiesOf('Components/Buttons', module).add(
         <Text>
           Don’t use too many buttons together on one piece of interface:
           prioritise the most important action. Use{' '}
-          <a href="https://consensys.github.io/rimble-ui/?path=/story/button--textbutton">
-            <code>{'textButton'}</code>
-          </a>{' '}
+          <Link
+            onClick={linkTo('components-buttons-textbutton', 'documentation')}
+            title="Rimble UI Text Button component"
+            href="javascript:;"
+          >
+            TextButton
+          </Link>{' '}
           and{' '}
-          <a href="https://consensys.github.io/rimble-ui/?path=/story/button--outlinebutton">
-            <code>{'outlineButton'}</code>
-          </a>{' '}
+          <Link
+            onClick={linkTo(
+              'components-buttons-outlinebutton',
+              'documentation'
+            )}
+            title="Rimble UI Outline Button component"
+            href="javascript:;"
+          >
+            OutlineButton
+          </Link>{' '}
           to give your actions visual hierarchy
         </Text>
       </Box>

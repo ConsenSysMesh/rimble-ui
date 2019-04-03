@@ -10,7 +10,6 @@ import { Link } from 'rimble-ui';
 
 <!-- STORY -->
 
-
 ### Component props
 
 `Link` will pass any props that are defined on its component and uses the following:
@@ -23,4 +22,4 @@ import { Link } from 'rimble-ui';
 
 ### Styled-system props
 
-`Link` uses all the style props from [`Text`](https://consensys.github.io/rimble-ui/?path=/story/text--default).
+`Link` uses all the style props from [`Text`](https://consensys.github.io/rimble-ui/?path=/story/components-text--documentation).

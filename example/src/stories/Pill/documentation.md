@@ -20,4 +20,4 @@ Pill will pass any props that are defined on its component and uses the followin
 
 ### Styled-system props
 
-Pill uses all the style props from [`Text`](https://consensys.github.io/rimble-ui/?path=/story/text--default).
+Pill uses all the style props from [`Text`](https://consensys.github.io/rimble-ui/?path=/story/components-text--documentation).

@@ -26,4 +26,4 @@ The `Textarea` component provides a styled version of the HTML `<textarea>`.
 
 ### Styled-system props
 
-`Textarea` uses all the style props from [`Input`](https://consensys.github.io/rimble-ui/?path=/story/form-inputs--documentation).
+`Textarea` uses all the style props from [`Input`](https://consensys.github.io/rimble-ui/?path=/story/components-form-inputs--documentation).
