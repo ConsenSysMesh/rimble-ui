@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
+import CodeBlock from '../../components/CodeBlock';
 
 import Documentation from './docs.md';
 import Guidelines from './guide.md';
@@ -31,16 +32,11 @@ storiesOf('Components/Form/Select', module)
   .addDecorator(withDocs(Documentation))
   .add('Documentation', () => (
     <Box ml={3} textAlign={'left'}>
-      <Field label="Choose your currency">
-        <Select items={items} required="false" />
-      </Field>
-      <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>
-          {
-            '<Select items={["ETH - Ether","BTC - Bitcoin","GNO - Gnosis","GNT - Golem","REP - Augur"]} />'
-          }
-        </code>
-      </Box>
+      <CodeBlock>
+        <Field label="Choose your currency">
+          <Select items={items} required="false" />
+        </Field>
+      </CodeBlock>
     </Box>
   ))
   .add(

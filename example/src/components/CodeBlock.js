@@ -6,7 +6,7 @@ import PrismJsx from 'prismjs/components/prism-jsx.min';
 import { Flex, OutlineButton, Box, Heading, Checkbox } from 'rimble-ui';
 import './CodeBlock.css';
 
-const options = {
+const jsxStringOptions = {
   showDefaultProps: false,
 };
 
@@ -18,7 +18,7 @@ class CodeBlock extends React.Component {
     let code = '';
     this.props.textOnly
       ? (code = this.props.children)
-      : (code = reactElementToJSXString(this.props.children, options));
+      : (code = reactElementToJSXString(this.props.children, jsxStringOptions));
 
     this.setState({ code });
   }
@@ -31,7 +31,7 @@ class CodeBlock extends React.Component {
   };
   render() {
     return (
-      <Box mb={4}>
+      <Box mb={4} minWidth={['100%', '600px', '600px']}>
         {this.props.textOnly ? (
           <Box>
             <Flex
@@ -93,7 +93,7 @@ class CodeBlock extends React.Component {
             </Flex>
             <pre className="lang-jsx">
               <code>
-                {reactElementToJSXString(this.props.children, options)}
+                {reactElementToJSXString(this.props.children, jsxStringOptions)}
               </code>
             </pre>
           </Box>

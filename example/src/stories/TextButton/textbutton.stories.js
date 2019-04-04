@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
+import CodeBlock from '../../components/CodeBlock';
 
 import Documentation from './docs.md';
 
@@ -17,32 +18,25 @@ storiesOf('Components/Buttons/TextButton', module)
       </Box>
       <Box>
         <Heading.h4>Default</Heading.h4>
-        <TextButton>Transactions</TextButton>
+        <CodeBlock>
+          <TextButton>Transactions</TextButton>
+        </CodeBlock>
       </Box>
-      <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>{'<TextButton>Transactions</TextButton>'}</code>
-      </Box>
-      <br />
+
       <Box>
         <Heading.h4>Disabled</Heading.h4>
-        <TextButton disabled>Transactions</TextButton>
+        <CodeBlock>
+          <TextButton disabled>Transactions</TextButton>
+        </CodeBlock>
       </Box>
-      <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>{'<TextButton disabled>Transactions</TextButton>'}</code>
-      </Box>
-      <br />
+
       <Box>
         <Heading.h4>Icon</Heading.h4>
-        <TextButton icon="Help" iconpos="right">
-          Transaction fees
-        </TextButton>
-      </Box>
-      <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>
-          {
-            '<TextButton icon="Help" iconpos="right">Transaction fees</TextButton>'
-          }
-        </code>
+        <CodeBlock>
+          <TextButton icon="Help" iconpos="right">
+            Transaction fees
+          </TextButton>
+        </CodeBlock>
       </Box>
     </Box>
   ));

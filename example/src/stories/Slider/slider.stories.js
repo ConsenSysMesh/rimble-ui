@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
+import CodeBlock from '../../components/CodeBlock';
 
 import Documentation from './docs.md';
 
@@ -42,8 +43,8 @@ storiesOf('Components/Form/Slider', module)
       <Box>
         <MyCustomSlider />
       </Box>
-      <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>{'<Slider min={"0"} max={"100"} step={"10"} />'}</code>
-      </Box>
+      <CodeBlock textOnly>
+        {'<Slider min={"0"} max={"100"} step={"10"} />'}
+      </CodeBlock>
     </Box>
   ));

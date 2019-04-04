@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
+import CodeBlock from '../../components/CodeBlock';
 
 import Documentation from './docs.md';
 import Guidelines from './guide.md';
@@ -25,21 +26,14 @@ storiesOf('Components/Form/Radio buttons', module)
   .addDecorator(withDocs(Documentation))
   .add('Documentation', () => (
     <Box mx={3} textAlign={'left'}>
-      <Field label="Choose transaction speed">
-        <Radio label="Quick" my={2} required="false" />
-        <Radio checked label="Standard" my={2} required="false" />
-        <Radio disabled label="Slower" my={2} required="false" />
-        <Radio disabled checked label="Custom" my={2} required="false" />
-      </Field>
-      <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>{'<Radio label="Quick" />'}</code>
-        <br />
-        <code>{'<Radio checked label="Standard" />'}</code>
-        <br />
-        <code>{'<Radio disabled label="Slower" />'}</code>
-        <br />
-        <code>{'<Radio disabled checked label="Custom" />'}</code>
-      </Box>
+      <CodeBlock>
+        <Field label="Choose transaction speed">
+          <Radio label="Quick" my={2} required="false" />
+          <Radio checked label="Standard" my={2} required="false" />
+          <Radio disabled label="Slower" my={2} required="false" />
+          <Radio disabled checked label="Custom" my={2} required="false" />
+        </Field>
+      </CodeBlock>
     </Box>
   ))
   .add(

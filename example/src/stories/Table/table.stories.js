@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
+import CodeBlock from '../../components/CodeBlock';
 
 import Documentation from './docs.md';
 import Guidelines from './guide.md';
@@ -22,7 +23,7 @@ storiesOf('Components/Table', module)
   .addDecorator(withDocs(Documentation))
   .add('Documentation', () => (
     <Box mx={3} textAlign={'left'}>
-      <Box>
+      <CodeBlock>
         <Table>
           <thead>
             <tr>
@@ -53,69 +54,7 @@ storiesOf('Components/Table', module)
             </tr>
           </tbody>
         </Table>
-      </Box>
-      <br />
-      <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>{'<Table>'}</code>
-        <br />
-        <code>{'  <thead>'}</code>
-        <br />
-        <code>{'    <tr>'}</code>
-        <br />
-        <code>{'      <th>Transaction hash</th>'}</code>
-        <br />
-        <code>{'      <th>Value</th>'}</code>
-        <br />
-        <code>{'      <th>Recipient</th>'}</code>
-        <br />
-        <code>{'      <td>March 28 2019 08:47:17 AM +UTC</td>'}</code>
-        <br />
-        <code>{'    </tr>'}</code>
-        <br />
-        <code>{'  </thead>'}</code>
-        <br />
-        <code>{'  <tbody>'}</code>
-        <br />
-        <code>{'    <tr>'}</code>
-        <br />
-        <code>{'      <td>0xsb...230</td>'}</code>
-        <br />
-        <code>{'      <td>0.11 ETH</td>'}</code>
-        <br />
-        <code>{'      <td>0x4gj...1e1</td>>'}</code>
-        <br />
-        <code>{'      <td>March 28 2019 08:52:17 AM +UTC</td>'}</code>
-        <br />
-        <code>{'    </tr>'}</code>
-        <br />
-        <code>{'    <tr>'}</code>
-        <br />
-        <code>{'      <td>0xsb...230</td>'}</code>
-        <br />
-        <code>{'      <td>0.11 ETH</td>'}</code>
-        <br />
-        <code>{'      <td>0x4gj...1e1</td>'}</code>
-        <br />
-        <code>{'      <td>March 28 2019 08:52:17 AM +UTC</td>'}</code>
-        <br />
-        <code>{'    </tr>'}</code>
-        <br />
-        <code>{'    <tr>'}</code>
-        <br />
-        <code>{'      <td>0xed...c40</td>'}</code>
-        <br />
-        <code>{'      <td>0.12 ETH</td>'}</code>
-        <br />
-        <code>{'      <td>0x3fd...781</td>'}</code>
-        <br />
-        <code>{'      <td>March 28 2019 08:55:17 AM +UTC</td>'}</code>
-        <br />
-        <code>{'    </tr>'}</code>
-        <br />
-        <code>{'  </tbody>'}</code>
-        <br />
-        <code>{'</Table>'}</code>
-      </Box>
+      </CodeBlock>
     </Box>
   ))
   .add(

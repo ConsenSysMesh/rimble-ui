@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
+import CodeBlock from '../../components/CodeBlock';
 
 import Documentation from './docs.md';
 import Guidelines from './guide.md';
@@ -61,74 +62,55 @@ storiesOf('Components/Tooltip', module)
           </Box>
         </Flex>
         <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-          <code>
+          <CodeBlock textOnly>
             {
               '<Tooltip message="Top tooltip" placement="top"><OutlineButton>Show top</OutlineButton></Tooltip>'
             }
-          </code>
+          </CodeBlock>
         </Box>
         <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-          <code>
+          <CodeBlock textOnly>
             {
               '<Tooltip message="Left tooltip" placement="left"><OutlineButton>Show left</OutlineButton></Tooltip>'
             }
-          </code>
+          </CodeBlock>
         </Box>
         <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-          <code>
+          <CodeBlock textOnly>
             {
               '<Tooltip message="Bottom tooltip" placement="bottom"><OutlineButton>Show bottom</OutlineButton></Tooltip>'
             }
-          </code>
+          </CodeBlock>
         </Box>
         <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-          <code>
+          <CodeBlock textOnly>
             {
               '<Tooltip message="Right tooltip" placement="right"><OutlineButton>Show right</OutlineButton></Tooltip>'
             }
-          </code>
+          </CodeBlock>
         </Box>
       </Box>
       <br />
       <Box>
-        <Heading.h4>Colour</Heading.h4>
-        <Text.p>Choose the colour of your tooltip</Text.p>
-        <Tooltip variant="dark" message="Dark tooltip" placement="right">
-          <Button mb={3}>Show dark</Button>
-        </Tooltip>
-        <br />
-        <Tooltip variant="light" message="Light tooltip" placement="right">
-          <OutlineButton>Show light</OutlineButton>
-        </Tooltip>
+        <Heading.h4>Color</Heading.h4>
+        <Text.p>Choose the color of your tooltip</Text.p>
+        <CodeBlock>
+          <Tooltip variant="dark" message="Dark tooltip" placement="right">
+            <Button mb={3}>Show dark</Button>
+          </Tooltip>
+        </CodeBlock>
+        <CodeBlock>
+          <Tooltip variant="light" message="Light tooltip" placement="right">
+            <OutlineButton>Show light</OutlineButton>
+          </Tooltip>
+        </CodeBlock>
       </Box>
-      <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>
-          {
-            '<Tooltip variant="dark" message="Dark tooltip" placement="right"><Button>Show dark</Button></Tooltip>'
-          }
-        </code>
-      </Box>
-      <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>
-          {
-            '<Tooltip variant="light" message="Light tooltip" placement="right"><OutlineButton>Show light</OutlineButton></Tooltip>'
-          }
-        </code>
-      </Box>
-      <br />
-      <Flex
-        size="80px"
-        borderRadius="100%"
-        mx="auto"
-        my="5"
-        bg="#ccc"
-        alignItems="center"
-        justifyContent="center"
-      >
+
+      <CodeBlock>
         <Tooltip message="Wrap me around your tooltip trigger">
           <Icon name="Info" />
         </Tooltip>
-      </Flex>
+      </CodeBlock>
     </Box>
   ))
   .add(

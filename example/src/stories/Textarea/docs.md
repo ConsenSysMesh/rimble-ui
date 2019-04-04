@@ -5,7 +5,7 @@ The `Textarea` component provides a styled version of the HTML `<textarea>`.
 **Import component**
 
 ```jsx
-<Textarea rows={4} defaultValue="Type here…" />
+import { TextArea } from 'rimble-ui';
 ```
 
 <!-- STORY -->
