@@ -211,7 +211,6 @@ storiesOf('Components/Form/Inputs', module)
         {
           '<Form.Input type="url" required="true" placeholder="e.g. rimble.consensys.design" />'
         }
-        e
       </CodeBlock>
     </Box>
   ))

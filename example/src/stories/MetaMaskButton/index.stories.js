@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
+import CodeBlock from '../../components/CodeBlock';
 
 import Documentation from './docs.md';
 
@@ -17,145 +18,124 @@ storiesOf('Components/MetaMaskButton', module)
       </Box>
       <Box>
         <Heading.h4>Default</Heading.h4>
-        <MetaMaskButton mb={3} mr={3}>
-          Connect with MetaMask
-        </MetaMaskButton>
+        <CodeBlock>
+          <MetaMaskButton>Connect with MetaMask</MetaMaskButton>
+        </CodeBlock>
       </Box>
-      <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>{'<MetaMaskButton>Connect with MetaMask</MetaMaskButton>'}</code>
-      </Box>
-      <br />
+
       <Box>
         <Heading.h4>Outline</Heading.h4>
         <MetaMaskButton.outline mb={3}>
           Connect with MetaMask
         </MetaMaskButton.outline>
       </Box>
-      <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>
-          {
-            '<MetaMaskButton.outline>Connect with MetaMask</MetaMaskButton.outline>'
-          }
-        </code>
-      </Box>
-      <br />
+
+      <CodeBlock textOnly>
+        {
+          '<MetaMaskButton.outline>Connect with MetaMask</MetaMaskButton.outline>'
+        }
+      </CodeBlock>
+
       <Box>
         <Heading.h4>Different sizes</Heading.h4>
         <MetaMaskButton size="small" mb={3} mr={3}>
           Connect with MetaMask
         </MetaMaskButton>
-        <MetaMaskButton.outline size="small" mb={3}>
-          Connect with MetaMask
-        </MetaMaskButton.outline>
-      </Box>
-      <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>
+
+        <CodeBlock textOnly>
           {
             '<MetaMaskButton size="small">Connect with MetaMask</MetaMaskButton>'
           }
-        </code>
-        <br />
-      </Box>
-      <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>
+        </CodeBlock>
+
+        <MetaMaskButton.outline size="small" mb={3}>
+          Connect with MetaMask
+        </MetaMaskButton.outline>
+
+        <CodeBlock textOnly>
           {
             '<MetaMaskButton.outline size="small">Connect with MetaMask</MetaMaskButton.outline>'
           }
-        </code>
+        </CodeBlock>
       </Box>
-      <br />
       <Box>
         <MetaMaskButton size="medium" mb={3} mr={3}>
           Connect with MetaMask
         </MetaMaskButton>
-        <MetaMaskButton.outline size="medium" mb={3}>
-          Connect with MetaMask
-        </MetaMaskButton.outline>
       </Box>
-      <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>
-          {
-            '<MetaMaskButton size="medium">Connect with MetaMask</MetaMaskButton>'
-          }
-        </code>
-        <br />
-      </Box>
-      <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>
-          {
-            '<MetaMaskButton.outline size="medium">Connect with MetaMask</MetaMaskButton.outline>'
-          }
-        </code>
-      </Box>
-      <br />
+
+      <CodeBlock textOnly>
+        {'<MetaMaskButton size="medium">Connect with MetaMask</MetaMaskButton>'}
+      </CodeBlock>
+
+      <MetaMaskButton.outline size="medium" mb={3}>
+        Connect with MetaMask
+      </MetaMaskButton.outline>
+      <CodeBlock textOnly>
+        {
+          '<MetaMaskButton.outline size="medium">Connect with MetaMask</MetaMaskButton.outline>'
+        }
+      </CodeBlock>
+
       <Box>
         <MetaMaskButton size="large" mb={3} mr={3}>
           Connect with MetaMask
         </MetaMaskButton>
-        <MetaMaskButton.outline size="large" mb={3}>
-          Connect with MetaMask
-        </MetaMaskButton.outline>
       </Box>
-      <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>
-          {
-            '<MetaMaskButton size="large">Connect with MetaMask</MetaMaskButton>'
-          }
-        </code>
-        <br />
-      </Box>
-      <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>
-          {
-            '<MetaMaskButton.outline size="large">Connect with MetaMask</MetaMaskButton.outline>'
-          }
-        </code>
-      </Box>
-      <br />
+
+      <CodeBlock textOnly>
+        {'<MetaMaskButton size="large">Connect with MetaMask</MetaMaskButton>'}
+      </CodeBlock>
+
+      <MetaMaskButton.outline size="large" mb={3}>
+        Connect with MetaMask
+      </MetaMaskButton.outline>
+
+      <CodeBlock textOnly>
+        {
+          '<MetaMaskButton.outline size="large">Connect with MetaMask</MetaMaskButton.outline>'
+        }
+      </CodeBlock>
+
       <Box>
         <Heading.h4>Full-width button</Heading.h4>
         <MetaMaskButton fullWidth mb={3}>
           Connect with MetaMask
         </MetaMaskButton>
-        <MetaMaskButton.outline mb={3} fullWidth>
-          Connect with MetaMask
-        </MetaMaskButton.outline>
       </Box>
-      <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>
-          {'<MetaMaskButton fullWidth>Connect with MetaMask</MetaMaskButton>'}
-        </code>
-        <br />
-      </Box>
-      <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>
-          {
-            '<MetaMaskButton.outline fullWidth>Connect with MetaMask</MetaMaskButton.outline>'
-          }
-        </code>
-      </Box>
-      <br />
+
+      <CodeBlock textOnly>
+        {'<MetaMaskButton fullWidth>Connect with MetaMask</MetaMaskButton>'}
+      </CodeBlock>
+
+      <MetaMaskButton.outline mb={3} fullWidth>
+        Connect with MetaMask
+      </MetaMaskButton.outline>
+
+      <CodeBlock textOnly>
+        {
+          '<MetaMaskButton.outline fullWidth>Connect with MetaMask</MetaMaskButton.outline>'
+        }
+      </CodeBlock>
+
       <Box>
         <Heading.h4>Disabled</Heading.h4>
         <MetaMaskButton disabled mb={3} mr={3}>
           Connect to MetaMask
         </MetaMaskButton>
+
+        <CodeBlock textOnly>
+          {'<MetaMaskButton disabled>Connect with MetaMask</MetaMaskButton>'}
+        </CodeBlock>
         <MetaMaskButton.outline disabled mb={3} mr={3}>
           Connect to MetaMask
         </MetaMaskButton.outline>
-      </Box>
-      <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>
-          {'<MetaMaskButton disabled>Connect with MetaMask</MetaMaskButton>'}
-        </code>
-        <br />
-      </Box>
-      <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>
+
+        <CodeBlock textOnly>
           {
             '<MetaMaskButton.outline disabled>Connect with MetaMask</MetaMaskButton.outline>'
           }
-        </code>
+        </CodeBlock>
       </Box>
     </Box>
   ));
