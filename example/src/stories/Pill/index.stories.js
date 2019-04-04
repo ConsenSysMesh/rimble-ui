@@ -7,9 +7,9 @@ import Documentation from './docs.md';
 
 import { Pill, Box, Text, Heading } from 'rimble-ui';
 
-storiesOf('Components/Pill', module)
-  .addDecorator(withDocs(Documentation))
-  .add('Documentation', () => (
+storiesOf('Components/Pill', module).add(
+  'Documentation',
+  withDocs(Documentation, () => (
     <Box mx={3} textAlign={'left'}>
       <Box>
         <Heading.h2>Pill examples</Heading.h2>
@@ -49,4 +49,5 @@ storiesOf('Components/Pill', module)
         </CodeBlock>
       </Box>
     </Box>
-  ));
+  ))
+);

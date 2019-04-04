@@ -36,9 +36,9 @@ class MyCustomSlider extends Component {
   }
 }
 
-storiesOf('Components/Form/Slider', module)
-  .addDecorator(withDocs(Documentation))
-  .add('Documentation', () => (
+storiesOf('Components/Form/Slider', module).add(
+  'Documentation',
+  withDocs(Documentation, () => (
     <Box mx={3} textAlign={'left'}>
       <Box>
         <MyCustomSlider />
@@ -47,4 +47,5 @@ storiesOf('Components/Form/Slider', module)
         {'<Slider min={"0"} max={"100"} step={"10"} />'}
       </CodeBlock>
     </Box>
-  ));
+  ))
+);

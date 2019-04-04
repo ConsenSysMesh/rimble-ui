@@ -7,9 +7,9 @@ import Documentation from './docs.md';
 
 import { UPortButton, Flex, Box, Heading, Text, Button } from 'rimble-ui';
 
-storiesOf('Components/UPortButton', module)
-  .addDecorator(withDocs(Documentation))
-  .add('Documentation', () => (
+storiesOf('Components/UPortButton', module).add(
+  'Documentation',
+  withDocs(Documentation, () => (
     <Box mx={3} textAlign={'left'}>
       <Box>
         <Heading.h2>UPortButton examples</Heading.h2>
@@ -65,4 +65,5 @@ storiesOf('Components/UPortButton', module)
         </CodeBlock>
       </Box>
     </Box>
-  ));
+  ))
+);

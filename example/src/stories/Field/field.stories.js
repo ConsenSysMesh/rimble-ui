@@ -7,9 +7,9 @@ import Documentation from './docs.md';
 
 import { Input, Field, Box, Heading, Text } from 'rimble-ui';
 
-storiesOf('Components/Form/Field', module)
-  .addDecorator(withDocs(Documentation))
-  .add('Documentation', () => (
+storiesOf('Components/Form/Field', module).add(
+  'Documentation',
+  withDocs(Documentation, () => (
     <Box ml={3} textAlign={'left'}>
       <Box>
         <Field label="Public address">
@@ -23,4 +23,5 @@ storiesOf('Components/Form/Field', module)
 </Field>`}
       </CodeBlock>
     </Box>
-  ));
+  ))
+);

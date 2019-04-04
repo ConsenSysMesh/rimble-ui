@@ -24,95 +24,97 @@ import {
 } from 'rimble-ui';
 
 storiesOf('Components/Tooltip', module)
-  .addDecorator(withDocs(Documentation))
-  .add('Documentation', () => (
-    <Box mx={3} textAlign={'left'}>
-      <Box>
-        <Heading.h2>Tooltip examples</Heading.h2>
-        <Text>Different ways to use the tooltip component</Text>
+  .add(
+    'Documentation',
+    withDocs(Documentation, () => (
+      <Box mx={3} textAlign={'left'}>
+        <Box>
+          <Heading.h2>Tooltip examples</Heading.h2>
+          <Text>Different ways to use the tooltip component</Text>
+          <br />
+        </Box>
+        <Box>
+          <Heading.h4>Placement</Heading.h4>
+          <Text.p>Adjust where your tooltip appears on hover</Text.p>
+          <br />
+          <Flex>
+            <Box width={1 / 4}>
+              <Tooltip message="Top tooltip" placement="top">
+                <OutlineButton mb={3}>Show top</OutlineButton>
+              </Tooltip>
+            </Box>
+            <br />
+            <Box width={1 / 4}>
+              <Tooltip message="Left tooltip" placement="left">
+                <OutlineButton mb={3}>Show left</OutlineButton>
+              </Tooltip>
+            </Box>
+            <br />
+            <Box width={1 / 4}>
+              <Tooltip message="Bottom tooltip" placement="bottom">
+                <OutlineButton mb={3}>Show bottom</OutlineButton>
+              </Tooltip>
+            </Box>
+            <br />
+            <Box width={1 / 4}>
+              <Tooltip message="Right tooltip" placement="right">
+                <OutlineButton mb={3}>Show right</OutlineButton>
+              </Tooltip>
+            </Box>
+          </Flex>
+          <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
+            <CodeBlock textOnly>
+              {
+                '<Tooltip message="Top tooltip" placement="top"><OutlineButton>Show top</OutlineButton></Tooltip>'
+              }
+            </CodeBlock>
+          </Box>
+          <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
+            <CodeBlock textOnly>
+              {
+                '<Tooltip message="Left tooltip" placement="left"><OutlineButton>Show left</OutlineButton></Tooltip>'
+              }
+            </CodeBlock>
+          </Box>
+          <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
+            <CodeBlock textOnly>
+              {
+                '<Tooltip message="Bottom tooltip" placement="bottom"><OutlineButton>Show bottom</OutlineButton></Tooltip>'
+              }
+            </CodeBlock>
+          </Box>
+          <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
+            <CodeBlock textOnly>
+              {
+                '<Tooltip message="Right tooltip" placement="right"><OutlineButton>Show right</OutlineButton></Tooltip>'
+              }
+            </CodeBlock>
+          </Box>
+        </Box>
         <br />
-      </Box>
-      <Box>
-        <Heading.h4>Placement</Heading.h4>
-        <Text.p>Adjust where your tooltip appears on hover</Text.p>
-        <br />
-        <Flex>
-          <Box width={1 / 4}>
-            <Tooltip message="Top tooltip" placement="top">
-              <OutlineButton mb={3}>Show top</OutlineButton>
+        <Box>
+          <Heading.h4>Color</Heading.h4>
+          <Text.p>Choose the color of your tooltip</Text.p>
+          <CodeBlock>
+            <Tooltip variant="dark" message="Dark tooltip" placement="right">
+              <Button mb={3}>Show dark</Button>
             </Tooltip>
-          </Box>
-          <br />
-          <Box width={1 / 4}>
-            <Tooltip message="Left tooltip" placement="left">
-              <OutlineButton mb={3}>Show left</OutlineButton>
+          </CodeBlock>
+          <CodeBlock>
+            <Tooltip variant="light" message="Light tooltip" placement="right">
+              <OutlineButton>Show light</OutlineButton>
             </Tooltip>
-          </Box>
-          <br />
-          <Box width={1 / 4}>
-            <Tooltip message="Bottom tooltip" placement="bottom">
-              <OutlineButton mb={3}>Show bottom</OutlineButton>
-            </Tooltip>
-          </Box>
-          <br />
-          <Box width={1 / 4}>
-            <Tooltip message="Right tooltip" placement="right">
-              <OutlineButton mb={3}>Show right</OutlineButton>
-            </Tooltip>
-          </Box>
-        </Flex>
-        <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-          <CodeBlock textOnly>
-            {
-              '<Tooltip message="Top tooltip" placement="top"><OutlineButton>Show top</OutlineButton></Tooltip>'
-            }
           </CodeBlock>
         </Box>
-        <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-          <CodeBlock textOnly>
-            {
-              '<Tooltip message="Left tooltip" placement="left"><OutlineButton>Show left</OutlineButton></Tooltip>'
-            }
-          </CodeBlock>
-        </Box>
-        <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-          <CodeBlock textOnly>
-            {
-              '<Tooltip message="Bottom tooltip" placement="bottom"><OutlineButton>Show bottom</OutlineButton></Tooltip>'
-            }
-          </CodeBlock>
-        </Box>
-        <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-          <CodeBlock textOnly>
-            {
-              '<Tooltip message="Right tooltip" placement="right"><OutlineButton>Show right</OutlineButton></Tooltip>'
-            }
-          </CodeBlock>
-        </Box>
-      </Box>
-      <br />
-      <Box>
-        <Heading.h4>Color</Heading.h4>
-        <Text.p>Choose the color of your tooltip</Text.p>
-        <CodeBlock>
-          <Tooltip variant="dark" message="Dark tooltip" placement="right">
-            <Button mb={3}>Show dark</Button>
-          </Tooltip>
-        </CodeBlock>
-        <CodeBlock>
-          <Tooltip variant="light" message="Light tooltip" placement="right">
-            <OutlineButton>Show light</OutlineButton>
-          </Tooltip>
-        </CodeBlock>
-      </Box>
 
-      <CodeBlock>
-        <Tooltip message="Wrap me around your tooltip trigger">
-          <Icon name="Info" />
-        </Tooltip>
-      </CodeBlock>
-    </Box>
-  ))
+        <CodeBlock>
+          <Tooltip message="Wrap me around your tooltip trigger">
+            <Icon name="Info" />
+          </Tooltip>
+        </CodeBlock>
+      </Box>
+    ))
+  )
   .add(
     'Design guidelines',
     withDocs(Guidelines, () => (

@@ -29,16 +29,18 @@ const items = [
 ];
 
 storiesOf('Components/Form/Select', module)
-  .addDecorator(withDocs(Documentation))
-  .add('Documentation', () => (
-    <Box ml={3} textAlign={'left'}>
-      <CodeBlock>
-        <Field label="Choose your currency">
-          <Select items={items} required="false" />
-        </Field>
-      </CodeBlock>
-    </Box>
-  ))
+  .add(
+    'Documentation',
+    withDocs(Documentation, () => (
+      <Box ml={3} textAlign={'left'}>
+        <CodeBlock>
+          <Field label="Choose your currency">
+            <Select items={items} required="false" />
+          </Field>
+        </CodeBlock>
+      </Box>
+    ))
+  )
   .add(
     'Design guidelines',
     withDocs(Guidelines, () => (

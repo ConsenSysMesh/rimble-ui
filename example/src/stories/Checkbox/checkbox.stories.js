@@ -20,32 +20,34 @@ import {
 } from 'rimble-ui';
 
 storiesOf('Components/Form/Checkboxes', module)
-  .addDecorator(withDocs(Documentation))
-  .add('Documentation', () => (
-    <Box mx={3} textAlign={'left'}>
-      <CodeBlock>
-        <Checkbox label="Checkbox default" required="true" />
-      </CodeBlock>
+  .add(
+    'Documentation',
+    withDocs(Documentation, () => (
+      <Box mx={3} textAlign={'left'}>
+        <CodeBlock>
+          <Checkbox label="Checkbox default" required="true" />
+        </CodeBlock>
 
-      <CodeBlock>
-        <Checkbox checked label="Checkbox checked" required="true" />
-      </CodeBlock>
+        <CodeBlock>
+          <Checkbox checked label="Checkbox checked" required="true" />
+        </CodeBlock>
 
-      <CodeBlock>
-        <Checkbox disabled label="Checkbox disabled" required="true" />
-      </CodeBlock>
+        <CodeBlock>
+          <Checkbox disabled label="Checkbox disabled" required="true" />
+        </CodeBlock>
 
-      <CodeBlock>
-        <Checkbox
-          disabled
-          checked
-          label="Checkbox checked disabled"
-          required="true"
-          my={2}
-        />
-      </CodeBlock>
-    </Box>
-  ))
+        <CodeBlock>
+          <Checkbox
+            disabled
+            checked
+            label="Checkbox checked disabled"
+            required="true"
+            my={2}
+          />
+        </CodeBlock>
+      </Box>
+    ))
+  )
   .add(
     'Design guidelines',
     withDocs(Guidelines, () => (

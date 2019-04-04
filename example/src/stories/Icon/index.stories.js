@@ -7,9 +7,9 @@ import Documentation from './docs.md';
 
 import { Icon, Box, Heading, Text } from 'rimble-ui';
 
-storiesOf('Components/Icon', module)
-  .addDecorator(withDocs(Documentation))
-  .add('Documentation', () => (
+storiesOf('Components/Icon', module).add(
+  'Documentation',
+  withDocs(Documentation, () => (
     <Box mx={3} textAlign={'left'}>
       <Box>
         <Heading.h2>Icon examples</Heading.h2>
@@ -37,4 +37,5 @@ storiesOf('Components/Icon', module)
         </CodeBlock>
       </Box>
     </Box>
-  ));
+  ))
+);

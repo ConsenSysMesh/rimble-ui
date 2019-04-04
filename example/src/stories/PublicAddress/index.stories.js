@@ -20,14 +20,18 @@ import {
 } from 'rimble-ui';
 
 storiesOf('Components/PublicAddress', module)
-  .addDecorator(withDocs(Documentation))
-  .add('Documentation', () => (
-    <Box mx={3} textAlign={'left'}>
-      <CodeBlock>
-        <PublicAddress address={'0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2'} />
-      </CodeBlock>
-    </Box>
-  ))
+  .add(
+    'Documentation',
+    withDocs(Documentation, () => (
+      <Box mx={3} textAlign={'left'}>
+        <CodeBlock>
+          <PublicAddress
+            address={'0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2'}
+          />
+        </CodeBlock>
+      </Box>
+    ))
+  )
   .add(
     'Design guidelines',
     withDocs(Guidelines, () => (

@@ -7,9 +7,9 @@ import Documentation from './docs.md';
 
 import { TextButton, Box, Button, Heading, Text } from 'rimble-ui';
 
-storiesOf('Components/Buttons/TextButton', module)
-  .addDecorator(withDocs(Documentation))
-  .add('Documentation', () => (
+storiesOf('Components/Buttons/TextButton', module).add(
+  'Documentation',
+  withDocs(Documentation, () => (
     <Box mx={3} textAlign={'left'}>
       <Box>
         <Heading.h2>TextButton examples</Heading.h2>
@@ -39,4 +39,5 @@ storiesOf('Components/Buttons/TextButton', module)
         </CodeBlock>
       </Box>
     </Box>
-  ));
+  ))
+);

@@ -24,80 +24,82 @@ import {
 } from 'rimble-ui';
 
 storiesOf('Components/Text', module)
-  .addDecorator(withDocs(Documentation))
-  .add('Documentation', () => (
-    <Box mx={3} textAlign={'left'}>
-      <Box>
-        <Heading.h2>Text examples</Heading.h2>
-        <Text>Different ways to use the Text component</Text>
+  .add(
+    'Documentation',
+    withDocs(Documentation, () => (
+      <Box mx={3} textAlign={'left'}>
+        <Box>
+          <Heading.h2>Text examples</Heading.h2>
+          <Text>Different ways to use the Text component</Text>
+          <br />
+        </Box>
+        <Box>
+          <Heading.h4>Default text</Heading.h4>
+
+          <Text>
+            By default, the Text component will render text inside a{' '}
+            <code>{'<div>'}</code> element.
+          </Text>
+          <br />
+          <CodeBlock>
+            <Text>The intent of Ethereum is to...</Text>
+          </CodeBlock>
+        </Box>
+
         <br />
-      </Box>
-      <Box>
-        <Heading.h4>Default text</Heading.h4>
+        <Box>
+          <Heading.h4>Text with span</Heading.h4>
+          <Text>
+            Renders text inside a <code>{'<span>'}</code> element.
+          </Text>
+          <br />
+          <CodeBlock>
+            <Text.span>The intent of Ethereum is to...</Text.span>
+          </CodeBlock>
+        </Box>
 
-        <Text>
-          By default, the Text component will render text inside a{' '}
-          <code>{'<div>'}</code> element.
-        </Text>
         <br />
-        <CodeBlock>
-          <Text>The intent of Ethereum is to...</Text>
-        </CodeBlock>
-      </Box>
+        <Box>
+          <Heading.h4>Paragraph text</Heading.h4>
+          <Text>
+            Renders text inside a <code>{'<p>'}</code> element.
+          </Text>
+          <CodeBlock>
+            <Text.p>The intent of Ethereum is to ... </Text.p>
+          </CodeBlock>
+        </Box>
 
-      <br />
-      <Box>
-        <Heading.h4>Text with span</Heading.h4>
-        <Text>
-          Renders text inside a <code>{'<span>'}</code> element.
-        </Text>
         <br />
-        <CodeBlock>
-          <Text.span>The intent of Ethereum is to...</Text.span>
-        </CodeBlock>
-      </Box>
+        <Box>
+          <Heading.h4>Text with strikethrough</Heading.h4>
+          <CodeBlock>
+            <Text.s>The intent of Ethereum is to... </Text.s>
+          </CodeBlock>
+        </Box>
 
-      <br />
-      <Box>
-        <Heading.h4>Paragraph text</Heading.h4>
-        <Text>
-          Renders text inside a <code>{'<p>'}</code> element.
-        </Text>
-        <CodeBlock>
-          <Text.p>The intent of Ethereum is to ... </Text.p>
-        </CodeBlock>
-      </Box>
+        <Box>
+          <Heading.h4>Bold Text</Heading.h4>
+          <CodeBlock>
+            <Text bold>The intent of Ethereum is to...</Text>
+          </CodeBlock>
+        </Box>
 
-      <br />
-      <Box>
-        <Heading.h4>Text with strikethrough</Heading.h4>
-        <CodeBlock>
-          <Text.s>The intent of Ethereum is to... </Text.s>
-        </CodeBlock>
-      </Box>
+        <Box>
+          <Heading.h4>Italic Text</Heading.h4>
+          <CodeBlock>
+            <Text italic>The intent of Ethereum is to...</Text>
+          </CodeBlock>
+        </Box>
 
-      <Box>
-        <Heading.h4>Bold Text</Heading.h4>
-        <CodeBlock>
-          <Text bold>The intent of Ethereum is to...</Text>
-        </CodeBlock>
+        <Box>
+          <Heading.h4>Caps Text</Heading.h4>
+          <CodeBlock>
+            <Text caps>The intent of Ethereum is to...</Text>
+          </CodeBlock>
+        </Box>
       </Box>
-
-      <Box>
-        <Heading.h4>Italic Text</Heading.h4>
-        <CodeBlock>
-          <Text italic>The intent of Ethereum is to...</Text>
-        </CodeBlock>
-      </Box>
-
-      <Box>
-        <Heading.h4>Caps Text</Heading.h4>
-        <CodeBlock>
-          <Text caps>The intent of Ethereum is to...</Text>
-        </CodeBlock>
-      </Box>
-    </Box>
-  ))
+    ))
+  )
   .add(
     'Design guidelines',
     withDocs(Guidelines, () => (

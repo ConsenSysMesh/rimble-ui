@@ -22,23 +22,24 @@ import {
 } from 'rimble-ui';
 
 storiesOf('Components/Blockie', module)
-  .addDecorator(withDocs(Documentation))
-  .add('Documentation', () => (
-    <Box mx={3} textAlign={'left'}>
-      <Box>
-        <Blockie
-          opts={{
-            seed: 'foo',
-            color: '#dfe',
-            bgcolor: '#a71',
-            size: 15,
-            scale: 3,
-            spotcolor: '#000',
-          }}
-        />
+  .add(
+    'Documentation',
+    withDocs(Documentation, () => (
+      <Box mx={3} textAlign={'left'}>
+        <Box>
+          <Blockie
+            opts={{
+              seed: 'foo',
+              color: '#dfe',
+              bgcolor: '#a71',
+              size: 15,
+              scale: 3,
+              spotcolor: '#000',
+            }}
+          />
 
-        <CodeBlock textOnly>
-          {`<Blockie
+          <CodeBlock textOnly>
+            {`<Blockie
   opts={{
     seed: 'foo',
     color: '#dfe',
@@ -48,10 +49,11 @@ storiesOf('Components/Blockie', module)
     spotcolor: '#000',
   }}
 />`}
-        </CodeBlock>
+          </CodeBlock>
+        </Box>
       </Box>
-    </Box>
-  ))
+    ))
+  )
   .add(
     'Design guidelines',
     withDocs(Guidelines, () => (

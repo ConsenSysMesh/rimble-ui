@@ -81,9 +81,9 @@ class YourModal extends Component {
   }
 }
 
-storiesOf('Components/Modal', module)
-  .addDecorator(withDocs(Documentation))
-  .add('Documentation', () => {
+storiesOf('Components/Modal', module).add(
+  'Documentation',
+  withDocs(Documentation, () => {
     return (
       <div>
         <YourModal />
@@ -147,4 +147,5 @@ storiesOf('Components/Modal', module)
         </CodeBlock>
       </div>
     );
-  });
+  })
+);

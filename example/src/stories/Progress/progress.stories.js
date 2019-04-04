@@ -7,12 +7,13 @@ import Documentation from './docs.md';
 
 import { Progress, Box, Text } from 'rimble-ui';
 
-storiesOf('Components/Form/Progress bar', module)
-  .addDecorator(withDocs(Documentation))
-  .add('Documentation', () => (
+storiesOf('Components/Form/Progress bar', module).add(
+  'Documentation',
+  withDocs(Documentation, () => (
     <Box mx={3} textAlign={'left'}>
       <CodeBlock>
         <Progress value={0.5} />
       </CodeBlock>
     </Box>
-  ));
+  ))
+);

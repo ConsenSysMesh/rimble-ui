@@ -7,9 +7,9 @@ import Documentation from './docs.md';
 
 import { Flex, Box } from 'rimble-ui';
 
-storiesOf('Components/Layout/Flex', module)
-  .addDecorator(withDocs(Documentation))
-  .add('Documentation', () => (
+storiesOf('Components/Layout/Flex', module).add(
+  'Documentation',
+  withDocs(Documentation, () => (
     <Box>
       <Box mx={3} textAlign={'left'}>
         <Flex>
@@ -34,4 +34,5 @@ storiesOf('Components/Layout/Flex', module)
 </Flex>`}
       </CodeBlock>
     </Box>
-  ));
+  ))
+);

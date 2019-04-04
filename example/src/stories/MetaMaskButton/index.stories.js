@@ -7,9 +7,9 @@ import Documentation from './docs.md';
 
 import { MetaMaskButton, Box, Heading, Text } from 'rimble-ui';
 
-storiesOf('Components/MetaMaskButton', module)
-  .addDecorator(withDocs(Documentation))
-  .add('Documentation', () => (
+storiesOf('Components/MetaMaskButton', module).add(
+  'Documentation',
+  withDocs(Documentation, () => (
     <Box mx={3} textAlign={'left'}>
       <Box>
         <Heading.h2>MetaMaskButton examples</Heading.h2>
@@ -138,4 +138,5 @@ storiesOf('Components/MetaMaskButton', module)
         </CodeBlock>
       </Box>
     </Box>
-  ));
+  ))
+);

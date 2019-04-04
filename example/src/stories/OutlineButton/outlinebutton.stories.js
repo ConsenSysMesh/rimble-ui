@@ -19,9 +19,9 @@ import {
   Card,
 } from 'rimble-ui';
 
-storiesOf('Components/Buttons/OutlineButton', module)
-  .addDecorator(withDocs(Documentation))
-  .add('Documentation', () => (
+storiesOf('Components/Buttons/OutlineButton', module).add(
+  'Documentation',
+  withDocs(Documentation, () => (
     <Box mx={3} textAlign={'left'}>
       <Box>
         <Heading.h2>OutlineButton examples</Heading.h2>
@@ -103,4 +103,5 @@ storiesOf('Components/Buttons/OutlineButton', module)
       </Box>
       <br />
     </Box>
-  ));
+  ))
+);

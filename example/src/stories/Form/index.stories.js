@@ -54,9 +54,9 @@ class MyCustomForm extends Component {
   }
 }
 
-storiesOf('Components/Form/Form', module)
-  .addDecorator(withDocs(Documentation))
-  .add('Documentation', () => (
+storiesOf('Components/Form/Form', module).add(
+  'Documentation',
+  withDocs(Documentation, () => (
     <div>
       <Card>
         <MyCustomForm />
@@ -110,4 +110,5 @@ class MyCustomForm extends Component {
   }
 }`}</CodeBlock>
     </div>
-  ));
+  ))
+);

@@ -20,14 +20,16 @@ import {
 } from 'rimble-ui';
 
 storiesOf('Components/QR Code', module)
-  .addDecorator(withDocs(Documentation))
-  .add('Documentation', () => (
-    <Box mx={3} textAlign={'left'}>
-      <CodeBlock>
-        <QR value="0xAc03BB73b6a9e108530AFf4Df5077c2B3D481e5A" />
-      </CodeBlock>
-    </Box>
-  ))
+  .add(
+    'Documentation',
+    withDocs(Documentation, () => (
+      <Box mx={3} textAlign={'left'}>
+        <CodeBlock>
+          <QR value="0xAc03BB73b6a9e108530AFf4Df5077c2B3D481e5A" />
+        </CodeBlock>
+      </Box>
+    ))
+  )
   .add(
     'Design guidelines',
     withDocs(Guidelines, () => (

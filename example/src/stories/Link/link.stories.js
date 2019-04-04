@@ -7,9 +7,9 @@ import Documentation from './docs.md';
 
 import { Link, Box } from 'rimble-ui';
 
-storiesOf('Components/Link', module)
-  .addDecorator(withDocs(Documentation))
-  .add('Documentation', () => (
+storiesOf('Components/Link', module).add(
+  'Documentation',
+  withDocs(Documentation, () => (
     <Box mx={3} textAlign={'left'}>
       <CodeBlock>
         <Link href="#!" target="_blank" title="This link goes somewhere">
@@ -17,4 +17,5 @@ storiesOf('Components/Link', module)
         </Link>
       </CodeBlock>
     </Box>
-  ));
+  ))
+);

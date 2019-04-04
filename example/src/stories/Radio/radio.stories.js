@@ -23,19 +23,21 @@ import {
 } from 'rimble-ui';
 
 storiesOf('Components/Form/Radio buttons', module)
-  .addDecorator(withDocs(Documentation))
-  .add('Documentation', () => (
-    <Box mx={3} textAlign={'left'}>
-      <CodeBlock>
-        <Field label="Choose transaction speed">
-          <Radio label="Quick" my={2} required="false" />
-          <Radio checked label="Standard" my={2} required="false" />
-          <Radio disabled label="Slower" my={2} required="false" />
-          <Radio disabled checked label="Custom" my={2} required="false" />
-        </Field>
-      </CodeBlock>
-    </Box>
-  ))
+  .add(
+    'Documentation',
+    withDocs(Documentation, () => (
+      <Box mx={3} textAlign={'left'}>
+        <CodeBlock>
+          <Field label="Choose transaction speed">
+            <Radio label="Quick" my={2} required="false" />
+            <Radio checked label="Standard" my={2} required="false" />
+            <Radio disabled label="Slower" my={2} required="false" />
+            <Radio disabled checked label="Custom" my={2} required="false" />
+          </Field>
+        </CodeBlock>
+      </Box>
+    ))
+  )
   .add(
     'Design guidelines',
     withDocs(Guidelines, () => (
