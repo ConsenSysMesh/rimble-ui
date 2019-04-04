@@ -31,7 +31,7 @@ class CodeBlock extends React.Component {
   };
   render() {
     return (
-      <div>
+      <Box mb={4}>
         {this.props.textOnly ? (
           <Box>
             <Flex
@@ -40,7 +40,7 @@ class CodeBlock extends React.Component {
               position={'relative'}
               mb={'-1em'}
             >
-              <Heading.h6>How to call</Heading.h6>
+              <Heading.h6>Example code</Heading.h6>
               <OutlineButton size="small" onClick={this.copyToClipboard}>
                 {this.state.copySuccess
                   ? this.state.copySuccess
@@ -72,7 +72,7 @@ class CodeBlock extends React.Component {
               position={'relative'}
               mb={'-1em'}
             >
-              <Heading.h6>How to call</Heading.h6>
+              <Heading.h6>Example code</Heading.h6>
               <OutlineButton size="small" onClick={this.copyToClipboard}>
                 {this.state.copySuccess
                   ? this.state.copySuccess
@@ -98,7 +98,7 @@ class CodeBlock extends React.Component {
             </pre>
           </Box>
         )}
-      </div>
+      </Box>
     );
   }
 }

@@ -39,47 +39,29 @@ storiesOf('Components/Buttons/Button', module).add(
           Use to show users the primary action(s) they can take from the screen
           they're on.
         </Text.p>
-        <Button mb={3}>Connect wallet</Button>
-        <CodeBlock>{`<Button mb={3}>Connect wallet</Button>`}</CodeBlock>
+        <CodeBlock>
+          <Button>Connect wallet</Button>
+        </CodeBlock>
       </Box>
       <br />
       <Box>
         <Heading.h4>Different sizes</Heading.h4>
-        <Button size="small" mb={3}>
-          Connect wallet
-        </Button>
         <CodeBlock>
-          {`<Button size="small" mb={3}>
-  Connect wallet
-</Button>`}
+          <Button size="small">Connect wallet</Button>
         </CodeBlock>
         <br />
-        <Button size="medium" mb={3}>
-          Connect wallet
-        </Button>
         <CodeBlock>
-          {`<Button size="medium" mb={3}>
-  Connect wallet
-</Button>`}
+          <Button size="medium">Connect wallet</Button>
         </CodeBlock>
-        <br />
-        <Button size="large" mb={3}>
-          Connect wallet
-        </Button>
+
         <CodeBlock>
-          {`<Button size="large" mb={3}>
-  Connect wallet
-</Button>`}
+          <Button size="large">Connect wallet</Button>
         </CodeBlock>
+
         <br />
         <Heading.h4>Full-width button</Heading.h4>
-        <Button fullWidth mb={3}>
-          Connect wallet
-        </Button>
         <CodeBlock>
-          {`<Button fullWidth mb={3}>
-  Connect wallet
-</Button>`}
+          <Button fullWidth>Connect wallet</Button>
         </CodeBlock>
       </Box>
       <br />
@@ -89,13 +71,9 @@ storiesOf('Components/Buttons/Button', module).add(
           Use to indicate to the user that they need to do something before they
           can perform the action.
         </Text.p>
-        <Button disabled mb={3}>
-          Connect wallet
-        </Button>
-        <CodeBlock>{``}</CodeBlock>
-        <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-          <code>{'<Button disabled>Connect wallet</Button>'}</code>
-        </Box>
+        <CodeBlock>
+          <Button disabled>Connect wallet</Button>
+        </CodeBlock>
       </Box>
       <br />
       <Box>
@@ -105,29 +83,17 @@ storiesOf('Components/Buttons/Button', module).add(
           should support button copy and not replace. Copy is less ambiguous
           than an icon.
         </Text.p>
-        <Button icon="Send" mb="3">
-          Send Ether
-        </Button>
-        <br />
-        <Button icon="Send" iconpos="right" mb="3">
-          Send Ether
-        </Button>
-        <br />
-        <Button icon="MoreHoriz" icononly mb="3" mr={2} />
-        <CodeBlock>{``}</CodeBlock>
-        <CodeBlock>{``}</CodeBlock>
-        <CodeBlock>{``}</CodeBlock>
-        <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-          <code>{'<Button icon="Send">Send Ether</Button>'}</code>
-        </Box>
-        <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-          <code>
-            {'<Button icon="Check" iconpos="right">Send Ether</Button>'}
-          </code>
-        </Box>
-        <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-          <code>{'<Button icon="MoreHoriz" icononly mb="3" mr={2} />'}</code>
-        </Box>
+        <CodeBlock>
+          <Button icon="Send">Send Ether</Button>
+        </CodeBlock>
+        <CodeBlock>
+          <Button icon="Send" iconpos="right">
+            Send Ether
+          </Button>
+        </CodeBlock>
+        <CodeBlock>
+          <Button icon="MoreHoriz" icononly />
+        </CodeBlock>
       </Box>
       <br />
       <Box>
@@ -137,13 +103,11 @@ storiesOf('Components/Buttons/Button', module).add(
           If possible, include copy that further explains what's happening like
           "Loading" or "Sending"
         </Text.p>
-        <Button mb={3}>
-          <Loader color="white" />
-        </Button>
-        <CodeBlock>{``}</CodeBlock>
-        <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-          <code>{'<Button><loader color="white" /></Button>'}</code>
-        </Box>
+        <CodeBlock>
+          <Button>
+            <Loader color="white" />
+          </Button>
+        </CodeBlock>
       </Box>
     </Box>
   ))
