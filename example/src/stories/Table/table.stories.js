@@ -76,7 +76,11 @@ storiesOf('Components/Table', module)
             and row headers. Layout tables are just read in source code order,
             which can create serious confusion for those using screen readers.
             For more explanation,{' '}
-            <Link href="https://webaim.org/techniques/tables/">
+            <Link
+              href="https://webaim.org/techniques/tables/"
+              target="_blank"
+              title="Creating Accessible Tables"
+            >
               read about accessible tables
             </Link>
             .

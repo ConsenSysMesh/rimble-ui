@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
+import { linkTo } from '@storybook/addon-links';
 import CodeBlock from '../../components/CodeBlock';
 
 import Documentation from './docs.md';
@@ -339,8 +340,15 @@ storiesOf('Components/ToastMessage', module)
             the success of completing a task, for example a network failure.
             They dismiss automatically so things can be missed easily. Note:
             users are able to dismiss them immediately manually. For critical
-            information, use <Link href="#">Modal</Link> to bring that info to
-            the user's attention.
+            information, use{' '}
+            <Link
+              onClick={linkTo('components-modal', 'documentation')}
+              title="Rimble UI Modal component"
+              href="javascript:;"
+            >
+              Modal
+            </Link>{' '}
+            to bring that info to the user's attention.
           </Text.p>
         </Box>
         <br />
@@ -594,9 +602,15 @@ storiesOf('Components/ToastMessage', module)
           <Text>
             <em>
               Note: it may be preferable to use alternative components like{' '}
-              <Link href="#">Modal</Link> to bring a transaction failure to a
-              user's attention, as they can't be missed and provide more space
-              for explanation.
+              <Link
+                onClick={linkTo('components-modal', 'documentation')}
+                title="Rimble UI Modal component"
+                href="javascript:;"
+              >
+                Modal
+              </Link>{' '}
+              to bring a transaction failure to a user's attention, as they
+              can't be missed and provide more space for explanation.
             </em>
           </Text>
           <br />

@@ -23,9 +23,7 @@ import installing from './installing.md';
 // Global styles for storybook-readme. Applies to ALL stories
 configureReadme({
   StoryPreview: ({ children }) => (
-    <div style={{ margin: '0', maxWidth: '100%', display: 'block' }}>
-      {children}
-    </div>
+    <div style={{ margin: '1.5em 0' }}>{children}</div>
   ),
 });
 

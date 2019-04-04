@@ -209,8 +209,14 @@ storiesOf('Components/Text', module)
             Make it easier for your users to read your copy. The lower the
             reading age, the simpler it will be for them to consume your
             information.{' '}
-            <Link href="http://www.hemingwayapp.com">Hemingway app</Link> makes
-            it easier to simplify your writing.
+            <Link
+              href="http://www.hemingwayapp.com"
+              target="_blank"
+              title="Hemingway Editor"
+            >
+              Hemingway app
+            </Link>{' '}
+            makes it easier to simplify your writing.
           </Text.p>
         </Box>
 
