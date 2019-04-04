@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
+import CodeBlock from '../../components/CodeBlock';
 
 import Documentation from './docs.md';
 import Guidelines from './guide.md';
@@ -35,13 +36,19 @@ storiesOf('Components/Blockie', module)
             spotcolor: '#000',
           }}
         />
-      </Box>
-      <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>
-          {
-            '<Blockie opts={{seed: "foo", color: "#dfe", bgcolor: "#a71", size: 15, scale: 3, spotcolor: "#000"}} />'
-          }
-        </code>
+
+        <CodeBlock textOnly>
+          {`<Blockie
+  opts={{
+    seed: 'foo',
+    color: '#dfe',
+    bgcolor: '#a71',
+    size: 15,
+    scale: 3,
+    spotcolor: '#000',
+  }}
+/>`}
+        </CodeBlock>
       </Box>
     </Box>
   ))

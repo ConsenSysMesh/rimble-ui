@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
-
+import CodeBlock from '../../components/CodeBlock';
 import Documentation from './docs.md';
 import Guidelines from './guide.md';
 
@@ -26,91 +26,65 @@ storiesOf('Components/Avatar', module)
         <Text>Different ways to use the Avatar component</Text>
         <br />
       </Box>
+
       <Box>
         <Heading.h4>Standard avatar</Heading.h4>
-        <Avatar mb={3} />
+
+        <CodeBlock>
+          <Avatar />
+        </CodeBlock>
       </Box>
-      <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>{'<Avatar />'}</code>
-      </Box>
+
       <br />
       <Box>
         <Heading.h4>Standard with image</Heading.h4>
-        <Avatar
-          mb={3}
-          src="https://airswap-token-images.s3.amazonaws.com/DAI.png"
-        />
+        <CodeBlock>
+          <Avatar src="https://airswap-token-images.s3.amazonaws.com/DAI.png" />
+        </CodeBlock>
       </Box>
-      <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>
-          {
-            '<Avatar src="https://airswap-token-images.s3.amazonaws.com/DAI.png" />'
-          }
-        </code>
-      </Box>
+
       <br />
       <Box>
         <Heading.h4>Custom size</Heading.h4>
-        <Avatar
-          mb={3}
-          size="100px"
-          src="https://airswap-token-images.s3.amazonaws.com/DAI.png"
-        />
+        <CodeBlock>
+          <Avatar
+            size="100px"
+            src="https://airswap-token-images.s3.amazonaws.com/DAI.png"
+          />
+        </CodeBlock>
       </Box>
-      <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>
-          {
-            '<Avatar size="100px" src="https://airswap-token-images.s3.amazonaws.com/DAI.png" />'
-          }
-        </code>
-      </Box>
+
       <br />
       <Box>
         <Heading.h4>Large avatar</Heading.h4>
-        <Avatar
-          mb={3}
-          size="large"
-          src="https://airswap-token-images.s3.amazonaws.com/DAI.png"
-        />
+        <CodeBlock>
+          <Avatar
+            size="large"
+            src="https://airswap-token-images.s3.amazonaws.com/DAI.png"
+          />
+        </CodeBlock>
       </Box>
-      <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>
-          {
-            '<Avatar size="large" src="https://airswap-token-images.s3.amazonaws.com/DAI.png" />'
-          }
-        </code>
-      </Box>
+
       <br />
       <Box>
         <Heading.h4>Medium avatar</Heading.h4>
-        <Avatar
-          mb={3}
-          size="medium"
-          src="https://airswap-token-images.s3.amazonaws.com/DAI.png"
-        />
+        <CodeBlock>
+          <Avatar
+            size="medium"
+            src="https://airswap-token-images.s3.amazonaws.com/DAI.png"
+          />
+        </CodeBlock>
       </Box>
-      <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>
-          {
-            '<Avatar size="medium" src="https://airswap-token-images.s3.amazonaws.com/DAI.png" />'
-          }
-        </code>
-      </Box>
+
       <br />
       <Box>
         <Heading.h4>Small avatar</Heading.h4>
-        <Avatar
-          mb={3}
-          size="small"
-          src="https://airswap-token-images.s3.amazonaws.com/DAI.png"
-        />
-      </Box>
-      <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>
-          {
-            '<Avatar size="small" src="https://airswap-token-images.s3.amazonaws.com/DAI.png" />'
-          }
-        </code>
+        <CodeBlock>
+          <Avatar
+            size="small"
+            src="https://airswap-token-images.s3.amazonaws.com/DAI.png"
+          />
+        </CodeBlock>
       </Box>
       <br />
     </Box>

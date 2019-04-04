@@ -2,6 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
 import { linkTo } from '@storybook/addon-links';
+import CodeBlock from '../../components/CodeBlock';
 
 import Documentation from './docs.md';
 import Guidelines from './guide.md';
@@ -39,9 +40,7 @@ storiesOf('Components/Buttons/Button', module).add(
           they're on.
         </Text.p>
         <Button mb={3}>Connect wallet</Button>
-        <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-          <code>{'<Button>Connect wallet</Button>'}</code>
-        </Box>
+        <CodeBlock>{`<Button mb={3}>Connect wallet</Button>`}</CodeBlock>
       </Box>
       <br />
       <Box>
@@ -49,31 +48,39 @@ storiesOf('Components/Buttons/Button', module).add(
         <Button size="small" mb={3}>
           Connect wallet
         </Button>
-        <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-          <code>{'<Button size="small">Connect wallet</Button>'}</code>
-        </Box>
+        <CodeBlock>
+          {`<Button size="small" mb={3}>
+  Connect wallet
+</Button>`}
+        </CodeBlock>
         <br />
         <Button size="medium" mb={3}>
           Connect wallet
         </Button>
-        <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-          <code>{'<Button size="medium">Connect wallet</Button>'}</code>
-        </Box>
+        <CodeBlock>
+          {`<Button size="medium" mb={3}>
+  Connect wallet
+</Button>`}
+        </CodeBlock>
         <br />
         <Button size="large" mb={3}>
           Connect wallet
         </Button>
-        <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-          <code>{'<Button size="large">Connect wallet</Button>'}</code>
-        </Box>
+        <CodeBlock>
+          {`<Button size="large" mb={3}>
+  Connect wallet
+</Button>`}
+        </CodeBlock>
         <br />
         <Heading.h4>Full-width button</Heading.h4>
         <Button fullWidth mb={3}>
           Connect wallet
         </Button>
-        <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-          <code>{'<Button fullWidth>Connect wallet</Button>'}</code>
-        </Box>
+        <CodeBlock>
+          {`<Button fullWidth mb={3}>
+  Connect wallet
+</Button>`}
+        </CodeBlock>
       </Box>
       <br />
       <Box>
@@ -85,6 +92,7 @@ storiesOf('Components/Buttons/Button', module).add(
         <Button disabled mb={3}>
           Connect wallet
         </Button>
+        <CodeBlock>{``}</CodeBlock>
         <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
           <code>{'<Button disabled>Connect wallet</Button>'}</code>
         </Box>
@@ -106,6 +114,9 @@ storiesOf('Components/Buttons/Button', module).add(
         </Button>
         <br />
         <Button icon="MoreHoriz" icononly mb="3" mr={2} />
+        <CodeBlock>{``}</CodeBlock>
+        <CodeBlock>{``}</CodeBlock>
+        <CodeBlock>{``}</CodeBlock>
         <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
           <code>{'<Button icon="Send">Send Ether</Button>'}</code>
         </Box>
@@ -129,6 +140,7 @@ storiesOf('Components/Buttons/Button', module).add(
         <Button mb={3}>
           <Loader color="white" />
         </Button>
+        <CodeBlock>{``}</CodeBlock>
         <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
           <code>{'<Button><loader color="white" /></Button>'}</code>
         </Box>
