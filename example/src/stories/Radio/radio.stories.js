@@ -26,7 +26,7 @@ storiesOf('Components/Form/Radio buttons', module)
   .add(
     'Documentation',
     withDocs(Documentation, () => (
-      <Box mx={3} textAlign={'left'}>
+      <Box>
         <CodeBlock>
           <Field label="Choose transaction speed">
             <Radio label="Quick" my={2} required="false" />
@@ -41,7 +41,7 @@ storiesOf('Components/Form/Radio buttons', module)
   .add(
     'Design guidelines',
     withDocs(Guidelines, () => (
-      <Box mx={3} textAlign={'left'}>
+      <Box>
         <Box>
           <Heading.h2>Design</Heading.h2>
           <Text>

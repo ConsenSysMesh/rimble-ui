@@ -27,7 +27,7 @@ storiesOf('Components/Tooltip', module)
   .add(
     'Documentation',
     withDocs(Documentation, () => (
-      <Box mx={3} textAlign={'left'}>
+      <Box>
         <Box>
           <Heading.h2>Tooltip examples</Heading.h2>
           <Text>Different ways to use the tooltip component</Text>
@@ -118,7 +118,7 @@ storiesOf('Components/Tooltip', module)
   .add(
     'Design guidelines',
     withDocs(Guidelines, () => (
-      <Box mx={3} textAlign={'left'}>
+      <Box>
         <Box>
           <Heading.h2>Design and content</Heading.h2>
           <Text>

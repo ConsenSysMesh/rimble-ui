@@ -10,7 +10,7 @@ import { Image, Box, Text } from 'rimble-ui';
 storiesOf('Components/Image', module).add(
   'Documentation',
   withDocs(Documentation, () => (
-    <Box mx={3} textAlign={'left'}>
+    <Box>
       <CodeBlock>
         <Image
           src="https://source.unsplash.com/random/1280x720"

@@ -10,12 +10,12 @@ import { Box } from 'rimble-ui';
 storiesOf('Components/Layout/Box', module).add(
   'Documentation',
   withDocs(Documentation, () => (
-    <div style={{ minWidth: '500px' }}>
+    <Box>
       <CodeBlock>
         <Box p={3} fontSize={4} width={[1, 1, 1 / 2]} color="white" bg="salmon">
           This is a Box
         </Box>
       </CodeBlock>
-    </div>
+    </Box>
   ))
 );

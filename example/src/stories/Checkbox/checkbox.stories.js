@@ -23,7 +23,7 @@ storiesOf('Components/Form/Checkboxes', module)
   .add(
     'Documentation',
     withDocs(Documentation, () => (
-      <Box mx={3} textAlign={'left'}>
+      <Box>
         <CodeBlock>
           <Checkbox label="Checkbox default" required="true" />
         </CodeBlock>

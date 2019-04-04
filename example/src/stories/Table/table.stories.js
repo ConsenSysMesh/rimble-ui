@@ -23,7 +23,7 @@ storiesOf('Components/Table', module)
   .add(
     'Documentation',
     withDocs(Documentation, () => (
-      <Box mx={3} textAlign={'left'}>
+      <Box>
         <CodeBlock>
           <Table>
             <thead>
@@ -62,7 +62,7 @@ storiesOf('Components/Table', module)
   .add(
     'Design guidelines',
     withDocs(Guidelines, () => (
-      <Box mx={3} textAlign={'left'}>
+      <Box>
         <Box>
           <Heading.h2>Design and content</Heading.h2>
           <Text.p>

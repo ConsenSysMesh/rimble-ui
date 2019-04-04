@@ -11,7 +11,7 @@ storiesOf('Components/Layout/Flex', module).add(
   'Documentation',
   withDocs(Documentation, () => (
     <Box>
-      <Box mx={3} textAlign={'left'}>
+      <Box>
         <Flex>
           <Box p={3} width={1 / 2} color="salmon" bg="black">
             Flex

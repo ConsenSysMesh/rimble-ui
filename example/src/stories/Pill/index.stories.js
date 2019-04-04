@@ -10,7 +10,7 @@ import { Pill, Box, Text, Heading } from 'rimble-ui';
 storiesOf('Components/Pill', module).add(
   'Documentation',
   withDocs(Documentation, () => (
-    <Box mx={3} textAlign={'left'}>
+    <Box>
       <Box>
         <Heading.h2>Pill examples</Heading.h2>
         <Text.p>Different ways to use the pill component</Text.p>

@@ -26,7 +26,7 @@ storiesOf('Components/Form/Inputs', module)
   .add(
     'Documentation',
     withDocs(Documentation, () => (
-      <Box mx={3} textAlign={'left'}>
+      <Box>
         <Box>
           <Heading.h2>Input examples</Heading.h2>
           <Text>
@@ -221,7 +221,7 @@ storiesOf('Components/Form/Inputs', module)
   .add(
     'Design guidelines',
     withDocs(Guidelines, () => (
-      <Box mx={3} textAlign={'left'}>
+      <Box>
         <Box>
           <Heading.h2>Design</Heading.h2>
           <Text>

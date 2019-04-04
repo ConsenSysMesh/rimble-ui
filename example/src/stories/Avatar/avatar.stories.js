@@ -22,7 +22,7 @@ storiesOf('Components/Avatar', module)
   .add(
     'Documentation',
     withDocs(Documentation, () => (
-      <Box mx={3} textAlign={'left'}>
+      <Box>
         <Box>
           <Heading.h2>Avatar examples</Heading.h2>
           <Text>Different ways to use the Avatar component</Text>
@@ -96,7 +96,7 @@ storiesOf('Components/Avatar', module)
     'Design guidelines',
     withDocs(Guidelines, () => (
       <Box>
-        <Box mx={3} textAlign={'left'}>
+        <Box>
           <Box>
             <Heading.h2>Design</Heading.h2>
             <Text.p>Some best practice for using avatars</Text.p>

@@ -24,7 +24,7 @@ storiesOf('Components/ToastMessage', module)
   .add(
     'Documentation',
     withDocs(Documentation, () => (
-      <Box mx={3} textAlign={'left'}>
+      <Box>
         <Box>
           <Heading.h2>ToastMessage examples</Heading.h2>
           <Text>Different ways to use the ToastMessage component</Text>
@@ -243,7 +243,7 @@ storiesOf('Components/ToastMessage', module)
   .add(
     'Design guidelines',
     withDocs(Guidelines, () => (
-      <Box mx={3} textAlign={'left'}>
+      <Box>
         <Box>
           <Heading.h2>Design</Heading.h2>
           <Text>
@@ -697,7 +697,7 @@ storiesOf('Components/ToastMessage', module)
   .add(
     'Provider documentation',
     withDocs(ProviderDocumentation, () => (
-      <Box mx={3} textAlign={'left'}>
+      <Box>
         <Box>
           <Heading.h2>ToastMessage.provider previews</Heading.h2>
           <Text.p> Preview each ToastMessage and see how to call it</Text.p>

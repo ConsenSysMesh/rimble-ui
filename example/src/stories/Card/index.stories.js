@@ -154,7 +154,7 @@ storiesOf('Components/Card', module)
   .add(
     'Design Guidelines',
     withDocs(Guidelines, () => (
-      <Box mx={3} textAlign={'left'}>
+      <Box>
         <Card width={'420px'} my={5} px={4}>
           <Text
             caps

@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { linkTo } from '@storybook/addon-links';
-import { doc } from 'storybook-readme';
+import { doc, configureReadme } from 'storybook-readme';
 
 import {
   Box,
@@ -19,6 +19,15 @@ import {
 
 import theme from './theme.md';
 import installing from './installing.md';
+
+// Global styles for storybook-readme. Applies to ALL stories
+configureReadme({
+  StoryPreview: ({ children }) => (
+    <div style={{ margin: '0', maxWidth: '100%', display: 'block' }}>
+      {children}
+    </div>
+  ),
+});
 
 storiesOf('Getting started', module)
   .add('Welcome', () => (

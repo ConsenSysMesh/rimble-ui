@@ -32,7 +32,7 @@ storiesOf('Components/Form/Select', module)
   .add(
     'Documentation',
     withDocs(Documentation, () => (
-      <Box ml={3} textAlign={'left'}>
+      <Box>
         <CodeBlock>
           <Field label="Choose your currency">
             <Select items={items} required="false" />
@@ -44,7 +44,7 @@ storiesOf('Components/Form/Select', module)
   .add(
     'Design guidelines',
     withDocs(Guidelines, () => (
-      <Box mx={3} textAlign={'left'}>
+      <Box>
         <Box>
           <Heading.h2>Design</Heading.h2>
           <Text>

@@ -23,7 +23,7 @@ storiesOf('Components/PublicAddress', module)
   .add(
     'Documentation',
     withDocs(Documentation, () => (
-      <Box mx={3} textAlign={'left'}>
+      <Box>
         <CodeBlock>
           <PublicAddress
             address={'0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2'}
@@ -35,7 +35,7 @@ storiesOf('Components/PublicAddress', module)
   .add(
     'Design guidelines',
     withDocs(Guidelines, () => (
-      <Box mx={3} textAlign={'left'}>
+      <Box>
         <Box>
           <Heading.h2>Design</Heading.h2>
           <Text.p>

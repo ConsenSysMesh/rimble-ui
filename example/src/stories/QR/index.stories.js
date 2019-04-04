@@ -23,7 +23,7 @@ storiesOf('Components/QR Code', module)
   .add(
     'Documentation',
     withDocs(Documentation, () => (
-      <Box mx={3} textAlign={'left'}>
+      <Box>
         <CodeBlock>
           <QR value="0xAc03BB73b6a9e108530AFf4Df5077c2B3D481e5A" />
         </CodeBlock>
@@ -34,7 +34,7 @@ storiesOf('Components/QR Code', module)
     'Design guidelines',
     withDocs(Guidelines, () => (
       <Box>
-        <Box mx={3} textAlign={'left'}>
+        <Box>
           <Box>
             <Heading.h2>Design</Heading.h2>
             <Text.p>Some best practice for using a QR code</Text.p>

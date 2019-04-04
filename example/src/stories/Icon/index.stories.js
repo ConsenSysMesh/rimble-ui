@@ -10,7 +10,7 @@ import { Icon, Box, Heading, Text } from 'rimble-ui';
 storiesOf('Components/Icon', module).add(
   'Documentation',
   withDocs(Documentation, () => (
-    <Box mx={3} textAlign={'left'}>
+    <Box>
       <Box>
         <Heading.h2>Icon examples</Heading.h2>
         <Text.p>Different ways to use the Input component.</Text.p>

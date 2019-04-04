@@ -21,7 +21,7 @@ storiesOf('Components/Heading', module)
   .add(
     'Documentation',
     withDocs(Documentation, () => (
-      <Box mx={3} textAlign={'left'}>
+      <Box>
         <Box>
           <Heading.h2>Heading examples</Heading.h2>
           <Text>Different ways to use the Heading component</Text>
@@ -109,7 +109,7 @@ storiesOf('Components/Heading', module)
   .add(
     'Design guidelines',
     withDocs(Guidelines, () => (
-      <Box mx={3} textAlign={'left'}>
+      <Box>
         <Box>
           <Heading.h2>Design</Heading.h2>
           <Text>
