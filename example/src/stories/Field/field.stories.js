@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
+import CodeBlock from '../../components/CodeBlock';
 
 import Documentation from './docs.md';
 
@@ -15,14 +16,11 @@ storiesOf('Components/Form/Field', module)
           <Input type="text" required="true" />
         </Field>
       </Box>
-      <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>
-          {
-            '<Field label="Public address"> \
-            <Input type="text" required="true" /> \
-          </Field>'
-          }
-        </code>
-      </Box>
+
+      <CodeBlock textOnly>
+        {`<Field label="Public address">
+  <Input type="text" required="true" />
+</Field>`}
+      </CodeBlock>
     </Box>
   ));

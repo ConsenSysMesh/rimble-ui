@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
+import CodeBlock from '../../components/CodeBlock';
 
 import Documentation from './docs.md';
 import Guidelines from './guide.md';
@@ -29,8 +30,14 @@ storiesOf('Components/Form/Inputs', module)
         <Heading.h2>Input examples</Heading.h2>
         <Text>
           Different ways to use the Input component. <b>Note</b>: these examples
-          use the <a href="form-field-component--field">Field</a> component to
-          render associated labels.
+          use the{' '}
+          <Link
+            href="https://consensys.github.io/rimble-ui/?path=/story/components-form-field--documentation"
+            title="Rimble UI Form Field component"
+          >
+            Field
+          </Link>{' '}
+          component to render associated labels.
         </Text>
       </Box>
       <br />
@@ -48,14 +55,13 @@ storiesOf('Components/Form/Inputs', module)
           />
         </Field>
       </Box>
-      <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>
-          {
-            '<Input type="text" required="true" placeholder="e.g. My hodl wallet" />'
-          }
-        </code>
-      </Box>
-      <br />
+
+      <CodeBlock textOnly>
+        {
+          '<Input type="text" required="true" placeholder="e.g. My hodl wallet" />'
+        }
+      </CodeBlock>
+
       <Box>
         <Heading.h4>Disabled input</Heading.h4>
         <Field label="Name your wallet">
@@ -67,14 +73,13 @@ storiesOf('Components/Form/Inputs', module)
           />
         </Field>
       </Box>
-      <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>
-          {
-            '<Input type="text" placeholder="e.g. My hodl wallet" required="true" disabled />'
-          }
-        </code>
-      </Box>
-      <br />
+
+      <CodeBlock textOnly>
+        {
+          '<Input type="text" placeholder="e.g. My hodl wallet" required="true" disabled />'
+        }
+      </CodeBlock>
+
       <Box>
         <Heading.h4>Optional input</Heading.h4>
         <Text.p>Renders (Optional) next to the label.</Text.p>
@@ -82,10 +87,10 @@ storiesOf('Components/Form/Inputs', module)
           <Input type="text" placeholder="e.g. My hodl wallet" />
         </Field>
       </Box>
-      <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>{'<Input type="text" placeholder="e.g. My hodl wallet" />'}</code>
-      </Box>
-      <br />
+
+      <CodeBlock textOnly>
+        {'<Input type="text" placeholder="e.g. My hodl wallet" />'}
+      </CodeBlock>
 
       <Box>
         <Heading.h4>Text input</Heading.h4>
@@ -98,15 +103,12 @@ storiesOf('Components/Form/Inputs', module)
           />
         </Field>
       </Box>
-      <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>
-          {
-            '<Form.Input type="text" required="true" placeholder="e.g. 0xAc03BB73b6a9e108530AFf4Df5077c2B3D481e5A" />'
-          }
-        </code>
-      </Box>
+      <CodeBlock textOnly>
+        {
+          '<Form.Input type="text" required="true" placeholder="e.g. 0xAc03BB73b6a9e108530AFf4Df5077c2B3D481e5A" />'
+        }
+      </CodeBlock>
 
-      <br />
       <Box>
         <Heading.h4>Email input</Heading.h4>
         <Text.p>Gives you an @ on your keyboard.</Text.p>
@@ -120,14 +122,13 @@ storiesOf('Components/Form/Inputs', module)
           />
         </Field>
       </Box>
-      <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>
-          {
-            '<Form.Input type="email" required="true" placeholder="you@example.com" />'
-          }
-        </code>
-      </Box>
-      <br />
+
+      <CodeBlock textOnly>
+        {
+          '<Form.Input type="email" required="true" placeholder="you@example.com" />'
+        }
+      </CodeBlock>
+
       <Box>
         <Heading.h4>Password input</Heading.h4>
         <Text.p>Masks any input.</Text.p>
@@ -135,10 +136,11 @@ storiesOf('Components/Form/Inputs', module)
           <Form.Input required="true" type="password" />
         </Field>
       </Box>
-      <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>{'<Form.Input type="password" required="true" />'}</code>
-      </Box>
-      <br />
+
+      <CodeBlock textOnly>
+        {'<Form.Input type="password" required="true" />'}
+      </CodeBlock>
+
       <Box>
         <Heading.h4>Number input</Heading.h4>
         <Text.p>
@@ -153,14 +155,11 @@ storiesOf('Components/Form/Inputs', module)
           />
         </Field>
       </Box>
-      <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>
-          {
-            '<Form.Input type="number" required="true" placeholder="e.g. 123" />'
-          }
-        </code>
-      </Box>
-      <br />
+
+      <CodeBlock textOnly>
+        {'<Form.Input type="number" required="true" placeholder="e.g. 123" />'}
+      </CodeBlock>
+
       <Box>
         <Heading.h4>Search input</Heading.h4>
         <Text.p>Allows you to quickly remove a search term.</Text.p>
@@ -172,14 +171,12 @@ storiesOf('Components/Form/Inputs', module)
           />
         </Field>
       </Box>
-      <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>
-          {
-            '<Form.Input type="search" required="true" placeholder="e.g. Ethereum" />'
-          }
-        </code>
-      </Box>
-      <br />
+      <CodeBlock textOnly>
+        {
+          '<Form.Input type="search" required="true" placeholder="e.g. Ethereum" />'
+        }
+      </CodeBlock>
+
       <Box>
         <Heading.h4>Telephone input</Heading.h4>
         <Text.p>Brings up the telephone keyboard.</Text.p>
@@ -191,14 +188,13 @@ storiesOf('Components/Form/Inputs', module)
           />
         </Field>
       </Box>
-      <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>
-          {
-            '<Form.Input type="tel" required="true" placeholder="e.g. +445575242519" />'
-          }
-        </code>
-      </Box>
-      <br />
+
+      <CodeBlock textOnly>
+        {
+          '<Form.Input type="tel" required="true" placeholder="e.g. +445575242519" />'
+        }
+      </CodeBlock>
+
       <Box>
         <Heading.h4>URL input</Heading.h4>
         <Text.p>Brings up a url keyboard.</Text.p>
@@ -210,13 +206,13 @@ storiesOf('Components/Form/Inputs', module)
           />
         </Field>
       </Box>
-      <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>
-          {
-            '<Form.Input type="url" required="true" placeholder="e.g. rimble.consensys.design" />'
-          }
-        </code>
-      </Box>
+
+      <CodeBlock textOnly>
+        {
+          '<Form.Input type="url" required="true" placeholder="e.g. rimble.consensys.design" />'
+        }
+        e
+      </CodeBlock>
     </Box>
   ))
   .add(

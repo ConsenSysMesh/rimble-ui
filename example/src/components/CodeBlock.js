@@ -3,7 +3,7 @@ import { renderToStaticMarkup } from 'react-dom/server';
 import reactElementToJSXString from 'react-element-to-jsx-string';
 import Prism from 'prismjs';
 import PrismJsx from 'prismjs/components/prism-jsx.min';
-import { Flex, OutlineButton, Box, Heading } from 'rimble-ui';
+import { Flex, OutlineButton, Box, Heading, Checkbox } from 'rimble-ui';
 import './CodeBlock.css';
 
 const options = {

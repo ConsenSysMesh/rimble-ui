@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
+import CodeBlock from '../../components/CodeBlock';
 
 import Documentation from './docs.md';
 import Guidelines from './guide.md';
@@ -22,10 +23,19 @@ storiesOf('Components/Form/Checkboxes', module)
   .addDecorator(withDocs(Documentation))
   .add('Documentation', () => (
     <Box mx={3} textAlign={'left'}>
-      <Field label="Check all that apply">
-        <Checkbox label="Checkbox default" required="true" my={2} />
-        <Checkbox checked label="Checkbox checked" required="true" my={2} />
-        <Checkbox disabled label="Checkbox disabled" required="true" my={2} />
+      <CodeBlock>
+        <Checkbox label="Checkbox default" required="true" />
+      </CodeBlock>
+
+      <CodeBlock>
+        <Checkbox checked label="Checkbox checked" required="true" />
+      </CodeBlock>
+
+      <CodeBlock>
+        <Checkbox disabled label="Checkbox disabled" required="true" />
+      </CodeBlock>
+
+      <CodeBlock>
         <Checkbox
           disabled
           checked
@@ -33,18 +43,7 @@ storiesOf('Components/Form/Checkboxes', module)
           required="true"
           my={2}
         />
-      </Field>
-      <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>{'<Checkbox label="Checkbox default" />'}</code>
-        <br />
-        <code>{'<Checkbox checked label="Checkbox checked" />'}</code>
-        <br />
-        <code>{'<Checkbox disabled label="Checkbox disabled" />'}</code>
-        <br />
-        <code>
-          {'<Checkbox disabled checked label="Checkbox checked disabled" />'}
-        </code>
-      </Box>
+      </CodeBlock>
     </Box>
   ))
   .add(

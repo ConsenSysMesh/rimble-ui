@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
+import CodeBlock from '../../components/CodeBlock';
 
 import Documentation from './docs.md';
 import Guidelines from './guide.md';
@@ -30,9 +31,9 @@ storiesOf('Components/Heading', module)
         <Text.p>Use for page or screen titles</Text.p>
         <Heading.h1>Transactions</Heading.h1>
       </Box>
-      <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>{'<Heading.h1>Transactions</Heading.h1>'}</code>
-      </Box>
+
+      <CodeBlock textOnly>{'<Heading.h1>Transactions</Heading.h1>'}</CodeBlock>
+
       <br />
       <Box>
         <Heading.h4>H2</Heading.h4>
@@ -42,9 +43,10 @@ storiesOf('Components/Heading', module)
         </Text.p>
         <Heading.h2>Latest transactions</Heading.h2>
       </Box>
-      <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>{'<Heading.h2>Transaction fees</Heading.h2>'}</code>
-      </Box>
+      <CodeBlock textOnly>
+        {'<Heading.h2>Latest transaction</Heading.h2>'}
+      </CodeBlock>
+
       <br />
       <Box>
         <Heading.h4>H3</Heading.h4>
@@ -54,9 +56,9 @@ storiesOf('Components/Heading', module)
         </Text.p>
         <Heading.h3>Successful transactions</Heading.h3>
       </Box>
-      <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>{'<Heading.h3>Todays transactions</Heading.h3>'}</code>
-      </Box>
+      <CodeBlock textOnly>
+        {'<Heading.h3>Successful transactions</Heading.h3>'}
+      </CodeBlock>
       <br />
       <Box>
         <Heading.h4>H4</Heading.h4>
@@ -66,9 +68,11 @@ storiesOf('Components/Heading', module)
         </Text.p>
         <Heading.h4>Transaction fees</Heading.h4>
       </Box>
-      <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>{'<Heading.h4>This mornings transactions</Heading.h4>'}</code>
-      </Box>
+
+      <CodeBlock textOnly>
+        {'<Heading.h4>Transaction fees</Heading.h4>'}
+      </CodeBlock>
+
       <br />
       <Box>
         <Heading.h4>H5</Heading.h4>
@@ -78,9 +82,11 @@ storiesOf('Components/Heading', module)
         </Text.p>
         <Heading.h5>Transaction fees explained</Heading.h5>
       </Box>
-      <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>{'<Heading.h5>Failed transactions (Today)</Heading.h5>'}</code>
-      </Box>
+
+      <CodeBlock textOnly>
+        {'<Heading.h5>Transaction fees explained</Heading.h5>'}
+      </CodeBlock>
+
       <br />
       <Box>
         <Heading.h4>H6</Heading.h4>
@@ -90,9 +96,10 @@ storiesOf('Components/Heading', module)
         </Text.p>
         <Heading.h6>How are transaction fees calculated?</Heading.h6>
       </Box>
-      <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-        <code>{'<Heading.h6>Latest transactions</Heading.h6>'}</code>
-      </Box>
+
+      <CodeBlock textOnly>
+        {'<Heading.h6>How are transaction fees calculated?</Heading.h6>'}
+      </CodeBlock>
     </Box>
   ))
   .add(

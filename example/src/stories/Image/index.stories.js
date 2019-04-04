@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
+import CodeBlock from '../../components/CodeBlock';
 
 import Documentation from './docs.md';
 
@@ -10,25 +11,13 @@ storiesOf('Components/Image', module)
   .addDecorator(withDocs(Documentation))
   .add('Documentation', () => (
     <Box mx={3} textAlign={'left'}>
-      <Box>
+      <CodeBlock>
         <Image
           width={[1, 1, 1 / 2]}
           src="https://source.unsplash.com/random/1280x720"
           borderRadius={8}
           alt="random unsplash image"
         />
-        <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-          <code>{'<Image'}</code>
-          <br />
-          <code>{'width={[ 1, 1, 1/2 ]}'}</code>
-          <br />
-          <code>{'src="https://source.unsplash.com/random/1280x720"'}</code>
-          <br />
-          <code>{'borderRadius={3}'}</code>
-          <br />
-          <code>{'/>'}</code>
-          <br />
-        </Box>
-      </Box>
+      </CodeBlock>
     </Box>
   ));
