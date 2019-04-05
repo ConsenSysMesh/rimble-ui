@@ -12,14 +12,14 @@ const OutlineButton = styled(Button).attrs(props => ({
   primarycolor: themeGet('colors.primary', '#000')(props),
 }))`
   & {
-    background: transparent;
+    background: white;
   }
-  &&:hover {
+  &:hover {
     color: ${props => tint(0.2, props.primarycolor)};
     border-color: ${props => tint(0.2, props.primarycolor)};
-    background-color: transparent;
+    background-color: #fff;
   }
-  &&:active {
+  &:active {
     color: ${props => shade(0.2, props.primarycolor)};
     border-color: ${props => shade(0.2, props.primarycolor)};
     background-color: ${props => tint(0.9, props.primarycolor)};
@@ -29,7 +29,7 @@ const OutlineButton = styled(Button).attrs(props => ({
 OutlineButton.defaultProps = {
   theme: defaultTheme,
   color: 'primary',
-  bg: 'transparent',
+  bg: 'white',
   fontWeight: 3,
   fontFamily: 'sansSerif',
   height: '48px',
