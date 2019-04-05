@@ -890,6 +890,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   align-items: center;
   border: 1px solid transparent;
   border-color: #D6D6D6;
+  border-color: #D6D6D6;
 }
 
 .c1 {

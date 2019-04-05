@@ -7,6 +7,7 @@ exports[`Table component sanity matches default snapshot 1`] = `
   font-size: 14px;
   border: 1px solid transparent;
   border-color: #CCC;
+  border-color: #CCC;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
 }
@@ -120,6 +121,7 @@ exports[`Table component sanity matches themed snapshot 1`] = `
   width: 100%;
   font-size: 14px;
   border: 1px solid transparent;
+  border-color: #CCC;
   border-color: #CCC;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);

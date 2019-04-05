@@ -2,10 +2,10 @@
 
 exports[`Card component sanity matches default snapshot 1`] = `
 .c0 {
-  margin-left: 0px;
-  margin-right: 0px;
   margin-top: 8px;
   margin-bottom: 8px;
+  margin-left: 0;
+  margin-right: 0;
   padding: 32px;
   background-color: white;
   width: 100%;
@@ -13,7 +13,8 @@ exports[`Card component sanity matches default snapshot 1`] = `
   height: auto;
   min-height: 1px;
   position: relative;
-  border: 1px solid;
+  border: 1px;
+  border-color: #D6D6D6;
   border-color: #D6D6D6;
   text-align: left;
   text-align: left;
@@ -44,10 +45,10 @@ exports[`Card component sanity matches default snapshot 1`] = `
 
 exports[`Card component sanity matches themed snapshot 1`] = `
 .c1 {
-  margin-left: 0px;
-  margin-right: 0px;
   margin-top: 8px;
   margin-bottom: 8px;
+  margin-left: 0;
+  margin-right: 0;
   padding: 32px;
   background-color: #fff;
   width: 100%;
@@ -56,6 +57,7 @@ exports[`Card component sanity matches themed snapshot 1`] = `
   min-height: 16px;
   position: relative;
   border: 1px solid transparent;
+  border-color: #D6D6D6;
   border-color: #D6D6D6;
   text-align: left;
   text-align: left;
