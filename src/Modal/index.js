@@ -11,6 +11,7 @@ const StyledOverlay = styled(Box)`
     bottom: 0;
     left: 0;
     right: 0;
+    z-index: 9999;
     height: 100vh;
     width: 100vw;
     display: flex;
