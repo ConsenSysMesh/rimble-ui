@@ -34,7 +34,7 @@ storiesOf('Getting started', module)
         <Heading.h1>Welcome to Rimble</Heading.h1>
         <Heading.h3>
           Rimble is a set of adaptable components and design standards to help
-          you get your decentralized application (dApps) off the ground, fast.
+          you get your decentralized application (dApp) off the ground, fast.
         </Heading.h3>
 
         <Text.p>
@@ -147,19 +147,48 @@ storiesOf('Getting started', module)
       <br />
       <Box>
         <Card>
-          <Pill mb={3} color={'primary'}>
-            {'NEW'}
-          </Pill>
           <br />
-          <Heading>Latest changes</Heading>
-          <Heading.h5>Sprint 16</Heading.h5>
-          <Text>
-            • Documentation refresh – new design guidelines added and layout
-            updates
-          </Text>
-          <Text>• Table component added</Text>
+          <Heading>Changelog</Heading>
+<Heading.h5>0.6</Heading.h5>
+
+<Text>- Tables</Text>
+<Text>- Bug fixes</Text>
+
+<Heading.h5>0.5</Heading.h5>
+
+<Text>- Better form validation</Text>
+<Text>- uPort connect button</Text>
+<Text>- Upgraded to Storybook 5</Text>
+<Text>- Bug fixes</Text>
+
+<Heading.h5>0.4</Heading.h5>
+
+<Text>- Toast Messages and Toast Message provider</Text>
+<Text>- QR code</Text>
+<Text>- Modal</Text>
+<Text>- Pills</Text>
+<Text>- Expanded test coverage</Text>
+
+<Heading.h5>0.3</Heading.h5>
+
+<Text>- Styling cleanup for lots of components</Text>
+<Text>- Bug fixes</Text>
+
+<Heading.h5>0.2</Heading.h5>
+
+<Text>- PublicAddress component</Text>
+<Text>- MetaMask buttons and more button variants</Text>
+<Text>- Basic layout components</Text>
+<Text>- Cards</Text>
+<Text>- Loaders</Text>
+
+<Heading.h5>0.1</Heading.h5>
+
+<Text>- Theming</Text>
+<Text>- Buttons and other simple components</Text>
+<Text>- Blockies</Text>
         </Card>
-      </Box>
+        </Box>
     </Box>
   ))
   .add('Installation', doc(installing))
