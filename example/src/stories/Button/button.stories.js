@@ -27,10 +27,10 @@ import {
 storiesOf('Components/Buttons/Button', module).add(
   'Documentation',
   withDocs(Documentation, () => (
-    <Box>
+    <Box mx={3}>
       <Box>
-        <Heading.h2>Button examples</Heading.h2>
-        <Text>Different ways to use the button component</Text>
+        <Heading.h3>Button examples</Heading.h3>
+        <Text>Different ways to use the <code>{'Button'}</code> component</Text>
         <br />
       </Box>
       <Box>
@@ -49,7 +49,7 @@ storiesOf('Components/Buttons/Button', module).add(
         <CodeBlock>
           <Button size="small">Connect wallet</Button>
         </CodeBlock>
-        <br />
+
         <CodeBlock>
           <Button size="medium">Connect wallet</Button>
         </CodeBlock>
@@ -115,9 +115,9 @@ storiesOf('Components/Buttons/Button', module).add(
 storiesOf('Components/Buttons', module).add(
   'Design guidelines',
   withDocs(Guidelines, () => (
-    <Box>
+    <Box mx={3}>
       <Box>
-        <Heading.h2>Design</Heading.h2>
+        <Heading.h3>Design</Heading.h3>
         <Text>
           Some best practices for using <code>{'Button'}</code> in your product.
         </Text>
@@ -263,7 +263,7 @@ storiesOf('Components/Buttons', module).add(
       <br />
       <br />
       <Box>
-        <Heading.h2>Content</Heading.h2>
+        <Heading.h3>Content</Heading.h3>
         <Text>
           Some best practices for writing <code>{'Button'}</code> microcopy.
         </Text>

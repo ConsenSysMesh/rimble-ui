@@ -27,10 +27,10 @@ storiesOf('Components/Text', module)
   .add(
     'Documentation',
     withDocs(Documentation, () => (
-      <Box>
+      <Box mx={3}>
         <Box>
-          <Heading.h2>Text examples</Heading.h2>
-          <Text>Different ways to use the Text component</Text>
+          <Heading.h3>Text examples</Heading.h3>
+          <Text>Different ways to use the <code>{'Text'}</code> component</Text>
           <br />
         </Box>
         <Box>
@@ -103,9 +103,9 @@ storiesOf('Components/Text', module)
   .add(
     'Design guidelines',
     withDocs(Guidelines, () => (
-      <Box>
+      <Box mx={3}>
         <Box>
-          <Heading.h2>Design</Heading.h2>
+          <Heading.h3>Design</Heading.h3>
           <Text>
             Some best practices for using <code>{'Text'}</code>.
           </Text>
@@ -266,6 +266,7 @@ storiesOf('Components/Text', module)
           <br />
           <br />
         </Card>
+        <br />
       </Box>
     ))
   );

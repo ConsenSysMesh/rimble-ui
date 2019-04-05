@@ -14,7 +14,7 @@ import { QR } from 'rimble-ui';
 
 ### Component props
 
-QR Code will pass any props that are defined on its component and uses the following:
+`QR` Code will pass any props that are defined on its component and uses the following:
 
 | Prop  | Type   | Values | Default | Description                                    |
 | ----- | ------ | ------ | ------- | ---------------------------------------------- |
@@ -22,4 +22,4 @@ QR Code will pass any props that are defined on its component and uses the follo
 
 ### Styled-system props
 
-QR Code does not use any styled-system props.
+`QR` Code does not use any styled-system props.

@@ -23,7 +23,12 @@ storiesOf('Components/Form/Checkboxes', module)
   .add(
     'Documentation',
     withDocs(Documentation, () => (
+      <Box mx={3}>
       <Box>
+        <Heading.h3>Checkbox examples</Heading.h3>
+        <Text>Different ways to use the <code>{'Checkbox'}</code> component</Text><br />
+        <br />
+      </Box>
         <CodeBlock>
           <Checkbox label="Checkbox default" required="true" />
         </CodeBlock>
@@ -53,7 +58,7 @@ storiesOf('Components/Form/Checkboxes', module)
     withDocs(Guidelines, () => (
       <Box mx={3} textAlign={'left'}>
         <Box>
-          <Heading.h2>Design</Heading.h2>
+          <Heading.h3>Design</Heading.h3>
           <Text>
             Some best practices for using <code>{'Checkbox'}</code> in your
             product.

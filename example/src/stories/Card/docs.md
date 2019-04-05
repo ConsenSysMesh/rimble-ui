@@ -12,11 +12,11 @@ import { Card } from 'rimble-ui';
 
 ### Component props
 
-Card does not have any props but will pass on props that are defined on its component.
+`Card` does not have any props but will pass on props that are defined on its component.
 
 ### Styled-system props
 
-Card uses all the style props from [`Box`](https://consensys.github.io/rimble-ui/?path=/story/components-layout-box--documentation), but also includes:
+`Card` uses all the style props from [`Box`](https://consensys.github.io/rimble-ui/?path=/story/components-layout-box--documentation), but also includes:
 
 | Prop      | CSS property | Function  | Theme field |
 | --------- | ------------ | --------- | ----------- |

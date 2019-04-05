@@ -10,7 +10,7 @@ import { Input, Field, Box, Heading, Text } from 'rimble-ui';
 storiesOf('Components/Form/Field', module).add(
   'Documentation',
   withDocs(Documentation, () => (
-    <Box>
+    <Box mx={3}>
       <Box>
         <Field label="Public address">
           <Input type="text" required="true" />

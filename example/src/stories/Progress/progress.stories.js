@@ -10,7 +10,7 @@ import { Progress, Box, Text } from 'rimble-ui';
 storiesOf('Components/Form/Progress bar', module).add(
   'Documentation',
   withDocs(Documentation, () => (
-    <Box>
+    <Box mx={3}>
       <CodeBlock>
         <Progress value={0.5} />
       </CodeBlock>

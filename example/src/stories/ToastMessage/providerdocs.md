@@ -20,7 +20,7 @@
 | addMessage.default    | method | message, message object | Creates and shows a new default toast message with provided message object    |
 | removeMessage         | method | none                    | Removes a visible toast message                                               |
 
-## Message Object
+### Message object  
 
 | Name             | Type   | Values                                                           | Description                                |
 | ---------------- | ------ | ---------------------------------------------------------------- | ------------------------------------------ |

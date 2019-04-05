@@ -26,7 +26,12 @@ storiesOf('Components/Form/Radio buttons', module)
   .add(
     'Documentation',
     withDocs(Documentation, () => (
+      <Box mx={3}>
       <Box>
+        <Heading.h3>Radio examples</Heading.h3>
+        <Text>Different ways to use the <code>{'Radio'}</code> component</Text><br />
+        <br />
+      </Box>
         <CodeBlock>
           <Field label="Choose transaction speed">
             <Radio label="Quick" my={2} required="false" />
@@ -41,9 +46,9 @@ storiesOf('Components/Form/Radio buttons', module)
   .add(
     'Design guidelines',
     withDocs(Guidelines, () => (
-      <Box>
+      <Box mx={3}>
         <Box>
-          <Heading.h2>Design</Heading.h2>
+          <Heading.h3>Design</Heading.h3>
           <Text>
             Some best practices for using <code>{'Radio'}</code> in your
             product.

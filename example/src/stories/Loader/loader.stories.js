@@ -10,10 +10,10 @@ import { Loader, Button, Box, Heading, Text } from 'rimble-ui';
 storiesOf('Components/Loader', module).add(
   'Documentation',
   withDocs(Documentation, () => (
-    <Box>
+    <Box mx={3}>
       <Box>
-        <Heading.h2>Loader examples</Heading.h2>
-        <Text>Different ways to use the loader component</Text>
+        <Heading.h3>Loader examples</Heading.h3>
+        <Text>Different ways to use the <code>{'Loader'}</code> component in your product.</Text>
         <br />
       </Box>
       <Box>

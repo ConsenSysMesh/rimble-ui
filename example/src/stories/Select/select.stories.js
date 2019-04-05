@@ -32,7 +32,7 @@ storiesOf('Components/Form/Select', module)
   .add(
     'Documentation',
     withDocs(Documentation, () => (
-      <Box>
+      <Box mx={3}>
         <CodeBlock>
           <Field label="Choose your currency">
             <Select items={items} required="false" />
@@ -44,9 +44,9 @@ storiesOf('Components/Form/Select', module)
   .add(
     'Design guidelines',
     withDocs(Guidelines, () => (
-      <Box>
+      <Box mx={3}>
         <Box>
-          <Heading.h2>Design</Heading.h2>
+          <Heading.h3>Design</Heading.h3>
           <Text>
             Some best practices for using <code>{'Select'}</code> in your
             product.

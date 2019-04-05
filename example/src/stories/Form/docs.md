@@ -8,7 +8,7 @@ For native HTML form validation–available in all our supported browsers, the `
 
 Rimble scopes the `:valid` and `:invalid` styles to parent `.was-validated` class, usually applied to the Form (you can use the validated prop as a shortcut). Otherwise, any required field without a value shows up as invalid on page load. This way, you may choose when to activate them (typically after form submission is attempted).
 
-### Usage
+**Import component**
 
 ```jsx
 import { Form } from 'rimble-ui';
@@ -18,7 +18,7 @@ import { Form } from 'rimble-ui';
 
 ### Component props
 
-Form will pass any props that are defined on its component and uses the following:
+`Form` will pass any props that are defined on its component and uses the following:
 
 | Name      | Type | Default | Description                                                                                |
 | --------- | ---- | ------- | ------------------------------------------------------------------------------------------ |
@@ -26,4 +26,4 @@ Form will pass any props that are defined on its component and uses the followin
 
 ### Styled-system props
 
-Form uses all the style props from [`Box`](https://consensys.github.io/rimble-ui/?path=/story/components-layout-box--documentation).
+`Form` uses all the style props from [`Box`](https://consensys.github.io/rimble-ui/?path=/story/components-layout-box--documentation).

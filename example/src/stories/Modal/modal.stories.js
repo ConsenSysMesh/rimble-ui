@@ -85,7 +85,7 @@ storiesOf('Components/Modal', module).add(
   'Documentation',
   withDocs(Documentation, () => {
     return (
-      <div>
+      <Box mx={3}>
         <YourModal />
         <CodeBlock textOnly>
           {`class YourModal extends Component {
@@ -145,7 +145,7 @@ storiesOf('Components/Modal', module).add(
   }
 }`}
         </CodeBlock>
-      </div>
+      </Box>
     );
   })
 );

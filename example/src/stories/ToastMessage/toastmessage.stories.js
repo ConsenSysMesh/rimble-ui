@@ -25,10 +25,10 @@ storiesOf('Components/ToastMessage', module)
   .add(
     'Documentation',
     withDocs(Documentation, () => (
-      <Box>
+      <Box mx={3}>
         <Box>
-          <Heading.h2>ToastMessage examples</Heading.h2>
-          <Text>Different ways to use the ToastMessage component</Text>
+          <Heading.h3>ToastMessage examples</Heading.h3>
+          <Text>Different ways to use the <code>{'ToastMessage'}</code> component</Text>
           <br />
         </Box>
         <Box>
@@ -42,11 +42,9 @@ storiesOf('Components/ToastMessage', module)
           <Flex>
             <Box width={'50%'} mr={4}>
               <ToastMessage message={'Transaction started'} my={3} />
-              <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-                <code>
-                  {'<ToastMessage message={"Transaction started"} />'}
-                </code>
-              </Box>
+              <CodeBlock textOnly>
+              {`<ToastMessage message={"Transaction started"} />`}
+              </CodeBlock>
             </Box>
             <Box width={'50%'} mr={4}>
               <ToastMessage
@@ -54,13 +52,14 @@ storiesOf('Components/ToastMessage', module)
                 colorTheme={'dark'}
                 my={3}
               />
-              <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-                <code>
-                  {
-                    '<ToastMessage message={"0xAc0...e5A connected"} colorTheme={"dark"} />'
-                  }
-                </code>
-              </Box>
+              <CodeBlock textOnly>
+              {`<ToastMessage
+                message={'0xAc0...e5A connected'}
+                colorTheme={'dark'}
+                my={3}
+              />`}
+              </CodeBlock>
+
             </Box>
           </Flex>
           <Box>
@@ -78,13 +77,13 @@ storiesOf('Components/ToastMessage', module)
                 secondaryMessage={'You have 4.20 ETH remaining'}
                 my={3}
               />
-              <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-                <code>
-                  {
-                    '<ToastMessage message={"Transaction complete"} secondaryMessage="{"You have 4.20 ETH remaining"} />'
-                  }
-                </code>
-              </Box>
+              <CodeBlock textOnly>
+              {`<ToastMessage
+                message={'Transaction complete'}
+                secondaryMessage={'You have 4.20 ETH remaining'}
+                my={3}
+              />`}
+              </CodeBlock>
             </Box>
             <Box width={'50%'} mr={4}>
               <ToastMessage
@@ -93,13 +92,14 @@ storiesOf('Components/ToastMessage', module)
                 colorTheme={'dark'}
                 my={3}
               />
-              <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-                <code>
-                  {
-                    '<ToastMessage message={"Transaction complete"} secondaryMessage="{"You have 4.20 ETH remaining"} colorTheme={"dark"} />'
-                  }
-                </code>
-              </Box>
+              <CodeBlock textOnly>
+              {`<ToastMessage
+                message={'Switched network'}
+                secondaryMessage={'You are now on Rinkeby'}
+                colorTheme={'dark'}
+                my={3}
+              />`}
+              </CodeBlock>
             </Box>
           </Flex>
 
@@ -114,13 +114,13 @@ storiesOf('Components/ToastMessage', module)
                 icon={'Mood'}
                 my={3}
               />
-              <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-                <code>
-                  {
-                    '<ToastMessage message={"Welcome to my dApp"} icon={"Mood"}" />'
-                  }
-                </code>
-              </Box>
+              <CodeBlock textOnly>
+              {`<ToastMessage
+                message={'Welcome to my dApp'}
+                icon={'Mood'}
+                my={3}
+              />`}
+              </CodeBlock>
             </Box>
             <Box width={'50%'} mr={4}>
               <ToastMessage
@@ -129,13 +129,14 @@ storiesOf('Components/ToastMessage', module)
                 my={3}
                 colorTheme={'dark'}
               />
-              <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-                <code>
-                  {
-                    '<ToastMessage message={"Welcome to my dApp"} icon={"Mood"}" colorTheme={"dark"} />'
-                  }
-                </code>
-              </Box>
+              <CodeBlock textOnly>
+              {`<ToastMessage
+                message={'Welcome to my dApp'}
+                icon={'Mood'}
+                my={3}
+                colorTheme={'dark'}
+              />`}
+              </CodeBlock>
             </Box>
           </Flex>
 
@@ -156,13 +157,15 @@ storiesOf('Components/ToastMessage', module)
                 actionText={'Check'}
                 actionHref={'#!'}
               />
-              <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-                <code>
-                  {
-                    '<ToastMessage message={"Transaction started"} actionText={"Check"} actionHref={"add link here"} />'
-                  }
-                </code>
-              </Box>
+              <CodeBlock textOnly>
+              {`<ToastMessage
+                message={'Transaction started'}
+                secondaryMessage={'Check on its progress using Etherscan'}
+                my={3}
+                actionText={'Check'}
+                actionHref={'#!'}
+              />`}
+              </CodeBlock>
             </Box>
             <Box width={'50%'} mr={4}>
               <ToastMessage
@@ -176,13 +179,19 @@ storiesOf('Components/ToastMessage', module)
                 actionHref={'#!'}
                 colorTheme={'dark'}
               />
-              <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-                <code>
-                  {
-                    '<ToastMessage message={"Transaction started"} actionText={"Check"} actionHref={"add link here"} colorTheme={"dark"} />'
-                  }
-                </code>
-              </Box>
+              <CodeBlock textOnly>
+              {`<ToastMessage
+                message={'Write update here [Required]'}
+                secondaryMessage={
+                  'Supporting information for update [Optional]'
+                }
+                icon={'InfoOutline'}
+                my={3}
+                actionText={'Link'}
+                actionHref={'#!'}
+                colorTheme={'dark'}
+              />`}
+              </CodeBlock>
             </Box>
           </Flex>
           <br />
@@ -199,13 +208,12 @@ storiesOf('Components/ToastMessage', module)
               my={3}
               message={'Processing 0.00018 ETH payment'}
             />
-            <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-              <code>
-                {
-                  '<ToastMessage.Processing message={"Processing 0.00018 ETH payment"} />'
-                }
-              </code>
-            </Box>
+            <CodeBlock textOnly>
+            {`<ToastMessage.Processing
+              my={3}
+              message={'Processing 0.00018 ETH payment'}
+            />`}
+            </CodeBlock>
             <br />
             <Heading.h5>Success</Heading.h5>
             <ToastMessage.Success
@@ -213,13 +221,13 @@ storiesOf('Components/ToastMessage', module)
               message={'ETH sent'}
               secondaryMessage={'You have 1.03 Ether (ETH) remaining'}
             />
-            <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-              <code>
-                {
-                  '<ToastMessage.Success message={"ETH sent"} secondaryMessage={"You have 1.03 Ether (ETH) remaining"} />'
-                }
-              </code>
-            </Box>
+            <CodeBlock textOnly>
+            {`<ToastMessage.Success
+              my={3}
+              message={'ETH sent'}
+              secondaryMessage={'You have 1.03 Ether (ETH) remaining'}
+            />`}
+            </CodeBlock>
             <br />
             <Heading.h5>Failure</Heading.h5>
             <ToastMessage.Failure
@@ -229,13 +237,15 @@ storiesOf('Components/ToastMessage', module)
               actionText={'Buy ETH'}
               actionHref={'#!'}
             />
-            <Box bg={'#f7f7f7'} my={2} p={2} radius={3}>
-              <code>
-                {
-                  '<ToastMessage.Failure message={"Payment failed"} secondaryMessage={"You don\'t have enough Ether (ETH)"} actionText={"Buy ETH"} actionHref={"add link"} />'
-                }
-              </code>
-            </Box>
+            <CodeBlock textOnly>
+            {`<ToastMessage.Failure
+              my={3}
+              message={'Payment failed'}
+              secondaryMessage={"You don't have enough Ether (ETH)"}
+              actionText={'Buy ETH'}
+              actionHref={'#!'}
+            />`}
+            </CodeBlock>
           </Box>
         </Box>
       </Box>
@@ -244,9 +254,9 @@ storiesOf('Components/ToastMessage', module)
   .add(
     'Design guidelines',
     withDocs(Guidelines, () => (
-      <Box>
+      <Box mx={3}>
         <Box>
-          <Heading.h2>Design</Heading.h2>
+          <Heading.h3>Design</Heading.h3>
           <Text>
             Some best practices for using <code>{'ToastMessage'}</code>.
           </Text>
@@ -711,10 +721,10 @@ storiesOf('Components/ToastMessage', module)
   .add(
     'Provider documentation',
     withDocs(ProviderDocumentation, () => (
-      <Box>
+      <Box mx={3}>
         <Box>
-          <Heading.h2>ToastMessage.provider previews</Heading.h2>
-          <Text.p> Preview each ToastMessage and see how to call it</Text.p>
+          <Heading.h3>ToastMessage.provider previews</Heading.h3>
+          <Text.p>Preview each <code>{'ToastMessage'}</code> and see how to call it</Text.p>
         </Box>
         <br />
         <Box>
@@ -918,9 +928,11 @@ storiesOf('Components/ToastMessage', module)
 
           <ToastMessage.Provider ref={node => (window.toastProvider = node)} />
         </Box>
+        <Box>
         <CodeBlock textOnly>
           {`<Button onClick={() => window.toastProvider.removeMessage()}>`}
         </CodeBlock>
+      </Box>
       </Box>
     ))
   );

@@ -10,7 +10,7 @@ import { Flex, Box } from 'rimble-ui';
 storiesOf('Components/Layout/Flex', module).add(
   'Documentation',
   withDocs(Documentation, () => (
-    <Box>
+    <Box mx={3}>
       <Box>
         <Flex>
           <Box p={3} width={1 / 2} color="salmon" bg="black">

@@ -1,7 +1,7 @@
 # Blockie documentation
 
 The `Blockie` component allows for use of [Ethereum blockies](https://github.com/ethereum/blockies) in your app.
-Blockies are identicons for Ethereum addresses. These are not meant to replace user profiles, but as security icons, to allow the user to more easily check if an address he wants to interact with is the correct one.
+Blockies are identicons for Ethereum addresses. They are not meant to replace user profiles. Instead, they allow users to check if an address they want to interact with is the correct one.
 
 **Import component**
 
@@ -13,7 +13,7 @@ import { Blockie } from 'rimble-ui';
 
 ### Component props
 
-Blockie will pass any props that are defined on its component and uses the following:
+`Blockie` will pass any props that are defined on its component and uses the following:
 
 | Name   | Type   | Default                                                                              | Description                                  |
 | ------ | ------ | ------------------------------------------------------------------------------------ | -------------------------------------------- |
@@ -21,4 +21,4 @@ Blockie will pass any props that are defined on its component and uses the follo
 
 ### Styled-system props
 
-Blockie uses all the style props from [`Box`](https://consensys.github.io/rimble-ui/?path=/story/components-layout-box--documentation).
+`Blockie` uses all the style props from [`Box`](https://consensys.github.io/rimble-ui/?path=/story/components-layout-box--documentation).

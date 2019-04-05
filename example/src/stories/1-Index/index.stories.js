@@ -34,62 +34,71 @@ storiesOf('Getting started', module)
         <Heading.h1>Welcome to Rimble</Heading.h1>
         <Heading.h3>
           Rimble is a set of adaptable components and design standards to help
-          you get your decentralized application off the ground, fast.
+          you get your decentralized application (dApps) off the ground, fast.
         </Heading.h3>
 
         <Text.p>
           Within you'll find documentation and design guidelines for most
-          standard UI components plus some you'll need in a Web 3.0 world. Your
+          standard UI components plus some that are more specific to decentralized products. Your
           tech stack and workflow are yours to decide. We impose as few
           constraints as possible.
         </Text.p>
       </Box>
       <br />
       <Box>
-        <Heading.h3> dApp components </Heading.h3>
+        <Heading.h3>dApp components </Heading.h3>
         <Text.p>
           Components you'll find useful for blockchain-related actions
         </Text.p>
         <Text>
-          •{' '}
+          {' '}
           <Link
             onClick={linkTo('components-metamaskbutton', 'documentation')}
             title="Rimble UI MetaMask Button component"
             href="javascript:;"
           >
-            MetaMask Button
-          </Link>
-        </Text>
-        <Text />•{' '}
-        <Link
+            MetaMask button
+          </Link> – Let users know they can connect with MetaMask</Text>
+        <Text>
+          {' '}
+          <Link
+            onClick={linkTo('components-blockie', 'documentation')}
+            title="Rimble UI Blockie component"
+            href="javascript:;"
+          >
+            Blockie
+          </Link> – Render Ethereum public addresses as blockies</Text>
+
+        <Text>
+          {' '}
+          <Link
           onClick={linkTo('components-uportbutton', 'documentation')}
           title="Rimble UI UPort Button component"
           href="javascript:;"
         >
-          UPortButton
-        </Link>
+          uPort button
+        </Link> – Let users know they can connect with uPort</Text>
         <Text>
-          •{' '}
+          {' '}
           <Link
             onClick={linkTo('components-publicaddress', 'documentation')}
             title="Rimble UI Public Address component"
             href="javascript:;"
           >
-            Public Address
-          </Link>
-        </Text>
+            Public address output
+          </Link> – Show addresses with copy-to-clipboard functionality</Text>
+
         <Text>
-          •{' '}
+          {' '}
           <Link
             onClick={linkTo('components-qr-code', 'documentation')}
             title="Rimble UI QR Code component"
             href="javascript:;"
           >
             QR Code
-          </Link>
-        </Text>
+          </Link> – Render Ethereum public addresses as QR codes</Text>
         <Text>
-          •{' '}
+          {' '}
           <Link
             onClick={linkTo(
               'components-toastmessage',
@@ -99,8 +108,8 @@ storiesOf('Getting started', module)
             href="javascript:;"
           >
             ToastMessage Provider
-          </Link>
-        </Text>
+          </Link> – Keep users in the loop about their transactions</Text>
+
       </Box>
       <br />
 
@@ -108,26 +117,25 @@ storiesOf('Getting started', module)
         <Heading.h3> dApp patterns </Heading.h3>
         <Text.p>Guides to creating smooth experiences in your dApp</Text.p>
         <Text>
-          •{' '}
+{' '}
           <Link
             onClick={linkTo('dapp-patterns', 'transaction-states')}
             title="Ethereum Transaction States"
             href="javascript:;"
           >
             Transaction states
-          </Link>
+          </Link> – Design transaction state updates that instil confidence in your dApp
         </Text>
       </Box>
-      <br />
+      <br /><br />
       <Box>
         <Card color="white" bg="primary">
           <Heading>Contribute to Rimble</Heading>
           <Text.p color="white">
-            Rimble is completely open source. Create a new issue for feature and
-            component requests or to report a bug.
+            We're completely open source so feel free to raise any issues or suggest improvements to Rimble.
           </Text.p>
           <Link
-            href="https://github.com/ConsenSys/rimble-ui"
+            href="https://github.com/ConsenSys/rimble-ui/blob/master/docs/CONTRIBUTIONS.md"
             title="Rimble UI on GitHub"
             target="_blank"
           >

@@ -1,4 +1,4 @@
-# Loader
+# Loader documentation
 
 Use the `Loader` component to let the user know that a process is happening or something is loading. The `Loader` renders a responsive box-model layout component.
 
@@ -12,7 +12,7 @@ import { Loader } from 'rimble-ui';
 
 ### Component props
 
-Loader will pass any props that are defined on its component and uses the following:
+`Loader` will pass any props that are defined on its component and uses the following:
 
 | Prop  | Type   | Values      | Default | Description                             |
 | ----- | ------ | ----------- | ------- | --------------------------------------- |
@@ -22,4 +22,4 @@ Loader will pass any props that are defined on its component and uses the follow
 
 ### Styled-system props
 
-Loader uses all the style props from [`Box`](https://consensys.github.io/rimble-ui/?path=/story/components-layout-box--documentation).
+`Loader` uses all the style props from [`Box`](https://consensys.github.io/rimble-ui/?path=/story/components-layout-box--documentation).

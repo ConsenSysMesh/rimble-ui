@@ -23,7 +23,7 @@ storiesOf('Components/Table', module)
   .add(
     'Documentation',
     withDocs(Documentation, () => (
-      <Box>
+      <Box mx={3}>
         <CodeBlock>
           <Table>
             <thead>
@@ -62,9 +62,9 @@ storiesOf('Components/Table', module)
   .add(
     'Design guidelines',
     withDocs(Guidelines, () => (
-      <Box>
+      <Box mx={3}>
         <Box>
-          <Heading.h2>Design and content</Heading.h2>
+          <Heading.h3>Design and content</Heading.h3>
           <Text.p>
             Some best practice for using <code>{'Table'}</code>
           </Text.p>

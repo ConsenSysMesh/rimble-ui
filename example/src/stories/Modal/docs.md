@@ -1,4 +1,4 @@
-# Modal
+# Modal documentation
 
 The `Modal` component displays any content fixed positioned in the screen center with a background color.
 
@@ -12,7 +12,7 @@ import { Modal } from 'rimble-ui';
 
 ### Component props
 
-Modal will pass any props that are defined on its component and uses the following:
+`Modal` will pass any props that are defined on its component and uses the following:
 
 | Prop       | Type     | Values     | Default  | Description                                |
 | ---------- | -------- | ---------- | -------- | ------------------------------------------ |
@@ -23,4 +23,4 @@ Modal will pass any props that are defined on its component and uses the followi
 
 ### Styled-system props
 
-Modal uses all the style props from [`Box`](https://consensys.github.io/rimble-ui/?path=/story/components-layout-box--documentation).
+`Modal` uses all the style props from [`Box`](https://consensys.github.io/rimble-ui/?path=/story/components-layout-box--documentation).

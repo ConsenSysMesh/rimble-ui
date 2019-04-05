@@ -22,9 +22,9 @@ storiesOf('Components/Avatar', module)
   .add(
     'Documentation',
     withDocs(Documentation, () => (
-      <Box>
+      <Box mx={3}>
         <Box>
-          <Heading.h2>Avatar examples</Heading.h2>
+          <Heading.h3>Avatar examples</Heading.h3>
           <Text>Different ways to use the Avatar component</Text>
           <br />
         </Box>
@@ -88,18 +88,17 @@ storiesOf('Components/Avatar', module)
             />
           </CodeBlock>
         </Box>
-        <br />
       </Box>
     ))
   )
   .add(
     'Design guidelines',
     withDocs(Guidelines, () => (
-      <Box>
+      <Box mx={3}>
         <Box>
           <Box>
-            <Heading.h2>Design</Heading.h2>
-            <Text.p>Some best practice for using avatars</Text.p>
+            <Heading.h3>Design</Heading.h3>
+            <Text.p>Some best practice for using <code>{'Avatar'}</code> in your product.</Text.p>
           </Box>
 
           <Heading.h4>Use with labels</Heading.h4>

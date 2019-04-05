@@ -12,7 +12,7 @@ import { Slider } from 'rimble-ui';
 
 ### Component props
 
-Slider will pass any props that are defined on its component and uses the following:
+`Slider` will pass any props that are defined on its component and uses the following:
 
 | Name     | Type   | Default | Description                                                            |
 | -------- | ------ | ------- | ---------------------------------------------------------------------- |
@@ -24,4 +24,4 @@ Slider will pass any props that are defined on its component and uses the follow
 
 ### Styled-system props
 
-Slider does not use any props from styled-system.
+`Slider` does not use any props from styled-system.

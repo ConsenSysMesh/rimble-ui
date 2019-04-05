@@ -33,10 +33,10 @@ storiesOf('dApp patterns', module).add('Transaction states', () => (
         expectations.
       </Heading.h2>
       <Text.p>
-        Transactions are such a crucial part of dApp UX because they're so
-        different to what we're used to in Web 2. While ridding the process of a
+        Transaction states are such a crucial part of dApp UX because they're so
+        different to what we're used to when transacting with centralized products. While ridding the process of a
         "middleperson" might have given us more personal autonomy, it has left
-        us with less immediacy and more complexity to design for.
+        us with less immediacy and more complexity to design for. This means providing feedback to reassure or guide users is more important than ever.
       </Text.p>
 
       <Text.p>
@@ -67,7 +67,7 @@ storiesOf('dApp patterns', module).add('Transaction states', () => (
       <Heading.h3>Set user expectations</Heading.h3>
       <Heading.h4>Time</Heading.h4>
       <Text.p>
-        Ethereum transactions aren't quick by Web2 standards. So for
+        Ethereum transactions aren't quick by centralized standards. So for
         inexperienced dApp users, transaction speeds may produce anxiety around
         whether something has worked or not. Use messaging in your states to
         explain that parts of the process may take a while.{' '}
@@ -125,7 +125,7 @@ storiesOf('dApp patterns', module).add('Transaction states', () => (
       <Text.p>
         Ethereum transactions are complicated. Explaining everything under the
         hood isn't necessary, but you should stll make sure your user is aware
-        of big changes in the transaction life cycle.
+        of big changes in the transaction cycle.
       </Text.p>
       <Text>
         <b>1.</b> Confirm that the button they pressed to initiate the
@@ -285,7 +285,7 @@ storiesOf('dApp patterns', module).add('Transaction states', () => (
       <Heading.h3>Reference the action, not transaction</Heading.h3>
 
       <Text.p>
-        Use specific language throughout the transaction lifecycle. If the
+        Use specific language throughout. If the
         transaction is actually transfering a crypto asset, refer to that. Or if
         your users are casting a vote on the blockchain, reference the vote.
         This will spare users having to make connections in their head. Echo the

@@ -23,10 +23,10 @@ import {
 storiesOf('Components/Buttons/OutlineButton', module).add(
   'Documentation',
   withDocs(Documentation, () => (
-    <Box>
+    <Box m={3}>
       <Box>
-        <Heading.h2>OutlineButton examples</Heading.h2>
-        <Text>Different ways to use the OutlineButton component</Text>
+        <Heading.h3>OutlineButton examples</Heading.h3>
+        <Text>Different ways to use the <code>{'OutlineButton'}</code> component</Text>
         <br />
       </Box>
       <Box>

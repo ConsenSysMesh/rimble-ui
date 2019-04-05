@@ -1,4 +1,4 @@
-# Box
+# Box documentation
 
 The `Box` renders a responsive box-model layout component.
 
@@ -87,7 +87,7 @@ All styled-system functions accept arrays as values to set styles responsively u
 
 ### Component props
 
-Box does not have any props but will pass on props that are defined on its component.
+`Box` does not have any props but will pass on props that are defined on its component.
 
 ### Styled-system props
 

@@ -10,10 +10,10 @@ import { TextButton, Box, Button, Heading, Text } from 'rimble-ui';
 storiesOf('Components/Buttons/TextButton', module).add(
   'Documentation',
   withDocs(Documentation, () => (
-    <Box>
+    <Box mx={3}>
       <Box>
-        <Heading.h2>TextButton examples</Heading.h2>
-        <Text>Different ways to use the TextButton component</Text>
+        <Heading.h3>TextButton examples</Heading.h3>
+        <Text>Different ways to use the <code>{'TextButton'}</code> component</Text>
         <br />
       </Box>
       <Box>

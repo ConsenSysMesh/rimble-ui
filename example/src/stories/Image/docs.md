@@ -1,4 +1,4 @@
-# Image
+# Image documentation
 
 Use the `Image` component to display an image in your product. This renders the `<img>` HTML element and extends the `Box` component.
 
@@ -12,7 +12,7 @@ import { Image } from 'rimble-ui';
 
 ### Component props
 
-Image will pass any props that are defined on its component and uses the following:
+`Image` will pass any props that are defined on its component and uses the following:
 
 | Prop | Type   | Values | Default | Description                                     |
 | ---- | ------ | ------ | ------- | ----------------------------------------------- |
@@ -21,7 +21,7 @@ Image will pass any props that are defined on its component and uses the followi
 
 ### Styled-system props
 
-Image uses all the style props from [`Box`](https://consensys.github.io/rimble-ui/?path=/story/components-layout-box--documentation).
+`Image` uses all the style props from [`Box`](https://consensys.github.io/rimble-ui/?path=/story/components-layout-box--documentation).
 
 ### Accessibility
 

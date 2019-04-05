@@ -10,7 +10,7 @@ import { Textarea, Box } from 'rimble-ui';
 storiesOf('Components/Form/Text area', module).add(
   'Documentation',
   withDocs(Documentation, () => (
-    <Box>
+    <Box mx={3}>
       <CodeBlock>
         <Textarea rows={4} defaultValue="Start typing..." />
       </CodeBlock>

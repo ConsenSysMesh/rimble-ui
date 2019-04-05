@@ -14,8 +14,8 @@ import { TextButton } from 'rimble-ui';
 
 ### Component props
 
-Button uses all the props from [`Button`](https://consensys.github.io/rimble-ui/?path=/story/components-buttons-button--documentation).
+`TextButton` uses all the props from [`Button`](https://consensys.github.io/rimble-ui/?path=/story/components-buttons-button--documentation).
 
 ### Styled-system props
 
-Button uses all the style props from [`Button`](https://consensys.github.io/rimble-ui/?path=/story/components-buttons-button--documentation).
+`TextButton` uses all the style props from [`Button`](https://consensys.github.io/rimble-ui/?path=/story/components-buttons-button--documentation).

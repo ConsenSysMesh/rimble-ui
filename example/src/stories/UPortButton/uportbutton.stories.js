@@ -10,10 +10,10 @@ import { UPortButton, Flex, Box, Heading, Text, Button } from 'rimble-ui';
 storiesOf('Components/UPortButton', module).add(
   'Documentation',
   withDocs(Documentation, () => (
-    <Box>
+    <Box mx={3}>
       <Box>
-        <Heading.h2>UPortButton examples</Heading.h2>
-        <Text>Different ways to use the UPortButton component</Text>
+        <Heading.h3>UPortButton examples</Heading.h3>
+        <Text>Different ways to use the <code>{'UPortButton'}</code> component</Text>
         <br />
       </Box>
       <Box>
@@ -22,8 +22,7 @@ storiesOf('Components/UPortButton', module).add(
           <UPortButton>Connect with uPort</UPortButton>
         </CodeBlock>
       </Box>
-
-      <br />
+<br />
       <Box>
         <Heading.h4>Solid background</Heading.h4>
         <UPortButton.Solid>Connect with uPort</UPortButton.Solid>
@@ -31,7 +30,7 @@ storiesOf('Components/UPortButton', module).add(
           {`<UPortButton.Solid>Connect with uPort</UPortButton.Solid>`}
         </CodeBlock>
       </Box>
-
+<br />
       <Box>
         <Heading.h4>Different sizes</Heading.h4>
         <CodeBlock>
@@ -50,14 +49,14 @@ storiesOf('Components/UPortButton', module).add(
           <UPortButton size="large">Connect with uPort</UPortButton>
         </CodeBlock>
       </Box>
-
+<br />
       <Box>
         <Heading.h4>Full-width button</Heading.h4>
         <CodeBlock>
           <UPortButton fullWidth>Connect with uPort</UPortButton>
         </CodeBlock>
       </Box>
-
+<br />
       <Box>
         <Heading.h4>Disabled</Heading.h4>
         <CodeBlock>

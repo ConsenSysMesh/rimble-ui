@@ -10,10 +10,10 @@ import { Icon, Box, Heading, Text } from 'rimble-ui';
 storiesOf('Components/Icon', module).add(
   'Documentation',
   withDocs(Documentation, () => (
-    <Box>
+    <Box mx={3}>
       <Box>
-        <Heading.h2>Icon examples</Heading.h2>
-        <Text.p>Different ways to use the Input component.</Text.p>
+        <Heading.h3>Icon examples</Heading.h3>
+        <Text.p>Different ways to use the <code>{'Icon'}</code> component in your product.</Text.p>
       </Box>
       <br />
       <Box>

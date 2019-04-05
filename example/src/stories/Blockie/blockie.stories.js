@@ -25,7 +25,7 @@ storiesOf('Components/Blockie', module)
   .add(
     'Documentation',
     withDocs(Documentation, () => (
-      <Box>
+      <Box mx={3}>
         <Box>
           <Blockie
             opts={{
@@ -57,10 +57,10 @@ storiesOf('Components/Blockie', module)
   .add(
     'Design guidelines',
     withDocs(Guidelines, () => (
-      <Box>
+      <Box mx={3}>
         <Box>
-          <Heading.h2>Design</Heading.h2>
-          <Text.p>Some best practice for using blockies</Text.p>
+          <Heading.h3>Design</Heading.h3>
+          <Text.p>Some best practice for using <code>{'Blockie'}</code> in your product.</Text.p>
         </Box>
         <Box>
           <Heading.h4>Don't make blockies circular</Heading.h4>
@@ -102,7 +102,7 @@ storiesOf('Components/Blockie', module)
 
         <br />
         <Box>
-          <Heading.h2>Research</Heading.h2>
+          <Heading.h3>Research</Heading.h3>
           <Text>
             We have some anecdotal evidence that blockies are not effectively
             helping users of Ethereum wallets or dApps as they are being
@@ -133,7 +133,6 @@ storiesOf('Components/Blockie', module)
           <br />
           <br />
         </Card>
-        <br />
       </Box>
     ))
   );

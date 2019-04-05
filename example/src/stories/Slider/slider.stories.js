@@ -39,7 +39,7 @@ class MyCustomSlider extends Component {
 storiesOf('Components/Form/Slider', module).add(
   'Documentation',
   withDocs(Documentation, () => (
-    <Box>
+    <Box mx={3}>
       <Box>
         <MyCustomSlider />
       </Box>

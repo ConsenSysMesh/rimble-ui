@@ -23,7 +23,7 @@ storiesOf('Components/PublicAddress', module)
   .add(
     'Documentation',
     withDocs(Documentation, () => (
-      <Box>
+      <Box mx={3}>
         <CodeBlock>
           <PublicAddress
             address={'0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2'}
@@ -35,9 +35,9 @@ storiesOf('Components/PublicAddress', module)
   .add(
     'Design guidelines',
     withDocs(Guidelines, () => (
-      <Box>
+      <Box mx={3}>
         <Box>
-          <Heading.h2>Design</Heading.h2>
+          <Heading.h3>Design</Heading.h3>
           <Text.p>
             Some best practice for using <code>{'PublicAddress'}</code>
           </Text.p>
@@ -84,7 +84,7 @@ storiesOf('Components/PublicAddress', module)
           </Link>
           <br />
           <br />
-        </Card>
+        </Card><br />
       </Box>
     ))
   );

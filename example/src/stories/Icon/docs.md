@@ -1,4 +1,4 @@
-# Icon
+# Icon documentation
 
 The `Icon` component renders Material Design Icons. Built with [rmdi](https://github.com/jxnblk/rmdi).
 
@@ -12,7 +12,7 @@ import { Icon } from 'rimble-ui';
 
 ### Component props
 
-Icon will pass any props that are defined on its component and uses the following:
+`Icon` will pass any props that are defined on its component and uses the following:
 
 | Prop  | Type   | Values                                                           | Default | Description                     |
 | ----- | ------ | ---------------------------------------------------------------- | ------- | ------------------------------- |

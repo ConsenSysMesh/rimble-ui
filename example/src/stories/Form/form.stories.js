@@ -5,7 +5,7 @@ import CodeBlock from '../../components/CodeBlock';
 
 import Documentation from './docs.md';
 
-import { Flex, Card, Image, Button, Form } from 'rimble-ui';
+import { Flex, Card, Image, Button, Form, Box } from 'rimble-ui';
 
 class MyCustomForm extends Component {
   constructor(props) {
@@ -57,7 +57,7 @@ class MyCustomForm extends Component {
 storiesOf('Components/Form/Form', module).add(
   'Documentation',
   withDocs(Documentation, () => (
-    <div>
+    <Box mx={3}>
       <Card>
         <MyCustomForm />
       </Card>
@@ -109,6 +109,6 @@ class MyCustomForm extends Component {
     );
   }
 }`}</CodeBlock>
-    </div>
+    </Box>
   ))
 );

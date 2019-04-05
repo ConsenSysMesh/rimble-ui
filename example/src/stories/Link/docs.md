@@ -1,4 +1,4 @@
-# Link
+# Link documentation
 
 The `Link` component provides a basic styled link.
 

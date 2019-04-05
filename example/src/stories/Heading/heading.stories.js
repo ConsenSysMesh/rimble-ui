@@ -21,10 +21,10 @@ storiesOf('Components/Heading', module)
   .add(
     'Documentation',
     withDocs(Documentation, () => (
-      <Box>
+      <Box mx={3}>
         <Box>
-          <Heading.h2>Heading examples</Heading.h2>
-          <Text>Different ways to use the Heading component</Text>
+          <Heading.h3>Heading examples</Heading.h3>
+          <Text>Different ways to use the <code>{'Heading'}</code> component</Text>
           <br />
         </Box>
         <Box>
@@ -109,9 +109,9 @@ storiesOf('Components/Heading', module)
   .add(
     'Design guidelines',
     withDocs(Guidelines, () => (
-      <Box>
+      <Box mx={3}>
         <Box>
-          <Heading.h2>Design</Heading.h2>
+          <Heading.h3>Design</Heading.h3>
           <Text>
             Some best practices for using <code>{'Heading'}</code> in your
             product.
@@ -153,7 +153,7 @@ storiesOf('Components/Heading', module)
         <br />
         <br />
         <Box>
-          <Heading.h2>Content</Heading.h2>
+          <Heading.h3>Content</Heading.h3>
           <Text>
             Some best practices for writing <code>{'Heading'}</code> components.
           </Text>

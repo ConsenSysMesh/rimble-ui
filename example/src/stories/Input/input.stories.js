@@ -26,11 +26,11 @@ storiesOf('Components/Form/Inputs', module)
   .add(
     'Documentation',
     withDocs(Documentation, () => (
-      <Box>
+      <Box mx={3}>
         <Box>
-          <Heading.h2>Input examples</Heading.h2>
+          <Heading.h3>Input examples</Heading.h3>
           <Text>
-            Different ways to use the Input component. <b>Note</b>: these
+            Different ways to use the <code>{'Input'}</code> component in your product. <b>Note</b>: these
             examples use the{' '}
             <Link
               href="https://consensys.github.io/rimble-ui/?path=/story/components-form-field--documentation"
@@ -221,9 +221,9 @@ storiesOf('Components/Form/Inputs', module)
   .add(
     'Design guidelines',
     withDocs(Guidelines, () => (
-      <Box>
+      <Box mx={3}>
         <Box>
-          <Heading.h2>Design</Heading.h2>
+          <Heading.h3>Design</Heading.h3>
           <Text>
             Some best practices for using <code>{'Input'}</code> in your
             product.

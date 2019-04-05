@@ -10,10 +10,10 @@ import { Pill, Box, Text, Heading } from 'rimble-ui';
 storiesOf('Components/Pill', module).add(
   'Documentation',
   withDocs(Documentation, () => (
-    <Box>
+    <Box mx={3}>
       <Box>
-        <Heading.h2>Pill examples</Heading.h2>
-        <Text.p>Different ways to use the pill component</Text.p>
+        <Heading.h3>Pill examples</Heading.h3>
+        <Text.p>Different ways to use the <code>{'Pill'}</code> component in your product.</Text.p>
       </Box>
 
       <Box>
