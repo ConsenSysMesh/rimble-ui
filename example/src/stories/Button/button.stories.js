@@ -232,35 +232,6 @@ storiesOf('Components/Buttons', module).add(
         </Flex>
       </Card>
       <br />
-      <Box>
-        <Heading.h4>Use the disabled state to block actions</Heading.h4>
-        <Text>
-          If a user needs to do something prior to performing an action, it’s
-          better to set the Disabled prop to True than to use this component and
-          follow it up with an error message
-        </Text>
-      </Box>
-      <Flex>
-        <Card mx={'auto'} my={3} px={4} width="400px">
-          <Pill mb={3} color={'green'}>
-            {'Do'}
-          </Pill>
-          <br />
-          <br />
-          <Button disabled mb="3">
-            Pay 0.42 Ether
-          </Button>
-        </Card>
-        <Card mx={'auto'} my={3} px={4} width="400px">
-          <Pill mb={3} color={'red'}>
-            {"Don't"}
-          </Pill>
-          <br />
-          <br />
-          <Button>Open Modal</Button>
-        </Card>
-      </Flex>
-      <br />
       <br />
       <Box>
         <Heading.h3>Content</Heading.h3>
@@ -339,7 +310,7 @@ storiesOf('Components/Buttons', module).add(
       <Box>
         <Heading.h4>Lead with a verb and follow with a noun</Heading.h4>
         <Text>
- Don’t rely on the rest of the interface to
+          Don’t rely on the rest of the interface to
           inform the user about what their action relates to.
         </Text>
       </Box>
