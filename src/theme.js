@@ -2,6 +2,7 @@
 export default {
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64],
   fontWeights: [0, 300, 400, 600, 700],
+  letterSpacings: [0, 1, 2, 4, 8],
   lineHeights: {
     solid: 1,
     title: 1.25,
@@ -20,6 +21,7 @@ export default {
   minHeights: [0, 16, 32, 64, 128, 256],
   maxHeights: [0, 16, 32, 64, 128, 256],
   borders: [0, '1px solid transparent'],
+  borderWidths: ['0', '1px', '2px', '4px'],
   shadows: [
     '0',
     '0px 2px 4px rgba(0, 0, 0, 0.1)',
@@ -76,4 +78,5 @@ export default {
       'rgba(255,255,255,.9)',
     ],
   },
+  zIndices: [0, 9, 99, 999, 9999],
 };

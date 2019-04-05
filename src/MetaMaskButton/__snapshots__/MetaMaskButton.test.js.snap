@@ -115,6 +115,12 @@ exports[`MetaMaskButton component sanity matches themed snapshot 1`] = `
 <ThemeProvider
   theme={
     Object {
+      "borderWidths": Array [
+        "0",
+        "1px",
+        "2px",
+        "4px",
+      ],
       "borders": Array [
         0,
         "1px solid transparent",
@@ -194,6 +200,13 @@ exports[`MetaMaskButton component sanity matches themed snapshot 1`] = `
         128,
         256,
       ],
+      "letterSpacings": Array [
+        0,
+        1,
+        2,
+        4,
+        8,
+      ],
       "lineHeights": Object {
         "copy": 1.5,
         "solid": 1,
@@ -267,6 +280,13 @@ exports[`MetaMaskButton component sanity matches themed snapshot 1`] = `
         128,
         256,
       ],
+      "zIndices": Array [
+        0,
+        9,
+        99,
+        999,
+        9999,
+      ],
     }
   }
 >
@@ -274,6 +294,12 @@ exports[`MetaMaskButton component sanity matches themed snapshot 1`] = `
   <styled.div
     theme={
       Object {
+        "borderWidths": Array [
+          "0",
+          "1px",
+          "2px",
+          "4px",
+        ],
         "borders": Array [
           0,
           "1px solid transparent",
@@ -353,6 +379,13 @@ exports[`MetaMaskButton component sanity matches themed snapshot 1`] = `
           128,
           256,
         ],
+        "letterSpacings": Array [
+          0,
+          1,
+          2,
+          4,
+          8,
+        ],
         "lineHeights": Object {
           "copy": 1.5,
           "solid": 1,
@@ -425,6 +458,13 @@ exports[`MetaMaskButton component sanity matches themed snapshot 1`] = `
           64,
           128,
           256,
+        ],
+        "zIndices": Array [
+          0,
+          9,
+          99,
+          999,
+          9999,
         ],
       }
     }

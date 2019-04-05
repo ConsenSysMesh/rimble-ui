@@ -5,10 +5,10 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "prop-types": "^15.7.2",
-    "react": "16.8.4",
-    "react-dom": "^16.8.5",
-    "react-scripts": "^2.1.8",
+    "prop-types": "15.7.2",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "react-scripts": "2.1.8",
     "rimble-ui": "link:.."
   },
   "scripts": {
@@ -21,16 +21,25 @@
     "deploy-storybook": "storybook-to-ghpages"
   },
   "devDependencies": {
-    "@babel/core": "^7.4.0",
-    "@storybook/addon-a11y": "^5.0.5",
-    "@storybook/addon-actions": "^5.0.5",
-    "@storybook/addon-links": "^5.0.5",
-    "@storybook/addon-viewport": "^5.0.5",
-    "@storybook/addons": "^5.0.5",
-    "@storybook/react": "^5.0.5",
-    "@storybook/storybook-deployer": "^2.8.1",
-    "babel-loader": "^8.0.5",
-    "storybook-addon-styled-component-theme": "^1.1.1",
-    "storybook-readme": "^5.0.1"
-  }
+    "@babel/core": "7.4.3",
+    "@storybook/addon-a11y": "5.0.6",
+    "@storybook/addon-actions": "5.0.6",
+    "@storybook/addon-links": "5.0.6",
+    "@storybook/addon-viewport": "5.0.6",
+    "@storybook/addons": "5.0.6",
+    "@storybook/react": "5.0.6",
+    "@storybook/storybook-deployer": "2.8.1",
+    "@storybook/theming": "^5.0.6",
+    "babel-loader": "8.0.5",
+    "prismjs": "^1.16.0",
+    "react-element-to-jsx-string": "^14.0.2",
+    "storybook-addon-styled-component-theme": "1.1.1",
+    "storybook-readme": "5.0.1"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
