@@ -14,13 +14,13 @@ const TextButton = styled(Button).attrs(props => ({
     background-color: transparent;
     box-shadow: none;
   }
-  &:hover {
+  &&:hover {
     color: ${props => tint(0.2, props.primarycolor)};
     background-color: transparent;
     text-decoration: underline;
     box-shadow: none;
   }
-  &:active {
+  &&:active {
     color: ${props => shade(0.2, props.primarycolor)};
     text-decoration: none;
     background-color: transparent;
