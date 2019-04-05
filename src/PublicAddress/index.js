@@ -114,7 +114,7 @@ class PublicAddress extends Component {
 
   render() {
     return (
-      <Field label="Public Address">
+      <Field label="Public address">
         <StyledWrapper>
           <StyledInput
             readOnly

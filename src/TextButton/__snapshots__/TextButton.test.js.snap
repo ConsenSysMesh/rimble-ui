@@ -2,10 +2,10 @@
 
 exports[`TextButton component sanity matches default snapshot 1`] = `
 .c1 {
+  padding-top: 0;
+  padding-bottom: 0;
   padding-left: 32px;
   padding-right: 32px;
-  padding-top: 0px;
-  padding-bottom: 0px;
   color: #4E3FCE;
   background-color: transparent;
   font-size: inherit;
@@ -120,10 +120,10 @@ exports[`TextButton component sanity matches default snapshot 1`] = `
 
 exports[`TextButton component sanity matches themed snapshot 1`] = `
 .c2 {
+  padding-top: 0;
+  padding-bottom: 0;
   padding-left: 32px;
   padding-right: 32px;
-  padding-top: 0px;
-  padding-bottom: 0px;
   color: #4E3FCE;
   background-color: transparent;
   font-size: inherit;

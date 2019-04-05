@@ -1,18 +1,27 @@
-import React from 'react'
-import { storiesOf } from '@storybook/react'
+import React from 'react';
+import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
+import CodeBlock from '../../components/CodeBlock';
 
-import MyREADME from './README.md';
+import Documentation from './docs.md';
 
-import {
-  Input,
-  Field
-} from 'rimble-ui'
+import { Input, Field, Box, Heading, Text } from 'rimble-ui';
 
-storiesOf('Form/Field Component', module)
-  .addDecorator(withDocs(MyREADME))
-  .add('Field', () => (
-    <Field label='label'>
-      <Input type='text' />
-    </Field>
+storiesOf('Components/Form/Field', module).add(
+  'Documentation',
+  withDocs(Documentation, () => (
+    <Box mx={3}>
+      <Box>
+        <Field label="Public address">
+          <Input type="text" required="true" />
+        </Field>
+      </Box>
+
+      <CodeBlock textOnly>
+        {`<Field label="Public address">
+  <Input type="text" required="true" />
+</Field>`}
+      </CodeBlock>
+    </Box>
   ))
+);

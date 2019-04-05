@@ -1,13 +1,19 @@
-import React from 'react'
-import { storiesOf } from '@storybook/react'
+import React from 'react';
+import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
+import CodeBlock from '../../components/CodeBlock';
 
-import MyREADME from './README.md';
+import Documentation from './docs.md';
 
-import { Textarea } from 'rimble-ui'
+import { Textarea, Box } from 'rimble-ui';
 
-storiesOf('Form/Inputs', module)
-  .addDecorator(withDocs(MyREADME))
-  .add('Textarea', () => (
-    <Textarea rows={4} defaultValue='Hello' />
+storiesOf('Components/Form/Text area', module).add(
+  'Documentation',
+  withDocs(Documentation, () => (
+    <Box mx={3}>
+      <CodeBlock>
+        <Textarea rows={4} defaultValue="Start typing..." />
+      </CodeBlock>
+    </Box>
   ))
+);

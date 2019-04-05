@@ -13,7 +13,6 @@ import {
   maxHeight,
   minHeight,
   size,
-  ratio,
   verticalAlign,
   // flexbox
   flex,

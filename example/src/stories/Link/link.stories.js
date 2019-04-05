@@ -1,13 +1,21 @@
-import React from 'react'
-import { storiesOf } from '@storybook/react'
+import React from 'react';
+import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
+import CodeBlock from '../../components/CodeBlock';
 
-import MyREADME from './README.md';
+import Documentation from './docs.md';
 
-import { Link } from 'rimble-ui'
+import { Link, Box } from 'rimble-ui';
 
-storiesOf('Link', module)
-  .addDecorator(withDocs(MyREADME))
-  .add('default', () => (
-    <Link href='#!'>Click me!</Link>
+storiesOf('Components/Link', module).add(
+  'Documentation',
+  withDocs(Documentation, () => (
+    <Box mx={3}>
+      <CodeBlock>
+        <Link href="#!" target="_blank" title="This link goes somewhere">
+          Click me!
+        </Link>
+      </CodeBlock>
+    </Box>
   ))
+);
