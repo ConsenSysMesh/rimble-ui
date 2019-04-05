@@ -134,13 +134,14 @@ storiesOf('Getting started', module)
           <Text.p color="white">
             We're completely open source so feel free to raise any issues or suggest improvements to Rimble.
           </Text.p>
-          <Link
+          <OutlineButton
+            as={Link}
             href="https://github.com/ConsenSys/rimble-ui/blob/master/docs/CONTRIBUTIONS.md"
             title="Rimble UI on GitHub"
             target="_blank"
           >
-            <OutlineButton>Contribute</OutlineButton>
-          </Link>
+            Contribute
+          </OutlineButton>
         </Card>
       </Box>
       <br />
