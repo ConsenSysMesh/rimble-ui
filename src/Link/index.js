@@ -21,6 +21,10 @@ const Link = styled(Text).attrs(props => ({
     color: ${props => shade(0.2, props.primarycolor)};
     text-decoration: none;
   }
+
+  button {
+    text-decoration: none;
+  }
 `;
 
 Link.defaultProps = {
