@@ -2,17 +2,19 @@
 
 exports[`Button component sanity matches default snapshot 1`] = `
 .c1 {
-  margin: 0px;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
   padding-left: 32px;
   padding-right: 32px;
-  padding-top: 0px;
-  padding-bottom: 0px;
   color: #fff;
   background-color: #4E3FCE;
   font-size: inherit;
   height: 48px;
   position: relative;
   border: 0;
+  border-color: none;
+  border-radius: 4px;
   border-color: none;
   border-radius: 4px;
   text-align: left;
@@ -54,10 +56,11 @@ exports[`Button component sanity matches default snapshot 1`] = `
   justify-content: center;
   -webkit-transition: all .15s ease;
   transition: all .15s ease;
-  background-color: #4E3FCE;
 }
 
-.c0:hover {
+.c0.c0:hover {
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
   background-color: #5f52d2;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
 }
@@ -105,17 +108,19 @@ exports[`Button component sanity matches default snapshot 1`] = `
 
 exports[`Button component sanity matches themed snapshot 1`] = `
 .c2 {
-  margin: 0px;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
   padding-left: 32px;
   padding-right: 32px;
-  padding-top: 0px;
-  padding-bottom: 0px;
   color: #fff;
   background-color: #4E3FCE;
   font-size: inherit;
   height: 48px;
   position: relative;
   border: 0;
+  border-color: none;
+  border-radius: 4px;
   border-color: none;
   border-radius: 4px;
   text-align: left;
@@ -157,10 +162,11 @@ exports[`Button component sanity matches themed snapshot 1`] = `
   justify-content: center;
   -webkit-transition: all .15s ease;
   transition: all .15s ease;
-  background-color: #4E3FCE;
 }
 
-.c1:hover {
+.c1.c1:hover {
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
   background-color: #5f52d2;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
 }
