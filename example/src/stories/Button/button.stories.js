@@ -337,9 +337,9 @@ storiesOf('Components/Buttons', module).add(
       </Flex>
       <br />
       <Box>
-        <Heading.h4>Lead with a verb</Heading.h4>
+        <Heading.h4>Lead with a verb and follow with a noun</Heading.h4>
         <Text>
-          And follow with a noun. Don’t rely on the rest of the interface to
+ Don’t rely on the rest of the interface to
           inform the user about what their action relates to.
         </Text>
       </Box>
