@@ -6,8 +6,8 @@
   "private": true,
   "dependencies": {
     "prop-types": "15.7.2",
-    "react": "16.8.4",
-    "react-dom": "16.8.5",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
     "react-scripts": "2.1.8",
     "rimble-ui": "link:.."
   },
@@ -21,13 +21,13 @@
     "deploy-storybook": "storybook-to-ghpages"
   },
   "devDependencies": {
-    "@babel/core": "7.4.0",
-    "@storybook/addon-a11y": "5.0.5",
-    "@storybook/addon-actions": "5.0.5",
-    "@storybook/addon-links": "5.0.5",
-    "@storybook/addon-viewport": "5.0.5",
-    "@storybook/addons": "5.0.5",
-    "@storybook/react": "5.0.5",
+    "@babel/core": "7.4.3",
+    "@storybook/addon-a11y": "5.0.6",
+    "@storybook/addon-actions": "5.0.6",
+    "@storybook/addon-links": "5.0.6",
+    "@storybook/addon-viewport": "5.0.6",
+    "@storybook/addons": "5.0.6",
+    "@storybook/react": "5.0.6",
     "@storybook/storybook-deployer": "2.8.1",
     "@storybook/theming": "^5.0.6",
     "babel-loader": "8.0.5",
