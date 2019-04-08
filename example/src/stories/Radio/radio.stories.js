@@ -2,6 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
 import CodeBlock from '../../components/CodeBlock';
+import ContributeBanner from '../../components/ContributeBanner';
 
 import Documentation from './docs.md';
 import Guidelines from './guide.md';
@@ -27,11 +28,14 @@ storiesOf('Components/Form/Radio buttons', module)
     'Documentation',
     withDocs(Documentation, () => (
       <Box mx={3}>
-      <Box>
-        <Heading.h3>Radio examples</Heading.h3>
-        <Text>Different ways to use the <code>{'Radio'}</code> component</Text><br />
-        <br />
-      </Box>
+        <Box>
+          <Heading.h3>Radio examples</Heading.h3>
+          <Text>
+            Different ways to use the <code>{'Radio'}</code> component
+          </Text>
+          <br />
+          <br />
+        </Box>
         <CodeBlock>
           <Field label="Choose transaction speed">
             <Radio label="Quick" my={2} required="false" />
@@ -184,28 +188,7 @@ storiesOf('Components/Form/Radio buttons', module)
             </Field>
           </Card>
         </Flex>
-        <br />
-        <br />
-        <Text textAlign={'center'}>(ﾉ◕ヮ◕)ﾉ*:・ﾟ✧</Text>
-        <br />
-        <Card color="white" bg="primary">
-          <Heading.h2 color="white">Are we missing anything?</Heading.h2>
-          <Text color="white">
-            If you have any extra insight you'd like to add, please raise an
-            issue in Github.
-          </Text>
-          <br />
-          <Link
-            href="https://github.com/ConsenSys/rimble-ui/issues"
-            title="GitHub Issues for Rimble UI"
-            target="_blank"
-          >
-            <OutlineButton Large>Raise issue</OutlineButton>
-          </Link>
-          <br />
-          <br />
-        </Card>
-        <br />
+        <ContributeBanner />
       </Box>
     ))
   );
