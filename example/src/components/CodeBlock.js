@@ -3,7 +3,7 @@ import { renderToStaticMarkup } from 'react-dom/server';
 import reactElementToJSXString from 'react-element-to-jsx-string';
 import Prism from 'prismjs';
 import PrismJsx from 'prismjs/components/prism-jsx.min';
-import { Flex, OutlineButton, Box, Heading, Checkbox } from 'rimble-ui';
+import { Flex, Button, Box, Heading, Checkbox } from 'rimble-ui';
 import './CodeBlock.css';
 
 const jsxStringOptions = {
@@ -41,11 +41,20 @@ class CodeBlock extends React.Component {
               mb={'-1em'}
             >
               <Heading.h6>Example code</Heading.h6>
-              <OutlineButton size="small" onClick={this.copyToClipboard}>
+              <Button
+                size="small"
+                color={'primary'}
+                bg={'white'}
+                style={{ zIndex: '1' }}
+                borderColor={'#ccc'}
+                border={1}
+                boxShadow={0}
+                onClick={this.copyToClipboard}
+              >
                 {this.state.copySuccess
                   ? this.state.copySuccess
                   : `Copy Snippet`}
-              </OutlineButton>
+              </Button>
               <textarea
                 ref={textarea => (this.textArea = textarea)}
                 style={{
@@ -73,11 +82,21 @@ class CodeBlock extends React.Component {
               mb={'-1em'}
             >
               <Heading.h6>Example code</Heading.h6>
-              <OutlineButton size="small" onClick={this.copyToClipboard}>
+              <Button
+                color={'primary'}
+                hovercolor={'white'}
+                bg={'white'}
+                size="small"
+                style={{ zIndex: '1' }}
+                borderColor={'#ccc'}
+                border={1}
+                boxShadow={0}
+                onClick={this.copyToClipboard}
+              >
                 {this.state.copySuccess
                   ? this.state.copySuccess
                   : `Copy Snippet`}
-              </OutlineButton>
+              </Button>
               <textarea
                 ref={textarea => (this.textArea = textarea)}
                 style={{

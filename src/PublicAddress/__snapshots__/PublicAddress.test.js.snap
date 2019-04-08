@@ -163,10 +163,11 @@ exports[`PublicAddress component sanity matches default snapshot 1`] = `
   justify-content: center;
   -webkit-transition: all .15s ease;
   transition: all .15s ease;
-  background-color: #4E3FCE;
 }
 
-.c4:hover {
+.c4.c4:hover {
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
   background-color: #5f52d2;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
 }
@@ -491,10 +492,11 @@ exports[`PublicAddress component sanity matches themed snapshot 1`] = `
   justify-content: center;
   -webkit-transition: all .15s ease;
   transition: all .15s ease;
-  background-color: #4E3FCE;
 }
 
-.c5:hover {
+.c5.c5:hover {
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
   background-color: #5f52d2;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
 }

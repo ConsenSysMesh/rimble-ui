@@ -26,65 +26,55 @@ storiesOf('Components/Buttons/OutlineButton', module).add(
     <Box m={3}>
       <Box>
         <Heading.h3>OutlineButton examples</Heading.h3>
-        <Text>Different ways to use the <code>{'OutlineButton'}</code> component</Text>
+        <Text>
+          Different ways to use the <code>{'OutlineButton'}</code> component
+        </Text>
         <br />
       </Box>
       <Box>
         <Heading.h4>Default</Heading.h4>
         <CodeBlock>
-          <OutlineButton mb={3}>Scan QR code</OutlineButton>
+          <OutlineButton>Scan QR code</OutlineButton>
         </CodeBlock>
       </Box>
 
       <Box>
         <Heading.h4>Different sizes</Heading.h4>
         <CodeBlock>
-          <OutlineButton size="small" mb={3}>
-            Scan QR code
-          </OutlineButton>
+          <OutlineButton size="small">Scan QR code</OutlineButton>
         </CodeBlock>
       </Box>
 
       <Box>
         <CodeBlock>
-          <OutlineButton size="medium" mb={3}>
-            Scan QR code
-          </OutlineButton>
+          <OutlineButton size="medium">Scan QR code</OutlineButton>
         </CodeBlock>
       </Box>
 
       <Box>
         <CodeBlock>
-          <OutlineButton size="large" mb={3}>
-            Scan QR code
-          </OutlineButton>
+          <OutlineButton size="large">Scan QR code</OutlineButton>
         </CodeBlock>
       </Box>
 
       <Box>
         <Heading.h4>Full-width button</Heading.h4>
         <CodeBlock>
-          <OutlineButton fullWidth mb={3}>
-            Scan QR code
-          </OutlineButton>
+          <OutlineButton fullWidth>Scan QR code</OutlineButton>
         </CodeBlock>
       </Box>
 
       <Box>
         <Heading.h4>Disabled button</Heading.h4>
         <CodeBlock>
-          <OutlineButton disabled mb={3}>
-            Scan QR code
-          </OutlineButton>
+          <OutlineButton disabled>Scan QR code</OutlineButton>
         </CodeBlock>
       </Box>
 
       <Box>
         <Heading.h4>Icon</Heading.h4>
         <CodeBlock>
-          <OutlineButton icon="CameraAlt" mb="3">
-            Scan QR code
-          </OutlineButton>
+          <OutlineButton icon="CameraAlt">Scan QR code</OutlineButton>
         </CodeBlock>
       </Box>
     </Box>

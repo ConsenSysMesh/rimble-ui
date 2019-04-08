@@ -49,10 +49,11 @@ exports[`TextButton component sanity matches default snapshot 1`] = `
   justify-content: center;
   -webkit-transition: all .15s ease;
   transition: all .15s ease;
-  background-color: #4E3FCE;
 }
 
-.c0:hover {
+.c0.c0:hover {
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
   background-color: #5f52d2;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
 }
@@ -90,7 +91,7 @@ exports[`TextButton component sanity matches default snapshot 1`] = `
   box-shadow: none;
 }
 
-.c0:hover {
+.c0.c0:hover {
   color: #7165d7;
   background-color: transparent;
   -webkit-text-decoration: underline;
@@ -98,7 +99,7 @@ exports[`TextButton component sanity matches default snapshot 1`] = `
   box-shadow: none;
 }
 
-.c0:active {
+.c0.c0:active {
   color: #3e32a4;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -167,10 +168,11 @@ exports[`TextButton component sanity matches themed snapshot 1`] = `
   justify-content: center;
   -webkit-transition: all .15s ease;
   transition: all .15s ease;
-  background-color: #4E3FCE;
 }
 
-.c1:hover {
+.c1.c1:hover {
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
   background-color: #5f52d2;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
 }
@@ -208,7 +210,7 @@ exports[`TextButton component sanity matches themed snapshot 1`] = `
   box-shadow: none;
 }
 
-.c1:hover {
+.c1.c1:hover {
   color: #7165d7;
   background-color: transparent;
   -webkit-text-decoration: underline;
@@ -216,7 +218,7 @@ exports[`TextButton component sanity matches themed snapshot 1`] = `
   box-shadow: none;
 }
 
-.c1:active {
+.c1.c1:active {
   color: #3e32a4;
   -webkit-text-decoration: none;
   text-decoration: none;
