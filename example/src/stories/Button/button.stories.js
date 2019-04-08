@@ -112,6 +112,33 @@ storiesOf('Components/Buttons/Button', module).add(
           </Button>
         </CodeBlock>
       </Box>
+      <br />
+      <Box>
+        <Heading.h4>Link button</Heading.h4>
+        <Text>
+          Use when you want a primary action to navigate the user to a new page
+          or area. Use action words as the button label.
+        </Text>
+        <Text.p italic>
+          This also requires you to import the Link component from the rimble-ui
+          library.
+        </Text.p>
+        <Button as={Link} href="#!" title="Learn more" target="_blank">
+          Learn More
+        </Button>
+        <CodeBlock textOnly>
+          {`
+<Button
+  as={Link}
+  href="#!"
+  title="Learn more"
+  target="_blank"
+>
+  Learn More
+</Button>
+`}
+        </CodeBlock>
+      </Box>
     </Box>
   ))
 );
