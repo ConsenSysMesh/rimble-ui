@@ -16,8 +16,4 @@ import { Flash } from 'rimble-ui';
 
 ### Styled-system props
 
-`Flash` uses all the style props from [`Box`](https://consensys.github.io/rimble-ui/?path=/story/components-layout-box--documentation), but also includes:
-
-| Prop      | CSS property | Function  | Theme field |
-| --------- | ------------ | --------- | ----------- |
-| textAlign | text-align   | textAlign | none        |
+`Flash` uses all the style props from [`Box`](https://consensys.github.io/rimble-ui/?path=/story/components-layout-box--documentation)
