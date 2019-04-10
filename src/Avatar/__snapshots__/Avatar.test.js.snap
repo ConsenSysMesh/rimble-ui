@@ -2,8 +2,8 @@
 
 exports[`Avatar component sanity matches default snapshot 1`] = `
 .c0 {
-  height: 2rem;
   width: 2rem;
+  height: 2rem;
 }
 
 .c0 {
@@ -30,8 +30,8 @@ exports[`Avatar component sanity matches default snapshot 1`] = `
 
 exports[`Avatar component sanity matches themed snapshot 1`] = `
 .c1 {
-  height: 2rem;
   width: 2rem;
+  height: 2rem;
 }
 
 .c1 {
