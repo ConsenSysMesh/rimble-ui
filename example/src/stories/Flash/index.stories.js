@@ -7,13 +7,45 @@ import Documentation from './docs.md';
 import Guidelines from './guide.md';
 
 import {
-  Flash
+  Flash,
+  Link
 } from 'rimble-ui';
 
 storiesOf('Components/Flash', module)
   .add(
     'Documentation',
     withDocs(Documentation, () => (
-      <Flash>hello</Flash>
+      <div>
+        <Flash>
+          Flash default
+          This is a primary alert with an <Link>example link</Link>. Give it a click if you like.
+        </Flash>
+
+        <Flash bg='blue'>
+          Flash "info"
+          This is a primary alert with an <Link>example link</Link>. Give it a click if you like.
+        </Flash>
+
+        <Flash bg='green'>
+          Flash "success"
+          This is a primary alert with an <Link>example link</Link>. Give it a click if you like.
+        </Flash>
+
+        <Flash bg='yellow'>
+          Flash "warning"
+          This is a primary alert with an <Link>example link</Link>. Give it a click if you like.
+        </Flash>
+
+        <Flash bg='red'>
+          Flash "danger"
+          This is a primary alert with an <Link>example link</Link>. Give it a click if you like.
+        </Flash>
+      </div>
+    ))
+  )
+  .add(
+    'Guidelines',
+    withDocs(Guidelines, () => (
+      <Flash>Flash default</Flash>
     ))
   )
