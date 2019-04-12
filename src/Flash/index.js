@@ -1,20 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
+import { variant } from 'styled-system';
 
 import defaultTheme from '../theme';
-
-// import Box from '../Box';
 import Text from '../Text';
 
-// const ProtoFlash = ({ className, children}) => (
-//   <Box className={className} bg={'red'}>
-//     <Text>
-//       {children}
-//     </Text>
-//   </Box>
-// )
+const flashVariant = variant({
+  key: 'messageStyle',
+});
 
 const Flash = styled(Text)`
+  ${flashVariant}
+
   & {
   }
 
@@ -22,19 +19,19 @@ const Flash = styled(Text)`
     font-size: inherit;
     cursor: pointer;
     color: inherit;
+    &:hover {
+      color: inherit;
+    }
   }
 `;
 
 Flash.defaultProps = {
   theme: defaultTheme,
-  as: 'div',
+  variant: 'base',
+  fontFamily: 'sansSerif',
   p: '3',
-  bg: 'near-white',
-  color: 'mid-gray',
-  borderColor: 'mid-gray',
   border: '1',
   borderRadius: 1,
-  fontFamily: 'sansSerif',
 };
 
 Flash.displayName = 'Flash';

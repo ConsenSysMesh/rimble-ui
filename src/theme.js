@@ -1,3 +1,5 @@
+import { tint, shade, darken } from 'polished';
+
 // theme.js
 export default {
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64],
@@ -79,4 +81,31 @@ export default {
     ],
   },
   zIndices: [0, 9, 99, 999, 9999],
+  messageStyle: {
+    base: {
+      color: shade(0.4, '#AAA'),
+      backgroundColor: tint(0.9, '#AAA'),
+      borderColor: '#AAA',
+    },
+    success: {
+      color: shade(0.4, '#28C081'),
+      backgroundColor: tint(0.9, '#28C081'),
+      borderColor: '#28C081',
+    },
+    warning: {
+      color: shade(0.4, '#FD9D28'),
+      backgroundColor: tint(0.9, '#FD9D28'),
+      borderColor: '#FD9D28',
+    },
+    danger: {
+      color: shade(0.4, '#DC2C10'),
+      backgroundColor: tint(0.9, '#DC2C10'),
+      borderColor: '#DC2C10',
+    },
+    info: {
+      color: shade(0.4, '#36ADF1'),
+      backgroundColor: tint(0.9, '#36ADF1'),
+      borderColor: '#36ADF1',
+    },
+  },
 };

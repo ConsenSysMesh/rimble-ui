@@ -21,22 +21,22 @@ storiesOf('Components/Flash', module)
           This is a primary alert with an <Link>example link</Link>. Give it a click if you like.
         </Flash>
 
-        <Flash bg='blue'>
+        <Flash variant={'info'} my={3}>
           Flash "info"
           This is a primary alert with an <Link>example link</Link>. Give it a click if you like.
         </Flash>
 
-        <Flash bg='green'>
+        <Flash variant={'success'} my={3}>
           Flash "success"
           This is a primary alert with an <Link>example link</Link>. Give it a click if you like.
         </Flash>
 
-        <Flash bg='yellow'>
+        <Flash variant={'warning'} my={3}>
           Flash "warning"
           This is a primary alert with an <Link>example link</Link>. Give it a click if you like.
         </Flash>
 
-        <Flash bg='red'>
+        <Flash variant={'danger'} my={3}>
           Flash "danger"
           This is a primary alert with an <Link>example link</Link>. Give it a click if you like.
         </Flash>
