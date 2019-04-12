@@ -1,4 +1,4 @@
-import { tint, shade, darken } from 'polished';
+import { tint, shade } from 'polished';
 
 // theme.js
 export default {
