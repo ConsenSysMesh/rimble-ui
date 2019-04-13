@@ -113,8 +113,12 @@ class PublicAddress extends Component {
   };
 
   render() {
+    let label = 'Public address';
+    if (this.props.label != null) {
+      label = this.props.label;
+    }
     return (
-      <Field label="Public address">
+      <Field label={label}>
         <StyledWrapper>
           <StyledInput
             readOnly
