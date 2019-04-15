@@ -3,7 +3,10 @@ import { renderToStaticMarkup } from 'react-dom/server';
 import reactElementToJSXString from 'react-element-to-jsx-string';
 import Prism from 'prismjs';
 import PrismJsx from 'prismjs/components/prism-jsx.min';
+import PrismJs from 'prismjs/components/prism-javascript';
+import PrismMarkup from 'prismjs/components/prism-markup.min';
 import { Flex, Button, Box, Heading, Checkbox } from 'rimble-ui';
+
 import './CodeBlock.css';
 
 const jsxStringOptions = {
@@ -32,91 +35,51 @@ class CodeBlock extends React.Component {
   render() {
     return (
       <Box mb={4} minWidth={['100%', '600px', '600px']}>
-        {this.props.textOnly ? (
-          <Box>
-            <Flex
-              justifyContent={'space-between'}
-              alignItems={'center'}
-              position={'relative'}
-              mb={'-1em'}
+        <Box>
+          {this.props.textOnly ? null : <Flex>{this.props.children}</Flex> }
+          
+          <Flex
+            justifyContent={'space-between'}
+            alignItems={'center'}
+            position={'relative'}
+            mb={'-1em'}
+          >
+            <Heading.h6>Example code</Heading.h6>
+            <Button
+              color={'primary'}
+              hovercolor={'white'}
+              bg={'white'}
+              size="small"
+              style={{ zIndex: '1' }}
+              borderColor={'#ccc'}
+              border={1}
+              boxShadow={0}
+              onClick={this.copyToClipboard}
             >
-              <Heading.h6>Example code</Heading.h6>
-              <Button
-                size="small"
-                color={'primary'}
-                bg={'white'}
-                style={{ zIndex: '1' }}
-                borderColor={'#ccc'}
-                border={1}
-                boxShadow={0}
-                onClick={this.copyToClipboard}
-              >
-                {this.state.copySuccess
-                  ? this.state.copySuccess
-                  : `Copy Snippet`}
-              </Button>
-              <textarea
-                ref={textarea => (this.textArea = textarea)}
-                style={{
-                  height: '1px',
-                  width: '1px',
-                  position: 'absolute',
-                  top: '50%',
-                  right: '3px',
-                  zIndex: '-1',
-                }}
-                value={this.state.code}
-              />
-            </Flex>
-            <pre className="lang-jsx">
-              <code>{this.props.children}</code>
-            </pre>
-          </Box>
-        ) : (
-          <Box>
-            <Flex>{this.props.children}</Flex>
-            <Flex
-              justifyContent={'space-between'}
-              alignItems={'center'}
-              position={'relative'}
-              mb={'-1em'}
-            >
-              <Heading.h6>Example code</Heading.h6>
-              <Button
-                color={'primary'}
-                hovercolor={'white'}
-                bg={'white'}
-                size="small"
-                style={{ zIndex: '1' }}
-                borderColor={'#ccc'}
-                border={1}
-                boxShadow={0}
-                onClick={this.copyToClipboard}
-              >
-                {this.state.copySuccess
-                  ? this.state.copySuccess
-                  : `Copy Snippet`}
-              </Button>
-              <textarea
-                ref={textarea => (this.textArea = textarea)}
-                style={{
-                  height: '1px',
-                  width: '1px',
-                  position: 'absolute',
-                  top: '50%',
-                  right: '3px',
-                  zIndex: '-1',
-                }}
-                value={this.state.code}
-              />
-            </Flex>
-            <pre className="lang-jsx">
-              <code>
-                {reactElementToJSXString(this.props.children, jsxStringOptions)}
-              </code>
-            </pre>
-          </Box>
-        )}
+              {this.state.copySuccess
+                ? this.state.copySuccess
+                : `Copy Snippet`}
+            </Button>
+            <textarea
+              ref={textarea => (this.textArea = textarea)}
+              style={{
+                height: '1px',
+                width: '1px',
+                position: 'absolute',
+                top: '50%',
+                right: '3px',
+                zIndex: '0',
+                border: 'none'
+              }}
+              value={this.state.code}
+            />
+          </Flex>
+          <pre className="language-markup">
+            <code>
+              {this.props.textOnly ? this.props.children : reactElementToJSXString(this.props.children, jsxStringOptions) }
+            </code>
+          </pre>
+        </Box>
       </Box>
     );
   }
