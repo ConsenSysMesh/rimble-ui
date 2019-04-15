@@ -2,6 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
 import CodeBlock from '../../components/CodeBlock';
+import ContributeBanner from '../../components/ContributeBanner';
 
 import Documentation from './docs.md';
 import Guidelines from './guide.md';
@@ -12,7 +13,7 @@ import {
   Heading,
   Text,
   Flex,
-  OutlineButton,
+  Button,
   Card,
   Pill,
   Link,
@@ -98,7 +99,10 @@ storiesOf('Components/Avatar', module)
         <Box>
           <Box>
             <Heading.h3>Design</Heading.h3>
-            <Text.p>Some best practice for using <code>{'Avatar'}</code> in your product.</Text.p>
+            <Text.p>
+              Some best practice for using <code>{'Avatar'}</code> in your
+              product.
+            </Text.p>
           </Box>
 
           <Heading.h4>Use with labels</Heading.h4>
@@ -132,29 +136,8 @@ storiesOf('Components/Avatar', module)
               />
             </Card>
           </Flex>
-          <br />
-          <br />
 
-          <Text textAlign={'center'}>(ﾉ◕ヮ◕)ﾉ*:・ﾟ✧</Text>
-          <br />
-          <Card color="white" bg="primary">
-            <Heading.h2 color="white">Are we missing anything?</Heading.h2>
-            <Text color="white">
-              If you have any extra insight you'd like to add, please raise an
-              issue in Github.
-            </Text>
-            <br />
-            <Link
-              href="https://github.com/ConsenSys/rimble-ui/issues"
-              title="GitHub Issues for Rimble UI"
-              target="_blank"
-            >
-              <OutlineButton Large>Raise issue</OutlineButton>
-            </Link>
-            <br />
-            <br />
-          </Card>
-          <br />
+          <ContributeBanner />
         </Box>
       </Box>
     ))

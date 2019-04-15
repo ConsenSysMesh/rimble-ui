@@ -3,6 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
 import { linkTo } from '@storybook/addon-links';
 import CodeBlock from '../../components/CodeBlock';
+import ContributeBanner from '../../components/ContributeBanner';
 
 import Documentation from './docs.md';
 import Guidelines from './guide.md';
@@ -28,7 +29,9 @@ storiesOf('Components/ToastMessage', module)
       <Box mx={3}>
         <Box>
           <Heading.h3>ToastMessage examples</Heading.h3>
-          <Text>Different ways to use the <code>{'ToastMessage'}</code> component</Text>
+          <Text>
+            Different ways to use the <code>{'ToastMessage'}</code> component
+          </Text>
           <br />
         </Box>
         <Box>
@@ -43,7 +46,7 @@ storiesOf('Components/ToastMessage', module)
             <Box width={'50%'} mr={4}>
               <ToastMessage message={'Transaction started'} my={3} />
               <CodeBlock textOnly>
-              {`<ToastMessage message={"Transaction started"} />`}
+                {`<ToastMessage message={"Transaction started"} />`}
               </CodeBlock>
             </Box>
             <Box width={'50%'} mr={4}>
@@ -53,13 +56,12 @@ storiesOf('Components/ToastMessage', module)
                 my={3}
               />
               <CodeBlock textOnly>
-              {`<ToastMessage
+                {`<ToastMessage
                 message={'0xAc0...e5A connected'}
                 colorTheme={'dark'}
                 my={3}
               />`}
               </CodeBlock>
-
             </Box>
           </Flex>
           <Box>
@@ -78,7 +80,7 @@ storiesOf('Components/ToastMessage', module)
                 my={3}
               />
               <CodeBlock textOnly>
-              {`<ToastMessage
+                {`<ToastMessage
                 message={'Transaction complete'}
                 secondaryMessage={'You have 4.20 ETH remaining'}
                 my={3}
@@ -93,7 +95,7 @@ storiesOf('Components/ToastMessage', module)
                 my={3}
               />
               <CodeBlock textOnly>
-              {`<ToastMessage
+                {`<ToastMessage
                 message={'Switched network'}
                 secondaryMessage={'You are now on Rinkeby'}
                 colorTheme={'dark'}
@@ -115,7 +117,7 @@ storiesOf('Components/ToastMessage', module)
                 my={3}
               />
               <CodeBlock textOnly>
-              {`<ToastMessage
+                {`<ToastMessage
                 message={'Welcome to my dApp'}
                 icon={'Mood'}
                 my={3}
@@ -130,7 +132,7 @@ storiesOf('Components/ToastMessage', module)
                 colorTheme={'dark'}
               />
               <CodeBlock textOnly>
-              {`<ToastMessage
+                {`<ToastMessage
                 message={'Welcome to my dApp'}
                 icon={'Mood'}
                 my={3}
@@ -158,7 +160,7 @@ storiesOf('Components/ToastMessage', module)
                 actionHref={'#!'}
               />
               <CodeBlock textOnly>
-              {`<ToastMessage
+                {`<ToastMessage
                 message={'Transaction started'}
                 secondaryMessage={'Check on its progress using Etherscan'}
                 my={3}
@@ -180,7 +182,7 @@ storiesOf('Components/ToastMessage', module)
                 colorTheme={'dark'}
               />
               <CodeBlock textOnly>
-              {`<ToastMessage
+                {`<ToastMessage
                 message={'Write update here [Required]'}
                 secondaryMessage={
                   'Supporting information for update [Optional]'
@@ -209,7 +211,7 @@ storiesOf('Components/ToastMessage', module)
               message={'Processing 0.00018 ETH payment'}
             />
             <CodeBlock textOnly>
-            {`<ToastMessage.Processing
+              {`<ToastMessage.Processing
               my={3}
               message={'Processing 0.00018 ETH payment'}
             />`}
@@ -222,7 +224,7 @@ storiesOf('Components/ToastMessage', module)
               secondaryMessage={'You have 1.03 Ether (ETH) remaining'}
             />
             <CodeBlock textOnly>
-            {`<ToastMessage.Success
+              {`<ToastMessage.Success
               my={3}
               message={'ETH sent'}
               secondaryMessage={'You have 1.03 Ether (ETH) remaining'}
@@ -238,7 +240,7 @@ storiesOf('Components/ToastMessage', module)
               actionHref={'#!'}
             />
             <CodeBlock textOnly>
-            {`<ToastMessage.Failure
+              {`<ToastMessage.Failure
               my={3}
               message={'Payment failed'}
               secondaryMessage={"You don't have enough Ether (ETH)"}
@@ -692,28 +694,7 @@ storiesOf('Components/ToastMessage', module)
             />
           </Card>
         </Flex>
-        <br />
-        <br />
-        <Text textAlign={'center'}>(ﾉ◕ヮ◕)ﾉ*:・ﾟ✧</Text>
-        <br />
-        <Card color="white" bg="primary">
-          <Heading.h2 color="white">Are we missing anything?</Heading.h2>
-          <Text color="white">
-            If you have any extra insight you'd like to add, please raise an
-            issue in Github.
-          </Text>
-          <br />
-          <Link
-            href="https://github.com/ConsenSys/rimble-ui/issues"
-            title="GitHub Issues for Rimble UI"
-            target="_blank"
-          >
-            <OutlineButton Large>Raise issue</OutlineButton>
-          </Link>
-          <br />
-          <br />
-        </Card>
-        <br />
+        <ContributeBanner />
       </Box>
     ))
   )
@@ -724,7 +705,9 @@ storiesOf('Components/ToastMessage', module)
       <Box mx={3}>
         <Box>
           <Heading.h3>ToastMessage.provider previews</Heading.h3>
-          <Text.p>Preview each <code>{'ToastMessage'}</code> and see how to call it</Text.p>
+          <Text.p>
+            Preview each <code>{'ToastMessage'}</code> and see how to call it
+          </Text.p>
         </Box>
         <br />
         <Box>
@@ -929,10 +912,10 @@ storiesOf('Components/ToastMessage', module)
           <ToastMessage.Provider ref={node => (window.toastProvider = node)} />
         </Box>
         <Box>
-        <CodeBlock textOnly>
-          {`<Button onClick={() => window.toastProvider.removeMessage()}>`}
-        </CodeBlock>
-      </Box>
+          <CodeBlock textOnly>
+            {`<Button onClick={() => window.toastProvider.removeMessage()}>`}
+          </CodeBlock>
+        </Box>
       </Box>
     ))
   );
