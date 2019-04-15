@@ -87,7 +87,7 @@ storiesOf('Components/Modal', module).add(
     return (
       <Box mx={3}>
         <YourModal />
-        <CodeBlock textOnly>
+        <CodeBlock textOnly syntax={"language-jsx"}>
           {`class YourModal extends Component {
   constructor(props) {
     super(props);

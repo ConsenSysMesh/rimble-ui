@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { renderToStaticMarkup } from 'react-dom/server';
 import reactElementToJSXString from 'react-element-to-jsx-string';
 import Prism from 'prismjs';
@@ -74,7 +75,7 @@ class CodeBlock extends React.Component {
               value={this.state.code}
             />
           </Flex>
-          <pre className="language-markup">
+          <pre className={this.props.syntax ? this.props.syntax : 'language-html'}>
             <code>
               {this.props.textOnly ? this.props.children : reactElementToJSXString(this.props.children, jsxStringOptions) }
             </code>
@@ -83,6 +84,10 @@ class CodeBlock extends React.Component {
       </Box>
     );
   }
+}
+
+CodeBlock.propTypes = {
+  syntax: PropTypes.string
 }
 
 export default CodeBlock;
