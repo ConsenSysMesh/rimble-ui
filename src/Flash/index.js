@@ -9,7 +9,7 @@ const flashVariant = variant({
   key: 'messageStyle',
 });
 
-const Flash = styled(Text)`
+const StyledFlash = styled(Text)`
   ${flashVariant}
 
   & {
@@ -24,6 +24,12 @@ const Flash = styled(Text)`
     }
   }
 `;
+
+const Flash = ({ className, children, ...props }) => (
+  <StyledFlash className={className} {...props}>
+    {children}
+  </StyledFlash>
+);
 
 Flash.defaultProps = {
   theme: defaultTheme,
