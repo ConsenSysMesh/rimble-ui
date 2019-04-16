@@ -57,10 +57,10 @@ storiesOf('Components/ToastMessage', module)
               />
               <CodeBlock textOnly>
                 {`<ToastMessage
-                message={'0xAc0...e5A connected'}
-                colorTheme={'dark'}
-                my={3}
-              />`}
+  message={'0xAc0...e5A connected'}
+  colorTheme={'dark'}
+  my={3}
+/>`}
               </CodeBlock>
             </Box>
           </Flex>
@@ -79,12 +79,12 @@ storiesOf('Components/ToastMessage', module)
                 secondaryMessage={'You have 4.20 ETH remaining'}
                 my={3}
               />
-              <CodeBlock textOnly>
+              <CodeBlock textOnly syntax={"language-html"}>
                 {`<ToastMessage
-                message={'Transaction complete'}
-                secondaryMessage={'You have 4.20 ETH remaining'}
-                my={3}
-              />`}
+  message={'Transaction complete'}
+  secondaryMessage={'You have 4.20 ETH remaining'}
+  my={3}
+/>`}
               </CodeBlock>
             </Box>
             <Box width={'50%'} mr={4}>
@@ -96,11 +96,11 @@ storiesOf('Components/ToastMessage', module)
               />
               <CodeBlock textOnly>
                 {`<ToastMessage
-                message={'Switched network'}
-                secondaryMessage={'You are now on Rinkeby'}
-                colorTheme={'dark'}
-                my={3}
-              />`}
+  message={'Switched network'}
+  secondaryMessage={'You are now on Rinkeby'}
+  colorTheme={'dark'}
+  my={3}
+/>`}
               </CodeBlock>
             </Box>
           </Flex>
@@ -118,10 +118,10 @@ storiesOf('Components/ToastMessage', module)
               />
               <CodeBlock textOnly>
                 {`<ToastMessage
-                message={'Welcome to my dApp'}
-                icon={'Mood'}
-                my={3}
-              />`}
+  message={'Welcome to my dApp'}
+  icon={'Mood'}
+  my={3}
+/>`}
               </CodeBlock>
             </Box>
             <Box width={'50%'} mr={4}>
@@ -133,11 +133,11 @@ storiesOf('Components/ToastMessage', module)
               />
               <CodeBlock textOnly>
                 {`<ToastMessage
-                message={'Welcome to my dApp'}
-                icon={'Mood'}
-                my={3}
-                colorTheme={'dark'}
-              />`}
+  message={'Welcome to my dApp'}
+  icon={'Mood'}
+  my={3}
+  colorTheme={'dark'}
+/>`}
               </CodeBlock>
             </Box>
           </Flex>
@@ -161,12 +161,12 @@ storiesOf('Components/ToastMessage', module)
               />
               <CodeBlock textOnly>
                 {`<ToastMessage
-                message={'Transaction started'}
-                secondaryMessage={'Check on its progress using Etherscan'}
-                my={3}
-                actionText={'Check'}
-                actionHref={'#!'}
-              />`}
+  message={'Transaction started'}
+  secondaryMessage={'Check on its progress using Etherscan'}
+  my={3}
+  actionText={'Check'}
+  actionHref={'#!'}
+/>`}
               </CodeBlock>
             </Box>
             <Box width={'50%'} mr={4}>
@@ -183,16 +183,16 @@ storiesOf('Components/ToastMessage', module)
               />
               <CodeBlock textOnly>
                 {`<ToastMessage
-                message={'Write update here [Required]'}
-                secondaryMessage={
-                  'Supporting information for update [Optional]'
-                }
-                icon={'InfoOutline'}
-                my={3}
-                actionText={'Link'}
-                actionHref={'#!'}
-                colorTheme={'dark'}
-              />`}
+  message={'Write update here [Required]'}
+  secondaryMessage={
+    'Supporting information for update [Optional]'
+  }
+  icon={'InfoOutline'}
+  my={3}
+  actionText={'Link'}
+  actionHref={'#!'}
+  colorTheme={'dark'}
+/>`}
               </CodeBlock>
             </Box>
           </Flex>
@@ -212,9 +212,9 @@ storiesOf('Components/ToastMessage', module)
             />
             <CodeBlock textOnly>
               {`<ToastMessage.Processing
-              my={3}
-              message={'Processing 0.00018 ETH payment'}
-            />`}
+  my={3}
+  message={'Processing 0.00018 ETH payment'}
+/>`}
             </CodeBlock>
             <br />
             <Heading.h5>Success</Heading.h5>
@@ -225,10 +225,10 @@ storiesOf('Components/ToastMessage', module)
             />
             <CodeBlock textOnly>
               {`<ToastMessage.Success
-              my={3}
-              message={'ETH sent'}
-              secondaryMessage={'You have 1.03 Ether (ETH) remaining'}
-            />`}
+  my={3}
+  message={'ETH sent'}
+  secondaryMessage={'You have 1.03 Ether (ETH) remaining'}
+/>`}
             </CodeBlock>
             <br />
             <Heading.h5>Failure</Heading.h5>
@@ -241,12 +241,12 @@ storiesOf('Components/ToastMessage', module)
             />
             <CodeBlock textOnly>
               {`<ToastMessage.Failure
-              my={3}
-              message={'Payment failed'}
-              secondaryMessage={"You don't have enough Ether (ETH)"}
-              actionText={'Buy ETH'}
-              actionHref={'#!'}
-            />`}
+  my={3}
+  message={'Payment failed'}
+  secondaryMessage={"You don't have enough Ether (ETH)"}
+  actionText={'Buy ETH'}
+  actionHref={'#!'}
+/>`}
             </CodeBlock>
           </Box>
         </Box>

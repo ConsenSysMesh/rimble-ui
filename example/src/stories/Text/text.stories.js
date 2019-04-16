@@ -56,8 +56,9 @@ storiesOf('Components/Text', module)
             Renders text inside a <code>{'<span>'}</code> element.
           </Text>
           <br />
-          <CodeBlock>
-            <Text.span>The intent of Ethereum is to...</Text.span>
+          <Text.span>The intent of Ethereum is to...</Text.span>
+          <CodeBlock textOnly>
+            {`<Text.span>The intent of Ethereum is to...</Text.span>`}
           </CodeBlock>
         </Box>
 
@@ -67,37 +68,42 @@ storiesOf('Components/Text', module)
           <Text>
             Renders text inside a <code>{'<p>'}</code> element.
           </Text>
-          <CodeBlock>
-            <Text.p>The intent of Ethereum is to ... </Text.p>
+          <Text.p>The intent of Ethereum is to ... </Text.p>
+          <CodeBlock textOnly>
+            {`<Text.p>The intent of Ethereum is to ... </Text.p>`}
           </CodeBlock>
         </Box>
 
         <br />
         <Box>
           <Heading.h4>Text with strikethrough</Heading.h4>
-          <CodeBlock>
-            <Text.s>The intent of Ethereum is to... </Text.s>
+          <Text.s>The intent of Ethereum is to... </Text.s>
+          <CodeBlock textOnly>
+            {`<Text.s>The intent of Ethereum is to... </Text.s>`}
           </CodeBlock>
         </Box>
 
         <Box>
           <Heading.h4>Bold Text</Heading.h4>
-          <CodeBlock>
-            <Text bold>The intent of Ethereum is to...</Text>
+          <Text bold>The intent of Ethereum is to...</Text>
+          <CodeBlock textOnly>
+            {`<Text bold>The intent of Ethereum is to...</Text>`}
           </CodeBlock>
         </Box>
 
         <Box>
           <Heading.h4>Italic Text</Heading.h4>
-          <CodeBlock>
-            <Text italic>The intent of Ethereum is to...</Text>
+          <Text italic>The intent of Ethereum is to...</Text>
+          <CodeBlock textOnly>
+            {`<Text italic>The intent of Ethereum is to...</Text>`}
           </CodeBlock>
         </Box>
 
         <Box>
           <Heading.h4>Caps Text</Heading.h4>
-          <CodeBlock>
-            <Text caps>The intent of Ethereum is to...</Text>
+          <Text caps>The intent of Ethereum is to...</Text>
+          <CodeBlock textOnly>
+            {`<Text caps>The intent of Ethereum is to...</Text>`}
           </CodeBlock>
         </Box>
       </Box>
