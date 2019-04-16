@@ -93,12 +93,12 @@ const Button = styled(ProtoButton).attrs(props => ({
     display: block;
   }
   > svg:first-child {
-    margin-left: -1rem;
+    margin-left: -.5rem;
     margin-right: .5rem;
   }
   > svg:last-child {
     margin-left: .5rem;
-    margin-right: -1rem;
+    margin-right: -.5rem;
   }
   > svg:first-child:last-child {
     margin: 0;

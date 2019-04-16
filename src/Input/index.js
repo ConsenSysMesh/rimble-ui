@@ -5,10 +5,11 @@ import { themeGet, fontSize, fontFamily, boxShadow } from 'styled-system';
 
 import Box from '../Box';
 import Icon from '../Icon';
+import Button from '../Button';
 
 import defaultTheme from '../theme';
 
-const Input = styled(Box)`
+const StyledInput = styled(Box)`
   & {
     appearance: none;
   }
@@ -60,15 +61,48 @@ const StyledIconWrapper = styled(Box)`
   }
 `;
 
-const WithIconWrapper = ({ className, ...props }) => {
-  return (
-    <StyledIconWrapper className={className} {...props}>
-      <Input className={className} {...props} />
-      <Icon className={'icon-valid'} name={'CheckCircle'} color={'#28C081'} />
-      <Icon className={'icon-invalid'} name={'Warning'} color={'#DC2C10'} />
-    </StyledIconWrapper>
-  );
+const StyledFileInput = styled('input')`
+  & {
+    opacity: 0;
+    height: 0;
+    width: 0;
+  }
+`;
+
+const StyledFileLabel = styled('label')`
+  & {
+    cursor: pointer;
+    display: inline-block;
+  }
+`;
+
+const StyledFileButton = styled(Button)`
+  & {
+    pointer-events: none;
+  }
+`;
+
+const Input = ({ className, ...props }) => {
+  if (props.type === 'file') {
+    return (
+      <div>
+        <StyledFileLabel for={'myID'}>
+          <StyledFileInput type={'file'} id={'myID'} name={'myID'} />
+          <StyledFileButton>Choose file…</StyledFileButton>
+        </StyledFileLabel>
+      </div>
+    );
+  }
+  return <StyledInput as={'input'} className={className} {...props} />;
 };
+
+const WithIconWrapper = ({ className, ...props }) => (
+  <StyledIconWrapper className={className} {...props}>
+    <Input className={className} {...props} />
+    <Icon className={'icon-valid'} name={'CheckCircle'} color={'#28C081'} />
+    <Icon className={'icon-invalid'} name={'Warning'} color={'#DC2C10'} />
+  </StyledIconWrapper>
+);
 
 Input.defaultProps = {
   theme: defaultTheme,
