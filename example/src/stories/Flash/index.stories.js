@@ -31,10 +31,12 @@ storiesOf('Components/Flash', module)
       </Text></Box><br />
       <Box>
       <Heading.h4>Default flash banner</Heading.h4>
-        <CodeBlock><Flash>
-          Flash default
-          This is a primary alert with an <Link>example link</Link>. Give it a click if you like.
-        </Flash></CodeBlock>
+        <CodeBlock>
+          <Flash>
+            Flash default
+            This is a primary alert with an <Link>example link</Link>. Give it a click if you like.
+          </Flash>
+        </CodeBlock>
 <Heading.h4><code>{'info'}</code> flash banner</Heading.h4>
         <CodeBlock><Flash variant={'info'} my={3}>
           Flash "info"
@@ -64,36 +66,56 @@ storiesOf('Components/Flash', module)
     withDocs(Guidelines, () => (
       <div>
         <Box p={1}>
-          <Heading.h3>Design</Heading.h3>
+          <Heading>
+            Design
+          </Heading>
           <Text.p>
             Some best practice for using <code>{'Flash'}</code> in your
             product.
           </Text.p>
-          <Box>
+
+          <Box pb={3}>
             <Heading.h4>
-Use for persistent information            </Heading.h4>
+              Use for persistent information
+            </Heading.h4>
             <Text>
               Flash banners persist so should contain important information that stays relevant for a while or indicates user action is required.
             </Text>
-            <br />
           </Box>
+
           <Flex>
-            <Card mx={'auto'} my={3} px={4} width="400px">
-              <Pill mb={3} color={'green'}>
-                {'Do'}
-              </Pill>
-              <Flash variant={'danger'}>
-              <Icon name="Warning"  /><strong>Switch to the Main Ethereum network</strong><br /> Change your network in your browser settings. You’re currently on Rinkeby.
-            </Flash>
-            </Card>
-            <Card mx={'auto'} my={3} px={4} width="400px">
-              <Pill mb={3} color={'red'}>
-                {"Don't"}
-              </Pill>
-              <Flash variant={'success'}>
-              <Icon name="Mood"  /><strong>Connected!</strong><br /> Your Ethereum account is now connected to my dApp.
-            </Flash>
-            </Card>
+            <Box width={'50%'} my={3} mr={3}>
+              <Card px={4}>
+                <Pill mb={3} color={'green'}>
+                  {'Do'}
+                </Pill>
+
+                <Flash variant={'danger'} display={'flex'}>
+                  <Box mr={3}>
+                    <Icon name="Warning" />
+                  </Box>
+                  <Box mr={3}>
+                    <Heading color={'inherit'} fontSize={2} my={0}>
+                      <strong>Switch to the Main Ethereum network</strong>
+                    </Heading>
+                    <Text color={'inherit'}>
+                      Change your network in your browser settings. You’re currently on Rinkeby.
+                    </Text>
+                  </Box>
+                </Flash>
+
+              </Card>
+            </Box>
+            <Box width={'50%'} my={3}>
+              <Card px={4}>
+                <Pill mb={3} color={'red'}>
+                  {"Don't"}
+                </Pill>
+                <Flash variant={'success'}>
+                  <Icon name="Mood"  /><strong>Connected!</strong><br /> Your Ethereum account is now connected to my dApp.
+                </Flash>
+              </Card>
+            </Box>
           </Flex>
 
           <Box>
