@@ -14,51 +14,51 @@ exports[`UPortButton component sanity matches default snapshot 1`] = `
           "isStatic": false,
           "rules": Array [
             "
-      & {
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-      }
-    
-      > span {
-        display: flex;
-        align-items: center;
-      }
-    
-      > span > svg:first-child {
-        display: block;
-        height: ",
+  & {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  > span {
+    display: flex;
+    align-items: center;
+  }
+
+  > span > svg:first-child {
+    display: block;
+    height: ",
             [Function],
             ";
-        width: ",
+    width: ",
             [Function],
             ";
-        margin-right: 0.5rem;
-      }
-    ",
+    margin-right: 0.5rem;
+  }
+",
             "
-      & {
-        color: ",
+  & {
+    color: ",
             "#FFFFFF",
             ";
-        background: ",
+    background: ",
             "#5c50ca",
             ";
-      }
-      &:hover {
-        background-color: ",
+  }
+  &:hover {
+    background-color: ",
             "#6c61cf",
             ";
-      }
-      &:active {
-        background-color: ",
+  }
+  &:active {
+    background-color: ",
             "#5248b5",
             ";
-      }
-      > span > svg:first-child {
-        fill: ",
+  }
+  > span > svg:first-child {
+    fill: ",
             "#FFFFFF",
             ";
-      }
-    ",
+  }
+",
           ],
         },
         "defaultProps": Object {
@@ -85,39 +85,39 @@ exports[`UPortButton component sanity matches default snapshot 1`] = `
         "isStatic": false,
         "rules": Array [
           "
-      & {
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-      }
-    
-      > span {
-        display: flex;
-        align-items: center;
-      }
-    
-      > span > svg:first-child {
-        display: block;
-        height: ",
+  & {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  > span {
+    display: flex;
+    align-items: center;
+  }
+
+  > span > svg:first-child {
+    display: block;
+    height: ",
           [Function],
           ";
-        width: ",
+    width: ",
           [Function],
           ";
-        margin-right: 0.5rem;
-      }
-    ",
+    margin-right: 0.5rem;
+  }
+",
           "
-      & {
-        color: #333333;
-        background: #ffffff;
-        border: 1px solid #cccccc;
-      }
-      &:hover {
-        background-color: #f3f2f2;
-      }
-      &:active {
-        background-color: #e4e4e4;
-      }
-    ",
+  & {
+    color: #333333;
+    background: #ffffff;
+    border: 1px solid #cccccc;
+  }
+  &:hover {
+    background-color: #f3f2f2;
+  }
+  &:active {
+    background-color: #e4e4e4;
+  }
+",
         ],
       },
       "defaultProps": Object {

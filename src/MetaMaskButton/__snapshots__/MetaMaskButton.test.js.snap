@@ -11,35 +11,35 @@ exports[`MetaMaskButton component sanity matches default snapshot 1`] = `
         "isStatic": false,
         "rules": Array [
           "
-      > span {
-        display: inherit;
-        align-items: center;
-      }
-    
-      > span > svg:first-child {
-        display: block;
-        height: ",
+  > span {
+    display: inherit;
+    align-items: center;
+  }
+
+  > span > svg:first-child {
+    display: block;
+    height: ",
           [Function],
           ";
-        width: ",
+    width: ",
           [Function],
           ";
-        margin-right: 0.5rem;
-      }
-    ",
+    margin-right: 0.5rem;
+  }
+",
           "
-      & {
-        color: white;
-        background: black;
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-      }
-      &:hover {
-        background-color: rgba(0, 0, 0, 0.7);
-      }
-      &:active {
-        background-color: rgba(0, 0, 0, 0.4);
-      }
-    ",
+  & {
+    color: white;
+    background: black;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  &:active {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+",
         ],
       },
       "displayName": "MetaMaskButton",
@@ -54,36 +54,36 @@ exports[`MetaMaskButton component sanity matches default snapshot 1`] = `
           "isStatic": false,
           "rules": Array [
             "
-      > span {
-        display: inherit;
-        align-items: center;
-      }
-    
-      > span > svg:first-child {
-        display: block;
-        height: ",
+  > span {
+    display: inherit;
+    align-items: center;
+  }
+
+  > span > svg:first-child {
+    display: block;
+    height: ",
             [Function],
             ";
-        width: ",
+    width: ",
             [Function],
             ";
-        margin-right: 0.5rem;
-      }
-    ",
+    margin-right: 0.5rem;
+  }
+",
             "
-      & {
-        color: #333333;
-        background: #ffffff;
-        border: 1px solid #cccccc;
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-      }
-      &:hover {
-        background-color: #f3f2f2;
-      }
-      &:active {
-        background-color: #e4e4e4;
-      }
-    ",
+  & {
+    color: #333333;
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  &:hover {
+    background-color: #f3f2f2;
+  }
+  &:active {
+    background-color: #e4e4e4;
+  }
+",
           ],
         },
         "displayName": "Styled(Styled(ProtoButton))",

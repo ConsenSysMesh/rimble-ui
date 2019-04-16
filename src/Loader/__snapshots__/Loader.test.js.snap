@@ -47,9 +47,7 @@ exports[`Loader component sanity matches default snapshot 1`] = `
       fill="currentColor"
       fill-rule="evenodd"
       opacity="0.25"
-    >
-      
-    </path>
+    />
     <mask
       height="24"
       id="mask0"
@@ -64,9 +62,7 @@ exports[`Loader component sanity matches default snapshot 1`] = `
         d="M12 20.5714C16.7339 20.5714 20.5714 16.7339 20.5714 12C20.5714 7.26613 16.7339 3.42857 12 3.42857C7.26613 3.42857 3.42857 7.26613 3.42857 12C3.42857 16.7339 7.26613 20.5714 12 20.5714ZM12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z"
         fill="currentColor"
         fill-rule="evenodd"
-      >
-        
-      </path>
+      />
     </mask>
     <g
       mask="url(#mask0)"
@@ -74,9 +70,7 @@ exports[`Loader component sanity matches default snapshot 1`] = `
       <path
         d="M12 24V15.8824V12H24V24H12Z"
         fill="currentColor"
-      >
-        
-      </path>
+      />
     </g>
   </svg>
 </div>
@@ -138,9 +132,7 @@ exports[`Loader component sanity matches themed snapshot 1`] = `
         fill="currentColor"
         fill-rule="evenodd"
         opacity="0.25"
-      >
-        
-      </path>
+      />
       <mask
         height="24"
         id="mask0"
@@ -155,9 +147,7 @@ exports[`Loader component sanity matches themed snapshot 1`] = `
           d="M12 20.5714C16.7339 20.5714 20.5714 16.7339 20.5714 12C20.5714 7.26613 16.7339 3.42857 12 3.42857C7.26613 3.42857 3.42857 7.26613 3.42857 12C3.42857 16.7339 7.26613 20.5714 12 20.5714ZM12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z"
           fill="currentColor"
           fill-rule="evenodd"
-        >
-          
-        </path>
+        />
       </mask>
       <g
         mask="url(#mask0)"
@@ -165,9 +155,7 @@ exports[`Loader component sanity matches themed snapshot 1`] = `
         <path
           d="M12 24V15.8824V12H24V24H12Z"
           fill="currentColor"
-        >
-          
-        </path>
+        />
       </g>
     </svg>
   </div>
