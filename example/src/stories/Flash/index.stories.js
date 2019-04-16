@@ -83,15 +83,22 @@ Use for persistent information            </Heading.h4>
                 {'Do'}
               </Pill>
               <Flash variant={'danger'}>
-              <Icon name="Warning"  /><strong>Switch to the Main Ethereum network</strong><br /> Change your network in your browser settings. You’re currently on Rinkeby.
-            </Flash>
+  <Flex alignItem={'center'}>
+    <Icon mr={3} name="Warning" />
+    <Box>
+      <strong>Switch to the Main Ethereum network</strong><br />
+      Change your network in your browser settings. You're currently on Rinkeby.
+    </Box>
+  </Flex>
+</Flash>
             </Card>
             <Card mx={'auto'} my={3} px={4} width="400px">
               <Pill mb={3} color={'red'}>
                 {"Don't"}
               </Pill>
               <Flash variant={'success'}>
-              <Icon name="Mood"  /><strong>Connected!</strong><br /> Your Ethereum account is now connected to my dApp.
+              <Flex alignItem={'center'}>
+              <Icon mr={3} name="Mood"  /><Box><strong>Connected!</strong><br /> Your Ethereum account is now connected to my dApp.</Box></Flex>
             </Flash>
             </Card>
           </Flex>
@@ -110,7 +117,8 @@ Stick to one call to action            </Heading.h4>
                 {'Do'}
               </Pill>
               <Flash variant={'danger'}>
-              <Icon name="Warning"  /><strong>No funds for transactions fees</strong><br /> You won't be able to use our blockchain features without some Ether in your account. <Link>Learn how to add funds</Link>
+              <Flex alignItem={'center'}>
+              <Icon mr={3} name="Warning" /><Box><strong>No funds for transactions fees</strong><br /> You won't be able to use our blockchain features without some Ether in your account. <Link>Learn how to add funds</Link></Box></Flex>
             </Flash>
             </Card>
             <Card mx={'auto'} my={3} px={4} width="400px">
@@ -118,7 +126,8 @@ Stick to one call to action            </Heading.h4>
                 {"Don't"}
               </Pill>
               <Flash variant={'danger'}>
-              <Icon name="Warning"  /><strong>Wrong network and insufficient funds!</strong><br /> You need to be on the Main Ethereum network to use this dApp. <Link>Learn how to switch networks</Link>.You also won't be able to use our blockchain features without some Ether in your account. <Link>Learn how to add funds</Link>.
+                <Flex alignItem={'center'}>
+              <Icon mr={3} name="Warning"  /><Box><strong>Wrong network and insufficient funds!</strong><br /> You need to be on the Main Ethereum network to use this dApp. <Link>Learn how to switch networks</Link><br /><br />You also won't be able to use our blockchain features without some Ether in your account. <Link>Learn how to add funds</Link></Box></Flex>
             </Flash>
             </Card>
           </Flex>
