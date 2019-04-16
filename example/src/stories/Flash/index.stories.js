@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
+
 import CodeBlock from '../../components/CodeBlock';
 import ContributeBanner from '../../components/ContributeBanner';
 
@@ -9,8 +10,8 @@ import Guidelines from './guide.md';
 
 import {
   Flash,
-  Link, 
-  Box, 
+  Link,
+  Box,
   Heading,
   Text,
 } from 'rimble-ui';
@@ -50,23 +51,20 @@ storiesOf('Components/Flash', module)
   .add(
     'Guidelines',
     withDocs(Guidelines, () => (
-      <Box>
-        <Box>
-          <Box>
-            <Heading.h3>Design</Heading.h3>
-            <Text.p>
-              Some best practice for using <code>{'Flash'}</code> in your
-              product.
-            </Text.p>
-          </Box>
+      <div>
+        <Box p={1}>
+          <Heading.h3>Design</Heading.h3>
+          <Text.p>
+            Some best practice for using <code>{'Flash'}</code> in your
+            product.
+          </Text.p>
 
           <Heading.h4>Descriptive Text</Heading.h4>
-          <Text>
+          <Text.p>
             Use an active voice and make the message as descriptive and informative as possible
-          </Text>
-
-          <ContributeBanner />
+          </Text.p>
         </Box>
-      </Box>
+        <ContributeBanner />
+      </div>
     ))
   )
