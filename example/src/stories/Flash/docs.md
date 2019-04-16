@@ -2,12 +2,14 @@
 
 The `Flash` renders a responsive box-model layout component. Inherits props from `Box` component.
 
-**Import component**
+## Usage
 
+**Import:**
 ```jsx
 import { Flash } from 'rimble-ui';
 ```
 
+**Example:**
 ```jsx
 <Flash>
   Flash default
@@ -35,12 +37,15 @@ import { Flash } from 'rimble-ui';
 </Flash>
 ```
 
+**Output:**
 <!-- STORY -->
 
-### Component props
+## API
 
-`Flash` does not have any props but will pass on props that are defined on its component.
+**Component props**
 
-### Styled-system props
+…
+
+**`styled-system` props**
 
 `Flash` uses all the style props from [`Box`](https://consensys.github.io/rimble-ui/?path=/story/components-layout-box--documentation)
