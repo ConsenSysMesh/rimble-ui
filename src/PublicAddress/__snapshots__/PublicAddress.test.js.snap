@@ -309,9 +309,7 @@ exports[`PublicAddress component sanity matches default snapshot 1`] = `
       font-size="1rem"
       height="3rem"
       readonly=""
-    >
-      
-    </input>
+    />
     <button
       class="c4 c5"
       color="white"
@@ -647,9 +645,7 @@ exports[`PublicAddress component sanity matches themed snapshot 1`] = `
         font-size="1rem"
         height="3rem"
         readonly=""
-      >
-        
-      </input>
+      />
       <button
         class="c5 c6"
         color="white"

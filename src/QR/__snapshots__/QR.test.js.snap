@@ -5,9 +5,7 @@ exports[`QR component sanity matches default snapshot 1`] = `
   height="128"
   style="height:128px;width:128px"
   width="128"
->
-  
-</canvas>
+/>
 `;
 
 exports[`QR component sanity matches themed snapshot 1`] = `
@@ -24,8 +22,6 @@ exports[`QR component sanity matches themed snapshot 1`] = `
     height="128"
     style="height:128px;width:128px"
     width="128"
-  >
-    
-  </canvas>
+  />
 </div>
 `;

@@ -141,6 +141,33 @@ exports[`ToastMessage component sanity matches failure snapshot 1`] = `
           1024,
           1536,
         ],
+        "messageStyle": Object {
+          "base": Object {
+            "backgroundColor": "#f6f6f6",
+            "borderColor": "#AAA",
+            "color": "#666",
+          },
+          "danger": Object {
+            "backgroundColor": "#fbe9e7",
+            "borderColor": "#DC2C10",
+            "color": "#841a09",
+          },
+          "info": Object {
+            "backgroundColor": "#eaf6fd",
+            "borderColor": "#36ADF1",
+            "color": "#206790",
+          },
+          "success": Object {
+            "backgroundColor": "#e9f8f2",
+            "borderColor": "#28C081",
+            "color": "#18734d",
+          },
+          "warning": Object {
+            "backgroundColor": "#fef5e9",
+            "borderColor": "#FD9D28",
+            "color": "#975e18",
+          },
+        },
         "minHeights": Array [
           0,
           16,
@@ -327,6 +354,33 @@ exports[`ToastMessage component sanity matches failure snapshot 1`] = `
           1024,
           1536,
         ],
+        "messageStyle": Object {
+          "base": Object {
+            "backgroundColor": "#f6f6f6",
+            "borderColor": "#AAA",
+            "color": "#666",
+          },
+          "danger": Object {
+            "backgroundColor": "#fbe9e7",
+            "borderColor": "#DC2C10",
+            "color": "#841a09",
+          },
+          "info": Object {
+            "backgroundColor": "#eaf6fd",
+            "borderColor": "#36ADF1",
+            "color": "#206790",
+          },
+          "success": Object {
+            "backgroundColor": "#e9f8f2",
+            "borderColor": "#28C081",
+            "color": "#18734d",
+          },
+          "warning": Object {
+            "backgroundColor": "#fef5e9",
+            "borderColor": "#FD9D28",
+            "color": "#975e18",
+          },
+        },
         "minHeights": Array [
           0,
           16,
@@ -511,6 +565,33 @@ exports[`ToastMessage component sanity matches failure snapshot 1`] = `
             1024,
             1536,
           ],
+          "messageStyle": Object {
+            "base": Object {
+              "backgroundColor": "#f6f6f6",
+              "borderColor": "#AAA",
+              "color": "#666",
+            },
+            "danger": Object {
+              "backgroundColor": "#fbe9e7",
+              "borderColor": "#DC2C10",
+              "color": "#841a09",
+            },
+            "info": Object {
+              "backgroundColor": "#eaf6fd",
+              "borderColor": "#36ADF1",
+              "color": "#206790",
+            },
+            "success": Object {
+              "backgroundColor": "#e9f8f2",
+              "borderColor": "#28C081",
+              "color": "#18734d",
+            },
+            "warning": Object {
+              "backgroundColor": "#fef5e9",
+              "borderColor": "#FD9D28",
+              "color": "#975e18",
+            },
+          },
           "minHeights": Array [
             0,
             16,
@@ -700,6 +781,33 @@ exports[`ToastMessage component sanity matches failure snapshot 1`] = `
           1024,
           1536,
         ],
+        "messageStyle": Object {
+          "base": Object {
+            "backgroundColor": "#f6f6f6",
+            "borderColor": "#AAA",
+            "color": "#666",
+          },
+          "danger": Object {
+            "backgroundColor": "#fbe9e7",
+            "borderColor": "#DC2C10",
+            "color": "#841a09",
+          },
+          "info": Object {
+            "backgroundColor": "#eaf6fd",
+            "borderColor": "#36ADF1",
+            "color": "#206790",
+          },
+          "success": Object {
+            "backgroundColor": "#e9f8f2",
+            "borderColor": "#28C081",
+            "color": "#18734d",
+          },
+          "warning": Object {
+            "backgroundColor": "#fef5e9",
+            "borderColor": "#FD9D28",
+            "color": "#975e18",
+          },
+        },
         "minHeights": Array [
           0,
           16,
@@ -1080,6 +1188,33 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
         1024,
         1536,
       ],
+      "messageStyle": Object {
+        "base": Object {
+          "backgroundColor": "#f6f6f6",
+          "borderColor": "#AAA",
+          "color": "#666",
+        },
+        "danger": Object {
+          "backgroundColor": "#fbe9e7",
+          "borderColor": "#DC2C10",
+          "color": "#841a09",
+        },
+        "info": Object {
+          "backgroundColor": "#eaf6fd",
+          "borderColor": "#36ADF1",
+          "color": "#206790",
+        },
+        "success": Object {
+          "backgroundColor": "#e9f8f2",
+          "borderColor": "#28C081",
+          "color": "#18734d",
+        },
+        "warning": Object {
+          "backgroundColor": "#fef5e9",
+          "borderColor": "#FD9D28",
+          "color": "#975e18",
+        },
+      },
       "minHeights": Array [
         0,
         16,
@@ -1258,6 +1393,33 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
           1024,
           1536,
         ],
+        "messageStyle": Object {
+          "base": Object {
+            "backgroundColor": "#f6f6f6",
+            "borderColor": "#AAA",
+            "color": "#666",
+          },
+          "danger": Object {
+            "backgroundColor": "#fbe9e7",
+            "borderColor": "#DC2C10",
+            "color": "#841a09",
+          },
+          "info": Object {
+            "backgroundColor": "#eaf6fd",
+            "borderColor": "#36ADF1",
+            "color": "#206790",
+          },
+          "success": Object {
+            "backgroundColor": "#e9f8f2",
+            "borderColor": "#28C081",
+            "color": "#18734d",
+          },
+          "warning": Object {
+            "backgroundColor": "#fef5e9",
+            "borderColor": "#FD9D28",
+            "color": "#975e18",
+          },
+        },
         "minHeights": Array [
           0,
           16,
@@ -1437,6 +1599,33 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
             1024,
             1536,
           ],
+          "messageStyle": Object {
+            "base": Object {
+              "backgroundColor": "#f6f6f6",
+              "borderColor": "#AAA",
+              "color": "#666",
+            },
+            "danger": Object {
+              "backgroundColor": "#fbe9e7",
+              "borderColor": "#DC2C10",
+              "color": "#841a09",
+            },
+            "info": Object {
+              "backgroundColor": "#eaf6fd",
+              "borderColor": "#36ADF1",
+              "color": "#206790",
+            },
+            "success": Object {
+              "backgroundColor": "#e9f8f2",
+              "borderColor": "#28C081",
+              "color": "#18734d",
+            },
+            "warning": Object {
+              "backgroundColor": "#fef5e9",
+              "borderColor": "#FD9D28",
+              "color": "#975e18",
+            },
+          },
           "minHeights": Array [
             0,
             16,
@@ -1506,16 +1695,16 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
               "lastClassName": "c0",
               "rules": Array [
                 "
-            & {
-              font-size: 1em;
-              font-family: ",
+  & {
+    font-size: 1em;
+    font-family: ",
                 [Function],
                 ";
-              color: ",
+    color: ",
                 [Function],
                 ";
-            }
-          ",
+  }
+",
               ],
             },
             "displayName": "styled.div",
@@ -1648,6 +1837,33 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
               1024,
               1536,
             ],
+            "messageStyle": Object {
+              "base": Object {
+                "backgroundColor": "#f6f6f6",
+                "borderColor": "#AAA",
+                "color": "#666",
+              },
+              "danger": Object {
+                "backgroundColor": "#fbe9e7",
+                "borderColor": "#DC2C10",
+                "color": "#841a09",
+              },
+              "info": Object {
+                "backgroundColor": "#eaf6fd",
+                "borderColor": "#36ADF1",
+                "color": "#206790",
+              },
+              "success": Object {
+                "backgroundColor": "#e9f8f2",
+                "borderColor": "#28C081",
+                "color": "#18734d",
+              },
+              "warning": Object {
+                "backgroundColor": "#fef5e9",
+                "borderColor": "#FD9D28",
+                "color": "#975e18",
+              },
+            },
             "minHeights": Array [
               0,
               16,
@@ -1756,178 +1972,178 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                       "lastClassName": "c1",
                       "rules": Array [
                         "
-                    & {
-                      box-sizing: border-box;
-                    }
-                    ",
+  & {
+    box-sizing: border-box;
+  }
+  ",
                         "
-                    ",
+  ",
                         [Function],
                         "
-                    ",
+  ",
                         [Function],
                         "
-                    ",
+  ",
                         [Function],
                         "
-                    ",
+  ",
                         [Function],
                         "
-                    ",
+  ",
                         "
-                    ",
+  ",
                         [Function],
                         "
-                    ",
+  ",
                         [Function],
                         "
-                    ",
+  ",
                         [Function],
                         "
-                    ",
+  ",
                         [Function],
                         "
-                    ",
+  ",
                         [Function],
                         "
-                    ",
+  ",
                         [Function],
                         "
-                    ",
+  ",
                         [Function],
                         "
-                    ",
+  ",
                         "
-                    ",
+  ",
                         [Function],
                         "
-                    ",
+  ",
                         [Function],
                         "
-                    ",
+  ",
                         [Function],
                         "
-                    ",
+  ",
                         [Function],
                         "
-                    ",
+  ",
                         [Function],
                         "
-                    ",
+  ",
                         [Function],
                         "
-                    ",
+  ",
                         [Function],
                         "
-                    ",
+  ",
                         [Function],
                         "
-                    ",
+  ",
                         [Function],
                         "
-                    ",
+  ",
                         [Function],
                         "
-                    ",
+  ",
                         [Function],
                         "
-                    ",
+  ",
                         "
-                    ",
+  ",
                         [Function],
                         "
-                    ",
+  ",
                         [Function],
                         "
-                    ",
+  ",
                         [Function],
                         "
-                    ",
+  ",
                         [Function],
                         "
-                    ",
+  ",
                         [Function],
                         "
-                    ",
+  ",
                         [Function],
                         "
-                    ",
+  ",
                         "
-                    ",
+  ",
                         [Function],
                         "
-                    ",
+  ",
                         [Function],
                         "
-                    ",
+  ",
                         [Function],
                         "
-                    ",
+  ",
                         "
-                    ",
+  ",
                         [Function],
                         "
-                    ",
+  ",
                         "
-                    ",
+  ",
                         [Function],
                         "
-                  ",
+",
                         "
-                    & {
-                      pointer-events: all;
-                      user-select: none;
-                      overflow: hidden;
-                      height: 80px;
-                      padding: 0 1rem;
-                      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-                      transition: all 0.15s ease;
-                    }
-                  
-                    &:hover {
-                      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
-                    }
-                  
-                    > .iconBox {
-                      display: none;
-                    }
-                  
-                    > .closeBttn {
-                      display: none;
-                    }
-                  
-                    > ",
+  & {
+    pointer-events: all;
+    user-select: none;
+    overflow: hidden;
+    height: 80px;
+    padding: 0 1rem;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    transition: all 0.15s ease;
+  }
+
+  &:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+  }
+
+  > .iconBox {
+    display: none;
+  }
+
+  > .closeBttn {
+    display: none;
+  }
+
+  > ",
                         ".c3",
                         " > ",
                         ".c5",
                         " {
-                      overflow: hidden;
-                      white-space: nowrap;
-                      text-overflow: ellipsis;
-                      word-wrap: normal;
-                    }
-                  
-                    @media screen and (max-width: 420px) {
-                      border-color: transparent;
-                    }
-                  
-                    @media screen and (min-width: 420px) {
-                      & {
-                        border-radius: 4px;
-                        padding: ",
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-wrap: normal;
+  }
+
+  @media screen and (max-width: 420px) {
+    border-color: transparent;
+  }
+
+  @media screen and (min-width: 420px) {
+    & {
+      border-radius: 4px;
+      padding: ",
                         [Function],
                         ";
-                      }
-                  
-                      > .iconBox {
-                        display: block;
-                      }
-                  
-                      > .closeBttn {
-                        display: flex;
-                      }
-                    }
-                  ",
+    }
+
+    > .iconBox {
+      display: block;
+    }
+
+    > .closeBttn {
+      display: flex;
+    }
+  }
+",
                       ],
                     },
                     "defaultProps": Object {
@@ -2081,6 +2297,33 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                           1024,
                           1536,
                         ],
+                        "messageStyle": Object {
+                          "base": Object {
+                            "backgroundColor": "#f6f6f6",
+                            "borderColor": "#AAA",
+                            "color": "#666",
+                          },
+                          "danger": Object {
+                            "backgroundColor": "#fbe9e7",
+                            "borderColor": "#DC2C10",
+                            "color": "#841a09",
+                          },
+                          "info": Object {
+                            "backgroundColor": "#eaf6fd",
+                            "borderColor": "#36ADF1",
+                            "color": "#206790",
+                          },
+                          "success": Object {
+                            "backgroundColor": "#e9f8f2",
+                            "borderColor": "#28C081",
+                            "color": "#18734d",
+                          },
+                          "warning": Object {
+                            "backgroundColor": "#fef5e9",
+                            "borderColor": "#FD9D28",
+                            "color": "#975e18",
+                          },
+                        },
                         "minHeights": Array [
                           0,
                           16,
@@ -2152,123 +2395,123 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                             "lastClassName": "c2",
                             "rules": Array [
                               "
-                          & {
-                            box-sizing: border-box;
-                          }
-                          ",
+  & {
+    box-sizing: border-box;
+  }
+  ",
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               "
-                          ",
+  ",
                               [Function],
                               "
-                        ",
+",
                             ],
                           },
                           "defaultProps": Object {
@@ -2391,6 +2634,33 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                 1024,
                                 1536,
                               ],
+                              "messageStyle": Object {
+                                "base": Object {
+                                  "backgroundColor": "#f6f6f6",
+                                  "borderColor": "#AAA",
+                                  "color": "#666",
+                                },
+                                "danger": Object {
+                                  "backgroundColor": "#fbe9e7",
+                                  "borderColor": "#DC2C10",
+                                  "color": "#841a09",
+                                },
+                                "info": Object {
+                                  "backgroundColor": "#eaf6fd",
+                                  "borderColor": "#36ADF1",
+                                  "color": "#206790",
+                                },
+                                "success": Object {
+                                  "backgroundColor": "#e9f8f2",
+                                  "borderColor": "#28C081",
+                                  "color": "#18734d",
+                                },
+                                "warning": Object {
+                                  "backgroundColor": "#fef5e9",
+                                  "borderColor": "#FD9D28",
+                                  "color": "#975e18",
+                                },
+                              },
                               "minHeights": Array [
                                 0,
                                 16,
@@ -2580,6 +2850,33 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                             1024,
                             1536,
                           ],
+                          "messageStyle": Object {
+                            "base": Object {
+                              "backgroundColor": "#f6f6f6",
+                              "borderColor": "#AAA",
+                              "color": "#666",
+                            },
+                            "danger": Object {
+                              "backgroundColor": "#fbe9e7",
+                              "borderColor": "#DC2C10",
+                              "color": "#841a09",
+                            },
+                            "info": Object {
+                              "backgroundColor": "#eaf6fd",
+                              "borderColor": "#36ADF1",
+                              "color": "#206790",
+                            },
+                            "success": Object {
+                              "backgroundColor": "#e9f8f2",
+                              "borderColor": "#28C081",
+                              "color": "#18734d",
+                            },
+                            "warning": Object {
+                              "backgroundColor": "#fef5e9",
+                              "borderColor": "#FD9D28",
+                              "color": "#975e18",
+                            },
+                          },
                           "minHeights": Array [
                             0,
                             16,
@@ -2766,6 +3063,33 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                           1024,
                           1536,
                         ],
+                        "messageStyle": Object {
+                          "base": Object {
+                            "backgroundColor": "#f6f6f6",
+                            "borderColor": "#AAA",
+                            "color": "#666",
+                          },
+                          "danger": Object {
+                            "backgroundColor": "#fbe9e7",
+                            "borderColor": "#DC2C10",
+                            "color": "#841a09",
+                          },
+                          "info": Object {
+                            "backgroundColor": "#eaf6fd",
+                            "borderColor": "#36ADF1",
+                            "color": "#206790",
+                          },
+                          "success": Object {
+                            "backgroundColor": "#e9f8f2",
+                            "borderColor": "#28C081",
+                            "color": "#18734d",
+                          },
+                          "warning": Object {
+                            "backgroundColor": "#fef5e9",
+                            "borderColor": "#FD9D28",
+                            "color": "#975e18",
+                          },
+                        },
                         "minHeights": Array [
                           0,
                           16,
@@ -2836,131 +3160,131 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                             "lastClassName": "c4",
                             "rules": Array [
                               "
-                          & {
-                            box-sizing: border-box;
-                          }
-                          ",
+  & {
+    box-sizing: border-box;
+  }
+  ",
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               "
-                          ",
+  ",
                               [Function],
                               "
-                        ",
+",
                               "
-                          & {
-                            ",
+  & {
+    ",
                               "display: inline-block; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; word-wrap: normal;",
                               "
-                            text-align: left;
-                          }
-                        ",
+    text-align: left;
+  }
+",
                             ],
                           },
                           "defaultProps": Object {
@@ -3083,6 +3407,33 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                 1024,
                                 1536,
                               ],
+                              "messageStyle": Object {
+                                "base": Object {
+                                  "backgroundColor": "#f6f6f6",
+                                  "borderColor": "#AAA",
+                                  "color": "#666",
+                                },
+                                "danger": Object {
+                                  "backgroundColor": "#fbe9e7",
+                                  "borderColor": "#DC2C10",
+                                  "color": "#841a09",
+                                },
+                                "info": Object {
+                                  "backgroundColor": "#eaf6fd",
+                                  "borderColor": "#36ADF1",
+                                  "color": "#206790",
+                                },
+                                "success": Object {
+                                  "backgroundColor": "#e9f8f2",
+                                  "borderColor": "#28C081",
+                                  "color": "#18734d",
+                                },
+                                "warning": Object {
+                                  "backgroundColor": "#fef5e9",
+                                  "borderColor": "#FD9D28",
+                                  "color": "#975e18",
+                                },
+                              },
                               "minHeights": Array [
                                 0,
                                 16,
@@ -3274,6 +3625,33 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                             1024,
                             1536,
                           ],
+                          "messageStyle": Object {
+                            "base": Object {
+                              "backgroundColor": "#f6f6f6",
+                              "borderColor": "#AAA",
+                              "color": "#666",
+                            },
+                            "danger": Object {
+                              "backgroundColor": "#fbe9e7",
+                              "borderColor": "#DC2C10",
+                              "color": "#841a09",
+                            },
+                            "info": Object {
+                              "backgroundColor": "#eaf6fd",
+                              "borderColor": "#36ADF1",
+                              "color": "#206790",
+                            },
+                            "success": Object {
+                              "backgroundColor": "#e9f8f2",
+                              "borderColor": "#28C081",
+                              "color": "#18734d",
+                            },
+                            "warning": Object {
+                              "backgroundColor": "#fef5e9",
+                              "borderColor": "#FD9D28",
+                              "color": "#975e18",
+                            },
+                          },
                           "minHeights": Array [
                             0,
                             16,
@@ -3461,6 +3839,33 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                 1024,
                                 1536,
                               ],
+                              "messageStyle": Object {
+                                "base": Object {
+                                  "backgroundColor": "#f6f6f6",
+                                  "borderColor": "#AAA",
+                                  "color": "#666",
+                                },
+                                "danger": Object {
+                                  "backgroundColor": "#fbe9e7",
+                                  "borderColor": "#DC2C10",
+                                  "color": "#841a09",
+                                },
+                                "info": Object {
+                                  "backgroundColor": "#eaf6fd",
+                                  "borderColor": "#36ADF1",
+                                  "color": "#206790",
+                                },
+                                "success": Object {
+                                  "backgroundColor": "#e9f8f2",
+                                  "borderColor": "#28C081",
+                                  "color": "#18734d",
+                                },
+                                "warning": Object {
+                                  "backgroundColor": "#fef5e9",
+                                  "borderColor": "#FD9D28",
+                                  "color": "#975e18",
+                                },
+                              },
                               "minHeights": Array [
                                 0,
                                 16,
@@ -3534,159 +3939,159 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                   "lastClassName": "c8",
                                   "rules": Array [
                                     "
-                                & {
-                                  box-sizing: border-box;
-                                }
-                                ",
+  & {
+    box-sizing: border-box;
+  }
+  ",
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                              ",
+",
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                              
-                                ",
+
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                              ",
+",
                                   ],
                                 },
                                 "defaultProps": Object {
@@ -3814,6 +4219,33 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                       1024,
                                       1536,
                                     ],
+                                    "messageStyle": Object {
+                                      "base": Object {
+                                        "backgroundColor": "#f6f6f6",
+                                        "borderColor": "#AAA",
+                                        "color": "#666",
+                                      },
+                                      "danger": Object {
+                                        "backgroundColor": "#fbe9e7",
+                                        "borderColor": "#DC2C10",
+                                        "color": "#841a09",
+                                      },
+                                      "info": Object {
+                                        "backgroundColor": "#eaf6fd",
+                                        "borderColor": "#36ADF1",
+                                        "color": "#206790",
+                                      },
+                                      "success": Object {
+                                        "backgroundColor": "#e9f8f2",
+                                        "borderColor": "#28C081",
+                                        "color": "#18734d",
+                                      },
+                                      "warning": Object {
+                                        "backgroundColor": "#fef5e9",
+                                        "borderColor": "#FD9D28",
+                                        "color": "#975e18",
+                                      },
+                                    },
                                     "minHeights": Array [
                                       0,
                                       16,
@@ -3883,41 +4315,41 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                     "isStatic": false,
                                     "rules": Array [
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                              
-                                ",
+
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                              ",
+",
                                     ],
                                   },
                                   "defaultProps": Object {
@@ -3946,41 +4378,41 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                     "isStatic": false,
                                     "rules": Array [
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                              
-                                ",
+
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                              ",
+",
                                     ],
                                   },
                                   "defaultProps": Object {
@@ -4008,41 +4440,41 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                     "isStatic": false,
                                     "rules": Array [
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                              
-                                ",
+
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                              ",
+",
                                     ],
                                   },
                                   "defaultProps": Object {
@@ -4191,6 +4623,33 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                   1024,
                                   1536,
                                 ],
+                                "messageStyle": Object {
+                                  "base": Object {
+                                    "backgroundColor": "#f6f6f6",
+                                    "borderColor": "#AAA",
+                                    "color": "#666",
+                                  },
+                                  "danger": Object {
+                                    "backgroundColor": "#fbe9e7",
+                                    "borderColor": "#DC2C10",
+                                    "color": "#841a09",
+                                  },
+                                  "info": Object {
+                                    "backgroundColor": "#eaf6fd",
+                                    "borderColor": "#36ADF1",
+                                    "color": "#206790",
+                                  },
+                                  "success": Object {
+                                    "backgroundColor": "#e9f8f2",
+                                    "borderColor": "#28C081",
+                                    "color": "#18734d",
+                                  },
+                                  "warning": Object {
+                                    "backgroundColor": "#fef5e9",
+                                    "borderColor": "#FD9D28",
+                                    "color": "#975e18",
+                                  },
+                                },
                                 "minHeights": Array [
                                   0,
                                   16,
@@ -4386,6 +4845,33 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                 1024,
                                 1536,
                               ],
+                              "messageStyle": Object {
+                                "base": Object {
+                                  "backgroundColor": "#f6f6f6",
+                                  "borderColor": "#AAA",
+                                  "color": "#666",
+                                },
+                                "danger": Object {
+                                  "backgroundColor": "#fbe9e7",
+                                  "borderColor": "#DC2C10",
+                                  "color": "#841a09",
+                                },
+                                "info": Object {
+                                  "backgroundColor": "#eaf6fd",
+                                  "borderColor": "#36ADF1",
+                                  "color": "#206790",
+                                },
+                                "success": Object {
+                                  "backgroundColor": "#e9f8f2",
+                                  "borderColor": "#28C081",
+                                  "color": "#18734d",
+                                },
+                                "warning": Object {
+                                  "backgroundColor": "#fef5e9",
+                                  "borderColor": "#FD9D28",
+                                  "color": "#975e18",
+                                },
+                              },
                               "minHeights": Array [
                                 0,
                                 16,
@@ -4459,159 +4945,159 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                   "lastClassName": "c8",
                                   "rules": Array [
                                     "
-                                & {
-                                  box-sizing: border-box;
-                                }
-                                ",
+  & {
+    box-sizing: border-box;
+  }
+  ",
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                              ",
+",
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                              
-                                ",
+
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                              ",
+",
                                   ],
                                 },
                                 "defaultProps": Object {
@@ -4739,6 +5225,33 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                       1024,
                                       1536,
                                     ],
+                                    "messageStyle": Object {
+                                      "base": Object {
+                                        "backgroundColor": "#f6f6f6",
+                                        "borderColor": "#AAA",
+                                        "color": "#666",
+                                      },
+                                      "danger": Object {
+                                        "backgroundColor": "#fbe9e7",
+                                        "borderColor": "#DC2C10",
+                                        "color": "#841a09",
+                                      },
+                                      "info": Object {
+                                        "backgroundColor": "#eaf6fd",
+                                        "borderColor": "#36ADF1",
+                                        "color": "#206790",
+                                      },
+                                      "success": Object {
+                                        "backgroundColor": "#e9f8f2",
+                                        "borderColor": "#28C081",
+                                        "color": "#18734d",
+                                      },
+                                      "warning": Object {
+                                        "backgroundColor": "#fef5e9",
+                                        "borderColor": "#FD9D28",
+                                        "color": "#975e18",
+                                      },
+                                    },
                                     "minHeights": Array [
                                       0,
                                       16,
@@ -4808,41 +5321,41 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                     "isStatic": false,
                                     "rules": Array [
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                              
-                                ",
+
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                              ",
+",
                                     ],
                                   },
                                   "defaultProps": Object {
@@ -4871,41 +5384,41 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                     "isStatic": false,
                                     "rules": Array [
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                              
-                                ",
+
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                              ",
+",
                                     ],
                                   },
                                   "defaultProps": Object {
@@ -4933,41 +5446,41 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                     "isStatic": false,
                                     "rules": Array [
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                              
-                                ",
+
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                              ",
+",
                                     ],
                                   },
                                   "defaultProps": Object {
@@ -5116,6 +5629,33 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                   1024,
                                   1536,
                                 ],
+                                "messageStyle": Object {
+                                  "base": Object {
+                                    "backgroundColor": "#f6f6f6",
+                                    "borderColor": "#AAA",
+                                    "color": "#666",
+                                  },
+                                  "danger": Object {
+                                    "backgroundColor": "#fbe9e7",
+                                    "borderColor": "#DC2C10",
+                                    "color": "#841a09",
+                                  },
+                                  "info": Object {
+                                    "backgroundColor": "#eaf6fd",
+                                    "borderColor": "#36ADF1",
+                                    "color": "#206790",
+                                  },
+                                  "success": Object {
+                                    "backgroundColor": "#e9f8f2",
+                                    "borderColor": "#28C081",
+                                    "color": "#18734d",
+                                  },
+                                  "warning": Object {
+                                    "backgroundColor": "#fef5e9",
+                                    "borderColor": "#FD9D28",
+                                    "color": "#975e18",
+                                  },
+                                },
                                 "minHeights": Array [
                                   0,
                                   16,
@@ -5316,6 +5856,33 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                           1024,
                           1536,
                         ],
+                        "messageStyle": Object {
+                          "base": Object {
+                            "backgroundColor": "#f6f6f6",
+                            "borderColor": "#AAA",
+                            "color": "#666",
+                          },
+                          "danger": Object {
+                            "backgroundColor": "#fbe9e7",
+                            "borderColor": "#DC2C10",
+                            "color": "#841a09",
+                          },
+                          "info": Object {
+                            "backgroundColor": "#eaf6fd",
+                            "borderColor": "#36ADF1",
+                            "color": "#206790",
+                          },
+                          "success": Object {
+                            "backgroundColor": "#e9f8f2",
+                            "borderColor": "#28C081",
+                            "color": "#18734d",
+                          },
+                          "warning": Object {
+                            "backgroundColor": "#fef5e9",
+                            "borderColor": "#FD9D28",
+                            "color": "#975e18",
+                          },
+                        },
                         "minHeights": Array [
                           0,
                           16,
@@ -5390,159 +5957,159 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                             "lastClassName": "c8",
                             "rules": Array [
                               "
-                          & {
-                            box-sizing: border-box;
-                          }
-                          ",
+  & {
+    box-sizing: border-box;
+  }
+  ",
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               "
-                          ",
+  ",
                               [Function],
                               "
-                        ",
+",
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                        
-                          ",
+
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                          ",
+  ",
                               [Function],
                               "
-                        ",
+",
                             ],
                           },
                           "defaultProps": Object {
@@ -5670,6 +6237,33 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                 1024,
                                 1536,
                               ],
+                              "messageStyle": Object {
+                                "base": Object {
+                                  "backgroundColor": "#f6f6f6",
+                                  "borderColor": "#AAA",
+                                  "color": "#666",
+                                },
+                                "danger": Object {
+                                  "backgroundColor": "#fbe9e7",
+                                  "borderColor": "#DC2C10",
+                                  "color": "#841a09",
+                                },
+                                "info": Object {
+                                  "backgroundColor": "#eaf6fd",
+                                  "borderColor": "#36ADF1",
+                                  "color": "#206790",
+                                },
+                                "success": Object {
+                                  "backgroundColor": "#e9f8f2",
+                                  "borderColor": "#28C081",
+                                  "color": "#18734d",
+                                },
+                                "warning": Object {
+                                  "backgroundColor": "#fef5e9",
+                                  "borderColor": "#FD9D28",
+                                  "color": "#975e18",
+                                },
+                              },
                               "minHeights": Array [
                                 0,
                                 16,
@@ -5739,41 +6333,41 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                               "isStatic": false,
                               "rules": Array [
                                 "
-                          ",
+  ",
                                 [Function],
                                 "
-                          ",
+  ",
                                 [Function],
                                 "
-                          ",
+  ",
                                 [Function],
                                 "
-                          ",
+  ",
                                 [Function],
                                 "
-                          ",
+  ",
                                 [Function],
                                 "
-                          ",
+  ",
                                 [Function],
                                 "
-                          ",
+  ",
                                 [Function],
                                 "
-                        
-                          ",
+
+  ",
                                 [Function],
                                 "
-                          ",
+  ",
                                 [Function],
                                 "
-                          ",
+  ",
                                 [Function],
                                 "
-                          ",
+  ",
                                 [Function],
                                 "
-                        ",
+",
                               ],
                             },
                             "defaultProps": Object {
@@ -5802,41 +6396,41 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                               "isStatic": false,
                               "rules": Array [
                                 "
-                          ",
+  ",
                                 [Function],
                                 "
-                          ",
+  ",
                                 [Function],
                                 "
-                          ",
+  ",
                                 [Function],
                                 "
-                          ",
+  ",
                                 [Function],
                                 "
-                          ",
+  ",
                                 [Function],
                                 "
-                          ",
+  ",
                                 [Function],
                                 "
-                          ",
+  ",
                                 [Function],
                                 "
-                        
-                          ",
+
+  ",
                                 [Function],
                                 "
-                          ",
+  ",
                                 [Function],
                                 "
-                          ",
+  ",
                                 [Function],
                                 "
-                          ",
+  ",
                                 [Function],
                                 "
-                        ",
+",
                               ],
                             },
                             "defaultProps": Object {
@@ -5864,41 +6458,41 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                               "isStatic": false,
                               "rules": Array [
                                 "
-                          ",
+  ",
                                 [Function],
                                 "
-                          ",
+  ",
                                 [Function],
                                 "
-                          ",
+  ",
                                 [Function],
                                 "
-                          ",
+  ",
                                 [Function],
                                 "
-                          ",
+  ",
                                 [Function],
                                 "
-                          ",
+  ",
                                 [Function],
                                 "
-                          ",
+  ",
                                 [Function],
                                 "
-                        
-                          ",
+
+  ",
                                 [Function],
                                 "
-                          ",
+  ",
                                 [Function],
                                 "
-                          ",
+  ",
                                 [Function],
                                 "
-                          ",
+  ",
                                 [Function],
                                 "
-                        ",
+",
                               ],
                             },
                             "defaultProps": Object {
@@ -6048,6 +6642,33 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                             1024,
                             1536,
                           ],
+                          "messageStyle": Object {
+                            "base": Object {
+                              "backgroundColor": "#f6f6f6",
+                              "borderColor": "#AAA",
+                              "color": "#666",
+                            },
+                            "danger": Object {
+                              "backgroundColor": "#fbe9e7",
+                              "borderColor": "#DC2C10",
+                              "color": "#841a09",
+                            },
+                            "info": Object {
+                              "backgroundColor": "#eaf6fd",
+                              "borderColor": "#36ADF1",
+                              "color": "#206790",
+                            },
+                            "success": Object {
+                              "backgroundColor": "#e9f8f2",
+                              "borderColor": "#28C081",
+                              "color": "#18734d",
+                            },
+                            "warning": Object {
+                              "backgroundColor": "#fef5e9",
+                              "borderColor": "#FD9D28",
+                              "color": "#975e18",
+                            },
+                          },
                           "minHeights": Array [
                             0,
                             16,
@@ -6240,6 +6861,33 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                 1024,
                                 1536,
                               ],
+                              "messageStyle": Object {
+                                "base": Object {
+                                  "backgroundColor": "#f6f6f6",
+                                  "borderColor": "#AAA",
+                                  "color": "#666",
+                                },
+                                "danger": Object {
+                                  "backgroundColor": "#fbe9e7",
+                                  "borderColor": "#DC2C10",
+                                  "color": "#841a09",
+                                },
+                                "info": Object {
+                                  "backgroundColor": "#eaf6fd",
+                                  "borderColor": "#36ADF1",
+                                  "color": "#206790",
+                                },
+                                "success": Object {
+                                  "backgroundColor": "#e9f8f2",
+                                  "borderColor": "#28C081",
+                                  "color": "#18734d",
+                                },
+                                "warning": Object {
+                                  "backgroundColor": "#fef5e9",
+                                  "borderColor": "#FD9D28",
+                                  "color": "#975e18",
+                                },
+                              },
                               "minHeights": Array [
                                 0,
                                 16,
@@ -6316,176 +6964,176 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                   "lastClassName": "c9",
                                   "rules": Array [
                                     "
-                                & {
-                                  box-sizing: border-box;
-                                }
-                                ",
+  & {
+    box-sizing: border-box;
+  }
+  ",
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                              ",
+",
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                              
-                                ",
+
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                                ",
+  ",
                                     [Function],
                                     "
-                              ",
+",
                                     "
-                                & {
-                                  text-decoration: none;
-                                }
-                                &:hover {
-                                  color: ",
-                                    [Function],
-                                    ";
-                                  text-decoration: underline;
-                                }
-                                &:active {
-                                  color: ",
+  & {
+    text-decoration: none;
+  }
+  &:hover {
+    color: ",
                                     [Function],
                                     ";
-                                  text-decoration: none;
-                                }
-                              ",
+    text-decoration: underline;
+  }
+  &:active {
+    color: ",
+                                    [Function],
+                                    ";
+    text-decoration: none;
+  }
+",
                                   ],
                                 },
                                 "defaultProps": Object {
@@ -6612,6 +7260,33 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                       1024,
                                       1536,
                                     ],
+                                    "messageStyle": Object {
+                                      "base": Object {
+                                        "backgroundColor": "#f6f6f6",
+                                        "borderColor": "#AAA",
+                                        "color": "#666",
+                                      },
+                                      "danger": Object {
+                                        "backgroundColor": "#fbe9e7",
+                                        "borderColor": "#DC2C10",
+                                        "color": "#841a09",
+                                      },
+                                      "info": Object {
+                                        "backgroundColor": "#eaf6fd",
+                                        "borderColor": "#36ADF1",
+                                        "color": "#206790",
+                                      },
+                                      "success": Object {
+                                        "backgroundColor": "#e9f8f2",
+                                        "borderColor": "#28C081",
+                                        "color": "#18734d",
+                                      },
+                                      "warning": Object {
+                                        "backgroundColor": "#fef5e9",
+                                        "borderColor": "#FD9D28",
+                                        "color": "#975e18",
+                                      },
+                                    },
                                     "minHeights": Array [
                                       0,
                                       16,
@@ -6682,41 +7357,41 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                     "isStatic": false,
                                     "rules": Array [
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                              
-                                ",
+
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                              ",
+",
                                     ],
                                   },
                                   "defaultProps": Object {
@@ -6745,41 +7420,41 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                     "isStatic": false,
                                     "rules": Array [
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                              
-                                ",
+
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                              ",
+",
                                     ],
                                   },
                                   "defaultProps": Object {
@@ -6807,41 +7482,41 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                     "isStatic": false,
                                     "rules": Array [
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                              
-                                ",
+
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                                ",
+  ",
                                       [Function],
                                       "
-                              ",
+",
                                     ],
                                   },
                                   "defaultProps": Object {
@@ -6990,6 +7665,33 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                   1024,
                                   1536,
                                 ],
+                                "messageStyle": Object {
+                                  "base": Object {
+                                    "backgroundColor": "#f6f6f6",
+                                    "borderColor": "#AAA",
+                                    "color": "#666",
+                                  },
+                                  "danger": Object {
+                                    "backgroundColor": "#fbe9e7",
+                                    "borderColor": "#DC2C10",
+                                    "color": "#841a09",
+                                  },
+                                  "info": Object {
+                                    "backgroundColor": "#eaf6fd",
+                                    "borderColor": "#36ADF1",
+                                    "color": "#206790",
+                                  },
+                                  "success": Object {
+                                    "backgroundColor": "#e9f8f2",
+                                    "borderColor": "#28C081",
+                                    "color": "#18734d",
+                                  },
+                                  "warning": Object {
+                                    "backgroundColor": "#fef5e9",
+                                    "borderColor": "#FD9D28",
+                                    "color": "#975e18",
+                                  },
+                                },
                                 "minHeights": Array [
                                   0,
                                   16,
@@ -7096,178 +7798,178 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
         "isStatic": false,
         "rules": Array [
           "
-      & {
-        box-sizing: border-box;
-      }
-      ",
+  & {
+    box-sizing: border-box;
+  }
+  ",
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           "
-      ",
+  ",
           [Function],
           "
-    ",
+",
           "
-      & {
-        pointer-events: all;
-        user-select: none;
-        overflow: hidden;
-        height: 80px;
-        padding: 0 1rem;
-        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-        transition: all 0.15s ease;
-      }
-    
-      &:hover {
-        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
-      }
-    
-      > .iconBox {
-        display: none;
-      }
-    
-      > .closeBttn {
-        display: none;
-      }
-    
-      > ",
+  & {
+    pointer-events: all;
+    user-select: none;
+    overflow: hidden;
+    height: 80px;
+    padding: 0 1rem;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    transition: all 0.15s ease;
+  }
+
+  &:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+  }
+
+  > .iconBox {
+    display: none;
+  }
+
+  > .closeBttn {
+    display: none;
+  }
+
+  > ",
           ".sc-hJwwgy",
           " > ",
           ".sc-gyfYDX",
           " {
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        word-wrap: normal;
-      }
-    
-      @media screen and (max-width: 420px) {
-        border-color: transparent;
-      }
-    
-      @media screen and (min-width: 420px) {
-        & {
-          border-radius: 4px;
-          padding: ",
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-wrap: normal;
+  }
+
+  @media screen and (max-width: 420px) {
+    border-color: transparent;
+  }
+
+  @media screen and (min-width: 420px) {
+    & {
+      border-radius: 4px;
+      padding: ",
           [Function],
           ";
-        }
-    
-        > .iconBox {
-          display: block;
-        }
-    
-        > .closeBttn {
-          display: flex;
-        }
-      }
-    ",
+    }
+
+    > .iconBox {
+      display: block;
+    }
+
+    > .closeBttn {
+      display: flex;
+    }
+  }
+",
         ],
       },
       "defaultProps": Object {
@@ -7417,6 +8119,33 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
           1024,
           1536,
         ],
+        "messageStyle": Object {
+          "base": Object {
+            "backgroundColor": "#f6f6f6",
+            "borderColor": "#AAA",
+            "color": "#666",
+          },
+          "danger": Object {
+            "backgroundColor": "#fbe9e7",
+            "borderColor": "#DC2C10",
+            "color": "#841a09",
+          },
+          "info": Object {
+            "backgroundColor": "#eaf6fd",
+            "borderColor": "#36ADF1",
+            "color": "#206790",
+          },
+          "success": Object {
+            "backgroundColor": "#e9f8f2",
+            "borderColor": "#28C081",
+            "color": "#18734d",
+          },
+          "warning": Object {
+            "backgroundColor": "#fef5e9",
+            "borderColor": "#FD9D28",
+            "color": "#975e18",
+          },
+        },
         "minHeights": Array [
           0,
           16,
@@ -7598,6 +8327,33 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
           1024,
           1536,
         ],
+        "messageStyle": Object {
+          "base": Object {
+            "backgroundColor": "#f6f6f6",
+            "borderColor": "#AAA",
+            "color": "#666",
+          },
+          "danger": Object {
+            "backgroundColor": "#fbe9e7",
+            "borderColor": "#DC2C10",
+            "color": "#841a09",
+          },
+          "info": Object {
+            "backgroundColor": "#eaf6fd",
+            "borderColor": "#36ADF1",
+            "color": "#206790",
+          },
+          "success": Object {
+            "backgroundColor": "#e9f8f2",
+            "borderColor": "#28C081",
+            "color": "#18734d",
+          },
+          "warning": Object {
+            "backgroundColor": "#fef5e9",
+            "borderColor": "#FD9D28",
+            "color": "#975e18",
+          },
+        },
         "minHeights": Array [
           0,
           16,
@@ -7782,6 +8538,33 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
             1024,
             1536,
           ],
+          "messageStyle": Object {
+            "base": Object {
+              "backgroundColor": "#f6f6f6",
+              "borderColor": "#AAA",
+              "color": "#666",
+            },
+            "danger": Object {
+              "backgroundColor": "#fbe9e7",
+              "borderColor": "#DC2C10",
+              "color": "#841a09",
+            },
+            "info": Object {
+              "backgroundColor": "#eaf6fd",
+              "borderColor": "#36ADF1",
+              "color": "#206790",
+            },
+            "success": Object {
+              "backgroundColor": "#e9f8f2",
+              "borderColor": "#28C081",
+              "color": "#18734d",
+            },
+            "warning": Object {
+              "backgroundColor": "#fef5e9",
+              "borderColor": "#FD9D28",
+              "color": "#975e18",
+            },
+          },
           "minHeights": Array [
             0,
             16,
@@ -7968,6 +8751,33 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
             1024,
             1536,
           ],
+          "messageStyle": Object {
+            "base": Object {
+              "backgroundColor": "#f6f6f6",
+              "borderColor": "#AAA",
+              "color": "#666",
+            },
+            "danger": Object {
+              "backgroundColor": "#fbe9e7",
+              "borderColor": "#DC2C10",
+              "color": "#841a09",
+            },
+            "info": Object {
+              "backgroundColor": "#eaf6fd",
+              "borderColor": "#36ADF1",
+              "color": "#206790",
+            },
+            "success": Object {
+              "backgroundColor": "#e9f8f2",
+              "borderColor": "#28C081",
+              "color": "#18734d",
+            },
+            "warning": Object {
+              "backgroundColor": "#fef5e9",
+              "borderColor": "#FD9D28",
+              "color": "#975e18",
+            },
+          },
           "minHeights": Array [
             0,
             16,
@@ -8157,6 +8967,33 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
           1024,
           1536,
         ],
+        "messageStyle": Object {
+          "base": Object {
+            "backgroundColor": "#f6f6f6",
+            "borderColor": "#AAA",
+            "color": "#666",
+          },
+          "danger": Object {
+            "backgroundColor": "#fbe9e7",
+            "borderColor": "#DC2C10",
+            "color": "#841a09",
+          },
+          "info": Object {
+            "backgroundColor": "#eaf6fd",
+            "borderColor": "#36ADF1",
+            "color": "#206790",
+          },
+          "success": Object {
+            "backgroundColor": "#e9f8f2",
+            "borderColor": "#28C081",
+            "color": "#18734d",
+          },
+          "warning": Object {
+            "backgroundColor": "#fef5e9",
+            "borderColor": "#FD9D28",
+            "color": "#975e18",
+          },
+        },
         "minHeights": Array [
           0,
           16,
@@ -8342,6 +9179,33 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
             1024,
             1536,
           ],
+          "messageStyle": Object {
+            "base": Object {
+              "backgroundColor": "#f6f6f6",
+              "borderColor": "#AAA",
+              "color": "#666",
+            },
+            "danger": Object {
+              "backgroundColor": "#fbe9e7",
+              "borderColor": "#DC2C10",
+              "color": "#841a09",
+            },
+            "info": Object {
+              "backgroundColor": "#eaf6fd",
+              "borderColor": "#36ADF1",
+              "color": "#206790",
+            },
+            "success": Object {
+              "backgroundColor": "#e9f8f2",
+              "borderColor": "#28C081",
+              "color": "#18734d",
+            },
+            "warning": Object {
+              "backgroundColor": "#fef5e9",
+              "borderColor": "#FD9D28",
+              "color": "#975e18",
+            },
+          },
           "minHeights": Array [
             0,
             16,
@@ -8427,178 +9291,178 @@ exports[`ToastMessage component sanity matches generic snapshot 1`] = `
         "isStatic": false,
         "rules": Array [
           "
-      & {
-        box-sizing: border-box;
-      }
-      ",
+  & {
+    box-sizing: border-box;
+  }
+  ",
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           "
-      ",
+  ",
           [Function],
           "
-      ",
+  ",
           "
-      ",
+  ",
           [Function],
           "
-    ",
+",
           "
-      & {
-        pointer-events: all;
-        user-select: none;
-        overflow: hidden;
-        height: 80px;
-        padding: 0 1rem;
-        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-        transition: all 0.15s ease;
-      }
-    
-      &:hover {
-        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
-      }
-    
-      > .iconBox {
-        display: none;
-      }
-    
-      > .closeBttn {
-        display: none;
-      }
-    
-      > ",
+  & {
+    pointer-events: all;
+    user-select: none;
+    overflow: hidden;
+    height: 80px;
+    padding: 0 1rem;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    transition: all 0.15s ease;
+  }
+
+  &:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+  }
+
+  > .iconBox {
+    display: none;
+  }
+
+  > .closeBttn {
+    display: none;
+  }
+
+  > ",
           ".sc-hJwwgy",
           " > ",
           ".sc-gyfYDX",
           " {
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        word-wrap: normal;
-      }
-    
-      @media screen and (max-width: 420px) {
-        border-color: transparent;
-      }
-    
-      @media screen and (min-width: 420px) {
-        & {
-          border-radius: 4px;
-          padding: ",
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-wrap: normal;
+  }
+
+  @media screen and (max-width: 420px) {
+    border-color: transparent;
+  }
+
+  @media screen and (min-width: 420px) {
+    & {
+      border-radius: 4px;
+      padding: ",
           [Function],
           ";
-        }
-    
-        > .iconBox {
-          display: block;
-        }
-    
-        > .closeBttn {
-          display: flex;
-        }
-      }
-    ",
+    }
+
+    > .iconBox {
+      display: block;
+    }
+
+    > .closeBttn {
+      display: flex;
+    }
+  }
+",
         ],
       },
       "defaultProps": Object {
@@ -8747,6 +9611,33 @@ exports[`ToastMessage component sanity matches generic snapshot 1`] = `
           1024,
           1536,
         ],
+        "messageStyle": Object {
+          "base": Object {
+            "backgroundColor": "#f6f6f6",
+            "borderColor": "#AAA",
+            "color": "#666",
+          },
+          "danger": Object {
+            "backgroundColor": "#fbe9e7",
+            "borderColor": "#DC2C10",
+            "color": "#841a09",
+          },
+          "info": Object {
+            "backgroundColor": "#eaf6fd",
+            "borderColor": "#36ADF1",
+            "color": "#206790",
+          },
+          "success": Object {
+            "backgroundColor": "#e9f8f2",
+            "borderColor": "#28C081",
+            "color": "#18734d",
+          },
+          "warning": Object {
+            "backgroundColor": "#fef5e9",
+            "borderColor": "#FD9D28",
+            "color": "#975e18",
+          },
+        },
         "minHeights": Array [
           0,
           16,
@@ -8931,6 +9822,33 @@ exports[`ToastMessage component sanity matches generic snapshot 1`] = `
             1024,
             1536,
           ],
+          "messageStyle": Object {
+            "base": Object {
+              "backgroundColor": "#f6f6f6",
+              "borderColor": "#AAA",
+              "color": "#666",
+            },
+            "danger": Object {
+              "backgroundColor": "#fbe9e7",
+              "borderColor": "#DC2C10",
+              "color": "#841a09",
+            },
+            "info": Object {
+              "backgroundColor": "#eaf6fd",
+              "borderColor": "#36ADF1",
+              "color": "#206790",
+            },
+            "success": Object {
+              "backgroundColor": "#e9f8f2",
+              "borderColor": "#28C081",
+              "color": "#18734d",
+            },
+            "warning": Object {
+              "backgroundColor": "#fef5e9",
+              "borderColor": "#FD9D28",
+              "color": "#975e18",
+            },
+          },
           "minHeights": Array [
             0,
             16,
@@ -9120,6 +10038,33 @@ exports[`ToastMessage component sanity matches generic snapshot 1`] = `
           1024,
           1536,
         ],
+        "messageStyle": Object {
+          "base": Object {
+            "backgroundColor": "#f6f6f6",
+            "borderColor": "#AAA",
+            "color": "#666",
+          },
+          "danger": Object {
+            "backgroundColor": "#fbe9e7",
+            "borderColor": "#DC2C10",
+            "color": "#841a09",
+          },
+          "info": Object {
+            "backgroundColor": "#eaf6fd",
+            "borderColor": "#36ADF1",
+            "color": "#206790",
+          },
+          "success": Object {
+            "backgroundColor": "#e9f8f2",
+            "borderColor": "#28C081",
+            "color": "#18734d",
+          },
+          "warning": Object {
+            "backgroundColor": "#fef5e9",
+            "borderColor": "#FD9D28",
+            "color": "#975e18",
+          },
+        },
         "minHeights": Array [
           0,
           16,
@@ -9322,6 +10267,33 @@ exports[`ToastMessage component sanity matches processing snapshot 1`] = `
           1024,
           1536,
         ],
+        "messageStyle": Object {
+          "base": Object {
+            "backgroundColor": "#f6f6f6",
+            "borderColor": "#AAA",
+            "color": "#666",
+          },
+          "danger": Object {
+            "backgroundColor": "#fbe9e7",
+            "borderColor": "#DC2C10",
+            "color": "#841a09",
+          },
+          "info": Object {
+            "backgroundColor": "#eaf6fd",
+            "borderColor": "#36ADF1",
+            "color": "#206790",
+          },
+          "success": Object {
+            "backgroundColor": "#e9f8f2",
+            "borderColor": "#28C081",
+            "color": "#18734d",
+          },
+          "warning": Object {
+            "backgroundColor": "#fef5e9",
+            "borderColor": "#FD9D28",
+            "color": "#975e18",
+          },
+        },
         "minHeights": Array [
           0,
           16,
@@ -9508,6 +10480,33 @@ exports[`ToastMessage component sanity matches processing snapshot 1`] = `
           1024,
           1536,
         ],
+        "messageStyle": Object {
+          "base": Object {
+            "backgroundColor": "#f6f6f6",
+            "borderColor": "#AAA",
+            "color": "#666",
+          },
+          "danger": Object {
+            "backgroundColor": "#fbe9e7",
+            "borderColor": "#DC2C10",
+            "color": "#841a09",
+          },
+          "info": Object {
+            "backgroundColor": "#eaf6fd",
+            "borderColor": "#36ADF1",
+            "color": "#206790",
+          },
+          "success": Object {
+            "backgroundColor": "#e9f8f2",
+            "borderColor": "#28C081",
+            "color": "#18734d",
+          },
+          "warning": Object {
+            "backgroundColor": "#fef5e9",
+            "borderColor": "#FD9D28",
+            "color": "#975e18",
+          },
+        },
         "minHeights": Array [
           0,
           16,
@@ -9692,6 +10691,33 @@ exports[`ToastMessage component sanity matches processing snapshot 1`] = `
             1024,
             1536,
           ],
+          "messageStyle": Object {
+            "base": Object {
+              "backgroundColor": "#f6f6f6",
+              "borderColor": "#AAA",
+              "color": "#666",
+            },
+            "danger": Object {
+              "backgroundColor": "#fbe9e7",
+              "borderColor": "#DC2C10",
+              "color": "#841a09",
+            },
+            "info": Object {
+              "backgroundColor": "#eaf6fd",
+              "borderColor": "#36ADF1",
+              "color": "#206790",
+            },
+            "success": Object {
+              "backgroundColor": "#e9f8f2",
+              "borderColor": "#28C081",
+              "color": "#18734d",
+            },
+            "warning": Object {
+              "backgroundColor": "#fef5e9",
+              "borderColor": "#FD9D28",
+              "color": "#975e18",
+            },
+          },
           "minHeights": Array [
             0,
             16,
@@ -9881,6 +10907,33 @@ exports[`ToastMessage component sanity matches processing snapshot 1`] = `
           1024,
           1536,
         ],
+        "messageStyle": Object {
+          "base": Object {
+            "backgroundColor": "#f6f6f6",
+            "borderColor": "#AAA",
+            "color": "#666",
+          },
+          "danger": Object {
+            "backgroundColor": "#fbe9e7",
+            "borderColor": "#DC2C10",
+            "color": "#841a09",
+          },
+          "info": Object {
+            "backgroundColor": "#eaf6fd",
+            "borderColor": "#36ADF1",
+            "color": "#206790",
+          },
+          "success": Object {
+            "backgroundColor": "#e9f8f2",
+            "borderColor": "#28C081",
+            "color": "#18734d",
+          },
+          "warning": Object {
+            "backgroundColor": "#fef5e9",
+            "borderColor": "#FD9D28",
+            "color": "#975e18",
+          },
+        },
         "minHeights": Array [
           0,
           16,
@@ -10083,6 +11136,33 @@ exports[`ToastMessage component sanity matches success snapshot 1`] = `
           1024,
           1536,
         ],
+        "messageStyle": Object {
+          "base": Object {
+            "backgroundColor": "#f6f6f6",
+            "borderColor": "#AAA",
+            "color": "#666",
+          },
+          "danger": Object {
+            "backgroundColor": "#fbe9e7",
+            "borderColor": "#DC2C10",
+            "color": "#841a09",
+          },
+          "info": Object {
+            "backgroundColor": "#eaf6fd",
+            "borderColor": "#36ADF1",
+            "color": "#206790",
+          },
+          "success": Object {
+            "backgroundColor": "#e9f8f2",
+            "borderColor": "#28C081",
+            "color": "#18734d",
+          },
+          "warning": Object {
+            "backgroundColor": "#fef5e9",
+            "borderColor": "#FD9D28",
+            "color": "#975e18",
+          },
+        },
         "minHeights": Array [
           0,
           16,
@@ -10269,6 +11349,33 @@ exports[`ToastMessage component sanity matches success snapshot 1`] = `
           1024,
           1536,
         ],
+        "messageStyle": Object {
+          "base": Object {
+            "backgroundColor": "#f6f6f6",
+            "borderColor": "#AAA",
+            "color": "#666",
+          },
+          "danger": Object {
+            "backgroundColor": "#fbe9e7",
+            "borderColor": "#DC2C10",
+            "color": "#841a09",
+          },
+          "info": Object {
+            "backgroundColor": "#eaf6fd",
+            "borderColor": "#36ADF1",
+            "color": "#206790",
+          },
+          "success": Object {
+            "backgroundColor": "#e9f8f2",
+            "borderColor": "#28C081",
+            "color": "#18734d",
+          },
+          "warning": Object {
+            "backgroundColor": "#fef5e9",
+            "borderColor": "#FD9D28",
+            "color": "#975e18",
+          },
+        },
         "minHeights": Array [
           0,
           16,
@@ -10453,6 +11560,33 @@ exports[`ToastMessage component sanity matches success snapshot 1`] = `
             1024,
             1536,
           ],
+          "messageStyle": Object {
+            "base": Object {
+              "backgroundColor": "#f6f6f6",
+              "borderColor": "#AAA",
+              "color": "#666",
+            },
+            "danger": Object {
+              "backgroundColor": "#fbe9e7",
+              "borderColor": "#DC2C10",
+              "color": "#841a09",
+            },
+            "info": Object {
+              "backgroundColor": "#eaf6fd",
+              "borderColor": "#36ADF1",
+              "color": "#206790",
+            },
+            "success": Object {
+              "backgroundColor": "#e9f8f2",
+              "borderColor": "#28C081",
+              "color": "#18734d",
+            },
+            "warning": Object {
+              "backgroundColor": "#fef5e9",
+              "borderColor": "#FD9D28",
+              "color": "#975e18",
+            },
+          },
           "minHeights": Array [
             0,
             16,
@@ -10642,6 +11776,33 @@ exports[`ToastMessage component sanity matches success snapshot 1`] = `
           1024,
           1536,
         ],
+        "messageStyle": Object {
+          "base": Object {
+            "backgroundColor": "#f6f6f6",
+            "borderColor": "#AAA",
+            "color": "#666",
+          },
+          "danger": Object {
+            "backgroundColor": "#fbe9e7",
+            "borderColor": "#DC2C10",
+            "color": "#841a09",
+          },
+          "info": Object {
+            "backgroundColor": "#eaf6fd",
+            "borderColor": "#36ADF1",
+            "color": "#206790",
+          },
+          "success": Object {
+            "backgroundColor": "#e9f8f2",
+            "borderColor": "#28C081",
+            "color": "#18734d",
+          },
+          "warning": Object {
+            "backgroundColor": "#fef5e9",
+            "borderColor": "#FD9D28",
+            "color": "#975e18",
+          },
+        },
         "minHeights": Array [
           0,
           16,
