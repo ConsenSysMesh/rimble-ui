@@ -75,13 +75,13 @@ exports[`OutlineButton component sanity matches default snapshot 1`] = `
 }
 
 .c0 > svg:first-child {
-  margin-left: -1rem;
+  margin-left: -.5rem;
   margin-right: .5rem;
 }
 
 .c0 > svg:last-child {
   margin-left: .5rem;
-  margin-right: -1rem;
+  margin-right: -.5rem;
 }
 
 .c0 > svg:first-child:last-child {
@@ -111,7 +111,9 @@ exports[`OutlineButton component sanity matches default snapshot 1`] = `
   font-weight="3"
   height="48px"
   type="button"
-/>
+>
+  
+</button>
 `;
 
 exports[`OutlineButton component sanity matches themed snapshot 1`] = `
@@ -189,13 +191,13 @@ exports[`OutlineButton component sanity matches themed snapshot 1`] = `
 }
 
 .c1 > svg:first-child {
-  margin-left: -1rem;
+  margin-left: -.5rem;
   margin-right: .5rem;
 }
 
 .c1 > svg:last-child {
   margin-left: .5rem;
-  margin-right: -1rem;
+  margin-right: -.5rem;
 }
 
 .c1 > svg:first-child:last-child {
@@ -234,6 +236,8 @@ exports[`OutlineButton component sanity matches themed snapshot 1`] = `
     font-weight="3"
     height="48px"
     type="button"
-  />
+  >
+    
+  </button>
 </div>
 `;

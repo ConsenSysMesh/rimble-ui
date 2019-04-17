@@ -11,7 +11,9 @@ exports[`Box component sanity matches default snapshot 1`] = `
 
 <div
   class="c0"
-/>
+>
+  
+</div>
 `;
 
 exports[`Box component sanity matches themed snapshot 1`] = `
@@ -34,6 +36,8 @@ exports[`Box component sanity matches themed snapshot 1`] = `
 >
   <div
     class="c1"
-  />
+  >
+    
+  </div>
 </div>
 `;

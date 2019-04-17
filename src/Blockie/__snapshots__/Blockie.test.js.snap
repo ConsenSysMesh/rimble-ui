@@ -1,6 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Blockie component sanity matches default snapshot 1`] = `<canvas />`;
+exports[`Blockie component sanity matches default snapshot 1`] = `
+<canvas>
+  
+</canvas>
+`;
 
 exports[`Blockie component sanity matches themed snapshot 1`] = `
 .c0 {
@@ -12,6 +16,8 @@ exports[`Blockie component sanity matches themed snapshot 1`] = `
 <div
   class="c0"
 >
-  <canvas />
+  <canvas>
+    
+  </canvas>
 </div>
 `;

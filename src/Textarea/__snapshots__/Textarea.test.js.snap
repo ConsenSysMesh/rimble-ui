@@ -2,62 +2,6 @@
 
 exports[`Textarea component sanity matches default snapshot 1`] = `
 .c0 {
-  padding: 16px;
-  color: #3F3D4B;
-  background-color: #fff;
-  font-size: 1rem;
-  height: auto;
-  border: 1px solid transparent;
-  border-color: #CCC;
-  border-radius: 4px;
-  border-color: #CCC;
-  border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  font-size: 1rem;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-}
-
-.c0 {
-  box-sizing: border-box;
-}
-
-.c0 {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
-.c0:hover {
-  box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
-}
-
-.c0:focus {
-  outline: none;
-  border-color: #4E3FCE;
-}
-
-.c0:disabled {
-  opacity: 0.4;
-  pointer-events: none;
-}
-
-.was-validated .c0:valid {
-  border-color: #28C081;
-}
-
-.was-validated .c0:valid ~ svg.icon-valid {
-  visibility: visible;
-}
-
-.was-validated .c0:invalid {
-  border-color: #EC9081;
-}
-
-.was-validated .c0:invalid ~ svg.icon-invalid {
-  visibility: visible;
-}
-
-.c0 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -69,66 +13,12 @@ exports[`Textarea component sanity matches default snapshot 1`] = `
   font-family="sansSerif"
   font-size="1rem"
   height="auto"
-/>
+>
+  
+</textarea>
 `;
 
 exports[`Textarea component sanity matches themed snapshot 1`] = `
-.c1 {
-  padding: 16px;
-  color: #3F3D4B;
-  background-color: #fff;
-  font-size: 1rem;
-  height: auto;
-  border: 1px solid transparent;
-  border-color: #CCC;
-  border-radius: 4px;
-  border-color: #CCC;
-  border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  font-size: 1rem;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-}
-
-.c1 {
-  box-sizing: border-box;
-}
-
-.c1 {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
-.c1:hover {
-  box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
-}
-
-.c1:focus {
-  outline: none;
-  border-color: #4E3FCE;
-}
-
-.c1:disabled {
-  opacity: 0.4;
-  pointer-events: none;
-}
-
-.was-validated .c1:valid {
-  border-color: #28C081;
-}
-
-.was-validated .c1:valid ~ svg.icon-valid {
-  visibility: visible;
-}
-
-.was-validated .c1:invalid {
-  border-color: #EC9081;
-}
-
-.was-validated .c1:invalid ~ svg.icon-invalid {
-  visibility: visible;
-}
-
 .c1 {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -150,6 +40,8 @@ exports[`Textarea component sanity matches themed snapshot 1`] = `
     font-family="sansSerif"
     font-size="1rem"
     height="auto"
-  />
+  >
+    
+  </textarea>
 </div>
 `;

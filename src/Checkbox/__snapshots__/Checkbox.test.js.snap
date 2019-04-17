@@ -96,7 +96,9 @@ exports[`Checkbox component sanity matches default snapshot 1`] = `
       color="primary"
       theme="[object Object]"
       type="checkbox"
-    />
+    >
+      
+    </input>
     <svg
       class=""
       fill="currentcolor"
@@ -107,7 +109,9 @@ exports[`Checkbox component sanity matches default snapshot 1`] = `
     >
       <path
         d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-      />
+      >
+        
+      </path>
     </svg>
     <svg
       class=""
@@ -118,7 +122,9 @@ exports[`Checkbox component sanity matches default snapshot 1`] = `
     >
       <path
         d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-      />
+      >
+        
+      </path>
     </svg>
   </div>
   <div
@@ -127,7 +133,9 @@ exports[`Checkbox component sanity matches default snapshot 1`] = `
     font-family="sansSerif"
     font-size="1"
     font-weight="3"
-  />
+  >
+    
+  </div>
 </label>
 `;
 
@@ -236,7 +244,9 @@ exports[`Checkbox component sanity matches themed snapshot 1`] = `
         color="primary"
         theme="[object Object]"
         type="checkbox"
-      />
+      >
+        
+      </input>
       <svg
         class=""
         fill="currentcolor"
@@ -247,7 +257,9 @@ exports[`Checkbox component sanity matches themed snapshot 1`] = `
       >
         <path
           d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-        />
+        >
+          
+        </path>
       </svg>
       <svg
         class=""
@@ -258,7 +270,9 @@ exports[`Checkbox component sanity matches themed snapshot 1`] = `
       >
         <path
           d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-        />
+        >
+          
+        </path>
       </svg>
     </div>
     <div
@@ -267,7 +281,9 @@ exports[`Checkbox component sanity matches themed snapshot 1`] = `
       font-family="sansSerif"
       font-size="1"
       font-weight="3"
-    />
+    >
+      
+    </div>
   </label>
 </div>
 `;

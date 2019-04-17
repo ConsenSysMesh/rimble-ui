@@ -36,7 +36,9 @@ exports[`Link component sanity matches default snapshot 1`] = `
   font-family="sansSerif"
   font-size="1"
   font-weight="3"
-/>
+>
+  
+</a>
 `;
 
 exports[`Link component sanity matches themed snapshot 1`] = `
@@ -84,6 +86,8 @@ exports[`Link component sanity matches themed snapshot 1`] = `
     font-family="sansSerif"
     font-size="1"
     font-weight="3"
-  />
+  >
+    
+  </a>
 </div>
 `;

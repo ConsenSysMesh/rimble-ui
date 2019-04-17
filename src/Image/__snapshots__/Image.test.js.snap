@@ -15,7 +15,9 @@ exports[`Image component sanity matches default snapshot 1`] = `
   class="c0"
   display="block"
   width="100%"
-/>
+>
+  
+</img>
 `;
 
 exports[`Image component sanity matches themed snapshot 1`] = `
@@ -42,6 +44,8 @@ exports[`Image component sanity matches themed snapshot 1`] = `
     class="c1"
     display="block"
     width="100%"
-  />
+  >
+    
+  </img>
 </div>
 `;
