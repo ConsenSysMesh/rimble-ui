@@ -69,7 +69,9 @@ exports[`Textarea component sanity matches default snapshot 1`] = `
   font-family="sansSerif"
   font-size="1rem"
   height="auto"
-/>
+>
+  
+</textarea>
 `;
 
 exports[`Textarea component sanity matches themed snapshot 1`] = `
@@ -150,6 +152,8 @@ exports[`Textarea component sanity matches themed snapshot 1`] = `
     font-family="sansSerif"
     font-size="1rem"
     height="auto"
-  />
+  >
+    
+  </textarea>
 </div>
 `;

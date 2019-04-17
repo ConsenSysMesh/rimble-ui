@@ -114,7 +114,9 @@ exports[`TextButton component sanity matches default snapshot 1`] = `
   font-weight="3"
   height="48px"
   type="button"
-/>
+>
+  
+</button>
 `;
 
 exports[`TextButton component sanity matches themed snapshot 1`] = `
@@ -240,6 +242,8 @@ exports[`TextButton component sanity matches themed snapshot 1`] = `
     font-weight="3"
     height="48px"
     type="button"
-  />
+  >
+    
+  </button>
 </div>
 `;
