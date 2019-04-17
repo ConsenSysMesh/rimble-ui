@@ -44,7 +44,7 @@ const ExampleCard = ({variant, ...props}) => {
           <Box
             size={'3rem'}
             bg={'white'}
-            border={`8px solid HSLA(${colorPrimary}, 0.40)`}
+            border={`8px solid HSLA(${colorPrimary}, 0.25)`}
             borderRadius={'100%'}
           >
             <Flex
