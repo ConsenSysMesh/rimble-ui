@@ -10,6 +10,13 @@ import { Flash } from 'rimble-ui';
 ```
 <!-- STORY -->
 
+### Accessibility
+
+- Critical and warning banners have a role="alert"
+- All other banners have a role="status"
+- Banner containers have a tabindex="0" and display a visible keyboard focus indicator.
+- Banners use aria-describedby to describe their purpose to assistive technologies when they're announced or receive focus. All of the banner content is used for the aria-describedby.
+
 ### Component props
 
 …

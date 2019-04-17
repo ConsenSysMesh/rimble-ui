@@ -111,8 +111,12 @@ storiesOf('Components/Flash', module)
                 <Pill mb={3} color={'red'}>
                   {"Don't"}
                 </Pill>
-                <Flash variant={'success'}>
-                  <Icon name="Mood"  /><strong>Connected!</strong><br /> Your Ethereum account is now connected to my dApp.
+                <Flash variant={'success'} display={'flex'}>
+                  <Box mr={3}><Icon name="Mood"  /></Box>
+                  <Box mr={3}>
+                    <Heading color={'inherit'} fontSize={2} my={0}><strong>Connected!</strong></Heading>
+                    <Text color={'inherit'}>Your Ethereum account is now connected to my dApp.</Text>
+                    </Box>
                 </Flash>
               </Card>
             </Box>
@@ -126,33 +130,58 @@ Stick to one call to action            </Heading.h4>
             </Text>
             <br />
           </Box>
+
           <Flex>
-            <Card mx={'auto'} my={3} px={4} width="400px">
-              <Pill mb={3} color={'green'}>
-                {'Do'}
-              </Pill>
-              <Flash variant={'danger'}>
-              <Flex alignItem={'center'}>
-              <Icon mr={3} name="Warning" /><Box><strong>No funds for transactions fees</strong><br /> You won't be able to use our blockchain features without some Ether in your account. <Link>Learn how to add funds</Link></Box></Flex>
-            </Flash>
-            </Card>
-            <Card mx={'auto'} my={3} px={4} width="400px">
-              <Pill mb={3} color={'red'}>
-                {"Don't"}
-              </Pill>
-              <Flash variant={'danger'}>
-                <Flex alignItem={'center'}>
-              <Icon mr={3} name="Warning"  /><Box><strong>Wrong network and insufficient funds!</strong><br /> You need to be on the Main Ethereum network to use this dApp. <Link>Learn how to switch networks</Link><br /><br />You also won't be able to use our blockchain features without some Ether in your account. <Link>Learn how to add funds</Link></Box></Flex>
-            </Flash>
-            </Card>
-          </Flex>
+            <Box width={'50%'} my={3} mr={3}>
+              <Card px={4}>
+                <Pill mb={3} color={'green'}>
+                  {'Do'}
+                </Pill>
+
+                <Flash variant={'danger'} display={'flex'}>
+                  <Box mr={3}>
+                    <Icon name="Warning" />
+                  </Box>
+                  <Box mr={3}>
+                    <Heading color={'inherit'} fontSize={2} my={0}>
+                      <strong>No funds for transactions fees</strong>
+                    </Heading>
+                    <Text color={'inherit'}>
+                      You won't be able to use our blockchain features without some Ether in your account. <Link>Learn how to add funds</Link>
+                    </Text>
+                  </Box>
+                </Flash>
+
+              </Card>
+            </Box>
+
+              <Box width={'50%'} my={3} mr={3}>
+                <Card px={4}>
+                  <Pill mb={3} color={'red'}>
+                    {'Don\'t'}
+                  </Pill>
+
+                  <Flash variant={'danger'} display={'flex'}>
+                    <Box mr={3}>
+                      <Icon name="Warning" />
+                    </Box>
+                    <Box mr={3}>
+                      <Heading color={'inherit'} fontSize={2} my={0}>
+                        <strong>Wrong network and insufficient funds!</strong>
+                      </Heading>
+                      <Text color={'inherit'}>
+                        You need to be on the Main Ethereum network to use this dApp. <Link>Learn how to switch networks</Link></Text><br /><Text color={'inherit'}>You also won't be able to use our blockchain features without some Ether in your account. <Link>Learn how to add funds</Link>
+                      </Text>
+                    </Box>
+                  </Flash>
+
+                </Card>
+              </Box>
+</Flex>
 
 
 
-          <Heading.h4>Descriptive Text</Heading.h4>
-          <Text.p>
-            Use an active voice and make the message as descriptive and informative as possible
-          </Text.p>
+
         </Box>
         <ContributeBanner />
       </div>
