@@ -4,6 +4,7 @@ import { withDocs } from 'storybook-readme';
 
 import CodeBlock from '../../components/CodeBlock';
 import ContributeBanner from '../../components/ContributeBanner';
+import ExampleCard from '../../components/ExampleCard';
 
 import Documentation from './docs.md';
 import Guidelines from './guide.md';
@@ -85,10 +86,7 @@ storiesOf('Components/Flash', module)
 
           <Flex>
             <Box width={'50%'} my={3} mr={3}>
-              <Card px={4}>
-                <Pill mb={3} color={'green'}>
-                  {'Do'}
-                </Pill>
+              <ExampleCard variant={'positive'}>
 
                 <Flash variant={'danger'} display={'flex'}>
                   <Box mr={3}>
@@ -104,13 +102,11 @@ storiesOf('Components/Flash', module)
                   </Box>
                 </Flash>
 
-              </Card>
+              </ExampleCard>
             </Box>
             <Box width={'50%'} my={3}>
-              <Card px={4}>
-                <Pill mb={3} color={'red'}>
-                  {"Don't"}
-                </Pill>
+              <ExampleCard variant={'negative'}>
+
                 <Flash variant={'success'} display={'flex'}>
                   <Box mr={3}><Icon name="Mood"  /></Box>
                   <Box mr={3}>
@@ -118,7 +114,8 @@ storiesOf('Components/Flash', module)
                     <Text color={'inherit'}>Your Ethereum account is now connected to my dApp.</Text>
                     </Box>
                 </Flash>
-              </Card>
+
+              </ExampleCard>
             </Box>
           </Flex>
 
