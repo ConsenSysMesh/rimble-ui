@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
 
 import { themeGet, fontSize, fontFamily, boxShadow } from 'styled-system';
 
 import Box from '../Box';
 import Icon from '../Icon';
-import Button from '../Button';
+import FileInput from './FileInput';
 
 import defaultTheme from '../theme';
 
@@ -61,38 +61,11 @@ const StyledIconWrapper = styled(Box)`
   }
 `;
 
-const StyledFileInput = styled('input')`
-  & {
-    opacity: 0;
-    height: 0;
-    width: 0;
-  }
-`;
-
-const StyledFileLabel = styled('label')`
-  & {
-    cursor: pointer;
-    display: inline-block;
-  }
-`;
-
-const StyledFileButton = styled(Button)`
-  & {
-    pointer-events: none;
-  }
-`;
-
 const Input = ({ className, ...props }) => {
   if (props.type === 'file') {
-    return (
-      <div>
-        <StyledFileLabel for={'myID'}>
-          <StyledFileInput type={'file'} id={'myID'} name={'myID'} />
-          <StyledFileButton>Choose file…</StyledFileButton>
-        </StyledFileLabel>
-      </div>
-    );
+    return <FileInput {...props} />;
   }
+
   return <StyledInput as={'input'} className={className} {...props} />;
 };
 
