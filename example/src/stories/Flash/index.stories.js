@@ -82,9 +82,13 @@ storiesOf('Components/Flash', module)
               When you want to let the user know that something has been successful. You may want to use a <code>{'ToastMessage'}</code>, but <code>{'Flash'}</code> is a good option if you want your user to follow up the success with an action.
             </Text>
 
-            <Heading.h5>Example scenarios</Heading.h5>
+            <Heading.h5>
+              Example scenarios
+            </Heading.h5>
 
-            <Heading.h4>Info</Heading.h4>
+            <Heading.h4>
+              Info
+            </Heading.h4>
             <Text>
               When there's some important info in relation to the section (whole dApp, page, card etc.) in which you put the Flash banner. Or if you want to provide advice.
             </Text>
@@ -189,14 +193,10 @@ storiesOf('Components/Flash', module)
             </Text>
           </Box>
 
-<<<<<<< HEAD
-<ExampleCard variant={'positive'}>
-=======
           <Flex>
             <Box width={'50%'} my={3} mr={3}>
               <ExampleCard variant={'positive'}>
 
->>>>>>> origin/ge-documentation-templating
                 <Flash variant={'danger'} display={'flex'}>
                   <Box mr={3}>
                     <Icon name="Warning" />
@@ -210,36 +210,31 @@ storiesOf('Components/Flash', module)
                     </Text>
                   </Box>
                 </Flash>
-</ExampleCard>
-<ExampleCard variant={'negative'}>
+              </ExampleCard>
 
-<<<<<<< HEAD
-=======
+              <ExampleCard variant={'negative'}>
+
               </ExampleCard>
             </Box>
             <Box width={'50%'} my={3}>
               <ExampleCard variant={'negative'}>
 
->>>>>>> origin/ge-documentation-templating
                 <Flash variant={'success'} display={'flex'}>
                   <Box mr={3}><Icon name="Mood"  /></Box>
                   <Box mr={3}>
                     <Heading color={'inherit'} fontSize={2} my={0}><strong>Connected!</strong></Heading>
                     <Text color={'inherit'}>Your Ethereum account is now connected to my dApp.</Text>
-                    </Box>
+                  </Box>
                 </Flash>
-<<<<<<< HEAD
-</ExampleCard>
-=======
 
               </ExampleCard>
             </Box>
           </Flex>
->>>>>>> origin/ge-documentation-templating
 
           <Box>
             <Heading.h4>
-Stick to one call to action            </Heading.h4>
+              Stick to one call to action
+            </Heading.h4>
             <Text>
               Flash banners should have a single purpose or message so should only contain a maximum of one call to action. Multiple messages in a banner will both cause confusion and add unnecessary word count. It's better to separate them into two banners if you need to say two things and let the user address them separately.
             </Text>
@@ -270,33 +265,28 @@ Stick to one call to action            </Heading.h4>
               </Card>
             </Box>
 
-              <Box width={'50%'} my={3} mr={3}>
-                <Card px={4}>
-                  <Pill mb={3} color={'red'}>
+            <Box width={'50%'} my={3} mr={3}>
+              <Card px={4}>
+                <Pill mb={3} color={'red'}>
                     {'Don\'t'}
-                  </Pill>
+                </Pill>
 
-                  <Flash variant={'danger'} display={'flex'}>
-                    <Box mr={3}>
-                      <Icon name="Warning" />
-                    </Box>
-                    <Box mr={3}>
-                      <Heading color={'inherit'} fontSize={2} my={0}>
-                        <strong>Wrong network and insufficient funds!</strong>
-                      </Heading>
-                      <Text color={'inherit'}>
-                        You need to be on the Main Ethereum network to use this dApp. <Link>Learn how to switch networks</Link></Text><br /><Text color={'inherit'}>You also won't be able to use our blockchain features without some Ether in your account. <Link>Learn how to add funds</Link>
-                      </Text>
-                    </Box>
-                  </Flash>
-
-                </Card>
-              </Box>
-</Flex>
-
-
-
-
+                <Flash variant={'danger'} display={'flex'}>
+                  <Box mr={3}>
+                    <Icon name="Warning" />
+                  </Box>
+                  <Box mr={3}>
+                    <Heading color={'inherit'} fontSize={2} my={0}>
+                      <strong>Wrong network and insufficient funds!</strong>
+                    </Heading>
+                    <Text color={'inherit'}>
+                      You need to be on the Main Ethereum network to use this dApp. <Link>Learn how to switch networks</Link></Text><br /><Text color={'inherit'}>You also won't be able to use our blockchain features without some Ether in your account. <Link>Learn how to add funds</Link>
+                    </Text>
+                  </Box>
+                </Flash>
+              </Card>
+            </Box>
+          </Flex>
         </Box>
         <ContributeBanner />
       </div>
