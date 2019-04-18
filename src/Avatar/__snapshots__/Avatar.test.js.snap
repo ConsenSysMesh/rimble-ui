@@ -23,7 +23,9 @@ exports[`Avatar component sanity matches default snapshot 1`] = `
 <div
   alt="Avatar"
   class="c0"
-/>
+>
+  
+</div>
 `;
 
 exports[`Avatar component sanity matches themed snapshot 1`] = `
@@ -58,6 +60,8 @@ exports[`Avatar component sanity matches themed snapshot 1`] = `
   <div
     alt="Avatar"
     class="c1"
-  />
+  >
+    
+  </div>
 </div>
 `;

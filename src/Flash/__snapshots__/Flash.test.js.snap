@@ -14,176 +14,176 @@ exports[`Select component sanity matches danger variant snapshot 1`] = `
         "isStatic": false,
         "rules": Array [
           "
-  & {
-    box-sizing: border-box;
-  }
-  ",
+      & {
+        box-sizing: border-box;
+      }
+      ",
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           "
-  ",
+      ",
           [Function],
           "
-",
+    ",
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-
-  ",
+    
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-",
+    ",
           "
-  ",
+      ",
           [Function],
           "
-
-  & {
-  }
-
-  a {
-    font-size: inherit;
-    cursor: pointer;
-    color: inherit;
-    &:hover {
-      color: inherit;
-    }
-  }
-",
+    
+      & {
+      }
+    
+      a {
+        font-size: inherit;
+        cursor: pointer;
+        color: inherit;
+        &:hover {
+          color: inherit;
+        }
+      }
+    ",
         ],
       },
       "defaultProps": Object {
@@ -407,41 +407,41 @@ exports[`Select component sanity matches danger variant snapshot 1`] = `
           "isStatic": false,
           "rules": Array [
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-
-  ",
+    
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-",
+    ",
           ],
         },
         "defaultProps": Object {
@@ -470,41 +470,41 @@ exports[`Select component sanity matches danger variant snapshot 1`] = `
           "isStatic": false,
           "rules": Array [
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-
-  ",
+    
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-",
+    ",
           ],
         },
         "defaultProps": Object {
@@ -532,41 +532,41 @@ exports[`Select component sanity matches danger variant snapshot 1`] = `
           "isStatic": false,
           "rules": Array [
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-
-  ",
+    
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-",
+    ",
           ],
         },
         "defaultProps": Object {
@@ -818,176 +818,176 @@ exports[`Select component sanity matches default snapshot 1`] = `
         "isStatic": false,
         "rules": Array [
           "
-  & {
-    box-sizing: border-box;
-  }
-  ",
+      & {
+        box-sizing: border-box;
+      }
+      ",
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           "
-  ",
+      ",
           [Function],
           "
-",
+    ",
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-
-  ",
+    
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-",
+    ",
           "
-  ",
+      ",
           [Function],
           "
-
-  & {
-  }
-
-  a {
-    font-size: inherit;
-    cursor: pointer;
-    color: inherit;
-    &:hover {
-      color: inherit;
-    }
-  }
-",
+    
+      & {
+      }
+    
+      a {
+        font-size: inherit;
+        cursor: pointer;
+        color: inherit;
+        &:hover {
+          color: inherit;
+        }
+      }
+    ",
         ],
       },
       "defaultProps": Object {
@@ -1211,41 +1211,41 @@ exports[`Select component sanity matches default snapshot 1`] = `
           "isStatic": false,
           "rules": Array [
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-
-  ",
+    
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-",
+    ",
           ],
         },
         "defaultProps": Object {
@@ -1274,41 +1274,41 @@ exports[`Select component sanity matches default snapshot 1`] = `
           "isStatic": false,
           "rules": Array [
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-
-  ",
+    
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-",
+    ",
           ],
         },
         "defaultProps": Object {
@@ -1336,41 +1336,41 @@ exports[`Select component sanity matches default snapshot 1`] = `
           "isStatic": false,
           "rules": Array [
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-
-  ",
+    
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-",
+    ",
           ],
         },
         "defaultProps": Object {
@@ -1622,176 +1622,176 @@ exports[`Select component sanity matches info variant snapshot 1`] = `
         "isStatic": false,
         "rules": Array [
           "
-  & {
-    box-sizing: border-box;
-  }
-  ",
+      & {
+        box-sizing: border-box;
+      }
+      ",
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           "
-  ",
+      ",
           [Function],
           "
-",
+    ",
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-
-  ",
+    
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-",
+    ",
           "
-  ",
+      ",
           [Function],
           "
-
-  & {
-  }
-
-  a {
-    font-size: inherit;
-    cursor: pointer;
-    color: inherit;
-    &:hover {
-      color: inherit;
-    }
-  }
-",
+    
+      & {
+      }
+    
+      a {
+        font-size: inherit;
+        cursor: pointer;
+        color: inherit;
+        &:hover {
+          color: inherit;
+        }
+      }
+    ",
         ],
       },
       "defaultProps": Object {
@@ -2015,41 +2015,41 @@ exports[`Select component sanity matches info variant snapshot 1`] = `
           "isStatic": false,
           "rules": Array [
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-
-  ",
+    
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-",
+    ",
           ],
         },
         "defaultProps": Object {
@@ -2078,41 +2078,41 @@ exports[`Select component sanity matches info variant snapshot 1`] = `
           "isStatic": false,
           "rules": Array [
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-
-  ",
+    
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-",
+    ",
           ],
         },
         "defaultProps": Object {
@@ -2140,41 +2140,41 @@ exports[`Select component sanity matches info variant snapshot 1`] = `
           "isStatic": false,
           "rules": Array [
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-
-  ",
+    
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-",
+    ",
           ],
         },
         "defaultProps": Object {
@@ -2426,176 +2426,176 @@ exports[`Select component sanity matches success variant snapshot 1`] = `
         "isStatic": false,
         "rules": Array [
           "
-  & {
-    box-sizing: border-box;
-  }
-  ",
+      & {
+        box-sizing: border-box;
+      }
+      ",
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           "
-  ",
+      ",
           [Function],
           "
-",
+    ",
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-
-  ",
+    
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-",
+    ",
           "
-  ",
+      ",
           [Function],
           "
-
-  & {
-  }
-
-  a {
-    font-size: inherit;
-    cursor: pointer;
-    color: inherit;
-    &:hover {
-      color: inherit;
-    }
-  }
-",
+    
+      & {
+      }
+    
+      a {
+        font-size: inherit;
+        cursor: pointer;
+        color: inherit;
+        &:hover {
+          color: inherit;
+        }
+      }
+    ",
         ],
       },
       "defaultProps": Object {
@@ -2819,41 +2819,41 @@ exports[`Select component sanity matches success variant snapshot 1`] = `
           "isStatic": false,
           "rules": Array [
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-
-  ",
+    
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-",
+    ",
           ],
         },
         "defaultProps": Object {
@@ -2882,41 +2882,41 @@ exports[`Select component sanity matches success variant snapshot 1`] = `
           "isStatic": false,
           "rules": Array [
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-
-  ",
+    
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-",
+    ",
           ],
         },
         "defaultProps": Object {
@@ -2944,41 +2944,41 @@ exports[`Select component sanity matches success variant snapshot 1`] = `
           "isStatic": false,
           "rules": Array [
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-
-  ",
+    
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-",
+    ",
           ],
         },
         "defaultProps": Object {
@@ -3274,176 +3274,176 @@ exports[`Select component sanity matches warning variant snapshot 1`] = `
         "isStatic": false,
         "rules": Array [
           "
-  & {
-    box-sizing: border-box;
-  }
-  ",
+      & {
+        box-sizing: border-box;
+      }
+      ",
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           "
-  ",
+      ",
           [Function],
           "
-",
+    ",
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-
-  ",
+    
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-  ",
+      ",
           [Function],
           "
-",
+    ",
           "
-  ",
+      ",
           [Function],
           "
-
-  & {
-  }
-
-  a {
-    font-size: inherit;
-    cursor: pointer;
-    color: inherit;
-    &:hover {
-      color: inherit;
-    }
-  }
-",
+    
+      & {
+      }
+    
+      a {
+        font-size: inherit;
+        cursor: pointer;
+        color: inherit;
+        &:hover {
+          color: inherit;
+        }
+      }
+    ",
         ],
       },
       "defaultProps": Object {
@@ -3667,41 +3667,41 @@ exports[`Select component sanity matches warning variant snapshot 1`] = `
           "isStatic": false,
           "rules": Array [
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-
-  ",
+    
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-",
+    ",
           ],
         },
         "defaultProps": Object {
@@ -3730,41 +3730,41 @@ exports[`Select component sanity matches warning variant snapshot 1`] = `
           "isStatic": false,
           "rules": Array [
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-
-  ",
+    
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-",
+    ",
           ],
         },
         "defaultProps": Object {
@@ -3792,41 +3792,41 @@ exports[`Select component sanity matches warning variant snapshot 1`] = `
           "isStatic": false,
           "rules": Array [
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-
-  ",
+    
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-  ",
+      ",
             [Function],
             "
-",
+    ",
           ],
         },
         "defaultProps": Object {

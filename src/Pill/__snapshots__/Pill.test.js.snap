@@ -66,7 +66,9 @@ exports[`Pill component sanity matches default snapshot 1`] = `
   font-family="sansSerif"
   font-size="1"
   height="2"
-/>
+>
+  
+</div>
 `;
 
 exports[`Pill component sanity matches themed snapshot 1`] = `
@@ -144,6 +146,8 @@ exports[`Pill component sanity matches themed snapshot 1`] = `
     font-family="sansSerif"
     font-size="1"
     height="2"
-  />
+  >
+    
+  </div>
 </div>
 `;
