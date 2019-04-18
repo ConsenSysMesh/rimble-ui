@@ -123,7 +123,7 @@ storiesOf('Components/Flash', module)
               </Box>
                 <Box mr={3}>
                 <Link>See rates</Link>
-                </Box>
+              </Box>
             </Flash>
 
             <Heading.h4>Warning</Heading.h4>
@@ -181,112 +181,112 @@ storiesOf('Components/Flash', module)
                 </Text>
               </Box>
             </Flash>
-
-          <br />
-
-          <Box pb={3}>
-            <Heading.h4>
-              Use for persistent information
-            </Heading.h4>
-            <Text>
-              That means Flash banner information should contain something that the user should know but shouldn't stop them in their tracks.  persist so should contain important information that stays relevant for a while or indicates user action is required.
-            </Text>
-          </Box>
-
-          <Flex>
-            <Box width={'50%'} my={3} mr={3}>
-              <ExampleCard variant={'positive'}>
-
-                <Flash variant={'danger'} display={'flex'}>
-                  <Box mr={3}>
-                    <Icon name="Warning" />
-                  </Box>
-                  <Box mr={3}>
-                    <Heading color={'inherit'} fontSize={2} my={0}>
-                      <strong>Switch to the Main Ethereum network</strong>
-                    </Heading>
-                    <Text color={'inherit'}>
-                      Change your network in your browser settings. You’re currently on Rinkeby.
-                    </Text>
-                  </Box>
-                </Flash>
-              </ExampleCard>
-
-              <ExampleCard variant={'negative'}>
-
-              </ExampleCard>
-            </Box>
-            <Box width={'50%'} my={3}>
-              <ExampleCard variant={'negative'}>
-
-                <Flash variant={'success'} display={'flex'}>
-                  <Box mr={3}><Icon name="Mood"  /></Box>
-                  <Box mr={3}>
-                    <Heading color={'inherit'} fontSize={2} my={0}><strong>Connected!</strong></Heading>
-                    <Text color={'inherit'}>Your Ethereum account is now connected to my dApp.</Text>
-                  </Box>
-                </Flash>
-
-              </ExampleCard>
-            </Box>
-          </Flex>
-
-          <Box>
-            <Heading.h4>
-              Stick to one call to action
-            </Heading.h4>
-            <Text>
-              Flash banners should have a single purpose or message so should only contain a maximum of one call to action. Multiple messages in a banner will both cause confusion and add unnecessary word count. It's better to separate them into two banners if you need to say two things and let the user address them separately.
-            </Text>
             <br />
-          </Box>
 
-          <Flex>
-            <Box width={'50%'} my={3} mr={3}>
-              <Card px={4}>
-                <Pill mb={3} color={'green'}>
-                  {'Do'}
-                </Pill>
-
-                <Flash variant={'danger'} display={'flex'}>
-                  <Box mr={3}>
-                    <Icon name="Warning" />
-                  </Box>
-                  <Box mr={3}>
-                    <Heading color={'inherit'} fontSize={2} my={0}>
-                      <strong>No funds for transactions fees</strong>
-                    </Heading>
-                    <Text color={'inherit'}>
-                      You won't be able to use our blockchain features without some Ether in your account. <Link>Learn how to add funds</Link>
-                    </Text>
-                  </Box>
-                </Flash>
-
-              </Card>
+            <Box pb={3}>
+              <Heading.h4>
+                Use for persistent information
+              </Heading.h4>
+              <Text>
+                That means Flash banner information should contain something that the user should know but shouldn't stop them in their tracks.  persist so should contain important information that stays relevant for a while or indicates user action is required.
+              </Text>
             </Box>
 
-            <Box width={'50%'} my={3} mr={3}>
-              <Card px={4}>
-                <Pill mb={3} color={'red'}>
+            <Flex>
+              <Box width={'50%'} my={3} mr={3}>
+                <ExampleCard variant={'positive'}>
+
+                  <Flash variant={'danger'} display={'flex'}>
+                    <Box mr={3}>
+                      <Icon name="Warning" />
+                    </Box>
+                    <Box mr={3}>
+                      <Heading color={'inherit'} fontSize={2} my={0}>
+                        <strong>Switch to the Main Ethereum network</strong>
+                      </Heading>
+                      <Text color={'inherit'}>
+                        Change your network in your browser settings. You’re currently on Rinkeby.
+                      </Text>
+                    </Box>
+                  </Flash>
+                </ExampleCard>
+
+                <ExampleCard variant={'negative'}>
+
+                </ExampleCard>
+              </Box>
+              <Box width={'50%'} my={3}>
+                <ExampleCard variant={'negative'}>
+
+                  <Flash variant={'success'} display={'flex'}>
+                    <Box mr={3}><Icon name="Mood"  /></Box>
+                    <Box mr={3}>
+                      <Heading color={'inherit'} fontSize={2} my={0}><strong>Connected!</strong></Heading>
+                      <Text color={'inherit'}>Your Ethereum account is now connected to my dApp.</Text>
+                    </Box>
+                  </Flash>
+
+                </ExampleCard>
+              </Box>
+            </Flex>
+
+            <Box>
+              <Heading.h4>
+                Stick to one call to action
+              </Heading.h4>
+              <Text>
+                Flash banners should have a single purpose or message so should only contain a maximum of one call to action. Multiple messages in a banner will both cause confusion and add unnecessary word count. It's better to separate them into two banners if you need to say two things and let the user address them separately.
+              </Text>
+              <br />
+            </Box>
+
+            <Flex>
+              <Box width={'50%'} my={3} mr={3}>
+                <Card px={4}>
+                  <Pill mb={3} color={'green'}>
+                    {'Do'}
+                  </Pill>
+
+                  <Flash variant={'danger'} display={'flex'}>
+                    <Box mr={3}>
+                      <Icon name="Warning" />
+                    </Box>
+                    <Box mr={3}>
+                      <Heading color={'inherit'} fontSize={2} my={0}>
+                        <strong>No funds for transactions fees</strong>
+                      </Heading>
+                      <Text color={'inherit'}>
+                        You won't be able to use our blockchain features without some Ether in your account. <Link>Learn how to add funds</Link>
+                      </Text>
+                    </Box>
+                  </Flash>
+
+                </Card>
+              </Box>
+
+              <Box width={'50%'} my={3} mr={3}>
+                <Card px={4}>
+                  <Pill mb={3} color={'red'}>
                     {'Don\'t'}
-                </Pill>
+                  </Pill>
 
-                <Flash variant={'danger'} display={'flex'}>
-                  <Box mr={3}>
-                    <Icon name="Warning" />
-                  </Box>
-                  <Box mr={3}>
-                    <Heading color={'inherit'} fontSize={2} my={0}>
-                      <strong>Wrong network and insufficient funds!</strong>
-                    </Heading>
-                    <Text color={'inherit'}>
-                      You need to be on the Main Ethereum network to use this dApp. <Link>Learn how to switch networks</Link></Text><br /><Text color={'inherit'}>You also won't be able to use our blockchain features without some Ether in your account. <Link>Learn how to add funds</Link>
-                    </Text>
-                  </Box>
-                </Flash>
-              </Card>
-            </Box>
-          </Flex>
+                  <Flash variant={'danger'} display={'flex'}>
+                    <Box mr={3}>
+                      <Icon name="Warning" />
+                    </Box>
+                    <Box mr={3}>
+                      <Heading color={'inherit'} fontSize={2} my={0}>
+                        <strong>Wrong network and insufficient funds!</strong>
+                      </Heading>
+                      <Text color={'inherit'}>
+                        You need to be on the Main Ethereum network to use this dApp. <Link>Learn how to switch networks</Link></Text><br /><Text color={'inherit'}>You also won't be able to use our blockchain features without some Ether in your account. <Link>Learn how to add funds</Link>
+                      </Text>
+                    </Box>
+                  </Flash>
+                </Card>
+              </Box>
+            </Flex>
+          </Box>
         </Box>
         <ContributeBanner />
       </div>
