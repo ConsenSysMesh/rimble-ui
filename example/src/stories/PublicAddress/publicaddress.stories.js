@@ -39,7 +39,7 @@ storiesOf('Components/PublicAddress', module)
             <PublicAddress
               address={'0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2'}
               label={'Wallet Address'}
-              required={'false'}
+              required
             />
           </CodeBlock>
         </Box>
