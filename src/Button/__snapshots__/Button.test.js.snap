@@ -101,9 +101,7 @@ exports[`Button component sanity matches default snapshot 1`] = `
   font-weight="3"
   height="48px"
   type="button"
->
-  
-</button>
+/>
 `;
 
 exports[`Button component sanity matches themed snapshot 1`] = `
@@ -216,8 +214,6 @@ exports[`Button component sanity matches themed snapshot 1`] = `
     font-weight="3"
     height="48px"
     type="button"
-  >
-    
-  </button>
+  />
 </div>
 `;

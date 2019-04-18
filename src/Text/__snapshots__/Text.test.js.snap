@@ -22,9 +22,7 @@ exports[`Text component sanity matches default snapshot 1`] = `
   font-family="sansSerif"
   font-size="2"
   font-weight="2"
->
-  
-</div>
+/>
 `;
 
 exports[`Text component sanity matches themed snapshot 1`] = `
@@ -58,8 +56,6 @@ exports[`Text component sanity matches themed snapshot 1`] = `
     font-family="sansSerif"
     font-size="2"
     font-weight="2"
-  >
-    
-  </div>
+  />
 </div>
 `;
