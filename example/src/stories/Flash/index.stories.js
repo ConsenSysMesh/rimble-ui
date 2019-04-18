@@ -189,7 +189,14 @@ storiesOf('Components/Flash', module)
             </Text>
           </Box>
 
+<<<<<<< HEAD
 <ExampleCard variant={'positive'}>
+=======
+          <Flex>
+            <Box width={'50%'} my={3} mr={3}>
+              <ExampleCard variant={'positive'}>
+
+>>>>>>> origin/ge-documentation-templating
                 <Flash variant={'danger'} display={'flex'}>
                   <Box mr={3}>
                     <Icon name="Warning" />
@@ -206,6 +213,14 @@ storiesOf('Components/Flash', module)
 </ExampleCard>
 <ExampleCard variant={'negative'}>
 
+<<<<<<< HEAD
+=======
+              </ExampleCard>
+            </Box>
+            <Box width={'50%'} my={3}>
+              <ExampleCard variant={'negative'}>
+
+>>>>>>> origin/ge-documentation-templating
                 <Flash variant={'success'} display={'flex'}>
                   <Box mr={3}><Icon name="Mood"  /></Box>
                   <Box mr={3}>
@@ -213,7 +228,14 @@ storiesOf('Components/Flash', module)
                     <Text color={'inherit'}>Your Ethereum account is now connected to my dApp.</Text>
                     </Box>
                 </Flash>
+<<<<<<< HEAD
 </ExampleCard>
+=======
+
+              </ExampleCard>
+            </Box>
+          </Flex>
+>>>>>>> origin/ge-documentation-templating
 
           <Box>
             <Heading.h4>
