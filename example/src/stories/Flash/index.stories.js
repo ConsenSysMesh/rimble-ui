@@ -4,6 +4,7 @@ import { withDocs } from 'storybook-readme';
 
 import CodeBlock from '../../components/CodeBlock';
 import ContributeBanner from '../../components/ContributeBanner';
+import ExampleCard from '../../components/ExampleCard';
 
 import Documentation from './docs.md';
 import Guidelines from './guide.md';
@@ -74,22 +75,121 @@ storiesOf('Components/Flash', module)
             product.
           </Text.p>
 
+          <Box>
+            <Heading.h3>When to use which variation</Heading.h3>
+            <Heading.h4>Success</Heading.h4>
+            <Text>
+              When you want to let the user know that something has been successful. You may want to use a <code>{'ToastMessage'}</code>, but <code>{'Flash'}</code> is a good option if you want your user to follow up the success with an action.
+            </Text>
+
+            <Heading.h5>Example scenarios</Heading.h5>
+
+            <Heading.h4>Info</Heading.h4>
+            <Text>
+              When there's some important info in relation to the section (whole dApp, page, card etc.) in which you put the Flash banner. Or if you want to provide advice.
+            </Text>
+
+            <Heading.h5>Example scenarios</Heading.h5>
+
+            <Flash variant={'info'} display={'flex'}>
+              <Box mr={3}>
+                <Icon name="Info" />
+              </Box>
+              <Box mr={3}>
+                <Heading color={'inherit'} fontsize={2} my={0}>
+                  <strong>Now accepting DAI</strong>
+                </Heading>
+                <Text color={'inherit'}>
+                  You can now use DAI in our online store
+                </Text>
+              </Box>
+            </Flash>
+
+            <Flash variant={'info'} display={'flex'}>
+              <Box mr={3}>
+                <Icon name="Info" />
+              </Box>
+              <Box mr={3}>
+                <Heading color={'inherit'} fontsize={2} my={0}>
+                  <strong>Ether is booming!</strong>
+                </Heading>
+                <Text color={'inherit'}>
+                  ETH price surges show no sign of letting up.
+                </Text>
+              </Box>
+                <Box mr={3}>
+                <Link>See rates</Link>
+                </Box>
+            </Flash>
+
+            <Heading.h4>Warning</Heading.h4>
+            <Text>
+              If there's something that might prevent a user from acheiving their tasks.
+            </Text>
+
+            <Heading.h5>Example scenarios</Heading.h5>
+
+            <Flash variant={'warning'} display={'flex'}>
+              <Box mr={3}>
+                <Icon name="Warning" />
+              </Box>
+              <Box mr={3}>
+                <Heading color={'inherit'} fontsize={2} my={0}>
+                  <strong>Slow transactions expected</strong>
+                </Heading>
+                <Text color={'inherit'}>
+                  The network is slower than usual today, so some transactions might take longer to process
+                </Text>
+              </Box>
+            </Flash>
+
+            <Heading.h4>Danger</Heading.h4>
+            <Text>
+              If there's something preventing a user from achieving key tasks, like a service outage or an incorrect network. If you want to prevent them from doing anything in these situations, used a <code>{'Modal'}</code>.
+            </Text>
+
+            <Heading.h5>Example scenarios</Heading.h5>
+
+            <Flash variant={'danger'} display={'flex'}>
+              <Box mr={3}>
+                <Icon name="Warning" />
+              </Box>
+              <Box mr={3}>
+                <Heading color={'inherit'} fontSize={2} my={0}>
+                  <strong>Switch to the Main Ethereum network</strong>
+                </Heading>
+                <Text color={'inherit'}>
+                  Change your network in your browser settings. You’re currently on Rinkeby.
+                </Text>
+              </Box>
+            </Flash>
+
+            <Flash variant={'danger'} display={'flex'}>
+              <Box mr={3}>
+                <Icon name="Warning" />
+              </Box>
+              <Box mr={3}>
+                <Heading color={'inherit'} fontSize={2} my={0}>
+                  <strong>Complete all required fields</strong>
+                </Heading>
+                <Text color={'inherit'}>
+                  Please fill in all fields marked with an asterisk below
+                </Text>
+              </Box>
+            </Flash>
+
+          <br />
+
           <Box pb={3}>
             <Heading.h4>
               Use for persistent information
             </Heading.h4>
             <Text>
-              Flash banners persist so should contain important information that stays relevant for a while or indicates user action is required.
+              That means Flash banner information should contain something that the user should know but shouldn't stop them in their tracks.  persist so should contain important information that stays relevant for a while or indicates user action is required.
             </Text>
           </Box>
 
-          <Flex>
-            <Box width={'50%'} my={3} mr={3}>
-              <Card px={4}>
-                <Pill mb={3} color={'green'}>
-                  {'Do'}
-                </Pill>
-
+<ExampleCard variant={'positive'}>
                 <Flash variant={'danger'} display={'flex'}>
                   <Box mr={3}>
                     <Icon name="Warning" />
@@ -103,14 +203,9 @@ storiesOf('Components/Flash', module)
                     </Text>
                   </Box>
                 </Flash>
+</ExampleCard>
+<ExampleCard variant={'negative'}>
 
-              </Card>
-            </Box>
-            <Box width={'50%'} my={3}>
-              <Card px={4}>
-                <Pill mb={3} color={'red'}>
-                  {"Don't"}
-                </Pill>
                 <Flash variant={'success'} display={'flex'}>
                   <Box mr={3}><Icon name="Mood"  /></Box>
                   <Box mr={3}>
@@ -118,9 +213,7 @@ storiesOf('Components/Flash', module)
                     <Text color={'inherit'}>Your Ethereum account is now connected to my dApp.</Text>
                     </Box>
                 </Flash>
-              </Card>
-            </Box>
-          </Flex>
+</ExampleCard>
 
           <Box>
             <Heading.h4>
