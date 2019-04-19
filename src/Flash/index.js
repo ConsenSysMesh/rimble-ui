@@ -31,6 +31,7 @@ const StyledFlash = styled(Box)`
 `;
 
 const Flash = ({ className, children, ...props }) => {
+  const status = props.variant;
   const id = newID('Flash');
   const contentID = `${id}Content`;
   let ariaRoleType = 'status';
