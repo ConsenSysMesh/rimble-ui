@@ -65,10 +65,10 @@ const Flash = ({ className, children, ...props }) => {
 Flash.defaultProps = {
   theme: defaultTheme,
   variant: 'base',
-  width: '1',
   p: '3',
   border: '1',
   borderRadius: 1,
+  width: '100%',
 };
 
 Flash.displayName = 'Flash';
