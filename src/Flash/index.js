@@ -55,9 +55,9 @@ const Flash = ({ className, children, ...props }) => {
       aria-describedby={contentID}
       {...props}
     >
-      <Text.span color={'inherit'} id={contentID}>
+      <Text color={'inherit'} display={'inherit'} id={contentID}>
         {children}
-      </Text.span>
+      </Text>
     </StyledFlash>
   );
 };
