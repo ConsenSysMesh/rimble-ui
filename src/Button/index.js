@@ -79,18 +79,18 @@ const StyledButton = styled(Box).attrs(props => ({
     cursor: not-allowed;
   }
 
-  > ${Icon} {
+  > svg {
     display: block;
   }
-  > ${Icon}:first-child {
-    margin-left: -1rem;
+  > svg:first-child {
+    margin-left: -0.5rem;
     margin-right: .5rem;
   }
-  > ${Icon}:last-child {
+  > svg:last-child {
     margin-left: .5rem;
-    margin-right: -1rem;
+    margin-right: -0.5rem;
   }
-  > ${Icon}:first-child:last-child {
+  > svg:first-child:last-child {
     margin: 0;
   }
 
