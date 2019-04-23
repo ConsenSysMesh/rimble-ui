@@ -1,53 +1,29 @@
 import React from 'react';
 import styled from 'styled-components';
 import {
+  color,
+  space,
+  minWidth,
+  fontSize,
   fontFamily,
   fontWeight,
-  fontSize,
-  boxShadow,
-  opacity,
+  buttonStyle,
+  variant,
   themeGet,
 } from 'styled-system';
-import { tint, shade } from 'polished';
 
 import defaultTheme from '../theme';
 import Box from '../Box';
 import Icon from '../Icon';
 
-const fullWidth = props => (props.fullWidth ? { width: '100%' } : null);
+const buttonSize = variant({
+  prop: 'size',
+  key: 'buttonSizes',
+});
 
-const size = props => {
-  switch (props.size) {
-    case 'small':
-      return `
-        font-size: 12px;
-        height: 2rem;
-        min-width: 2rem;
-        padding: 0 1rem;
-      `;
-    case 'medium':
-      return `
-        font-size: 16px;
-        height: 3rem;
-        min-width: 3rem;
-      `;
-    case 'large':
-      return `
-        font-size: 24px;
-        height: 4rem;
-        min-width: 4rem;
-      `;
-    default:
-      return `
-        font-size: 1rem;
-        min-width: 3rem;
-      `;
-  }
-};
+// const fullWidth = props => (props.fullWidth ? { width: '100%' } : null);
 
-const StyledButton = styled(Box).attrs(props => ({
-  hovercolor: props.hovercolor || themeGet('colors.primary', 'black')(props),
-}))`
+const StyledButton = styled(Box)`
   & {
     -webkit-font-smoothing: antialiased;
     cursor: pointer;
@@ -56,27 +32,52 @@ const StyledButton = styled(Box).attrs(props => ({
     text-decoration: none;
     text-align: center;
     line-height: 1;
+    position: relative;
 
     display: inline-flex;
     align-items: center;
     justify-content: center;
 
-    transition: all .15s ease;
-
     padding: ${props => (props.icononly ? '0' : props.p)};
   }
   &&:hover {
-    background-color: ${props => tint(0.1, props.hovercolor)};
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     text-decoration: inherit;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
   }
   &:active {
-    background-color: ${props => shade(0.1, props.hovercolor)};
     box-shadow: none;
   }
   &:disabled {
     opacity: ${props => themeGet('opacity.disabled', '0.5')};
     cursor: not-allowed;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    background: none;
+    transition: background .15s ease;
+  }
+
+  &&:hover::before {
+    background: RGBA(255,255,255, 0.1);
+  }
+
+  &&:active::before {
+    background: RGBA(0,0,0, 0.1);
+  }
+
+  > svg,
+  > span.button-text {
+    position: relative;
+    z-index: 1;
   }
 
   > svg {
@@ -94,14 +95,21 @@ const StyledButton = styled(Box).attrs(props => ({
     margin: 0;
   }
 
-  ${fontSize}
-  ${fontWeight}
-  ${fontFamily}
-  ${boxShadow}
-  ${opacity}
+  ${color}
+  ${space}
+  ${minWidth}
 
-  ${size}
-  ${fullWidth}
+  ${fontSize}
+  ${fontFamily}
+  ${fontWeight}
+
+  ${buttonStyle}
+  ${buttonSize}
+
+  ${'' /* ${boxShadow} */}
+  ${'' /* ${opacity} */}
+
+  ${'' /* ${fullWidth} */}
 `;
 
 const Button = ({ className, children, ...props }) => {
@@ -110,34 +118,37 @@ const Button = ({ className, children, ...props }) => {
       <StyledButton as="button" type="button" className={className} {...props}>
         {props.icon && !props.iconpos && <Icon name={props.icon} />}
         {props.icon && props.iconpos === 'left' && <Icon name={props.icon} />}
-        {children && <span>{children}</span>}
+        {children && <span className="button-text">{children}</span>}
         {props.icon && props.iconpos === 'right' && <Icon name={props.icon} />}
       </StyledButton>
     );
   }
   return (
     <StyledButton as="button" type="button" className={className} {...props}>
-      {children}
+      <span className="button-text">{children}</span>
     </StyledButton>
   );
 };
 
 Button.defaultProps = {
   theme: defaultTheme,
-  position: 'relative',
-  color: 'white',
-  bg: 'primary',
-  height: '48px',
+  variant: 'primary',
+  size: 'medium',
   m: 0,
   px: 4,
   py: 0,
+  fontSize: 'inherit',
+  fontFamily: 'sansSerif',
+  fontWeight: 3,
+
+  position: 'relative',
+  // color: 'white',
+  // bg: 'primary',
+  // height: '48px',
   border: 0,
   borderColor: 'none',
   borderRadius: 1,
   boxShadow: 1,
-  fontSize: 'inherit',
-  fontFamily: 'sansSerif',
-  fontWeight: 3,
 };
 
 Button.displayName = 'Button';
