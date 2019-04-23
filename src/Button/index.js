@@ -8,13 +8,11 @@ import {
   opacity,
   themeGet,
 } from 'styled-system';
-
 import { tint, shade } from 'polished';
 
+import defaultTheme from '../theme';
 import Box from '../Box';
 import Icon from '../Icon';
-
-import defaultTheme from '../theme';
 
 const fullWidth = props => (props.fullWidth ? { width: '100%' } : null);
 
@@ -47,38 +45,30 @@ const size = props => {
   }
 };
 
-const ProtoButton = React.forwardRef((props, ref) => (
-  <Box as="button" type="button" ref={ref} {...props}>
-    {props.icon && !props.iconpos && <Icon name={props.icon} />}
-    {props.icon && props.iconpos === 'left' && <Icon name={props.icon} />}
-    {props.children && <span>{props.children}</span>}
-    {props.icon && props.iconpos === 'right' && <Icon name={props.icon} />}
-  </Box>
-));
-
-const Button = styled(ProtoButton).attrs(props => ({
+const StyledButton = styled(Box).attrs(props => ({
   hovercolor: props.hovercolor || themeGet('colors.primary', 'black')(props),
 }))`
   & {
+    -webkit-font-smoothing: antialiased;
     cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
     text-decoration: none;
     text-align: center;
     line-height: 1;
-    overflow: hidden;
-    white-space: nowrap;
-    -webkit-font-smoothing: antialiased;
 
     display: inline-flex;
     align-items: center;
     justify-content: center;
+
     transition: all .15s ease;
 
     padding: ${props => (props.icononly ? '0' : props.p)};
   }
   &&:hover {
-    text-decoration: inherit;
     background-color: ${props => tint(0.1, props.hovercolor)};
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    text-decoration: inherit;
   }
   &:active {
     background-color: ${props => shade(0.1, props.hovercolor)};
@@ -89,18 +79,18 @@ const Button = styled(ProtoButton).attrs(props => ({
     cursor: not-allowed;
   }
 
-  > svg {
+  > ${Icon} {
     display: block;
   }
-  > svg:first-child {
+  > ${Icon}:first-child {
     margin-left: -1rem;
     margin-right: .5rem;
   }
-  > svg:last-child {
+  > ${Icon}:last-child {
     margin-left: .5rem;
     margin-right: -1rem;
   }
-  > svg:first-child:last-child {
+  > ${Icon}:first-child:last-child {
     margin: 0;
   }
 
@@ -113,6 +103,24 @@ const Button = styled(ProtoButton).attrs(props => ({
   ${size}
   ${fullWidth}
 `;
+
+const Button = ({ className, children, ...props }) => {
+  if (props.icon) {
+    return (
+      <StyledButton as="button" type="button" className={className} {...props}>
+        {props.icon && !props.iconpos && <Icon name={props.icon} />}
+        {props.icon && props.iconpos === 'left' && <Icon name={props.icon} />}
+        {children && <span>{children}</span>}
+        {props.icon && props.iconpos === 'right' && <Icon name={props.icon} />}
+      </StyledButton>
+    );
+  }
+  return (
+    <StyledButton as="button" type="button" className={className} {...props}>
+      {children}
+    </StyledButton>
+  );
+};
 
 Button.defaultProps = {
   theme: defaultTheme,
