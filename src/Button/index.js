@@ -141,7 +141,6 @@ Button.defaultProps = {
   fontFamily: 'sansSerif',
   fontWeight: 3,
 
-  position: 'relative',
   // color: 'white',
   // bg: 'primary',
   // height: '48px',
