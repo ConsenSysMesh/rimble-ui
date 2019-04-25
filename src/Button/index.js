@@ -9,6 +9,7 @@ import {
   fontWeight,
   buttonStyle,
   variant,
+  style,
   themeGet,
 } from 'styled-system';
 
@@ -21,9 +22,16 @@ const buttonSize = variant({
   key: 'buttonSizes',
 });
 
+const mainColor = style({
+  prop: 'mainColor',
+  cssProperty: '--main-color',
+  key: 'colors',
+});
+
 // const fullWidth = props => (props.fullWidth ? { width: '100%' } : null);
 
 const StyledButton = styled(Box)`
+  ${'' /* button base styles */}
   & {
     -webkit-font-smoothing: antialiased;
     cursor: pointer;
@@ -31,9 +39,8 @@ const StyledButton = styled(Box)`
     white-space: nowrap;
     text-decoration: none;
     text-align: center;
-    line-height: 1;
-    position: relative;
 
+    position: relative;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -66,14 +73,15 @@ const StyledButton = styled(Box)`
     transition: background .15s ease;
   }
 
-  &&:hover::before {
+  &:hover::before {
     background: RGBA(255,255,255, 0.1);
   }
 
-  &&:active::before {
+  &:active::before {
     background: RGBA(0,0,0, 0.1);
   }
 
+  ${'' /* with icon styles */}
   > svg,
   > span.button-text {
     position: relative;
@@ -95,6 +103,7 @@ const StyledButton = styled(Box)`
     margin: 0;
   }
 
+  ${'' /* styled system props */}
   ${color}
   ${space}
   ${minWidth}
@@ -110,6 +119,9 @@ const StyledButton = styled(Box)`
   ${'' /* ${opacity} */}
 
   ${'' /* ${fullWidth} */}
+
+  ${'' /* our css custom props */}
+  ${mainColor}
 `;
 
 const Button = ({ className, children, ...props }) => {
@@ -131,6 +143,7 @@ const Button = ({ className, children, ...props }) => {
 };
 
 Button.defaultProps = {
+  // base props
   theme: defaultTheme,
   variant: 'primary',
   size: 'medium',
@@ -140,16 +153,63 @@ Button.defaultProps = {
   fontSize: 'inherit',
   fontFamily: 'sansSerif',
   fontWeight: 3,
-
-  // color: 'white',
-  // bg: 'primary',
+  // color props
+  color: 'var(--contrast-color)',
+  backgroundColor: 'var(--main-color)',
   // height: '48px',
   border: 0,
   borderColor: 'none',
   borderRadius: 1,
+  // raised
   boxShadow: 1,
 };
 
 Button.displayName = 'Button';
 
 export default Button;
+
+// outline
+
+const StyledOutlineButton = styled(Button)`
+  & {
+    color: var(--main-color);
+    border: 1px solid gray;
+    background: transparent;
+  }
+
+  &&:hover {
+    border: 1px solid var(--main-color);
+  }
+
+  &&:hover::before {
+    opacity: 0;
+    background: none;
+  }
+
+  &&:active::before {
+    opacity: 0.1;
+    background-color: var(--main-color);
+  }
+`;
+
+const OutlineButton = ({ className, children, ...props }) => {
+  return (
+    <StyledOutlineButton className={className} {...props}>
+      {children}
+    </StyledOutlineButton>
+  );
+};
+
+Button.Outline = OutlineButton;
+
+// text
+
+const TextButton = styled(Button)`
+  & {
+    color: var(--main-color);
+    border: none;
+    background: none;
+  }
+`;
+
+Button.Text = TextButton;

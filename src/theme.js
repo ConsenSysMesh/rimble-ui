@@ -112,8 +112,11 @@ export default {
   },
   buttons: {
     primary: {
-      color: blurple.text,
-      backgroundColor: blurple.base,
+      // color: blurple.text,
+      // backgroundColor: blurple.base,
+      // uses css custom props
+      '--main-color': blurple.base,
+      '--contrast-color': blurple.text,
     },
     danger: {
       color: red.text,
