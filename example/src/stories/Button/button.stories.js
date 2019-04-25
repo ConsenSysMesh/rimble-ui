@@ -43,7 +43,11 @@ storiesOf('Components/Buttons/Button', module).add(
           they're on.
         </Text.p>
         <CodeBlock>
-          <Button>Connect wallet</Button>
+          <div>
+            <Button m={3}>Connect wallet</Button>
+            <Button.Outline m={3}>Connect wallet</Button.Outline>
+            <Button.Text m={3}>Connect wallet</Button.Text>
+          </div>
         </CodeBlock>
       </Box>
       <br />
