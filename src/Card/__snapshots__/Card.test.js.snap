@@ -38,9 +38,7 @@ exports[`Card component sanity matches default snapshot 1`] = `
   class="c0"
   height="auto"
   width="100%"
->
-  
-</div>
+/>
 `;
 
 exports[`Card component sanity matches themed snapshot 1`] = `
@@ -90,8 +88,6 @@ exports[`Card component sanity matches themed snapshot 1`] = `
     class="c1"
     height="auto"
     width="100%"
-  >
-    
-  </div>
+  />
 </div>
 `;

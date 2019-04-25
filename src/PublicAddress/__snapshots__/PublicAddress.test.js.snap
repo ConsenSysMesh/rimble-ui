@@ -62,12 +62,6 @@ exports[`PublicAddress component sanity matches default snapshot 1`] = `
   box-sizing: border-box;
 }
 
-.c1:after {
-  content: ' (optional)';
-  font-weight: normal;
-  font-style: italic;
-}
-
 .c3 {
   padding-top: 0;
   padding-bottom: 0;
@@ -301,6 +295,7 @@ exports[`PublicAddress component sanity matches default snapshot 1`] = `
   </div>
   <div
     class="c2"
+    required=""
   >
     <input
       class="c3"
@@ -309,9 +304,7 @@ exports[`PublicAddress component sanity matches default snapshot 1`] = `
       font-size="1rem"
       height="3rem"
       readonly=""
-    >
-      
-    </input>
+    />
     <button
       class="c4 c5"
       color="white"
@@ -389,12 +382,6 @@ exports[`PublicAddress component sanity matches themed snapshot 1`] = `
 
 .c2 {
   box-sizing: border-box;
-}
-
-.c2:after {
-  content: ' (optional)';
-  font-weight: normal;
-  font-style: italic;
 }
 
 .c4 {
@@ -639,6 +626,7 @@ exports[`PublicAddress component sanity matches themed snapshot 1`] = `
     </div>
     <div
       class="c3"
+      required=""
     >
       <input
         class="c4"
@@ -647,9 +635,7 @@ exports[`PublicAddress component sanity matches themed snapshot 1`] = `
         font-size="1rem"
         height="3rem"
         readonly=""
-      >
-        
-      </input>
+      />
       <button
         class="c5 c6"
         color="white"

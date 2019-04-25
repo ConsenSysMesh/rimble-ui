@@ -24,12 +24,25 @@ storiesOf('Components/PublicAddress', module)
   .add(
     'Documentation',
     withDocs(Documentation, () => (
-      <Box mx={3}>
-        <CodeBlock>
-          <PublicAddress
-            address={'0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2'}
-          />
-        </CodeBlock>
+      <Box>
+        <Box mx={3}>
+          <CodeBlock>
+            <PublicAddress
+              address={'0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2'}
+            />
+          </CodeBlock>
+        </Box>
+
+        <Box mx={3}>
+          <Heading.h4>Changing Label</Heading.h4>
+          <CodeBlock>
+            <PublicAddress
+              address={'0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2'}
+              label={'Wallet Address'}
+              required
+            />
+          </CodeBlock>
+        </Box>
       </Box>
     ))
   )

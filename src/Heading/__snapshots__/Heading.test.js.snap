@@ -21,9 +21,7 @@ exports[`Heading component sanity matches default snapshot 1`] = `
   font-family="sansSerif"
   font-size="4"
   font-weight="3"
->
-  
-</h3>
+/>
 `;
 
 exports[`Heading component sanity matches themed snapshot 1`] = `
@@ -56,8 +54,6 @@ exports[`Heading component sanity matches themed snapshot 1`] = `
     font-family="sansSerif"
     font-size="4"
     font-weight="3"
-  >
-    
-  </h3>
+  />
 </div>
 `;

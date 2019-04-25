@@ -39,9 +39,9 @@ storiesOf('Getting started', module)
 
         <Text.p>
           Within you'll find documentation and design guidelines for most
-          standard UI components plus some that are more specific to decentralized products. Your
-          tech stack and workflow are yours to decide. We impose as few
-          constraints as possible.
+          standard UI components plus some that are more specific to
+          decentralized products. Your tech stack and workflow are yours to
+          decide. We impose as few constraints as possible.
         </Text.p>
       </Box>
       <br />
@@ -58,7 +58,9 @@ storiesOf('Getting started', module)
             href="javascript:;"
           >
             MetaMask button
-          </Link> – Let users know they can connect with MetaMask</Text>
+          </Link>{' '}
+          – Let users know they can connect with MetaMask
+        </Text>
         <Text>
           {' '}
           <Link
@@ -67,17 +69,21 @@ storiesOf('Getting started', module)
             href="javascript:;"
           >
             Blockie
-          </Link> – Render Ethereum public addresses as blockies</Text>
+          </Link>{' '}
+          – Render Ethereum public addresses as blockies
+        </Text>
 
         <Text>
           {' '}
           <Link
-          onClick={linkTo('components-uportbutton', 'documentation')}
-          title="Rimble UI UPort Button component"
-          href="javascript:;"
-        >
-          uPort button
-        </Link> – Let users know they can connect with uPort</Text>
+            onClick={linkTo('components-uportbutton', 'documentation')}
+            title="Rimble UI UPort Button component"
+            href="javascript:;"
+          >
+            uPort button
+          </Link>{' '}
+          – Let users know they can connect with uPort
+        </Text>
         <Text>
           {' '}
           <Link
@@ -86,7 +92,9 @@ storiesOf('Getting started', module)
             href="javascript:;"
           >
             Public address output
-          </Link> – Show addresses with copy-to-clipboard functionality</Text>
+          </Link>{' '}
+          – Show addresses with copy-to-clipboard functionality
+        </Text>
 
         <Text>
           {' '}
@@ -96,7 +104,9 @@ storiesOf('Getting started', module)
             href="javascript:;"
           >
             QR Code
-          </Link> – Render Ethereum public addresses as QR codes</Text>
+          </Link>{' '}
+          – Render Ethereum public addresses as QR codes
+        </Text>
         <Text>
           {' '}
           <Link
@@ -108,8 +118,9 @@ storiesOf('Getting started', module)
             href="javascript:;"
           >
             ToastMessage Provider
-          </Link> – Keep users in the loop about their transactions</Text>
-
+          </Link>{' '}
+          – Keep users in the loop about their transactions
+        </Text>
       </Box>
       <br />
 
@@ -117,22 +128,25 @@ storiesOf('Getting started', module)
         <Heading.h3> dApp patterns </Heading.h3>
         <Text.p>Guides to creating smooth experiences in your dApp</Text.p>
         <Text>
-{' '}
+          {' '}
           <Link
             onClick={linkTo('dapp-patterns', 'transaction-states')}
             title="Ethereum Transaction States"
             href="javascript:;"
           >
             Transaction states
-          </Link> – Design transaction state updates that instil confidence in your dApp
+          </Link>{' '}
+          – Design transaction state updates that instil confidence in your dApp
         </Text>
       </Box>
-      <br /><br />
+      <br />
+      <br />
       <Box>
         <Card color="white" bg="primary">
           <Heading>Contribute to Rimble</Heading>
           <Text.p color="white">
-            We're completely open source so feel free to raise any issues or suggest improvements to Rimble.
+            We're completely open source so feel free to raise any issues or
+            suggest improvements to Rimble.
           </Text.p>
           <Button
             color={'primary'}
@@ -150,17 +164,53 @@ storiesOf('Getting started', module)
       <br />
       <Box>
         <Card>
-          <Pill mb={3} color={'primary'}>
-            {'NEW'}
-          </Pill>
           <br />
-          <Heading>Latest changes</Heading>
-          <Heading.h5>Sprint 16</Heading.h5>
-          <Text>
-            • Documentation refresh – new design guidelines added and layout
-            updates
-          </Text>
-          <Text>• Table component added</Text>
+          <Heading>Change log</Heading>
+
+          <Heading.h6>0.7.0</Heading.h6>
+
+          <Text>- Flash component</Text>
+          <Text>- Custom labels for PublicAddress component</Text>
+          <Text>- Bug fixes</Text>
+
+          <Heading.h6>0.6.0</Heading.h6>
+
+          <Text>- Tables</Text>
+          <Text>- Bug fixes</Text>
+
+          <Heading.h6>0.5.0</Heading.h6>
+
+          <Text>- Better form validation</Text>
+          <Text>- uPort connect button</Text>
+          <Text>- Upgraded to Storybook 5</Text>
+          <Text>- Bug fixes</Text>
+
+          <Heading.h6>0.4.0</Heading.h6>
+
+          <Text>- Toast Messages and Toast Message provider</Text>
+          <Text>- QR code</Text>
+          <Text>- Modal</Text>
+          <Text>- Pills</Text>
+          <Text>- Expanded test coverage</Text>
+
+          <Heading.h6>0.3.0</Heading.h6>
+
+          <Text>- Styling cleanup for lots of components</Text>
+          <Text>- Bug fixes</Text>
+
+          <Heading.h6>0.2.0</Heading.h6>
+
+          <Text>- PublicAddress component</Text>
+          <Text>- MetaMask buttons and more button variants</Text>
+          <Text>- Basic layout components</Text>
+          <Text>- Cards</Text>
+          <Text>- Loaders</Text>
+
+          <Heading.h6>0.1.0</Heading.h6>
+
+          <Text>- Theming</Text>
+          <Text>- Buttons and other simple components</Text>
+          <Text>- Blockies</Text>
         </Card>
       </Box>
     </Box>

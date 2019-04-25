@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled, { keyframes } from 'styled-components';
+import PropTypes from 'prop-types';
 
 import Box from '../Box';
 import Button from '../Button';
@@ -113,9 +114,13 @@ class PublicAddress extends Component {
   };
 
   render() {
+    let label = 'Public address';
+    if (this.props.label != null) {
+      label = this.props.label;
+    }
     return (
-      <Field label="Public address">
-        <StyledWrapper>
+      <Field label={label}>
+        <StyledWrapper required={true}>
           <StyledInput
             readOnly
             value={this.props.address}
@@ -136,5 +141,11 @@ class PublicAddress extends Component {
 }
 
 PublicAddress.displayName = 'PublicAddress';
+
+PublicAddress.propTypes = {
+  address: PropTypes.string,
+  label: PropTypes.string,
+  required: PropTypes.bool,
+};
 
 export default PublicAddress;

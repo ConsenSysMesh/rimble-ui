@@ -142,6 +142,33 @@ exports[`Select component sanity matches default snapshot 1`] = `
           1024,
           1536,
         ],
+        "messageStyle": Object {
+          "base": Object {
+            "backgroundColor": "#f6f6f6",
+            "borderColor": "#AAA",
+            "color": "#666",
+          },
+          "danger": Object {
+            "backgroundColor": "#fbe9e7",
+            "borderColor": "#DC2C10",
+            "color": "#841a09",
+          },
+          "info": Object {
+            "backgroundColor": "#eaf6fd",
+            "borderColor": "#36ADF1",
+            "color": "#206790",
+          },
+          "success": Object {
+            "backgroundColor": "#e9f8f2",
+            "borderColor": "#28C081",
+            "color": "#18734d",
+          },
+          "warning": Object {
+            "backgroundColor": "#fef5e9",
+            "borderColor": "#FD9D28",
+            "color": "#975e18",
+          },
+        },
         "minHeights": Array [
           0,
           16,
@@ -349,9 +376,7 @@ exports[`Select component sanity matches themed snapshot 1`] = `
     >
       <path
         d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
-      >
-        
-      </path>
+      />
     </svg>
   </span>
 </div>
