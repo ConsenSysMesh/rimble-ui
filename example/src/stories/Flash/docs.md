@@ -5,9 +5,11 @@ Use the `Flash` component for messages that persist but don't block the user. Fo
 _Want to understand best practices for using a Flash component?_ Read [`Flash` design guidelines](https://consensys.github.io/rimble-ui/?path=/story/components-flash--design-guidelines)
 
 **Import component:**
+
 ```jsx
 import { Flash } from 'rimble-ui';
 ```
+
 <!-- STORY -->
 
 ### Accessibility
@@ -19,8 +21,8 @@ import { Flash } from 'rimble-ui';
 
 ### Component props
 
-…
+`Flash` does not have any props but will pass on props that are defined on its component.
 
-### `Styled-system` props
+### Styled-system props
 
 `Flash` uses all the style props from [`Box`](https://consensys.github.io/rimble-ui/?path=/story/components-layout-box--documentation)
