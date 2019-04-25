@@ -11,6 +11,7 @@ const Link = styled(Text).attrs(props => ({
   primarycolor: themeGet('colors.primary', 'black')(props),
 }))`
   & {
+    position: relative;
     text-decoration: none;
   }
   &:hover {
