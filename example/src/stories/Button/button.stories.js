@@ -44,9 +44,18 @@ storiesOf('Components/Buttons/Button', module).add(
         </Text.p>
         <CodeBlock>
           <div>
-            <Button m={3}>Connect wallet</Button>
-            <Button.Outline m={3}>Connect wallet</Button.Outline>
-            <Button.Text m={3}>Connect wallet</Button.Text>
+            <div>
+              <Button.Base m={2}>Connect wallet</Button.Base>
+              <Button m={2}>Connect wallet</Button>
+              <Button.Outline m={2}>Connect wallet</Button.Outline>
+              <Button.Text m={2}>Connect wallet</Button.Text>
+            </div>
+            <div>
+              <Button.Base m={2}>Connect wallet</Button.Base>
+              <Button mainColor={'red'} m={2}>Connect wallet</Button>
+              <Button.Outline mainColor={'red'} m={2}>Connect wallet</Button.Outline>
+              <Button.Text mainColor={'red'} m={2}>Connect wallet</Button.Text>
+            </div>
           </div>
         </CodeBlock>
       </Box>
@@ -132,15 +141,10 @@ storiesOf('Components/Buttons/Button', module).add(
         </Button>
         <CodeBlock textOnly>
           {`
-<Button
-  as={Link}
-  href="#!"
-  title="Learn more"
-  target="_blank"
->
-  Learn More
-</Button>
-`}
+            <Button as={Link} href="#!" title="Learn more" target="_blank">
+              Learn More
+            </Button>
+          `}
         </CodeBlock>
       </Box>
     </Box>
