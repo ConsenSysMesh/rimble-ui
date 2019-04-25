@@ -36,14 +36,10 @@ const contrastColor = style({
 
 // const fullWidth = props => (props.fullWidth ? { width: '100%' } : null);
 
-const StyledButton = styled(Box).attrs(props => ({
-  myprop: console.log(props.bg),
-}))`
-  ${'' /* our css custom props */}
+const StyledButton = styled(Box)`
   ${mainColor}
   ${contrastColor}
 
-  ${'' /* button base styles */}
   & {
     -webkit-font-smoothing: antialiased;
     appearance: none;
@@ -132,16 +128,18 @@ Button.defaultProps = {
   fontFamily: 'sansSerif',
   fontWeight: 3,
   // color props
-  // color: 'white',
-  // bg: 'primary',
+
+  color: 'white',
+  bg: 'silver',
+
   mainColor: 'primary',
   contrastColor: 'white',
+
   // height: '48px',
-  border: 0,
-  borderColor: 'none',
-  borderRadius: 1,
-  // raised
-  boxShadow: 1,
+
+  border: 'none',
+  // borderColor: 'none',
+  // borderRadius: 1,
 };
 
 Button.displayName = 'Button';

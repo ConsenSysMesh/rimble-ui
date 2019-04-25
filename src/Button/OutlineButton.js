@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { borders } from 'styled-system';
 
 import SolidButton from './SolidButton';
 
@@ -7,8 +8,8 @@ import SolidButton from './SolidButton';
 const StyledOutlineButton = styled(SolidButton)`
   & {
     color: var(--main-color);
-    border: 1px solid;
-    border-color: gray;
+    ${'' /* border: 1px solid; */}
+    ${'' /* border-color: gray; */}
     background: transparent;
   }
 
@@ -25,6 +26,8 @@ const StyledOutlineButton = styled(SolidButton)`
     opacity: 0.1;
     background: var(--main-color);
   }
+
+  ${borders}
 `;
 
 const OutlineButton = ({ className, children, ...props }) => {
@@ -33,6 +36,12 @@ const OutlineButton = ({ className, children, ...props }) => {
       {children}
     </StyledOutlineButton>
   );
+};
+
+OutlineButton.defaultProps = {
+  border: 1,
+  borderColor: 'grey',
+  boxShadow: 0,
 };
 
 export default OutlineButton;

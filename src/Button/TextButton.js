@@ -32,4 +32,8 @@ const TextButton = ({ className, children, ...props }) => {
   );
 };
 
+TextButton.defaultProps = {
+  px: 2,
+};
+
 export default TextButton;
