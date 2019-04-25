@@ -150,17 +150,50 @@ storiesOf('Getting started', module)
       <br />
       <Box>
         <Card>
-          <Pill mb={3} color={'primary'}>
-            {'NEW'}
-          </Pill>
           <br />
-          <Heading>Latest changes</Heading>
-          <Heading.h5>Sprint 16</Heading.h5>
-          <Text>
-            • Documentation refresh – new design guidelines added and layout
-            updates
-          </Text>
-          <Text>• Table component added</Text>
+          <Heading>Change log</Heading>
+
+
+<Heading.h6>0.6</Heading.h6>
+
+<Text>- Tables</Text>
+<Text>- Bug fixes</Text>
+
+<Heading.h6>0.5</Heading.h6>
+
+<Text>- Better form validation</Text>
+<Text>- uPort connect button</Text>
+<Text>- Upgraded to Storybook 5</Text>
+<Text>- Bug fixes</Text>
+
+<Heading.h6>0.4</Heading.h6>
+
+<Text>- Toast Messages and Toast Message provider</Text>
+<Text>- QR code</Text>
+<Text>- Modal</Text>
+<Text>- Pills</Text>
+<Text>- Expanded test coverage</Text>
+
+
+<Heading.h6>0.3</Heading.h6>
+
+<Text>- Styling cleanup for lots of components</Text>
+<Text>- Bug fixes</Text>
+
+<Heading.h6>0.2</Heading.h6>
+
+<Text>- PublicAddress component</Text>
+<Text>- MetaMask buttons and more button variants</Text>
+<Text>- Basic layout components</Text>
+<Text>- Cards</Text>
+<Text>- Loaders</Text>
+
+<Heading.h6>0.1</Heading.h6>
+
+<Text>- Theming</Text>
+<Text>- Buttons and other simple components</Text>
+<Text>- Blockies</Text>
+
         </Card>
       </Box>
     </Box>
