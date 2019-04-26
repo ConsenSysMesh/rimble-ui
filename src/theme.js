@@ -1,6 +1,6 @@
 import { tint, shade } from 'polished';
 
-import { blurple, blue, green, yellow, red } from './rimble-colors';
+import baseColors, { blurple, blue, green, yellow, red } from './rimble-colors';
 
 // theme.js
 export default {
@@ -36,8 +36,7 @@ export default {
   },
   colors: {
     primary: blurple.base,
-    blue: '#007ce0',
-    navy: '#004175',
+    blue: baseColors.consensysblue,
     copyColor: '#3F3D4B',
     // black: '#000',
     black: '#000e1a',
@@ -118,9 +117,13 @@ export default {
       '--main-color': blurple.base,
       '--contrast-color': blurple.text,
     },
+    success: {
+      '--main-color': green.base,
+      '--contrast-color': green.text,
+    },
     danger: {
-      color: red.text,
-      backgroundColor: red.base,
+      '--main-color': red.base,
+      '--contrast-color': red.text,
     },
   },
   buttonSizes: {
