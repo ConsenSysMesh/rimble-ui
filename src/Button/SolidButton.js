@@ -9,18 +9,23 @@ import Button from './BaseButton';
 const StyledSolidButton = styled(Button)`
   & {
     color: var(--contrast-color);
-    background: var(--main-color);
+    ${'' /* background: var(--main-color); */}
+    background: #FFF;
 
+    position: relative;
+    z-index: 0;
     transition: all 0.15s ease;
   }
 
   &:hover {
     text-decoration: inherit;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    ${'' /* opacity: 0.5; */}
   }
 
   &:active {
     box-shadow: none;
+    background: #000;
   }
 
   &:disabled {
@@ -35,22 +40,25 @@ const StyledSolidButton = styled(Button)`
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 0;
+    z-index: 1;
     height: 100%;
     width: 100%;
-    background: none;
-    opacity: 0;
+    ${'' /* opacity: 0; */}
+    ${'' /* background: none; */}
+    background: var(--main-color);
+    ${'' /* background: #fff; */}
+    pointer-events: none;
   }
 
   &:hover::before {
-    background: #fff;
-    opacity: 0.1;
+    ${'' /* background: #fff; */}
+    opacity: 0.9;
   }
 
-  &:active::before {
+  ${'' /* &:active::before {
     background: #000;
     opacity: 0.1;
-  }
+  } */}
 
   ${boxShadow}
 `;

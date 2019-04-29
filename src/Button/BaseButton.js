@@ -10,7 +10,6 @@ import {
   buttonStyle,
   variant,
   style,
-  themeGet,
 } from 'styled-system';
 
 import defaultTheme from '../theme';
@@ -49,7 +48,7 @@ const StyledButton = styled(Box)`
     text-decoration: none;
     text-align: center;
 
-    position: relative;
+    ${'' /* position: relative; */}
     display: inline-flex;
     align-items: center;
     justify-content: center;

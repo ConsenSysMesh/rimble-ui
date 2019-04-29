@@ -4,27 +4,32 @@ import { borders } from 'styled-system';
 
 import SolidButton from './SolidButton';
 
-// outline
 const StyledOutlineButton = styled(SolidButton)`
   & {
     color: var(--main-color);
-    ${'' /* border: 1px solid; */}
-    ${'' /* border-color: gray; */}
     background: transparent;
   }
 
-  &&:hover {
+  &:hover {
     border-color: var(--main-color);
   }
 
-  ${'' /* &&:hover::before {
-    opacity: 0;
-    background-color: var(--main-color);
-  } */}
+  &:active {
+    background: #fff;
+  }
 
-  &&:active::before {
+  &::before {
+    opacity: 0;
+  }
+
+  &:hover::before {
+    opacity: 0;
+    ${'' /* background-color: var(--main-color); */}
+  }
+
+  &:active::before {
     opacity: 0.1;
-    background: var(--main-color);
+    ${'' /* background: var(--main-color); */}
   }
 
   ${borders}

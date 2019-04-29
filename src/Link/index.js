@@ -3,11 +3,10 @@ import styled from 'styled-components';
 import { tint, shade } from 'polished';
 import { themeGet } from 'styled-system';
 
+import defaultTheme from '../theme';
 import Text from '../Text';
 
-import defaultTheme from '../theme';
-
-const Link = styled(Text).attrs(props => ({
+const StyledLink = styled(Text).attrs(props => ({
   primarycolor: themeGet('colors.primary', 'black')(props),
 }))`
   & {
@@ -23,6 +22,12 @@ const Link = styled(Text).attrs(props => ({
     text-decoration: none;
   }
 `;
+
+const Link = ({ className, children, ...props }) => (
+  <StyledLink className={className} {...props}>
+    {children}
+  </StyledLink>
+);
 
 Link.defaultProps = {
   theme: defaultTheme,
