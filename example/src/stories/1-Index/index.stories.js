@@ -167,6 +167,10 @@ storiesOf('Getting started', module)
           <br />
           <Heading>Change log</Heading>
 
+          <Heading.h6>0.7.1</Heading.h6>
+
+          <Text>- Removed background color on Image component</Text>
+
           <Heading.h6>0.7.0</Heading.h6>
 
           <Text>- Flash component</Text>
