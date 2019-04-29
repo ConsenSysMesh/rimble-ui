@@ -15,7 +15,6 @@ Image.defaultProps = {
   as: 'img',
   display: 'block',
   width: '100%',
-  bg: 'light-gray',
 };
 
 Image.displayName = 'Image';
