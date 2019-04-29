@@ -1,41 +1,23 @@
 # Flash documentation
 
-The `Flash` renders a responsive box-model layout component. Inherits props from `Box` component.
+Use the `Flash` component for messages that persist but don't block the user. For example, you may want to let users know they're on the wrong network but allow them to continue browsing until they try to connect. The `Flash` renders a responsive box-model layout component. Inherits props from `Box` component.
 
-**Import component**
+_Want to understand best practices for using a Flash component?_ Read [`Flash` design guidelines](https://consensys.github.io/rimble-ui/?path=/story/components-flash--design-guidelines)
+
+**Import component:**
 
 ```jsx
 import { Flash } from 'rimble-ui';
 ```
 
-```jsx
-<Flash>
-  Flash default
-  This is a primary alert with an <Link>example link</Link>. Give it a click if you like.
-</Flash>
-
-<Flash variant={'info'} my={3}>
-  Flash "info"
-  This is a primary alert with an <Link>example link</Link>. Give it a click if you like.
-</Flash>
-
-<Flash variant={'success'} my={3}>
-  Flash "success"
-  This is a primary alert with an <Link>example link</Link>. Give it a click if you like.
-</Flash>
-
-<Flash variant={'warning'} my={3}>
-  Flash "warning"
-  This is a primary alert with an <Link>example link</Link>. Give it a click if you like.
-</Flash>
-
-<Flash variant={'danger'} my={3}>
-  Flash "danger"
-  This is a primary alert with an <Link>example link</Link>. Give it a click if you like.
-</Flash>
-```
-
 <!-- STORY -->
+
+### Accessibility
+
+- Critical and warning banners have a role="alert"
+- All other banners have a role="status"
+- Banner containers have a tabindex="0" and display a visible keyboard focus indicator.
+- Banners use aria-describedby to describe their purpose to assistive technologies when they're announced or receive focus. All of the banner content is used for the aria-describedby.
 
 ### Component props
 
