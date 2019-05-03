@@ -34,7 +34,7 @@ const StyledLink = styled(Text)`
 `;
 
 const Link = ({ className, children, ...props }) => (
-  <StyledLink as={'a'} className={className} children={children} {...props} />
+  <StyledLink className={className} children={children} {...props} />
 );
 
 Link.defaultProps = {
