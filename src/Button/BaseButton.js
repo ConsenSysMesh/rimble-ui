@@ -33,8 +33,6 @@ const contrastColor = style({
   key: 'colors',
 });
 
-// const fullWidth = props => (props.fullWidth ? { width: '100%' } : null);
-
 const StyledButton = styled(Box)`
   ${mainColor}
   ${contrastColor}
@@ -42,13 +40,12 @@ const StyledButton = styled(Box)`
   & {
     -webkit-font-smoothing: antialiased;
     appearance: none;
-    cursor: pointer;
-    overflow: hidden;
+    user-select: none;
     white-space: nowrap;
     text-decoration: none;
     text-align: center;
-
-    ${'' /* position: relative; */}
+    overflow: hidden;
+    position: relative;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -56,11 +53,22 @@ const StyledButton = styled(Box)`
     padding: ${props => (props.icononly ? '0' : props.p)};
   }
 
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
   ${'' /* with icon styles */}
   > svg,
   > span.button-text {
     position: relative;
     z-index: 1;
+    user-select: none;
+    pointer-events: none;
   }
 
   > svg {
@@ -89,27 +97,28 @@ const StyledButton = styled(Box)`
 
   ${buttonStyle}
   ${buttonSize}
-
-  ${'' /* ${boxShadow} */}
-  ${'' /* ${opacity} */}
-
-  ${'' /* ${fullWidth} */}
 `;
 
-const Button = ({ className, children, ...props }) => {
+const ButtonBody = props => {
   if (props.icon) {
     return (
-      <StyledButton type="button" className={className} {...props}>
+      <React.Fragment>
         {props.icon && !props.iconpos && <Icon name={props.icon} />}
         {props.icon && props.iconpos === 'left' && <Icon name={props.icon} />}
-        {children && <span className="button-text">{children}</span>}
+        {props.children && (
+          <span className="button-text">{props.children}</span>
+        )}
         {props.icon && props.iconpos === 'right' && <Icon name={props.icon} />}
-      </StyledButton>
+      </React.Fragment>
     );
   }
+  return <span className="button-text">{props.children}</span>;
+};
+
+const Button = ({ className, children, icon, ...props }) => {
   return (
-    <StyledButton as="button" type="button" className={className} {...props}>
-      <span className="button-text">{children}</span>
+    <StyledButton className={className} {...props}>
+      {children}
     </StyledButton>
   );
 };
@@ -127,20 +136,17 @@ Button.defaultProps = {
   fontFamily: 'sansSerif',
   fontWeight: 3,
   // color props
-
   color: 'white',
   bg: 'silver',
-
   mainColor: 'primary',
   contrastColor: 'white',
-
-  // height: '48px',
-
   border: 'none',
   // borderColor: 'none',
   // borderRadius: 1,
 };
 
 Button.displayName = 'Button';
+
+export { StyledButton, ButtonBody };
 
 export default Button;
