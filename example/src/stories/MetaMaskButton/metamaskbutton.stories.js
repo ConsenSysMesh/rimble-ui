@@ -19,26 +19,26 @@ storiesOf('Components/MetaMaskButton', module).add(
       <Box>
         <Heading.h4>Default</Heading.h4>
         <CodeBlock>
-          <MetaMaskButton>Connect with MetaMask</MetaMaskButton>
+          <MetaMaskButton>Connect with uPort</MetaMaskButton>
         </CodeBlock>
       </Box>
 
       <Box>
         <Heading.h4>Outline</Heading.h4>
-        <MetaMaskButton.outline mb={3}>
+        <MetaMaskButton.Outline>
           Connect with MetaMask
-        </MetaMaskButton.outline>
+        </MetaMaskButton.Outline>
       </Box>
 
       <CodeBlock textOnly>
         {
-          '<MetaMaskButton.outline>Connect with MetaMask</MetaMaskButton.outline>'
+          '<MetaMaskButton.Outline>Connect with MetaMask</MetaMaskButton.Outline>'
         }
       </CodeBlock>
 
       <Box>
         <Heading.h4>Different sizes</Heading.h4>
-        <MetaMaskButton size="small" mb={3} mr={3}>
+        <MetaMaskButton size="small">
           Connect with MetaMask
         </MetaMaskButton>
 
@@ -48,13 +48,13 @@ storiesOf('Components/MetaMaskButton', module).add(
           }
         </CodeBlock>
 
-        <MetaMaskButton.outline size="small" mb={3}>
+        <MetaMaskButton.Outline size="small">
           Connect with MetaMask
-        </MetaMaskButton.outline>
+        </MetaMaskButton.Outline>
 
         <CodeBlock textOnly>
           {
-            '<MetaMaskButton.outline size="small">Connect with MetaMask</MetaMaskButton.outline>'
+            '<MetaMaskButton.Outline size="small">Connect with MetaMask</MetaMaskButton.Outline>'
           }
         </CodeBlock>
       </Box>
@@ -68,12 +68,12 @@ storiesOf('Components/MetaMaskButton', module).add(
         {'<MetaMaskButton size="medium">Connect with MetaMask</MetaMaskButton>'}
       </CodeBlock>
 
-      <MetaMaskButton.outline size="medium" mb={3}>
+      <MetaMaskButton.Outline size="medium" mb={3}>
         Connect with MetaMask
-      </MetaMaskButton.outline>
+      </MetaMaskButton.Outline>
       <CodeBlock textOnly>
         {
-          '<MetaMaskButton.outline size="medium">Connect with MetaMask</MetaMaskButton.outline>'
+          '<MetaMaskButton.Outline size="medium">Connect with MetaMask</MetaMaskButton.Outline>'
         }
       </CodeBlock>
 
@@ -87,13 +87,13 @@ storiesOf('Components/MetaMaskButton', module).add(
         {'<MetaMaskButton size="large">Connect with MetaMask</MetaMaskButton>'}
       </CodeBlock>
 
-      <MetaMaskButton.outline size="large" mb={3}>
+      <MetaMaskButton.Outline size="large" mb={3}>
         Connect with MetaMask
-      </MetaMaskButton.outline>
+      </MetaMaskButton.Outline>
 
       <CodeBlock textOnly>
         {
-          '<MetaMaskButton.outline size="large">Connect with MetaMask</MetaMaskButton.outline>'
+          '<MetaMaskButton.Outline size="large">Connect with MetaMask</MetaMaskButton.Outline>'
         }
       </CodeBlock>
 
@@ -108,13 +108,13 @@ storiesOf('Components/MetaMaskButton', module).add(
         {'<MetaMaskButton fullWidth>Connect with MetaMask</MetaMaskButton>'}
       </CodeBlock>
 
-      <MetaMaskButton.outline mb={3} fullWidth>
+      <MetaMaskButton.Outline mb={3} fullWidth>
         Connect with MetaMask
-      </MetaMaskButton.outline>
+      </MetaMaskButton.Outline>
 
       <CodeBlock textOnly>
         {
-          '<MetaMaskButton.outline fullWidth>Connect with MetaMask</MetaMaskButton.outline>'
+          '<MetaMaskButton.Outline fullWidth>Connect with MetaMask</MetaMaskButton.Outline>'
         }
       </CodeBlock>
 
@@ -127,13 +127,13 @@ storiesOf('Components/MetaMaskButton', module).add(
         <CodeBlock textOnly>
           {'<MetaMaskButton disabled>Connect with MetaMask</MetaMaskButton>'}
         </CodeBlock>
-        <MetaMaskButton.outline disabled mb={3} mr={3}>
+        <MetaMaskButton.Outline disabled mb={3} mr={3}>
           Connect to MetaMask
-        </MetaMaskButton.outline>
+        </MetaMaskButton.Outline>
 
         <CodeBlock textOnly>
           {
-            '<MetaMaskButton.outline disabled>Connect with MetaMask</MetaMaskButton.outline>'
+            '<MetaMaskButton.Outline disabled>Connect with MetaMask</MetaMaskButton.Outline>'
           }
         </CodeBlock>
       </Box>
