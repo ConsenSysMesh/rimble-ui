@@ -1,12 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-
 import { boxShadow } from 'styled-system';
 
-import Button from './BaseButton';
+import Button, { StyledButton, ButtonBody } from './BaseButton';
 
-// outline
-const StyledSolidButton = styled(Button)`
+// outline styles
+const StyledSolidButton = styled(StyledButton)`
   & {
     color: var(--contrast-color);
     ${'' /* background: var(--main-color); */}
@@ -20,17 +19,15 @@ const StyledSolidButton = styled(Button)`
   &:hover {
     text-decoration: inherit;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-    ${'' /* opacity: 0.5; */}
+  }
+
+  &:hover::before {
+    opacity: 0.9;
   }
 
   &:active {
     box-shadow: none;
     background: #000;
-  }
-
-  &:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
   }
 
   &::before {
@@ -43,37 +40,27 @@ const StyledSolidButton = styled(Button)`
     z-index: 1;
     height: 100%;
     width: 100%;
-    ${'' /* opacity: 0; */}
-    ${'' /* background: none; */}
     background: var(--main-color);
-    ${'' /* background: #fff; */}
     pointer-events: none;
   }
-
-  &:hover::before {
-    ${'' /* background: #fff; */}
-    opacity: 0.9;
-  }
-
-  ${'' /* &:active::before {
-    background: #000;
-    opacity: 0.1;
-  } */}
 
   ${boxShadow}
 `;
 
-const SolidButton = ({ className, children, ...props }) => {
+const SolidButton = ({ className, children, icon, ...props }) => {
   return (
     <StyledSolidButton className={className} {...props}>
-      {children}
+      <ButtonBody icon={icon} children={children} />
     </StyledSolidButton>
   );
 };
 
 SolidButton.defaultProps = {
+  ...Button.defaultProps,
   borderRadius: 1,
   boxShadow: 1,
 };
+
+export { StyledSolidButton };
 
 export default SolidButton;
