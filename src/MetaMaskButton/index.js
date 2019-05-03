@@ -1,13 +1,18 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import { ReactComponent as Fox } from './icon.svg';
+import { ReactComponent as MMlogo } from './icon.svg';
 import Button, { StyledButton } from '../Button/BaseButton';
+
+const brandColors = {
+  baseColor: '#000',
+  hoverColor: '#4c4c4c',
+  activeColor: '#999',
+  foregroundColor: '#FFFFFF',
+};
 
 const MMStyledButton = styled(StyledButton)`
   & {
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     transition: all 0.15s ease;
   }
 
@@ -15,7 +20,7 @@ const MMStyledButton = styled(StyledButton)`
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
   }
 
-  > svg.r-ff-icon:first-of-type {
+  && > svg.r-ff-icon {
     height: ${props => (props.size === 'small' ? '1rem' : '1.5rem')};
     width: ${props => (props.size === 'small' ? '1rem' : '1.5rem')};
     margin-right: 0.5rem;
@@ -25,21 +30,21 @@ const MMStyledButton = styled(StyledButton)`
 
 const StyledButtonSolid = styled(MMStyledButton)`
   & {
-    color: #fff;
-    background: #000;
+    color: ${brandColors.foregroundColor};
+    background: ${brandColors.baseColor};
   }
   &:hover {
-    background-color: #4c4c4c;
+    background-color: ${brandColors.hoverColor};
   }
   &:active {
-    background-color: #999;
+    background-color: ${brandColors.activeColor};
   }
 `;
 
 const StyledButtonOutline = styled(MMStyledButton)`
   & {
     color: #333;
-    background: #fff;
+    background: ${brandColors.foregroundColor};
     border: 1px solid #ccc;
   }
   &:hover {
@@ -52,7 +57,7 @@ const StyledButtonOutline = styled(MMStyledButton)`
 
 const ButtonBody = ({ children, size }) => (
   <React.Fragment>
-    <Fox className={'r-ff-icon'} size={size} />
+    <MMlogo className={'r-ff-icon'} size={size} />
     {children}
   </React.Fragment>
 );
@@ -75,16 +80,19 @@ const MetaMaskButtonOutline = ({ className, children, ...props }) => {
 
 const defaultProps = {
   ...Button.defaultProps,
+  width: [1, 'auto'],
   borderRadius: 1,
+  boxShadow: 1,
 };
 
 MetaMaskButtonSolid.defaultProps = defaultProps;
-
 MetaMaskButtonOutline.defaultProps = defaultProps;
 
-const MetaMaskButton = MetaMaskButtonSolid;
+let MetaMaskButton;
 
-MetaMaskButton.outline = MetaMaskButtonOutline;
+MetaMaskButton = MetaMaskButtonSolid;
+MetaMaskButton.Solid = MetaMaskButtonSolid;
+MetaMaskButton.Outline = MetaMaskButtonOutline;
 
 MetaMaskButton.displayName = 'MetaMaskButton';
 
