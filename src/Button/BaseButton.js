@@ -4,6 +4,7 @@ import {
   color,
   space,
   minWidth,
+  borders,
   fontSize,
   fontFamily,
   fontWeight,
@@ -90,6 +91,7 @@ const StyledButton = styled(Box)`
   ${color}
   ${space}
   ${minWidth}
+  ${borders}
 
   ${fontSize}
   ${fontFamily}
