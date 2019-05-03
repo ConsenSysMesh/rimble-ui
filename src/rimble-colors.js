@@ -17,8 +17,8 @@ const colors = {
   blurple: {
     base: baseColors.blurple,
     text: readableColor(baseColors.blurple),
-    light: [null, tint(0.9, baseColors.blurple)],
-    dark: [null, shade(0.4, baseColors.blurple)],
+    light: [null, tint(0.2, baseColors.blurple)],
+    dark: [null, shade(0.2, baseColors.blurple)],
   },
   blue: {
     base: baseColors.blue,
