@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { boxShadow } from 'styled-system';
 
 import Button, { StyledButton, ButtonBody } from './BaseButton';
 
@@ -43,8 +42,6 @@ const StyledSolidButton = styled(StyledButton)`
     background: var(--main-color);
     pointer-events: none;
   }
-
-  ${boxShadow}
 `;
 
 const SolidButton = ({ className, children, icon, ...props }) => {
