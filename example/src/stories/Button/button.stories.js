@@ -123,21 +123,16 @@ storiesOf('Components/Buttons/Button', module).add(
           This also requires you to import the Link component from the rimble-ui
           library.
         </Text.p>
-        <Button as={Link} href="#!" title="Learn more" target="_blank">
-          Learn More
-        </Button>
-        <CodeBlock textOnly>
-          {`
-            <Button as={Link} href="#!" title="Learn more" target="_blank">
-              Learn More
-            </Button>
-          `}
+        <CodeBlock>
+          <Button as={'a'} href="#!" title="Learn more" target="_blank">
+            Learn More
+          </Button>
         </CodeBlock>
       </Box>
     </Box>
   ))
 );
-storiesOf('Components/Buttons', module).add(
+storiesOf('Components/Buttons/Button', module).add(
   'Design guidelines',
   withDocs(Guidelines, () => (
     <Box mx={3}>
