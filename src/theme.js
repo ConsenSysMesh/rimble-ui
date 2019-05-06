@@ -1,5 +1,10 @@
 import { tint, shade } from 'polished';
 
+const success = '#28C081';
+const danger = '#DC2C10';
+const warning = '#FD9D28';
+const info = '#36ADF1';
+
 // theme.js
 export default {
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64],
@@ -79,6 +84,10 @@ export default {
       'rgba(255,255,255,.8)',
       'rgba(255,255,255,.9)',
     ],
+    danger: danger,
+    warning: warning,
+    success: success,
+    info: info,
   },
   zIndices: [0, 9, 99, 999, 9999],
   messageStyle: {
@@ -88,24 +97,24 @@ export default {
       borderColor: '#AAA',
     },
     success: {
-      color: shade(0.4, '#28C081'),
-      backgroundColor: tint(0.9, '#28C081'),
-      borderColor: '#28C081',
+      color: shade(0.4, success),
+      backgroundColor: tint(0.9, success),
+      borderColor: success,
     },
     warning: {
-      color: shade(0.4, '#FD9D28'),
-      backgroundColor: tint(0.9, '#FD9D28'),
-      borderColor: '#FD9D28',
+      color: shade(0.4, warning),
+      backgroundColor: tint(0.9, warning),
+      borderColor: warning,
     },
     danger: {
-      color: shade(0.4, '#DC2C10'),
-      backgroundColor: tint(0.9, '#DC2C10'),
-      borderColor: '#DC2C10',
+      color: shade(0.4, danger),
+      backgroundColor: tint(0.9, danger),
+      borderColor: danger,
     },
     info: {
-      color: shade(0.4, '#36ADF1'),
-      backgroundColor: tint(0.9, '#36ADF1'),
-      borderColor: '#36ADF1',
+      color: shade(0.4, info),
+      backgroundColor: tint(0.9, info),
+      borderColor: info,
     },
   },
 };
