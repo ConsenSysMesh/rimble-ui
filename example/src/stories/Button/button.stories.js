@@ -34,8 +34,8 @@ storiesOf('Components/Buttons/Button', module).add(
         <Text>
           Different ways to use the <code>{'Button'}</code> component
         </Text>
-        <br />
       </Box>
+
       <Box>
         <Heading.h4>Default button</Heading.h4>
         <Text.p>
@@ -46,7 +46,37 @@ storiesOf('Components/Buttons/Button', module).add(
           <Button>Connect wallet</Button>
         </CodeBlock>
       </Box>
-      <br />
+
+      <Box>
+        <Box mb={4}>
+          <Heading.h4>Different styles</Heading.h4>
+          <Text.p>
+            Use outline and text-only button styles.
+          </Text.p>
+        </Box>
+
+        <Heading fontSize={3}>Solid:</Heading>
+        <CodeBlock>
+          <Button>Connect wallet</Button>
+        </CodeBlock>
+        <Heading fontSize={3}>Outline:</Heading>
+        <CodeBlock>
+          <Button.Outline>Connect wallet</Button.Outline>
+        </CodeBlock>
+        <Heading fontSize={3}>Text:</Heading>
+        <CodeBlock>
+          <Button.Text>Connect wallet</Button.Text>
+        </CodeBlock>
+
+        <Heading fontSize={3}>Base:</Heading>
+        <Text.p>
+          Minimal styling. Used for composing buttons with more complex styles.
+        </Text.p>
+        <CodeBlock>
+          <Button.Base>Connect wallet</Button.Base>
+        </CodeBlock>
+      </Box>
+
       <Box>
         <Heading.h4>Different sizes</Heading.h4>
         <CodeBlock>
@@ -61,7 +91,7 @@ storiesOf('Components/Buttons/Button', module).add(
           <Button size="large">Connect wallet</Button>
         </CodeBlock>
       </Box>
-      <br />
+
       <Box>
         <Heading.h4>Disabled button</Heading.h4>
         <Text.p>
@@ -72,7 +102,7 @@ storiesOf('Components/Buttons/Button', module).add(
           <Button disabled>Connect wallet</Button>
         </CodeBlock>
       </Box>
-      <br />
+
       <Box>
         <Heading.h4>Icon</Heading.h4>
         <Text.p>
@@ -92,7 +122,7 @@ storiesOf('Components/Buttons/Button', module).add(
           <Button icon="MoreHoriz" icononly />
         </CodeBlock>
       </Box>
-      <br />
+
       <Box>
         <Heading.h4>Loading button</Heading.h4>
         <Text.p>
@@ -106,7 +136,7 @@ storiesOf('Components/Buttons/Button', module).add(
           </Button>
         </CodeBlock>
       </Box>
-      <br />
+
       <Box>
         <Heading.h4>Link button</Heading.h4>
         <Text>
@@ -126,6 +156,7 @@ storiesOf('Components/Buttons/Button', module).add(
     </Box>
   ))
 );
+
 storiesOf('Components/Buttons/Button', module).add(
   'Design guidelines',
   withDocs(Guidelines, () => (
