@@ -43,45 +43,7 @@ storiesOf('Components/Buttons/Button', module).add(
           they're on.
         </Text.p>
         <CodeBlock>
-          <div>
-            <Button.Base m={2}>Connect wallet button</Button.Base>
-            <br/>
-            <Button.Base as={'a'} m={2}>Connect wallet link</Button.Base>
-          <hr/>
-            <Button m={2}>Connect wallet button</Button>
-            <Button.Outline m={2}>Connect wallet button</Button.Outline>
-            <Button.Text m={2}>Connect wallet button</Button.Text>
-            <br/>
-            <Button as={'a'} m={2}>Connect wallet link</Button>
-            <Button.Outline as={'a'} m={2}>Connect wallet link</Button.Outline>
-            <Button.Text as={'a'} m={2}>Connect wallet link</Button.Text>
-          <hr/>
-            <Button variant={'success'} m={2}>Connect wallet button</Button>
-            <Button.Outline variant={'success'} m={2}>Connect wallet button</Button.Outline>
-            <Button.Text variant={'success'} m={2}>Connect wallet button</Button.Text>
-            <br/>
-            <Button variant={'success'} as={'a'} m={2}>Connect wallet link</Button>
-            <Button.Outline variant={'success'} as={'a'} m={2}>Connect wallet link</Button.Outline>
-            <Button.Text variant={'success'} as={'a'} m={2}>Connect wallet link</Button.Text>
-          <hr/>
-            <Button variant={'danger'} m={2}>Connect wallet button</Button>
-            <Button.Outline variant={'danger'} m={2}>Connect wallet button</Button.Outline>
-            <Button.Text variant={'danger'} m={2}>Connect wallet button</Button.Text>
-            <br/>
-            <Button variant={'danger'} as={'a'} m={2}>Connect wallet link</Button>
-            <Button.Outline variant={'danger'} as={'a'} m={2}>Connect wallet link</Button.Outline>
-            <Button.Text variant={'danger'} as={'a'} m={2}>Connect wallet link</Button.Text>
-          <hr/>
-            <Button mainColor={'#d362ee'} m={2}>Connect wallet button</Button>
-            <Button.Outline mainColor={'#d362ee'} m={2}>Connect wallet button</Button.Outline>
-            <Button.Text mainColor={'#d362ee'} m={2}>Connect wallet button</Button.Text>
-            <br/>
-            <Button mainColor={'#d362ee'} as={'a'} m={2}>Connect wallet link</Button>
-            <Button.Outline mainColor={'#d362ee'} as={'a'} m={2}>Connect wallet link</Button.Outline>
-            <Button.Text mainColor={'#d362ee'} as={'a'} m={2}>Connect wallet link</Button.Text>
-
-          </div>
-
+          <Button>Connect wallet</Button>
         </CodeBlock>
       </Box>
       <br />
@@ -97,12 +59,6 @@ storiesOf('Components/Buttons/Button', module).add(
 
         <CodeBlock>
           <Button size="large">Connect wallet</Button>
-        </CodeBlock>
-
-        <br />
-        <Heading.h4>Full-width button</Heading.h4>
-        <CodeBlock>
-          <Button fullWidth>Connect wallet</Button>
         </CodeBlock>
       </Box>
       <br />
