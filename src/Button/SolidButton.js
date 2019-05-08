@@ -44,10 +44,10 @@ const StyledSolidButton = styled(StyledButton)`
   }
 `;
 
-const SolidButton = ({ className, children, icon, ...props }) => {
+const SolidButton = ({ className, children, icon, iconpos, ...props }) => {
   return (
     <StyledSolidButton className={className} {...props}>
-      <ButtonBody icon={icon} children={children} />
+      <ButtonBody icon={icon} iconpos={iconpos} children={children} />
     </StyledSolidButton>
   );
 };

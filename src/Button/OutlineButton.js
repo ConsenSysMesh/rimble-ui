@@ -32,10 +32,10 @@ const StyledOutlineButton = styled(StyledSolidButton)`
   }
 `;
 
-const OutlineButton = ({ className, children, icon, ...props }) => {
+const OutlineButton = ({ className, children, icon, iconpos, ...props }) => {
   return (
     <StyledOutlineButton className={className} {...props}>
-      <ButtonBody icon={icon} children={children} />
+      <ButtonBody icon={icon} iconpos={iconpos} children={children} />
     </StyledOutlineButton>
   );
 };

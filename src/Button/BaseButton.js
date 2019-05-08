@@ -103,20 +103,19 @@ const StyledButton = styled(Box)`
   ${buttonSize}
 `;
 
-const ButtonBody = props => {
-  if (props.icon) {
+const ButtonBody = ({ children, icon, iconpos }) => {
+  if (icon) {
     return (
       <React.Fragment>
-        {props.icon && !props.iconpos && <Icon name={props.icon} />}
-        {props.icon && props.iconpos === 'left' && <Icon name={props.icon} />}
-        {props.children && (
-          <span className="button-text">{props.children}</span>
-        )}
-        {props.icon && props.iconpos === 'right' && <Icon name={props.icon} />}
+        {icon && !iconpos && <Icon name={icon} />}
+        {icon && iconpos == 'left' && <Icon name={icon} />}
+        {children && <span className="button-text" children={children} />}
+        {icon && iconpos == 'right' && <Icon name={icon} />}
       </React.Fragment>
     );
+  } else {
+    return <span className="button-text" children={children} />;
   }
-  return <span className="button-text">{props.children}</span>;
 };
 
 const Button = ({ className, children, icon, ...props }) => {

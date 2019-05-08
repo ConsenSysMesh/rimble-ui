@@ -27,10 +27,10 @@ const StyledTextButton = styled(StyledButton)`
   }
 `;
 
-const TextButton = ({ className, children, icon, ...props }) => {
+const TextButton = ({ className, children, icon, iconpos, ...props }) => {
   return (
     <StyledTextButton className={className} {...props}>
-      <ButtonBody icon={icon} children={children} />
+      <ButtonBody icon={icon} iconpos={iconpos} children={children} />
     </StyledTextButton>
   );
 };
