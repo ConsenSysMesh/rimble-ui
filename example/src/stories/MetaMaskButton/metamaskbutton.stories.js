@@ -137,6 +137,38 @@ storiesOf('Components/MetaMaskButton', module).add(
           }
         </CodeBlock>
       </Box>
+
+      <Box>
+        <Heading.h4>Link</Heading.h4>
+        <MetaMaskButton as={'a'} href={'https://metamask.io/'} target={'_blank'} mb={3} mr={3}>
+          Download MetaMask
+        </MetaMaskButton>
+
+        <CodeBlock textOnly>
+          {`<MetaMaskButton 
+  as={'a'} 
+  href={'https://metamask.io/'} 
+  target={'_blank'}
+>
+  Download MetaMask
+</MetaMaskButton>`}
+        </CodeBlock>
+        <MetaMaskButton.Outline as={'a'} href={'https://metamask.io/'} target={'_blank'} mb={3} mr={3}>
+          Download MetaMask
+        </MetaMaskButton.Outline>
+
+        <CodeBlock textOnly>
+          {
+            `<MetaMaskButton.Outline 
+  as={"a"} 
+  href={"https://metamask.io/"} 
+  target={"_blank"}
+>
+  Download MetaMask
+</MetaMaskButton.Outline>`
+          }
+        </CodeBlock>
+      </Box>
     </Box>
   ))
 );
