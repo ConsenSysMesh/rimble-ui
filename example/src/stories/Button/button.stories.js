@@ -10,8 +10,6 @@ import Guidelines from './guide.md';
 
 import {
   Button,
-  OutlineButton,
-  TextButton,
   MetaMaskButton,
   Icon,
   Loader,
@@ -194,15 +192,7 @@ storiesOf('Components/Button', module).add(
         <br />
         <Heading.h4>Don’t use buttons for navigational links</Heading.h4>
         <Text>
-          Buttons are for action-based tasks. Use{' '}
-          <Link
-            onClick={linkTo('components-buttons-textbutton', 'documentation')}
-            title="Rimble UI Text Button component"
-            href="javascript:;"
-          >
-            TextButton
-          </Link>{' '}
-          instead.
+          Buttons are for action-based tasks. Use <code>Button.Text</code> instead.
         </Text>
       </Box>
       <Flex>
@@ -212,7 +202,7 @@ storiesOf('Components/Button', module).add(
           </Pill>
           <br />
           <br />
-          <TextButton mb="3">Transaction history</TextButton>
+          <Button.Text mb="3">Transaction history</Button.Text>
         </Card>
         <Card mx={'auto'} my={3} px={4} width="400px">
           <Pill mb={3} color={'red'}>
@@ -236,25 +226,7 @@ storiesOf('Components/Button', module).add(
         <Heading.h4>Consider visual hierarchy of buttons</Heading.h4>
         <Text>
           Don’t use too many buttons together on one piece of interface:
-          prioritise the most important action. Use{' '}
-          <Link
-            onClick={linkTo('components-buttons-textbutton', 'documentation')}
-            title="Rimble UI Text Button component"
-            href="javascript:;"
-          >
-            TextButton
-          </Link>{' '}
-          and{' '}
-          <Link
-            onClick={linkTo(
-              'components-buttons-outlinebutton',
-              'documentation'
-            )}
-            title="Rimble UI Outline Button component"
-            href="javascript:;"
-          >
-            OutlineButton
-          </Link>{' '}
+          prioritise the most important action. Use <code>Button.Text</code> and <code>Button.Outline</code>
           to give your actions visual hierarchy
         </Text>
       </Box>
@@ -268,12 +240,12 @@ storiesOf('Components/Button', module).add(
         </Text>
         <Flex>
           <Box width={1 / 2}>
-            <TextButton>Cancel</TextButton>
+            <Button.Text>Cancel</Button.Text>
           </Box>
           <Box width={1 / 2}>
-            <OutlineButton mr={3} disabled>
+            <Button.Outline mr={3} disabled>
               Previous
-            </OutlineButton>
+            </Button.Outline>
             <Button mr={3}>Next</Button>
           </Box>
         </Flex>

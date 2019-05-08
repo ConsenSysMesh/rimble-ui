@@ -18,7 +18,7 @@ import {
   Field,
   Text,
   Input,
-  OutlineButton,
+  
   Pill,
   Link,
 } from 'rimble-ui';

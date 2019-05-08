@@ -13,8 +13,6 @@ import {
   Flex,
   Text,
   Button,
-  OutlineButton,
-  TextButton,
   Box,
   Heading,
   Input,
@@ -46,53 +44,53 @@ storiesOf('Components/Tooltip', module)
         <Flex>
           <Box width={1 / 4}>
             <Tooltip message="Top tooltip" placement="top">
-              <OutlineButton mb={3}>Show top</OutlineButton>
+              <Button.Outline mb={3}>Show top</Button.Outline>
             </Tooltip>
           </Box>
           <br />
           <Box width={1 / 4}>
             <Tooltip message="Left tooltip" placement="left">
-              <OutlineButton mb={3}>Show left</OutlineButton>
+              <Button.Outline mb={3}>Show left</Button.Outline>
             </Tooltip>
           </Box>
           <br />
           <Box width={1 / 4}>
             <Tooltip message="Bottom tooltip" placement="bottom">
-              <OutlineButton mb={3}>Show bottom</OutlineButton>
+              <Button.Outline mb={3}>Show bottom</Button.Outline>
             </Tooltip>
           </Box>
           <br />
           <Box width={1 / 4}>
             <Tooltip message="Right tooltip" placement="right">
-              <OutlineButton mb={3}>Show right</OutlineButton>
+              <Button.Outline mb={3}>Show right</Button.Outline>
             </Tooltip>
           </Box>
         </Flex>
         <Box>
           <CodeBlock textOnly>
             {
-              '<Tooltip message="Top tooltip" placement="top"><OutlineButton>Show top</OutlineButton></Tooltip>'
+              '<Tooltip message="Top tooltip" placement="top"><Button.Outline>Show top</Button.Outline></Tooltip>'
             }
           </CodeBlock>
         </Box>
         <Box>
           <CodeBlock textOnly>
             {
-              '<Tooltip message="Left tooltip" placement="left"><OutlineButton>Show left</OutlineButton></Tooltip>'
+              '<Tooltip message="Left tooltip" placement="left"><Button.Outline>Show left</Button.Outline></Tooltip>'
             }
           </CodeBlock>
         </Box>
         <Box>
           <CodeBlock textOnly>
             {
-              '<Tooltip message="Bottom tooltip" placement="bottom"><OutlineButton>Show bottom</OutlineButton></Tooltip>'
+              '<Tooltip message="Bottom tooltip" placement="bottom"><Button.Outline>Show bottom</Button.Outline></Tooltip>'
             }
           </CodeBlock>
         </Box>
         <Box>
           <CodeBlock textOnly>
             {
-              '<Tooltip message="Right tooltip" placement="right"><OutlineButton>Show right</OutlineButton></Tooltip>'
+              '<Tooltip message="Right tooltip" placement="right"><Button.Outline>Show right</Button.Outline></Tooltip>'
             }
           </CodeBlock>
         </Box>
@@ -111,7 +109,7 @@ storiesOf('Components/Tooltip', module)
         <Box>
           <CodeBlock>
             <Tooltip variant="light" message="Light tooltip" placement="right">
-              <OutlineButton>Show light</OutlineButton>
+              <Button.Outline>Show light</Button.Outline>
             </Tooltip>
           </CodeBlock>
         </Box>
@@ -159,7 +157,7 @@ storiesOf('Components/Tooltip', module)
               variant="dark"
               message="You're on the Rinkeby network"
             >
-              <TextButton icon="Check">Right network</TextButton>
+              <Button.Text icon="Check">Right network</Button.Text>
             </Tooltip>
           </Card>
           <Card mx={'auto'} my={3} px={4} width="400px">
@@ -172,7 +170,7 @@ storiesOf('Components/Tooltip', module)
               variant="dark"
               message="To use this dApp you must be on the Rinkeby network"
             >
-              <TextButton icon="Warning">Wrong network</TextButton>
+              <Button.Text icon="Warning">Wrong network</Button.Text>
             </Tooltip>
           </Card>
         </Flex>
@@ -200,7 +198,7 @@ storiesOf('Components/Tooltip', module)
               variant="light"
               message="This will start the transaction"
             >
-              <OutlineButton icon="Send">Send Ether</OutlineButton>
+              <Button.Outline icon="Send">Send Ether</Button.Outline>
             </Tooltip>
           </Card>
           <Card mx={'auto'} my={3} px={4} width="400px">
@@ -210,7 +208,7 @@ storiesOf('Components/Tooltip', module)
             <br />
             <br />
             <Tooltip placement="bottom" variant="light" message="Send Ether">
-              <OutlineButton icon="Send" />
+              <Button.Outline icon="Send" />
             </Tooltip>
           </Card>
         </Flex>
