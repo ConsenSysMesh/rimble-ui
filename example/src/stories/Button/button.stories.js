@@ -59,10 +59,12 @@ storiesOf('Components/Buttons/Button', module).add(
         <CodeBlock>
           <Button>Connect wallet</Button>
         </CodeBlock>
+
         <Heading fontSize={3}>Outline:</Heading>
         <CodeBlock>
           <Button.Outline>Connect wallet</Button.Outline>
         </CodeBlock>
+
         <Heading fontSize={3}>Text:</Heading>
         <CodeBlock>
           <Button.Text>Connect wallet</Button.Text>
