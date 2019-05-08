@@ -29,9 +29,12 @@ storiesOf('Components/Button', module).add(
     <Box mx={3}>
       <Box>
         <Heading.h3>Button examples</Heading.h3>
-        <Text>
-          Different ways to use the <code>{'Button'}</code> component
-        </Text>
+        <Text.p>
+          Different ways to use the <code>{'Button'}</code> component.
+        </Text.p>
+        <Text.p>
+          In special cases where you'd like to use a <code>{'<a>'}</code> styled like a <code>{'Button'}</code>, use <code>{`<Button as='a'></Button>`}</code> and provide an href.
+        </Text.p>
       </Box>
 
       <Box>
@@ -91,6 +94,37 @@ storiesOf('Components/Button', module).add(
           <Button size="large">Connect wallet</Button>
         </CodeBlock>
       </Box>
+
+      <section>
+        <Box mb={4}>
+          <Heading.h4>Color variants</Heading.h4>
+          <Text.p>
+            Use 'success' and 'danger' color styles.
+          </Text.p>
+        </Box>
+
+        <Heading fontSize={3}>Success:</Heading>
+        <CodeBlock>
+          <Button variant={'success'}>Success button</Button>
+        </CodeBlock>
+
+        <Heading fontSize={3}>Danger:</Heading>
+        <CodeBlock>
+          <Button variant={'danger'}>Danger button</Button>
+        </CodeBlock>
+
+        <Heading fontSize={3}>Custom color</Heading>
+        <CodeBlock>
+          <div>
+            <Button mainColor={'DarkCyan'} marginRight={3}>Custom color button</Button>
+
+            <Button.Outline mainColor={'DarkCyan'} marginRight={3}>Custom color button</Button.Outline>
+
+            <Button.Text mainColor={'DarkCyan'}>Custom color button</Button.Text>
+          </div>
+        </CodeBlock>
+
+      </section>
 
       <Box>
         <Heading.h4>Disabled button</Heading.h4>
