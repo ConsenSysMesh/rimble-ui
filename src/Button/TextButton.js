@@ -14,8 +14,8 @@ const StyledTextButton = styled(StyledButton)`
 
   &:hover {
     text-decoration: underline;
-    background: inherit;
-    box-shadow: inherit;
+    background: none;
+    box-shadow: none;
   }
 
   &:active {

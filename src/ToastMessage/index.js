@@ -6,6 +6,7 @@ import Box from '../Box';
 import Icon from '../Icon';
 import Text from '../Text';
 import Link from '../Link';
+import Button from '../Button';
 
 import AnimatedIconProcessing from './AnimatedIconProcessing.js';
 import IconPositive from './IconPositive';
