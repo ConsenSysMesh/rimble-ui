@@ -25,7 +25,7 @@ import {
   Link,
 } from 'rimble-ui';
 
-storiesOf('Components/Buttons/Button', module).add(
+storiesOf('Components/Button', module).add(
   'Documentation',
   withDocs(Documentation, () => (
     <Box mx={3}>
@@ -159,7 +159,7 @@ storiesOf('Components/Buttons/Button', module).add(
   ))
 );
 
-storiesOf('Components/Buttons/Button', module).add(
+storiesOf('Components/Button', module).add(
   'Design guidelines',
   withDocs(Guidelines, () => (
     <Box mx={3}>
