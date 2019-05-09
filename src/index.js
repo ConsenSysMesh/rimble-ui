@@ -33,3 +33,4 @@ export { default as ToastMessage } from './ToastMessage';
 export { default as Pill } from './Pill';
 export { default as Modal } from './Modal';
 export { default as QR } from './QR';
+export { default as SimpleAddress } from './SimpleAddress';
