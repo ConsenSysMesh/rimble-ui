@@ -184,8 +184,16 @@ export default class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <div>{testComponents()}</div>
-        <ThemeProvider theme={myTheme}>{testComponents()}</ThemeProvider>
+        <Flex>
+          <Box>
+            {testComponents()}
+          </Box>
+          <Box>
+            <ThemeProvider theme={myTheme}>
+              {testComponents()}
+            </ThemeProvider>
+          </Box>
+        </Flex>
       </React.Fragment>
     );
   }
