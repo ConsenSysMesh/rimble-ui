@@ -6,7 +6,7 @@ import Box from '../Box';
 import Icon from '../Icon';
 import Text from '../Text';
 import Link from '../Link';
-import TextButton from '../TextButton';
+import Button from '../Button';
 
 import AnimatedIconProcessing from './AnimatedIconProcessing.js';
 import IconPositive from './IconPositive';
@@ -190,7 +190,7 @@ const ToastMessage = ({ className, ...props }) => {
   const renderCloseBttn = ({ closeElem, closeFunction }) => {
     if (closeElem) {
       return (
-        <TextButton
+        <Button.Text
           onClick={closeFunction}
           className={'closeBttn'}
           size={'small'}
@@ -202,7 +202,7 @@ const ToastMessage = ({ className, ...props }) => {
             size={'16px'}
             color={!themeIsDark ? '#666' : '#afafaf'}
           />
-        </TextButton>
+        </Button.Text>
       );
     } else {
       return null;

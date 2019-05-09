@@ -2,11 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import { space } from 'styled-system';
 
+import defaultTheme from '../theme';
 import Input from '../Input';
 
-import defaultTheme from '../theme';
-
-const Textarea = styled(Input.InputOnly)`
+const Textarea = styled(Input)`
   & {
     appearance: none;
   }

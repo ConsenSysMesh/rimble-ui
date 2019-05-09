@@ -19,7 +19,7 @@ import {
   Flex,
   Pill,
   Select,
-  OutlineButton,
+  
   Link,
 } from 'rimble-ui';
 

@@ -5,7 +5,12 @@ import CodeBlock from '../../components/CodeBlock';
 
 import Documentation from './docs.md';
 
-import { Flex, Card, Image, Button, Form, Box } from 'rimble-ui';
+import {
+  Box,
+  Card,
+  Button,
+  Form
+} from 'rimble-ui';
 
 class MyCustomForm extends Component {
   constructor(props) {

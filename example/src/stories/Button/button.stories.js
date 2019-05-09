@@ -10,8 +10,6 @@ import Guidelines from './guide.md';
 
 import {
   Button,
-  OutlineButton,
-  TextButton,
   MetaMaskButton,
   Icon,
   Loader,
@@ -25,17 +23,20 @@ import {
   Link,
 } from 'rimble-ui';
 
-storiesOf('Components/Buttons/Button', module).add(
+storiesOf('Components/Button', module).add(
   'Documentation',
   withDocs(Documentation, () => (
     <Box mx={3}>
       <Box>
         <Heading.h3>Button examples</Heading.h3>
-        <Text>
-          Different ways to use the <code>{'Button'}</code> component
-        </Text>
-        <br />
+        <Text.p>
+          Different ways to use the <code>{'Button'}</code> component.
+        </Text.p>
+        <Text.p>
+          In special cases where you'd like to use a <code>{'<a>'}</code> styled like a <code>{'Button'}</code>, use <code>{`<Button as='a'></Button>`}</code> and provide an href.
+        </Text.p>
       </Box>
+
       <Box>
         <Heading.h4>Default button</Heading.h4>
         <Text.p>
@@ -46,7 +47,39 @@ storiesOf('Components/Buttons/Button', module).add(
           <Button>Connect wallet</Button>
         </CodeBlock>
       </Box>
-      <br />
+
+      <Box>
+        <Box mb={4}>
+          <Heading.h4>Different styles</Heading.h4>
+          <Text.p>
+            Use outline and text-only button styles.
+          </Text.p>
+        </Box>
+
+        <Heading fontSize={3}>Solid:</Heading>
+        <CodeBlock>
+          <Button>Connect wallet</Button>
+        </CodeBlock>
+
+        <Heading fontSize={3}>Outline:</Heading>
+        <CodeBlock>
+          <Button.Outline>Connect wallet</Button.Outline>
+        </CodeBlock>
+
+        <Heading fontSize={3}>Text:</Heading>
+        <CodeBlock>
+          <Button.Text>Connect wallet</Button.Text>
+        </CodeBlock>
+
+        <Heading fontSize={3}>Base:</Heading>
+        <Text.p>
+          Minimal styling. Used for composing buttons with more complex styles.
+        </Text.p>
+        <CodeBlock>
+          <Button.Base>Connect wallet</Button.Base>
+        </CodeBlock>
+      </Box>
+
       <Box>
         <Heading.h4>Different sizes</Heading.h4>
         <CodeBlock>
@@ -60,14 +93,39 @@ storiesOf('Components/Buttons/Button', module).add(
         <CodeBlock>
           <Button size="large">Connect wallet</Button>
         </CodeBlock>
-
-        <br />
-        <Heading.h4>Full-width button</Heading.h4>
-        <CodeBlock>
-          <Button fullWidth>Connect wallet</Button>
-        </CodeBlock>
       </Box>
-      <br />
+
+      <section>
+        <Box mb={4}>
+          <Heading.h4>Color variants</Heading.h4>
+          <Text.p>
+            Use 'success' and 'danger' color styles.
+          </Text.p>
+        </Box>
+
+        <Heading fontSize={3}>Success:</Heading>
+        <CodeBlock>
+          <Button variant={'success'}>Success button</Button>
+        </CodeBlock>
+
+        <Heading fontSize={3}>Danger:</Heading>
+        <CodeBlock>
+          <Button variant={'danger'}>Danger button</Button>
+        </CodeBlock>
+
+        <Heading fontSize={3}>Custom color</Heading>
+        <CodeBlock>
+          <div>
+            <Button mainColor={'DarkCyan'} marginRight={3}>Custom color button</Button>
+
+            <Button.Outline mainColor={'DarkCyan'} marginRight={3}>Custom color button</Button.Outline>
+
+            <Button.Text mainColor={'DarkCyan'}>Custom color button</Button.Text>
+          </div>
+        </CodeBlock>
+
+      </section>
+
       <Box>
         <Heading.h4>Disabled button</Heading.h4>
         <Text.p>
@@ -78,7 +136,7 @@ storiesOf('Components/Buttons/Button', module).add(
           <Button disabled>Connect wallet</Button>
         </CodeBlock>
       </Box>
-      <br />
+
       <Box>
         <Heading.h4>Icon</Heading.h4>
         <Text.p>
@@ -98,7 +156,7 @@ storiesOf('Components/Buttons/Button', module).add(
           <Button icon="MoreHoriz" icononly />
         </CodeBlock>
       </Box>
-      <br />
+
       <Box>
         <Heading.h4>Loading button</Heading.h4>
         <Text.p>
@@ -112,7 +170,7 @@ storiesOf('Components/Buttons/Button', module).add(
           </Button>
         </CodeBlock>
       </Box>
-      <br />
+
       <Box>
         <Heading.h4>Link button</Heading.h4>
         <Text>
@@ -123,26 +181,24 @@ storiesOf('Components/Buttons/Button', module).add(
           This also requires you to import the Link component from the rimble-ui
           library.
         </Text.p>
-        <Button as={Link} href="#!" title="Learn more" target="_blank">
-          Learn More
-        </Button>
-        <CodeBlock textOnly>
-          {`
-<Button
-  as={Link}
-  href="#!"
-  title="Learn more"
-  target="_blank"
->
-  Learn More
-</Button>
-`}
+        <CodeBlock>
+          <Button as={'a'} href="#!" title="Learn more" target="_blank">
+            Learn More
+          </Button>
+        </CodeBlock>
+        
+        <Text>Link Button Outline</Text>
+        <CodeBlock>
+          <Button.Outline as={'a'} href="#!" title="Learn more" target="_blank">
+            Learn More 
+          </Button.Outline>
         </CodeBlock>
       </Box>
     </Box>
   ))
 );
-storiesOf('Components/Buttons', module).add(
+
+storiesOf('Components/Button', module).add(
   'Design guidelines',
   withDocs(Guidelines, () => (
     <Box mx={3}>
@@ -177,15 +233,7 @@ storiesOf('Components/Buttons', module).add(
         <br />
         <Heading.h4>Don’t use buttons for navigational links</Heading.h4>
         <Text>
-          Buttons are for action-based tasks. Use{' '}
-          <Link
-            onClick={linkTo('components-buttons-textbutton', 'documentation')}
-            title="Rimble UI Text Button component"
-            href="javascript:;"
-          >
-            TextButton
-          </Link>{' '}
-          instead.
+          Buttons are for action-based tasks. Use <code>Button.Text</code> instead.
         </Text>
       </Box>
       <Flex>
@@ -195,7 +243,7 @@ storiesOf('Components/Buttons', module).add(
           </Pill>
           <br />
           <br />
-          <TextButton mb="3">Transaction history</TextButton>
+          <Button.Text mb="3">Transaction history</Button.Text>
         </Card>
         <Card mx={'auto'} my={3} px={4} width="400px">
           <Pill mb={3} color={'red'}>
@@ -219,25 +267,7 @@ storiesOf('Components/Buttons', module).add(
         <Heading.h4>Consider visual hierarchy of buttons</Heading.h4>
         <Text>
           Don’t use too many buttons together on one piece of interface:
-          prioritise the most important action. Use{' '}
-          <Link
-            onClick={linkTo('components-buttons-textbutton', 'documentation')}
-            title="Rimble UI Text Button component"
-            href="javascript:;"
-          >
-            TextButton
-          </Link>{' '}
-          and{' '}
-          <Link
-            onClick={linkTo(
-              'components-buttons-outlinebutton',
-              'documentation'
-            )}
-            title="Rimble UI Outline Button component"
-            href="javascript:;"
-          >
-            OutlineButton
-          </Link>{' '}
+          prioritise the most important action. Use <code>Button.Text</code> and <code>Button.Outline</code>
           to give your actions visual hierarchy
         </Text>
       </Box>
@@ -251,12 +281,12 @@ storiesOf('Components/Buttons', module).add(
         </Text>
         <Flex>
           <Box width={1 / 2}>
-            <TextButton>Cancel</TextButton>
+            <Button.Text>Cancel</Button.Text>
           </Box>
           <Box width={1 / 2}>
-            <OutlineButton mr={3} disabled>
+            <Button.Outline mr={3} disabled>
               Previous
-            </OutlineButton>
+            </Button.Outline>
             <Button mr={3}>Next</Button>
           </Box>
         </Flex>

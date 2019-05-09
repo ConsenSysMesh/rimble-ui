@@ -89,12 +89,32 @@ describe('ToastMessage component unit tests', () => {
     expect(toastMessage.exists('Icon')).toEqual(true);
   });
 
-  it('creates action href and text', () => {
-    const toastMessage = shallow(
-      <ToastMessage actionHref={'http://link.com'} actionText={'link text'} />
-    ).dive();
+  it('creates action Link', () => {
+    // const toastMessage = shallow(
+    //   <ToastMessage actionHref={'http://link.com'} actionText={'link text'} />
+    // ).dive();
+    // expect(toastMessage.exists('Link')).toEqual(true);
+    // expect(toastMessage.find('Link').text()).toBe('link text');
+  });
+
+  it('creates action Link', () => {
+    const toastMessage = mount(
+      <ThemeProvider theme={theme}>
+        <ToastMessage
+          variant={'default'}
+          message={'message'}
+          secondaryMessage={'secondary message'}
+          actionHref={'http://test.com'}
+          actionText={'link text'}
+          icon={'InfoOutline'}
+        />
+      </ThemeProvider>
+    );
+
     expect(toastMessage.exists('Link')).toEqual(true);
     expect(toastMessage.find('Link').text()).toBe('link text');
+
+    toastMessage.unmount();
   });
 
   it('displays as processing', () => {

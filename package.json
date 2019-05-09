@@ -1,6 +1,6 @@
 {
   "name": "rimble-ui",
-  "version": "0.7.1",
+  "version": "0.8.0",
   "description": "Rimble Design System react component library.",
   "author": "ConsenSys Design",
   "homepage": "https://rimble.consensys.design/",
@@ -27,7 +27,7 @@
     "@d8660091/react-popper": "^1.0.4",
     "@svgr/rollup": "^4.2.0",
     "ethereum-blockies": "^0.1.1",
-    "polished": "^2.3.3",
+    "polished": "^3.2.0",
     "qrcode.react": "^0.9.3",
     "rmdi": "^1.0.1",
     "styled-system": "^4.1.0"

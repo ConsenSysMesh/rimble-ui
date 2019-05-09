@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 
 import Box from '../Box';
 import Button from '../Button';
-import Input from '../Input';
 import Field from '../Field';
+import Input from '../Input';
 
 const slideIn = keyframes`
   from {
@@ -27,50 +27,9 @@ const fadeOut = keyframes`
   }
 `;
 
-const StyledInput = styled(Input.InputOnly)`
+const StyledInput = styled(Input)`
   text-overflow: ellipsis;
   white-space: no-wrap;
-`;
-
-const StyledButton = styled(Button)`
-  & {
-    position: relative;
-    overflow: hidden;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  &.-is-copied::before {
-    content: '';
-    position: absolute;
-
-    width: 100%;
-    height: 100%;
-    background: inherit;
-    opacity: 1;
-
-    animation-name: ${fadeOut};
-    animation-duration: 100ms;
-    animation-timing-function: linear;
-  }
-
-  &::after {
-    opacity: 0;
-    content: 'Copied!';
-    position: absolute;
-    width: 100%;
-    background: inherit;
-    transition: all 500ms ease;
-  }
-
-  &.-is-copied::after {
-    opacity: 1;
-    animation-name: ${slideIn};
-    animation-duration: 1000ms;
-    animation-timing-function: ease;
-  }
 `;
 
 const StyledWrapper = styled(Box)`
@@ -89,6 +48,7 @@ const StyledWrapper = styled(Box)`
 
   > button {
     position: absolute;
+    width: 4rem;
     right: 0.75rem;
   }
 `;
@@ -96,6 +56,9 @@ const StyledWrapper = styled(Box)`
 class PublicAddress extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      isCopied: false,
+    };
     this.inputRef = React.createRef();
     this.buttonRef = React.createRef();
   }
@@ -106,10 +69,10 @@ class PublicAddress extends Component {
     e.preventDefault();
     inputRef.current.select();
     document.execCommand('copy');
-    buttonRef.current.classList.add('-is-copied');
+    this.setState({ isCopied: true });
 
     setTimeout(() => {
-      buttonRef.current.classList.remove('-is-copied');
+      this.setState({ isCopied: false });
     }, 5000);
   };
 
@@ -126,14 +89,9 @@ class PublicAddress extends Component {
             value={this.props.address}
             ref={this.inputRef}
           />
-          <StyledButton
-            size="small"
-            px={3}
-            onClick={this.handleClick}
-            ref={this.buttonRef}
-          >
-            Copy
-          </StyledButton>
+          <Button size="small" onClick={this.handleClick} ref={this.buttonRef}>
+            {this.state.isCopied ? 'Copied!' : 'Copy'}
+          </Button>
         </StyledWrapper>
       </Field>
     );
