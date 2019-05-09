@@ -118,13 +118,13 @@ const ButtonBody = ({ children, icon, iconpos }) => {
   }
 };
 
-const Button = ({ className, children, icon, ...props }) => {
+const Button = React.forwardRef(({ children, icon, ...props }, ref) => {
   return (
-    <StyledButton className={className} {...props}>
+    <StyledButton {...props} ref={ref}>
       {children}
     </StyledButton>
   );
-};
+});
 
 Button.defaultProps = {
   // base props
