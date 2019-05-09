@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 
 import Box from '../Box';
 import Button from '../Button';
-import Input from '../Input';
 import Field from '../Field';
+import Input from '../Input';
 
 const slideIn = keyframes`
   from {
@@ -27,7 +27,7 @@ const fadeOut = keyframes`
   }
 `;
 
-const StyledInput = styled(Input.InputOnly)`
+const StyledInput = styled(Input)`
   text-overflow: ellipsis;
   white-space: no-wrap;
 `;

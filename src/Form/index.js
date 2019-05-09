@@ -14,7 +14,7 @@ class Form extends Component {
     }
 
     return (
-      <Box className={className} {...this.props}>
+      <Box as={'form'} className={className} {...this.props}>
         {children}
       </Box>
     );
@@ -22,13 +22,12 @@ class Form extends Component {
 }
 
 Form.defaultProps = {
-  as: 'form',
   validated: false,
 };
 
 Form.displayName = 'Form';
 
-Form.Input = Input;
+Form.Input = Input.WithValidationStyle;
 Form.Field = Field;
 Form.Check = Checkbox;
 

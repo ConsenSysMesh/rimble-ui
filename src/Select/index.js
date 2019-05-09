@@ -1,10 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import defaultTheme from '../theme';
 import Input from '../Input';
 import ExpandMore from 'rmdi/lib/ExpandMore';
-
-import defaultTheme from '../theme';
 
 const StyledWrapper = styled.span`
   & {
@@ -21,7 +20,7 @@ const StyledWrapper = styled.span`
   }
 `;
 
-const StyledSelect = styled(Input.InputOnly)`
+const StyledSelect = styled(Input)`
   & {
     appearance: none;
     padding: 0 3rem 0 1rem;
