@@ -1,21 +1,21 @@
-import WithIconWrapper from './';
+import Input from './';
 import ThemeProvider from '../ThemeProvider';
 import theme from '../theme';
 
 describe('Input component sanity', () => {
   it('has name', () => {
-    expect(WithIconWrapper.InputOnly.displayName).toBe('Input');
+    expect(Input.displayName).toBe('Input');
   });
 
   it('matches default snapshot', () => {
-    const component = render(<WithIconWrapper.InputOnly />);
+    const component = render(<Input />);
     expect(component).toMatchSnapshot();
   });
 
   it('matches themed snapshot', () => {
     const component = render(
       <ThemeProvider theme={theme}>
-        <WithIconWrapper.InputOnly />
+        <Input />
       </ThemeProvider>
     );
     expect(component).toMatchSnapshot();
