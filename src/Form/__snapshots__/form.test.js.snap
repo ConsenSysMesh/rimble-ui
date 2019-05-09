@@ -266,8 +266,6 @@ exports[`Form component sanity matches themed snapshot 1`] = `
       </div>
       <div
         class="c4"
-        required=""
-        type="email"
         width="1"
       >
         <input
@@ -324,8 +322,6 @@ exports[`Form component sanity matches themed snapshot 1`] = `
       </div>
       <div
         class="c4"
-        required=""
-        type="password"
         width="1"
       >
         <input
@@ -664,8 +660,6 @@ exports[`Form component sanity renders children elements 1`] = `
     </div>
     <div
       class="c3"
-      required=""
-      type="email"
       width="1"
     >
       <input
@@ -722,8 +716,6 @@ exports[`Form component sanity renders children elements 1`] = `
     </div>
     <div
       class="c3"
-      required=""
-      type="password"
       width="1"
     >
       <input
