@@ -12,9 +12,7 @@ import {
   Flex,
   Image,
   Link,
-  OutlineButton,
   Button,
-  TextButton,
 } from 'rimble-ui';
 
 import theme from './theme.md';

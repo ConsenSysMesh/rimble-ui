@@ -8,8 +8,6 @@ import {
   Flex,
   Text,
   Button,
-  OutlineButton,
-  TextButton,
   Box,
   Heading,
   Input,

@@ -13,8 +13,6 @@ import {
   Heading,
   Text,
   Button,
-  TextButton,
-  OutlineButton,
 } from 'rimble-ui';
 
 class YourModal extends Component {
@@ -45,7 +43,7 @@ class YourModal extends Component {
         <Button onClick={this.openModal}>Open Modal</Button>
         <Modal isOpen={this.state.isOpen}>
           <Card width={'420px'} p={0}>
-            <TextButton
+            <Button.Text
               icononly
               icon={'Close'}
               color={'moon-gray'}
@@ -71,7 +69,7 @@ class YourModal extends Component {
               borderColor={'#E8E8E8'}
               justifyContent={'flex-end'}
             >
-              <OutlineButton>Cancel</OutlineButton>
+              <Button.Outline>Cancel</Button.Outline>
               <Button ml={3}>Confirm</Button>
             </Flex>
           </Card>
@@ -117,7 +115,7 @@ storiesOf('Components/Modal', module).add(
 
         <Modal isOpen={this.state.isOpen}>
           <Card width={'420px'} p={0}>
-            <TextButton
+            <Button.Text
               icononly
               icon={'Close'}
               color={'moon-gray'}
@@ -135,7 +133,7 @@ storiesOf('Components/Modal', module).add(
               </Text>
             </Box>
             <Flex px={4} py={3} borderTop={1} borderColor={'#E8E8E8'} justifyContent={'flex-end'}>
-              <OutlineButton>Cancel</OutlineButton>
+              <Button.Outline>Cancel</Button.Outline>
               <Button ml={3}>Confirm</Button>
             </Flex>
           </Card>

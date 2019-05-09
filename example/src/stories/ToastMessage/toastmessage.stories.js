@@ -16,7 +16,6 @@ import {
   Button,
   Heading,
   Text,
-  OutlineButton,
   Link,
   Card,
   Pill,
@@ -893,7 +892,7 @@ storiesOf('Components/ToastMessage', module)
         <Box>
           <Heading.h4>removeMessage</Heading.h4>
           <Text.p>Removes a ToastMessage</Text.p>
-          <OutlineButton
+          <Button.Outline
             mb={3}
             mr={3}
             onClick={e =>
@@ -904,7 +903,7 @@ storiesOf('Components/ToastMessage', module)
             }
           >
             Call toast
-          </OutlineButton>
+          </Button.Outline>
           <Button onClick={() => window.toastProvider.removeMessage()}>
             Remove it
           </Button>

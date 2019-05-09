@@ -1,5 +1,7 @@
 import { tint, shade } from 'polished';
 
+import baseColors, { blurple, blue, green, yellow, red } from './rimble-colors';
+
 // theme.js
 export default {
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64],
@@ -33,9 +35,10 @@ export default {
     disabled: 0.4,
   },
   colors: {
-    primary: '#4E3FCE',
-    blue: '#007ce0',
-    navy: '#004175',
+    primary: blurple.base,
+    'primary-light': blurple.light[1],
+    'primary-dark': blurple.dark[1],
+    blue: baseColors.consensysblue,
     copyColor: '#3F3D4B',
     // black: '#000',
     black: '#000e1a',
@@ -88,24 +91,59 @@ export default {
       borderColor: '#AAA',
     },
     success: {
-      color: shade(0.4, '#28C081'),
-      backgroundColor: tint(0.9, '#28C081'),
-      borderColor: '#28C081',
+      color: shade(0.4, green.base),
+      backgroundColor: tint(0.9, green.base),
+      borderColor: green.base,
     },
     warning: {
-      color: shade(0.4, '#FD9D28'),
-      backgroundColor: tint(0.9, '#FD9D28'),
-      borderColor: '#FD9D28',
+      color: shade(0.4, yellow.base),
+      backgroundColor: tint(0.9, yellow.base),
+      borderColor: yellow.base,
     },
     danger: {
-      color: shade(0.4, '#DC2C10'),
-      backgroundColor: tint(0.9, '#DC2C10'),
-      borderColor: '#DC2C10',
+      color: shade(0.4, red.base),
+      backgroundColor: tint(0.9, red.base),
+      borderColor: red.base,
     },
     info: {
-      color: shade(0.4, '#36ADF1'),
-      backgroundColor: tint(0.9, '#36ADF1'),
-      borderColor: '#36ADF1',
+      color: shade(0.4, blue.base),
+      backgroundColor: tint(0.9, blue.base),
+      borderColor: blue.base,
+    },
+  },
+  buttons: {
+    primary: {
+      color: blurple.text,
+      backgroundColor: blurple.base,
+      // use css custom props
+      '--main-color': blurple.base,
+      '--contrast-color': blurple.text,
+    },
+    success: {
+      '--main-color': green.base,
+      '--contrast-color': green.text,
+    },
+    danger: {
+      '--main-color': red.base,
+      '--contrast-color': red.text,
+    },
+  },
+  buttonSizes: {
+    small: {
+      fontSize: '0.75rem',
+      height: '2rem',
+      minWidth: '2rem',
+      padding: '0 1rem',
+    },
+    medium: {
+      fontSize: '1rem',
+      height: '3rem',
+      minWidth: '3rem',
+    },
+    large: {
+      fontSize: '1.5rem',
+      height: '4rem',
+      minWidth: '4rem',
     },
   },
 };

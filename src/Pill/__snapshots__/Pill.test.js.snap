@@ -6,7 +6,7 @@ exports[`Pill component sanity matches default snapshot 1`] = `
   padding-bottom: 4px;
   padding-left: 16px;
   padding-right: 16px;
-  color: #007ce0;
+  color: #3259D6;
   font-size: 14px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -75,7 +75,7 @@ exports[`Pill component sanity matches themed snapshot 1`] = `
   padding-bottom: 4px;
   padding-left: 16px;
   padding-right: 16px;
-  color: #007ce0;
+  color: #3259D6;
   font-size: 14px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
