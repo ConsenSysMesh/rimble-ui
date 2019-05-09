@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Simple Address component sanity matches Themed snapshot 1`] = `
+.c1 {
+  color: #3F3D4B;
+  font-size: 16px;
+  text-align: left;
+  font-size: 16px;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-weight: 400;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.c1 {
+  box-sizing: border-box;
+}
+
+.c0 {
+  font-size: 1em;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  color: #3F3D4B;
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1"
+    color="copyColor"
+    font-family="sansSerif"
+    font-size="2"
+    font-weight="2"
+  >
+    0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2
+  </div>
+</div>
+`;
+
+exports[`Simple Address component sanity matches default snapshot 1`] = `
+<SimpleAddress
+  address="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2"
+  truncate={false}
+/>
+`;
