@@ -3,12 +3,11 @@ import styled from 'styled-components';
 
 import { themeGet, fontSize, fontFamily, boxShadow } from 'styled-system';
 
+import defaultTheme from '../theme';
 import Box from '../Box';
 import Icon from '../Icon';
 
-import defaultTheme from '../theme';
-
-const Input = styled(Box)`
+const StyledInput = styled(Box)`
   & {
     appearance: none;
   }
@@ -60,17 +59,21 @@ const StyledIconWrapper = styled(Box)`
   }
 `;
 
-const WithIconWrapper = ({ className, ...props }) => {
+const WrappedInput = React.forwardRef((ref, as, ...rest) => {
   return (
-    <StyledIconWrapper className={className} {...props}>
-      <Input className={className} {...props} />
+    <StyledIconWrapper {...rest}>
+      <StyledInput as={as} {...rest} ref={ref} />
       <Icon className={'icon-valid'} name={'CheckCircle'} color={'#28C081'} />
       <Icon className={'icon-invalid'} name={'Warning'} color={'#DC2C10'} />
     </StyledIconWrapper>
   );
-};
+});
 
-Input.defaultProps = {
+const Input = React.forwardRef((props, ref) => {
+  return <StyledInput {...props} ref={ref} />;
+});
+
+const defaultProps = {
   theme: defaultTheme,
   as: 'input',
   color: 'copyColor',
@@ -87,8 +90,13 @@ Input.defaultProps = {
   boxShadow: 1,
 };
 
+Input.defaultProps = defaultProps;
+StyledInput.defaultProps = defaultProps;
+WrappedInput.defaultProps = defaultProps;
+
+Input.StyledInput = StyledInput;
+Input.WithValidationStyle = WrappedInput;
+
 Input.displayName = 'Input';
 
-WithIconWrapper.InputOnly = Input;
-
-export default WithIconWrapper;
+export default Input;
