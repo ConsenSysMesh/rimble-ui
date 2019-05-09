@@ -165,6 +165,20 @@ storiesOf('Getting started', module)
           <br />
           <Heading>Change log</Heading>
 
+          <Heading.h6>0.8.0</Heading.h6>
+
+          <Text>
+            - Refactored Button with Text and Outline as compounds of Button
+          </Text>
+          <Text>
+            - Refactored MetaMaskButton and UPortButton to use Button as base
+          </Text>
+          <Text>
+            - Added more colors to theme for success, warning, danger, info
+          </Text>
+          <Text>- Bug fix for ref property on Input component</Text>
+          <Text>- Bug fix for ref property on Button component</Text>
+
           <Heading.h6>0.7.1</Heading.h6>
 
           <Text>- Removed background color on Image component</Text>
