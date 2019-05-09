@@ -22,20 +22,75 @@ npm install --save rimble-ui styled-components
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
-import { Button } from 'rimble-ui'
+import { Button } from 'rimble-ui';
 
 class Example extends Component {
-  render () {
-    return (
-      <Button size={'medium'}>
-        Click me!
-      </Button>
-    )
+  render() {
+    return <Button size={'medium'}>Click me!</Button>;
   }
 }
 ```
+
+## Change log
+
+### 0.8.0
+
+- Refactored Button with Text and Outline as compounds of Button
+- Refactored MetaMaskButton and UPortButton to use Button as base
+- Added more colors to theme for success, warning, danger, info
+- Bug fix for ref property on Input component
+- Bug fix for ref property on Button component
+
+### 0.7.1
+
+- Removed background color on Image component
+
+  0.7.0
+
+- Flash component
+- Custom labels for PublicAddress component
+- Bug fixes
+
+### 0.6.0
+
+- Tables
+- Bug fixes
+
+  0.5.0
+
+- Better form validation
+- uPort connect button
+- Upgraded to Storybook 5
+- Bug fixes
+
+  0.4.0
+
+- Toast Messages and Toast Message provider
+- QR code
+- Modal
+- Pills
+- Expanded test coverage
+
+  0.3.0
+
+- Styling cleanup for lots of components
+- Bug fixes
+
+  0.2.0
+
+- PublicAddress component
+- MetaMask buttons and more button variants
+- Basic layout components
+- Cards
+- Loaders
+
+  0.1.0
+
+- Theming
+- Buttons and other simple components
+- Blockies
 
 ## License
 
