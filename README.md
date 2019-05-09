@@ -58,14 +58,14 @@ class Example extends Component {
 - Tables
 - Bug fixes
 
-  0.5.0
+### 0.5.0
 
 - Better form validation
 - uPort connect button
 - Upgraded to Storybook 5
 - Bug fixes
 
-  0.4.0
+### 0.4.0
 
 - Toast Messages and Toast Message provider
 - QR code
@@ -73,12 +73,12 @@ class Example extends Component {
 - Pills
 - Expanded test coverage
 
-  0.3.0
+### 0.3.0
 
 - Styling cleanup for lots of components
 - Bug fixes
 
-  0.2.0
+### 0.2.0
 
 - PublicAddress component
 - MetaMask buttons and more button variants
@@ -86,7 +86,7 @@ class Example extends Component {
 - Cards
 - Loaders
 
-  0.1.0
+### 0.1.0
 
 - Theming
 - Buttons and other simple components
