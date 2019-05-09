@@ -59,18 +59,14 @@ const StyledIconWrapper = styled(Box)`
   }
 `;
 
-const WrappedInput = React.forwardRef((ref, as, ...rest) => {
+const WithValidationStyle = React.forwardRef((props, ref) => {
   return (
-    <StyledIconWrapper {...rest}>
-      <StyledInput as={as} {...rest} ref={ref} />
+    <StyledIconWrapper width={1}>
+      <StyledInput {...props} ref={ref} />
       <Icon className={'icon-valid'} name={'CheckCircle'} color={'#28C081'} />
       <Icon className={'icon-invalid'} name={'Warning'} color={'#DC2C10'} />
     </StyledIconWrapper>
   );
-});
-
-const Input = React.forwardRef((props, ref) => {
-  return <StyledInput {...props} ref={ref} />;
 });
 
 const defaultProps = {
@@ -90,12 +86,13 @@ const defaultProps = {
   boxShadow: 1,
 };
 
-Input.defaultProps = defaultProps;
-StyledInput.defaultProps = defaultProps;
-WrappedInput.defaultProps = defaultProps;
+let Input;
 
-Input.StyledInput = StyledInput;
-Input.WithValidationStyle = WrappedInput;
+Input = StyledInput;
+Input.WithValidationStyle = WithValidationStyle;
+
+Input.defaultProps = defaultProps;
+WithValidationStyle.defaultProps = defaultProps;
 
 Input.displayName = 'Input';
 
