@@ -59,17 +59,16 @@ class FileInput extends Component {
   };
 
   render() {
-    const { className, variant, ...props } = this.props;
+    const { variant, ...props } = this.props;
 
     if (variant === 'unstyled') {
-      return <input type={'file'} className={className} {...props} />;
+      return <input type={'file'} {...props} />;
     }
 
     return (
       <StyledFileLabel>
         <StyledFileInput
           type={'file'}
-          className={className}
           {...props}
           ref={this.fileInput}
           onChange={this.handleChange}
