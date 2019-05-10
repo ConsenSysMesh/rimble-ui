@@ -57,9 +57,7 @@ exports[`Slider component sanity matches default snapshot 1`] = `
 <input
   class="c0"
   type="range"
->
-  
-</input>
+/>
 `;
 
 exports[`Slider component sanity matches themed snapshot 1`] = `
@@ -128,8 +126,6 @@ exports[`Slider component sanity matches themed snapshot 1`] = `
   <input
     class="c1"
     type="range"
-  >
-    
-  </input>
+  />
 </div>
 `;

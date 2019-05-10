@@ -16,7 +16,6 @@ import {
   Flex,
   Card,
   Pill,
-  OutlineButton,
   Link,
 } from 'rimble-ui';
 

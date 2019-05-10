@@ -14,8 +14,6 @@ import {
   Text,
   Icon,
   Button,
-  TextButton,
-  OutlineButton,
   MetaMaskButton,
 } from 'rimble-ui';
 
@@ -84,12 +82,12 @@ storiesOf('Components/Card', module).add(
           sequi tempore. Amet!
         </Text>
         <Button mr={3}>Accept</Button>
-        <OutlineButton>Cancel</OutlineButton>
+        <Button.Outline>Cancel</Button.Outline>
       </Card>
 
       <CodeBlock
         textOnly
-      >{`import { Card, Heading, Text, Button, OutlineButton } from 'rimble-ui';
+      >{`import { Card, Heading, Text, Button } from 'rimble-ui';
 
 <Card width={'420px'} mx={'auto'} px={4}>
   <Heading>Heading</Heading>
@@ -100,7 +98,7 @@ storiesOf('Components/Card', module).add(
     Amet!
   </Text>
   <Button mr={3}>Accept</Button>
-  <OutlineButton>Cancel</OutlineButton>
+  <Button.Outline>Cancel</Button.Outline>
 </Card>`}</CodeBlock>
 
       <Card width={'420px'} mx={'auto'} my={5} p={0}>
@@ -114,18 +112,18 @@ storiesOf('Components/Card', module).add(
           <Heading.h5 color="#666">Card sub-title</Heading.h5>
         </Box>
         <Flex px={4} height={3} borderTop={1} borderColor={'#E8E8E8'}>
-          <TextButton p={'0'} mr={4} height={'auto'}>
+          <Button.Text p={'0'} mr={4} height={'auto'}>
             Text Button
-          </TextButton>
-          <TextButton p={'0'} height={'auto'}>
+          </Button.Text>
+          <Button.Text p={'0'} height={'auto'}>
             Text Button
-          </TextButton>
+          </Button.Text>
         </Flex>
       </Card>
 
       <CodeBlock
         textOnly
-      >{`import { Card, Box, Flex, Image, Heading, TextButton } from 'rimble-ui';
+      >{`import { Card, Box, Flex, Image, Heading } from 'rimble-ui';
 
 <Card width={'420px'} mx={'auto'} my={5} p={0}>
   <Image
@@ -138,12 +136,12 @@ storiesOf('Components/Card', module).add(
     <Heading.h5 color="#666">Card sub-title</Heading.h5>
   </Box>
   <Flex px={4} height={3} borderTop={1} borderColor={'#E8E8E8'}>
-    <TextButton p={'0'} mr={4} height={'auto'}>
+    <Button.Text p={'0'} mr={4} height={'auto'}>
       Text Button
-    </TextButton>
-    <TextButton p={'0'} height={'auto'}>
+    </Button.Text>
+    <Button.Text p={'0'} height={'auto'}>
       Text Button
-    </TextButton>
+    </Button.Text>
   </Flex>
 </Card>`}</CodeBlock>
     </Box>

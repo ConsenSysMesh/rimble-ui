@@ -21,28 +21,484 @@ exports[`PublicAddress component sanity matches default snapshot 1`] = `
   box-sizing: border-box;
 }
 
-.c6 {
+.c4 {
   margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 32px;
+  padding-right: 32px;
+  color: #fff;
+  background-color: #999;
+  font-size: inherit;
+  width: small;
+  height: small;
+  border: none;
+  border-radius: 4px;
+  border-radius: 4px;
+  text-align: left;
+  --main-color: #4E3FCE;
+  --contrast-color: #fff;
+  color: #fff;
+  background-color: #999;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 32px;
+  padding-right: 32px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+  font-size: inherit;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-weight: 600;
+  font-size: 0.75rem;
+  height: 2rem;
+  min-width: 2rem;
+  padding: 0 1rem;
+}
+
+.c4 {
+  box-sizing: border-box;
+}
+
+.c4 {
+  -webkit-font-smoothing: antialiased;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c4:hover {
+  cursor: pointer;
+}
+
+.c4:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.c4 > svg,
+.c4 > span.button-text {
+  position: relative;
+  z-index: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+
+.c4 > svg {
+  display: block;
+}
+
+.c4 > svg:first-child {
+  margin-left: -0.5rem;
+  margin-right: .5rem;
+}
+
+.c4 > svg:last-child {
+  margin-left: .5rem;
+  margin-right: -0.5rem;
+}
+
+.c4 > svg:first-child:last-child {
+  margin: 0;
+}
+
+.c4 {
+  color: var(--contrast-color);
+  background: #FFF;
+  position: relative;
+  z-index: 0;
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+}
+
+.c4:hover {
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+}
+
+.c4:hover::before {
+  opacity: 0.9;
+}
+
+.c4:active {
+  box-shadow: none;
+  background: #000;
+}
+
+.c4::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background: var(--main-color);
+  pointer-events: none;
+}
+
+.c1 {
+  margin-bottom: 8px;
+  color: #3F3D4B;
+  font-size: 14px;
+  text-align: left;
+  font-size: 14px;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-weight: 600;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.c1 {
+  box-sizing: border-box;
+}
+
+.c3 {
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 16px;
   padding-right: 16px;
-  color: #fff;
-  background-color: #4E3FCE;
-  font-size: inherit;
-  height: 48px;
-  width: small;
-  height: small;
-  position: relative;
-  border: 0;
-  border-color: none;
+  color: #3F3D4B;
+  background-color: #fff;
+  font-size: 1rem;
+  height: 3rem;
+  border: 1px solid transparent;
+  border-color: #CCC;
   border-radius: 4px;
-  border-color: none;
+  border-color: #CCC;
   border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+  font-size: 1rem;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  text-overflow: ellipsis;
+  white-space: no-wrap;
+}
+
+.c3 {
+  box-sizing: border-box;
+}
+
+.c3 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.c3:hover {
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
+}
+
+.c3:focus {
+  outline: none;
+  border-color: #4E3FCE;
+}
+
+.c3:disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.was-validated .c3:valid {
+  border-color: #28C081;
+}
+
+.was-validated .c3:valid ~ svg.icon-valid {
+  visibility: visible;
+}
+
+.was-validated .c3:invalid {
+  border-color: #EC9081;
+}
+
+.was-validated .c3:invalid ~ svg.icon-invalid {
+  visibility: visible;
+}
+
+.c2 {
   text-align: left;
 }
 
-.c6 {
+.c2 {
+  box-sizing: border-box;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.c2 > input {
+  width: 100%;
+  padding-right: 5.25rem;
+}
+
+.c2 > button {
+  position: absolute;
+  width: 4rem;
+  right: 0.75rem;
+}
+
+<label
+  class="c0"
+  display="flex"
+>
+  <div
+    class="c1"
+    color="copyColor"
+    font-family="sansSerif"
+    font-size="1"
+    font-weight="3"
+  >
+    Public address
+  </div>
+  <div
+    class="c2"
+    required=""
+  >
+    <input
+      class="c3"
+      color="copyColor"
+      font-family="sansSerif"
+      font-size="1rem"
+      height="3rem"
+      readonly=""
+    />
+    <button
+      class="c4"
+      color="white"
+      font-family="sansSerif"
+      font-size="inherit"
+      font-weight="3"
+    >
+      <span
+        class="button-text"
+      >
+        Copy
+      </span>
+    </button>
+  </div>
+</label>
+`;
+
+exports[`PublicAddress component sanity matches themed snapshot 1`] = `
+.c1 {
+  margin-bottom: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.c1 {
+  box-sizing: border-box;
+}
+
+.c5 {
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 32px;
+  padding-right: 32px;
+  color: #fff;
+  background-color: #999;
+  font-size: inherit;
+  width: small;
+  height: small;
+  border: none;
+  border-radius: 4px;
+  border-radius: 4px;
+  text-align: left;
+  --main-color: #4E3FCE;
+  --contrast-color: #fff;
+  color: #fff;
+  background-color: #999;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 32px;
+  padding-right: 32px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+  font-size: inherit;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-weight: 600;
+  font-size: 0.75rem;
+  height: 2rem;
+  min-width: 2rem;
+  padding: 0 1rem;
+}
+
+.c5 {
+  box-sizing: border-box;
+}
+
+.c5 {
+  -webkit-font-smoothing: antialiased;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c5:hover {
+  cursor: pointer;
+}
+
+.c5:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.c5 > svg,
+.c5 > span.button-text {
+  position: relative;
+  z-index: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+
+.c5 > svg {
+  display: block;
+}
+
+.c5 > svg:first-child {
+  margin-left: -0.5rem;
+  margin-right: .5rem;
+}
+
+.c5 > svg:last-child {
+  margin-left: .5rem;
+  margin-right: -0.5rem;
+}
+
+.c5 > svg:first-child:last-child {
+  margin: 0;
+}
+
+.c5 {
+  color: var(--contrast-color);
+  background: #FFF;
+  position: relative;
+  z-index: 0;
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+}
+
+.c5:hover {
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+}
+
+.c5:hover::before {
+  opacity: 0.9;
+}
+
+.c5:active {
+  box-shadow: none;
+  background: #000;
+}
+
+.c5::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background: var(--main-color);
+  pointer-events: none;
+}
+
+.c2 {
+  margin-bottom: 8px;
+  color: #3F3D4B;
+  font-size: 14px;
+  text-align: left;
+  font-size: 14px;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-weight: 600;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.c2 {
   box-sizing: border-box;
 }
 
@@ -60,10 +516,11 @@ exports[`PublicAddress component sanity matches default snapshot 1`] = `
   border-radius: 4px;
   border-color: #CCC;
   border-radius: 4px;
-  text-align: left;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-size: 1rem;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
+  text-overflow: ellipsis;
+  white-space: no-wrap;
 }
 
 .c4 {
@@ -106,489 +563,6 @@ exports[`PublicAddress component sanity matches default snapshot 1`] = `
   visibility: visible;
 }
 
-.c1 {
-  margin-bottom: 8px;
-  color: #3F3D4B;
-  font-size: 14px;
-  text-align: left;
-  font-size: 14px;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  font-weight: 600;
-  text-align: left;
-  line-height: 1.5;
-}
-
-.c1 {
-  box-sizing: border-box;
-}
-
-.c1:after {
-  content: ' (optional)';
-  font-weight: normal;
-  font-style: italic;
-}
-
-.c3 {
-  text-overflow: ellipsis;
-  white-space: no-wrap;
-}
-
-.c5 {
-  font-size: inherit;
-  font-weight: 600;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  font-size: 12px;
-  height: 2rem;
-  min-width: 2rem;
-  padding: 0 1rem;
-}
-
-.c5 {
-  cursor: pointer;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  text-align: center;
-  line-height: 1;
-  overflow: hidden;
-  white-space: nowrap;
-  -webkit-font-smoothing: antialiased;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-transition: all .15s ease;
-  transition: all .15s ease;
-}
-
-.c5.c5:hover {
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  background-color: #5f52d2;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-}
-
-.c5:active {
-  background-color: #4638b9;
-  box-shadow: none;
-}
-
-.c5:disabled {
-  opacity: 0.4;
-  cursor: not-allowed;
-}
-
-.c5 > svg {
-  display: block;
-}
-
-.c5 > svg:first-child {
-  margin-left: -.5rem;
-  margin-right: .5rem;
-}
-
-.c5 > svg:last-child {
-  margin-left: .5rem;
-  margin-right: -.5rem;
-}
-
-.c5 > svg:first-child:last-child {
-  margin: 0;
-}
-
-.c5 {
-  position: relative;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c5.-is-copied::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: inherit;
-  opacity: 1;
-  -webkit-animation-name: eMLfYp;
-  animation-name: eMLfYp;
-  -webkit-animation-duration: 100ms;
-  animation-duration: 100ms;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-}
-
-.c5::after {
-  opacity: 0;
-  content: 'Copied!';
-  position: absolute;
-  width: 100%;
-  background: inherit;
-  -webkit-transition: all 500ms ease;
-  transition: all 500ms ease;
-}
-
-.c5.-is-copied::after {
-  opacity: 1;
-  -webkit-animation-name: kcJLrX;
-  animation-name: kcJLrX;
-  -webkit-animation-duration: 1000ms;
-  animation-duration: 1000ms;
-  -webkit-animation-timing-function: ease;
-  animation-timing-function: ease;
-}
-
-.c2 {
-  text-align: left;
-}
-
-.c2 {
-  box-sizing: border-box;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  position: relative;
-}
-
-.c2 > input {
-  width: 100%;
-  padding-right: 5.25rem;
-}
-
-.c2 > button {
-  position: absolute;
-  right: 0.75rem;
-}
-
-<label
-  class="c0"
-  display="flex"
->
-  <div
-    class="c1"
-    color="copyColor"
-    font-family="sansSerif"
-    font-size="1"
-    font-weight="3"
-  >
-    Public address
-  </div>
-  <div
-    class="c2"
-  >
-    <input
-      class="c3 c4"
-      color="copyColor"
-      font-family="sansSerif"
-      font-size="1rem"
-      height="3rem"
-      readonly=""
-    >
-      
-    </input>
-    <button
-      class="c5 c6"
-      color="white"
-      font-family="sansSerif"
-      font-size="inherit"
-      font-weight="3"
-      height="48px"
-      type="button"
-    >
-      <span>
-        Copy
-      </span>
-    </button>
-  </div>
-</label>
-`;
-
-exports[`PublicAddress component sanity matches themed snapshot 1`] = `
-.c1 {
-  margin-bottom: 16px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  text-align: left;
-}
-
-.c1 {
-  box-sizing: border-box;
-}
-
-.c7 {
-  margin: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 16px;
-  padding-right: 16px;
-  color: #fff;
-  background-color: #4E3FCE;
-  font-size: inherit;
-  height: 48px;
-  width: small;
-  height: small;
-  position: relative;
-  border: 0;
-  border-color: none;
-  border-radius: 4px;
-  border-color: none;
-  border-radius: 4px;
-  text-align: left;
-}
-
-.c7 {
-  box-sizing: border-box;
-}
-
-.c5 {
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 16px;
-  padding-right: 16px;
-  color: #3F3D4B;
-  background-color: #fff;
-  font-size: 1rem;
-  height: 3rem;
-  border: 1px solid transparent;
-  border-color: #CCC;
-  border-radius: 4px;
-  border-color: #CCC;
-  border-radius: 4px;
-  text-align: left;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  font-size: 1rem;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-}
-
-.c5 {
-  box-sizing: border-box;
-}
-
-.c5 {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
-.c5:hover {
-  box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
-}
-
-.c5:focus {
-  outline: none;
-  border-color: #4E3FCE;
-}
-
-.c5:disabled {
-  opacity: 0.4;
-  pointer-events: none;
-}
-
-.was-validated .c5:valid {
-  border-color: #28C081;
-}
-
-.was-validated .c5:valid ~ svg.icon-valid {
-  visibility: visible;
-}
-
-.was-validated .c5:invalid {
-  border-color: #EC9081;
-}
-
-.was-validated .c5:invalid ~ svg.icon-invalid {
-  visibility: visible;
-}
-
-.c2 {
-  margin-bottom: 8px;
-  color: #3F3D4B;
-  font-size: 14px;
-  text-align: left;
-  font-size: 14px;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  font-weight: 600;
-  text-align: left;
-  line-height: 1.5;
-}
-
-.c2 {
-  box-sizing: border-box;
-}
-
-.c2:after {
-  content: ' (optional)';
-  font-weight: normal;
-  font-style: italic;
-}
-
-.c4 {
-  text-overflow: ellipsis;
-  white-space: no-wrap;
-}
-
-.c6 {
-  font-size: inherit;
-  font-weight: 600;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  font-size: 12px;
-  height: 2rem;
-  min-width: 2rem;
-  padding: 0 1rem;
-}
-
-.c6 {
-  cursor: pointer;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  text-align: center;
-  line-height: 1;
-  overflow: hidden;
-  white-space: nowrap;
-  -webkit-font-smoothing: antialiased;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-transition: all .15s ease;
-  transition: all .15s ease;
-}
-
-.c6.c6:hover {
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  background-color: #5f52d2;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-}
-
-.c6:active {
-  background-color: #4638b9;
-  box-shadow: none;
-}
-
-.c6:disabled {
-  opacity: 0.4;
-  cursor: not-allowed;
-}
-
-.c6 > svg {
-  display: block;
-}
-
-.c6 > svg:first-child {
-  margin-left: -.5rem;
-  margin-right: .5rem;
-}
-
-.c6 > svg:last-child {
-  margin-left: .5rem;
-  margin-right: -.5rem;
-}
-
-.c6 > svg:first-child:last-child {
-  margin: 0;
-}
-
-.c6 {
-  position: relative;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c6.-is-copied::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: inherit;
-  opacity: 1;
-  -webkit-animation-name: eMLfYp;
-  animation-name: eMLfYp;
-  -webkit-animation-duration: 100ms;
-  animation-duration: 100ms;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-}
-
-.c6::after {
-  opacity: 0;
-  content: 'Copied!';
-  position: absolute;
-  width: 100%;
-  background: inherit;
-  -webkit-transition: all 500ms ease;
-  transition: all 500ms ease;
-}
-
-.c6.-is-copied::after {
-  opacity: 1;
-  -webkit-animation-name: kcJLrX;
-  animation-name: kcJLrX;
-  -webkit-animation-duration: 1000ms;
-  animation-duration: 1000ms;
-  -webkit-animation-timing-function: ease;
-  animation-timing-function: ease;
-}
-
 .c3 {
   text-align: left;
 }
@@ -620,6 +594,7 @@ exports[`PublicAddress component sanity matches themed snapshot 1`] = `
 
 .c3 > button {
   position: absolute;
+  width: 4rem;
   right: 0.75rem;
 }
 
@@ -647,27 +622,26 @@ exports[`PublicAddress component sanity matches themed snapshot 1`] = `
     </div>
     <div
       class="c3"
+      required=""
     >
       <input
-        class="c4 c5"
+        class="c4"
         color="copyColor"
         font-family="sansSerif"
         font-size="1rem"
         height="3rem"
         readonly=""
-      >
-        
-      </input>
+      />
       <button
-        class="c6 c7"
+        class="c5"
         color="white"
         font-family="sansSerif"
         font-size="inherit"
         font-weight="3"
-        height="48px"
-        type="button"
       >
-        <span>
+        <span
+          class="button-text"
+        >
           Copy
         </span>
       </button>

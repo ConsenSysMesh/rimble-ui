@@ -13,7 +13,6 @@ import {
   Text,
   Flex,
   Card,
-  OutlineButton,
   Pill,
   Link,
 } from 'rimble-ui';

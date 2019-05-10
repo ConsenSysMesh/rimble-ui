@@ -2,64 +2,53 @@ import React from 'react';
 import styled from 'styled-components';
 import { tint, shade } from 'polished';
 
-import Button from '../Button';
-import { ReactComponent as UPortLogo } from './icon.svg';
+import { ReactComponent as UPlogo } from './icon.svg';
+import Button, { StyledButton } from '../Button/BaseButton';
 
-const uPortBrandColor = {
+const brandColors = {
   baseColor: '#5c50ca',
   hoverColor: tint(0.1, '#5c50ca'),
   activeColor: shade(0.1, '#5c50ca'),
   foregroundColor: '#FFFFFF',
 };
 
-const ProtoButton = ({ className, ...props }) => {
-  return (
-    <Button className={className} {...props}>
-      <UPortLogo />
-      {props.children}
-    </Button>
-  );
-};
-
-const StyledButton = styled(ProtoButton)`
+const UPStyledButton = styled(StyledButton)`
   & {
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.15s ease;
   }
 
-  > span {
-    display: flex;
-    align-items: center;
+  &:hover {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
   }
 
-  > span > svg:first-child {
-    display: block;
+  && > svg.r-up-icon {
     height: ${props => (props.size === 'small' ? '16px' : '24px')};
     width: ${props => (props.size === 'small' ? '16px' : '24px')};
     margin-right: 0.5rem;
   }
 `;
 
-const UPortButtonSolid = styled(StyledButton)`
+const StyledButtonSolid = styled(UPStyledButton)`
   & {
-    color: ${uPortBrandColor.foregroundColor};
-    background: ${uPortBrandColor.baseColor};
+    color: ${brandColors.foregroundColor};
+    background: ${brandColors.baseColor};
   }
   &:hover {
-    background-color: ${uPortBrandColor.hoverColor};
+    background-color: ${brandColors.hoverColor};
   }
   &:active {
-    background-color: ${uPortBrandColor.activeColor};
+    background-color: ${brandColors.activeColor};
   }
-  > span > svg:first-child {
-    fill: ${uPortBrandColor.foregroundColor};
+  > svg:first-child {
+    fill: ${brandColors.foregroundColor};
   }
 `;
 
-const UPortButtonOutline = styled(StyledButton)`
+const StyledButtonOutline = styled(UPStyledButton)`
   & {
-    color: #333333;
-    background: #ffffff;
-    border: 1px solid #cccccc;
+    color: #333;
+    background: ${brandColors.foregroundColor};
+    border: 1px solid #ccc;
   }
   &:hover {
     background-color: #f3f2f2;
@@ -69,8 +58,34 @@ const UPortButtonOutline = styled(StyledButton)`
   }
 `;
 
+const ButtonBody = ({ children, size }) => (
+  <React.Fragment>
+    <UPlogo className={'r-up-icon'} size={size} />
+    {children}
+  </React.Fragment>
+);
+
+const UPortButtonSolid = ({ className, children, ...props }) => {
+  return (
+    <StyledButtonSolid className={className} {...props}>
+      <ButtonBody children={children} size={props.size} />
+    </StyledButtonSolid>
+  );
+};
+
+const UPortButtonOutline = ({ className, children, ...props }) => {
+  return (
+    <StyledButtonOutline className={className} {...props}>
+      <ButtonBody children={children} size={props.size} />
+    </StyledButtonOutline>
+  );
+};
+
 const defaultProps = {
+  ...Button.defaultProps,
   width: [1, 'auto'],
+  borderRadius: 1,
+  boxShadow: 1,
 };
 
 UPortButtonSolid.defaultProps = defaultProps;

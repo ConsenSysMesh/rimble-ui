@@ -11,7 +11,5 @@ exports[`Modal component sanity matches themed snapshot 1`] = `
 
 <div
   class="c0"
->
-  
-</div>
+/>
 `;

@@ -17,7 +17,6 @@ import {
   Loader,
   MetaMaskButton,
   Modal,
-  OutlineButton,
   Pill,
   Progress,
   PublicAddress,
@@ -28,7 +27,6 @@ import {
   Table,
   Text,
   Textarea,
-  TextButton,
   ThemeProvider,
   ToastMessage,
   Tooltip,
@@ -47,8 +45,6 @@ const testComponents = props => (
   <React.Fragment>
     <Box p={3}>
       <Button size={'medium'}>Click me!</Button>
-      <OutlineButton>Click</OutlineButton>
-      <TextButton>Click</TextButton>
       <Link>I'm a Link!</Link>
       <PublicAddress address="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2" />
       <Input />
@@ -188,8 +184,16 @@ export default class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <div>{testComponents()}</div>
-        <ThemeProvider theme={myTheme}>{testComponents()}</ThemeProvider>
+        <Flex>
+          <Box>
+            {testComponents()}
+          </Box>
+          <Box>
+            <ThemeProvider theme={myTheme}>
+              {testComponents()}
+            </ThemeProvider>
+          </Box>
+        </Flex>
       </React.Fragment>
     );
   }

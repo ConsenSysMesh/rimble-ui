@@ -4,9 +4,12 @@ exports[`Link component sanity matches default snapshot 1`] = `
 .c0 {
   color: #4E3FCE;
   font-size: 14px;
+  text-align: left;
   font-size: 14px;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-weight: 600;
+  text-align: left;
+  line-height: 1.5;
 }
 
 .c0 {
@@ -19,15 +22,15 @@ exports[`Link component sanity matches default snapshot 1`] = `
 }
 
 .c0:hover {
-  color: #7165d7;
   -webkit-text-decoration: underline;
   text-decoration: underline;
+  color: #7165d7;
 }
 
 .c0:active {
-  color: #3e32a4;
   -webkit-text-decoration: none;
   text-decoration: none;
+  color: #3e32a4;
 }
 
 <a
@@ -36,18 +39,19 @@ exports[`Link component sanity matches default snapshot 1`] = `
   font-family="sansSerif"
   font-size="1"
   font-weight="3"
->
-  
-</a>
+/>
 `;
 
 exports[`Link component sanity matches themed snapshot 1`] = `
 .c1 {
   color: #4E3FCE;
   font-size: 14px;
+  text-align: left;
   font-size: 14px;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-weight: 600;
+  text-align: left;
+  line-height: 1.5;
 }
 
 .c1 {
@@ -60,15 +64,15 @@ exports[`Link component sanity matches themed snapshot 1`] = `
 }
 
 .c1:hover {
-  color: #7165d7;
   -webkit-text-decoration: underline;
   text-decoration: underline;
+  color: #7165d7;
 }
 
 .c1:active {
-  color: #3e32a4;
   -webkit-text-decoration: none;
   text-decoration: none;
+  color: #3e32a4;
 }
 
 .c0 {
@@ -86,8 +90,6 @@ exports[`Link component sanity matches themed snapshot 1`] = `
     font-family="sansSerif"
     font-size="1"
     font-weight="3"
-  >
-    
-  </a>
+  />
 </div>
 `;

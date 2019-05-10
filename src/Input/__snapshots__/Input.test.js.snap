@@ -67,9 +67,7 @@ exports[`Input component sanity matches default snapshot 1`] = `
   font-family="sansSerif"
   font-size="1rem"
   height="3rem"
->
-  
-</input>
+/>
 `;
 
 exports[`Input component sanity matches themed snapshot 1`] = `
@@ -148,8 +146,6 @@ exports[`Input component sanity matches themed snapshot 1`] = `
     font-family="sansSerif"
     font-size="1rem"
     height="3rem"
-  >
-    
-  </input>
+  />
 </div>
 `;

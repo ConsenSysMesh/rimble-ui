@@ -11,7 +11,7 @@ import {
   QR,
   Box,
   Text,
-  OutlineButton,
+  
   Flex,
   Card,
   Pill,

@@ -63,6 +63,37 @@ storiesOf('Components/UPortButton', module).add(
           <UPortButton disabled>Connect with uPort</UPortButton>
         </CodeBlock>
       </Box>
+      <Box>
+        <Heading.h4>Link</Heading.h4>
+        <UPortButton.Solid as={'a'} href={'https://www.uport.me/'} target={'_blank'} mb={3} mr={3}>
+          Download uPort
+        </UPortButton.Solid>
+
+        <CodeBlock textOnly>
+          {`<UPortButton.Solid 
+  as={'a'} 
+  href={'https://www.uport.me/'} 
+  target={'_blank'}
+>
+  Download uPort
+</UPortButton.Solid>`}
+        </CodeBlock>
+        <UPortButton.Outline as={'a'} href={'https://www.uport.me/'} target={'_blank'} mb={3} mr={3}>
+          Download uPort
+        </UPortButton.Outline>
+
+        <CodeBlock textOnly>
+          {
+            `<UPortButton.Outline 
+  as={"a"} 
+  href={"https://www.uport.me/"} 
+  target={"_blank"}
+>
+  Download uPort
+</UPortButton.Outline>`
+          }
+        </CodeBlock>
+      </Box>
     </Box>
   ))
 );

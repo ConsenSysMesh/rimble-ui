@@ -1,600 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Select component sanity matches danger variant snapshot 1`] = `
-<StyledComponent
+<Styled(Box)
+  aria-describedby="Flash4Content"
+  aria-live="polite"
   border="1"
   borderRadius={1}
-  fontFamily="sansSerif"
-  forwardedComponent={
-    Object {
-      "$$typeof": Symbol(react.forward_ref),
-      "attrs": Array [],
-      "componentStyle": ComponentStyle {
-        "componentId": "sc-EHOje",
-        "isStatic": false,
-        "rules": Array [
-          "
-      & {
-        box-sizing: border-box;
-      }
-      ",
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          "
-      ",
-          [Function],
-          "
-      ",
-          "
-      ",
-          [Function],
-          "
-    ",
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-    
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-    ",
-          "
-      ",
-          [Function],
-          "
-    
-      & {
-      }
-    
-      a {
-        font-size: inherit;
-        cursor: pointer;
-        color: inherit;
-        &:hover {
-          color: inherit;
-        }
-      }
-    ",
-        ],
-      },
-      "defaultProps": Object {
-        "border": "1",
-        "borderRadius": 1,
-        "fontFamily": "sansSerif",
-        "p": "3",
-        "theme": Object {
-          "borderWidths": Array [
-            "0",
-            "1px",
-            "2px",
-            "4px",
-          ],
-          "borders": Array [
-            0,
-            "1px solid transparent",
-          ],
-          "colors": Object {
-            "black": "#000e1a",
-            "blacks": Array [
-              "rgba(0,0,0,.0125)",
-              "rgba(0,0,0,.025)",
-              "rgba(0,0,0,.05)",
-              "rgba(0,0,0,.1)",
-              "rgba(0,0,0,.2)",
-              "rgba(0,0,0,.3)",
-              "rgba(0,0,0,.4)",
-              "rgba(0,0,0,.5)",
-              "rgba(0,0,0,.6)",
-              "rgba(0,0,0,.7)",
-              "rgba(0,0,0,.8)",
-              "rgba(0,0,0,.9)",
-            ],
-            "blue": "#007ce0",
-            "copyColor": "#3F3D4B",
-            "dark-gray": "#333",
-            "grey": "#CCC",
-            "light-gray": "#eee",
-            "light-silver": "#aaa",
-            "mid-gray": "#555",
-            "moon-gray": "#ccc",
-            "navy": "#004175",
-            "near-black": "#111",
-            "near-white": "#f4f4f4",
-            "primary": "#4E3FCE",
-            "silver": "#999",
-            "transparent": "transparent",
-            "white": "#fff",
-            "whites": Array [
-              "rgba(255,255,255,.0125)",
-              "rgba(255,255,255,.025)",
-              "rgba(255,255,255,.05)",
-              "rgba(255,255,255,.1)",
-              "rgba(255,255,255,.2)",
-              "rgba(255,255,255,.3)",
-              "rgba(255,255,255,.4)",
-              "rgba(255,255,255,.5)",
-              "rgba(255,255,255,.6)",
-              "rgba(255,255,255,.7)",
-              "rgba(255,255,255,.8)",
-              "rgba(255,255,255,.9)",
-            ],
-          },
-          "fontSizes": Array [
-            12,
-            14,
-            16,
-            20,
-            24,
-            32,
-            48,
-            64,
-          ],
-          "fontWeights": Array [
-            0,
-            300,
-            400,
-            600,
-            700,
-          ],
-          "fonts": Object {
-            "sansSerif": "\\"Source Sans Pro\\", -apple-system, sans-serif",
-            "serif": "athelas, georgia, times, serif",
-          },
-          "heights": Array [
-            0,
-            16,
-            32,
-            64,
-            128,
-            256,
-          ],
-          "letterSpacings": Array [
-            0,
-            1,
-            2,
-            4,
-            8,
-          ],
-          "lineHeights": Object {
-            "copy": 1.5,
-            "solid": 1,
-            "title": 1.25,
-          },
-          "maxHeights": Array [
-            0,
-            16,
-            32,
-            64,
-            128,
-            256,
-          ],
-          "maxWidths": Array [
-            0,
-            16,
-            32,
-            64,
-            128,
-            256,
-            512,
-            768,
-            1024,
-            1536,
-          ],
-          "messageStyle": Object {
-            "base": Object {
-              "backgroundColor": "#f6f6f6",
-              "borderColor": "#AAA",
-              "color": "#666",
-            },
-            "danger": Object {
-              "backgroundColor": "#fbe9e7",
-              "borderColor": "#DC2C10",
-              "color": "#841a09",
-            },
-            "info": Object {
-              "backgroundColor": "#eaf6fd",
-              "borderColor": "#36ADF1",
-              "color": "#206790",
-            },
-            "success": Object {
-              "backgroundColor": "#e9f8f2",
-              "borderColor": "#28C081",
-              "color": "#18734d",
-            },
-            "warning": Object {
-              "backgroundColor": "#fef5e9",
-              "borderColor": "#FD9D28",
-              "color": "#975e18",
-            },
-          },
-          "minHeights": Array [
-            0,
-            16,
-            32,
-            64,
-            128,
-            256,
-          ],
-          "minWidths": Array [
-            0,
-            16,
-            32,
-            64,
-            128,
-            256,
-          ],
-          "opacity": Object {
-            "disabled": 0.4,
-          },
-          "radii": Array [
-            "0",
-            "4px",
-            "8px",
-            "16px",
-          ],
-          "shadows": Array [
-            "0",
-            "0px 2px 4px rgba(0, 0, 0, 0.1)",
-            "0 7px 14px rgba(50,50,93,.1)",
-          ],
-          "space": Array [
-            0,
-            4,
-            8,
-            16,
-            32,
-            64,
-            128,
-            256,
-          ],
-          "width": Array [
-            0,
-            16,
-            32,
-            64,
-            128,
-            256,
-          ],
-          "zIndices": Array [
-            0,
-            9,
-            99,
-            999,
-            9999,
-          ],
-        },
-        "variant": "base",
-      },
-      "displayName": "Flash",
-      "foldedComponentIds": Array [
-        "sc-bdVaJa",
-        "sc-bwzfXH",
-      ],
-      "p": Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "sc-bxivhb",
-          "isStatic": false,
-          "rules": Array [
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-    
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-    ",
-          ],
-        },
-        "defaultProps": Object {
-          "color": "copyColor",
-          "fontFamily": "sansSerif",
-          "fontSize": 2,
-          "fontWeight": 2,
-          "lineHeight": "copy",
-          "textAlign": "left",
-        },
-        "displayName": "styled.p",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "sc-bxivhb",
-        "target": "p",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      },
-      "render": [Function],
-      "s": Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "sc-ifAKCX",
-          "isStatic": false,
-          "rules": Array [
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-    
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-    ",
-          ],
-        },
-        "defaultProps": Object {
-          "color": "copyColor",
-          "fontFamily": "sansSerif",
-          "fontSize": 2,
-          "fontWeight": 2,
-          "lineHeight": "copy",
-          "textAlign": "left",
-        },
-        "displayName": "styled.s",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "sc-ifAKCX",
-        "target": "s",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      },
-      "span": Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "sc-htpNat",
-          "isStatic": false,
-          "rules": Array [
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-    
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-    ",
-          ],
-        },
-        "defaultProps": Object {
-          "color": "copyColor",
-          "fontFamily": "sansSerif",
-          "fontSize": 2,
-          "fontWeight": 2,
-          "lineHeight": "copy",
-          "textAlign": "left",
-        },
-        "displayName": "styled.span",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "sc-htpNat",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      },
-      "styledComponentId": "sc-EHOje",
-      "target": "div",
-      "toString": [Function],
-      "warnTooManyClasses": [Function],
-      "withComponent": [Function],
-    }
-  }
-  forwardedRef={null}
   p="3"
+  role="alert"
+  tabIndex={0}
+  textAlign="left"
   theme={
     Object {
       "borderWidths": Array [
@@ -607,6 +22,40 @@ exports[`Select component sanity matches danger variant snapshot 1`] = `
         0,
         "1px solid transparent",
       ],
+      "buttonSizes": Object {
+        "large": Object {
+          "fontSize": "1.5rem",
+          "height": "4rem",
+          "minWidth": "4rem",
+        },
+        "medium": Object {
+          "fontSize": "1rem",
+          "height": "3rem",
+          "minWidth": "3rem",
+        },
+        "small": Object {
+          "fontSize": "0.75rem",
+          "height": "2rem",
+          "minWidth": "2rem",
+          "padding": "0 1rem",
+        },
+      },
+      "buttons": Object {
+        "danger": Object {
+          "--contrast-color": "#fff",
+          "--main-color": "#DC2C10",
+        },
+        "primary": Object {
+          "--contrast-color": "#fff",
+          "--main-color": "#4E3FCE",
+          "backgroundColor": "#4E3FCE",
+          "color": "#fff",
+        },
+        "success": Object {
+          "--contrast-color": "#FFF",
+          "--main-color": "#28C081",
+        },
+      },
       "colors": Object {
         "black": "#000e1a",
         "blacks": Array [
@@ -623,7 +72,7 @@ exports[`Select component sanity matches danger variant snapshot 1`] = `
           "rgba(0,0,0,.8)",
           "rgba(0,0,0,.9)",
         ],
-        "blue": "#007ce0",
+        "blue": "#3259D6",
         "copyColor": "#3F3D4B",
         "dark-gray": "#333",
         "grey": "#CCC",
@@ -631,10 +80,11 @@ exports[`Select component sanity matches danger variant snapshot 1`] = `
         "light-silver": "#aaa",
         "mid-gray": "#555",
         "moon-gray": "#ccc",
-        "navy": "#004175",
         "near-black": "#111",
         "near-white": "#f4f4f4",
         "primary": "#4E3FCE",
+        "primary-dark": "#3e32a4",
+        "primary-light": "#7165d7",
         "silver": "#999",
         "transparent": "transparent",
         "white": "#fff",
@@ -799,606 +249,271 @@ exports[`Select component sanity matches danger variant snapshot 1`] = `
     }
   }
   variant="danger"
+  width="100%"
 >
-  Danger Flash
-</StyledComponent>
+  <Text
+    color="inherit"
+    display="inherit"
+    fontFamily="sansSerif"
+    fontSize={2}
+    fontWeight={2}
+    id="Flash4Content"
+    lineHeight="copy"
+    textAlign="left"
+    theme={
+      Object {
+        "borderWidths": Array [
+          "0",
+          "1px",
+          "2px",
+          "4px",
+        ],
+        "borders": Array [
+          0,
+          "1px solid transparent",
+        ],
+        "buttonSizes": Object {
+          "large": Object {
+            "fontSize": "1.5rem",
+            "height": "4rem",
+            "minWidth": "4rem",
+          },
+          "medium": Object {
+            "fontSize": "1rem",
+            "height": "3rem",
+            "minWidth": "3rem",
+          },
+          "small": Object {
+            "fontSize": "0.75rem",
+            "height": "2rem",
+            "minWidth": "2rem",
+            "padding": "0 1rem",
+          },
+        },
+        "buttons": Object {
+          "danger": Object {
+            "--contrast-color": "#fff",
+            "--main-color": "#DC2C10",
+          },
+          "primary": Object {
+            "--contrast-color": "#fff",
+            "--main-color": "#4E3FCE",
+            "backgroundColor": "#4E3FCE",
+            "color": "#fff",
+          },
+          "success": Object {
+            "--contrast-color": "#FFF",
+            "--main-color": "#28C081",
+          },
+        },
+        "colors": Object {
+          "black": "#000e1a",
+          "blacks": Array [
+            "rgba(0,0,0,.0125)",
+            "rgba(0,0,0,.025)",
+            "rgba(0,0,0,.05)",
+            "rgba(0,0,0,.1)",
+            "rgba(0,0,0,.2)",
+            "rgba(0,0,0,.3)",
+            "rgba(0,0,0,.4)",
+            "rgba(0,0,0,.5)",
+            "rgba(0,0,0,.6)",
+            "rgba(0,0,0,.7)",
+            "rgba(0,0,0,.8)",
+            "rgba(0,0,0,.9)",
+          ],
+          "blue": "#3259D6",
+          "copyColor": "#3F3D4B",
+          "dark-gray": "#333",
+          "grey": "#CCC",
+          "light-gray": "#eee",
+          "light-silver": "#aaa",
+          "mid-gray": "#555",
+          "moon-gray": "#ccc",
+          "near-black": "#111",
+          "near-white": "#f4f4f4",
+          "primary": "#4E3FCE",
+          "primary-dark": "#3e32a4",
+          "primary-light": "#7165d7",
+          "silver": "#999",
+          "transparent": "transparent",
+          "white": "#fff",
+          "whites": Array [
+            "rgba(255,255,255,.0125)",
+            "rgba(255,255,255,.025)",
+            "rgba(255,255,255,.05)",
+            "rgba(255,255,255,.1)",
+            "rgba(255,255,255,.2)",
+            "rgba(255,255,255,.3)",
+            "rgba(255,255,255,.4)",
+            "rgba(255,255,255,.5)",
+            "rgba(255,255,255,.6)",
+            "rgba(255,255,255,.7)",
+            "rgba(255,255,255,.8)",
+            "rgba(255,255,255,.9)",
+          ],
+        },
+        "fontSizes": Array [
+          12,
+          14,
+          16,
+          20,
+          24,
+          32,
+          48,
+          64,
+        ],
+        "fontWeights": Array [
+          0,
+          300,
+          400,
+          600,
+          700,
+        ],
+        "fonts": Object {
+          "sansSerif": "\\"Source Sans Pro\\", -apple-system, sans-serif",
+          "serif": "athelas, georgia, times, serif",
+        },
+        "heights": Array [
+          0,
+          16,
+          32,
+          64,
+          128,
+          256,
+        ],
+        "letterSpacings": Array [
+          0,
+          1,
+          2,
+          4,
+          8,
+        ],
+        "lineHeights": Object {
+          "copy": 1.5,
+          "solid": 1,
+          "title": 1.25,
+        },
+        "maxHeights": Array [
+          0,
+          16,
+          32,
+          64,
+          128,
+          256,
+        ],
+        "maxWidths": Array [
+          0,
+          16,
+          32,
+          64,
+          128,
+          256,
+          512,
+          768,
+          1024,
+          1536,
+        ],
+        "messageStyle": Object {
+          "base": Object {
+            "backgroundColor": "#f6f6f6",
+            "borderColor": "#AAA",
+            "color": "#666",
+          },
+          "danger": Object {
+            "backgroundColor": "#fbe9e7",
+            "borderColor": "#DC2C10",
+            "color": "#841a09",
+          },
+          "info": Object {
+            "backgroundColor": "#eaf6fd",
+            "borderColor": "#36ADF1",
+            "color": "#206790",
+          },
+          "success": Object {
+            "backgroundColor": "#e9f8f2",
+            "borderColor": "#28C081",
+            "color": "#18734d",
+          },
+          "warning": Object {
+            "backgroundColor": "#fef5e9",
+            "borderColor": "#FD9D28",
+            "color": "#975e18",
+          },
+        },
+        "minHeights": Array [
+          0,
+          16,
+          32,
+          64,
+          128,
+          256,
+        ],
+        "minWidths": Array [
+          0,
+          16,
+          32,
+          64,
+          128,
+          256,
+        ],
+        "opacity": Object {
+          "disabled": 0.4,
+        },
+        "radii": Array [
+          "0",
+          "4px",
+          "8px",
+          "16px",
+        ],
+        "shadows": Array [
+          "0",
+          "0px 2px 4px rgba(0, 0, 0, 0.1)",
+          "0 7px 14px rgba(50,50,93,.1)",
+        ],
+        "space": Array [
+          0,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256,
+        ],
+        "width": Array [
+          0,
+          16,
+          32,
+          64,
+          128,
+          256,
+        ],
+        "zIndices": Array [
+          0,
+          9,
+          99,
+          999,
+          9999,
+        ],
+      }
+    }
+  >
+    Danger Flash
+  </Text>
+</Styled(Box)>
 `;
 
 exports[`Select component sanity matches default snapshot 1`] = `
-<StyledComponent
+<Styled(Box)
+  aria-describedby="Flash0Content"
+  aria-live="polite"
   border="1"
   borderRadius={1}
-  fontFamily="sansSerif"
-  forwardedComponent={
-    Object {
-      "$$typeof": Symbol(react.forward_ref),
-      "attrs": Array [],
-      "componentStyle": ComponentStyle {
-        "componentId": "sc-EHOje",
-        "isStatic": false,
-        "rules": Array [
-          "
-      & {
-        box-sizing: border-box;
-      }
-      ",
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          "
-      ",
-          [Function],
-          "
-      ",
-          "
-      ",
-          [Function],
-          "
-    ",
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-    
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-    ",
-          "
-      ",
-          [Function],
-          "
-    
-      & {
-      }
-    
-      a {
-        font-size: inherit;
-        cursor: pointer;
-        color: inherit;
-        &:hover {
-          color: inherit;
-        }
-      }
-    ",
-        ],
-      },
-      "defaultProps": Object {
-        "border": "1",
-        "borderRadius": 1,
-        "fontFamily": "sansSerif",
-        "p": "3",
-        "theme": Object {
-          "borderWidths": Array [
-            "0",
-            "1px",
-            "2px",
-            "4px",
-          ],
-          "borders": Array [
-            0,
-            "1px solid transparent",
-          ],
-          "colors": Object {
-            "black": "#000e1a",
-            "blacks": Array [
-              "rgba(0,0,0,.0125)",
-              "rgba(0,0,0,.025)",
-              "rgba(0,0,0,.05)",
-              "rgba(0,0,0,.1)",
-              "rgba(0,0,0,.2)",
-              "rgba(0,0,0,.3)",
-              "rgba(0,0,0,.4)",
-              "rgba(0,0,0,.5)",
-              "rgba(0,0,0,.6)",
-              "rgba(0,0,0,.7)",
-              "rgba(0,0,0,.8)",
-              "rgba(0,0,0,.9)",
-            ],
-            "blue": "#007ce0",
-            "copyColor": "#3F3D4B",
-            "dark-gray": "#333",
-            "grey": "#CCC",
-            "light-gray": "#eee",
-            "light-silver": "#aaa",
-            "mid-gray": "#555",
-            "moon-gray": "#ccc",
-            "navy": "#004175",
-            "near-black": "#111",
-            "near-white": "#f4f4f4",
-            "primary": "#4E3FCE",
-            "silver": "#999",
-            "transparent": "transparent",
-            "white": "#fff",
-            "whites": Array [
-              "rgba(255,255,255,.0125)",
-              "rgba(255,255,255,.025)",
-              "rgba(255,255,255,.05)",
-              "rgba(255,255,255,.1)",
-              "rgba(255,255,255,.2)",
-              "rgba(255,255,255,.3)",
-              "rgba(255,255,255,.4)",
-              "rgba(255,255,255,.5)",
-              "rgba(255,255,255,.6)",
-              "rgba(255,255,255,.7)",
-              "rgba(255,255,255,.8)",
-              "rgba(255,255,255,.9)",
-            ],
-          },
-          "fontSizes": Array [
-            12,
-            14,
-            16,
-            20,
-            24,
-            32,
-            48,
-            64,
-          ],
-          "fontWeights": Array [
-            0,
-            300,
-            400,
-            600,
-            700,
-          ],
-          "fonts": Object {
-            "sansSerif": "\\"Source Sans Pro\\", -apple-system, sans-serif",
-            "serif": "athelas, georgia, times, serif",
-          },
-          "heights": Array [
-            0,
-            16,
-            32,
-            64,
-            128,
-            256,
-          ],
-          "letterSpacings": Array [
-            0,
-            1,
-            2,
-            4,
-            8,
-          ],
-          "lineHeights": Object {
-            "copy": 1.5,
-            "solid": 1,
-            "title": 1.25,
-          },
-          "maxHeights": Array [
-            0,
-            16,
-            32,
-            64,
-            128,
-            256,
-          ],
-          "maxWidths": Array [
-            0,
-            16,
-            32,
-            64,
-            128,
-            256,
-            512,
-            768,
-            1024,
-            1536,
-          ],
-          "messageStyle": Object {
-            "base": Object {
-              "backgroundColor": "#f6f6f6",
-              "borderColor": "#AAA",
-              "color": "#666",
-            },
-            "danger": Object {
-              "backgroundColor": "#fbe9e7",
-              "borderColor": "#DC2C10",
-              "color": "#841a09",
-            },
-            "info": Object {
-              "backgroundColor": "#eaf6fd",
-              "borderColor": "#36ADF1",
-              "color": "#206790",
-            },
-            "success": Object {
-              "backgroundColor": "#e9f8f2",
-              "borderColor": "#28C081",
-              "color": "#18734d",
-            },
-            "warning": Object {
-              "backgroundColor": "#fef5e9",
-              "borderColor": "#FD9D28",
-              "color": "#975e18",
-            },
-          },
-          "minHeights": Array [
-            0,
-            16,
-            32,
-            64,
-            128,
-            256,
-          ],
-          "minWidths": Array [
-            0,
-            16,
-            32,
-            64,
-            128,
-            256,
-          ],
-          "opacity": Object {
-            "disabled": 0.4,
-          },
-          "radii": Array [
-            "0",
-            "4px",
-            "8px",
-            "16px",
-          ],
-          "shadows": Array [
-            "0",
-            "0px 2px 4px rgba(0, 0, 0, 0.1)",
-            "0 7px 14px rgba(50,50,93,.1)",
-          ],
-          "space": Array [
-            0,
-            4,
-            8,
-            16,
-            32,
-            64,
-            128,
-            256,
-          ],
-          "width": Array [
-            0,
-            16,
-            32,
-            64,
-            128,
-            256,
-          ],
-          "zIndices": Array [
-            0,
-            9,
-            99,
-            999,
-            9999,
-          ],
-        },
-        "variant": "base",
-      },
-      "displayName": "Flash",
-      "foldedComponentIds": Array [
-        "sc-bdVaJa",
-        "sc-bwzfXH",
-      ],
-      "p": Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "sc-bxivhb",
-          "isStatic": false,
-          "rules": Array [
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-    
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-    ",
-          ],
-        },
-        "defaultProps": Object {
-          "color": "copyColor",
-          "fontFamily": "sansSerif",
-          "fontSize": 2,
-          "fontWeight": 2,
-          "lineHeight": "copy",
-          "textAlign": "left",
-        },
-        "displayName": "styled.p",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "sc-bxivhb",
-        "target": "p",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      },
-      "render": [Function],
-      "s": Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "sc-ifAKCX",
-          "isStatic": false,
-          "rules": Array [
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-    
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-    ",
-          ],
-        },
-        "defaultProps": Object {
-          "color": "copyColor",
-          "fontFamily": "sansSerif",
-          "fontSize": 2,
-          "fontWeight": 2,
-          "lineHeight": "copy",
-          "textAlign": "left",
-        },
-        "displayName": "styled.s",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "sc-ifAKCX",
-        "target": "s",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      },
-      "span": Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "sc-htpNat",
-          "isStatic": false,
-          "rules": Array [
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-    
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-    ",
-          ],
-        },
-        "defaultProps": Object {
-          "color": "copyColor",
-          "fontFamily": "sansSerif",
-          "fontSize": 2,
-          "fontWeight": 2,
-          "lineHeight": "copy",
-          "textAlign": "left",
-        },
-        "displayName": "styled.span",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "sc-htpNat",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      },
-      "styledComponentId": "sc-EHOje",
-      "target": "div",
-      "toString": [Function],
-      "warnTooManyClasses": [Function],
-      "withComponent": [Function],
-    }
-  }
-  forwardedRef={null}
   p="3"
+  role="status"
+  tabIndex={0}
+  textAlign="left"
   theme={
     Object {
       "borderWidths": Array [
@@ -1411,6 +526,40 @@ exports[`Select component sanity matches default snapshot 1`] = `
         0,
         "1px solid transparent",
       ],
+      "buttonSizes": Object {
+        "large": Object {
+          "fontSize": "1.5rem",
+          "height": "4rem",
+          "minWidth": "4rem",
+        },
+        "medium": Object {
+          "fontSize": "1rem",
+          "height": "3rem",
+          "minWidth": "3rem",
+        },
+        "small": Object {
+          "fontSize": "0.75rem",
+          "height": "2rem",
+          "minWidth": "2rem",
+          "padding": "0 1rem",
+        },
+      },
+      "buttons": Object {
+        "danger": Object {
+          "--contrast-color": "#fff",
+          "--main-color": "#DC2C10",
+        },
+        "primary": Object {
+          "--contrast-color": "#fff",
+          "--main-color": "#4E3FCE",
+          "backgroundColor": "#4E3FCE",
+          "color": "#fff",
+        },
+        "success": Object {
+          "--contrast-color": "#FFF",
+          "--main-color": "#28C081",
+        },
+      },
       "colors": Object {
         "black": "#000e1a",
         "blacks": Array [
@@ -1427,7 +576,7 @@ exports[`Select component sanity matches default snapshot 1`] = `
           "rgba(0,0,0,.8)",
           "rgba(0,0,0,.9)",
         ],
-        "blue": "#007ce0",
+        "blue": "#3259D6",
         "copyColor": "#3F3D4B",
         "dark-gray": "#333",
         "grey": "#CCC",
@@ -1435,10 +584,11 @@ exports[`Select component sanity matches default snapshot 1`] = `
         "light-silver": "#aaa",
         "mid-gray": "#555",
         "moon-gray": "#ccc",
-        "navy": "#004175",
         "near-black": "#111",
         "near-white": "#f4f4f4",
         "primary": "#4E3FCE",
+        "primary-dark": "#3e32a4",
+        "primary-light": "#7165d7",
         "silver": "#999",
         "transparent": "transparent",
         "white": "#fff",
@@ -1603,606 +753,271 @@ exports[`Select component sanity matches default snapshot 1`] = `
     }
   }
   variant="base"
+  width="100%"
 >
-  Default Flash
-</StyledComponent>
+  <Text
+    color="inherit"
+    display="inherit"
+    fontFamily="sansSerif"
+    fontSize={2}
+    fontWeight={2}
+    id="Flash0Content"
+    lineHeight="copy"
+    textAlign="left"
+    theme={
+      Object {
+        "borderWidths": Array [
+          "0",
+          "1px",
+          "2px",
+          "4px",
+        ],
+        "borders": Array [
+          0,
+          "1px solid transparent",
+        ],
+        "buttonSizes": Object {
+          "large": Object {
+            "fontSize": "1.5rem",
+            "height": "4rem",
+            "minWidth": "4rem",
+          },
+          "medium": Object {
+            "fontSize": "1rem",
+            "height": "3rem",
+            "minWidth": "3rem",
+          },
+          "small": Object {
+            "fontSize": "0.75rem",
+            "height": "2rem",
+            "minWidth": "2rem",
+            "padding": "0 1rem",
+          },
+        },
+        "buttons": Object {
+          "danger": Object {
+            "--contrast-color": "#fff",
+            "--main-color": "#DC2C10",
+          },
+          "primary": Object {
+            "--contrast-color": "#fff",
+            "--main-color": "#4E3FCE",
+            "backgroundColor": "#4E3FCE",
+            "color": "#fff",
+          },
+          "success": Object {
+            "--contrast-color": "#FFF",
+            "--main-color": "#28C081",
+          },
+        },
+        "colors": Object {
+          "black": "#000e1a",
+          "blacks": Array [
+            "rgba(0,0,0,.0125)",
+            "rgba(0,0,0,.025)",
+            "rgba(0,0,0,.05)",
+            "rgba(0,0,0,.1)",
+            "rgba(0,0,0,.2)",
+            "rgba(0,0,0,.3)",
+            "rgba(0,0,0,.4)",
+            "rgba(0,0,0,.5)",
+            "rgba(0,0,0,.6)",
+            "rgba(0,0,0,.7)",
+            "rgba(0,0,0,.8)",
+            "rgba(0,0,0,.9)",
+          ],
+          "blue": "#3259D6",
+          "copyColor": "#3F3D4B",
+          "dark-gray": "#333",
+          "grey": "#CCC",
+          "light-gray": "#eee",
+          "light-silver": "#aaa",
+          "mid-gray": "#555",
+          "moon-gray": "#ccc",
+          "near-black": "#111",
+          "near-white": "#f4f4f4",
+          "primary": "#4E3FCE",
+          "primary-dark": "#3e32a4",
+          "primary-light": "#7165d7",
+          "silver": "#999",
+          "transparent": "transparent",
+          "white": "#fff",
+          "whites": Array [
+            "rgba(255,255,255,.0125)",
+            "rgba(255,255,255,.025)",
+            "rgba(255,255,255,.05)",
+            "rgba(255,255,255,.1)",
+            "rgba(255,255,255,.2)",
+            "rgba(255,255,255,.3)",
+            "rgba(255,255,255,.4)",
+            "rgba(255,255,255,.5)",
+            "rgba(255,255,255,.6)",
+            "rgba(255,255,255,.7)",
+            "rgba(255,255,255,.8)",
+            "rgba(255,255,255,.9)",
+          ],
+        },
+        "fontSizes": Array [
+          12,
+          14,
+          16,
+          20,
+          24,
+          32,
+          48,
+          64,
+        ],
+        "fontWeights": Array [
+          0,
+          300,
+          400,
+          600,
+          700,
+        ],
+        "fonts": Object {
+          "sansSerif": "\\"Source Sans Pro\\", -apple-system, sans-serif",
+          "serif": "athelas, georgia, times, serif",
+        },
+        "heights": Array [
+          0,
+          16,
+          32,
+          64,
+          128,
+          256,
+        ],
+        "letterSpacings": Array [
+          0,
+          1,
+          2,
+          4,
+          8,
+        ],
+        "lineHeights": Object {
+          "copy": 1.5,
+          "solid": 1,
+          "title": 1.25,
+        },
+        "maxHeights": Array [
+          0,
+          16,
+          32,
+          64,
+          128,
+          256,
+        ],
+        "maxWidths": Array [
+          0,
+          16,
+          32,
+          64,
+          128,
+          256,
+          512,
+          768,
+          1024,
+          1536,
+        ],
+        "messageStyle": Object {
+          "base": Object {
+            "backgroundColor": "#f6f6f6",
+            "borderColor": "#AAA",
+            "color": "#666",
+          },
+          "danger": Object {
+            "backgroundColor": "#fbe9e7",
+            "borderColor": "#DC2C10",
+            "color": "#841a09",
+          },
+          "info": Object {
+            "backgroundColor": "#eaf6fd",
+            "borderColor": "#36ADF1",
+            "color": "#206790",
+          },
+          "success": Object {
+            "backgroundColor": "#e9f8f2",
+            "borderColor": "#28C081",
+            "color": "#18734d",
+          },
+          "warning": Object {
+            "backgroundColor": "#fef5e9",
+            "borderColor": "#FD9D28",
+            "color": "#975e18",
+          },
+        },
+        "minHeights": Array [
+          0,
+          16,
+          32,
+          64,
+          128,
+          256,
+        ],
+        "minWidths": Array [
+          0,
+          16,
+          32,
+          64,
+          128,
+          256,
+        ],
+        "opacity": Object {
+          "disabled": 0.4,
+        },
+        "radii": Array [
+          "0",
+          "4px",
+          "8px",
+          "16px",
+        ],
+        "shadows": Array [
+          "0",
+          "0px 2px 4px rgba(0, 0, 0, 0.1)",
+          "0 7px 14px rgba(50,50,93,.1)",
+        ],
+        "space": Array [
+          0,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256,
+        ],
+        "width": Array [
+          0,
+          16,
+          32,
+          64,
+          128,
+          256,
+        ],
+        "zIndices": Array [
+          0,
+          9,
+          99,
+          999,
+          9999,
+        ],
+      }
+    }
+  >
+    Default Flash
+  </Text>
+</Styled(Box)>
 `;
 
 exports[`Select component sanity matches info variant snapshot 1`] = `
-<StyledComponent
+<Styled(Box)
+  aria-describedby="Flash1Content"
+  aria-live="polite"
   border="1"
   borderRadius={1}
-  fontFamily="sansSerif"
-  forwardedComponent={
-    Object {
-      "$$typeof": Symbol(react.forward_ref),
-      "attrs": Array [],
-      "componentStyle": ComponentStyle {
-        "componentId": "sc-EHOje",
-        "isStatic": false,
-        "rules": Array [
-          "
-      & {
-        box-sizing: border-box;
-      }
-      ",
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          "
-      ",
-          [Function],
-          "
-      ",
-          "
-      ",
-          [Function],
-          "
-    ",
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-    
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-    ",
-          "
-      ",
-          [Function],
-          "
-    
-      & {
-      }
-    
-      a {
-        font-size: inherit;
-        cursor: pointer;
-        color: inherit;
-        &:hover {
-          color: inherit;
-        }
-      }
-    ",
-        ],
-      },
-      "defaultProps": Object {
-        "border": "1",
-        "borderRadius": 1,
-        "fontFamily": "sansSerif",
-        "p": "3",
-        "theme": Object {
-          "borderWidths": Array [
-            "0",
-            "1px",
-            "2px",
-            "4px",
-          ],
-          "borders": Array [
-            0,
-            "1px solid transparent",
-          ],
-          "colors": Object {
-            "black": "#000e1a",
-            "blacks": Array [
-              "rgba(0,0,0,.0125)",
-              "rgba(0,0,0,.025)",
-              "rgba(0,0,0,.05)",
-              "rgba(0,0,0,.1)",
-              "rgba(0,0,0,.2)",
-              "rgba(0,0,0,.3)",
-              "rgba(0,0,0,.4)",
-              "rgba(0,0,0,.5)",
-              "rgba(0,0,0,.6)",
-              "rgba(0,0,0,.7)",
-              "rgba(0,0,0,.8)",
-              "rgba(0,0,0,.9)",
-            ],
-            "blue": "#007ce0",
-            "copyColor": "#3F3D4B",
-            "dark-gray": "#333",
-            "grey": "#CCC",
-            "light-gray": "#eee",
-            "light-silver": "#aaa",
-            "mid-gray": "#555",
-            "moon-gray": "#ccc",
-            "navy": "#004175",
-            "near-black": "#111",
-            "near-white": "#f4f4f4",
-            "primary": "#4E3FCE",
-            "silver": "#999",
-            "transparent": "transparent",
-            "white": "#fff",
-            "whites": Array [
-              "rgba(255,255,255,.0125)",
-              "rgba(255,255,255,.025)",
-              "rgba(255,255,255,.05)",
-              "rgba(255,255,255,.1)",
-              "rgba(255,255,255,.2)",
-              "rgba(255,255,255,.3)",
-              "rgba(255,255,255,.4)",
-              "rgba(255,255,255,.5)",
-              "rgba(255,255,255,.6)",
-              "rgba(255,255,255,.7)",
-              "rgba(255,255,255,.8)",
-              "rgba(255,255,255,.9)",
-            ],
-          },
-          "fontSizes": Array [
-            12,
-            14,
-            16,
-            20,
-            24,
-            32,
-            48,
-            64,
-          ],
-          "fontWeights": Array [
-            0,
-            300,
-            400,
-            600,
-            700,
-          ],
-          "fonts": Object {
-            "sansSerif": "\\"Source Sans Pro\\", -apple-system, sans-serif",
-            "serif": "athelas, georgia, times, serif",
-          },
-          "heights": Array [
-            0,
-            16,
-            32,
-            64,
-            128,
-            256,
-          ],
-          "letterSpacings": Array [
-            0,
-            1,
-            2,
-            4,
-            8,
-          ],
-          "lineHeights": Object {
-            "copy": 1.5,
-            "solid": 1,
-            "title": 1.25,
-          },
-          "maxHeights": Array [
-            0,
-            16,
-            32,
-            64,
-            128,
-            256,
-          ],
-          "maxWidths": Array [
-            0,
-            16,
-            32,
-            64,
-            128,
-            256,
-            512,
-            768,
-            1024,
-            1536,
-          ],
-          "messageStyle": Object {
-            "base": Object {
-              "backgroundColor": "#f6f6f6",
-              "borderColor": "#AAA",
-              "color": "#666",
-            },
-            "danger": Object {
-              "backgroundColor": "#fbe9e7",
-              "borderColor": "#DC2C10",
-              "color": "#841a09",
-            },
-            "info": Object {
-              "backgroundColor": "#eaf6fd",
-              "borderColor": "#36ADF1",
-              "color": "#206790",
-            },
-            "success": Object {
-              "backgroundColor": "#e9f8f2",
-              "borderColor": "#28C081",
-              "color": "#18734d",
-            },
-            "warning": Object {
-              "backgroundColor": "#fef5e9",
-              "borderColor": "#FD9D28",
-              "color": "#975e18",
-            },
-          },
-          "minHeights": Array [
-            0,
-            16,
-            32,
-            64,
-            128,
-            256,
-          ],
-          "minWidths": Array [
-            0,
-            16,
-            32,
-            64,
-            128,
-            256,
-          ],
-          "opacity": Object {
-            "disabled": 0.4,
-          },
-          "radii": Array [
-            "0",
-            "4px",
-            "8px",
-            "16px",
-          ],
-          "shadows": Array [
-            "0",
-            "0px 2px 4px rgba(0, 0, 0, 0.1)",
-            "0 7px 14px rgba(50,50,93,.1)",
-          ],
-          "space": Array [
-            0,
-            4,
-            8,
-            16,
-            32,
-            64,
-            128,
-            256,
-          ],
-          "width": Array [
-            0,
-            16,
-            32,
-            64,
-            128,
-            256,
-          ],
-          "zIndices": Array [
-            0,
-            9,
-            99,
-            999,
-            9999,
-          ],
-        },
-        "variant": "base",
-      },
-      "displayName": "Flash",
-      "foldedComponentIds": Array [
-        "sc-bdVaJa",
-        "sc-bwzfXH",
-      ],
-      "p": Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "sc-bxivhb",
-          "isStatic": false,
-          "rules": Array [
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-    
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-    ",
-          ],
-        },
-        "defaultProps": Object {
-          "color": "copyColor",
-          "fontFamily": "sansSerif",
-          "fontSize": 2,
-          "fontWeight": 2,
-          "lineHeight": "copy",
-          "textAlign": "left",
-        },
-        "displayName": "styled.p",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "sc-bxivhb",
-        "target": "p",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      },
-      "render": [Function],
-      "s": Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "sc-ifAKCX",
-          "isStatic": false,
-          "rules": Array [
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-    
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-    ",
-          ],
-        },
-        "defaultProps": Object {
-          "color": "copyColor",
-          "fontFamily": "sansSerif",
-          "fontSize": 2,
-          "fontWeight": 2,
-          "lineHeight": "copy",
-          "textAlign": "left",
-        },
-        "displayName": "styled.s",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "sc-ifAKCX",
-        "target": "s",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      },
-      "span": Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "sc-htpNat",
-          "isStatic": false,
-          "rules": Array [
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-    
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-    ",
-          ],
-        },
-        "defaultProps": Object {
-          "color": "copyColor",
-          "fontFamily": "sansSerif",
-          "fontSize": 2,
-          "fontWeight": 2,
-          "lineHeight": "copy",
-          "textAlign": "left",
-        },
-        "displayName": "styled.span",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "sc-htpNat",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      },
-      "styledComponentId": "sc-EHOje",
-      "target": "div",
-      "toString": [Function],
-      "warnTooManyClasses": [Function],
-      "withComponent": [Function],
-    }
-  }
-  forwardedRef={null}
   p="3"
+  role="status"
+  tabIndex={0}
+  textAlign="left"
   theme={
     Object {
       "borderWidths": Array [
@@ -2215,6 +1030,40 @@ exports[`Select component sanity matches info variant snapshot 1`] = `
         0,
         "1px solid transparent",
       ],
+      "buttonSizes": Object {
+        "large": Object {
+          "fontSize": "1.5rem",
+          "height": "4rem",
+          "minWidth": "4rem",
+        },
+        "medium": Object {
+          "fontSize": "1rem",
+          "height": "3rem",
+          "minWidth": "3rem",
+        },
+        "small": Object {
+          "fontSize": "0.75rem",
+          "height": "2rem",
+          "minWidth": "2rem",
+          "padding": "0 1rem",
+        },
+      },
+      "buttons": Object {
+        "danger": Object {
+          "--contrast-color": "#fff",
+          "--main-color": "#DC2C10",
+        },
+        "primary": Object {
+          "--contrast-color": "#fff",
+          "--main-color": "#4E3FCE",
+          "backgroundColor": "#4E3FCE",
+          "color": "#fff",
+        },
+        "success": Object {
+          "--contrast-color": "#FFF",
+          "--main-color": "#28C081",
+        },
+      },
       "colors": Object {
         "black": "#000e1a",
         "blacks": Array [
@@ -2231,7 +1080,7 @@ exports[`Select component sanity matches info variant snapshot 1`] = `
           "rgba(0,0,0,.8)",
           "rgba(0,0,0,.9)",
         ],
-        "blue": "#007ce0",
+        "blue": "#3259D6",
         "copyColor": "#3F3D4B",
         "dark-gray": "#333",
         "grey": "#CCC",
@@ -2239,10 +1088,11 @@ exports[`Select component sanity matches info variant snapshot 1`] = `
         "light-silver": "#aaa",
         "mid-gray": "#555",
         "moon-gray": "#ccc",
-        "navy": "#004175",
         "near-black": "#111",
         "near-white": "#f4f4f4",
         "primary": "#4E3FCE",
+        "primary-dark": "#3e32a4",
+        "primary-light": "#7165d7",
         "silver": "#999",
         "transparent": "transparent",
         "white": "#fff",
@@ -2407,606 +1257,271 @@ exports[`Select component sanity matches info variant snapshot 1`] = `
     }
   }
   variant="info"
+  width="100%"
 >
-  Info Flash
-</StyledComponent>
+  <Text
+    color="inherit"
+    display="inherit"
+    fontFamily="sansSerif"
+    fontSize={2}
+    fontWeight={2}
+    id="Flash1Content"
+    lineHeight="copy"
+    textAlign="left"
+    theme={
+      Object {
+        "borderWidths": Array [
+          "0",
+          "1px",
+          "2px",
+          "4px",
+        ],
+        "borders": Array [
+          0,
+          "1px solid transparent",
+        ],
+        "buttonSizes": Object {
+          "large": Object {
+            "fontSize": "1.5rem",
+            "height": "4rem",
+            "minWidth": "4rem",
+          },
+          "medium": Object {
+            "fontSize": "1rem",
+            "height": "3rem",
+            "minWidth": "3rem",
+          },
+          "small": Object {
+            "fontSize": "0.75rem",
+            "height": "2rem",
+            "minWidth": "2rem",
+            "padding": "0 1rem",
+          },
+        },
+        "buttons": Object {
+          "danger": Object {
+            "--contrast-color": "#fff",
+            "--main-color": "#DC2C10",
+          },
+          "primary": Object {
+            "--contrast-color": "#fff",
+            "--main-color": "#4E3FCE",
+            "backgroundColor": "#4E3FCE",
+            "color": "#fff",
+          },
+          "success": Object {
+            "--contrast-color": "#FFF",
+            "--main-color": "#28C081",
+          },
+        },
+        "colors": Object {
+          "black": "#000e1a",
+          "blacks": Array [
+            "rgba(0,0,0,.0125)",
+            "rgba(0,0,0,.025)",
+            "rgba(0,0,0,.05)",
+            "rgba(0,0,0,.1)",
+            "rgba(0,0,0,.2)",
+            "rgba(0,0,0,.3)",
+            "rgba(0,0,0,.4)",
+            "rgba(0,0,0,.5)",
+            "rgba(0,0,0,.6)",
+            "rgba(0,0,0,.7)",
+            "rgba(0,0,0,.8)",
+            "rgba(0,0,0,.9)",
+          ],
+          "blue": "#3259D6",
+          "copyColor": "#3F3D4B",
+          "dark-gray": "#333",
+          "grey": "#CCC",
+          "light-gray": "#eee",
+          "light-silver": "#aaa",
+          "mid-gray": "#555",
+          "moon-gray": "#ccc",
+          "near-black": "#111",
+          "near-white": "#f4f4f4",
+          "primary": "#4E3FCE",
+          "primary-dark": "#3e32a4",
+          "primary-light": "#7165d7",
+          "silver": "#999",
+          "transparent": "transparent",
+          "white": "#fff",
+          "whites": Array [
+            "rgba(255,255,255,.0125)",
+            "rgba(255,255,255,.025)",
+            "rgba(255,255,255,.05)",
+            "rgba(255,255,255,.1)",
+            "rgba(255,255,255,.2)",
+            "rgba(255,255,255,.3)",
+            "rgba(255,255,255,.4)",
+            "rgba(255,255,255,.5)",
+            "rgba(255,255,255,.6)",
+            "rgba(255,255,255,.7)",
+            "rgba(255,255,255,.8)",
+            "rgba(255,255,255,.9)",
+          ],
+        },
+        "fontSizes": Array [
+          12,
+          14,
+          16,
+          20,
+          24,
+          32,
+          48,
+          64,
+        ],
+        "fontWeights": Array [
+          0,
+          300,
+          400,
+          600,
+          700,
+        ],
+        "fonts": Object {
+          "sansSerif": "\\"Source Sans Pro\\", -apple-system, sans-serif",
+          "serif": "athelas, georgia, times, serif",
+        },
+        "heights": Array [
+          0,
+          16,
+          32,
+          64,
+          128,
+          256,
+        ],
+        "letterSpacings": Array [
+          0,
+          1,
+          2,
+          4,
+          8,
+        ],
+        "lineHeights": Object {
+          "copy": 1.5,
+          "solid": 1,
+          "title": 1.25,
+        },
+        "maxHeights": Array [
+          0,
+          16,
+          32,
+          64,
+          128,
+          256,
+        ],
+        "maxWidths": Array [
+          0,
+          16,
+          32,
+          64,
+          128,
+          256,
+          512,
+          768,
+          1024,
+          1536,
+        ],
+        "messageStyle": Object {
+          "base": Object {
+            "backgroundColor": "#f6f6f6",
+            "borderColor": "#AAA",
+            "color": "#666",
+          },
+          "danger": Object {
+            "backgroundColor": "#fbe9e7",
+            "borderColor": "#DC2C10",
+            "color": "#841a09",
+          },
+          "info": Object {
+            "backgroundColor": "#eaf6fd",
+            "borderColor": "#36ADF1",
+            "color": "#206790",
+          },
+          "success": Object {
+            "backgroundColor": "#e9f8f2",
+            "borderColor": "#28C081",
+            "color": "#18734d",
+          },
+          "warning": Object {
+            "backgroundColor": "#fef5e9",
+            "borderColor": "#FD9D28",
+            "color": "#975e18",
+          },
+        },
+        "minHeights": Array [
+          0,
+          16,
+          32,
+          64,
+          128,
+          256,
+        ],
+        "minWidths": Array [
+          0,
+          16,
+          32,
+          64,
+          128,
+          256,
+        ],
+        "opacity": Object {
+          "disabled": 0.4,
+        },
+        "radii": Array [
+          "0",
+          "4px",
+          "8px",
+          "16px",
+        ],
+        "shadows": Array [
+          "0",
+          "0px 2px 4px rgba(0, 0, 0, 0.1)",
+          "0 7px 14px rgba(50,50,93,.1)",
+        ],
+        "space": Array [
+          0,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256,
+        ],
+        "width": Array [
+          0,
+          16,
+          32,
+          64,
+          128,
+          256,
+        ],
+        "zIndices": Array [
+          0,
+          9,
+          99,
+          999,
+          9999,
+        ],
+      }
+    }
+  >
+    Info Flash
+  </Text>
+</Styled(Box)>
 `;
 
 exports[`Select component sanity matches success variant snapshot 1`] = `
-<StyledComponent
+<Styled(Box)
+  aria-describedby="Flash2Content"
+  aria-live="polite"
   border="1"
   borderRadius={1}
-  fontFamily="sansSerif"
-  forwardedComponent={
-    Object {
-      "$$typeof": Symbol(react.forward_ref),
-      "attrs": Array [],
-      "componentStyle": ComponentStyle {
-        "componentId": "sc-EHOje",
-        "isStatic": false,
-        "rules": Array [
-          "
-      & {
-        box-sizing: border-box;
-      }
-      ",
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          "
-      ",
-          [Function],
-          "
-      ",
-          "
-      ",
-          [Function],
-          "
-    ",
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-    
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-    ",
-          "
-      ",
-          [Function],
-          "
-    
-      & {
-      }
-    
-      a {
-        font-size: inherit;
-        cursor: pointer;
-        color: inherit;
-        &:hover {
-          color: inherit;
-        }
-      }
-    ",
-        ],
-      },
-      "defaultProps": Object {
-        "border": "1",
-        "borderRadius": 1,
-        "fontFamily": "sansSerif",
-        "p": "3",
-        "theme": Object {
-          "borderWidths": Array [
-            "0",
-            "1px",
-            "2px",
-            "4px",
-          ],
-          "borders": Array [
-            0,
-            "1px solid transparent",
-          ],
-          "colors": Object {
-            "black": "#000e1a",
-            "blacks": Array [
-              "rgba(0,0,0,.0125)",
-              "rgba(0,0,0,.025)",
-              "rgba(0,0,0,.05)",
-              "rgba(0,0,0,.1)",
-              "rgba(0,0,0,.2)",
-              "rgba(0,0,0,.3)",
-              "rgba(0,0,0,.4)",
-              "rgba(0,0,0,.5)",
-              "rgba(0,0,0,.6)",
-              "rgba(0,0,0,.7)",
-              "rgba(0,0,0,.8)",
-              "rgba(0,0,0,.9)",
-            ],
-            "blue": "#007ce0",
-            "copyColor": "#3F3D4B",
-            "dark-gray": "#333",
-            "grey": "#CCC",
-            "light-gray": "#eee",
-            "light-silver": "#aaa",
-            "mid-gray": "#555",
-            "moon-gray": "#ccc",
-            "navy": "#004175",
-            "near-black": "#111",
-            "near-white": "#f4f4f4",
-            "primary": "#4E3FCE",
-            "silver": "#999",
-            "transparent": "transparent",
-            "white": "#fff",
-            "whites": Array [
-              "rgba(255,255,255,.0125)",
-              "rgba(255,255,255,.025)",
-              "rgba(255,255,255,.05)",
-              "rgba(255,255,255,.1)",
-              "rgba(255,255,255,.2)",
-              "rgba(255,255,255,.3)",
-              "rgba(255,255,255,.4)",
-              "rgba(255,255,255,.5)",
-              "rgba(255,255,255,.6)",
-              "rgba(255,255,255,.7)",
-              "rgba(255,255,255,.8)",
-              "rgba(255,255,255,.9)",
-            ],
-          },
-          "fontSizes": Array [
-            12,
-            14,
-            16,
-            20,
-            24,
-            32,
-            48,
-            64,
-          ],
-          "fontWeights": Array [
-            0,
-            300,
-            400,
-            600,
-            700,
-          ],
-          "fonts": Object {
-            "sansSerif": "\\"Source Sans Pro\\", -apple-system, sans-serif",
-            "serif": "athelas, georgia, times, serif",
-          },
-          "heights": Array [
-            0,
-            16,
-            32,
-            64,
-            128,
-            256,
-          ],
-          "letterSpacings": Array [
-            0,
-            1,
-            2,
-            4,
-            8,
-          ],
-          "lineHeights": Object {
-            "copy": 1.5,
-            "solid": 1,
-            "title": 1.25,
-          },
-          "maxHeights": Array [
-            0,
-            16,
-            32,
-            64,
-            128,
-            256,
-          ],
-          "maxWidths": Array [
-            0,
-            16,
-            32,
-            64,
-            128,
-            256,
-            512,
-            768,
-            1024,
-            1536,
-          ],
-          "messageStyle": Object {
-            "base": Object {
-              "backgroundColor": "#f6f6f6",
-              "borderColor": "#AAA",
-              "color": "#666",
-            },
-            "danger": Object {
-              "backgroundColor": "#fbe9e7",
-              "borderColor": "#DC2C10",
-              "color": "#841a09",
-            },
-            "info": Object {
-              "backgroundColor": "#eaf6fd",
-              "borderColor": "#36ADF1",
-              "color": "#206790",
-            },
-            "success": Object {
-              "backgroundColor": "#e9f8f2",
-              "borderColor": "#28C081",
-              "color": "#18734d",
-            },
-            "warning": Object {
-              "backgroundColor": "#fef5e9",
-              "borderColor": "#FD9D28",
-              "color": "#975e18",
-            },
-          },
-          "minHeights": Array [
-            0,
-            16,
-            32,
-            64,
-            128,
-            256,
-          ],
-          "minWidths": Array [
-            0,
-            16,
-            32,
-            64,
-            128,
-            256,
-          ],
-          "opacity": Object {
-            "disabled": 0.4,
-          },
-          "radii": Array [
-            "0",
-            "4px",
-            "8px",
-            "16px",
-          ],
-          "shadows": Array [
-            "0",
-            "0px 2px 4px rgba(0, 0, 0, 0.1)",
-            "0 7px 14px rgba(50,50,93,.1)",
-          ],
-          "space": Array [
-            0,
-            4,
-            8,
-            16,
-            32,
-            64,
-            128,
-            256,
-          ],
-          "width": Array [
-            0,
-            16,
-            32,
-            64,
-            128,
-            256,
-          ],
-          "zIndices": Array [
-            0,
-            9,
-            99,
-            999,
-            9999,
-          ],
-        },
-        "variant": "base",
-      },
-      "displayName": "Flash",
-      "foldedComponentIds": Array [
-        "sc-bdVaJa",
-        "sc-bwzfXH",
-      ],
-      "p": Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "sc-bxivhb",
-          "isStatic": false,
-          "rules": Array [
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-    
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-    ",
-          ],
-        },
-        "defaultProps": Object {
-          "color": "copyColor",
-          "fontFamily": "sansSerif",
-          "fontSize": 2,
-          "fontWeight": 2,
-          "lineHeight": "copy",
-          "textAlign": "left",
-        },
-        "displayName": "styled.p",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "sc-bxivhb",
-        "target": "p",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      },
-      "render": [Function],
-      "s": Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "sc-ifAKCX",
-          "isStatic": false,
-          "rules": Array [
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-    
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-    ",
-          ],
-        },
-        "defaultProps": Object {
-          "color": "copyColor",
-          "fontFamily": "sansSerif",
-          "fontSize": 2,
-          "fontWeight": 2,
-          "lineHeight": "copy",
-          "textAlign": "left",
-        },
-        "displayName": "styled.s",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "sc-ifAKCX",
-        "target": "s",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      },
-      "span": Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "sc-htpNat",
-          "isStatic": false,
-          "rules": Array [
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-    
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-    ",
-          ],
-        },
-        "defaultProps": Object {
-          "color": "copyColor",
-          "fontFamily": "sansSerif",
-          "fontSize": 2,
-          "fontWeight": 2,
-          "lineHeight": "copy",
-          "textAlign": "left",
-        },
-        "displayName": "styled.span",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "sc-htpNat",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      },
-      "styledComponentId": "sc-EHOje",
-      "target": "div",
-      "toString": [Function],
-      "warnTooManyClasses": [Function],
-      "withComponent": [Function],
-    }
-  }
-  forwardedRef={null}
   p="3"
+  role="status"
+  tabIndex={0}
+  textAlign="left"
   theme={
     Object {
       "borderWidths": Array [
@@ -3019,6 +1534,40 @@ exports[`Select component sanity matches success variant snapshot 1`] = `
         0,
         "1px solid transparent",
       ],
+      "buttonSizes": Object {
+        "large": Object {
+          "fontSize": "1.5rem",
+          "height": "4rem",
+          "minWidth": "4rem",
+        },
+        "medium": Object {
+          "fontSize": "1rem",
+          "height": "3rem",
+          "minWidth": "3rem",
+        },
+        "small": Object {
+          "fontSize": "0.75rem",
+          "height": "2rem",
+          "minWidth": "2rem",
+          "padding": "0 1rem",
+        },
+      },
+      "buttons": Object {
+        "danger": Object {
+          "--contrast-color": "#fff",
+          "--main-color": "#DC2C10",
+        },
+        "primary": Object {
+          "--contrast-color": "#fff",
+          "--main-color": "#4E3FCE",
+          "backgroundColor": "#4E3FCE",
+          "color": "#fff",
+        },
+        "success": Object {
+          "--contrast-color": "#FFF",
+          "--main-color": "#28C081",
+        },
+      },
       "colors": Object {
         "black": "#000e1a",
         "blacks": Array [
@@ -3035,7 +1584,7 @@ exports[`Select component sanity matches success variant snapshot 1`] = `
           "rgba(0,0,0,.8)",
           "rgba(0,0,0,.9)",
         ],
-        "blue": "#007ce0",
+        "blue": "#3259D6",
         "copyColor": "#3F3D4B",
         "dark-gray": "#333",
         "grey": "#CCC",
@@ -3043,10 +1592,11 @@ exports[`Select component sanity matches success variant snapshot 1`] = `
         "light-silver": "#aaa",
         "mid-gray": "#555",
         "moon-gray": "#ccc",
-        "navy": "#004175",
         "near-black": "#111",
         "near-white": "#f4f4f4",
         "primary": "#4E3FCE",
+        "primary-dark": "#3e32a4",
+        "primary-light": "#7165d7",
         "silver": "#999",
         "transparent": "transparent",
         "white": "#fff",
@@ -3211,18 +1761,285 @@ exports[`Select component sanity matches success variant snapshot 1`] = `
     }
   }
   variant="success"
+  width="100%"
 >
-  Success Flash
-</StyledComponent>
+  <Text
+    color="inherit"
+    display="inherit"
+    fontFamily="sansSerif"
+    fontSize={2}
+    fontWeight={2}
+    id="Flash2Content"
+    lineHeight="copy"
+    textAlign="left"
+    theme={
+      Object {
+        "borderWidths": Array [
+          "0",
+          "1px",
+          "2px",
+          "4px",
+        ],
+        "borders": Array [
+          0,
+          "1px solid transparent",
+        ],
+        "buttonSizes": Object {
+          "large": Object {
+            "fontSize": "1.5rem",
+            "height": "4rem",
+            "minWidth": "4rem",
+          },
+          "medium": Object {
+            "fontSize": "1rem",
+            "height": "3rem",
+            "minWidth": "3rem",
+          },
+          "small": Object {
+            "fontSize": "0.75rem",
+            "height": "2rem",
+            "minWidth": "2rem",
+            "padding": "0 1rem",
+          },
+        },
+        "buttons": Object {
+          "danger": Object {
+            "--contrast-color": "#fff",
+            "--main-color": "#DC2C10",
+          },
+          "primary": Object {
+            "--contrast-color": "#fff",
+            "--main-color": "#4E3FCE",
+            "backgroundColor": "#4E3FCE",
+            "color": "#fff",
+          },
+          "success": Object {
+            "--contrast-color": "#FFF",
+            "--main-color": "#28C081",
+          },
+        },
+        "colors": Object {
+          "black": "#000e1a",
+          "blacks": Array [
+            "rgba(0,0,0,.0125)",
+            "rgba(0,0,0,.025)",
+            "rgba(0,0,0,.05)",
+            "rgba(0,0,0,.1)",
+            "rgba(0,0,0,.2)",
+            "rgba(0,0,0,.3)",
+            "rgba(0,0,0,.4)",
+            "rgba(0,0,0,.5)",
+            "rgba(0,0,0,.6)",
+            "rgba(0,0,0,.7)",
+            "rgba(0,0,0,.8)",
+            "rgba(0,0,0,.9)",
+          ],
+          "blue": "#3259D6",
+          "copyColor": "#3F3D4B",
+          "dark-gray": "#333",
+          "grey": "#CCC",
+          "light-gray": "#eee",
+          "light-silver": "#aaa",
+          "mid-gray": "#555",
+          "moon-gray": "#ccc",
+          "near-black": "#111",
+          "near-white": "#f4f4f4",
+          "primary": "#4E3FCE",
+          "primary-dark": "#3e32a4",
+          "primary-light": "#7165d7",
+          "silver": "#999",
+          "transparent": "transparent",
+          "white": "#fff",
+          "whites": Array [
+            "rgba(255,255,255,.0125)",
+            "rgba(255,255,255,.025)",
+            "rgba(255,255,255,.05)",
+            "rgba(255,255,255,.1)",
+            "rgba(255,255,255,.2)",
+            "rgba(255,255,255,.3)",
+            "rgba(255,255,255,.4)",
+            "rgba(255,255,255,.5)",
+            "rgba(255,255,255,.6)",
+            "rgba(255,255,255,.7)",
+            "rgba(255,255,255,.8)",
+            "rgba(255,255,255,.9)",
+          ],
+        },
+        "fontSizes": Array [
+          12,
+          14,
+          16,
+          20,
+          24,
+          32,
+          48,
+          64,
+        ],
+        "fontWeights": Array [
+          0,
+          300,
+          400,
+          600,
+          700,
+        ],
+        "fonts": Object {
+          "sansSerif": "\\"Source Sans Pro\\", -apple-system, sans-serif",
+          "serif": "athelas, georgia, times, serif",
+        },
+        "heights": Array [
+          0,
+          16,
+          32,
+          64,
+          128,
+          256,
+        ],
+        "letterSpacings": Array [
+          0,
+          1,
+          2,
+          4,
+          8,
+        ],
+        "lineHeights": Object {
+          "copy": 1.5,
+          "solid": 1,
+          "title": 1.25,
+        },
+        "maxHeights": Array [
+          0,
+          16,
+          32,
+          64,
+          128,
+          256,
+        ],
+        "maxWidths": Array [
+          0,
+          16,
+          32,
+          64,
+          128,
+          256,
+          512,
+          768,
+          1024,
+          1536,
+        ],
+        "messageStyle": Object {
+          "base": Object {
+            "backgroundColor": "#f6f6f6",
+            "borderColor": "#AAA",
+            "color": "#666",
+          },
+          "danger": Object {
+            "backgroundColor": "#fbe9e7",
+            "borderColor": "#DC2C10",
+            "color": "#841a09",
+          },
+          "info": Object {
+            "backgroundColor": "#eaf6fd",
+            "borderColor": "#36ADF1",
+            "color": "#206790",
+          },
+          "success": Object {
+            "backgroundColor": "#e9f8f2",
+            "borderColor": "#28C081",
+            "color": "#18734d",
+          },
+          "warning": Object {
+            "backgroundColor": "#fef5e9",
+            "borderColor": "#FD9D28",
+            "color": "#975e18",
+          },
+        },
+        "minHeights": Array [
+          0,
+          16,
+          32,
+          64,
+          128,
+          256,
+        ],
+        "minWidths": Array [
+          0,
+          16,
+          32,
+          64,
+          128,
+          256,
+        ],
+        "opacity": Object {
+          "disabled": 0.4,
+        },
+        "radii": Array [
+          "0",
+          "4px",
+          "8px",
+          "16px",
+        ],
+        "shadows": Array [
+          "0",
+          "0px 2px 4px rgba(0, 0, 0, 0.1)",
+          "0 7px 14px rgba(50,50,93,.1)",
+        ],
+        "space": Array [
+          0,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256,
+        ],
+        "width": Array [
+          0,
+          16,
+          32,
+          64,
+          128,
+          256,
+        ],
+        "zIndices": Array [
+          0,
+          9,
+          99,
+          999,
+          9999,
+        ],
+      }
+    }
+  >
+    Success Flash
+  </Text>
+</Styled(Box)>
 `;
 
 exports[`Select component sanity matches themed snapshot 1`] = `
+.c2 {
+  color: inherit;
+  font-size: 16px;
+  display: inherit;
+  text-align: left;
+  font-size: 16px;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-weight: 400;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.c2 {
+  box-sizing: border-box;
+}
+
 .c1 {
   padding: 16px;
+  width: 100%;
   border: 1px solid transparent;
   border-radius: 4px;
   border-radius: 4px;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  text-align: left;
   color: #666;
   background-color: #f6f6f6;
   border-color: #AAA;
@@ -3230,6 +2047,10 @@ exports[`Select component sanity matches themed snapshot 1`] = `
 
 .c1 {
   box-sizing: border-box;
+}
+
+.c1 {
+  position: relative;
 }
 
 .c1 a {
@@ -3252,609 +2073,38 @@ exports[`Select component sanity matches themed snapshot 1`] = `
   class="c0"
 >
   <div
+    aria-describedby="Flash5Content"
+    aria-live="polite"
     class="c1"
-    font-family="sansSerif"
+    role="status"
+    tabindex="0"
+    width="100%"
   >
-    Flash
+    <div
+      class="c2"
+      color="inherit"
+      display="inherit"
+      font-family="sansSerif"
+      font-size="2"
+      font-weight="2"
+      id="Flash5Content"
+    >
+      Flash
+    </div>
   </div>
 </div>
 `;
 
 exports[`Select component sanity matches warning variant snapshot 1`] = `
-<StyledComponent
+<Styled(Box)
+  aria-describedby="Flash3Content"
+  aria-live="polite"
   border="1"
   borderRadius={1}
-  fontFamily="sansSerif"
-  forwardedComponent={
-    Object {
-      "$$typeof": Symbol(react.forward_ref),
-      "attrs": Array [],
-      "componentStyle": ComponentStyle {
-        "componentId": "sc-EHOje",
-        "isStatic": false,
-        "rules": Array [
-          "
-      & {
-        box-sizing: border-box;
-      }
-      ",
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          "
-      ",
-          [Function],
-          "
-      ",
-          "
-      ",
-          [Function],
-          "
-    ",
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-    
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-      ",
-          [Function],
-          "
-    ",
-          "
-      ",
-          [Function],
-          "
-    
-      & {
-      }
-    
-      a {
-        font-size: inherit;
-        cursor: pointer;
-        color: inherit;
-        &:hover {
-          color: inherit;
-        }
-      }
-    ",
-        ],
-      },
-      "defaultProps": Object {
-        "border": "1",
-        "borderRadius": 1,
-        "fontFamily": "sansSerif",
-        "p": "3",
-        "theme": Object {
-          "borderWidths": Array [
-            "0",
-            "1px",
-            "2px",
-            "4px",
-          ],
-          "borders": Array [
-            0,
-            "1px solid transparent",
-          ],
-          "colors": Object {
-            "black": "#000e1a",
-            "blacks": Array [
-              "rgba(0,0,0,.0125)",
-              "rgba(0,0,0,.025)",
-              "rgba(0,0,0,.05)",
-              "rgba(0,0,0,.1)",
-              "rgba(0,0,0,.2)",
-              "rgba(0,0,0,.3)",
-              "rgba(0,0,0,.4)",
-              "rgba(0,0,0,.5)",
-              "rgba(0,0,0,.6)",
-              "rgba(0,0,0,.7)",
-              "rgba(0,0,0,.8)",
-              "rgba(0,0,0,.9)",
-            ],
-            "blue": "#007ce0",
-            "copyColor": "#3F3D4B",
-            "dark-gray": "#333",
-            "grey": "#CCC",
-            "light-gray": "#eee",
-            "light-silver": "#aaa",
-            "mid-gray": "#555",
-            "moon-gray": "#ccc",
-            "navy": "#004175",
-            "near-black": "#111",
-            "near-white": "#f4f4f4",
-            "primary": "#4E3FCE",
-            "silver": "#999",
-            "transparent": "transparent",
-            "white": "#fff",
-            "whites": Array [
-              "rgba(255,255,255,.0125)",
-              "rgba(255,255,255,.025)",
-              "rgba(255,255,255,.05)",
-              "rgba(255,255,255,.1)",
-              "rgba(255,255,255,.2)",
-              "rgba(255,255,255,.3)",
-              "rgba(255,255,255,.4)",
-              "rgba(255,255,255,.5)",
-              "rgba(255,255,255,.6)",
-              "rgba(255,255,255,.7)",
-              "rgba(255,255,255,.8)",
-              "rgba(255,255,255,.9)",
-            ],
-          },
-          "fontSizes": Array [
-            12,
-            14,
-            16,
-            20,
-            24,
-            32,
-            48,
-            64,
-          ],
-          "fontWeights": Array [
-            0,
-            300,
-            400,
-            600,
-            700,
-          ],
-          "fonts": Object {
-            "sansSerif": "\\"Source Sans Pro\\", -apple-system, sans-serif",
-            "serif": "athelas, georgia, times, serif",
-          },
-          "heights": Array [
-            0,
-            16,
-            32,
-            64,
-            128,
-            256,
-          ],
-          "letterSpacings": Array [
-            0,
-            1,
-            2,
-            4,
-            8,
-          ],
-          "lineHeights": Object {
-            "copy": 1.5,
-            "solid": 1,
-            "title": 1.25,
-          },
-          "maxHeights": Array [
-            0,
-            16,
-            32,
-            64,
-            128,
-            256,
-          ],
-          "maxWidths": Array [
-            0,
-            16,
-            32,
-            64,
-            128,
-            256,
-            512,
-            768,
-            1024,
-            1536,
-          ],
-          "messageStyle": Object {
-            "base": Object {
-              "backgroundColor": "#f6f6f6",
-              "borderColor": "#AAA",
-              "color": "#666",
-            },
-            "danger": Object {
-              "backgroundColor": "#fbe9e7",
-              "borderColor": "#DC2C10",
-              "color": "#841a09",
-            },
-            "info": Object {
-              "backgroundColor": "#eaf6fd",
-              "borderColor": "#36ADF1",
-              "color": "#206790",
-            },
-            "success": Object {
-              "backgroundColor": "#e9f8f2",
-              "borderColor": "#28C081",
-              "color": "#18734d",
-            },
-            "warning": Object {
-              "backgroundColor": "#fef5e9",
-              "borderColor": "#FD9D28",
-              "color": "#975e18",
-            },
-          },
-          "minHeights": Array [
-            0,
-            16,
-            32,
-            64,
-            128,
-            256,
-          ],
-          "minWidths": Array [
-            0,
-            16,
-            32,
-            64,
-            128,
-            256,
-          ],
-          "opacity": Object {
-            "disabled": 0.4,
-          },
-          "radii": Array [
-            "0",
-            "4px",
-            "8px",
-            "16px",
-          ],
-          "shadows": Array [
-            "0",
-            "0px 2px 4px rgba(0, 0, 0, 0.1)",
-            "0 7px 14px rgba(50,50,93,.1)",
-          ],
-          "space": Array [
-            0,
-            4,
-            8,
-            16,
-            32,
-            64,
-            128,
-            256,
-          ],
-          "width": Array [
-            0,
-            16,
-            32,
-            64,
-            128,
-            256,
-          ],
-          "zIndices": Array [
-            0,
-            9,
-            99,
-            999,
-            9999,
-          ],
-        },
-        "variant": "base",
-      },
-      "displayName": "Flash",
-      "foldedComponentIds": Array [
-        "sc-bdVaJa",
-        "sc-bwzfXH",
-      ],
-      "p": Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "sc-bxivhb",
-          "isStatic": false,
-          "rules": Array [
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-    
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-    ",
-          ],
-        },
-        "defaultProps": Object {
-          "color": "copyColor",
-          "fontFamily": "sansSerif",
-          "fontSize": 2,
-          "fontWeight": 2,
-          "lineHeight": "copy",
-          "textAlign": "left",
-        },
-        "displayName": "styled.p",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "sc-bxivhb",
-        "target": "p",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      },
-      "render": [Function],
-      "s": Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "sc-ifAKCX",
-          "isStatic": false,
-          "rules": Array [
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-    
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-    ",
-          ],
-        },
-        "defaultProps": Object {
-          "color": "copyColor",
-          "fontFamily": "sansSerif",
-          "fontSize": 2,
-          "fontWeight": 2,
-          "lineHeight": "copy",
-          "textAlign": "left",
-        },
-        "displayName": "styled.s",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "sc-ifAKCX",
-        "target": "s",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      },
-      "span": Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "sc-htpNat",
-          "isStatic": false,
-          "rules": Array [
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-    
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-      ",
-            [Function],
-            "
-    ",
-          ],
-        },
-        "defaultProps": Object {
-          "color": "copyColor",
-          "fontFamily": "sansSerif",
-          "fontSize": 2,
-          "fontWeight": 2,
-          "lineHeight": "copy",
-          "textAlign": "left",
-        },
-        "displayName": "styled.span",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "sc-htpNat",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      },
-      "styledComponentId": "sc-EHOje",
-      "target": "div",
-      "toString": [Function],
-      "warnTooManyClasses": [Function],
-      "withComponent": [Function],
-    }
-  }
-  forwardedRef={null}
   p="3"
+  role="alert"
+  tabIndex={0}
+  textAlign="left"
   theme={
     Object {
       "borderWidths": Array [
@@ -3867,6 +2117,40 @@ exports[`Select component sanity matches warning variant snapshot 1`] = `
         0,
         "1px solid transparent",
       ],
+      "buttonSizes": Object {
+        "large": Object {
+          "fontSize": "1.5rem",
+          "height": "4rem",
+          "minWidth": "4rem",
+        },
+        "medium": Object {
+          "fontSize": "1rem",
+          "height": "3rem",
+          "minWidth": "3rem",
+        },
+        "small": Object {
+          "fontSize": "0.75rem",
+          "height": "2rem",
+          "minWidth": "2rem",
+          "padding": "0 1rem",
+        },
+      },
+      "buttons": Object {
+        "danger": Object {
+          "--contrast-color": "#fff",
+          "--main-color": "#DC2C10",
+        },
+        "primary": Object {
+          "--contrast-color": "#fff",
+          "--main-color": "#4E3FCE",
+          "backgroundColor": "#4E3FCE",
+          "color": "#fff",
+        },
+        "success": Object {
+          "--contrast-color": "#FFF",
+          "--main-color": "#28C081",
+        },
+      },
       "colors": Object {
         "black": "#000e1a",
         "blacks": Array [
@@ -3883,7 +2167,7 @@ exports[`Select component sanity matches warning variant snapshot 1`] = `
           "rgba(0,0,0,.8)",
           "rgba(0,0,0,.9)",
         ],
-        "blue": "#007ce0",
+        "blue": "#3259D6",
         "copyColor": "#3F3D4B",
         "dark-gray": "#333",
         "grey": "#CCC",
@@ -3891,10 +2175,11 @@ exports[`Select component sanity matches warning variant snapshot 1`] = `
         "light-silver": "#aaa",
         "mid-gray": "#555",
         "moon-gray": "#ccc",
-        "navy": "#004175",
         "near-black": "#111",
         "near-white": "#f4f4f4",
         "primary": "#4E3FCE",
+        "primary-dark": "#3e32a4",
+        "primary-light": "#7165d7",
         "silver": "#999",
         "transparent": "transparent",
         "white": "#fff",
@@ -4059,7 +2344,257 @@ exports[`Select component sanity matches warning variant snapshot 1`] = `
     }
   }
   variant="warning"
+  width="100%"
 >
-  Warning Flash
-</StyledComponent>
+  <Text
+    color="inherit"
+    display="inherit"
+    fontFamily="sansSerif"
+    fontSize={2}
+    fontWeight={2}
+    id="Flash3Content"
+    lineHeight="copy"
+    textAlign="left"
+    theme={
+      Object {
+        "borderWidths": Array [
+          "0",
+          "1px",
+          "2px",
+          "4px",
+        ],
+        "borders": Array [
+          0,
+          "1px solid transparent",
+        ],
+        "buttonSizes": Object {
+          "large": Object {
+            "fontSize": "1.5rem",
+            "height": "4rem",
+            "minWidth": "4rem",
+          },
+          "medium": Object {
+            "fontSize": "1rem",
+            "height": "3rem",
+            "minWidth": "3rem",
+          },
+          "small": Object {
+            "fontSize": "0.75rem",
+            "height": "2rem",
+            "minWidth": "2rem",
+            "padding": "0 1rem",
+          },
+        },
+        "buttons": Object {
+          "danger": Object {
+            "--contrast-color": "#fff",
+            "--main-color": "#DC2C10",
+          },
+          "primary": Object {
+            "--contrast-color": "#fff",
+            "--main-color": "#4E3FCE",
+            "backgroundColor": "#4E3FCE",
+            "color": "#fff",
+          },
+          "success": Object {
+            "--contrast-color": "#FFF",
+            "--main-color": "#28C081",
+          },
+        },
+        "colors": Object {
+          "black": "#000e1a",
+          "blacks": Array [
+            "rgba(0,0,0,.0125)",
+            "rgba(0,0,0,.025)",
+            "rgba(0,0,0,.05)",
+            "rgba(0,0,0,.1)",
+            "rgba(0,0,0,.2)",
+            "rgba(0,0,0,.3)",
+            "rgba(0,0,0,.4)",
+            "rgba(0,0,0,.5)",
+            "rgba(0,0,0,.6)",
+            "rgba(0,0,0,.7)",
+            "rgba(0,0,0,.8)",
+            "rgba(0,0,0,.9)",
+          ],
+          "blue": "#3259D6",
+          "copyColor": "#3F3D4B",
+          "dark-gray": "#333",
+          "grey": "#CCC",
+          "light-gray": "#eee",
+          "light-silver": "#aaa",
+          "mid-gray": "#555",
+          "moon-gray": "#ccc",
+          "near-black": "#111",
+          "near-white": "#f4f4f4",
+          "primary": "#4E3FCE",
+          "primary-dark": "#3e32a4",
+          "primary-light": "#7165d7",
+          "silver": "#999",
+          "transparent": "transparent",
+          "white": "#fff",
+          "whites": Array [
+            "rgba(255,255,255,.0125)",
+            "rgba(255,255,255,.025)",
+            "rgba(255,255,255,.05)",
+            "rgba(255,255,255,.1)",
+            "rgba(255,255,255,.2)",
+            "rgba(255,255,255,.3)",
+            "rgba(255,255,255,.4)",
+            "rgba(255,255,255,.5)",
+            "rgba(255,255,255,.6)",
+            "rgba(255,255,255,.7)",
+            "rgba(255,255,255,.8)",
+            "rgba(255,255,255,.9)",
+          ],
+        },
+        "fontSizes": Array [
+          12,
+          14,
+          16,
+          20,
+          24,
+          32,
+          48,
+          64,
+        ],
+        "fontWeights": Array [
+          0,
+          300,
+          400,
+          600,
+          700,
+        ],
+        "fonts": Object {
+          "sansSerif": "\\"Source Sans Pro\\", -apple-system, sans-serif",
+          "serif": "athelas, georgia, times, serif",
+        },
+        "heights": Array [
+          0,
+          16,
+          32,
+          64,
+          128,
+          256,
+        ],
+        "letterSpacings": Array [
+          0,
+          1,
+          2,
+          4,
+          8,
+        ],
+        "lineHeights": Object {
+          "copy": 1.5,
+          "solid": 1,
+          "title": 1.25,
+        },
+        "maxHeights": Array [
+          0,
+          16,
+          32,
+          64,
+          128,
+          256,
+        ],
+        "maxWidths": Array [
+          0,
+          16,
+          32,
+          64,
+          128,
+          256,
+          512,
+          768,
+          1024,
+          1536,
+        ],
+        "messageStyle": Object {
+          "base": Object {
+            "backgroundColor": "#f6f6f6",
+            "borderColor": "#AAA",
+            "color": "#666",
+          },
+          "danger": Object {
+            "backgroundColor": "#fbe9e7",
+            "borderColor": "#DC2C10",
+            "color": "#841a09",
+          },
+          "info": Object {
+            "backgroundColor": "#eaf6fd",
+            "borderColor": "#36ADF1",
+            "color": "#206790",
+          },
+          "success": Object {
+            "backgroundColor": "#e9f8f2",
+            "borderColor": "#28C081",
+            "color": "#18734d",
+          },
+          "warning": Object {
+            "backgroundColor": "#fef5e9",
+            "borderColor": "#FD9D28",
+            "color": "#975e18",
+          },
+        },
+        "minHeights": Array [
+          0,
+          16,
+          32,
+          64,
+          128,
+          256,
+        ],
+        "minWidths": Array [
+          0,
+          16,
+          32,
+          64,
+          128,
+          256,
+        ],
+        "opacity": Object {
+          "disabled": 0.4,
+        },
+        "radii": Array [
+          "0",
+          "4px",
+          "8px",
+          "16px",
+        ],
+        "shadows": Array [
+          "0",
+          "0px 2px 4px rgba(0, 0, 0, 0.1)",
+          "0 7px 14px rgba(50,50,93,.1)",
+        ],
+        "space": Array [
+          0,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256,
+        ],
+        "width": Array [
+          0,
+          16,
+          32,
+          64,
+          128,
+          256,
+        ],
+        "zIndices": Array [
+          0,
+          9,
+          99,
+          999,
+          9999,
+        ],
+      }
+    }
+  >
+    Warning Flash
+  </Text>
+</Styled(Box)>
 `;
