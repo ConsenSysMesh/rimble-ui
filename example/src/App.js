@@ -24,7 +24,7 @@ import {
   QR,
   Radio,
   Select,
-  SimpleAddress,
+  EthAddress,
   Slider,
   Table,
   Text,
@@ -52,8 +52,8 @@ const testComponents = props => (
       <TextButton>Click</TextButton>
       <Link>I'm a Link!</Link>
       <PublicAddress address="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2" />
-      <SimpleAddress address="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2" />
-      <SimpleAddress truncate address="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2" />
+      <EthAddress address="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2" />
+      <EthAddress truncate address="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2" />
       <Input />
       <Icon name={'Info'} />
       <Icon name={'Info'} color="primary" />
