@@ -11,7 +11,7 @@ const addressSummary = (address, firstSegLength = 5, lastSegLength = 4) => {
     : '...';
 };
 
-class SimpleAddress extends React.PureComponent {
+class EthAddress extends React.PureComponent {
   render() {
     const { address, truncate } = this.props;
     const displayAddress = truncate ? addressSummary(address) : address;
@@ -20,15 +20,15 @@ class SimpleAddress extends React.PureComponent {
   }
 }
 
-SimpleAddress.propTypes = {
+EthAddress.propTypes = {
   address: PropTypes.string.isRequired,
   truncate: PropTypes.bool,
 };
 
-SimpleAddress.defaultProps = {
+EthAddress.defaultProps = {
   truncate: false,
 };
 
-SimpleAddress.displayName = 'SimpleAddress';
+EthAddress.displayName = 'EthAddress';
 
-export default SimpleAddress;
+export default EthAddress;
