@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 import {
+  display,
   fontSize,
   fontFamily,
   fontWeight,
@@ -32,6 +33,7 @@ export const bold = props =>
 export const italic = props => (props.italic ? { fontStyle: 'italic' } : null);
 
 const Text = styled(Box)`
+  ${display}
   ${fontSize}
   ${fontFamily}
   ${fontWeight}
