@@ -18,7 +18,6 @@ import {
   Field,
   Text,
   Input,
-  OutlineButton,
   Pill,
   Link,
 } from 'rimble-ui';
@@ -98,7 +97,7 @@ storiesOf('Components/Form/Inputs', module)
           <Heading.h4>Text input</Heading.h4>
           <Text.p>Brings up a standard keyboard.</Text.p>
           <Field label="Public address">
-            <Form.Input
+            <Input
               type="text"
               required="true"
               placeholder="e.g. 0xAc03BB73b6a9e108530AFf4Df5077c2B3D481e5A"
@@ -107,7 +106,7 @@ storiesOf('Components/Form/Inputs', module)
         </Box>
         <CodeBlock textOnly>
           {
-            '<Form.Input type="text" required="true" placeholder="e.g. 0xAc03BB73b6a9e108530AFf4Df5077c2B3D481e5A" />'
+            '<Input type="text" required="true" placeholder="e.g. 0xAc03BB73b6a9e108530AFf4Df5077c2B3D481e5A" />'
           }
         </CodeBlock>
 
@@ -115,7 +114,7 @@ storiesOf('Components/Form/Inputs', module)
           <Heading.h4>Email input</Heading.h4>
           <Text.p>Gives you an @ on your keyboard.</Text.p>
           <Field label="Email">
-            <Form.Input
+            <Input
               type="email"
               name="email"
               id="email"
@@ -127,7 +126,7 @@ storiesOf('Components/Form/Inputs', module)
 
         <CodeBlock textOnly>
           {
-            '<Form.Input type="email" required="true" placeholder="you@example.com" />'
+            '<Input type="email" required="true" placeholder="you@example.com" />'
           }
         </CodeBlock>
 
@@ -135,12 +134,12 @@ storiesOf('Components/Form/Inputs', module)
           <Heading.h4>Password input</Heading.h4>
           <Text.p>Masks any input.</Text.p>
           <Field label="Password">
-            <Form.Input required="true" type="password" />
+            <Input required="true" type="password" />
           </Field>
         </Box>
 
         <CodeBlock textOnly>
-          {'<Form.Input type="password" required="true" />'}
+          {'<Input type="password" required="true" />'}
         </CodeBlock>
 
         <Box>
@@ -150,7 +149,7 @@ storiesOf('Components/Form/Inputs', module)
             increase/decrease the value on desktop too.
           </Text.p>
           <Field label="Number">
-            <Form.Input
+            <Input
               required="true"
               type="number"
               placeholder="e.g. 0.00001234"
@@ -160,7 +159,7 @@ storiesOf('Components/Form/Inputs', module)
 
         <CodeBlock textOnly>
           {
-            '<Form.Input type="number" required="true" placeholder="e.g. 123" />'
+            '<Input type="number" required="true" placeholder="e.g. 123" />'
           }
         </CodeBlock>
 
@@ -168,7 +167,7 @@ storiesOf('Components/Form/Inputs', module)
           <Heading.h4>Search input</Heading.h4>
           <Text.p>Allows you to quickly remove a search term.</Text.p>
           <Field label="Enter a search term">
-            <Form.Input
+            <Input
               required="true"
               type="search"
               placeholder="e.g. Ethereum"
@@ -177,7 +176,7 @@ storiesOf('Components/Form/Inputs', module)
         </Box>
         <CodeBlock textOnly>
           {
-            '<Form.Input type="search" required="true" placeholder="e.g. Ethereum" />'
+            '<Input type="search" required="true" placeholder="e.g. Ethereum" />'
           }
         </CodeBlock>
 
@@ -185,7 +184,7 @@ storiesOf('Components/Form/Inputs', module)
           <Heading.h4>Telephone input</Heading.h4>
           <Text.p>Brings up the telephone keyboard.</Text.p>
           <Field label="Telephone">
-            <Form.Input
+            <Input
               type="tel"
               required="true"
               placeholder="e.g. +445575242519"
@@ -195,7 +194,7 @@ storiesOf('Components/Form/Inputs', module)
 
         <CodeBlock textOnly>
           {
-            '<Form.Input type="tel" required="true" placeholder="e.g. +445575242519" />'
+            '<Input type="tel" required="true" placeholder="e.g. +445575242519" />'
           }
         </CodeBlock>
 
@@ -203,7 +202,7 @@ storiesOf('Components/Form/Inputs', module)
           <Heading.h4>URL input</Heading.h4>
           <Text.p>Brings up a url keyboard.</Text.p>
           <Field label="URL">
-            <Form.Input
+            <Input
               type="url"
               required="true"
               placeholder="e.g. rimble.consensys.design"
@@ -213,7 +212,7 @@ storiesOf('Components/Form/Inputs', module)
 
         <CodeBlock textOnly>
           {
-            '<Form.Input type="url" required="true" placeholder="e.g. rimble.consensys.design" />'
+            '<Input type="url" required="true" placeholder="e.g. rimble.consensys.design" />'
           }
         </CodeBlock>
       </Box>

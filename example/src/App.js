@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, } from 'react';
 
 import {
   Avatar,
@@ -17,18 +17,17 @@ import {
   Loader,
   MetaMaskButton,
   Modal,
-  OutlineButton,
   Pill,
   Progress,
   PublicAddress,
   QR,
   Radio,
   Select,
+  EthAddress,
   Slider,
   Table,
   Text,
   Textarea,
-  TextButton,
   ThemeProvider,
   ToastMessage,
   Tooltip,
@@ -47,10 +46,10 @@ const testComponents = props => (
   <React.Fragment>
     <Box p={3}>
       <Button size={'medium'}>Click me!</Button>
-      <OutlineButton>Click</OutlineButton>
-      <TextButton>Click</TextButton>
       <Link>I'm a Link!</Link>
       <PublicAddress address="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2" />
+      <EthAddress address="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2" />
+      <EthAddress truncate address="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2" />
       <Input />
       <Icon name={'Info'} />
       <Icon name={'Info'} color="primary" />
@@ -68,19 +67,14 @@ const testComponents = props => (
         }}
       />
       <Textarea rows={4} defaultValue="Type here…" />
-      <Text>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
-        quibusdam, assumenda officiis.
-      </Text>
+      <Text>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta quibusdam, assumenda officiis.</Text>
       <Avatar />
       <Avatar size="small" />
       <Avatar size="medium" />
       <Avatar size="large" />
 
       <Slider />
-      <Select
-        items={['Wandering Thunder', 'Black Wildflower', 'Ancient Paper']}
-      />
+      <Select items={['Wandering Thunder', 'Black Wildflower', 'Ancient Paper']} />
       <Progress value={0.5} />
       <Heading.h1>Quick zephyrs blow, vexing daft Jim.</Heading.h1>
 
@@ -188,8 +182,16 @@ export default class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <div>{testComponents()}</div>
-        <ThemeProvider theme={myTheme}>{testComponents()}</ThemeProvider>
+        <Flex>
+          <Box>
+            {testComponents()}
+          </Box>
+          <Box>
+            <ThemeProvider theme={myTheme}>
+              {testComponents()}
+            </ThemeProvider>
+          </Box>
+        </Flex>
       </React.Fragment>
     );
   }
