@@ -84,4 +84,6 @@ class FileInput extends Component {
   }
 }
 
+FileInput.displayName = 'FileInput';
+
 export default FileInput;
