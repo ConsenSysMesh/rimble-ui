@@ -2,7 +2,7 @@
 
 exports[`Select component sanity matches default snapshot 1`] = `
 <styled.span>
-  <Styled(Input)
+  <Styled(Styled(Box))
     as="select"
     bg="white"
     border={1}
@@ -280,7 +280,7 @@ exports[`Select component sanity matches default snapshot 1`] = `
     >
       Ancient Paper
     </option>
-  </Styled(Input)>
+  </Styled(Styled(Box))>
   <ExpandMoreIcon
     size={24}
   />
