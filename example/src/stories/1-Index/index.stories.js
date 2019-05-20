@@ -3,6 +3,8 @@ import { storiesOf } from '@storybook/react';
 import { linkTo } from '@storybook/addon-links';
 import { doc, configureReadme } from 'storybook-readme';
 
+import ContributeBanner from '../../components/ContributeBanner';
+
 import {
   Box,
   Heading,
@@ -140,24 +142,7 @@ storiesOf('Getting started', module)
       <br />
       <br />
       <Box>
-        <Card color="white" bg="primary">
-          <Heading>Contribute to Rimble</Heading>
-          <Text.p color="white">
-            We're completely open source so feel free to raise any issues or
-            suggest improvements to Rimble.
-          </Text.p>
-          <Button
-            color={'primary'}
-            hovercolor={'white'}
-            bg={'white'}
-            as={Link}
-            href="https://github.com/ConsenSys/rimble-ui/blob/master/docs/CONTRIBUTIONS.md"
-            title="Rimble UI on GitHub"
-            target="_blank"
-          >
-            Contribute
-          </Button>
-        </Card>
+        <ContributeBanner />
       </Box>
       <br />
       <Box>
