@@ -46,7 +46,7 @@ class YourModal extends Component {
             <Button.Text
               icononly
               icon={'Close'}
-              color={'moon-gray'}
+              mainColor={'moon-gray'}
               position={'absolute'}
               top={0}
               right={0}
