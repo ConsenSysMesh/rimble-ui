@@ -75,7 +75,6 @@ exports[`PublicAddress component sanity matches default snapshot 1`] = `
   text-decoration: none;
   text-align: center;
   overflow: hidden;
-  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -398,7 +397,6 @@ exports[`PublicAddress component sanity matches themed snapshot 1`] = `
   text-decoration: none;
   text-align: center;
   overflow: hidden;
-  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
