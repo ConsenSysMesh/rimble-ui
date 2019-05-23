@@ -1,32 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import {
-  compose,
-  color,
-  space,
-  fontFamily,
-  fontSize,
-  fontWeight,
-  lineHeight,
-  textAlign,
-  letterSpacing,
-} from 'styled-system';
-
 import theme from '../theme';
-
-const COMMON = compose(
-  color,
-  space
-);
-
-const TYPOGRAPHY = compose(
-  fontFamily,
-  fontSize,
-  fontWeight,
-  lineHeight,
-  textAlign,
-  letterSpacing
-);
+import { COMMON, TYPOGRAPHY } from '../constants';
 
 const defaultProps = {
   theme,
