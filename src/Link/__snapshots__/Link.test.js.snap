@@ -5,11 +5,12 @@ exports[`Link component sanity matches default snapshot 1`] = `
   color: #4E3FCE;
   font-size: 14px;
   text-align: left;
-  font-size: 14px;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-size: 14px;
   font-weight: 600;
-  text-align: left;
   line-height: 1.5;
+  text-align: left;
+  color: #4E3FCE;
 }
 
 .c0 {
@@ -47,11 +48,12 @@ exports[`Link component sanity matches themed snapshot 1`] = `
   color: #4E3FCE;
   font-size: 14px;
   text-align: left;
-  font-size: 14px;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-size: 14px;
   font-weight: 600;
-  text-align: left;
   line-height: 1.5;
+  text-align: left;
+  color: #4E3FCE;
 }
 
 .c1 {
