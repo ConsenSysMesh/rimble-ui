@@ -1,10 +1,7 @@
 import {
-  // util
   compose,
-  // common
   color,
   space,
-  // typography
   fontFamily,
   fontSize,
   fontWeight,
@@ -62,7 +59,6 @@ export const TYPOGRAPHY = compose(
   textAlign,
   letterSpacing
 );
-
 export const LAYOUT = compose(
   display,
   size,
