@@ -25,11 +25,14 @@ exports[`Checkbox component sanity matches default snapshot 1`] = `
   color: #3F3D4B;
   font-size: 14px;
   text-align: left;
-  font-size: 14px;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-size: 14px;
   font-weight: 600;
-  text-align: left;
   line-height: 1.5;
+  text-align: left;
+  color: #3F3D4B;
+  margin-left: 4px;
+  margin-right: 8px;
 }
 
 .c2 {
@@ -156,11 +159,14 @@ exports[`Checkbox component sanity matches themed snapshot 1`] = `
   color: #3F3D4B;
   font-size: 14px;
   text-align: left;
-  font-size: 14px;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-size: 14px;
   font-weight: 600;
-  text-align: left;
   line-height: 1.5;
+  text-align: left;
+  color: #3F3D4B;
+  margin-left: 4px;
+  margin-right: 8px;
 }
 
 .c3 {
