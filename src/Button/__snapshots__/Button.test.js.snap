@@ -54,7 +54,6 @@ exports[`Button Icon component sanity matches default snapshot 1`] = `
   text-decoration: none;
   text-align: center;
   overflow: hidden;
-  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -221,7 +220,6 @@ exports[`Button Icon component sanity matches themed snapshot 1`] = `
   text-decoration: none;
   text-align: center;
   overflow: hidden;
-  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -398,7 +396,6 @@ exports[`Button Icon only component sanity matches default snapshot 1`] = `
   text-decoration: none;
   text-align: center;
   overflow: hidden;
-  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -566,7 +563,6 @@ exports[`Button Icon with position prop component sanity matches default snapsho
   text-decoration: none;
   text-align: center;
   overflow: hidden;
-  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -733,7 +729,6 @@ exports[`Button component sanity matches default snapshot 1`] = `
   text-decoration: none;
   text-align: center;
   overflow: hidden;
-  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -891,7 +886,6 @@ exports[`Button component sanity matches themed snapshot 1`] = `
   text-decoration: none;
   text-align: center;
   overflow: hidden;
-  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1059,7 +1053,6 @@ exports[`Button disabled component sanity matches default snapshot 1`] = `
   text-decoration: none;
   text-align: center;
   overflow: hidden;
-  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1218,7 +1211,6 @@ exports[`Button disabled component sanity matches themed snapshot 1`] = `
   text-decoration: none;
   text-align: center;
   overflow: hidden;
-  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1388,7 +1380,6 @@ exports[`Button size variant component sanity matches default snapshot 1`] = `
   text-decoration: none;
   text-align: center;
   overflow: hidden;
-  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1546,7 +1537,6 @@ exports[`Button size variant component sanity matches default snapshot 2`] = `
   text-decoration: none;
   text-align: center;
   overflow: hidden;
-  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1705,7 +1695,6 @@ exports[`Button size variant component sanity matches themed snapshot 1`] = `
   text-decoration: none;
   text-align: center;
   overflow: hidden;
-  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1873,7 +1862,6 @@ exports[`Button size variant component sanity matches themed snapshot 2`] = `
   text-decoration: none;
   text-align: center;
   overflow: hidden;
-  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2044,7 +2032,6 @@ exports[`Button.Outline component sanity matches default snapshot 1`] = `
   text-decoration: none;
   text-align: center;
   overflow: hidden;
-  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2230,7 +2217,6 @@ exports[`Button.Outline component sanity matches themed snapshot 1`] = `
   text-decoration: none;
   text-align: center;
   overflow: hidden;
-  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2419,7 +2405,6 @@ exports[`Button.Text component sanity matches default snapshot 1`] = `
   text-decoration: none;
   text-align: center;
   overflow: hidden;
-  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2558,7 +2543,6 @@ exports[`Button.Text component sanity matches themed snapshot 1`] = `
   text-decoration: none;
   text-align: center;
   overflow: hidden;
-  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2714,7 +2698,6 @@ exports[`Link Button Outline component sanity matches default snapshot 1`] = `
   text-decoration: none;
   text-align: center;
   overflow: hidden;
-  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2902,7 +2885,6 @@ exports[`Link Button component sanity matches default snapshot 1`] = `
   text-decoration: none;
   text-align: center;
   overflow: hidden;
-  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3065,7 +3047,6 @@ exports[`Loading Button component sanity matches default snapshot 1`] = `
   text-decoration: none;
   text-align: center;
   overflow: hidden;
-  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3297,7 +3278,6 @@ exports[`Loading Button component sanity matches default snapshot 2`] = `
   text-decoration: none;
   text-align: center;
   overflow: hidden;
-  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;

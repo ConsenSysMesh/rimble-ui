@@ -4,12 +4,8 @@ exports[`Link component sanity matches default snapshot 1`] = `
 .c0 {
   color: #4E3FCE;
   font-size: 14px;
-  text-align: left;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 14px;
   font-weight: 600;
-  line-height: 1.5;
-  text-align: left;
   color: #4E3FCE;
 }
 
@@ -37,7 +33,6 @@ exports[`Link component sanity matches default snapshot 1`] = `
 <a
   class="c0"
   color="primary"
-  font-family="sansSerif"
   font-size="1"
   font-weight="3"
 />
@@ -47,12 +42,8 @@ exports[`Link component sanity matches themed snapshot 1`] = `
 .c1 {
   color: #4E3FCE;
   font-size: 14px;
-  text-align: left;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 14px;
   font-weight: 600;
-  line-height: 1.5;
-  text-align: left;
   color: #4E3FCE;
 }
 
@@ -89,7 +80,6 @@ exports[`Link component sanity matches themed snapshot 1`] = `
   <a
     class="c1"
     color="primary"
-    font-family="sansSerif"
     font-size="1"
     font-weight="3"
   />

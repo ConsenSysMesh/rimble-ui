@@ -2087,13 +2087,13 @@ exports[`Select component sanity matches themed snapshot 1`] = `
   position: relative;
 }
 
-.c1 a {
+.c1 .c3 {
   font-size: inherit;
   cursor: pointer;
   color: inherit;
 }
 
-.c1 a:hover {
+.c1 .c3:hover {
   color: inherit;
 }
 
