@@ -59,6 +59,7 @@ export const TYPOGRAPHY = compose(
   textAlign,
   letterSpacing
 );
+
 export const LAYOUT = compose(
   display,
   size,
