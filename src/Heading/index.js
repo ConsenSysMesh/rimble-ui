@@ -1,7 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import theme from '../theme';
 import { COMMON, TYPOGRAPHY } from '../constants';
+import theme from '../theme';
 
 const defaultProps = {
   theme,
@@ -21,6 +22,12 @@ Heading.defaultProps = {
   ...defaultProps,
   as: 'h3',
   fontSize: 4,
+};
+
+Heading.propTypes = {
+  ...COMMON.propTypes,
+  ...TYPOGRAPHY.propTypes,
+  theme: PropTypes.object,
 };
 
 Heading.displayName = 'Heading';
