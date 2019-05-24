@@ -14,7 +14,6 @@ exports[`Field component sanity matches default snapshot 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
-  text-align: left;
 }
 
 .c0 {
@@ -22,10 +21,8 @@ exports[`Field component sanity matches default snapshot 1`] = `
 }
 
 .c1 {
-  margin-bottom: 8px;
   color: #3F3D4B;
-  font-size: 14px;
-  text-align: left;
+  margin-bottom: 8px;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -73,7 +70,6 @@ exports[`Field component sanity matches themed snapshot 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
-  text-align: left;
 }
 
 .c1 {
@@ -81,10 +77,8 @@ exports[`Field component sanity matches themed snapshot 1`] = `
 }
 
 .c2 {
-  margin-bottom: 8px;
   color: #3F3D4B;
-  font-size: 14px;
-  text-align: left;
+  margin-bottom: 8px;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 14px;
   font-weight: 600;

@@ -11,7 +11,6 @@ exports[`Radio component sanity matches default snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  text-align: left;
   opacity: 1;
 }
 
@@ -20,11 +19,9 @@ exports[`Radio component sanity matches default snapshot 1`] = `
 }
 
 .c2 {
+  color: #3F3D4B;
   margin-left: 4px;
   margin-right: 8px;
-  color: #3F3D4B;
-  font-size: 14px;
-  text-align: left;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -37,10 +34,6 @@ exports[`Radio component sanity matches default snapshot 1`] = `
 
 .c2 {
   box-sizing: border-box;
-}
-
-.c1 {
-  text-align: left;
 }
 
 .c1 {
@@ -145,7 +138,6 @@ exports[`Radio component sanity matches themed snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  text-align: left;
   opacity: 1;
 }
 
@@ -154,11 +146,9 @@ exports[`Radio component sanity matches themed snapshot 1`] = `
 }
 
 .c3 {
+  color: #3F3D4B;
   margin-left: 4px;
   margin-right: 8px;
-  color: #3F3D4B;
-  font-size: 14px;
-  text-align: left;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -171,10 +161,6 @@ exports[`Radio component sanity matches themed snapshot 1`] = `
 
 .c3 {
   box-sizing: border-box;
-}
-
-.c2 {
-  text-align: left;
 }
 
 .c2 {

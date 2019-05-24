@@ -21,7 +21,6 @@ exports[`ToastMessage component sanity matches failure snapshot 1`] = `
     className="iconBox"
     flex="0 0"
     mr={2}
-    textAlign="left"
     theme={
       Object {
         "borderWidths": Array [
@@ -273,7 +272,6 @@ exports[`ToastMessage component sanity matches failure snapshot 1`] = `
   <Styled(Box)
     flex="1 1 auto"
     mx={2}
-    textAlign="left"
     theme={
       Object {
         "borderWidths": Array [
@@ -1031,7 +1029,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   -webkit-flex: 0 0;
   -ms-flex: 0 0;
   flex: 0 0;
-  text-align: left;
 }
 
 .c2 {
@@ -1040,8 +1037,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
 
 .c6 {
   color: #000e1a;
-  font-size: 14px;
-  text-align: left;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -1056,8 +1051,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
 
 .c7 {
   color: #666;
-  font-size: 14px;
-  text-align: left;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -1071,13 +1064,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
 }
 
 .c8 {
-  margin-right: 8px;
   color: #3F3D4B;
-  font-size: 16px;
+  margin-right: 8px;
   -webkit-flex: 0 1;
   -ms-flex: 0 1;
   flex: 0 1;
-  text-align: right;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -1093,8 +1084,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
 
 .c9 {
   color: #4E3FCE;
-  font-size: 14px;
-  text-align: left;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -1130,7 +1119,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
-  text-align: left;
 }
 
 .c4 {
@@ -2295,22 +2283,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   & {
     box-sizing: border-box;
   }
-  ",
-                        "
-  ",
-                        [Function],
-                        "
-  ",
-                        [Function],
-                        "
-  ",
-                        [Function],
-                        "
-  ",
-                        [Function],
-                        "
-  ",
-                        "
+
   ",
                         [Function],
                         "
@@ -2325,85 +2298,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                         "
   ",
                         [Function],
-                        "
-  ",
-                        [Function],
-                        "
-  ",
-                        [Function],
-                        "
-  ",
-                        "
-  ",
-                        [Function],
-                        "
-  ",
-                        [Function],
-                        "
-  ",
-                        [Function],
-                        "
-  ",
-                        [Function],
-                        "
-  ",
-                        [Function],
-                        "
-  ",
-                        [Function],
-                        "
-  ",
-                        [Function],
-                        "
-  ",
-                        [Function],
-                        "
-  ",
-                        [Function],
-                        "
-  ",
-                        [Function],
-                        "
-  ",
-                        [Function],
-                        "
-  ",
-                        "
-  ",
-                        [Function],
-                        "
-  ",
-                        [Function],
-                        "
-  ",
-                        [Function],
-                        "
-  ",
-                        [Function],
-                        "
-  ",
-                        [Function],
-                        "
-  ",
-                        [Function],
-                        "
-  ",
-                        "
-  ",
-                        [Function],
-                        "
-  ",
-                        [Function],
-                        "
-  ",
-                        [Function],
-                        "
-  ",
-                        "
-  ",
-                        [Function],
-                        "
-  ",
                         "
   ",
                         [Function],
@@ -2475,6 +2369,68 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                     "foldedComponentIds": Array [
                       "sc-bdVaJa",
                     ],
+                    "propTypes": Object {
+                      "alignContent": [Function],
+                      "alignItems": [Function],
+                      "alignSelf": [Function],
+                      "backgroundColor": [Function],
+                      "bg": [Function],
+                      "border": [Function],
+                      "borderBottom": [Function],
+                      "borderColor": [Function],
+                      "borderLeft": [Function],
+                      "borderRadius": [Function],
+                      "borderRight": [Function],
+                      "borderStyle": [Function],
+                      "borderTop": [Function],
+                      "borderWidth": [Function],
+                      "bottom": [Function],
+                      "boxShadow": [Function],
+                      "color": [Function],
+                      "display": [Function],
+                      "flex": [Function],
+                      "flexBasis": [Function],
+                      "flexDirection": [Function],
+                      "flexWrap": [Function],
+                      "height": [Function],
+                      "justifyContent": [Function],
+                      "justifyItems": [Function],
+                      "justifySelf": [Function],
+                      "left": [Function],
+                      "m": [Function],
+                      "margin": [Function],
+                      "marginBottom": [Function],
+                      "marginLeft": [Function],
+                      "marginRight": [Function],
+                      "marginTop": [Function],
+                      "maxHeight": [Function],
+                      "maxWidth": [Function],
+                      "mb": [Function],
+                      "minHeight": [Function],
+                      "minWidth": [Function],
+                      "ml": [Function],
+                      "mr": [Function],
+                      "mt": [Function],
+                      "order": [Function],
+                      "overflow": [Function],
+                      "p": [Function],
+                      "padding": [Function],
+                      "paddingBottom": [Function],
+                      "paddingLeft": [Function],
+                      "paddingRight": [Function],
+                      "paddingTop": [Function],
+                      "pb": [Function],
+                      "pl": [Function],
+                      "position": [Function],
+                      "pr": [Function],
+                      "pt": [Function],
+                      "right": [Function],
+                      "theme": [Function],
+                      "top": [Function],
+                      "verticalAlign": [Function],
+                      "width": [Function],
+                      "zIndex": [Function],
+                    },
                     "render": [Function],
                     "styledComponentId": "sc-enOJk",
                     "target": "div",
@@ -2497,7 +2453,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                     className="iconBox"
                     flex="0 0"
                     mr={2}
-                    textAlign="left"
                     theme={
                       Object {
                         "borderWidths": Array [
@@ -2757,22 +2712,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   & {
     box-sizing: border-box;
   }
-  ",
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              "
+
   ",
                               [Function],
                               "
@@ -2787,85 +2727,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                               "
   ",
                               [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              "
-  ",
-                              [Function],
-                              "
-  ",
                               "
   ",
                               [Function],
@@ -2874,7 +2735,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                             ],
                           },
                           "defaultProps": Object {
-                            "textAlign": "left",
                             "theme": Object {
                               "borderWidths": Array [
                                 "0",
@@ -3118,6 +2978,68 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                           },
                           "displayName": "Box",
                           "foldedComponentIds": Array [],
+                          "propTypes": Object {
+                            "alignContent": [Function],
+                            "alignItems": [Function],
+                            "alignSelf": [Function],
+                            "backgroundColor": [Function],
+                            "bg": [Function],
+                            "border": [Function],
+                            "borderBottom": [Function],
+                            "borderColor": [Function],
+                            "borderLeft": [Function],
+                            "borderRadius": [Function],
+                            "borderRight": [Function],
+                            "borderStyle": [Function],
+                            "borderTop": [Function],
+                            "borderWidth": [Function],
+                            "bottom": [Function],
+                            "boxShadow": [Function],
+                            "color": [Function],
+                            "display": [Function],
+                            "flex": [Function],
+                            "flexBasis": [Function],
+                            "flexDirection": [Function],
+                            "flexWrap": [Function],
+                            "height": [Function],
+                            "justifyContent": [Function],
+                            "justifyItems": [Function],
+                            "justifySelf": [Function],
+                            "left": [Function],
+                            "m": [Function],
+                            "margin": [Function],
+                            "marginBottom": [Function],
+                            "marginLeft": [Function],
+                            "marginRight": [Function],
+                            "marginTop": [Function],
+                            "maxHeight": [Function],
+                            "maxWidth": [Function],
+                            "mb": [Function],
+                            "minHeight": [Function],
+                            "minWidth": [Function],
+                            "ml": [Function],
+                            "mr": [Function],
+                            "mt": [Function],
+                            "order": [Function],
+                            "overflow": [Function],
+                            "p": [Function],
+                            "padding": [Function],
+                            "paddingBottom": [Function],
+                            "paddingLeft": [Function],
+                            "paddingRight": [Function],
+                            "paddingTop": [Function],
+                            "pb": [Function],
+                            "pl": [Function],
+                            "position": [Function],
+                            "pr": [Function],
+                            "pt": [Function],
+                            "right": [Function],
+                            "theme": [Function],
+                            "top": [Function],
+                            "verticalAlign": [Function],
+                            "width": [Function],
+                            "zIndex": [Function],
+                          },
                           "render": [Function],
                           "styledComponentId": "sc-bdVaJa",
                           "target": "div",
@@ -3128,7 +3050,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                       }
                       forwardedRef={null}
                       mr={2}
-                      textAlign="left"
                       theme={
                         Object {
                           "borderWidths": Array [
@@ -3380,7 +3301,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                   <Styled(Box)
                     flex="1 1 auto"
                     mx={2}
-                    textAlign="left"
                     theme={
                       Object {
                         "borderWidths": Array [
@@ -3639,22 +3559,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   & {
     box-sizing: border-box;
   }
-  ",
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              "
+
   ",
                               [Function],
                               "
@@ -3669,85 +3574,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                               "
   ",
                               [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              "
-  ",
-                              [Function],
-                              "
-  ",
                               "
   ",
                               [Function],
@@ -3764,7 +3590,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                             ],
                           },
                           "defaultProps": Object {
-                            "textAlign": "left",
                             "theme": Object {
                               "borderWidths": Array [
                                 "0",
@@ -4010,6 +3835,68 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                           "foldedComponentIds": Array [
                             "sc-bdVaJa",
                           ],
+                          "propTypes": Object {
+                            "alignContent": [Function],
+                            "alignItems": [Function],
+                            "alignSelf": [Function],
+                            "backgroundColor": [Function],
+                            "bg": [Function],
+                            "border": [Function],
+                            "borderBottom": [Function],
+                            "borderColor": [Function],
+                            "borderLeft": [Function],
+                            "borderRadius": [Function],
+                            "borderRight": [Function],
+                            "borderStyle": [Function],
+                            "borderTop": [Function],
+                            "borderWidth": [Function],
+                            "bottom": [Function],
+                            "boxShadow": [Function],
+                            "color": [Function],
+                            "display": [Function],
+                            "flex": [Function],
+                            "flexBasis": [Function],
+                            "flexDirection": [Function],
+                            "flexWrap": [Function],
+                            "height": [Function],
+                            "justifyContent": [Function],
+                            "justifyItems": [Function],
+                            "justifySelf": [Function],
+                            "left": [Function],
+                            "m": [Function],
+                            "margin": [Function],
+                            "marginBottom": [Function],
+                            "marginLeft": [Function],
+                            "marginRight": [Function],
+                            "marginTop": [Function],
+                            "maxHeight": [Function],
+                            "maxWidth": [Function],
+                            "mb": [Function],
+                            "minHeight": [Function],
+                            "minWidth": [Function],
+                            "ml": [Function],
+                            "mr": [Function],
+                            "mt": [Function],
+                            "order": [Function],
+                            "overflow": [Function],
+                            "p": [Function],
+                            "padding": [Function],
+                            "paddingBottom": [Function],
+                            "paddingLeft": [Function],
+                            "paddingRight": [Function],
+                            "paddingTop": [Function],
+                            "pb": [Function],
+                            "pl": [Function],
+                            "position": [Function],
+                            "pr": [Function],
+                            "pt": [Function],
+                            "right": [Function],
+                            "theme": [Function],
+                            "top": [Function],
+                            "verticalAlign": [Function],
+                            "width": [Function],
+                            "zIndex": [Function],
+                          },
                           "render": [Function],
                           "styledComponentId": "c3",
                           "target": "div",
@@ -4020,7 +3907,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                       }
                       forwardedRef={null}
                       mx={2}
-                      textAlign="left"
                       theme={
                         Object {
                           "borderWidths": Array [
@@ -4535,22 +4421,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   & {
     box-sizing: border-box;
   }
-  ",
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    "
+
   ",
                                     [Function],
                                     "
@@ -4565,85 +4436,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                     "
   ",
                                     [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
                                     "
   ",
                                     [Function],
@@ -4932,22 +4724,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   & {
     box-sizing: border-box;
   }
-  ",
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      "
+
   ",
                                       [Function],
                                       "
@@ -4962,85 +4739,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                       "
   ",
                                       [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
                                       "
   ",
                                       [Function],
@@ -5365,22 +5063,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   & {
     box-sizing: border-box;
   }
-  ",
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        "
+
   ",
                                         [Function],
                                         "
@@ -5395,85 +5078,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                         "
   ",
                                         [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
                                         "
   ",
                                         [Function],
@@ -5844,22 +5448,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   & {
     box-sizing: border-box;
   }
-  ",
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      "
+
   ",
                                       [Function],
                                       "
@@ -5874,85 +5463,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                       "
   ",
                                       [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
                                       "
   ",
                                       [Function],
@@ -6243,22 +5753,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   & {
     box-sizing: border-box;
   }
-  ",
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        "
+
   ",
                                         [Function],
                                         "
@@ -6273,85 +5768,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                         "
   ",
                                         [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
                                         "
   ",
                                         [Function],
@@ -6676,22 +6092,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   & {
     box-sizing: border-box;
   }
-  ",
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          "
+
   ",
                                           [Function],
                                           "
@@ -6706,85 +6107,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                           "
   ",
                                           [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
                                           "
   ",
                                           [Function],
@@ -7155,22 +6477,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   & {
     box-sizing: border-box;
   }
-  ",
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        "
+
   ",
                                         [Function],
                                         "
@@ -7185,85 +6492,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                         "
   ",
                                         [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
                                         "
   ",
                                         [Function],
@@ -7600,22 +6828,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   & {
     box-sizing: border-box;
   }
-  ",
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      "
+
   ",
                                       [Function],
                                       "
@@ -7630,85 +6843,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                       "
   ",
                                       [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
                                       "
   ",
                                       [Function],
@@ -8560,22 +7694,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   & {
     box-sizing: border-box;
   }
-  ",
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    "
+
   ",
                                     [Function],
                                     "
@@ -8590,85 +7709,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                     "
   ",
                                     [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
                                     "
   ",
                                     [Function],
@@ -8957,22 +7997,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   & {
     box-sizing: border-box;
   }
-  ",
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      "
+
   ",
                                       [Function],
                                       "
@@ -8987,85 +8012,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                       "
   ",
                                       [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
                                       "
   ",
                                       [Function],
@@ -9390,22 +8336,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   & {
     box-sizing: border-box;
   }
-  ",
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        "
+
   ",
                                         [Function],
                                         "
@@ -9420,85 +8351,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                         "
   ",
                                         [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
                                         "
   ",
                                         [Function],
@@ -9869,22 +8721,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   & {
     box-sizing: border-box;
   }
-  ",
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      "
+
   ",
                                       [Function],
                                       "
@@ -9899,85 +8736,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                       "
   ",
                                       [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
                                       "
   ",
                                       [Function],
@@ -10268,22 +9026,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   & {
     box-sizing: border-box;
   }
-  ",
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        "
+
   ",
                                         [Function],
                                         "
@@ -10298,85 +9041,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                         "
   ",
                                         [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
                                         "
   ",
                                         [Function],
@@ -10701,22 +9365,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   & {
     box-sizing: border-box;
   }
-  ",
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          "
+
   ",
                                           [Function],
                                           "
@@ -10731,85 +9380,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                           "
   ",
                                           [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
                                           "
   ",
                                           [Function],
@@ -11180,22 +9750,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   & {
     box-sizing: border-box;
   }
-  ",
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        "
+
   ",
                                         [Function],
                                         "
@@ -11210,85 +9765,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                         "
   ",
                                         [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
                                         "
   ",
                                         [Function],
@@ -11625,22 +10101,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   & {
     box-sizing: border-box;
   }
-  ",
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      "
+
   ",
                                       [Function],
                                       "
@@ -11655,85 +10116,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                       "
   ",
                                       [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
                                       "
   ",
                                       [Function],
@@ -12591,22 +10973,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   & {
     box-sizing: border-box;
   }
-  ",
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              "
+
   ",
                               [Function],
                               "
@@ -12621,85 +10988,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                               "
   ",
                               [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              [Function],
-                              "
-  ",
-                              "
-  ",
-                              [Function],
-                              "
-  ",
                               "
   ",
                               [Function],
@@ -12988,22 +11276,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   & {
     box-sizing: border-box;
   }
-  ",
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                "
+
   ",
                                 [Function],
                                 "
@@ -13018,85 +11291,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                 "
   ",
                                 [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                "
-  ",
-                                [Function],
-                                "
-  ",
                                 "
   ",
                                 [Function],
@@ -13421,22 +11615,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   & {
     box-sizing: border-box;
   }
-  ",
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  "
+
   ",
                                   [Function],
                                   "
@@ -13451,85 +11630,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                   "
   ",
                                   [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
                                   "
   ",
                                   [Function],
@@ -13900,22 +12000,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   & {
     box-sizing: border-box;
   }
-  ",
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                "
+
   ",
                                 [Function],
                                 "
@@ -13930,85 +12015,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                 "
   ",
                                 [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                "
-  ",
-                                [Function],
-                                "
-  ",
                                 "
   ",
                                 [Function],
@@ -14299,22 +12305,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   & {
     box-sizing: border-box;
   }
-  ",
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  "
+
   ",
                                   [Function],
                                   "
@@ -14329,85 +12320,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                   "
   ",
                                   [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
                                   "
   ",
                                   [Function],
@@ -14732,22 +12644,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   & {
     box-sizing: border-box;
   }
-  ",
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    "
+
   ",
                                     [Function],
                                     "
@@ -14762,85 +12659,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                     "
   ",
                                     [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
-                                    "
-  ",
-                                    [Function],
-                                    "
-  ",
                                     "
   ",
                                     [Function],
@@ -15211,22 +13029,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   & {
     box-sizing: border-box;
   }
-  ",
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  "
+
   ",
                                   [Function],
                                   "
@@ -15241,85 +13044,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                   "
   ",
                                   [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
-                                  "
-  ",
-                                  [Function],
-                                  "
-  ",
                                   "
   ",
                                   [Function],
@@ -15656,22 +13380,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   & {
     box-sizing: border-box;
   }
-  ",
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                "
+
   ",
                                 [Function],
                                 "
@@ -15686,85 +13395,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                 "
   ",
                                 [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                "
-  ",
-                                [Function],
-                                "
-  ",
                                 "
   ",
                                 [Function],
@@ -16872,22 +14502,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   & {
     box-sizing: border-box;
   }
-  ",
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      "
+
   ",
                                       [Function],
                                       "
@@ -16902,85 +14517,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                       "
   ",
                                       [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
-                                      "
-  ",
-                                      [Function],
-                                      "
-  ",
                                       "
   ",
                                       [Function],
@@ -17289,22 +14825,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   & {
     box-sizing: border-box;
   }
-  ",
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        "
+
   ",
                                         [Function],
                                         "
@@ -17319,85 +14840,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                         "
   ",
                                         [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
                                         "
   ",
                                         [Function],
@@ -17722,22 +15164,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   & {
     box-sizing: border-box;
   }
-  ",
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          "
+
   ",
                                           [Function],
                                           "
@@ -17752,85 +15179,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                           "
   ",
                                           [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
                                           "
   ",
                                           [Function],
@@ -18201,22 +15549,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   & {
     box-sizing: border-box;
   }
-  ",
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        "
+
   ",
                                         [Function],
                                         "
@@ -18231,85 +15564,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                         "
   ",
                                         [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
                                         "
   ",
                                         [Function],
@@ -18600,22 +15854,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   & {
     box-sizing: border-box;
   }
-  ",
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          "
+
   ",
                                           [Function],
                                           "
@@ -18630,85 +15869,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                           "
   ",
                                           [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
                                           "
   ",
                                           [Function],
@@ -19033,22 +16193,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   & {
     box-sizing: border-box;
   }
-  ",
-                                            "
-  ",
-                                            [Function],
-                                            "
-  ",
-                                            [Function],
-                                            "
-  ",
-                                            [Function],
-                                            "
-  ",
-                                            [Function],
-                                            "
-  ",
-                                            "
+
   ",
                                             [Function],
                                             "
@@ -19063,85 +16208,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                             "
   ",
                                             [Function],
-                                            "
-  ",
-                                            [Function],
-                                            "
-  ",
-                                            [Function],
-                                            "
-  ",
-                                            "
-  ",
-                                            [Function],
-                                            "
-  ",
-                                            [Function],
-                                            "
-  ",
-                                            [Function],
-                                            "
-  ",
-                                            [Function],
-                                            "
-  ",
-                                            [Function],
-                                            "
-  ",
-                                            [Function],
-                                            "
-  ",
-                                            [Function],
-                                            "
-  ",
-                                            [Function],
-                                            "
-  ",
-                                            [Function],
-                                            "
-  ",
-                                            [Function],
-                                            "
-  ",
-                                            [Function],
-                                            "
-  ",
-                                            "
-  ",
-                                            [Function],
-                                            "
-  ",
-                                            [Function],
-                                            "
-  ",
-                                            [Function],
-                                            "
-  ",
-                                            [Function],
-                                            "
-  ",
-                                            [Function],
-                                            "
-  ",
-                                            [Function],
-                                            "
-  ",
-                                            "
-  ",
-                                            [Function],
-                                            "
-  ",
-                                            [Function],
-                                            "
-  ",
-                                            [Function],
-                                            "
-  ",
-                                            "
-  ",
-                                            [Function],
-                                            "
-  ",
                                             "
   ",
                                             [Function],
@@ -19512,22 +16578,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   & {
     box-sizing: border-box;
   }
-  ",
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          "
+
   ",
                                           [Function],
                                           "
@@ -19542,85 +16593,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                           "
   ",
                                           [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
-                                          "
-  ",
-                                          [Function],
-                                          "
-  ",
                                           "
   ",
                                           [Function],
@@ -19957,22 +16929,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   & {
     box-sizing: border-box;
   }
-  ",
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        "
+
   ",
                                         [Function],
                                         "
@@ -19987,85 +16944,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                         "
   ",
                                         [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
-                                        "
-  ",
-                                        [Function],
-                                        "
-  ",
                                         "
   ",
                                         [Function],
@@ -20693,22 +17571,7 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
   & {
     box-sizing: border-box;
   }
-  ",
-          "
-  ",
-          [Function],
-          "
-  ",
-          [Function],
-          "
-  ",
-          [Function],
-          "
-  ",
-          [Function],
-          "
-  ",
-          "
+
   ",
           [Function],
           "
@@ -20723,85 +17586,6 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
           "
   ",
           [Function],
-          "
-  ",
-          [Function],
-          "
-  ",
-          [Function],
-          "
-  ",
-          "
-  ",
-          [Function],
-          "
-  ",
-          [Function],
-          "
-  ",
-          [Function],
-          "
-  ",
-          [Function],
-          "
-  ",
-          [Function],
-          "
-  ",
-          [Function],
-          "
-  ",
-          [Function],
-          "
-  ",
-          [Function],
-          "
-  ",
-          [Function],
-          "
-  ",
-          [Function],
-          "
-  ",
-          [Function],
-          "
-  ",
-          "
-  ",
-          [Function],
-          "
-  ",
-          [Function],
-          "
-  ",
-          [Function],
-          "
-  ",
-          [Function],
-          "
-  ",
-          [Function],
-          "
-  ",
-          [Function],
-          "
-  ",
-          "
-  ",
-          [Function],
-          "
-  ",
-          [Function],
-          "
-  ",
-          [Function],
-          "
-  ",
-          "
-  ",
-          [Function],
-          "
-  ",
           "
   ",
           [Function],
@@ -20873,6 +17657,68 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
       "foldedComponentIds": Array [
         "sc-bdVaJa",
       ],
+      "propTypes": Object {
+        "alignContent": [Function],
+        "alignItems": [Function],
+        "alignSelf": [Function],
+        "backgroundColor": [Function],
+        "bg": [Function],
+        "border": [Function],
+        "borderBottom": [Function],
+        "borderColor": [Function],
+        "borderLeft": [Function],
+        "borderRadius": [Function],
+        "borderRight": [Function],
+        "borderStyle": [Function],
+        "borderTop": [Function],
+        "borderWidth": [Function],
+        "bottom": [Function],
+        "boxShadow": [Function],
+        "color": [Function],
+        "display": [Function],
+        "flex": [Function],
+        "flexBasis": [Function],
+        "flexDirection": [Function],
+        "flexWrap": [Function],
+        "height": [Function],
+        "justifyContent": [Function],
+        "justifyItems": [Function],
+        "justifySelf": [Function],
+        "left": [Function],
+        "m": [Function],
+        "margin": [Function],
+        "marginBottom": [Function],
+        "marginLeft": [Function],
+        "marginRight": [Function],
+        "marginTop": [Function],
+        "maxHeight": [Function],
+        "maxWidth": [Function],
+        "mb": [Function],
+        "minHeight": [Function],
+        "minWidth": [Function],
+        "ml": [Function],
+        "mr": [Function],
+        "mt": [Function],
+        "order": [Function],
+        "overflow": [Function],
+        "p": [Function],
+        "padding": [Function],
+        "paddingBottom": [Function],
+        "paddingLeft": [Function],
+        "paddingRight": [Function],
+        "paddingTop": [Function],
+        "pb": [Function],
+        "pl": [Function],
+        "position": [Function],
+        "pr": [Function],
+        "pt": [Function],
+        "right": [Function],
+        "theme": [Function],
+        "top": [Function],
+        "verticalAlign": [Function],
+        "width": [Function],
+        "zIndex": [Function],
+      },
       "render": [Function],
       "styledComponentId": "sc-enOJk",
       "target": "div",
@@ -20891,7 +17737,6 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
     className="iconBox"
     flex="0 0"
     mr={2}
-    textAlign="left"
     theme={
       Object {
         "borderWidths": Array [
@@ -21138,7 +17983,6 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
   <Styled(Box)
     flex="1 1 auto"
     mx={2}
-    textAlign="left"
     theme={
       Object {
         "borderWidths": Array [
@@ -22421,22 +19265,7 @@ exports[`ToastMessage component sanity matches generic snapshot 1`] = `
   & {
     box-sizing: border-box;
   }
-  ",
-          "
-  ",
-          [Function],
-          "
-  ",
-          [Function],
-          "
-  ",
-          [Function],
-          "
-  ",
-          [Function],
-          "
-  ",
-          "
+
   ",
           [Function],
           "
@@ -22451,85 +19280,6 @@ exports[`ToastMessage component sanity matches generic snapshot 1`] = `
           "
   ",
           [Function],
-          "
-  ",
-          [Function],
-          "
-  ",
-          [Function],
-          "
-  ",
-          "
-  ",
-          [Function],
-          "
-  ",
-          [Function],
-          "
-  ",
-          [Function],
-          "
-  ",
-          [Function],
-          "
-  ",
-          [Function],
-          "
-  ",
-          [Function],
-          "
-  ",
-          [Function],
-          "
-  ",
-          [Function],
-          "
-  ",
-          [Function],
-          "
-  ",
-          [Function],
-          "
-  ",
-          [Function],
-          "
-  ",
-          "
-  ",
-          [Function],
-          "
-  ",
-          [Function],
-          "
-  ",
-          [Function],
-          "
-  ",
-          [Function],
-          "
-  ",
-          [Function],
-          "
-  ",
-          [Function],
-          "
-  ",
-          "
-  ",
-          [Function],
-          "
-  ",
-          [Function],
-          "
-  ",
-          [Function],
-          "
-  ",
-          "
-  ",
-          [Function],
-          "
-  ",
           "
   ",
           [Function],
@@ -22601,6 +19351,68 @@ exports[`ToastMessage component sanity matches generic snapshot 1`] = `
       "foldedComponentIds": Array [
         "sc-bdVaJa",
       ],
+      "propTypes": Object {
+        "alignContent": [Function],
+        "alignItems": [Function],
+        "alignSelf": [Function],
+        "backgroundColor": [Function],
+        "bg": [Function],
+        "border": [Function],
+        "borderBottom": [Function],
+        "borderColor": [Function],
+        "borderLeft": [Function],
+        "borderRadius": [Function],
+        "borderRight": [Function],
+        "borderStyle": [Function],
+        "borderTop": [Function],
+        "borderWidth": [Function],
+        "bottom": [Function],
+        "boxShadow": [Function],
+        "color": [Function],
+        "display": [Function],
+        "flex": [Function],
+        "flexBasis": [Function],
+        "flexDirection": [Function],
+        "flexWrap": [Function],
+        "height": [Function],
+        "justifyContent": [Function],
+        "justifyItems": [Function],
+        "justifySelf": [Function],
+        "left": [Function],
+        "m": [Function],
+        "margin": [Function],
+        "marginBottom": [Function],
+        "marginLeft": [Function],
+        "marginRight": [Function],
+        "marginTop": [Function],
+        "maxHeight": [Function],
+        "maxWidth": [Function],
+        "mb": [Function],
+        "minHeight": [Function],
+        "minWidth": [Function],
+        "ml": [Function],
+        "mr": [Function],
+        "mt": [Function],
+        "order": [Function],
+        "overflow": [Function],
+        "p": [Function],
+        "padding": [Function],
+        "paddingBottom": [Function],
+        "paddingLeft": [Function],
+        "paddingRight": [Function],
+        "paddingTop": [Function],
+        "pb": [Function],
+        "pl": [Function],
+        "position": [Function],
+        "pr": [Function],
+        "pt": [Function],
+        "right": [Function],
+        "theme": [Function],
+        "top": [Function],
+        "verticalAlign": [Function],
+        "width": [Function],
+        "zIndex": [Function],
+      },
       "render": [Function],
       "styledComponentId": "sc-enOJk",
       "target": "div",
@@ -22618,7 +19430,6 @@ exports[`ToastMessage component sanity matches generic snapshot 1`] = `
   <Styled(Box)
     flex="1 1 auto"
     mx={2}
-    textAlign="left"
     theme={
       Object {
         "borderWidths": Array [
@@ -23391,7 +20202,6 @@ exports[`ToastMessage component sanity matches processing snapshot 1`] = `
     className="iconBox"
     flex="0 0"
     mr={2}
-    textAlign="left"
     theme={
       Object {
         "borderWidths": Array [
@@ -23643,7 +20453,6 @@ exports[`ToastMessage component sanity matches processing snapshot 1`] = `
   <Styled(Box)
     flex="1 1 auto"
     mx={2}
-    textAlign="left"
     theme={
       Object {
         "borderWidths": Array [
@@ -24416,7 +21225,6 @@ exports[`ToastMessage component sanity matches success snapshot 1`] = `
     className="iconBox"
     flex="0 0"
     mr={2}
-    textAlign="left"
     theme={
       Object {
         "borderWidths": Array [
@@ -24668,7 +21476,6 @@ exports[`ToastMessage component sanity matches success snapshot 1`] = `
   <Styled(Box)
     flex="1 1 auto"
     mx={2}
-    textAlign="left"
     theme={
       Object {
         "borderWidths": Array [
