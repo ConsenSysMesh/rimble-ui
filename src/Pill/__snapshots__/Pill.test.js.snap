@@ -12,6 +12,10 @@ exports[`Pill component sanity matches default snapshot 1`] = `
   display: -ms-inline-flexbox;
   display: inline-flex;
   height: 32px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   border-radius: 16px;
   border-radius: 16px;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
@@ -85,6 +89,10 @@ exports[`Pill component sanity matches themed snapshot 1`] = `
   display: -ms-inline-flexbox;
   display: inline-flex;
   height: 32px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   border-radius: 16px;
   border-radius: 16px;
   font-family: "Source Sans Pro",-apple-system,sans-serif;

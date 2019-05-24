@@ -7,6 +7,10 @@ exports[`Radio component sanity matches default snapshot 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   opacity: 1;
 }
 
@@ -130,6 +134,10 @@ exports[`Radio component sanity matches themed snapshot 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   opacity: 1;
 }
 

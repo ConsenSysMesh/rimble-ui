@@ -2,32 +2,31 @@
 
 exports[`Flex component sanity matches default snapshot 1`] = `
 .c0 {
+  box-sizing: border-box;
+}
+
+.c0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c0 {
-  box-sizing: border-box;
-}
-
 <div
   class="c0"
-  display="flex"
 />
 `;
 
 exports[`Flex component sanity matches themed snapshot 1`] = `
 .c1 {
+  box-sizing: border-box;
+}
+
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-}
-
-.c1 {
-  box-sizing: border-box;
 }
 
 .c0 {
@@ -41,7 +40,6 @@ exports[`Flex component sanity matches themed snapshot 1`] = `
 >
   <div
     class="c1"
-    display="flex"
   />
 </div>
 `;

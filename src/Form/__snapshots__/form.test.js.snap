@@ -22,6 +22,13 @@ exports[`Form component sanity matches themed snapshot 1`] = `
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
 }
 
 .c2 {
@@ -35,6 +42,10 @@ exports[`Form component sanity matches themed snapshot 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   opacity: 1;
 }
 
@@ -404,6 +415,13 @@ exports[`Form component sanity renders children elements 1`] = `
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
 }
 
 .c1 {
@@ -417,6 +435,10 @@ exports[`Form component sanity renders children elements 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   opacity: 1;
 }
 
