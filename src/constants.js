@@ -1,10 +1,7 @@
 import {
-  // util
   compose,
-  // common
   color,
   space,
-  // typography
   fontFamily,
   fontSize,
   fontWeight,

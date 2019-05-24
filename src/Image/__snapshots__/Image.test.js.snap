@@ -3,7 +3,8 @@
 exports[`Image component sanity matches default snapshot 1`] = `
 .c0 {
   display: block;
-  width: 100%;
+  height: auto;
+  max-width: 100%;
 }
 
 .c0 {
@@ -13,14 +14,15 @@ exports[`Image component sanity matches default snapshot 1`] = `
 <img
   class="c0"
   display="block"
-  width="100%"
+  height="auto"
 />
 `;
 
 exports[`Image component sanity matches themed snapshot 1`] = `
 .c1 {
   display: block;
-  width: 100%;
+  height: auto;
+  max-width: 100%;
 }
 
 .c1 {
@@ -39,7 +41,7 @@ exports[`Image component sanity matches themed snapshot 1`] = `
   <img
     class="c1"
     display="block"
-    width="100%"
+    height="auto"
   />
 </div>
 `;
