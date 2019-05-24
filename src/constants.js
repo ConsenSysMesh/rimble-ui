@@ -92,16 +92,19 @@ export const BORDERS = compose(
   boxShadow
 );
 
-export const FLEXBOX = compose(
-  // container
+export const FLEX_CONTAINER = compose(
+  // flex container
   flexBasis,
   flexDirection,
   flexWrap,
   alignContent,
   alignItems,
   justifyContent,
-  justifyItems,
-  // item
+  justifyItems
+);
+
+export const FLEX_ITEM = compose(
+  // flex item
   flex,
   justifySelf,
   alignSelf,
