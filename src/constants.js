@@ -1,13 +1,27 @@
 import {
+  // util
   compose,
+  // common
   color,
   space,
+  // typography
   fontFamily,
   fontSize,
   fontWeight,
   lineHeight,
   textAlign,
   letterSpacing,
+  // layout
+  display,
+  size,
+  width,
+  height,
+  minWidth,
+  minHeight,
+  maxWidth,
+  maxHeight,
+  overflow,
+  verticalAlign,
 } from 'styled-system';
 
 export const COMMON = compose(
@@ -22,4 +36,17 @@ export const TYPOGRAPHY = compose(
   lineHeight,
   textAlign,
   letterSpacing
+);
+
+export const LAYOUT = compose(
+  display,
+  size,
+  width,
+  height,
+  minWidth,
+  minHeight,
+  maxWidth,
+  maxHeight,
+  overflow,
+  verticalAlign
 );
