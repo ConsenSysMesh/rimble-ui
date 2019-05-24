@@ -1026,9 +1026,6 @@ exports[`ToastMessage component sanity matches failure snapshot 1`] = `
 exports[`ToastMessage component sanity matches full component mount snapshot 1`] = `
 .c2 {
   margin-right: 8px;
-  -webkit-flex: 0 0;
-  -ms-flex: 0 0;
-  flex: 0 0;
 }
 
 .c2 {
@@ -1066,9 +1063,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
 .c8 {
   color: #3F3D4B;
   margin-right: 8px;
-  -webkit-flex: 0 1;
-  -ms-flex: 0 1;
-  flex: 0 1;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -1116,9 +1110,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
 .c4 {
   margin-left: 8px;
   margin-right: 8px;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
 }
 
 .c4 {
@@ -1141,13 +1132,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row nowrap;
-  -ms-flex-direction: row nowrap;
-  flex-direction: row nowrap;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   border: 1px solid transparent;
   border-color: #D6D6D6;
   border-color: #D6D6D6;
@@ -2299,9 +2283,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   ",
                         [Function],
                         "
-  ",
-                        [Function],
-                        "
 ",
                         "
   & {
@@ -2370,9 +2351,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                       "sc-bdVaJa",
                     ],
                     "propTypes": Object {
-                      "alignContent": [Function],
-                      "alignItems": [Function],
-                      "alignSelf": [Function],
                       "backgroundColor": [Function],
                       "bg": [Function],
                       "border": [Function],
@@ -2388,14 +2366,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                       "boxShadow": [Function],
                       "color": [Function],
                       "display": [Function],
-                      "flex": [Function],
-                      "flexBasis": [Function],
-                      "flexDirection": [Function],
-                      "flexWrap": [Function],
                       "height": [Function],
-                      "justifyContent": [Function],
-                      "justifyItems": [Function],
-                      "justifySelf": [Function],
                       "left": [Function],
                       "m": [Function],
                       "margin": [Function],
@@ -2411,7 +2382,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                       "ml": [Function],
                       "mr": [Function],
                       "mt": [Function],
-                      "order": [Function],
                       "overflow": [Function],
                       "p": [Function],
                       "padding": [Function],
@@ -2728,9 +2698,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   ",
                               [Function],
                               "
-  ",
-                              [Function],
-                              "
 ",
                             ],
                           },
@@ -2979,9 +2946,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                           "displayName": "Box",
                           "foldedComponentIds": Array [],
                           "propTypes": Object {
-                            "alignContent": [Function],
-                            "alignItems": [Function],
-                            "alignSelf": [Function],
                             "backgroundColor": [Function],
                             "bg": [Function],
                             "border": [Function],
@@ -2997,14 +2961,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                             "boxShadow": [Function],
                             "color": [Function],
                             "display": [Function],
-                            "flex": [Function],
-                            "flexBasis": [Function],
-                            "flexDirection": [Function],
-                            "flexWrap": [Function],
                             "height": [Function],
-                            "justifyContent": [Function],
-                            "justifyItems": [Function],
-                            "justifySelf": [Function],
                             "left": [Function],
                             "m": [Function],
                             "margin": [Function],
@@ -3020,7 +2977,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                             "ml": [Function],
                             "mr": [Function],
                             "mt": [Function],
-                            "order": [Function],
                             "overflow": [Function],
                             "p": [Function],
                             "padding": [Function],
@@ -3575,9 +3531,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   ",
                               [Function],
                               "
-  ",
-                              [Function],
-                              "
 ",
                               "
   & {
@@ -3836,9 +3789,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                             "sc-bdVaJa",
                           ],
                           "propTypes": Object {
-                            "alignContent": [Function],
-                            "alignItems": [Function],
-                            "alignSelf": [Function],
                             "backgroundColor": [Function],
                             "bg": [Function],
                             "border": [Function],
@@ -3854,14 +3804,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                             "boxShadow": [Function],
                             "color": [Function],
                             "display": [Function],
-                            "flex": [Function],
-                            "flexBasis": [Function],
-                            "flexDirection": [Function],
-                            "flexWrap": [Function],
                             "height": [Function],
-                            "justifyContent": [Function],
-                            "justifyItems": [Function],
-                            "justifySelf": [Function],
                             "left": [Function],
                             "m": [Function],
                             "margin": [Function],
@@ -3877,7 +3820,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                             "ml": [Function],
                             "mr": [Function],
                             "mt": [Function],
-                            "order": [Function],
                             "overflow": [Function],
                             "p": [Function],
                             "padding": [Function],
@@ -4437,9 +4379,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   ",
                                     [Function],
                                     "
-  ",
-                                    [Function],
-                                    "
 ",
                                     "
   ",
@@ -4725,9 +4664,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
     box-sizing: border-box;
   }
 
-  ",
-                                      [Function],
-                                      "
   ",
                                       [Function],
                                       "
@@ -5064,9 +5000,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
     box-sizing: border-box;
   }
 
-  ",
-                                        [Function],
-                                        "
   ",
                                         [Function],
                                         "
@@ -5464,9 +5397,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   ",
                                       [Function],
                                       "
-  ",
-                                      [Function],
-                                      "
 ",
                                       "
   ",
@@ -5754,9 +5684,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
     box-sizing: border-box;
   }
 
-  ",
-                                        [Function],
-                                        "
   ",
                                         [Function],
                                         "
@@ -6093,9 +6020,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
     box-sizing: border-box;
   }
 
-  ",
-                                          [Function],
-                                          "
   ",
                                           [Function],
                                           "
@@ -6493,9 +6417,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   ",
                                         [Function],
                                         "
-  ",
-                                        [Function],
-                                        "
 ",
                                         "
   ",
@@ -6829,9 +6750,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
     box-sizing: border-box;
   }
 
-  ",
-                                      [Function],
-                                      "
   ",
                                       [Function],
                                       "
@@ -7710,9 +7628,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   ",
                                     [Function],
                                     "
-  ",
-                                    [Function],
-                                    "
 ",
                                     "
   ",
@@ -7998,9 +7913,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
     box-sizing: border-box;
   }
 
-  ",
-                                      [Function],
-                                      "
   ",
                                       [Function],
                                       "
@@ -8337,9 +8249,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
     box-sizing: border-box;
   }
 
-  ",
-                                        [Function],
-                                        "
   ",
                                         [Function],
                                         "
@@ -8737,9 +8646,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   ",
                                       [Function],
                                       "
-  ",
-                                      [Function],
-                                      "
 ",
                                       "
   ",
@@ -9027,9 +8933,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
     box-sizing: border-box;
   }
 
-  ",
-                                        [Function],
-                                        "
   ",
                                         [Function],
                                         "
@@ -9366,9 +9269,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
     box-sizing: border-box;
   }
 
-  ",
-                                          [Function],
-                                          "
   ",
                                           [Function],
                                           "
@@ -9766,9 +9666,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   ",
                                         [Function],
                                         "
-  ",
-                                        [Function],
-                                        "
 ",
                                         "
   ",
@@ -10102,9 +9999,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
     box-sizing: border-box;
   }
 
-  ",
-                                      [Function],
-                                      "
   ",
                                       [Function],
                                       "
@@ -10989,9 +10883,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   ",
                               [Function],
                               "
-  ",
-                              [Function],
-                              "
 ",
                               "
   ",
@@ -11277,9 +11168,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
     box-sizing: border-box;
   }
 
-  ",
-                                [Function],
-                                "
   ",
                                 [Function],
                                 "
@@ -11616,9 +11504,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
     box-sizing: border-box;
   }
 
-  ",
-                                  [Function],
-                                  "
   ",
                                   [Function],
                                   "
@@ -12016,9 +11901,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   ",
                                 [Function],
                                 "
-  ",
-                                [Function],
-                                "
 ",
                                 "
   ",
@@ -12306,9 +12188,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
     box-sizing: border-box;
   }
 
-  ",
-                                  [Function],
-                                  "
   ",
                                   [Function],
                                   "
@@ -12645,9 +12524,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
     box-sizing: border-box;
   }
 
-  ",
-                                    [Function],
-                                    "
   ",
                                     [Function],
                                     "
@@ -13045,9 +12921,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   ",
                                   [Function],
                                   "
-  ",
-                                  [Function],
-                                  "
 ",
                                   "
   ",
@@ -13381,9 +13254,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
     box-sizing: border-box;
   }
 
-  ",
-                                [Function],
-                                "
   ",
                                 [Function],
                                 "
@@ -14518,9 +14388,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   ",
                                       [Function],
                                       "
-  ",
-                                      [Function],
-                                      "
 ",
                                       "
   ",
@@ -14826,9 +14693,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
     box-sizing: border-box;
   }
 
-  ",
-                                        [Function],
-                                        "
   ",
                                         [Function],
                                         "
@@ -15165,9 +15029,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
     box-sizing: border-box;
   }
 
-  ",
-                                          [Function],
-                                          "
   ",
                                           [Function],
                                           "
@@ -15565,9 +15426,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   ",
                                         [Function],
                                         "
-  ",
-                                        [Function],
-                                        "
 ",
                                         "
   ",
@@ -15855,9 +15713,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
     box-sizing: border-box;
   }
 
-  ",
-                                          [Function],
-                                          "
   ",
                                           [Function],
                                           "
@@ -16194,9 +16049,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
     box-sizing: border-box;
   }
 
-  ",
-                                            [Function],
-                                            "
   ",
                                             [Function],
                                             "
@@ -16594,9 +16446,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   ",
                                           [Function],
                                           "
-  ",
-                                          [Function],
-                                          "
 ",
                                           "
   ",
@@ -16930,9 +16779,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
     box-sizing: border-box;
   }
 
-  ",
-                                        [Function],
-                                        "
   ",
                                         [Function],
                                         "
@@ -17587,9 +17433,6 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
   ",
           [Function],
           "
-  ",
-          [Function],
-          "
 ",
           "
   & {
@@ -17658,9 +17501,6 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
         "sc-bdVaJa",
       ],
       "propTypes": Object {
-        "alignContent": [Function],
-        "alignItems": [Function],
-        "alignSelf": [Function],
         "backgroundColor": [Function],
         "bg": [Function],
         "border": [Function],
@@ -17676,14 +17516,7 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
         "boxShadow": [Function],
         "color": [Function],
         "display": [Function],
-        "flex": [Function],
-        "flexBasis": [Function],
-        "flexDirection": [Function],
-        "flexWrap": [Function],
         "height": [Function],
-        "justifyContent": [Function],
-        "justifyItems": [Function],
-        "justifySelf": [Function],
         "left": [Function],
         "m": [Function],
         "margin": [Function],
@@ -17699,7 +17532,6 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
         "ml": [Function],
         "mr": [Function],
         "mt": [Function],
-        "order": [Function],
         "overflow": [Function],
         "p": [Function],
         "padding": [Function],
@@ -19281,9 +19113,6 @@ exports[`ToastMessage component sanity matches generic snapshot 1`] = `
   ",
           [Function],
           "
-  ",
-          [Function],
-          "
 ",
           "
   & {
@@ -19352,9 +19181,6 @@ exports[`ToastMessage component sanity matches generic snapshot 1`] = `
         "sc-bdVaJa",
       ],
       "propTypes": Object {
-        "alignContent": [Function],
-        "alignItems": [Function],
-        "alignSelf": [Function],
         "backgroundColor": [Function],
         "bg": [Function],
         "border": [Function],
@@ -19370,14 +19196,7 @@ exports[`ToastMessage component sanity matches generic snapshot 1`] = `
         "boxShadow": [Function],
         "color": [Function],
         "display": [Function],
-        "flex": [Function],
-        "flexBasis": [Function],
-        "flexDirection": [Function],
-        "flexWrap": [Function],
         "height": [Function],
-        "justifyContent": [Function],
-        "justifyItems": [Function],
-        "justifySelf": [Function],
         "left": [Function],
         "m": [Function],
         "margin": [Function],
@@ -19393,7 +19212,6 @@ exports[`ToastMessage component sanity matches generic snapshot 1`] = `
         "ml": [Function],
         "mr": [Function],
         "mt": [Function],
-        "order": [Function],
         "overflow": [Function],
         "p": [Function],
         "padding": [Function],
