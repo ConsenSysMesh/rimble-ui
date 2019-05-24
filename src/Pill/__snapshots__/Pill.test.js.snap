@@ -19,13 +19,18 @@ exports[`Pill component sanity matches default snapshot 1`] = `
   align-items: center;
   border-radius: 16px;
   border-radius: 16px;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  color: #3259D6;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 14px;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  line-height: 1;
 }
 
 .c0 {
@@ -92,13 +97,18 @@ exports[`Pill component sanity matches themed snapshot 1`] = `
   align-items: center;
   border-radius: 16px;
   border-radius: 16px;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  color: #3259D6;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 14px;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  line-height: 1;
 }
 
 .c1 {

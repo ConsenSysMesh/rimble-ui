@@ -170,11 +170,13 @@ exports[`PublicAddress component sanity matches default snapshot 1`] = `
   color: #3F3D4B;
   font-size: 14px;
   text-align: left;
-  font-size: 14px;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-size: 14px;
   font-weight: 600;
-  text-align: left;
   line-height: 1.5;
+  text-align: left;
+  color: #3F3D4B;
+  margin-bottom: 8px;
 }
 
 .c1 {
@@ -492,11 +494,13 @@ exports[`PublicAddress component sanity matches themed snapshot 1`] = `
   color: #3F3D4B;
   font-size: 14px;
   text-align: left;
-  font-size: 14px;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-size: 14px;
   font-weight: 600;
-  text-align: left;
   line-height: 1.5;
+  text-align: left;
+  color: #3F3D4B;
+  margin-bottom: 8px;
 }
 
 .c2 {

@@ -1,55 +1,27 @@
 import React from 'react';
-import styled from 'styled-components';
 import PropTypes from 'prop-types';
-
-import {
-  display,
-  fontSize,
-  fontFamily,
-  fontWeight,
-  fontStyle,
-  textAlign,
-  lineHeight,
-  letterSpacing,
-} from 'styled-system';
-
+import styled from 'styled-components';
+import { display } from 'styled-system';
+import { COMMON, TYPOGRAPHY } from '../constants';
+import theme from '../theme';
 import Box from '../Box';
 
-import defaultTheme from '../theme';
-
 export const caps = props =>
-  props.caps
-    ? {
-        textTransform: 'uppercase',
-      }
-    : null;
-
-export const regular = props =>
-  props.regular ? { fontWeight: props.theme.fontWeights[1] } : null;
-
-export const bold = props =>
-  props.bold ? { fontWeight: props.theme.fontWeights[3] } : null;
+  props.caps ? { textTransform: 'uppercase' } : null;
 
 export const italic = props => (props.italic ? { fontStyle: 'italic' } : null);
 
 const Text = styled(Box)`
+  ${TYPOGRAPHY}
+  ${COMMON}
   ${display}
-  ${fontSize}
-  ${fontFamily}
-  ${fontWeight}
-  ${fontStyle}
-  ${textAlign}
-  ${lineHeight}
-  ${letterSpacing}
 
   ${caps}
-  ${regular}
-  ${bold}
   ${italic}
 `;
 
 Text.defaultProps = {
-  theme: defaultTheme,
+  theme,
   color: 'copyColor',
   fontFamily: 'sansSerif',
   fontSize: 2,
@@ -58,15 +30,31 @@ Text.defaultProps = {
   textAlign: 'left',
 };
 
+Text.propTypes = {
+  ...COMMON.propTypes,
+  ...TYPOGRAPHY.propTypes,
+  ...display.propTypes,
+  theme: PropTypes.object,
+};
+
 Text.displayName = 'Text';
 
-Text.span = Text.withComponent('span');
-Text.span.defaultProps = Text.defaultProps;
+Text.span = styled(Text)``;
+Text.span.defaultProps = {
+  ...Text.defaultProps,
+  as: 'span',
+};
 
-Text.p = Text.withComponent('p');
-Text.p.defaultProps = Text.defaultProps;
+Text.p = styled(Text)``;
+Text.p.defaultProps = {
+  ...Text.defaultProps,
+  as: 'p',
+};
 
-Text.s = Text.withComponent('s');
-Text.s.defaultProps = Text.defaultProps;
+Text.s = styled(Text)``;
+Text.s.defaultProps = {
+  ...Text.defaultProps,
+  as: 's',
+};
 
 export default Text;
