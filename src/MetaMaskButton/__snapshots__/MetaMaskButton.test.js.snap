@@ -17,7 +17,6 @@ exports[`MetaMaskButton component sanity matches default snapshot 1`] = `
   px={4}
   py={0}
   size="medium"
-  textAlign="left"
   theme={
     Object {
       "borderWidths": Array [

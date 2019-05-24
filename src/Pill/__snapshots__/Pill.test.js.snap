@@ -2,12 +2,11 @@
 
 exports[`Pill component sanity matches default snapshot 1`] = `
 .c0 {
+  color: #3259D6;
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 16px;
   padding-right: 16px;
-  color: #3259D6;
-  font-size: 14px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -80,12 +79,11 @@ exports[`Pill component sanity matches default snapshot 1`] = `
 
 exports[`Pill component sanity matches themed snapshot 1`] = `
 .c1 {
+  color: #3259D6;
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 16px;
   padding-right: 16px;
-  color: #3259D6;
-  font-size: 14px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
