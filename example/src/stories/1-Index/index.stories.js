@@ -150,6 +150,17 @@ storiesOf('Getting started', module)
           <br />
           <Heading>Change log</Heading>
 
+          <Heading.h6>0.9.0</Heading.h6>
+          <Text>
+            <ul>
+              <li>Refactored Box component to add overflow prop</li>
+              <li>Refactored Heading component to remove default margins</li>
+              <li>Refactored Text component to remove default margins</li>
+              <li>Bug fix for anchor elements inside Flash component</li>
+              <li>Removed selected props from Pill component</li>
+            </ul>
+          </Text>
+
           <Heading.h6>0.8.0</Heading.h6>
 
           <Text>
