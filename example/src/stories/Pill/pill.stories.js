@@ -7,33 +7,29 @@ import Documentation from './docs.md';
 
 import { Pill, Box, Text, Heading } from 'rimble-ui';
 
+Heading.defaultProps = {
+  ...Heading.defaultProps,
+  py: 3
+}
+
 storiesOf('Components/Pill', module).add(
   'Documentation',
   withDocs(Documentation, () => (
     <Box mx={3}>
       <Box>
-        <Heading.h3>Pill examples</Heading.h3>
+        <Heading fontSize={5}>Pill examples</Heading>
         <Text.p>Different ways to use the <code>{'Pill'}</code> component in your product.</Text.p>
       </Box>
 
       <Box>
-        <Heading.h4>Unselected</Heading.h4>
-      </Box>
-      <Box>
+        <Heading>Default: </Heading>
         <CodeBlock>
           <Pill>{'Pending'}</Pill>
         </CodeBlock>
       </Box>
 
       <Box>
-        <Heading.h4>Selected</Heading.h4>
-      </Box>
-      <CodeBlock>
-        <Pill selected={true}>{'Pending'}</Pill>
-      </CodeBlock>
-
-      <Box>
-        <Heading.h4>Custom color</Heading.h4>
+        <Heading>Custom color: </Heading>
         <CodeBlock>
           <Pill color={'primary'}>{'Pending'}</Pill>
         </CodeBlock>
@@ -43,7 +39,7 @@ storiesOf('Components/Pill', module).add(
         </CodeBlock>
 
         <CodeBlock>
-          <Pill selected={true} color={'green'}>
+          <Pill color={'green'}>
             {'Confirmed'}
           </Pill>
         </CodeBlock>
