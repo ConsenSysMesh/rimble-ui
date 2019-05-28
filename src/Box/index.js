@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { opacity } from 'styled-system';
 import { COMMON, LAYOUT, POSITION, BORDERS } from '../constants';
+
 import theme from '../theme';
 
 const Box = styled.div`

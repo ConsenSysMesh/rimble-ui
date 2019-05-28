@@ -41,9 +41,9 @@ class CodeBlock extends Component {
   };
   render() {
     return (
-      <Box mb={5} minWidth={'100%'}>
+      <Box mb={5} width={'100%'}>
         <Box>
-          {this.props.textOnly ? null : <Flex>{this.props.children}</Flex> }
+          {this.props.textOnly ? null : <Box>{this.props.children}</Box> }
 
           <Box
             position={'relative'}
