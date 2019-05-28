@@ -20,6 +20,7 @@ exports[`Pill component sanity matches default snapshot 1`] = `
   border-radius: 16px;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 14px;
+  font-weight: 400;
   line-height: 1;
   color: #3259D6;
   padding-top: 4px;
@@ -38,19 +39,8 @@ exports[`Pill component sanity matches default snapshot 1`] = `
 
 .c0 {
   position: relative;
-  cursor: pointer;
-  border: none;
-  border-color: none;
   background: none;
   overflow: hidden;
-}
-
-.c0:hover {
-  border-color: transparent;
-}
-
-.c0:hover::before {
-  opacity: 0.2;
 }
 
 .c0::before {
@@ -60,7 +50,6 @@ exports[`Pill component sanity matches default snapshot 1`] = `
   left: 0;
   right: 0;
   top: 0;
-  left: 0;
   height: 100%;
   width: 100%;
   background-color: currentColor;
@@ -73,6 +62,7 @@ exports[`Pill component sanity matches default snapshot 1`] = `
   display="inline-flex"
   font-family="sansSerif"
   font-size="1"
+  font-weight="2"
   height="2"
 />
 `;
@@ -97,6 +87,7 @@ exports[`Pill component sanity matches themed snapshot 1`] = `
   border-radius: 16px;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 14px;
+  font-weight: 400;
   line-height: 1;
   color: #3259D6;
   padding-top: 4px;
@@ -115,19 +106,8 @@ exports[`Pill component sanity matches themed snapshot 1`] = `
 
 .c1 {
   position: relative;
-  cursor: pointer;
-  border: none;
-  border-color: none;
   background: none;
   overflow: hidden;
-}
-
-.c1:hover {
-  border-color: transparent;
-}
-
-.c1:hover::before {
-  opacity: 0.2;
 }
 
 .c1::before {
@@ -137,7 +117,6 @@ exports[`Pill component sanity matches themed snapshot 1`] = `
   left: 0;
   right: 0;
   top: 0;
-  left: 0;
   height: 100%;
   width: 100%;
   background-color: currentColor;
@@ -159,6 +138,7 @@ exports[`Pill component sanity matches themed snapshot 1`] = `
     display="inline-flex"
     font-family="sansSerif"
     font-size="1"
+    font-weight="2"
     height="2"
   />
 </div>
