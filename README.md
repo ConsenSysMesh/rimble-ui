@@ -37,6 +37,14 @@ class Example extends Component {
 
 ### 0.8.0
 
+- Refactored Box component to add overflow prop
+- Refactored Heading component to remove default margins
+- Refactored Text component to remove default margins
+- Bug fix for anchor elements inside Flash component
+- Removed selected props from Pill component
+
+### 0.8.0
+
 - Refactored Button with Text and Outline as compounds of Button
 - Refactored MetaMaskButton and UPortButton to use Button as base
 - Added more colors to theme for success, warning, danger, info
