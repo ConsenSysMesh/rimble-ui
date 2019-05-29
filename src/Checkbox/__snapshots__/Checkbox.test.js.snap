@@ -11,6 +11,7 @@ exports[`Checkbox component sanity matches default snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  text-align: left;
   opacity: 1;
 }
 
@@ -19,21 +20,24 @@ exports[`Checkbox component sanity matches default snapshot 1`] = `
 }
 
 .c2 {
-  color: #3F3D4B;
   margin-left: 4px;
   margin-right: 8px;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  color: #3F3D4B;
   font-size: 14px;
-  font-weight: 600;
-  line-height: 1.5;
   text-align: left;
-  color: #3F3D4B;
-  margin-left: 4px;
-  margin-right: 8px;
+  font-size: 14px;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-weight: 600;
+  text-align: left;
+  line-height: 1.5;
 }
 
 .c2 {
   box-sizing: border-box;
+}
+
+.c1 {
+  text-align: left;
 }
 
 .c1 {
@@ -138,6 +142,7 @@ exports[`Checkbox component sanity matches themed snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  text-align: left;
   opacity: 1;
 }
 
@@ -146,21 +151,24 @@ exports[`Checkbox component sanity matches themed snapshot 1`] = `
 }
 
 .c3 {
-  color: #3F3D4B;
   margin-left: 4px;
   margin-right: 8px;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  color: #3F3D4B;
   font-size: 14px;
-  font-weight: 600;
-  line-height: 1.5;
   text-align: left;
-  color: #3F3D4B;
-  margin-left: 4px;
-  margin-right: 8px;
+  font-size: 14px;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-weight: 600;
+  text-align: left;
+  line-height: 1.5;
 }
 
 .c3 {
   box-sizing: border-box;
+}
+
+.c2 {
+  text-align: left;
 }
 
 .c2 {

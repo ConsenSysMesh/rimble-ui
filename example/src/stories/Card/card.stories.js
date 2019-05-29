@@ -49,9 +49,9 @@ storiesOf('Components/Card', module).add(
           <Icon name={'AccountBalanceWallet'} mr={2} />
           Connect your Wallet:
         </Text>
-        <MetaMaskButton.Outline>
+        <MetaMaskButton.outline fullWidth>
           Install MetaMask
-        </MetaMaskButton.Outline>
+        </MetaMaskButton.outline>
       </Card>
 
       <CodeBlock textOnly>

@@ -2,7 +2,7 @@
 
 exports[`Select component sanity matches default snapshot 1`] = `
 <styled.span>
-  <Styled(Styled(Box))
+  <Styled(Input)
     as="select"
     bg="white"
     border={1}
@@ -87,10 +87,8 @@ exports[`Select component sanity matches default snapshot 1`] = `
           ],
           "blue": "#3259D6",
           "copyColor": "#3F3D4B",
-          "danger": "#DC2C10",
           "dark-gray": "#333",
           "grey": "#CCC",
-          "info": "#36ADF1",
           "light-gray": "#eee",
           "light-silver": "#aaa",
           "mid-gray": "#555",
@@ -101,9 +99,7 @@ exports[`Select component sanity matches default snapshot 1`] = `
           "primary-dark": "#3e32a4",
           "primary-light": "#7165d7",
           "silver": "#999",
-          "success": "#28C081",
           "transparent": "transparent",
-          "warning": "#FD9D28",
           "white": "#fff",
           "whites": Array [
             "rgba(255,255,255,.0125)",
@@ -284,7 +280,7 @@ exports[`Select component sanity matches default snapshot 1`] = `
     >
       Ancient Paper
     </option>
-  </Styled(Styled(Box))>
+  </Styled(Input)>
   <ExpandMoreIcon
     size={24}
   />
@@ -306,19 +302,19 @@ exports[`Select component sanity matches themed snapshot 1`] = `
 }
 
 .c2 {
-  color: #3F3D4B;
-  background-color: #fff;
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 16px;
   padding-right: 16px;
+  color: #3F3D4B;
+  background-color: #fff;
+  font-size: 1rem;
   height: 3rem;
   border: 1px solid transparent;
   border-color: #CCC;
   border-radius: 4px;
   border-color: #CCC;
   border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-size: 1rem;
   font-family: "Source Sans Pro",-apple-system,sans-serif;

@@ -1,8 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import theme from '../theme';
+
 import Box from '../Box';
+
+import defaultTheme from '../theme';
 
 const Image = styled(Box)`
   & {
@@ -10,16 +11,10 @@ const Image = styled(Box)`
 `;
 
 Image.defaultProps = {
-  theme,
+  theme: defaultTheme,
   as: 'img',
   display: 'block',
-  maxWidth: '100%',
-  height: 'auto',
-};
-
-Image.propTypes = {
-  ...Box.propTypes,
-  theme: PropTypes.object,
+  width: '100%',
 };
 
 Image.displayName = 'Image';
