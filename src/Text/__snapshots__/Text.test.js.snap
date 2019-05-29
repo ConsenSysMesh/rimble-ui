@@ -3,12 +3,13 @@
 exports[`Text component sanity matches default snapshot 1`] = `
 .c0 {
   color: #3F3D4B;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
   text-align: left;
-  color: #3F3D4B;
+  font-size: 16px;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-weight: 400;
+  text-align: left;
+  line-height: 1.5;
 }
 
 .c0 {
@@ -27,12 +28,13 @@ exports[`Text component sanity matches default snapshot 1`] = `
 exports[`Text component sanity matches themed snapshot 1`] = `
 .c1 {
   color: #3F3D4B;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
   text-align: left;
-  color: #3F3D4B;
+  font-size: 16px;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-weight: 400;
+  text-align: left;
+  line-height: 1.5;
 }
 
 .c1 {

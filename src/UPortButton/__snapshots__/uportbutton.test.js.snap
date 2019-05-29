@@ -17,6 +17,7 @@ exports[`UPortButton component sanity matches default snapshot 1`] = `
   px={4}
   py={0}
   size="medium"
+  textAlign="left"
   theme={
     Object {
       "borderWidths": Array [
@@ -81,10 +82,8 @@ exports[`UPortButton component sanity matches default snapshot 1`] = `
         ],
         "blue": "#3259D6",
         "copyColor": "#3F3D4B",
-        "danger": "#DC2C10",
         "dark-gray": "#333",
         "grey": "#CCC",
-        "info": "#36ADF1",
         "light-gray": "#eee",
         "light-silver": "#aaa",
         "mid-gray": "#555",
@@ -95,9 +94,7 @@ exports[`UPortButton component sanity matches default snapshot 1`] = `
         "primary-dark": "#3e32a4",
         "primary-light": "#7165d7",
         "silver": "#999",
-        "success": "#28C081",
         "transparent": "transparent",
-        "warning": "#FD9D28",
         "white": "#fff",
         "whites": Array [
           "rgba(255,255,255,.0125)",
@@ -338,10 +335,8 @@ exports[`UPortButton component sanity matches themed snapshot 1`] = `
         ],
         "blue": "#3259D6",
         "copyColor": "#3F3D4B",
-        "danger": "#DC2C10",
         "dark-gray": "#333",
         "grey": "#CCC",
-        "info": "#36ADF1",
         "light-gray": "#eee",
         "light-silver": "#aaa",
         "mid-gray": "#555",
@@ -352,9 +347,7 @@ exports[`UPortButton component sanity matches themed snapshot 1`] = `
         "primary-dark": "#3e32a4",
         "primary-light": "#7165d7",
         "silver": "#999",
-        "success": "#28C081",
         "transparent": "transparent",
-        "warning": "#FD9D28",
         "white": "#fff",
         "whites": Array [
           "rgba(255,255,255,.0125)",
@@ -583,10 +576,8 @@ exports[`UPortButton component sanity matches themed snapshot 1`] = `
           ],
           "blue": "#3259D6",
           "copyColor": "#3F3D4B",
-          "danger": "#DC2C10",
           "dark-gray": "#333",
           "grey": "#CCC",
-          "info": "#36ADF1",
           "light-gray": "#eee",
           "light-silver": "#aaa",
           "mid-gray": "#555",
@@ -597,9 +588,7 @@ exports[`UPortButton component sanity matches themed snapshot 1`] = `
           "primary-dark": "#3e32a4",
           "primary-light": "#7165d7",
           "silver": "#999",
-          "success": "#28C081",
           "transparent": "transparent",
-          "warning": "#FD9D28",
           "white": "#fff",
           "whites": Array [
             "rgba(255,255,255,.0125)",
@@ -842,10 +831,8 @@ exports[`UPortButton component sanity matches themed snapshot 1`] = `
             ],
             "blue": "#3259D6",
             "copyColor": "#3F3D4B",
-            "danger": "#DC2C10",
             "dark-gray": "#333",
             "grey": "#CCC",
-            "info": "#36ADF1",
             "light-gray": "#eee",
             "light-silver": "#aaa",
             "mid-gray": "#555",
@@ -856,9 +843,7 @@ exports[`UPortButton component sanity matches themed snapshot 1`] = `
             "primary-dark": "#3e32a4",
             "primary-light": "#7165d7",
             "silver": "#999",
-            "success": "#28C081",
             "transparent": "transparent",
-            "warning": "#FD9D28",
             "white": "#fff",
             "whites": Array [
               "rgba(255,255,255,.0125)",

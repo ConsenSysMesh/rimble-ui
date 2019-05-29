@@ -2,6 +2,10 @@
 
 exports[`Box component sanity matches default snapshot 1`] = `
 .c0 {
+  text-align: left;
+}
+
+.c0 {
   box-sizing: border-box;
 }
 
@@ -11,6 +15,10 @@ exports[`Box component sanity matches default snapshot 1`] = `
 `;
 
 exports[`Box component sanity matches themed snapshot 1`] = `
+.c1 {
+  text-align: left;
+}
+
 .c1 {
   box-sizing: border-box;
 }

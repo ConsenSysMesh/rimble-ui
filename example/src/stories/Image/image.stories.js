@@ -13,9 +13,11 @@ storiesOf('Components/Image', module).add(
     <Box mx={3}>
       <CodeBlock>
         <Image
-          src="https://source.unsplash.com/random/1024x768?q=20"
-          alt="random unsplash image"
+          src="https://source.unsplash.com/random/1280x720"
           borderRadius={8}
+          alt="random unsplash image"
+          width={'100%'}
+          height={'auto'}
         />
       </CodeBlock>
     </Box>

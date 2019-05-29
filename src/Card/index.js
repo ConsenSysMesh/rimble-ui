@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { textAlign } from 'styled-system';
-
-import defaultTheme from '../theme';
 import Box from '../Box';
 
 const Card = styled(Box)`
@@ -18,7 +16,6 @@ const Card = styled(Box)`
 `;
 
 Card.defaultProps = {
-  theme: defaultTheme,
   position: 'relative',
   bg: 'white',
   border: 1,

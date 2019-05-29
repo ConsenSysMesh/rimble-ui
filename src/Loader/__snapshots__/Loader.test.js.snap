@@ -6,6 +6,7 @@ exports[`Loader component sanity matches default snapshot 1`] = `
   background-color: transparent;
   width: 1rem;
   height: 1rem;
+  text-align: left;
 }
 
 .c0 {
@@ -81,6 +82,7 @@ exports[`Loader component sanity matches themed snapshot 1`] = `
   background-color: transparent;
   width: 1rem;
   height: 1rem;
+  text-align: left;
 }
 
 .c1 {
