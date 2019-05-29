@@ -3,9 +3,8 @@ import styled from 'styled-components';
 import { variant } from 'styled-system';
 
 import defaultTheme from '../theme';
-import Box from '../Box';
 import Text from '../Text';
-import Link from '../Link';
+import Box from '../Box';
 
 let lastId = 0;
 const newID = (prefix = 'id') => `${prefix}${lastId++}`;
@@ -21,7 +20,7 @@ const StyledFlash = styled(Box)`
     position: relative;
   }
 
-  ${Link} {
+  a {
     font-size: inherit;
     cursor: pointer;
     color: inherit;

@@ -2,19 +2,20 @@
 
 exports[`Button Icon component sanity matches default snapshot 1`] = `
 .c0 {
-  color: #fff;
-  background-color: #999;
   margin: 0;
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 32px;
   padding-right: 32px;
+  color: #fff;
+  background-color: #999;
+  font-size: inherit;
   width: medium;
   height: medium;
   border: none;
   border-radius: 4px;
   border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+  text-align: left;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
   color: #fff;
@@ -53,6 +54,7 @@ exports[`Button Icon component sanity matches default snapshot 1`] = `
   text-decoration: none;
   text-align: center;
   overflow: hidden;
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -167,19 +169,20 @@ exports[`Button Icon component sanity matches default snapshot 1`] = `
 
 exports[`Button Icon component sanity matches themed snapshot 1`] = `
 .c1 {
-  color: #fff;
-  background-color: #999;
   margin: 0;
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 32px;
   padding-right: 32px;
+  color: #fff;
+  background-color: #999;
+  font-size: inherit;
   width: medium;
   height: medium;
   border: none;
   border-radius: 4px;
   border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+  text-align: left;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
   color: #fff;
@@ -218,6 +221,7 @@ exports[`Button Icon component sanity matches themed snapshot 1`] = `
   text-decoration: none;
   text-align: center;
   overflow: hidden;
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -342,19 +346,20 @@ exports[`Button Icon component sanity matches themed snapshot 1`] = `
 
 exports[`Button Icon only component sanity matches default snapshot 1`] = `
 .c0 {
-  color: #fff;
-  background-color: #999;
   margin: 0;
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 32px;
   padding-right: 32px;
+  color: #fff;
+  background-color: #999;
+  font-size: inherit;
   width: medium;
   height: medium;
   border: none;
   border-radius: 4px;
   border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+  text-align: left;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
   color: #fff;
@@ -393,6 +398,7 @@ exports[`Button Icon only component sanity matches default snapshot 1`] = `
   text-decoration: none;
   text-align: center;
   overflow: hidden;
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -508,19 +514,20 @@ exports[`Button Icon only component sanity matches default snapshot 1`] = `
 
 exports[`Button Icon with position prop component sanity matches default snapshot 1`] = `
 .c0 {
-  color: #fff;
-  background-color: #999;
   margin: 0;
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 32px;
   padding-right: 32px;
+  color: #fff;
+  background-color: #999;
+  font-size: inherit;
   width: medium;
   height: medium;
   border: none;
   border-radius: 4px;
   border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+  text-align: left;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
   color: #fff;
@@ -559,6 +566,7 @@ exports[`Button Icon with position prop component sanity matches default snapsho
   text-decoration: none;
   text-align: center;
   overflow: hidden;
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -673,19 +681,20 @@ exports[`Button Icon with position prop component sanity matches default snapsho
 
 exports[`Button component sanity matches default snapshot 1`] = `
 .c0 {
-  color: #fff;
-  background-color: #999;
   margin: 0;
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 32px;
   padding-right: 32px;
+  color: #fff;
+  background-color: #999;
+  font-size: inherit;
   width: medium;
   height: medium;
   border: none;
   border-radius: 4px;
   border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+  text-align: left;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
   color: #fff;
@@ -724,6 +733,7 @@ exports[`Button component sanity matches default snapshot 1`] = `
   text-decoration: none;
   text-align: center;
   overflow: hidden;
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -829,19 +839,20 @@ exports[`Button component sanity matches default snapshot 1`] = `
 
 exports[`Button component sanity matches themed snapshot 1`] = `
 .c1 {
-  color: #fff;
-  background-color: #999;
   margin: 0;
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 32px;
   padding-right: 32px;
+  color: #fff;
+  background-color: #999;
+  font-size: inherit;
   width: medium;
   height: medium;
   border: none;
   border-radius: 4px;
   border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+  text-align: left;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
   color: #fff;
@@ -880,6 +891,7 @@ exports[`Button component sanity matches themed snapshot 1`] = `
   text-decoration: none;
   text-align: center;
   overflow: hidden;
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -995,19 +1007,20 @@ exports[`Button component sanity matches themed snapshot 1`] = `
 
 exports[`Button disabled component sanity matches default snapshot 1`] = `
 .c0 {
-  color: #fff;
-  background-color: #999;
   margin: 0;
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 32px;
   padding-right: 32px;
+  color: #fff;
+  background-color: #999;
+  font-size: inherit;
   width: medium;
   height: medium;
   border: none;
   border-radius: 4px;
   border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+  text-align: left;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
   color: #fff;
@@ -1046,6 +1059,7 @@ exports[`Button disabled component sanity matches default snapshot 1`] = `
   text-decoration: none;
   text-align: center;
   overflow: hidden;
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1152,19 +1166,20 @@ exports[`Button disabled component sanity matches default snapshot 1`] = `
 
 exports[`Button disabled component sanity matches themed snapshot 1`] = `
 .c1 {
-  color: #fff;
-  background-color: #999;
   margin: 0;
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 32px;
   padding-right: 32px;
+  color: #fff;
+  background-color: #999;
+  font-size: inherit;
   width: medium;
   height: medium;
   border: none;
   border-radius: 4px;
   border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+  text-align: left;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
   color: #fff;
@@ -1203,6 +1218,7 @@ exports[`Button disabled component sanity matches themed snapshot 1`] = `
   text-decoration: none;
   text-align: center;
   overflow: hidden;
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1319,19 +1335,20 @@ exports[`Button disabled component sanity matches themed snapshot 1`] = `
 
 exports[`Button size variant component sanity matches default snapshot 1`] = `
 .c0 {
-  color: #fff;
-  background-color: #999;
   margin: 0;
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 32px;
   padding-right: 32px;
+  color: #fff;
+  background-color: #999;
+  font-size: inherit;
   width: small;
   height: small;
   border: none;
   border-radius: 4px;
   border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+  text-align: left;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
   color: #fff;
@@ -1371,6 +1388,7 @@ exports[`Button size variant component sanity matches default snapshot 1`] = `
   text-decoration: none;
   text-align: center;
   overflow: hidden;
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1476,19 +1494,20 @@ exports[`Button size variant component sanity matches default snapshot 1`] = `
 
 exports[`Button size variant component sanity matches default snapshot 2`] = `
 .c0 {
-  color: #fff;
-  background-color: #999;
   margin: 0;
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 32px;
   padding-right: 32px;
+  color: #fff;
+  background-color: #999;
+  font-size: inherit;
   width: large;
   height: large;
   border: none;
   border-radius: 4px;
   border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+  text-align: left;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
   color: #fff;
@@ -1527,6 +1546,7 @@ exports[`Button size variant component sanity matches default snapshot 2`] = `
   text-decoration: none;
   text-align: center;
   overflow: hidden;
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1632,19 +1652,20 @@ exports[`Button size variant component sanity matches default snapshot 2`] = `
 
 exports[`Button size variant component sanity matches themed snapshot 1`] = `
 .c1 {
-  color: #fff;
-  background-color: #999;
   margin: 0;
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 32px;
   padding-right: 32px;
+  color: #fff;
+  background-color: #999;
+  font-size: inherit;
   width: small;
   height: small;
   border: none;
   border-radius: 4px;
   border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+  text-align: left;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
   color: #fff;
@@ -1684,6 +1705,7 @@ exports[`Button size variant component sanity matches themed snapshot 1`] = `
   text-decoration: none;
   text-align: center;
   overflow: hidden;
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1799,19 +1821,20 @@ exports[`Button size variant component sanity matches themed snapshot 1`] = `
 
 exports[`Button size variant component sanity matches themed snapshot 2`] = `
 .c1 {
-  color: #fff;
-  background-color: #999;
   margin: 0;
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 32px;
   padding-right: 32px;
+  color: #fff;
+  background-color: #999;
+  font-size: inherit;
   width: large;
   height: large;
   border: none;
   border-radius: 4px;
   border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+  text-align: left;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
   color: #fff;
@@ -1850,6 +1873,7 @@ exports[`Button size variant component sanity matches themed snapshot 2`] = `
   text-decoration: none;
   text-align: center;
   overflow: hidden;
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1965,13 +1989,14 @@ exports[`Button size variant component sanity matches themed snapshot 2`] = `
 
 exports[`Button.Outline component sanity matches default snapshot 1`] = `
 .c0 {
-  color: #fff;
-  background-color: #999;
   margin: 0;
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 32px;
   padding-right: 32px;
+  color: #fff;
+  background-color: #999;
+  font-size: inherit;
   width: medium;
   height: medium;
   border: 1px solid transparent;
@@ -1979,7 +2004,7 @@ exports[`Button.Outline component sanity matches default snapshot 1`] = `
   border-radius: 4px;
   border-color: #CCC;
   border-radius: 4px;
-  box-shadow: 0;
+  text-align: left;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
   color: #fff;
@@ -2019,6 +2044,7 @@ exports[`Button.Outline component sanity matches default snapshot 1`] = `
   text-decoration: none;
   text-align: center;
   overflow: hidden;
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2149,13 +2175,14 @@ exports[`Button.Outline component sanity matches default snapshot 1`] = `
 
 exports[`Button.Outline component sanity matches themed snapshot 1`] = `
 .c1 {
-  color: #fff;
-  background-color: #999;
   margin: 0;
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 32px;
   padding-right: 32px;
+  color: #fff;
+  background-color: #999;
+  font-size: inherit;
   width: medium;
   height: medium;
   border: 1px solid transparent;
@@ -2163,7 +2190,7 @@ exports[`Button.Outline component sanity matches themed snapshot 1`] = `
   border-radius: 4px;
   border-color: #CCC;
   border-radius: 4px;
-  box-shadow: 0;
+  text-align: left;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
   color: #fff;
@@ -2203,6 +2230,7 @@ exports[`Button.Outline component sanity matches themed snapshot 1`] = `
   text-decoration: none;
   text-align: center;
   overflow: hidden;
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2343,16 +2371,18 @@ exports[`Button.Outline component sanity matches themed snapshot 1`] = `
 
 exports[`Button.Text component sanity matches default snapshot 1`] = `
 .c0 {
-  color: #fff;
-  background-color: #999;
   margin: 0;
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 8px;
   padding-right: 8px;
+  color: #fff;
+  background-color: #999;
+  font-size: inherit;
   width: medium;
   height: medium;
   border: none;
+  text-align: left;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
   color: #fff;
@@ -2389,6 +2419,7 @@ exports[`Button.Text component sanity matches default snapshot 1`] = `
   text-decoration: none;
   text-align: center;
   overflow: hidden;
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2479,16 +2510,18 @@ exports[`Button.Text component sanity matches default snapshot 1`] = `
 
 exports[`Button.Text component sanity matches themed snapshot 1`] = `
 .c1 {
-  color: #fff;
-  background-color: #999;
   margin: 0;
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 8px;
   padding-right: 8px;
+  color: #fff;
+  background-color: #999;
+  font-size: inherit;
   width: medium;
   height: medium;
   border: none;
+  text-align: left;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
   color: #fff;
@@ -2525,6 +2558,7 @@ exports[`Button.Text component sanity matches themed snapshot 1`] = `
   text-decoration: none;
   text-align: center;
   overflow: hidden;
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2625,13 +2659,14 @@ exports[`Button.Text component sanity matches themed snapshot 1`] = `
 
 exports[`Link Button Outline component sanity matches default snapshot 1`] = `
 .c0 {
-  color: #fff;
-  background-color: #999;
   margin: 0;
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 32px;
   padding-right: 32px;
+  color: #fff;
+  background-color: #999;
+  font-size: inherit;
   width: medium;
   height: medium;
   border: 1px solid transparent;
@@ -2639,7 +2674,7 @@ exports[`Link Button Outline component sanity matches default snapshot 1`] = `
   border-radius: 4px;
   border-color: #CCC;
   border-radius: 4px;
-  box-shadow: 0;
+  text-align: left;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
   color: #fff;
@@ -2679,6 +2714,7 @@ exports[`Link Button Outline component sanity matches default snapshot 1`] = `
   text-decoration: none;
   text-align: center;
   overflow: hidden;
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2814,19 +2850,20 @@ exports[`Link Button Outline component sanity matches default snapshot 1`] = `
 
 exports[`Link Button component sanity matches default snapshot 1`] = `
 .c0 {
-  color: #fff;
-  background-color: #999;
   margin: 0;
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 32px;
   padding-right: 32px;
+  color: #fff;
+  background-color: #999;
+  font-size: inherit;
   width: medium;
   height: medium;
   border: none;
   border-radius: 4px;
   border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+  text-align: left;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
   color: #fff;
@@ -2865,6 +2902,7 @@ exports[`Link Button component sanity matches default snapshot 1`] = `
   text-decoration: none;
   text-align: center;
   overflow: hidden;
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2975,19 +3013,20 @@ exports[`Link Button component sanity matches default snapshot 1`] = `
 
 exports[`Loading Button component sanity matches default snapshot 1`] = `
 .c0 {
-  color: #fff;
-  background-color: #999;
   margin: 0;
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 32px;
   padding-right: 32px;
+  color: #fff;
+  background-color: #999;
+  font-size: inherit;
   width: medium;
   height: medium;
   border: none;
   border-radius: 4px;
   border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+  text-align: left;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
   color: #fff;
@@ -3026,6 +3065,7 @@ exports[`Loading Button component sanity matches default snapshot 1`] = `
   text-decoration: none;
   text-align: center;
   overflow: hidden;
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3121,6 +3161,7 @@ exports[`Loading Button component sanity matches default snapshot 1`] = `
   background-color: transparent;
   width: 1rem;
   height: 1rem;
+  text-align: left;
 }
 
 .c1 {
@@ -3204,19 +3245,20 @@ exports[`Loading Button component sanity matches default snapshot 1`] = `
 
 exports[`Loading Button component sanity matches default snapshot 2`] = `
 .c0 {
-  color: #fff;
-  background-color: #999;
   margin: 0;
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 32px;
   padding-right: 32px;
+  color: #fff;
+  background-color: #999;
+  font-size: inherit;
   width: medium;
   height: medium;
   border: none;
   border-radius: 4px;
   border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+  text-align: left;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
   color: #fff;
@@ -3255,6 +3297,7 @@ exports[`Loading Button component sanity matches default snapshot 2`] = `
   text-decoration: none;
   text-align: center;
   overflow: hidden;
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;

@@ -14,6 +14,7 @@ exports[`Field component sanity matches default snapshot 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  text-align: left;
 }
 
 .c0 {
@@ -21,15 +22,15 @@ exports[`Field component sanity matches default snapshot 1`] = `
 }
 
 .c1 {
-  color: #3F3D4B;
   margin-bottom: 8px;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  color: #3F3D4B;
   font-size: 14px;
-  font-weight: 600;
-  line-height: 1.5;
   text-align: left;
-  color: #3F3D4B;
-  margin-bottom: 8px;
+  font-size: 14px;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-weight: 600;
+  text-align: left;
+  line-height: 1.5;
 }
 
 .c1 {
@@ -70,6 +71,7 @@ exports[`Field component sanity matches themed snapshot 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  text-align: left;
 }
 
 .c1 {
@@ -77,15 +79,15 @@ exports[`Field component sanity matches themed snapshot 1`] = `
 }
 
 .c2 {
-  color: #3F3D4B;
   margin-bottom: 8px;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  color: #3F3D4B;
   font-size: 14px;
-  font-weight: 600;
-  line-height: 1.5;
   text-align: left;
-  color: #3F3D4B;
-  margin-bottom: 8px;
+  font-size: 14px;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-weight: 600;
+  text-align: left;
+  line-height: 1.5;
 }
 
 .c2 {

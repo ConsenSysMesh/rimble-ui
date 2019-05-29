@@ -17,7 +17,7 @@ const activeColor = style({
   key: 'colors',
 });
 
-const Link = styled(Text)`
+const StyledLink = styled(Text)`
   & {
     text-decoration: none;
   }
@@ -32,6 +32,10 @@ const Link = styled(Text)`
     ${activeColor};
   }
 `;
+
+const Link = ({ className, children, ...props }) => (
+  <StyledLink className={className} children={children} {...props} />
+);
 
 Link.defaultProps = {
   theme: defaultTheme,

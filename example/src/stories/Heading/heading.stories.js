@@ -32,10 +32,11 @@ storiesOf('Components/Heading', module)
         <Box>
           <Heading.h4>H1</Heading.h4>
           <Text.p>Use for page or screen titles</Text.p>
+          <Heading.h1>Transactions</Heading.h1>
         </Box>
 
-        <CodeBlock>
-          <Heading.h1>Transactions</Heading.h1>
+        <CodeBlock textOnly>
+          {'<Heading.h1>Transactions</Heading.h1>'}
         </CodeBlock>
 
         <br />

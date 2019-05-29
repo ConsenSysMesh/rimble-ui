@@ -2,6 +2,10 @@
 
 exports[`Form component sanity matches default snapshot 1`] = `
 .c0 {
+  text-align: left;
+}
+
+.c0 {
   box-sizing: border-box;
 }
 
@@ -12,16 +16,20 @@ exports[`Form component sanity matches default snapshot 1`] = `
 
 exports[`Form component sanity matches themed snapshot 1`] = `
 .c1 {
+  text-align: left;
+}
+
+.c1 {
   box-sizing: border-box;
 }
 
 .c2 {
   margin-bottom: 16px;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -29,6 +37,7 @@ exports[`Form component sanity matches themed snapshot 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  text-align: left;
 }
 
 .c2 {
@@ -36,8 +45,8 @@ exports[`Form component sanity matches themed snapshot 1`] = `
 }
 
 .c8 {
-  color: #4E3FCE;
   margin-bottom: 16px;
+  color: #4E3FCE;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -46,6 +55,7 @@ exports[`Form component sanity matches themed snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  text-align: left;
   opacity: 1;
 }
 
@@ -62,20 +72,20 @@ exports[`Form component sanity matches themed snapshot 1`] = `
 }
 
 .c5 {
-  color: #3F3D4B;
-  background-color: #fff;
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 16px;
   padding-right: 16px;
+  color: #3F3D4B;
+  background-color: #fff;
   width: 100%;
+  font-size: 1rem;
   height: 3rem;
   border: 1px solid transparent;
   border-color: #CCC;
   border-radius: 4px;
   border-color: #CCC;
   border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-size: 1rem;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
@@ -123,6 +133,7 @@ exports[`Form component sanity matches themed snapshot 1`] = `
 
 .c4 {
   width: 100%;
+  text-align: left;
 }
 
 .c4 {
@@ -148,15 +159,15 @@ exports[`Form component sanity matches themed snapshot 1`] = `
 }
 
 .c3 {
-  color: #3F3D4B;
   margin-bottom: 8px;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  color: #3F3D4B;
   font-size: 14px;
-  font-weight: 600;
-  line-height: 1.5;
   text-align: left;
-  color: #3F3D4B;
-  margin-bottom: 8px;
+  font-size: 14px;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-weight: 600;
+  text-align: left;
+  line-height: 1.5;
 }
 
 .c3 {
@@ -164,21 +175,24 @@ exports[`Form component sanity matches themed snapshot 1`] = `
 }
 
 .c10 {
-  color: #3F3D4B;
   margin-left: 4px;
   margin-right: 8px;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  color: #3F3D4B;
   font-size: 14px;
-  font-weight: 600;
-  line-height: 1.5;
   text-align: left;
-  color: #3F3D4B;
-  margin-left: 4px;
-  margin-right: 8px;
+  font-size: 14px;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-weight: 600;
+  text-align: left;
+  line-height: 1.5;
 }
 
 .c10 {
   box-sizing: border-box;
+}
+
+.c9 {
+  text-align: left;
 }
 
 .c9 {
@@ -405,16 +419,20 @@ exports[`Form component sanity matches themed snapshot 1`] = `
 
 exports[`Form component sanity renders children elements 1`] = `
 .c0 {
+  text-align: left;
+}
+
+.c0 {
   box-sizing: border-box;
 }
 
 .c1 {
   margin-bottom: 16px;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -422,6 +440,7 @@ exports[`Form component sanity renders children elements 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  text-align: left;
 }
 
 .c1 {
@@ -429,8 +448,8 @@ exports[`Form component sanity renders children elements 1`] = `
 }
 
 .c7 {
-  color: #4E3FCE;
   margin-bottom: 16px;
+  color: #4E3FCE;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -439,6 +458,7 @@ exports[`Form component sanity renders children elements 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  text-align: left;
   opacity: 1;
 }
 
@@ -455,20 +475,20 @@ exports[`Form component sanity renders children elements 1`] = `
 }
 
 .c4 {
-  color: #3F3D4B;
-  background-color: #fff;
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 16px;
   padding-right: 16px;
+  color: #3F3D4B;
+  background-color: #fff;
   width: 100%;
+  font-size: 1rem;
   height: 3rem;
   border: 1px solid transparent;
   border-color: #CCC;
   border-radius: 4px;
   border-color: #CCC;
   border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-size: 1rem;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
@@ -516,6 +536,7 @@ exports[`Form component sanity renders children elements 1`] = `
 
 .c3 {
   width: 100%;
+  text-align: left;
 }
 
 .c3 {
@@ -541,15 +562,15 @@ exports[`Form component sanity renders children elements 1`] = `
 }
 
 .c2 {
-  color: #3F3D4B;
   margin-bottom: 8px;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  color: #3F3D4B;
   font-size: 14px;
-  font-weight: 600;
-  line-height: 1.5;
   text-align: left;
-  color: #3F3D4B;
-  margin-bottom: 8px;
+  font-size: 14px;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-weight: 600;
+  text-align: left;
+  line-height: 1.5;
 }
 
 .c2 {
@@ -557,21 +578,24 @@ exports[`Form component sanity renders children elements 1`] = `
 }
 
 .c9 {
-  color: #3F3D4B;
   margin-left: 4px;
   margin-right: 8px;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  color: #3F3D4B;
   font-size: 14px;
-  font-weight: 600;
-  line-height: 1.5;
   text-align: left;
-  color: #3F3D4B;
-  margin-left: 4px;
-  margin-right: 8px;
+  font-size: 14px;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-weight: 600;
+  text-align: left;
+  line-height: 1.5;
 }
 
 .c9 {
   box-sizing: border-box;
+}
+
+.c8 {
+  text-align: left;
 }
 
 .c8 {

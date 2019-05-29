@@ -6,7 +6,6 @@ import { themeGet, fontSize, fontFamily, boxShadow } from 'styled-system';
 import defaultTheme from '../theme';
 import Box from '../Box';
 import Icon from '../Icon';
-import FileInput from './FileInput';
 
 const StyledInput = styled(Box)`
   & {
@@ -70,14 +69,6 @@ const WithValidationStyle = React.forwardRef((props, ref) => {
   );
 });
 
-const Input = props => {
-  if (props.type === 'file') {
-    return <FileInput {...props} />;
-  } else {
-    return <StyledInput {...props} />;
-  }
-};
-
 const defaultProps = {
   theme: defaultTheme,
   as: 'input',
@@ -95,17 +86,14 @@ const defaultProps = {
   boxShadow: 1,
 };
 
-// let Input;
-//
-// Input = StyledInput;
+let Input;
+
+Input = StyledInput;
 Input.WithValidationStyle = WithValidationStyle;
 
 Input.defaultProps = defaultProps;
 WithValidationStyle.defaultProps = defaultProps;
-StyledInput.defaultProps = defaultProps;
 
 Input.displayName = 'Input';
-
-export { StyledInput };
 
 export default Input;

@@ -47,6 +47,7 @@ const StyledButton = styled(Box)`
     text-decoration: none;
     text-align: center;
     overflow: hidden;
+    position: relative;
     display: inline-flex;
     align-items: center;
     justify-content: center;
