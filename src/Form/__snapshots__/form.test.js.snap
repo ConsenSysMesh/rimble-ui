@@ -35,24 +35,6 @@ exports[`Form component sanity matches themed snapshot 1`] = `
   box-sizing: border-box;
 }
 
-.c8 {
-  color: #4E3FCE;
-  margin-bottom: 16px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  opacity: 1;
-}
-
-.c8 {
-  box-sizing: border-box;
-}
-
 .c6 {
   color: #28C081;
 }
@@ -170,7 +152,7 @@ exports[`Form component sanity matches themed snapshot 1`] = `
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 14px;
   font-weight: 600;
-  line-height: 1.5;
+  line-height: 1;
   text-align: left;
   color: #3F3D4B;
   margin-left: 4px;
@@ -179,6 +161,27 @@ exports[`Form component sanity matches themed snapshot 1`] = `
 
 .c10 {
   box-sizing: border-box;
+}
+
+.c8 {
+  color: #4E3FCE;
+  margin-bottom: 16px;
+  opacity: 1;
+}
+
+.c8 {
+  box-sizing: border-box;
+}
+
+.c8 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c9 {
@@ -351,7 +354,6 @@ exports[`Form component sanity matches themed snapshot 1`] = `
     <label
       class="c8"
       color="primary"
-      display="flex"
       label="Remember me?"
       opacity="1"
     >
@@ -425,24 +427,6 @@ exports[`Form component sanity renders children elements 1`] = `
 }
 
 .c1 {
-  box-sizing: border-box;
-}
-
-.c7 {
-  color: #4E3FCE;
-  margin-bottom: 16px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  opacity: 1;
-}
-
-.c7 {
   box-sizing: border-box;
 }
 
@@ -563,7 +547,7 @@ exports[`Form component sanity renders children elements 1`] = `
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 14px;
   font-weight: 600;
-  line-height: 1.5;
+  line-height: 1;
   text-align: left;
   color: #3F3D4B;
   margin-left: 4px;
@@ -572,6 +556,27 @@ exports[`Form component sanity renders children elements 1`] = `
 
 .c9 {
   box-sizing: border-box;
+}
+
+.c7 {
+  color: #4E3FCE;
+  margin-bottom: 16px;
+  opacity: 1;
+}
+
+.c7 {
+  box-sizing: border-box;
+}
+
+.c7 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c8 {
@@ -735,7 +740,6 @@ exports[`Form component sanity renders children elements 1`] = `
   <label
     class="c7"
     color="primary"
-    display="flex"
     label="Remember me?"
     opacity="1"
   >

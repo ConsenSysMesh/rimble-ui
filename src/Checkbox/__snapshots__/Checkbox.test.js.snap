@@ -1,23 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Checkbox component sanity matches default snapshot 1`] = `
-.c0 {
-  color: #4E3FCE;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  opacity: 1;
-}
-
-.c0 {
-  box-sizing: border-box;
-}
-
 .c2 {
   color: #3F3D4B;
   margin-left: 4px;
@@ -25,7 +8,7 @@ exports[`Checkbox component sanity matches default snapshot 1`] = `
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 14px;
   font-weight: 600;
-  line-height: 1.5;
+  line-height: 1;
   text-align: left;
   color: #3F3D4B;
   margin-left: 4px;
@@ -34,6 +17,26 @@ exports[`Checkbox component sanity matches default snapshot 1`] = `
 
 .c2 {
   box-sizing: border-box;
+}
+
+.c0 {
+  color: #4E3FCE;
+  opacity: 1;
+}
+
+.c0 {
+  box-sizing: border-box;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c1 {
@@ -82,7 +85,6 @@ exports[`Checkbox component sanity matches default snapshot 1`] = `
 <label
   class="c0"
   color="primary"
-  display="flex"
   opacity="1"
 >
   <div
@@ -128,23 +130,6 @@ exports[`Checkbox component sanity matches default snapshot 1`] = `
 `;
 
 exports[`Checkbox component sanity matches themed snapshot 1`] = `
-.c1 {
-  color: #4E3FCE;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  opacity: 1;
-}
-
-.c1 {
-  box-sizing: border-box;
-}
-
 .c3 {
   color: #3F3D4B;
   margin-left: 4px;
@@ -152,7 +137,7 @@ exports[`Checkbox component sanity matches themed snapshot 1`] = `
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 14px;
   font-weight: 600;
-  line-height: 1.5;
+  line-height: 1;
   text-align: left;
   color: #3F3D4B;
   margin-left: 4px;
@@ -161,6 +146,26 @@ exports[`Checkbox component sanity matches themed snapshot 1`] = `
 
 .c3 {
   box-sizing: border-box;
+}
+
+.c1 {
+  color: #4E3FCE;
+  opacity: 1;
+}
+
+.c1 {
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c2 {
@@ -218,7 +223,6 @@ exports[`Checkbox component sanity matches themed snapshot 1`] = `
   <label
     class="c1"
     color="primary"
-    display="flex"
     opacity="1"
   >
     <div
