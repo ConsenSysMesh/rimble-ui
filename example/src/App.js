@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, } from 'react';
 
 import {
   Avatar,
@@ -23,6 +23,7 @@ import {
   QR,
   Radio,
   Select,
+  EthAddress,
   Slider,
   Table,
   Text,
@@ -47,6 +48,8 @@ const testComponents = props => (
       <Button size={'medium'}>Click me!</Button>
       <Link>I'm a Link!</Link>
       <PublicAddress address="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2" />
+      <EthAddress address="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2" />
+      <EthAddress truncate address="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2" />
       <Input />
       <Icon name={'Info'} />
       <Icon name={'Info'} color="primary" />
@@ -64,19 +67,14 @@ const testComponents = props => (
         }}
       />
       <Textarea rows={4} defaultValue="Type here…" />
-      <Text>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
-        quibusdam, assumenda officiis.
-      </Text>
+      <Text>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta quibusdam, assumenda officiis.</Text>
       <Avatar />
       <Avatar size="small" />
       <Avatar size="medium" />
       <Avatar size="large" />
 
       <Slider />
-      <Select
-        items={['Wandering Thunder', 'Black Wildflower', 'Ancient Paper']}
-      />
+      <Select items={['Wandering Thunder', 'Black Wildflower', 'Ancient Paper']} />
       <Progress value={0.5} />
       <Heading.h1>Quick zephyrs blow, vexing daft Jim.</Heading.h1>
 
