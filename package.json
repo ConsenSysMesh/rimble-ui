@@ -30,7 +30,8 @@
     "polished": "^3.2.0",
     "qrcode.react": "^0.9.3",
     "rmdi": "^1.0.1",
-    "styled-system": "^4.1.0"
+    "styled-system": "^4.1.0",
+    "use-ssr": "^1.0.17"
   },
   "peerDependencies": {
     "prop-types": "^15.7.2",
