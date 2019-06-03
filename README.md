@@ -35,7 +35,7 @@ class Example extends Component {
 
 ## Change log
 
-### 0.8.0
+### 0.9.0
 
 - Refactored Box component to add overflow prop
 - Refactored Heading component to remove default margins
