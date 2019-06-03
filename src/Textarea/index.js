@@ -3,9 +3,9 @@ import styled from 'styled-components';
 import { space } from 'styled-system';
 
 import defaultTheme from '../theme';
-import Input from '../Input';
+import { StyledInput } from '../Input';
 
-const Textarea = styled(Input)`
+const Textarea = styled(StyledInput)`
   & {
     appearance: none;
   }
