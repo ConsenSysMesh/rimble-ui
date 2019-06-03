@@ -2,16 +2,17 @@
 
 exports[`Checkbox component sanity matches default snapshot 1`] = `
 .c2 {
+  color: #3F3D4B;
   margin-left: 4px;
   margin-right: 8px;
-  color: #3F3D4B;
-  font-size: 14px;
-  text-align: left;
-  font-size: 14px;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-size: 14px;
   font-weight: 600;
-  text-align: left;
   line-height: 1;
+  text-align: left;
+  color: #3F3D4B;
+  margin-left: 4px;
+  margin-right: 8px;
 }
 
 .c2 {
@@ -20,7 +21,6 @@ exports[`Checkbox component sanity matches default snapshot 1`] = `
 
 .c0 {
   color: #4E3FCE;
-  text-align: left;
   opacity: 1;
 }
 
@@ -37,10 +37,6 @@ exports[`Checkbox component sanity matches default snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.c1 {
-  text-align: left;
 }
 
 .c1 {
@@ -135,16 +131,17 @@ exports[`Checkbox component sanity matches default snapshot 1`] = `
 
 exports[`Checkbox component sanity matches themed snapshot 1`] = `
 .c3 {
+  color: #3F3D4B;
   margin-left: 4px;
   margin-right: 8px;
-  color: #3F3D4B;
-  font-size: 14px;
-  text-align: left;
-  font-size: 14px;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-size: 14px;
   font-weight: 600;
-  text-align: left;
   line-height: 1;
+  text-align: left;
+  color: #3F3D4B;
+  margin-left: 4px;
+  margin-right: 8px;
 }
 
 .c3 {
@@ -153,7 +150,6 @@ exports[`Checkbox component sanity matches themed snapshot 1`] = `
 
 .c1 {
   color: #4E3FCE;
-  text-align: left;
   opacity: 1;
 }
 
@@ -170,10 +166,6 @@ exports[`Checkbox component sanity matches themed snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.c2 {
-  text-align: left;
 }
 
 .c2 {
