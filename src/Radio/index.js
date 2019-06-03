@@ -1,14 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
 import { themeGet } from 'styled-system';
-
 import RadioButtonChecked from 'rmdi/lib/RadioButtonChecked';
 import RadioButtonUnchecked from 'rmdi/lib/RadioButtonUnchecked';
-
+import theme from '../theme';
 import Box from '../Box';
 import Text from '../Text';
 
-import defaultTheme from '../theme';
+const StyledBox = styled(Box)`
+  & {
+    display: inline-flex;
+    align-items: center;
+  }
+`;
 
 const StyledWrapper = styled(Box)`
   & {
@@ -50,13 +54,11 @@ const StyledWrapper = styled(Box)`
 `;
 
 const Radio = ({ className, ...props }) => (
-  <Box
+  <StyledBox
     as="label"
     className={className}
     {...props}
     htmlFor={props.id}
-    display="flex"
-    alignItems="center"
     opacity={props.disabled ? 0.4 : 1}
   >
     <StyledWrapper>
@@ -64,14 +66,14 @@ const Radio = ({ className, ...props }) => (
       <RadioButtonChecked name="checked" />
       <RadioButtonUnchecked />
     </StyledWrapper>
-    <Text fontSize={1} fontWeight={3} ml={1} mr={2}>
+    <Text fontSize={1} fontWeight={3} lineHeight={1} ml={1} mr={2}>
       {props.label}
     </Text>
-  </Box>
+  </StyledBox>
 );
 
 Radio.defaultProps = {
-  theme: defaultTheme,
+  theme,
   color: 'primary',
 };
 

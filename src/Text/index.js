@@ -1,91 +1,60 @@
-import React from 'react'
-import styled from 'styled-components'
-import PropTypes from 'prop-types'
-
-import {
-  fontSize,
-  fontFamily,
-  fontWeight,
-  fontStyle,
-  textAlign,
-  lineHeight,
-  letterSpacing,
-} from 'styled-system'
-
-import Box from '../Box'
-
-import defaultTheme from '../theme'
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import { display } from 'styled-system';
+import { COMMON, TYPOGRAPHY } from '../constants';
+import theme from '../theme';
+import Box from '../Box';
 
 export const caps = props =>
-  props.caps
-    ? {
-        textTransform: 'uppercase'
-      }
-    : null
+  props.caps ? { textTransform: 'uppercase' } : null;
 
-export const regular = props =>
-  props.regular ? { fontWeight: props.theme.fontWeights[1] } : null
-
-export const bold = props =>
-  props.bold ? { fontWeight: props.theme.fontWeights[3] } : null
-
-export const italic = props => (props.italic ? { fontStyle: 'italic' } : null)
+export const italic = props => (props.italic ? { fontStyle: 'italic' } : null);
 
 const Text = styled(Box)`
-  ${fontSize}
-  ${fontFamily}
-  ${fontWeight}
-  ${fontStyle}
-  ${textAlign}
-  ${lineHeight}
-  ${letterSpacing}
+  ${TYPOGRAPHY}
+  ${COMMON}
+  ${display}
 
   ${caps}
-  ${regular}
-  ${bold}
   ${italic}
-`
+`;
 
 Text.defaultProps = {
-  theme: defaultTheme,
+  theme,
   color: 'copyColor',
   fontFamily: 'sansSerif',
   fontSize: 2,
   fontWeight: 2,
   lineHeight: 'copy',
-  textAlign: 'left'
-}
+  textAlign: 'left',
+};
 
-Text.displayName = 'Text'
+Text.propTypes = {
+  ...COMMON.propTypes,
+  ...TYPOGRAPHY.propTypes,
+  ...display.propTypes,
+  theme: PropTypes.object,
+};
 
-Text.span = Text.withComponent('span')
+Text.displayName = 'Text';
+
+Text.span = styled(Text)``;
 Text.span.defaultProps = {
-  color: 'copyColor',
-  fontFamily: 'sansSerif',
-  fontSize: 2,
-  fontWeight: 2,
-  lineHeight: 'copy',
-  textAlign: 'left'
-}
+  ...Text.defaultProps,
+  as: 'span',
+};
 
-Text.p = Text.withComponent('p')
+Text.p = styled(Text)``;
 Text.p.defaultProps = {
-  color: 'copyColor',
-  fontFamily: 'sansSerif',
-  fontSize: 2,
-  fontWeight: 2,
-  lineHeight: 'copy',
-  textAlign: 'left'
-}
+  ...Text.defaultProps,
+  as: 'p',
+};
 
-Text.s = Text.withComponent('s')
+Text.s = styled(Text)``;
 Text.s.defaultProps = {
-  color: 'copyColor',
-  fontFamily: 'sansSerif',
-  fontSize: 2,
-  fontWeight: 2,
-  lineHeight: 'copy',
-  textAlign: 'left'
-}
+  ...Text.defaultProps,
+  as: 's',
+};
 
-export default Text
+export default Text;
