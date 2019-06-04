@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import {
   color,
@@ -124,6 +125,8 @@ const Button = React.forwardRef(({ children, icon, ...props }, ref) => {
     </StyledButton>
   );
 });
+
+Button.propTypes = {};
 
 Button.defaultProps = {
   // base props

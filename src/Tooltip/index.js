@@ -1,12 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Popper from '@d8660091/react-popper';
 import theme from '../theme';
 import Text from '../Text';
-
-/**
- * Tooltip display a message near to an anchoring element when the user's mouse hovers or focus is set on anchoring element.
- */
 
 const StyledTooltip = styled(Text)`
   & {
@@ -67,16 +64,19 @@ StyledTooltip.defaultProps = {
   fontFamily: 'sansSerif',
 };
 
+Tooltip.propTypes = {
+  variant: PropTypes.oneOf(['dark', 'light']),
+  placement: PropTypes.oneOf(['top', 'right', 'bottom', 'left']),
+  offset: PropTypes.string,
+  message: PropTypes.string,
+};
+
 Tooltip.displayName = 'Tooltip';
 
 Tooltip.defaultProps = {
-  /** Sets the theme of tooltip. Options are light or dark. */
   variant: 'dark',
-  /** Sets the placement of tooltip relative to anchoring element. Options are top, left, right, bottom. */
   placement: 'bottom',
-  /** Sets the placement of tooltip relative to anchoring element. */
   offset: '0, 0',
-  /** Sets the content of tooltip. Only accepts text and not markup. */
   message: 'props.message text',
 };
 
