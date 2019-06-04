@@ -4,6 +4,10 @@ import Popper from '@d8660091/react-popper';
 import theme from '../theme';
 import Text from '../Text';
 
+/**
+ * Tooltip display a message near to an anchoring element when the user's mouse hovers or focus is set on anchoring element.
+ */
+
 const StyledTooltip = styled(Text)`
   & {
     background: ${props => (props.variant === 'dark' ? '#333' : '#FFF')};
@@ -66,9 +70,13 @@ StyledTooltip.defaultProps = {
 Tooltip.displayName = 'Tooltip';
 
 Tooltip.defaultProps = {
+  /** Sets the theme of tooltip. Options are light or dark. */
   variant: 'dark',
+  /** Sets the placement of tooltip relative to anchoring element. Options are top, left, right, bottom. */
   placement: 'bottom',
+  /** Sets the placement of tooltip relative to anchoring element. */
   offset: '0, 0',
+  /** Sets the content of tooltip. Only accepts text and not markup. */
   message: 'props.message text',
 };
 
