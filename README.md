@@ -35,6 +35,10 @@ class Example extends Component {
 
 ## Change log
 
+### 0.9.1
+
+- Fixed Tooltip breaking server side rendering
+
 ### 0.9.0
 
 - Refactored Box component to add overflow prop
