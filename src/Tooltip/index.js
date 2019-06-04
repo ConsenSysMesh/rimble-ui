@@ -6,19 +6,19 @@ import Text from '../Text';
 
 const StyledTooltip = styled(Text)`
   & {
-    background: ${props => (props.variant === 'dark' ? '#000' : '#FFF')};
+    background: ${props => (props.variant === 'dark' ? '#333' : '#FFF')};
     color: ${props => (props.variant === 'dark' ? '#FFF' : '#666')};
     border: ${props =>
       props.variant === 'dark' ? 'none' : '1px solid #CCCCCC'};
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
-    min-height: 2.5rem;
-    padding: 0 1rem;
     display: flex;
     align-items: center;
-    margin: 4px 8px;
-    line-height: 24px;
-    font-size: 14px;
+    min-height: 24px;
+    margin: 4px;
+    padding: 12px;
+    line-height: 16px;
+    font-size: 12px;
     z-index: 999999;
   }
 `;
@@ -46,8 +46,8 @@ const Tooltip = props => {
   if (typeof window !== 'undefined') {
     return (
       <Popper
-        renderRef={triggerElement}
         options={options}
+        renderRef={triggerElement}
         style={{ zIndex: 99999 }}
       >
         <StyledTooltip variant={props.variant} children={props.message} />
@@ -66,6 +66,7 @@ StyledTooltip.defaultProps = {
 Tooltip.displayName = 'Tooltip';
 
 Tooltip.defaultProps = {
+  variant: 'dark',
   placement: 'bottom',
   offset: '0, 0',
   message: 'props.message text',
