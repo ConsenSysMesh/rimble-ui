@@ -1,10 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import Popper from '@d8660091/react-popper';
-
+import theme from '../theme';
 import Text from '../Text';
-
-import defaultTheme from '../theme';
 
 const StyledTooltip = styled(Text)`
   & {
@@ -12,7 +10,6 @@ const StyledTooltip = styled(Text)`
     color: ${props => (props.variant === 'dark' ? '#FFF' : '#666')};
     border: ${props =>
       props.variant === 'dark' ? 'none' : '1px solid #CCCCCC'};
-
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
     min-height: 2.5rem;
@@ -20,7 +17,6 @@ const StyledTooltip = styled(Text)`
     display: flex;
     align-items: center;
     margin: 4px 8px;
-
     line-height: 24px;
     font-size: 14px;
     z-index: 999999;
@@ -38,24 +34,32 @@ const Tooltip = props => {
   };
 
   const triggerElement = ({ setReference, toggle }) => (
-    <span ref={setReference} onMouseEnter={toggle} onMouseLeave={toggle}>
-      {props.children}
-    </span>
+    <span
+      ref={setReference}
+      onMouseEnter={toggle}
+      onMouseLeave={toggle}
+      children={props.children}
+      style={{ display: 'inline-block' }}
+    />
   );
 
-  return (
-    <Popper
-      renderRef={triggerElement}
-      options={options}
-      style={{ zIndex: 99999 }}
-    >
-      <StyledTooltip variant={props.variant}>{props.message}</StyledTooltip>
-    </Popper>
-  );
+  if (typeof window !== 'undefined') {
+    return (
+      <Popper
+        renderRef={triggerElement}
+        options={options}
+        style={{ zIndex: 99999 }}
+      >
+        <StyledTooltip variant={props.variant} children={props.message} />
+      </Popper>
+    );
+  } else {
+    return props.children;
+  }
 };
 
 StyledTooltip.defaultProps = {
-  theme: defaultTheme,
+  theme,
   fontFamily: 'sansSerif',
 };
 
