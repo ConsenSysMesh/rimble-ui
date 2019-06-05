@@ -1,14 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
 import { themeGet } from 'styled-system';
-
 import CheckBox from 'rmdi/lib/CheckBox';
 import CheckBoxOutlineBlank from 'rmdi/lib/CheckBoxOutlineBlank';
-
 import Box from '../Box';
 import Text from '../Text';
+import theme from '../theme';
 
-import defaultTheme from '../theme';
+const StyledBox = styled(Box)`
+  & {
+    display: inline-flex;
+    align-items: center;
+  }
+`;
 
 const StyledWrapper = styled(Box)`
   & {
@@ -50,13 +54,11 @@ const StyledWrapper = styled(Box)`
 `;
 
 const Checkbox = ({ className, ...props }) => (
-  <Box
-    as="label"
+  <StyledBox
+    as={'label'}
     className={className}
     {...props}
     htmlFor={props.id}
-    display="flex"
-    alignItems="center"
     opacity={props.disabled ? 0.4 : 1}
   >
     <StyledWrapper>
@@ -64,14 +66,14 @@ const Checkbox = ({ className, ...props }) => (
       <CheckBox name="checked" />
       <CheckBoxOutlineBlank />
     </StyledWrapper>
-    <Text fontSize={1} fontWeight={3} ml={1} mr={2}>
+    <Text fontSize={1} fontWeight={3} lineHeight={1} ml={1} mr={2}>
       {props.label}
     </Text>
-  </Box>
+  </StyledBox>
 );
 
 Checkbox.defaultProps = {
-  theme: defaultTheme,
+  theme,
   color: 'primary',
 };
 

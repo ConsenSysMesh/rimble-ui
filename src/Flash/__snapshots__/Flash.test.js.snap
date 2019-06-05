@@ -9,7 +9,6 @@ exports[`Select component sanity matches danger variant snapshot 1`] = `
   p="3"
   role="alert"
   tabIndex={0}
-  textAlign="left"
   theme={
     Object {
       "borderWidths": Array [
@@ -74,8 +73,10 @@ exports[`Select component sanity matches danger variant snapshot 1`] = `
         ],
         "blue": "#3259D6",
         "copyColor": "#3F3D4B",
+        "danger": "#DC2C10",
         "dark-gray": "#333",
         "grey": "#CCC",
+        "info": "#36ADF1",
         "light-gray": "#eee",
         "light-silver": "#aaa",
         "mid-gray": "#555",
@@ -86,7 +87,9 @@ exports[`Select component sanity matches danger variant snapshot 1`] = `
         "primary-dark": "#3e32a4",
         "primary-light": "#7165d7",
         "silver": "#999",
+        "success": "#28C081",
         "transparent": "transparent",
+        "warning": "#FD9D28",
         "white": "#fff",
         "whites": Array [
           "rgba(255,255,255,.0125)",
@@ -324,8 +327,10 @@ exports[`Select component sanity matches danger variant snapshot 1`] = `
           ],
           "blue": "#3259D6",
           "copyColor": "#3F3D4B",
+          "danger": "#DC2C10",
           "dark-gray": "#333",
           "grey": "#CCC",
+          "info": "#36ADF1",
           "light-gray": "#eee",
           "light-silver": "#aaa",
           "mid-gray": "#555",
@@ -336,7 +341,9 @@ exports[`Select component sanity matches danger variant snapshot 1`] = `
           "primary-dark": "#3e32a4",
           "primary-light": "#7165d7",
           "silver": "#999",
+          "success": "#28C081",
           "transparent": "transparent",
+          "warning": "#FD9D28",
           "white": "#fff",
           "whites": Array [
             "rgba(255,255,255,.0125)",
@@ -513,7 +520,6 @@ exports[`Select component sanity matches default snapshot 1`] = `
   p="3"
   role="status"
   tabIndex={0}
-  textAlign="left"
   theme={
     Object {
       "borderWidths": Array [
@@ -578,8 +584,10 @@ exports[`Select component sanity matches default snapshot 1`] = `
         ],
         "blue": "#3259D6",
         "copyColor": "#3F3D4B",
+        "danger": "#DC2C10",
         "dark-gray": "#333",
         "grey": "#CCC",
+        "info": "#36ADF1",
         "light-gray": "#eee",
         "light-silver": "#aaa",
         "mid-gray": "#555",
@@ -590,7 +598,9 @@ exports[`Select component sanity matches default snapshot 1`] = `
         "primary-dark": "#3e32a4",
         "primary-light": "#7165d7",
         "silver": "#999",
+        "success": "#28C081",
         "transparent": "transparent",
+        "warning": "#FD9D28",
         "white": "#fff",
         "whites": Array [
           "rgba(255,255,255,.0125)",
@@ -828,8 +838,10 @@ exports[`Select component sanity matches default snapshot 1`] = `
           ],
           "blue": "#3259D6",
           "copyColor": "#3F3D4B",
+          "danger": "#DC2C10",
           "dark-gray": "#333",
           "grey": "#CCC",
+          "info": "#36ADF1",
           "light-gray": "#eee",
           "light-silver": "#aaa",
           "mid-gray": "#555",
@@ -840,7 +852,9 @@ exports[`Select component sanity matches default snapshot 1`] = `
           "primary-dark": "#3e32a4",
           "primary-light": "#7165d7",
           "silver": "#999",
+          "success": "#28C081",
           "transparent": "transparent",
+          "warning": "#FD9D28",
           "white": "#fff",
           "whites": Array [
             "rgba(255,255,255,.0125)",
@@ -1017,7 +1031,6 @@ exports[`Select component sanity matches info variant snapshot 1`] = `
   p="3"
   role="status"
   tabIndex={0}
-  textAlign="left"
   theme={
     Object {
       "borderWidths": Array [
@@ -1082,8 +1095,10 @@ exports[`Select component sanity matches info variant snapshot 1`] = `
         ],
         "blue": "#3259D6",
         "copyColor": "#3F3D4B",
+        "danger": "#DC2C10",
         "dark-gray": "#333",
         "grey": "#CCC",
+        "info": "#36ADF1",
         "light-gray": "#eee",
         "light-silver": "#aaa",
         "mid-gray": "#555",
@@ -1094,7 +1109,9 @@ exports[`Select component sanity matches info variant snapshot 1`] = `
         "primary-dark": "#3e32a4",
         "primary-light": "#7165d7",
         "silver": "#999",
+        "success": "#28C081",
         "transparent": "transparent",
+        "warning": "#FD9D28",
         "white": "#fff",
         "whites": Array [
           "rgba(255,255,255,.0125)",
@@ -1332,8 +1349,10 @@ exports[`Select component sanity matches info variant snapshot 1`] = `
           ],
           "blue": "#3259D6",
           "copyColor": "#3F3D4B",
+          "danger": "#DC2C10",
           "dark-gray": "#333",
           "grey": "#CCC",
+          "info": "#36ADF1",
           "light-gray": "#eee",
           "light-silver": "#aaa",
           "mid-gray": "#555",
@@ -1344,7 +1363,9 @@ exports[`Select component sanity matches info variant snapshot 1`] = `
           "primary-dark": "#3e32a4",
           "primary-light": "#7165d7",
           "silver": "#999",
+          "success": "#28C081",
           "transparent": "transparent",
+          "warning": "#FD9D28",
           "white": "#fff",
           "whites": Array [
             "rgba(255,255,255,.0125)",
@@ -1521,7 +1542,6 @@ exports[`Select component sanity matches success variant snapshot 1`] = `
   p="3"
   role="status"
   tabIndex={0}
-  textAlign="left"
   theme={
     Object {
       "borderWidths": Array [
@@ -1586,8 +1606,10 @@ exports[`Select component sanity matches success variant snapshot 1`] = `
         ],
         "blue": "#3259D6",
         "copyColor": "#3F3D4B",
+        "danger": "#DC2C10",
         "dark-gray": "#333",
         "grey": "#CCC",
+        "info": "#36ADF1",
         "light-gray": "#eee",
         "light-silver": "#aaa",
         "mid-gray": "#555",
@@ -1598,7 +1620,9 @@ exports[`Select component sanity matches success variant snapshot 1`] = `
         "primary-dark": "#3e32a4",
         "primary-light": "#7165d7",
         "silver": "#999",
+        "success": "#28C081",
         "transparent": "transparent",
+        "warning": "#FD9D28",
         "white": "#fff",
         "whites": Array [
           "rgba(255,255,255,.0125)",
@@ -1836,8 +1860,10 @@ exports[`Select component sanity matches success variant snapshot 1`] = `
           ],
           "blue": "#3259D6",
           "copyColor": "#3F3D4B",
+          "danger": "#DC2C10",
           "dark-gray": "#333",
           "grey": "#CCC",
+          "info": "#36ADF1",
           "light-gray": "#eee",
           "light-silver": "#aaa",
           "mid-gray": "#555",
@@ -1848,7 +1874,9 @@ exports[`Select component sanity matches success variant snapshot 1`] = `
           "primary-dark": "#3e32a4",
           "primary-light": "#7165d7",
           "silver": "#999",
+          "success": "#28C081",
           "transparent": "transparent",
+          "warning": "#FD9D28",
           "white": "#fff",
           "whites": Array [
             "rgba(255,255,255,.0125)",
@@ -2019,14 +2047,14 @@ exports[`Select component sanity matches success variant snapshot 1`] = `
 exports[`Select component sanity matches themed snapshot 1`] = `
 .c2 {
   color: inherit;
-  font-size: 16px;
   display: inherit;
-  text-align: left;
-  font-size: 16px;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-size: 16px;
   font-weight: 400;
-  text-align: left;
   line-height: 1.5;
+  text-align: left;
+  color: inherit;
+  display: inherit;
 }
 
 .c2 {
@@ -2039,7 +2067,6 @@ exports[`Select component sanity matches themed snapshot 1`] = `
   border: 1px solid transparent;
   border-radius: 4px;
   border-radius: 4px;
-  text-align: left;
   color: #666;
   background-color: #f6f6f6;
   border-color: #AAA;
@@ -2053,13 +2080,13 @@ exports[`Select component sanity matches themed snapshot 1`] = `
   position: relative;
 }
 
-.c1 a {
+.c1 .c3 {
   font-size: inherit;
   cursor: pointer;
   color: inherit;
 }
 
-.c1 a:hover {
+.c1 .c3:hover {
   color: inherit;
 }
 
@@ -2104,7 +2131,6 @@ exports[`Select component sanity matches warning variant snapshot 1`] = `
   p="3"
   role="alert"
   tabIndex={0}
-  textAlign="left"
   theme={
     Object {
       "borderWidths": Array [
@@ -2169,8 +2195,10 @@ exports[`Select component sanity matches warning variant snapshot 1`] = `
         ],
         "blue": "#3259D6",
         "copyColor": "#3F3D4B",
+        "danger": "#DC2C10",
         "dark-gray": "#333",
         "grey": "#CCC",
+        "info": "#36ADF1",
         "light-gray": "#eee",
         "light-silver": "#aaa",
         "mid-gray": "#555",
@@ -2181,7 +2209,9 @@ exports[`Select component sanity matches warning variant snapshot 1`] = `
         "primary-dark": "#3e32a4",
         "primary-light": "#7165d7",
         "silver": "#999",
+        "success": "#28C081",
         "transparent": "transparent",
+        "warning": "#FD9D28",
         "white": "#fff",
         "whites": Array [
           "rgba(255,255,255,.0125)",
@@ -2419,8 +2449,10 @@ exports[`Select component sanity matches warning variant snapshot 1`] = `
           ],
           "blue": "#3259D6",
           "copyColor": "#3F3D4B",
+          "danger": "#DC2C10",
           "dark-gray": "#333",
           "grey": "#CCC",
+          "info": "#36ADF1",
           "light-gray": "#eee",
           "light-silver": "#aaa",
           "mid-gray": "#555",
@@ -2431,7 +2463,9 @@ exports[`Select component sanity matches warning variant snapshot 1`] = `
           "primary-dark": "#3e32a4",
           "primary-light": "#7165d7",
           "silver": "#999",
+          "success": "#28C081",
           "transparent": "transparent",
+          "warning": "#FD9D28",
           "white": "#fff",
           "whites": Array [
             "rgba(255,255,255,.0125)",

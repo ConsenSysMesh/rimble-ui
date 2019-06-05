@@ -3,6 +3,8 @@ import { storiesOf } from '@storybook/react';
 import { linkTo } from '@storybook/addon-links';
 import { doc, configureReadme } from 'storybook-readme';
 
+import ContributeBanner from '../../components/ContributeBanner';
+
 import {
   Box,
   Heading,
@@ -140,30 +142,24 @@ storiesOf('Getting started', module)
       <br />
       <br />
       <Box>
-        <Card color="white" bg="primary">
-          <Heading>Contribute to Rimble</Heading>
-          <Text.p color="white">
-            We're completely open source so feel free to raise any issues or
-            suggest improvements to Rimble.
-          </Text.p>
-          <Button
-            color={'primary'}
-            hovercolor={'white'}
-            bg={'white'}
-            as={Link}
-            href="https://github.com/ConsenSys/rimble-ui/blob/master/docs/CONTRIBUTIONS.md"
-            title="Rimble UI on GitHub"
-            target="_blank"
-          >
-            Contribute
-          </Button>
-        </Card>
+        <ContributeBanner />
       </Box>
       <br />
       <Box>
         <Card>
           <br />
           <Heading>Change log</Heading>
+
+          <Heading.h6>0.9.0</Heading.h6>
+          <Text>
+            <ul>
+              <li>Refactored Box component to add overflow prop</li>
+              <li>Refactored Heading component to remove default margins</li>
+              <li>Refactored Text component to remove default margins</li>
+              <li>Bug fix for anchor elements inside Flash component</li>
+              <li>Removed selected props from Pill component</li>
+            </ul>
+          </Text>
 
           <Heading.h6>0.8.0</Heading.h6>
 

@@ -3,13 +3,12 @@
 exports[`Simple Address component sanity matches Themed snapshot 1`] = `
 .c1 {
   color: #3F3D4B;
-  font-size: 16px;
-  text-align: left;
-  font-size: 16px;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-size: 16px;
   font-weight: 400;
-  text-align: left;
   line-height: 1.5;
+  text-align: left;
+  color: #3F3D4B;
 }
 
 .c1 {

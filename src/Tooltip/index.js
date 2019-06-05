@@ -1,28 +1,28 @@
 import React from 'react';
 import styled from 'styled-components';
 import Popper from '@d8660091/react-popper';
-
+import theme from '../theme';
 import Text from '../Text';
 
-import defaultTheme from '../theme';
+/**
+ * Tooltip display a message near to an anchoring element when the user's mouse hovers or focus is set on anchoring element.
+ */
 
 const StyledTooltip = styled(Text)`
   & {
-    background: ${props => (props.variant === 'dark' ? '#000' : '#FFF')};
+    background: ${props => (props.variant === 'dark' ? '#333' : '#FFF')};
     color: ${props => (props.variant === 'dark' ? '#FFF' : '#666')};
     border: ${props =>
       props.variant === 'dark' ? 'none' : '1px solid #CCCCCC'};
-
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
-    min-height: 2.5rem;
-    padding: 0 1rem;
     display: flex;
     align-items: center;
-    margin: 4px 8px;
-
-    line-height: 24px;
-    font-size: 14px;
+    min-height: 24px;
+    margin: 4px;
+    padding: 12px;
+    line-height: 16px;
+    font-size: 12px;
     z-index: 999999;
   }
 `;
@@ -38,32 +38,45 @@ const Tooltip = props => {
   };
 
   const triggerElement = ({ setReference, toggle }) => (
-    <span ref={setReference} onMouseEnter={toggle} onMouseLeave={toggle}>
-      {props.children}
-    </span>
+    <span
+      ref={setReference}
+      onMouseEnter={toggle}
+      onMouseLeave={toggle}
+      children={props.children}
+      style={{ display: 'inline-block' }}
+    />
   );
 
-  return (
-    <Popper
-      renderRef={triggerElement}
-      options={options}
-      style={{ zIndex: 99999 }}
-    >
-      <StyledTooltip variant={props.variant}>{props.message}</StyledTooltip>
-    </Popper>
-  );
+  if (typeof window !== 'undefined') {
+    return (
+      <Popper
+        options={options}
+        renderRef={triggerElement}
+        style={{ zIndex: 99999 }}
+      >
+        <StyledTooltip variant={props.variant} children={props.message} />
+      </Popper>
+    );
+  } else {
+    return props.children;
+  }
 };
 
 StyledTooltip.defaultProps = {
-  theme: defaultTheme,
+  theme,
   fontFamily: 'sansSerif',
 };
 
 Tooltip.displayName = 'Tooltip';
 
 Tooltip.defaultProps = {
+  /** Sets the theme of tooltip. Options are light or dark. */
+  variant: 'dark',
+  /** Sets the placement of tooltip relative to anchoring element. Options are top, left, right, bottom. */
   placement: 'bottom',
+  /** Sets the placement of tooltip relative to anchoring element. */
   offset: '0, 0',
+  /** Sets the content of tooltip. Only accepts text and not markup. */
   message: 'props.message text',
 };
 

@@ -7,7 +7,7 @@
 [![Travis Build Status](https://travis-ci.com/ConsenSys/rimble-ui.svg?branch=master)](https://travis-ci.com/ConsenSys/rimble-ui)
 [![Join the community on Spectrum](https://withspectrum.github.io/badge/badge.svg)](https://spectrum.chat/rimble)
 
-Rimble is a project from ConsenSys Design, aiming to provide adaptable components and design standards for decentralized applications (dApps). Our goal is simply to to make it easier to build dApps with outstanding user experience. If you're interested, we have written a bit more about [our rationale and approach to building Rimble](https://blog.prototypr.io/this-is-rimble-d0f1ad26b8b6).
+Rimble is a project from ConsenSys Design, aiming to provide adaptable components and design standards for decentralized applications (dApps). Our goal is simply to make it easier to build dApps with outstanding user experience. If you're interested, we have written a bit more about [our rationale and approach to building Rimble](https://blog.prototypr.io/this-is-rimble-d0f1ad26b8b6).
 
 Rimble is in initial development and should not be considered stable today. We have made the project public in a very early stage of work in order to gather feedback from the community of designers and developers building dApps.
 
@@ -34,6 +34,18 @@ class Example extends Component {
 ```
 
 ## Change log
+
+### 0.9.1
+
+- Fixed Tooltip breaking server side rendering
+
+### 0.9.0
+
+- Refactored Box component to add overflow prop
+- Refactored Heading component to remove default margins
+- Refactored Text component to remove default margins
+- Bug fix for anchor elements inside Flash component
+- Removed selected props from Pill component
 
 ### 0.8.0
 
