@@ -2,6 +2,7 @@
 
 exports[`Avatar component sanity matches default snapshot 1`] = `
 .c0 {
+  background-color: #CCC;
   width: 2rem;
   height: 2rem;
 }
@@ -14,9 +15,9 @@ exports[`Avatar component sanity matches default snapshot 1`] = `
   position: relative;
   overflow: hidden;
   border-radius: 100%;
-  background: center no-repeat;
   background-size: cover;
-  background-color: #CCC;
+  background-position: center;
+  background-repeat: no-repeat;
   background-image: url();
 }
 
@@ -28,6 +29,7 @@ exports[`Avatar component sanity matches default snapshot 1`] = `
 
 exports[`Avatar component sanity matches themed snapshot 1`] = `
 .c1 {
+  background-color: #CCC;
   width: 2rem;
   height: 2rem;
 }
@@ -40,9 +42,9 @@ exports[`Avatar component sanity matches themed snapshot 1`] = `
   position: relative;
   overflow: hidden;
   border-radius: 100%;
-  background: center no-repeat;
   background-size: cover;
-  background-color: #CCC;
+  background-position: center;
+  background-repeat: no-repeat;
   background-image: url();
 }
 
