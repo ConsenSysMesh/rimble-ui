@@ -12,7 +12,6 @@ const Slider = styled.input.attrs(props => ({
     appearance: none;
     height: 2rem;
     min-width: 200px;
-    width: auto;
   }
   &::-webkit-slider-runnable-track {
     box-sizing: border-box;
