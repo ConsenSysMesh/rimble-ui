@@ -1,12 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { themeGet } from 'styled-system';
-
+import { COMMON } from '../constants';
 import theme from '../theme';
 
-const Slider = styled.input.attrs(props => ({
+const Slider = styled('input').attrs(props => ({
   type: 'range',
-  primarycolor: themeGet('colors.primary', '#000')(props),
 }))`
   & {
     appearance: none;
@@ -18,7 +17,7 @@ const Slider = styled.input.attrs(props => ({
     appearance: none;
     border: none;
     border-radius: 4px;
-    background: ${props => props.primarycolor};
+    background: currentColor;
     height: 4px;
     display: flex;
     align-items: center;
@@ -37,7 +36,7 @@ const Slider = styled.input.attrs(props => ({
     }
     &:active {
       cursor: grabbing;
-      border-color: ${props => props.primarycolor};
+      border-color: currentColor;
     }
   }
 
@@ -46,7 +45,7 @@ const Slider = styled.input.attrs(props => ({
     appearance: none;
     border: none;
     border-radius: 4px;
-    background: ${props => props.primarycolor};
+    background: currentColor;
     height: 4px;
     display: flex;
     align-items: center;
@@ -65,15 +64,21 @@ const Slider = styled.input.attrs(props => ({
     }
     &:active {
       cursor: grabbing;
-      border-color: ${props => props.primarycolor};
+      border-color: currentColor;
     }
   }
+  ${COMMON}
 `;
 
 Slider.defaultProps = {
   theme,
   m: 0,
-  p: 0,
+  color: 'primary',
+};
+
+Slider.propTypes = {
+  ...COMMON.propTypes,
+  theme: PropTypes.object,
 };
 
 Slider.displayName = 'Slider';
