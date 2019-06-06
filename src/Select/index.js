@@ -1,7 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
-
-import defaultTheme from '../theme';
+import theme from '../theme';
 import ExpandMore from 'rmdi/lib/ExpandMore';
 import { StyledInput } from '../Input';
 
@@ -41,8 +41,12 @@ const Select = props => (
 );
 
 Select.defaultProps = {
-  theme: defaultTheme,
+  theme,
   as: 'select',
+};
+
+Select.propTypes = {
+  theme: PropTypes.object,
 };
 
 Select.displayName = 'Select';

@@ -1,8 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { variant } from 'styled-system';
 
-import defaultTheme from '../theme';
+import theme from '../theme';
 import Box from '../Box';
 import Text from '../Text';
 import Link from '../Link';
@@ -65,12 +66,18 @@ const Flash = ({ className, children, ...props }) => {
 };
 
 Flash.defaultProps = {
-  theme: defaultTheme,
+  theme,
   variant: 'base',
   p: '3',
   border: '1',
   borderRadius: 1,
   width: '100%',
+};
+
+Flash.defaultProps = {
+  ...Box.propTypes,
+  theme: PropTypes.object,
+  variant: PropTypes.oneOf(['base', 'success', 'warning', 'danger', 'info']),
 };
 
 Flash.displayName = 'Flash';
