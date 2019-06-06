@@ -28,6 +28,28 @@ class BlockiesIdenticon extends Component {
   }
 }
 
+BlockiesIdenticon.propTypes = {
+  opts: PropTypes.shape({
+    seed: PropTypes.string,
+    color: PropTypes.string,
+    bgcolor: PropTypes.string,
+    size: PropTypes.number,
+    scale: PropTypes.number,
+    spotcolor: PropTypes.string,
+  }),
+};
+
+BlockiesIdenticon.defaultProps = {
+  opts: {
+    seed: 'foo',
+    color: '#dfe',
+    bgcolor: '#a71',
+    size: 15,
+    scale: 3,
+    spotcolor: '#000',
+  },
+};
+
 BlockiesIdenticon.displayName = 'BlockiesIdenticon';
 
 export default BlockiesIdenticon;

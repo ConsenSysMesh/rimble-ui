@@ -5,7 +5,7 @@ import { textAlign } from 'styled-system';
 import theme from '../theme';
 import Box from '../Box';
 
-const Card = styled(Box)`
+const StyledCard = styled(Box)`
   & {
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
     transition: box-shadow 300ms ease;
@@ -16,6 +16,8 @@ const Card = styled(Box)`
 
   ${textAlign}
 `;
+
+const Card = props => <StyledCard {...props} />;
 
 Card.defaultProps = {
   theme,
