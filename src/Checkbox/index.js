@@ -77,6 +77,11 @@ Checkbox.defaultProps = {
   color: 'primary',
 };
 
+Checkbox.propTypes = {
+  ...Box.propTypes,
+  theme: PropTypes.object,
+};
+
 Checkbox.displayName = 'Checkbox';
 
 export default Checkbox;
