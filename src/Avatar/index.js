@@ -55,7 +55,6 @@ Avatar.propTypes = {
    */
   alt: PropTypes.string.isRequired,
   src: PropTypes.string,
-  theme: PropTypes.object,
   ...Box.propTypes,
 };
 

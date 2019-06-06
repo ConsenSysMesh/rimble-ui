@@ -1,10 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-
-import { withInfo } from '@storybook/addon-info';
-
 import { withDocs } from 'storybook-readme';
-
 import CodeBlock from '../../components/CodeBlock';
 import ContributeBanner from '../../components/ContributeBanner';
 
@@ -146,11 +142,3 @@ storiesOf('Components/Avatar', module)
       </Box>
     ))
   );
-
-
-
-storiesOf('Component', module)
-  .addDecorator(withInfo) // At your stories directly.
-  .add('Avatar Example', () => (
-    <Avatar src="https://airswap-token-images.s3.amazonaws.com/DAI.png" />
-  ));

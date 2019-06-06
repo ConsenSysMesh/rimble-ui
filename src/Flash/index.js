@@ -74,10 +74,9 @@ Flash.defaultProps = {
   width: '100%',
 };
 
-Flash.defaultProps = {
-  ...Box.propTypes,
-  theme: PropTypes.object,
+Flash.propTypes = {
   variant: PropTypes.oneOf(['base', 'success', 'warning', 'danger', 'info']),
+  ...Box.propTypes,
 };
 
 Flash.displayName = 'Flash';
