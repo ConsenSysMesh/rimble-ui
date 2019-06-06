@@ -13,10 +13,12 @@ const defaultProps = {
 };
 
 // Heading
-const Heading = styled.h1`
+const StyledHeading = styled.h1`
   ${TYPOGRAPHY}
   ${COMMON}
 `;
+
+const Heading = props => <StyledHeading {...props} />;
 
 Heading.defaultProps = {
   ...defaultProps,
