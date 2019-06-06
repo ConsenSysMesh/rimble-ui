@@ -1,12 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { themeGet } from 'styled-system';
+import { COMMON } from '../constants';
+import theme from '../theme';
 
-import defaultTheme from '../theme';
-
-const Slider = styled.input.attrs(props => ({
+const Slider = styled('input').attrs(props => ({
   type: 'range',
-  primarycolor: themeGet('colors.primary', '#000')(props),
 }))`
   & {
     appearance: none;
@@ -18,7 +17,7 @@ const Slider = styled.input.attrs(props => ({
     appearance: none;
     border: none;
     border-radius: 4px;
-    background: ${props => props.primarycolor};
+    background: currentColor;
     height: 4px;
     display: flex;
     align-items: center;
@@ -32,21 +31,54 @@ const Slider = styled.input.attrs(props => ({
     width: 1.5rem;
     border-radius: 100%;
     cursor: grab;
-
     &:hover {
       box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     }
     &:active {
       cursor: grabbing;
-      border-color: ${props => props.primarycolor};
+      border-color: currentColor;
     }
   }
+
+  &::-moz-range-track {
+    box-sizing: border-box;
+    appearance: none;
+    border: none;
+    border-radius: 4px;
+    background: currentColor;
+    height: 4px;
+    display: flex;
+    align-items: center;
+  }
+  &::-moz-range-thumb {
+    box-sizing: border-box;
+    appearance: none;
+    border: 1px solid #ccc;
+    background: white;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 100%;
+    cursor: grab;
+    &:hover {
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    &:active {
+      cursor: grabbing;
+      border-color: currentColor;
+    }
+  }
+  ${COMMON}
 `;
 
 Slider.defaultProps = {
-  theme: defaultTheme,
+  theme,
   m: 0,
-  p: 0,
+  color: 'primary',
+};
+
+Slider.propTypes = {
+  ...COMMON.propTypes,
+  theme: PropTypes.object,
 };
 
 Slider.displayName = 'Slider';
