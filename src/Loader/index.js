@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { keyframes } from 'styled-components';
 import { themeGet } from 'styled-system';
-
 import Box from '../Box';
 
 const rotate = keyframes`
@@ -77,6 +76,10 @@ Loader.defaultProps = {
   color: 'primary',
   bg: 'transparent',
   size: '1rem',
+};
+
+Loader.propTypes = {
+  ...Box.propTypes,
 };
 
 Loader.displayName = 'Loader';

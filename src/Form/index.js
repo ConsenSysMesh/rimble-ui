@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import PropTypes from 'prop-types';
 import Box from '../Box';
 import Input from '../Input';
 import Field from '../Field';
@@ -23,6 +23,11 @@ class Form extends Component {
 
 Form.defaultProps = {
   validated: false,
+};
+
+Form.propTypes = {
+  ...Box.propTypes,
+  validated: PropTypes.bool,
 };
 
 Form.displayName = 'Form';

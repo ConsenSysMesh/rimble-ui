@@ -1,8 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { style } from 'styled-system';
-
-import defaultTheme from '../theme';
+import theme from '../theme';
 import Text from '../Text';
 
 const hoverColor = style({
@@ -34,13 +34,18 @@ const Link = styled(Text)`
 `;
 
 Link.defaultProps = {
-  theme: defaultTheme,
+  theme,
   as: 'a',
   color: 'primary',
   hoverColor: 'primary-light',
   activeColor: 'primary-dark',
   fontSize: 1,
   fontWeight: 3,
+};
+
+Link.propTypes = {
+  ...Text.propTypes,
+  theme: PropTypes.object,
 };
 
 Link.displayName = 'Link';
