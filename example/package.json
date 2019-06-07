@@ -10,7 +10,7 @@
     "react-dom": "16.8.6",
     "react-scripts": "3.0.1",
     "rimble-ui": "link:..",
-    "styled-components": "^4.2.1"
+    "styled-components": "^4.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -25,6 +25,7 @@
     "@babel/core": "7.4.5",
     "@storybook/addon-a11y": "5.1.1",
     "@storybook/addon-actions": "5.1.1",
+    "@storybook/addon-info": "^5.1.1",
     "@storybook/addon-links": "5.1.1",
     "@storybook/addon-viewport": "5.1.1",
     "@storybook/addons": "5.1.1",

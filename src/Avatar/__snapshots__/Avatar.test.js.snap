@@ -1,12 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Avatar component sanity matches default snapshot 1`] = `
-.c0 {
+.c1 {
+  background-color: #CCC;
   width: 2rem;
   height: 2rem;
 }
 
-.c0 {
+.c1 {
   box-sizing: border-box;
 }
 
@@ -14,25 +15,27 @@ exports[`Avatar component sanity matches default snapshot 1`] = `
   position: relative;
   overflow: hidden;
   border-radius: 100%;
-  background: center no-repeat;
   background-size: cover;
-  background-color: #CCC;
-  background-image: url();
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(me.jpg);
 }
 
 <div
   alt="Avatar"
-  class="c0"
+  class="c0 c1"
+  src="me.jpg"
 />
 `;
 
 exports[`Avatar component sanity matches themed snapshot 1`] = `
-.c1 {
+.c2 {
+  background-color: #CCC;
   width: 2rem;
   height: 2rem;
 }
 
-.c1 {
+.c2 {
   box-sizing: border-box;
 }
 
@@ -40,10 +43,10 @@ exports[`Avatar component sanity matches themed snapshot 1`] = `
   position: relative;
   overflow: hidden;
   border-radius: 100%;
-  background: center no-repeat;
   background-size: cover;
-  background-color: #CCC;
-  background-image: url();
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(me.jpg);
 }
 
 .c0 {
@@ -57,7 +60,8 @@ exports[`Avatar component sanity matches themed snapshot 1`] = `
 >
   <div
     alt="Avatar"
-    class="c1"
+    class="c1 c2"
+    src="me.jpg"
   />
 </div>
 `;

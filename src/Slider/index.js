@@ -81,6 +81,13 @@ Slider.propTypes = {
   theme: PropTypes.object,
 };
 
+Slider.propTypes = {
+  /**
+   * Sets theme
+   */
+  theme: PropTypes.object,
+};
+
 Slider.displayName = 'Slider';
 
 export default Slider;

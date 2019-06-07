@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { themeGet } from 'styled-system';
 import CheckBox from 'rmdi/lib/CheckBox';
@@ -75,6 +76,14 @@ const Checkbox = ({ className, ...props }) => (
 Checkbox.defaultProps = {
   theme,
   color: 'primary',
+};
+
+Checkbox.propTypes = {
+  ...Box.propTypes,
+  /**
+   * Sets theme
+   */
+  theme: PropTypes.object,
 };
 
 Checkbox.displayName = 'Checkbox';
