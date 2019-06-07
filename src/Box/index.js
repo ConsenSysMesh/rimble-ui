@@ -5,7 +5,7 @@ import { opacity } from 'styled-system';
 import { COMMON, LAYOUT, POSITION, FLEXBOX, BORDERS } from '../constants';
 import theme from '../theme';
 
-const Box = styled.div`
+const StyledBox = styled.div`
   & {
     box-sizing: border-box;
   }
@@ -18,17 +18,22 @@ const Box = styled.div`
   ${opacity}
 `;
 
+const Box = props => <StyledBox {...props} />;
+
 Box.defaultProps = {
   theme,
 };
 
 Box.propTypes = {
+  /**
+   * Sets theme
+   */
+  theme: PropTypes.object,
   ...COMMON.propTypes,
   ...LAYOUT.propTypes,
   ...POSITION.propTypes,
   ...FLEXBOX.propTypes,
   ...BORDERS.propTypes,
-  theme: PropTypes.object,
 };
 
 Box.displayName = 'Box';

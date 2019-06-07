@@ -8,14 +8,14 @@ describe('Icon component sanity', () => {
   });
 
   it('matches default snapshot', () => {
-    const component = render(<Icon />);
+    const component = render(<Icon name={'Info'} />);
     expect(component).toMatchSnapshot();
   });
 
   it('matches themed snapshot', () => {
     const component = render(
       <ThemeProvider theme={theme}>
-        <Icon />
+        <Icon name={'Info'} />
       </ThemeProvider>
     );
     expect(component).toMatchSnapshot();

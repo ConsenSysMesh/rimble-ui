@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
-
 import Box from '../Box';
-import Card from '../Card';
 
 const StyledOverlay = styled(Box)`
   & {
@@ -57,6 +56,17 @@ class Modal extends Component {
     return <StyledOverlay>{this.props.children}</StyledOverlay>;
   }
 }
+
+Modal.defaultProps = {
+  isOpen: false,
+};
+
+Modal.propTypes = {
+  /**
+   * Shows the content of the Modal when true
+   */
+  isOpen: PropTypes.bool,
+};
 
 Modal.displayName = 'Modal';
 

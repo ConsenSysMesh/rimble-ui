@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import styled, { keyframes } from 'styled-components';
 import { timingFunctions, ellipsis } from 'polished';
 
@@ -452,10 +453,45 @@ ToastMessage.defaultProps = {
   secondaryMessage: '',
   actionHref: '',
   actionText: '',
-  variant: false,
-  icon: false,
-  colorTheme: '',
+  variant: 'default',
+  icon: '',
+  colorTheme: 'light',
   closeElem: false,
+};
+
+ToastMessage.propTypes = {
+  /**
+   * Sets primary content
+   */
+  message: PropTypes.string,
+  /**
+   * Sets secondary content
+   */
+  secondaryMessage: PropTypes.string,
+  /**
+   * Sets URL for button
+   */
+  actionHref: PropTypes.string,
+  /**
+   * Sets text for button
+   */
+  actionText: PropTypes.string,
+  /**
+   * Sets type of ToastMessage to display
+   */
+  variant: PropTypes.oneOf(['default', 'success', 'failure', 'processing']),
+  /**
+   * Sets icon
+   */
+  icon: PropTypes.string,
+  /**
+   * Sets background and text color
+   */
+  colorTheme: PropTypes.oneOf(['light', 'dark']),
+  /**
+   * Allows ToastMessage to be closed by user
+   */
+  closeElem: PropTypes.bool,
 };
 
 ToastMessage.displayName = 'ToastMessage';

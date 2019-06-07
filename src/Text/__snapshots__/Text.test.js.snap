@@ -1,8 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Text component sanity matches default snapshot 1`] = `
-.c0 {
+.c1 {
   color: #3F3D4B;
+}
+
+.c1 {
+  box-sizing: border-box;
+}
+
+.c0 {
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -11,12 +18,8 @@ exports[`Text component sanity matches default snapshot 1`] = `
   color: #3F3D4B;
 }
 
-.c0 {
-  box-sizing: border-box;
-}
-
 <div
-  class="c0"
+  class="c0 c1"
   color="copyColor"
   font-family="sansSerif"
   font-size="2"
@@ -25,18 +28,21 @@ exports[`Text component sanity matches default snapshot 1`] = `
 `;
 
 exports[`Text component sanity matches themed snapshot 1`] = `
-.c1 {
+.c2 {
   color: #3F3D4B;
+}
+
+.c2 {
+  box-sizing: border-box;
+}
+
+.c1 {
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
   text-align: left;
   color: #3F3D4B;
-}
-
-.c1 {
-  box-sizing: border-box;
 }
 
 .c0 {
@@ -49,7 +55,7 @@ exports[`Text component sanity matches themed snapshot 1`] = `
   class="c0"
 >
   <div
-    class="c1"
+    class="c1 c2"
     color="copyColor"
     font-family="sansSerif"
     font-size="2"

@@ -1,16 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import {
-  themeGet,
-  height,
-  fontFamily,
-  boxShadow
-} from 'styled-system';
-
+import { themeGet, height, fontFamily, boxShadow } from 'styled-system';
+import theme from '../theme';
 import Box from '../Box';
-import defaultTheme from '../theme';
 
-const Table = styled(Box)`
+const StyledTable = styled(Box)`
   & {
     table-layout: fixed;
     border-collapse: collapse;
@@ -42,10 +37,12 @@ const Table = styled(Box)`
   ${fontFamily}
   ${height}
   ${boxShadow}
-`
+`;
+
+const Table = props => <StyledTable {...props} />;
 
 Table.defaultProps = {
-  theme: defaultTheme,
+  theme,
   as: 'table',
   width: 1,
   border: 1,
@@ -54,7 +51,15 @@ Table.defaultProps = {
   fontWeight: 2,
   fontFamily: 'sansSerif',
   color: 'dark-gray',
-  boxShadow: 1
+  boxShadow: 1,
+};
+
+Table.propTypes = {
+  ...Box.propTypes,
+  /**
+   * Sets theme
+   */
+  theme: PropTypes.object,
 };
 
 Table.displayName = 'Table';
