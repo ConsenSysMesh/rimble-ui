@@ -59,9 +59,17 @@ Avatar.propTypes = {
    */
   size: PropTypes.string,
   /**
-   * Sets avatar background-image
+   * Sets avatar image
    */
-  src: PropTypes.string,
+  src: PropTypes.string.isRequired,
+  /**
+   * Sets theme
+   */
+  theme: PropTypes.object,
+  /**
+   * Sets the background color when the image isn't visible
+   */
+  bg: PropTypes.string,
   ...Box.propTypes,
 };
 

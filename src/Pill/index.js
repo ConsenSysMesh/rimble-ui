@@ -43,6 +43,9 @@ Pill.defaultProps = {
 
 Pill.propTypes = {
   ...Text.propTypes,
+  /**
+   * Sets theme
+   */
   theme: PropTypes.object,
 };
 

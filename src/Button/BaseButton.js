@@ -128,9 +128,21 @@ Button.defaultProps = {
 Button.propTypes = {
   ...Box.propTypes,
   ...TYPOGRAPHY.propTypes,
+  /**
+   * Sets theme
+   */
   theme: PropTypes.object,
+  /**
+   * Sets background color of button
+   */
   mainColor: PropTypes.string,
+  /**
+   * Sets text color of button
+   */
   contrastColor: PropTypes.string,
+  /**
+   * Sets icon of button
+   */
   icon: PropTypes.string,
 };
 

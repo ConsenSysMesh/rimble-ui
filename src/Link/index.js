@@ -47,6 +47,9 @@ Link.defaultProps = {
 
 Link.propTypes = {
   ...Text.propTypes,
+  /**
+   * Sets theme
+   */
   theme: PropTypes.object,
 };
 

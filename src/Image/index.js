@@ -21,10 +21,25 @@ Image.defaultProps = {
 
 Image.propTypes = {
   ...Box.propTypes,
+  /**
+   * Sets theme
+   */
   theme: PropTypes.object,
+  /**
+   * Sets element type
+   */
   as: PropTypes.string,
+  /**
+   * Sets display property
+   */
   display: PropTypes.string,
+  /**
+   * Sets max-width
+   */
   maxWidth: PropTypes.string,
+  /**
+   * Sets image height - width will be 100%
+   */
   height: PropTypes.string,
 };
 

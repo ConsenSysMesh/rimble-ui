@@ -105,6 +105,9 @@ StyledInput.defaultProps = defaultProps;
 
 Input.propTypes = {
   ...Box.propTypes,
+  /**
+   * Sets theme
+   */
   theme: PropTypes.object,
 };
 

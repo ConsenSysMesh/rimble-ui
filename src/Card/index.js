@@ -37,6 +37,9 @@ Card.defaultProps = {
 
 Card.propTypes = {
   ...Box.propTypes,
+  /**
+   * Sets theme
+   */
   theme: PropTypes.object,
 };
 

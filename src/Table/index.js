@@ -56,6 +56,9 @@ Table.defaultProps = {
 
 Table.propTypes = {
   ...Box.propTypes,
+  /**
+   * Sets theme
+   */
   theme: PropTypes.object,
 };
 

@@ -75,6 +75,9 @@ Flash.defaultProps = {
 };
 
 Flash.propTypes = {
+  /**
+   * Sets the colors of the background, text and links
+   */
   variant: PropTypes.oneOf(['base', 'success', 'warning', 'danger', 'info']),
   ...Box.propTypes,
 };

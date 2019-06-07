@@ -46,6 +46,9 @@ Select.defaultProps = {
 };
 
 Select.propTypes = {
+  /**
+   * Sets theme
+   */
   theme: PropTypes.object,
 };
 

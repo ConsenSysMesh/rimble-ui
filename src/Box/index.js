@@ -25,12 +25,15 @@ Box.defaultProps = {
 };
 
 Box.propTypes = {
+  /**
+   * Sets theme
+   */
+  theme: PropTypes.object,
   ...COMMON.propTypes,
   ...LAYOUT.propTypes,
   ...POSITION.propTypes,
   ...FLEXBOX.propTypes,
   ...BORDERS.propTypes,
-  theme: PropTypes.object,
 };
 
 Box.displayName = 'Box';

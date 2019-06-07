@@ -28,7 +28,10 @@ Textarea.defaultProps = {
 
 const Textarea = props => <StyledTextarea {...props} />;
 
-Text.propTypes = {
+Textarea.propTypes = {
+  /**
+   * Sets theme
+   */
   theme: PropTypes.object,
 };
 

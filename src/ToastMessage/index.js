@@ -460,13 +460,37 @@ ToastMessage.defaultProps = {
 };
 
 ToastMessage.propTypes = {
+  /**
+   * Sets primary content
+   */
   message: PropTypes.string,
+  /**
+   * Sets secondary content
+   */
   secondaryMessage: PropTypes.string,
+  /**
+   * Sets URL for button
+   */
   actionHref: PropTypes.string,
+  /**
+   * Sets text for button
+   */
   actionText: PropTypes.string,
+  /**
+   * Sets type of ToastMessage to display
+   */
   variant: PropTypes.oneOf(['default', 'success', 'failure', 'processing']),
+  /**
+   * Sets icon
+   */
   icon: PropTypes.string,
+  /**
+   * Sets background and text color
+   */
   colorTheme: PropTypes.oneOf(['light', 'dark']),
+  /**
+   * Allows ToastMessage to be closed by user
+   */
   closeElem: PropTypes.bool,
 };
 

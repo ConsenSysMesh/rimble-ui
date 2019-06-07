@@ -56,6 +56,9 @@ Text.p.defaultProps = {
 Text.s = styled(Text)``;
 Text.s.defaultProps = {
   ...Text.defaultProps,
+  /**
+   * Sets element type
+   */
   as: 's',
 };
 

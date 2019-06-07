@@ -80,6 +80,9 @@ Checkbox.defaultProps = {
 
 Checkbox.propTypes = {
   ...Box.propTypes,
+  /**
+   * Sets theme
+   */
   theme: PropTypes.object,
 };
 

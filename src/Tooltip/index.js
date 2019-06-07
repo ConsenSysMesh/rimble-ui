@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Popper from '@d8660091/react-popper';
 import theme from '../theme';
@@ -78,6 +79,17 @@ Tooltip.defaultProps = {
   offset: '0, 0',
   /** Sets the content of tooltip. Only accepts text and not markup. */
   message: 'props.message text',
+};
+
+Tooltip.propTypes = {
+  /** Sets the theme of tooltip. Options are light or dark. */
+  variant: PropTypes.string,
+  /** Sets the placement of tooltip relative to anchoring element. Options are top, left, right, bottom. */
+  placement: PropTypes.string,
+  /** Sets the placement of tooltip relative to anchoring element. */
+  offset: PropTypes.string,
+  /** Sets the content of tooltip. Only accepts text and not markup. */
+  message: PropTypes.string,
 };
 
 export default Tooltip;

@@ -27,6 +27,9 @@ Form.defaultProps = {
 
 Form.propTypes = {
   ...Box.propTypes,
+  /**
+   * Shows the input validation styles when true
+   */
   validated: PropTypes.bool,
 };
 

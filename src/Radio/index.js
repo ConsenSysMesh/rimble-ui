@@ -80,7 +80,14 @@ Radio.defaultProps = {
 
 Radio.propTypes = {
   ...Box.propTypes,
+  /**
+   * Sets theme
+   */
   theme: PropTypes.object,
+  /**
+   * Sets color
+   */
+  color: PropTypes.string,
 };
 
 Radio.displayName = 'Radio';

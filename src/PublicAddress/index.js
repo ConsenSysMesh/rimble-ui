@@ -100,8 +100,17 @@ class PublicAddress extends Component {
 PublicAddress.displayName = 'PublicAddress';
 
 PublicAddress.propTypes = {
+  /**
+   * Sets Ethereum address
+   */
   address: PropTypes.string,
+  /**
+   * Sets the text label
+   */
   label: PropTypes.string,
+  /**
+   * Allows field to be validated by form
+   */
   required: PropTypes.bool,
 };
 

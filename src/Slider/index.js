@@ -50,6 +50,9 @@ Slider.defaultProps = {
 };
 
 Slider.propTypes = {
+  /**
+   * Sets theme
+   */
   theme: PropTypes.object,
 };
 

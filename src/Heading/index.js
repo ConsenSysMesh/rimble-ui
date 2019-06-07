@@ -29,6 +29,9 @@ Heading.defaultProps = {
 Heading.propTypes = {
   ...COMMON.propTypes,
   ...TYPOGRAPHY.propTypes,
+  /**
+   * Sets theme
+   */
   theme: PropTypes.object,
 };
 
