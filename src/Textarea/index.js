@@ -10,6 +10,8 @@ const StyledTextarea = styled(StyledInput)`
   }
 `;
 
+const Textarea = props => <StyledTextarea {...props} />;
+
 Textarea.defaultProps = {
   theme,
   as: 'textarea',
@@ -25,8 +27,6 @@ Textarea.defaultProps = {
   borderRadius: 1,
   boxShadow: 1,
 };
-
-const Textarea = props => <StyledTextarea {...props} />;
 
 Textarea.propTypes = {
   /**

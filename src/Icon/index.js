@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Icon as ImportedIcon } from 'rmdi/lib/Icon';
+import StyledIcon from 'rmdi/lib/Icon';
 
-const Icon = props => <ImportedIcon {...props} />;
+const Icon = props => <StyledIcon {...props} />;
 
 Icon.defaultProps = {
   display: 'block',

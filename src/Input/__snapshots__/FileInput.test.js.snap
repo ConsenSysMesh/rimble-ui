@@ -2,19 +2,6 @@
 
 exports[`File Input component sanity matches default snapshot 1`] = `
 .c2 {
-  color: #fff;
-  background-color: #999;
-  margin: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 32px;
-  padding-right: 32px;
-  width: medium;
-  height: medium;
-  border: none;
-  border-radius: 4px;
-  border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: inherit;
   font-weight: 600;
@@ -23,10 +10,6 @@ exports[`File Input component sanity matches default snapshot 1`] = `
   font-size: 1rem;
   height: 3rem;
   min-width: 3rem;
-}
-
-.c2 {
-  box-sizing: border-box;
 }
 
 .c2 {
@@ -185,19 +168,6 @@ exports[`File Input component sanity matches default snapshot 1`] = `
 
 exports[`File Input component sanity matches themed snapshot 1`] = `
 .c3 {
-  color: #fff;
-  background-color: #999;
-  margin: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 32px;
-  padding-right: 32px;
-  width: medium;
-  height: medium;
-  border: none;
-  border-radius: 4px;
-  border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: inherit;
   font-weight: 600;
@@ -206,10 +176,6 @@ exports[`File Input component sanity matches themed snapshot 1`] = `
   font-size: 1rem;
   height: 3rem;
   min-width: 3rem;
-}
-
-.c3 {
-  box-sizing: border-box;
 }
 
 .c3 {
