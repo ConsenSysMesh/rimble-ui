@@ -4,10 +4,12 @@ import styled from 'styled-components';
 import theme from '../theme';
 import Box from '../Box';
 
-const Image = styled(Box)`
+const StyledImage = styled(Box)`
   & {
   }
 `;
+
+const Image = props => <StyledImage {...props} />;
 
 Image.defaultProps = {
   theme,
@@ -20,6 +22,10 @@ Image.defaultProps = {
 Image.propTypes = {
   ...Box.propTypes,
   theme: PropTypes.object,
+  as: PropTypes.string,
+  display: PropTypes.string,
+  maxWidth: PropTypes.string,
+  height: PropTypes.string,
 };
 
 Image.displayName = 'Image';

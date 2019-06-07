@@ -5,7 +5,7 @@ import { themeGet, height, fontFamily, boxShadow } from 'styled-system';
 import theme from '../theme';
 import Box from '../Box';
 
-const Table = styled(Box)`
+const StyledTable = styled(Box)`
   & {
     table-layout: fixed;
     border-collapse: collapse;
@@ -38,6 +38,8 @@ const Table = styled(Box)`
   ${height}
   ${boxShadow}
 `;
+
+const Table = props => <StyledTable {...props} />;
 
 Table.defaultProps = {
   theme,

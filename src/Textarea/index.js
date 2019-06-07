@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import theme from '../theme';
 import { StyledInput } from '../Input';
 
-const Textarea = styled(StyledInput)`
+const StyledTextarea = styled(StyledInput)`
   & {
     appearance: none;
   }
@@ -25,6 +25,8 @@ Textarea.defaultProps = {
   borderRadius: 1,
   boxShadow: 1,
 };
+
+const Textarea = props => <StyledTextarea {...props} />;
 
 Text.propTypes = {
   theme: PropTypes.object,
