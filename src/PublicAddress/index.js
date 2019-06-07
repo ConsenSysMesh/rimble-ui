@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled, { keyframes } from 'styled-components';
 import PropTypes from 'prop-types';
+
 import Box from '../Box';
 import Button from '../Button';
 import Field from '../Field';
@@ -100,17 +101,8 @@ class PublicAddress extends Component {
 PublicAddress.displayName = 'PublicAddress';
 
 PublicAddress.propTypes = {
-  /**
-   * Sets Ethereum address
-   */
   address: PropTypes.string,
-  /**
-   * Sets the text label
-   */
   label: PropTypes.string,
-  /**
-   * Allows field to be validated by form
-   */
   required: PropTypes.bool,
 };
 

@@ -1,8 +1,8 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { themeGet } from 'styled-system';
-import theme from '../theme';
+
+import defaultTheme from '../theme';
 
 const Slider = styled.input.attrs(props => ({
   type: 'range',
@@ -44,16 +44,9 @@ const Slider = styled.input.attrs(props => ({
 `;
 
 Slider.defaultProps = {
-  theme,
+  theme: defaultTheme,
   m: 0,
   p: 0,
-};
-
-Slider.propTypes = {
-  /**
-   * Sets theme
-   */
-  theme: PropTypes.object,
 };
 
 Slider.displayName = 'Slider';

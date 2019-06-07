@@ -1,8 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import theme from '../theme';
+import { themeGet } from 'styled-system';
+
 import Box from '../Box';
+
+import defaultTheme from '../theme';
 
 const size = props => {
   switch (props.size) {
@@ -26,51 +28,24 @@ const size = props => {
   }
 };
 
-const StyledAvatar = styled(Box)`
+const Avatar = styled(Box)`
   & {
     position: relative;
     overflow: hidden;
     border-radius: 100%;
+    background: center no-repeat;
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: ${props => themeGet('colors.grey', '#000')};
     background-image: url(${props => props.src});
   }
 
   ${size}
 `;
 
-const Avatar = props => <StyledAvatar {...props} />;
-
 Avatar.defaultProps = {
-  theme,
+  theme: defaultTheme,
   size: '2rem',
-  bg: 'grey',
   alt: 'Avatar',
-};
-
-Avatar.propTypes = {
-  /**
-   * Sets alt property on image for accessibility
-   */
-  alt: PropTypes.string,
-  /**
-   * Sets avatar height and width
-   */
-  size: PropTypes.string,
-  /**
-   * Sets avatar image
-   */
-  src: PropTypes.string.isRequired,
-  /**
-   * Sets theme
-   */
-  theme: PropTypes.object,
-  /**
-   * Sets the background color when the image isn't visible
-   */
-  bg: PropTypes.string,
-  ...Box.propTypes,
 };
 
 Avatar.displayName = 'Avatar';
