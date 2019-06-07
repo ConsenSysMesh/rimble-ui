@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Card component sanity matches default snapshot 1`] = `
-.c1 {
+.c0 {
   background-color: #fff;
   margin-top: 8px;
   margin-bottom: 8px;
@@ -16,14 +16,11 @@ exports[`Card component sanity matches default snapshot 1`] = `
   border: 1px solid transparent;
   border-color: #D6D6D6;
   border-color: #D6D6D6;
-}
-
-.c1 {
-  box-sizing: border-box;
+  text-align: left;
 }
 
 .c0 {
-  text-align: left;
+  box-sizing: border-box;
 }
 
 .c0 {
@@ -37,14 +34,14 @@ exports[`Card component sanity matches default snapshot 1`] = `
 }
 
 <div
-  class="c0 c1"
+  class="c0"
   height="auto"
   width="100%"
 />
 `;
 
 exports[`Card component sanity matches themed snapshot 1`] = `
-.c2 {
+.c1 {
   background-color: #fff;
   margin-top: 8px;
   margin-bottom: 8px;
@@ -59,14 +56,11 @@ exports[`Card component sanity matches themed snapshot 1`] = `
   border: 1px solid transparent;
   border-color: #D6D6D6;
   border-color: #D6D6D6;
-}
-
-.c2 {
-  box-sizing: border-box;
+  text-align: left;
 }
 
 .c1 {
-  text-align: left;
+  box-sizing: border-box;
 }
 
 .c1 {
@@ -89,7 +83,7 @@ exports[`Card component sanity matches themed snapshot 1`] = `
   class="c0"
 >
   <div
-    class="c1 c2"
+    class="c1"
     height="auto"
     width="100%"
   />

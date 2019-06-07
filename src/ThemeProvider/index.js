@@ -42,11 +42,6 @@ const ThemeProvider = ({ ...props }) => {
   );
 };
 
-ThemeProvider.propTypes = {
-  /**
-   * Sets theme
-   */
-  theme: PropTypes.object,
-};
+ThemeProvider.propTypes = {};
 
 export default ThemeProvider;

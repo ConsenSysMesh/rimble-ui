@@ -21,13 +21,7 @@ class EthAddress extends React.PureComponent {
 }
 
 EthAddress.propTypes = {
-  /**
-   * The Ethereum Address
-   */
   address: PropTypes.string.isRequired,
-  /**
-   * Will shorten the address when true
-   */
   truncate: PropTypes.bool,
 };
 

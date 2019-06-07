@@ -8,14 +8,14 @@ describe('Avatar component sanity', () => {
   });
 
   it('matches default snapshot', () => {
-    const component = render(<Avatar src="me.jpg" />);
+    const component = render(<Avatar />);
     expect(component).toMatchSnapshot();
   });
 
   it('matches themed snapshot', () => {
     const component = render(
       <ThemeProvider theme={theme}>
-        <Avatar src="me.jpg" />
+        <Avatar />
       </ThemeProvider>
     );
     expect(component).toMatchSnapshot();

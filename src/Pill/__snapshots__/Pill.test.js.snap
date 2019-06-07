@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Pill component sanity matches default snapshot 1`] = `
-.c2 {
+.c0 {
   color: #3259D6;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -18,18 +18,10 @@ exports[`Pill component sanity matches default snapshot 1`] = `
   align-items: center;
   border-radius: 16px;
   border-radius: 16px;
-}
-
-.c2 {
-  box-sizing: border-box;
-}
-
-.c1 {
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 1;
-  text-align: left;
   color: #3259D6;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -39,6 +31,10 @@ exports[`Pill component sanity matches default snapshot 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+}
+
+.c0 {
+  box-sizing: border-box;
 }
 
 .c0 {
@@ -61,7 +57,7 @@ exports[`Pill component sanity matches default snapshot 1`] = `
 }
 
 <div
-  class="c0 c1 c2"
+  class="c0"
   color="blue"
   display="inline-flex"
   font-family="sansSerif"
@@ -72,7 +68,7 @@ exports[`Pill component sanity matches default snapshot 1`] = `
 `;
 
 exports[`Pill component sanity matches themed snapshot 1`] = `
-.c3 {
+.c1 {
   color: #3259D6;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -89,18 +85,10 @@ exports[`Pill component sanity matches themed snapshot 1`] = `
   align-items: center;
   border-radius: 16px;
   border-radius: 16px;
-}
-
-.c3 {
-  box-sizing: border-box;
-}
-
-.c2 {
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 1;
-  text-align: left;
   color: #3259D6;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -110,6 +98,10 @@ exports[`Pill component sanity matches themed snapshot 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+}
+
+.c1 {
+  box-sizing: border-box;
 }
 
 .c1 {
@@ -141,7 +133,7 @@ exports[`Pill component sanity matches themed snapshot 1`] = `
   class="c0"
 >
   <div
-    class="c1 c2 c3"
+    class="c1"
     color="blue"
     display="inline-flex"
     font-family="sansSerif"
