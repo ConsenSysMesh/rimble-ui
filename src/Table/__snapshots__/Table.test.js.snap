@@ -2,18 +2,8 @@
 
 exports[`Table component sanity matches default snapshot 1`] = `
 .c0 {
-  color: #333;
-  width: 100%;
-  border: 1px solid transparent;
-  border-color: #CCC;
-  border-color: #CCC;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-}
-
-.c0 {
-  box-sizing: border-box;
 }
 
 .c0 {
@@ -117,18 +107,8 @@ exports[`Table component sanity matches default snapshot 1`] = `
 
 exports[`Table component sanity matches themed snapshot 1`] = `
 .c1 {
-  color: #333;
-  width: 100%;
-  border: 1px solid transparent;
-  border-color: #CCC;
-  border-color: #CCC;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-}
-
-.c1 {
-  box-sizing: border-box;
 }
 
 .c1 {

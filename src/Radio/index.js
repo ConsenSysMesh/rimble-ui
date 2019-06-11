@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { themeGet } from 'styled-system';
 import RadioButtonChecked from 'rmdi/lib/RadioButtonChecked';
@@ -75,6 +76,18 @@ const Radio = ({ className, ...props }) => (
 Radio.defaultProps = {
   theme,
   color: 'primary',
+};
+
+Radio.propTypes = {
+  ...Box.propTypes,
+  /**
+   * Sets theme
+   */
+  theme: PropTypes.object,
+  /**
+   * Sets color
+   */
+  color: PropTypes.string,
 };
 
 Radio.displayName = 'Radio';

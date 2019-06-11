@@ -2,6 +2,11 @@
 
 exports[`Slider component sanity matches default snapshot 1`] = `
 .c0 {
+  color: #4E3FCE;
+  margin: 0;
+}
+
+.c0 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -16,7 +21,7 @@ exports[`Slider component sanity matches default snapshot 1`] = `
   appearance: none;
   border: none;
   border-radius: 4px;
-  background: #4E3FCE;
+  background: currentColor;
   height: 4px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -51,16 +56,67 @@ exports[`Slider component sanity matches default snapshot 1`] = `
   cursor: -webkit-grabbing;
   cursor: -moz-grabbing;
   cursor: grabbing;
-  border-color: #4E3FCE;
+  border-color: currentColor;
+}
+
+.c0::-moz-range-track {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  border-radius: 4px;
+  background: currentColor;
+  height: 4px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0::-moz-range-thumb {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid #ccc;
+  background: white;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 100%;
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+  cursor: grab;
+}
+
+.c0::-moz-range-thumb:hover {
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+}
+
+.c0::-moz-range-thumb:active {
+  cursor: -webkit-grabbing;
+  cursor: -moz-grabbing;
+  cursor: grabbing;
+  border-color: currentColor;
 }
 
 <input
   class="c0"
+  color="primary"
   type="range"
 />
 `;
 
 exports[`Slider component sanity matches themed snapshot 1`] = `
+.c1 {
+  color: #4E3FCE;
+  margin: 0;
+}
+
 .c1 {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -76,7 +132,7 @@ exports[`Slider component sanity matches themed snapshot 1`] = `
   appearance: none;
   border: none;
   border-radius: 4px;
-  background: #4E3FCE;
+  background: currentColor;
   height: 4px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -111,7 +167,52 @@ exports[`Slider component sanity matches themed snapshot 1`] = `
   cursor: -webkit-grabbing;
   cursor: -moz-grabbing;
   cursor: grabbing;
-  border-color: #4E3FCE;
+  border-color: currentColor;
+}
+
+.c1::-moz-range-track {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  border-radius: 4px;
+  background: currentColor;
+  height: 4px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1::-moz-range-thumb {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid #ccc;
+  background: white;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 100%;
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+  cursor: grab;
+}
+
+.c1::-moz-range-thumb:hover {
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+}
+
+.c1::-moz-range-thumb:active {
+  cursor: -webkit-grabbing;
+  cursor: -moz-grabbing;
+  cursor: grabbing;
+  border-color: currentColor;
 }
 
 .c0 {
@@ -125,6 +226,7 @@ exports[`Slider component sanity matches themed snapshot 1`] = `
 >
   <input
     class="c1"
+    color="primary"
     type="range"
   />
 </div>

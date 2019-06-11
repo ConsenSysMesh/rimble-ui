@@ -2,9 +2,20 @@
 
 exports[`Checkbox component sanity matches default snapshot 1`] = `
 .c2 {
+  box-sizing: border-box;
+}
+
+.c4 {
   color: #3F3D4B;
   margin-left: 4px;
   margin-right: 8px;
+}
+
+.c4 {
+  box-sizing: border-box;
+}
+
+.c3 {
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -13,19 +24,6 @@ exports[`Checkbox component sanity matches default snapshot 1`] = `
   color: #3F3D4B;
   margin-left: 4px;
   margin-right: 8px;
-}
-
-.c2 {
-  box-sizing: border-box;
-}
-
-.c0 {
-  color: #4E3FCE;
-  opacity: 1;
-}
-
-.c0 {
-  box-sizing: border-box;
 }
 
 .c0 {
@@ -37,10 +35,6 @@ exports[`Checkbox component sanity matches default snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.c1 {
-  box-sizing: border-box;
 }
 
 .c1 {
@@ -75,7 +69,7 @@ exports[`Checkbox component sanity matches default snapshot 1`] = `
 .c1 > svg[name='checked'] {
   display: none;
   z-index: 1;
-  fill: #4E3FCE;
+  fill: #000;
 }
 
 .c1 > input:checked ~ svg[name='checked'] {
@@ -88,7 +82,7 @@ exports[`Checkbox component sanity matches default snapshot 1`] = `
   opacity="1"
 >
   <div
-    class="c1"
+    class="c1 c2"
   >
     <input
       color="primary"
@@ -120,7 +114,7 @@ exports[`Checkbox component sanity matches default snapshot 1`] = `
     </svg>
   </div>
   <div
-    class="c2"
+    class="c3 c4"
     color="copyColor"
     font-family="sansSerif"
     font-size="1"
@@ -131,9 +125,20 @@ exports[`Checkbox component sanity matches default snapshot 1`] = `
 
 exports[`Checkbox component sanity matches themed snapshot 1`] = `
 .c3 {
+  box-sizing: border-box;
+}
+
+.c5 {
   color: #3F3D4B;
   margin-left: 4px;
   margin-right: 8px;
+}
+
+.c5 {
+  box-sizing: border-box;
+}
+
+.c4 {
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -142,19 +147,6 @@ exports[`Checkbox component sanity matches themed snapshot 1`] = `
   color: #3F3D4B;
   margin-left: 4px;
   margin-right: 8px;
-}
-
-.c3 {
-  box-sizing: border-box;
-}
-
-.c1 {
-  color: #4E3FCE;
-  opacity: 1;
-}
-
-.c1 {
-  box-sizing: border-box;
 }
 
 .c1 {
@@ -166,10 +158,6 @@ exports[`Checkbox component sanity matches themed snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.c2 {
-  box-sizing: border-box;
 }
 
 .c2 {
@@ -226,7 +214,7 @@ exports[`Checkbox component sanity matches themed snapshot 1`] = `
     opacity="1"
   >
     <div
-      class="c2"
+      class="c2 c3"
     >
       <input
         color="primary"
@@ -258,7 +246,7 @@ exports[`Checkbox component sanity matches themed snapshot 1`] = `
       </svg>
     </div>
     <div
-      class="c3"
+      class="c4 c5"
       color="copyColor"
       font-family="sansSerif"
       font-size="1"
