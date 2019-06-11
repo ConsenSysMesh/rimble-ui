@@ -1,9 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import theme from '../theme';
 import Text from '../Text';
 
-const Pill = styled(Text)`
+const StyledPill = styled(Text)`
   & {
     position: relative;
     background: none;
@@ -23,6 +24,8 @@ const Pill = styled(Text)`
   }
 `;
 
+const Pill = props => <StyledPill {...props} />;
+
 Pill.defaultProps = {
   theme,
   color: 'dark-gray',
@@ -36,6 +39,14 @@ Pill.defaultProps = {
   borderRadius: 3,
   display: 'inline-flex',
   alignItems: 'center',
+};
+
+Pill.propTypes = {
+  ...Text.propTypes,
+  /**
+   * Sets theme
+   */
+  theme: PropTypes.object,
 };
 
 Pill.displayName = 'Pill';

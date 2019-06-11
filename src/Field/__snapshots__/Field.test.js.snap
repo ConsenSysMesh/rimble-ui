@@ -20,9 +20,16 @@ exports[`Field component sanity matches default snapshot 1`] = `
   box-sizing: border-box;
 }
 
-.c1 {
+.c3 {
   color: #3F3D4B;
   margin-bottom: 8px;
+}
+
+.c3 {
+  box-sizing: border-box;
+}
+
+.c2 {
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -30,10 +37,6 @@ exports[`Field component sanity matches default snapshot 1`] = `
   text-align: left;
   color: #3F3D4B;
   margin-bottom: 8px;
-}
-
-.c1 {
-  box-sizing: border-box;
 }
 
 .c1:after {
@@ -47,7 +50,7 @@ exports[`Field component sanity matches default snapshot 1`] = `
   display="flex"
 >
   <div
-    class="c1"
+    class="c1 c2 c3"
     color="copyColor"
     font-family="sansSerif"
     font-size="1"
@@ -76,9 +79,16 @@ exports[`Field component sanity matches themed snapshot 1`] = `
   box-sizing: border-box;
 }
 
-.c2 {
+.c4 {
   color: #3F3D4B;
   margin-bottom: 8px;
+}
+
+.c4 {
+  box-sizing: border-box;
+}
+
+.c3 {
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -86,10 +96,6 @@ exports[`Field component sanity matches themed snapshot 1`] = `
   text-align: left;
   color: #3F3D4B;
   margin-bottom: 8px;
-}
-
-.c2 {
-  box-sizing: border-box;
 }
 
 .c2:after {
@@ -112,7 +118,7 @@ exports[`Field component sanity matches themed snapshot 1`] = `
     display="flex"
   >
     <div
-      class="c2"
+      class="c2 c3 c4"
       color="copyColor"
       font-family="sansSerif"
       font-size="1"
