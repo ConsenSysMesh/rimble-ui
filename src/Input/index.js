@@ -29,12 +29,14 @@ const StyledInput = styled(Box)`
   .was-validated & {
     &:valid {
       border-color: #28C081;
+      padding-right: 3rem;
     }
     &:valid ~ svg.icon-valid {
       visibility: visible;
     }
     &:invalid {
       border-color: #EC9081;
+      padding-right: 3rem;
     }
     &:invalid ~ svg.icon-invalid {
       visibility: visible;
