@@ -62,11 +62,18 @@ const StyledIconWrapper = styled(Box)`
 `;
 
 const WithValidationStyle = React.forwardRef((props, ref) => {
+  const colorSuccess = themeGet('colors.success')(props);
+  const colorError = themeGet('colors.danger')(props);
+
   return (
     <StyledIconWrapper width={1}>
       <StyledInput {...props} ref={ref} />
-      <Icon className={'icon-valid'} name={'CheckCircle'} color={'#28C081'} />
-      <Icon className={'icon-invalid'} name={'Warning'} color={'#DC2C10'} />
+      <Icon
+        className={'icon-valid'}
+        name={'CheckCircle'}
+        color={colorSuccess}
+      />
+      <Icon className={'icon-invalid'} name={'Warning'} color={colorError} />
     </StyledIconWrapper>
   );
 });
