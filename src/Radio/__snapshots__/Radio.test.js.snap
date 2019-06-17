@@ -2,20 +2,9 @@
 
 exports[`Radio component sanity matches default snapshot 1`] = `
 .c2 {
-  box-sizing: border-box;
-}
-
-.c4 {
   color: #3F3D4B;
   margin-left: 4px;
   margin-right: 8px;
-}
-
-.c4 {
-  box-sizing: border-box;
-}
-
-.c3 {
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -24,6 +13,19 @@ exports[`Radio component sanity matches default snapshot 1`] = `
   color: #3F3D4B;
   margin-left: 4px;
   margin-right: 8px;
+}
+
+.c2 {
+  box-sizing: border-box;
+}
+
+.c0 {
+  color: #4E3FCE;
+  opacity: 1;
+}
+
+.c0 {
+  box-sizing: border-box;
 }
 
 .c0 {
@@ -35,6 +37,10 @@ exports[`Radio component sanity matches default snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.c1 {
+  box-sizing: border-box;
 }
 
 .c1 {
@@ -69,7 +75,7 @@ exports[`Radio component sanity matches default snapshot 1`] = `
 .c1 > svg[name='checked'] {
   display: none;
   z-index: 1;
-  fill: #000;
+  fill: #4E3FCE;
 }
 
 .c1 > input:checked ~ svg[name='checked'] {
@@ -82,7 +88,7 @@ exports[`Radio component sanity matches default snapshot 1`] = `
   opacity="1"
 >
   <div
-    class="c1 c2"
+    class="c1"
   >
     <input
       color="primary"
@@ -114,7 +120,7 @@ exports[`Radio component sanity matches default snapshot 1`] = `
     </svg>
   </div>
   <div
-    class="c3 c4"
+    class="c2"
     color="copyColor"
     font-family="sansSerif"
     font-size="1"
@@ -125,20 +131,9 @@ exports[`Radio component sanity matches default snapshot 1`] = `
 
 exports[`Radio component sanity matches themed snapshot 1`] = `
 .c3 {
-  box-sizing: border-box;
-}
-
-.c5 {
   color: #3F3D4B;
   margin-left: 4px;
   margin-right: 8px;
-}
-
-.c5 {
-  box-sizing: border-box;
-}
-
-.c4 {
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -147,6 +142,19 @@ exports[`Radio component sanity matches themed snapshot 1`] = `
   color: #3F3D4B;
   margin-left: 4px;
   margin-right: 8px;
+}
+
+.c3 {
+  box-sizing: border-box;
+}
+
+.c1 {
+  color: #4E3FCE;
+  opacity: 1;
+}
+
+.c1 {
+  box-sizing: border-box;
 }
 
 .c1 {
@@ -158,6 +166,10 @@ exports[`Radio component sanity matches themed snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.c2 {
+  box-sizing: border-box;
 }
 
 .c2 {
@@ -214,7 +226,7 @@ exports[`Radio component sanity matches themed snapshot 1`] = `
     opacity="1"
   >
     <div
-      class="c2 c3"
+      class="c2"
     >
       <input
         color="primary"
@@ -246,7 +258,7 @@ exports[`Radio component sanity matches themed snapshot 1`] = `
       </svg>
     </div>
     <div
-      class="c4 c5"
+      class="c3"
       color="copyColor"
       font-family="sansSerif"
       font-size="1"

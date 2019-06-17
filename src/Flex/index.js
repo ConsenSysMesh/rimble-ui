@@ -1,23 +1,39 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
+
 import Box from '../Box';
 
-const StyledFlex = styled(Box)`
+import {
+  // flexbox
+  flex,
+  flexBasis,
+  flexDirection,
+  flexWrap,
+  order,
+  alignSelf,
+  alignItems,
+  alignContent,
+  justifySelf,
+  justifyItems,
+  justifyContent,
+} from 'styled-system';
+
+const Flex = styled(Box)`
   & {
     display: flex;
   }
+  ${flex}
+  ${flexBasis}
+  ${flexDirection}
+  ${flexWrap}
+  ${order}
+  ${alignSelf}
+  ${alignItems}
+  ${alignContent}
+  ${justifySelf}
+  ${justifyItems}
+  ${justifyContent}
 `;
-
-const Flex = props => <StyledFlex {...props} />;
-
-Flex.defaultProps = {
-  display: 'flex',
-};
-
-Flex.propTypes = {
-  ...Box.propTypes,
-};
 
 Flex.displayName = 'Flex';
 

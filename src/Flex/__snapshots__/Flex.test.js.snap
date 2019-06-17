@@ -1,14 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Flex component sanity matches default snapshot 1`] = `
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c1 {
+.c0 {
   box-sizing: border-box;
 }
 
@@ -20,20 +13,12 @@ exports[`Flex component sanity matches default snapshot 1`] = `
 }
 
 <div
-  class="c0 c1"
-  display="flex"
+  class="c0"
 />
 `;
 
 exports[`Flex component sanity matches themed snapshot 1`] = `
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c2 {
+.c1 {
   box-sizing: border-box;
 }
 
@@ -54,8 +39,7 @@ exports[`Flex component sanity matches themed snapshot 1`] = `
   class="c0"
 >
   <div
-    class="c1 c2"
-    display="flex"
+    class="c1"
   />
 </div>
 `;

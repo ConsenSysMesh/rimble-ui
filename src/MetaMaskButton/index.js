@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
+
 import { ReactComponent as MMlogo } from './icon.svg';
 import Button, { StyledButton } from '../Button/BaseButton';
 
@@ -93,10 +93,6 @@ let MetaMaskButton;
 MetaMaskButton = MetaMaskButtonSolid;
 MetaMaskButton.Solid = MetaMaskButtonSolid;
 MetaMaskButton.Outline = MetaMaskButtonOutline;
-
-MetaMaskButton.propTypes = {
-  ...Button.propTypes,
-};
 
 MetaMaskButton.displayName = 'MetaMaskButton';
 
