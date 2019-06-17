@@ -1,9 +1,20 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { buttonStyle, variant, style } from 'styled-system';
-import { TYPOGRAPHY } from '../constants';
-import theme from '../theme';
+import {
+  color,
+  space,
+  minWidth,
+  borders,
+  boxShadow,
+  fontSize,
+  fontFamily,
+  fontWeight,
+  buttonStyle,
+  variant,
+  style,
+} from 'styled-system';
+
+import defaultTheme from '../theme';
 import Box from '../Box';
 import Icon from '../Icon';
 
@@ -25,6 +36,9 @@ const contrastColor = style({
 });
 
 const StyledButton = styled(Box)`
+  ${mainColor}
+  ${contrastColor}
+
   & {
     -webkit-font-smoothing: antialiased;
     appearance: none;
@@ -73,9 +87,17 @@ const StyledButton = styled(Box)`
     margin: 0;
   }
 
-  ${TYPOGRAPHY}
-  ${mainColor}
-  ${contrastColor}
+  ${'' /* styled system props */}
+  ${color}
+  ${space}
+  ${minWidth}
+  ${borders}
+  ${boxShadow}
+
+  ${fontSize}
+  ${fontFamily}
+  ${fontWeight}
+
   ${buttonStyle}
   ${buttonSize}
 `;
@@ -105,7 +127,7 @@ const Button = React.forwardRef(({ children, icon, ...props }, ref) => {
 
 Button.defaultProps = {
   // base props
-  theme,
+  theme: defaultTheme,
   as: 'button',
   // variant: 'primary',
   size: 'medium',
@@ -123,27 +145,6 @@ Button.defaultProps = {
   border: 'none',
   // borderColor: 'none',
   // borderRadius: 1,
-};
-
-Button.propTypes = {
-  ...Box.propTypes,
-  ...TYPOGRAPHY.propTypes,
-  /**
-   * Sets theme
-   */
-  theme: PropTypes.object,
-  /**
-   * Sets background color of button
-   */
-  mainColor: PropTypes.string,
-  /**
-   * Sets text color of button
-   */
-  contrastColor: PropTypes.string,
-  /**
-   * Sets icon of button
-   */
-  icon: PropTypes.string,
 };
 
 Button.displayName = 'Button';

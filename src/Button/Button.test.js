@@ -1,5 +1,4 @@
 import Button from './';
-import Icon from '../Icon';
 import Loader from '../Loader/';
 import ThemeProvider from '../ThemeProvider';
 import theme from '../theme';
@@ -120,7 +119,7 @@ describe('Button Icon component sanity', () => {
 
 describe('Button Icon with position prop component sanity', () => {
   it('matches default snapshot', () => {
-    const component = render(<Button icon="Send" iconpos={'right'} />);
+    const component = render(<Button icon={'Send'} iconpos={'right'} />);
     expect(component).toMatchSnapshot();
   });
 });

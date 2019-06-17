@@ -1,7 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { tint, shade } from 'polished';
+
 import { ReactComponent as UPlogo } from './icon.svg';
 import Button, { StyledButton } from '../Button/BaseButton';
 
@@ -96,10 +96,6 @@ let UPortButton;
 UPortButton = UPortButtonOutline;
 UPortButton.Solid = UPortButtonSolid;
 UPortButton.Outline = UPortButtonOutline;
-
-UPortButton.propTypes = {
-  ...Button.propTypes,
-};
 
 UPortButton.displayName = 'UPortButton';
 
