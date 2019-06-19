@@ -29,7 +29,7 @@ const StyledSelect = styled(StyledInput)`
 
 const Select = props => (
   <StyledWrapper>
-    <StyledSelect {...props} as={'select'}>
+    <StyledSelect {...props} forwardedAs={'select'}>
       {props.items.map((item, i) => (
         <option key={i} value={item}>
           {item}
@@ -42,7 +42,6 @@ const Select = props => (
 
 Select.defaultProps = {
   theme: defaultTheme,
-  as: 'select',
 };
 
 Select.displayName = 'Select';

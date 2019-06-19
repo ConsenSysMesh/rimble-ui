@@ -1,9 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { themeGet, fontSize, fontFamily, boxShadow } from 'styled-system';
+import { themeGet, opacity } from 'styled-system';
+import {
+  COMMON,
+  LAYOUT,
+  POSITION,
+  FLEXBOX,
+  BORDERS,
+  TYPOGRAPHY,
+} from '../constants';
 
-import defaultTheme from '../theme';
+import theme from '../theme';
 import Box from '../Box';
 import Icon from '../Icon';
 import FileInput from './FileInput';
@@ -40,11 +48,9 @@ const StyledInput = styled(Box)`
     &:invalid ~ svg.icon-invalid {
       visibility: visible;
     }
-  }
+  }}
 
-  ${boxShadow}
-  ${fontSize}
-  ${fontFamily}
+  ${TYPOGRAPHY}
 `;
 
 const StyledIconWrapper = styled(Box)`
@@ -79,8 +85,9 @@ const Input = props => {
 };
 
 const defaultProps = {
-  theme: defaultTheme,
-  as: 'input',
+  theme,
+  // as: 'input',
+  forwardedAs: 'input',
   color: 'copyColor',
   bg: 'white',
   fontFamily: 'sansSerif',
