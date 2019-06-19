@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import styled, { keyframes } from 'styled-components';
 import PropTypes from 'prop-types';
-
 import Box from '../Box';
 import Button from '../Button';
 import Field from '../Field';

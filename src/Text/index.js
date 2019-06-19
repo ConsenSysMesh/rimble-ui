@@ -31,8 +31,8 @@ Text.defaultProps = {
 };
 
 Text.propTypes = {
-  ...COMMON.propTypes,
   ...TYPOGRAPHY.propTypes,
+  ...Box.propTypes,
   ...display.propTypes,
   theme: PropTypes.object,
 };

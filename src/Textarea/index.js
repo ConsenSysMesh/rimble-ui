@@ -1,8 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { space } from 'styled-system';
-
-import defaultTheme from '../theme';
+import theme from '../theme';
 import { StyledInput } from '../Input';
 
 const Textarea = styled(StyledInput)`
@@ -12,7 +11,7 @@ const Textarea = styled(StyledInput)`
 `;
 
 Textarea.defaultProps = {
-  theme: defaultTheme,
+  theme,
   as: 'textarea',
   color: 'copyColor',
   bg: 'white',
@@ -25,6 +24,10 @@ Textarea.defaultProps = {
   borderColor: 'grey',
   borderRadius: 1,
   boxShadow: 1,
+};
+
+Text.propTypes = {
+  theme: PropTypes.object,
 };
 
 Textarea.displayName = 'Textarea';

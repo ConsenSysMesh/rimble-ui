@@ -1,9 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
-
 import { themeGet, fontSize, fontFamily, boxShadow } from 'styled-system';
-
-import defaultTheme from '../theme';
+import theme from '../theme';
 import Box from '../Box';
 import Icon from '../Icon';
 import FileInput from './FileInput';
@@ -79,7 +78,7 @@ const Input = props => {
 };
 
 const defaultProps = {
-  theme: defaultTheme,
+  theme,
   as: 'input',
   color: 'copyColor',
   bg: 'white',
@@ -103,6 +102,11 @@ Input.WithValidationStyle = WithValidationStyle;
 Input.defaultProps = defaultProps;
 WithValidationStyle.defaultProps = defaultProps;
 StyledInput.defaultProps = defaultProps;
+
+Input.propTypes = {
+  ...Box.propTypes,
+  theme: PropTypes.object,
+};
 
 Input.displayName = 'Input';
 
