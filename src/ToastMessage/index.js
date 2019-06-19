@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import styled, { keyframes } from 'styled-components';
 import { timingFunctions, ellipsis } from 'polished';
 
@@ -166,7 +167,7 @@ const ToastMessage = ({ className, ...props }) => {
   };
 
   const renderFigure = ({ variant, icon }) => {
-    if (variant) {
+    if (variant && variant !== 'default') {
       return (
         <Box className={'iconBox'} flex={'0 0'} mr={2}>
           {renderVariantSvg(variant)}
@@ -452,10 +453,21 @@ ToastMessage.defaultProps = {
   secondaryMessage: '',
   actionHref: '',
   actionText: '',
-  variant: false,
-  icon: false,
-  colorTheme: '',
+  variant: 'default',
+  icon: '',
+  colorTheme: 'light',
   closeElem: false,
+};
+
+ToastMessage.propTypes = {
+  message: PropTypes.string,
+  secondaryMessage: PropTypes.string,
+  actionHref: PropTypes.string,
+  actionText: PropTypes.string,
+  variant: PropTypes.oneOf(['default', 'success', 'failure', 'processing']),
+  icon: PropTypes.string,
+  colorTheme: PropTypes.oneOf(['light', 'dark']),
+  closeElem: PropTypes.bool,
 };
 
 ToastMessage.displayName = 'ToastMessage';

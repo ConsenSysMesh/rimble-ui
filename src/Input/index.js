@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import { themeGet, opacity } from 'styled-system';
@@ -110,6 +111,11 @@ Input.WithValidationStyle = WithValidationStyle;
 Input.defaultProps = defaultProps;
 WithValidationStyle.defaultProps = defaultProps;
 StyledInput.defaultProps = defaultProps;
+
+Input.propTypes = {
+  ...Box.propTypes,
+  theme: PropTypes.object,
+};
 
 Input.displayName = 'Input';
 

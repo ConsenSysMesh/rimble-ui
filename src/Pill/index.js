@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import theme from '../theme';
 import Text from '../Text';
@@ -36,6 +37,11 @@ Pill.defaultProps = {
   borderRadius: 3,
   display: 'inline-flex',
   alignItems: 'center',
+};
+
+Pill.propTypes = {
+  ...Text.propTypes,
+  theme: PropTypes.object,
 };
 
 Pill.displayName = 'Pill';
