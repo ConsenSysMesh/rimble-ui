@@ -167,7 +167,7 @@ const ToastMessage = ({ className, ...props }) => {
   };
 
   const renderFigure = ({ variant, icon }) => {
-    if (variant) {
+    if (variant && variant !== 'default') {
       return (
         <Box className={'iconBox'} flex={'0 0'} mr={2}>
           {renderVariantSvg(variant)}
