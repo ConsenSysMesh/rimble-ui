@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import theme from '../theme';
 import Text from '../Text';
 
-const Pill = styled(Text)`
+const StyledPill = styled(Text)`
   & {
     position: relative;
     background: none;
@@ -21,8 +21,11 @@ const Pill = styled(Text)`
     width: 100%;
     background-color: currentColor;
     opacity: 0.12;
+    pointer-events: none;
   }
 `;
+
+const Pill = props => <StyledPill {...props} />;
 
 Pill.defaultProps = {
   theme,
