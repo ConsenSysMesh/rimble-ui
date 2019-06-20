@@ -8,6 +8,7 @@ const Card = props => <Box {...props} />;
 
 Card.defaultProps = {
   theme,
+  position: 'relative',
   bg: 'white',
   border: 1,
   borderColor: 'light-gray',
