@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { buttonStyle, variant, style } from 'styled-system';
-import { COMMON, LAYOUT, BORDERS, TYPOGRAPHY } from '../constants';
+import { COMMON, LAYOUT, POSITION, BORDERS, TYPOGRAPHY } from '../constants';
 import theme from '../theme';
 import Icon from '../Icon';
 
@@ -74,6 +74,7 @@ const StyledButton = styled('button')`
 
   ${COMMON}
   ${LAYOUT}
+  ${POSITION}
   ${BORDERS}
   ${TYPOGRAPHY}
 
@@ -106,7 +107,9 @@ Button.defaultProps = {
   // base props
   theme,
   // variant: 'primary',
-  size: 'medium',
+  // size: 'medium',
+  height: '3rem',
+  minWidth: '3rem',
   m: 0,
   px: 4,
   py: 0,
