@@ -4,10 +4,11 @@ import styled from 'styled-components';
 import { themeGet, height, fontFamily, boxShadow } from 'styled-system';
 import theme from '../theme';
 import Box from '../Box';
+import { TYPOGRAPHY } from '../constants';
 
-const Table = styled(Box)`
+const StyledTable = styled(Box)`
   & {
-    table-layout: fixed;
+    ${'' /* table-layout: fixed; */}
     border-collapse: collapse;
   }
 
@@ -34,14 +35,15 @@ const Table = styled(Box)`
     text-transform: uppercase;
   }
 
-  ${fontFamily}
-  ${height}
-  ${boxShadow}
+  ${TYPOGRAPHY}
 `;
+
+const Table = props => <StyledTable {...props} />;
 
 Table.defaultProps = {
   theme,
-  as: 'table',
+  // as: 'table',
+  forwardedAs: 'table',
   width: 1,
   border: 1,
   borderColor: 'grey',
