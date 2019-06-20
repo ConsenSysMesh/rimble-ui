@@ -29,7 +29,7 @@ const StyledSelect = styled(StyledInput)`
 
 const Select = props => (
   <StyledWrapper>
-    <StyledSelect {...props} forwardedAs={'select'}>
+    <StyledSelect {...props} as={'select'}>
       {props.items.map((item, i) => (
         <option key={i} value={item}>
           {item}
