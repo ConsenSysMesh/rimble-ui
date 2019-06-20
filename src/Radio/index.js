@@ -62,7 +62,7 @@ const Radio = ({ className, ...props }) => (
     htmlFor={props.id}
     opacity={props.disabled ? 0.4 : 1}
   >
-    <StyledWrapper>
+    <StyledWrapper theme={props.theme}>
       <input type="checkbox" {...props} />
       <RadioButtonChecked name="checked" />
       <RadioButtonUnchecked />
