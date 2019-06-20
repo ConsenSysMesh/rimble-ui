@@ -80,7 +80,7 @@ const MetaMaskButtonOutline = ({ className, children, ...props }) => {
 
 const defaultProps = {
   ...Button.defaultProps,
-  width: [1, 'auto'],
+  width: 'auto',
   borderRadius: 1,
   boxShadow: 1,
 };
