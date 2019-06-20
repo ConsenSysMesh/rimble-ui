@@ -11,7 +11,7 @@ export const caps = props =>
 
 export const italic = props => (props.italic ? { fontStyle: 'italic' } : null);
 
-const Text = styled(Box)`
+const StyledText = styled(Box)`
   ${TYPOGRAPHY}
   ${COMMON}
   ${display}
@@ -19,6 +19,8 @@ const Text = styled(Box)`
   ${caps}
   ${italic}
 `;
+
+const Text = props => <StyledText {...props} />;
 
 Text.defaultProps = {
   theme,
@@ -39,19 +41,19 @@ Text.propTypes = {
 
 Text.displayName = 'Text';
 
-Text.span = styled(Text)``;
+Text.span = props => <Text {...props} />;
 Text.span.defaultProps = {
   ...Text.defaultProps,
   as: 'span',
 };
 
-Text.p = styled(Text)``;
+Text.p = props => <Text {...props} />;
 Text.p.defaultProps = {
   ...Text.defaultProps,
   as: 'p',
 };
 
-Text.s = styled(Text)``;
+Text.s = props => <Text {...props} />;
 Text.s.defaultProps = {
   ...Text.defaultProps,
   as: 's',
