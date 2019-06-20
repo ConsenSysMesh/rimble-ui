@@ -26,7 +26,7 @@ const size = props => {
   }
 };
 
-const Avatar = styled(Box)`
+const StyledAvatar = styled(Box)`
   & {
     position: relative;
     overflow: hidden;
@@ -39,6 +39,8 @@ const Avatar = styled(Box)`
 
   ${size}
 `;
+
+const Avatar = props => <StyledAvatar {...props} />;
 
 Avatar.defaultProps = {
   theme,
