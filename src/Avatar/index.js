@@ -50,9 +50,25 @@ Avatar.defaultProps = {
 };
 
 Avatar.propTypes = {
-  alt: PropTypes.string.isRequired,
-  src: PropTypes.string,
+  /**
+   * Sets alt property on image for accessibility
+   */
+  alt: PropTypes.string,
+  /**
+   * Sets avatar height and width
+   */
+  size: PropTypes.string,
+  /**
+   * Sets avatar image
+   */
+  src: PropTypes.string.isRequired,
+  /**
+   * Sets theme
+   */
   theme: PropTypes.object,
+  /**
+   * Inherits system props from Box
+   */
   ...Box.propTypes,
 };
 
