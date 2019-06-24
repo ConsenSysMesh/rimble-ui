@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import blockies from 'ethereum-blockies';
 
 class BlockiesIdenticon extends Component {
@@ -27,6 +28,20 @@ class BlockiesIdenticon extends Component {
     });
   }
 }
+
+BlockiesIdenticon.propTypes = {
+  /**
+   * Sets the options for the blockies identicon
+   */
+  opts: PropTypes.shape({
+    seed: PropTypes.string,
+    color: PropTypes.string,
+    bgcolor: PropTypes.string,
+    size: PropTypes.number,
+    scale: PropTypes.number,
+    spotcolor: PropTypes.string,
+  }),
+};
 
 BlockiesIdenticon.displayName = 'BlockiesIdenticon';
 
