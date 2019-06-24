@@ -70,14 +70,21 @@ StyledTooltip.defaultProps = {
 Tooltip.displayName = 'Tooltip';
 
 Tooltip.defaultProps = {
-  /** Sets the theme of tooltip. Options are light or dark. */
   variant: 'dark',
-  /** Sets the placement of tooltip relative to anchoring element. Options are top, left, right, bottom. */
   placement: 'bottom',
-  /** Sets the placement of tooltip relative to anchoring element. */
   offset: '0, 0',
-  /** Sets the content of tooltip. Only accepts text and not markup. */
   message: 'props.message text',
+};
+
+Tooltip.propTypes = {
+  /** Sets the theme of tooltip. Options are light or dark. */
+  variant: PropTypes.oneOf(['light', 'dark']),
+  /** Sets the placement of tooltip relative to anchoring element. */
+  placement: PropTypes.oneOf(['top', 'right', 'bottom', 'left']),
+  /** Sets the placement of tooltip relative to anchoring element. */
+  offset: PropTypes.string,
+  /** Sets the content of tooltip. Only accepts text and not markup. */
+  message: PropTypes.string,
 };
 
 export default Tooltip;

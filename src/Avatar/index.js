@@ -51,7 +51,7 @@ Avatar.defaultProps = {
 
 Avatar.propTypes = {
   /**
-   * Sets alt property on image for accessibility
+   * Sets alt attribute on image for accessibility
    */
   alt: PropTypes.string,
   /**

@@ -17,6 +17,14 @@ Image.defaultProps = {
 Image.propTypes = {
   ...Box.propTypes,
   theme: PropTypes.object,
+  /**
+   * Sets alt attribute on image for accessibility
+   */
+  alt: PropTypes.string,
+  /**
+   * Sets the src attribute of the img element
+   */
+  src: PropTypes.string.isRequired,
 };
 
 Image.displayName = 'Image';
