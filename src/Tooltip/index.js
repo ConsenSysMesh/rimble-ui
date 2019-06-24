@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Popper from '@d8660091/react-popper';
 import theme from '../theme';
