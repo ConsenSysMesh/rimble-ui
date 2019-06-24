@@ -102,6 +102,9 @@ const StyledToastMessage = styled(Box)`
     pointer-events: all;
     user-select: none;
     overflow: hidden;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
     height: 80px;
     padding: 0 1rem;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
@@ -120,7 +123,7 @@ const StyledToastMessage = styled(Box)`
     display: none;
   }
 
-  > ${StyledTextCell} > ${Text} {
+  > ${StyledTextCell} > div {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -173,7 +176,7 @@ const ToastMessage = ({ className, ...props }) => {
           {renderVariantSvg(variant)}
         </Box>
       );
-    } else if (icon) {
+    } else if (icon && icon.length) {
       return (
         <Box className={'iconBox'} flex={'0 0'} mr={2}>
           <Icon
@@ -213,7 +216,7 @@ const ToastMessage = ({ className, ...props }) => {
   return (
     <StyledToastMessage
       className={className}
-      bg={!themeIsDark ? 'white' : 'black'}
+      bg={!themeIsDark ? 'white' : 'near-black'}
       border={1}
       borderColor={!themeIsDark ? '#D6D6D6' : 'transparent'}
       {...props}
@@ -264,8 +267,8 @@ class ProtoToastMessage extends Component {
     actionHref: '',
     actionText: '',
     variant: '',
-    icon: false,
-    colorTheme: false,
+    icon: '',
+    colorTheme: 'dark',
     closeElem: true,
   };
 
@@ -441,12 +444,6 @@ ToastMessage.Processing = props => (
 );
 
 ToastMessage.Provider = ToastProvider;
-
-StyledToastMessage.defaultProps = {
-  display: 'flex',
-  flexDirection: 'row nowrap',
-  alignItems: 'center',
-};
 
 ToastMessage.defaultProps = {
   message: 'Write update here [Required]',
