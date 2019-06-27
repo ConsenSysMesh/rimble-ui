@@ -220,7 +220,7 @@ exports[`PublicAddress component sanity matches default snapshot 1`] = `
 }
 
 .was-validated .c6:invalid {
-  border-color: #EC9081;
+  border-color: #DC2C10;
 }
 
 .was-validated .c6:invalid ~ svg.icon-invalid {
@@ -522,7 +522,7 @@ exports[`PublicAddress component sanity matches themed snapshot 1`] = `
 }
 
 .was-validated .c7:invalid {
-  border-color: #EC9081;
+  border-color: #DC2C10;
 }
 
 .was-validated .c7:invalid ~ svg.icon-invalid {
