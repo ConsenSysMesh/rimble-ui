@@ -46,6 +46,7 @@ Select.defaultProps = {
 
 Select.propTypes = {
   theme: PropTypes.object,
+  items: PropTypes.arrayOf(PropTypes.string),
 };
 
 Select.displayName = 'Select';
