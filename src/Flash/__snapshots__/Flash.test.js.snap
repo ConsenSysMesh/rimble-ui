@@ -222,6 +222,7 @@ exports[`Select component sanity matches danger variant snapshot 1`] = `
       "shadows": Array [
         "0",
         "0px 2px 4px rgba(0, 0, 0, 0.1)",
+        "0px 8px 16px rgba(0, 0, 0, 0.1)",
         "0 7px 14px rgba(50,50,93,.1)",
       ],
       "space": Array [
@@ -476,6 +477,7 @@ exports[`Select component sanity matches danger variant snapshot 1`] = `
         "shadows": Array [
           "0",
           "0px 2px 4px rgba(0, 0, 0, 0.1)",
+          "0px 8px 16px rgba(0, 0, 0, 0.1)",
           "0 7px 14px rgba(50,50,93,.1)",
         ],
         "space": Array [
@@ -733,6 +735,7 @@ exports[`Select component sanity matches default snapshot 1`] = `
       "shadows": Array [
         "0",
         "0px 2px 4px rgba(0, 0, 0, 0.1)",
+        "0px 8px 16px rgba(0, 0, 0, 0.1)",
         "0 7px 14px rgba(50,50,93,.1)",
       ],
       "space": Array [
@@ -987,6 +990,7 @@ exports[`Select component sanity matches default snapshot 1`] = `
         "shadows": Array [
           "0",
           "0px 2px 4px rgba(0, 0, 0, 0.1)",
+          "0px 8px 16px rgba(0, 0, 0, 0.1)",
           "0 7px 14px rgba(50,50,93,.1)",
         ],
         "space": Array [
@@ -1244,6 +1248,7 @@ exports[`Select component sanity matches info variant snapshot 1`] = `
       "shadows": Array [
         "0",
         "0px 2px 4px rgba(0, 0, 0, 0.1)",
+        "0px 8px 16px rgba(0, 0, 0, 0.1)",
         "0 7px 14px rgba(50,50,93,.1)",
       ],
       "space": Array [
@@ -1498,6 +1503,7 @@ exports[`Select component sanity matches info variant snapshot 1`] = `
         "shadows": Array [
           "0",
           "0px 2px 4px rgba(0, 0, 0, 0.1)",
+          "0px 8px 16px rgba(0, 0, 0, 0.1)",
           "0 7px 14px rgba(50,50,93,.1)",
         ],
         "space": Array [
@@ -1755,6 +1761,7 @@ exports[`Select component sanity matches success variant snapshot 1`] = `
       "shadows": Array [
         "0",
         "0px 2px 4px rgba(0, 0, 0, 0.1)",
+        "0px 8px 16px rgba(0, 0, 0, 0.1)",
         "0 7px 14px rgba(50,50,93,.1)",
       ],
       "space": Array [
@@ -2009,6 +2016,7 @@ exports[`Select component sanity matches success variant snapshot 1`] = `
         "shadows": Array [
           "0",
           "0px 2px 4px rgba(0, 0, 0, 0.1)",
+          "0px 8px 16px rgba(0, 0, 0, 0.1)",
           "0 7px 14px rgba(50,50,93,.1)",
         ],
         "space": Array [
@@ -2344,6 +2352,7 @@ exports[`Select component sanity matches warning variant snapshot 1`] = `
       "shadows": Array [
         "0",
         "0px 2px 4px rgba(0, 0, 0, 0.1)",
+        "0px 8px 16px rgba(0, 0, 0, 0.1)",
         "0 7px 14px rgba(50,50,93,.1)",
       ],
       "space": Array [
@@ -2598,6 +2607,7 @@ exports[`Select component sanity matches warning variant snapshot 1`] = `
         "shadows": Array [
           "0",
           "0px 2px 4px rgba(0, 0, 0, 0.1)",
+          "0px 8px 16px rgba(0, 0, 0, 0.1)",
           "0 7px 14px rgba(50,50,93,.1)",
         ],
         "space": Array [

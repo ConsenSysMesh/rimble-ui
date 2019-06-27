@@ -1,8 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`UPortButton component sanity matches default snapshot 1`] = `
-<Styled(Styled(Styled(Box)))
-  as="button"
+<Styled(Styled(styled.button))
   bg="silver"
   border="none"
   borderRadius={1}
@@ -12,11 +11,12 @@ exports[`UPortButton component sanity matches default snapshot 1`] = `
   fontFamily="sansSerif"
   fontSize="inherit"
   fontWeight={3}
+  height="3rem"
   m={0}
   mainColor="primary"
+  minWidth="3rem"
   px={4}
   py={0}
-  size="medium"
   theme={
     Object {
       "borderWidths": Array [
@@ -230,6 +230,7 @@ exports[`UPortButton component sanity matches default snapshot 1`] = `
       "shadows": Array [
         "0",
         "0px 2px 4px rgba(0, 0, 0, 0.1)",
+        "0px 8px 16px rgba(0, 0, 0, 0.1)",
         "0 7px 14px rgba(50,50,93,.1)",
       ],
       "space": Array [
@@ -266,10 +267,8 @@ exports[`UPortButton component sanity matches default snapshot 1`] = `
     ]
   }
 >
-  <ButtonBody
-    size="medium"
-  />
-</Styled(Styled(Styled(Box)))>
+  <ButtonBody />
+</Styled(Styled(styled.button))>
 `;
 
 exports[`UPortButton component sanity matches themed snapshot 1`] = `
@@ -487,6 +486,7 @@ exports[`UPortButton component sanity matches themed snapshot 1`] = `
       "shadows": Array [
         "0",
         "0px 2px 4px rgba(0, 0, 0, 0.1)",
+        "0px 8px 16px rgba(0, 0, 0, 0.1)",
         "0 7px 14px rgba(50,50,93,.1)",
       ],
       "space": Array [
@@ -732,6 +732,7 @@ exports[`UPortButton component sanity matches themed snapshot 1`] = `
         "shadows": Array [
           "0",
           "0px 2px 4px rgba(0, 0, 0, 0.1)",
+          "0px 8px 16px rgba(0, 0, 0, 0.1)",
           "0 7px 14px rgba(50,50,93,.1)",
         ],
         "space": Array [
@@ -763,7 +764,6 @@ exports[`UPortButton component sanity matches themed snapshot 1`] = `
     }
   >
     <UPortButton
-      as="button"
       bg="silver"
       border="none"
       borderRadius={1}
@@ -773,11 +773,12 @@ exports[`UPortButton component sanity matches themed snapshot 1`] = `
       fontFamily="sansSerif"
       fontSize="inherit"
       fontWeight={3}
+      height="3rem"
       m={0}
       mainColor="primary"
+      minWidth="3rem"
       px={4}
       py={0}
-      size="medium"
       theme={
         Object {
           "borderWidths": Array [
@@ -991,6 +992,7 @@ exports[`UPortButton component sanity matches themed snapshot 1`] = `
           "shadows": Array [
             "0",
             "0px 2px 4px rgba(0, 0, 0, 0.1)",
+            "0px 8px 16px rgba(0, 0, 0, 0.1)",
             "0 7px 14px rgba(50,50,93,.1)",
           ],
           "space": Array [

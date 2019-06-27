@@ -3,10 +3,6 @@
 exports[`Card component sanity matches default snapshot 1`] = `
 .c0 {
   background-color: #fff;
-  margin-top: 8px;
-  margin-bottom: 8px;
-  margin-left: 0;
-  margin-right: 0;
   padding: 32px;
   width: 100%;
   height: auto;
@@ -14,39 +10,25 @@ exports[`Card component sanity matches default snapshot 1`] = `
   min-height: 16px;
   position: relative;
   border: 1px solid transparent;
-  border-color: #D6D6D6;
-  border-color: #D6D6D6;
-  text-align: left;
+  border-color: #eee;
+  border-color: #eee;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
 }
 
 .c0 {
   box-sizing: border-box;
 }
 
-.c0 {
-  box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
-  -webkit-transition: box-shadow 300ms ease;
-  transition: box-shadow 300ms ease;
-}
-
-.c0:hover {
-  box-shadow: 0px 8px 16px rgba(0,0,0,0.3);
-}
-
 <div
   class="c0"
   height="auto"
-  width="100%"
+  width="1"
 />
 `;
 
 exports[`Card component sanity matches themed snapshot 1`] = `
 .c1 {
   background-color: #fff;
-  margin-top: 8px;
-  margin-bottom: 8px;
-  margin-left: 0;
-  margin-right: 0;
   padding: 32px;
   width: 100%;
   height: auto;
@@ -54,23 +36,13 @@ exports[`Card component sanity matches themed snapshot 1`] = `
   min-height: 16px;
   position: relative;
   border: 1px solid transparent;
-  border-color: #D6D6D6;
-  border-color: #D6D6D6;
-  text-align: left;
+  border-color: #eee;
+  border-color: #eee;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
 }
 
 .c1 {
   box-sizing: border-box;
-}
-
-.c1 {
-  box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
-  -webkit-transition: box-shadow 300ms ease;
-  transition: box-shadow 300ms ease;
-}
-
-.c1:hover {
-  box-shadow: 0px 8px 16px rgba(0,0,0,0.3);
 }
 
 .c0 {
@@ -85,7 +57,7 @@ exports[`Card component sanity matches themed snapshot 1`] = `
   <div
     class="c1"
     height="auto"
-    width="100%"
+    width="1"
   />
 </div>
 `;
