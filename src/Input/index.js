@@ -84,13 +84,13 @@ const WithValidationStyle = React.forwardRef((props, ref) => {
   );
 });
 
-const Input = props => {
+const Input = React.forwardRef((props, ref) => {
   if (props.type === 'file') {
-    return <FileInput {...props} />;
+    return <FileInput {...props} ref={ref} />;
   } else {
-    return <StyledInput {...props} />;
+    return <StyledInput {...props} ref={ref} />;
   }
-};
+});
 
 const defaultProps = {
   theme,
