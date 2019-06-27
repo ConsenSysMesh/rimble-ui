@@ -24,6 +24,7 @@ Icon.propTypes = {
    * Sets the width and height in pixels
    */
   size: PropTypes.string,
+  theme: PropTypes.object,
 };
 
 Icon.displayName = 'Icon';
