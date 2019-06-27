@@ -29,6 +29,17 @@ class BlockiesIdenticon extends Component {
   }
 }
 
+BlockiesIdenticon.defaultProps = {
+  opts: {
+    seed: 'foo',
+    color: '#dfe',
+    bgcolor: '#a71',
+    size: 15,
+    scale: 3,
+    spotcolor: '#000',
+  },
+};
+
 BlockiesIdenticon.propTypes = {
   /**
    * Sets the options for the blockies identicon
