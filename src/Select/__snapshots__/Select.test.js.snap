@@ -2,7 +2,7 @@
 
 exports[`Select component sanity matches default snapshot 1`] = `
 <styled.span>
-  <Styled(Styled(Box))
+  <Styled(styled.input)
     as="select"
     bg="white"
     border={1}
@@ -21,8 +21,7 @@ exports[`Select component sanity matches default snapshot 1`] = `
       ]
     }
     lineHeight="solid"
-    px={3}
-    py={0}
+    p={3}
     theme={
       Object {
         "borderWidths": Array [
@@ -236,6 +235,7 @@ exports[`Select component sanity matches default snapshot 1`] = `
         "shadows": Array [
           "0",
           "0px 2px 4px rgba(0, 0, 0, 0.1)",
+          "0px 8px 16px rgba(0, 0, 0, 0.1)",
           "0 7px 14px rgba(50,50,93,.1)",
         ],
         "space": Array [
@@ -284,7 +284,7 @@ exports[`Select component sanity matches default snapshot 1`] = `
     >
       Ancient Paper
     </option>
-  </Styled(Styled(Box))>
+  </Styled(styled.input)>
   <ExpandMoreIcon
     size={24}
   />
@@ -308,10 +308,7 @@ exports[`Select component sanity matches themed snapshot 1`] = `
 .c2 {
   color: #3F3D4B;
   background-color: #fff;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 16px;
   height: 3rem;
   border: 1px solid transparent;
   border-color: #CCC;
@@ -319,19 +316,16 @@ exports[`Select component sanity matches themed snapshot 1`] = `
   border-color: #CCC;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  font-size: 1rem;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
-}
-
-.c2 {
-  box-sizing: border-box;
+  font-size: 1rem;
+  line-height: 1;
 }
 
 .c2 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  box-sizing: border-box;
 }
 
 .c2:hover {

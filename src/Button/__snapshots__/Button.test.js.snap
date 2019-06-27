@@ -9,8 +9,8 @@ exports[`Button Icon component sanity matches default snapshot 1`] = `
   padding-bottom: 0;
   padding-left: 32px;
   padding-right: 32px;
-  width: medium;
-  height: medium;
+  height: 3rem;
+  min-width: 3rem;
   border: none;
   border-radius: 4px;
   border-radius: 4px;
@@ -20,13 +20,6 @@ exports[`Button Icon component sanity matches default snapshot 1`] = `
   font-weight: 600;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
-  font-size: 1rem;
-  height: 3rem;
-  min-width: 3rem;
-}
-
-.c0 {
-  box-sizing: border-box;
 }
 
 .c0 {
@@ -139,6 +132,7 @@ exports[`Button Icon component sanity matches default snapshot 1`] = `
   font-family="sansSerif"
   font-size="inherit"
   font-weight="3"
+  height="3rem"
 >
   <svg
     class=""
@@ -164,8 +158,8 @@ exports[`Button Icon component sanity matches themed snapshot 1`] = `
   padding-bottom: 0;
   padding-left: 32px;
   padding-right: 32px;
-  width: medium;
-  height: medium;
+  height: 3rem;
+  min-width: 3rem;
   border: none;
   border-radius: 4px;
   border-radius: 4px;
@@ -175,13 +169,6 @@ exports[`Button Icon component sanity matches themed snapshot 1`] = `
   font-weight: 600;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
-  font-size: 1rem;
-  height: 3rem;
-  min-width: 3rem;
-}
-
-.c1 {
-  box-sizing: border-box;
 }
 
 .c1 {
@@ -303,6 +290,7 @@ exports[`Button Icon component sanity matches themed snapshot 1`] = `
     font-family="sansSerif"
     font-size="inherit"
     font-weight="3"
+    height="3rem"
   >
     <svg
       class=""
@@ -329,8 +317,8 @@ exports[`Button Icon only component sanity matches default snapshot 1`] = `
   padding-bottom: 0;
   padding-left: 32px;
   padding-right: 32px;
-  width: medium;
-  height: medium;
+  height: 3rem;
+  min-width: 3rem;
   border: none;
   border-radius: 4px;
   border-radius: 4px;
@@ -340,13 +328,6 @@ exports[`Button Icon only component sanity matches default snapshot 1`] = `
   font-weight: 600;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
-  font-size: 1rem;
-  height: 3rem;
-  min-width: 3rem;
-}
-
-.c0 {
-  box-sizing: border-box;
 }
 
 .c0 {
@@ -460,6 +441,7 @@ exports[`Button Icon only component sanity matches default snapshot 1`] = `
   font-family="sansSerif"
   font-size="inherit"
   font-weight="3"
+  height="3rem"
 >
   <svg
     class=""
@@ -485,8 +467,8 @@ exports[`Button Icon with position prop component sanity matches default snapsho
   padding-bottom: 0;
   padding-left: 32px;
   padding-right: 32px;
-  width: medium;
-  height: medium;
+  height: 3rem;
+  min-width: 3rem;
   border: none;
   border-radius: 4px;
   border-radius: 4px;
@@ -496,13 +478,6 @@ exports[`Button Icon with position prop component sanity matches default snapsho
   font-weight: 600;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
-  font-size: 1rem;
-  height: 3rem;
-  min-width: 3rem;
-}
-
-.c0 {
-  box-sizing: border-box;
 }
 
 .c0 {
@@ -615,6 +590,7 @@ exports[`Button Icon with position prop component sanity matches default snapsho
   font-family="sansSerif"
   font-size="inherit"
   font-weight="3"
+  height="3rem"
 >
   <svg
     class=""
@@ -640,8 +616,8 @@ exports[`Button component sanity matches default snapshot 1`] = `
   padding-bottom: 0;
   padding-left: 32px;
   padding-right: 32px;
-  width: medium;
-  height: medium;
+  height: 3rem;
+  min-width: 3rem;
   border: none;
   border-radius: 4px;
   border-radius: 4px;
@@ -651,13 +627,6 @@ exports[`Button component sanity matches default snapshot 1`] = `
   font-weight: 600;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
-  font-size: 1rem;
-  height: 3rem;
-  min-width: 3rem;
-}
-
-.c0 {
-  box-sizing: border-box;
 }
 
 .c0 {
@@ -770,6 +739,7 @@ exports[`Button component sanity matches default snapshot 1`] = `
   font-family="sansSerif"
   font-size="inherit"
   font-weight="3"
+  height="3rem"
 >
   <span
     class="button-text"
@@ -786,8 +756,8 @@ exports[`Button component sanity matches themed snapshot 1`] = `
   padding-bottom: 0;
   padding-left: 32px;
   padding-right: 32px;
-  width: medium;
-  height: medium;
+  height: 3rem;
+  min-width: 3rem;
   border: none;
   border-radius: 4px;
   border-radius: 4px;
@@ -797,13 +767,6 @@ exports[`Button component sanity matches themed snapshot 1`] = `
   font-weight: 600;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
-  font-size: 1rem;
-  height: 3rem;
-  min-width: 3rem;
-}
-
-.c1 {
-  box-sizing: border-box;
 }
 
 .c1 {
@@ -925,6 +888,7 @@ exports[`Button component sanity matches themed snapshot 1`] = `
     font-family="sansSerif"
     font-size="inherit"
     font-weight="3"
+    height="3rem"
   >
     <span
       class="button-text"
@@ -942,8 +906,8 @@ exports[`Button disabled component sanity matches default snapshot 1`] = `
   padding-bottom: 0;
   padding-left: 32px;
   padding-right: 32px;
-  width: medium;
-  height: medium;
+  height: 3rem;
+  min-width: 3rem;
   border: none;
   border-radius: 4px;
   border-radius: 4px;
@@ -953,13 +917,6 @@ exports[`Button disabled component sanity matches default snapshot 1`] = `
   font-weight: 600;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
-  font-size: 1rem;
-  height: 3rem;
-  min-width: 3rem;
-}
-
-.c0 {
-  box-sizing: border-box;
 }
 
 .c0 {
@@ -1073,6 +1030,7 @@ exports[`Button disabled component sanity matches default snapshot 1`] = `
   font-family="sansSerif"
   font-size="inherit"
   font-weight="3"
+  height="3rem"
 >
   <span
     class="button-text"
@@ -1089,8 +1047,8 @@ exports[`Button disabled component sanity matches themed snapshot 1`] = `
   padding-bottom: 0;
   padding-left: 32px;
   padding-right: 32px;
-  width: medium;
-  height: medium;
+  height: 3rem;
+  min-width: 3rem;
   border: none;
   border-radius: 4px;
   border-radius: 4px;
@@ -1100,13 +1058,6 @@ exports[`Button disabled component sanity matches themed snapshot 1`] = `
   font-weight: 600;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
-  font-size: 1rem;
-  height: 3rem;
-  min-width: 3rem;
-}
-
-.c1 {
-  box-sizing: border-box;
 }
 
 .c1 {
@@ -1229,6 +1180,7 @@ exports[`Button disabled component sanity matches themed snapshot 1`] = `
     font-family="sansSerif"
     font-size="inherit"
     font-weight="3"
+    height="3rem"
   >
     <span
       class="button-text"
@@ -1248,6 +1200,8 @@ exports[`Button size variant component sanity matches default snapshot 1`] = `
   padding-right: 32px;
   width: small;
   height: small;
+  height: 3rem;
+  min-width: 3rem;
   border: none;
   border-radius: 4px;
   border-radius: 4px;
@@ -1261,10 +1215,6 @@ exports[`Button size variant component sanity matches default snapshot 1`] = `
   height: 2rem;
   min-width: 2rem;
   padding: 0 1rem;
-}
-
-.c0 {
-  box-sizing: border-box;
 }
 
 .c0 {
@@ -1377,6 +1327,7 @@ exports[`Button size variant component sanity matches default snapshot 1`] = `
   font-family="sansSerif"
   font-size="inherit"
   font-weight="3"
+  height="3rem"
 >
   <span
     class="button-text"
@@ -1395,6 +1346,8 @@ exports[`Button size variant component sanity matches default snapshot 2`] = `
   padding-right: 32px;
   width: large;
   height: large;
+  height: 3rem;
+  min-width: 3rem;
   border: none;
   border-radius: 4px;
   border-radius: 4px;
@@ -1407,10 +1360,6 @@ exports[`Button size variant component sanity matches default snapshot 2`] = `
   font-size: 1.5rem;
   height: 4rem;
   min-width: 4rem;
-}
-
-.c0 {
-  box-sizing: border-box;
 }
 
 .c0 {
@@ -1523,6 +1472,7 @@ exports[`Button size variant component sanity matches default snapshot 2`] = `
   font-family="sansSerif"
   font-size="inherit"
   font-weight="3"
+  height="3rem"
 >
   <span
     class="button-text"
@@ -1541,6 +1491,8 @@ exports[`Button size variant component sanity matches themed snapshot 1`] = `
   padding-right: 32px;
   width: small;
   height: small;
+  height: 3rem;
+  min-width: 3rem;
   border: none;
   border-radius: 4px;
   border-radius: 4px;
@@ -1554,10 +1506,6 @@ exports[`Button size variant component sanity matches themed snapshot 1`] = `
   height: 2rem;
   min-width: 2rem;
   padding: 0 1rem;
-}
-
-.c1 {
-  box-sizing: border-box;
 }
 
 .c1 {
@@ -1679,6 +1627,7 @@ exports[`Button size variant component sanity matches themed snapshot 1`] = `
     font-family="sansSerif"
     font-size="inherit"
     font-weight="3"
+    height="3rem"
   >
     <span
       class="button-text"
@@ -1698,6 +1647,8 @@ exports[`Button size variant component sanity matches themed snapshot 2`] = `
   padding-right: 32px;
   width: large;
   height: large;
+  height: 3rem;
+  min-width: 3rem;
   border: none;
   border-radius: 4px;
   border-radius: 4px;
@@ -1710,10 +1661,6 @@ exports[`Button size variant component sanity matches themed snapshot 2`] = `
   font-size: 1.5rem;
   height: 4rem;
   min-width: 4rem;
-}
-
-.c1 {
-  box-sizing: border-box;
 }
 
 .c1 {
@@ -1835,6 +1782,7 @@ exports[`Button size variant component sanity matches themed snapshot 2`] = `
     font-family="sansSerif"
     font-size="inherit"
     font-weight="3"
+    height="3rem"
   >
     <span
       class="button-text"
@@ -1852,8 +1800,8 @@ exports[`Button.Outline component sanity matches default snapshot 1`] = `
   padding-bottom: 0;
   padding-left: 32px;
   padding-right: 32px;
-  width: medium;
-  height: medium;
+  height: 3rem;
+  min-width: 3rem;
   border: 1px solid transparent;
   border-color: #CCC;
   border-radius: 4px;
@@ -1865,13 +1813,6 @@ exports[`Button.Outline component sanity matches default snapshot 1`] = `
   font-weight: 600;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
-  font-size: 1rem;
-  height: 3rem;
-  min-width: 3rem;
-}
-
-.c0 {
-  box-sizing: border-box;
 }
 
 .c0 {
@@ -2009,6 +1950,7 @@ exports[`Button.Outline component sanity matches default snapshot 1`] = `
   font-family="sansSerif"
   font-size="inherit"
   font-weight="3"
+  height="3rem"
 >
   <span
     class="button-text"
@@ -2025,8 +1967,8 @@ exports[`Button.Outline component sanity matches themed snapshot 1`] = `
   padding-bottom: 0;
   padding-left: 32px;
   padding-right: 32px;
-  width: medium;
-  height: medium;
+  height: 3rem;
+  min-width: 3rem;
   border: 1px solid transparent;
   border-color: #CCC;
   border-radius: 4px;
@@ -2038,13 +1980,6 @@ exports[`Button.Outline component sanity matches themed snapshot 1`] = `
   font-weight: 600;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
-  font-size: 1rem;
-  height: 3rem;
-  min-width: 3rem;
-}
-
-.c1 {
-  box-sizing: border-box;
 }
 
 .c1 {
@@ -2191,6 +2126,7 @@ exports[`Button.Outline component sanity matches themed snapshot 1`] = `
     font-family="sansSerif"
     font-size="inherit"
     font-weight="3"
+    height="3rem"
   >
     <span
       class="button-text"
@@ -2208,21 +2144,14 @@ exports[`Button.Text component sanity matches default snapshot 1`] = `
   padding-bottom: 0;
   padding-left: 8px;
   padding-right: 8px;
-  width: medium;
-  height: medium;
+  height: 3rem;
+  min-width: 3rem;
   border: none;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: inherit;
   font-weight: 600;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
-  font-size: 1rem;
-  height: 3rem;
-  min-width: 3rem;
-}
-
-.c0 {
-  box-sizing: border-box;
 }
 
 .c0 {
@@ -2320,6 +2249,7 @@ exports[`Button.Text component sanity matches default snapshot 1`] = `
   font-family="sansSerif"
   font-size="inherit"
   font-weight="3"
+  height="3rem"
 >
   <span
     class="button-text"
@@ -2336,21 +2266,14 @@ exports[`Button.Text component sanity matches themed snapshot 1`] = `
   padding-bottom: 0;
   padding-left: 8px;
   padding-right: 8px;
-  width: medium;
-  height: medium;
+  height: 3rem;
+  min-width: 3rem;
   border: none;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: inherit;
   font-weight: 600;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
-  font-size: 1rem;
-  height: 3rem;
-  min-width: 3rem;
-}
-
-.c1 {
-  box-sizing: border-box;
 }
 
 .c1 {
@@ -2457,6 +2380,7 @@ exports[`Button.Text component sanity matches themed snapshot 1`] = `
     font-family="sansSerif"
     font-size="inherit"
     font-weight="3"
+    height="3rem"
   >
     <span
       class="button-text"
@@ -2474,8 +2398,8 @@ exports[`Link Button Outline component sanity matches default snapshot 1`] = `
   padding-bottom: 0;
   padding-left: 32px;
   padding-right: 32px;
-  width: medium;
-  height: medium;
+  height: 3rem;
+  min-width: 3rem;
   border: 1px solid transparent;
   border-color: #CCC;
   border-radius: 4px;
@@ -2487,13 +2411,6 @@ exports[`Link Button Outline component sanity matches default snapshot 1`] = `
   font-weight: 600;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
-  font-size: 1rem;
-  height: 3rem;
-  min-width: 3rem;
-}
-
-.c0 {
-  box-sizing: border-box;
 }
 
 .c0 {
@@ -2631,6 +2548,7 @@ exports[`Link Button Outline component sanity matches default snapshot 1`] = `
   font-family="sansSerif"
   font-size="inherit"
   font-weight="3"
+  height="3rem"
   href="#!"
   target="_blank"
   title="Learn more"
@@ -2652,8 +2570,8 @@ exports[`Link Button component sanity matches default snapshot 1`] = `
   padding-bottom: 0;
   padding-left: 32px;
   padding-right: 32px;
-  width: medium;
-  height: medium;
+  height: 3rem;
+  min-width: 3rem;
   border: none;
   border-radius: 4px;
   border-radius: 4px;
@@ -2663,13 +2581,6 @@ exports[`Link Button component sanity matches default snapshot 1`] = `
   font-weight: 600;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
-  font-size: 1rem;
-  height: 3rem;
-  min-width: 3rem;
-}
-
-.c0 {
-  box-sizing: border-box;
 }
 
 .c0 {
@@ -2782,6 +2693,7 @@ exports[`Link Button component sanity matches default snapshot 1`] = `
   font-family="sansSerif"
   font-size="inherit"
   font-weight="3"
+  height="3rem"
   href="#!"
   target="_blank"
   title="Learn more"
@@ -2803,8 +2715,8 @@ exports[`Loading Button component sanity matches default snapshot 1`] = `
   padding-bottom: 0;
   padding-left: 32px;
   padding-right: 32px;
-  width: medium;
-  height: medium;
+  height: 3rem;
+  min-width: 3rem;
   border: none;
   border-radius: 4px;
   border-radius: 4px;
@@ -2814,13 +2726,6 @@ exports[`Loading Button component sanity matches default snapshot 1`] = `
   font-weight: 600;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
-  font-size: 1rem;
-  height: 3rem;
-  min-width: 3rem;
-}
-
-.c0 {
-  box-sizing: border-box;
 }
 
 .c0 {
@@ -2927,14 +2832,14 @@ exports[`Loading Button component sanity matches default snapshot 1`] = `
   pointer-events: none;
 }
 
-.c1 {
+.c2 {
   color: #fff;
   background-color: transparent;
   width: 1rem;
   height: 1rem;
 }
 
-.c1 {
+.c2 {
   box-sizing: border-box;
 }
 
@@ -2961,12 +2866,13 @@ exports[`Loading Button component sanity matches default snapshot 1`] = `
   font-family="sansSerif"
   font-size="inherit"
   font-weight="3"
+  height="3rem"
 >
   <span
     class="button-text"
   >
     <div
-      class="c1"
+      class="c1 c2"
       color="white"
     >
       <svg
@@ -3022,8 +2928,8 @@ exports[`Loading Button component sanity matches default snapshot 2`] = `
   padding-bottom: 0;
   padding-left: 32px;
   padding-right: 32px;
-  width: medium;
-  height: medium;
+  height: 3rem;
+  min-width: 3rem;
   border: none;
   border-radius: 4px;
   border-radius: 4px;
@@ -3033,13 +2939,6 @@ exports[`Loading Button component sanity matches default snapshot 2`] = `
   font-weight: 600;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
-  font-size: 1rem;
-  height: 3rem;
-  min-width: 3rem;
-}
-
-.c0 {
-  box-sizing: border-box;
 }
 
 .c0 {
@@ -3153,6 +3052,7 @@ exports[`Loading Button component sanity matches default snapshot 2`] = `
   font-family="sansSerif"
   font-size="inherit"
   font-weight="3"
+  height="3rem"
 >
   <svg
     class=""

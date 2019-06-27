@@ -4,10 +4,7 @@ exports[`Input component sanity matches default snapshot 1`] = `
 .c0 {
   color: #3F3D4B;
   background-color: #fff;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 16px;
   height: 3rem;
   border: 1px solid transparent;
   border-color: #CCC;
@@ -15,19 +12,16 @@ exports[`Input component sanity matches default snapshot 1`] = `
   border-color: #CCC;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  font-size: 1rem;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
-}
-
-.c0 {
-  box-sizing: border-box;
+  font-size: 1rem;
+  line-height: 1;
 }
 
 .c0 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  box-sizing: border-box;
 }
 
 .c0:hover {
@@ -73,10 +67,7 @@ exports[`Input component sanity matches themed snapshot 1`] = `
 .c1 {
   color: #3F3D4B;
   background-color: #fff;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 16px;
   height: 3rem;
   border: 1px solid transparent;
   border-color: #CCC;
@@ -84,19 +75,16 @@ exports[`Input component sanity matches themed snapshot 1`] = `
   border-color: #CCC;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  font-size: 1rem;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
-}
-
-.c1 {
-  box-sizing: border-box;
+  font-size: 1rem;
+  line-height: 1;
 }
 
 .c1 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  box-sizing: border-box;
 }
 
 .c1:hover {
