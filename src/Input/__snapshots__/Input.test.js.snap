@@ -47,7 +47,7 @@ exports[`Input component sanity matches default snapshot 1`] = `
 }
 
 .was-validated .c0:invalid {
-  border-color: #EC9081;
+  border-color: #DC2C10;
 }
 
 .was-validated .c0:invalid ~ svg.icon-invalid {
@@ -110,7 +110,7 @@ exports[`Input component sanity matches themed snapshot 1`] = `
 }
 
 .was-validated .c1:invalid {
-  border-color: #EC9081;
+  border-color: #DC2C10;
 }
 
 .was-validated .c1:invalid ~ svg.icon-invalid {

@@ -39,13 +39,13 @@ const StyledInput = styled.input`
 
   .was-validated & {
     &:valid {
-      border-color: #28C081;
+      border-color: ${themeGet('colors.success')};
     }
     &:valid ~ svg.icon-valid {
       visibility: visible;
     }
     &:invalid {
-      border-color: #EC9081;
+      border-color: ${themeGet('colors.danger')};
     }
     &:invalid ~ svg.icon-invalid {
       visibility: visible;
@@ -67,6 +67,11 @@ const StyledIconWrapper = styled.div`
     align-items: center;
     width: 100%;
   }
+  > ${StyledInput} {
+    padding-right: 3rem;
+    text-overflow: ellipsis;
+    white-space: no-wrap;
+  }
   > svg {
     position: absolute;
     right: 1rem;
@@ -75,22 +80,29 @@ const StyledIconWrapper = styled.div`
 `;
 
 const WithValidationStyle = React.forwardRef((props, ref) => {
+  const colorSuccess = themeGet('colors.success')(props);
+  const colorError = themeGet('colors.danger')(props);
+
   return (
     <StyledIconWrapper>
       <StyledInput {...props} ref={ref} />
-      <Icon className={'icon-valid'} name={'CheckCircle'} color={'#28C081'} />
-      <Icon className={'icon-invalid'} name={'Warning'} color={'#DC2C10'} />
+      <Icon
+        className={'icon-valid'}
+        name={'CheckCircle'}
+        color={colorSuccess}
+      />
+      <Icon className={'icon-invalid'} name={'Warning'} color={colorError} />
     </StyledIconWrapper>
   );
 });
 
-const Input = props => {
+const Input = React.forwardRef((props, ref) => {
   if (props.type === 'file') {
-    return <FileInput {...props} />;
+    return <FileInput {...props} ref={ref} />;
   } else {
-    return <StyledInput {...props} />;
+    return <StyledInput {...props} ref={ref} />;
   }
-};
+});
 
 const defaultProps = {
   theme,
@@ -107,9 +119,6 @@ const defaultProps = {
   boxShadow: 1,
 };
 
-// let Input;
-//
-// Input = StyledInput;
 Input.WithValidationStyle = WithValidationStyle;
 
 Input.defaultProps = defaultProps;
