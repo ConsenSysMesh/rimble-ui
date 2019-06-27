@@ -6,6 +6,7 @@ exports[`Icon component sanity matches default snapshot 1`] = `
   display="block"
   fill="currentcolor"
   height="24px"
+  theme="[object Object]"
   viewBox="0 0 24 24"
   width="24px"
 >
@@ -30,6 +31,7 @@ exports[`Icon component sanity matches themed snapshot 1`] = `
     display="block"
     fill="currentcolor"
     height="24px"
+    theme="[object Object]"
     viewBox="0 0 24 24"
     width="24px"
   >

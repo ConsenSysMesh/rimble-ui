@@ -139,6 +139,7 @@ exports[`Button Icon component sanity matches default snapshot 1`] = `
     display="block"
     fill="currentcolor"
     height="24px"
+    theme="[object Object]"
     viewBox="0 0 24 24"
     width="24px"
   >
@@ -297,6 +298,7 @@ exports[`Button Icon component sanity matches themed snapshot 1`] = `
       display="block"
       fill="currentcolor"
       height="24px"
+      theme="[object Object]"
       viewBox="0 0 24 24"
       width="24px"
     >
@@ -448,6 +450,7 @@ exports[`Button Icon only component sanity matches default snapshot 1`] = `
     display="block"
     fill="currentcolor"
     height="24px"
+    theme="[object Object]"
     viewBox="0 0 24 24"
     width="24px"
   >
@@ -597,6 +600,7 @@ exports[`Button Icon with position prop component sanity matches default snapsho
     display="block"
     fill="currentcolor"
     height="24px"
+    theme="[object Object]"
     viewBox="0 0 24 24"
     width="24px"
   >
@@ -3059,6 +3063,7 @@ exports[`Loading Button component sanity matches default snapshot 2`] = `
     display="block"
     fill="currentcolor"
     height="24px"
+    theme="[object Object]"
     viewBox="0 0 24 24"
     width="24px"
   >
