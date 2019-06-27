@@ -1,4 +1,4 @@
-import React, { Component, } from 'react';
+import React, { Component } from 'react';
 
 import {
   Avatar,
@@ -8,6 +8,7 @@ import {
   Card,
   Checkbox,
   Field,
+  Flash,
   Flex,
   Heading,
   Icon,
@@ -49,7 +50,10 @@ const testComponents = props => (
       <Link>I'm a Link!</Link>
       <PublicAddress address="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2" />
       <EthAddress address="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2" />
-      <EthAddress truncate address="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2" />
+      <EthAddress
+        truncate
+        address="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2"
+      />
       <Input />
       <Icon name={'Info'} />
       <Icon name={'Info'} color="primary" />
@@ -67,14 +71,19 @@ const testComponents = props => (
         }}
       />
       <Textarea rows={4} defaultValue="Type here…" />
-      <Text>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta quibusdam, assumenda officiis.</Text>
+      <Text>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
+        quibusdam, assumenda officiis.
+      </Text>
       <Avatar />
       <Avatar size="small" />
       <Avatar size="medium" />
       <Avatar size="large" />
 
       <Slider />
-      <Select items={['Wandering Thunder', 'Black Wildflower', 'Ancient Paper']} />
+      <Select
+        items={['Wandering Thunder', 'Black Wildflower', 'Ancient Paper']}
+      />
       <Progress value={0.5} />
       <Heading.h1>Quick zephyrs blow, vexing daft Jim.</Heading.h1>
 
@@ -174,6 +183,21 @@ const testComponents = props => (
       <Pill selected={true} color={'blue'} mr={'2'} mb={'3'}>
         {'Pending'}
       </Pill>
+      <Flash>
+        I am a Flash with a <Flash.Link>Link</Flash.Link>
+      </Flash>
+      <Flash variant={'info'}>
+        I am a INFO Flash with a <Flash.Link>Link</Flash.Link>
+      </Flash>
+      <Flash variant={'warning'}>
+        I am a WARNING Flash with a <Flash.Link>Link</Flash.Link>
+      </Flash>
+      <Flash variant={'success'}>
+        I am a SUCCESS Flash with a <Flash.Link>Link</Flash.Link>
+      </Flash>
+      <Flash variant={'danger'}>
+        I am a DANGER Flash with a <Flash.Link>Link</Flash.Link>
+      </Flash>
     </Box>
   </React.Fragment>
 );
@@ -183,13 +207,9 @@ export default class App extends Component {
     return (
       <React.Fragment>
         <Flex>
+          <Box>{testComponents()}</Box>
           <Box>
-            {testComponents()}
-          </Box>
-          <Box>
-            <ThemeProvider theme={myTheme}>
-              {testComponents()}
-            </ThemeProvider>
+            <ThemeProvider theme={myTheme}>{testComponents()}</ThemeProvider>
           </Box>
         </Flex>
       </React.Fragment>

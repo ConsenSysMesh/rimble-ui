@@ -21,14 +21,17 @@ const StyledFlash = styled(Box)`
   & {
     position: relative;
   }
+`;
 
-  ${Link} {
-    font-size: inherit;
+const StyledLink = styled(Link).attrs(props => ({
+  color: 'inherit',
+  fontSize: 'inherit',
+}))`
+  & {
     cursor: pointer;
+  }
+  &:hover {
     color: inherit;
-    &:hover {
-      color: inherit;
-    }
   }
 `;
 
@@ -83,5 +86,8 @@ Flash.propTypes = {
 };
 
 Flash.displayName = 'Flash';
+
+Flash.Link = StyledLink;
+Flash.Link.displayName = 'Flash.Link';
 
 export default Flash;
