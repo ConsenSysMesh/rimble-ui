@@ -76,6 +76,7 @@ Checkbox.defaultProps = {
 Checkbox.propTypes = {
   ...Box.propTypes,
   theme: PropTypes.object,
+  label: PropTypes.string,
 };
 
 Checkbox.displayName = 'Checkbox';

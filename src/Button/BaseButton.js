@@ -143,9 +143,21 @@ Button.propTypes = {
    */
   contrastColor: PropTypes.string,
   /**
+   * Sets font and spacing size of button
+   */
+  size: PropTypes.oneOf(['small', 'medium', 'large']),
+  /**
    * Sets icon of button
    */
   icon: PropTypes.string,
+  /**
+   * Sets icon position on button
+   */
+  iconpos: PropTypes.oneOf(['left', 'right']),
+  /**
+   * Sets padding on button with icon and no text
+   */
+  icononly: PropTypes.bool,
 };
 
 Button.displayName = 'Button';
