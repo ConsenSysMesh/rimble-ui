@@ -63,6 +63,9 @@ Modal.defaultProps = {
 };
 
 Modal.propTypes = {
+  /**
+   * Shows the content of the Modal when true
+   */
   isOpen: PropTypes.bool,
 };
 

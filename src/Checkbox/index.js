@@ -8,13 +8,6 @@ import Box from '../Box';
 import Text from '../Text';
 import theme from '../theme';
 
-const StyledBox = styled(Box)`
-  & {
-    display: inline-flex;
-    align-items: center;
-  }
-`;
-
 const StyledWrapper = styled(Box)`
   & {
     position: relative;
@@ -55,14 +48,16 @@ const StyledWrapper = styled(Box)`
 `;
 
 const Checkbox = ({ className, ...props }) => (
-  <StyledBox
+  <Box
+    display={'flex'}
+    alignItems={'center'}
     as={'label'}
     className={className}
     {...props}
     htmlFor={props.id}
     opacity={props.disabled ? 0.4 : 1}
   >
-    <StyledWrapper>
+    <StyledWrapper theme={props.theme}>
       <input type="checkbox" {...props} />
       <CheckBox name="checked" />
       <CheckBoxOutlineBlank />
@@ -70,7 +65,7 @@ const Checkbox = ({ className, ...props }) => (
     <Text fontSize={1} fontWeight={3} lineHeight={1} ml={1} mr={2}>
       {props.label}
     </Text>
-  </StyledBox>
+  </Box>
 );
 
 Checkbox.defaultProps = {
@@ -81,6 +76,7 @@ Checkbox.defaultProps = {
 Checkbox.propTypes = {
   ...Box.propTypes,
   theme: PropTypes.object,
+  label: PropTypes.string,
 };
 
 Checkbox.displayName = 'Checkbox';

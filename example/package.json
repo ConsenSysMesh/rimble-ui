@@ -10,7 +10,7 @@
     "react-dom": "16.8.6",
     "react-scripts": "3.0.1",
     "rimble-ui": "link:..",
-    "styled-components": "^4.2.1"
+    "styled-components": "^4.3.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -23,19 +23,19 @@
   },
   "devDependencies": {
     "@babel/core": "7.4.5",
-    "@storybook/addon-a11y": "5.1.1",
-    "@storybook/addon-actions": "5.1.1",
-    "@storybook/addon-links": "5.1.1",
-    "@storybook/addon-viewport": "5.1.1",
-    "@storybook/addons": "5.1.1",
-    "@storybook/react": "5.1.1",
+    "@storybook/addon-a11y": "5.1.9",
+    "@storybook/addon-actions": "5.1.9",
+    "@storybook/addon-links": "5.1.9",
+    "@storybook/addon-viewport": "5.1.9",
+    "@storybook/addons": "5.1.9",
+    "@storybook/react": "5.1.9",
     "@storybook/storybook-deployer": "2.8.1",
-    "@storybook/theming": "^5.1.1",
+    "@storybook/theming": "^5.1.9",
     "babel-loader": "8.0.6",
     "prismjs": "^1.16.0",
     "react-element-to-jsx-string": "^14.0.2",
     "storybook-addon-styled-component-theme": "1.2.3",
-    "storybook-readme": "5.0.3"
+    "storybook-readme": "5.0.5"
   },
   "browserslist": [
     ">0.2%",

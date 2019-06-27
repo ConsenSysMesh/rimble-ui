@@ -97,12 +97,17 @@ class PublicAddress extends Component {
   }
 }
 
-PublicAddress.displayName = 'PublicAddress';
-
 PublicAddress.propTypes = {
+  /**
+   * Sets Ethereum address as the value of the field
+   */
   address: PropTypes.string,
+  /**
+   * Sets the text label
+   */
   label: PropTypes.string,
-  required: PropTypes.bool,
 };
+
+PublicAddress.displayName = 'PublicAddress';
 
 export default PublicAddress;

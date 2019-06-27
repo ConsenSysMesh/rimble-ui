@@ -26,7 +26,7 @@ const size = props => {
   }
 };
 
-const Avatar = styled(Box)`
+const StyledAvatar = styled(Box)`
   & {
     position: relative;
     overflow: hidden;
@@ -40,6 +40,8 @@ const Avatar = styled(Box)`
   ${size}
 `;
 
+const Avatar = props => <StyledAvatar {...props} />;
+
 Avatar.defaultProps = {
   theme,
   size: '2rem',
@@ -48,9 +50,25 @@ Avatar.defaultProps = {
 };
 
 Avatar.propTypes = {
-  alt: PropTypes.string.isRequired,
-  src: PropTypes.string,
+  /**
+   * Sets alt attribute on image for accessibility
+   */
+  alt: PropTypes.string,
+  /**
+   * Sets avatar height and width
+   */
+  size: PropTypes.string,
+  /**
+   * Sets avatar image
+   */
+  src: PropTypes.string.isRequired,
+  /**
+   * Sets theme
+   */
   theme: PropTypes.object,
+  /**
+   * Inherits system props from Box
+   */
   ...Box.propTypes,
 };
 

@@ -186,11 +186,11 @@ storiesOf('Components/Button', module).add(
             Learn More
           </Button>
         </CodeBlock>
-        
+
         <Text>Link Button Outline</Text>
         <CodeBlock>
           <Button.Outline as={'a'} href="#!" title="Learn more" target="_blank">
-            Learn More 
+            Learn More
           </Button.Outline>
         </CodeBlock>
       </Box>

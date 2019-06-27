@@ -1,15 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { themeGet, fontSize, fontFamily, boxShadow } from 'styled-system';
+
+import { themeGet, opacity } from 'styled-system';
+import {
+  COMMON,
+  LAYOUT,
+  POSITION,
+  FLEXBOX,
+  BORDERS,
+  TYPOGRAPHY,
+} from '../constants';
+
 import theme from '../theme';
 import Box from '../Box';
 import Icon from '../Icon';
 import FileInput from './FileInput';
 
-const StyledInput = styled(Box)`
+const StyledInput = styled.input`
   & {
     appearance: none;
+    box-sizing: border-box;
   }
 
   &:hover {
@@ -39,18 +50,22 @@ const StyledInput = styled(Box)`
     &:invalid ~ svg.icon-invalid {
       visibility: visible;
     }
-  }
+  }}
 
-  ${boxShadow}
-  ${fontSize}
-  ${fontFamily}
+  ${COMMON}
+  ${LAYOUT}
+  ${POSITION}
+  ${FLEXBOX}
+  ${BORDERS}
+  ${TYPOGRAPHY}
 `;
 
-const StyledIconWrapper = styled(Box)`
+const StyledIconWrapper = styled.div`
   & {
     position: relative;
     display: flex;
     align-items: center;
+    width: 100%;
   }
   > svg {
     position: absolute;
@@ -61,7 +76,7 @@ const StyledIconWrapper = styled(Box)`
 
 const WithValidationStyle = React.forwardRef((props, ref) => {
   return (
-    <StyledIconWrapper width={1}>
+    <StyledIconWrapper>
       <StyledInput {...props} ref={ref} />
       <Icon className={'icon-valid'} name={'CheckCircle'} color={'#28C081'} />
       <Icon className={'icon-invalid'} name={'Warning'} color={'#DC2C10'} />
@@ -79,15 +94,13 @@ const Input = props => {
 
 const defaultProps = {
   theme,
-  as: 'input',
   color: 'copyColor',
   bg: 'white',
   fontFamily: 'sansSerif',
   fontSize: '1rem',
   lineHeight: 'solid',
   height: '3rem',
-  px: 3,
-  py: 0,
+  p: 3,
   border: 1,
   borderColor: 'grey',
   borderRadius: 1,

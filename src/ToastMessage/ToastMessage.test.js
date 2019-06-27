@@ -61,9 +61,9 @@ describe('ToastMessage component sanity', () => {
 
 describe('ToastMessage component unit tests', () => {
   it('displays message', () => {
-    const toastMessage = shallow(
+    const toastMessage = mount(
       <ToastMessage message={'Generic message inside Toast'} />
-    ).dive();
+    );
     expect(
       toastMessage
         .find('Text')
@@ -73,9 +73,9 @@ describe('ToastMessage component unit tests', () => {
   });
 
   it('displays secondary message', () => {
-    const toastMessage = shallow(
+    const toastMessage = mount(
       <ToastMessage secondaryMessage={'Lorem ipsum dolor sit.'} />
-    ).dive();
+    );
     expect(
       toastMessage
         .find('Text')

@@ -6,7 +6,7 @@ import { transparentize } from 'polished';
 
 import theme from '../theme';
 
-const Progress = styled.progress.attrs(props => ({
+const StyledProgress = styled.progress.attrs(props => ({
   primarycolor: themeGet('colors.primary', '#000')(props),
 }))`
   & {
@@ -24,6 +24,8 @@ const Progress = styled.progress.attrs(props => ({
     border-radius: 8px;
   }
 `;
+
+const Progress = props => <StyledProgress {...props} />;
 
 Progress.defaultProps = {
   theme,

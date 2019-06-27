@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import styled, {
   createGlobalStyle,
@@ -41,7 +40,5 @@ const ThemeProvider = ({ ...props }) => {
     </StyledThemeProvider>
   );
 };
-
-ThemeProvider.propTypes = {};
 
 export default ThemeProvider;
