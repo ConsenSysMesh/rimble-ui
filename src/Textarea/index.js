@@ -4,11 +4,10 @@ import styled from 'styled-components';
 import theme from '../theme';
 import { StyledInput } from '../Input';
 
-const Textarea = props => <StyledInput {...props} />;
+const Textarea = props => <StyledInput as={'textarea'} {...props} />;
 
 Textarea.defaultProps = {
   theme,
-  as: 'textarea',
   color: 'copyColor',
   bg: 'white',
   fontFamily: 'sansSerif',
