@@ -1,13 +1,11 @@
-import React from 'react';
+import Icon from 'rmdi/lib/Icon';
 import PropTypes from 'prop-types';
-import StyledIcon from 'rmdi/lib/Icon';
-
-const Icon = props => <StyledIcon {...props} />;
 
 Icon.defaultProps = {
   display: 'block',
   size: '24px',
 };
+
 Icon.propTypes = {
   /**
    * Sets which icon to display
@@ -22,7 +20,5 @@ Icon.propTypes = {
    */
   size: PropTypes.string,
 };
-
-Icon.displayName = 'Icon';
 
 export default Icon;

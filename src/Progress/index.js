@@ -32,9 +32,6 @@ Progress.defaultProps = {
 };
 
 Progress.propTypes = {
-  /**
-   * Sets theme
-   */
   theme: PropTypes.object,
 };
 

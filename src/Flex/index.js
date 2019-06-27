@@ -3,13 +3,13 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Box from '../Box';
 
-const StyledFlex = styled(Box)`
-  & {
-    display: flex;
-  }
-`;
+// const Flex = styled(Box)`
+//   & {
+//     display: flex;
+//   }
+// `;
 
-const Flex = props => <StyledFlex {...props} />;
+const Flex = props => <Box {...props} />;
 
 Flex.defaultProps = {
   display: 'flex',

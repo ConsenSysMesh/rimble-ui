@@ -18,22 +18,21 @@ const StyledBox = styled.div`
   ${opacity}
 `;
 
-const Box = props => <StyledBox {...props} />;
+const Box = ({ className, ...props }) => (
+  <StyledBox className={className} {...props} />
+);
 
 Box.defaultProps = {
   theme,
 };
 
 Box.propTypes = {
-  /**
-   * Sets theme
-   */
-  theme: PropTypes.object,
   ...COMMON.propTypes,
   ...LAYOUT.propTypes,
   ...POSITION.propTypes,
   ...FLEXBOX.propTypes,
   ...BORDERS.propTypes,
+  theme: PropTypes.object,
 };
 
 Box.displayName = 'Box';

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import QRCode from 'qrcode.react';
 
@@ -8,7 +8,7 @@ const QR = props => {
 
 QR.propTypes = {
   /**
-   * Sets the content of the QR code
+   * Sets the value of the QR code
    */
   value: PropTypes.string.isRequired,
 };

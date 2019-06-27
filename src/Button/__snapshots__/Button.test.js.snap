@@ -2,6 +2,19 @@
 
 exports[`Button Icon component sanity matches default snapshot 1`] = `
 .c0 {
+  color: #fff;
+  background-color: #999;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 32px;
+  padding-right: 32px;
+  width: medium;
+  height: medium;
+  border: none;
+  border-radius: 4px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: inherit;
   font-weight: 600;
@@ -10,6 +23,10 @@ exports[`Button Icon component sanity matches default snapshot 1`] = `
   font-size: 1rem;
   height: 3rem;
   min-width: 3rem;
+}
+
+.c0 {
+  box-sizing: border-box;
 }
 
 .c0 {
@@ -140,6 +157,19 @@ exports[`Button Icon component sanity matches default snapshot 1`] = `
 
 exports[`Button Icon component sanity matches themed snapshot 1`] = `
 .c1 {
+  color: #fff;
+  background-color: #999;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 32px;
+  padding-right: 32px;
+  width: medium;
+  height: medium;
+  border: none;
+  border-radius: 4px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: inherit;
   font-weight: 600;
@@ -148,6 +178,10 @@ exports[`Button Icon component sanity matches themed snapshot 1`] = `
   font-size: 1rem;
   height: 3rem;
   min-width: 3rem;
+}
+
+.c1 {
+  box-sizing: border-box;
 }
 
 .c1 {
@@ -288,6 +322,19 @@ exports[`Button Icon component sanity matches themed snapshot 1`] = `
 
 exports[`Button Icon only component sanity matches default snapshot 1`] = `
 .c0 {
+  color: #fff;
+  background-color: #999;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 32px;
+  padding-right: 32px;
+  width: medium;
+  height: medium;
+  border: none;
+  border-radius: 4px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: inherit;
   font-weight: 600;
@@ -296,6 +343,10 @@ exports[`Button Icon only component sanity matches default snapshot 1`] = `
   font-size: 1rem;
   height: 3rem;
   min-width: 3rem;
+}
+
+.c0 {
+  box-sizing: border-box;
 }
 
 .c0 {
@@ -427,6 +478,19 @@ exports[`Button Icon only component sanity matches default snapshot 1`] = `
 
 exports[`Button Icon with position prop component sanity matches default snapshot 1`] = `
 .c0 {
+  color: #fff;
+  background-color: #999;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 32px;
+  padding-right: 32px;
+  width: medium;
+  height: medium;
+  border: none;
+  border-radius: 4px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: inherit;
   font-weight: 600;
@@ -435,6 +499,10 @@ exports[`Button Icon with position prop component sanity matches default snapsho
   font-size: 1rem;
   height: 3rem;
   min-width: 3rem;
+}
+
+.c0 {
+  box-sizing: border-box;
 }
 
 .c0 {
@@ -565,6 +633,19 @@ exports[`Button Icon with position prop component sanity matches default snapsho
 
 exports[`Button component sanity matches default snapshot 1`] = `
 .c0 {
+  color: #fff;
+  background-color: #999;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 32px;
+  padding-right: 32px;
+  width: medium;
+  height: medium;
+  border: none;
+  border-radius: 4px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: inherit;
   font-weight: 600;
@@ -573,6 +654,10 @@ exports[`Button component sanity matches default snapshot 1`] = `
   font-size: 1rem;
   height: 3rem;
   min-width: 3rem;
+}
+
+.c0 {
+  box-sizing: border-box;
 }
 
 .c0 {
@@ -694,6 +779,19 @@ exports[`Button component sanity matches default snapshot 1`] = `
 
 exports[`Button component sanity matches themed snapshot 1`] = `
 .c1 {
+  color: #fff;
+  background-color: #999;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 32px;
+  padding-right: 32px;
+  width: medium;
+  height: medium;
+  border: none;
+  border-radius: 4px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: inherit;
   font-weight: 600;
@@ -702,6 +800,10 @@ exports[`Button component sanity matches themed snapshot 1`] = `
   font-size: 1rem;
   height: 3rem;
   min-width: 3rem;
+}
+
+.c1 {
+  box-sizing: border-box;
 }
 
 .c1 {
@@ -833,6 +935,19 @@ exports[`Button component sanity matches themed snapshot 1`] = `
 
 exports[`Button disabled component sanity matches default snapshot 1`] = `
 .c0 {
+  color: #fff;
+  background-color: #999;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 32px;
+  padding-right: 32px;
+  width: medium;
+  height: medium;
+  border: none;
+  border-radius: 4px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: inherit;
   font-weight: 600;
@@ -841,6 +956,10 @@ exports[`Button disabled component sanity matches default snapshot 1`] = `
   font-size: 1rem;
   height: 3rem;
   min-width: 3rem;
+}
+
+.c0 {
+  box-sizing: border-box;
 }
 
 .c0 {
@@ -963,6 +1082,19 @@ exports[`Button disabled component sanity matches default snapshot 1`] = `
 
 exports[`Button disabled component sanity matches themed snapshot 1`] = `
 .c1 {
+  color: #fff;
+  background-color: #999;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 32px;
+  padding-right: 32px;
+  width: medium;
+  height: medium;
+  border: none;
+  border-radius: 4px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: inherit;
   font-weight: 600;
@@ -971,6 +1103,10 @@ exports[`Button disabled component sanity matches themed snapshot 1`] = `
   font-size: 1rem;
   height: 3rem;
   min-width: 3rem;
+}
+
+.c1 {
+  box-sizing: border-box;
 }
 
 .c1 {
@@ -1103,6 +1239,19 @@ exports[`Button disabled component sanity matches themed snapshot 1`] = `
 
 exports[`Button size variant component sanity matches default snapshot 1`] = `
 .c0 {
+  color: #fff;
+  background-color: #999;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 32px;
+  padding-right: 32px;
+  width: small;
+  height: small;
+  border: none;
+  border-radius: 4px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: inherit;
   font-weight: 600;
@@ -1112,6 +1261,10 @@ exports[`Button size variant component sanity matches default snapshot 1`] = `
   height: 2rem;
   min-width: 2rem;
   padding: 0 1rem;
+}
+
+.c0 {
+  box-sizing: border-box;
 }
 
 .c0 {
@@ -1233,6 +1386,19 @@ exports[`Button size variant component sanity matches default snapshot 1`] = `
 
 exports[`Button size variant component sanity matches default snapshot 2`] = `
 .c0 {
+  color: #fff;
+  background-color: #999;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 32px;
+  padding-right: 32px;
+  width: large;
+  height: large;
+  border: none;
+  border-radius: 4px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: inherit;
   font-weight: 600;
@@ -1241,6 +1407,10 @@ exports[`Button size variant component sanity matches default snapshot 2`] = `
   font-size: 1.5rem;
   height: 4rem;
   min-width: 4rem;
+}
+
+.c0 {
+  box-sizing: border-box;
 }
 
 .c0 {
@@ -1362,6 +1532,19 @@ exports[`Button size variant component sanity matches default snapshot 2`] = `
 
 exports[`Button size variant component sanity matches themed snapshot 1`] = `
 .c1 {
+  color: #fff;
+  background-color: #999;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 32px;
+  padding-right: 32px;
+  width: small;
+  height: small;
+  border: none;
+  border-radius: 4px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: inherit;
   font-weight: 600;
@@ -1371,6 +1554,10 @@ exports[`Button size variant component sanity matches themed snapshot 1`] = `
   height: 2rem;
   min-width: 2rem;
   padding: 0 1rem;
+}
+
+.c1 {
+  box-sizing: border-box;
 }
 
 .c1 {
@@ -1502,6 +1689,19 @@ exports[`Button size variant component sanity matches themed snapshot 1`] = `
 
 exports[`Button size variant component sanity matches themed snapshot 2`] = `
 .c1 {
+  color: #fff;
+  background-color: #999;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 32px;
+  padding-right: 32px;
+  width: large;
+  height: large;
+  border: none;
+  border-radius: 4px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: inherit;
   font-weight: 600;
@@ -1510,6 +1710,10 @@ exports[`Button size variant component sanity matches themed snapshot 2`] = `
   font-size: 1.5rem;
   height: 4rem;
   min-width: 4rem;
+}
+
+.c1 {
+  box-sizing: border-box;
 }
 
 .c1 {
@@ -1641,6 +1845,21 @@ exports[`Button size variant component sanity matches themed snapshot 2`] = `
 
 exports[`Button.Outline component sanity matches default snapshot 1`] = `
 .c0 {
+  color: #fff;
+  background-color: #999;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 32px;
+  padding-right: 32px;
+  width: medium;
+  height: medium;
+  border: 1px solid transparent;
+  border-color: #CCC;
+  border-radius: 4px;
+  border-color: #CCC;
+  border-radius: 4px;
+  box-shadow: 0;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: inherit;
   font-weight: 600;
@@ -1649,6 +1868,10 @@ exports[`Button.Outline component sanity matches default snapshot 1`] = `
   font-size: 1rem;
   height: 3rem;
   min-width: 3rem;
+}
+
+.c0 {
+  box-sizing: border-box;
 }
 
 .c0 {
@@ -1795,6 +2018,21 @@ exports[`Button.Outline component sanity matches default snapshot 1`] = `
 
 exports[`Button.Outline component sanity matches themed snapshot 1`] = `
 .c1 {
+  color: #fff;
+  background-color: #999;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 32px;
+  padding-right: 32px;
+  width: medium;
+  height: medium;
+  border: 1px solid transparent;
+  border-color: #CCC;
+  border-radius: 4px;
+  border-color: #CCC;
+  border-radius: 4px;
+  box-shadow: 0;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: inherit;
   font-weight: 600;
@@ -1803,6 +2041,10 @@ exports[`Button.Outline component sanity matches themed snapshot 1`] = `
   font-size: 1rem;
   height: 3rem;
   min-width: 3rem;
+}
+
+.c1 {
+  box-sizing: border-box;
 }
 
 .c1 {
@@ -1959,6 +2201,16 @@ exports[`Button.Outline component sanity matches themed snapshot 1`] = `
 
 exports[`Button.Text component sanity matches default snapshot 1`] = `
 .c0 {
+  color: #fff;
+  background-color: #999;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 8px;
+  padding-right: 8px;
+  width: medium;
+  height: medium;
+  border: none;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: inherit;
   font-weight: 600;
@@ -1967,6 +2219,10 @@ exports[`Button.Text component sanity matches default snapshot 1`] = `
   font-size: 1rem;
   height: 3rem;
   min-width: 3rem;
+}
+
+.c0 {
+  box-sizing: border-box;
 }
 
 .c0 {
@@ -2073,6 +2329,16 @@ exports[`Button.Text component sanity matches default snapshot 1`] = `
 
 exports[`Button.Text component sanity matches themed snapshot 1`] = `
 .c1 {
+  color: #fff;
+  background-color: #999;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 8px;
+  padding-right: 8px;
+  width: medium;
+  height: medium;
+  border: none;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: inherit;
   font-weight: 600;
@@ -2081,6 +2347,10 @@ exports[`Button.Text component sanity matches themed snapshot 1`] = `
   font-size: 1rem;
   height: 3rem;
   min-width: 3rem;
+}
+
+.c1 {
+  box-sizing: border-box;
 }
 
 .c1 {
@@ -2197,6 +2467,21 @@ exports[`Button.Text component sanity matches themed snapshot 1`] = `
 
 exports[`Link Button Outline component sanity matches default snapshot 1`] = `
 .c0 {
+  color: #fff;
+  background-color: #999;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 32px;
+  padding-right: 32px;
+  width: medium;
+  height: medium;
+  border: 1px solid transparent;
+  border-color: #CCC;
+  border-radius: 4px;
+  border-color: #CCC;
+  border-radius: 4px;
+  box-shadow: 0;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: inherit;
   font-weight: 600;
@@ -2205,6 +2490,10 @@ exports[`Link Button Outline component sanity matches default snapshot 1`] = `
   font-size: 1rem;
   height: 3rem;
   min-width: 3rem;
+}
+
+.c0 {
+  box-sizing: border-box;
 }
 
 .c0 {
@@ -2356,6 +2645,19 @@ exports[`Link Button Outline component sanity matches default snapshot 1`] = `
 
 exports[`Link Button component sanity matches default snapshot 1`] = `
 .c0 {
+  color: #fff;
+  background-color: #999;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 32px;
+  padding-right: 32px;
+  width: medium;
+  height: medium;
+  border: none;
+  border-radius: 4px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: inherit;
   font-weight: 600;
@@ -2364,6 +2666,10 @@ exports[`Link Button component sanity matches default snapshot 1`] = `
   font-size: 1rem;
   height: 3rem;
   min-width: 3rem;
+}
+
+.c0 {
+  box-sizing: border-box;
 }
 
 .c0 {
@@ -2489,18 +2795,20 @@ exports[`Link Button component sanity matches default snapshot 1`] = `
 `;
 
 exports[`Loading Button component sanity matches default snapshot 1`] = `
-.c2 {
-  color: #fff;
-  background-color: transparent;
-  width: 1rem;
-  height: 1rem;
-}
-
-.c2 {
-  box-sizing: border-box;
-}
-
 .c0 {
+  color: #fff;
+  background-color: #999;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 32px;
+  padding-right: 32px;
+  width: medium;
+  height: medium;
+  border: none;
+  border-radius: 4px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: inherit;
   font-weight: 600;
@@ -2509,6 +2817,10 @@ exports[`Loading Button component sanity matches default snapshot 1`] = `
   font-size: 1rem;
   height: 3rem;
   min-width: 3rem;
+}
+
+.c0 {
+  box-sizing: border-box;
 }
 
 .c0 {
@@ -2616,6 +2928,17 @@ exports[`Loading Button component sanity matches default snapshot 1`] = `
 }
 
 .c1 {
+  color: #fff;
+  background-color: transparent;
+  width: 1rem;
+  height: 1rem;
+}
+
+.c1 {
+  box-sizing: border-box;
+}
+
+.c1 {
   display: block;
   position: relative;
   overflow: hidden;
@@ -2643,7 +2966,7 @@ exports[`Loading Button component sanity matches default snapshot 1`] = `
     class="button-text"
   >
     <div
-      class="c1 c2"
+      class="c1"
       color="white"
     >
       <svg
@@ -2692,6 +3015,19 @@ exports[`Loading Button component sanity matches default snapshot 1`] = `
 
 exports[`Loading Button component sanity matches default snapshot 2`] = `
 .c0 {
+  color: #fff;
+  background-color: #999;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 32px;
+  padding-right: 32px;
+  width: medium;
+  height: medium;
+  border: none;
+  border-radius: 4px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: inherit;
   font-weight: 600;
@@ -2700,6 +3036,10 @@ exports[`Loading Button component sanity matches default snapshot 2`] = `
   font-size: 1rem;
   height: 3rem;
   min-width: 3rem;
+}
+
+.c0 {
+  box-sizing: border-box;
 }
 
 .c0 {

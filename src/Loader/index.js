@@ -80,18 +80,6 @@ Loader.defaultProps = {
 
 Loader.propTypes = {
   ...Box.propTypes,
-  /**
-   * Sets color of loader
-   */
-  color: PropTypes.string,
-  /**
-   * Sets background color
-   */
-  bg: PropTypes.string,
-  /**
-   * Sets width and height
-   */
-  size: PropTypes.string,
 };
 
 Loader.displayName = 'Loader';

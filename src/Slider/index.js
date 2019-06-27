@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { COMMON } from '../constants';
 import theme from '../theme';
 
-const Slider = styled('input').attrs(props => ({
+const StyledSlider = styled('input').attrs(props => ({
   type: 'range',
 }))`
   & {
@@ -70,6 +70,8 @@ const Slider = styled('input').attrs(props => ({
   ${COMMON}
 `;
 
+const Slider = props => <StyledSlider {...props} />;
+
 Slider.defaultProps = {
   theme,
   m: 0,
@@ -78,13 +80,6 @@ Slider.defaultProps = {
 
 Slider.propTypes = {
   ...COMMON.propTypes,
-  theme: PropTypes.object,
-};
-
-Slider.propTypes = {
-  /**
-   * Sets theme
-   */
   theme: PropTypes.object,
 };
 

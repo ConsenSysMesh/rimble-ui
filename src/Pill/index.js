@@ -21,6 +21,7 @@ const StyledPill = styled(Text)`
     width: 100%;
     background-color: currentColor;
     opacity: 0.12;
+    pointer-events: none;
   }
 `;
 
@@ -43,9 +44,6 @@ Pill.defaultProps = {
 
 Pill.propTypes = {
   ...Text.propTypes,
-  /**
-   * Sets theme
-   */
   theme: PropTypes.object,
 };
 

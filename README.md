@@ -35,6 +35,10 @@ class Example extends Component {
 
 ## Change log
 
+### 0.9.3
+
+- revert to last stable version 
+
 ### 0.9.2
 
 - Fixed Slider bar in FireFox

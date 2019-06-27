@@ -1,15 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { themeGet, fontSize, fontFamily, boxShadow } from 'styled-system';
+
+import { themeGet, opacity } from 'styled-system';
+import {
+  COMMON,
+  LAYOUT,
+  POSITION,
+  FLEXBOX,
+  BORDERS,
+  TYPOGRAPHY,
+} from '../constants';
+
 import theme from '../theme';
 import Box from '../Box';
 import Icon from '../Icon';
 import FileInput from './FileInput';
 
-const StyledInput = styled(Box)`
+const StyledInput = styled.input`
   & {
     appearance: none;
+    box-sizing: border-box;
   }
 
   &:hover {
@@ -39,18 +50,22 @@ const StyledInput = styled(Box)`
     &:invalid ~ svg.icon-invalid {
       visibility: visible;
     }
-  }
+  }}
 
-  ${boxShadow}
-  ${fontSize}
-  ${fontFamily}
+  ${COMMON}
+  ${LAYOUT}
+  ${POSITION}
+  ${FLEXBOX}
+  ${BORDERS}
+  ${TYPOGRAPHY}
 `;
 
-const StyledIconWrapper = styled(Box)`
+const StyledIconWrapper = styled.div`
   & {
     position: relative;
     display: flex;
     align-items: center;
+    width: 100%;
   }
   > ${StyledInput} {
     padding-right: 3rem;
@@ -69,7 +84,7 @@ const WithValidationStyle = React.forwardRef((props, ref) => {
   const colorError = themeGet('colors.danger')(props);
 
   return (
-    <StyledIconWrapper width={1}>
+    <StyledIconWrapper>
       <StyledInput {...props} ref={ref} />
       <Icon
         className={'icon-valid'}
@@ -81,25 +96,23 @@ const WithValidationStyle = React.forwardRef((props, ref) => {
   );
 });
 
-const Input = props => {
+const Input = React.forwardRef((props, ref) => {
   if (props.type === 'file') {
-    return <FileInput {...props} />;
+    return <FileInput {...props} ref={ref} />;
   } else {
-    return <StyledInput {...props} />;
+    return <StyledInput {...props} ref={ref} />;
   }
-};
+});
 
 const defaultProps = {
   theme,
-  as: 'input',
   color: 'copyColor',
   bg: 'white',
   fontFamily: 'sansSerif',
   fontSize: '1rem',
   lineHeight: 'solid',
   height: '3rem',
-  px: 3,
-  py: 0,
+  p: 3,
   border: 1,
   borderColor: 'grey',
   borderRadius: 1,
@@ -114,9 +127,6 @@ StyledInput.defaultProps = defaultProps;
 
 Input.propTypes = {
   ...Box.propTypes,
-  /**
-   * Sets theme
-   */
   theme: PropTypes.object,
 };
 

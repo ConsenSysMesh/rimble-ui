@@ -51,7 +51,7 @@ Avatar.defaultProps = {
 
 Avatar.propTypes = {
   /**
-   * Sets alt property on image for accessibility
+   * Sets alt attribute on image for accessibility
    */
   alt: PropTypes.string,
   /**
@@ -67,9 +67,8 @@ Avatar.propTypes = {
    */
   theme: PropTypes.object,
   /**
-   * Sets the background color when the image isn't visible
+   * Inherits system props from Box
    */
-  bg: PropTypes.string,
   ...Box.propTypes,
 };
 

@@ -8,13 +8,6 @@ import theme from '../theme';
 import Box from '../Box';
 import Text from '../Text';
 
-const StyledBox = styled(Box)`
-  & {
-    display: inline-flex;
-    align-items: center;
-  }
-`;
-
 const StyledWrapper = styled(Box)`
   & {
     position: relative;
@@ -55,14 +48,16 @@ const StyledWrapper = styled(Box)`
 `;
 
 const Radio = ({ className, ...props }) => (
-  <StyledBox
+  <Box
+    display={'flex'}
+    alignItems={'center'}
     as="label"
     className={className}
     {...props}
     htmlFor={props.id}
     opacity={props.disabled ? 0.4 : 1}
   >
-    <StyledWrapper>
+    <StyledWrapper theme={props.theme}>
       <input type="checkbox" {...props} />
       <RadioButtonChecked name="checked" />
       <RadioButtonUnchecked />
@@ -70,7 +65,7 @@ const Radio = ({ className, ...props }) => (
     <Text fontSize={1} fontWeight={3} lineHeight={1} ml={1} mr={2}>
       {props.label}
     </Text>
-  </StyledBox>
+  </Box>
 );
 
 Radio.defaultProps = {
@@ -80,14 +75,7 @@ Radio.defaultProps = {
 
 Radio.propTypes = {
   ...Box.propTypes,
-  /**
-   * Sets theme
-   */
   theme: PropTypes.object,
-  /**
-   * Sets color
-   */
-  color: PropTypes.string,
 };
 
 Radio.displayName = 'Radio';

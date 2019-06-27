@@ -4,12 +4,7 @@ import styled from 'styled-components';
 import theme from '../theme';
 import Box from '../Box';
 
-const StyledImage = styled(Box)`
-  & {
-  }
-`;
-
-const Image = props => <StyledImage {...props} />;
+const Image = props => <Box {...props} />;
 
 Image.defaultProps = {
   theme,
@@ -21,26 +16,15 @@ Image.defaultProps = {
 
 Image.propTypes = {
   ...Box.propTypes,
-  /**
-   * Sets theme
-   */
   theme: PropTypes.object,
   /**
-   * Sets element type
+   * Sets alt attribute on image for accessibility
    */
-  as: PropTypes.string,
+  alt: PropTypes.string,
   /**
-   * Sets display property
+   * Sets the src attribute of the img element
    */
-  display: PropTypes.string,
-  /**
-   * Sets max-width
-   */
-  maxWidth: PropTypes.string,
-  /**
-   * Sets image height - width will be 100%
-   */
-  height: PropTypes.string,
+  src: PropTypes.string.isRequired,
 };
 
 Image.displayName = 'Image';

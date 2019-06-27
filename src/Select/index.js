@@ -42,13 +42,9 @@ const Select = props => (
 
 Select.defaultProps = {
   theme,
-  as: 'select',
 };
 
 Select.propTypes = {
-  /**
-   * Sets theme
-   */
   theme: PropTypes.object,
 };
 

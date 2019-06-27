@@ -41,24 +41,21 @@ Text.propTypes = {
 
 Text.displayName = 'Text';
 
-Text.span = styled(Text)``;
+Text.span = props => <Text {...props} />;
 Text.span.defaultProps = {
   ...Text.defaultProps,
   as: 'span',
 };
 
-Text.p = styled(Text)``;
+Text.p = props => <Text {...props} />;
 Text.p.defaultProps = {
   ...Text.defaultProps,
   as: 'p',
 };
 
-Text.s = styled(Text)``;
+Text.s = props => <Text {...props} />;
 Text.s.defaultProps = {
   ...Text.defaultProps,
-  /**
-   * Sets element type
-   */
   as: 's',
 };
 

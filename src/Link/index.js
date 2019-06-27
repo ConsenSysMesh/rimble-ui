@@ -37,7 +37,7 @@ const Link = props => <StyledLink {...props} />;
 
 Link.defaultProps = {
   theme,
-  as: 'a',
+  forwardedAs: 'a',
   color: 'primary',
   hoverColor: 'primary-light',
   activeColor: 'primary-dark',
@@ -47,9 +47,6 @@ Link.defaultProps = {
 
 Link.propTypes = {
   ...Text.propTypes,
-  /**
-   * Sets theme
-   */
   theme: PropTypes.object,
 };
 
