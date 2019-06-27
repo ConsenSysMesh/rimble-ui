@@ -8,7 +8,6 @@ import Documentation from './docs.md';
 
 import {
   Flash,
-  Link,
   Box,
   Heading,
   Text,
@@ -38,7 +37,7 @@ storiesOf('Components/Flash', module)
         <CodeBlock>
           <Flash>
             Flash default
-            This is a primary alert with an <Link>example link</Link>. Give it a click if you like.
+            This is a primary alert with an <Flash.Link>example link</Flash.Link>. Give it a click if you like.
           </Flash>
         </CodeBlock>
         <Heading.h4>
@@ -47,7 +46,7 @@ storiesOf('Components/Flash', module)
         <CodeBlock>
           <Flash variant={'info'}>
             Flash "info"
-            This is a primary alert with an <Link>example link</Link>. Give it a click if you like.
+            This is a primary alert with an <Flash.Link>example link</Flash.Link>. Give it a click if you like.
           </Flash>
         </CodeBlock>
         <Heading.h4>
@@ -56,7 +55,7 @@ storiesOf('Components/Flash', module)
         <CodeBlock>
           <Flash variant={'success'}>
             Flash "success"
-            This is a primary alert with an <Link>example link</Link>. Give it a click if you like.
+            This is a primary alert with an <Flash.Link>example link</Flash.Link>. Give it a click if you like.
           </Flash>
         </CodeBlock>
         <Heading.h4>
@@ -65,7 +64,7 @@ storiesOf('Components/Flash', module)
         <CodeBlock>
           <Flash variant={'warning'}>
             Flash "warning"
-            This is a primary alert with an <Link>example link</Link>. Give it a click if you like.
+            This is a primary alert with an <Flash.Link>example link</Flash.Link>. Give it a click if you like.
           </Flash>
         </CodeBlock>
         <Heading.h4>
@@ -74,7 +73,7 @@ storiesOf('Components/Flash', module)
         <CodeBlock>
           <Flash variant={'danger'}>
             Flash "danger"
-            This is a primary alert with an <Link>example link</Link>. Give it a click if you like.
+            This is a primary alert with an <Flash.Link>example link</Flash.Link>. Give it a click if you like.
           </Flash>
         </CodeBlock>
       </Box>

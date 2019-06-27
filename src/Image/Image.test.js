@@ -8,14 +8,14 @@ describe('Image component sanity', () => {
   });
 
   it('matches default snapshot', () => {
-    const component = render(<Image />);
+    const component = render(<Image src="test.jpg" />);
     expect(component).toMatchSnapshot();
   });
 
   it('matches themed snapshot', () => {
     const component = render(
       <ThemeProvider theme={theme}>
-        <Image />
+        <Image src="test.jpg" />
       </ThemeProvider>
     );
     expect(component).toMatchSnapshot();

@@ -56,6 +56,7 @@ const Field = ({ label, children, ...props }) => {
 
 Field.propTypes = {
   ...Box.propTypes,
+  label: PropTypes.string,
 };
 
 Field.displayName = 'Field';
