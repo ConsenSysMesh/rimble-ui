@@ -27,8 +27,6 @@ const StyledInput = styled(Box)`
   }
 
   .was-validated & {
-    padding-right: 3rem;
-
     &:valid {
       border-color: ${themeGet('colors.success')};
     }
@@ -53,6 +51,11 @@ const StyledIconWrapper = styled(Box)`
     position: relative;
     display: flex;
     align-items: center;
+  }
+  > ${StyledInput} {
+    padding-right: 3rem;
+    text-overflow: ellipsis;
+    white-space: no-wrap;
   }
   > svg {
     position: absolute;
@@ -103,9 +106,6 @@ const defaultProps = {
   boxShadow: 1,
 };
 
-// let Input;
-//
-// Input = StyledInput;
 Input.WithValidationStyle = WithValidationStyle;
 
 Input.defaultProps = defaultProps;
