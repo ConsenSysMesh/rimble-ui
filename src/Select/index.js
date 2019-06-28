@@ -27,9 +27,9 @@ const StyledSelect = styled(StyledInput)`
   }
 `;
 
-const Select = props => (
+const Select = React.forwardRef((props, ref) => (
   <StyledWrapper>
-    <StyledSelect {...props} as={'select'}>
+    <StyledSelect ref={ref} {...props} as={'select'}>
       {props.items.map((item, i) => (
         <option key={i} value={item}>
           {item}
@@ -38,7 +38,7 @@ const Select = props => (
     </StyledSelect>
     <ExpandMore />
   </StyledWrapper>
-);
+));
 
 Select.defaultProps = {
   theme,

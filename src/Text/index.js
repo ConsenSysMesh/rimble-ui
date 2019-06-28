@@ -20,7 +20,9 @@ const StyledText = styled(Box)`
   ${italic}
 `;
 
-const Text = props => <StyledText {...props} />;
+const Text = React.forwardRef((props, ref) => (
+  <StyledText ref={ref} {...props} />
+));
 
 Text.defaultProps = {
   theme,

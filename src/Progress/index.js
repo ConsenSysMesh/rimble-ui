@@ -25,7 +25,9 @@ const StyledProgress = styled.progress.attrs(props => ({
   }
 `;
 
-const Progress = props => <StyledProgress {...props} />;
+const Progress = React.forwardRef((props, ref) => (
+  <StyledProgress ref={ref} {...props} />
+));
 
 Progress.defaultProps = {
   theme,

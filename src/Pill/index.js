@@ -25,7 +25,9 @@ const StyledPill = styled(Text)`
   }
 `;
 
-const Pill = props => <StyledPill {...props} />;
+const Pill = React.forwardRef((props, ref) => (
+  <StyledPill ref={ref} {...props} />
+));
 
 Pill.defaultProps = {
   theme,

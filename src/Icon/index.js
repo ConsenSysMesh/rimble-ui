@@ -2,8 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Icon as RmdIcon } from 'rmdi';
 import theme from '../theme';
+import Box from '../Box';
 
-const Icon = props => <RmdIcon.default {...props} />;
+const Icon = React.forwardRef((props, ref) => (
+  <Box ref={ref} display={'inline-flex'}>
+    <RmdIcon.default {...props} />
+  </Box>
+));
 
 Icon.defaultProps = {
   theme,

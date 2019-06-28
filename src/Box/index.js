@@ -18,9 +18,9 @@ const StyledBox = styled.div`
   ${opacity}
 `;
 
-const Box = ({ className, ...props }) => (
-  <StyledBox className={className} {...props} />
-);
+const Box = React.forwardRef((props, ref) => (
+  <StyledBox ref={ref} {...props} />
+));
 
 Box.defaultProps = {
   theme,

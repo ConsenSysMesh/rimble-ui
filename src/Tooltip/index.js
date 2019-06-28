@@ -28,7 +28,7 @@ const StyledTooltip = styled(Text)`
   }
 `;
 
-const Tooltip = props => {
+const Tooltip = ({ children, ...props }) => {
   const options = {
     placement: props.placement,
     modifiers: {
@@ -38,15 +38,13 @@ const Tooltip = props => {
     },
   };
 
-  const triggerElement = ({ setReference, toggle }) => (
-    <span
-      ref={setReference}
-      onMouseEnter={toggle}
-      onMouseLeave={toggle}
-      children={props.children}
-      style={{ display: 'inline-block' }}
-    />
-  );
+  const triggerElement = ({ setReference, toggle }) => {
+    return React.cloneElement(children, {
+      ref: setReference,
+      onMouseEnter: toggle,
+      onMouseLeave: toggle,
+    });
+  };
 
   if (typeof window !== 'undefined') {
     return (
@@ -59,7 +57,7 @@ const Tooltip = props => {
       </Popper>
     );
   } else {
-    return props.children;
+    return children;
   }
 };
 

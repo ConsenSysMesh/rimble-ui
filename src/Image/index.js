@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import theme from '../theme';
 import Box from '../Box';
 
-const Image = props => <Box {...props} />;
+const Image = React.forwardRef((props, ref) => <Box ref={ref} {...props} />);
 
 Image.defaultProps = {
   theme,

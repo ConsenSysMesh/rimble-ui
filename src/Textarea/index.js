@@ -4,7 +4,9 @@ import styled from 'styled-components';
 import theme from '../theme';
 import { StyledInput } from '../Input';
 
-const Textarea = props => <StyledInput as={'textarea'} {...props} />;
+const Textarea = React.forwardRef((props, ref) => (
+  <StyledInput ref={ref} {...props} as={'textarea'} />
+));
 
 Textarea.defaultProps = {
   theme,

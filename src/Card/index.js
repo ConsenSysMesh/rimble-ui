@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import theme from '../theme';
 import Box from '../Box';
 
-const Card = props => <Box {...props} />;
+const Card = React.forwardRef((props, ref) => <Box ref={ref} {...props} />);
 
 Card.defaultProps = {
   theme,

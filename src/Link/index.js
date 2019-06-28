@@ -33,7 +33,9 @@ const StyledLink = styled(Text)`
   }
 `;
 
-const Link = props => <StyledLink {...props} />;
+const Link = React.forwardRef((props, ref) => (
+  <StyledLink ref={ref} {...props} />
+));
 
 Link.defaultProps = {
   theme,

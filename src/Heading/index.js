@@ -19,7 +19,9 @@ const StyledHeading = styled.div`
   ${TYPOGRAPHY}
 `;
 
-const Heading = props => <StyledHeading {...props} />;
+const Heading = React.forwardRef((props, ref) => (
+  <StyledHeading ref={ref} {...props} />
+));
 
 Heading.defaultProps = {
   ...defaultProps,

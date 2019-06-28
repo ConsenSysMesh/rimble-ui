@@ -38,12 +38,12 @@ const StyledTable = styled(Box)`
   ${TYPOGRAPHY}
 `;
 
-const Table = props => <StyledTable {...props} />;
+const Table = React.forwardRef((props, ref) => (
+  <StyledTable ref={ref} {...props} forwardedAs={'table'} />
+));
 
 Table.defaultProps = {
   theme,
-  // as: 'table',
-  forwardedAs: 'table',
   width: 1,
   border: 1,
   borderColor: 'grey',
