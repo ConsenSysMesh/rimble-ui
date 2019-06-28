@@ -115,9 +115,20 @@ storiesOf('Components/Tooltip', module)
         </Box>
         <Box>
           <CodeBlock>
-            <Tooltip message="Wrap me around your tooltip trigger">
-              <Icon name="Info" />
-            </Tooltip>
+            <Flex justifyContent={'center'}>
+              <Tooltip
+                message="Wrap me around your tooltip trigger"
+                placement={'bottom'}
+                >
+                  <Button.Outline
+                    icon={'Info'}
+                    icononly
+                    border={0}
+                    borderRadius={'100%'}
+                    mainColor={'black'}
+                  />
+                </Tooltip>
+            </Flex>
           </CodeBlock>
         </Box>
       </Box>
