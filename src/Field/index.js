@@ -45,6 +45,7 @@ const Field = React.forwardRef(({ label, children, ...props }, ref) => {
       display={'inline-flex'}
       flexDirection={'column'}
       alignItems={'flex-start'}
+      mb={3}
       ref={ref}
       {...props}
     >
