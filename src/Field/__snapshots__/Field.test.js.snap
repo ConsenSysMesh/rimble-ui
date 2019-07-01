@@ -3,10 +3,10 @@
 exports[`Field component sanity matches default snapshot 1`] = `
 .c0 {
   margin-bottom: 16px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -47,7 +47,7 @@ exports[`Field component sanity matches default snapshot 1`] = `
 
 <label
   class="c0"
-  display="flex"
+  display="inline-flex"
 >
   <div
     class="c1 c2 c3"
@@ -62,10 +62,10 @@ exports[`Field component sanity matches default snapshot 1`] = `
 exports[`Field component sanity matches themed snapshot 1`] = `
 .c1 {
   margin-bottom: 16px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -115,7 +115,7 @@ exports[`Field component sanity matches themed snapshot 1`] = `
 >
   <label
     class="c1"
-    display="flex"
+    display="inline-flex"
   >
     <div
       class="c2 c3 c4"
