@@ -1086,7 +1086,6 @@ exports[`Select component sanity matches themed snapshot 1`] = `
   width: 100%;
   border: 1px solid transparent;
   border-radius: 4px;
-  border-radius: 4px;
 }
 
 .c2 {

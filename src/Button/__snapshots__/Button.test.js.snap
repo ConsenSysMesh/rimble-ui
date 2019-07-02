@@ -13,7 +13,6 @@ exports[`Button Icon component sanity matches default snapshot 1`] = `
   min-width: 3rem;
   border: none;
   border-radius: 4px;
-  border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: inherit;
@@ -172,7 +171,6 @@ exports[`Button Icon component sanity matches themed snapshot 1`] = `
   height: 3rem;
   min-width: 3rem;
   border: none;
-  border-radius: 4px;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
@@ -343,7 +341,6 @@ exports[`Button Icon only component sanity matches default snapshot 1`] = `
   min-width: 3rem;
   border: none;
   border-radius: 4px;
-  border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: inherit;
@@ -504,7 +501,6 @@ exports[`Button Icon with position prop component sanity matches default snapsho
   min-width: 3rem;
   border: none;
   border-radius: 4px;
-  border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: inherit;
@@ -664,7 +660,6 @@ exports[`Button component sanity matches default snapshot 1`] = `
   min-width: 3rem;
   border: none;
   border-radius: 4px;
-  border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: inherit;
@@ -810,7 +805,6 @@ exports[`Button component sanity matches themed snapshot 1`] = `
   height: 3rem;
   min-width: 3rem;
   border: none;
-  border-radius: 4px;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
@@ -968,7 +962,6 @@ exports[`Button disabled component sanity matches default snapshot 1`] = `
   min-width: 3rem;
   border: none;
   border-radius: 4px;
-  border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: inherit;
@@ -1115,7 +1108,6 @@ exports[`Button disabled component sanity matches themed snapshot 1`] = `
   height: 3rem;
   min-width: 3rem;
   border: none;
-  border-radius: 4px;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
@@ -1271,11 +1263,9 @@ exports[`Button size variant component sanity matches default snapshot 1`] = `
   padding-left: 32px;
   padding-right: 32px;
   width: small;
-  height: small;
   height: 3rem;
   min-width: 3rem;
   border: none;
-  border-radius: 4px;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
@@ -1424,11 +1414,9 @@ exports[`Button size variant component sanity matches default snapshot 2`] = `
   padding-left: 32px;
   padding-right: 32px;
   width: large;
-  height: large;
   height: 3rem;
   min-width: 3rem;
   border: none;
-  border-radius: 4px;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
@@ -1576,11 +1564,9 @@ exports[`Button size variant component sanity matches themed snapshot 1`] = `
   padding-left: 32px;
   padding-right: 32px;
   width: small;
-  height: small;
   height: 3rem;
   min-width: 3rem;
   border: none;
-  border-radius: 4px;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
@@ -1739,11 +1725,9 @@ exports[`Button size variant component sanity matches themed snapshot 2`] = `
   padding-left: 32px;
   padding-right: 32px;
   width: large;
-  height: large;
   height: 3rem;
   min-width: 3rem;
   border: none;
-  border-radius: 4px;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
@@ -1903,8 +1887,6 @@ exports[`Button.Outline component sanity matches default snapshot 1`] = `
   height: 3rem;
   min-width: 3rem;
   border: 1px solid transparent;
-  border-color: #CCC;
-  border-radius: 4px;
   border-color: #CCC;
   border-radius: 4px;
   box-shadow: 0;
@@ -2077,8 +2059,6 @@ exports[`Button.Outline component sanity matches themed snapshot 1`] = `
   height: 3rem;
   min-width: 3rem;
   border: 1px solid transparent;
-  border-color: #CCC;
-  border-radius: 4px;
   border-color: #CCC;
   border-radius: 4px;
   box-shadow: 0;
@@ -2531,8 +2511,6 @@ exports[`Link Button Outline component sanity matches default snapshot 1`] = `
   border: 1px solid transparent;
   border-color: #CCC;
   border-radius: 4px;
-  border-color: #CCC;
-  border-radius: 4px;
   box-shadow: 0;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: inherit;
@@ -2709,7 +2687,6 @@ exports[`Link Button component sanity matches default snapshot 1`] = `
   min-width: 3rem;
   border: none;
   border-radius: 4px;
-  border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: inherit;
@@ -2871,7 +2848,6 @@ exports[`Loading Button component sanity matches default snapshot 1`] = `
   height: 3rem;
   min-width: 3rem;
   border: none;
-  border-radius: 4px;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
@@ -3080,7 +3056,6 @@ exports[`Loading Button component sanity matches default snapshot 2`] = `
   height: 3rem;
   min-width: 3rem;
   border: none;
-  border-radius: 4px;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;

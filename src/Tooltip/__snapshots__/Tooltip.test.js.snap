@@ -13,7 +13,6 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
   min-width: 3rem;
   border: none;
   border-radius: 4px;
-  border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: inherit;
@@ -180,7 +179,6 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
   height: 3rem;
   min-width: 3rem;
   border: none;
-  border-radius: 4px;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
@@ -1462,7 +1460,6 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
   min-width: 3rem;
   border: none;
   border-radius: 4px;
-  border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: inherit;
@@ -2159,7 +2156,6 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
   height: 3rem;
   min-width: 3rem;
   border: none;
-  border-radius: 4px;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
