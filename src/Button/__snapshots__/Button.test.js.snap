@@ -1,17 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Button Icon component sanity matches default snapshot 1`] = `
-.c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.c1 {
-  box-sizing: border-box;
-}
-
 .c0 {
   color: #fff;
   background-color: #999;
@@ -153,15 +142,13 @@ exports[`Button Icon component sanity matches default snapshot 1`] = `
   height="3rem"
 >
   <div
-    class="c1"
-    display="inline-flex"
+    class=""
   >
     <svg
       class=""
       display="block"
       fill="currentcolor"
       height="24px"
-      theme="[object Object]"
       viewBox="0 0 24 24"
       width="24px"
     >
@@ -174,17 +161,6 @@ exports[`Button Icon component sanity matches default snapshot 1`] = `
 `;
 
 exports[`Button Icon component sanity matches themed snapshot 1`] = `
-.c2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.c2 {
-  box-sizing: border-box;
-}
-
 .c1 {
   color: #fff;
   background-color: #999;
@@ -335,15 +311,13 @@ exports[`Button Icon component sanity matches themed snapshot 1`] = `
     height="3rem"
   >
     <div
-      class="c2"
-      display="inline-flex"
+      class=""
     >
       <svg
         class=""
         display="block"
         fill="currentcolor"
         height="24px"
-        theme="[object Object]"
         viewBox="0 0 24 24"
         width="24px"
       >
@@ -357,17 +331,6 @@ exports[`Button Icon component sanity matches themed snapshot 1`] = `
 `;
 
 exports[`Button Icon only component sanity matches default snapshot 1`] = `
-.c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.c1 {
-  box-sizing: border-box;
-}
-
 .c0 {
   color: #fff;
   background-color: #999;
@@ -510,15 +473,13 @@ exports[`Button Icon only component sanity matches default snapshot 1`] = `
   height="3rem"
 >
   <div
-    class="c1"
-    display="inline-flex"
+    class=""
   >
     <svg
       class=""
       display="block"
       fill="currentcolor"
       height="24px"
-      theme="[object Object]"
       viewBox="0 0 24 24"
       width="24px"
     >
@@ -531,17 +492,6 @@ exports[`Button Icon only component sanity matches default snapshot 1`] = `
 `;
 
 exports[`Button Icon with position prop component sanity matches default snapshot 1`] = `
-.c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.c1 {
-  box-sizing: border-box;
-}
-
 .c0 {
   color: #fff;
   background-color: #999;
@@ -683,15 +633,13 @@ exports[`Button Icon with position prop component sanity matches default snapsho
   height="3rem"
 >
   <div
-    class="c1"
-    display="inline-flex"
+    class=""
   >
     <svg
       class=""
       display="block"
       fill="currentcolor"
       height="24px"
-      theme="[object Object]"
       viewBox="0 0 24 24"
       width="24px"
     >
@@ -3121,17 +3069,6 @@ exports[`Loading Button component sanity matches default snapshot 1`] = `
 `;
 
 exports[`Loading Button component sanity matches default snapshot 2`] = `
-.c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.c1 {
-  box-sizing: border-box;
-}
-
 .c0 {
   color: #fff;
   background-color: #999;
@@ -3274,15 +3211,13 @@ exports[`Loading Button component sanity matches default snapshot 2`] = `
   height="3rem"
 >
   <div
-    class="c1"
-    display="inline-flex"
+    class=""
   >
     <svg
       class=""
       display="block"
       fill="currentcolor"
       height="24px"
-      theme="[object Object]"
       viewBox="0 0 24 24"
       width="24px"
     >

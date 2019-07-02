@@ -13,6 +13,7 @@ exports[`Link component sanity matches default snapshot 1`] = `
 .c0 {
   -webkit-text-decoration: none;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .c0:hover {
@@ -49,6 +50,7 @@ exports[`Link component sanity matches themed snapshot 1`] = `
 .c1 {
   -webkit-text-decoration: none;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .c1:hover {

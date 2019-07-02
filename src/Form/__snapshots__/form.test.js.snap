@@ -359,7 +359,6 @@ exports[`Form component sanity matches themed snapshot 1`] = `
         <input
           color="primary"
           mb="3"
-          theme="[object Object]"
           type="checkbox"
         />
         <svg
@@ -617,7 +616,7 @@ exports[`Form component sanity renders children elements 1`] = `
 }
 
 .c9:hover input:not(:disabled) ~ svg[name='unchecked'] {
-  fill: #4E3FCE;
+  fill: #000;
 }
 
 <form
@@ -741,7 +740,6 @@ exports[`Form component sanity renders children elements 1`] = `
       <input
         color="primary"
         mb="3"
-        theme="[object Object]"
         type="checkbox"
       />
       <svg

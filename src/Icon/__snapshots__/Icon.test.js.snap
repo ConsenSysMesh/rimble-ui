@@ -1,27 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Icon component sanity matches default snapshot 1`] = `
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.c0 {
-  box-sizing: border-box;
-}
-
 <div
-  class="c0"
-  display="inline-flex"
+  class=""
 >
   <svg
     class=""
     display="block"
     fill="currentcolor"
     height="24px"
-    theme="[object Object]"
     viewBox="0 0 24 24"
     width="24px"
   >
@@ -33,17 +20,6 @@ exports[`Icon component sanity matches default snapshot 1`] = `
 `;
 
 exports[`Icon component sanity matches themed snapshot 1`] = `
-.c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.c1 {
-  box-sizing: border-box;
-}
-
 .c0 {
   font-size: 1em;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
@@ -54,15 +30,13 @@ exports[`Icon component sanity matches themed snapshot 1`] = `
   class="c0"
 >
   <div
-    class="c1"
-    display="inline-flex"
+    class=""
   >
     <svg
       class=""
       display="block"
       fill="currentcolor"
       height="24px"
-      theme="[object Object]"
       viewBox="0 0 24 24"
       width="24px"
     >

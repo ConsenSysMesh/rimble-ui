@@ -1,17 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`File Input component sanity matches default snapshot 1`] = `
-.c3 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.c3 {
-  box-sizing: border-box;
-}
-
 .c2 {
   color: #fff;
   background-color: #999;
@@ -175,15 +164,13 @@ exports[`File Input component sanity matches default snapshot 1`] = `
     height="3rem"
   >
     <div
-      class="c3"
-      display="inline-flex"
+      class=""
     >
       <svg
         class=""
         display="block"
         fill="currentcolor"
         height="24px"
-        theme="[object Object]"
         viewBox="0 0 24 24"
         width="24px"
       >
@@ -202,17 +189,6 @@ exports[`File Input component sanity matches default snapshot 1`] = `
 `;
 
 exports[`File Input component sanity matches themed snapshot 1`] = `
-.c4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.c4 {
-  box-sizing: border-box;
-}
-
 .c3 {
   color: #fff;
   background-color: #999;
@@ -385,15 +361,13 @@ exports[`File Input component sanity matches themed snapshot 1`] = `
       height="3rem"
     >
       <div
-        class="c4"
-        display="inline-flex"
+        class=""
       >
         <svg
           class=""
           display="block"
           fill="currentcolor"
           height="24px"
-          theme="[object Object]"
           viewBox="0 0 24 24"
           width="24px"
         >

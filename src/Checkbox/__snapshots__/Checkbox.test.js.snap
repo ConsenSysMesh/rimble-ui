@@ -89,7 +89,7 @@ exports[`Checkbox component sanity matches default snapshot 1`] = `
 }
 
 .c0:hover input:not(:disabled) ~ svg[name='unchecked'] {
-  fill: #4E3FCE;
+  fill: #000;
 }
 
 <label
@@ -103,7 +103,6 @@ exports[`Checkbox component sanity matches default snapshot 1`] = `
   >
     <input
       color="primary"
-      theme="[object Object]"
       type="checkbox"
     />
     <svg
@@ -253,7 +252,6 @@ exports[`Checkbox component sanity matches themed snapshot 1`] = `
     >
       <input
         color="primary"
-        theme="[object Object]"
         type="checkbox"
       />
       <svg
