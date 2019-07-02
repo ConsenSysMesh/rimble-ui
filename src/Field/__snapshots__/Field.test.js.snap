@@ -45,6 +45,59 @@ exports[`Field component sanity matches default snapshot 1`] = `
   font-style: italic;
 }
 
+.c4 {
+  color: #3F3D4B;
+  background-color: #fff;
+  padding: 16px;
+  height: 3rem;
+  border: 1px solid transparent;
+  border-color: #CCC;
+  border-radius: 4px;
+  border-color: #CCC;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.c4 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-sizing: border-box;
+}
+
+.c4:hover {
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
+}
+
+.c4:focus {
+  outline: none;
+  border-color: #4E3FCE;
+}
+
+.c4:disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.was-validated .c4:valid {
+  border-color: #28C081;
+}
+
+.was-validated .c4:valid ~ svg.icon-valid {
+  visibility: visible;
+}
+
+.was-validated .c4:invalid {
+  border-color: #DC2C10;
+}
+
+.was-validated .c4:invalid ~ svg.icon-invalid {
+  visibility: visible;
+}
+
 <label
   class="c0"
   display="inline-flex"
@@ -55,6 +108,15 @@ exports[`Field component sanity matches default snapshot 1`] = `
     font-family="sansSerif"
     font-size="1"
     font-weight="3"
+  >
+    Input label
+  </div>
+  <input
+    class="c4"
+    color="copyColor"
+    font-family="sansSerif"
+    font-size="1rem"
+    height="3rem"
   />
 </label>
 `;
@@ -104,6 +166,59 @@ exports[`Field component sanity matches themed snapshot 1`] = `
   font-style: italic;
 }
 
+.c5 {
+  color: #3F3D4B;
+  background-color: #fff;
+  padding: 16px;
+  height: 3rem;
+  border: 1px solid transparent;
+  border-color: #CCC;
+  border-radius: 4px;
+  border-color: #CCC;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.c5 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-sizing: border-box;
+}
+
+.c5:hover {
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
+}
+
+.c5:focus {
+  outline: none;
+  border-color: #4E3FCE;
+}
+
+.c5:disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.was-validated .c5:valid {
+  border-color: #28C081;
+}
+
+.was-validated .c5:valid ~ svg.icon-valid {
+  visibility: visible;
+}
+
+.was-validated .c5:invalid {
+  border-color: #DC2C10;
+}
+
+.was-validated .c5:invalid ~ svg.icon-invalid {
+  visibility: visible;
+}
+
 .c0 {
   font-size: 1em;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
@@ -123,6 +238,15 @@ exports[`Field component sanity matches themed snapshot 1`] = `
       font-family="sansSerif"
       font-size="1"
       font-weight="3"
+    >
+      Themed input label
+    </div>
+    <input
+      class="c5"
+      color="copyColor"
+      font-family="sansSerif"
+      font-size="1rem"
+      height="3rem"
     />
   </label>
 </div>

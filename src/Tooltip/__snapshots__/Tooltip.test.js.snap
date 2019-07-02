@@ -1,9 +1,1446 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Tooltip component sanity matches default snapshot 1`] = `
-<span
-  style="display:inline-block"
-/>
+.c0 {
+  color: #fff;
+  background-color: #999;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 32px;
+  padding-right: 32px;
+  height: 3rem;
+  min-width: 3rem;
+  border: none;
+  border-radius: 4px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-size: inherit;
+  font-weight: 600;
+  --main-color: #4E3FCE;
+  --contrast-color: #fff;
+}
+
+.c0 {
+  -webkit-font-smoothing: antialiased;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-align: center;
+  overflow: hidden;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.c0 > span.button-text {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c0 > div > svg,
+.c0 > span.button-text {
+  position: relative;
+  z-index: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+
+.c0 > div > svg {
+  display: block;
+}
+
+.c0 > div:first-child > svg {
+  margin-left: -0.5rem;
+  margin-right: .5rem;
+}
+
+.c0 > div:last-child > svg {
+  margin-left: .5rem;
+  margin-right: -0.5rem;
+}
+
+.c0 > div:first-child:last-child > svg {
+  margin: 0;
+}
+
+.c0 {
+  color: var(--contrast-color);
+  background: #FFF;
+  position: relative;
+  z-index: 0;
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+}
+
+.c0:hover {
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+}
+
+.c0:hover::before {
+  opacity: 0.9;
+}
+
+.c0:active {
+  box-shadow: none;
+  background: #000;
+}
+
+.c0::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background: var(--main-color);
+  pointer-events: none;
+}
+
+<Tooltip
+  message="props.message text"
+  offset="0, 0"
+  placement="bottom"
+  variant="dark"
+>
+  <Popper
+    options={
+      Object {
+        "modifiers": Object {
+          "offset": Object {
+            "offset": "0, 0",
+          },
+        },
+        "placement": "bottom",
+      }
+    }
+    renderRef={[Function]}
+    style={
+      Object {
+        "zIndex": 99999,
+      }
+    }
+  >
+    <withStateHandlers(withStateHandlers(withHandlers(lifecycle(Component))))
+      options={
+        Object {
+          "modifiers": Object {
+            "offset": Object {
+              "offset": "0, 0",
+            },
+          },
+          "placement": "bottom",
+        }
+      }
+      reference={
+        .c0 {
+  color: #fff;
+  background-color: #999;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 32px;
+  padding-right: 32px;
+  height: 3rem;
+  min-width: 3rem;
+  border: none;
+  border-radius: 4px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-size: inherit;
+  font-weight: 600;
+  --main-color: #4E3FCE;
+  --contrast-color: #fff;
+}
+
+.c0 {
+  -webkit-font-smoothing: antialiased;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-align: center;
+  overflow: hidden;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.c0 > span.button-text {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c0 > div > svg,
+.c0 > span.button-text {
+  position: relative;
+  z-index: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+
+.c0 > div > svg {
+  display: block;
+}
+
+.c0 > div:first-child > svg {
+  margin-left: -0.5rem;
+  margin-right: .5rem;
+}
+
+.c0 > div:last-child > svg {
+  margin-left: .5rem;
+  margin-right: -0.5rem;
+}
+
+.c0 > div:first-child:last-child > svg {
+  margin: 0;
+}
+
+.c0 {
+  color: var(--contrast-color);
+  background: #FFF;
+  position: relative;
+  z-index: 0;
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+}
+
+.c0:hover {
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+}
+
+.c0:hover::before {
+  opacity: 0.9;
+}
+
+.c0:active {
+  box-shadow: none;
+  background: #000;
+}
+
+.c0::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background: var(--main-color);
+  pointer-events: none;
+}
+
+<button
+          class="c0"
+          color="white"
+          font-family="sansSerif"
+          font-size="inherit"
+          font-weight="3"
+          height="3rem"
+        >
+          <span
+            class="button-text"
+          />
+        </button>
+      }
+      renderRef={[Function]}
+      setReference={[Function]}
+      style={
+        Object {
+          "zIndex": 99999,
+        }
+      }
+    >
+      <withStateHandlers(withHandlers(lifecycle(Component)))
+        options={
+          Object {
+            "modifiers": Object {
+              "offset": Object {
+                "offset": "0, 0",
+              },
+            },
+            "placement": "bottom",
+          }
+        }
+        pop={null}
+        popper={null}
+        reference={
+          <button
+            class="c0"
+            color="white"
+            font-family="sansSerif"
+            font-size="inherit"
+            font-weight="3"
+            height="3rem"
+          >
+            <span
+              class="button-text"
+            />
+          </button>
+        }
+        renderRef={[Function]}
+        setPop={[Function]}
+        setReference={[Function]}
+        style={
+          Object {
+            "zIndex": 99999,
+          }
+        }
+      >
+        <withHandlers(lifecycle(Component))
+          close={[Function]}
+          isOpened={false}
+          open={[Function]}
+          options={
+            Object {
+              "modifiers": Object {
+                "offset": Object {
+                  "offset": "0, 0",
+                },
+              },
+              "placement": "bottom",
+            }
+          }
+          pop={null}
+          popper={null}
+          reference={
+            <button
+              class="c0"
+              color="white"
+              font-family="sansSerif"
+              font-size="inherit"
+              font-weight="3"
+              height="3rem"
+            >
+              <span
+                class="button-text"
+              />
+            </button>
+          }
+          renderRef={[Function]}
+          setPop={[Function]}
+          setReference={[Function]}
+          style={
+            Object {
+              "zIndex": 99999,
+            }
+          }
+          toggle={[Function]}
+        >
+          <lifecycle(Component)
+            close={[Function]}
+            isOpened={false}
+            onClick={[Function]}
+            open={[Function]}
+            options={
+              Object {
+                "modifiers": Object {
+                  "offset": Object {
+                    "offset": "0, 0",
+                  },
+                },
+                "placement": "bottom",
+              }
+            }
+            pop={null}
+            popper={null}
+            reference={
+              <button
+                class="c0"
+                color="white"
+                font-family="sansSerif"
+                font-size="inherit"
+                font-weight="3"
+                height="3rem"
+              >
+                <span
+                  class="button-text"
+                />
+              </button>
+            }
+            renderRef={[Function]}
+            setPop={[Function]}
+            setReference={[Function]}
+            style={
+              Object {
+                "zIndex": 99999,
+              }
+            }
+            toggle={[Function]}
+          >
+            <Component
+              close={[Function]}
+              isOpened={false}
+              onClick={[Function]}
+              open={[Function]}
+              options={
+                Object {
+                  "modifiers": Object {
+                    "offset": Object {
+                      "offset": "0, 0",
+                    },
+                  },
+                  "placement": "bottom",
+                }
+              }
+              pop={null}
+              popper={null}
+              reference={
+                <button
+                  class="c0"
+                  color="white"
+                  font-family="sansSerif"
+                  font-size="inherit"
+                  font-weight="3"
+                  height="3rem"
+                >
+                  <span
+                    class="button-text"
+                  />
+                </button>
+              }
+              renderRef={[Function]}
+              setPop={[Function]}
+              setReference={[Function]}
+              style={
+                Object {
+                  "zIndex": 99999,
+                }
+              }
+              toggle={[Function]}
+            >
+              <Button
+                bg="silver"
+                border="none"
+                borderRadius={1}
+                boxShadow={1}
+                color="white"
+                contrastColor="white"
+                fontFamily="sansSerif"
+                fontSize="inherit"
+                fontWeight={3}
+                height="3rem"
+                m={0}
+                mainColor="primary"
+                minWidth="3rem"
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                px={4}
+                py={0}
+                theme={
+                  Object {
+                    "borderWidths": Array [
+                      "0",
+                      "1px",
+                      "2px",
+                      "4px",
+                    ],
+                    "borders": Array [
+                      0,
+                      "1px solid transparent",
+                    ],
+                    "buttonSizes": Object {
+                      "large": Object {
+                        "fontSize": "1.5rem",
+                        "height": "4rem",
+                        "minWidth": "4rem",
+                      },
+                      "medium": Object {
+                        "fontSize": "1rem",
+                        "height": "3rem",
+                        "minWidth": "3rem",
+                      },
+                      "small": Object {
+                        "fontSize": "0.75rem",
+                        "height": "2rem",
+                        "minWidth": "2rem",
+                        "padding": "0 1rem",
+                      },
+                    },
+                    "buttons": Object {
+                      "danger": Object {
+                        "--contrast-color": "#fff",
+                        "--main-color": "#DC2C10",
+                      },
+                      "primary": Object {
+                        "--contrast-color": "#fff",
+                        "--main-color": "#4E3FCE",
+                        "backgroundColor": "#4E3FCE",
+                        "color": "#fff",
+                      },
+                      "success": Object {
+                        "--contrast-color": "#FFF",
+                        "--main-color": "#28C081",
+                      },
+                    },
+                    "colors": Object {
+                      "black": "#000e1a",
+                      "blacks": Array [
+                        "rgba(0,0,0,.0125)",
+                        "rgba(0,0,0,.025)",
+                        "rgba(0,0,0,.05)",
+                        "rgba(0,0,0,.1)",
+                        "rgba(0,0,0,.2)",
+                        "rgba(0,0,0,.3)",
+                        "rgba(0,0,0,.4)",
+                        "rgba(0,0,0,.5)",
+                        "rgba(0,0,0,.6)",
+                        "rgba(0,0,0,.7)",
+                        "rgba(0,0,0,.8)",
+                        "rgba(0,0,0,.9)",
+                      ],
+                      "blue": "#3259D6",
+                      "copyColor": "#3F3D4B",
+                      "danger": "#DC2C10",
+                      "dark-gray": "#333",
+                      "grey": "#CCC",
+                      "info": "#36ADF1",
+                      "light-gray": "#eee",
+                      "light-silver": "#aaa",
+                      "mid-gray": "#555",
+                      "moon-gray": "#ccc",
+                      "near-black": "#111",
+                      "near-white": "#f4f4f4",
+                      "primary": "#4E3FCE",
+                      "primary-dark": "#3e32a4",
+                      "primary-light": "#7165d7",
+                      "silver": "#999",
+                      "success": "#28C081",
+                      "transparent": "transparent",
+                      "warning": "#FD9D28",
+                      "white": "#fff",
+                      "whites": Array [
+                        "rgba(255,255,255,.0125)",
+                        "rgba(255,255,255,.025)",
+                        "rgba(255,255,255,.05)",
+                        "rgba(255,255,255,.1)",
+                        "rgba(255,255,255,.2)",
+                        "rgba(255,255,255,.3)",
+                        "rgba(255,255,255,.4)",
+                        "rgba(255,255,255,.5)",
+                        "rgba(255,255,255,.6)",
+                        "rgba(255,255,255,.7)",
+                        "rgba(255,255,255,.8)",
+                        "rgba(255,255,255,.9)",
+                      ],
+                    },
+                    "fontSizes": Array [
+                      12,
+                      14,
+                      16,
+                      20,
+                      24,
+                      32,
+                      48,
+                      64,
+                    ],
+                    "fontWeights": Array [
+                      0,
+                      300,
+                      400,
+                      600,
+                      700,
+                    ],
+                    "fonts": Object {
+                      "sansSerif": "\\"Source Sans Pro\\", -apple-system, sans-serif",
+                      "serif": "athelas, georgia, times, serif",
+                    },
+                    "heights": Array [
+                      0,
+                      16,
+                      32,
+                      64,
+                      128,
+                      256,
+                    ],
+                    "letterSpacings": Array [
+                      0,
+                      1,
+                      2,
+                      4,
+                      8,
+                    ],
+                    "lineHeights": Object {
+                      "copy": 1.5,
+                      "solid": 1,
+                      "title": 1.25,
+                    },
+                    "maxHeights": Array [
+                      0,
+                      16,
+                      32,
+                      64,
+                      128,
+                      256,
+                    ],
+                    "maxWidths": Array [
+                      0,
+                      16,
+                      32,
+                      64,
+                      128,
+                      256,
+                      512,
+                      768,
+                      1024,
+                      1536,
+                    ],
+                    "messageStyle": Object {
+                      "base": Object {
+                        "backgroundColor": "#f6f6f6",
+                        "borderColor": "#AAA",
+                        "color": "#666",
+                      },
+                      "danger": Object {
+                        "backgroundColor": "#fbe9e7",
+                        "borderColor": "#DC2C10",
+                        "color": "#841a09",
+                      },
+                      "info": Object {
+                        "backgroundColor": "#eaf6fd",
+                        "borderColor": "#36ADF1",
+                        "color": "#206790",
+                      },
+                      "success": Object {
+                        "backgroundColor": "#e9f8f2",
+                        "borderColor": "#28C081",
+                        "color": "#18734d",
+                      },
+                      "warning": Object {
+                        "backgroundColor": "#fef5e9",
+                        "borderColor": "#FD9D28",
+                        "color": "#975e18",
+                      },
+                    },
+                    "minHeights": Array [
+                      0,
+                      16,
+                      32,
+                      64,
+                      128,
+                      256,
+                    ],
+                    "minWidths": Array [
+                      0,
+                      16,
+                      32,
+                      64,
+                      128,
+                      256,
+                    ],
+                    "opacity": Object {
+                      "disabled": 0.4,
+                    },
+                    "radii": Array [
+                      "0",
+                      "4px",
+                      "8px",
+                      "16px",
+                    ],
+                    "shadows": Array [
+                      "0",
+                      "0px 2px 4px rgba(0, 0, 0, 0.1)",
+                      "0px 8px 16px rgba(0, 0, 0, 0.1)",
+                      "0 7px 14px rgba(50,50,93,.1)",
+                    ],
+                    "space": Array [
+                      0,
+                      4,
+                      8,
+                      16,
+                      32,
+                      64,
+                      128,
+                      256,
+                    ],
+                    "width": Array [
+                      0,
+                      16,
+                      32,
+                      64,
+                      128,
+                      256,
+                    ],
+                    "zIndices": Array [
+                      0,
+                      9,
+                      99,
+                      999,
+                      9999,
+                    ],
+                  }
+                }
+              >
+                <Styled(styled.button)
+                  bg="silver"
+                  border="none"
+                  borderRadius={1}
+                  boxShadow={1}
+                  color="white"
+                  contrastColor="white"
+                  fontFamily="sansSerif"
+                  fontSize="inherit"
+                  fontWeight={3}
+                  height="3rem"
+                  m={0}
+                  mainColor="primary"
+                  minWidth="3rem"
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  px={4}
+                  py={0}
+                  theme={
+                    Object {
+                      "borderWidths": Array [
+                        "0",
+                        "1px",
+                        "2px",
+                        "4px",
+                      ],
+                      "borders": Array [
+                        0,
+                        "1px solid transparent",
+                      ],
+                      "buttonSizes": Object {
+                        "large": Object {
+                          "fontSize": "1.5rem",
+                          "height": "4rem",
+                          "minWidth": "4rem",
+                        },
+                        "medium": Object {
+                          "fontSize": "1rem",
+                          "height": "3rem",
+                          "minWidth": "3rem",
+                        },
+                        "small": Object {
+                          "fontSize": "0.75rem",
+                          "height": "2rem",
+                          "minWidth": "2rem",
+                          "padding": "0 1rem",
+                        },
+                      },
+                      "buttons": Object {
+                        "danger": Object {
+                          "--contrast-color": "#fff",
+                          "--main-color": "#DC2C10",
+                        },
+                        "primary": Object {
+                          "--contrast-color": "#fff",
+                          "--main-color": "#4E3FCE",
+                          "backgroundColor": "#4E3FCE",
+                          "color": "#fff",
+                        },
+                        "success": Object {
+                          "--contrast-color": "#FFF",
+                          "--main-color": "#28C081",
+                        },
+                      },
+                      "colors": Object {
+                        "black": "#000e1a",
+                        "blacks": Array [
+                          "rgba(0,0,0,.0125)",
+                          "rgba(0,0,0,.025)",
+                          "rgba(0,0,0,.05)",
+                          "rgba(0,0,0,.1)",
+                          "rgba(0,0,0,.2)",
+                          "rgba(0,0,0,.3)",
+                          "rgba(0,0,0,.4)",
+                          "rgba(0,0,0,.5)",
+                          "rgba(0,0,0,.6)",
+                          "rgba(0,0,0,.7)",
+                          "rgba(0,0,0,.8)",
+                          "rgba(0,0,0,.9)",
+                        ],
+                        "blue": "#3259D6",
+                        "copyColor": "#3F3D4B",
+                        "danger": "#DC2C10",
+                        "dark-gray": "#333",
+                        "grey": "#CCC",
+                        "info": "#36ADF1",
+                        "light-gray": "#eee",
+                        "light-silver": "#aaa",
+                        "mid-gray": "#555",
+                        "moon-gray": "#ccc",
+                        "near-black": "#111",
+                        "near-white": "#f4f4f4",
+                        "primary": "#4E3FCE",
+                        "primary-dark": "#3e32a4",
+                        "primary-light": "#7165d7",
+                        "silver": "#999",
+                        "success": "#28C081",
+                        "transparent": "transparent",
+                        "warning": "#FD9D28",
+                        "white": "#fff",
+                        "whites": Array [
+                          "rgba(255,255,255,.0125)",
+                          "rgba(255,255,255,.025)",
+                          "rgba(255,255,255,.05)",
+                          "rgba(255,255,255,.1)",
+                          "rgba(255,255,255,.2)",
+                          "rgba(255,255,255,.3)",
+                          "rgba(255,255,255,.4)",
+                          "rgba(255,255,255,.5)",
+                          "rgba(255,255,255,.6)",
+                          "rgba(255,255,255,.7)",
+                          "rgba(255,255,255,.8)",
+                          "rgba(255,255,255,.9)",
+                        ],
+                      },
+                      "fontSizes": Array [
+                        12,
+                        14,
+                        16,
+                        20,
+                        24,
+                        32,
+                        48,
+                        64,
+                      ],
+                      "fontWeights": Array [
+                        0,
+                        300,
+                        400,
+                        600,
+                        700,
+                      ],
+                      "fonts": Object {
+                        "sansSerif": "\\"Source Sans Pro\\", -apple-system, sans-serif",
+                        "serif": "athelas, georgia, times, serif",
+                      },
+                      "heights": Array [
+                        0,
+                        16,
+                        32,
+                        64,
+                        128,
+                        256,
+                      ],
+                      "letterSpacings": Array [
+                        0,
+                        1,
+                        2,
+                        4,
+                        8,
+                      ],
+                      "lineHeights": Object {
+                        "copy": 1.5,
+                        "solid": 1,
+                        "title": 1.25,
+                      },
+                      "maxHeights": Array [
+                        0,
+                        16,
+                        32,
+                        64,
+                        128,
+                        256,
+                      ],
+                      "maxWidths": Array [
+                        0,
+                        16,
+                        32,
+                        64,
+                        128,
+                        256,
+                        512,
+                        768,
+                        1024,
+                        1536,
+                      ],
+                      "messageStyle": Object {
+                        "base": Object {
+                          "backgroundColor": "#f6f6f6",
+                          "borderColor": "#AAA",
+                          "color": "#666",
+                        },
+                        "danger": Object {
+                          "backgroundColor": "#fbe9e7",
+                          "borderColor": "#DC2C10",
+                          "color": "#841a09",
+                        },
+                        "info": Object {
+                          "backgroundColor": "#eaf6fd",
+                          "borderColor": "#36ADF1",
+                          "color": "#206790",
+                        },
+                        "success": Object {
+                          "backgroundColor": "#e9f8f2",
+                          "borderColor": "#28C081",
+                          "color": "#18734d",
+                        },
+                        "warning": Object {
+                          "backgroundColor": "#fef5e9",
+                          "borderColor": "#FD9D28",
+                          "color": "#975e18",
+                        },
+                      },
+                      "minHeights": Array [
+                        0,
+                        16,
+                        32,
+                        64,
+                        128,
+                        256,
+                      ],
+                      "minWidths": Array [
+                        0,
+                        16,
+                        32,
+                        64,
+                        128,
+                        256,
+                      ],
+                      "opacity": Object {
+                        "disabled": 0.4,
+                      },
+                      "radii": Array [
+                        "0",
+                        "4px",
+                        "8px",
+                        "16px",
+                      ],
+                      "shadows": Array [
+                        "0",
+                        "0px 2px 4px rgba(0, 0, 0, 0.1)",
+                        "0px 8px 16px rgba(0, 0, 0, 0.1)",
+                        "0 7px 14px rgba(50,50,93,.1)",
+                      ],
+                      "space": Array [
+                        0,
+                        4,
+                        8,
+                        16,
+                        32,
+                        64,
+                        128,
+                        256,
+                      ],
+                      "width": Array [
+                        0,
+                        16,
+                        32,
+                        64,
+                        128,
+                        256,
+                      ],
+                      "zIndices": Array [
+                        0,
+                        9,
+                        99,
+                        999,
+                        9999,
+                      ],
+                    }
+                  }
+                >
+                  <StyledComponent
+                    bg="silver"
+                    border="none"
+                    borderRadius={1}
+                    boxShadow={1}
+                    color="white"
+                    contrastColor="white"
+                    fontFamily="sansSerif"
+                    fontSize="inherit"
+                    fontWeight={3}
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-kDkoGq",
+                          "isStatic": false,
+                          "lastClassName": "c0",
+                          "rules": Array [
+                            "
+  & {
+    -webkit-font-smoothing: antialiased;
+    appearance: none;
+    user-select: none;
+    white-space: nowrap;
+    text-decoration: none;
+    text-align: center;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: ",
+                            [Function],
+                            ";
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  > span.button-text {
+    display: inline-flex;
+  }
+
+  ",
+                            "
+  > div > svg,
+  > span.button-text {
+    position: relative;
+    z-index: 1;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  > div > svg {
+    display: block;
+  }
+  > div:first-child > svg {
+    margin-left: -0.5rem;
+    margin-right: .5rem;
+  }
+  > div:last-child > svg {
+    margin-left: .5rem;
+    margin-right: -0.5rem;
+  }
+  > div:first-child:last-child > svg {
+    margin: 0;
+  }
+
+  ",
+                            [Function],
+                            "
+  ",
+                            [Function],
+                            "
+  ",
+                            [Function],
+                            "
+  ",
+                            [Function],
+                            "
+  ",
+                            [Function],
+                            "
+
+  ",
+                            [Function],
+                            "
+  ",
+                            [Function],
+                            "
+  ",
+                            [Function],
+                            "
+  ",
+                            [Function],
+                            "
+",
+                            "
+  & {
+    color: var(--contrast-color);
+    ",
+                            "
+    background: #FFF;
+
+    position: relative;
+    z-index: 0;
+    transition: all 0.15s ease;
+  }
+
+  &:hover {
+    text-decoration: inherit;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  &:hover::before {
+    opacity: 0.9;
+  }
+
+  &:active {
+    box-shadow: none;
+    background: #000;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background: var(--main-color);
+    pointer-events: none;
+  }
+",
+                          ],
+                        },
+                        "displayName": "Styled(styled.button)",
+                        "foldedComponentIds": Array [
+                          "sc-eiqfgm",
+                        ],
+                        "render": [Function],
+                        "styledComponentId": "sc-kDkoGq",
+                        "target": "button",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={[Function]}
+                    height="3rem"
+                    m={0}
+                    mainColor="primary"
+                    minWidth="3rem"
+                    onMouseEnter={[Function]}
+                    onMouseLeave={[Function]}
+                    px={4}
+                    py={0}
+                    theme={
+                      Object {
+                        "borderWidths": Array [
+                          "0",
+                          "1px",
+                          "2px",
+                          "4px",
+                        ],
+                        "borders": Array [
+                          0,
+                          "1px solid transparent",
+                        ],
+                        "buttonSizes": Object {
+                          "large": Object {
+                            "fontSize": "1.5rem",
+                            "height": "4rem",
+                            "minWidth": "4rem",
+                          },
+                          "medium": Object {
+                            "fontSize": "1rem",
+                            "height": "3rem",
+                            "minWidth": "3rem",
+                          },
+                          "small": Object {
+                            "fontSize": "0.75rem",
+                            "height": "2rem",
+                            "minWidth": "2rem",
+                            "padding": "0 1rem",
+                          },
+                        },
+                        "buttons": Object {
+                          "danger": Object {
+                            "--contrast-color": "#fff",
+                            "--main-color": "#DC2C10",
+                          },
+                          "primary": Object {
+                            "--contrast-color": "#fff",
+                            "--main-color": "#4E3FCE",
+                            "backgroundColor": "#4E3FCE",
+                            "color": "#fff",
+                          },
+                          "success": Object {
+                            "--contrast-color": "#FFF",
+                            "--main-color": "#28C081",
+                          },
+                        },
+                        "colors": Object {
+                          "black": "#000e1a",
+                          "blacks": Array [
+                            "rgba(0,0,0,.0125)",
+                            "rgba(0,0,0,.025)",
+                            "rgba(0,0,0,.05)",
+                            "rgba(0,0,0,.1)",
+                            "rgba(0,0,0,.2)",
+                            "rgba(0,0,0,.3)",
+                            "rgba(0,0,0,.4)",
+                            "rgba(0,0,0,.5)",
+                            "rgba(0,0,0,.6)",
+                            "rgba(0,0,0,.7)",
+                            "rgba(0,0,0,.8)",
+                            "rgba(0,0,0,.9)",
+                          ],
+                          "blue": "#3259D6",
+                          "copyColor": "#3F3D4B",
+                          "danger": "#DC2C10",
+                          "dark-gray": "#333",
+                          "grey": "#CCC",
+                          "info": "#36ADF1",
+                          "light-gray": "#eee",
+                          "light-silver": "#aaa",
+                          "mid-gray": "#555",
+                          "moon-gray": "#ccc",
+                          "near-black": "#111",
+                          "near-white": "#f4f4f4",
+                          "primary": "#4E3FCE",
+                          "primary-dark": "#3e32a4",
+                          "primary-light": "#7165d7",
+                          "silver": "#999",
+                          "success": "#28C081",
+                          "transparent": "transparent",
+                          "warning": "#FD9D28",
+                          "white": "#fff",
+                          "whites": Array [
+                            "rgba(255,255,255,.0125)",
+                            "rgba(255,255,255,.025)",
+                            "rgba(255,255,255,.05)",
+                            "rgba(255,255,255,.1)",
+                            "rgba(255,255,255,.2)",
+                            "rgba(255,255,255,.3)",
+                            "rgba(255,255,255,.4)",
+                            "rgba(255,255,255,.5)",
+                            "rgba(255,255,255,.6)",
+                            "rgba(255,255,255,.7)",
+                            "rgba(255,255,255,.8)",
+                            "rgba(255,255,255,.9)",
+                          ],
+                        },
+                        "fontSizes": Array [
+                          12,
+                          14,
+                          16,
+                          20,
+                          24,
+                          32,
+                          48,
+                          64,
+                        ],
+                        "fontWeights": Array [
+                          0,
+                          300,
+                          400,
+                          600,
+                          700,
+                        ],
+                        "fonts": Object {
+                          "sansSerif": "\\"Source Sans Pro\\", -apple-system, sans-serif",
+                          "serif": "athelas, georgia, times, serif",
+                        },
+                        "heights": Array [
+                          0,
+                          16,
+                          32,
+                          64,
+                          128,
+                          256,
+                        ],
+                        "letterSpacings": Array [
+                          0,
+                          1,
+                          2,
+                          4,
+                          8,
+                        ],
+                        "lineHeights": Object {
+                          "copy": 1.5,
+                          "solid": 1,
+                          "title": 1.25,
+                        },
+                        "maxHeights": Array [
+                          0,
+                          16,
+                          32,
+                          64,
+                          128,
+                          256,
+                        ],
+                        "maxWidths": Array [
+                          0,
+                          16,
+                          32,
+                          64,
+                          128,
+                          256,
+                          512,
+                          768,
+                          1024,
+                          1536,
+                        ],
+                        "messageStyle": Object {
+                          "base": Object {
+                            "backgroundColor": "#f6f6f6",
+                            "borderColor": "#AAA",
+                            "color": "#666",
+                          },
+                          "danger": Object {
+                            "backgroundColor": "#fbe9e7",
+                            "borderColor": "#DC2C10",
+                            "color": "#841a09",
+                          },
+                          "info": Object {
+                            "backgroundColor": "#eaf6fd",
+                            "borderColor": "#36ADF1",
+                            "color": "#206790",
+                          },
+                          "success": Object {
+                            "backgroundColor": "#e9f8f2",
+                            "borderColor": "#28C081",
+                            "color": "#18734d",
+                          },
+                          "warning": Object {
+                            "backgroundColor": "#fef5e9",
+                            "borderColor": "#FD9D28",
+                            "color": "#975e18",
+                          },
+                        },
+                        "minHeights": Array [
+                          0,
+                          16,
+                          32,
+                          64,
+                          128,
+                          256,
+                        ],
+                        "minWidths": Array [
+                          0,
+                          16,
+                          32,
+                          64,
+                          128,
+                          256,
+                        ],
+                        "opacity": Object {
+                          "disabled": 0.4,
+                        },
+                        "radii": Array [
+                          "0",
+                          "4px",
+                          "8px",
+                          "16px",
+                        ],
+                        "shadows": Array [
+                          "0",
+                          "0px 2px 4px rgba(0, 0, 0, 0.1)",
+                          "0px 8px 16px rgba(0, 0, 0, 0.1)",
+                          "0 7px 14px rgba(50,50,93,.1)",
+                        ],
+                        "space": Array [
+                          0,
+                          4,
+                          8,
+                          16,
+                          32,
+                          64,
+                          128,
+                          256,
+                        ],
+                        "width": Array [
+                          0,
+                          16,
+                          32,
+                          64,
+                          128,
+                          256,
+                        ],
+                        "zIndices": Array [
+                          0,
+                          9,
+                          99,
+                          999,
+                          9999,
+                        ],
+                      }
+                    }
+                  >
+                    <button
+                      className="c0"
+                      color="white"
+                      fontFamily="sansSerif"
+                      fontSize="inherit"
+                      fontWeight={3}
+                      height="3rem"
+                      onMouseEnter={[Function]}
+                      onMouseLeave={[Function]}
+                    >
+                      <ButtonBody>
+                        <span
+                          className="button-text"
+                        />
+                      </ButtonBody>
+                    </button>
+                  </StyledComponent>
+                </Styled(styled.button)>
+              </Button>
+            </Component>
+          </lifecycle(Component)>
+        </withHandlers(lifecycle(Component))>
+      </withStateHandlers(withHandlers(lifecycle(Component)))>
+    </withStateHandlers(withStateHandlers(withHandlers(lifecycle(Component))))>
+  </Popper>
+</Tooltip>
 `;
 
 exports[`Tooltip component sanity matches themed snapshot 1`] = `
@@ -13,11 +1450,2466 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
   color: #3F3D4B;
 }
 
-<div
-  class="c0"
+.c1 {
+  color: #fff;
+  background-color: #999;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 32px;
+  padding-right: 32px;
+  height: 3rem;
+  min-width: 3rem;
+  border: none;
+  border-radius: 4px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-size: inherit;
+  font-weight: 600;
+  --main-color: #4E3FCE;
+  --contrast-color: #fff;
+}
+
+.c1 {
+  -webkit-font-smoothing: antialiased;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-align: center;
+  overflow: hidden;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c1:hover {
+  cursor: pointer;
+}
+
+.c1:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.c1 > span.button-text {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c1 > div > svg,
+.c1 > span.button-text {
+  position: relative;
+  z-index: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+
+.c1 > div > svg {
+  display: block;
+}
+
+.c1 > div:first-child > svg {
+  margin-left: -0.5rem;
+  margin-right: .5rem;
+}
+
+.c1 > div:last-child > svg {
+  margin-left: .5rem;
+  margin-right: -0.5rem;
+}
+
+.c1 > div:first-child:last-child > svg {
+  margin: 0;
+}
+
+.c1 {
+  color: var(--contrast-color);
+  background: #FFF;
+  position: relative;
+  z-index: 0;
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+}
+
+.c1:hover {
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+}
+
+.c1:hover::before {
+  opacity: 0.9;
+}
+
+.c1:active {
+  box-shadow: none;
+  background: #000;
+}
+
+.c1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background: var(--main-color);
+  pointer-events: none;
+}
+
+<ThemeProvider
+  theme={
+    Object {
+      "borderWidths": Array [
+        "0",
+        "1px",
+        "2px",
+        "4px",
+      ],
+      "borders": Array [
+        0,
+        "1px solid transparent",
+      ],
+      "buttonSizes": Object {
+        "large": Object {
+          "fontSize": "1.5rem",
+          "height": "4rem",
+          "minWidth": "4rem",
+        },
+        "medium": Object {
+          "fontSize": "1rem",
+          "height": "3rem",
+          "minWidth": "3rem",
+        },
+        "small": Object {
+          "fontSize": "0.75rem",
+          "height": "2rem",
+          "minWidth": "2rem",
+          "padding": "0 1rem",
+        },
+      },
+      "buttons": Object {
+        "danger": Object {
+          "--contrast-color": "#fff",
+          "--main-color": "#DC2C10",
+        },
+        "primary": Object {
+          "--contrast-color": "#fff",
+          "--main-color": "#4E3FCE",
+          "backgroundColor": "#4E3FCE",
+          "color": "#fff",
+        },
+        "success": Object {
+          "--contrast-color": "#FFF",
+          "--main-color": "#28C081",
+        },
+      },
+      "colors": Object {
+        "black": "#000e1a",
+        "blacks": Array [
+          "rgba(0,0,0,.0125)",
+          "rgba(0,0,0,.025)",
+          "rgba(0,0,0,.05)",
+          "rgba(0,0,0,.1)",
+          "rgba(0,0,0,.2)",
+          "rgba(0,0,0,.3)",
+          "rgba(0,0,0,.4)",
+          "rgba(0,0,0,.5)",
+          "rgba(0,0,0,.6)",
+          "rgba(0,0,0,.7)",
+          "rgba(0,0,0,.8)",
+          "rgba(0,0,0,.9)",
+        ],
+        "blue": "#3259D6",
+        "copyColor": "#3F3D4B",
+        "danger": "#DC2C10",
+        "dark-gray": "#333",
+        "grey": "#CCC",
+        "info": "#36ADF1",
+        "light-gray": "#eee",
+        "light-silver": "#aaa",
+        "mid-gray": "#555",
+        "moon-gray": "#ccc",
+        "near-black": "#111",
+        "near-white": "#f4f4f4",
+        "primary": "#4E3FCE",
+        "primary-dark": "#3e32a4",
+        "primary-light": "#7165d7",
+        "silver": "#999",
+        "success": "#28C081",
+        "transparent": "transparent",
+        "warning": "#FD9D28",
+        "white": "#fff",
+        "whites": Array [
+          "rgba(255,255,255,.0125)",
+          "rgba(255,255,255,.025)",
+          "rgba(255,255,255,.05)",
+          "rgba(255,255,255,.1)",
+          "rgba(255,255,255,.2)",
+          "rgba(255,255,255,.3)",
+          "rgba(255,255,255,.4)",
+          "rgba(255,255,255,.5)",
+          "rgba(255,255,255,.6)",
+          "rgba(255,255,255,.7)",
+          "rgba(255,255,255,.8)",
+          "rgba(255,255,255,.9)",
+        ],
+      },
+      "fontSizes": Array [
+        12,
+        14,
+        16,
+        20,
+        24,
+        32,
+        48,
+        64,
+      ],
+      "fontWeights": Array [
+        0,
+        300,
+        400,
+        600,
+        700,
+      ],
+      "fonts": Object {
+        "sansSerif": "\\"Source Sans Pro\\", -apple-system, sans-serif",
+        "serif": "athelas, georgia, times, serif",
+      },
+      "heights": Array [
+        0,
+        16,
+        32,
+        64,
+        128,
+        256,
+      ],
+      "letterSpacings": Array [
+        0,
+        1,
+        2,
+        4,
+        8,
+      ],
+      "lineHeights": Object {
+        "copy": 1.5,
+        "solid": 1,
+        "title": 1.25,
+      },
+      "maxHeights": Array [
+        0,
+        16,
+        32,
+        64,
+        128,
+        256,
+      ],
+      "maxWidths": Array [
+        0,
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        768,
+        1024,
+        1536,
+      ],
+      "messageStyle": Object {
+        "base": Object {
+          "backgroundColor": "#f6f6f6",
+          "borderColor": "#AAA",
+          "color": "#666",
+        },
+        "danger": Object {
+          "backgroundColor": "#fbe9e7",
+          "borderColor": "#DC2C10",
+          "color": "#841a09",
+        },
+        "info": Object {
+          "backgroundColor": "#eaf6fd",
+          "borderColor": "#36ADF1",
+          "color": "#206790",
+        },
+        "success": Object {
+          "backgroundColor": "#e9f8f2",
+          "borderColor": "#28C081",
+          "color": "#18734d",
+        },
+        "warning": Object {
+          "backgroundColor": "#fef5e9",
+          "borderColor": "#FD9D28",
+          "color": "#975e18",
+        },
+      },
+      "minHeights": Array [
+        0,
+        16,
+        32,
+        64,
+        128,
+        256,
+      ],
+      "minWidths": Array [
+        0,
+        16,
+        32,
+        64,
+        128,
+        256,
+      ],
+      "opacity": Object {
+        "disabled": 0.4,
+      },
+      "radii": Array [
+        "0",
+        "4px",
+        "8px",
+        "16px",
+      ],
+      "shadows": Array [
+        "0",
+        "0px 2px 4px rgba(0, 0, 0, 0.1)",
+        "0px 8px 16px rgba(0, 0, 0, 0.1)",
+        "0 7px 14px rgba(50,50,93,.1)",
+      ],
+      "space": Array [
+        0,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+      ],
+      "width": Array [
+        0,
+        16,
+        32,
+        64,
+        128,
+        256,
+      ],
+      "zIndices": Array [
+        0,
+        9,
+        99,
+        999,
+        9999,
+      ],
+    }
+  }
 >
-  <span
-    style="display:inline-block"
-  />
-</div>
+  <ThemeProvider
+    theme={
+      Object {
+        "borderWidths": Array [
+          "0",
+          "1px",
+          "2px",
+          "4px",
+        ],
+        "borders": Array [
+          0,
+          "1px solid transparent",
+        ],
+        "buttonSizes": Object {
+          "large": Object {
+            "fontSize": "1.5rem",
+            "height": "4rem",
+            "minWidth": "4rem",
+          },
+          "medium": Object {
+            "fontSize": "1rem",
+            "height": "3rem",
+            "minWidth": "3rem",
+          },
+          "small": Object {
+            "fontSize": "0.75rem",
+            "height": "2rem",
+            "minWidth": "2rem",
+            "padding": "0 1rem",
+          },
+        },
+        "buttons": Object {
+          "danger": Object {
+            "--contrast-color": "#fff",
+            "--main-color": "#DC2C10",
+          },
+          "primary": Object {
+            "--contrast-color": "#fff",
+            "--main-color": "#4E3FCE",
+            "backgroundColor": "#4E3FCE",
+            "color": "#fff",
+          },
+          "success": Object {
+            "--contrast-color": "#FFF",
+            "--main-color": "#28C081",
+          },
+        },
+        "colors": Object {
+          "black": "#000e1a",
+          "blacks": Array [
+            "rgba(0,0,0,.0125)",
+            "rgba(0,0,0,.025)",
+            "rgba(0,0,0,.05)",
+            "rgba(0,0,0,.1)",
+            "rgba(0,0,0,.2)",
+            "rgba(0,0,0,.3)",
+            "rgba(0,0,0,.4)",
+            "rgba(0,0,0,.5)",
+            "rgba(0,0,0,.6)",
+            "rgba(0,0,0,.7)",
+            "rgba(0,0,0,.8)",
+            "rgba(0,0,0,.9)",
+          ],
+          "blue": "#3259D6",
+          "copyColor": "#3F3D4B",
+          "danger": "#DC2C10",
+          "dark-gray": "#333",
+          "grey": "#CCC",
+          "info": "#36ADF1",
+          "light-gray": "#eee",
+          "light-silver": "#aaa",
+          "mid-gray": "#555",
+          "moon-gray": "#ccc",
+          "near-black": "#111",
+          "near-white": "#f4f4f4",
+          "primary": "#4E3FCE",
+          "primary-dark": "#3e32a4",
+          "primary-light": "#7165d7",
+          "silver": "#999",
+          "success": "#28C081",
+          "transparent": "transparent",
+          "warning": "#FD9D28",
+          "white": "#fff",
+          "whites": Array [
+            "rgba(255,255,255,.0125)",
+            "rgba(255,255,255,.025)",
+            "rgba(255,255,255,.05)",
+            "rgba(255,255,255,.1)",
+            "rgba(255,255,255,.2)",
+            "rgba(255,255,255,.3)",
+            "rgba(255,255,255,.4)",
+            "rgba(255,255,255,.5)",
+            "rgba(255,255,255,.6)",
+            "rgba(255,255,255,.7)",
+            "rgba(255,255,255,.8)",
+            "rgba(255,255,255,.9)",
+          ],
+        },
+        "fontSizes": Array [
+          12,
+          14,
+          16,
+          20,
+          24,
+          32,
+          48,
+          64,
+        ],
+        "fontWeights": Array [
+          0,
+          300,
+          400,
+          600,
+          700,
+        ],
+        "fonts": Object {
+          "sansSerif": "\\"Source Sans Pro\\", -apple-system, sans-serif",
+          "serif": "athelas, georgia, times, serif",
+        },
+        "heights": Array [
+          0,
+          16,
+          32,
+          64,
+          128,
+          256,
+        ],
+        "letterSpacings": Array [
+          0,
+          1,
+          2,
+          4,
+          8,
+        ],
+        "lineHeights": Object {
+          "copy": 1.5,
+          "solid": 1,
+          "title": 1.25,
+        },
+        "maxHeights": Array [
+          0,
+          16,
+          32,
+          64,
+          128,
+          256,
+        ],
+        "maxWidths": Array [
+          0,
+          16,
+          32,
+          64,
+          128,
+          256,
+          512,
+          768,
+          1024,
+          1536,
+        ],
+        "messageStyle": Object {
+          "base": Object {
+            "backgroundColor": "#f6f6f6",
+            "borderColor": "#AAA",
+            "color": "#666",
+          },
+          "danger": Object {
+            "backgroundColor": "#fbe9e7",
+            "borderColor": "#DC2C10",
+            "color": "#841a09",
+          },
+          "info": Object {
+            "backgroundColor": "#eaf6fd",
+            "borderColor": "#36ADF1",
+            "color": "#206790",
+          },
+          "success": Object {
+            "backgroundColor": "#e9f8f2",
+            "borderColor": "#28C081",
+            "color": "#18734d",
+          },
+          "warning": Object {
+            "backgroundColor": "#fef5e9",
+            "borderColor": "#FD9D28",
+            "color": "#975e18",
+          },
+        },
+        "minHeights": Array [
+          0,
+          16,
+          32,
+          64,
+          128,
+          256,
+        ],
+        "minWidths": Array [
+          0,
+          16,
+          32,
+          64,
+          128,
+          256,
+        ],
+        "opacity": Object {
+          "disabled": 0.4,
+        },
+        "radii": Array [
+          "0",
+          "4px",
+          "8px",
+          "16px",
+        ],
+        "shadows": Array [
+          "0",
+          "0px 2px 4px rgba(0, 0, 0, 0.1)",
+          "0px 8px 16px rgba(0, 0, 0, 0.1)",
+          "0 7px 14px rgba(50,50,93,.1)",
+        ],
+        "space": Array [
+          0,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256,
+        ],
+        "width": Array [
+          0,
+          16,
+          32,
+          64,
+          128,
+          256,
+        ],
+        "zIndices": Array [
+          0,
+          9,
+          99,
+          999,
+          9999,
+        ],
+      }
+    }
+  >
+    <GlobalStyleComponent />
+    <styled.div
+      theme={
+        Object {
+          "borderWidths": Array [
+            "0",
+            "1px",
+            "2px",
+            "4px",
+          ],
+          "borders": Array [
+            0,
+            "1px solid transparent",
+          ],
+          "buttonSizes": Object {
+            "large": Object {
+              "fontSize": "1.5rem",
+              "height": "4rem",
+              "minWidth": "4rem",
+            },
+            "medium": Object {
+              "fontSize": "1rem",
+              "height": "3rem",
+              "minWidth": "3rem",
+            },
+            "small": Object {
+              "fontSize": "0.75rem",
+              "height": "2rem",
+              "minWidth": "2rem",
+              "padding": "0 1rem",
+            },
+          },
+          "buttons": Object {
+            "danger": Object {
+              "--contrast-color": "#fff",
+              "--main-color": "#DC2C10",
+            },
+            "primary": Object {
+              "--contrast-color": "#fff",
+              "--main-color": "#4E3FCE",
+              "backgroundColor": "#4E3FCE",
+              "color": "#fff",
+            },
+            "success": Object {
+              "--contrast-color": "#FFF",
+              "--main-color": "#28C081",
+            },
+          },
+          "colors": Object {
+            "black": "#000e1a",
+            "blacks": Array [
+              "rgba(0,0,0,.0125)",
+              "rgba(0,0,0,.025)",
+              "rgba(0,0,0,.05)",
+              "rgba(0,0,0,.1)",
+              "rgba(0,0,0,.2)",
+              "rgba(0,0,0,.3)",
+              "rgba(0,0,0,.4)",
+              "rgba(0,0,0,.5)",
+              "rgba(0,0,0,.6)",
+              "rgba(0,0,0,.7)",
+              "rgba(0,0,0,.8)",
+              "rgba(0,0,0,.9)",
+            ],
+            "blue": "#3259D6",
+            "copyColor": "#3F3D4B",
+            "danger": "#DC2C10",
+            "dark-gray": "#333",
+            "grey": "#CCC",
+            "info": "#36ADF1",
+            "light-gray": "#eee",
+            "light-silver": "#aaa",
+            "mid-gray": "#555",
+            "moon-gray": "#ccc",
+            "near-black": "#111",
+            "near-white": "#f4f4f4",
+            "primary": "#4E3FCE",
+            "primary-dark": "#3e32a4",
+            "primary-light": "#7165d7",
+            "silver": "#999",
+            "success": "#28C081",
+            "transparent": "transparent",
+            "warning": "#FD9D28",
+            "white": "#fff",
+            "whites": Array [
+              "rgba(255,255,255,.0125)",
+              "rgba(255,255,255,.025)",
+              "rgba(255,255,255,.05)",
+              "rgba(255,255,255,.1)",
+              "rgba(255,255,255,.2)",
+              "rgba(255,255,255,.3)",
+              "rgba(255,255,255,.4)",
+              "rgba(255,255,255,.5)",
+              "rgba(255,255,255,.6)",
+              "rgba(255,255,255,.7)",
+              "rgba(255,255,255,.8)",
+              "rgba(255,255,255,.9)",
+            ],
+          },
+          "fontSizes": Array [
+            12,
+            14,
+            16,
+            20,
+            24,
+            32,
+            48,
+            64,
+          ],
+          "fontWeights": Array [
+            0,
+            300,
+            400,
+            600,
+            700,
+          ],
+          "fonts": Object {
+            "sansSerif": "\\"Source Sans Pro\\", -apple-system, sans-serif",
+            "serif": "athelas, georgia, times, serif",
+          },
+          "heights": Array [
+            0,
+            16,
+            32,
+            64,
+            128,
+            256,
+          ],
+          "letterSpacings": Array [
+            0,
+            1,
+            2,
+            4,
+            8,
+          ],
+          "lineHeights": Object {
+            "copy": 1.5,
+            "solid": 1,
+            "title": 1.25,
+          },
+          "maxHeights": Array [
+            0,
+            16,
+            32,
+            64,
+            128,
+            256,
+          ],
+          "maxWidths": Array [
+            0,
+            16,
+            32,
+            64,
+            128,
+            256,
+            512,
+            768,
+            1024,
+            1536,
+          ],
+          "messageStyle": Object {
+            "base": Object {
+              "backgroundColor": "#f6f6f6",
+              "borderColor": "#AAA",
+              "color": "#666",
+            },
+            "danger": Object {
+              "backgroundColor": "#fbe9e7",
+              "borderColor": "#DC2C10",
+              "color": "#841a09",
+            },
+            "info": Object {
+              "backgroundColor": "#eaf6fd",
+              "borderColor": "#36ADF1",
+              "color": "#206790",
+            },
+            "success": Object {
+              "backgroundColor": "#e9f8f2",
+              "borderColor": "#28C081",
+              "color": "#18734d",
+            },
+            "warning": Object {
+              "backgroundColor": "#fef5e9",
+              "borderColor": "#FD9D28",
+              "color": "#975e18",
+            },
+          },
+          "minHeights": Array [
+            0,
+            16,
+            32,
+            64,
+            128,
+            256,
+          ],
+          "minWidths": Array [
+            0,
+            16,
+            32,
+            64,
+            128,
+            256,
+          ],
+          "opacity": Object {
+            "disabled": 0.4,
+          },
+          "radii": Array [
+            "0",
+            "4px",
+            "8px",
+            "16px",
+          ],
+          "shadows": Array [
+            "0",
+            "0px 2px 4px rgba(0, 0, 0, 0.1)",
+            "0px 8px 16px rgba(0, 0, 0, 0.1)",
+            "0 7px 14px rgba(50,50,93,.1)",
+          ],
+          "space": Array [
+            0,
+            4,
+            8,
+            16,
+            32,
+            64,
+            128,
+            256,
+          ],
+          "width": Array [
+            0,
+            16,
+            32,
+            64,
+            128,
+            256,
+          ],
+          "zIndices": Array [
+            0,
+            9,
+            99,
+            999,
+            9999,
+          ],
+        }
+      }
+    >
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bxivhb",
+              "isStatic": false,
+              "lastClassName": "c0",
+              "rules": Array [
+                "
+  & {
+    font-size: 1em;
+    font-family: ",
+                [Function],
+                ";
+    color: ",
+                [Function],
+                ";
+  }
+",
+              ],
+            },
+            "displayName": "styled.div",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bxivhb",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+        theme={
+          Object {
+            "borderWidths": Array [
+              "0",
+              "1px",
+              "2px",
+              "4px",
+            ],
+            "borders": Array [
+              0,
+              "1px solid transparent",
+            ],
+            "buttonSizes": Object {
+              "large": Object {
+                "fontSize": "1.5rem",
+                "height": "4rem",
+                "minWidth": "4rem",
+              },
+              "medium": Object {
+                "fontSize": "1rem",
+                "height": "3rem",
+                "minWidth": "3rem",
+              },
+              "small": Object {
+                "fontSize": "0.75rem",
+                "height": "2rem",
+                "minWidth": "2rem",
+                "padding": "0 1rem",
+              },
+            },
+            "buttons": Object {
+              "danger": Object {
+                "--contrast-color": "#fff",
+                "--main-color": "#DC2C10",
+              },
+              "primary": Object {
+                "--contrast-color": "#fff",
+                "--main-color": "#4E3FCE",
+                "backgroundColor": "#4E3FCE",
+                "color": "#fff",
+              },
+              "success": Object {
+                "--contrast-color": "#FFF",
+                "--main-color": "#28C081",
+              },
+            },
+            "colors": Object {
+              "black": "#000e1a",
+              "blacks": Array [
+                "rgba(0,0,0,.0125)",
+                "rgba(0,0,0,.025)",
+                "rgba(0,0,0,.05)",
+                "rgba(0,0,0,.1)",
+                "rgba(0,0,0,.2)",
+                "rgba(0,0,0,.3)",
+                "rgba(0,0,0,.4)",
+                "rgba(0,0,0,.5)",
+                "rgba(0,0,0,.6)",
+                "rgba(0,0,0,.7)",
+                "rgba(0,0,0,.8)",
+                "rgba(0,0,0,.9)",
+              ],
+              "blue": "#3259D6",
+              "copyColor": "#3F3D4B",
+              "danger": "#DC2C10",
+              "dark-gray": "#333",
+              "grey": "#CCC",
+              "info": "#36ADF1",
+              "light-gray": "#eee",
+              "light-silver": "#aaa",
+              "mid-gray": "#555",
+              "moon-gray": "#ccc",
+              "near-black": "#111",
+              "near-white": "#f4f4f4",
+              "primary": "#4E3FCE",
+              "primary-dark": "#3e32a4",
+              "primary-light": "#7165d7",
+              "silver": "#999",
+              "success": "#28C081",
+              "transparent": "transparent",
+              "warning": "#FD9D28",
+              "white": "#fff",
+              "whites": Array [
+                "rgba(255,255,255,.0125)",
+                "rgba(255,255,255,.025)",
+                "rgba(255,255,255,.05)",
+                "rgba(255,255,255,.1)",
+                "rgba(255,255,255,.2)",
+                "rgba(255,255,255,.3)",
+                "rgba(255,255,255,.4)",
+                "rgba(255,255,255,.5)",
+                "rgba(255,255,255,.6)",
+                "rgba(255,255,255,.7)",
+                "rgba(255,255,255,.8)",
+                "rgba(255,255,255,.9)",
+              ],
+            },
+            "fontSizes": Array [
+              12,
+              14,
+              16,
+              20,
+              24,
+              32,
+              48,
+              64,
+            ],
+            "fontWeights": Array [
+              0,
+              300,
+              400,
+              600,
+              700,
+            ],
+            "fonts": Object {
+              "sansSerif": "\\"Source Sans Pro\\", -apple-system, sans-serif",
+              "serif": "athelas, georgia, times, serif",
+            },
+            "heights": Array [
+              0,
+              16,
+              32,
+              64,
+              128,
+              256,
+            ],
+            "letterSpacings": Array [
+              0,
+              1,
+              2,
+              4,
+              8,
+            ],
+            "lineHeights": Object {
+              "copy": 1.5,
+              "solid": 1,
+              "title": 1.25,
+            },
+            "maxHeights": Array [
+              0,
+              16,
+              32,
+              64,
+              128,
+              256,
+            ],
+            "maxWidths": Array [
+              0,
+              16,
+              32,
+              64,
+              128,
+              256,
+              512,
+              768,
+              1024,
+              1536,
+            ],
+            "messageStyle": Object {
+              "base": Object {
+                "backgroundColor": "#f6f6f6",
+                "borderColor": "#AAA",
+                "color": "#666",
+              },
+              "danger": Object {
+                "backgroundColor": "#fbe9e7",
+                "borderColor": "#DC2C10",
+                "color": "#841a09",
+              },
+              "info": Object {
+                "backgroundColor": "#eaf6fd",
+                "borderColor": "#36ADF1",
+                "color": "#206790",
+              },
+              "success": Object {
+                "backgroundColor": "#e9f8f2",
+                "borderColor": "#28C081",
+                "color": "#18734d",
+              },
+              "warning": Object {
+                "backgroundColor": "#fef5e9",
+                "borderColor": "#FD9D28",
+                "color": "#975e18",
+              },
+            },
+            "minHeights": Array [
+              0,
+              16,
+              32,
+              64,
+              128,
+              256,
+            ],
+            "minWidths": Array [
+              0,
+              16,
+              32,
+              64,
+              128,
+              256,
+            ],
+            "opacity": Object {
+              "disabled": 0.4,
+            },
+            "radii": Array [
+              "0",
+              "4px",
+              "8px",
+              "16px",
+            ],
+            "shadows": Array [
+              "0",
+              "0px 2px 4px rgba(0, 0, 0, 0.1)",
+              "0px 8px 16px rgba(0, 0, 0, 0.1)",
+              "0 7px 14px rgba(50,50,93,.1)",
+            ],
+            "space": Array [
+              0,
+              4,
+              8,
+              16,
+              32,
+              64,
+              128,
+              256,
+            ],
+            "width": Array [
+              0,
+              16,
+              32,
+              64,
+              128,
+              256,
+            ],
+            "zIndices": Array [
+              0,
+              9,
+              99,
+              999,
+              9999,
+            ],
+          }
+        }
+      >
+        <div
+          className="c0"
+        >
+          <Tooltip
+            message="props.message text"
+            offset="0, 0"
+            placement="bottom"
+            variant="dark"
+          >
+            <Popper
+              options={
+                Object {
+                  "modifiers": Object {
+                    "offset": Object {
+                      "offset": "0, 0",
+                    },
+                  },
+                  "placement": "bottom",
+                }
+              }
+              renderRef={[Function]}
+              style={
+                Object {
+                  "zIndex": 99999,
+                }
+              }
+            >
+              <withStateHandlers(withStateHandlers(withHandlers(lifecycle(Component))))
+                options={
+                  Object {
+                    "modifiers": Object {
+                      "offset": Object {
+                        "offset": "0, 0",
+                      },
+                    },
+                    "placement": "bottom",
+                  }
+                }
+                reference={
+                  .c0 {
+  color: #fff;
+  background-color: #999;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 32px;
+  padding-right: 32px;
+  height: 3rem;
+  min-width: 3rem;
+  border: none;
+  border-radius: 4px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-size: inherit;
+  font-weight: 600;
+  --main-color: #4E3FCE;
+  --contrast-color: #fff;
+}
+
+.c0 {
+  -webkit-font-smoothing: antialiased;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-align: center;
+  overflow: hidden;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.c0 > span.button-text {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c0 > div > svg,
+.c0 > span.button-text {
+  position: relative;
+  z-index: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+
+.c0 > div > svg {
+  display: block;
+}
+
+.c0 > div:first-child > svg {
+  margin-left: -0.5rem;
+  margin-right: .5rem;
+}
+
+.c0 > div:last-child > svg {
+  margin-left: .5rem;
+  margin-right: -0.5rem;
+}
+
+.c0 > div:first-child:last-child > svg {
+  margin: 0;
+}
+
+.c0 {
+  color: var(--contrast-color);
+  background: #FFF;
+  position: relative;
+  z-index: 0;
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+}
+
+.c0:hover {
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+}
+
+.c0:hover::before {
+  opacity: 0.9;
+}
+
+.c0:active {
+  box-shadow: none;
+  background: #000;
+}
+
+.c0::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background: var(--main-color);
+  pointer-events: none;
+}
+
+<button
+                    class="c0"
+                    color="white"
+                    font-family="sansSerif"
+                    font-size="inherit"
+                    font-weight="3"
+                    height="3rem"
+                  >
+                    <span
+                      class="button-text"
+                    />
+                  </button>
+                }
+                renderRef={[Function]}
+                setReference={[Function]}
+                style={
+                  Object {
+                    "zIndex": 99999,
+                  }
+                }
+              >
+                <withStateHandlers(withHandlers(lifecycle(Component)))
+                  options={
+                    Object {
+                      "modifiers": Object {
+                        "offset": Object {
+                          "offset": "0, 0",
+                        },
+                      },
+                      "placement": "bottom",
+                    }
+                  }
+                  pop={null}
+                  popper={null}
+                  reference={
+                    <button
+                      class="c1"
+                      color="white"
+                      font-family="sansSerif"
+                      font-size="inherit"
+                      font-weight="3"
+                      height="3rem"
+                    >
+                      <span
+                        class="button-text"
+                      />
+                    </button>
+                  }
+                  renderRef={[Function]}
+                  setPop={[Function]}
+                  setReference={[Function]}
+                  style={
+                    Object {
+                      "zIndex": 99999,
+                    }
+                  }
+                >
+                  <withHandlers(lifecycle(Component))
+                    close={[Function]}
+                    isOpened={false}
+                    open={[Function]}
+                    options={
+                      Object {
+                        "modifiers": Object {
+                          "offset": Object {
+                            "offset": "0, 0",
+                          },
+                        },
+                        "placement": "bottom",
+                      }
+                    }
+                    pop={null}
+                    popper={null}
+                    reference={
+                      <button
+                        class="c1"
+                        color="white"
+                        font-family="sansSerif"
+                        font-size="inherit"
+                        font-weight="3"
+                        height="3rem"
+                      >
+                        <span
+                          class="button-text"
+                        />
+                      </button>
+                    }
+                    renderRef={[Function]}
+                    setPop={[Function]}
+                    setReference={[Function]}
+                    style={
+                      Object {
+                        "zIndex": 99999,
+                      }
+                    }
+                    toggle={[Function]}
+                  >
+                    <lifecycle(Component)
+                      close={[Function]}
+                      isOpened={false}
+                      onClick={[Function]}
+                      open={[Function]}
+                      options={
+                        Object {
+                          "modifiers": Object {
+                            "offset": Object {
+                              "offset": "0, 0",
+                            },
+                          },
+                          "placement": "bottom",
+                        }
+                      }
+                      pop={null}
+                      popper={null}
+                      reference={
+                        <button
+                          class="c1"
+                          color="white"
+                          font-family="sansSerif"
+                          font-size="inherit"
+                          font-weight="3"
+                          height="3rem"
+                        >
+                          <span
+                            class="button-text"
+                          />
+                        </button>
+                      }
+                      renderRef={[Function]}
+                      setPop={[Function]}
+                      setReference={[Function]}
+                      style={
+                        Object {
+                          "zIndex": 99999,
+                        }
+                      }
+                      toggle={[Function]}
+                    >
+                      <Component
+                        close={[Function]}
+                        isOpened={false}
+                        onClick={[Function]}
+                        open={[Function]}
+                        options={
+                          Object {
+                            "modifiers": Object {
+                              "offset": Object {
+                                "offset": "0, 0",
+                              },
+                            },
+                            "placement": "bottom",
+                          }
+                        }
+                        pop={null}
+                        popper={null}
+                        reference={
+                          <button
+                            class="c1"
+                            color="white"
+                            font-family="sansSerif"
+                            font-size="inherit"
+                            font-weight="3"
+                            height="3rem"
+                          >
+                            <span
+                              class="button-text"
+                            />
+                          </button>
+                        }
+                        renderRef={[Function]}
+                        setPop={[Function]}
+                        setReference={[Function]}
+                        style={
+                          Object {
+                            "zIndex": 99999,
+                          }
+                        }
+                        toggle={[Function]}
+                      >
+                        <Button
+                          bg="silver"
+                          border="none"
+                          borderRadius={1}
+                          boxShadow={1}
+                          color="white"
+                          contrastColor="white"
+                          fontFamily="sansSerif"
+                          fontSize="inherit"
+                          fontWeight={3}
+                          height="3rem"
+                          m={0}
+                          mainColor="primary"
+                          minWidth="3rem"
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          px={4}
+                          py={0}
+                          theme={
+                            Object {
+                              "borderWidths": Array [
+                                "0",
+                                "1px",
+                                "2px",
+                                "4px",
+                              ],
+                              "borders": Array [
+                                0,
+                                "1px solid transparent",
+                              ],
+                              "buttonSizes": Object {
+                                "large": Object {
+                                  "fontSize": "1.5rem",
+                                  "height": "4rem",
+                                  "minWidth": "4rem",
+                                },
+                                "medium": Object {
+                                  "fontSize": "1rem",
+                                  "height": "3rem",
+                                  "minWidth": "3rem",
+                                },
+                                "small": Object {
+                                  "fontSize": "0.75rem",
+                                  "height": "2rem",
+                                  "minWidth": "2rem",
+                                  "padding": "0 1rem",
+                                },
+                              },
+                              "buttons": Object {
+                                "danger": Object {
+                                  "--contrast-color": "#fff",
+                                  "--main-color": "#DC2C10",
+                                },
+                                "primary": Object {
+                                  "--contrast-color": "#fff",
+                                  "--main-color": "#4E3FCE",
+                                  "backgroundColor": "#4E3FCE",
+                                  "color": "#fff",
+                                },
+                                "success": Object {
+                                  "--contrast-color": "#FFF",
+                                  "--main-color": "#28C081",
+                                },
+                              },
+                              "colors": Object {
+                                "black": "#000e1a",
+                                "blacks": Array [
+                                  "rgba(0,0,0,.0125)",
+                                  "rgba(0,0,0,.025)",
+                                  "rgba(0,0,0,.05)",
+                                  "rgba(0,0,0,.1)",
+                                  "rgba(0,0,0,.2)",
+                                  "rgba(0,0,0,.3)",
+                                  "rgba(0,0,0,.4)",
+                                  "rgba(0,0,0,.5)",
+                                  "rgba(0,0,0,.6)",
+                                  "rgba(0,0,0,.7)",
+                                  "rgba(0,0,0,.8)",
+                                  "rgba(0,0,0,.9)",
+                                ],
+                                "blue": "#3259D6",
+                                "copyColor": "#3F3D4B",
+                                "danger": "#DC2C10",
+                                "dark-gray": "#333",
+                                "grey": "#CCC",
+                                "info": "#36ADF1",
+                                "light-gray": "#eee",
+                                "light-silver": "#aaa",
+                                "mid-gray": "#555",
+                                "moon-gray": "#ccc",
+                                "near-black": "#111",
+                                "near-white": "#f4f4f4",
+                                "primary": "#4E3FCE",
+                                "primary-dark": "#3e32a4",
+                                "primary-light": "#7165d7",
+                                "silver": "#999",
+                                "success": "#28C081",
+                                "transparent": "transparent",
+                                "warning": "#FD9D28",
+                                "white": "#fff",
+                                "whites": Array [
+                                  "rgba(255,255,255,.0125)",
+                                  "rgba(255,255,255,.025)",
+                                  "rgba(255,255,255,.05)",
+                                  "rgba(255,255,255,.1)",
+                                  "rgba(255,255,255,.2)",
+                                  "rgba(255,255,255,.3)",
+                                  "rgba(255,255,255,.4)",
+                                  "rgba(255,255,255,.5)",
+                                  "rgba(255,255,255,.6)",
+                                  "rgba(255,255,255,.7)",
+                                  "rgba(255,255,255,.8)",
+                                  "rgba(255,255,255,.9)",
+                                ],
+                              },
+                              "fontSizes": Array [
+                                12,
+                                14,
+                                16,
+                                20,
+                                24,
+                                32,
+                                48,
+                                64,
+                              ],
+                              "fontWeights": Array [
+                                0,
+                                300,
+                                400,
+                                600,
+                                700,
+                              ],
+                              "fonts": Object {
+                                "sansSerif": "\\"Source Sans Pro\\", -apple-system, sans-serif",
+                                "serif": "athelas, georgia, times, serif",
+                              },
+                              "heights": Array [
+                                0,
+                                16,
+                                32,
+                                64,
+                                128,
+                                256,
+                              ],
+                              "letterSpacings": Array [
+                                0,
+                                1,
+                                2,
+                                4,
+                                8,
+                              ],
+                              "lineHeights": Object {
+                                "copy": 1.5,
+                                "solid": 1,
+                                "title": 1.25,
+                              },
+                              "maxHeights": Array [
+                                0,
+                                16,
+                                32,
+                                64,
+                                128,
+                                256,
+                              ],
+                              "maxWidths": Array [
+                                0,
+                                16,
+                                32,
+                                64,
+                                128,
+                                256,
+                                512,
+                                768,
+                                1024,
+                                1536,
+                              ],
+                              "messageStyle": Object {
+                                "base": Object {
+                                  "backgroundColor": "#f6f6f6",
+                                  "borderColor": "#AAA",
+                                  "color": "#666",
+                                },
+                                "danger": Object {
+                                  "backgroundColor": "#fbe9e7",
+                                  "borderColor": "#DC2C10",
+                                  "color": "#841a09",
+                                },
+                                "info": Object {
+                                  "backgroundColor": "#eaf6fd",
+                                  "borderColor": "#36ADF1",
+                                  "color": "#206790",
+                                },
+                                "success": Object {
+                                  "backgroundColor": "#e9f8f2",
+                                  "borderColor": "#28C081",
+                                  "color": "#18734d",
+                                },
+                                "warning": Object {
+                                  "backgroundColor": "#fef5e9",
+                                  "borderColor": "#FD9D28",
+                                  "color": "#975e18",
+                                },
+                              },
+                              "minHeights": Array [
+                                0,
+                                16,
+                                32,
+                                64,
+                                128,
+                                256,
+                              ],
+                              "minWidths": Array [
+                                0,
+                                16,
+                                32,
+                                64,
+                                128,
+                                256,
+                              ],
+                              "opacity": Object {
+                                "disabled": 0.4,
+                              },
+                              "radii": Array [
+                                "0",
+                                "4px",
+                                "8px",
+                                "16px",
+                              ],
+                              "shadows": Array [
+                                "0",
+                                "0px 2px 4px rgba(0, 0, 0, 0.1)",
+                                "0px 8px 16px rgba(0, 0, 0, 0.1)",
+                                "0 7px 14px rgba(50,50,93,.1)",
+                              ],
+                              "space": Array [
+                                0,
+                                4,
+                                8,
+                                16,
+                                32,
+                                64,
+                                128,
+                                256,
+                              ],
+                              "width": Array [
+                                0,
+                                16,
+                                32,
+                                64,
+                                128,
+                                256,
+                              ],
+                              "zIndices": Array [
+                                0,
+                                9,
+                                99,
+                                999,
+                                9999,
+                              ],
+                            }
+                          }
+                        >
+                          <Styled(styled.button)
+                            bg="silver"
+                            border="none"
+                            borderRadius={1}
+                            boxShadow={1}
+                            color="white"
+                            contrastColor="white"
+                            fontFamily="sansSerif"
+                            fontSize="inherit"
+                            fontWeight={3}
+                            height="3rem"
+                            m={0}
+                            mainColor="primary"
+                            minWidth="3rem"
+                            onMouseEnter={[Function]}
+                            onMouseLeave={[Function]}
+                            px={4}
+                            py={0}
+                            theme={
+                              Object {
+                                "borderWidths": Array [
+                                  "0",
+                                  "1px",
+                                  "2px",
+                                  "4px",
+                                ],
+                                "borders": Array [
+                                  0,
+                                  "1px solid transparent",
+                                ],
+                                "buttonSizes": Object {
+                                  "large": Object {
+                                    "fontSize": "1.5rem",
+                                    "height": "4rem",
+                                    "minWidth": "4rem",
+                                  },
+                                  "medium": Object {
+                                    "fontSize": "1rem",
+                                    "height": "3rem",
+                                    "minWidth": "3rem",
+                                  },
+                                  "small": Object {
+                                    "fontSize": "0.75rem",
+                                    "height": "2rem",
+                                    "minWidth": "2rem",
+                                    "padding": "0 1rem",
+                                  },
+                                },
+                                "buttons": Object {
+                                  "danger": Object {
+                                    "--contrast-color": "#fff",
+                                    "--main-color": "#DC2C10",
+                                  },
+                                  "primary": Object {
+                                    "--contrast-color": "#fff",
+                                    "--main-color": "#4E3FCE",
+                                    "backgroundColor": "#4E3FCE",
+                                    "color": "#fff",
+                                  },
+                                  "success": Object {
+                                    "--contrast-color": "#FFF",
+                                    "--main-color": "#28C081",
+                                  },
+                                },
+                                "colors": Object {
+                                  "black": "#000e1a",
+                                  "blacks": Array [
+                                    "rgba(0,0,0,.0125)",
+                                    "rgba(0,0,0,.025)",
+                                    "rgba(0,0,0,.05)",
+                                    "rgba(0,0,0,.1)",
+                                    "rgba(0,0,0,.2)",
+                                    "rgba(0,0,0,.3)",
+                                    "rgba(0,0,0,.4)",
+                                    "rgba(0,0,0,.5)",
+                                    "rgba(0,0,0,.6)",
+                                    "rgba(0,0,0,.7)",
+                                    "rgba(0,0,0,.8)",
+                                    "rgba(0,0,0,.9)",
+                                  ],
+                                  "blue": "#3259D6",
+                                  "copyColor": "#3F3D4B",
+                                  "danger": "#DC2C10",
+                                  "dark-gray": "#333",
+                                  "grey": "#CCC",
+                                  "info": "#36ADF1",
+                                  "light-gray": "#eee",
+                                  "light-silver": "#aaa",
+                                  "mid-gray": "#555",
+                                  "moon-gray": "#ccc",
+                                  "near-black": "#111",
+                                  "near-white": "#f4f4f4",
+                                  "primary": "#4E3FCE",
+                                  "primary-dark": "#3e32a4",
+                                  "primary-light": "#7165d7",
+                                  "silver": "#999",
+                                  "success": "#28C081",
+                                  "transparent": "transparent",
+                                  "warning": "#FD9D28",
+                                  "white": "#fff",
+                                  "whites": Array [
+                                    "rgba(255,255,255,.0125)",
+                                    "rgba(255,255,255,.025)",
+                                    "rgba(255,255,255,.05)",
+                                    "rgba(255,255,255,.1)",
+                                    "rgba(255,255,255,.2)",
+                                    "rgba(255,255,255,.3)",
+                                    "rgba(255,255,255,.4)",
+                                    "rgba(255,255,255,.5)",
+                                    "rgba(255,255,255,.6)",
+                                    "rgba(255,255,255,.7)",
+                                    "rgba(255,255,255,.8)",
+                                    "rgba(255,255,255,.9)",
+                                  ],
+                                },
+                                "fontSizes": Array [
+                                  12,
+                                  14,
+                                  16,
+                                  20,
+                                  24,
+                                  32,
+                                  48,
+                                  64,
+                                ],
+                                "fontWeights": Array [
+                                  0,
+                                  300,
+                                  400,
+                                  600,
+                                  700,
+                                ],
+                                "fonts": Object {
+                                  "sansSerif": "\\"Source Sans Pro\\", -apple-system, sans-serif",
+                                  "serif": "athelas, georgia, times, serif",
+                                },
+                                "heights": Array [
+                                  0,
+                                  16,
+                                  32,
+                                  64,
+                                  128,
+                                  256,
+                                ],
+                                "letterSpacings": Array [
+                                  0,
+                                  1,
+                                  2,
+                                  4,
+                                  8,
+                                ],
+                                "lineHeights": Object {
+                                  "copy": 1.5,
+                                  "solid": 1,
+                                  "title": 1.25,
+                                },
+                                "maxHeights": Array [
+                                  0,
+                                  16,
+                                  32,
+                                  64,
+                                  128,
+                                  256,
+                                ],
+                                "maxWidths": Array [
+                                  0,
+                                  16,
+                                  32,
+                                  64,
+                                  128,
+                                  256,
+                                  512,
+                                  768,
+                                  1024,
+                                  1536,
+                                ],
+                                "messageStyle": Object {
+                                  "base": Object {
+                                    "backgroundColor": "#f6f6f6",
+                                    "borderColor": "#AAA",
+                                    "color": "#666",
+                                  },
+                                  "danger": Object {
+                                    "backgroundColor": "#fbe9e7",
+                                    "borderColor": "#DC2C10",
+                                    "color": "#841a09",
+                                  },
+                                  "info": Object {
+                                    "backgroundColor": "#eaf6fd",
+                                    "borderColor": "#36ADF1",
+                                    "color": "#206790",
+                                  },
+                                  "success": Object {
+                                    "backgroundColor": "#e9f8f2",
+                                    "borderColor": "#28C081",
+                                    "color": "#18734d",
+                                  },
+                                  "warning": Object {
+                                    "backgroundColor": "#fef5e9",
+                                    "borderColor": "#FD9D28",
+                                    "color": "#975e18",
+                                  },
+                                },
+                                "minHeights": Array [
+                                  0,
+                                  16,
+                                  32,
+                                  64,
+                                  128,
+                                  256,
+                                ],
+                                "minWidths": Array [
+                                  0,
+                                  16,
+                                  32,
+                                  64,
+                                  128,
+                                  256,
+                                ],
+                                "opacity": Object {
+                                  "disabled": 0.4,
+                                },
+                                "radii": Array [
+                                  "0",
+                                  "4px",
+                                  "8px",
+                                  "16px",
+                                ],
+                                "shadows": Array [
+                                  "0",
+                                  "0px 2px 4px rgba(0, 0, 0, 0.1)",
+                                  "0px 8px 16px rgba(0, 0, 0, 0.1)",
+                                  "0 7px 14px rgba(50,50,93,.1)",
+                                ],
+                                "space": Array [
+                                  0,
+                                  4,
+                                  8,
+                                  16,
+                                  32,
+                                  64,
+                                  128,
+                                  256,
+                                ],
+                                "width": Array [
+                                  0,
+                                  16,
+                                  32,
+                                  64,
+                                  128,
+                                  256,
+                                ],
+                                "zIndices": Array [
+                                  0,
+                                  9,
+                                  99,
+                                  999,
+                                  9999,
+                                ],
+                              }
+                            }
+                          >
+                            <StyledComponent
+                              bg="silver"
+                              border="none"
+                              borderRadius={1}
+                              boxShadow={1}
+                              color="white"
+                              contrastColor="white"
+                              fontFamily="sansSerif"
+                              fontSize="inherit"
+                              fontWeight={3}
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "sc-kDkoGq",
+                                    "isStatic": false,
+                                    "lastClassName": "c1",
+                                    "rules": Array [
+                                      "
+  & {
+    -webkit-font-smoothing: antialiased;
+    appearance: none;
+    user-select: none;
+    white-space: nowrap;
+    text-decoration: none;
+    text-align: center;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: ",
+                                      [Function],
+                                      ";
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  > span.button-text {
+    display: inline-flex;
+  }
+
+  ",
+                                      "
+  > div > svg,
+  > span.button-text {
+    position: relative;
+    z-index: 1;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  > div > svg {
+    display: block;
+  }
+  > div:first-child > svg {
+    margin-left: -0.5rem;
+    margin-right: .5rem;
+  }
+  > div:last-child > svg {
+    margin-left: .5rem;
+    margin-right: -0.5rem;
+  }
+  > div:first-child:last-child > svg {
+    margin: 0;
+  }
+
+  ",
+                                      [Function],
+                                      "
+  ",
+                                      [Function],
+                                      "
+  ",
+                                      [Function],
+                                      "
+  ",
+                                      [Function],
+                                      "
+  ",
+                                      [Function],
+                                      "
+
+  ",
+                                      [Function],
+                                      "
+  ",
+                                      [Function],
+                                      "
+  ",
+                                      [Function],
+                                      "
+  ",
+                                      [Function],
+                                      "
+",
+                                      "
+  & {
+    color: var(--contrast-color);
+    ",
+                                      "
+    background: #FFF;
+
+    position: relative;
+    z-index: 0;
+    transition: all 0.15s ease;
+  }
+
+  &:hover {
+    text-decoration: inherit;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  &:hover::before {
+    opacity: 0.9;
+  }
+
+  &:active {
+    box-shadow: none;
+    background: #000;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background: var(--main-color);
+    pointer-events: none;
+  }
+",
+                                    ],
+                                  },
+                                  "displayName": "Styled(styled.button)",
+                                  "foldedComponentIds": Array [
+                                    "sc-eiqfgm",
+                                  ],
+                                  "render": [Function],
+                                  "styledComponentId": "sc-kDkoGq",
+                                  "target": "button",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={[Function]}
+                              height="3rem"
+                              m={0}
+                              mainColor="primary"
+                              minWidth="3rem"
+                              onMouseEnter={[Function]}
+                              onMouseLeave={[Function]}
+                              px={4}
+                              py={0}
+                              theme={
+                                Object {
+                                  "borderWidths": Array [
+                                    "0",
+                                    "1px",
+                                    "2px",
+                                    "4px",
+                                  ],
+                                  "borders": Array [
+                                    0,
+                                    "1px solid transparent",
+                                  ],
+                                  "buttonSizes": Object {
+                                    "large": Object {
+                                      "fontSize": "1.5rem",
+                                      "height": "4rem",
+                                      "minWidth": "4rem",
+                                    },
+                                    "medium": Object {
+                                      "fontSize": "1rem",
+                                      "height": "3rem",
+                                      "minWidth": "3rem",
+                                    },
+                                    "small": Object {
+                                      "fontSize": "0.75rem",
+                                      "height": "2rem",
+                                      "minWidth": "2rem",
+                                      "padding": "0 1rem",
+                                    },
+                                  },
+                                  "buttons": Object {
+                                    "danger": Object {
+                                      "--contrast-color": "#fff",
+                                      "--main-color": "#DC2C10",
+                                    },
+                                    "primary": Object {
+                                      "--contrast-color": "#fff",
+                                      "--main-color": "#4E3FCE",
+                                      "backgroundColor": "#4E3FCE",
+                                      "color": "#fff",
+                                    },
+                                    "success": Object {
+                                      "--contrast-color": "#FFF",
+                                      "--main-color": "#28C081",
+                                    },
+                                  },
+                                  "colors": Object {
+                                    "black": "#000e1a",
+                                    "blacks": Array [
+                                      "rgba(0,0,0,.0125)",
+                                      "rgba(0,0,0,.025)",
+                                      "rgba(0,0,0,.05)",
+                                      "rgba(0,0,0,.1)",
+                                      "rgba(0,0,0,.2)",
+                                      "rgba(0,0,0,.3)",
+                                      "rgba(0,0,0,.4)",
+                                      "rgba(0,0,0,.5)",
+                                      "rgba(0,0,0,.6)",
+                                      "rgba(0,0,0,.7)",
+                                      "rgba(0,0,0,.8)",
+                                      "rgba(0,0,0,.9)",
+                                    ],
+                                    "blue": "#3259D6",
+                                    "copyColor": "#3F3D4B",
+                                    "danger": "#DC2C10",
+                                    "dark-gray": "#333",
+                                    "grey": "#CCC",
+                                    "info": "#36ADF1",
+                                    "light-gray": "#eee",
+                                    "light-silver": "#aaa",
+                                    "mid-gray": "#555",
+                                    "moon-gray": "#ccc",
+                                    "near-black": "#111",
+                                    "near-white": "#f4f4f4",
+                                    "primary": "#4E3FCE",
+                                    "primary-dark": "#3e32a4",
+                                    "primary-light": "#7165d7",
+                                    "silver": "#999",
+                                    "success": "#28C081",
+                                    "transparent": "transparent",
+                                    "warning": "#FD9D28",
+                                    "white": "#fff",
+                                    "whites": Array [
+                                      "rgba(255,255,255,.0125)",
+                                      "rgba(255,255,255,.025)",
+                                      "rgba(255,255,255,.05)",
+                                      "rgba(255,255,255,.1)",
+                                      "rgba(255,255,255,.2)",
+                                      "rgba(255,255,255,.3)",
+                                      "rgba(255,255,255,.4)",
+                                      "rgba(255,255,255,.5)",
+                                      "rgba(255,255,255,.6)",
+                                      "rgba(255,255,255,.7)",
+                                      "rgba(255,255,255,.8)",
+                                      "rgba(255,255,255,.9)",
+                                    ],
+                                  },
+                                  "fontSizes": Array [
+                                    12,
+                                    14,
+                                    16,
+                                    20,
+                                    24,
+                                    32,
+                                    48,
+                                    64,
+                                  ],
+                                  "fontWeights": Array [
+                                    0,
+                                    300,
+                                    400,
+                                    600,
+                                    700,
+                                  ],
+                                  "fonts": Object {
+                                    "sansSerif": "\\"Source Sans Pro\\", -apple-system, sans-serif",
+                                    "serif": "athelas, georgia, times, serif",
+                                  },
+                                  "heights": Array [
+                                    0,
+                                    16,
+                                    32,
+                                    64,
+                                    128,
+                                    256,
+                                  ],
+                                  "letterSpacings": Array [
+                                    0,
+                                    1,
+                                    2,
+                                    4,
+                                    8,
+                                  ],
+                                  "lineHeights": Object {
+                                    "copy": 1.5,
+                                    "solid": 1,
+                                    "title": 1.25,
+                                  },
+                                  "maxHeights": Array [
+                                    0,
+                                    16,
+                                    32,
+                                    64,
+                                    128,
+                                    256,
+                                  ],
+                                  "maxWidths": Array [
+                                    0,
+                                    16,
+                                    32,
+                                    64,
+                                    128,
+                                    256,
+                                    512,
+                                    768,
+                                    1024,
+                                    1536,
+                                  ],
+                                  "messageStyle": Object {
+                                    "base": Object {
+                                      "backgroundColor": "#f6f6f6",
+                                      "borderColor": "#AAA",
+                                      "color": "#666",
+                                    },
+                                    "danger": Object {
+                                      "backgroundColor": "#fbe9e7",
+                                      "borderColor": "#DC2C10",
+                                      "color": "#841a09",
+                                    },
+                                    "info": Object {
+                                      "backgroundColor": "#eaf6fd",
+                                      "borderColor": "#36ADF1",
+                                      "color": "#206790",
+                                    },
+                                    "success": Object {
+                                      "backgroundColor": "#e9f8f2",
+                                      "borderColor": "#28C081",
+                                      "color": "#18734d",
+                                    },
+                                    "warning": Object {
+                                      "backgroundColor": "#fef5e9",
+                                      "borderColor": "#FD9D28",
+                                      "color": "#975e18",
+                                    },
+                                  },
+                                  "minHeights": Array [
+                                    0,
+                                    16,
+                                    32,
+                                    64,
+                                    128,
+                                    256,
+                                  ],
+                                  "minWidths": Array [
+                                    0,
+                                    16,
+                                    32,
+                                    64,
+                                    128,
+                                    256,
+                                  ],
+                                  "opacity": Object {
+                                    "disabled": 0.4,
+                                  },
+                                  "radii": Array [
+                                    "0",
+                                    "4px",
+                                    "8px",
+                                    "16px",
+                                  ],
+                                  "shadows": Array [
+                                    "0",
+                                    "0px 2px 4px rgba(0, 0, 0, 0.1)",
+                                    "0px 8px 16px rgba(0, 0, 0, 0.1)",
+                                    "0 7px 14px rgba(50,50,93,.1)",
+                                  ],
+                                  "space": Array [
+                                    0,
+                                    4,
+                                    8,
+                                    16,
+                                    32,
+                                    64,
+                                    128,
+                                    256,
+                                  ],
+                                  "width": Array [
+                                    0,
+                                    16,
+                                    32,
+                                    64,
+                                    128,
+                                    256,
+                                  ],
+                                  "zIndices": Array [
+                                    0,
+                                    9,
+                                    99,
+                                    999,
+                                    9999,
+                                  ],
+                                }
+                              }
+                            >
+                              <button
+                                className="c1"
+                                color="white"
+                                fontFamily="sansSerif"
+                                fontSize="inherit"
+                                fontWeight={3}
+                                height="3rem"
+                                onMouseEnter={[Function]}
+                                onMouseLeave={[Function]}
+                              >
+                                <ButtonBody>
+                                  <span
+                                    className="button-text"
+                                  />
+                                </ButtonBody>
+                              </button>
+                            </StyledComponent>
+                          </Styled(styled.button)>
+                        </Button>
+                      </Component>
+                    </lifecycle(Component)>
+                  </withHandlers(lifecycle(Component))>
+                </withStateHandlers(withHandlers(lifecycle(Component)))>
+              </withStateHandlers(withStateHandlers(withHandlers(lifecycle(Component))))>
+            </Popper>
+          </Tooltip>
+        </div>
+      </StyledComponent>
+    </styled.div>
+  </ThemeProvider>
+</ThemeProvider>
 `;
