@@ -24,8 +24,12 @@ const Text = React.forwardRef((props, ref) => (
   <StyledText ref={ref} {...props} />
 ));
 
-Text.defaultProps = {
+StyledText.defaultProps = {
   theme,
+};
+
+Text.defaultProps = {
+  // theme,
   color: 'copyColor',
   fontFamily: 'sansSerif',
   fontSize: 2,

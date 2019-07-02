@@ -40,12 +40,15 @@ const StyledAvatar = styled(Box)`
   ${size}
 `;
 
+StyledAvatar.defaultProps = {
+  theme,
+};
+
 const Avatar = React.forwardRef((props, ref) => (
   <StyledAvatar ref={ref} {...props} />
 ));
 
 Avatar.defaultProps = {
-  theme,
   size: '2rem',
   bg: 'grey',
   alt: 'Avatar',

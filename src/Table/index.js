@@ -8,7 +8,6 @@ import { TYPOGRAPHY } from '../constants';
 
 const StyledTable = styled(Box)`
   & {
-    ${'' /* table-layout: fixed; */}
     border-collapse: collapse;
   }
 
@@ -38,12 +37,15 @@ const StyledTable = styled(Box)`
   ${TYPOGRAPHY}
 `;
 
+StyledTable.defaultProps = {
+  theme,
+};
+
 const Table = React.forwardRef((props, ref) => (
   <StyledTable ref={ref} {...props} forwardedAs={'table'} />
 ));
 
 Table.defaultProps = {
-  theme,
   width: 1,
   border: 1,
   borderColor: 'grey',

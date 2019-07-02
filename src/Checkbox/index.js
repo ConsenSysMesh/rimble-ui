@@ -88,8 +88,11 @@ const Checkbox = React.forwardRef(
   )
 );
 
-Checkbox.defaultProps = {
+StyledWrapper.defaultProps = {
   theme,
+};
+
+Checkbox.defaultProps = {
   color: 'primary',
 };
 

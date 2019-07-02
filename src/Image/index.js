@@ -1,15 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import theme from '../theme';
 import Box from '../Box';
 
 const Image = React.forwardRef((props, ref) => <Box ref={ref} {...props} />);
 
 Image.defaultProps = {
-  theme,
   as: 'img',
-  display: 'block',
   maxWidth: '100%',
   height: 'auto',
 };

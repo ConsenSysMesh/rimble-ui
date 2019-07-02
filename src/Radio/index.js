@@ -58,6 +58,10 @@ const StyledLabel = styled(Box)`
   }
 `;
 
+StyledWrapper.defaultProps = {
+  theme,
+};
+
 const Radio = React.forwardRef(
   ({ className, label, name, value, id, ...props }, ref) => (
     <StyledLabel

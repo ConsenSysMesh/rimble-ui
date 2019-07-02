@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import theme from '../theme';
 import ExpandMore from 'rmdi/lib/ExpandMore';
 import { StyledInput } from '../Input';
 
@@ -39,10 +38,6 @@ const Select = React.forwardRef((props, ref) => (
     <ExpandMore />
   </StyledWrapper>
 ));
-
-Select.defaultProps = {
-  theme,
-};
 
 Select.propTypes = {
   theme: PropTypes.object,

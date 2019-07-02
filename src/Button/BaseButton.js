@@ -103,13 +103,17 @@ const ButtonBody = ({ children, icon, iconpos }) => {
   }
 };
 
-const Button = React.forwardRef((props, ref) => (
-  <StyledButton {...props} ref={ref} />
-));
+const Button = React.forwardRef((props, ref) => {
+  return <StyledButton {...props} ref={ref} />;
+});
+
+StyledButton.defaultProps = {
+  theme,
+};
 
 Button.defaultProps = {
   // base props
-  theme,
+  // theme,
   // variant: 'primary',
   // size: 'medium',
   height: '3rem',

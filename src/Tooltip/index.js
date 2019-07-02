@@ -28,6 +28,11 @@ const StyledTooltip = styled(Text)`
   }
 `;
 
+StyledTooltip.defaultProps = {
+  theme,
+  fontFamily: 'sansSerif',
+};
+
 const Tooltip = ({ children, ...props }) => {
   const options = {
     placement: props.placement,
@@ -59,11 +64,6 @@ const Tooltip = ({ children, ...props }) => {
   } else {
     return children;
   }
-};
-
-StyledTooltip.defaultProps = {
-  theme,
-  fontFamily: 'sansSerif',
 };
 
 Tooltip.displayName = 'Tooltip';
