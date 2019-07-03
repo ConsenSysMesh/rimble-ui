@@ -81,9 +81,18 @@ const testComponents = props => (
       <Avatar size="large" />
 
       <Slider />
-      <Select
-        items={['Wandering Thunder', 'Black Wildflower', 'Ancient Paper']}
-      />
+      <Select>
+        <optgroup label="4-legged pets">
+          <option value="dog">Dog</option>
+          <option value="cat">Cat</option>
+          <option value="hamster" disabled>Hamster</option>
+        </optgroup>
+        <optgroup label="Flying pets">
+          <option value="parrot">Parrot</option>
+          <option value="macaw">Macaw</option>
+          <option value="albatross">Albatross</option>
+        </optgroup>
+      </Select>
       <Progress value={0.5} />
       <Heading.h1>Quick zephyrs blow, vexing daft Jim.</Heading.h1>
 
