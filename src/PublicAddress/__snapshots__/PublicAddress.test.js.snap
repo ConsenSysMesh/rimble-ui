@@ -3,10 +3,10 @@
 exports[`PublicAddress component sanity matches default snapshot 1`] = `
 .c0 {
   margin-bottom: 16px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -20,7 +20,20 @@ exports[`PublicAddress component sanity matches default snapshot 1`] = `
   box-sizing: border-box;
 }
 
-.c5 {
+.c2 {
+  color: #3F3D4B;
+  margin-bottom: 8px;
+}
+
+.c2 {
+  box-sizing: border-box;
+}
+
+.c4 {
+  box-sizing: border-box;
+}
+
+.c7 {
   color: #fff;
   background-color: #999;
   margin: 0;
@@ -29,37 +42,23 @@ exports[`PublicAddress component sanity matches default snapshot 1`] = `
   padding-left: 32px;
   padding-right: 32px;
   width: small;
-  height: small;
+  height: 3rem;
+  min-width: 3rem;
   border: none;
   border-radius: 4px;
-  border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-size: inherit;
+  font-weight: 600;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
-  color: #fff;
-  background-color: #999;
-  margin: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 32px;
-  padding-right: 32px;
-  border: none;
-  border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  font-size: inherit;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  font-weight: 600;
   font-size: 0.75rem;
   height: 2rem;
   min-width: 2rem;
   padding: 0 1rem;
 }
 
-.c5 {
-  box-sizing: border-box;
-}
-
-.c5 {
+.c7 {
   -webkit-font-smoothing: antialiased;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -87,17 +86,24 @@ exports[`PublicAddress component sanity matches default snapshot 1`] = `
   justify-content: center;
 }
 
-.c5:hover {
+.c7:hover {
   cursor: pointer;
 }
 
-.c5:disabled {
+.c7:disabled {
   opacity: 0.5;
   pointer-events: none;
 }
 
-.c5 > svg,
-.c5 > span.button-text {
+.c7 > span.button-text {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c7 > div > svg,
+.c7 > span.button-text {
   position: relative;
   z-index: 1;
   -webkit-user-select: none;
@@ -107,25 +113,25 @@ exports[`PublicAddress component sanity matches default snapshot 1`] = `
   pointer-events: none;
 }
 
-.c5 > svg {
+.c7 > div > svg {
   display: block;
 }
 
-.c5 > svg:first-child {
+.c7 > div:first-child > svg {
   margin-left: -0.5rem;
   margin-right: .5rem;
 }
 
-.c5 > svg:last-child {
+.c7 > div:last-child > svg {
   margin-left: .5rem;
   margin-right: -0.5rem;
 }
 
-.c5 > svg:first-child:last-child {
+.c7 > div:first-child:last-child > svg {
   margin: 0;
 }
 
-.c5 {
+.c7 {
   color: var(--contrast-color);
   background: #FFF;
   position: relative;
@@ -134,22 +140,22 @@ exports[`PublicAddress component sanity matches default snapshot 1`] = `
   transition: all 0.15s ease;
 }
 
-.c5:hover {
+.c7:hover {
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
 }
 
-.c5:hover::before {
+.c7:hover::before {
   opacity: 0.9;
 }
 
-.c5:active {
+.c7:active {
   box-shadow: none;
   background: #000;
 }
 
-.c5::before {
+.c7::before {
   content: '';
   position: absolute;
   top: 0;
@@ -164,8 +170,6 @@ exports[`PublicAddress component sanity matches default snapshot 1`] = `
 }
 
 .c1 {
-  color: #3F3D4B;
-  margin-bottom: 8px;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -175,392 +179,60 @@ exports[`PublicAddress component sanity matches default snapshot 1`] = `
   margin-bottom: 8px;
 }
 
-.c1 {
-  box-sizing: border-box;
-}
-
-.c4 {
+.c6 {
   color: #3F3D4B;
   background-color: #fff;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 16px;
   height: 3rem;
   border: 1px solid transparent;
   border-color: #CCC;
   border-radius: 4px;
-  border-color: #CCC;
-  border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 1rem;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  line-height: 1;
 }
 
-.c4 {
-  box-sizing: border-box;
-}
-
-.c4 {
+.c6 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-}
-
-.c4:hover {
-  box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
-}
-
-.c4:focus {
-  outline: none;
-  border-color: #4E3FCE;
-}
-
-.c4:disabled {
-  opacity: 0.4;
-  pointer-events: none;
-}
-
-.was-validated .c4:valid {
-  border-color: #28C081;
-}
-
-.was-validated .c4:valid ~ svg.icon-valid {
-  visibility: visible;
-}
-
-.was-validated .c4:invalid {
-  border-color: #EC9081;
-}
-
-.was-validated .c4:invalid ~ svg.icon-invalid {
-  visibility: visible;
-}
-
-.c3 {
-  text-overflow: ellipsis;
-  white-space: no-wrap;
-}
-
-.c2 {
   box-sizing: border-box;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  position: relative;
-}
-
-.c2 > input {
-  width: 100%;
-  padding-right: 5.25rem;
-}
-
-.c2 > button {
-  position: absolute;
-  width: 4rem;
-  right: 0.75rem;
-}
-
-<label
-  class="c0"
-  display="flex"
->
-  <div
-    class="c1"
-    color="copyColor"
-    font-family="sansSerif"
-    font-size="1"
-    font-weight="3"
-  >
-    Public address
-  </div>
-  <div
-    class="c2"
-    required=""
-  >
-    <input
-      class="c3 c4"
-      color="copyColor"
-      font-family="sansSerif"
-      font-size="1rem"
-      height="3rem"
-      readonly=""
-    />
-    <button
-      class="c5"
-      color="white"
-      font-family="sansSerif"
-      font-size="inherit"
-      font-weight="3"
-    >
-      <span
-        class="button-text"
-      >
-        Copy
-      </span>
-    </button>
-  </div>
-</label>
-`;
-
-exports[`PublicAddress component sanity matches themed snapshot 1`] = `
-.c1 {
-  margin-bottom: 16px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-}
-
-.c1 {
-  box-sizing: border-box;
-}
-
-.c6 {
-  color: #fff;
-  background-color: #999;
-  margin: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 32px;
-  padding-right: 32px;
-  width: small;
-  height: small;
-  border: none;
-  border-radius: 4px;
-  border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #4E3FCE;
-  --contrast-color: #fff;
-  color: #fff;
-  background-color: #999;
-  margin: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 32px;
-  padding-right: 32px;
-  border: none;
-  border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  font-size: inherit;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  font-weight: 600;
-  font-size: 0.75rem;
-  height: 2rem;
-  min-width: 2rem;
-  padding: 0 1rem;
-}
-
-.c6 {
-  box-sizing: border-box;
-}
-
-.c6 {
-  -webkit-font-smoothing: antialiased;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  white-space: nowrap;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  text-align: center;
-  overflow: hidden;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
 }
 
 .c6:hover {
-  cursor: pointer;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
+}
+
+.c6:focus {
+  outline: none;
+  border-color: #4E3FCE;
 }
 
 .c6:disabled {
-  opacity: 0.5;
-  pointer-events: none;
-}
-
-.c6 > svg,
-.c6 > span.button-text {
-  position: relative;
-  z-index: 1;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  pointer-events: none;
-}
-
-.c6 > svg {
-  display: block;
-}
-
-.c6 > svg:first-child {
-  margin-left: -0.5rem;
-  margin-right: .5rem;
-}
-
-.c6 > svg:last-child {
-  margin-left: .5rem;
-  margin-right: -0.5rem;
-}
-
-.c6 > svg:first-child:last-child {
-  margin: 0;
-}
-
-.c6 {
-  color: var(--contrast-color);
-  background: #FFF;
-  position: relative;
-  z-index: 0;
-  -webkit-transition: all 0.15s ease;
-  transition: all 0.15s ease;
-}
-
-.c6:hover {
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-}
-
-.c6:hover::before {
-  opacity: 0.9;
-}
-
-.c6:active {
-  box-shadow: none;
-  background: #000;
-}
-
-.c6::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  height: 100%;
-  width: 100%;
-  background: var(--main-color);
-  pointer-events: none;
-}
-
-.c2 {
-  color: #3F3D4B;
-  margin-bottom: 8px;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.5;
-  text-align: left;
-  color: #3F3D4B;
-  margin-bottom: 8px;
-}
-
-.c2 {
-  box-sizing: border-box;
-}
-
-.c5 {
-  color: #3F3D4B;
-  background-color: #fff;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 16px;
-  padding-right: 16px;
-  height: 3rem;
-  border: 1px solid transparent;
-  border-color: #CCC;
-  border-radius: 4px;
-  border-color: #CCC;
-  border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  font-size: 1rem;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-}
-
-.c5 {
-  box-sizing: border-box;
-}
-
-.c5 {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
-.c5:hover {
-  box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
-}
-
-.c5:focus {
-  outline: none;
-  border-color: #4E3FCE;
-}
-
-.c5:disabled {
   opacity: 0.4;
   pointer-events: none;
 }
 
-.was-validated .c5:valid {
+.was-validated .c6:valid {
   border-color: #28C081;
 }
 
-.was-validated .c5:valid ~ svg.icon-valid {
+.was-validated .c6:valid ~ svg.icon-valid {
   visibility: visible;
 }
 
-.was-validated .c5:invalid {
-  border-color: #EC9081;
+.was-validated .c6:invalid {
+  border-color: #DC2C10;
 }
 
-.was-validated .c5:invalid ~ svg.icon-invalid {
+.was-validated .c6:invalid ~ svg.icon-invalid {
   visibility: visible;
 }
 
-.c4 {
+.c5 {
   text-overflow: ellipsis;
   white-space: no-wrap;
-}
-
-.c3 {
-  box-sizing: border-box;
 }
 
 .c3 {
@@ -590,6 +262,311 @@ exports[`PublicAddress component sanity matches themed snapshot 1`] = `
   right: 0.75rem;
 }
 
+<label
+  class="c0"
+  display="inline-flex"
+>
+  <div
+    class="c1 c2"
+    color="copyColor"
+    font-family="sansSerif"
+    font-size="1"
+    font-weight="3"
+  >
+    Public address
+  </div>
+  <div
+    class="c3 c4"
+    required=""
+  >
+    <input
+      class="c5 c6"
+      color="copyColor"
+      font-family="sansSerif"
+      font-size="1rem"
+      height="3rem"
+      readonly=""
+    />
+    <button
+      class="c7"
+      color="white"
+      font-family="sansSerif"
+      font-size="inherit"
+      font-weight="3"
+      height="3rem"
+    >
+      <span
+        class="button-text"
+      >
+        Copy
+      </span>
+    </button>
+  </div>
+</label>
+`;
+
+exports[`PublicAddress component sanity matches themed snapshot 1`] = `
+.c1 {
+  margin-bottom: 16px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c1 {
+  box-sizing: border-box;
+}
+
+.c3 {
+  color: #3F3D4B;
+  margin-bottom: 8px;
+}
+
+.c3 {
+  box-sizing: border-box;
+}
+
+.c5 {
+  box-sizing: border-box;
+}
+
+.c8 {
+  color: #fff;
+  background-color: #999;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 32px;
+  padding-right: 32px;
+  width: small;
+  height: 3rem;
+  min-width: 3rem;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-size: inherit;
+  font-weight: 600;
+  --main-color: #4E3FCE;
+  --contrast-color: #fff;
+  font-size: 0.75rem;
+  height: 2rem;
+  min-width: 2rem;
+  padding: 0 1rem;
+}
+
+.c8 {
+  -webkit-font-smoothing: antialiased;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-align: center;
+  overflow: hidden;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c8:hover {
+  cursor: pointer;
+}
+
+.c8:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.c8 > span.button-text {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c8 > div > svg,
+.c8 > span.button-text {
+  position: relative;
+  z-index: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+
+.c8 > div > svg {
+  display: block;
+}
+
+.c8 > div:first-child > svg {
+  margin-left: -0.5rem;
+  margin-right: .5rem;
+}
+
+.c8 > div:last-child > svg {
+  margin-left: .5rem;
+  margin-right: -0.5rem;
+}
+
+.c8 > div:first-child:last-child > svg {
+  margin: 0;
+}
+
+.c8 {
+  color: var(--contrast-color);
+  background: #FFF;
+  position: relative;
+  z-index: 0;
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+}
+
+.c8:hover {
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+}
+
+.c8:hover::before {
+  opacity: 0.9;
+}
+
+.c8:active {
+  box-shadow: none;
+  background: #000;
+}
+
+.c8::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background: var(--main-color);
+  pointer-events: none;
+}
+
+.c2 {
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: left;
+  color: #3F3D4B;
+  margin-bottom: 8px;
+}
+
+.c7 {
+  color: #3F3D4B;
+  background-color: #fff;
+  padding: 16px;
+  height: 3rem;
+  border: 1px solid transparent;
+  border-color: #CCC;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.c7 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-sizing: border-box;
+}
+
+.c7:hover {
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
+}
+
+.c7:focus {
+  outline: none;
+  border-color: #4E3FCE;
+}
+
+.c7:disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.was-validated .c7:valid {
+  border-color: #28C081;
+}
+
+.was-validated .c7:valid ~ svg.icon-valid {
+  visibility: visible;
+}
+
+.was-validated .c7:invalid {
+  border-color: #DC2C10;
+}
+
+.was-validated .c7:invalid ~ svg.icon-invalid {
+  visibility: visible;
+}
+
+.c6 {
+  text-overflow: ellipsis;
+  white-space: no-wrap;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.c4 > input {
+  width: 100%;
+  padding-right: 5.25rem;
+}
+
+.c4 > button {
+  position: absolute;
+  width: 4rem;
+  right: 0.75rem;
+}
+
 .c0 {
   font-size: 1em;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
@@ -601,10 +578,10 @@ exports[`PublicAddress component sanity matches themed snapshot 1`] = `
 >
   <label
     class="c1"
-    display="flex"
+    display="inline-flex"
   >
     <div
-      class="c2"
+      class="c2 c3"
       color="copyColor"
       font-family="sansSerif"
       font-size="1"
@@ -613,11 +590,11 @@ exports[`PublicAddress component sanity matches themed snapshot 1`] = `
       Public address
     </div>
     <div
-      class="c3"
+      class="c4 c5"
       required=""
     >
       <input
-        class="c4 c5"
+        class="c6 c7"
         color="copyColor"
         font-family="sansSerif"
         font-size="1rem"
@@ -625,11 +602,12 @@ exports[`PublicAddress component sanity matches themed snapshot 1`] = `
         readonly=""
       />
       <button
-        class="c6"
+        class="c8"
         color="white"
         font-family="sansSerif"
         font-size="inherit"
         font-weight="3"
+        height="3rem"
       >
         <span
           class="button-text"

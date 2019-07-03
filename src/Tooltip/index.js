@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Popper from '@d8660091/react-popper';
 import theme from '../theme';
@@ -27,7 +28,12 @@ const StyledTooltip = styled(Text)`
   }
 `;
 
-const Tooltip = props => {
+StyledTooltip.defaultProps = {
+  theme,
+  fontFamily: 'sansSerif',
+};
+
+const Tooltip = ({ children, ...props }) => {
   const options = {
     placement: props.placement,
     modifiers: {
@@ -37,15 +43,13 @@ const Tooltip = props => {
     },
   };
 
-  const triggerElement = ({ setReference, toggle }) => (
-    <span
-      ref={setReference}
-      onMouseEnter={toggle}
-      onMouseLeave={toggle}
-      children={props.children}
-      style={{ display: 'inline-block' }}
-    />
-  );
+  const triggerElement = ({ setReference, toggle }) => {
+    return React.cloneElement(children, {
+      ref: setReference,
+      onMouseEnter: toggle,
+      onMouseLeave: toggle,
+    });
+  };
 
   if (typeof window !== 'undefined') {
     return (
@@ -58,26 +62,28 @@ const Tooltip = props => {
       </Popper>
     );
   } else {
-    return props.children;
+    return children;
   }
-};
-
-StyledTooltip.defaultProps = {
-  theme,
-  fontFamily: 'sansSerif',
 };
 
 Tooltip.displayName = 'Tooltip';
 
 Tooltip.defaultProps = {
-  /** Sets the theme of tooltip. Options are light or dark. */
   variant: 'dark',
-  /** Sets the placement of tooltip relative to anchoring element. Options are top, left, right, bottom. */
   placement: 'bottom',
-  /** Sets the placement of tooltip relative to anchoring element. */
   offset: '0, 0',
-  /** Sets the content of tooltip. Only accepts text and not markup. */
   message: 'props.message text',
+};
+
+Tooltip.propTypes = {
+  /** Sets the theme of tooltip. Options are light or dark. */
+  variant: PropTypes.oneOf(['light', 'dark']),
+  /** Sets the placement of tooltip relative to anchoring element. */
+  placement: PropTypes.oneOf(['top', 'right', 'bottom', 'left']),
+  /** Sets the placement of tooltip relative to anchoring element. */
+  offset: PropTypes.string,
+  /** Sets the content of tooltip. Only accepts text and not markup. */
+  message: PropTypes.string,
 };
 
 export default Tooltip;

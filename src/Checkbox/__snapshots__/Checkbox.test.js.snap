@@ -1,10 +1,38 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Checkbox component sanity matches default snapshot 1`] = `
-.c2 {
+.c1 {
+  color: #4E3FCE;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  opacity: 1;
+}
+
+.c1 {
+  box-sizing: border-box;
+}
+
+.c3 {
+  box-sizing: border-box;
+}
+
+.c5 {
   color: #3F3D4B;
   margin-left: 4px;
   margin-right: 8px;
+}
+
+.c5 {
+  box-sizing: border-box;
+}
+
+.c4 {
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -13,163 +41,6 @@ exports[`Checkbox component sanity matches default snapshot 1`] = `
   color: #3F3D4B;
   margin-left: 4px;
   margin-right: 8px;
-}
-
-.c2 {
-  box-sizing: border-box;
-}
-
-.c0 {
-  color: #4E3FCE;
-  opacity: 1;
-}
-
-.c0 {
-  box-sizing: border-box;
-}
-
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c1 {
-  box-sizing: border-box;
-}
-
-.c1 {
-  position: relative;
-  display: inline-block;
-}
-
-.c1 > input {
-  position: relative;
-  display: block;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  height: 1.5rem;
-  width: 1.5rem;
-  margin: 0;
-}
-
-.c1 > svg {
-  position: absolute;
-  z-index: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 100%;
-  width: 100%;
-  pointer-events: none;
-  fill: #CCC;
-}
-
-.c1 > svg[name='checked'] {
-  display: none;
-  z-index: 1;
-  fill: #4E3FCE;
-}
-
-.c1 > input:checked ~ svg[name='checked'] {
-  display: block;
-}
-
-<label
-  class="c0"
-  color="primary"
-  opacity="1"
->
-  <div
-    class="c1"
-  >
-    <input
-      color="primary"
-      theme="[object Object]"
-      type="checkbox"
-    />
-    <svg
-      class=""
-      fill="currentcolor"
-      height="24"
-      name="checked"
-      viewBox="0 0 24 24"
-      width="24"
-    >
-      <path
-        d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-      />
-    </svg>
-    <svg
-      class=""
-      fill="currentcolor"
-      height="24"
-      viewBox="0 0 24 24"
-      width="24"
-    >
-      <path
-        d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-      />
-    </svg>
-  </div>
-  <div
-    class="c2"
-    color="copyColor"
-    font-family="sansSerif"
-    font-size="1"
-    font-weight="3"
-  />
-</label>
-`;
-
-exports[`Checkbox component sanity matches themed snapshot 1`] = `
-.c3 {
-  color: #3F3D4B;
-  margin-left: 4px;
-  margin-right: 8px;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1;
-  text-align: left;
-  color: #3F3D4B;
-  margin-left: 4px;
-  margin-right: 8px;
-}
-
-.c3 {
-  box-sizing: border-box;
-}
-
-.c1 {
-  color: #4E3FCE;
-  opacity: 1;
-}
-
-.c1 {
-  box-sizing: border-box;
-}
-
-.c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c2 {
-  box-sizing: border-box;
 }
 
 .c2 {
@@ -178,11 +49,13 @@ exports[`Checkbox component sanity matches themed snapshot 1`] = `
 }
 
 .c2 > input {
-  position: relative;
-  display: block;
+  cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  position: relative;
+  z-index: 1;
+  display: block;
   height: 1.5rem;
   width: 1.5rem;
   margin: 0;
@@ -212,6 +85,154 @@ exports[`Checkbox component sanity matches themed snapshot 1`] = `
 }
 
 .c0 {
+  cursor: pointer;
+}
+
+.c0:hover input:not(:disabled) ~ svg[name='unchecked'] {
+  fill: #000;
+}
+
+<label
+  class="c0 c1"
+  color="primary"
+  display="flex"
+  opacity="1"
+>
+  <div
+    class="c2 c3"
+  >
+    <input
+      color="primary"
+      type="checkbox"
+    />
+    <svg
+      class=""
+      fill="currentcolor"
+      height="24"
+      name="checked"
+      viewBox="0 0 24 24"
+      width="24"
+    >
+      <path
+        d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+      />
+    </svg>
+    <svg
+      class=""
+      fill="currentcolor"
+      height="24"
+      name="unchecked"
+      viewBox="0 0 24 24"
+      width="24"
+    >
+      <path
+        d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+      />
+    </svg>
+  </div>
+  <div
+    class="c4 c5"
+    color="copyColor"
+    font-family="sansSerif"
+    font-size="1"
+    font-weight="3"
+  />
+</label>
+`;
+
+exports[`Checkbox component sanity matches themed snapshot 1`] = `
+.c2 {
+  color: #4E3FCE;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  opacity: 1;
+}
+
+.c2 {
+  box-sizing: border-box;
+}
+
+.c4 {
+  box-sizing: border-box;
+}
+
+.c6 {
+  color: #3F3D4B;
+  margin-left: 4px;
+  margin-right: 8px;
+}
+
+.c6 {
+  box-sizing: border-box;
+}
+
+.c5 {
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  text-align: left;
+  color: #3F3D4B;
+  margin-left: 4px;
+  margin-right: 8px;
+}
+
+.c3 {
+  position: relative;
+  display: inline-block;
+}
+
+.c3 > input {
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  z-index: 1;
+  display: block;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin: 0;
+}
+
+.c3 > svg {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  fill: #CCC;
+}
+
+.c3 > svg[name='checked'] {
+  display: none;
+  z-index: 1;
+  fill: #4E3FCE;
+}
+
+.c3 > input:checked ~ svg[name='checked'] {
+  display: block;
+}
+
+.c1 {
+  cursor: pointer;
+}
+
+.c1:hover input:not(:disabled) ~ svg[name='unchecked'] {
+  fill: #4E3FCE;
+}
+
+.c0 {
   font-size: 1em;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   color: #3F3D4B;
@@ -221,16 +242,16 @@ exports[`Checkbox component sanity matches themed snapshot 1`] = `
   class="c0"
 >
   <label
-    class="c1"
+    class="c1 c2"
     color="primary"
+    display="flex"
     opacity="1"
   >
     <div
-      class="c2"
+      class="c3 c4"
     >
       <input
         color="primary"
-        theme="[object Object]"
         type="checkbox"
       />
       <svg
@@ -249,6 +270,7 @@ exports[`Checkbox component sanity matches themed snapshot 1`] = `
         class=""
         fill="currentcolor"
         height="24"
+        name="unchecked"
         viewBox="0 0 24 24"
         width="24"
       >
@@ -258,7 +280,7 @@ exports[`Checkbox component sanity matches themed snapshot 1`] = `
       </svg>
     </div>
     <div
-      class="c3"
+      class="c5 c6"
       color="copyColor"
       font-family="sansSerif"
       font-size="1"

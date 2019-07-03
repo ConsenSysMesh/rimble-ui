@@ -1,9 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import theme from '../theme';
 import Text from '../Text';
 
-const Pill = styled(Text)`
+const StyledPill = styled(Text)`
   & {
     position: relative;
     background: none;
@@ -20,11 +20,15 @@ const Pill = styled(Text)`
     width: 100%;
     background-color: currentColor;
     opacity: 0.12;
+    pointer-events: none;
   }
 `;
 
+const Pill = React.forwardRef((props, ref) => (
+  <StyledPill ref={ref} {...props} />
+));
+
 Pill.defaultProps = {
-  theme,
   color: 'dark-gray',
   fontFamily: 'sansSerif',
   fontSize: 1,
@@ -36,6 +40,11 @@ Pill.defaultProps = {
   borderRadius: 3,
   display: 'inline-flex',
   alignItems: 'center',
+};
+
+Pill.propTypes = {
+  ...Text.propTypes,
+  theme: PropTypes.object,
 };
 
 Pill.displayName = 'Pill';

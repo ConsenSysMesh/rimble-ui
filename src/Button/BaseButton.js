@@ -1,21 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import {
-  color,
-  space,
-  minWidth,
-  borders,
-  boxShadow,
-  fontSize,
-  fontFamily,
-  fontWeight,
-  buttonStyle,
-  variant,
-  style,
-} from 'styled-system';
-
-import defaultTheme from '../theme';
-import Box from '../Box';
+import { buttonStyle, variant, style } from 'styled-system';
+import { COMMON, LAYOUT, POSITION, BORDERS, TYPOGRAPHY } from '../constants';
+import theme from '../theme';
 import Icon from '../Icon';
 
 const buttonSize = variant({
@@ -35,10 +23,7 @@ const contrastColor = style({
   key: 'colors',
 });
 
-const StyledButton = styled(Box)`
-  ${mainColor}
-  ${contrastColor}
-
+const StyledButton = styled('button')`
   & {
     -webkit-font-smoothing: antialiased;
     appearance: none;
@@ -63,8 +48,12 @@ const StyledButton = styled(Box)`
     pointer-events: none;
   }
 
+  > span.button-text {
+    display: inline-flex;
+  }
+
   ${'' /* with icon styles */}
-  > svg,
+  > div > svg,
   > span.button-text {
     position: relative;
     z-index: 1;
@@ -72,32 +61,29 @@ const StyledButton = styled(Box)`
     pointer-events: none;
   }
 
-  > svg {
+  > div > svg {
     display: block;
   }
-  > svg:first-child {
+  > div:first-child > svg {
     margin-left: -0.5rem;
     margin-right: .5rem;
   }
-  > svg:last-child {
+  > div:last-child > svg {
     margin-left: .5rem;
     margin-right: -0.5rem;
   }
-  > svg:first-child:last-child {
+  > div:first-child:last-child > svg {
     margin: 0;
   }
 
-  ${'' /* styled system props */}
-  ${color}
-  ${space}
-  ${minWidth}
-  ${borders}
-  ${boxShadow}
+  ${COMMON}
+  ${LAYOUT}
+  ${POSITION}
+  ${BORDERS}
+  ${TYPOGRAPHY}
 
-  ${fontSize}
-  ${fontFamily}
-  ${fontWeight}
-
+  ${mainColor}
+  ${contrastColor}
   ${buttonStyle}
   ${buttonSize}
 `;
@@ -117,20 +103,21 @@ const ButtonBody = ({ children, icon, iconpos }) => {
   }
 };
 
-const Button = React.forwardRef(({ children, icon, ...props }, ref) => {
-  return (
-    <StyledButton {...props} ref={ref}>
-      {children}
-    </StyledButton>
-  );
+const Button = React.forwardRef((props, ref) => {
+  return <StyledButton {...props} ref={ref} />;
 });
+
+StyledButton.defaultProps = {
+  theme,
+};
 
 Button.defaultProps = {
   // base props
-  theme: defaultTheme,
-  as: 'button',
+  // theme,
   // variant: 'primary',
-  size: 'medium',
+  // size: 'medium',
+  height: '3rem',
+  minWidth: '3rem',
   m: 0,
   px: 4,
   py: 0,
@@ -143,8 +130,42 @@ Button.defaultProps = {
   mainColor: 'primary',
   contrastColor: 'white',
   border: 'none',
-  // borderColor: 'none',
-  // borderRadius: 1,
+};
+
+Button.propTypes = {
+  ...COMMON.propTypes,
+  ...LAYOUT.propTypes,
+  ...POSITION.propTypes,
+  ...BORDERS.propTypes,
+  ...TYPOGRAPHY.propTypes,
+  /**
+   * Sets theme
+   */
+  theme: PropTypes.object,
+  /**
+   * Sets background color of button
+   */
+  mainColor: PropTypes.string,
+  /**
+   * Sets text color of button
+   */
+  contrastColor: PropTypes.string,
+  /**
+   * Sets font and spacing size of button
+   */
+  size: PropTypes.oneOf(['small', 'medium', 'large']),
+  /**
+   * Sets icon of button
+   */
+  icon: PropTypes.string,
+  /**
+   * Sets icon position on button
+   */
+  iconpos: PropTypes.oneOf(['left', 'right']),
+  /**
+   * Sets padding on button with icon and no text
+   */
+  icononly: PropTypes.bool,
 };
 
 Button.displayName = 'Button';

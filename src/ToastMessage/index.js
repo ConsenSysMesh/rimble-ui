@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import styled, { keyframes } from 'styled-components';
 import { timingFunctions, ellipsis } from 'polished';
 
@@ -101,6 +102,9 @@ const StyledToastMessage = styled(Box)`
     pointer-events: all;
     user-select: none;
     overflow: hidden;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
     height: 80px;
     padding: 0 1rem;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
@@ -119,7 +123,7 @@ const StyledToastMessage = styled(Box)`
     display: none;
   }
 
-  > ${StyledTextCell} > ${Text} {
+  > ${StyledTextCell} > div {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -142,11 +146,12 @@ const StyledToastMessage = styled(Box)`
 
     > .closeBttn {
       display: flex;
+      align-self: flex-start;
     }
   }
 `;
 
-const ToastMessage = ({ className, ...props }) => {
+const ToastMessage = React.forwardRef(({ className, ...props }, ref) => {
   const themeIsDark = props.colorTheme === 'dark' ? true : false;
 
   const renderVariantSvg = variant => {
@@ -166,13 +171,13 @@ const ToastMessage = ({ className, ...props }) => {
   };
 
   const renderFigure = ({ variant, icon }) => {
-    if (variant) {
+    if (variant && variant !== 'default') {
       return (
         <Box className={'iconBox'} flex={'0 0'} mr={2}>
           {renderVariantSvg(variant)}
         </Box>
       );
-    } else if (icon) {
+    } else if (icon && icon.length) {
       return (
         <Box className={'iconBox'} flex={'0 0'} mr={2}>
           <Icon
@@ -195,7 +200,6 @@ const ToastMessage = ({ className, ...props }) => {
           className={'closeBttn'}
           size={'small'}
           icononly
-          alignSelf={'flex-start'}
         >
           <Icon
             name={'Close'}
@@ -212,9 +216,10 @@ const ToastMessage = ({ className, ...props }) => {
   return (
     <StyledToastMessage
       className={className}
-      bg={!themeIsDark ? 'white' : 'black'}
+      bg={!themeIsDark ? 'white' : 'near-black'}
       border={1}
       borderColor={!themeIsDark ? '#D6D6D6' : 'transparent'}
+      ref={ref}
       {...props}
     >
       {renderFigure(props)}
@@ -248,7 +253,7 @@ const ToastMessage = ({ className, ...props }) => {
       {renderCloseBttn(props)}
     </StyledToastMessage>
   );
-};
+});
 
 class ProtoToastMessage extends Component {
   constructor(props) {
@@ -263,8 +268,8 @@ class ProtoToastMessage extends Component {
     actionHref: '',
     actionText: '',
     variant: '',
-    icon: false,
-    colorTheme: false,
+    icon: '',
+    colorTheme: 'dark',
     closeElem: true,
   };
 
@@ -431,31 +436,64 @@ class ToastProvider extends React.Component {
   }
 }
 
-ToastMessage.Success = props => <ToastMessage {...props} variant={'success'} />;
+ToastMessage.Success = React.forwardRef((props, ref) => (
+  <ToastMessage ref={ref} {...props} variant={'success'} />
+));
 
-ToastMessage.Failure = props => <ToastMessage {...props} variant={'failure'} />;
+ToastMessage.Failure = React.forwardRef((props, ref) => (
+  <ToastMessage ref={ref} {...props} variant={'failure'} />
+));
 
-ToastMessage.Processing = props => (
-  <ToastMessage {...props} variant={'processing'} />
-);
+ToastMessage.Processing = React.forwardRef((props, ref) => (
+  <ToastMessage ref={ref} {...props} variant={'processing'} />
+));
 
 ToastMessage.Provider = ToastProvider;
-
-StyledToastMessage.defaultProps = {
-  display: 'flex',
-  flexDirection: 'row nowrap',
-  alignItems: 'center',
-};
 
 ToastMessage.defaultProps = {
   message: 'Write update here [Required]',
   secondaryMessage: '',
   actionHref: '',
   actionText: '',
-  variant: false,
-  icon: false,
-  colorTheme: '',
+  variant: 'default',
+  icon: '',
+  colorTheme: 'light',
   closeElem: false,
+};
+
+ToastMessage.propTypes = {
+  /**
+   * Sets primary message text
+   */
+  message: PropTypes.string,
+  /**
+   * Sets secondary message text
+   */
+  secondaryMessage: PropTypes.string,
+  /**
+   * Sets URL for button
+   */
+  actionHref: PropTypes.string,
+  /**
+   * Sets text for button
+   */
+  actionText: PropTypes.string,
+  /**
+   * Sets type of ToastMessage to display
+   */
+  variant: PropTypes.oneOf(['default', 'success', 'failure', 'processing']),
+  /**
+   * Sets icon to display
+   */
+  icon: PropTypes.string,
+  /**
+   * Sets background and text color
+   */
+  colorTheme: PropTypes.oneOf(['light', 'dark']),
+  /**
+   * Allows ToastMessage to be closed by user
+   */
+  closeElem: PropTypes.bool,
 };
 
 ToastMessage.displayName = 'ToastMessage';

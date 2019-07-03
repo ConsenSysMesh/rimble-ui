@@ -5,7 +5,7 @@ import { opacity } from 'styled-system';
 import { COMMON, LAYOUT, POSITION, FLEXBOX, BORDERS } from '../constants';
 import theme from '../theme';
 
-const Box = styled.div`
+const StyledBox = styled.div`
   & {
     box-sizing: border-box;
   }
@@ -18,9 +18,13 @@ const Box = styled.div`
   ${opacity}
 `;
 
-Box.defaultProps = {
+StyledBox.defaultProps = {
   theme,
 };
+
+const Box = React.forwardRef((props, ref) => (
+  <StyledBox ref={ref} {...props} />
+));
 
 Box.propTypes = {
   ...COMMON.propTypes,

@@ -1,8 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { style } from 'styled-system';
-
-import defaultTheme from '../theme';
+import theme from '../theme';
 import Text from '../Text';
 
 const hoverColor = style({
@@ -17,9 +17,10 @@ const activeColor = style({
   key: 'colors',
 });
 
-const Link = styled(Text)`
+const StyledLink = styled(Text)`
   & {
     text-decoration: none;
+    cursor: pointer;
   }
 
   &:hover {
@@ -33,14 +34,27 @@ const Link = styled(Text)`
   }
 `;
 
+const Link = React.forwardRef((props, ref) => (
+  <StyledLink ref={ref} {...props} />
+));
+
+StyledLink.defaultProps = {
+  theme,
+};
+
 Link.defaultProps = {
-  theme: defaultTheme,
-  as: 'a',
+  // theme,
+  forwardedAs: 'a',
   color: 'primary',
   hoverColor: 'primary-light',
   activeColor: 'primary-dark',
   fontSize: 1,
   fontWeight: 3,
+};
+
+Link.propTypes = {
+  ...Text.propTypes,
+  theme: PropTypes.object,
 };
 
 Link.displayName = 'Link';

@@ -11,7 +11,7 @@ export const caps = props =>
 
 export const italic = props => (props.italic ? { fontStyle: 'italic' } : null);
 
-const Text = styled(Box)`
+const StyledText = styled(Box)`
   ${TYPOGRAPHY}
   ${COMMON}
   ${display}
@@ -20,8 +20,16 @@ const Text = styled(Box)`
   ${italic}
 `;
 
-Text.defaultProps = {
+const Text = React.forwardRef((props, ref) => (
+  <StyledText ref={ref} {...props} />
+));
+
+StyledText.defaultProps = {
   theme,
+};
+
+Text.defaultProps = {
+  // theme,
   color: 'copyColor',
   fontFamily: 'sansSerif',
   fontSize: 2,
@@ -31,27 +39,27 @@ Text.defaultProps = {
 };
 
 Text.propTypes = {
-  ...COMMON.propTypes,
   ...TYPOGRAPHY.propTypes,
+  ...Box.propTypes,
   ...display.propTypes,
   theme: PropTypes.object,
 };
 
 Text.displayName = 'Text';
 
-Text.span = styled(Text)``;
+Text.span = props => <Text {...props} />;
 Text.span.defaultProps = {
   ...Text.defaultProps,
   as: 'span',
 };
 
-Text.p = styled(Text)``;
+Text.p = props => <Text {...props} />;
 Text.p.defaultProps = {
   ...Text.defaultProps,
   as: 'p',
 };
 
-Text.s = styled(Text)``;
+Text.s = props => <Text {...props} />;
 Text.s.defaultProps = {
   ...Text.defaultProps,
   as: 's',

@@ -1,10 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { themeGet } from 'styled-system';
-
+import theme from '../theme';
 import Box from '../Box';
-
-import defaultTheme from '../theme';
 
 const size = props => {
   switch (props.size) {
@@ -28,24 +26,55 @@ const size = props => {
   }
 };
 
-const Avatar = styled(Box)`
+const StyledAvatar = styled(Box)`
   & {
     position: relative;
     overflow: hidden;
     border-radius: 100%;
-    background: center no-repeat;
     background-size: cover;
-    background-color: ${props => themeGet('colors.grey', '#000')};
+    background-position: center;
+    background-repeat: no-repeat;
     background-image: url(${props => props.src});
   }
 
   ${size}
 `;
 
+StyledAvatar.defaultProps = {
+  theme,
+};
+
+const Avatar = React.forwardRef((props, ref) => (
+  <StyledAvatar ref={ref} {...props} />
+));
+
 Avatar.defaultProps = {
-  theme: defaultTheme,
   size: '2rem',
+  bg: 'grey',
   alt: 'Avatar',
+};
+
+Avatar.propTypes = {
+  /**
+   * Sets alt attribute on image for accessibility
+   */
+  alt: PropTypes.string,
+  /**
+   * Sets avatar height and width
+   */
+  size: PropTypes.string,
+  /**
+   * Sets avatar image
+   */
+  src: PropTypes.string.isRequired,
+  /**
+   * Sets theme
+   */
+  theme: PropTypes.object,
+  /**
+   * Inherits system props from Box
+   */
+  ...Box.propTypes,
 };
 
 Avatar.displayName = 'Avatar';

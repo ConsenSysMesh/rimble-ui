@@ -1,36 +1,25 @@
 import React from 'react';
-import styled from 'styled-components';
-import { textAlign } from 'styled-system';
-
-import defaultTheme from '../theme';
+import PropTypes from 'prop-types';
 import Box from '../Box';
 
-const Card = styled(Box)`
-  & {
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 300ms ease;
-  }
-  &:hover {
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
-  }
-
-  ${textAlign}
-`;
+const Card = React.forwardRef((props, ref) => <Box ref={ref} {...props} />);
 
 Card.defaultProps = {
-  theme: defaultTheme,
   position: 'relative',
   bg: 'white',
   border: 1,
-  borderColor: '#D6D6D6',
-  mx: 0,
-  my: 2,
-  width: '100%',
+  borderColor: 'light-gray',
+  boxShadow: 2,
+  p: 4,
+  width: 1,
   minWidth: 1,
   height: 'auto',
   minHeight: 1,
-  p: 4,
-  textAlign: 'left',
+};
+
+Card.propTypes = {
+  ...Box.propTypes,
+  theme: PropTypes.object,
 };
 
 Card.displayName = 'Card';

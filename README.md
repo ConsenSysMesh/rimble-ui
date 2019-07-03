@@ -35,9 +35,16 @@ class Example extends Component {
 
 ## Change log
 
+### 0.9.4
+
+- Added ref forwarding for all components.
+- Fixed input validation icon padding.
+- Fixed Tooltip positioning.
+- Fixed broken copy button on PublicAddress component.
+
 ### 0.9.3
 
-- revert to last stable version 
+- revert to last stable version
 
 ### 0.9.2
 

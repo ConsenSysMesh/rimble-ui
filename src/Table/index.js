@@ -1,18 +1,13 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import {
-  themeGet,
-  height,
-  fontFamily,
-  boxShadow
-} from 'styled-system';
-
+import { themeGet, height, fontFamily, boxShadow } from 'styled-system';
+import theme from '../theme';
 import Box from '../Box';
-import defaultTheme from '../theme';
+import { TYPOGRAPHY } from '../constants';
 
-const Table = styled(Box)`
+const StyledTable = styled(Box)`
   & {
-    table-layout: fixed;
     border-collapse: collapse;
   }
 
@@ -39,14 +34,18 @@ const Table = styled(Box)`
     text-transform: uppercase;
   }
 
-  ${fontFamily}
-  ${height}
-  ${boxShadow}
-`
+  ${TYPOGRAPHY}
+`;
+
+StyledTable.defaultProps = {
+  theme,
+};
+
+const Table = React.forwardRef((props, ref) => (
+  <StyledTable ref={ref} {...props} forwardedAs={'table'} />
+));
 
 Table.defaultProps = {
-  theme: defaultTheme,
-  as: 'table',
   width: 1,
   border: 1,
   borderColor: 'grey',
@@ -54,7 +53,12 @@ Table.defaultProps = {
   fontWeight: 2,
   fontFamily: 'sansSerif',
   color: 'dark-gray',
-  boxShadow: 1
+  boxShadow: 1,
+};
+
+Table.propTypes = {
+  ...Box.propTypes,
+  theme: PropTypes.object,
 };
 
 Table.displayName = 'Table';

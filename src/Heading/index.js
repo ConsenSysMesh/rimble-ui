@@ -5,18 +5,27 @@ import { COMMON, TYPOGRAPHY } from '../constants';
 import theme from '../theme';
 
 const defaultProps = {
-  theme,
   fontFamily: 'sansSerif',
   fontWeight: 3,
   lineHeight: 'title',
   m: 0,
+  p: 0,
 };
 
 // Heading
-const Heading = styled.h1`
-  ${TYPOGRAPHY}
+const StyledHeading = styled.div`
   ${COMMON}
+  ${TYPOGRAPHY}
 `;
+
+StyledHeading.defaultProps = {
+  theme,
+  ...defaultProps,
+};
+
+const Heading = React.forwardRef((props, ref) => (
+  <StyledHeading ref={ref} {...props} />
+));
 
 Heading.defaultProps = {
   ...defaultProps,
@@ -33,7 +42,7 @@ Heading.propTypes = {
 Heading.displayName = 'Heading';
 
 // H1
-Heading.h1 = styled(Heading)``;
+Heading.h1 = props => <Heading {...props} />;
 Heading.h1.defaultProps = {
   ...defaultProps,
   as: 'h1',
@@ -42,7 +51,7 @@ Heading.h1.defaultProps = {
 Heading.h1.displayName = 'Heading.h1';
 
 // H2
-Heading.h2 = styled(Heading)``;
+Heading.h2 = props => <Heading {...props} />;
 Heading.h2.defaultProps = {
   ...defaultProps,
   as: 'h2',
@@ -51,7 +60,7 @@ Heading.h2.defaultProps = {
 Heading.h2.displayName = 'Heading.h2';
 
 // H3
-Heading.h3 = styled(Heading)``;
+Heading.h3 = props => <Heading {...props} />;
 Heading.h3.defaultProps = {
   ...defaultProps,
   as: 'h3',
@@ -60,7 +69,7 @@ Heading.h3.defaultProps = {
 Heading.h3.displayName = 'Heading.h3';
 
 // H4
-Heading.h4 = styled(Heading)``;
+Heading.h4 = props => <Heading {...props} />;
 Heading.h4.defaultProps = {
   ...defaultProps,
   as: 'h4',
@@ -69,7 +78,7 @@ Heading.h4.defaultProps = {
 Heading.h4.displayName = 'Heading.h4';
 
 // H5
-Heading.h5 = styled(Heading)``;
+Heading.h5 = props => <Heading {...props} />;
 Heading.h5.defaultProps = {
   ...defaultProps,
   as: 'h5',
@@ -78,7 +87,7 @@ Heading.h5.defaultProps = {
 Heading.h5.displayName = 'Heading.h5';
 
 // H6
-Heading.h6 = styled(Heading)``;
+Heading.h6 = props => <Heading {...props} />;
 Heading.h6.defaultProps = {
   ...defaultProps,
   as: 'h6',

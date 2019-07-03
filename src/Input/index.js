@@ -1,16 +1,27 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import { themeGet, fontSize, fontFamily, boxShadow } from 'styled-system';
+import { themeGet, opacity } from 'styled-system';
+import {
+  COMMON,
+  LAYOUT,
+  POSITION,
+  FLEXBOX,
+  BORDERS,
+  TYPOGRAPHY,
+} from '../constants';
 
-import defaultTheme from '../theme';
+import theme from '../theme';
 import Box from '../Box';
-import Icon from '../Icon';
 import FileInput from './FileInput';
+import IconCheckCircle from 'rmdi/lib/CheckCircle';
+import IconWarning from 'rmdi/lib/Warning';
 
-const StyledInput = styled(Box)`
+const StyledInput = styled.input`
   & {
     appearance: none;
+    box-sizing: border-box;
   }
 
   &:hover {
@@ -29,29 +40,38 @@ const StyledInput = styled(Box)`
 
   .was-validated & {
     &:valid {
-      border-color: #28C081;
+      border-color: ${themeGet('colors.success')};
     }
     &:valid ~ svg.icon-valid {
       visibility: visible;
     }
     &:invalid {
-      border-color: #EC9081;
+      border-color: ${themeGet('colors.danger')};
     }
     &:invalid ~ svg.icon-invalid {
       visibility: visible;
     }
-  }
+  }}
 
-  ${boxShadow}
-  ${fontSize}
-  ${fontFamily}
+  ${COMMON}
+  ${LAYOUT}
+  ${POSITION}
+  ${FLEXBOX}
+  ${BORDERS}
+  ${TYPOGRAPHY}
 `;
 
-const StyledIconWrapper = styled(Box)`
+const StyledIconWrapper = styled.div`
   & {
     position: relative;
     display: flex;
     align-items: center;
+    width: 100%;
+  }
+  > ${StyledInput} {
+    padding-right: 3rem;
+    text-overflow: ellipsis;
+    white-space: no-wrap;
   }
   > svg {
     position: absolute;
@@ -61,48 +81,51 @@ const StyledIconWrapper = styled(Box)`
 `;
 
 const WithValidationStyle = React.forwardRef((props, ref) => {
+  const colorSuccess = themeGet('colors.success')(props);
+  const colorError = themeGet('colors.danger')(props);
+
   return (
-    <StyledIconWrapper width={1}>
+    <StyledIconWrapper>
       <StyledInput {...props} ref={ref} />
-      <Icon className={'icon-valid'} name={'CheckCircle'} color={'#28C081'} />
-      <Icon className={'icon-invalid'} name={'Warning'} color={'#DC2C10'} />
+      <IconCheckCircle className={'icon-valid'} color={colorSuccess} />
+      <IconWarning className={'icon-invalid'} color={colorError} />
     </StyledIconWrapper>
   );
 });
 
-const Input = props => {
+const Input = React.forwardRef((props, ref) => {
   if (props.type === 'file') {
-    return <FileInput {...props} />;
+    return <FileInput {...props} ref={ref} />;
   } else {
-    return <StyledInput {...props} />;
+    return <StyledInput {...props} ref={ref} />;
   }
-};
+});
 
 const defaultProps = {
-  theme: defaultTheme,
-  as: 'input',
+  theme,
   color: 'copyColor',
   bg: 'white',
   fontFamily: 'sansSerif',
   fontSize: '1rem',
   lineHeight: 'solid',
   height: '3rem',
-  px: 3,
-  py: 0,
+  p: 3,
   border: 1,
   borderColor: 'grey',
   borderRadius: 1,
   boxShadow: 1,
 };
 
-// let Input;
-//
-// Input = StyledInput;
 Input.WithValidationStyle = WithValidationStyle;
 
 Input.defaultProps = defaultProps;
 WithValidationStyle.defaultProps = defaultProps;
 StyledInput.defaultProps = defaultProps;
+
+Input.propTypes = {
+  ...Box.propTypes,
+  theme: PropTypes.object,
+};
 
 Input.displayName = 'Input';
 

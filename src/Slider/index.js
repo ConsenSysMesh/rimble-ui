@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { COMMON } from '../constants';
 import theme from '../theme';
 
-const Slider = styled('input').attrs(props => ({
+const StyledSlider = styled('input').attrs(props => ({
   type: 'range',
 }))`
   & {
@@ -70,11 +70,21 @@ const Slider = styled('input').attrs(props => ({
   ${COMMON}
 `;
 
-Slider.defaultProps = {
+const Slider = React.forwardRef((props, ref) => (
+  <StyledSlider ref={ref} {...props} />
+));
+
+StyledSlider.defaultProps = {
   theme,
   m: 0,
   color: 'primary',
 };
+
+// Slider.defaultProps = {
+//   theme,
+//   m: 0,
+//   color: 'primary',
+// };
 
 Slider.propTypes = {
   ...COMMON.propTypes,

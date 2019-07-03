@@ -1,39 +1,16 @@
 import React from 'react';
-import styled from 'styled-components';
-
+import PropTypes from 'prop-types';
 import Box from '../Box';
 
-import {
-  // flexbox
-  flex,
-  flexBasis,
-  flexDirection,
-  flexWrap,
-  order,
-  alignSelf,
-  alignItems,
-  alignContent,
-  justifySelf,
-  justifyItems,
-  justifyContent,
-} from 'styled-system';
+const Flex = React.forwardRef((props, ref) => <Box ref={ref} {...props} />);
 
-const Flex = styled(Box)`
-  & {
-    display: flex;
-  }
-  ${flex}
-  ${flexBasis}
-  ${flexDirection}
-  ${flexWrap}
-  ${order}
-  ${alignSelf}
-  ${alignItems}
-  ${alignContent}
-  ${justifySelf}
-  ${justifyItems}
-  ${justifyContent}
-`;
+Flex.defaultProps = {
+  display: 'flex',
+};
+
+Flex.propTypes = {
+  ...Box.propTypes,
+};
 
 Flex.displayName = 'Flex';
 

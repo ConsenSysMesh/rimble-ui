@@ -1,8 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { variant } from 'styled-system';
 
-import defaultTheme from '../theme';
+import theme from '../theme';
 import Box from '../Box';
 import Text from '../Text';
 import Link from '../Link';
@@ -20,18 +21,21 @@ const StyledFlash = styled(Box)`
   & {
     position: relative;
   }
+`;
 
-  ${Link} {
-    font-size: inherit;
+const StyledLink = styled(Link).attrs(props => ({
+  color: 'inherit',
+  fontSize: 'inherit',
+}))`
+  & {
     cursor: pointer;
+  }
+  &:hover {
     color: inherit;
-    &:hover {
-      color: inherit;
-    }
   }
 `;
 
-const Flash = ({ className, children, ...props }) => {
+const Flash = React.forwardRef(({ className, children, ...props }, ref) => {
   const status = props.variant;
   const id = newID('Flash');
   const contentID = `${id}Content`;
@@ -55,6 +59,7 @@ const Flash = ({ className, children, ...props }) => {
       role={ariaRoleType}
       aria-live="polite"
       aria-describedby={contentID}
+      ref={ref}
       {...props}
     >
       <Text color={'inherit'} display={'inherit'} id={contentID}>
@@ -62,10 +67,10 @@ const Flash = ({ className, children, ...props }) => {
       </Text>
     </StyledFlash>
   );
-};
+});
 
 Flash.defaultProps = {
-  theme: defaultTheme,
+  theme,
   variant: 'base',
   p: '3',
   border: '1',
@@ -73,6 +78,17 @@ Flash.defaultProps = {
   width: '100%',
 };
 
+Flash.propTypes = {
+  /**
+   * Sets the colors of the background, text and links
+   */
+  variant: PropTypes.oneOf(['base', 'success', 'warning', 'danger', 'info']),
+  ...Box.propTypes,
+};
+
 Flash.displayName = 'Flash';
+
+Flash.Link = StyledLink;
+Flash.Link.displayName = 'Flash.Link';
 
 export default Flash;

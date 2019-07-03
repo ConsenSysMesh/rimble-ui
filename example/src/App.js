@@ -1,4 +1,4 @@
-import React, { Component, } from 'react';
+import React, { Component } from 'react';
 
 import {
   Avatar,
@@ -8,6 +8,7 @@ import {
   Card,
   Checkbox,
   Field,
+  Flash,
   Flex,
   Heading,
   Icon,
@@ -49,12 +50,15 @@ const testComponents = props => (
       <Link>I'm a Link!</Link>
       <PublicAddress address="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2" />
       <EthAddress address="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2" />
-      <EthAddress truncate address="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2" />
+      <EthAddress
+        truncate
+        address="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2"
+      />
       <Input />
       <Icon name={'Info'} />
       <Icon name={'Info'} color="primary" />
       <Tooltip variant="dark" message="Your custom message">
-        <Text.span>hover me</Text.span>
+        <Text as="span">hover me</Text>
       </Tooltip>
       <Blockie
         opts={{
@@ -67,14 +71,19 @@ const testComponents = props => (
         }}
       />
       <Textarea rows={4} defaultValue="Type here…" />
-      <Text>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta quibusdam, assumenda officiis.</Text>
+      <Text>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
+        quibusdam, assumenda officiis.
+      </Text>
       <Avatar />
       <Avatar size="small" />
       <Avatar size="medium" />
       <Avatar size="large" />
 
       <Slider />
-      <Select items={['Wandering Thunder', 'Black Wildflower', 'Ancient Paper']} />
+      <Select
+        items={['Wandering Thunder', 'Black Wildflower', 'Ancient Paper']}
+      />
       <Progress value={0.5} />
       <Heading.h1>Quick zephyrs blow, vexing daft Jim.</Heading.h1>
 
@@ -136,6 +145,24 @@ const testComponents = props => (
       <Checkbox disabled checked label="Checkbox checked disabled" readOnly />
       <Box />
       <Card />
+      <Card
+        mx="auto"
+        px="4"
+        color="primary"
+      >
+        <Heading mb={3}>
+          Heading
+        </Heading>
+        <Text mb={4}>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam autem ratione doloribus quidem neque provident eius error dignissimos delectus architecto nemo quos alias sunt voluptate impedit, facilis sequi tempore. Amet!
+        </Text>
+        <Button mr={3}>
+          Accept
+        </Button>
+        <Button.Outline>
+          Cancel
+        </Button.Outline>
+      </Card>
       <Flex />
       <Table />
       <Image src="https://source.unsplash.com/random/1280x720" />
@@ -174,6 +201,21 @@ const testComponents = props => (
       <Pill selected={true} color={'blue'} mr={'2'} mb={'3'}>
         {'Pending'}
       </Pill>
+      <Flash>
+        I am a Flash with a <Flash.Link>Link</Flash.Link>
+      </Flash>
+      <Flash variant={'info'}>
+        I am a INFO Flash with a <Flash.Link>Link</Flash.Link>
+      </Flash>
+      <Flash variant={'warning'}>
+        I am a WARNING Flash with a <Flash.Link>Link</Flash.Link>
+      </Flash>
+      <Flash variant={'success'}>
+        I am a SUCCESS Flash with a <Flash.Link>Link</Flash.Link>
+      </Flash>
+      <Flash variant={'danger'}>
+        I am a DANGER Flash with a <Flash.Link>Link</Flash.Link>
+      </Flash>
     </Box>
   </React.Fragment>
 );
@@ -183,13 +225,13 @@ export default class App extends Component {
     return (
       <React.Fragment>
         <Flex>
+          <Box>{testComponents()}</Box>
           <Box>
-            {testComponents()}
-          </Box>
-          <Box>
+            <Button theme={myTheme}>hello</Button>
             <ThemeProvider theme={myTheme}>
-              {testComponents()}
+              <Button>hello</Button>
             </ThemeProvider>
+            <ThemeProvider theme={myTheme}>{testComponents()}</ThemeProvider>
           </Box>
         </Flex>
       </React.Fragment>

@@ -1,6 +1,7 @@
 import Tooltip from './';
 import ThemeProvider from '../ThemeProvider';
 import theme from '../theme';
+import Button from '../Button';
 
 describe('Tooltip component sanity', () => {
   it('has name', () => {
@@ -8,14 +9,20 @@ describe('Tooltip component sanity', () => {
   });
 
   it('matches default snapshot', () => {
-    const component = render(<Tooltip />);
+    const component = mount(
+      <Tooltip>
+        <Button />
+      </Tooltip>
+    );
     expect(component).toMatchSnapshot();
   });
 
   it('matches themed snapshot', () => {
-    const component = render(
+    const component = mount(
       <ThemeProvider theme={theme}>
-        <Tooltip />
+        <Tooltip>
+          <Button />
+        </Tooltip>
       </ThemeProvider>
     );
     expect(component).toMatchSnapshot();
