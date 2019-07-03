@@ -5,7 +5,6 @@ import { COMMON, TYPOGRAPHY } from '../constants';
 import theme from '../theme';
 
 const defaultProps = {
-  theme,
   fontFamily: 'sansSerif',
   fontWeight: 3,
   lineHeight: 'title',
@@ -19,7 +18,14 @@ const StyledHeading = styled.div`
   ${TYPOGRAPHY}
 `;
 
-const Heading = props => <StyledHeading {...props} />;
+StyledHeading.defaultProps = {
+  theme,
+  ...defaultProps,
+};
+
+const Heading = React.forwardRef((props, ref) => (
+  <StyledHeading ref={ref} {...props} />
+));
 
 Heading.defaultProps = {
   ...defaultProps,

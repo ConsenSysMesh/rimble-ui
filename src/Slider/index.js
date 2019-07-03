@@ -70,13 +70,21 @@ const StyledSlider = styled('input').attrs(props => ({
   ${COMMON}
 `;
 
-const Slider = props => <StyledSlider {...props} />;
+const Slider = React.forwardRef((props, ref) => (
+  <StyledSlider ref={ref} {...props} />
+));
 
-Slider.defaultProps = {
+StyledSlider.defaultProps = {
   theme,
   m: 0,
   color: 'primary',
 };
+
+// Slider.defaultProps = {
+//   theme,
+//   m: 0,
+//   color: 'primary',
+// };
 
 Slider.propTypes = {
   ...COMMON.propTypes,

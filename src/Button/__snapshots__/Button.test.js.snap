@@ -13,7 +13,6 @@ exports[`Button Icon component sanity matches default snapshot 1`] = `
   min-width: 3rem;
   border: none;
   border-radius: 4px;
-  border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: inherit;
@@ -59,7 +58,14 @@ exports[`Button Icon component sanity matches default snapshot 1`] = `
   pointer-events: none;
 }
 
-.c0 > svg,
+.c0 > span.button-text {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c0 > div > svg,
 .c0 > span.button-text {
   position: relative;
   z-index: 1;
@@ -70,21 +76,21 @@ exports[`Button Icon component sanity matches default snapshot 1`] = `
   pointer-events: none;
 }
 
-.c0 > svg {
+.c0 > div > svg {
   display: block;
 }
 
-.c0 > svg:first-child {
+.c0 > div:first-child > svg {
   margin-left: -0.5rem;
   margin-right: .5rem;
 }
 
-.c0 > svg:last-child {
+.c0 > div:last-child > svg {
   margin-left: .5rem;
   margin-right: -0.5rem;
 }
 
-.c0 > svg:first-child:last-child {
+.c0 > div:first-child:last-child > svg {
   margin: 0;
 }
 
@@ -134,19 +140,22 @@ exports[`Button Icon component sanity matches default snapshot 1`] = `
   font-weight="3"
   height="3rem"
 >
-  <svg
+  <div
     class=""
-    display="block"
-    fill="currentcolor"
-    height="24px"
-    theme="[object Object]"
-    viewBox="0 0 24 24"
-    width="24px"
   >
-    <path
-      d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"
-    />
-  </svg>
+    <svg
+      class=""
+      display="block"
+      fill="currentcolor"
+      height="24px"
+      viewBox="0 0 24 24"
+      width="24px"
+    >
+      <path
+        d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"
+      />
+    </svg>
+  </div>
 </button>
 `;
 
@@ -162,7 +171,6 @@ exports[`Button Icon component sanity matches themed snapshot 1`] = `
   height: 3rem;
   min-width: 3rem;
   border: none;
-  border-radius: 4px;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
@@ -209,7 +217,14 @@ exports[`Button Icon component sanity matches themed snapshot 1`] = `
   pointer-events: none;
 }
 
-.c1 > svg,
+.c1 > span.button-text {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c1 > div > svg,
 .c1 > span.button-text {
   position: relative;
   z-index: 1;
@@ -220,21 +235,21 @@ exports[`Button Icon component sanity matches themed snapshot 1`] = `
   pointer-events: none;
 }
 
-.c1 > svg {
+.c1 > div > svg {
   display: block;
 }
 
-.c1 > svg:first-child {
+.c1 > div:first-child > svg {
   margin-left: -0.5rem;
   margin-right: .5rem;
 }
 
-.c1 > svg:last-child {
+.c1 > div:last-child > svg {
   margin-left: .5rem;
   margin-right: -0.5rem;
 }
 
-.c1 > svg:first-child:last-child {
+.c1 > div:first-child:last-child > svg {
   margin: 0;
 }
 
@@ -293,19 +308,22 @@ exports[`Button Icon component sanity matches themed snapshot 1`] = `
     font-weight="3"
     height="3rem"
   >
-    <svg
+    <div
       class=""
-      display="block"
-      fill="currentcolor"
-      height="24px"
-      theme="[object Object]"
-      viewBox="0 0 24 24"
-      width="24px"
     >
-      <path
-        d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"
-      />
-    </svg>
+      <svg
+        class=""
+        display="block"
+        fill="currentcolor"
+        height="24px"
+        viewBox="0 0 24 24"
+        width="24px"
+      >
+        <path
+          d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"
+        />
+      </svg>
+    </div>
   </button>
 </div>
 `;
@@ -322,7 +340,6 @@ exports[`Button Icon only component sanity matches default snapshot 1`] = `
   height: 3rem;
   min-width: 3rem;
   border: none;
-  border-radius: 4px;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
@@ -370,7 +387,14 @@ exports[`Button Icon only component sanity matches default snapshot 1`] = `
   pointer-events: none;
 }
 
-.c0 > svg,
+.c0 > span.button-text {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c0 > div > svg,
 .c0 > span.button-text {
   position: relative;
   z-index: 1;
@@ -381,21 +405,21 @@ exports[`Button Icon only component sanity matches default snapshot 1`] = `
   pointer-events: none;
 }
 
-.c0 > svg {
+.c0 > div > svg {
   display: block;
 }
 
-.c0 > svg:first-child {
+.c0 > div:first-child > svg {
   margin-left: -0.5rem;
   margin-right: .5rem;
 }
 
-.c0 > svg:last-child {
+.c0 > div:last-child > svg {
   margin-left: .5rem;
   margin-right: -0.5rem;
 }
 
-.c0 > svg:first-child:last-child {
+.c0 > div:first-child:last-child > svg {
   margin: 0;
 }
 
@@ -445,19 +469,22 @@ exports[`Button Icon only component sanity matches default snapshot 1`] = `
   font-weight="3"
   height="3rem"
 >
-  <svg
+  <div
     class=""
-    display="block"
-    fill="currentcolor"
-    height="24px"
-    theme="[object Object]"
-    viewBox="0 0 24 24"
-    width="24px"
   >
-    <path
-      d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
-    />
-  </svg>
+    <svg
+      class=""
+      display="block"
+      fill="currentcolor"
+      height="24px"
+      viewBox="0 0 24 24"
+      width="24px"
+    >
+      <path
+        d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+      />
+    </svg>
+  </div>
 </button>
 `;
 
@@ -474,7 +501,6 @@ exports[`Button Icon with position prop component sanity matches default snapsho
   min-width: 3rem;
   border: none;
   border-radius: 4px;
-  border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: inherit;
@@ -520,7 +546,14 @@ exports[`Button Icon with position prop component sanity matches default snapsho
   pointer-events: none;
 }
 
-.c0 > svg,
+.c0 > span.button-text {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c0 > div > svg,
 .c0 > span.button-text {
   position: relative;
   z-index: 1;
@@ -531,21 +564,21 @@ exports[`Button Icon with position prop component sanity matches default snapsho
   pointer-events: none;
 }
 
-.c0 > svg {
+.c0 > div > svg {
   display: block;
 }
 
-.c0 > svg:first-child {
+.c0 > div:first-child > svg {
   margin-left: -0.5rem;
   margin-right: .5rem;
 }
 
-.c0 > svg:last-child {
+.c0 > div:last-child > svg {
   margin-left: .5rem;
   margin-right: -0.5rem;
 }
 
-.c0 > svg:first-child:last-child {
+.c0 > div:first-child:last-child > svg {
   margin: 0;
 }
 
@@ -595,19 +628,22 @@ exports[`Button Icon with position prop component sanity matches default snapsho
   font-weight="3"
   height="3rem"
 >
-  <svg
+  <div
     class=""
-    display="block"
-    fill="currentcolor"
-    height="24px"
-    theme="[object Object]"
-    viewBox="0 0 24 24"
-    width="24px"
   >
-    <path
-      d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"
-    />
-  </svg>
+    <svg
+      class=""
+      display="block"
+      fill="currentcolor"
+      height="24px"
+      viewBox="0 0 24 24"
+      width="24px"
+    >
+      <path
+        d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"
+      />
+    </svg>
+  </div>
 </button>
 `;
 
@@ -623,7 +659,6 @@ exports[`Button component sanity matches default snapshot 1`] = `
   height: 3rem;
   min-width: 3rem;
   border: none;
-  border-radius: 4px;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
@@ -670,7 +705,14 @@ exports[`Button component sanity matches default snapshot 1`] = `
   pointer-events: none;
 }
 
-.c0 > svg,
+.c0 > span.button-text {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c0 > div > svg,
 .c0 > span.button-text {
   position: relative;
   z-index: 1;
@@ -681,21 +723,21 @@ exports[`Button component sanity matches default snapshot 1`] = `
   pointer-events: none;
 }
 
-.c0 > svg {
+.c0 > div > svg {
   display: block;
 }
 
-.c0 > svg:first-child {
+.c0 > div:first-child > svg {
   margin-left: -0.5rem;
   margin-right: .5rem;
 }
 
-.c0 > svg:last-child {
+.c0 > div:last-child > svg {
   margin-left: .5rem;
   margin-right: -0.5rem;
 }
 
-.c0 > svg:first-child:last-child {
+.c0 > div:first-child:last-child > svg {
   margin: 0;
 }
 
@@ -764,7 +806,6 @@ exports[`Button component sanity matches themed snapshot 1`] = `
   min-width: 3rem;
   border: none;
   border-radius: 4px;
-  border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: inherit;
@@ -810,7 +851,14 @@ exports[`Button component sanity matches themed snapshot 1`] = `
   pointer-events: none;
 }
 
-.c1 > svg,
+.c1 > span.button-text {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c1 > div > svg,
 .c1 > span.button-text {
   position: relative;
   z-index: 1;
@@ -821,21 +869,21 @@ exports[`Button component sanity matches themed snapshot 1`] = `
   pointer-events: none;
 }
 
-.c1 > svg {
+.c1 > div > svg {
   display: block;
 }
 
-.c1 > svg:first-child {
+.c1 > div:first-child > svg {
   margin-left: -0.5rem;
   margin-right: .5rem;
 }
 
-.c1 > svg:last-child {
+.c1 > div:last-child > svg {
   margin-left: .5rem;
   margin-right: -0.5rem;
 }
 
-.c1 > svg:first-child:last-child {
+.c1 > div:first-child:last-child > svg {
   margin: 0;
 }
 
@@ -914,7 +962,6 @@ exports[`Button disabled component sanity matches default snapshot 1`] = `
   min-width: 3rem;
   border: none;
   border-radius: 4px;
-  border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: inherit;
@@ -960,7 +1007,14 @@ exports[`Button disabled component sanity matches default snapshot 1`] = `
   pointer-events: none;
 }
 
-.c0 > svg,
+.c0 > span.button-text {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c0 > div > svg,
 .c0 > span.button-text {
   position: relative;
   z-index: 1;
@@ -971,21 +1025,21 @@ exports[`Button disabled component sanity matches default snapshot 1`] = `
   pointer-events: none;
 }
 
-.c0 > svg {
+.c0 > div > svg {
   display: block;
 }
 
-.c0 > svg:first-child {
+.c0 > div:first-child > svg {
   margin-left: -0.5rem;
   margin-right: .5rem;
 }
 
-.c0 > svg:last-child {
+.c0 > div:last-child > svg {
   margin-left: .5rem;
   margin-right: -0.5rem;
 }
 
-.c0 > svg:first-child:last-child {
+.c0 > div:first-child:last-child > svg {
   margin: 0;
 }
 
@@ -1055,7 +1109,6 @@ exports[`Button disabled component sanity matches themed snapshot 1`] = `
   min-width: 3rem;
   border: none;
   border-radius: 4px;
-  border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: inherit;
@@ -1101,7 +1154,14 @@ exports[`Button disabled component sanity matches themed snapshot 1`] = `
   pointer-events: none;
 }
 
-.c1 > svg,
+.c1 > span.button-text {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c1 > div > svg,
 .c1 > span.button-text {
   position: relative;
   z-index: 1;
@@ -1112,21 +1172,21 @@ exports[`Button disabled component sanity matches themed snapshot 1`] = `
   pointer-events: none;
 }
 
-.c1 > svg {
+.c1 > div > svg {
   display: block;
 }
 
-.c1 > svg:first-child {
+.c1 > div:first-child > svg {
   margin-left: -0.5rem;
   margin-right: .5rem;
 }
 
-.c1 > svg:last-child {
+.c1 > div:last-child > svg {
   margin-left: .5rem;
   margin-right: -0.5rem;
 }
 
-.c1 > svg:first-child:last-child {
+.c1 > div:first-child:last-child > svg {
   margin: 0;
 }
 
@@ -1203,11 +1263,9 @@ exports[`Button size variant component sanity matches default snapshot 1`] = `
   padding-left: 32px;
   padding-right: 32px;
   width: small;
-  height: small;
   height: 3rem;
   min-width: 3rem;
   border: none;
-  border-radius: 4px;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
@@ -1258,7 +1316,14 @@ exports[`Button size variant component sanity matches default snapshot 1`] = `
   pointer-events: none;
 }
 
-.c0 > svg,
+.c0 > span.button-text {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c0 > div > svg,
 .c0 > span.button-text {
   position: relative;
   z-index: 1;
@@ -1269,21 +1334,21 @@ exports[`Button size variant component sanity matches default snapshot 1`] = `
   pointer-events: none;
 }
 
-.c0 > svg {
+.c0 > div > svg {
   display: block;
 }
 
-.c0 > svg:first-child {
+.c0 > div:first-child > svg {
   margin-left: -0.5rem;
   margin-right: .5rem;
 }
 
-.c0 > svg:last-child {
+.c0 > div:last-child > svg {
   margin-left: .5rem;
   margin-right: -0.5rem;
 }
 
-.c0 > svg:first-child:last-child {
+.c0 > div:first-child:last-child > svg {
   margin: 0;
 }
 
@@ -1349,11 +1414,9 @@ exports[`Button size variant component sanity matches default snapshot 2`] = `
   padding-left: 32px;
   padding-right: 32px;
   width: large;
-  height: large;
   height: 3rem;
   min-width: 3rem;
   border: none;
-  border-radius: 4px;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
@@ -1403,7 +1466,14 @@ exports[`Button size variant component sanity matches default snapshot 2`] = `
   pointer-events: none;
 }
 
-.c0 > svg,
+.c0 > span.button-text {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c0 > div > svg,
 .c0 > span.button-text {
   position: relative;
   z-index: 1;
@@ -1414,21 +1484,21 @@ exports[`Button size variant component sanity matches default snapshot 2`] = `
   pointer-events: none;
 }
 
-.c0 > svg {
+.c0 > div > svg {
   display: block;
 }
 
-.c0 > svg:first-child {
+.c0 > div:first-child > svg {
   margin-left: -0.5rem;
   margin-right: .5rem;
 }
 
-.c0 > svg:last-child {
+.c0 > div:last-child > svg {
   margin-left: .5rem;
   margin-right: -0.5rem;
 }
 
-.c0 > svg:first-child:last-child {
+.c0 > div:first-child:last-child > svg {
   margin: 0;
 }
 
@@ -1494,11 +1564,9 @@ exports[`Button size variant component sanity matches themed snapshot 1`] = `
   padding-left: 32px;
   padding-right: 32px;
   width: small;
-  height: small;
   height: 3rem;
   min-width: 3rem;
   border: none;
-  border-radius: 4px;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
@@ -1549,7 +1617,14 @@ exports[`Button size variant component sanity matches themed snapshot 1`] = `
   pointer-events: none;
 }
 
-.c1 > svg,
+.c1 > span.button-text {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c1 > div > svg,
 .c1 > span.button-text {
   position: relative;
   z-index: 1;
@@ -1560,21 +1635,21 @@ exports[`Button size variant component sanity matches themed snapshot 1`] = `
   pointer-events: none;
 }
 
-.c1 > svg {
+.c1 > div > svg {
   display: block;
 }
 
-.c1 > svg:first-child {
+.c1 > div:first-child > svg {
   margin-left: -0.5rem;
   margin-right: .5rem;
 }
 
-.c1 > svg:last-child {
+.c1 > div:last-child > svg {
   margin-left: .5rem;
   margin-right: -0.5rem;
 }
 
-.c1 > svg:first-child:last-child {
+.c1 > div:first-child:last-child > svg {
   margin: 0;
 }
 
@@ -1650,11 +1725,9 @@ exports[`Button size variant component sanity matches themed snapshot 2`] = `
   padding-left: 32px;
   padding-right: 32px;
   width: large;
-  height: large;
   height: 3rem;
   min-width: 3rem;
   border: none;
-  border-radius: 4px;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
@@ -1704,7 +1777,14 @@ exports[`Button size variant component sanity matches themed snapshot 2`] = `
   pointer-events: none;
 }
 
-.c1 > svg,
+.c1 > span.button-text {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c1 > div > svg,
 .c1 > span.button-text {
   position: relative;
   z-index: 1;
@@ -1715,21 +1795,21 @@ exports[`Button size variant component sanity matches themed snapshot 2`] = `
   pointer-events: none;
 }
 
-.c1 > svg {
+.c1 > div > svg {
   display: block;
 }
 
-.c1 > svg:first-child {
+.c1 > div:first-child > svg {
   margin-left: -0.5rem;
   margin-right: .5rem;
 }
 
-.c1 > svg:last-child {
+.c1 > div:last-child > svg {
   margin-left: .5rem;
   margin-right: -0.5rem;
 }
 
-.c1 > svg:first-child:last-child {
+.c1 > div:first-child:last-child > svg {
   margin: 0;
 }
 
@@ -1809,8 +1889,6 @@ exports[`Button.Outline component sanity matches default snapshot 1`] = `
   border: 1px solid transparent;
   border-color: #CCC;
   border-radius: 4px;
-  border-color: #CCC;
-  border-radius: 4px;
   box-shadow: 0;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: inherit;
@@ -1856,7 +1934,14 @@ exports[`Button.Outline component sanity matches default snapshot 1`] = `
   pointer-events: none;
 }
 
-.c0 > svg,
+.c0 > span.button-text {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c0 > div > svg,
 .c0 > span.button-text {
   position: relative;
   z-index: 1;
@@ -1867,21 +1952,21 @@ exports[`Button.Outline component sanity matches default snapshot 1`] = `
   pointer-events: none;
 }
 
-.c0 > svg {
+.c0 > div > svg {
   display: block;
 }
 
-.c0 > svg:first-child {
+.c0 > div:first-child > svg {
   margin-left: -0.5rem;
   margin-right: .5rem;
 }
 
-.c0 > svg:last-child {
+.c0 > div:last-child > svg {
   margin-left: .5rem;
   margin-right: -0.5rem;
 }
 
-.c0 > svg:first-child:last-child {
+.c0 > div:first-child:last-child > svg {
   margin: 0;
 }
 
@@ -1976,8 +2061,6 @@ exports[`Button.Outline component sanity matches themed snapshot 1`] = `
   border: 1px solid transparent;
   border-color: #CCC;
   border-radius: 4px;
-  border-color: #CCC;
-  border-radius: 4px;
   box-shadow: 0;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: inherit;
@@ -2023,7 +2106,14 @@ exports[`Button.Outline component sanity matches themed snapshot 1`] = `
   pointer-events: none;
 }
 
-.c1 > svg,
+.c1 > span.button-text {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c1 > div > svg,
 .c1 > span.button-text {
   position: relative;
   z-index: 1;
@@ -2034,21 +2124,21 @@ exports[`Button.Outline component sanity matches themed snapshot 1`] = `
   pointer-events: none;
 }
 
-.c1 > svg {
+.c1 > div > svg {
   display: block;
 }
 
-.c1 > svg:first-child {
+.c1 > div:first-child > svg {
   margin-left: -0.5rem;
   margin-right: .5rem;
 }
 
-.c1 > svg:last-child {
+.c1 > div:last-child > svg {
   margin-left: .5rem;
   margin-right: -0.5rem;
 }
 
-.c1 > svg:first-child:last-child {
+.c1 > div:first-child:last-child > svg {
   margin: 0;
 }
 
@@ -2195,7 +2285,14 @@ exports[`Button.Text component sanity matches default snapshot 1`] = `
   pointer-events: none;
 }
 
-.c0 > svg,
+.c0 > span.button-text {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c0 > div > svg,
 .c0 > span.button-text {
   position: relative;
   z-index: 1;
@@ -2206,21 +2303,21 @@ exports[`Button.Text component sanity matches default snapshot 1`] = `
   pointer-events: none;
 }
 
-.c0 > svg {
+.c0 > div > svg {
   display: block;
 }
 
-.c0 > svg:first-child {
+.c0 > div:first-child > svg {
   margin-left: -0.5rem;
   margin-right: .5rem;
 }
 
-.c0 > svg:last-child {
+.c0 > div:last-child > svg {
   margin-left: .5rem;
   margin-right: -0.5rem;
 }
 
-.c0 > svg:first-child:last-child {
+.c0 > div:first-child:last-child > svg {
   margin: 0;
 }
 
@@ -2317,7 +2414,14 @@ exports[`Button.Text component sanity matches themed snapshot 1`] = `
   pointer-events: none;
 }
 
-.c1 > svg,
+.c1 > span.button-text {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c1 > div > svg,
 .c1 > span.button-text {
   position: relative;
   z-index: 1;
@@ -2328,21 +2432,21 @@ exports[`Button.Text component sanity matches themed snapshot 1`] = `
   pointer-events: none;
 }
 
-.c1 > svg {
+.c1 > div > svg {
   display: block;
 }
 
-.c1 > svg:first-child {
+.c1 > div:first-child > svg {
   margin-left: -0.5rem;
   margin-right: .5rem;
 }
 
-.c1 > svg:last-child {
+.c1 > div:last-child > svg {
   margin-left: .5rem;
   margin-right: -0.5rem;
 }
 
-.c1 > svg:first-child:last-child {
+.c1 > div:first-child:last-child > svg {
   margin: 0;
 }
 
@@ -2407,8 +2511,6 @@ exports[`Link Button Outline component sanity matches default snapshot 1`] = `
   border: 1px solid transparent;
   border-color: #CCC;
   border-radius: 4px;
-  border-color: #CCC;
-  border-radius: 4px;
   box-shadow: 0;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: inherit;
@@ -2454,7 +2556,14 @@ exports[`Link Button Outline component sanity matches default snapshot 1`] = `
   pointer-events: none;
 }
 
-.c0 > svg,
+.c0 > span.button-text {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c0 > div > svg,
 .c0 > span.button-text {
   position: relative;
   z-index: 1;
@@ -2465,21 +2574,21 @@ exports[`Link Button Outline component sanity matches default snapshot 1`] = `
   pointer-events: none;
 }
 
-.c0 > svg {
+.c0 > div > svg {
   display: block;
 }
 
-.c0 > svg:first-child {
+.c0 > div:first-child > svg {
   margin-left: -0.5rem;
   margin-right: .5rem;
 }
 
-.c0 > svg:last-child {
+.c0 > div:last-child > svg {
   margin-left: .5rem;
   margin-right: -0.5rem;
 }
 
-.c0 > svg:first-child:last-child {
+.c0 > div:first-child:last-child > svg {
   margin: 0;
 }
 
@@ -2578,7 +2687,6 @@ exports[`Link Button component sanity matches default snapshot 1`] = `
   min-width: 3rem;
   border: none;
   border-radius: 4px;
-  border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: inherit;
@@ -2624,7 +2732,14 @@ exports[`Link Button component sanity matches default snapshot 1`] = `
   pointer-events: none;
 }
 
-.c0 > svg,
+.c0 > span.button-text {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c0 > div > svg,
 .c0 > span.button-text {
   position: relative;
   z-index: 1;
@@ -2635,21 +2750,21 @@ exports[`Link Button component sanity matches default snapshot 1`] = `
   pointer-events: none;
 }
 
-.c0 > svg {
+.c0 > div > svg {
   display: block;
 }
 
-.c0 > svg:first-child {
+.c0 > div:first-child > svg {
   margin-left: -0.5rem;
   margin-right: .5rem;
 }
 
-.c0 > svg:last-child {
+.c0 > div:last-child > svg {
   margin-left: .5rem;
   margin-right: -0.5rem;
 }
 
-.c0 > svg:first-child:last-child {
+.c0 > div:first-child:last-child > svg {
   margin: 0;
 }
 
@@ -2711,6 +2826,17 @@ exports[`Link Button component sanity matches default snapshot 1`] = `
 `;
 
 exports[`Loading Button component sanity matches default snapshot 1`] = `
+.c2 {
+  color: #fff;
+  background-color: transparent;
+  width: 1rem;
+  height: 1rem;
+}
+
+.c2 {
+  box-sizing: border-box;
+}
+
 .c0 {
   color: #fff;
   background-color: #999;
@@ -2722,7 +2848,6 @@ exports[`Loading Button component sanity matches default snapshot 1`] = `
   height: 3rem;
   min-width: 3rem;
   border: none;
-  border-radius: 4px;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
@@ -2769,7 +2894,14 @@ exports[`Loading Button component sanity matches default snapshot 1`] = `
   pointer-events: none;
 }
 
-.c0 > svg,
+.c0 > span.button-text {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c0 > div > svg,
 .c0 > span.button-text {
   position: relative;
   z-index: 1;
@@ -2780,21 +2912,21 @@ exports[`Loading Button component sanity matches default snapshot 1`] = `
   pointer-events: none;
 }
 
-.c0 > svg {
+.c0 > div > svg {
   display: block;
 }
 
-.c0 > svg:first-child {
+.c0 > div:first-child > svg {
   margin-left: -0.5rem;
   margin-right: .5rem;
 }
 
-.c0 > svg:last-child {
+.c0 > div:last-child > svg {
   margin-left: .5rem;
   margin-right: -0.5rem;
 }
 
-.c0 > svg:first-child:last-child {
+.c0 > div:first-child:last-child > svg {
   margin: 0;
 }
 
@@ -2834,17 +2966,6 @@ exports[`Loading Button component sanity matches default snapshot 1`] = `
   width: 100%;
   background: var(--main-color);
   pointer-events: none;
-}
-
-.c2 {
-  color: #fff;
-  background-color: transparent;
-  width: 1rem;
-  height: 1rem;
-}
-
-.c2 {
-  box-sizing: border-box;
 }
 
 .c1 {
@@ -2936,7 +3057,6 @@ exports[`Loading Button component sanity matches default snapshot 2`] = `
   min-width: 3rem;
   border: none;
   border-radius: 4px;
-  border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: inherit;
@@ -2983,7 +3103,14 @@ exports[`Loading Button component sanity matches default snapshot 2`] = `
   pointer-events: none;
 }
 
-.c0 > svg,
+.c0 > span.button-text {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c0 > div > svg,
 .c0 > span.button-text {
   position: relative;
   z-index: 1;
@@ -2994,21 +3121,21 @@ exports[`Loading Button component sanity matches default snapshot 2`] = `
   pointer-events: none;
 }
 
-.c0 > svg {
+.c0 > div > svg {
   display: block;
 }
 
-.c0 > svg:first-child {
+.c0 > div:first-child > svg {
   margin-left: -0.5rem;
   margin-right: .5rem;
 }
 
-.c0 > svg:last-child {
+.c0 > div:last-child > svg {
   margin-left: .5rem;
   margin-right: -0.5rem;
 }
 
-.c0 > svg:first-child:last-child {
+.c0 > div:first-child:last-child > svg {
   margin: 0;
 }
 
@@ -3058,18 +3185,21 @@ exports[`Loading Button component sanity matches default snapshot 2`] = `
   font-weight="3"
   height="3rem"
 >
-  <svg
+  <div
     class=""
-    display="block"
-    fill="currentcolor"
-    height="24px"
-    theme="[object Object]"
-    viewBox="0 0 24 24"
-    width="24px"
   >
-    <path
-      d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
-    />
-  </svg>
+    <svg
+      class=""
+      display="block"
+      fill="currentcolor"
+      height="24px"
+      viewBox="0 0 24 24"
+      width="24px"
+    >
+      <path
+        d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+      />
+    </svg>
+  </div>
 </button>
 `;

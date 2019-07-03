@@ -19,7 +19,7 @@ import {
   Flex,
   Pill,
   Select,
-  
+
   Link,
 } from 'rimble-ui';
 
@@ -33,15 +33,13 @@ storiesOf('Components/Form/Radio buttons', module)
           <Text>
             Different ways to use the <code>{'Radio'}</code> component
           </Text>
-          <br />
-          <br />
         </Box>
         <CodeBlock>
-          <Field label="Choose transaction speed">
-            <Radio label="Quick" my={2} required="false" />
-            <Radio checked label="Standard" my={2} required="false" />
-            <Radio disabled label="Slower" my={2} required="false" />
-            <Radio disabled checked label="Custom" my={2} required="false" />
+          <Field label="Choose transaction speed: ">
+            <Radio name="speed" value="3" id="xa" label="Quick" py={1} />
+            <Radio name="speed" value="2" id="xb" label="Standard" py={1} />
+            <Radio name="speed" value="1" id="xc" label="Slower" py={1} />
+            <Radio name="speed" value="0" id="xd" label="Custom" disabled py={1} />
           </Field>
         </CodeBlock>
       </Box>

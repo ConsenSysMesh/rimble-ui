@@ -19,6 +19,7 @@ import {
   Link,
   Card,
   Pill,
+  Tooltip
 } from 'rimble-ui';
 
 storiesOf('Components/ToastMessage', module)
@@ -43,23 +44,16 @@ storiesOf('Components/ToastMessage', module)
         <Box>
           <Flex>
             <Box width={'50%'} mr={4}>
-              <ToastMessage message={'Transaction started'} my={3} />
-              <CodeBlock textOnly>
-                {`<ToastMessage message={"Transaction started"} />`}
+              <CodeBlock>
+                <ToastMessage message={"Transaction started"} />
               </CodeBlock>
             </Box>
             <Box width={'50%'} mr={4}>
-              <ToastMessage
-                message={'0xAc0...e5A connected'}
-                colorTheme={'dark'}
-                my={3}
-              />
-              <CodeBlock textOnly>
-                {`<ToastMessage
-  message={'0xAc0...e5A connected'}
-  colorTheme={'dark'}
-  my={3}
-/>`}
+              <CodeBlock>
+                <ToastMessage
+                    message={'0xAc0...e5A connected'}
+                    colorTheme={'dark'}
+                  />
               </CodeBlock>
             </Box>
           </Flex>
@@ -205,47 +199,31 @@ storiesOf('Components/ToastMessage', module)
           </Box>
           <Box width={'50%'} mr={4}>
             <Heading.h5>Processing</Heading.h5>
-            <ToastMessage.Processing
-              my={3}
-              message={'Processing 0.00018 ETH payment'}
-            />
-            <CodeBlock textOnly>
-              {`<ToastMessage.Processing
-  my={3}
-  message={'Processing 0.00018 ETH payment'}
-/>`}
+            <CodeBlock>
+              <ToastMessage.Processing
+                my={3}
+                message={'Processing 0.00018 ETH payment'}
+              />
             </CodeBlock>
-            <br />
+
             <Heading.h5>Success</Heading.h5>
-            <ToastMessage.Success
-              my={3}
-              message={'ETH sent'}
-              secondaryMessage={'You have 1.03 Ether (ETH) remaining'}
-            />
-            <CodeBlock textOnly>
-              {`<ToastMessage.Success
-  my={3}
-  message={'ETH sent'}
-  secondaryMessage={'You have 1.03 Ether (ETH) remaining'}
-/>`}
+            <CodeBlock>
+              <ToastMessage.Success
+                my={3}
+                message={'ETH sent'}
+                secondaryMessage={'You have 1.03 Ether (ETH) remaining'}
+              />
             </CodeBlock>
-            <br />
+
             <Heading.h5>Failure</Heading.h5>
-            <ToastMessage.Failure
-              my={3}
-              message={'Payment failed'}
-              secondaryMessage={"You don't have enough Ether (ETH)"}
-              actionText={'Buy ETH'}
-              actionHref={'#!'}
-            />
-            <CodeBlock textOnly>
-              {`<ToastMessage.Failure
-  my={3}
-  message={'Payment failed'}
-  secondaryMessage={"You don't have enough Ether (ETH)"}
-  actionText={'Buy ETH'}
-  actionHref={'#!'}
-/>`}
+            <CodeBlock>
+              <ToastMessage.Failure
+                my={3}
+                message={'Payment failed'}
+                secondaryMessage={"You don't have enough Ether (ETH)"}
+                actionText={'Buy ETH'}
+                actionHref={'#!'}
+              />
             </CodeBlock>
           </Box>
         </Box>

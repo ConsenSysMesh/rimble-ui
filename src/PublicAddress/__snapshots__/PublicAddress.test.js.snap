@@ -3,10 +3,10 @@
 exports[`PublicAddress component sanity matches default snapshot 1`] = `
 .c0 {
   margin-bottom: 16px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -42,11 +42,9 @@ exports[`PublicAddress component sanity matches default snapshot 1`] = `
   padding-left: 32px;
   padding-right: 32px;
   width: small;
-  height: small;
   height: 3rem;
   min-width: 3rem;
   border: none;
-  border-radius: 4px;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
@@ -97,7 +95,14 @@ exports[`PublicAddress component sanity matches default snapshot 1`] = `
   pointer-events: none;
 }
 
-.c7 > svg,
+.c7 > span.button-text {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c7 > div > svg,
 .c7 > span.button-text {
   position: relative;
   z-index: 1;
@@ -108,21 +113,21 @@ exports[`PublicAddress component sanity matches default snapshot 1`] = `
   pointer-events: none;
 }
 
-.c7 > svg {
+.c7 > div > svg {
   display: block;
 }
 
-.c7 > svg:first-child {
+.c7 > div:first-child > svg {
   margin-left: -0.5rem;
   margin-right: .5rem;
 }
 
-.c7 > svg:last-child {
+.c7 > div:last-child > svg {
   margin-left: .5rem;
   margin-right: -0.5rem;
 }
 
-.c7 > svg:first-child:last-child {
+.c7 > div:first-child:last-child > svg {
   margin: 0;
 }
 
@@ -180,8 +185,6 @@ exports[`PublicAddress component sanity matches default snapshot 1`] = `
   padding: 16px;
   height: 3rem;
   border: 1px solid transparent;
-  border-color: #CCC;
-  border-radius: 4px;
   border-color: #CCC;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
@@ -261,7 +264,7 @@ exports[`PublicAddress component sanity matches default snapshot 1`] = `
 
 <label
   class="c0"
-  display="flex"
+  display="inline-flex"
 >
   <div
     class="c1 c2"
@@ -305,10 +308,10 @@ exports[`PublicAddress component sanity matches default snapshot 1`] = `
 exports[`PublicAddress component sanity matches themed snapshot 1`] = `
 .c1 {
   margin-bottom: 16px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -344,11 +347,9 @@ exports[`PublicAddress component sanity matches themed snapshot 1`] = `
   padding-left: 32px;
   padding-right: 32px;
   width: small;
-  height: small;
   height: 3rem;
   min-width: 3rem;
   border: none;
-  border-radius: 4px;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
@@ -399,7 +400,14 @@ exports[`PublicAddress component sanity matches themed snapshot 1`] = `
   pointer-events: none;
 }
 
-.c8 > svg,
+.c8 > span.button-text {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c8 > div > svg,
 .c8 > span.button-text {
   position: relative;
   z-index: 1;
@@ -410,21 +418,21 @@ exports[`PublicAddress component sanity matches themed snapshot 1`] = `
   pointer-events: none;
 }
 
-.c8 > svg {
+.c8 > div > svg {
   display: block;
 }
 
-.c8 > svg:first-child {
+.c8 > div:first-child > svg {
   margin-left: -0.5rem;
   margin-right: .5rem;
 }
 
-.c8 > svg:last-child {
+.c8 > div:last-child > svg {
   margin-left: .5rem;
   margin-right: -0.5rem;
 }
 
-.c8 > svg:first-child:last-child {
+.c8 > div:first-child:last-child > svg {
   margin: 0;
 }
 
@@ -482,8 +490,6 @@ exports[`PublicAddress component sanity matches themed snapshot 1`] = `
   padding: 16px;
   height: 3rem;
   border: 1px solid transparent;
-  border-color: #CCC;
-  border-radius: 4px;
   border-color: #CCC;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
@@ -572,7 +578,7 @@ exports[`PublicAddress component sanity matches themed snapshot 1`] = `
 >
   <label
     class="c1"
-    display="flex"
+    display="inline-flex"
   >
     <div
       class="c2 c3"

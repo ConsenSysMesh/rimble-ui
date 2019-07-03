@@ -58,7 +58,7 @@ const testComponents = props => (
       <Icon name={'Info'} />
       <Icon name={'Info'} color="primary" />
       <Tooltip variant="dark" message="Your custom message">
-        <Text.span>hover me</Text.span>
+        <Text as="span">hover me</Text>
       </Tooltip>
       <Blockie
         opts={{
@@ -145,6 +145,24 @@ const testComponents = props => (
       <Checkbox disabled checked label="Checkbox checked disabled" readOnly />
       <Box />
       <Card />
+      <Card
+        mx="auto"
+        px="4"
+        color="primary"
+      >
+        <Heading mb={3}>
+          Heading
+        </Heading>
+        <Text mb={4}>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam autem ratione doloribus quidem neque provident eius error dignissimos delectus architecto nemo quos alias sunt voluptate impedit, facilis sequi tempore. Amet!
+        </Text>
+        <Button mr={3}>
+          Accept
+        </Button>
+        <Button.Outline>
+          Cancel
+        </Button.Outline>
+      </Card>
       <Flex />
       <Table />
       <Image src="https://source.unsplash.com/random/1280x720" />
@@ -209,6 +227,10 @@ export default class App extends Component {
         <Flex>
           <Box>{testComponents()}</Box>
           <Box>
+            <Button theme={myTheme}>hello</Button>
+            <ThemeProvider theme={myTheme}>
+              <Button>hello</Button>
+            </ThemeProvider>
             <ThemeProvider theme={myTheme}>{testComponents()}</ThemeProvider>
           </Box>
         </Flex>

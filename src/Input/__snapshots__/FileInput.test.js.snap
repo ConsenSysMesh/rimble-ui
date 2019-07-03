@@ -13,7 +13,6 @@ exports[`File Input component sanity matches default snapshot 1`] = `
   min-width: 3rem;
   border: none;
   border-radius: 4px;
-  border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: inherit;
@@ -59,7 +58,14 @@ exports[`File Input component sanity matches default snapshot 1`] = `
   pointer-events: none;
 }
 
-.c2 > svg,
+.c2 > span.button-text {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c2 > div > svg,
 .c2 > span.button-text {
   position: relative;
   z-index: 1;
@@ -70,21 +76,21 @@ exports[`File Input component sanity matches default snapshot 1`] = `
   pointer-events: none;
 }
 
-.c2 > svg {
+.c2 > div > svg {
   display: block;
 }
 
-.c2 > svg:first-child {
+.c2 > div:first-child > svg {
   margin-left: -0.5rem;
   margin-right: .5rem;
 }
 
-.c2 > svg:last-child {
+.c2 > div:last-child > svg {
   margin-left: .5rem;
   margin-right: -0.5rem;
 }
 
-.c2 > svg:first-child:last-child {
+.c2 > div:first-child:last-child > svg {
   margin: 0;
 }
 
@@ -156,19 +162,22 @@ exports[`File Input component sanity matches default snapshot 1`] = `
     font-weight="3"
     height="3rem"
   >
-    <svg
+    <div
       class=""
-      display="block"
-      fill="currentcolor"
-      height="24px"
-      theme="[object Object]"
-      viewBox="0 0 24 24"
-      width="24px"
     >
-      <path
-        d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"
-      />
-    </svg>
+      <svg
+        class=""
+        display="block"
+        fill="currentcolor"
+        height="24px"
+        viewBox="0 0 24 24"
+        width="24px"
+      >
+        <path
+          d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"
+        />
+      </svg>
+    </div>
     <span
       class="button-text"
     >
@@ -190,7 +199,6 @@ exports[`File Input component sanity matches themed snapshot 1`] = `
   height: 3rem;
   min-width: 3rem;
   border: none;
-  border-radius: 4px;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
@@ -237,7 +245,14 @@ exports[`File Input component sanity matches themed snapshot 1`] = `
   pointer-events: none;
 }
 
-.c3 > svg,
+.c3 > span.button-text {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c3 > div > svg,
 .c3 > span.button-text {
   position: relative;
   z-index: 1;
@@ -248,21 +263,21 @@ exports[`File Input component sanity matches themed snapshot 1`] = `
   pointer-events: none;
 }
 
-.c3 > svg {
+.c3 > div > svg {
   display: block;
 }
 
-.c3 > svg:first-child {
+.c3 > div:first-child > svg {
   margin-left: -0.5rem;
   margin-right: .5rem;
 }
 
-.c3 > svg:last-child {
+.c3 > div:last-child > svg {
   margin-left: .5rem;
   margin-right: -0.5rem;
 }
 
-.c3 > svg:first-child:last-child {
+.c3 > div:first-child:last-child > svg {
   margin: 0;
 }
 
@@ -343,19 +358,22 @@ exports[`File Input component sanity matches themed snapshot 1`] = `
       font-weight="3"
       height="3rem"
     >
-      <svg
+      <div
         class=""
-        display="block"
-        fill="currentcolor"
-        height="24px"
-        theme="[object Object]"
-        viewBox="0 0 24 24"
-        width="24px"
       >
-        <path
-          d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"
-        />
-      </svg>
+        <svg
+          class=""
+          display="block"
+          fill="currentcolor"
+          height="24px"
+          viewBox="0 0 24 24"
+          width="24px"
+        >
+          <path
+            d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"
+          />
+        </svg>
+      </div>
       <span
         class="button-text"
       >

@@ -48,8 +48,12 @@ const StyledButton = styled('button')`
     pointer-events: none;
   }
 
+  > span.button-text {
+    display: inline-flex;
+  }
+
   ${'' /* with icon styles */}
-  > svg,
+  > div > svg,
   > span.button-text {
     position: relative;
     z-index: 1;
@@ -57,18 +61,18 @@ const StyledButton = styled('button')`
     pointer-events: none;
   }
 
-  > svg {
+  > div > svg {
     display: block;
   }
-  > svg:first-child {
+  > div:first-child > svg {
     margin-left: -0.5rem;
     margin-right: .5rem;
   }
-  > svg:last-child {
+  > div:last-child > svg {
     margin-left: .5rem;
     margin-right: -0.5rem;
   }
-  > svg:first-child:last-child {
+  > div:first-child:last-child > svg {
     margin: 0;
   }
 
@@ -99,13 +103,17 @@ const ButtonBody = ({ children, icon, iconpos }) => {
   }
 };
 
-const Button = React.forwardRef((props, ref) => (
-  <StyledButton {...props} ref={ref} />
-));
+const Button = React.forwardRef((props, ref) => {
+  return <StyledButton {...props} ref={ref} />;
+});
+
+StyledButton.defaultProps = {
+  theme,
+};
 
 Button.defaultProps = {
   // base props
-  theme,
+  // theme,
   // variant: 'primary',
   // size: 'medium',
   height: '3rem',

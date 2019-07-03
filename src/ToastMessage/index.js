@@ -146,11 +146,12 @@ const StyledToastMessage = styled(Box)`
 
     > .closeBttn {
       display: flex;
+      align-self: flex-start;
     }
   }
 `;
 
-const ToastMessage = ({ className, ...props }) => {
+const ToastMessage = React.forwardRef(({ className, ...props }, ref) => {
   const themeIsDark = props.colorTheme === 'dark' ? true : false;
 
   const renderVariantSvg = variant => {
@@ -199,7 +200,6 @@ const ToastMessage = ({ className, ...props }) => {
           className={'closeBttn'}
           size={'small'}
           icononly
-          alignSelf={'flex-start'}
         >
           <Icon
             name={'Close'}
@@ -219,6 +219,7 @@ const ToastMessage = ({ className, ...props }) => {
       bg={!themeIsDark ? 'white' : 'near-black'}
       border={1}
       borderColor={!themeIsDark ? '#D6D6D6' : 'transparent'}
+      ref={ref}
       {...props}
     >
       {renderFigure(props)}
@@ -252,7 +253,7 @@ const ToastMessage = ({ className, ...props }) => {
       {renderCloseBttn(props)}
     </StyledToastMessage>
   );
-};
+});
 
 class ProtoToastMessage extends Component {
   constructor(props) {
@@ -435,13 +436,17 @@ class ToastProvider extends React.Component {
   }
 }
 
-ToastMessage.Success = props => <ToastMessage {...props} variant={'success'} />;
+ToastMessage.Success = React.forwardRef((props, ref) => (
+  <ToastMessage ref={ref} {...props} variant={'success'} />
+));
 
-ToastMessage.Failure = props => <ToastMessage {...props} variant={'failure'} />;
+ToastMessage.Failure = React.forwardRef((props, ref) => (
+  <ToastMessage ref={ref} {...props} variant={'failure'} />
+));
 
-ToastMessage.Processing = props => (
-  <ToastMessage {...props} variant={'processing'} />
-);
+ToastMessage.Processing = React.forwardRef((props, ref) => (
+  <ToastMessage ref={ref} {...props} variant={'processing'} />
+));
 
 ToastMessage.Provider = ToastProvider;
 

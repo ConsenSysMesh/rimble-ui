@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import theme from '../theme';
 import Text from '../Text';
 
 const StyledPill = styled(Text)`
@@ -25,10 +24,11 @@ const StyledPill = styled(Text)`
   }
 `;
 
-const Pill = props => <StyledPill {...props} />;
+const Pill = React.forwardRef((props, ref) => (
+  <StyledPill ref={ref} {...props} />
+));
 
 Pill.defaultProps = {
-  theme,
   color: 'dark-gray',
   fontFamily: 'sansSerif',
   fontSize: 1,

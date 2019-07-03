@@ -30,12 +30,12 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-const ThemeProvider = ({ ...props }) => {
+const ThemeProvider = ({ children, theme, ...props }) => {
   return (
     <StyledThemeProvider theme={theme} {...props}>
       <React.Fragment>
         <GlobalStyle />
-        <Base {...props} />
+        <Base children={children} />
       </React.Fragment>
     </StyledThemeProvider>
   );

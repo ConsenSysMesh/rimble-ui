@@ -20,6 +20,7 @@ const activeColor = style({
 const StyledLink = styled(Text)`
   & {
     text-decoration: none;
+    cursor: pointer;
   }
 
   &:hover {
@@ -33,10 +34,16 @@ const StyledLink = styled(Text)`
   }
 `;
 
-const Link = props => <StyledLink {...props} />;
+const Link = React.forwardRef((props, ref) => (
+  <StyledLink ref={ref} {...props} />
+));
+
+StyledLink.defaultProps = {
+  theme,
+};
 
 Link.defaultProps = {
-  theme,
+  // theme,
   forwardedAs: 'a',
   color: 'primary',
   hoverColor: 'primary-light',

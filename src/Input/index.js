@@ -14,8 +14,9 @@ import {
 
 import theme from '../theme';
 import Box from '../Box';
-import Icon from '../Icon';
 import FileInput from './FileInput';
+import IconCheckCircle from 'rmdi/lib/CheckCircle';
+import IconWarning from 'rmdi/lib/Warning';
 
 const StyledInput = styled.input`
   & {
@@ -86,12 +87,8 @@ const WithValidationStyle = React.forwardRef((props, ref) => {
   return (
     <StyledIconWrapper>
       <StyledInput {...props} ref={ref} />
-      <Icon
-        className={'icon-valid'}
-        name={'CheckCircle'}
-        color={colorSuccess}
-      />
-      <Icon className={'icon-invalid'} name={'Warning'} color={colorError} />
+      <IconCheckCircle className={'icon-valid'} color={colorSuccess} />
+      <IconWarning className={'icon-invalid'} color={colorError} />
     </StyledIconWrapper>
   );
 });

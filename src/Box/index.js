@@ -18,13 +18,13 @@ const StyledBox = styled.div`
   ${opacity}
 `;
 
-const Box = ({ className, ...props }) => (
-  <StyledBox className={className} {...props} />
-);
-
-Box.defaultProps = {
+StyledBox.defaultProps = {
   theme,
 };
+
+const Box = React.forwardRef((props, ref) => (
+  <StyledBox ref={ref} {...props} />
+));
 
 Box.propTypes = {
   ...COMMON.propTypes,

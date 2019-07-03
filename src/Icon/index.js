@@ -1,12 +1,29 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 import { Icon as RmdIcon } from 'rmdi';
 import theme from '../theme';
+import Box from '../Box';
 
-const Icon = props => <RmdIcon.default {...props} />;
+const StyledBox = styled('div')``;
+
+const Icon = React.forwardRef((props, ref) => (
+  <StyledBox ref={ref}>
+    <RmdIcon.default {...props} />
+  </StyledBox>
+));
+
+// RmdIcon.default.defaultProps = {
+//   theme,
+//   color: 'inherit'
+// };
+
+StyledBox.defaultProps = {
+  theme,
+};
 
 Icon.defaultProps = {
-  theme,
+  // theme,
   display: 'block',
   size: '24px',
 };

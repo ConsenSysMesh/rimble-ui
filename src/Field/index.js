@@ -12,7 +12,7 @@ const OptionalLabel = styled(Text)`
   }
 `;
 
-const Field = ({ label, children, ...props }) => {
+const Field = React.forwardRef(({ label, children, ...props }, ref) => {
   const isRequired = children => {
     let value = false;
     React.Children.forEach(children, child => {
@@ -41,22 +41,24 @@ const Field = ({ label, children, ...props }) => {
 
   return (
     <Box
-      as="label"
-      display="flex"
-      flexDirection="column"
-      alignItems="flex-start"
+      as={'label'}
+      display={'inline-flex'}
+      flexDirection={'column'}
+      alignItems={'flex-start'}
       mb={3}
+      ref={ref}
       {...props}
     >
       {renderLabel(isRequired(children))}
       {children}
     </Box>
   );
-};
+});
 
 Field.propTypes = {
   ...Box.propTypes,
-  label: PropTypes.string,
+  label: PropTypes.string.isRequired,
+  children: PropTypes.element.isRequired,
 };
 
 Field.displayName = 'Field';

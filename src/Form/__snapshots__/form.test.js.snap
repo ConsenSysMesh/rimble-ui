@@ -17,10 +17,10 @@ exports[`Form component sanity matches themed snapshot 1`] = `
 
 .c2 {
   margin-bottom: 16px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   width: 100%;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -44,7 +44,7 @@ exports[`Form component sanity matches themed snapshot 1`] = `
   box-sizing: border-box;
 }
 
-.c10 {
+.c11 {
   color: #4E3FCE;
   margin-bottom: 16px;
   display: -webkit-box;
@@ -58,17 +58,17 @@ exports[`Form component sanity matches themed snapshot 1`] = `
   opacity: 1;
 }
 
-.c10 {
+.c11 {
   box-sizing: border-box;
 }
 
-.c13 {
+.c14 {
   color: #3F3D4B;
   margin-left: 4px;
   margin-right: 8px;
 }
 
-.c13 {
+.c14 {
   box-sizing: border-box;
 }
 
@@ -87,8 +87,6 @@ exports[`Form component sanity matches themed snapshot 1`] = `
   width: 100%;
   height: 3rem;
   border: 1px solid transparent;
-  border-color: #CCC;
-  border-radius: 4px;
   border-color: #CCC;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
@@ -169,7 +167,7 @@ exports[`Form component sanity matches themed snapshot 1`] = `
   margin-bottom: 8px;
 }
 
-.c12 {
+.c13 {
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -180,23 +178,25 @@ exports[`Form component sanity matches themed snapshot 1`] = `
   margin-right: 8px;
 }
 
-.c11 {
+.c12 {
   position: relative;
   display: inline-block;
 }
 
-.c11 > input {
-  position: relative;
-  display: block;
+.c12 > input {
+  cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  position: relative;
+  z-index: 1;
+  display: block;
   height: 1.5rem;
   width: 1.5rem;
   margin: 0;
 }
 
-.c11 > svg {
+.c12 > svg {
   position: absolute;
   z-index: 0;
   top: 0;
@@ -209,14 +209,22 @@ exports[`Form component sanity matches themed snapshot 1`] = `
   fill: #CCC;
 }
 
-.c11 > svg[name='checked'] {
+.c12 > svg[name='checked'] {
   display: none;
   z-index: 1;
   fill: #4E3FCE;
 }
 
-.c11 > input:checked ~ svg[name='checked'] {
+.c12 > input:checked ~ svg[name='checked'] {
   display: block;
+}
+
+.c10 {
+  cursor: pointer;
+}
+
+.c10:hover input:not(:disabled) ~ svg[name='unchecked'] {
+  fill: #4E3FCE;
 }
 
 .c0 {
@@ -233,7 +241,7 @@ exports[`Form component sanity matches themed snapshot 1`] = `
   >
     <label
       class="c2"
-      display="flex"
+      display="inline-flex"
       width="1"
     >
       <div
@@ -261,12 +269,10 @@ exports[`Form component sanity matches themed snapshot 1`] = `
         <svg
           class="icon-valid c8"
           color="#28C081"
-          display="block"
           fill="currentcolor"
-          height="24px"
-          theme="[object Object]"
+          height="24"
           viewBox="0 0 24 24"
-          width="24px"
+          width="24"
         >
           <path
             d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
@@ -275,12 +281,10 @@ exports[`Form component sanity matches themed snapshot 1`] = `
         <svg
           class="icon-invalid c9"
           color="#DC2C10"
-          display="block"
           fill="currentcolor"
-          height="24px"
-          theme="[object Object]"
+          height="24"
           viewBox="0 0 24 24"
-          width="24px"
+          width="24"
         >
           <path
             d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"
@@ -290,7 +294,7 @@ exports[`Form component sanity matches themed snapshot 1`] = `
     </label>
     <label
       class="c2"
-      display="flex"
+      display="inline-flex"
       width="1"
     >
       <div
@@ -318,12 +322,10 @@ exports[`Form component sanity matches themed snapshot 1`] = `
         <svg
           class="icon-valid c8"
           color="#28C081"
-          display="block"
           fill="currentcolor"
-          height="24px"
-          theme="[object Object]"
+          height="24"
           viewBox="0 0 24 24"
-          width="24px"
+          width="24"
         >
           <path
             d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
@@ -332,12 +334,10 @@ exports[`Form component sanity matches themed snapshot 1`] = `
         <svg
           class="icon-invalid c9"
           color="#DC2C10"
-          display="block"
           fill="currentcolor"
-          height="24px"
-          theme="[object Object]"
+          height="24"
           viewBox="0 0 24 24"
-          width="24px"
+          width="24"
         >
           <path
             d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"
@@ -346,20 +346,17 @@ exports[`Form component sanity matches themed snapshot 1`] = `
       </div>
     </label>
     <label
-      class="c10"
+      class="c10 c11"
       color="primary"
       display="flex"
-      label="Remember me?"
       opacity="1"
     >
       <div
-        class="c11 c1"
+        class="c12 c1"
       >
         <input
           color="primary"
-          label="Remember me?"
           mb="3"
-          theme="[object Object]"
           type="checkbox"
         />
         <svg
@@ -378,6 +375,7 @@ exports[`Form component sanity matches themed snapshot 1`] = `
           class=""
           fill="currentcolor"
           height="24"
+          name="unchecked"
           viewBox="0 0 24 24"
           width="24"
         >
@@ -387,7 +385,7 @@ exports[`Form component sanity matches themed snapshot 1`] = `
         </svg>
       </div>
       <div
-        class="c12 c13"
+        class="c13 c14"
         color="copyColor"
         font-family="sansSerif"
         font-size="1"
@@ -407,10 +405,10 @@ exports[`Form component sanity renders children elements 1`] = `
 
 .c1 {
   margin-bottom: 16px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   width: 100%;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -434,7 +432,7 @@ exports[`Form component sanity renders children elements 1`] = `
   box-sizing: border-box;
 }
 
-.c9 {
+.c10 {
   color: #4E3FCE;
   margin-bottom: 16px;
   display: -webkit-box;
@@ -448,17 +446,17 @@ exports[`Form component sanity renders children elements 1`] = `
   opacity: 1;
 }
 
-.c9 {
+.c10 {
   box-sizing: border-box;
 }
 
-.c12 {
+.c13 {
   color: #3F3D4B;
   margin-left: 4px;
   margin-right: 8px;
 }
 
-.c12 {
+.c13 {
   box-sizing: border-box;
 }
 
@@ -477,8 +475,6 @@ exports[`Form component sanity renders children elements 1`] = `
   width: 100%;
   height: 3rem;
   border: 1px solid transparent;
-  border-color: #CCC;
-  border-radius: 4px;
   border-color: #CCC;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
@@ -559,7 +555,7 @@ exports[`Form component sanity renders children elements 1`] = `
   margin-bottom: 8px;
 }
 
-.c11 {
+.c12 {
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -570,23 +566,25 @@ exports[`Form component sanity renders children elements 1`] = `
   margin-right: 8px;
 }
 
-.c10 {
+.c11 {
   position: relative;
   display: inline-block;
 }
 
-.c10 > input {
-  position: relative;
-  display: block;
+.c11 > input {
+  cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  position: relative;
+  z-index: 1;
+  display: block;
   height: 1.5rem;
   width: 1.5rem;
   margin: 0;
 }
 
-.c10 > svg {
+.c11 > svg {
   position: absolute;
   z-index: 0;
   top: 0;
@@ -599,14 +597,22 @@ exports[`Form component sanity renders children elements 1`] = `
   fill: #CCC;
 }
 
-.c10 > svg[name='checked'] {
+.c11 > svg[name='checked'] {
   display: none;
   z-index: 1;
   fill: #4E3FCE;
 }
 
-.c10 > input:checked ~ svg[name='checked'] {
+.c11 > input:checked ~ svg[name='checked'] {
   display: block;
+}
+
+.c9 {
+  cursor: pointer;
+}
+
+.c9:hover input:not(:disabled) ~ svg[name='unchecked'] {
+  fill: #000;
 }
 
 <form
@@ -614,7 +620,7 @@ exports[`Form component sanity renders children elements 1`] = `
 >
   <label
     class="c1"
-    display="flex"
+    display="inline-flex"
     width="1"
   >
     <div
@@ -642,12 +648,10 @@ exports[`Form component sanity renders children elements 1`] = `
       <svg
         class="icon-valid c7"
         color="#28C081"
-        display="block"
         fill="currentcolor"
-        height="24px"
-        theme="[object Object]"
+        height="24"
         viewBox="0 0 24 24"
-        width="24px"
+        width="24"
       >
         <path
           d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
@@ -656,12 +660,10 @@ exports[`Form component sanity renders children elements 1`] = `
       <svg
         class="icon-invalid c8"
         color="#DC2C10"
-        display="block"
         fill="currentcolor"
-        height="24px"
-        theme="[object Object]"
+        height="24"
         viewBox="0 0 24 24"
-        width="24px"
+        width="24"
       >
         <path
           d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"
@@ -671,7 +673,7 @@ exports[`Form component sanity renders children elements 1`] = `
   </label>
   <label
     class="c1"
-    display="flex"
+    display="inline-flex"
     width="1"
   >
     <div
@@ -699,12 +701,10 @@ exports[`Form component sanity renders children elements 1`] = `
       <svg
         class="icon-valid c7"
         color="#28C081"
-        display="block"
         fill="currentcolor"
-        height="24px"
-        theme="[object Object]"
+        height="24"
         viewBox="0 0 24 24"
-        width="24px"
+        width="24"
       >
         <path
           d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
@@ -713,12 +713,10 @@ exports[`Form component sanity renders children elements 1`] = `
       <svg
         class="icon-invalid c8"
         color="#DC2C10"
-        display="block"
         fill="currentcolor"
-        height="24px"
-        theme="[object Object]"
+        height="24"
         viewBox="0 0 24 24"
-        width="24px"
+        width="24"
       >
         <path
           d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"
@@ -727,20 +725,17 @@ exports[`Form component sanity renders children elements 1`] = `
     </div>
   </label>
   <label
-    class="c9"
+    class="c9 c10"
     color="primary"
     display="flex"
-    label="Remember me?"
     opacity="1"
   >
     <div
-      class="c10 c0"
+      class="c11 c0"
     >
       <input
         color="primary"
-        label="Remember me?"
         mb="3"
-        theme="[object Object]"
         type="checkbox"
       />
       <svg
@@ -759,6 +754,7 @@ exports[`Form component sanity renders children elements 1`] = `
         class=""
         fill="currentcolor"
         height="24"
+        name="unchecked"
         viewBox="0 0 24 24"
         width="24"
       >
@@ -768,7 +764,7 @@ exports[`Form component sanity renders children elements 1`] = `
       </svg>
     </div>
     <div
-      class="c11 c12"
+      class="c12 c13"
       color="copyColor"
       font-family="sansSerif"
       font-size="1"

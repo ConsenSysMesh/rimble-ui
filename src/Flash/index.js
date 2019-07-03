@@ -35,7 +35,7 @@ const StyledLink = styled(Link).attrs(props => ({
   }
 `;
 
-const Flash = ({ className, children, ...props }) => {
+const Flash = React.forwardRef(({ className, children, ...props }, ref) => {
   const status = props.variant;
   const id = newID('Flash');
   const contentID = `${id}Content`;
@@ -59,6 +59,7 @@ const Flash = ({ className, children, ...props }) => {
       role={ariaRoleType}
       aria-live="polite"
       aria-describedby={contentID}
+      ref={ref}
       {...props}
     >
       <Text color={'inherit'} display={'inherit'} id={contentID}>
@@ -66,7 +67,7 @@ const Flash = ({ className, children, ...props }) => {
       </Text>
     </StyledFlash>
   );
-};
+});
 
 Flash.defaultProps = {
   theme,
