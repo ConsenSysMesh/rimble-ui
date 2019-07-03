@@ -14,7 +14,7 @@ const options = [
   { value: 'REP', label: 'REP - Augur'},
 ];
 
-storiesOf('Components', module)
+storiesOf('Components/', module)
   .addDecorator(withDocs(Documentation))
   .add('Select', () => (
     <Select options={options} />
