@@ -1,6 +1,7 @@
 import { configure, addDecorator, addParameters } from '@storybook/react'
 import { create } from '@storybook/theming';
 import { withA11y } from '@storybook/addon-a11y';
+import { addReadme } from 'storybook-readme';
 import { withThemesProvider } from 'storybook-addon-styled-component-theme';
 
 import { theme } from 'rimble-ui'
@@ -21,8 +22,8 @@ addParameters({
       brandImage: './rimble-logotype.svg',
     }),
     isFullscreen: false,
-    showPanel: false,
-    panelPosition: 'right',
+    showPanel: true,
+    panelPosition: 'bottom',
   },
 });
 
@@ -42,6 +43,9 @@ const theme2 = {
 const themes = [theme1, theme2];
 
 addDecorator(withThemesProvider(themes));
+
+addDecorator(addReadme);
+
 
 function loadStories() {
   const req = require.context('../src/stories', true, /\.stories\.js$/)
