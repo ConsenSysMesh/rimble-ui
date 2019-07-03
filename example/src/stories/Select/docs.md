@@ -1,26 +1,28 @@
 # Select documentation
 
-Use the `Select` component when you want your users to select an option from a list. `Select` provides a styled version of the HTML `<select>`.
+`Select` provides a styled version of the HTML `<select>`.
 
-_Want to understand best practices for using a `Select` component?_ Read [`Select` design guidelines](https://consensys.github.io/rimble-ui/?path=/story/components-form-select--design-guidelines)
-
-**Import component**
-
-```jsx
-import { Select } from 'rimble-ui';
-```
-
+## Component
 <!-- STORY -->
 
-### Component props
+## Usage
 
-`Select` will pass any props that are defined on its component and uses the following:
+```jsx
+import React, { Component } from 'react';
+import { Select } from 'rimble-ui';
 
-| Name     | Type | Default | Description                                                           |
-| -------- | ---- | ------- | --------------------------------------------------------------------- |
-| disabled | bool | true    | Sets disabled property of the radio input to prevent user interaction |
-| required | bool | true    | Ensures that a value is selected                                      |
+const options = [
+  { value: 'ETH', label: 'ETH - Ether'},
+  { value: 'BTC', label: 'BTC - Bitcoin'},
+  { value: 'GNO', label: 'GNO - Gnosis'},
+  { value: 'GNT', label: 'GNT - Golem'},
+  { value: 'REP', label: 'REP - Augur'},
+];
 
-### Styled-system props
+const MyComponent = () => (
+  <Select options={options}  />
+);
+```
 
-`Select` uses all the style props from [`Box`](https://consensys.github.io/rimble-ui/?path=/story/components-layout-box--documentation).
+## Props
+<!-- PROPS -->
