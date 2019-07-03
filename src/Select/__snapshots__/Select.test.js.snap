@@ -265,26 +265,7 @@ exports[`Select component sanity matches default snapshot 1`] = `
         ],
       }
     }
-  >
-    <option
-      key="0"
-      value="Wandering Thunder"
-    >
-      Wandering Thunder
-    </option>
-    <option
-      key="1"
-      value="Black Wildflower"
-    >
-      Black Wildflower
-    </option>
-    <option
-      key="2"
-      value="Ancient Paper"
-    >
-      Ancient Paper
-    </option>
-  </Styled(styled.input)>
+  />
   <ExpandMoreIcon
     size={24}
   />
@@ -381,23 +362,7 @@ exports[`Select component sanity matches themed snapshot 1`] = `
       font-family="sansSerif"
       font-size="1rem"
       height="3rem"
-    >
-      <option
-        value="Wandering Thunder"
-      >
-        Wandering Thunder
-      </option>
-      <option
-        value="Black Wildflower"
-      >
-        Black Wildflower
-      </option>
-      <option
-        value="Ancient Paper"
-      >
-        Ancient Paper
-      </option>
-    </select>
+    />
     <svg
       class="c3 "
       fill="currentcolor"
