@@ -26,18 +26,31 @@ const StyledSelect = styled(StyledInput)`
   }
 `;
 
-const Select = React.forwardRef((props, ref) => (
-  <StyledWrapper>
-    <StyledSelect ref={ref} {...props} as={'select'}>
-      {props.items.map((item, i) => (
-        <option key={i} value={item}>
-          {item}
-        </option>
-      ))}
-    </StyledSelect>
-    <ExpandMore />
-  </StyledWrapper>
-));
+const Select = React.forwardRef(({ options, children, ...props }, ref) => {
+  const renderChildren = () => {
+    if (children) {
+      return children;
+    } else if (options) {
+      return options.map((option, i) => (
+        <option key={i} value={option.value} children={option.label} />
+      ));
+    } else {
+      return null;
+    }
+  };
+
+  return (
+    <StyledWrapper>
+      <StyledSelect
+        as={'select'}
+        children={renderChildren()}
+        ref={ref}
+        {...props}
+      />
+      <ExpandMore />
+    </StyledWrapper>
+  );
+});
 
 Select.propTypes = {
   theme: PropTypes.object,
