@@ -43,6 +43,11 @@ const myTheme = {
   },
 };
 
+const selectOptions = [
+  { value: '123', label: 'One Two Three' },
+  { value: 'abc', label: 'A B C' },
+];
+
 const testComponents = props => (
   <React.Fragment>
     <Box p={3}>
@@ -85,7 +90,9 @@ const testComponents = props => (
         <optgroup label="4-legged pets">
           <option value="dog">Dog</option>
           <option value="cat">Cat</option>
-          <option value="hamster" disabled>Hamster</option>
+          <option value="hamster" disabled>
+            Hamster
+          </option>
         </optgroup>
         <optgroup label="Flying pets">
           <option value="parrot">Parrot</option>
@@ -93,6 +100,7 @@ const testComponents = props => (
           <option value="albatross">Albatross</option>
         </optgroup>
       </Select>
+      <Select options={selectOptions} />
       <Progress value={0.5} />
       <Heading.h1>Quick zephyrs blow, vexing daft Jim.</Heading.h1>
 
@@ -154,23 +162,16 @@ const testComponents = props => (
       <Checkbox disabled checked label="Checkbox checked disabled" readOnly />
       <Box />
       <Card />
-      <Card
-        mx="auto"
-        px="4"
-        color="primary"
-      >
-        <Heading mb={3}>
-          Heading
-        </Heading>
+      <Card mx="auto" px="4" color="primary">
+        <Heading mb={3}>Heading</Heading>
         <Text mb={4}>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam autem ratione doloribus quidem neque provident eius error dignissimos delectus architecto nemo quos alias sunt voluptate impedit, facilis sequi tempore. Amet!
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam autem
+          ratione doloribus quidem neque provident eius error dignissimos
+          delectus architecto nemo quos alias sunt voluptate impedit, facilis
+          sequi tempore. Amet!
         </Text>
-        <Button mr={3}>
-          Accept
-        </Button>
-        <Button.Outline>
-          Cancel
-        </Button.Outline>
+        <Button mr={3}>Accept</Button>
+        <Button.Outline>Cancel</Button.Outline>
       </Card>
       <Flex />
       <Table />
