@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import { buttonStyle, variant, style } from 'styled-system';
 import { COMMON, LAYOUT, POSITION, BORDERS, TYPOGRAPHY } from '../constants';
 import theme from '../theme';

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import styled, { keyframes } from 'styled-components';
+import styled from '@emotion/styled';
+import { keyframes } from '@emotion/core';
 import PropTypes from 'prop-types';
 import Box from '../Box';
 import Button from '../Button';

@@ -1,9 +1,8 @@
 import React from 'react';
 
-import styled, {
-  createGlobalStyle,
-  ThemeProvider as StyledThemeProvider,
-} from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
+
+import { ThemeProvider as StyledThemeProvider } from 'emotion-theming';
 
 import { normalize, transparentize } from 'polished';
 

@@ -28,6 +28,7 @@
     "@emotion/core": "^10.0.14",
     "@emotion/styled": "^10.0.14",
     "@svgr/rollup": "^4.2.0",
+    "emotion-theming": "^10.0.14",
     "ethereum-blockies": "^0.1.1",
     "polished": "^3.2.0",
     "qrcode.react": "^0.9.3",

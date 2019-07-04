@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import { tint, shade } from 'polished';
 import { ReactComponent as UPlogo } from './icon.svg';
 import Button, { StyledButton } from '../Button/BaseButton';

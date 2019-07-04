@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import { Icon as RmdIcon } from 'rmdi';
 import theme from '../theme';
 import Box from '../Box';

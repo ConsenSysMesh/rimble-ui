@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import { ReactComponent as PositiveIcon } from './icon-positive.svg';
 
 const WrappedIconPositive = props => <PositiveIcon {...props} />;

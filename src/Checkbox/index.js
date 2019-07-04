@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import { themeGet } from 'styled-system';
 import IconChecked from 'rmdi/lib/CheckBox';
 import IconUnChecked from 'rmdi/lib/CheckBoxOutlineBlank';

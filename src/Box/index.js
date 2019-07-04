@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import { opacity } from 'styled-system';
 import { COMMON, LAYOUT, POSITION, FLEXBOX, BORDERS } from '../constants';
 import theme from '../theme';

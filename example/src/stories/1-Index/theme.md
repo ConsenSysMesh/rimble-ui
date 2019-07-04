@@ -6,7 +6,7 @@ Rimble components use [styled-system](https://github.com/jxnblk/styled-system) t
 
 ```jsx
 import React from 'react'
-import { ThemeProvider } from 'styled-components'
+import { ThemeProvider } from '@emotion/styled'
 import theme from './theme'
 
 const App = props => (
