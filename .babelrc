@@ -1,4 +1,5 @@
 {
+  "plugins": ["emotion"],
   "presets": [
     ["env", {
       "modules": false
