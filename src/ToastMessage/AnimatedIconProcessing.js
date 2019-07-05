@@ -1,10 +1,7 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
+import React from 'react';
+import styled from '@emotion/styled';
 import { keyframes } from '@emotion/core';
-
 import { ReactComponent as IconProcessing } from './icon-processing.svg';
-
-const WrappedIconProcessing = props => <IconProcessing {...props} />;
 
 const flicker = keyframes`
   0% {
@@ -28,46 +25,52 @@ const flicker = keyframes`
   }
 `;
 
-const AnimatedIconProcessing = styled(WrappedIconProcessing).attrs({
-  seed: Math.floor(1000 + Math.random() * 7000),
-  seeda: Math.floor(
-    Date.now()
-      .toString()
-      .substring(2, 6) +
-      Math.random() * 9000
-  )
-    .toString()
-    .substring(0, 4),
-  seedb: Math.floor(
-    Date.now()
-      .toString()
-      .substring(0, 4) +
-      Math.random() * 4500
-  )
-    .toString()
-    .substring(0, 4),
-})`
+const StyledIcon = styled(IconProcessing)`
   & {
     display: block;
   }
   > * {
     animation-name: ${flicker};
-    animation-duration: ${props => props.seed + 'ms'};
+    animation-duration: ${props => props.seeds.seed + 'ms'};
     animation-timing-function: ease;
     animation-delay: 0s;
     animation-iteration-count: infinite;
   }
-  > *:nth-child(4n + 0) {
-    animation-duration: ${props => props.seeda + 'ms'};
-    animation-delay: ${props => props.seeda + 'ms'};
+  > *:nth-of-type(4n + 0) {
+    animation-duration: ${props => props.seeds.seeda + 'ms'};
+    animation-delay: ${props => props.seeds.seeda + 'ms'};
   }
-  > *:nth-child(2n + 0) {
-    animation-duration: ${props => props.seedb + 'ms'};
+  > *:nth-of-type(2n + 0) {
+    animation-duration: ${props => props.seeds.seedb + 'ms'};
   }
-  > *:nth-child(3n + 0) {
-    animation-duration: ${props => props.seeda + 'ms'};
-    animation-delay: ${props => props.seedb + 'ms'};
+  > *:nth-of-type(3n + 0) {
+    animation-duration: ${props => props.seeds.seeda + 'ms'};
+    animation-delay: ${props => props.seeds.seedb + 'ms'};
   }
 `;
+
+const AnimatedIconProcessing = props => {
+  const seeds = {
+    seed: Math.floor(1000 + Math.random() * 7000),
+    seeda: Math.floor(
+      Date.now()
+        .toString()
+        .substring(2, 6) +
+        Math.random() * 9000
+    )
+      .toString()
+      .substring(0, 4),
+    seedb: Math.floor(
+      Date.now()
+        .toString()
+        .substring(0, 4) +
+        Math.random() * 4500
+    )
+      .toString()
+      .substring(0, 4),
+  };
+
+  return <StyledIcon seeds={seeds} {...props} />;
+};
 
 export default AnimatedIconProcessing;
