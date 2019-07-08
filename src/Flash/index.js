@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import styled from '@emotion/styled';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
+// import styled from 'styled-components';
 import { variant } from 'styled-system';
 
 import theme from '../theme';
@@ -24,10 +24,7 @@ const StyledFlash = styled(Box)`
   }
 `;
 
-const StyledLink = styled(Link).attrs(props => ({
-  color: 'inherit',
-  fontSize: 'inherit',
-}))`
+const StyledLink = styled(Link)`
   & {
     cursor: pointer;
   }

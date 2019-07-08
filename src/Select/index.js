@@ -9,7 +9,7 @@ const StyledWrapper = styled.span`
     position: relative;
   }
 
-  > ${ExpandMore} {
+  > svg {
     position: absolute;
     right: 1rem;
     top: 0;

@@ -1,13 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import styled from '@emotion/styled';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
+// import styled from 'styled-components';
 import { COMMON } from '../constants';
 import theme from '../theme';
 
-const StyledSlider = styled('input').attrs(props => ({
-  type: 'range',
-}))`
+const StyledSlider = styled('input')`
   & {
     appearance: none;
     height: 2rem;
@@ -72,7 +70,7 @@ const StyledSlider = styled('input').attrs(props => ({
 `;
 
 const Slider = React.forwardRef((props, ref) => (
-  <StyledSlider ref={ref} {...props} />
+  <StyledSlider ref={ref} {...props} type="range" />
 ));
 
 StyledSlider.defaultProps = {

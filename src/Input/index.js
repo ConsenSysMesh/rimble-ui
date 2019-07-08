@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
-// import styled from '@emotion/styled';
+import { withTheme } from 'emotion-theming';
 
 import { themeGet, opacity } from 'styled-system';
 import {
@@ -132,4 +132,4 @@ Input.displayName = 'Input';
 
 export { StyledInput };
 
-export default Input;
+export default withTheme(Input);
