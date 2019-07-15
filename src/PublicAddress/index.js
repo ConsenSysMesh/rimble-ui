@@ -81,7 +81,7 @@ class PublicAddress extends Component {
       label = this.props.label;
     }
     return (
-      <Field label={label} width={1}>
+      <Field label={label} {...this.props}>
         <StyledWrapper required={true}>
           <StyledInput
             readOnly
