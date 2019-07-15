@@ -7,7 +7,6 @@ exports[`PublicAddress component sanity matches default snapshot 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 100%;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -266,7 +265,6 @@ exports[`PublicAddress component sanity matches default snapshot 1`] = `
 <label
   class="c0"
   display="inline-flex"
-  width="1"
 >
   <div
     class="c1 c2"
@@ -314,7 +312,6 @@ exports[`PublicAddress component sanity matches themed snapshot 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 100%;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -582,7 +579,6 @@ exports[`PublicAddress component sanity matches themed snapshot 1`] = `
   <label
     class="c1"
     display="inline-flex"
-    width="1"
   >
     <div
       class="c2 c3"
