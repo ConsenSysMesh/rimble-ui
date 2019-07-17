@@ -15,6 +15,7 @@ import {
   Flex,
   Card,
   Pill,
+  
   QR,
   Link,
 } from 'rimble-ui';
@@ -36,9 +37,9 @@ storiesOf('Components/PublicAddress', module)
           <Heading.h4>Changing Label</Heading.h4>
           <CodeBlock>
             <PublicAddress
-              width={1}
               address={'0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2'}
               label={'Wallet Address'}
+              required
             />
           </CodeBlock>
         </Box>
