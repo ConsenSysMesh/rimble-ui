@@ -35,6 +35,13 @@ class Example extends Component {
 
 ## Change log
 
+### 0.9.5
+
+- Fixed Select component accepts more options + children.
+- Fixed default theme in rimble ThemeProvider.
+- Fixed outdated dependencies vulnerability.
+- Fixed PublicAddress width property being passed to it's parent Field component. 
+
 ### 0.9.4
 
 - Added ref forwarding for all components.
