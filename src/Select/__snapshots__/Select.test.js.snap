@@ -13,13 +13,6 @@ exports[`Select component sanity matches default snapshot 1`] = `
     fontFamily="sansSerif"
     fontSize="1rem"
     height="3rem"
-    items={
-      Array [
-        "Wandering Thunder",
-        "Black Wildflower",
-        "Ancient Paper",
-      ]
-    }
     lineHeight="solid"
     p={3}
     theme={
@@ -268,21 +261,15 @@ exports[`Select component sanity matches default snapshot 1`] = `
   >
     <option
       key="0"
-      value="Wandering Thunder"
+      value="123"
     >
-      Wandering Thunder
+      One Two Three
     </option>
     <option
       key="1"
-      value="Black Wildflower"
+      value="abc"
     >
-      Black Wildflower
-    </option>
-    <option
-      key="2"
-      value="Ancient Paper"
-    >
-      Ancient Paper
+      A B C
     </option>
   </Styled(styled.input)>
   <ExpandMoreIcon
@@ -381,23 +368,7 @@ exports[`Select component sanity matches themed snapshot 1`] = `
       font-family="sansSerif"
       font-size="1rem"
       height="3rem"
-    >
-      <option
-        value="Wandering Thunder"
-      >
-        Wandering Thunder
-      </option>
-      <option
-        value="Black Wildflower"
-      >
-        Black Wildflower
-      </option>
-      <option
-        value="Ancient Paper"
-      >
-        Ancient Paper
-      </option>
-    </select>
+    />
     <svg
       class="c3 "
       fill="currentcolor"
