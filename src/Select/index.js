@@ -53,7 +53,7 @@ const Select = React.forwardRef(({ options, children, ...props }, ref) => {
 });
 
 Select.propTypes = {
-  options: PropTypes.arrayOf(PropTypes.string),
+  options: PropTypes.arrayOf(PropTypes.object),
 };
 
 Select.displayName = 'Select';
