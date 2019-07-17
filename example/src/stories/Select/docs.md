@@ -1,51 +1,26 @@
 # Select documentation
 
-`Select` provides a styled version of the HTML `<select>`.
+Use the `Select` component when you want your users to select an option from a list. `Select` provides a styled version of the HTML `<select>`.
 
-## Component
+_Want to understand best practices for using a `Select` component?_ Read [`Select` design guidelines](https://consensys.github.io/rimble-ui/?path=/story/components-form-select--design-guidelines)
+
+**Import component**
+
+```jsx
+import { Select } from 'rimble-ui';
+```
+
 <!-- STORY -->
 
-## Usage
+### Component props
 
-### with options array
+`Select` will pass any props that are defined on its component and uses the following:
 
-```jsx
-import React, { Component } from 'react';
-import { Select } from 'rimble-ui';
+| Name     | Type | Default | Description                                                           |
+| -------- | ---- | ------- | --------------------------------------------------------------------- |
+| disabled | bool | true    | Sets disabled property of the radio input to prevent user interaction |
+| required | bool | true    | Ensures that a value is selected                                      |
 
-const options = [
-  { value: 'ETH', label: 'ETH - Ether'},
-  { value: 'BTC', label: 'BTC - Bitcoin'},
-  { value: 'GNO', label: 'GNO - Gnosis'},
-  { value: 'GNT', label: 'GNT - Golem'},
-  { value: 'REP', label: 'REP - Augur'},
-];
+### Styled-system props
 
-const MyComponent = () => (
-  <Select options={options}  />
-);
-```
-
-### or with children
-
-```jsx
-import React, { Component } from 'react';
-import { Select } from 'rimble-ui';
-
-const MyComponent = () => (
-  <Select name="pets">
-    <optgroup label="4-legged pets">
-      <option value="dog">Dog</option>
-      <option value="cat">Cat</option>
-      <option value="hamster" disabled>Hamster</option>
-    </optgroup>
-    <optgroup label="Flying pets">
-      <option value="parrot">Parrot</option>
-      <option value="macaw">Macaw</option>
-      <option value="albatross">Albatross</option>
-    </optgroup>
-  </Select>
-);
-```
-## Props
-<!-- PROPS -->
+`Select` uses all the style props from [`Box`](https://consensys.github.io/rimble-ui/?path=/story/components-layout-box--documentation).
