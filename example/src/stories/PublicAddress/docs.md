@@ -12,15 +12,6 @@ import { PublicAddress } from 'rimble-ui';
 
 <!-- STORY -->
 
-### Component props
-
-`PublicAddress` will pass any props that are defined on its component and uses the following:
-
-| Prop        | Type     | Values | Default | Description                                         |
-| ----------- | -------- | ------ | ------- | --------------------------------------------------- |
-| address     | string   |        |         | Sets the address that is displayed in the component |
-| handleClick | function |        |         | Adds an is-copied class to component                |
-
 ### Styled-system props
 
 `PublicAddress` uses all the style props from [`Box`](https://consensys.github.io/rimble-ui/?path=/story/components-layout-box--documentation).

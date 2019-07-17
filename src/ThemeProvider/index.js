@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import styled, {
   createGlobalStyle,
@@ -40,5 +41,11 @@ const ThemeProvider = ({ children, theme, ...props }) => {
     </StyledThemeProvider>
   );
 };
+
+ThemeProvider.propTypes = {
+  theme: PropTypes.object,
+};
+
+ThemeProvider.displayName = 'ThemeProvider';
 
 export default ThemeProvider;
