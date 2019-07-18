@@ -46,6 +46,10 @@ ThemeProvider.propTypes = {
   theme: PropTypes.object,
 };
 
+ThemeProvider.defaultProps = {
+  theme,
+};
+
 ThemeProvider.displayName = 'ThemeProvider';
 
 export default ThemeProvider;
