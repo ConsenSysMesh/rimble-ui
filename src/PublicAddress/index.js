@@ -3,28 +3,7 @@ import styled, { keyframes } from 'styled-components';
 import PropTypes from 'prop-types';
 import Box from '../Box';
 import Button from '../Button';
-import Field from '../Field';
 import Input from '../Input';
-
-const slideIn = keyframes`
-  from {
-    opacity: 0;
-    transform: translateY(100%);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-`;
-
-const fadeOut = keyframes`
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-`;
 
 const StyledInput = styled(Input)`
   text-overflow: ellipsis;
@@ -76,23 +55,13 @@ class PublicAddress extends Component {
   };
 
   render() {
-    let label = 'Public address';
-    if (this.props.label != null) {
-      label = this.props.label;
-    }
     return (
-      <Field label={label} {...this.props}>
-        <StyledWrapper required={true}>
-          <StyledInput
-            readOnly
-            value={this.props.address}
-            ref={this.inputRef}
-          />
-          <Button size="small" onClick={this.handleClick} ref={this.buttonRef}>
-            {this.state.isCopied ? 'Copied!' : 'Copy'}
-          </Button>
-        </StyledWrapper>
-      </Field>
+      <StyledWrapper required={true}>
+        <StyledInput readOnly value={this.props.address} ref={this.inputRef} />
+        <Button size="small" onClick={this.handleClick} ref={this.buttonRef}>
+          {this.state.isCopied ? 'Copied!' : 'Copy'}
+        </Button>
+      </StyledWrapper>
     );
   }
 }
@@ -102,10 +71,6 @@ PublicAddress.propTypes = {
    * Sets Ethereum address as the value of the field
    */
   address: PropTypes.string,
-  /**
-   * Sets the text label
-   */
-  label: PropTypes.string,
 };
 
 PublicAddress.displayName = 'PublicAddress';
