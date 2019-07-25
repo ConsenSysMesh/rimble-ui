@@ -7,8 +7,8 @@ import Documentation from './docs.md';
 
 import { Heading, Box, EthAddress, } from 'rimble-ui';
 
-storiesOf('Components/EthAddress', module).add(
-  'Documentation',
+storiesOf('Components/', module).add(
+  'EthAddress',
   withDocs(Documentation, () => (
     <Box>
       <Box mx={3}>
