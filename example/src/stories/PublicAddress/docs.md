@@ -1,9 +1,11 @@
 # PublicAddress
 
-**Import component**
+**Import component:**
 
 ```jsx
 import { PublicAddress } from 'rimble-ui';
 ```
+
+**Output:**
 
 <!-- STORY -->
