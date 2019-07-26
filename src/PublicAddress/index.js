@@ -6,6 +6,7 @@ import Box from '../Box';
 import Flex from '../Flex';
 import Card from '../Card';
 import Text from '../Text';
+import Tooltip from '../Tooltip';
 
 import Icon from '../Icon';
 import Button from '../Button';
@@ -149,18 +150,22 @@ class PublicAddress extends Component {
           {/* <EthAddress address={this.props.address} /> */}
 
           <Flex position={'absolute'} right={0} mx={2}>
-            <Button
-              size={'small'}
-              ml={2}
-              p={0}
-              onClick={this.handleClick}
-              ref={this.buttonRef}
-            >
-              <Icon name={this.state.isCopied ? 'Check' : 'Assignment'} />
-            </Button>
-            <Button size={'small'} ml={2} p={0} onClick={this.handleShowQR}>
-              <Icon name={'CenterFocusStrong'} />
-            </Button>
+            <Tooltip message={'copy to clipboard'}>
+              <Button
+                size={'small'}
+                ml={2}
+                p={0}
+                onClick={this.handleClick}
+                ref={this.buttonRef}
+              >
+                <Icon name={this.state.isCopied ? 'Check' : 'Assignment'} />
+              </Button>
+            </Tooltip>
+            <Tooltip message={'show QR code'}>
+              <Button size={'small'} ml={2} p={0} onClick={this.handleShowQR}>
+                <Icon name={'CenterFocusStrong'} />
+              </Button>
+            </Tooltip>
           </Flex>
         </StyledWrapper>
         <Box>
