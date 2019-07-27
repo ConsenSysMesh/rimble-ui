@@ -38,6 +38,11 @@ const StyledInput = styled.input`
     pointer-events: none;
   }
 
+  &[type="color"] {
+    width: 200px;
+    padding: 14px;
+  }
+
   .was-validated & {
     &:valid {
       border-color: ${themeGet('colors.success')};
