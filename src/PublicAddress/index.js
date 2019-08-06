@@ -13,6 +13,8 @@ import Button from '../Button';
 import Input from '../Input';
 import EthAddress from '../EthAddress';
 
+import Portal from '../Portal';
+
 import QR from '../QR';
 
 const StyledInput = styled(Input)`
@@ -170,7 +172,9 @@ class PublicAddress extends Component {
         </StyledWrapper>
         <Box>
           {this.state.isQRCodeOpen && (
-            <AddressQR address={this.props.address} />
+            <Portal>
+              <AddressQR address={this.props.address} />
+            </Portal>
           )}
         </Box>
       </React.Fragment>
