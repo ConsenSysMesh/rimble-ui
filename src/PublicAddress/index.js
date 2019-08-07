@@ -12,10 +12,15 @@ import Icon from '../Icon';
 import Button from '../Button';
 import Input from '../Input';
 import EthAddress from '../EthAddress';
-
 import Portal from '../Portal';
-
+import { ModalBackdrop } from '../Modal';
 import QR from '../QR';
+
+const Hidden = ({ visible = true }) => {
+  return (
+    <Box display={visible ? null : 'none'} children={thisp.props.children} />
+  );
+};
 
 const StyledInput = styled(Input)`
   text-overflow: ellipsis;
@@ -43,69 +48,53 @@ const StyledWrapper = styled(Box)`
   } */}
 `;
 
-const StyledModal = styled(Box)`
-  & {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 9999;
-    height: 100%;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.5);
-
-    display: flex;
-    place-items: center;
-    place-content: center;
-  }
-`;
-
 const StyledPublicAddress = styled(EthAddress)`
   & {
   }
 `;
 
 const AddressQR = ({ address, ...props }) => (
-  <StyledModal>
-    <Card
-      width={'auto'}
-      m={3}
-      border={'none'}
-      borderRadius={2}
-      bg={'primary-light'}
-    >
-      <Text color={'white'} mb={4} textAlign={'center'}>
-        Use your camera to scan the code.
-      </Text>
-
-      <Box bg={'white'} size={'200px'} mx={'auto'} mb={4} p={3} boxShadow={2}>
-        <QR value={address} size={'100%'} />
-      </Box>
-
-      <Text
-        color={'white'}
-        bg={'primary'}
-        px={4}
-        py={3}
+  <Portal>
+    <ModalBackdrop>
+      <Card
+        width={'auto'}
+        m={3}
+        border={'none'}
         borderRadius={2}
-        fontWeight={3}
-        lineHeight={'solid'}
+        bg={'primary-light'}
       >
-        {address}
-      </Text>
+        <Text color={'white'} mb={4} textAlign={'center'}>
+          Use your camera to scan the code.
+        </Text>
 
-      <Box position={'absolute'} top={0} right={0}>
-        <Button.Text
-          icon={'Close'}
-          mainColor={'white'}
-          m={1}
-          p={0}
-          borderRadius={'100%'}
-        />
-      </Box>
-    </Card>
-  </StyledModal>
+        <Box bg={'white'} size={'200px'} mx={'auto'} mb={4} p={3} boxShadow={2}>
+          <QR value={address} size={'100%'} />
+        </Box>
+
+        <Text
+          color={'white'}
+          bg={'primary'}
+          px={4}
+          py={3}
+          borderRadius={2}
+          fontWeight={3}
+          lineHeight={'solid'}
+        >
+          {address}
+        </Text>
+
+        <Box position={'absolute'} top={0} right={0}>
+          <Button.Text
+            icon={'Close'}
+            mainColor={'white'}
+            m={1}
+            p={0}
+            borderRadius={'100%'}
+          />
+        </Box>
+      </Card>
+    </ModalBackdrop>
+  </Portal>
 );
 
 class PublicAddress extends Component {
@@ -170,13 +159,7 @@ class PublicAddress extends Component {
             </Tooltip>
           </Flex>
         </StyledWrapper>
-        <Box>
-          {this.state.isQRCodeOpen && (
-            <Portal>
-              <AddressQR address={this.props.address} />
-            </Portal>
-          )}
-        </Box>
+        {this.state.isQRCodeOpen && <AddressQR address={this.props.address} />}
       </React.Fragment>
     );
   }
