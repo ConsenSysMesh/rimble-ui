@@ -105,9 +105,11 @@ const QRButton = ({ address }) => {
   const { visible, toggle } = useHiddenState();
   return (
     <React.Fragment>
-      <Button size={'small'} ml={2} p={0} onClick={toggle}>
-        <Icon name={'CenterFocusStrong'} />
-      </Button>
+      <Tooltip message={'show QR code'}>
+        <Button size={'small'} ml={2} p={0} onClick={toggle}>
+          <Icon name={'CenterFocusStrong'} />
+        </Button>
+      </Tooltip>
       <AddressQrModal address={address} isOpen={visible} hide={toggle} />
     </React.Fragment>
   );
@@ -160,9 +162,7 @@ class PublicAddress extends Component {
               <Icon name={this.state.isCopied ? 'Check' : 'Assignment'} />
             </Button>
           </Tooltip>
-          <Tooltip message={'show QR code'}>
-            <QRButton address={this.props.address} />
-          </Tooltip>
+          <QRButton address={this.props.address} />
         </Flex>
       </StyledWrapper>
     );
