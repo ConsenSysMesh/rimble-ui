@@ -1,6 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 import Text from '../Text';
+
+const StyledText = styled(Text)`
+  & {
+    word-break: break-all;
+  }
+`;
 
 const addressSummary = (address, firstSegLength = 5, lastSegLength = 4) => {
   if (!address) return '';
@@ -16,7 +23,7 @@ class EthAddress extends React.PureComponent {
     const { address, truncate } = this.props;
     const displayAddress = truncate ? addressSummary(address) : address;
 
-    return <Text>{displayAddress}</Text>;
+    return <StyledText>{displayAddress}</StyledText>;
   }
 }
 
