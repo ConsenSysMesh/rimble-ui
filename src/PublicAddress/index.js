@@ -17,6 +17,8 @@ import Portal from '../Portal';
 import { useHiddenState } from '../Hidden';
 import { ModalBackdrop } from '../Modal';
 
+import Clipboard from './CopyToClipboard';
+
 const StyledInput = styled(Input)`
   text-overflow: ellipsis;
   white-space: no-wrap;
@@ -43,14 +45,21 @@ const StyledWrapper = styled(Box)`
   } */}
 `;
 
+const StyledPublicAddress = styled(Text)`
+  & {
+    word-break: break-all;
+  }
+`;
+
 const AddressQrModal = ({ isOpen, hide, address }) => {
   if (isOpen) {
     return (
       <Portal>
         <ModalBackdrop>
           <Card
+            maxWidth={'100%'}
             width={'auto'}
-            m={3}
+            // m={3}
             border={'none'}
             borderRadius={2}
             bg={'primary-light'}
@@ -70,17 +79,24 @@ const AddressQrModal = ({ isOpen, hide, address }) => {
               <QR value={address} size={'100%'} />
             </Box>
 
-            <Text
-              color={'white'}
-              bg={'primary'}
-              px={4}
-              py={3}
-              borderRadius={2}
-              fontWeight={3}
-              lineHeight={'solid'}
-            >
-              {address}
-            </Text>
+            <Clipboard text={address}>
+              {isCopied => (
+                <StyledPublicAddress
+                  color={'white'}
+                  bg={'primary'}
+                  px={4}
+                  py={3}
+                  borderRadius={2}
+                  fontWeight={3}
+                  lineHeight={'solid'}
+                  display={'flex'}
+                  alignItems={'center'}
+                >
+                  {address}
+                  <Icon ml={2} name={isCopied ? 'Check' : 'Assignment'} />
+                </StyledPublicAddress>
+              )}
+            </Clipboard>
 
             <Box position={'absolute'} top={0} right={0}>
               <Button.Text
@@ -101,43 +117,47 @@ const AddressQrModal = ({ isOpen, hide, address }) => {
   return null;
 };
 
-const QRButton = ({ address }) => {
+const QRButton = ({ address, ...props }) => {
   const { visible, toggle } = useHiddenState();
+
+  if (!props.buttonText) {
+    return (
+      <React.Fragment>
+        <Tooltip message={'show QR code'}>
+          <Button size={'small'} ml={2} p={0} onClick={toggle}>
+            <Icon name={'CenterFocusStrong'} />
+          </Button>
+        </Tooltip>
+        <AddressQrModal address={address} isOpen={visible} hide={toggle} />
+      </React.Fragment>
+    );
+  }
   return (
     <React.Fragment>
-      <Tooltip message={'show QR code'}>
-        <Button size={'small'} ml={2} p={0} onClick={toggle}>
-          <Icon name={'CenterFocusStrong'} />
-        </Button>
-      </Tooltip>
+      <Button size={'small'} ml={2} onClick={toggle}>
+        {'Show QR Code'}
+      </Button>
       <AddressQrModal address={address} isOpen={visible} hide={toggle} />
     </React.Fragment>
   );
 };
 
+const CopyButton = ({ clipboardText }) => {
+  return (
+    <Clipboard text={clipboardText}>
+      {isCopied => (
+        <Tooltip message={'copy to clipboard'}>
+          <Button size={'small'} p={0}>
+            <Icon name={isCopied ? 'Check' : 'Assignment'} />
+            {/* {isCopied ? 'copied!' : 'copy'} */}
+          </Button>
+        </Tooltip>
+      )}
+    </Clipboard>
+  );
+};
+
 class PublicAddress extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isCopied: false,
-    };
-    this.inputRef = React.createRef();
-    this.buttonRef = React.createRef();
-  }
-
-  handleClick = e => {
-    const { inputRef, buttonRef } = this;
-
-    e.preventDefault();
-    inputRef.current.select();
-    document.execCommand('copy');
-    this.setState({ isCopied: true });
-
-    setTimeout(() => {
-      this.setState({ isCopied: false });
-    }, 5000);
-  };
-
   render() {
     return (
       <StyledWrapper>
@@ -151,18 +171,11 @@ class PublicAddress extends Component {
         {/* <EthAddress address={this.props.address} /> */}
 
         <Flex position={'absolute'} right={0} mr={2}>
-          <Tooltip message={'copy to clipboard'}>
-            <Button
-              size={'small'}
-              ml={2}
-              p={0}
-              onClick={this.handleClick}
-              ref={this.buttonRef}
-            >
-              <Icon name={this.state.isCopied ? 'Check' : 'Assignment'} />
-            </Button>
-          </Tooltip>
-          <QRButton address={this.props.address} />
+          <CopyButton clipboardText={this.props.address} />
+          <QRButton
+            address={this.props.address}
+            buttonText={this.props.buttonText}
+          />
         </Flex>
       </StyledWrapper>
     );
