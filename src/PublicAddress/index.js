@@ -142,16 +142,24 @@ const QRButton = ({ address, ...props }) => {
   );
 };
 
-const CopyButton = ({ clipboardText }) => {
+const CopyButton = ({ clipboardText, ...props }) => {
+  if (!props.buttonText) {
+    return (
+      <Clipboard text={clipboardText}>
+        {isCopied => (
+          <Tooltip message={'copy to clipboard'}>
+            <Button size={'small'} p={0}>
+              <Icon name={isCopied ? 'Check' : 'Assignment'} />
+            </Button>
+          </Tooltip>
+        )}
+      </Clipboard>
+    );
+  }
   return (
     <Clipboard text={clipboardText}>
       {isCopied => (
-        <Tooltip message={'copy to clipboard'}>
-          <Button size={'small'} p={0}>
-            <Icon name={isCopied ? 'Check' : 'Assignment'} />
-            {/* {isCopied ? 'copied!' : 'copy'} */}
-          </Button>
-        </Tooltip>
+        <Button size={'small'}>{isCopied ? 'copied!' : 'copy'}</Button>
       )}
     </Clipboard>
   );
@@ -171,7 +179,10 @@ class PublicAddress extends Component {
         {/* <EthAddress address={this.props.address} /> */}
 
         <Flex position={'absolute'} right={0} mr={2}>
-          <CopyButton clipboardText={this.props.address} />
+          <CopyButton
+            clipboardText={this.props.address}
+            buttonText={this.props.buttonText}
+          />
           <QRButton
             address={this.props.address}
             buttonText={this.props.buttonText}
