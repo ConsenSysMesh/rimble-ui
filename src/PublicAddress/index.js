@@ -159,7 +159,7 @@ const CopyButton = ({ clipboardText, ...props }) => {
   return (
     <Clipboard text={clipboardText}>
       {isCopied => (
-        <Button size={'small'}>{isCopied ? 'copied!' : 'copy'}</Button>
+        <Button size={'small'}>{isCopied ? 'Copied!' : 'Copy'}</Button>
       )}
     </Clipboard>
   );
