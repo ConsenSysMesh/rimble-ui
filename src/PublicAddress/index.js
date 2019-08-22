@@ -21,7 +21,7 @@ import Clipboard from './CopyToClipboard';
 
 const StyledInput = styled(Input)`
   text-overflow: ellipsis;
-  white-space: no-wrap;
+  white-space: nowrap;
 `;
 
 const StyledWrapper = styled(Box)`
@@ -58,6 +58,11 @@ const AddressQrModal = ({ isOpen, hide, address }) => {
       'To send funds to this Ethereum address, scan this code using your mobile wallet app',
   };
 
+  const colors = {
+    foreground: 'black',
+    background: 'white',
+  };
+
   if (isOpen) {
     return (
       <Portal>
@@ -65,14 +70,15 @@ const AddressQrModal = ({ isOpen, hide, address }) => {
           <Card
             width={'auto'}
             maxWidth={'100%'}
-            bg={'primary-light'}
+            bg={colors.background}
+            color={colors.foreground}
             border={'none'}
             borderRadius={2}
             p={0}
           >
             <Button.Text
               icon={'Close'}
-              mainColor={'white'}
+              mainColor={'inherit'}
               p={0}
               borderRadius={'100%'}
               position={'absolute'}
@@ -82,27 +88,29 @@ const AddressQrModal = ({ isOpen, hide, address }) => {
             />
 
             <Text
+              color={'inherit'}
               p={3}
               borderBottom={1}
               borderColor={'blacks.4'}
-              color={'white'}
+              lineHeight={'solid'}
               textAlign={'center'}
               fontWeight={3}
-              lineHeight={'solid'}
             >
               {text.title}
             </Text>
 
-            <Box p={4} pt={3}>
-              <Text color={'white'} mb={4} textAlign={'center'}>
+            <Box p={4}>
+              <Text color={'inherit'} textAlign={'center'} mb={4}>
                 {text.description}
               </Text>
               <Box
-                bg={'white'}
                 size={'200px'}
                 mx={'auto'}
                 mb={4}
                 p={3}
+                bg={'white'}
+                border={1}
+                borderColor={'blacks.3'}
                 boxShadow={2}
               >
                 <QR value={address} size={'100%'} />
@@ -111,17 +119,24 @@ const AddressQrModal = ({ isOpen, hide, address }) => {
               <Clipboard text={address}>
                 {isCopied => (
                   <StyledPublicAddress
-                    bg={'white'}
-                    p={2}
-                    borderRadius={1}
-                    lineHeight={'solid'}
+                    color={'inherit'}
+                    position={'relative'}
                     display={'flex'}
                     alignItems={'center'}
                   >
-                    <Text flex={1} pl={2} fontWeight={3} color={'inherit'}>
-                      {address}
-                    </Text>
-                    <Button size={'small'} width={'4rem'} ml={2}>
+                    <StyledInput
+                      value={address}
+                      width={1}
+                      pr={'5rem'}
+                      fontWeight={3}
+                    />
+                    <Button
+                      size={'small'}
+                      width={'4rem'}
+                      mx={2}
+                      position={'absolute'}
+                      right={0}
+                    >
                       {!isCopied ? 'Copy' : <Icon name={'Check'} />}
                     </Button>
                   </StyledPublicAddress>
