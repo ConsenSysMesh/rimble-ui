@@ -52,61 +52,81 @@ const StyledPublicAddress = styled(Text)`
 `;
 
 const AddressQrModal = ({ isOpen, hide, address }) => {
+  const text = {
+    title: 'Ethereum Address',
+    description:
+      'To send funds to this Ethereum address, scan this code using your mobile wallet app',
+  };
+
   if (isOpen) {
     return (
       <Portal>
         <ModalBackdrop>
           <Card
-            maxWidth={'100%'}
             width={'auto'}
-            // m={3}
+            maxWidth={'100%'}
+            bg={'primary-light'}
             border={'none'}
             borderRadius={2}
-            bg={'primary-light'}
+            p={0}
           >
-            <Text color={'white'} mb={4} textAlign={'center'}>
-              Use your camera to scan the code.
+            <Button.Text
+              icon={'Close'}
+              mainColor={'white'}
+              p={0}
+              borderRadius={'100%'}
+              position={'absolute'}
+              top={0}
+              right={0}
+              onClick={hide}
+            />
+
+            <Text
+              p={3}
+              borderBottom={1}
+              borderColor={'blacks.4'}
+              color={'white'}
+              textAlign={'center'}
+              fontWeight={3}
+              lineHeight={'solid'}
+            >
+              {text.title}
             </Text>
 
-            <Box
-              bg={'white'}
-              size={'200px'}
-              mx={'auto'}
-              mb={4}
-              p={3}
-              boxShadow={2}
-            >
-              <QR value={address} size={'100%'} />
-            </Box>
+            <Box p={4} pt={3}>
+              <Text color={'white'} mb={4} textAlign={'center'}>
+                {text.description}
+              </Text>
+              <Box
+                bg={'white'}
+                size={'200px'}
+                mx={'auto'}
+                mb={4}
+                p={3}
+                boxShadow={2}
+              >
+                <QR value={address} size={'100%'} />
+              </Box>
 
-            <Clipboard text={address}>
-              {isCopied => (
-                <StyledPublicAddress
-                  color={'white'}
-                  bg={'primary'}
-                  px={4}
-                  py={3}
-                  borderRadius={2}
-                  fontWeight={3}
-                  lineHeight={'solid'}
-                  display={'flex'}
-                  alignItems={'center'}
-                >
-                  {address}
-                  <Icon ml={2} name={isCopied ? 'Check' : 'Assignment'} />
-                </StyledPublicAddress>
-              )}
-            </Clipboard>
-
-            <Box position={'absolute'} top={0} right={0}>
-              <Button.Text
-                icon={'Close'}
-                mainColor={'white'}
-                m={1}
-                p={0}
-                borderRadius={'100%'}
-                onClick={hide}
-              />
+              <Clipboard text={address}>
+                {isCopied => (
+                  <StyledPublicAddress
+                    bg={'white'}
+                    p={2}
+                    borderRadius={1}
+                    lineHeight={'solid'}
+                    display={'flex'}
+                    alignItems={'center'}
+                  >
+                    <Text flex={1} pl={2} fontWeight={3} color={'inherit'}>
+                      {address}
+                    </Text>
+                    <Button size={'small'} width={'4rem'} ml={2}>
+                      {!isCopied ? 'Copy' : <Icon name={'Check'} />}
+                    </Button>
+                  </StyledPublicAddress>
+                )}
+              </Clipboard>
             </Box>
           </Card>
         </ModalBackdrop>
