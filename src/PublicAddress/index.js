@@ -155,10 +155,15 @@ const AddressQrModal = ({ isOpen, hide, address }) => {
 const QRButton = ({ address, ...props }) => {
   const { visible, toggle } = useHiddenState();
 
+  const text = {
+    tooltip: 'Show QR Code',
+    button: 'Show QR Code',
+  };
+
   if (!props.buttonText) {
     return (
       <React.Fragment>
-        <Tooltip message={'show QR code'}>
+        <Tooltip message={text.tooltip}>
           <Button size={'small'} ml={2} p={0} onClick={toggle}>
             <Icon name={'CenterFocusStrong'} />
           </Button>
@@ -170,7 +175,7 @@ const QRButton = ({ address, ...props }) => {
   return (
     <React.Fragment>
       <Button size={'small'} ml={2} onClick={toggle}>
-        {'Show QR Code'}
+        {text.button}
       </Button>
       <AddressQrModal address={address} isOpen={visible} hide={toggle} />
     </React.Fragment>
@@ -178,11 +183,16 @@ const QRButton = ({ address, ...props }) => {
 };
 
 const CopyButton = ({ clipboardText, ...props }) => {
+  const text = {
+    tooltip: 'Copy to clipboard',
+    button: 'Copy',
+  };
+
   if (!props.buttonText) {
     return (
       <Clipboard text={clipboardText}>
         {isCopied => (
-          <Tooltip message={'copy to clipboard'}>
+          <Tooltip message={text.tooltip}>
             <Button size={'small'} p={0}>
               <Icon name={isCopied ? 'Check' : 'Assignment'} />
             </Button>
@@ -194,7 +204,7 @@ const CopyButton = ({ clipboardText, ...props }) => {
   return (
     <Clipboard text={clipboardText}>
       {isCopied => (
-        <Button size={'small'}>{isCopied ? 'Copied!' : 'Copy'}</Button>
+        <Button size={'small'}>{!isCopied ? text.button : 'Copied!'}</Button>
       )}
     </Clipboard>
   );
@@ -209,7 +219,7 @@ class PublicAddress extends Component {
           value={this.props.address}
           ref={this.inputRef}
           width={1}
-          pr={'6rem'}
+          pr={this.props.buttonText ? '12rem' : '6rem'}
         />
         {/* <EthAddress address={this.props.address} /> */}
 
