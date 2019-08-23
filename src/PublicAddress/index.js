@@ -99,7 +99,7 @@ const AddressQrModal = ({ isOpen, hide, address }) => {
               {text.title}
             </Text>
 
-            <Box p={4}>
+            <Box p={[3, 4]}>
               <Text color={'inherit'} textAlign={'center'} mb={4}>
                 {text.description}
               </Text>
