@@ -68,8 +68,8 @@ const AddressQrModal = ({ isOpen, hide, address }) => {
       <Portal>
         <ModalBackdrop>
           <Card
-            width={'auto'}
-            maxWidth={'100%'}
+            width={1}
+            maxWidth={6}
             bg={colors.background}
             color={colors.foreground}
             border={'none'}
@@ -104,10 +104,12 @@ const AddressQrModal = ({ isOpen, hide, address }) => {
                 {text.description}
               </Text>
               <Box
-                size={'200px'}
+                // size={['100%', '200px']}
+                width={1}
+                maxWidth={'220px'}
                 mx={'auto'}
                 mb={4}
-                p={3}
+                p={4}
                 bg={'white'}
                 border={1}
                 borderColor={'blacks.3'}
@@ -125,6 +127,7 @@ const AddressQrModal = ({ isOpen, hide, address }) => {
                     alignItems={'center'}
                   >
                     <StyledInput
+                      readOnly
                       value={address}
                       width={1}
                       pr={'5rem'}
