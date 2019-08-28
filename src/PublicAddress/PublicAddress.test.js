@@ -64,25 +64,4 @@ describe('PublicAddress component with text buttons', () => {
         .text()
     ).toBe('Show QR Code');
   });
-  it('updates button ui after copy', done => {
-    // not working
-    // component.find('CopyButton').simulate('click');
-    // component.update();
-    // expect(component.find('button').at(0).text()).toBe('Copied!');
-    // done()
-  });
-});
-
-describe('PublicAddress component functionality', () => {
-  const component = mount(
-    <PublicAddress address={'0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2'} />
-  );
-
-  it('copies address to clipboard', () => {});
-  it('updates button ui after copy', () => {});
-  it('shows modal', () => {});
-  it('shows qr code in modal', () => {});
-  it('copies address from qr code modal', () => {});
-  it('updates ui after address copy from qr code modal', () => {});
-  it('allows qr code modal to close', () => {});
 });
