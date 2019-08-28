@@ -245,12 +245,16 @@ PublicAddress.propTypes = {
   /**
    * Sets Ethereum address as the value of the field
    */
-  address: PropTypes.string,
+  address: PropTypes.string.isRequired,
 
   /**
    * Changes buttons to text from icons
    */
   buttonText: PropTypes.bool,
+};
+
+PublicAddress.defaultProps = {
+  buttonText: false,
 };
 
 PublicAddress.displayName = 'PublicAddress';
