@@ -5,21 +5,19 @@ const Clipboard = props => {
   const [isCopied, setIsCopied] = useState(false);
   const targetEl = useRef(null);
 
-  const copy = () => {
-    setIsCopied(true);
-
-    const timer = setTimeout(() => setIsCopied(false), 1000);
-  };
-
   useEffect(() => {
+    let timer;
+
     const clipboard = new ClipboardJS(targetEl.current, {
       // target: () => (),
       text: () => props.text,
     });
 
     clipboard.on('success', e => {
-      console.log('text copied!:', props.text);
-      copy();
+      // console.log('text copied!:', props.text);
+      setIsCopied(true);
+      clearTimeout(timer);
+      timer = setTimeout(() => setIsCopied(false), 1500);
     });
 
     clipboard.on('error', e => {
@@ -28,25 +26,11 @@ const Clipboard = props => {
 
     return () => {
       clipboard.destroy();
-      // clearTimeout(timer)
+      clearTimeout(timer);
     };
   });
 
-  // return {
-  //   isCopied,
-  //   copy
-  // }
-
-  return (
-    <div ref={targetEl}>
-      {props.children(isCopied)}
-      {/* {isCopied ? 'copied' : props.children} */}
-    </div>
-  );
+  return <div ref={targetEl}>{props.children(isCopied)}</div>;
 };
-
-// const Clipboard = () => {
-//   return()
-// }
 
 export default Clipboard;
