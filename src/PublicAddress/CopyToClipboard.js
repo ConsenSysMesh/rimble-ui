@@ -4,20 +4,22 @@ import ClipboardJS from 'clipboard';
 const Clipboard = props => {
   const [isCopied, setIsCopied] = useState(false);
   const targetEl = useRef(null);
+  const timer = useRef(0);
 
   useEffect(() => {
-    let timer;
+    const afterCopy = () => {
+      setIsCopied(true);
+      clearTimeout(timer.current);
+      timer.current = setTimeout(() => setIsCopied(false), 1500);
+    };
 
     const clipboard = new ClipboardJS(targetEl.current, {
-      // target: () => (),
       text: () => props.text,
     });
 
     clipboard.on('success', e => {
       // console.log('text copied!:', props.text);
-      setIsCopied(true);
-      clearTimeout(timer);
-      timer = setTimeout(() => setIsCopied(false), 1500);
+      afterCopy();
     });
 
     clipboard.on('error', e => {
@@ -26,9 +28,9 @@ const Clipboard = props => {
 
     return () => {
       clipboard.destroy();
-      clearTimeout(timer);
+      clearTimeout(timer.current);
     };
-  });
+  }, []);
 
   return <div ref={targetEl}>{props.children(isCopied)}</div>;
 };
