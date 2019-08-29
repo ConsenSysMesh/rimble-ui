@@ -26,7 +26,6 @@ export { default as theme } from './theme';
 export { default as ThemeProvider } from './ThemeProvider';
 export { default as Icon } from './Icon';
 export { default as Loader } from './Loader';
-export { default as PublicAddress } from './PublicAddress';
 export { default as ToastMessage } from './ToastMessage';
 export { default as Pill } from './Pill';
 export { default as Portal } from './Portal';

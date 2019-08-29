@@ -7,23 +7,16 @@ import Documentation from './docs.md';
 
 import { Heading, Box, EthAddress, } from 'rimble-ui';
 
-storiesOf('Components/', module).add(
-  'EthAddress',
-  withDocs(Documentation, () => (
-    <Box>
-      <Box mx={3}>
-        <Heading.h4>Default</Heading.h4>
-        <CodeBlock>
-          <EthAddress address={'0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2'} />
-        </CodeBlock>
-      </Box>
+storiesOf('Components/', module)
+  .add('EthAddress', () => (
+    <>
 
-      <Box mx={3}>
-        <Heading.h4>Truncation</Heading.h4>
-        <CodeBlock>
-          <EthAddress truncate address={'0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2'} />
-        </CodeBlock>
-      </Box>
-    </Box>
+      <EthAddress address={'0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2'} />
+
+      <EthAddress address={'0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2'} buttonText />
+
+      <EthAddress.Text address={'0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2'} />
+
+      <EthAddress.Text truncate address={'0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2'} />
+    </>
   ))
-);
