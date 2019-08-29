@@ -32,17 +32,6 @@ const StyledWrapper = styled(Box)`
     width: 100%;
     position: relative;
   }
-
-  ${'' /* > input {
-    width: 100%;
-    padding-right: 5.25rem;
-  } */}
-
-  ${'' /* > button {
-    position: absolute;
-    width: 4rem;
-    right: 0.75rem;
-  } */}
 `;
 
 const StyledPublicAddress = styled(Text)`
