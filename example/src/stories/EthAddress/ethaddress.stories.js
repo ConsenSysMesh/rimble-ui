@@ -19,6 +19,7 @@ storiesOf('Components/EthAddress', module)
       <EthAddress.ReadOnly
         my={3}
         address={'0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2'}
+        buttonText
       />
 
     </>
