@@ -18,16 +18,16 @@ const addressSummary = (address, firstSegLength = 5, lastSegLength = 4) => {
     : '...';
 };
 
-class EthAddress extends React.PureComponent {
+class TextOnlyAddress extends React.PureComponent {
   render() {
     const { address, truncate } = this.props;
     const displayAddress = truncate ? addressSummary(address) : address;
 
-    return <StyledText>{displayAddress}</StyledText>;
+    return <StyledText {...this.props}>{displayAddress}</StyledText>;
   }
 }
 
-EthAddress.propTypes = {
+TextOnlyAddress.propTypes = {
   /**
    * The Ethereum Address
    */
@@ -38,10 +38,10 @@ EthAddress.propTypes = {
   truncate: PropTypes.bool,
 };
 
-EthAddress.defaultProps = {
+TextOnlyAddress.defaultProps = {
   truncate: false,
 };
 
-EthAddress.displayName = 'EthAddress';
+TextOnlyAddress.displayName = 'TextOnlyAddress';
 
-export default EthAddress;
+export default TextOnlyAddress;
