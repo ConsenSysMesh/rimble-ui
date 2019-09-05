@@ -1,6 +1,3 @@
-// import React, { Component } from 'react';
-// import PropTypes from 'prop-types';
-
 import TextOnlyAddress from './TextOnlyAddress';
 import ReadOnlyInput from './ReadOnlyInput';
 
