@@ -13,10 +13,8 @@ import {
   Heading,
   Text,
   Flex,
-  Button,
   Card,
   Pill,
-  Link,
 } from 'rimble-ui';
 
 storiesOf('Components/Avatar', module)

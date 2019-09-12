@@ -11,13 +11,11 @@ import {
   QR,
   Box,
   Text,
-  
   Flex,
   Card,
   Pill,
   Heading,
-  PublicAddress,
-  Link,
+  PublicAddress
 } from 'rimble-ui';
 
 storiesOf('Components/QR Code', module)

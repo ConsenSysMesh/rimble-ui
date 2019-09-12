@@ -11,10 +11,6 @@ import {
   Box,
   Heading,
   Text,
-  Icon,
-  Flex,
-  Pill,
-  Card
 } from 'rimble-ui';
 
 storiesOf('Components/Flash', module)

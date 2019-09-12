@@ -8,15 +8,10 @@ import Documentation from './docs.md';
 import Guidelines from './guide.md';
 
 import {
-  Tooltip,
-  Icon,
   Flex,
   Text,
-  Button,
   Box,
   Heading,
-  Input,
-  Field,
   Link,
   Card,
   Pill,

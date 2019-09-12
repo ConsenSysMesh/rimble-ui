@@ -2,7 +2,6 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
 
-import CodeBlock from '../../components/CodeBlock';
 import ContributeBanner from '../../components/ContributeBanner';
 import ExampleCard from '../../components/ExampleCard';
 
@@ -15,9 +14,7 @@ import {
   Heading,
   Text,
   Icon,
-  Flex,
-  Pill,
-  Card
+  Flex
 } from 'rimble-ui';
 
 storiesOf('Components/Flash', module)

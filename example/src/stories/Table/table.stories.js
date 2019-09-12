@@ -10,13 +10,10 @@ import Guidelines from './guide.md';
 import {
   Table,
   Box,
-  Icon,
   Heading,
   Text,
   Card,
-  
   Pill,
-  Flex,
   Link,
 } from 'rimble-ui';
 

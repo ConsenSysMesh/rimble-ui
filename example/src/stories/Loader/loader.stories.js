@@ -5,7 +5,7 @@ import CodeBlock from '../../components/CodeBlock';
 
 import Documentation from './docs.md';
 
-import { Loader, Button, Box, Heading, Text } from 'rimble-ui';
+import { Loader, Box, Heading, Text } from 'rimble-ui';
 
 storiesOf('Components/Loader', module).add(
   'Documentation',

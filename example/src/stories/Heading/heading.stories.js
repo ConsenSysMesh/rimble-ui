@@ -14,7 +14,6 @@ import {
   Flex,
   Card,
   Pill,
-  Link,
 } from 'rimble-ui';
 
 storiesOf('Components/Heading', module)

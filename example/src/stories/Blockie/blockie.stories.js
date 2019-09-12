@@ -16,9 +16,6 @@ import {
   Card,
   Pill,
   Flex,
-  Image,
-  Icon,
-  Link,
 } from 'rimble-ui';
 
 storiesOf('Components/Blockie', module)

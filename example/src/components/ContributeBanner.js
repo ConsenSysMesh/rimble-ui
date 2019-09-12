@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Box, Card, Text, Heading, Link } from 'rimble-ui';
+import { Button, Box, Card, Text, Heading } from 'rimble-ui';
 
 const ContributeBanner = () => (
   <Box my={4}>
