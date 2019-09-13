@@ -57,7 +57,7 @@ class FileInput extends Component {
     }
 
     if (this.props.onChange) {
-      this.props.onChange();
+      this.props.onChange(e);
     }
   };
 
