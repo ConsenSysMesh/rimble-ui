@@ -1,30 +1,22 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
 import CodeBlock from '../../components/CodeBlock';
-import ContributeBanner from '../../components/ContributeBanner';
 
 import Documentation from './docs.md';
-import Guidelines from './guide.md';
 
 import {
-  Flex,
-  Card,
-  Image,
-  Button,
-  Form,
   Box,
   Heading,
   Field,
   Text,
   Input,
-  Pill,
-  Link,
+  Link
 } from 'rimble-ui';
 
-storiesOf('Components/Inputs', module)
+storiesOf('Components/', module)
   .add(
-    'Documentation',
+    'Input',
     withDocs(Documentation, () => (
       <Box mx={3}>
         <Box>

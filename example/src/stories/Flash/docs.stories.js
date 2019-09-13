@@ -11,15 +11,11 @@ import {
   Box,
   Heading,
   Text,
-  Icon,
-  Flex,
-  Pill,
-  Card
 } from 'rimble-ui';
 
-storiesOf('Components/Flash', module)
+storiesOf('Components/', module)
   .add(
-    'Documentation',
+    'Flash',
     withDocs(Documentation, () => (
     <Box mx={3}>
       <Box>

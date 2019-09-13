@@ -12,8 +12,8 @@ Heading.defaultProps = {
   py: 3
 }
 
-storiesOf('Components/Pill', module).add(
-  'Documentation',
+storiesOf('Components/', module).add(
+  'Pill',
   withDocs(Documentation, () => (
     <Box mx={3}>
       <Box>
