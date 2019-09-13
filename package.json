@@ -27,9 +27,11 @@
     "@d8660091/react-popper": "^1.0.4",
     "@svgr/rollup": "^4.2.0",
     "ethereum-blockies": "^0.1.1",
+    "mixin-deep": "^2.0.1",
     "polished": "^3.2.0",
     "qrcode.react": "^0.9.3",
     "rmdi": "^1.0.1",
+    "set-value": "^3.0.1",
     "styled-system": "^4.1.0"
   },
   "peerDependencies": {
