@@ -2,7 +2,6 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
 import CodeBlock from '../../components/CodeBlock';
-import ContributeBanner from '../../components/ContributeBanner';
 
 import Documentation from './docs.md';
 
@@ -13,9 +12,6 @@ import {
   Button,
   Box,
   Heading,
-  Link,
-  Card,
-  Pill,
 } from 'rimble-ui';
 
 storiesOf('Components/', module)

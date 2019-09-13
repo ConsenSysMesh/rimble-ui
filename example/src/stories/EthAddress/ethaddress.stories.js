@@ -1,11 +1,7 @@
 import React from 'react';
-import { storiesOf, } from '@storybook/react';
-import { withDocs, } from 'storybook-readme';
-import CodeBlock from '../../components/CodeBlock';
+import { storiesOf, } from '@storybook/react'
 
-import Documentation from './docs.md';
-
-import { Heading, Box, EthAddress, Text, Tooltip } from 'rimble-ui';
+import { EthAddress } from 'rimble-ui';
 
 storiesOf('Components/EthAddress', module)
   .add('EthAddress.ReadOnly', () => (
