@@ -13,9 +13,9 @@ import {
   Text,
 } from 'rimble-ui';
 
-storiesOf('Components/Flash', module)
+storiesOf('Components/', module)
   .add(
-    'Documentation',
+    'Flash',
     withDocs(Documentation, () => (
     <Box mx={3}>
       <Box>

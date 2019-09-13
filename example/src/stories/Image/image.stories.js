@@ -7,8 +7,8 @@ import Documentation from './docs.md';
 
 import { Image, Box } from 'rimble-ui';
 
-storiesOf('Components/Image', module).add(
-  'Documentation',
+storiesOf('Components/', module).add(
+  'Image',
   withDocs(Documentation, () => (
     <Box mx={3}>
       <CodeBlock>

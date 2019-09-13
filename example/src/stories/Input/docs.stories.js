@@ -14,9 +14,9 @@ import {
   Link
 } from 'rimble-ui';
 
-storiesOf('Components/Inputs', module)
+storiesOf('Components/', module)
   .add(
-    'Documentation',
+    'Input',
     withDocs(Documentation, () => (
       <Box mx={3}>
         <Box>
