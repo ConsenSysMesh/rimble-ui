@@ -8,6 +8,6 @@ storiesOf('Components/', module)
     <>
       <EthAddress address={'0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2'} />
 
-      <EthAddress buttonText address={'0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2'} />
+      <EthAddress textLabels address={'0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2'} />
     </>
   ))

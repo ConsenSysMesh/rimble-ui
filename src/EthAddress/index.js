@@ -145,7 +145,7 @@ const QRButton = ({ address, ...props }) => {
     button: 'Show QR Code',
   };
 
-  if (!props.buttonText) {
+  if (!props.textLabels) {
     return (
       <React.Fragment>
         <Tooltip message={text.tooltip}>
@@ -173,7 +173,7 @@ const CopyButton = ({ clipboardText, ...props }) => {
     button: 'Copy',
   };
 
-  if (!props.buttonText) {
+  if (!props.textLabels) {
     return (
       <Clipboard text={clipboardText}>
         {isCopied => (
@@ -205,17 +205,17 @@ class EthAddress extends Component {
           ref={this.inputRef}
           width={1}
           fontWeight={3}
-          pr={this.props.buttonText ? '12rem' : '6rem'}
+          pr={this.props.textLabels ? '12rem' : '6rem'}
         />
 
         <Flex position={'absolute'} right={0} mr={2}>
           <CopyButton
             clipboardText={this.props.address}
-            buttonText={this.props.buttonText}
+            textLabels={this.props.textLabels}
           />
           <QRButton
             address={this.props.address}
-            buttonText={this.props.buttonText}
+            textLabels={this.props.textLabels}
           />
         </Flex>
       </StyledWrapper>
@@ -232,11 +232,11 @@ EthAddress.propTypes = {
   /**
    * Changes buttons to text from icons
    */
-  buttonText: PropTypes.bool,
+  textLabels: PropTypes.bool,
 };
 
 EthAddress.defaultProps = {
-  buttonText: false,
+  textLabels: false,
 };
 
 EthAddress.displayName = 'EthAddress';
