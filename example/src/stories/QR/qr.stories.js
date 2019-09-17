@@ -2,19 +2,12 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
 import CodeBlock from '../../components/CodeBlock';
-import ContributeBanner from '../../components/ContributeBanner';
 
 import Documentation from './docs.md';
 
 import {
   QR,
   Box,
-  Text,
-  Flex,
-  Card,
-  Pill,
-  Heading,
-  PublicAddress
 } from 'rimble-ui';
 
 storiesOf('Components/', module)

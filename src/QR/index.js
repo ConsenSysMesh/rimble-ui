@@ -11,6 +11,10 @@ QR.propTypes = {
   value: PropTypes.string.isRequired,
 };
 
+QR.defaultProps = {
+  renderAs: 'svg',
+};
+
 QR.displayName = 'QR';
 
 export default QR;

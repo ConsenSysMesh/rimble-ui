@@ -17,7 +17,7 @@ export default {
     sansSerif: '"Source Sans Pro", -apple-system, sans-serif',
   },
   space: [0, 4, 8, 16, 32, 64, 128, 256],
-  radii: ['0', '4px', '8px', '16px'],
+  radii: ['0', '4px', '8px', '16px', '32px'],
   width: [0, 16, 32, 64, 128, 256],
   minWidths: [0, 16, 32, 64, 128, 256],
   maxWidths: [0, 16, 32, 64, 128, 256, 512, 768, 1024, 1536],
