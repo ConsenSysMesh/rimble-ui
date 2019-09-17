@@ -35,6 +35,11 @@ class Example extends Component {
 
 ## Change log
 
+### 0.9.8
+
+- updated vulnerable dependencies.
+- fixed onChange event not firing for file inputs.
+
 ### 0.9.7
 
 - fixed onChange events not firing for file inputs.
