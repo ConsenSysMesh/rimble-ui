@@ -210,7 +210,7 @@ storiesOf('Components/', module)
           <Text.p>you must pass an <code>{'id'}</code> attr. </Text.p>
           <CodeBlock>
             <Field label="File Input">
-              <Input type="file" id="my_file_upload" multiple />
+              <Input type="file" id="my_file_upload" multiple onChange={(e) => console.log(e)} />
             </Field>
           </CodeBlock>
         </Box>
