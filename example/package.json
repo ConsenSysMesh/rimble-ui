@@ -6,8 +6,8 @@
   "private": true,
   "dependencies": {
     "prop-types": "15.7.2",
-    "react": "16.9.0",
-    "react-dom": "16.9.0",
+    "react": "link:../node_modules/react",
+    "react-dom": "link:../node_modules/react-dom",
     "react-scripts": "3.1.1",
     "rimble-ui": "link:..",
     "styled-components": "^4.3.2"
