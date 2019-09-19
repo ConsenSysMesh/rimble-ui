@@ -17,8 +17,8 @@ import {
   MetaMaskButton,
 } from 'rimble-ui';
 
-storiesOf('Components/Card', module).add(
-  'Documentation',
+storiesOf('Components/', module).add(
+  'Card',
   withDocs(Documentation, () => (
     <Box mx={3}>
       <CodeBlock>

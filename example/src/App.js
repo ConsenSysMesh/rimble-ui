@@ -20,7 +20,6 @@ import {
   Modal,
   Pill,
   Progress,
-  PublicAddress,
   QR,
   Radio,
   Select,
@@ -53,10 +52,11 @@ const testComponents = props => (
     <Box p={3}>
       <Button size={'medium'}>Click me!</Button>
       <Link>I'm a Link!</Link>
-      <PublicAddress address="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2" />
-      <EthAddress address="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2" />
       <EthAddress
-        truncate
+        address="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2"
+      />
+      <EthAddress
+        textLabels
         address="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2"
       />
       <Input />

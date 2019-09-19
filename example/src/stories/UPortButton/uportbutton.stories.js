@@ -5,7 +5,7 @@ import CodeBlock from '../../components/CodeBlock';
 
 import Documentation from './docs.md';
 
-import { UPortButton, Flex, Box, Heading, Text, Button } from 'rimble-ui';
+import { UPortButton, Box, Heading, Text } from 'rimble-ui';
 
 storiesOf('Components/UPortButton', module).add(
   'Documentation',
@@ -70,9 +70,9 @@ storiesOf('Components/UPortButton', module).add(
         </UPortButton.Solid>
 
         <CodeBlock textOnly>
-          {`<UPortButton.Solid 
-  as={'a'} 
-  href={'https://www.uport.me/'} 
+          {`<UPortButton.Solid
+  as={'a'}
+  href={'https://www.uport.me/'}
   target={'_blank'}
 >
   Download uPort
@@ -84,9 +84,9 @@ storiesOf('Components/UPortButton', module).add(
 
         <CodeBlock textOnly>
           {
-            `<UPortButton.Outline 
-  as={"a"} 
-  href={"https://www.uport.me/"} 
+            `<UPortButton.Outline
+  as={"a"}
+  href={"https://www.uport.me/"}
   target={"_blank"}
 >
   Download uPort

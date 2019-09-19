@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import Portal from '../Portal';
 import Box from '../Box';
-import Card from '../Card';
 
 const StyledOverlay = styled(Box)`
   & {
@@ -16,15 +16,14 @@ const StyledOverlay = styled(Box)`
     width: 100vw;
     display: flex;
     flex-flow: column;
-    justify-content: center;
-    align-items: center;
+    place-items: center;
+    place-content: center;
   }
 `;
 
 StyledOverlay.defaultProps = {
   bg: 'blacks.10',
-  px: 3,
-  py: 3,
+  p: 3,
 };
 
 class Modal extends Component {
@@ -54,7 +53,11 @@ class Modal extends Component {
       return null;
     }
 
-    return <StyledOverlay>{this.props.children}</StyledOverlay>;
+    return (
+      <Portal>
+        <StyledOverlay>{this.props.children}</StyledOverlay>
+      </Portal>
+    );
   }
 }
 
@@ -70,5 +73,7 @@ Modal.propTypes = {
 };
 
 Modal.displayName = 'Modal';
+
+export { StyledOverlay as ModalBackdrop };
 
 export default Modal;
