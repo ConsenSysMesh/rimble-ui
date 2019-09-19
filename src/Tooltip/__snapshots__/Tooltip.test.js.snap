@@ -11,12 +11,14 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
   padding-right: 32px;
   height: 3rem;
   min-width: 3rem;
+  position: relative;
   border: none;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: inherit;
   font-weight: 600;
+  line-height: 1;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
 }
@@ -97,7 +99,6 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
 .c0 {
   color: var(--contrast-color);
   background: #FFF;
-  position: relative;
   z-index: 0;
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
@@ -178,12 +179,14 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
   padding-right: 32px;
   height: 3rem;
   min-width: 3rem;
+  position: relative;
   border: none;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: inherit;
   font-weight: 600;
+  line-height: 1;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
 }
@@ -264,7 +267,6 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
 .c0 {
   color: var(--contrast-color);
   background: #FFF;
-  position: relative;
   z-index: 0;
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
@@ -489,11 +491,13 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                 fontSize="inherit"
                 fontWeight={3}
                 height="3rem"
+                lineHeight={1}
                 m={0}
                 mainColor="primary"
                 minWidth="3rem"
                 onMouseEnter={[Function]}
                 onMouseLeave={[Function]}
+                position="relative"
                 px={4}
                 py={0}
               >
@@ -508,11 +512,13 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                   fontSize="inherit"
                   fontWeight={3}
                   height="3rem"
+                  lineHeight={1}
                   m={0}
                   mainColor="primary"
                   minWidth="3rem"
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
+                  position="relative"
                   px={4}
                   py={0}
                   theme={
@@ -724,6 +730,7 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                         "4px",
                         "8px",
                         "16px",
+                        "32px",
                       ],
                       "shadows": Array [
                         "0",
@@ -981,6 +988,7 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                               "4px",
                               "8px",
                               "16px",
+                              "32px",
                             ],
                             "shadows": Array [
                               "0",
@@ -1112,8 +1120,6 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
     ",
                             "
     background: #FFF;
-
-    position: relative;
     z-index: 0;
     transition: all 0.15s ease;
   }
@@ -1162,11 +1168,13 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                     }
                     forwardedRef={[Function]}
                     height="3rem"
+                    lineHeight={1}
                     m={0}
                     mainColor="primary"
                     minWidth="3rem"
                     onMouseEnter={[Function]}
                     onMouseLeave={[Function]}
+                    position="relative"
                     px={4}
                     py={0}
                     theme={
@@ -1378,6 +1386,7 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                           "4px",
                           "8px",
                           "16px",
+                          "32px",
                         ],
                         "shadows": Array [
                           "0",
@@ -1458,12 +1467,14 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
   padding-right: 32px;
   height: 3rem;
   min-width: 3rem;
+  position: relative;
   border: none;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: inherit;
   font-weight: 600;
+  line-height: 1;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
 }
@@ -1544,7 +1555,6 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
 .c1 {
   color: var(--contrast-color);
   background: #FFF;
-  position: relative;
   z-index: 0;
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
@@ -1789,6 +1799,7 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
         "4px",
         "8px",
         "16px",
+        "32px",
       ],
       "shadows": Array [
         "0",
@@ -2034,6 +2045,7 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
           "4px",
           "8px",
           "16px",
+          "32px",
         ],
         "shadows": Array [
           "0",
@@ -2155,12 +2167,14 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
   padding-right: 32px;
   height: 3rem;
   min-width: 3rem;
+  position: relative;
   border: none;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: inherit;
   font-weight: 600;
+  line-height: 1;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
 }
@@ -2241,7 +2255,6 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
 .c0 {
   color: var(--contrast-color);
   background: #FFF;
-  position: relative;
   z-index: 0;
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
@@ -2466,11 +2479,13 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                           fontSize="inherit"
                           fontWeight={3}
                           height="3rem"
+                          lineHeight={1}
                           m={0}
                           mainColor="primary"
                           minWidth="3rem"
                           onMouseEnter={[Function]}
                           onMouseLeave={[Function]}
+                          position="relative"
                           px={4}
                           py={0}
                         >
@@ -2485,11 +2500,13 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                             fontSize="inherit"
                             fontWeight={3}
                             height="3rem"
+                            lineHeight={1}
                             m={0}
                             mainColor="primary"
                             minWidth="3rem"
                             onMouseEnter={[Function]}
                             onMouseLeave={[Function]}
+                            position="relative"
                             px={4}
                             py={0}
                             theme={
@@ -2701,6 +2718,7 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                                   "4px",
                                   "8px",
                                   "16px",
+                                  "32px",
                                 ],
                                 "shadows": Array [
                                   "0",
@@ -2958,6 +2976,7 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                                         "4px",
                                         "8px",
                                         "16px",
+                                        "32px",
                                       ],
                                       "shadows": Array [
                                         "0",
@@ -3089,8 +3108,6 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
     ",
                                       "
     background: #FFF;
-
-    position: relative;
     z-index: 0;
     transition: all 0.15s ease;
   }
@@ -3139,11 +3156,13 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                               }
                               forwardedRef={[Function]}
                               height="3rem"
+                              lineHeight={1}
                               m={0}
                               mainColor="primary"
                               minWidth="3rem"
                               onMouseEnter={[Function]}
                               onMouseLeave={[Function]}
+                              position="relative"
                               px={4}
                               py={0}
                               theme={
@@ -3355,6 +3374,7 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                                     "4px",
                                     "8px",
                                     "16px",
+                                    "32px",
                                   ],
                                   "shadows": Array [
                                     "0",

@@ -1,7 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
-import { linkTo } from '@storybook/addon-links';
 import CodeBlock from '../../components/CodeBlock';
 import ContributeBanner from '../../components/ContributeBanner';
 
@@ -10,17 +9,13 @@ import Guidelines from './guide.md';
 
 import {
   Button,
-  MetaMaskButton,
-  Icon,
   Loader,
   Text,
   Heading,
   Box,
   Flex,
-  Modal,
   Card,
   Pill,
-  Link,
 } from 'rimble-ui';
 
 storiesOf('Components/Button', module).add(

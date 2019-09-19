@@ -79,8 +79,8 @@ class YourModal extends Component {
   }
 }
 
-storiesOf('Components/Modal', module).add(
-  'Documentation',
+storiesOf('Components/', module).add(
+  'Modal',
   withDocs(Documentation, () => {
     return (
       <Box mx={3}>

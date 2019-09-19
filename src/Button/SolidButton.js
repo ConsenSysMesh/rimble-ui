@@ -9,8 +9,6 @@ const StyledSolidButton = styled(StyledButton)`
     color: var(--contrast-color);
     ${'' /* background: var(--main-color); */}
     background: #FFF;
-
-    position: relative;
     z-index: 0;
     transition: all 0.15s ease;
   }

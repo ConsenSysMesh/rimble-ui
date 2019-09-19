@@ -218,6 +218,7 @@ exports[`Select component sanity matches danger variant snapshot 1`] = `
         "4px",
         "8px",
         "16px",
+        "32px",
       ],
       "shadows": Array [
         "0",
@@ -488,6 +489,7 @@ exports[`Select component sanity matches default snapshot 1`] = `
         "4px",
         "8px",
         "16px",
+        "32px",
       ],
       "shadows": Array [
         "0",
@@ -758,6 +760,7 @@ exports[`Select component sanity matches info variant snapshot 1`] = `
         "4px",
         "8px",
         "16px",
+        "32px",
       ],
       "shadows": Array [
         "0",
@@ -1028,6 +1031,7 @@ exports[`Select component sanity matches success variant snapshot 1`] = `
         "4px",
         "8px",
         "16px",
+        "32px",
       ],
       "shadows": Array [
         "0",
@@ -1371,6 +1375,7 @@ exports[`Select component sanity matches warning variant snapshot 1`] = `
         "4px",
         "8px",
         "16px",
+        "32px",
       ],
       "shadows": Array [
         "0",

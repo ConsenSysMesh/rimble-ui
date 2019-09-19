@@ -1,30 +1,22 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
 import CodeBlock from '../../components/CodeBlock';
-import ContributeBanner from '../../components/ContributeBanner';
 
 import Documentation from './docs.md';
-import Guidelines from './guide.md';
 
 import {
-  Flex,
-  Card,
-  Image,
-  Button,
-  Form,
   Box,
   Heading,
   Field,
   Text,
   Input,
-  Pill,
-  Link,
+  Link
 } from 'rimble-ui';
 
-storiesOf('Components/Inputs', module)
+storiesOf('Components/', module)
   .add(
-    'Documentation',
+    'Input',
     withDocs(Documentation, () => (
       <Box mx={3}>
         <Box>
@@ -218,7 +210,7 @@ storiesOf('Components/Inputs', module)
           <Text.p>you must pass an <code>{'id'}</code> attr. </Text.p>
           <CodeBlock>
             <Field label="File Input">
-              <Input type="file" id="my_file_upload" multiple />
+              <Input type="file" id="my_file_upload" multiple onChange={(e) => console.log(e)} />
             </Field>
           </CodeBlock>
         </Box>

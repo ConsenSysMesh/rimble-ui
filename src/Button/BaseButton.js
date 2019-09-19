@@ -113,9 +113,9 @@ StyledButton.defaultProps = {
 
 Button.defaultProps = {
   // base props
-  // theme,
   // variant: 'primary',
   // size: 'medium',
+  position: 'relative',
   height: '3rem',
   minWidth: '3rem',
   m: 0,
@@ -124,6 +124,7 @@ Button.defaultProps = {
   fontSize: 'inherit',
   fontFamily: 'sansSerif',
   fontWeight: 3,
+  lineHeight: 1,
   // color props
   color: 'white',
   bg: 'silver',
