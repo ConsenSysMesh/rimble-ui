@@ -39,6 +39,7 @@ class Example extends Component {
 
 - updated vulnerable dependencies.
 - fixed onChange event not firing for file inputs.
+- added new `EthAddress` component. 
 
 ### 0.9.7
 
