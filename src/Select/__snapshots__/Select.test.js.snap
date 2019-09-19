@@ -224,6 +224,7 @@ exports[`Select component sanity matches default snapshot 1`] = `
           "4px",
           "8px",
           "16px",
+          "32px",
         ],
         "shadows": Array [
           "0",

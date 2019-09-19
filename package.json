@@ -26,6 +26,7 @@
   "dependencies": {
     "@d8660091/react-popper": "^1.0.4",
     "@svgr/rollup": "^4.2.0",
+    "clipboard": "^2.0.4",
     "ethereum-blockies": "^0.1.1",
     "mixin-deep": "^2.0.1",
     "polished": "^3.2.0",
@@ -36,13 +37,12 @@
   },
   "peerDependencies": {
     "prop-types": "^15.7.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
     "styled-components": ">= 4"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
-    "babel-eslint": "^9.0.0",
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
@@ -64,9 +64,9 @@
     "lint-staged": "^8.1.5",
     "prettier": "^1.16.4",
     "prop-types": "^15.7.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "2.1.8",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-scripts": "^3.1.1",
     "rollup": "^0.68.2",
     "rollup-plugin-babel": "^3.0.7",
     "rollup-plugin-commonjs": "^9.1.3",

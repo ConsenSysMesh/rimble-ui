@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Popper from '@d8660091/react-popper';
+import { isBrowser } from '../utils';
 import theme from '../theme';
 import Text from '../Text';
 
@@ -51,7 +52,7 @@ const Tooltip = ({ children, ...props }) => {
     });
   };
 
-  if (typeof window !== 'undefined') {
+  if (isBrowser()) {
     return (
       <Popper
         options={options}

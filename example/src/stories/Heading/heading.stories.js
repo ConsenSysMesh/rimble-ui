@@ -2,24 +2,17 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
 import CodeBlock from '../../components/CodeBlock';
-import ContributeBanner from '../../components/ContributeBanner';
 
 import Documentation from './docs.md';
-import Guidelines from './guide.md';
 
 import {
   Heading,
   Box,
   Text,
-  Flex,
-  Card,
-  Pill,
-  Link,
 } from 'rimble-ui';
 
-storiesOf('Components/Heading', module)
-  .add(
-    'Documentation',
+storiesOf('Components/', module)
+  .add('Heading',
     withDocs(Documentation, () => (
       <Box mx={3}>
         <Box>
@@ -107,108 +100,3 @@ storiesOf('Components/Heading', module)
       </Box>
     ))
   )
-  .add(
-    'Design guidelines',
-    withDocs(Guidelines, () => (
-      <Box mx={3}>
-        <Box>
-          <Heading.h3>Design</Heading.h3>
-          <Text>
-            Some best practices for using <code>{'Heading'}</code> in your
-            product.
-          </Text>
-        </Box>
-        <Box>
-          <ul>
-            <li>
-              <Text>
-                Only use one <code>{'h1'}</code> per page
-              </Text>
-            </li>
-          </ul>
-        </Box>
-        <Box>
-          <ul>
-            <li>
-              <Text>Headings should explain the content below</Text>
-            </li>
-          </ul>
-        </Box>
-        <Box>
-          <ul>
-            <li>
-              <Text>Keep headings short for scannability</Text>
-            </li>
-          </ul>
-        </Box>
-        <Box>
-          <ul>
-            <li>
-              <Text>
-                Headings should appear at the top of the section of the
-                interface they're introducing
-              </Text>
-            </li>
-          </ul>
-        </Box>
-        <br />
-        <br />
-        <Box>
-          <Heading.h3>Content</Heading.h3>
-          <Text>
-            Some best practices for writing <code>{'Heading'}</code> components.
-          </Text>
-        </Box>
-        <Box>
-          <Heading.h4>Avoid articles</Heading.h4>
-          <Text>
-            Don’t use articles (a, the, an) in headings. This will make your
-            heading shorter and quicker to scan.
-          </Text>
-        </Box>
-        <br />
-
-        <Flex>
-          <Card mx={'auto'} my={3} px={4} width="400px">
-            <Pill mb={3} color={'green'}>
-              {'Do'}
-            </Pill>
-            <Heading.h2>Add wallet</Heading.h2>
-          </Card>
-          <Card mx={'auto'} my={3} px={4} width="400px">
-            <Pill mb={3} color={'red'}>
-              {"Don't"}
-            </Pill>
-            <Heading.h2>Add a wallet</Heading.h2>
-          </Card>
-        </Flex>
-
-        <br />
-        <Box>
-          <Heading.h4>Keep copy short</Heading.h4>
-          <Text>
-            The shorter your copy, the more scannable it will be. Just ensure
-            the user will understand what to expect from the content or action
-            below the heading.
-          </Text>
-        </Box>
-        <br />
-
-        <Flex>
-          <Card mx={'auto'} my={3} px={4} width="400px">
-            <Pill mb={3} color={'green'}>
-              {'Do'}
-            </Pill>
-            <Heading.h2>Transactions</Heading.h2>
-          </Card>
-          <Card mx={'auto'} my={3} px={4} width="400px">
-            <Pill mb={3} color={'red'}>
-              {"Don't"}
-            </Pill>
-            <Heading.h2>Your latest transactions</Heading.h2>
-          </Card>
-        </Flex>
-        <ContributeBanner />
-      </Box>
-    ))
-  );

@@ -18,8 +18,7 @@ import {
   Text,
   Link,
   Card,
-  Pill,
-  Tooltip
+  Pill
 } from 'rimble-ui';
 
 storiesOf('Components/ToastMessage', module)
