@@ -57,6 +57,8 @@ const AddressQrModal = ({ isOpen, hide, address }) => {
             border={'none'}
             borderRadius={2}
             p={0}
+            display={'flex'}
+            flexDirection={'column'}
           >
             <Button.Text
               icon={'Close'}
@@ -81,7 +83,7 @@ const AddressQrModal = ({ isOpen, hide, address }) => {
               {text.title}
             </Text>
 
-            <Box p={[3, 4]}>
+            <Box p={[3, 4]} overflow={'scroll'}>
               <Text color={'inherit'} textAlign={'center'} mb={4}>
                 {text.description}
               </Text>
