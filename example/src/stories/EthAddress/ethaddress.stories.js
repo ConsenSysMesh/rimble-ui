@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf, } from '@storybook/react'
 
-import { EthAddress, utils } from 'rimble-ui';
+import { EthAddress } from 'rimble-ui';
 
 storiesOf('Components/EthAddress', module)
   .add('icon labels', () => (
