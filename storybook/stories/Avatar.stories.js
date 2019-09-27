@@ -5,5 +5,4 @@ export default {
   title: 'Avatar'
 }
 
-
 export const avatar = () => <Avatar />
