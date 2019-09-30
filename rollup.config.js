@@ -21,6 +21,12 @@ export default {
       sourcemap: true
     }
   ],
+  external: [
+    'react',
+    'react-dom',
+    'prop-types',
+    'styled-components'
+  ],
   plugins: [
     external(),
     svgr({
