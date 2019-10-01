@@ -2,7 +2,7 @@ import React from 'react';
 import { Box, Flex } from 'rimble-ui'
 
 export default {
-  title: 'Box'
+  title: 'Layout'
 }
 
 export const box = () => (
