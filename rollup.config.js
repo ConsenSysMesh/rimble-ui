@@ -12,33 +12,29 @@ export default {
   output: [
     {
       file: pkg.main,
-      format: 'cjs',
+      format: 'umd',
+      name: 'rimble',
       sourcemap: true
     },
     {
       file: pkg.module,
       format: 'es',
+      name: 'rimble',
       sourcemap: true
     }
   ],
-  external: [
-    'react',
-    'react-dom',
-    'prop-types',
-    'styled-components'
-  ],
   plugins: [
     external(),
+    url(),
     svgr({
       ref: true,
       icon: true
     }),
-    url(),
+    resolve(),
+    commonjs(),
     babel({
       exclude: 'node_modules/**',
       plugins: [ 'external-helpers' ]
     }),
-    resolve(),
-    commonjs()
   ]
 }
