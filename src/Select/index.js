@@ -4,25 +4,18 @@ import styled from 'styled-components';
 import ExpandMore from 'rmdi/lib/ExpandMore';
 import { StyledInput } from '../Input';
 
-const StyledWrapper = styled.span`
+const StyledWrapper = styled.div`
   & {
     position: relative;
+    display: inline-block;
   }
 
   > ${ExpandMore} {
+    pointer-events: none;
     position: absolute;
-    right: 1rem;
+    right: 0;
     top: 0;
     bottom: 0;
-    pointer-events: none;
-    margin: auto;
-  }
-`;
-
-const StyledSelect = styled(StyledInput)`
-  & {
-    appearance: none;
-    padding: 0 3rem 0 1rem;
   }
 `;
 
@@ -41,13 +34,16 @@ const Select = React.forwardRef(({ options, children, ...props }, ref) => {
 
   return (
     <StyledWrapper>
-      <StyledSelect
+      <StyledInput
         as={'select'}
         children={renderChildren()}
         ref={ref}
+        py={0}
+        pl={3}
+        pr={'3rem'}
         {...props}
       />
-      <ExpandMore />
+      <ExpandMore my={'auto'} mx={3} />
     </StyledWrapper>
   );
 });
