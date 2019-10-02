@@ -1085,27 +1085,27 @@ exports[`Select component sanity matches success variant snapshot 1`] = `
 `;
 
 exports[`Select component sanity matches themed snapshot 1`] = `
-.c2 {
+.c1 {
   padding: 16px;
   width: 100%;
   border: 1px solid transparent;
   border-radius: 4px;
 }
 
-.c2 {
-  box-sizing: border-box;
-}
-
-.c4 {
-  color: inherit;
-  display: inherit;
-}
-
-.c4 {
+.c1 {
   box-sizing: border-box;
 }
 
 .c3 {
+  color: inherit;
+  display: inherit;
+}
+
+.c3 {
+  box-sizing: border-box;
+}
+
+.c4 {
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -1115,13 +1115,13 @@ exports[`Select component sanity matches themed snapshot 1`] = `
   display: inherit;
 }
 
-.c1 {
+.c2 {
   color: #666;
   background-color: #f6f6f6;
   border-color: #AAA;
 }
 
-.c1 {
+.c2 {
   position: relative;
 }
 

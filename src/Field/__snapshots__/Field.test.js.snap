@@ -20,12 +20,12 @@ exports[`Field component sanity matches default snapshot 1`] = `
   box-sizing: border-box;
 }
 
-.c3 {
+.c1 {
   color: #3F3D4B;
   margin-bottom: 8px;
 }
 
-.c3 {
+.c1 {
   box-sizing: border-box;
 }
 
@@ -39,7 +39,7 @@ exports[`Field component sanity matches default snapshot 1`] = `
   margin-bottom: 8px;
 }
 
-.c1:after {
+.c3:after {
   content: ' (optional)';
   font-weight: normal;
   font-style: italic;
@@ -139,12 +139,12 @@ exports[`Field component sanity matches themed snapshot 1`] = `
   box-sizing: border-box;
 }
 
-.c4 {
+.c2 {
   color: #3F3D4B;
   margin-bottom: 8px;
 }
 
-.c4 {
+.c2 {
   box-sizing: border-box;
 }
 
@@ -158,7 +158,7 @@ exports[`Field component sanity matches themed snapshot 1`] = `
   margin-bottom: 8px;
 }
 
-.c2:after {
+.c4:after {
   content: ' (optional)';
   font-weight: normal;
   font-style: italic;

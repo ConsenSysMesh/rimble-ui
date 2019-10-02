@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Pill component sanity matches default snapshot 1`] = `
-.c2 {
+.c0 {
   color: #3259D6;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -19,7 +19,7 @@ exports[`Pill component sanity matches default snapshot 1`] = `
   border-radius: 16px;
 }
 
-.c2 {
+.c0 {
   box-sizing: border-box;
 }
 
@@ -40,13 +40,13 @@ exports[`Pill component sanity matches default snapshot 1`] = `
   display: inline-flex;
 }
 
-.c0 {
+.c2 {
   position: relative;
   background: none;
   overflow: hidden;
 }
 
-.c0::before {
+.c2::before {
   content: '';
   display: block;
   position: absolute;
@@ -72,7 +72,7 @@ exports[`Pill component sanity matches default snapshot 1`] = `
 `;
 
 exports[`Pill component sanity matches themed snapshot 1`] = `
-.c3 {
+.c1 {
   color: #3259D6;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -90,7 +90,7 @@ exports[`Pill component sanity matches themed snapshot 1`] = `
   border-radius: 16px;
 }
 
-.c3 {
+.c1 {
   box-sizing: border-box;
 }
 
@@ -111,13 +111,13 @@ exports[`Pill component sanity matches themed snapshot 1`] = `
   display: inline-flex;
 }
 
-.c1 {
+.c3 {
   position: relative;
   background: none;
   overflow: hidden;
 }
 
-.c1::before {
+.c3::before {
   content: '';
   display: block;
   position: absolute;
