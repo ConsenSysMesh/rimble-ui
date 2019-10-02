@@ -32,7 +32,7 @@ QR.propTypes = {
   /**
    * Adds margin around the QR code
    */
-  includeMargin: PropTypes.boolean,
+  includeMargin: PropTypes.bool,
 };
 
 QR.defaultProps = {
