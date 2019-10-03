@@ -377,6 +377,7 @@ exports[`EthAddress component sanity matches default snapshot 1`] = `
   class="c0 c1"
 >
   <input
+    aria-label="Ethereum Address"
     class="c2 c3"
     color="copyColor"
     font-family="sansSerif"
@@ -384,6 +385,7 @@ exports[`EthAddress component sanity matches default snapshot 1`] = `
     font-weight="3"
     height="3rem"
     readonly=""
+    title="Ethereum Address"
     value="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2"
     width="1"
   />
@@ -828,6 +830,7 @@ exports[`EthAddress component sanity matches default snapshot textLabels 1`] = `
   class="c0 c1"
 >
   <input
+    aria-label="Ethereum Address"
     class="c2 c3"
     color="copyColor"
     font-family="sansSerif"
@@ -835,6 +838,7 @@ exports[`EthAddress component sanity matches default snapshot textLabels 1`] = `
     font-weight="3"
     height="3rem"
     readonly=""
+    title="Ethereum Address"
     value="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2"
     width="1"
   />
@@ -1262,6 +1266,7 @@ exports[`EthAddress component sanity matches themed snapshot 1`] = `
     class="c1 c2"
   >
     <input
+      aria-label="Ethereum Address"
       class="c3 c4"
       color="copyColor"
       font-family="sansSerif"
@@ -1269,6 +1274,7 @@ exports[`EthAddress component sanity matches themed snapshot 1`] = `
       font-weight="3"
       height="3rem"
       readonly=""
+      title="Ethereum Address"
       value="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2"
       width="1"
     />
@@ -1723,6 +1729,7 @@ exports[`EthAddress component sanity matches themed snapshot textLabels 1`] = `
     class="c1 c2"
   >
     <input
+      aria-label="Ethereum Address"
       class="c3 c4"
       color="copyColor"
       font-family="sansSerif"
@@ -1730,6 +1737,7 @@ exports[`EthAddress component sanity matches themed snapshot textLabels 1`] = `
       font-weight="3"
       height="3rem"
       readonly=""
+      title="Ethereum Address"
       value="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2"
       width="1"
     />
