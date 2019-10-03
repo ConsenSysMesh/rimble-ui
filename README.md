@@ -35,11 +35,18 @@ class Example extends Component {
 
 ## Change log
 
+### 0.10.0
+
+- Upgraded to storybook app and updated stories
+- Reorganized component testing app
+- Fixed bug with EthAddress word break
+- Added missing props to QR component
+
 ### 0.9.8
 
 - updated vulnerable dependencies.
 - fixed onChange event not firing for file inputs.
-- added new `EthAddress` component. 
+- added new `EthAddress` component.
 
 ### 0.9.7
 
