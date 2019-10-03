@@ -1,44 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Link component sanity matches default snapshot 1`] = `
-.c1 {
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.5;
-  text-align: left;
-  color: #4E3FCE;
-}
-
 .c0 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.c0:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-  color: #7165d7;
-}
-
-.c0:active {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: #3e32a4;
-}
-
-<a
-  class="c0 c1"
-  color="primary"
-  font-family="sansSerif"
-  font-size="1"
-  font-weight="3"
-/>
-`;
-
-exports[`Link component sanity matches themed snapshot 1`] = `
-.c2 {
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -60,6 +23,43 @@ exports[`Link component sanity matches themed snapshot 1`] = `
 }
 
 .c1:active {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3e32a4;
+}
+
+<a
+  class="c0 c1"
+  color="primary"
+  font-family="sansSerif"
+  font-size="1"
+  font-weight="3"
+/>
+`;
+
+exports[`Link component sanity matches themed snapshot 1`] = `
+.c1 {
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: left;
+  color: #4E3FCE;
+}
+
+.c2 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c2:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: #7165d7;
+}
+
+.c2:active {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3e32a4;

@@ -35,11 +35,20 @@ class Example extends Component {
 
 ## Change log
 
+### 0.10.0
+
+- Fixed Select arrow display bug.
+- Added missing props to QR component.
+- Added title and aria-label attributes to EthAddress inputs (accessibility).
+- Changed default module from `cjs` to `umd`.
+- Upgraded to storybook app and updated stories.
+- Reorganized component testing app (CRA).
+
 ### 0.9.8
 
 - updated vulnerable dependencies.
 - fixed onChange event not firing for file inputs.
-- added new `EthAddress` component. 
+- added new `EthAddress` component.
 
 ### 0.9.7
 

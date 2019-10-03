@@ -35,16 +35,16 @@ exports[`Form component sanity matches themed snapshot 1`] = `
   box-sizing: border-box;
 }
 
-.c4 {
+.c3 {
   color: #3F3D4B;
   margin-bottom: 8px;
 }
 
-.c4 {
+.c3 {
   box-sizing: border-box;
 }
 
-.c11 {
+.c10 {
   color: #4E3FCE;
   margin-bottom: 16px;
   display: -webkit-box;
@@ -58,17 +58,17 @@ exports[`Form component sanity matches themed snapshot 1`] = `
   opacity: 1;
 }
 
-.c11 {
+.c10 {
   box-sizing: border-box;
 }
 
-.c14 {
+.c13 {
   color: #3F3D4B;
   margin-left: 4px;
   margin-right: 8px;
 }
 
-.c14 {
+.c13 {
   box-sizing: border-box;
 }
 
@@ -157,7 +157,7 @@ exports[`Form component sanity matches themed snapshot 1`] = `
   visibility: hidden;
 }
 
-.c3 {
+.c4 {
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -167,7 +167,7 @@ exports[`Form component sanity matches themed snapshot 1`] = `
   margin-bottom: 8px;
 }
 
-.c13 {
+.c14 {
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -219,11 +219,11 @@ exports[`Form component sanity matches themed snapshot 1`] = `
   display: block;
 }
 
-.c10 {
+.c11 {
   cursor: pointer;
 }
 
-.c10:hover input:not(:disabled) ~ svg[name='unchecked'] {
+.c11:hover input:not(:disabled) ~ svg[name='unchecked'] {
   fill: #4E3FCE;
 }
 
@@ -267,7 +267,7 @@ exports[`Form component sanity matches themed snapshot 1`] = `
           width="1"
         />
         <svg
-          class="icon-valid c8"
+          class="c8 icon-valid"
           color="#28C081"
           fill="currentcolor"
           height="24"
@@ -279,7 +279,7 @@ exports[`Form component sanity matches themed snapshot 1`] = `
           />
         </svg>
         <svg
-          class="icon-invalid c9"
+          class="c9 icon-invalid"
           color="#DC2C10"
           fill="currentcolor"
           height="24"
@@ -320,7 +320,7 @@ exports[`Form component sanity matches themed snapshot 1`] = `
           width="1"
         />
         <svg
-          class="icon-valid c8"
+          class="c8 icon-valid"
           color="#28C081"
           fill="currentcolor"
           height="24"
@@ -332,7 +332,7 @@ exports[`Form component sanity matches themed snapshot 1`] = `
           />
         </svg>
         <svg
-          class="icon-invalid c9"
+          class="c9 icon-invalid"
           color="#DC2C10"
           fill="currentcolor"
           height="24"
@@ -352,7 +352,7 @@ exports[`Form component sanity matches themed snapshot 1`] = `
       opacity="1"
     >
       <div
-        class="c12 c1"
+        class="c1 c12"
       >
         <input
           color="primary"
@@ -423,16 +423,16 @@ exports[`Form component sanity renders children elements 1`] = `
   box-sizing: border-box;
 }
 
-.c3 {
+.c2 {
   color: #3F3D4B;
   margin-bottom: 8px;
 }
 
-.c3 {
+.c2 {
   box-sizing: border-box;
 }
 
-.c10 {
+.c9 {
   color: #4E3FCE;
   margin-bottom: 16px;
   display: -webkit-box;
@@ -446,17 +446,17 @@ exports[`Form component sanity renders children elements 1`] = `
   opacity: 1;
 }
 
-.c10 {
+.c9 {
   box-sizing: border-box;
 }
 
-.c13 {
+.c12 {
   color: #3F3D4B;
   margin-left: 4px;
   margin-right: 8px;
 }
 
-.c13 {
+.c12 {
   box-sizing: border-box;
 }
 
@@ -545,7 +545,7 @@ exports[`Form component sanity renders children elements 1`] = `
   visibility: hidden;
 }
 
-.c2 {
+.c3 {
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -555,7 +555,7 @@ exports[`Form component sanity renders children elements 1`] = `
   margin-bottom: 8px;
 }
 
-.c12 {
+.c13 {
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -607,11 +607,11 @@ exports[`Form component sanity renders children elements 1`] = `
   display: block;
 }
 
-.c9 {
+.c10 {
   cursor: pointer;
 }
 
-.c9:hover input:not(:disabled) ~ svg[name='unchecked'] {
+.c10:hover input:not(:disabled) ~ svg[name='unchecked'] {
   fill: #000;
 }
 
@@ -646,7 +646,7 @@ exports[`Form component sanity renders children elements 1`] = `
         width="1"
       />
       <svg
-        class="icon-valid c7"
+        class="c7 icon-valid"
         color="#28C081"
         fill="currentcolor"
         height="24"
@@ -658,7 +658,7 @@ exports[`Form component sanity renders children elements 1`] = `
         />
       </svg>
       <svg
-        class="icon-invalid c8"
+        class="c8 icon-invalid"
         color="#DC2C10"
         fill="currentcolor"
         height="24"
@@ -699,7 +699,7 @@ exports[`Form component sanity renders children elements 1`] = `
         width="1"
       />
       <svg
-        class="icon-valid c7"
+        class="c7 icon-valid"
         color="#28C081"
         fill="currentcolor"
         height="24"
@@ -711,7 +711,7 @@ exports[`Form component sanity renders children elements 1`] = `
         />
       </svg>
       <svg
-        class="icon-invalid c8"
+        class="c8 icon-invalid"
         color="#DC2C10"
         fill="currentcolor"
         height="24"
@@ -731,7 +731,7 @@ exports[`Form component sanity renders children elements 1`] = `
     opacity="1"
   >
     <div
-      class="c11 c0"
+      class="c0 c11"
     >
       <input
         color="primary"

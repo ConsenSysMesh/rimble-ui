@@ -1,17 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Avatar component sanity matches default snapshot 1`] = `
-.c1 {
+.c0 {
   background-color: #CCC;
   width: 2rem;
   height: 2rem;
 }
 
-.c1 {
+.c0 {
   box-sizing: border-box;
 }
 
-.c0 {
+.c1 {
   position: relative;
   overflow: hidden;
   border-radius: 100%;
@@ -29,17 +29,17 @@ exports[`Avatar component sanity matches default snapshot 1`] = `
 `;
 
 exports[`Avatar component sanity matches themed snapshot 1`] = `
-.c2 {
+.c1 {
   background-color: #CCC;
   width: 2rem;
   height: 2rem;
 }
 
-.c2 {
+.c1 {
   box-sizing: border-box;
 }
 
-.c1 {
+.c2 {
   position: relative;
   overflow: hidden;
   border-radius: 100%;
