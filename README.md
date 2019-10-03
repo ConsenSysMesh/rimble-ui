@@ -37,8 +37,10 @@ class Example extends Component {
 
 ### 0.10.0
 
-- Fixed Select arrow display bug. 
+- Fixed Select arrow display bug.
 - Added missing props to QR component.
+- Added title and aria-label attributes to EthAddress inputs (accessibility).
+- Changed default module from `cjs` to `umd`.
 - Upgraded to storybook app and updated stories.
 - Reorganized component testing app (CRA).
 
