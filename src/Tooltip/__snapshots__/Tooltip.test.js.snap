@@ -1162,6 +1162,7 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                         "styledComponentId": "sc-hfyccY",
                         "target": "button",
                         "toString": [Function],
+                        "usesTheme": false,
                         "warnTooManyClasses": [Function],
                         "withComponent": [Function],
                       }
@@ -2112,6 +2113,7 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
             "styledComponentId": "sc-bxivhb",
             "target": "div",
             "toString": [Function],
+            "usesTheme": true,
             "warnTooManyClasses": [Function],
             "withComponent": [Function],
           }
@@ -3150,6 +3152,7 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                                   "styledComponentId": "sc-hfyccY",
                                   "target": "button",
                                   "toString": [Function],
+                                  "usesTheme": false,
                                   "warnTooManyClasses": [Function],
                                   "withComponent": [Function],
                                 }

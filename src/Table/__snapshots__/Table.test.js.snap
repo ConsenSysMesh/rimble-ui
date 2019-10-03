@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Table component sanity matches default snapshot 1`] = `
-.c1 {
+.c0 {
   color: #333;
   width: 100%;
   border: 1px solid transparent;
@@ -9,22 +9,22 @@ exports[`Table component sanity matches default snapshot 1`] = `
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
 }
 
-.c1 {
+.c0 {
   box-sizing: border-box;
 }
 
-.c0 {
+.c1 {
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 14px;
   font-weight: 400;
 }
 
-.c0 {
+.c1 {
   border-collapse: collapse;
 }
 
-.c0 th,
-.c0 td {
+.c1 th,
+.c1 td {
   border: solid;
   border-width: 1px 0;
   border-color: inherit;
@@ -32,16 +32,16 @@ exports[`Table component sanity matches default snapshot 1`] = `
   padding: 0 2rem;
 }
 
-.c0 tbody tr {
+.c1 tbody tr {
   height: 4rem;
 }
 
-.c0 thead tr,
-.c0 tfoot tr {
+.c1 thead tr,
+.c1 tfoot tr {
   height: 3rem;
 }
 
-.c0 thead th {
+.c1 thead th {
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -118,7 +118,7 @@ exports[`Table component sanity matches default snapshot 1`] = `
 `;
 
 exports[`Table component sanity matches themed snapshot 1`] = `
-.c2 {
+.c1 {
   color: #333;
   width: 100%;
   border: 1px solid transparent;
@@ -126,22 +126,22 @@ exports[`Table component sanity matches themed snapshot 1`] = `
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
 }
 
-.c2 {
+.c1 {
   box-sizing: border-box;
 }
 
-.c1 {
+.c2 {
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 14px;
   font-weight: 400;
 }
 
-.c1 {
+.c2 {
   border-collapse: collapse;
 }
 
-.c1 th,
-.c1 td {
+.c2 th,
+.c2 td {
   border: solid;
   border-width: 1px 0;
   border-color: inherit;
@@ -149,16 +149,16 @@ exports[`Table component sanity matches themed snapshot 1`] = `
   padding: 0 2rem;
 }
 
-.c1 tbody tr {
+.c2 tbody tr {
   height: 4rem;
 }
 
-.c1 thead tr,
-.c1 tfoot tr {
+.c2 thead tr,
+.c2 tfoot tr {
   height: 3rem;
 }
 
-.c1 thead th {
+.c2 thead th {
   font-weight: 600;
   text-transform: uppercase;
 }

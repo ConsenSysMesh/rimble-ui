@@ -2846,14 +2846,14 @@ exports[`Link Button component sanity matches default snapshot 1`] = `
 `;
 
 exports[`Loading Button component sanity matches default snapshot 1`] = `
-.c2 {
+.c1 {
   color: #fff;
   background-color: transparent;
   width: 1rem;
   height: 1rem;
 }
 
-.c2 {
+.c1 {
   box-sizing: border-box;
 }
 
@@ -2989,13 +2989,13 @@ exports[`Loading Button component sanity matches default snapshot 1`] = `
   pointer-events: none;
 }
 
-.c1 {
+.c2 {
   display: block;
   position: relative;
   overflow: hidden;
 }
 
-.c1 > svg {
+.c2 > svg {
   fill: currentColor;
   height: 100%;
   width: 100%;
