@@ -23,6 +23,11 @@ const StyledInput = styled(Input)`
   white-space: nowrap;
 `;
 
+StyledInput.defaultProps = {
+  title: 'Ethereum Address',
+  'aria-label': 'Ethereum Address',
+};
+
 const StyledWrapper = styled(Box)`
   & {
     display: flex;
