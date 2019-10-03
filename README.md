@@ -37,10 +37,10 @@ class Example extends Component {
 
 ### 0.10.0
 
-- Upgraded to storybook app and updated stories
-- Reorganized component testing app
-- Fixed bug with EthAddress word break
-- Added missing props to QR component
+- Fixed Select arrow display bug. 
+- Added missing props to QR component.
+- Upgraded to storybook app and updated stories.
+- Reorganized component testing app (CRA).
 
 ### 0.9.8
 
