@@ -61,6 +61,7 @@
     "@babel/plugin-syntax-import-meta": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
+    "@types/react": "^16.9.5",
     "cross-env": "^5.1.4",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
@@ -86,7 +87,8 @@
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-url": "^2.2.2",
-    "styled-components": "^4.3.0"
+    "styled-components": "^4.3.0",
+    "typescript": "^3.6.3"
   },
   "files": [
     "dist"
