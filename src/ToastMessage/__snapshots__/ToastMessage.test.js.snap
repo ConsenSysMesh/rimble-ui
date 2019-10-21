@@ -273,6 +273,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
         0,
         "1px solid transparent",
       ],
+      "breakpoints": Array [
+        "40em",
+        "52em",
+        "64em",
+      ],
       "buttonSizes": Object {
         "large": Object {
           "fontSize": "1.5rem",
@@ -518,6 +523,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
         "borders": Array [
           0,
           "1px solid transparent",
+        ],
+        "breakpoints": Array [
+          "40em",
+          "52em",
+          "64em",
         ],
         "buttonSizes": Object {
           "large": Object {
@@ -1075,6 +1085,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                           0,
                           "1px solid transparent",
                         ],
+                        "breakpoints": Array [
+                          "40em",
+                          "52em",
+                          "64em",
+                        ],
                         "buttonSizes": Object {
                           "large": Object {
                             "fontSize": "1.5rem",
@@ -1332,6 +1347,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                               "borders": Array [
                                 0,
                                 "1px solid transparent",
+                              ],
+                              "breakpoints": Array [
+                                "40em",
+                                "52em",
+                                "64em",
                               ],
                               "buttonSizes": Object {
                                 "large": Object {
@@ -1624,6 +1644,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                             0,
                             "1px solid transparent",
                           ],
+                          "breakpoints": Array [
+                            "40em",
+                            "52em",
+                            "64em",
+                          ],
                           "buttonSizes": Object {
                             "large": Object {
                               "fontSize": "1.5rem",
@@ -1882,6 +1907,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                   0,
                                   "1px solid transparent",
                                 ],
+                                "breakpoints": Array [
+                                  "40em",
+                                  "52em",
+                                  "64em",
+                                ],
                                 "buttonSizes": Object {
                                   "large": Object {
                                     "fontSize": "1.5rem",
@@ -2132,6 +2162,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                       "borders": Array [
                                         0,
                                         "1px solid transparent",
+                                      ],
+                                      "breakpoints": Array [
+                                        "40em",
+                                        "52em",
+                                        "64em",
                                       ],
                                       "buttonSizes": Object {
                                         "large": Object {
@@ -2422,6 +2457,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                     0,
                                     "1px solid transparent",
                                   ],
+                                  "breakpoints": Array [
+                                    "40em",
+                                    "52em",
+                                    "64em",
+                                  ],
                                   "buttonSizes": Object {
                                     "large": Object {
                                       "fontSize": "1.5rem",
@@ -2677,6 +2717,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                           0,
                                           "1px solid transparent",
                                         ],
+                                        "breakpoints": Array [
+                                          "40em",
+                                          "52em",
+                                          "64em",
+                                        ],
                                         "buttonSizes": Object {
                                           "large": Object {
                                             "fontSize": "1.5rem",
@@ -2925,6 +2970,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                               "borders": Array [
                                                 0,
                                                 "1px solid transparent",
+                                              ],
+                                              "breakpoints": Array [
+                                                "40em",
+                                                "52em",
+                                                "64em",
                                               ],
                                               "buttonSizes": Object {
                                                 "large": Object {
@@ -3188,6 +3238,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                           "borders": Array [
                                             0,
                                             "1px solid transparent",
+                                          ],
+                                          "breakpoints": Array [
+                                            "40em",
+                                            "52em",
+                                            "64em",
                                           ],
                                           "buttonSizes": Object {
                                             "large": Object {
@@ -3693,6 +3748,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                       0,
                                       "1px solid transparent",
                                     ],
+                                    "breakpoints": Array [
+                                      "40em",
+                                      "52em",
+                                      "64em",
+                                    ],
                                     "buttonSizes": Object {
                                       "large": Object {
                                         "fontSize": "1.5rem",
@@ -3943,6 +4003,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                           "borders": Array [
                                             0,
                                             "1px solid transparent",
+                                          ],
+                                          "breakpoints": Array [
+                                            "40em",
+                                            "52em",
+                                            "64em",
                                           ],
                                           "buttonSizes": Object {
                                             "large": Object {
@@ -4233,6 +4298,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                         0,
                                         "1px solid transparent",
                                       ],
+                                      "breakpoints": Array [
+                                        "40em",
+                                        "52em",
+                                        "64em",
+                                      ],
                                       "buttonSizes": Object {
                                         "large": Object {
                                           "fontSize": "1.5rem",
@@ -4496,6 +4566,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                               0,
                                               "1px solid transparent",
                                             ],
+                                            "breakpoints": Array [
+                                              "40em",
+                                              "52em",
+                                              "64em",
+                                            ],
                                             "buttonSizes": Object {
                                               "large": Object {
                                                 "fontSize": "1.5rem",
@@ -4748,6 +4823,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                   "borders": Array [
                                                     0,
                                                     "1px solid transparent",
+                                                  ],
+                                                  "breakpoints": Array [
+                                                    "40em",
+                                                    "52em",
+                                                    "64em",
                                                   ],
                                                   "buttonSizes": Object {
                                                     "large": Object {
@@ -5161,6 +5241,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                 0,
                                                 "1px solid transparent",
                                               ],
+                                              "breakpoints": Array [
+                                                "40em",
+                                                "52em",
+                                                "64em",
+                                              ],
                                               "buttonSizes": Object {
                                                 "large": Object {
                                                   "fontSize": "1.5rem",
@@ -5413,6 +5498,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                 "borders": Array [
                                                   0,
                                                   "1px solid transparent",
+                                                ],
+                                                "breakpoints": Array [
+                                                  "40em",
+                                                  "52em",
+                                                  "64em",
                                                 ],
                                                 "buttonSizes": Object {
                                                   "large": Object {
@@ -5667,6 +5757,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                     0,
                                                     "1px solid transparent",
                                                   ],
+                                                  "breakpoints": Array [
+                                                    "40em",
+                                                    "52em",
+                                                    "64em",
+                                                  ],
                                                   "buttonSizes": Object {
                                                     "large": Object {
                                                       "fontSize": "1.5rem",
@@ -5920,6 +6015,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                         "borders": Array [
                                                           0,
                                                           "1px solid transparent",
+                                                        ],
+                                                        "breakpoints": Array [
+                                                          "40em",
+                                                          "52em",
+                                                          "64em",
                                                         ],
                                                         "buttonSizes": Object {
                                                           "large": Object {
@@ -6210,6 +6310,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                     "borders": Array [
                                                       0,
                                                       "1px solid transparent",
+                                                    ],
+                                                    "breakpoints": Array [
+                                                      "40em",
+                                                      "52em",
+                                                      "64em",
                                                     ],
                                                     "buttonSizes": Object {
                                                       "large": Object {
@@ -6486,6 +6591,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                               0,
                                               "1px solid transparent",
                                             ],
+                                            "breakpoints": Array [
+                                              "40em",
+                                              "52em",
+                                              "64em",
+                                            ],
                                             "buttonSizes": Object {
                                               "large": Object {
                                                 "fontSize": "1.5rem",
@@ -6738,6 +6848,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                   "borders": Array [
                                                     0,
                                                     "1px solid transparent",
+                                                  ],
+                                                  "breakpoints": Array [
+                                                    "40em",
+                                                    "52em",
+                                                    "64em",
                                                   ],
                                                   "buttonSizes": Object {
                                                     "large": Object {
@@ -7151,6 +7266,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                 0,
                                                 "1px solid transparent",
                                               ],
+                                              "breakpoints": Array [
+                                                "40em",
+                                                "52em",
+                                                "64em",
+                                              ],
                                               "buttonSizes": Object {
                                                 "large": Object {
                                                   "fontSize": "1.5rem",
@@ -7403,6 +7523,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                 "borders": Array [
                                                   0,
                                                   "1px solid transparent",
+                                                ],
+                                                "breakpoints": Array [
+                                                  "40em",
+                                                  "52em",
+                                                  "64em",
                                                 ],
                                                 "buttonSizes": Object {
                                                   "large": Object {
@@ -7657,6 +7782,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                     0,
                                                     "1px solid transparent",
                                                   ],
+                                                  "breakpoints": Array [
+                                                    "40em",
+                                                    "52em",
+                                                    "64em",
+                                                  ],
                                                   "buttonSizes": Object {
                                                     "large": Object {
                                                       "fontSize": "1.5rem",
@@ -7910,6 +8040,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                         "borders": Array [
                                                           0,
                                                           "1px solid transparent",
+                                                        ],
+                                                        "breakpoints": Array [
+                                                          "40em",
+                                                          "52em",
+                                                          "64em",
                                                         ],
                                                         "buttonSizes": Object {
                                                           "large": Object {
@@ -8200,6 +8335,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                     "borders": Array [
                                                       0,
                                                       "1px solid transparent",
+                                                    ],
+                                                    "breakpoints": Array [
+                                                      "40em",
+                                                      "52em",
+                                                      "64em",
                                                     ],
                                                     "buttonSizes": Object {
                                                       "large": Object {
@@ -8486,6 +8626,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                   0,
                                   "1px solid transparent",
                                 ],
+                                "breakpoints": Array [
+                                  "40em",
+                                  "52em",
+                                  "64em",
+                                ],
                                 "buttonSizes": Object {
                                   "large": Object {
                                     "fontSize": "1.5rem",
@@ -8739,6 +8884,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                       "borders": Array [
                                         0,
                                         "1px solid transparent",
+                                      ],
+                                      "breakpoints": Array [
+                                        "40em",
+                                        "52em",
+                                        "64em",
                                       ],
                                       "buttonSizes": Object {
                                         "large": Object {
@@ -9153,6 +9303,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                     0,
                                     "1px solid transparent",
                                   ],
+                                  "breakpoints": Array [
+                                    "40em",
+                                    "52em",
+                                    "64em",
+                                  ],
                                   "buttonSizes": Object {
                                     "large": Object {
                                       "fontSize": "1.5rem",
@@ -9407,6 +9562,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                     "borders": Array [
                                       0,
                                       "1px solid transparent",
+                                    ],
+                                    "breakpoints": Array [
+                                      "40em",
+                                      "52em",
+                                      "64em",
                                     ],
                                     "buttonSizes": Object {
                                       "large": Object {
@@ -9663,6 +9823,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                         0,
                                         "1px solid transparent",
                                       ],
+                                      "breakpoints": Array [
+                                        "40em",
+                                        "52em",
+                                        "64em",
+                                      ],
                                       "buttonSizes": Object {
                                         "large": Object {
                                           "fontSize": "1.5rem",
@@ -9917,6 +10082,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                             "borders": Array [
                                               0,
                                               "1px solid transparent",
+                                            ],
+                                            "breakpoints": Array [
+                                              "40em",
+                                              "52em",
+                                              "64em",
                                             ],
                                             "buttonSizes": Object {
                                               "large": Object {
@@ -10209,6 +10379,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                           0,
                                           "1px solid transparent",
                                         ],
+                                        "breakpoints": Array [
+                                          "40em",
+                                          "52em",
+                                          "64em",
+                                        ],
                                         "buttonSizes": Object {
                                           "large": Object {
                                             "fontSize": "1.5rem",
@@ -10480,6 +10655,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                 0,
                                                 "1px solid transparent",
                                               ],
+                                              "breakpoints": Array [
+                                                "40em",
+                                                "52em",
+                                                "64em",
+                                              ],
                                               "buttonSizes": Object {
                                                 "large": Object {
                                                   "fontSize": "1.5rem",
@@ -10733,6 +10913,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                     "borders": Array [
                                                       0,
                                                       "1px solid transparent",
+                                                    ],
+                                                    "breakpoints": Array [
+                                                      "40em",
+                                                      "52em",
+                                                      "64em",
                                                     ],
                                                     "buttonSizes": Object {
                                                       "large": Object {
@@ -11175,6 +11360,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                   0,
                                                   "1px solid transparent",
                                                 ],
+                                                "breakpoints": Array [
+                                                  "40em",
+                                                  "52em",
+                                                  "64em",
+                                                ],
                                                 "buttonSizes": Object {
                                                   "large": Object {
                                                     "fontSize": "1.5rem",
@@ -11432,6 +11622,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                   "borders": Array [
                                                     0,
                                                     "1px solid transparent",
+                                                  ],
+                                                  "breakpoints": Array [
+                                                    "40em",
+                                                    "52em",
+                                                    "64em",
                                                   ],
                                                   "buttonSizes": Object {
                                                     "large": Object {
@@ -11691,6 +11886,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                       0,
                                                       "1px solid transparent",
                                                     ],
+                                                    "breakpoints": Array [
+                                                      "40em",
+                                                      "52em",
+                                                      "64em",
+                                                    ],
                                                     "buttonSizes": Object {
                                                       "large": Object {
                                                         "fontSize": "1.5rem",
@@ -11946,6 +12146,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                           "borders": Array [
                                                             0,
                                                             "1px solid transparent",
+                                                          ],
+                                                          "breakpoints": Array [
+                                                            "40em",
+                                                            "52em",
+                                                            "64em",
                                                           ],
                                                           "buttonSizes": Object {
                                                             "large": Object {
@@ -12361,6 +12566,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                       "borders": Array [
                                                         0,
                                                         "1px solid transparent",
+                                                      ],
+                                                      "breakpoints": Array [
+                                                        "40em",
+                                                        "52em",
+                                                        "64em",
                                                       ],
                                                       "buttonSizes": Object {
                                                         "large": Object {
