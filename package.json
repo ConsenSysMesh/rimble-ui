@@ -19,8 +19,7 @@
     "build": "rollup -c",
     "start": "rollup -c -w",
     "prepare": "yarn run build",
-    "predeploy": "cd example && yarn install && yarn run build",
-    "precommit": "lint-staged"
+    "predeploy": "cd example && yarn install && yarn run build"
   },
   "dependencies": {
     "@d8660091/react-popper": "^1.0.4",
@@ -101,5 +100,10 @@
       "prettier --config .prettierrc --write",
       "git add"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }
