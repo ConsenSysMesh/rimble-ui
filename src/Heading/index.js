@@ -16,6 +16,24 @@ const defaultProps = {
 const StyledHeading = styled.div`
   ${COMMON}
   ${TYPOGRAPHY}
+  font-size: ${props => {
+    switch (props.as) {
+      case 'h1':
+        return props.theme.fontSizes[6];
+      case 'h2':
+        return props.theme.fontSizes[5];
+      case 'h3':
+        return props.theme.fontSizes[4];
+      case 'h4':
+        return props.theme.fontSizes[3];
+      case 'h5':
+        return props.theme.fontSizes[2];
+      case 'h6':
+        return props.theme.fontSizes[1];
+      default:
+        return props.theme.fontSizes[4];
+    }
+  }}px
 `;
 
 StyledHeading.defaultProps = {
