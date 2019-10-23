@@ -5,7 +5,6 @@ exports[`Heading component sanity matches default snapshot 1`] = `
   margin: 0;
   padding: 0;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
-  font-size: 24px;
   font-weight: 600;
   line-height: 1.25;
   font-size: 48px;
@@ -14,7 +13,6 @@ exports[`Heading component sanity matches default snapshot 1`] = `
 <h1
   class="c0"
   font-family="sansSerif"
-  font-size="4"
   font-weight="3"
 >
   Heading 1
@@ -26,7 +24,6 @@ exports[`Heading component sanity matches themed snapshot 1`] = `
   margin: 0;
   padding: 0;
   font-family: "Source Sans Pro",-apple-system,sans-serif;
-  font-size: 24px;
   font-weight: 600;
   line-height: 1.25;
   font-size: 48px;
@@ -44,7 +41,6 @@ exports[`Heading component sanity matches themed snapshot 1`] = `
   <h1
     class="c1"
     font-family="sansSerif"
-    font-size="4"
     font-weight="3"
   >
     Heading 1
