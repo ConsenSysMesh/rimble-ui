@@ -33,5 +33,6 @@ export const heading = () => (
     <Heading.h1 fontSize={1}>
       Heading.h1 component with fontSize and styled-system value
     </Heading.h1>
+    <Heading>Heading with no props</Heading>
   </>
 );
