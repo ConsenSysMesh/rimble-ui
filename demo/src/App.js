@@ -52,9 +52,7 @@ const testComponents = props => (
     <Box p={3}>
       <Button size={'medium'}>Click me!</Button>
       <Link>I'm a Link!</Link>
-      <EthAddress
-        address="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2"
-      />
+      <EthAddress address="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2" />
       <EthAddress
         textLabels
         address="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2"
@@ -102,17 +100,17 @@ const testComponents = props => (
       </Select>
       <Select options={selectOptions} />
       <Progress value={0.5} />
-      <Heading.h1>Quick zephyrs blow, vexing daft Jim.</Heading.h1>
+      <Heading as={'h1'}>Quick zephyrs blow, vexing daft Jim.</Heading>
 
-      <Heading.h2>Quick zephyrs blow, vexing daft Jim.</Heading.h2>
+      <Heading as={'h2'}>Quick zephyrs blow, vexing daft Jim.</Heading>
 
-      <Heading.h3>Quick zephyrs blow, vexing daft Jim.</Heading.h3>
+      <Heading as={'h3'}>Quick zephyrs blow, vexing daft Jim.</Heading>
 
-      <Heading.h4>Quick zephyrs blow, vexing daft Jim.</Heading.h4>
+      <Heading as={'h4'}>Quick zephyrs blow, vexing daft Jim.</Heading>
 
-      <Heading.h5>Quick zephyrs blow, vexing daft Jim.</Heading.h5>
+      <Heading as={'h5'}>Quick zephyrs blow, vexing daft Jim.</Heading>
 
-      <Heading.h6>Quick zephyrs blow, vexing daft Jim.</Heading.h6>
+      <Heading as={'h6'}>Quick zephyrs blow, vexing daft Jim.</Heading>
       <Field label="text">
         <Input type="text" />
       </Field>
