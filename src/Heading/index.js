@@ -17,23 +17,27 @@ const StyledHeading = styled.div`
   ${COMMON}
   ${TYPOGRAPHY}
   font-size: ${props => {
-    switch (props.as) {
-      case 'h1':
-        return props.theme.fontSizes[6];
-      case 'h2':
-        return props.theme.fontSizes[5];
-      case 'h3':
-        return props.theme.fontSizes[4];
-      case 'h4':
-        return props.theme.fontSizes[3];
-      case 'h5':
-        return props.theme.fontSizes[2];
-      case 'h6':
-        return props.theme.fontSizes[1];
-      default:
-        return props.theme.fontSizes[4];
+    if (typeof props.fontSize !== 'undefined') {
+      return props.fontSize;
+    } else {
+      switch (props.as) {
+        case 'h1':
+          return `${props.theme.fontSizes[6]}px`;
+        case 'h2':
+          return `${props.theme.fontSizes[5]}px`;
+        case 'h3':
+          return `${props.theme.fontSizes[4]}px`;
+        case 'h4':
+          return `${props.theme.fontSizes[3]}px`;
+        case 'h5':
+          return `${props.theme.fontSizes[2]}px`;
+        case 'h6':
+          return `${props.theme.fontSizes[1]}px`;
+        default:
+          return `${props.theme.fontSizes[4]}px`;
+      }
     }
-  }}px
+  }}
 `;
 
 StyledHeading.defaultProps = {
@@ -48,7 +52,6 @@ const Heading = React.forwardRef((props, ref) => (
 Heading.defaultProps = {
   ...defaultProps,
   as: 'h3',
-  fontSize: 4,
 };
 
 Heading.propTypes = {
