@@ -1,10 +1,8 @@
 import React from 'react';
-import styled, {
-  createGlobalStyle,
-  ThemeProvider as StyledThemeProvider,
-} from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 import { normalize, transparentize } from 'polished';
-import theme from '../theme';
+import { TYPOGRAPHY, COMMON } from './constants';
+import theme from './theme';
 
 const GlobalStyle = createGlobalStyle`
   ${normalize()}
@@ -14,17 +12,34 @@ const GlobalStyle = createGlobalStyle`
   *, *:before, *:after {
     box-sizing: inherit;
   }
+`;
+
+const Base = ({ children, ...rest }) => {
+  return (
+    <div {...rest}>
+      <GlobalStyle />
+      {children}
+    </div>
+  );
+};
+
+const BaseStyles = styled(Base)`
+  ${TYPOGRAPHY};
+  ${COMMON};
+  ::-moz-selection,
   ::selection {
     background: ${props => transparentize(0.7, props.theme.colors.primary)};
   }
 `;
 
-const Base = styled.div`
-  & {
-    font-size: 1em;
-    font-family: ${props => props.theme.fonts.sansSerif};
-    color: ${props => props.theme.colors.copyColor};
-  }
-`;
+BaseStyles.defaultProps = {
+  fontSize: '2',
+  fontFamily: 'sansSerif',
+  color: 'text',
+  bg: 'background',
+  theme,
+};
 
-export default Base;
+BaseStyles.propTypes = {};
+
+export default BaseStyles;
