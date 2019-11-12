@@ -1,4 +1,3 @@
-// import React from 'react';
 import styled from 'styled-components';
 
 const BaseLineGrid = styled.div`
@@ -10,7 +9,7 @@ const BaseLineGrid = styled.div`
   right: 0;
   height: 100%;
   width: 100%;
-  opacity: 0.2;
+  opacity: 0.1;
   pointer-events: none;
   background: repeating-linear-gradient(
     salmon, salmon 0.5rem,
