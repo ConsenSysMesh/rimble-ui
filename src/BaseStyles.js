@@ -37,7 +37,6 @@ BaseStyles.defaultProps = {
   fontSize: '2',
   fontFamily: 'sansSerif',
   color: 'text',
-  bg: 'background',
   theme,
 };
 
