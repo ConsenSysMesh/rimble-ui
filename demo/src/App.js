@@ -34,6 +34,8 @@ import {
   theme,
 } from 'rimble-ui';
 
+import BaseLineGrid from './components/BaseLineGrid';
+
 const myTheme = {
   ...theme,
   colors: {
@@ -50,6 +52,25 @@ const selectOptions = [
 const testComponents = props => (
   <React.Fragment>
     <Box p={3}>
+      {/* <Heading as={'h1'} fontSize={7}>H1+ - Quick zephyrs blow, vexing daft Jim.</Heading> */}
+
+      <Heading as={'h1'} fontSize={6}>H1 - Quick zephyrs blow, vexing daft Jim.</Heading>
+
+      <Heading as={'h2'} fontSize={5}>H2 - Quick zephyrs blow, vexing daft Jim.</Heading>
+
+      <Heading as={'h3'} fontSize={4}>H3 - Quick zephyrs blow, vexing daft Jim.</Heading>
+
+      <Heading as={'h4'} fontSize={3}>H4 - Quick zephyrs blow, vexing daft Jim.</Heading>
+
+      <Heading as={'h5'} fontSize={2}>H5 - Quick zephyrs blow, vexing daft Jim.</Heading>
+
+      <Heading as={'h6'} fontSize={1}>H6 - Quick zephyrs blow, vexing daft Jim.</Heading>
+
+      <Text>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
+        quibusdam, assumenda officiis.
+      </Text>
+
       <Button size={'medium'}>Click me!</Button>
       <Link>I'm a Link!</Link>
       <EthAddress
@@ -63,23 +84,21 @@ const testComponents = props => (
       <Icon name={'Info'} />
       <Icon name={'Info'} color="primary" />
       <Tooltip variant="dark" message="Your custom message">
-        <Text as="span">hover me</Text>
+        <Text>hover me</Text>
       </Tooltip>
+
       <Blockie
         opts={{
           seed: 'foo',
           color: '#dfe',
           bgcolor: '#a71',
-          size: 15,
+          size: 16,
           scale: 3,
           spotcolor: '#4E3FCE',
         }}
       />
       <Textarea rows={4} defaultValue="Type here…" />
-      <Text>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
-        quibusdam, assumenda officiis.
-      </Text>
+
       <Avatar />
       <Avatar size="small" />
       <Avatar size="medium" />
@@ -102,17 +121,6 @@ const testComponents = props => (
       </Select>
       <Select options={selectOptions} />
       <Progress value={0.5} />
-      <Heading.h1>Quick zephyrs blow, vexing daft Jim.</Heading.h1>
-
-      <Heading.h2>Quick zephyrs blow, vexing daft Jim.</Heading.h2>
-
-      <Heading.h3>Quick zephyrs blow, vexing daft Jim.</Heading.h3>
-
-      <Heading.h4>Quick zephyrs blow, vexing daft Jim.</Heading.h4>
-
-      <Heading.h5>Quick zephyrs blow, vexing daft Jim.</Heading.h5>
-
-      <Heading.h6>Quick zephyrs blow, vexing daft Jim.</Heading.h6>
       <Field label="text">
         <Input type="text" />
       </Field>
@@ -233,18 +241,17 @@ const testComponents = props => (
 export default class App extends Component {
   render() {
     return (
-      <React.Fragment>
-        <Flex>
-          <Box>{testComponents()}</Box>
-          <Box>
-            {/* <Button theme={myTheme}>hello</Button> */}
-            {/* <ThemeProvider theme={myTheme}>
-              <Button>hello</Button>
-            </ThemeProvider> */}
-            <ThemeProvider theme={myTheme}>{testComponents()}</ThemeProvider>
-          </Box>
-        </Flex>
-      </React.Fragment>
+      <Flex position={'relative'}>
+        <Box>
+          {testComponents()}
+        </Box>
+        <Box>
+          <ThemeProvider theme={myTheme}>
+            {testComponents()}
+          </ThemeProvider>
+        </Box>
+        <BaseLineGrid />
+      </Flex>
     );
   }
 }
