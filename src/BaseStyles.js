@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled, { createGlobalStyle } from 'styled-components';
 import { normalize, transparentize } from 'polished';
 import { TYPOGRAPHY, COMMON } from './constants';
@@ -40,6 +41,10 @@ BaseStyles.defaultProps = {
   theme,
 };
 
-BaseStyles.propTypes = {};
+BaseStyles.propTypes = {
+  ...TYPOGRAPHY.propTypes,
+  ...COMMON.propTypes,
+  theme: PropTypes.object,
+};
 
 export default BaseStyles;
