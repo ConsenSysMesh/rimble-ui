@@ -55,7 +55,7 @@ const selectOptions = [
 
 const testComponents = props => (
   <React.Fragment>
-    {/* <Heading as={'h1'} fontSize={7}>H1+ - Quick zephyrs blow, vexing daft Jim.</Heading> */}
+    <Heading fontSize={7}>XL - Quick zephyrs blow, vexing daft Jim.</Heading>
 
     <Heading as={'h1'} fontSize={6}>H1 - Quick zephyrs blow, vexing daft Jim.</Heading>
 
@@ -69,7 +69,25 @@ const testComponents = props => (
 
     <Heading as={'h6'} fontSize={1}>H6 - Quick zephyrs blow, vexing daft Jim.</Heading>
 
-    <Text>
+    <Heading fontSize={0}>SX - Quick zephyrs blow, vexing daft Jim.</Heading>
+
+    <Text fontWeight={1}>
+      1 / 300 —
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
+      quibusdam, assumenda officiis.
+    </Text>
+    <Text fontWeight={2}>
+      2 / 400 —
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
+      quibusdam, assumenda officiis.
+    </Text>
+    <Text fontWeight={3}>
+      3 / 600 —
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
+      quibusdam, assumenda officiis.
+    </Text>
+    <Text fontWeight={4}>
+      4 / 700 —
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
       quibusdam, assumenda officiis.
     </Text>
@@ -86,10 +104,12 @@ const testComponents = props => (
     <Input />
     <Icon name={'Info'} />
     <Icon name={'Info'} color="primary" />
-    <Tooltip variant="dark" message="Your custom message">
+    <Tooltip message="Your custom message">
+      <span>hover me</span>
+    </Tooltip>
+    <Tooltip variant={'light'} message="Your custom message">
       <Text>hover me</Text>
     </Tooltip>
-
     <Blockie
       opts={{
         seed: 'foo',
@@ -100,13 +120,11 @@ const testComponents = props => (
         spotcolor: '#4E3FCE',
       }}
     />
-    <Textarea rows={4} defaultValue="Type here…" />
-
     <Avatar />
     <Avatar size="small" />
     <Avatar size="medium" />
     <Avatar size="large" />
-
+    <Textarea rows={4} defaultValue="Type here…" />
     <Slider />
     <Select>
       <optgroup label="4-legged pets">
