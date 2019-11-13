@@ -17,6 +17,7 @@ import {
   Link,
   Loader,
   MetaMaskButton,
+  UPortButton,
   Modal,
   Pill,
   Progress,
@@ -186,7 +187,18 @@ const testComponents = props => (
     <Flex />
     <Table />
     <Image src="https://source.unsplash.com/random/1280x720" />
-    <MetaMaskButton />
+    <MetaMaskButton>
+      Connect with MetaMask
+    </MetaMaskButton>
+    <MetaMaskButton.Outline>
+      Connect with MetaMask
+    </MetaMaskButton.Outline>
+    <UPortButton>
+      Connect with uPort
+    </UPortButton>
+    <UPortButton.Solid>
+      Connect with uPort
+    </UPortButton.Solid>
     <Loader />
     <QR value="test" />
     <Modal />
