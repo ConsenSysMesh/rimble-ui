@@ -1,47 +1,35 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { display } from 'styled-system';
-import { COMMON, TYPOGRAPHY } from '../constants';
-import theme from '../theme';
+import { TYPOGRAPHY } from '../constants';
 import Box from '../Box';
+import theme from '../theme';
 
-export const caps = props =>
-  props.caps ? { textTransform: 'uppercase' } : null;
+const caps = props => (props.caps ? { textTransform: 'uppercase' } : null);
 
-export const italic = props => (props.italic ? { fontStyle: 'italic' } : null);
+const italic = props => (props.italic ? { fontStyle: 'italic' } : null);
 
 const StyledText = styled(Box)`
   ${TYPOGRAPHY}
-  ${COMMON}
-  ${display}
-
   ${caps}
   ${italic}
 `;
 
-const Text = React.forwardRef((props, ref) => (
-  <StyledText ref={ref} {...props} />
+const Text = React.forwardRef(({ as, ...props }, ref) => (
+  <StyledText ref={ref} forwardedAs={as} {...props} />
 ));
 
-StyledText.defaultProps = {
-  theme,
-};
-
 Text.defaultProps = {
-  // theme,
-  color: 'copyColor',
   fontFamily: 'sansSerif',
   fontSize: 2,
   fontWeight: 2,
   lineHeight: 'copy',
-  textAlign: 'left',
+  theme,
 };
 
 Text.propTypes = {
-  ...TYPOGRAPHY.propTypes,
   ...Box.propTypes,
-  ...display.propTypes,
+  ...TYPOGRAPHY.propTypes,
   theme: PropTypes.object,
 };
 
