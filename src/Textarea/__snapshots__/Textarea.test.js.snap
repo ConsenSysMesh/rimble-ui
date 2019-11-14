@@ -54,7 +54,7 @@ exports[`Textarea component sanity matches default snapshot 1`] = `
 
 <textarea
   class="c0"
-  color="copyColor"
+  color="text"
   font-family="sansSerif"
   font-size="1rem"
   height="auto"
@@ -62,7 +62,7 @@ exports[`Textarea component sanity matches default snapshot 1`] = `
 `;
 
 exports[`Textarea component sanity matches themed snapshot 1`] = `
-.c1 {
+.c0 {
   color: #3F3D4B;
   background-color: #fff;
   padding: 16px;
@@ -76,58 +76,48 @@ exports[`Textarea component sanity matches themed snapshot 1`] = `
   line-height: 1;
 }
 
-.c1 {
+.c0 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   box-sizing: border-box;
 }
 
-.c1:hover {
+.c0:hover {
   box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
 }
 
-.c1:focus {
+.c0:focus {
   outline: none;
   border-color: #4E3FCE;
 }
 
-.c1:disabled {
+.c0:disabled {
   opacity: 0.4;
   pointer-events: none;
 }
 
-.was-validated .c1:valid {
+.was-validated .c0:valid {
   border-color: #28C081;
 }
 
-.was-validated .c1:valid ~ svg.icon-valid {
+.was-validated .c0:valid ~ svg.icon-valid {
   visibility: visible;
 }
 
-.was-validated .c1:invalid {
+.was-validated .c0:invalid {
   border-color: #DC2C10;
 }
 
-.was-validated .c1:invalid ~ svg.icon-invalid {
+.was-validated .c0:invalid ~ svg.icon-invalid {
   visibility: visible;
 }
 
-.c0 {
-  font-size: 1em;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  color: #3F3D4B;
-}
-
-<div
+<textarea
   class="c0"
->
-  <textarea
-    class="c1"
-    color="copyColor"
-    font-family="sansSerif"
-    font-size="1rem"
-    height="auto"
-  />
-</div>
+  color="text"
+  font-family="sansSerif"
+  font-size="1rem"
+  height="auto"
+/>
 `;

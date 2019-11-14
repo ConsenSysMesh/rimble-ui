@@ -28,16 +28,6 @@ exports[`Pill component sanity matches default snapshot 1`] = `
   font-size: 14px;
   font-weight: 400;
   line-height: 1;
-  text-align: left;
-  color: #3259D6;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 16px;
-  padding-right: 16px;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
 }
 
 .c2 {
@@ -72,7 +62,7 @@ exports[`Pill component sanity matches default snapshot 1`] = `
 `;
 
 exports[`Pill component sanity matches themed snapshot 1`] = `
-.c1 {
+.c0 {
   color: #3259D6;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -90,34 +80,24 @@ exports[`Pill component sanity matches themed snapshot 1`] = `
   border-radius: 16px;
 }
 
-.c1 {
+.c0 {
   box-sizing: border-box;
 }
 
-.c2 {
+.c1 {
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 1;
-  text-align: left;
-  color: #3259D6;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 16px;
-  padding-right: 16px;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
 }
 
-.c3 {
+.c2 {
   position: relative;
   background: none;
   overflow: hidden;
 }
 
-.c3::before {
+.c2::before {
   content: '';
   display: block;
   position: absolute;
@@ -131,23 +111,13 @@ exports[`Pill component sanity matches themed snapshot 1`] = `
   pointer-events: none;
 }
 
-.c0 {
-  font-size: 1em;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  color: #3F3D4B;
-}
-
 <div
-  class="c0"
->
-  <div
-    class="c1 c2 c3"
-    color="blue"
-    display="inline-flex"
-    font-family="sansSerif"
-    font-size="1"
-    font-weight="2"
-    height="2"
-  />
-</div>
+  class="c0 c1 c2"
+  color="blue"
+  display="inline-flex"
+  font-family="sansSerif"
+  font-size="1"
+  font-weight="2"
+  height="2"
+/>
 `;
