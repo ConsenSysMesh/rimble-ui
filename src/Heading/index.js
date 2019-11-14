@@ -1,42 +1,25 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import { COMMON, TYPOGRAPHY } from '../constants';
-import theme from '../theme';
+import Text from '../Text';
 
 const defaultProps = {
-  fontFamily: 'sansSerif',
   fontWeight: 3,
   lineHeight: 'title',
   m: 0,
-  p: 0,
 };
 
-// Heading
-const StyledHeading = styled.div`
-  ${COMMON}
-  ${TYPOGRAPHY}
-`;
-
-StyledHeading.defaultProps = {
-  theme,
-  ...defaultProps,
-};
-
-const Heading = React.forwardRef((props, ref) => (
-  <StyledHeading ref={ref} {...props} />
+const Heading = React.forwardRef(({ as, ...props }, ref) => (
+  <Text ref={ref} forwardedAs={as} {...props} />
 ));
 
 Heading.defaultProps = {
   ...defaultProps,
-  as: 'h3',
-  fontSize: 4,
+  as: 'h2',
+  fontSize: '',
 };
 
 Heading.propTypes = {
-  ...COMMON.propTypes,
-  ...TYPOGRAPHY.propTypes,
-  theme: PropTypes.object,
+  ...Text.propTypes,
 };
 
 Heading.displayName = 'Heading';

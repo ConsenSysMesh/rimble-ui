@@ -8,14 +8,14 @@ describe('Heading component sanity', () => {
   });
 
   it('matches default snapshot', () => {
-    const component = render(<Heading />);
+    const component = render(<Heading as={'h1'}>Heading 1</Heading>);
     expect(component).toMatchSnapshot();
   });
 
   it('matches themed snapshot', () => {
     const component = render(
       <ThemeProvider theme={theme}>
-        <Heading />
+        <Heading as={'h1'}>Heading 1</Heading>
       </ThemeProvider>
     );
     expect(component).toMatchSnapshot();
