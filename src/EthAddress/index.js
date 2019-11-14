@@ -212,7 +212,7 @@ class EthAddress extends Component {
           ref={this.inputRef}
           width={1}
           fontWeight={3}
-          pr={this.props.textLabels ? '12rem' : '6rem'}
+          pr={this.props.textLabels ? '13rem' : '6rem'}
         />
 
         <Flex position={'absolute'} right={0} mr={2}>
