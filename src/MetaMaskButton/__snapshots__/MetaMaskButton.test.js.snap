@@ -12,9 +12,11 @@ exports[`MetaMaskButton component sanity matches default snapshot 1`] = `
   fontSize="inherit"
   fontWeight={3}
   height="3rem"
+  lineHeight={1}
   m={0}
   mainColor="primary"
   minWidth="3rem"
+  position="relative"
   px={4}
   py={0}
   theme={
@@ -28,6 +30,11 @@ exports[`MetaMaskButton component sanity matches default snapshot 1`] = `
       "borders": Array [
         0,
         "1px solid transparent",
+      ],
+      "breakpoints": Array [
+        "40em",
+        "52em",
+        "64em",
       ],
       "buttonSizes": Object {
         "large": Object {
@@ -226,6 +233,7 @@ exports[`MetaMaskButton component sanity matches default snapshot 1`] = `
         "4px",
         "8px",
         "16px",
+        "32px",
       ],
       "shadows": Array [
         "0",
@@ -280,6 +288,11 @@ exports[`MetaMaskButton component sanity matches themed snapshot 1`] = `
         0,
         "1px solid transparent",
       ],
+      "breakpoints": Array [
+        "40em",
+        "52em",
+        "64em",
+      ],
       "buttonSizes": Object {
         "large": Object {
           "fontSize": "1.5rem",
@@ -477,6 +490,7 @@ exports[`MetaMaskButton component sanity matches themed snapshot 1`] = `
         "4px",
         "8px",
         "16px",
+        "32px",
       ],
       "shadows": Array [
         "0",
@@ -525,9 +539,11 @@ exports[`MetaMaskButton component sanity matches themed snapshot 1`] = `
       fontSize="inherit"
       fontWeight={3}
       height="3rem"
+      lineHeight={1}
       m={0}
       mainColor="primary"
       minWidth="3rem"
+      position="relative"
       px={4}
       py={0}
       width="auto"

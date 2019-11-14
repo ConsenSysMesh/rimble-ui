@@ -1,24 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Loader component sanity matches default snapshot 1`] = `
-.c1 {
+.c0 {
   color: #4E3FCE;
   background-color: transparent;
   width: 1rem;
   height: 1rem;
 }
 
-.c1 {
+.c0 {
   box-sizing: border-box;
 }
 
-.c0 {
+.c1 {
   display: block;
   position: relative;
   overflow: hidden;
 }
 
-.c0 > svg {
+.c1 > svg {
   fill: currentColor;
   height: 100%;
   width: 100%;
@@ -76,24 +76,24 @@ exports[`Loader component sanity matches default snapshot 1`] = `
 `;
 
 exports[`Loader component sanity matches themed snapshot 1`] = `
-.c2 {
+.c1 {
   color: #4E3FCE;
   background-color: transparent;
   width: 1rem;
   height: 1rem;
 }
 
-.c2 {
+.c1 {
   box-sizing: border-box;
 }
 
-.c1 {
+.c2 {
   display: block;
   position: relative;
   overflow: hidden;
 }
 
-.c1 > svg {
+.c2 > svg {
   fill: currentColor;
   height: 100%;
   width: 100%;

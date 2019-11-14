@@ -55,6 +55,10 @@ class FileInput extends Component {
         buttonLabel: 'Choose file…',
       });
     }
+
+    if (this.props.onChange) {
+      this.props.onChange(e);
+    }
   };
 
   render() {

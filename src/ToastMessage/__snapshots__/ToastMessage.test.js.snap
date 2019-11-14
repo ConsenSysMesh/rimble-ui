@@ -273,6 +273,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
         0,
         "1px solid transparent",
       ],
+      "breakpoints": Array [
+        "40em",
+        "52em",
+        "64em",
+      ],
       "buttonSizes": Object {
         "large": Object {
           "fontSize": "1.5rem",
@@ -470,6 +475,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
         "4px",
         "8px",
         "16px",
+        "32px",
       ],
       "shadows": Array [
         "0",
@@ -517,6 +523,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
         "borders": Array [
           0,
           "1px solid transparent",
+        ],
+        "breakpoints": Array [
+          "40em",
+          "52em",
+          "64em",
         ],
         "buttonSizes": Object {
           "large": Object {
@@ -715,6 +726,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
           "4px",
           "8px",
           "16px",
+          "32px",
         ],
         "shadows": Array [
           "0",
@@ -781,6 +793,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
             "styledComponentId": "sc-fgITWd",
             "target": "div",
             "toString": [Function],
+            "usesTheme": true,
             "warnTooManyClasses": [Function],
             "withComponent": [Function],
           }
@@ -1023,6 +1036,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                       "render": [Function],
                     },
                     "toString": [Function],
+                    "usesTheme": false,
                     "warnTooManyClasses": [Function],
                     "withComponent": [Function],
                   }
@@ -1070,6 +1084,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                         "borders": Array [
                           0,
                           "1px solid transparent",
+                        ],
+                        "breakpoints": Array [
+                          "40em",
+                          "52em",
+                          "64em",
                         ],
                         "buttonSizes": Object {
                           "large": Object {
@@ -1268,6 +1287,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                           "4px",
                           "8px",
                           "16px",
+                          "32px",
                         ],
                         "shadows": Array [
                           "0",
@@ -1327,6 +1347,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                               "borders": Array [
                                 0,
                                 "1px solid transparent",
+                              ],
+                              "breakpoints": Array [
+                                "40em",
+                                "52em",
+                                "64em",
                               ],
                               "buttonSizes": Object {
                                 "large": Object {
@@ -1525,6 +1550,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                 "4px",
                                 "8px",
                                 "16px",
+                                "32px",
                               ],
                               "shadows": Array [
                                 "0",
@@ -1597,6 +1623,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                           "styledComponentId": "sc-bdVaJa",
                           "target": "div",
                           "toString": [Function],
+                          "usesTheme": false,
                           "warnTooManyClasses": [Function],
                           "withComponent": [Function],
                         }
@@ -1616,6 +1643,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                           "borders": Array [
                             0,
                             "1px solid transparent",
+                          ],
+                          "breakpoints": Array [
+                            "40em",
+                            "52em",
+                            "64em",
                           ],
                           "buttonSizes": Object {
                             "large": Object {
@@ -1814,6 +1846,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                             "4px",
                             "8px",
                             "16px",
+                            "32px",
                           ],
                           "shadows": Array [
                             "0",
@@ -1851,7 +1884,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                       variant="default"
                     >
                       <div
-                        className="c1 c2"
+                        className="c2 c1"
                       >
                         <Box
                           className="iconBox"
@@ -1873,6 +1906,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                 "borders": Array [
                                   0,
                                   "1px solid transparent",
+                                ],
+                                "breakpoints": Array [
+                                  "40em",
+                                  "52em",
+                                  "64em",
                                 ],
                                 "buttonSizes": Object {
                                   "large": Object {
@@ -2071,6 +2109,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                   "4px",
                                   "8px",
                                   "16px",
+                                  "32px",
                                 ],
                                 "shadows": Array [
                                   "0",
@@ -2123,6 +2162,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                       "borders": Array [
                                         0,
                                         "1px solid transparent",
+                                      ],
+                                      "breakpoints": Array [
+                                        "40em",
+                                        "52em",
+                                        "64em",
                                       ],
                                       "buttonSizes": Object {
                                         "large": Object {
@@ -2321,6 +2365,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                         "4px",
                                         "8px",
                                         "16px",
+                                        "32px",
                                       ],
                                       "shadows": Array [
                                         "0",
@@ -2393,6 +2438,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                   "styledComponentId": "sc-bdVaJa",
                                   "target": "div",
                                   "toString": [Function],
+                                  "usesTheme": false,
                                   "warnTooManyClasses": [Function],
                                   "withComponent": [Function],
                                 }
@@ -2410,6 +2456,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                   "borders": Array [
                                     0,
                                     "1px solid transparent",
+                                  ],
+                                  "breakpoints": Array [
+                                    "40em",
+                                    "52em",
+                                    "64em",
                                   ],
                                   "buttonSizes": Object {
                                     "large": Object {
@@ -2608,6 +2659,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                     "4px",
                                     "8px",
                                     "16px",
+                                    "32px",
                                   ],
                                   "shadows": Array [
                                     "0",
@@ -2644,7 +2696,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                               }
                             >
                               <div
-                                className="iconBox c3"
+                                className="c3 iconBox"
                               >
                                 <Icon
                                   color="primary"
@@ -2664,6 +2716,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                         "borders": Array [
                                           0,
                                           "1px solid transparent",
+                                        ],
+                                        "breakpoints": Array [
+                                          "40em",
+                                          "52em",
+                                          "64em",
                                         ],
                                         "buttonSizes": Object {
                                           "large": Object {
@@ -2862,6 +2919,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                           "4px",
                                           "8px",
                                           "16px",
+                                          "32px",
                                         ],
                                         "shadows": Array [
                                           "0",
@@ -2912,6 +2970,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                               "borders": Array [
                                                 0,
                                                 "1px solid transparent",
+                                              ],
+                                              "breakpoints": Array [
+                                                "40em",
+                                                "52em",
+                                                "64em",
                                               ],
                                               "buttonSizes": Object {
                                                 "large": Object {
@@ -3110,6 +3173,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                 "4px",
                                                 "8px",
                                                 "16px",
+                                                "32px",
                                               ],
                                               "shadows": Array [
                                                 "0",
@@ -3147,7 +3211,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                           "attrs": Array [],
                                           "componentStyle": ComponentStyle {
                                             "componentId": "sc-gyfYDX",
-                                            "isStatic": true,
+                                            "isStatic": false,
                                             "lastClassName": "ijYAvN",
                                             "rules": Array [],
                                           },
@@ -3157,6 +3221,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                           "styledComponentId": "sc-gyfYDX",
                                           "target": "div",
                                           "toString": [Function],
+                                          "usesTheme": false,
                                           "warnTooManyClasses": [Function],
                                           "withComponent": [Function],
                                         }
@@ -3173,6 +3238,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                           "borders": Array [
                                             0,
                                             "1px solid transparent",
+                                          ],
+                                          "breakpoints": Array [
+                                            "40em",
+                                            "52em",
+                                            "64em",
                                           ],
                                           "buttonSizes": Object {
                                             "large": Object {
@@ -3371,6 +3441,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                             "4px",
                                             "8px",
                                             "16px",
+                                            "32px",
                                           ],
                                           "shadows": Array [
                                             "0",
@@ -3445,9 +3516,9 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                   "styledComponentId": "sc-iLVFha",
                                                   "target": [Function],
                                                   "toString": [Function],
+                                                  "usesTheme": false,
                                                   "warnTooManyClasses": [Function],
                                                   "withComponent": [Function],
-                                                  Symbol(Symbol.hasInstance): [Function],
                                                 }
                                               }
                                               forwardedRef={null}
@@ -3496,7 +3567,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                 "attrs": Array [],
                                 "componentStyle": ComponentStyle {
                                   "componentId": "c5",
-                                  "isStatic": true,
+                                  "isStatic": false,
                                   "lastClassName": "c6",
                                   "rules": Array [
                                     "
@@ -3648,6 +3719,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                   "render": [Function],
                                 },
                                 "toString": [Function],
+                                "usesTheme": false,
                                 "warnTooManyClasses": [Function],
                                 "withComponent": [Function],
                               }
@@ -3675,6 +3747,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                     "borders": Array [
                                       0,
                                       "1px solid transparent",
+                                    ],
+                                    "breakpoints": Array [
+                                      "40em",
+                                      "52em",
+                                      "64em",
                                     ],
                                     "buttonSizes": Object {
                                       "large": Object {
@@ -3873,6 +3950,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                       "4px",
                                       "8px",
                                       "16px",
+                                      "32px",
                                     ],
                                     "shadows": Array [
                                       "0",
@@ -3925,6 +4003,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                           "borders": Array [
                                             0,
                                             "1px solid transparent",
+                                          ],
+                                          "breakpoints": Array [
+                                            "40em",
+                                            "52em",
+                                            "64em",
                                           ],
                                           "buttonSizes": Object {
                                             "large": Object {
@@ -4123,6 +4206,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                             "4px",
                                             "8px",
                                             "16px",
+                                            "32px",
                                           ],
                                           "shadows": Array [
                                             "0",
@@ -4195,6 +4279,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                       "styledComponentId": "sc-bdVaJa",
                                       "target": "div",
                                       "toString": [Function],
+                                      "usesTheme": false,
                                       "warnTooManyClasses": [Function],
                                       "withComponent": [Function],
                                     }
@@ -4212,6 +4297,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                       "borders": Array [
                                         0,
                                         "1px solid transparent",
+                                      ],
+                                      "breakpoints": Array [
+                                        "40em",
+                                        "52em",
+                                        "64em",
                                       ],
                                       "buttonSizes": Object {
                                         "large": Object {
@@ -4410,6 +4500,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                         "4px",
                                         "8px",
                                         "16px",
+                                        "32px",
                                       ],
                                       "shadows": Array [
                                         "0",
@@ -4446,7 +4537,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                   }
                                 >
                                   <div
-                                    className="c5 c6 c7"
+                                    className="c7 c5 c6"
                                   >
                                     <Text
                                       color="black"
@@ -4474,6 +4565,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                             "borders": Array [
                                               0,
                                               "1px solid transparent",
+                                            ],
+                                            "breakpoints": Array [
+                                              "40em",
+                                              "52em",
+                                              "64em",
                                             ],
                                             "buttonSizes": Object {
                                               "large": Object {
@@ -4672,6 +4768,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                               "4px",
                                               "8px",
                                               "16px",
+                                              "32px",
                                             ],
                                             "shadows": Array [
                                               "0",
@@ -4726,6 +4823,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                   "borders": Array [
                                                     0,
                                                     "1px solid transparent",
+                                                  ],
+                                                  "breakpoints": Array [
+                                                    "40em",
+                                                    "52em",
+                                                    "64em",
                                                   ],
                                                   "buttonSizes": Object {
                                                     "large": Object {
@@ -4924,6 +5026,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                     "4px",
                                                     "8px",
                                                     "16px",
+                                                    "32px",
                                                   ],
                                                   "shadows": Array [
                                                     "0",
@@ -5118,6 +5221,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                 "render": [Function],
                                               },
                                               "toString": [Function],
+                                              "usesTheme": false,
                                               "warnTooManyClasses": [Function],
                                               "withComponent": [Function],
                                             }
@@ -5136,6 +5240,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                               "borders": Array [
                                                 0,
                                                 "1px solid transparent",
+                                              ],
+                                              "breakpoints": Array [
+                                                "40em",
+                                                "52em",
+                                                "64em",
                                               ],
                                               "buttonSizes": Object {
                                                 "large": Object {
@@ -5334,6 +5443,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                 "4px",
                                                 "8px",
                                                 "16px",
+                                                "32px",
                                               ],
                                               "shadows": Array [
                                                 "0",
@@ -5388,6 +5498,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                 "borders": Array [
                                                   0,
                                                   "1px solid transparent",
+                                                ],
+                                                "breakpoints": Array [
+                                                  "40em",
+                                                  "52em",
+                                                  "64em",
                                                 ],
                                                 "buttonSizes": Object {
                                                   "large": Object {
@@ -5586,6 +5701,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                   "4px",
                                                   "8px",
                                                   "16px",
+                                                  "32px",
                                                 ],
                                                 "shadows": Array [
                                                   "0",
@@ -5640,6 +5756,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                   "borders": Array [
                                                     0,
                                                     "1px solid transparent",
+                                                  ],
+                                                  "breakpoints": Array [
+                                                    "40em",
+                                                    "52em",
+                                                    "64em",
                                                   ],
                                                   "buttonSizes": Object {
                                                     "large": Object {
@@ -5838,6 +5959,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                     "4px",
                                                     "8px",
                                                     "16px",
+                                                    "32px",
                                                   ],
                                                   "shadows": Array [
                                                     "0",
@@ -5894,6 +6016,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                           0,
                                                           "1px solid transparent",
                                                         ],
+                                                        "breakpoints": Array [
+                                                          "40em",
+                                                          "52em",
+                                                          "64em",
+                                                        ],
                                                         "buttonSizes": Object {
                                                           "large": Object {
                                                             "fontSize": "1.5rem",
@@ -6091,6 +6218,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                           "4px",
                                                           "8px",
                                                           "16px",
+                                                          "32px",
                                                         ],
                                                         "shadows": Array [
                                                           "0",
@@ -6163,6 +6291,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                     "styledComponentId": "sc-bdVaJa",
                                                     "target": "div",
                                                     "toString": [Function],
+                                                    "usesTheme": false,
                                                     "warnTooManyClasses": [Function],
                                                     "withComponent": [Function],
                                                   }
@@ -6181,6 +6310,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                     "borders": Array [
                                                       0,
                                                       "1px solid transparent",
+                                                    ],
+                                                    "breakpoints": Array [
+                                                      "40em",
+                                                      "52em",
+                                                      "64em",
                                                     ],
                                                     "buttonSizes": Object {
                                                       "large": Object {
@@ -6379,6 +6513,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                       "4px",
                                                       "8px",
                                                       "16px",
+                                                      "32px",
                                                     ],
                                                     "shadows": Array [
                                                       "0",
@@ -6415,7 +6550,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                 }
                                               >
                                                 <div
-                                                  className="c8 c9"
+                                                  className="c9 c8"
                                                   color="black"
                                                   fontFamily="sansSerif"
                                                   fontSize={1}
@@ -6455,6 +6590,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                             "borders": Array [
                                               0,
                                               "1px solid transparent",
+                                            ],
+                                            "breakpoints": Array [
+                                              "40em",
+                                              "52em",
+                                              "64em",
                                             ],
                                             "buttonSizes": Object {
                                               "large": Object {
@@ -6653,6 +6793,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                               "4px",
                                               "8px",
                                               "16px",
+                                              "32px",
                                             ],
                                             "shadows": Array [
                                               "0",
@@ -6707,6 +6848,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                   "borders": Array [
                                                     0,
                                                     "1px solid transparent",
+                                                  ],
+                                                  "breakpoints": Array [
+                                                    "40em",
+                                                    "52em",
+                                                    "64em",
                                                   ],
                                                   "buttonSizes": Object {
                                                     "large": Object {
@@ -6905,6 +7051,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                     "4px",
                                                     "8px",
                                                     "16px",
+                                                    "32px",
                                                   ],
                                                   "shadows": Array [
                                                     "0",
@@ -7099,6 +7246,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                 "render": [Function],
                                               },
                                               "toString": [Function],
+                                              "usesTheme": false,
                                               "warnTooManyClasses": [Function],
                                               "withComponent": [Function],
                                             }
@@ -7117,6 +7265,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                               "borders": Array [
                                                 0,
                                                 "1px solid transparent",
+                                              ],
+                                              "breakpoints": Array [
+                                                "40em",
+                                                "52em",
+                                                "64em",
                                               ],
                                               "buttonSizes": Object {
                                                 "large": Object {
@@ -7315,6 +7468,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                 "4px",
                                                 "8px",
                                                 "16px",
+                                                "32px",
                                               ],
                                               "shadows": Array [
                                                 "0",
@@ -7369,6 +7523,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                 "borders": Array [
                                                   0,
                                                   "1px solid transparent",
+                                                ],
+                                                "breakpoints": Array [
+                                                  "40em",
+                                                  "52em",
+                                                  "64em",
                                                 ],
                                                 "buttonSizes": Object {
                                                   "large": Object {
@@ -7567,6 +7726,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                   "4px",
                                                   "8px",
                                                   "16px",
+                                                  "32px",
                                                 ],
                                                 "shadows": Array [
                                                   "0",
@@ -7621,6 +7781,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                   "borders": Array [
                                                     0,
                                                     "1px solid transparent",
+                                                  ],
+                                                  "breakpoints": Array [
+                                                    "40em",
+                                                    "52em",
+                                                    "64em",
                                                   ],
                                                   "buttonSizes": Object {
                                                     "large": Object {
@@ -7819,6 +7984,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                     "4px",
                                                     "8px",
                                                     "16px",
+                                                    "32px",
                                                   ],
                                                   "shadows": Array [
                                                     "0",
@@ -7874,6 +8040,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                         "borders": Array [
                                                           0,
                                                           "1px solid transparent",
+                                                        ],
+                                                        "breakpoints": Array [
+                                                          "40em",
+                                                          "52em",
+                                                          "64em",
                                                         ],
                                                         "buttonSizes": Object {
                                                           "large": Object {
@@ -8072,6 +8243,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                           "4px",
                                                           "8px",
                                                           "16px",
+                                                          "32px",
                                                         ],
                                                         "shadows": Array [
                                                           "0",
@@ -8144,6 +8316,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                     "styledComponentId": "sc-bdVaJa",
                                                     "target": "div",
                                                     "toString": [Function],
+                                                    "usesTheme": false,
                                                     "warnTooManyClasses": [Function],
                                                     "withComponent": [Function],
                                                   }
@@ -8162,6 +8335,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                     "borders": Array [
                                                       0,
                                                       "1px solid transparent",
+                                                    ],
+                                                    "breakpoints": Array [
+                                                      "40em",
+                                                      "52em",
+                                                      "64em",
                                                     ],
                                                     "buttonSizes": Object {
                                                       "large": Object {
@@ -8360,6 +8538,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                       "4px",
                                                       "8px",
                                                       "16px",
+                                                      "32px",
                                                     ],
                                                     "shadows": Array [
                                                       "0",
@@ -8396,7 +8575,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                 }
                                               >
                                                 <div
-                                                  className="c10 c11"
+                                                  className="c11 c10"
                                                   color="#666"
                                                   fontFamily="sansSerif"
                                                   fontSize={1}
@@ -8446,6 +8625,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                 "borders": Array [
                                   0,
                                   "1px solid transparent",
+                                ],
+                                "breakpoints": Array [
+                                  "40em",
+                                  "52em",
+                                  "64em",
                                 ],
                                 "buttonSizes": Object {
                                   "large": Object {
@@ -8644,6 +8828,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                   "4px",
                                   "8px",
                                   "16px",
+                                  "32px",
                                 ],
                                 "shadows": Array [
                                   "0",
@@ -8699,6 +8884,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                       "borders": Array [
                                         0,
                                         "1px solid transparent",
+                                      ],
+                                      "breakpoints": Array [
+                                        "40em",
+                                        "52em",
+                                        "64em",
                                       ],
                                       "buttonSizes": Object {
                                         "large": Object {
@@ -8897,6 +9087,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                         "4px",
                                         "8px",
                                         "16px",
+                                        "32px",
                                       ],
                                       "shadows": Array [
                                         "0",
@@ -9091,6 +9282,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                     "render": [Function],
                                   },
                                   "toString": [Function],
+                                  "usesTheme": false,
                                   "warnTooManyClasses": [Function],
                                   "withComponent": [Function],
                                 }
@@ -9110,6 +9302,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                   "borders": Array [
                                     0,
                                     "1px solid transparent",
+                                  ],
+                                  "breakpoints": Array [
+                                    "40em",
+                                    "52em",
+                                    "64em",
                                   ],
                                   "buttonSizes": Object {
                                     "large": Object {
@@ -9308,6 +9505,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                     "4px",
                                     "8px",
                                     "16px",
+                                    "32px",
                                   ],
                                   "shadows": Array [
                                     "0",
@@ -9364,6 +9562,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                     "borders": Array [
                                       0,
                                       "1px solid transparent",
+                                    ],
+                                    "breakpoints": Array [
+                                      "40em",
+                                      "52em",
+                                      "64em",
                                     ],
                                     "buttonSizes": Object {
                                       "large": Object {
@@ -9562,6 +9765,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                       "4px",
                                       "8px",
                                       "16px",
+                                      "32px",
                                     ],
                                     "shadows": Array [
                                       "0",
@@ -9618,6 +9822,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                       "borders": Array [
                                         0,
                                         "1px solid transparent",
+                                      ],
+                                      "breakpoints": Array [
+                                        "40em",
+                                        "52em",
+                                        "64em",
                                       ],
                                       "buttonSizes": Object {
                                         "large": Object {
@@ -9816,6 +10025,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                         "4px",
                                         "8px",
                                         "16px",
+                                        "32px",
                                       ],
                                       "shadows": Array [
                                         "0",
@@ -9872,6 +10082,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                             "borders": Array [
                                               0,
                                               "1px solid transparent",
+                                            ],
+                                            "breakpoints": Array [
+                                              "40em",
+                                              "52em",
+                                              "64em",
                                             ],
                                             "buttonSizes": Object {
                                               "large": Object {
@@ -10070,6 +10285,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                               "4px",
                                               "8px",
                                               "16px",
+                                              "32px",
                                             ],
                                             "shadows": Array [
                                               "0",
@@ -10142,6 +10358,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                         "styledComponentId": "sc-bdVaJa",
                                         "target": "div",
                                         "toString": [Function],
+                                        "usesTheme": false,
                                         "warnTooManyClasses": [Function],
                                         "withComponent": [Function],
                                       }
@@ -10161,6 +10378,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                         "borders": Array [
                                           0,
                                           "1px solid transparent",
+                                        ],
+                                        "breakpoints": Array [
+                                          "40em",
+                                          "52em",
+                                          "64em",
                                         ],
                                         "buttonSizes": Object {
                                           "large": Object {
@@ -10359,6 +10581,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                           "4px",
                                           "8px",
                                           "16px",
+                                          "32px",
                                         ],
                                         "shadows": Array [
                                           "0",
@@ -10395,7 +10618,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                     }
                                   >
                                     <div
-                                      className="c12 c13"
+                                      className="c13 c12"
                                       color="copyColor"
                                       fontFamily="sansSerif"
                                       fontSize={2}
@@ -10431,6 +10654,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                               "borders": Array [
                                                 0,
                                                 "1px solid transparent",
+                                              ],
+                                              "breakpoints": Array [
+                                                "40em",
+                                                "52em",
+                                                "64em",
                                               ],
                                               "buttonSizes": Object {
                                                 "large": Object {
@@ -10629,6 +10857,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                 "4px",
                                                 "8px",
                                                 "16px",
+                                                "32px",
                                               ],
                                               "shadows": Array [
                                                 "0",
@@ -10684,6 +10913,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                     "borders": Array [
                                                       0,
                                                       "1px solid transparent",
+                                                    ],
+                                                    "breakpoints": Array [
+                                                      "40em",
+                                                      "52em",
+                                                      "64em",
                                                     ],
                                                     "buttonSizes": Object {
                                                       "large": Object {
@@ -10882,6 +11116,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                       "4px",
                                                       "8px",
                                                       "16px",
+                                                      "32px",
                                                     ],
                                                     "shadows": Array [
                                                       "0",
@@ -11104,6 +11339,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                   "span": [Function],
                                                 },
                                                 "toString": [Function],
+                                                "usesTheme": false,
                                                 "warnTooManyClasses": [Function],
                                                 "withComponent": [Function],
                                               }
@@ -11123,6 +11359,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                 "borders": Array [
                                                   0,
                                                   "1px solid transparent",
+                                                ],
+                                                "breakpoints": Array [
+                                                  "40em",
+                                                  "52em",
+                                                  "64em",
                                                 ],
                                                 "buttonSizes": Object {
                                                   "large": Object {
@@ -11321,6 +11562,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                   "4px",
                                                   "8px",
                                                   "16px",
+                                                  "32px",
                                                 ],
                                                 "shadows": Array [
                                                   "0",
@@ -11380,6 +11622,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                   "borders": Array [
                                                     0,
                                                     "1px solid transparent",
+                                                  ],
+                                                  "breakpoints": Array [
+                                                    "40em",
+                                                    "52em",
+                                                    "64em",
                                                   ],
                                                   "buttonSizes": Object {
                                                     "large": Object {
@@ -11578,6 +11825,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                     "4px",
                                                     "8px",
                                                     "16px",
+                                                    "32px",
                                                   ],
                                                   "shadows": Array [
                                                     "0",
@@ -11637,6 +11885,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                     "borders": Array [
                                                       0,
                                                       "1px solid transparent",
+                                                    ],
+                                                    "breakpoints": Array [
+                                                      "40em",
+                                                      "52em",
+                                                      "64em",
                                                     ],
                                                     "buttonSizes": Object {
                                                       "large": Object {
@@ -11835,6 +12088,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                       "4px",
                                                       "8px",
                                                       "16px",
+                                                      "32px",
                                                     ],
                                                     "shadows": Array [
                                                       "0",
@@ -11892,6 +12146,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                           "borders": Array [
                                                             0,
                                                             "1px solid transparent",
+                                                          ],
+                                                          "breakpoints": Array [
+                                                            "40em",
+                                                            "52em",
+                                                            "64em",
                                                           ],
                                                           "buttonSizes": Object {
                                                             "large": Object {
@@ -12090,6 +12349,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                             "4px",
                                                             "8px",
                                                             "16px",
+                                                            "32px",
                                                           ],
                                                           "shadows": Array [
                                                             "0",
@@ -12284,6 +12544,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                         "render": [Function],
                                                       },
                                                       "toString": [Function],
+                                                      "usesTheme": false,
                                                       "warnTooManyClasses": [Function],
                                                       "withComponent": [Function],
                                                     }
@@ -12305,6 +12566,11 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                       "borders": Array [
                                                         0,
                                                         "1px solid transparent",
+                                                      ],
+                                                      "breakpoints": Array [
+                                                        "40em",
+                                                        "52em",
+                                                        "64em",
                                                       ],
                                                       "buttonSizes": Object {
                                                         "large": Object {
@@ -12503,6 +12769,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                         "4px",
                                                         "8px",
                                                         "16px",
+                                                        "32px",
                                                       ],
                                                       "shadows": Array [
                                                         "0",
@@ -12539,7 +12806,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                   }
                                                 >
                                                   <a
-                                                    className="c14 c15"
+                                                    className="c15 c14"
                                                     color="primary"
                                                     fontFamily="sansSerif"
                                                     fontSize={1}
@@ -12786,6 +13053,7 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
         "render": [Function],
       },
       "toString": [Function],
+      "usesTheme": false,
       "warnTooManyClasses": [Function],
       "withComponent": [Function],
     }
@@ -13069,6 +13337,7 @@ exports[`ToastMessage component sanity matches generic snapshot 1`] = `
         "render": [Function],
       },
       "toString": [Function],
+      "usesTheme": false,
       "warnTooManyClasses": [Function],
       "withComponent": [Function],
     }

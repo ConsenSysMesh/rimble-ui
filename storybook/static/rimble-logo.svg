@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>rimble-logotype</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="rimble-logotype">
+            <polygon id="Path" fill="#6141ED" points="-9.99999999e-07 20 -9.99999999e-07 -9.99999999e-07 20 -9.99999999e-07"></polygon>
+            <polygon id="Path" fill="#7E66EC" opacity="0.484375" points="0 10 0 0 10 0"></polygon>
+            <polygon id="Path" fill="#7E66EC" points="10 0 10 10 0 10"></polygon>
+        </g>
+    </g>
+</svg>

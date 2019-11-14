@@ -8,14 +8,17 @@ exports[`Heading component sanity matches default snapshot 1`] = `
   font-size: 24px;
   font-weight: 600;
   line-height: 1.25;
+  font-size: 48px;
 }
 
-<h3
+<h1
   class="c0"
   font-family="sansSerif"
   font-size="4"
   font-weight="3"
-/>
+>
+  Heading 1
+</h1>
 `;
 
 exports[`Heading component sanity matches themed snapshot 1`] = `
@@ -26,6 +29,7 @@ exports[`Heading component sanity matches themed snapshot 1`] = `
   font-size: 24px;
   font-weight: 600;
   line-height: 1.25;
+  font-size: 48px;
 }
 
 .c0 {
@@ -37,11 +41,13 @@ exports[`Heading component sanity matches themed snapshot 1`] = `
 <div
   class="c0"
 >
-  <h3
+  <h1
     class="c1"
     font-family="sansSerif"
     font-size="4"
     font-weight="3"
-  />
+  >
+    Heading 1
+  </h1>
 </div>
 `;

@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Select component sanity matches default snapshot 1`] = `
-<styled.span>
-  <Styled(styled.input)
+<styled.div>
+  <styled.input
     as="select"
     bg="white"
     border={1}
@@ -15,6 +15,9 @@ exports[`Select component sanity matches default snapshot 1`] = `
     height="3rem"
     lineHeight="solid"
     p={3}
+    pl={3}
+    pr="3rem"
+    py={0}
     theme={
       Object {
         "borderWidths": Array [
@@ -26,6 +29,11 @@ exports[`Select component sanity matches default snapshot 1`] = `
         "borders": Array [
           0,
           "1px solid transparent",
+        ],
+        "breakpoints": Array [
+          "40em",
+          "52em",
+          "64em",
         ],
         "buttonSizes": Object {
           "large": Object {
@@ -224,6 +232,7 @@ exports[`Select component sanity matches default snapshot 1`] = `
           "4px",
           "8px",
           "16px",
+          "32px",
         ],
         "shadows": Array [
           "0",
@@ -271,31 +280,31 @@ exports[`Select component sanity matches default snapshot 1`] = `
     >
       A B C
     </option>
-  </Styled(styled.input)>
+  </styled.input>
   <ExpandMoreIcon
+    mx={3}
+    my="auto"
     size={24}
   />
-</styled.span>
+</styled.div>
 `;
 
 exports[`Select component sanity matches themed snapshot 1`] = `
-.c1 {
-  position: relative;
-}
-
-.c1 > .c3 {
-  position: absolute;
-  right: 1rem;
-  top: 0;
-  bottom: 0;
-  pointer-events: none;
-  margin: auto;
+.c4 {
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .c2 {
   color: #3F3D4B;
   background-color: #fff;
   padding: 16px;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 16px;
+  padding-right: 3rem;
   height: 3rem;
   border: 1px solid transparent;
   border-color: #CCC;
@@ -343,11 +352,17 @@ exports[`Select component sanity matches themed snapshot 1`] = `
   visibility: visible;
 }
 
-.c2 {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  padding: 0 3rem 0 1rem;
+.c1 {
+  position: relative;
+  display: inline-block;
+}
+
+.c1 > .c3 {
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
 }
 
 .c0 {
@@ -359,7 +374,7 @@ exports[`Select component sanity matches themed snapshot 1`] = `
 <div
   class="c0"
 >
-  <span
+  <div
     class="c1"
   >
     <select
@@ -370,9 +385,11 @@ exports[`Select component sanity matches themed snapshot 1`] = `
       height="3rem"
     />
     <svg
-      class="c3 "
+      class="c3 c4"
       fill="currentcolor"
       height="24"
+      mx="3"
+      my="auto"
       viewBox="0 0 24 24"
       width="24"
     >
@@ -380,6 +397,6 @@ exports[`Select component sanity matches themed snapshot 1`] = `
         d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
       />
     </svg>
-  </span>
+  </div>
 </div>
 `;

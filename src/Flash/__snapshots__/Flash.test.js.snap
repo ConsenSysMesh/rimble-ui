@@ -21,6 +21,11 @@ exports[`Select component sanity matches danger variant snapshot 1`] = `
         0,
         "1px solid transparent",
       ],
+      "breakpoints": Array [
+        "40em",
+        "52em",
+        "64em",
+      ],
       "buttonSizes": Object {
         "large": Object {
           "fontSize": "1.5rem",
@@ -218,6 +223,7 @@ exports[`Select component sanity matches danger variant snapshot 1`] = `
         "4px",
         "8px",
         "16px",
+        "32px",
       ],
       "shadows": Array [
         "0",
@@ -291,6 +297,11 @@ exports[`Select component sanity matches default snapshot 1`] = `
         0,
         "1px solid transparent",
       ],
+      "breakpoints": Array [
+        "40em",
+        "52em",
+        "64em",
+      ],
       "buttonSizes": Object {
         "large": Object {
           "fontSize": "1.5rem",
@@ -488,6 +499,7 @@ exports[`Select component sanity matches default snapshot 1`] = `
         "4px",
         "8px",
         "16px",
+        "32px",
       ],
       "shadows": Array [
         "0",
@@ -561,6 +573,11 @@ exports[`Select component sanity matches info variant snapshot 1`] = `
         0,
         "1px solid transparent",
       ],
+      "breakpoints": Array [
+        "40em",
+        "52em",
+        "64em",
+      ],
       "buttonSizes": Object {
         "large": Object {
           "fontSize": "1.5rem",
@@ -758,6 +775,7 @@ exports[`Select component sanity matches info variant snapshot 1`] = `
         "4px",
         "8px",
         "16px",
+        "32px",
       ],
       "shadows": Array [
         "0",
@@ -831,6 +849,11 @@ exports[`Select component sanity matches success variant snapshot 1`] = `
         0,
         "1px solid transparent",
       ],
+      "breakpoints": Array [
+        "40em",
+        "52em",
+        "64em",
+      ],
       "buttonSizes": Object {
         "large": Object {
           "fontSize": "1.5rem",
@@ -1028,6 +1051,7 @@ exports[`Select component sanity matches success variant snapshot 1`] = `
         "4px",
         "8px",
         "16px",
+        "32px",
       ],
       "shadows": Array [
         "0",
@@ -1081,27 +1105,27 @@ exports[`Select component sanity matches success variant snapshot 1`] = `
 `;
 
 exports[`Select component sanity matches themed snapshot 1`] = `
-.c2 {
+.c1 {
   padding: 16px;
   width: 100%;
   border: 1px solid transparent;
   border-radius: 4px;
 }
 
-.c2 {
-  box-sizing: border-box;
-}
-
-.c4 {
-  color: inherit;
-  display: inherit;
-}
-
-.c4 {
+.c1 {
   box-sizing: border-box;
 }
 
 .c3 {
+  color: inherit;
+  display: inherit;
+}
+
+.c3 {
+  box-sizing: border-box;
+}
+
+.c4 {
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -1111,13 +1135,13 @@ exports[`Select component sanity matches themed snapshot 1`] = `
   display: inherit;
 }
 
-.c1 {
+.c2 {
   color: #666;
   background-color: #f6f6f6;
   border-color: #AAA;
 }
 
-.c1 {
+.c2 {
   position: relative;
 }
 
@@ -1174,6 +1198,11 @@ exports[`Select component sanity matches warning variant snapshot 1`] = `
         0,
         "1px solid transparent",
       ],
+      "breakpoints": Array [
+        "40em",
+        "52em",
+        "64em",
+      ],
       "buttonSizes": Object {
         "large": Object {
           "fontSize": "1.5rem",
@@ -1371,6 +1400,7 @@ exports[`Select component sanity matches warning variant snapshot 1`] = `
         "4px",
         "8px",
         "16px",
+        "32px",
       ],
       "shadows": Array [
         "0",
