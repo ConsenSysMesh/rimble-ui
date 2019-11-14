@@ -19,29 +19,19 @@ exports[`Flex component sanity matches default snapshot 1`] = `
 `;
 
 exports[`Flex component sanity matches themed snapshot 1`] = `
-.c1 {
+.c0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c1 {
-  box-sizing: border-box;
-}
-
 .c0 {
-  font-size: 1em;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  color: #3F3D4B;
+  box-sizing: border-box;
 }
 
 <div
   class="c0"
->
-  <div
-    class="c1"
-    display="flex"
-  />
-</div>
+  display="flex"
+/>
 `;

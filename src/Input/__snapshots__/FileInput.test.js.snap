@@ -189,7 +189,7 @@ exports[`File Input component sanity matches default snapshot 1`] = `
 `;
 
 exports[`File Input component sanity matches themed snapshot 1`] = `
-.c3 {
+.c2 {
   color: #fff;
   background-color: #999;
   margin: 0;
@@ -211,7 +211,7 @@ exports[`File Input component sanity matches themed snapshot 1`] = `
   --contrast-color: #fff;
 }
 
-.c3 {
+.c2 {
   -webkit-font-smoothing: antialiased;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -239,24 +239,24 @@ exports[`File Input component sanity matches themed snapshot 1`] = `
   justify-content: center;
 }
 
-.c3:hover {
+.c2:hover {
   cursor: pointer;
 }
 
-.c3:disabled {
+.c2:disabled {
   opacity: 0.5;
   pointer-events: none;
 }
 
-.c3 > span.button-text {
+.c2 > span.button-text {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
-.c3 > div > svg,
-.c3 > span.button-text {
+.c2 > div > svg,
+.c2 > span.button-text {
   position: relative;
   z-index: 1;
   -webkit-user-select: none;
@@ -266,25 +266,25 @@ exports[`File Input component sanity matches themed snapshot 1`] = `
   pointer-events: none;
 }
 
-.c3 > div > svg {
+.c2 > div > svg {
   display: block;
 }
 
-.c3 > div:first-child > svg {
+.c2 > div:first-child > svg {
   margin-left: -0.5rem;
   margin-right: .5rem;
 }
 
-.c3 > div:last-child > svg {
+.c2 > div:last-child > svg {
   margin-left: .5rem;
   margin-right: -0.5rem;
 }
 
-.c3 > div:first-child:last-child > svg {
+.c2 > div:first-child:last-child > svg {
   margin: 0;
 }
 
-.c3 {
+.c2 {
   color: var(--contrast-color);
   background: #FFF;
   z-index: 0;
@@ -292,22 +292,22 @@ exports[`File Input component sanity matches themed snapshot 1`] = `
   transition: all 0.15s ease;
 }
 
-.c3:hover {
+.c2:hover {
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
 }
 
-.c3:hover::before {
+.c2:hover::before {
   opacity: 0.9;
 }
 
-.c3:active {
+.c2:active {
   box-shadow: none;
   background: #000;
 }
 
-.c3::before {
+.c2::before {
   content: '';
   position: absolute;
   top: 0;
@@ -321,7 +321,7 @@ exports[`File Input component sanity matches themed snapshot 1`] = `
   pointer-events: none;
 }
 
-.c2 {
+.c1 {
   width: 0;
   height: 0;
   opacity: 0;
@@ -330,58 +330,48 @@ exports[`File Input component sanity matches themed snapshot 1`] = `
   z-index: -1;
 }
 
-.c1 {
+.c0 {
   display: inline-block;
   position: relative;
   cursor: pointer;
 }
 
-.c0 {
-  font-size: 1em;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  color: #3F3D4B;
-}
-
-<div
+<label
   class="c0"
 >
-  <label
+  <input
     class="c1"
+    type="file"
+  />
+  <button
+    class="c2"
+    color="white"
+    font-family="sansSerif"
+    font-size="inherit"
+    font-weight="3"
+    height="3rem"
   >
-    <input
-      class="c2"
-      type="file"
-    />
-    <button
-      class="c3"
-      color="white"
-      font-family="sansSerif"
-      font-size="inherit"
-      font-weight="3"
-      height="3rem"
+    <div
+      class=""
     >
-      <div
+      <svg
         class=""
+        display="block"
+        fill="currentcolor"
+        height="24px"
+        viewBox="0 0 24 24"
+        width="24px"
       >
-        <svg
-          class=""
-          display="block"
-          fill="currentcolor"
-          height="24px"
-          viewBox="0 0 24 24"
-          width="24px"
-        >
-          <path
-            d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"
-          />
-        </svg>
-      </div>
-      <span
-        class="button-text"
-      >
-        Choose file…
-      </span>
-    </button>
-  </label>
-</div>
+        <path
+          d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"
+        />
+      </svg>
+    </div>
+    <span
+      class="button-text"
+    >
+      Choose file…
+    </span>
+  </button>
+</label>
 `;

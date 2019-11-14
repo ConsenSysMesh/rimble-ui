@@ -11,394 +11,6 @@ exports[`Form component sanity matches default snapshot 1`] = `
 `;
 
 exports[`Form component sanity matches themed snapshot 1`] = `
-.c1 {
-  box-sizing: border-box;
-}
-
-.c2 {
-  margin-bottom: 16px;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 100%;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-}
-
-.c2 {
-  box-sizing: border-box;
-}
-
-.c3 {
-  color: #3F3D4B;
-  margin-bottom: 8px;
-}
-
-.c3 {
-  box-sizing: border-box;
-}
-
-.c10 {
-  color: #4E3FCE;
-  margin-bottom: 16px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  opacity: 1;
-}
-
-.c10 {
-  box-sizing: border-box;
-}
-
-.c13 {
-  color: #3F3D4B;
-  margin-left: 4px;
-  margin-right: 8px;
-}
-
-.c13 {
-  box-sizing: border-box;
-}
-
-.c8 {
-  color: #28C081;
-}
-
-.c9 {
-  color: #DC2C10;
-}
-
-.c7 {
-  color: #3F3D4B;
-  background-color: #fff;
-  padding: 16px;
-  width: 100%;
-  height: 3rem;
-  border: 1px solid transparent;
-  border-color: #CCC;
-  border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  font-size: 1rem;
-  line-height: 1;
-}
-
-.c7 {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  box-sizing: border-box;
-}
-
-.c7:hover {
-  box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
-}
-
-.c7:focus {
-  outline: none;
-  border-color: #4E3FCE;
-}
-
-.c7:disabled {
-  opacity: 0.4;
-  pointer-events: none;
-}
-
-.was-validated .c7:valid {
-  border-color: #28C081;
-}
-
-.was-validated .c7:valid ~ svg.icon-valid {
-  visibility: visible;
-}
-
-.was-validated .c7:invalid {
-  border-color: #DC2C10;
-}
-
-.was-validated .c7:invalid ~ svg.icon-invalid {
-  visibility: visible;
-}
-
-.c5 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-}
-
-.c5 > .c6 {
-  padding-right: 3rem;
-  text-overflow: ellipsis;
-  white-space: no-wrap;
-}
-
-.c5 > svg {
-  position: absolute;
-  right: 1rem;
-  visibility: hidden;
-}
-
-.c4 {
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.5;
-  text-align: left;
-  color: #3F3D4B;
-  margin-bottom: 8px;
-}
-
-.c14 {
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1;
-  text-align: left;
-  color: #3F3D4B;
-  margin-left: 4px;
-  margin-right: 8px;
-}
-
-.c12 {
-  position: relative;
-  display: inline-block;
-}
-
-.c12 > input {
-  cursor: pointer;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  position: relative;
-  z-index: 1;
-  display: block;
-  height: 1.5rem;
-  width: 1.5rem;
-  margin: 0;
-}
-
-.c12 > svg {
-  position: absolute;
-  z-index: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 100%;
-  width: 100%;
-  pointer-events: none;
-  fill: #CCC;
-}
-
-.c12 > svg[name='checked'] {
-  display: none;
-  z-index: 1;
-  fill: #4E3FCE;
-}
-
-.c12 > input:checked ~ svg[name='checked'] {
-  display: block;
-}
-
-.c11 {
-  cursor: pointer;
-}
-
-.c11:hover input:not(:disabled) ~ svg[name='unchecked'] {
-  fill: #4E3FCE;
-}
-
-.c0 {
-  font-size: 1em;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  color: #3F3D4B;
-}
-
-<div
-  class="c0"
->
-  <form
-    class="c1"
-  >
-    <label
-      class="c2"
-      display="inline-flex"
-      width="1"
-    >
-      <div
-        class="c3 c4"
-        color="copyColor"
-        font-family="sansSerif"
-        font-size="1"
-        font-weight="3"
-      >
-        Email
-      </div>
-      <div
-        class="c5"
-      >
-        <input
-          class="c6 c7"
-          color="copyColor"
-          font-family="sansSerif"
-          font-size="1rem"
-          height="3rem"
-          required=""
-          type="email"
-          width="1"
-        />
-        <svg
-          class="c8 icon-valid"
-          color="#28C081"
-          fill="currentcolor"
-          height="24"
-          viewBox="0 0 24 24"
-          width="24"
-        >
-          <path
-            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-          />
-        </svg>
-        <svg
-          class="c9 icon-invalid"
-          color="#DC2C10"
-          fill="currentcolor"
-          height="24"
-          viewBox="0 0 24 24"
-          width="24"
-        >
-          <path
-            d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"
-          />
-        </svg>
-      </div>
-    </label>
-    <label
-      class="c2"
-      display="inline-flex"
-      width="1"
-    >
-      <div
-        class="c3 c4"
-        color="copyColor"
-        font-family="sansSerif"
-        font-size="1"
-        font-weight="3"
-      >
-        Password
-      </div>
-      <div
-        class="c5"
-      >
-        <input
-          class="c6 c7"
-          color="copyColor"
-          font-family="sansSerif"
-          font-size="1rem"
-          height="3rem"
-          required=""
-          type="password"
-          width="1"
-        />
-        <svg
-          class="c8 icon-valid"
-          color="#28C081"
-          fill="currentcolor"
-          height="24"
-          viewBox="0 0 24 24"
-          width="24"
-        >
-          <path
-            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-          />
-        </svg>
-        <svg
-          class="c9 icon-invalid"
-          color="#DC2C10"
-          fill="currentcolor"
-          height="24"
-          viewBox="0 0 24 24"
-          width="24"
-        >
-          <path
-            d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"
-          />
-        </svg>
-      </div>
-    </label>
-    <label
-      class="c10 c11"
-      color="primary"
-      display="flex"
-      opacity="1"
-    >
-      <div
-        class="c1 c12"
-      >
-        <input
-          color="primary"
-          mb="3"
-          type="checkbox"
-        />
-        <svg
-          class=""
-          fill="currentcolor"
-          height="24"
-          name="checked"
-          viewBox="0 0 24 24"
-          width="24"
-        >
-          <path
-            d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-          />
-        </svg>
-        <svg
-          class=""
-          fill="currentcolor"
-          height="24"
-          name="unchecked"
-          viewBox="0 0 24 24"
-          width="24"
-        >
-          <path
-            d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-          />
-        </svg>
-      </div>
-      <div
-        class="c13 c14"
-        color="copyColor"
-        font-family="sansSerif"
-        font-size="1"
-        font-weight="3"
-      >
-        Remember me?
-      </div>
-    </label>
-  </form>
-</div>
-`;
-
-exports[`Form component sanity renders children elements 1`] = `
 .c0 {
   box-sizing: border-box;
 }
@@ -424,7 +36,6 @@ exports[`Form component sanity renders children elements 1`] = `
 }
 
 .c2 {
-  color: #3F3D4B;
   margin-bottom: 8px;
 }
 
@@ -550,9 +161,6 @@ exports[`Form component sanity renders children elements 1`] = `
   font-size: 14px;
   font-weight: 600;
   line-height: 1.5;
-  text-align: left;
-  color: #3F3D4B;
-  margin-bottom: 8px;
 }
 
 .c13 {
@@ -560,10 +168,6 @@ exports[`Form component sanity renders children elements 1`] = `
   font-size: 14px;
   font-weight: 600;
   line-height: 1;
-  text-align: left;
-  color: #3F3D4B;
-  margin-left: 4px;
-  margin-right: 8px;
 }
 
 .c11 {
@@ -612,7 +216,7 @@ exports[`Form component sanity renders children elements 1`] = `
 }
 
 .c10:hover input:not(:disabled) ~ svg[name='unchecked'] {
-  fill: #000;
+  fill: currentColor;
 }
 
 <form
@@ -625,7 +229,6 @@ exports[`Form component sanity renders children elements 1`] = `
   >
     <div
       class="c2 c3"
-      color="copyColor"
       font-family="sansSerif"
       font-size="1"
       font-weight="3"
@@ -637,7 +240,7 @@ exports[`Form component sanity renders children elements 1`] = `
     >
       <input
         class="c5 c6"
-        color="copyColor"
+        color="text"
         font-family="sansSerif"
         font-size="1rem"
         height="3rem"
@@ -678,7 +281,6 @@ exports[`Form component sanity renders children elements 1`] = `
   >
     <div
       class="c2 c3"
-      color="copyColor"
       font-family="sansSerif"
       font-size="1"
       font-weight="3"
@@ -690,7 +292,7 @@ exports[`Form component sanity renders children elements 1`] = `
     >
       <input
         class="c5 c6"
-        color="copyColor"
+        color="text"
         font-family="sansSerif"
         font-size="1rem"
         height="3rem"
@@ -765,7 +367,375 @@ exports[`Form component sanity renders children elements 1`] = `
     </div>
     <div
       class="c12 c13"
-      color="copyColor"
+      color="text"
+      font-family="sansSerif"
+      font-size="1"
+      font-weight="3"
+    >
+      Remember me?
+    </div>
+  </label>
+</form>
+`;
+
+exports[`Form component sanity renders children elements 1`] = `
+.c0 {
+  box-sizing: border-box;
+}
+
+.c1 {
+  margin-bottom: 16px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c1 {
+  box-sizing: border-box;
+}
+
+.c2 {
+  margin-bottom: 8px;
+}
+
+.c2 {
+  box-sizing: border-box;
+}
+
+.c9 {
+  color: #4E3FCE;
+  margin-bottom: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  opacity: 1;
+}
+
+.c9 {
+  box-sizing: border-box;
+}
+
+.c12 {
+  color: #3F3D4B;
+  margin-left: 4px;
+  margin-right: 8px;
+}
+
+.c12 {
+  box-sizing: border-box;
+}
+
+.c7 {
+  color: #28C081;
+}
+
+.c8 {
+  color: #DC2C10;
+}
+
+.c6 {
+  color: #3F3D4B;
+  background-color: #fff;
+  padding: 16px;
+  width: 100%;
+  height: 3rem;
+  border: 1px solid transparent;
+  border-color: #CCC;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.c6 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-sizing: border-box;
+}
+
+.c6:hover {
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
+}
+
+.c6:focus {
+  outline: none;
+  border-color: #4E3FCE;
+}
+
+.c6:disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.was-validated .c6:valid {
+  border-color: #28C081;
+}
+
+.was-validated .c6:valid ~ svg.icon-valid {
+  visibility: visible;
+}
+
+.was-validated .c6:invalid {
+  border-color: #DC2C10;
+}
+
+.was-validated .c6:invalid ~ svg.icon-invalid {
+  visibility: visible;
+}
+
+.c4 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c4 > .c5 {
+  padding-right: 3rem;
+  text-overflow: ellipsis;
+  white-space: no-wrap;
+}
+
+.c4 > svg {
+  position: absolute;
+  right: 1rem;
+  visibility: hidden;
+}
+
+.c3 {
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.c13 {
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.c11 {
+  position: relative;
+  display: inline-block;
+}
+
+.c11 > input {
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  z-index: 1;
+  display: block;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin: 0;
+}
+
+.c11 > svg {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  fill: #CCC;
+}
+
+.c11 > svg[name='checked'] {
+  display: none;
+  z-index: 1;
+  fill: #4E3FCE;
+}
+
+.c11 > input:checked ~ svg[name='checked'] {
+  display: block;
+}
+
+.c10 {
+  cursor: pointer;
+}
+
+.c10:hover input:not(:disabled) ~ svg[name='unchecked'] {
+  fill: currentColor;
+}
+
+<form
+  class="c0"
+>
+  <label
+    class="c1"
+    display="inline-flex"
+    width="1"
+  >
+    <div
+      class="c2 c3"
+      font-family="sansSerif"
+      font-size="1"
+      font-weight="3"
+    >
+      Email
+    </div>
+    <div
+      class="c4"
+    >
+      <input
+        class="c5 c6"
+        color="text"
+        font-family="sansSerif"
+        font-size="1rem"
+        height="3rem"
+        required=""
+        type="email"
+        width="1"
+      />
+      <svg
+        class="c7 icon-valid"
+        color="#28C081"
+        fill="currentcolor"
+        height="24"
+        viewBox="0 0 24 24"
+        width="24"
+      >
+        <path
+          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+        />
+      </svg>
+      <svg
+        class="c8 icon-invalid"
+        color="#DC2C10"
+        fill="currentcolor"
+        height="24"
+        viewBox="0 0 24 24"
+        width="24"
+      >
+        <path
+          d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"
+        />
+      </svg>
+    </div>
+  </label>
+  <label
+    class="c1"
+    display="inline-flex"
+    width="1"
+  >
+    <div
+      class="c2 c3"
+      font-family="sansSerif"
+      font-size="1"
+      font-weight="3"
+    >
+      Password
+    </div>
+    <div
+      class="c4"
+    >
+      <input
+        class="c5 c6"
+        color="text"
+        font-family="sansSerif"
+        font-size="1rem"
+        height="3rem"
+        required=""
+        type="password"
+        width="1"
+      />
+      <svg
+        class="c7 icon-valid"
+        color="#28C081"
+        fill="currentcolor"
+        height="24"
+        viewBox="0 0 24 24"
+        width="24"
+      >
+        <path
+          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+        />
+      </svg>
+      <svg
+        class="c8 icon-invalid"
+        color="#DC2C10"
+        fill="currentcolor"
+        height="24"
+        viewBox="0 0 24 24"
+        width="24"
+      >
+        <path
+          d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"
+        />
+      </svg>
+    </div>
+  </label>
+  <label
+    class="c9 c10"
+    color="primary"
+    display="flex"
+    opacity="1"
+  >
+    <div
+      class="c0 c11"
+    >
+      <input
+        color="primary"
+        mb="3"
+        type="checkbox"
+      />
+      <svg
+        class=""
+        fill="currentcolor"
+        height="24"
+        name="checked"
+        viewBox="0 0 24 24"
+        width="24"
+      >
+        <path
+          d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+        />
+      </svg>
+      <svg
+        class=""
+        fill="currentcolor"
+        height="24"
+        name="unchecked"
+        viewBox="0 0 24 24"
+        width="24"
+      >
+        <path
+          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+        />
+      </svg>
+    </div>
+    <div
+      class="c12 c13"
+      color="text"
       font-family="sansSerif"
       font-size="1"
       font-weight="3"

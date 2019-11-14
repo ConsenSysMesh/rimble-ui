@@ -112,12 +112,12 @@ exports[`Slider component sanity matches default snapshot 1`] = `
 `;
 
 exports[`Slider component sanity matches themed snapshot 1`] = `
-.c1 {
+.c0 {
   color: #4E3FCE;
   margin: 0;
 }
 
-.c1 {
+.c0 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -125,7 +125,7 @@ exports[`Slider component sanity matches themed snapshot 1`] = `
   min-width: 200px;
 }
 
-.c1::-webkit-slider-runnable-track {
+.c0::-webkit-slider-runnable-track {
   box-sizing: border-box;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -144,7 +144,7 @@ exports[`Slider component sanity matches themed snapshot 1`] = `
   align-items: center;
 }
 
-.c1::-webkit-slider-thumb {
+.c0::-webkit-slider-thumb {
   box-sizing: border-box;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -159,18 +159,18 @@ exports[`Slider component sanity matches themed snapshot 1`] = `
   cursor: grab;
 }
 
-.c1::-webkit-slider-thumb:hover {
+.c0::-webkit-slider-thumb:hover {
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
 }
 
-.c1::-webkit-slider-thumb:active {
+.c0::-webkit-slider-thumb:active {
   cursor: -webkit-grabbing;
   cursor: -moz-grabbing;
   cursor: grabbing;
   border-color: currentColor;
 }
 
-.c1::-moz-range-track {
+.c0::-moz-range-track {
   box-sizing: border-box;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -189,7 +189,7 @@ exports[`Slider component sanity matches themed snapshot 1`] = `
   align-items: center;
 }
 
-.c1::-moz-range-thumb {
+.c0::-moz-range-thumb {
   box-sizing: border-box;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -204,30 +204,20 @@ exports[`Slider component sanity matches themed snapshot 1`] = `
   cursor: grab;
 }
 
-.c1::-moz-range-thumb:hover {
+.c0::-moz-range-thumb:hover {
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
 }
 
-.c1::-moz-range-thumb:active {
+.c0::-moz-range-thumb:active {
   cursor: -webkit-grabbing;
   cursor: -moz-grabbing;
   cursor: grabbing;
   border-color: currentColor;
 }
 
-.c0 {
-  font-size: 1em;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  color: #3F3D4B;
-}
-
-<div
+<input
   class="c0"
->
-  <input
-    class="c1"
-    color="primary"
-    type="range"
-  />
-</div>
+  color="primary"
+  type="range"
+/>
 `;
