@@ -39,8 +39,27 @@ const StyledInput = styled.input`
   }
 
   &[type="color"] {
-    width: 200px;
-    padding: 14px;
+    min-width: 3rem;
+    padding: 0;
+    &::-webkit-color-swatch-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+    }
+    &::-webkit-color-swatch {
+      flex: 0 0 auto;
+      height: 2rem;
+      width: 2rem;
+      border: none;
+      border-radius: 100%;
+    }
+    &::-moz-color-swatch {
+      height: 2rem;
+      width: 2rem;
+      border: none;
+      border-radius: 100%;
+    }
   }
 
   .was-validated & {
