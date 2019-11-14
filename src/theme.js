@@ -4,7 +4,6 @@ import baseColors, { blurple, blue, green, yellow, red } from './rimble-colors';
 
 // colors
 const colors = {
-  copyColor: '#3F3D4B',
   text: '#3F3D4B',
   background: '#fff',
   primary: blurple.base,
