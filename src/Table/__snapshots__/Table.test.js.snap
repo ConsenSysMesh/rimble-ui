@@ -118,7 +118,7 @@ exports[`Table component sanity matches default snapshot 1`] = `
 `;
 
 exports[`Table component sanity matches themed snapshot 1`] = `
-.c1 {
+.c0 {
   color: #333;
   width: 100%;
   border: 1px solid transparent;
@@ -126,22 +126,22 @@ exports[`Table component sanity matches themed snapshot 1`] = `
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
 }
 
-.c1 {
+.c0 {
   box-sizing: border-box;
 }
 
-.c2 {
+.c1 {
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 14px;
   font-weight: 400;
 }
 
-.c2 {
+.c1 {
   border-collapse: collapse;
 }
 
-.c2 th,
-.c2 td {
+.c1 th,
+.c1 td {
   border: solid;
   border-width: 1px 0;
   border-color: inherit;
@@ -149,97 +149,87 @@ exports[`Table component sanity matches themed snapshot 1`] = `
   padding: 0 2rem;
 }
 
-.c2 tbody tr {
+.c1 tbody tr {
   height: 4rem;
 }
 
-.c2 thead tr,
-.c2 tfoot tr {
+.c1 thead tr,
+.c1 tfoot tr {
   height: 3rem;
 }
 
-.c2 thead th {
+.c1 thead th {
   font-weight: 600;
   text-transform: uppercase;
 }
 
-.c0 {
-  font-size: 1em;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  color: #3F3D4B;
-}
-
-<div
-  class="c0"
+<table
+  class="c0 c1"
+  color="dark-gray"
+  font-family="sansSerif"
+  font-size="1"
+  font-weight="2"
+  width="1"
 >
-  <table
-    class="c1 c2"
-    color="dark-gray"
-    font-family="sansSerif"
-    font-size="1"
-    font-weight="2"
-    width="1"
-  >
-    <thead>
-      <tr>
-        <th>
-          #
-        </th>
-        <th>
-          First Name
-        </th>
-        <th>
-          Last Name
-        </th>
-        <th>
-          Username
-        </th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>
-          1
-        </td>
-        <td>
-          Mark
-        </td>
-        <td>
-          Otto
-        </td>
-        <td>
-          @mdo
-        </td>
-      </tr>
-      <tr>
-        <td>
-          2
-        </td>
-        <td>
-          Jacob
-        </td>
-        <td>
-          Thornton
-        </td>
-        <td>
-          @fat
-        </td>
-      </tr>
-      <tr>
-        <td>
-          3
-        </td>
-        <td>
-          Larry
-        </td>
-        <td>
-          Bird
-        </td>
-        <td>
-          @twitter
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+  <thead>
+    <tr>
+      <th>
+        #
+      </th>
+      <th>
+        First Name
+      </th>
+      <th>
+        Last Name
+      </th>
+      <th>
+        Username
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        1
+      </td>
+      <td>
+        Mark
+      </td>
+      <td>
+        Otto
+      </td>
+      <td>
+        @mdo
+      </td>
+    </tr>
+    <tr>
+      <td>
+        2
+      </td>
+      <td>
+        Jacob
+      </td>
+      <td>
+        Thornton
+      </td>
+      <td>
+        @fat
+      </td>
+    </tr>
+    <tr>
+      <td>
+        3
+      </td>
+      <td>
+        Larry
+      </td>
+      <td>
+        Bird
+      </td>
+      <td>
+        @twitter
+      </td>
+    </tr>
+  </tbody>
+</table>
 `;

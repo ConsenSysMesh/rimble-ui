@@ -37,10 +37,6 @@ exports[`Checkbox component sanity matches default snapshot 1`] = `
   font-size: 14px;
   font-weight: 600;
   line-height: 1;
-  text-align: left;
-  color: #3F3D4B;
-  margin-left: 4px;
-  margin-right: 8px;
 }
 
 .c3 {
@@ -89,7 +85,7 @@ exports[`Checkbox component sanity matches default snapshot 1`] = `
 }
 
 .c1:hover input:not(:disabled) ~ svg[name='unchecked'] {
-  fill: #000;
+  fill: currentColor;
 }
 
 <label
@@ -132,7 +128,7 @@ exports[`Checkbox component sanity matches default snapshot 1`] = `
   </div>
   <div
     class="c4 c5"
-    color="copyColor"
+    color="text"
     font-family="sansSerif"
     font-size="1"
     font-weight="3"
@@ -141,7 +137,7 @@ exports[`Checkbox component sanity matches default snapshot 1`] = `
 `;
 
 exports[`Checkbox component sanity matches themed snapshot 1`] = `
-.c1 {
+.c0 {
   color: #4E3FCE;
   display: -webkit-box;
   display: -webkit-flex;
@@ -154,41 +150,37 @@ exports[`Checkbox component sanity matches themed snapshot 1`] = `
   opacity: 1;
 }
 
-.c1 {
+.c0 {
   box-sizing: border-box;
 }
 
-.c3 {
+.c2 {
   box-sizing: border-box;
 }
 
-.c5 {
-  color: #3F3D4B;
-  margin-left: 4px;
-  margin-right: 8px;
-}
-
-.c5 {
-  box-sizing: border-box;
-}
-
-.c6 {
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1;
-  text-align: left;
+.c4 {
   color: #3F3D4B;
   margin-left: 4px;
   margin-right: 8px;
 }
 
 .c4 {
+  box-sizing: border-box;
+}
+
+.c5 {
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.c3 {
   position: relative;
   display: inline-block;
 }
 
-.c4 > input {
+.c3 > input {
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -201,7 +193,7 @@ exports[`Checkbox component sanity matches themed snapshot 1`] = `
   margin: 0;
 }
 
-.c4 > svg {
+.c3 > svg {
   position: absolute;
   z-index: 0;
   top: 0;
@@ -214,78 +206,68 @@ exports[`Checkbox component sanity matches themed snapshot 1`] = `
   fill: #CCC;
 }
 
-.c4 > svg[name='checked'] {
+.c3 > svg[name='checked'] {
   display: none;
   z-index: 1;
   fill: #4E3FCE;
 }
 
-.c4 > input:checked ~ svg[name='checked'] {
+.c3 > input:checked ~ svg[name='checked'] {
   display: block;
 }
 
-.c2 {
+.c1 {
   cursor: pointer;
 }
 
-.c2:hover input:not(:disabled) ~ svg[name='unchecked'] {
-  fill: #4E3FCE;
+.c1:hover input:not(:disabled) ~ svg[name='unchecked'] {
+  fill: currentColor;
 }
 
-.c0 {
-  font-size: 1em;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  color: #3F3D4B;
-}
-
-<div
-  class="c0"
+<label
+  class="c0 c1"
+  color="primary"
+  display="flex"
+  opacity="1"
 >
-  <label
-    class="c1 c2"
-    color="primary"
-    display="flex"
-    opacity="1"
+  <div
+    class="c2 c3"
   >
-    <div
-      class="c3 c4"
-    >
-      <input
-        color="primary"
-        type="checkbox"
-      />
-      <svg
-        class=""
-        fill="currentcolor"
-        height="24"
-        name="checked"
-        viewBox="0 0 24 24"
-        width="24"
-      >
-        <path
-          d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-        />
-      </svg>
-      <svg
-        class=""
-        fill="currentcolor"
-        height="24"
-        name="unchecked"
-        viewBox="0 0 24 24"
-        width="24"
-      >
-        <path
-          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-        />
-      </svg>
-    </div>
-    <div
-      class="c5 c6"
-      color="copyColor"
-      font-family="sansSerif"
-      font-size="1"
-      font-weight="3"
+    <input
+      color="primary"
+      type="checkbox"
     />
-  </label>
-</div>
+    <svg
+      class=""
+      fill="currentcolor"
+      height="24"
+      name="checked"
+      viewBox="0 0 24 24"
+      width="24"
+    >
+      <path
+        d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+      />
+    </svg>
+    <svg
+      class=""
+      fill="currentcolor"
+      height="24"
+      name="unchecked"
+      viewBox="0 0 24 24"
+      width="24"
+    >
+      <path
+        d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+      />
+    </svg>
+  </div>
+  <div
+    class="c4 c5"
+    color="text"
+    font-family="sansSerif"
+    font-size="1"
+    font-weight="3"
+  />
+</label>
 `;
