@@ -103,8 +103,8 @@ const Input = React.forwardRef((props, ref) => {
 
 const defaultProps = {
   theme,
-  color: 'copyColor',
-  bg: 'white',
+  color: 'text',
+  bg: 'background',
   fontFamily: 'sansSerif',
   fontSize: '1rem',
   lineHeight: 'solid',

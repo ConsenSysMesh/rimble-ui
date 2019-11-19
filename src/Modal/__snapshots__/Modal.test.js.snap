@@ -2,14 +2,4 @@
 
 exports[`Modal component sanity matches default snapshot 1`] = `null`;
 
-exports[`Modal component sanity matches themed snapshot 1`] = `
-.c0 {
-  font-size: 1em;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  color: #3F3D4B;
-}
-
-<div
-  class="c0"
-/>
-`;
+exports[`Modal component sanity matches themed snapshot 1`] = `null`;

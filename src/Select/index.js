@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import Box from '../Box';
 import ExpandMore from 'rmdi/lib/ExpandMore';
 import { StyledInput } from '../Input';
 
-const StyledWrapper = styled.div`
+const StyledWrapper = styled(Box)`
   & {
     position: relative;
     display: inline-block;
@@ -19,34 +20,37 @@ const StyledWrapper = styled.div`
   }
 `;
 
-const Select = React.forwardRef(({ options, children, ...props }, ref) => {
-  const renderChildren = () => {
-    if (children) {
-      return children;
-    } else if (options) {
-      return options.map((option, i) => (
-        <option key={i} value={option.value} children={option.label} />
-      ));
-    } else {
-      return null;
-    }
-  };
+const Select = React.forwardRef(
+  ({ options, children, width, ...props }, ref) => {
+    const renderChildren = () => {
+      if (children) {
+        return children;
+      } else if (options) {
+        return options.map((option, i) => (
+          <option key={i} value={option.value} children={option.label} />
+        ));
+      } else {
+        return null;
+      }
+    };
 
-  return (
-    <StyledWrapper>
-      <StyledInput
-        as={'select'}
-        children={renderChildren()}
-        ref={ref}
-        py={0}
-        pl={3}
-        pr={'3rem'}
-        {...props}
-      />
-      <ExpandMore my={'auto'} mx={3} />
-    </StyledWrapper>
-  );
-});
+    return (
+      <StyledWrapper width={width}>
+        <StyledInput
+          as={'select'}
+          children={renderChildren()}
+          ref={ref}
+          width={'100%'}
+          py={0}
+          pl={3}
+          pr={'3rem'}
+          {...props}
+        />
+        <ExpandMore my={'auto'} mx={3} />
+      </StyledWrapper>
+    );
+  }
+);
 
 Select.propTypes = {
   options: PropTypes.arrayOf(PropTypes.object),

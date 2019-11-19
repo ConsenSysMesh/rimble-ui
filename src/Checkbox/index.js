@@ -54,7 +54,7 @@ const StyledLabel = styled(Box)`
     cursor: pointer;
   }
   &:hover input:not(:disabled) ~ svg[name='unchecked'] {
-    fill: ${props => themeGet('colors.primary', '#000')};
+    fill: currentColor;
   }
 `;
 
@@ -81,7 +81,14 @@ const Checkbox = React.forwardRef(
         <IconChecked name={'checked'} />
         <IconUnChecked name={'unchecked'} />
       </StyledWrapper>
-      <Text fontSize={1} fontWeight={3} lineHeight={1} ml={1} mr={2}>
+      <Text
+        color={'text'}
+        fontSize={1}
+        fontWeight={3}
+        lineHeight={1}
+        ml={1}
+        mr={2}
+      >
         {label}
       </Text>
     </StyledLabel>
