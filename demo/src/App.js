@@ -126,6 +126,7 @@ const testComponents = props => (
     <Avatar size="large" />
     <Textarea rows={4} defaultValue="Type here…" />
     <Slider />
+    <Slider disabled />
     <Select>
       <optgroup label="4-legged pets">
         <option value="dog">Dog</option>

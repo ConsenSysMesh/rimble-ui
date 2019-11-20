@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { Slider } from 'rimble-ui'
+import { Slider, Text,  } from 'rimble-ui';
 
 export default {
   title: 'Slider'
-}
+};
 
 class MyCustomSlider extends Component {
   constructor(props) {
@@ -20,20 +20,27 @@ class MyCustomSlider extends Component {
 
   render() {
     return (
-      <div>
+      <>
         <Slider
           min={'0'}
           max={'100'}
           step={'10'}
           value={this.state.sliderValue}
           onChange={this.handleChange}
+          {...this.props}
         />
-        <div>Value: {this.state.sliderValue}</div>
-      </div>
+        <Text>Value: {this.state.sliderValue}</Text>
+      </>
     );
   }
 }
 
 export const slider = () => (
-  <MyCustomSlider></MyCustomSlider>
-)
+  <MyCustomSlider>
+  </MyCustomSlider>
+
+);
+
+export const disabledSlider = () => (
+  <MyCustomSlider disabled/>
+);
