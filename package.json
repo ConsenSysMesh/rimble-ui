@@ -19,8 +19,7 @@
     "build": "rollup -c",
     "start": "rollup -c -w",
     "prepare": "yarn run build",
-    "predeploy": "cd example && yarn install && yarn run build",
-    "precommit": "lint-staged"
+    "predeploy": "cd example && yarn install && yarn run build"
   },
   "dependencies": {
     "@d8660091/react-popper": "^1.0.4",
@@ -61,6 +60,7 @@
     "@babel/plugin-syntax-import-meta": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
+    "babel-plugin-styled-components": "^1.10.6",
     "cross-env": "^5.1.4",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
@@ -101,5 +101,10 @@
       "prettier --config .prettierrc --write",
       "git add"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }

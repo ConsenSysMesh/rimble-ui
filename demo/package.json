@@ -6,8 +6,7 @@
     "react": "link:../node_modules/react",
     "react-dom": "link:../node_modules/react-dom",
     "react-scripts": "3.1.2",
-    "rimble-ui": "link:..",
-    "styled-components": "^4.3.2"
+    "rimble-ui": "link:.."
   },
   "scripts": {
     "start": "react-scripts start",

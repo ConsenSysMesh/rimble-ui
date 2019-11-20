@@ -11,10 +11,6 @@ Card.defaultProps = {
   borderColor: 'light-gray',
   boxShadow: 2,
   p: 4,
-  width: 1,
-  minWidth: 1,
-  height: 'auto',
-  minHeight: 1,
 };
 
 Card.propTypes = {

@@ -31,6 +31,11 @@ exports[`MetaMaskButton component sanity matches default snapshot 1`] = `
         0,
         "1px solid transparent",
       ],
+      "breakpoints": Array [
+        "40em",
+        "52em",
+        "64em",
+      ],
       "buttonSizes": Object {
         "large": Object {
           "fontSize": "1.5rem",
@@ -66,7 +71,8 @@ exports[`MetaMaskButton component sanity matches default snapshot 1`] = `
         },
       },
       "colors": Object {
-        "black": "#000e1a",
+        "background": "#fff",
+        "black": "#000",
         "blacks": Array [
           "rgba(0,0,0,.0125)",
           "rgba(0,0,0,.025)",
@@ -82,7 +88,6 @@ exports[`MetaMaskButton component sanity matches default snapshot 1`] = `
           "rgba(0,0,0,.9)",
         ],
         "blue": "#3259D6",
-        "copyColor": "#3F3D4B",
         "danger": "#DC2C10",
         "dark-gray": "#333",
         "grey": "#CCC",
@@ -98,6 +103,7 @@ exports[`MetaMaskButton component sanity matches default snapshot 1`] = `
         "primary-light": "#7165d7",
         "silver": "#999",
         "success": "#28C081",
+        "text": "#3F3D4B",
         "transparent": "transparent",
         "warning": "#FD9D28",
         "white": "#fff",
@@ -134,6 +140,7 @@ exports[`MetaMaskButton component sanity matches default snapshot 1`] = `
         700,
       ],
       "fonts": Object {
+        "mono": "\\"Source Code Pro\\", -apple-system, monospace",
         "sansSerif": "\\"Source Sans Pro\\", -apple-system, sans-serif",
         "serif": "athelas, georgia, times, serif",
       },
@@ -283,6 +290,11 @@ exports[`MetaMaskButton component sanity matches themed snapshot 1`] = `
         0,
         "1px solid transparent",
       ],
+      "breakpoints": Array [
+        "40em",
+        "52em",
+        "64em",
+      ],
       "buttonSizes": Object {
         "large": Object {
           "fontSize": "1.5rem",
@@ -318,7 +330,8 @@ exports[`MetaMaskButton component sanity matches themed snapshot 1`] = `
         },
       },
       "colors": Object {
-        "black": "#000e1a",
+        "background": "#fff",
+        "black": "#000",
         "blacks": Array [
           "rgba(0,0,0,.0125)",
           "rgba(0,0,0,.025)",
@@ -334,7 +347,6 @@ exports[`MetaMaskButton component sanity matches themed snapshot 1`] = `
           "rgba(0,0,0,.9)",
         ],
         "blue": "#3259D6",
-        "copyColor": "#3F3D4B",
         "danger": "#DC2C10",
         "dark-gray": "#333",
         "grey": "#CCC",
@@ -350,6 +362,7 @@ exports[`MetaMaskButton component sanity matches themed snapshot 1`] = `
         "primary-light": "#7165d7",
         "silver": "#999",
         "success": "#28C081",
+        "text": "#3F3D4B",
         "transparent": "transparent",
         "warning": "#FD9D28",
         "white": "#fff",
@@ -386,6 +399,7 @@ exports[`MetaMaskButton component sanity matches themed snapshot 1`] = `
         700,
       ],
       "fonts": Object {
+        "mono": "\\"Source Code Pro\\", -apple-system, monospace",
         "sansSerif": "\\"Source Sans Pro\\", -apple-system, sans-serif",
         "serif": "athelas, georgia, times, serif",
       },
@@ -516,28 +530,25 @@ exports[`MetaMaskButton component sanity matches themed snapshot 1`] = `
     }
   }
 >
-  <GlobalStyleComponent />
-  <styled.div>
-    <MetaMaskButton
-      bg="silver"
-      border="none"
-      borderRadius={1}
-      boxShadow={1}
-      color="white"
-      contrastColor="white"
-      fontFamily="sansSerif"
-      fontSize="inherit"
-      fontWeight={3}
-      height="3rem"
-      lineHeight={1}
-      m={0}
-      mainColor="primary"
-      minWidth="3rem"
-      position="relative"
-      px={4}
-      py={0}
-      width="auto"
-    />
-  </styled.div>
+  <MetaMaskButton
+    bg="silver"
+    border="none"
+    borderRadius={1}
+    boxShadow={1}
+    color="white"
+    contrastColor="white"
+    fontFamily="sansSerif"
+    fontSize="inherit"
+    fontWeight={3}
+    height="3rem"
+    lineHeight={1}
+    m={0}
+    mainColor="primary"
+    minWidth="3rem"
+    position="relative"
+    px={4}
+    py={0}
+    width="auto"
+  />
 </ThemeProvider>
 `;

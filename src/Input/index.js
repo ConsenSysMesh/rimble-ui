@@ -38,6 +38,30 @@ const StyledInput = styled.input`
     pointer-events: none;
   }
 
+  &[type="color"] {
+    min-width: 3rem;
+    padding: 0;
+    &::-webkit-color-swatch-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+    }
+    &::-webkit-color-swatch {
+      flex: 0 0 auto;
+      height: 2rem;
+      width: 2rem;
+      border: none;
+      border-radius: 100%;
+    }
+    &::-moz-color-swatch {
+      height: 2rem;
+      width: 2rem;
+      border: none;
+      border-radius: 100%;
+    }
+  }
+
   .was-validated & {
     &:valid {
       border-color: ${themeGet('colors.success')};
@@ -103,8 +127,8 @@ const Input = React.forwardRef((props, ref) => {
 
 const defaultProps = {
   theme,
-  color: 'copyColor',
-  bg: 'white',
+  color: 'text',
+  bg: 'background',
   fontFamily: 'sansSerif',
   fontSize: '1rem',
   lineHeight: 'solid',

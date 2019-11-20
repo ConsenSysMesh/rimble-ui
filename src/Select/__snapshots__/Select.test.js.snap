@@ -1,15 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Select component sanity matches default snapshot 1`] = `
-<styled.div>
+<Styled(Box)>
   <styled.input
     as="select"
-    bg="white"
+    bg="background"
     border={1}
     borderColor="grey"
     borderRadius={1}
     boxShadow={1}
-    color="copyColor"
+    color="text"
     fontFamily="sansSerif"
     fontSize="1rem"
     height="3rem"
@@ -29,6 +29,11 @@ exports[`Select component sanity matches default snapshot 1`] = `
         "borders": Array [
           0,
           "1px solid transparent",
+        ],
+        "breakpoints": Array [
+          "40em",
+          "52em",
+          "64em",
         ],
         "buttonSizes": Object {
           "large": Object {
@@ -65,7 +70,8 @@ exports[`Select component sanity matches default snapshot 1`] = `
           },
         },
         "colors": Object {
-          "black": "#000e1a",
+          "background": "#fff",
+          "black": "#000",
           "blacks": Array [
             "rgba(0,0,0,.0125)",
             "rgba(0,0,0,.025)",
@@ -81,7 +87,6 @@ exports[`Select component sanity matches default snapshot 1`] = `
             "rgba(0,0,0,.9)",
           ],
           "blue": "#3259D6",
-          "copyColor": "#3F3D4B",
           "danger": "#DC2C10",
           "dark-gray": "#333",
           "grey": "#CCC",
@@ -97,6 +102,7 @@ exports[`Select component sanity matches default snapshot 1`] = `
           "primary-light": "#7165d7",
           "silver": "#999",
           "success": "#28C081",
+          "text": "#3F3D4B",
           "transparent": "transparent",
           "warning": "#FD9D28",
           "white": "#fff",
@@ -133,6 +139,7 @@ exports[`Select component sanity matches default snapshot 1`] = `
           700,
         ],
         "fonts": Object {
+          "mono": "\\"Source Code Pro\\", -apple-system, monospace",
           "sansSerif": "\\"Source Sans Pro\\", -apple-system, sans-serif",
           "serif": "athelas, georgia, times, serif",
         },
@@ -262,6 +269,7 @@ exports[`Select component sanity matches default snapshot 1`] = `
         ],
       }
     }
+    width="100%"
   >
     <option
       key="0"
@@ -281,10 +289,14 @@ exports[`Select component sanity matches default snapshot 1`] = `
     my="auto"
     size={24}
   />
-</styled.div>
+</Styled(Box)>
 `;
 
 exports[`Select component sanity matches themed snapshot 1`] = `
+.c0 {
+  box-sizing: border-box;
+}
+
 .c4 {
   margin-left: 16px;
   margin-right: 16px;
@@ -300,6 +312,7 @@ exports[`Select component sanity matches themed snapshot 1`] = `
   padding-bottom: 0;
   padding-left: 16px;
   padding-right: 3rem;
+  width: 100%;
   height: 3rem;
   border: 1px solid transparent;
   border-color: #CCC;
@@ -331,6 +344,44 @@ exports[`Select component sanity matches themed snapshot 1`] = `
   pointer-events: none;
 }
 
+.c2[type="color"] {
+  min-width: 3rem;
+  padding: 0;
+}
+
+.c2[type="color"]::-webkit-color-swatch-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.c2[type="color"]::-webkit-color-swatch {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  height: 2rem;
+  width: 2rem;
+  border: none;
+  border-radius: 100%;
+}
+
+.c2[type="color"]::-moz-color-swatch {
+  height: 2rem;
+  width: 2rem;
+  border: none;
+  border-radius: 100%;
+}
+
 .was-validated .c2:valid {
   border-color: #28C081;
 }
@@ -360,38 +411,29 @@ exports[`Select component sanity matches themed snapshot 1`] = `
   bottom: 0;
 }
 
-.c0 {
-  font-size: 1em;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  color: #3F3D4B;
-}
-
 <div
-  class="c0"
+  class="c0 c1"
 >
-  <div
-    class="c1"
+  <select
+    class="c2"
+    color="text"
+    font-family="sansSerif"
+    font-size="1rem"
+    height="3rem"
+    width="100%"
+  />
+  <svg
+    class="c3 c4"
+    fill="currentcolor"
+    height="24"
+    mx="3"
+    my="auto"
+    viewBox="0 0 24 24"
+    width="24"
   >
-    <select
-      class="c2"
-      color="copyColor"
-      font-family="sansSerif"
-      font-size="1rem"
-      height="3rem"
+    <path
+      d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
     />
-    <svg
-      class="c3 c4"
-      fill="currentcolor"
-      height="24"
-      mx="3"
-      my="auto"
-      viewBox="0 0 24 24"
-      width="24"
-    >
-      <path
-        d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
-      />
-    </svg>
-  </div>
+  </svg>
 </div>
 `;

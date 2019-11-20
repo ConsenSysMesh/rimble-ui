@@ -8,8 +8,6 @@ const Textarea = React.forwardRef((props, ref) => (
 ));
 
 Textarea.defaultProps = {
-  color: 'copyColor',
-  bg: 'white',
   fontFamily: 'sansSerif',
   fontSize: '1rem',
   lineHeight: 'solid',

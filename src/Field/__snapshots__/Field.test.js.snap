@@ -21,7 +21,6 @@ exports[`Field component sanity matches default snapshot 1`] = `
 }
 
 .c1 {
-  color: #3F3D4B;
   margin-bottom: 8px;
 }
 
@@ -34,9 +33,6 @@ exports[`Field component sanity matches default snapshot 1`] = `
   font-size: 14px;
   font-weight: 600;
   line-height: 1.5;
-  text-align: left;
-  color: #3F3D4B;
-  margin-bottom: 8px;
 }
 
 .c3:after {
@@ -80,6 +76,44 @@ exports[`Field component sanity matches default snapshot 1`] = `
   pointer-events: none;
 }
 
+.c4[type="color"] {
+  min-width: 3rem;
+  padding: 0;
+}
+
+.c4[type="color"]::-webkit-color-swatch-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.c4[type="color"]::-webkit-color-swatch {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  height: 2rem;
+  width: 2rem;
+  border: none;
+  border-radius: 100%;
+}
+
+.c4[type="color"]::-moz-color-swatch {
+  height: 2rem;
+  width: 2rem;
+  border: none;
+  border-radius: 100%;
+}
+
 .was-validated .c4:valid {
   border-color: #28C081;
 }
@@ -102,7 +136,6 @@ exports[`Field component sanity matches default snapshot 1`] = `
 >
   <div
     class="c1 c2 c3"
-    color="copyColor"
     font-family="sansSerif"
     font-size="1"
     font-weight="3"
@@ -111,7 +144,7 @@ exports[`Field component sanity matches default snapshot 1`] = `
   </div>
   <input
     class="c4"
-    color="copyColor"
+    color="text"
     font-family="sansSerif"
     font-size="1rem"
     height="3rem"
@@ -120,7 +153,7 @@ exports[`Field component sanity matches default snapshot 1`] = `
 `;
 
 exports[`Field component sanity matches themed snapshot 1`] = `
-.c1 {
+.c0 {
   margin-bottom: 16px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -135,36 +168,32 @@ exports[`Field component sanity matches themed snapshot 1`] = `
   align-items: flex-start;
 }
 
+.c0 {
+  box-sizing: border-box;
+}
+
+.c1 {
+  margin-bottom: 8px;
+}
+
 .c1 {
   box-sizing: border-box;
 }
 
 .c2 {
-  color: #3F3D4B;
-  margin-bottom: 8px;
-}
-
-.c2 {
-  box-sizing: border-box;
-}
-
-.c3 {
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 14px;
   font-weight: 600;
   line-height: 1.5;
-  text-align: left;
-  color: #3F3D4B;
-  margin-bottom: 8px;
 }
 
-.c4:after {
+.c3:after {
   content: ' (optional)';
   font-weight: normal;
   font-style: italic;
 }
 
-.c5 {
+.c4 {
   color: #3F3D4B;
   background-color: #fff;
   padding: 16px;
@@ -178,72 +207,99 @@ exports[`Field component sanity matches themed snapshot 1`] = `
   line-height: 1;
 }
 
-.c5 {
+.c4 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   box-sizing: border-box;
 }
 
-.c5:hover {
+.c4:hover {
   box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
 }
 
-.c5:focus {
+.c4:focus {
   outline: none;
   border-color: #4E3FCE;
 }
 
-.c5:disabled {
+.c4:disabled {
   opacity: 0.4;
   pointer-events: none;
 }
 
-.was-validated .c5:valid {
+.c4[type="color"] {
+  min-width: 3rem;
+  padding: 0;
+}
+
+.c4[type="color"]::-webkit-color-swatch-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.c4[type="color"]::-webkit-color-swatch {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  height: 2rem;
+  width: 2rem;
+  border: none;
+  border-radius: 100%;
+}
+
+.c4[type="color"]::-moz-color-swatch {
+  height: 2rem;
+  width: 2rem;
+  border: none;
+  border-radius: 100%;
+}
+
+.was-validated .c4:valid {
   border-color: #28C081;
 }
 
-.was-validated .c5:valid ~ svg.icon-valid {
+.was-validated .c4:valid ~ svg.icon-valid {
   visibility: visible;
 }
 
-.was-validated .c5:invalid {
+.was-validated .c4:invalid {
   border-color: #DC2C10;
 }
 
-.was-validated .c5:invalid ~ svg.icon-invalid {
+.was-validated .c4:invalid ~ svg.icon-invalid {
   visibility: visible;
 }
 
-.c0 {
-  font-size: 1em;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  color: #3F3D4B;
-}
-
-<div
+<label
   class="c0"
+  display="inline-flex"
 >
-  <label
-    class="c1"
-    display="inline-flex"
+  <div
+    class="c1 c2 c3"
+    font-family="sansSerif"
+    font-size="1"
+    font-weight="3"
   >
-    <div
-      class="c2 c3 c4"
-      color="copyColor"
-      font-family="sansSerif"
-      font-size="1"
-      font-weight="3"
-    >
-      Themed input label
-    </div>
-    <input
-      class="c5"
-      color="copyColor"
-      font-family="sansSerif"
-      font-size="1rem"
-      height="3rem"
-    />
-  </label>
-</div>
+    Themed input label
+  </div>
+  <input
+    class="c4"
+    color="text"
+    font-family="sansSerif"
+    font-size="1rem"
+    height="3rem"
+  />
+</label>
 `;

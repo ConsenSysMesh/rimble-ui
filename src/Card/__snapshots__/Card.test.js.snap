@@ -4,10 +4,6 @@ exports[`Card component sanity matches default snapshot 1`] = `
 .c0 {
   background-color: #fff;
   padding: 32px;
-  width: 100%;
-  height: auto;
-  min-width: 16px;
-  min-height: 16px;
   position: relative;
   border: 1px solid transparent;
   border-color: #eee;
@@ -20,42 +16,24 @@ exports[`Card component sanity matches default snapshot 1`] = `
 
 <div
   class="c0"
-  height="auto"
-  width="1"
 />
 `;
 
 exports[`Card component sanity matches themed snapshot 1`] = `
-.c1 {
+.c0 {
   background-color: #fff;
   padding: 32px;
-  width: 100%;
-  height: auto;
-  min-width: 16px;
-  min-height: 16px;
   position: relative;
   border: 1px solid transparent;
   border-color: #eee;
   box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
 }
 
-.c1 {
-  box-sizing: border-box;
-}
-
 .c0 {
-  font-size: 1em;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  color: #3F3D4B;
+  box-sizing: border-box;
 }
 
 <div
   class="c0"
->
-  <div
-    class="c1"
-    height="auto"
-    width="1"
-  />
-</div>
+/>
 `;

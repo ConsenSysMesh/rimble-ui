@@ -161,7 +161,7 @@ exports[`Button Icon component sanity matches default snapshot 1`] = `
 `;
 
 exports[`Button Icon component sanity matches themed snapshot 1`] = `
-.c1 {
+.c0 {
   color: #fff;
   background-color: #999;
   margin: 0;
@@ -183,7 +183,7 @@ exports[`Button Icon component sanity matches themed snapshot 1`] = `
   --contrast-color: #fff;
 }
 
-.c1 {
+.c0 {
   -webkit-font-smoothing: antialiased;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -211,24 +211,24 @@ exports[`Button Icon component sanity matches themed snapshot 1`] = `
   justify-content: center;
 }
 
-.c1:hover {
+.c0:hover {
   cursor: pointer;
 }
 
-.c1:disabled {
+.c0:disabled {
   opacity: 0.5;
   pointer-events: none;
 }
 
-.c1 > span.button-text {
+.c0 > span.button-text {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
-.c1 > div > svg,
-.c1 > span.button-text {
+.c0 > div > svg,
+.c0 > span.button-text {
   position: relative;
   z-index: 1;
   -webkit-user-select: none;
@@ -238,25 +238,25 @@ exports[`Button Icon component sanity matches themed snapshot 1`] = `
   pointer-events: none;
 }
 
-.c1 > div > svg {
+.c0 > div > svg {
   display: block;
 }
 
-.c1 > div:first-child > svg {
+.c0 > div:first-child > svg {
   margin-left: -0.5rem;
   margin-right: .5rem;
 }
 
-.c1 > div:last-child > svg {
+.c0 > div:last-child > svg {
   margin-left: .5rem;
   margin-right: -0.5rem;
 }
 
-.c1 > div:first-child:last-child > svg {
+.c0 > div:first-child:last-child > svg {
   margin: 0;
 }
 
-.c1 {
+.c0 {
   color: var(--contrast-color);
   background: #FFF;
   z-index: 0;
@@ -264,22 +264,22 @@ exports[`Button Icon component sanity matches themed snapshot 1`] = `
   transition: all 0.15s ease;
 }
 
-.c1:hover {
+.c0:hover {
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
 }
 
-.c1:hover::before {
+.c0:hover::before {
   opacity: 0.9;
 }
 
-.c1:active {
+.c0:active {
   box-shadow: none;
   background: #000;
 }
 
-.c1::before {
+.c0::before {
   content: '';
   position: absolute;
   top: 0;
@@ -293,41 +293,31 @@ exports[`Button Icon component sanity matches themed snapshot 1`] = `
   pointer-events: none;
 }
 
-.c0 {
-  font-size: 1em;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  color: #3F3D4B;
-}
-
-<div
+<button
   class="c0"
+  color="white"
+  font-family="sansSerif"
+  font-size="inherit"
+  font-weight="3"
+  height="3rem"
 >
-  <button
-    class="c1"
-    color="white"
-    font-family="sansSerif"
-    font-size="inherit"
-    font-weight="3"
-    height="3rem"
+  <div
+    class=""
   >
-    <div
+    <svg
       class=""
+      display="block"
+      fill="currentcolor"
+      height="24px"
+      viewBox="0 0 24 24"
+      width="24px"
     >
-      <svg
-        class=""
-        display="block"
-        fill="currentcolor"
-        height="24px"
-        viewBox="0 0 24 24"
-        width="24px"
-      >
-        <path
-          d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"
-        />
-      </svg>
-    </div>
-  </button>
-</div>
+      <path
+        d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"
+      />
+    </svg>
+  </div>
+</button>
 `;
 
 exports[`Button Icon only component sanity matches default snapshot 1`] = `
@@ -799,7 +789,7 @@ exports[`Button component sanity matches default snapshot 1`] = `
 `;
 
 exports[`Button component sanity matches themed snapshot 1`] = `
-.c1 {
+.c0 {
   color: #fff;
   background-color: #999;
   margin: 0;
@@ -821,7 +811,7 @@ exports[`Button component sanity matches themed snapshot 1`] = `
   --contrast-color: #fff;
 }
 
-.c1 {
+.c0 {
   -webkit-font-smoothing: antialiased;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -849,24 +839,24 @@ exports[`Button component sanity matches themed snapshot 1`] = `
   justify-content: center;
 }
 
-.c1:hover {
+.c0:hover {
   cursor: pointer;
 }
 
-.c1:disabled {
+.c0:disabled {
   opacity: 0.5;
   pointer-events: none;
 }
 
-.c1 > span.button-text {
+.c0 > span.button-text {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
-.c1 > div > svg,
-.c1 > span.button-text {
+.c0 > div > svg,
+.c0 > span.button-text {
   position: relative;
   z-index: 1;
   -webkit-user-select: none;
@@ -876,25 +866,25 @@ exports[`Button component sanity matches themed snapshot 1`] = `
   pointer-events: none;
 }
 
-.c1 > div > svg {
+.c0 > div > svg {
   display: block;
 }
 
-.c1 > div:first-child > svg {
+.c0 > div:first-child > svg {
   margin-left: -0.5rem;
   margin-right: .5rem;
 }
 
-.c1 > div:last-child > svg {
+.c0 > div:last-child > svg {
   margin-left: .5rem;
   margin-right: -0.5rem;
 }
 
-.c1 > div:first-child:last-child > svg {
+.c0 > div:first-child:last-child > svg {
   margin: 0;
 }
 
-.c1 {
+.c0 {
   color: var(--contrast-color);
   background: #FFF;
   z-index: 0;
@@ -902,22 +892,22 @@ exports[`Button component sanity matches themed snapshot 1`] = `
   transition: all 0.15s ease;
 }
 
-.c1:hover {
+.c0:hover {
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
 }
 
-.c1:hover::before {
+.c0:hover::before {
   opacity: 0.9;
 }
 
-.c1:active {
+.c0:active {
   box-shadow: none;
   background: #000;
 }
 
-.c1::before {
+.c0::before {
   content: '';
   position: absolute;
   top: 0;
@@ -931,28 +921,18 @@ exports[`Button component sanity matches themed snapshot 1`] = `
   pointer-events: none;
 }
 
-.c0 {
-  font-size: 1em;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  color: #3F3D4B;
-}
-
-<div
+<button
   class="c0"
+  color="white"
+  font-family="sansSerif"
+  font-size="inherit"
+  font-weight="3"
+  height="3rem"
 >
-  <button
-    class="c1"
-    color="white"
-    font-family="sansSerif"
-    font-size="inherit"
-    font-weight="3"
-    height="3rem"
-  >
-    <span
-      class="button-text"
-    />
-  </button>
-</div>
+  <span
+    class="button-text"
+  />
+</button>
 `;
 
 exports[`Button disabled component sanity matches default snapshot 1`] = `
@@ -1104,7 +1084,7 @@ exports[`Button disabled component sanity matches default snapshot 1`] = `
 `;
 
 exports[`Button disabled component sanity matches themed snapshot 1`] = `
-.c1 {
+.c0 {
   color: #fff;
   background-color: #999;
   margin: 0;
@@ -1126,7 +1106,7 @@ exports[`Button disabled component sanity matches themed snapshot 1`] = `
   --contrast-color: #fff;
 }
 
-.c1 {
+.c0 {
   -webkit-font-smoothing: antialiased;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1154,24 +1134,24 @@ exports[`Button disabled component sanity matches themed snapshot 1`] = `
   justify-content: center;
 }
 
-.c1:hover {
+.c0:hover {
   cursor: pointer;
 }
 
-.c1:disabled {
+.c0:disabled {
   opacity: 0.5;
   pointer-events: none;
 }
 
-.c1 > span.button-text {
+.c0 > span.button-text {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
-.c1 > div > svg,
-.c1 > span.button-text {
+.c0 > div > svg,
+.c0 > span.button-text {
   position: relative;
   z-index: 1;
   -webkit-user-select: none;
@@ -1181,25 +1161,25 @@ exports[`Button disabled component sanity matches themed snapshot 1`] = `
   pointer-events: none;
 }
 
-.c1 > div > svg {
+.c0 > div > svg {
   display: block;
 }
 
-.c1 > div:first-child > svg {
+.c0 > div:first-child > svg {
   margin-left: -0.5rem;
   margin-right: .5rem;
 }
 
-.c1 > div:last-child > svg {
+.c0 > div:last-child > svg {
   margin-left: .5rem;
   margin-right: -0.5rem;
 }
 
-.c1 > div:first-child:last-child > svg {
+.c0 > div:first-child:last-child > svg {
   margin: 0;
 }
 
-.c1 {
+.c0 {
   color: var(--contrast-color);
   background: #FFF;
   z-index: 0;
@@ -1207,22 +1187,22 @@ exports[`Button disabled component sanity matches themed snapshot 1`] = `
   transition: all 0.15s ease;
 }
 
-.c1:hover {
+.c0:hover {
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
 }
 
-.c1:hover::before {
+.c0:hover::before {
   opacity: 0.9;
 }
 
-.c1:active {
+.c0:active {
   box-shadow: none;
   background: #000;
 }
 
-.c1::before {
+.c0::before {
   content: '';
   position: absolute;
   top: 0;
@@ -1236,29 +1216,19 @@ exports[`Button disabled component sanity matches themed snapshot 1`] = `
   pointer-events: none;
 }
 
-.c0 {
-  font-size: 1em;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  color: #3F3D4B;
-}
-
-<div
+<button
   class="c0"
+  color="white"
+  disabled=""
+  font-family="sansSerif"
+  font-size="inherit"
+  font-weight="3"
+  height="3rem"
 >
-  <button
-    class="c1"
-    color="white"
-    disabled=""
-    font-family="sansSerif"
-    font-size="inherit"
-    font-weight="3"
-    height="3rem"
-  >
-    <span
-      class="button-text"
-    />
-  </button>
-</div>
+  <span
+    class="button-text"
+  />
+</button>
 `;
 
 exports[`Button size variant component sanity matches default snapshot 1`] = `
@@ -1565,7 +1535,7 @@ exports[`Button size variant component sanity matches default snapshot 2`] = `
 `;
 
 exports[`Button size variant component sanity matches themed snapshot 1`] = `
-.c1 {
+.c0 {
   color: #fff;
   background-color: #999;
   margin: 0;
@@ -1592,7 +1562,7 @@ exports[`Button size variant component sanity matches themed snapshot 1`] = `
   padding: 0 1rem;
 }
 
-.c1 {
+.c0 {
   -webkit-font-smoothing: antialiased;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1620,24 +1590,24 @@ exports[`Button size variant component sanity matches themed snapshot 1`] = `
   justify-content: center;
 }
 
-.c1:hover {
+.c0:hover {
   cursor: pointer;
 }
 
-.c1:disabled {
+.c0:disabled {
   opacity: 0.5;
   pointer-events: none;
 }
 
-.c1 > span.button-text {
+.c0 > span.button-text {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
-.c1 > div > svg,
-.c1 > span.button-text {
+.c0 > div > svg,
+.c0 > span.button-text {
   position: relative;
   z-index: 1;
   -webkit-user-select: none;
@@ -1647,25 +1617,25 @@ exports[`Button size variant component sanity matches themed snapshot 1`] = `
   pointer-events: none;
 }
 
-.c1 > div > svg {
+.c0 > div > svg {
   display: block;
 }
 
-.c1 > div:first-child > svg {
+.c0 > div:first-child > svg {
   margin-left: -0.5rem;
   margin-right: .5rem;
 }
 
-.c1 > div:last-child > svg {
+.c0 > div:last-child > svg {
   margin-left: .5rem;
   margin-right: -0.5rem;
 }
 
-.c1 > div:first-child:last-child > svg {
+.c0 > div:first-child:last-child > svg {
   margin: 0;
 }
 
-.c1 {
+.c0 {
   color: var(--contrast-color);
   background: #FFF;
   z-index: 0;
@@ -1673,22 +1643,22 @@ exports[`Button size variant component sanity matches themed snapshot 1`] = `
   transition: all 0.15s ease;
 }
 
-.c1:hover {
+.c0:hover {
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
 }
 
-.c1:hover::before {
+.c0:hover::before {
   opacity: 0.9;
 }
 
-.c1:active {
+.c0:active {
   box-shadow: none;
   background: #000;
 }
 
-.c1::before {
+.c0::before {
   content: '';
   position: absolute;
   top: 0;
@@ -1702,32 +1672,22 @@ exports[`Button size variant component sanity matches themed snapshot 1`] = `
   pointer-events: none;
 }
 
-.c0 {
-  font-size: 1em;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  color: #3F3D4B;
-}
-
-<div
+<button
   class="c0"
+  color="white"
+  font-family="sansSerif"
+  font-size="inherit"
+  font-weight="3"
+  height="3rem"
 >
-  <button
-    class="c1"
-    color="white"
-    font-family="sansSerif"
-    font-size="inherit"
-    font-weight="3"
-    height="3rem"
-  >
-    <span
-      class="button-text"
-    />
-  </button>
-</div>
+  <span
+    class="button-text"
+  />
+</button>
 `;
 
 exports[`Button size variant component sanity matches themed snapshot 2`] = `
-.c1 {
+.c0 {
   color: #fff;
   background-color: #999;
   margin: 0;
@@ -1753,7 +1713,7 @@ exports[`Button size variant component sanity matches themed snapshot 2`] = `
   min-width: 4rem;
 }
 
-.c1 {
+.c0 {
   -webkit-font-smoothing: antialiased;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1781,24 +1741,24 @@ exports[`Button size variant component sanity matches themed snapshot 2`] = `
   justify-content: center;
 }
 
-.c1:hover {
+.c0:hover {
   cursor: pointer;
 }
 
-.c1:disabled {
+.c0:disabled {
   opacity: 0.5;
   pointer-events: none;
 }
 
-.c1 > span.button-text {
+.c0 > span.button-text {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
-.c1 > div > svg,
-.c1 > span.button-text {
+.c0 > div > svg,
+.c0 > span.button-text {
   position: relative;
   z-index: 1;
   -webkit-user-select: none;
@@ -1808,25 +1768,25 @@ exports[`Button size variant component sanity matches themed snapshot 2`] = `
   pointer-events: none;
 }
 
-.c1 > div > svg {
+.c0 > div > svg {
   display: block;
 }
 
-.c1 > div:first-child > svg {
+.c0 > div:first-child > svg {
   margin-left: -0.5rem;
   margin-right: .5rem;
 }
 
-.c1 > div:last-child > svg {
+.c0 > div:last-child > svg {
   margin-left: .5rem;
   margin-right: -0.5rem;
 }
 
-.c1 > div:first-child:last-child > svg {
+.c0 > div:first-child:last-child > svg {
   margin: 0;
 }
 
-.c1 {
+.c0 {
   color: var(--contrast-color);
   background: #FFF;
   z-index: 0;
@@ -1834,22 +1794,22 @@ exports[`Button size variant component sanity matches themed snapshot 2`] = `
   transition: all 0.15s ease;
 }
 
-.c1:hover {
+.c0:hover {
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
 }
 
-.c1:hover::before {
+.c0:hover::before {
   opacity: 0.9;
 }
 
-.c1:active {
+.c0:active {
   box-shadow: none;
   background: #000;
 }
 
-.c1::before {
+.c0::before {
   content: '';
   position: absolute;
   top: 0;
@@ -1863,28 +1823,18 @@ exports[`Button size variant component sanity matches themed snapshot 2`] = `
   pointer-events: none;
 }
 
-.c0 {
-  font-size: 1em;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  color: #3F3D4B;
-}
-
-<div
+<button
   class="c0"
+  color="white"
+  font-family="sansSerif"
+  font-size="inherit"
+  font-weight="3"
+  height="3rem"
 >
-  <button
-    class="c1"
-    color="white"
-    font-family="sansSerif"
-    font-size="inherit"
-    font-weight="3"
-    height="3rem"
-  >
-    <span
-      class="button-text"
-    />
-  </button>
-</div>
+  <span
+    class="button-text"
+  />
+</button>
 `;
 
 exports[`Button.Outline component sanity matches default snapshot 1`] = `
@@ -2061,7 +2011,7 @@ exports[`Button.Outline component sanity matches default snapshot 1`] = `
 `;
 
 exports[`Button.Outline component sanity matches themed snapshot 1`] = `
-.c1 {
+.c0 {
   color: #fff;
   background-color: #999;
   margin: 0;
@@ -2084,7 +2034,7 @@ exports[`Button.Outline component sanity matches themed snapshot 1`] = `
   --contrast-color: #fff;
 }
 
-.c1 {
+.c0 {
   -webkit-font-smoothing: antialiased;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -2112,24 +2062,24 @@ exports[`Button.Outline component sanity matches themed snapshot 1`] = `
   justify-content: center;
 }
 
-.c1:hover {
+.c0:hover {
   cursor: pointer;
 }
 
-.c1:disabled {
+.c0:disabled {
   opacity: 0.5;
   pointer-events: none;
 }
 
-.c1 > span.button-text {
+.c0 > span.button-text {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
-.c1 > div > svg,
-.c1 > span.button-text {
+.c0 > div > svg,
+.c0 > span.button-text {
   position: relative;
   z-index: 1;
   -webkit-user-select: none;
@@ -2139,25 +2089,25 @@ exports[`Button.Outline component sanity matches themed snapshot 1`] = `
   pointer-events: none;
 }
 
-.c1 > div > svg {
+.c0 > div > svg {
   display: block;
 }
 
-.c1 > div:first-child > svg {
+.c0 > div:first-child > svg {
   margin-left: -0.5rem;
   margin-right: .5rem;
 }
 
-.c1 > div:last-child > svg {
+.c0 > div:last-child > svg {
   margin-left: .5rem;
   margin-right: -0.5rem;
 }
 
-.c1 > div:first-child:last-child > svg {
+.c0 > div:first-child:last-child > svg {
   margin: 0;
 }
 
-.c1 {
+.c0 {
   color: var(--contrast-color);
   background: #FFF;
   z-index: 0;
@@ -2165,22 +2115,22 @@ exports[`Button.Outline component sanity matches themed snapshot 1`] = `
   transition: all 0.15s ease;
 }
 
-.c1:hover {
+.c0:hover {
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
 }
 
-.c1:hover::before {
+.c0:hover::before {
   opacity: 0.9;
 }
 
-.c1:active {
+.c0:active {
   box-shadow: none;
   background: #000;
 }
 
-.c1::before {
+.c0::before {
   content: '';
   position: absolute;
   top: 0;
@@ -2194,53 +2144,43 @@ exports[`Button.Outline component sanity matches themed snapshot 1`] = `
   pointer-events: none;
 }
 
-.c1 {
+.c0 {
   color: var(--main-color);
   background: transparent;
 }
 
-.c1:hover {
+.c0:hover {
   border-color: var(--main-color);
 }
 
-.c1:hover::before {
+.c0:hover::before {
   opacity: 0;
 }
 
-.c1:active {
+.c0:active {
   background: #fff;
 }
 
-.c1:active::before {
+.c0:active::before {
   opacity: 0.1;
 }
 
-.c1::before {
+.c0::before {
   opacity: 0;
 }
 
-.c0 {
-  font-size: 1em;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  color: #3F3D4B;
-}
-
-<div
+<button
   class="c0"
+  color="white"
+  font-family="sansSerif"
+  font-size="inherit"
+  font-weight="3"
+  height="3rem"
 >
-  <button
-    class="c1"
-    color="white"
-    font-family="sansSerif"
-    font-size="inherit"
-    font-weight="3"
-    height="3rem"
-  >
-    <span
-      class="button-text"
-    />
-  </button>
-</div>
+  <span
+    class="button-text"
+  />
+</button>
 `;
 
 exports[`Button.Text component sanity matches default snapshot 1`] = `
@@ -2375,7 +2315,7 @@ exports[`Button.Text component sanity matches default snapshot 1`] = `
 `;
 
 exports[`Button.Text component sanity matches themed snapshot 1`] = `
-.c1 {
+.c0 {
   color: #fff;
   background-color: #999;
   margin: 0;
@@ -2395,7 +2335,7 @@ exports[`Button.Text component sanity matches themed snapshot 1`] = `
   --contrast-color: #fff;
 }
 
-.c1 {
+.c0 {
   -webkit-font-smoothing: antialiased;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -2423,24 +2363,24 @@ exports[`Button.Text component sanity matches themed snapshot 1`] = `
   justify-content: center;
 }
 
-.c1:hover {
+.c0:hover {
   cursor: pointer;
 }
 
-.c1:disabled {
+.c0:disabled {
   opacity: 0.5;
   pointer-events: none;
 }
 
-.c1 > span.button-text {
+.c0 > span.button-text {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
-.c1 > div > svg,
-.c1 > span.button-text {
+.c0 > div > svg,
+.c0 > span.button-text {
   position: relative;
   z-index: 1;
   -webkit-user-select: none;
@@ -2450,69 +2390,59 @@ exports[`Button.Text component sanity matches themed snapshot 1`] = `
   pointer-events: none;
 }
 
-.c1 > div > svg {
+.c0 > div > svg {
   display: block;
 }
 
-.c1 > div:first-child > svg {
+.c0 > div:first-child > svg {
   margin-left: -0.5rem;
   margin-right: .5rem;
 }
 
-.c1 > div:last-child > svg {
+.c0 > div:last-child > svg {
   margin-left: .5rem;
   margin-right: -0.5rem;
 }
 
-.c1 > div:first-child:last-child > svg {
+.c0 > div:first-child:last-child > svg {
   margin: 0;
 }
 
-.c1 {
+.c0 {
   color: var(--main-color);
   border: none;
   background: none;
   box-shadow: none;
 }
 
-.c1:hover {
+.c0:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
   background: none;
   box-shadow: none;
 }
 
-.c1:active {
+.c0:active {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c1::before {
+.c0::before {
   display: none;
 }
 
-.c0 {
-  font-size: 1em;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  color: #3F3D4B;
-}
-
-<div
+<button
   class="c0"
+  color="white"
+  font-family="sansSerif"
+  font-size="inherit"
+  font-weight="3"
+  height="3rem"
 >
-  <button
-    class="c1"
-    color="white"
-    font-family="sansSerif"
-    font-size="inherit"
-    font-weight="3"
-    height="3rem"
-  >
-    <span
-      class="button-text"
-    />
-  </button>
-</div>
+  <span
+    class="button-text"
+  />
+</button>
 `;
 
 exports[`Link Button Outline component sanity matches default snapshot 1`] = `
