@@ -36,6 +36,44 @@ exports[`Textarea component sanity matches default snapshot 1`] = `
   pointer-events: none;
 }
 
+.c0[type="color"] {
+  min-width: 3rem;
+  padding: 0;
+}
+
+.c0[type="color"]::-webkit-color-swatch-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.c0[type="color"]::-webkit-color-swatch {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  height: 2rem;
+  width: 2rem;
+  border: none;
+  border-radius: 100%;
+}
+
+.c0[type="color"]::-moz-color-swatch {
+  height: 2rem;
+  width: 2rem;
+  border: none;
+  border-radius: 100%;
+}
+
 .was-validated .c0:valid {
   border-color: #28C081;
 }
@@ -95,6 +133,44 @@ exports[`Textarea component sanity matches themed snapshot 1`] = `
 .c0:disabled {
   opacity: 0.4;
   pointer-events: none;
+}
+
+.c0[type="color"] {
+  min-width: 3rem;
+  padding: 0;
+}
+
+.c0[type="color"]::-webkit-color-swatch-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.c0[type="color"]::-webkit-color-swatch {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  height: 2rem;
+  width: 2rem;
+  border: none;
+  border-radius: 100%;
+}
+
+.c0[type="color"]::-moz-color-swatch {
+  height: 2rem;
+  width: 2rem;
+  border: none;
+  border-radius: 100%;
 }
 
 .was-validated .c0:valid {
