@@ -1,31 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
 import { Icon as RmdIcon } from 'rmdi';
-import theme from '../theme';
 import Box from '../Box';
+import theme from '../theme';
 
-const StyledBox = styled('div')``;
-
-const Icon = React.forwardRef((props, ref) => (
-  <StyledBox ref={ref}>
-    <RmdIcon.default {...props} />
-  </StyledBox>
+const Icon = React.forwardRef(({ name, size, ...rest }, ref) => (
+  <Box ref={ref} {...rest}>
+    <RmdIcon.default name={name} size={size} />
+  </Box>
 ));
 
-// RmdIcon.default.defaultProps = {
-//   theme,
-//   color: 'inherit'
-// };
-
-StyledBox.defaultProps = {
-  theme,
-};
-
 Icon.defaultProps = {
-  // theme,
-  display: 'block',
+  name: '',
   size: '24px',
+  display: 'inline-flex',
+  theme,
 };
 
 Icon.propTypes = {
@@ -34,13 +23,13 @@ Icon.propTypes = {
    */
   name: PropTypes.string.isRequired,
   /**
-   * Sets the element display property
-   */
-  display: PropTypes.string,
-  /**
    * Sets the width and height in pixels
    */
   size: PropTypes.string,
+  /**
+   * Sets the element display property
+   */
+  display: PropTypes.string,
   theme: PropTypes.object,
 };
 

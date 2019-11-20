@@ -574,6 +574,18 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   box-sizing: border-box;
 }
 
+.c3 {
+  color: #4E3FCE;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c3 {
+  box-sizing: border-box;
+}
+
 .c6 {
   margin-left: 8px;
   margin-right: 8px;
@@ -619,10 +631,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
 
 .c14 {
   box-sizing: border-box;
-}
-
-.c3 {
-  color: #4E3FCE;
 }
 
 .c7 {
@@ -1288,7 +1296,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-iIQDRA",
+                "componentId": "sc-hJwwgy",
                 "isStatic": false,
                 "lastClassName": "c0",
                 "rules": Array [
@@ -1416,7 +1424,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                 "zIndex": [Function],
               },
               "render": [Function],
-              "styledComponentId": "sc-iIQDRA",
+              "styledComponentId": "sc-hJwwgy",
               "target": Object {
                 "$$typeof": Symbol(react.forward_ref),
                 "displayName": "Box",
@@ -3161,11 +3169,264 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                         >
                           <Icon
                             color="primary"
-                            display="block"
+                            display="inline-flex"
                             name="InfoOutline"
                             size="32px"
+                            theme={
+                              Object {
+                                "borderWidths": Array [
+                                  "0",
+                                  "1px",
+                                  "2px",
+                                  "4px",
+                                ],
+                                "borders": Array [
+                                  0,
+                                  "1px solid transparent",
+                                ],
+                                "breakpoints": Array [
+                                  "40em",
+                                  "52em",
+                                  "64em",
+                                ],
+                                "buttonSizes": Object {
+                                  "large": Object {
+                                    "fontSize": "1.5rem",
+                                    "height": "4rem",
+                                    "minWidth": "4rem",
+                                  },
+                                  "medium": Object {
+                                    "fontSize": "1rem",
+                                    "height": "3rem",
+                                    "minWidth": "3rem",
+                                  },
+                                  "small": Object {
+                                    "fontSize": "0.75rem",
+                                    "height": "2rem",
+                                    "minWidth": "2rem",
+                                    "padding": "0 1rem",
+                                  },
+                                },
+                                "buttons": Object {
+                                  "danger": Object {
+                                    "--contrast-color": "#fff",
+                                    "--main-color": "#DC2C10",
+                                  },
+                                  "primary": Object {
+                                    "--contrast-color": "#fff",
+                                    "--main-color": "#4E3FCE",
+                                    "backgroundColor": "#4E3FCE",
+                                    "color": "#fff",
+                                  },
+                                  "success": Object {
+                                    "--contrast-color": "#FFF",
+                                    "--main-color": "#28C081",
+                                  },
+                                },
+                                "colors": Object {
+                                  "background": "#fff",
+                                  "black": "#000",
+                                  "blacks": Array [
+                                    "rgba(0,0,0,.0125)",
+                                    "rgba(0,0,0,.025)",
+                                    "rgba(0,0,0,.05)",
+                                    "rgba(0,0,0,.1)",
+                                    "rgba(0,0,0,.2)",
+                                    "rgba(0,0,0,.3)",
+                                    "rgba(0,0,0,.4)",
+                                    "rgba(0,0,0,.5)",
+                                    "rgba(0,0,0,.6)",
+                                    "rgba(0,0,0,.7)",
+                                    "rgba(0,0,0,.8)",
+                                    "rgba(0,0,0,.9)",
+                                  ],
+                                  "blue": "#3259D6",
+                                  "danger": "#DC2C10",
+                                  "dark-gray": "#333",
+                                  "grey": "#CCC",
+                                  "info": "#36ADF1",
+                                  "light-gray": "#eee",
+                                  "light-silver": "#aaa",
+                                  "mid-gray": "#555",
+                                  "moon-gray": "#ccc",
+                                  "near-black": "#111",
+                                  "near-white": "#f4f4f4",
+                                  "primary": "#4E3FCE",
+                                  "primary-dark": "#3e32a4",
+                                  "primary-light": "#7165d7",
+                                  "silver": "#999",
+                                  "success": "#28C081",
+                                  "text": "#3F3D4B",
+                                  "transparent": "transparent",
+                                  "warning": "#FD9D28",
+                                  "white": "#fff",
+                                  "whites": Array [
+                                    "rgba(255,255,255,.0125)",
+                                    "rgba(255,255,255,.025)",
+                                    "rgba(255,255,255,.05)",
+                                    "rgba(255,255,255,.1)",
+                                    "rgba(255,255,255,.2)",
+                                    "rgba(255,255,255,.3)",
+                                    "rgba(255,255,255,.4)",
+                                    "rgba(255,255,255,.5)",
+                                    "rgba(255,255,255,.6)",
+                                    "rgba(255,255,255,.7)",
+                                    "rgba(255,255,255,.8)",
+                                    "rgba(255,255,255,.9)",
+                                  ],
+                                },
+                                "fontSizes": Array [
+                                  12,
+                                  14,
+                                  16,
+                                  20,
+                                  24,
+                                  32,
+                                  48,
+                                  64,
+                                ],
+                                "fontWeights": Array [
+                                  0,
+                                  300,
+                                  400,
+                                  600,
+                                  700,
+                                ],
+                                "fonts": Object {
+                                  "mono": "\\"Source Code Pro\\", -apple-system, monospace",
+                                  "sansSerif": "\\"Source Sans Pro\\", -apple-system, sans-serif",
+                                  "serif": "athelas, georgia, times, serif",
+                                },
+                                "heights": Array [
+                                  0,
+                                  16,
+                                  32,
+                                  64,
+                                  128,
+                                  256,
+                                ],
+                                "letterSpacings": Array [
+                                  0,
+                                  1,
+                                  2,
+                                  4,
+                                  8,
+                                ],
+                                "lineHeights": Object {
+                                  "copy": 1.5,
+                                  "solid": 1,
+                                  "title": 1.25,
+                                },
+                                "maxHeights": Array [
+                                  0,
+                                  16,
+                                  32,
+                                  64,
+                                  128,
+                                  256,
+                                ],
+                                "maxWidths": Array [
+                                  0,
+                                  16,
+                                  32,
+                                  64,
+                                  128,
+                                  256,
+                                  512,
+                                  768,
+                                  1024,
+                                  1536,
+                                ],
+                                "messageStyle": Object {
+                                  "base": Object {
+                                    "backgroundColor": "#f6f6f6",
+                                    "borderColor": "#AAA",
+                                    "color": "#666",
+                                  },
+                                  "danger": Object {
+                                    "backgroundColor": "#fbe9e7",
+                                    "borderColor": "#DC2C10",
+                                    "color": "#841a09",
+                                  },
+                                  "info": Object {
+                                    "backgroundColor": "#eaf6fd",
+                                    "borderColor": "#36ADF1",
+                                    "color": "#206790",
+                                  },
+                                  "success": Object {
+                                    "backgroundColor": "#e9f8f2",
+                                    "borderColor": "#28C081",
+                                    "color": "#18734d",
+                                  },
+                                  "warning": Object {
+                                    "backgroundColor": "#fef5e9",
+                                    "borderColor": "#FD9D28",
+                                    "color": "#975e18",
+                                  },
+                                },
+                                "minHeights": Array [
+                                  0,
+                                  16,
+                                  32,
+                                  64,
+                                  128,
+                                  256,
+                                ],
+                                "minWidths": Array [
+                                  0,
+                                  16,
+                                  32,
+                                  64,
+                                  128,
+                                  256,
+                                ],
+                                "opacity": Object {
+                                  "disabled": 0.4,
+                                },
+                                "radii": Array [
+                                  "0",
+                                  "4px",
+                                  "8px",
+                                  "16px",
+                                  "32px",
+                                ],
+                                "shadows": Array [
+                                  "0",
+                                  "0px 2px 4px rgba(0, 0, 0, 0.1)",
+                                  "0px 8px 16px rgba(0, 0, 0, 0.1)",
+                                  "0 7px 14px rgba(50,50,93,.1)",
+                                ],
+                                "space": Array [
+                                  0,
+                                  4,
+                                  8,
+                                  16,
+                                  32,
+                                  64,
+                                  128,
+                                  256,
+                                ],
+                                "width": Array [
+                                  0,
+                                  16,
+                                  32,
+                                  64,
+                                  128,
+                                  256,
+                                ],
+                                "zIndices": Array [
+                                  0,
+                                  9,
+                                  99,
+                                  999,
+                                  9999,
+                                ],
+                              }
+                            }
                           >
-                            <styled.div
+                            <Box
+                              color="primary"
+                              display="inline-flex"
                               theme={
                                 Object {
                                   "borderWidths": Array [
@@ -3418,280 +3679,9 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                 }
                               }
                             >
-                              <StyledComponent
-                                forwardedComponent={
-                                  Object {
-                                    "$$typeof": Symbol(react.forward_ref),
-                                    "_foldedDefaultProps": Object {
-                                      "theme": Object {
-                                        "borderWidths": Array [
-                                          "0",
-                                          "1px",
-                                          "2px",
-                                          "4px",
-                                        ],
-                                        "borders": Array [
-                                          0,
-                                          "1px solid transparent",
-                                        ],
-                                        "breakpoints": Array [
-                                          "40em",
-                                          "52em",
-                                          "64em",
-                                        ],
-                                        "buttonSizes": Object {
-                                          "large": Object {
-                                            "fontSize": "1.5rem",
-                                            "height": "4rem",
-                                            "minWidth": "4rem",
-                                          },
-                                          "medium": Object {
-                                            "fontSize": "1rem",
-                                            "height": "3rem",
-                                            "minWidth": "3rem",
-                                          },
-                                          "small": Object {
-                                            "fontSize": "0.75rem",
-                                            "height": "2rem",
-                                            "minWidth": "2rem",
-                                            "padding": "0 1rem",
-                                          },
-                                        },
-                                        "buttons": Object {
-                                          "danger": Object {
-                                            "--contrast-color": "#fff",
-                                            "--main-color": "#DC2C10",
-                                          },
-                                          "primary": Object {
-                                            "--contrast-color": "#fff",
-                                            "--main-color": "#4E3FCE",
-                                            "backgroundColor": "#4E3FCE",
-                                            "color": "#fff",
-                                          },
-                                          "success": Object {
-                                            "--contrast-color": "#FFF",
-                                            "--main-color": "#28C081",
-                                          },
-                                        },
-                                        "colors": Object {
-                                          "background": "#fff",
-                                          "black": "#000",
-                                          "blacks": Array [
-                                            "rgba(0,0,0,.0125)",
-                                            "rgba(0,0,0,.025)",
-                                            "rgba(0,0,0,.05)",
-                                            "rgba(0,0,0,.1)",
-                                            "rgba(0,0,0,.2)",
-                                            "rgba(0,0,0,.3)",
-                                            "rgba(0,0,0,.4)",
-                                            "rgba(0,0,0,.5)",
-                                            "rgba(0,0,0,.6)",
-                                            "rgba(0,0,0,.7)",
-                                            "rgba(0,0,0,.8)",
-                                            "rgba(0,0,0,.9)",
-                                          ],
-                                          "blue": "#3259D6",
-                                          "danger": "#DC2C10",
-                                          "dark-gray": "#333",
-                                          "grey": "#CCC",
-                                          "info": "#36ADF1",
-                                          "light-gray": "#eee",
-                                          "light-silver": "#aaa",
-                                          "mid-gray": "#555",
-                                          "moon-gray": "#ccc",
-                                          "near-black": "#111",
-                                          "near-white": "#f4f4f4",
-                                          "primary": "#4E3FCE",
-                                          "primary-dark": "#3e32a4",
-                                          "primary-light": "#7165d7",
-                                          "silver": "#999",
-                                          "success": "#28C081",
-                                          "text": "#3F3D4B",
-                                          "transparent": "transparent",
-                                          "warning": "#FD9D28",
-                                          "white": "#fff",
-                                          "whites": Array [
-                                            "rgba(255,255,255,.0125)",
-                                            "rgba(255,255,255,.025)",
-                                            "rgba(255,255,255,.05)",
-                                            "rgba(255,255,255,.1)",
-                                            "rgba(255,255,255,.2)",
-                                            "rgba(255,255,255,.3)",
-                                            "rgba(255,255,255,.4)",
-                                            "rgba(255,255,255,.5)",
-                                            "rgba(255,255,255,.6)",
-                                            "rgba(255,255,255,.7)",
-                                            "rgba(255,255,255,.8)",
-                                            "rgba(255,255,255,.9)",
-                                          ],
-                                        },
-                                        "fontSizes": Array [
-                                          12,
-                                          14,
-                                          16,
-                                          20,
-                                          24,
-                                          32,
-                                          48,
-                                          64,
-                                        ],
-                                        "fontWeights": Array [
-                                          0,
-                                          300,
-                                          400,
-                                          600,
-                                          700,
-                                        ],
-                                        "fonts": Object {
-                                          "mono": "\\"Source Code Pro\\", -apple-system, monospace",
-                                          "sansSerif": "\\"Source Sans Pro\\", -apple-system, sans-serif",
-                                          "serif": "athelas, georgia, times, serif",
-                                        },
-                                        "heights": Array [
-                                          0,
-                                          16,
-                                          32,
-                                          64,
-                                          128,
-                                          256,
-                                        ],
-                                        "letterSpacings": Array [
-                                          0,
-                                          1,
-                                          2,
-                                          4,
-                                          8,
-                                        ],
-                                        "lineHeights": Object {
-                                          "copy": 1.5,
-                                          "solid": 1,
-                                          "title": 1.25,
-                                        },
-                                        "maxHeights": Array [
-                                          0,
-                                          16,
-                                          32,
-                                          64,
-                                          128,
-                                          256,
-                                        ],
-                                        "maxWidths": Array [
-                                          0,
-                                          16,
-                                          32,
-                                          64,
-                                          128,
-                                          256,
-                                          512,
-                                          768,
-                                          1024,
-                                          1536,
-                                        ],
-                                        "messageStyle": Object {
-                                          "base": Object {
-                                            "backgroundColor": "#f6f6f6",
-                                            "borderColor": "#AAA",
-                                            "color": "#666",
-                                          },
-                                          "danger": Object {
-                                            "backgroundColor": "#fbe9e7",
-                                            "borderColor": "#DC2C10",
-                                            "color": "#841a09",
-                                          },
-                                          "info": Object {
-                                            "backgroundColor": "#eaf6fd",
-                                            "borderColor": "#36ADF1",
-                                            "color": "#206790",
-                                          },
-                                          "success": Object {
-                                            "backgroundColor": "#e9f8f2",
-                                            "borderColor": "#28C081",
-                                            "color": "#18734d",
-                                          },
-                                          "warning": Object {
-                                            "backgroundColor": "#fef5e9",
-                                            "borderColor": "#FD9D28",
-                                            "color": "#975e18",
-                                          },
-                                        },
-                                        "minHeights": Array [
-                                          0,
-                                          16,
-                                          32,
-                                          64,
-                                          128,
-                                          256,
-                                        ],
-                                        "minWidths": Array [
-                                          0,
-                                          16,
-                                          32,
-                                          64,
-                                          128,
-                                          256,
-                                        ],
-                                        "opacity": Object {
-                                          "disabled": 0.4,
-                                        },
-                                        "radii": Array [
-                                          "0",
-                                          "4px",
-                                          "8px",
-                                          "16px",
-                                          "32px",
-                                        ],
-                                        "shadows": Array [
-                                          "0",
-                                          "0px 2px 4px rgba(0, 0, 0, 0.1)",
-                                          "0px 8px 16px rgba(0, 0, 0, 0.1)",
-                                          "0 7px 14px rgba(50,50,93,.1)",
-                                        ],
-                                        "space": Array [
-                                          0,
-                                          4,
-                                          8,
-                                          16,
-                                          32,
-                                          64,
-                                          128,
-                                          256,
-                                        ],
-                                        "width": Array [
-                                          0,
-                                          16,
-                                          32,
-                                          64,
-                                          128,
-                                          256,
-                                        ],
-                                        "zIndices": Array [
-                                          0,
-                                          9,
-                                          99,
-                                          999,
-                                          9999,
-                                        ],
-                                      },
-                                    },
-                                    "attrs": Array [],
-                                    "componentStyle": ComponentStyle {
-                                      "componentId": "sc-gyfYDX",
-                                      "isStatic": false,
-                                      "lastClassName": "ijYAvN",
-                                      "rules": Array [],
-                                    },
-                                    "displayName": "styled.div",
-                                    "foldedComponentIds": Array [],
-                                    "render": [Function],
-                                    "styledComponentId": "sc-gyfYDX",
-                                    "target": "div",
-                                    "toString": [Function],
-                                    "usesTheme": false,
-                                    "warnTooManyClasses": [Function],
-                                    "withComponent": [Function],
-                                  }
-                                }
-                                forwardedRef={null}
+                              <styled.div
+                                color="primary"
+                                display="inline-flex"
                                 theme={
                                   Object {
                                     "borderWidths": Array [
@@ -3944,79 +3934,625 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                   }
                                 }
                               >
-                                <div
-                                  className=""
+                                <StyledComponent
+                                  color="primary"
+                                  display="inline-flex"
+                                  forwardedComponent={
+                                    Object {
+                                      "$$typeof": Symbol(react.forward_ref),
+                                      "_foldedDefaultProps": Object {
+                                        "theme": Object {
+                                          "borderWidths": Array [
+                                            "0",
+                                            "1px",
+                                            "2px",
+                                            "4px",
+                                          ],
+                                          "borders": Array [
+                                            0,
+                                            "1px solid transparent",
+                                          ],
+                                          "breakpoints": Array [
+                                            "40em",
+                                            "52em",
+                                            "64em",
+                                          ],
+                                          "buttonSizes": Object {
+                                            "large": Object {
+                                              "fontSize": "1.5rem",
+                                              "height": "4rem",
+                                              "minWidth": "4rem",
+                                            },
+                                            "medium": Object {
+                                              "fontSize": "1rem",
+                                              "height": "3rem",
+                                              "minWidth": "3rem",
+                                            },
+                                            "small": Object {
+                                              "fontSize": "0.75rem",
+                                              "height": "2rem",
+                                              "minWidth": "2rem",
+                                              "padding": "0 1rem",
+                                            },
+                                          },
+                                          "buttons": Object {
+                                            "danger": Object {
+                                              "--contrast-color": "#fff",
+                                              "--main-color": "#DC2C10",
+                                            },
+                                            "primary": Object {
+                                              "--contrast-color": "#fff",
+                                              "--main-color": "#4E3FCE",
+                                              "backgroundColor": "#4E3FCE",
+                                              "color": "#fff",
+                                            },
+                                            "success": Object {
+                                              "--contrast-color": "#FFF",
+                                              "--main-color": "#28C081",
+                                            },
+                                          },
+                                          "colors": Object {
+                                            "background": "#fff",
+                                            "black": "#000",
+                                            "blacks": Array [
+                                              "rgba(0,0,0,.0125)",
+                                              "rgba(0,0,0,.025)",
+                                              "rgba(0,0,0,.05)",
+                                              "rgba(0,0,0,.1)",
+                                              "rgba(0,0,0,.2)",
+                                              "rgba(0,0,0,.3)",
+                                              "rgba(0,0,0,.4)",
+                                              "rgba(0,0,0,.5)",
+                                              "rgba(0,0,0,.6)",
+                                              "rgba(0,0,0,.7)",
+                                              "rgba(0,0,0,.8)",
+                                              "rgba(0,0,0,.9)",
+                                            ],
+                                            "blue": "#3259D6",
+                                            "danger": "#DC2C10",
+                                            "dark-gray": "#333",
+                                            "grey": "#CCC",
+                                            "info": "#36ADF1",
+                                            "light-gray": "#eee",
+                                            "light-silver": "#aaa",
+                                            "mid-gray": "#555",
+                                            "moon-gray": "#ccc",
+                                            "near-black": "#111",
+                                            "near-white": "#f4f4f4",
+                                            "primary": "#4E3FCE",
+                                            "primary-dark": "#3e32a4",
+                                            "primary-light": "#7165d7",
+                                            "silver": "#999",
+                                            "success": "#28C081",
+                                            "text": "#3F3D4B",
+                                            "transparent": "transparent",
+                                            "warning": "#FD9D28",
+                                            "white": "#fff",
+                                            "whites": Array [
+                                              "rgba(255,255,255,.0125)",
+                                              "rgba(255,255,255,.025)",
+                                              "rgba(255,255,255,.05)",
+                                              "rgba(255,255,255,.1)",
+                                              "rgba(255,255,255,.2)",
+                                              "rgba(255,255,255,.3)",
+                                              "rgba(255,255,255,.4)",
+                                              "rgba(255,255,255,.5)",
+                                              "rgba(255,255,255,.6)",
+                                              "rgba(255,255,255,.7)",
+                                              "rgba(255,255,255,.8)",
+                                              "rgba(255,255,255,.9)",
+                                            ],
+                                          },
+                                          "fontSizes": Array [
+                                            12,
+                                            14,
+                                            16,
+                                            20,
+                                            24,
+                                            32,
+                                            48,
+                                            64,
+                                          ],
+                                          "fontWeights": Array [
+                                            0,
+                                            300,
+                                            400,
+                                            600,
+                                            700,
+                                          ],
+                                          "fonts": Object {
+                                            "mono": "\\"Source Code Pro\\", -apple-system, monospace",
+                                            "sansSerif": "\\"Source Sans Pro\\", -apple-system, sans-serif",
+                                            "serif": "athelas, georgia, times, serif",
+                                          },
+                                          "heights": Array [
+                                            0,
+                                            16,
+                                            32,
+                                            64,
+                                            128,
+                                            256,
+                                          ],
+                                          "letterSpacings": Array [
+                                            0,
+                                            1,
+                                            2,
+                                            4,
+                                            8,
+                                          ],
+                                          "lineHeights": Object {
+                                            "copy": 1.5,
+                                            "solid": 1,
+                                            "title": 1.25,
+                                          },
+                                          "maxHeights": Array [
+                                            0,
+                                            16,
+                                            32,
+                                            64,
+                                            128,
+                                            256,
+                                          ],
+                                          "maxWidths": Array [
+                                            0,
+                                            16,
+                                            32,
+                                            64,
+                                            128,
+                                            256,
+                                            512,
+                                            768,
+                                            1024,
+                                            1536,
+                                          ],
+                                          "messageStyle": Object {
+                                            "base": Object {
+                                              "backgroundColor": "#f6f6f6",
+                                              "borderColor": "#AAA",
+                                              "color": "#666",
+                                            },
+                                            "danger": Object {
+                                              "backgroundColor": "#fbe9e7",
+                                              "borderColor": "#DC2C10",
+                                              "color": "#841a09",
+                                            },
+                                            "info": Object {
+                                              "backgroundColor": "#eaf6fd",
+                                              "borderColor": "#36ADF1",
+                                              "color": "#206790",
+                                            },
+                                            "success": Object {
+                                              "backgroundColor": "#e9f8f2",
+                                              "borderColor": "#28C081",
+                                              "color": "#18734d",
+                                            },
+                                            "warning": Object {
+                                              "backgroundColor": "#fef5e9",
+                                              "borderColor": "#FD9D28",
+                                              "color": "#975e18",
+                                            },
+                                          },
+                                          "minHeights": Array [
+                                            0,
+                                            16,
+                                            32,
+                                            64,
+                                            128,
+                                            256,
+                                          ],
+                                          "minWidths": Array [
+                                            0,
+                                            16,
+                                            32,
+                                            64,
+                                            128,
+                                            256,
+                                          ],
+                                          "opacity": Object {
+                                            "disabled": 0.4,
+                                          },
+                                          "radii": Array [
+                                            "0",
+                                            "4px",
+                                            "8px",
+                                            "16px",
+                                            "32px",
+                                          ],
+                                          "shadows": Array [
+                                            "0",
+                                            "0px 2px 4px rgba(0, 0, 0, 0.1)",
+                                            "0px 8px 16px rgba(0, 0, 0, 0.1)",
+                                            "0 7px 14px rgba(50,50,93,.1)",
+                                          ],
+                                          "space": Array [
+                                            0,
+                                            4,
+                                            8,
+                                            16,
+                                            32,
+                                            64,
+                                            128,
+                                            256,
+                                          ],
+                                          "width": Array [
+                                            0,
+                                            16,
+                                            32,
+                                            64,
+                                            128,
+                                            256,
+                                          ],
+                                          "zIndices": Array [
+                                            0,
+                                            9,
+                                            99,
+                                            999,
+                                            9999,
+                                          ],
+                                        },
+                                      },
+                                      "attrs": Array [],
+                                      "componentStyle": ComponentStyle {
+                                        "componentId": "sc-bdVaJa",
+                                        "isStatic": false,
+                                        "lastClassName": "c14",
+                                        "rules": Array [
+                                          "
+  & {
+    box-sizing: border-box;
+  }
+
+  ",
+                                          [Function],
+                                          "
+  ",
+                                          [Function],
+                                          "
+  ",
+                                          [Function],
+                                          "
+  ",
+                                          [Function],
+                                          "
+  ",
+                                          [Function],
+                                          "
+  ",
+                                          [Function],
+                                          "
+",
+                                        ],
+                                      },
+                                      "displayName": "styled.div",
+                                      "foldedComponentIds": Array [],
+                                      "render": [Function],
+                                      "styledComponentId": "sc-bdVaJa",
+                                      "target": "div",
+                                      "toString": [Function],
+                                      "usesTheme": false,
+                                      "warnTooManyClasses": [Function],
+                                      "withComponent": [Function],
+                                    }
+                                  }
+                                  forwardedRef={null}
+                                  theme={
+                                    Object {
+                                      "borderWidths": Array [
+                                        "0",
+                                        "1px",
+                                        "2px",
+                                        "4px",
+                                      ],
+                                      "borders": Array [
+                                        0,
+                                        "1px solid transparent",
+                                      ],
+                                      "breakpoints": Array [
+                                        "40em",
+                                        "52em",
+                                        "64em",
+                                      ],
+                                      "buttonSizes": Object {
+                                        "large": Object {
+                                          "fontSize": "1.5rem",
+                                          "height": "4rem",
+                                          "minWidth": "4rem",
+                                        },
+                                        "medium": Object {
+                                          "fontSize": "1rem",
+                                          "height": "3rem",
+                                          "minWidth": "3rem",
+                                        },
+                                        "small": Object {
+                                          "fontSize": "0.75rem",
+                                          "height": "2rem",
+                                          "minWidth": "2rem",
+                                          "padding": "0 1rem",
+                                        },
+                                      },
+                                      "buttons": Object {
+                                        "danger": Object {
+                                          "--contrast-color": "#fff",
+                                          "--main-color": "#DC2C10",
+                                        },
+                                        "primary": Object {
+                                          "--contrast-color": "#fff",
+                                          "--main-color": "#4E3FCE",
+                                          "backgroundColor": "#4E3FCE",
+                                          "color": "#fff",
+                                        },
+                                        "success": Object {
+                                          "--contrast-color": "#FFF",
+                                          "--main-color": "#28C081",
+                                        },
+                                      },
+                                      "colors": Object {
+                                        "background": "#fff",
+                                        "black": "#000",
+                                        "blacks": Array [
+                                          "rgba(0,0,0,.0125)",
+                                          "rgba(0,0,0,.025)",
+                                          "rgba(0,0,0,.05)",
+                                          "rgba(0,0,0,.1)",
+                                          "rgba(0,0,0,.2)",
+                                          "rgba(0,0,0,.3)",
+                                          "rgba(0,0,0,.4)",
+                                          "rgba(0,0,0,.5)",
+                                          "rgba(0,0,0,.6)",
+                                          "rgba(0,0,0,.7)",
+                                          "rgba(0,0,0,.8)",
+                                          "rgba(0,0,0,.9)",
+                                        ],
+                                        "blue": "#3259D6",
+                                        "danger": "#DC2C10",
+                                        "dark-gray": "#333",
+                                        "grey": "#CCC",
+                                        "info": "#36ADF1",
+                                        "light-gray": "#eee",
+                                        "light-silver": "#aaa",
+                                        "mid-gray": "#555",
+                                        "moon-gray": "#ccc",
+                                        "near-black": "#111",
+                                        "near-white": "#f4f4f4",
+                                        "primary": "#4E3FCE",
+                                        "primary-dark": "#3e32a4",
+                                        "primary-light": "#7165d7",
+                                        "silver": "#999",
+                                        "success": "#28C081",
+                                        "text": "#3F3D4B",
+                                        "transparent": "transparent",
+                                        "warning": "#FD9D28",
+                                        "white": "#fff",
+                                        "whites": Array [
+                                          "rgba(255,255,255,.0125)",
+                                          "rgba(255,255,255,.025)",
+                                          "rgba(255,255,255,.05)",
+                                          "rgba(255,255,255,.1)",
+                                          "rgba(255,255,255,.2)",
+                                          "rgba(255,255,255,.3)",
+                                          "rgba(255,255,255,.4)",
+                                          "rgba(255,255,255,.5)",
+                                          "rgba(255,255,255,.6)",
+                                          "rgba(255,255,255,.7)",
+                                          "rgba(255,255,255,.8)",
+                                          "rgba(255,255,255,.9)",
+                                        ],
+                                      },
+                                      "fontSizes": Array [
+                                        12,
+                                        14,
+                                        16,
+                                        20,
+                                        24,
+                                        32,
+                                        48,
+                                        64,
+                                      ],
+                                      "fontWeights": Array [
+                                        0,
+                                        300,
+                                        400,
+                                        600,
+                                        700,
+                                      ],
+                                      "fonts": Object {
+                                        "mono": "\\"Source Code Pro\\", -apple-system, monospace",
+                                        "sansSerif": "\\"Source Sans Pro\\", -apple-system, sans-serif",
+                                        "serif": "athelas, georgia, times, serif",
+                                      },
+                                      "heights": Array [
+                                        0,
+                                        16,
+                                        32,
+                                        64,
+                                        128,
+                                        256,
+                                      ],
+                                      "letterSpacings": Array [
+                                        0,
+                                        1,
+                                        2,
+                                        4,
+                                        8,
+                                      ],
+                                      "lineHeights": Object {
+                                        "copy": 1.5,
+                                        "solid": 1,
+                                        "title": 1.25,
+                                      },
+                                      "maxHeights": Array [
+                                        0,
+                                        16,
+                                        32,
+                                        64,
+                                        128,
+                                        256,
+                                      ],
+                                      "maxWidths": Array [
+                                        0,
+                                        16,
+                                        32,
+                                        64,
+                                        128,
+                                        256,
+                                        512,
+                                        768,
+                                        1024,
+                                        1536,
+                                      ],
+                                      "messageStyle": Object {
+                                        "base": Object {
+                                          "backgroundColor": "#f6f6f6",
+                                          "borderColor": "#AAA",
+                                          "color": "#666",
+                                        },
+                                        "danger": Object {
+                                          "backgroundColor": "#fbe9e7",
+                                          "borderColor": "#DC2C10",
+                                          "color": "#841a09",
+                                        },
+                                        "info": Object {
+                                          "backgroundColor": "#eaf6fd",
+                                          "borderColor": "#36ADF1",
+                                          "color": "#206790",
+                                        },
+                                        "success": Object {
+                                          "backgroundColor": "#e9f8f2",
+                                          "borderColor": "#28C081",
+                                          "color": "#18734d",
+                                        },
+                                        "warning": Object {
+                                          "backgroundColor": "#fef5e9",
+                                          "borderColor": "#FD9D28",
+                                          "color": "#975e18",
+                                        },
+                                      },
+                                      "minHeights": Array [
+                                        0,
+                                        16,
+                                        32,
+                                        64,
+                                        128,
+                                        256,
+                                      ],
+                                      "minWidths": Array [
+                                        0,
+                                        16,
+                                        32,
+                                        64,
+                                        128,
+                                        256,
+                                      ],
+                                      "opacity": Object {
+                                        "disabled": 0.4,
+                                      },
+                                      "radii": Array [
+                                        "0",
+                                        "4px",
+                                        "8px",
+                                        "16px",
+                                        "32px",
+                                      ],
+                                      "shadows": Array [
+                                        "0",
+                                        "0px 2px 4px rgba(0, 0, 0, 0.1)",
+                                        "0px 8px 16px rgba(0, 0, 0, 0.1)",
+                                        "0 7px 14px rgba(50,50,93,.1)",
+                                      ],
+                                      "space": Array [
+                                        0,
+                                        4,
+                                        8,
+                                        16,
+                                        32,
+                                        64,
+                                        128,
+                                        256,
+                                      ],
+                                      "width": Array [
+                                        0,
+                                        16,
+                                        32,
+                                        64,
+                                        128,
+                                        256,
+                                      ],
+                                      "zIndices": Array [
+                                        0,
+                                        9,
+                                        99,
+                                        999,
+                                        9999,
+                                      ],
+                                    }
+                                  }
                                 >
-                                  <Icon
+                                  <div
+                                    className="c3"
                                     color="primary"
-                                    display="block"
-                                    name="InfoOutline"
-                                    size="32px"
+                                    display="inline-flex"
                                   >
-                                    <InfoOutlineIcon
-                                      color="primary"
-                                      display="block"
+                                    <Icon
+                                      name="InfoOutline"
                                       size="32px"
                                     >
-                                      <StyledComponent
-                                        color="primary"
-                                        display="block"
-                                        forwardedComponent={
-                                          Object {
-                                            "$$typeof": Symbol(react.forward_ref),
-                                            "_foldedDefaultProps": Object {
-                                              "size": 24,
-                                            },
-                                            "attrs": Array [],
-                                            "componentStyle": ComponentStyle {
-                                              "componentId": "sc-iLVFha",
-                                              "isStatic": false,
-                                              "lastClassName": "c3",
-                                              "rules": Array [
-                                                [Function],
-                                                [Function],
-                                              ],
-                                            },
-                                            "displayName": "InfoOutlineIcon",
-                                            "foldedComponentIds": Array [],
-                                            "render": [Function],
-                                            "styledComponentId": "sc-iLVFha",
-                                            "target": [Function],
-                                            "toString": [Function],
-                                            "usesTheme": false,
-                                            "warnTooManyClasses": [Function],
-                                            "withComponent": [Function],
-                                          }
-                                        }
-                                        forwardedRef={null}
+                                      <InfoOutlineIcon
                                         size="32px"
                                       >
-                                        <Icon
-                                          className="c3"
-                                          color="primary"
-                                          display="block"
+                                        <StyledComponent
+                                          forwardedComponent={
+                                            Object {
+                                              "$$typeof": Symbol(react.forward_ref),
+                                              "_foldedDefaultProps": Object {
+                                                "size": 24,
+                                              },
+                                              "attrs": Array [],
+                                              "componentStyle": ComponentStyle {
+                                                "componentId": "sc-iLVFha",
+                                                "isStatic": false,
+                                                "lastClassName": "jVwufP",
+                                                "rules": Array [
+                                                  [Function],
+                                                  [Function],
+                                                ],
+                                              },
+                                              "displayName": "InfoOutlineIcon",
+                                              "foldedComponentIds": Array [],
+                                              "render": [Function],
+                                              "styledComponentId": "sc-iLVFha",
+                                              "target": [Function],
+                                              "toString": [Function],
+                                              "usesTheme": false,
+                                              "warnTooManyClasses": [Function],
+                                              "withComponent": [Function],
+                                            }
+                                          }
+                                          forwardedRef={null}
                                           size="32px"
                                         >
-                                          <svg
-                                            className="c3"
-                                            color="primary"
-                                            display="block"
-                                            fill="currentcolor"
-                                            height="32px"
-                                            viewBox="0 0 24 24"
-                                            width="32px"
+                                          <Icon
+                                            className=""
+                                            size="32px"
                                           >
-                                            <path
-                                              d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z"
-                                            />
-                                          </svg>
-                                        </Icon>
-                                      </StyledComponent>
-                                    </InfoOutlineIcon>
-                                  </Icon>
-                                </div>
-                              </StyledComponent>
-                            </styled.div>
+                                            <svg
+                                              className=""
+                                              fill="currentcolor"
+                                              height="32px"
+                                              viewBox="0 0 24 24"
+                                              width="32px"
+                                            >
+                                              <path
+                                                d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z"
+                                              />
+                                            </svg>
+                                          </Icon>
+                                        </StyledComponent>
+                                      </InfoOutlineIcon>
+                                    </Icon>
+                                  </div>
+                                </StyledComponent>
+                              </styled.div>
+                            </Box>
                           </Icon>
                         </div>
                       </StyledComponent>
@@ -5538,7 +6074,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                         "$$typeof": Symbol(react.forward_ref),
                                         "attrs": Array [],
                                         "componentStyle": ComponentStyle {
-                                          "componentId": "sc-jZIEzD",
+                                          "componentId": "sc-gyfYDX",
                                           "isStatic": false,
                                           "lastClassName": "c7",
                                           "rules": Array [
@@ -5620,7 +6156,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                           "zIndex": [Function],
                                         },
                                         "render": [Function],
-                                        "styledComponentId": "sc-jZIEzD",
+                                        "styledComponentId": "sc-gyfYDX",
                                         "target": Object {
                                           "$$typeof": Symbol(react.forward_ref),
                                           "displayName": "Box",
@@ -7564,7 +8100,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                         "$$typeof": Symbol(react.forward_ref),
                                         "attrs": Array [],
                                         "componentStyle": ComponentStyle {
-                                          "componentId": "sc-jZIEzD",
+                                          "componentId": "sc-gyfYDX",
                                           "isStatic": false,
                                           "lastClassName": "c7",
                                           "rules": Array [
@@ -7646,7 +8182,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                           "zIndex": [Function],
                                         },
                                         "render": [Function],
-                                        "styledComponentId": "sc-jZIEzD",
+                                        "styledComponentId": "sc-gyfYDX",
                                         "target": Object {
                                           "$$typeof": Symbol(react.forward_ref),
                                           "displayName": "Box",
@@ -9600,7 +10136,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "sc-jZIEzD",
+                              "componentId": "sc-gyfYDX",
                               "isStatic": false,
                               "lastClassName": "c7",
                               "rules": Array [
@@ -9682,7 +10218,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                               "zIndex": [Function],
                             },
                             "render": [Function],
-                            "styledComponentId": "sc-jZIEzD",
+                            "styledComponentId": "sc-gyfYDX",
                             "target": Object {
                               "$$typeof": Symbol(react.forward_ref),
                               "displayName": "Box",
@@ -11632,7 +12168,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                           },
                                           "attrs": Array [],
                                           "componentStyle": ComponentStyle {
-                                            "componentId": "sc-gQORMK",
+                                            "componentId": "sc-jZIEzD",
                                             "isStatic": false,
                                             "lastClassName": "c13",
                                             "rules": Array [
@@ -11732,7 +12268,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                           "render": [Function],
                                           "s": [Function],
                                           "span": [Function],
-                                          "styledComponentId": "sc-gQORMK",
+                                          "styledComponentId": "sc-jZIEzD",
                                           "target": Object {
                                             "$$typeof": Symbol(react.forward_ref),
                                             "defaultProps": Object {
@@ -12867,7 +13403,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                 "$$typeof": Symbol(react.forward_ref),
                                                 "attrs": Array [],
                                                 "componentStyle": ComponentStyle {
-                                                  "componentId": "sc-jZIEzD",
+                                                  "componentId": "sc-gyfYDX",
                                                   "isStatic": false,
                                                   "lastClassName": "c7",
                                                   "rules": Array [
@@ -12949,7 +13485,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                   "zIndex": [Function],
                                                 },
                                                 "render": [Function],
-                                                "styledComponentId": "sc-jZIEzD",
+                                                "styledComponentId": "sc-gyfYDX",
                                                 "target": Object {
                                                   "$$typeof": Symbol(react.forward_ref),
                                                   "displayName": "Box",
@@ -14422,7 +14958,7 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "sc-iIQDRA",
+        "componentId": "sc-hJwwgy",
         "isStatic": false,
         "rules": Array [
           "
@@ -14452,7 +14988,7 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
   }
 
   > ",
-          ".sc-hJwwgy",
+          ".sc-eZbwru",
           " > div {
     overflow: hidden;
     white-space: nowrap;
@@ -14549,7 +15085,7 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
         "zIndex": [Function],
       },
       "render": [Function],
-      "styledComponentId": "sc-iIQDRA",
+      "styledComponentId": "sc-hJwwgy",
       "target": Object {
         "$$typeof": Symbol(react.forward_ref),
         "displayName": "Box",
@@ -14636,9 +15172,260 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
   >
     <Icon
       color="primary"
-      display="block"
+      display="inline-flex"
       name="InfoOutline"
       size="32px"
+      theme={
+        Object {
+          "borderWidths": Array [
+            "0",
+            "1px",
+            "2px",
+            "4px",
+          ],
+          "borders": Array [
+            0,
+            "1px solid transparent",
+          ],
+          "breakpoints": Array [
+            "40em",
+            "52em",
+            "64em",
+          ],
+          "buttonSizes": Object {
+            "large": Object {
+              "fontSize": "1.5rem",
+              "height": "4rem",
+              "minWidth": "4rem",
+            },
+            "medium": Object {
+              "fontSize": "1rem",
+              "height": "3rem",
+              "minWidth": "3rem",
+            },
+            "small": Object {
+              "fontSize": "0.75rem",
+              "height": "2rem",
+              "minWidth": "2rem",
+              "padding": "0 1rem",
+            },
+          },
+          "buttons": Object {
+            "danger": Object {
+              "--contrast-color": "#fff",
+              "--main-color": "#DC2C10",
+            },
+            "primary": Object {
+              "--contrast-color": "#fff",
+              "--main-color": "#4E3FCE",
+              "backgroundColor": "#4E3FCE",
+              "color": "#fff",
+            },
+            "success": Object {
+              "--contrast-color": "#FFF",
+              "--main-color": "#28C081",
+            },
+          },
+          "colors": Object {
+            "background": "#fff",
+            "black": "#000",
+            "blacks": Array [
+              "rgba(0,0,0,.0125)",
+              "rgba(0,0,0,.025)",
+              "rgba(0,0,0,.05)",
+              "rgba(0,0,0,.1)",
+              "rgba(0,0,0,.2)",
+              "rgba(0,0,0,.3)",
+              "rgba(0,0,0,.4)",
+              "rgba(0,0,0,.5)",
+              "rgba(0,0,0,.6)",
+              "rgba(0,0,0,.7)",
+              "rgba(0,0,0,.8)",
+              "rgba(0,0,0,.9)",
+            ],
+            "blue": "#3259D6",
+            "danger": "#DC2C10",
+            "dark-gray": "#333",
+            "grey": "#CCC",
+            "info": "#36ADF1",
+            "light-gray": "#eee",
+            "light-silver": "#aaa",
+            "mid-gray": "#555",
+            "moon-gray": "#ccc",
+            "near-black": "#111",
+            "near-white": "#f4f4f4",
+            "primary": "#4E3FCE",
+            "primary-dark": "#3e32a4",
+            "primary-light": "#7165d7",
+            "silver": "#999",
+            "success": "#28C081",
+            "text": "#3F3D4B",
+            "transparent": "transparent",
+            "warning": "#FD9D28",
+            "white": "#fff",
+            "whites": Array [
+              "rgba(255,255,255,.0125)",
+              "rgba(255,255,255,.025)",
+              "rgba(255,255,255,.05)",
+              "rgba(255,255,255,.1)",
+              "rgba(255,255,255,.2)",
+              "rgba(255,255,255,.3)",
+              "rgba(255,255,255,.4)",
+              "rgba(255,255,255,.5)",
+              "rgba(255,255,255,.6)",
+              "rgba(255,255,255,.7)",
+              "rgba(255,255,255,.8)",
+              "rgba(255,255,255,.9)",
+            ],
+          },
+          "fontSizes": Array [
+            12,
+            14,
+            16,
+            20,
+            24,
+            32,
+            48,
+            64,
+          ],
+          "fontWeights": Array [
+            0,
+            300,
+            400,
+            600,
+            700,
+          ],
+          "fonts": Object {
+            "mono": "\\"Source Code Pro\\", -apple-system, monospace",
+            "sansSerif": "\\"Source Sans Pro\\", -apple-system, sans-serif",
+            "serif": "athelas, georgia, times, serif",
+          },
+          "heights": Array [
+            0,
+            16,
+            32,
+            64,
+            128,
+            256,
+          ],
+          "letterSpacings": Array [
+            0,
+            1,
+            2,
+            4,
+            8,
+          ],
+          "lineHeights": Object {
+            "copy": 1.5,
+            "solid": 1,
+            "title": 1.25,
+          },
+          "maxHeights": Array [
+            0,
+            16,
+            32,
+            64,
+            128,
+            256,
+          ],
+          "maxWidths": Array [
+            0,
+            16,
+            32,
+            64,
+            128,
+            256,
+            512,
+            768,
+            1024,
+            1536,
+          ],
+          "messageStyle": Object {
+            "base": Object {
+              "backgroundColor": "#f6f6f6",
+              "borderColor": "#AAA",
+              "color": "#666",
+            },
+            "danger": Object {
+              "backgroundColor": "#fbe9e7",
+              "borderColor": "#DC2C10",
+              "color": "#841a09",
+            },
+            "info": Object {
+              "backgroundColor": "#eaf6fd",
+              "borderColor": "#36ADF1",
+              "color": "#206790",
+            },
+            "success": Object {
+              "backgroundColor": "#e9f8f2",
+              "borderColor": "#28C081",
+              "color": "#18734d",
+            },
+            "warning": Object {
+              "backgroundColor": "#fef5e9",
+              "borderColor": "#FD9D28",
+              "color": "#975e18",
+            },
+          },
+          "minHeights": Array [
+            0,
+            16,
+            32,
+            64,
+            128,
+            256,
+          ],
+          "minWidths": Array [
+            0,
+            16,
+            32,
+            64,
+            128,
+            256,
+          ],
+          "opacity": Object {
+            "disabled": 0.4,
+          },
+          "radii": Array [
+            "0",
+            "4px",
+            "8px",
+            "16px",
+            "32px",
+          ],
+          "shadows": Array [
+            "0",
+            "0px 2px 4px rgba(0, 0, 0, 0.1)",
+            "0px 8px 16px rgba(0, 0, 0, 0.1)",
+            "0 7px 14px rgba(50,50,93,.1)",
+          ],
+          "space": Array [
+            0,
+            4,
+            8,
+            16,
+            32,
+            64,
+            128,
+            256,
+          ],
+          "width": Array [
+            0,
+            16,
+            32,
+            64,
+            128,
+            256,
+          ],
+          "zIndices": Array [
+            0,
+            9,
+            99,
+            999,
+            9999,
+          ],
+        }
+      }
     />
   </Box>
   <Styled(Box)
@@ -15456,7 +16243,7 @@ exports[`ToastMessage component sanity matches generic snapshot 1`] = `
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "sc-iIQDRA",
+        "componentId": "sc-hJwwgy",
         "isStatic": false,
         "rules": Array [
           "
@@ -15486,7 +16273,7 @@ exports[`ToastMessage component sanity matches generic snapshot 1`] = `
   }
 
   > ",
-          ".sc-hJwwgy",
+          ".sc-eZbwru",
           " > div {
     overflow: hidden;
     white-space: nowrap;
@@ -15583,7 +16370,7 @@ exports[`ToastMessage component sanity matches generic snapshot 1`] = `
         "zIndex": [Function],
       },
       "render": [Function],
-      "styledComponentId": "sc-iIQDRA",
+      "styledComponentId": "sc-hJwwgy",
       "target": Object {
         "$$typeof": Symbol(react.forward_ref),
         "displayName": "Box",

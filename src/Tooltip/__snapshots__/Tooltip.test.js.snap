@@ -1039,7 +1039,7 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                         },
                         "attrs": Array [],
                         "componentStyle": ComponentStyle {
-                          "componentId": "sc-kDkoGq",
+                          "componentId": "sc-bGbZqa",
                           "isStatic": false,
                           "lastClassName": "c0",
                           "rules": Array [
@@ -1170,10 +1170,10 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                         },
                         "displayName": "Styled(styled.button)",
                         "foldedComponentIds": Array [
-                          "sc-eiqfgm",
+                          "sc-gQORMK",
                         ],
                         "render": [Function],
-                        "styledComponentId": "sc-kDkoGq",
+                        "styledComponentId": "sc-bGbZqa",
                         "target": "button",
                         "toString": [Function],
                         "usesTheme": false,
@@ -3017,7 +3017,7 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                             },
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "sc-kDkoGq",
+                              "componentId": "sc-bGbZqa",
                               "isStatic": false,
                               "lastClassName": "c0",
                               "rules": Array [
@@ -3148,10 +3148,10 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                             },
                             "displayName": "Styled(styled.button)",
                             "foldedComponentIds": Array [
-                              "sc-eiqfgm",
+                              "sc-gQORMK",
                             ],
                             "render": [Function],
-                            "styledComponentId": "sc-kDkoGq",
+                            "styledComponentId": "sc-bGbZqa",
                             "target": "button",
                             "toString": [Function],
                             "usesTheme": false,
