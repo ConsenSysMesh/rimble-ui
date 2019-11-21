@@ -31,7 +31,7 @@
     "qrcode.react": "^0.9.3",
     "rmdi": "^1.0.1",
     "set-value": "^3.0.1",
-    "styled-system": "^4.1.0"
+    "styled-system": "^5.1.2"
   },
   "peerDependencies": {
     "prop-types": "^15.7.2",
