@@ -35,6 +35,28 @@ class Example extends Component {
 
 ## Change log
 
+### 0.11.0
+ 
+🚀 New Feature
+- Added `BaseStyles` component
+
+🐛 Bug Fix
+- Updated `Text` component to pass `as` prop correctly.
+- Updated `Heading` component to pass `as` prop correctly.
+- Updated `Select` component to adjust width.
+- Updated `Field` to inherit color.
+- Updated `Radio` and `Checkbox` components to inherit text and icon colors correctly.
+- Fixed `pre-commit deprecation warning` #372.
+- Fixed warnings when building library #376.
+
+💅 Enhancement
+- Adjusted `EthAddress` component padding.
+- Addeded default font sizes for `h1-h6` elements.
+- Styled `input[type="color"]` for better visibility.
+- Updated default props for `Input`, `Textarea`, `Card`.
+- Removed `copyColor` from `theme.js`.
+- Added `text` and `background` colors to `theme.js`.
+
 ### 0.10.0
 
 - Fixed Select arrow display bug.

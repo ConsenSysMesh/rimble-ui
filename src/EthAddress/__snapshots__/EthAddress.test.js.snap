@@ -19,6 +19,17 @@ exports[`EthAddress component sanity matches default snapshot 1`] = `
   box-sizing: border-box;
 }
 
+.c6 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c6 {
+  box-sizing: border-box;
+}
+
 .c5 {
   color: #fff;
   background-color: #999;
@@ -158,7 +169,7 @@ exports[`EthAddress component sanity matches default snapshot 1`] = `
   pointer-events: none;
 }
 
-.c6 {
+.c7 {
   color: #fff;
   background-color: #999;
   margin: 0;
@@ -187,7 +198,7 @@ exports[`EthAddress component sanity matches default snapshot 1`] = `
   padding: 0 1rem;
 }
 
-.c6 {
+.c7 {
   -webkit-font-smoothing: antialiased;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -216,24 +227,24 @@ exports[`EthAddress component sanity matches default snapshot 1`] = `
   padding: 0;
 }
 
-.c6:hover {
+.c7:hover {
   cursor: pointer;
 }
 
-.c6:disabled {
+.c7:disabled {
   opacity: 0.5;
   pointer-events: none;
 }
 
-.c6 > span.button-text {
+.c7 > span.button-text {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
-.c6 > div > svg,
-.c6 > span.button-text {
+.c7 > div > svg,
+.c7 > span.button-text {
   position: relative;
   z-index: 1;
   -webkit-user-select: none;
@@ -243,25 +254,25 @@ exports[`EthAddress component sanity matches default snapshot 1`] = `
   pointer-events: none;
 }
 
-.c6 > div > svg {
+.c7 > div > svg {
   display: block;
 }
 
-.c6 > div:first-child > svg {
+.c7 > div:first-child > svg {
   margin-left: -0.5rem;
   margin-right: .5rem;
 }
 
-.c6 > div:last-child > svg {
+.c7 > div:last-child > svg {
   margin-left: .5rem;
   margin-right: -0.5rem;
 }
 
-.c6 > div:first-child:last-child > svg {
+.c7 > div:first-child:last-child > svg {
   margin: 0;
 }
 
-.c6 {
+.c7 {
   color: var(--contrast-color);
   background: #FFF;
   z-index: 0;
@@ -269,22 +280,22 @@ exports[`EthAddress component sanity matches default snapshot 1`] = `
   transition: all 0.15s ease;
 }
 
-.c6:hover {
+.c7:hover {
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
 }
 
-.c6:hover::before {
+.c7:hover::before {
   opacity: 0.9;
 }
 
-.c6:active {
+.c7:active {
   box-shadow: none;
   background: #000;
 }
 
-.c6::before {
+.c7::before {
   content: '';
   position: absolute;
   top: 0;
@@ -334,6 +345,44 @@ exports[`EthAddress component sanity matches default snapshot 1`] = `
 .c2:disabled {
   opacity: 0.4;
   pointer-events: none;
+}
+
+.c2[type="color"] {
+  min-width: 3rem;
+  padding: 0;
+}
+
+.c2[type="color"]::-webkit-color-swatch-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.c2[type="color"]::-webkit-color-swatch {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  height: 2rem;
+  width: 2rem;
+  border: none;
+  border-radius: 100%;
+}
+
+.c2[type="color"]::-moz-color-swatch {
+  height: 2rem;
+  width: 2rem;
+  border: none;
+  border-radius: 100%;
 }
 
 .was-validated .c2:valid {
@@ -406,11 +455,11 @@ exports[`EthAddress component sanity matches default snapshot 1`] = `
           class="button-text"
         >
           <div
-            class=""
+            class="c6"
+            display="inline-flex"
           >
             <svg
               class=""
-              display="block"
               fill="currentcolor"
               height="24px"
               viewBox="0 0 24 24"
@@ -425,7 +474,7 @@ exports[`EthAddress component sanity matches default snapshot 1`] = `
       </button>
     </div>
     <button
-      class="c6"
+      class="c7"
       color="white"
       font-family="sansSerif"
       font-size="inherit"
@@ -436,11 +485,11 @@ exports[`EthAddress component sanity matches default snapshot 1`] = `
         class="button-text"
       >
         <div
-          class=""
+          class="c6"
+          display="inline-flex"
         >
           <svg
             class=""
-            display="block"
             fill="currentcolor"
             height="24px"
             viewBox="0 0 24 24"
@@ -789,6 +838,44 @@ exports[`EthAddress component sanity matches default snapshot textLabels 1`] = `
   pointer-events: none;
 }
 
+.c2[type="color"] {
+  min-width: 3rem;
+  padding: 0;
+}
+
+.c2[type="color"]::-webkit-color-swatch-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.c2[type="color"]::-webkit-color-swatch {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  height: 2rem;
+  width: 2rem;
+  border: none;
+  border-radius: 100%;
+}
+
+.c2[type="color"]::-moz-color-swatch {
+  height: 2rem;
+  width: 2rem;
+  border: none;
+  border-radius: 100%;
+}
+
 .was-validated .c2:valid {
   border-color: #28C081;
 }
@@ -896,6 +983,17 @@ exports[`EthAddress component sanity matches themed snapshot 1`] = `
 }
 
 .c4 {
+  box-sizing: border-box;
+}
+
+.c6 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c6 {
   box-sizing: border-box;
 }
 
@@ -1038,7 +1136,7 @@ exports[`EthAddress component sanity matches themed snapshot 1`] = `
   pointer-events: none;
 }
 
-.c6 {
+.c7 {
   color: #fff;
   background-color: #999;
   margin: 0;
@@ -1067,7 +1165,7 @@ exports[`EthAddress component sanity matches themed snapshot 1`] = `
   padding: 0 1rem;
 }
 
-.c6 {
+.c7 {
   -webkit-font-smoothing: antialiased;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1096,24 +1194,24 @@ exports[`EthAddress component sanity matches themed snapshot 1`] = `
   padding: 0;
 }
 
-.c6:hover {
+.c7:hover {
   cursor: pointer;
 }
 
-.c6:disabled {
+.c7:disabled {
   opacity: 0.5;
   pointer-events: none;
 }
 
-.c6 > span.button-text {
+.c7 > span.button-text {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
-.c6 > div > svg,
-.c6 > span.button-text {
+.c7 > div > svg,
+.c7 > span.button-text {
   position: relative;
   z-index: 1;
   -webkit-user-select: none;
@@ -1123,25 +1221,25 @@ exports[`EthAddress component sanity matches themed snapshot 1`] = `
   pointer-events: none;
 }
 
-.c6 > div > svg {
+.c7 > div > svg {
   display: block;
 }
 
-.c6 > div:first-child > svg {
+.c7 > div:first-child > svg {
   margin-left: -0.5rem;
   margin-right: .5rem;
 }
 
-.c6 > div:last-child > svg {
+.c7 > div:last-child > svg {
   margin-left: .5rem;
   margin-right: -0.5rem;
 }
 
-.c6 > div:first-child:last-child > svg {
+.c7 > div:first-child:last-child > svg {
   margin: 0;
 }
 
-.c6 {
+.c7 {
   color: var(--contrast-color);
   background: #FFF;
   z-index: 0;
@@ -1149,22 +1247,22 @@ exports[`EthAddress component sanity matches themed snapshot 1`] = `
   transition: all 0.15s ease;
 }
 
-.c6:hover {
+.c7:hover {
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
 }
 
-.c6:hover::before {
+.c7:hover::before {
   opacity: 0.9;
 }
 
-.c6:active {
+.c7:active {
   box-shadow: none;
   background: #000;
 }
 
-.c6::before {
+.c7::before {
   content: '';
   position: absolute;
   top: 0;
@@ -1214,6 +1312,44 @@ exports[`EthAddress component sanity matches themed snapshot 1`] = `
 .c2:disabled {
   opacity: 0.4;
   pointer-events: none;
+}
+
+.c2[type="color"] {
+  min-width: 3rem;
+  padding: 0;
+}
+
+.c2[type="color"]::-webkit-color-swatch-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.c2[type="color"]::-webkit-color-swatch {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  height: 2rem;
+  width: 2rem;
+  border: none;
+  border-radius: 100%;
+}
+
+.c2[type="color"]::-moz-color-swatch {
+  height: 2rem;
+  width: 2rem;
+  border: none;
+  border-radius: 100%;
 }
 
 .was-validated .c2:valid {
@@ -1286,11 +1422,11 @@ exports[`EthAddress component sanity matches themed snapshot 1`] = `
           class="button-text"
         >
           <div
-            class=""
+            class="c6"
+            display="inline-flex"
           >
             <svg
               class=""
-              display="block"
               fill="currentcolor"
               height="24px"
               viewBox="0 0 24 24"
@@ -1305,7 +1441,7 @@ exports[`EthAddress component sanity matches themed snapshot 1`] = `
       </button>
     </div>
     <button
-      class="c6"
+      class="c7"
       color="white"
       font-family="sansSerif"
       font-size="inherit"
@@ -1316,11 +1452,11 @@ exports[`EthAddress component sanity matches themed snapshot 1`] = `
         class="button-text"
       >
         <div
-          class=""
+          class="c6"
+          display="inline-flex"
         >
           <svg
             class=""
-            display="block"
             fill="currentcolor"
             height="24px"
             viewBox="0 0 24 24"
@@ -1667,6 +1803,44 @@ exports[`EthAddress component sanity matches themed snapshot textLabels 1`] = `
 .c2:disabled {
   opacity: 0.4;
   pointer-events: none;
+}
+
+.c2[type="color"] {
+  min-width: 3rem;
+  padding: 0;
+}
+
+.c2[type="color"]::-webkit-color-swatch-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.c2[type="color"]::-webkit-color-swatch {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  height: 2rem;
+  width: 2rem;
+  border: none;
+  border-radius: 100%;
+}
+
+.c2[type="color"]::-moz-color-swatch {
+  height: 2rem;
+  width: 2rem;
+  border: none;
+  border-radius: 100%;
 }
 
 .was-validated .c2:valid {

@@ -1,12 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Icon component sanity matches default snapshot 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c0 {
+  box-sizing: border-box;
+}
+
 <div
-  class=""
+  class="c0"
+  display="inline-flex"
 >
   <svg
     class=""
-    display="block"
     fill="currentcolor"
     height="24px"
     viewBox="0 0 24 24"
@@ -20,12 +31,23 @@ exports[`Icon component sanity matches default snapshot 1`] = `
 `;
 
 exports[`Icon component sanity matches themed snapshot 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c0 {
+  box-sizing: border-box;
+}
+
 <div
-  class=""
+  class="c0"
+  display="inline-flex"
 >
   <svg
     class=""
-    display="block"
     fill="currentcolor"
     height="24px"
     viewBox="0 0 24 24"

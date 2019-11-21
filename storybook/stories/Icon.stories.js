@@ -1,5 +1,5 @@
 import React from 'react';
-import { Icon } from 'rimble-ui'
+import { Icon, Tooltip } from 'rimble-ui'
 
 export default {
   title: 'Icon'
@@ -15,4 +15,25 @@ export const withColor = () => (
 
 export const withColorAndSize = () => (
   <Icon name={'MoneyOff'} color={'red'} size={'80'} />
+)
+
+export const withMarginAndPadding = () => (
+  <Icon
+    name={'MoneyOff'}
+    color={'red'}
+    size={'80'}
+    p={4}
+    m={3}
+  />
+)
+
+export const withTooltip = () => (
+  <Tooltip message={'this is a tooltip icon'}>
+    <Icon
+      name={'Info'}
+      color={'primary'}
+      size={'2rem'}
+      m={5}
+    />
+  </Tooltip>
 )

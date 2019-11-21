@@ -3,15 +3,103 @@
 exports[`Slider component sanity matches default snapshot 1`] = `
 .c0 {
   color: #4E3FCE;
+  background-color: none;
   margin: 0;
+  padding: 0;
+  height: 2rem;
+  min-width: 200px;
+  border: none;
+  border-color: #CCC;
+  border-radius: 4px;
+  box-shadow: none;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-size: 1rem;
+  line-height: 1;
 }
 
 .c0 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  box-sizing: border-box;
+}
+
+.c0:hover {
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
+}
+
+.c0:focus {
+  outline: none;
+  border-color: #4E3FCE;
+}
+
+.c0:disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.c0[type="color"] {
+  min-width: 3rem;
+  padding: 0;
+}
+
+.c0[type="color"]::-webkit-color-swatch-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.c0[type="color"]::-webkit-color-swatch {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
   height: 2rem;
-  min-width: 200px;
+  width: 2rem;
+  border: none;
+  border-radius: 100%;
+}
+
+.c0[type="color"]::-moz-color-swatch {
+  height: 2rem;
+  width: 2rem;
+  border: none;
+  border-radius: 100%;
+}
+
+.was-validated .c0:valid {
+  border-color: #28C081;
+}
+
+.was-validated .c0:valid ~ svg.icon-valid {
+  visibility: visible;
+}
+
+.was-validated .c0:invalid {
+  border-color: #DC2C10;
+}
+
+.was-validated .c0:invalid ~ svg.icon-invalid {
+  visibility: visible;
+}
+
+.c0 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.c0:hover {
+  box-shadow: none;
 }
 
 .c0::-webkit-slider-runnable-track {
@@ -105,8 +193,12 @@ exports[`Slider component sanity matches default snapshot 1`] = `
 }
 
 <input
+  aria-label="range slider"
   class="c0"
   color="primary"
+  font-family="sansSerif"
+  font-size="1rem"
+  height="2rem"
   type="range"
 />
 `;
@@ -114,15 +206,103 @@ exports[`Slider component sanity matches default snapshot 1`] = `
 exports[`Slider component sanity matches themed snapshot 1`] = `
 .c0 {
   color: #4E3FCE;
+  background-color: none;
   margin: 0;
+  padding: 0;
+  height: 2rem;
+  min-width: 200px;
+  border: none;
+  border-color: #CCC;
+  border-radius: 4px;
+  box-shadow: none;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-size: 1rem;
+  line-height: 1;
 }
 
 .c0 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  box-sizing: border-box;
+}
+
+.c0:hover {
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
+}
+
+.c0:focus {
+  outline: none;
+  border-color: #4E3FCE;
+}
+
+.c0:disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.c0[type="color"] {
+  min-width: 3rem;
+  padding: 0;
+}
+
+.c0[type="color"]::-webkit-color-swatch-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.c0[type="color"]::-webkit-color-swatch {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
   height: 2rem;
-  min-width: 200px;
+  width: 2rem;
+  border: none;
+  border-radius: 100%;
+}
+
+.c0[type="color"]::-moz-color-swatch {
+  height: 2rem;
+  width: 2rem;
+  border: none;
+  border-radius: 100%;
+}
+
+.was-validated .c0:valid {
+  border-color: #28C081;
+}
+
+.was-validated .c0:valid ~ svg.icon-valid {
+  visibility: visible;
+}
+
+.was-validated .c0:invalid {
+  border-color: #DC2C10;
+}
+
+.was-validated .c0:invalid ~ svg.icon-invalid {
+  visibility: visible;
+}
+
+.c0 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.c0:hover {
+  box-shadow: none;
 }
 
 .c0::-webkit-slider-runnable-track {
@@ -216,8 +396,12 @@ exports[`Slider component sanity matches themed snapshot 1`] = `
 }
 
 <input
+  aria-label="range slider"
   class="c0"
   color="primary"
+  font-family="sansSerif"
+  font-size="1rem"
+  height="2rem"
   type="range"
 />
 `;
