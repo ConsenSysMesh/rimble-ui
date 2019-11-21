@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import { opacity } from 'styled-system';
+import { themeGet } from '@styled-system/theme-get';
 
-import { themeGet, opacity } from 'styled-system';
 import {
   COMMON,
   LAYOUT,

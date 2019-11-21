@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { createGlobalStyle } from 'styled-components';
-import { themeGet } from 'styled-system';
+import { themeGet } from '@styled-system/theme-get';
 import { normalize } from 'polished';
 import { TYPOGRAPHY, COMMON } from './constants';
 import theme from './theme';

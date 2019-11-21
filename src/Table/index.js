@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { themeGet, height, fontFamily, boxShadow } from 'styled-system';
+import { height, fontFamily, boxShadow } from 'styled-system';
+import { themeGet } from '@styled-system/theme-get';
 import theme from '../theme';
 import Box from '../Box';
 import { TYPOGRAPHY } from '../constants';
