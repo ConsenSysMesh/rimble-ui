@@ -55,6 +55,28 @@ const selectOptions = [
 
 const testComponents = props => (
   <React.Fragment>
+
+    <h1>H1 - Quick zephyrs blow, vexing daft Jim.</h1>
+    <h2>H1 - Quick zephyrs blow, vexing daft Jim.</h2>
+    <h3>H1 - Quick zephyrs blow, vexing daft Jim.</h3>
+    <h4>H1 - Quick zephyrs blow, vexing daft Jim.</h4>
+    <h5>H1 - Quick zephyrs blow, vexing daft Jim.</h5>
+    <h6>H1 - Quick zephyrs blow, vexing daft Jim.</h6>
+
+    <Heading as={'h1'}>H1 - Quick zephyrs blow, vexing daft Jim.</Heading>
+    <Heading as={'h2'}>H2 - Quick zephyrs blow, vexing daft Jim.</Heading>
+    <Heading as={'h3'}>H3 - Quick zephyrs blow, vexing daft Jim.</Heading>
+    <Heading as={'h4'}>H4 - Quick zephyrs blow, vexing daft Jim.</Heading>
+    <Heading as={'h5'}>H5 - Quick zephyrs blow, vexing daft Jim.</Heading>
+    <Heading as={'h6'}>H6 - Quick zephyrs blow, vexing daft Jim.</Heading>
+
+    <Heading as={'h1'} fontSize={1}>H1 - Quick zephyrs blow, vexing daft Jim.</Heading>
+    <Heading as={'h2'} fontSize={2}>H2 - Quick zephyrs blow, vexing daft Jim.</Heading>
+    <Heading as={'h3'} fontSize={3}>H3 - Quick zephyrs blow, vexing daft Jim.</Heading>
+    <Heading as={'h4'} fontSize={4}>H4 - Quick zephyrs blow, vexing daft Jim.</Heading>
+    <Heading as={'h5'} fontSize={5}>H5 - Quick zephyrs blow, vexing daft Jim.</Heading>
+    <Heading as={'h6'} fontSize={6}>H6 - Quick zephyrs blow, vexing daft Jim.</Heading>
+
     <Heading fontSize={7}>XL - Quick zephyrs blow, vexing daft Jim.</Heading>
 
     <Heading as={'h1'} fontSize={6}>H1 - Quick zephyrs blow, vexing daft Jim.</Heading>
