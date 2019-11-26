@@ -1,16 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { COMMON } from '../constants';
+import { StyledInput } from '../Input';
 import theme from '../theme';
 
-const StyledSlider = styled('input').attrs(props => ({
-  type: 'range',
-}))`
+const StyledSlider = styled(StyledInput)`
   & {
     appearance: none;
-    height: 2rem;
-    min-width: 200px;
+  }
+  &:hover {
+    box-shadow: none;
   }
   &::-webkit-slider-runnable-track {
     box-sizing: border-box;
@@ -67,28 +66,30 @@ const StyledSlider = styled('input').attrs(props => ({
       border-color: currentColor;
     }
   }
-  ${COMMON}
 `;
 
 const Slider = React.forwardRef((props, ref) => (
-  <StyledSlider ref={ref} {...props} />
+  <StyledSlider ref={ref} {...props} type={'range'} />
 ));
 
 StyledSlider.defaultProps = {
-  theme,
-  m: 0,
   color: 'primary',
+  bg: 'none',
+  height: '2rem',
+  minWidth: '200px',
+  m: 0,
+  p: 0,
+  border: 'none',
+  boxShadow: 'none',
+  theme,
 };
 
-// Slider.defaultProps = {
-//   theme,
-//   m: 0,
-//   color: 'primary',
-// };
+Slider.defaultProps = {
+  'aria-label': 'range slider',
+};
 
 Slider.propTypes = {
-  ...COMMON.propTypes,
-  theme: PropTypes.object,
+  'aria-label': PropTypes.string,
 };
 
 Slider.displayName = 'Slider';
