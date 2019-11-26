@@ -60,6 +60,7 @@ const colors = {
 // theme.js
 const theme = {
   colors,
+  space: [0, 4, 8, 16, 32, 64, 128, 256],
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64],
   fontWeights: [0, 300, 400, 600, 700],
   letterSpacings: [0, 1, 2, 4, 8],
@@ -73,14 +74,7 @@ const theme = {
     sansSerif: '"Source Sans Pro", -apple-system, sans-serif',
     mono: '"Source Code Pro", -apple-system, monospace',
   },
-  space: [0, 4, 8, 16, 32, 64, 128, 256],
   radii: ['0', '4px', '8px', '16px', '32px'],
-  width: [0, 16, 32, 64, 128, 256],
-  minWidths: [0, 16, 32, 64, 128, 256],
-  maxWidths: [0, 16, 32, 64, 128, 256, 512, 768, 1024, 1536],
-  heights: [0, 16, 32, 64, 128, 256],
-  minHeights: [0, 16, 32, 64, 128, 256],
-  maxHeights: [0, 16, 32, 64, 128, 256],
   borders: [0, '1px solid transparent'],
   borderWidths: ['0', '1px', '2px', '4px'],
   breakpoints: ['40em', '52em', '64em'],
