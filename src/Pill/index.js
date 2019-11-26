@@ -33,7 +33,7 @@ Pill.defaultProps = {
   fontSize: 1,
   fontWeight: 2,
   lineHeight: 'solid',
-  height: 2,
+  height: '2rem',
   px: 3,
   py: 1,
   borderRadius: 3,
