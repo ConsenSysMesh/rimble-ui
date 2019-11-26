@@ -247,33 +247,12 @@ const testComponents = props => (
     <ToastMessage.Processing />
     <ToastMessage.Success />
     <ToastMessage.Failure />
-    <Pill mr={'2'} mb={'3'}>
-      {'Pending'}
-    </Pill>
-    <Pill selected={true} mr={'2'} mb={'3'}>
-      {'Pending'}
-    </Pill>
-
-    <Pill color={'primary'} mr={'2'} mb={'3'}>
-      {'Pending'}
-    </Pill>
-    <Pill selected={true} color={'primary'} mr={'2'} mb={'3'}>
-      {'Pending'}
-    </Pill>
-
-    <Pill color={'red'} mr={'2'} mb={'3'}>
-      {'Pending'}
-    </Pill>
-    <Pill selected={true} color={'red'} mr={'2'} mb={'3'}>
-      {'Pending'}
-    </Pill>
-
-    <Pill color={'blue'} mr={'2'} mb={'3'}>
-      {'Pending'}
-    </Pill>
-    <Pill selected={true} color={'blue'} mr={'2'} mb={'3'}>
-      {'Pending'}
-    </Pill>
+    <Pill>{'Pill Text'}</Pill>
+    <Pill color={'success'}>{'Pill Text'}</Pill>
+    <Pill color={'warning'}>{'Pill Text'}</Pill>
+    <Pill color={'danger'}>{'Pill Text'}</Pill>
+    <Pill color={'info'}>{'Pill Text'}</Pill>
+    <Pill color={'#4B0082'}>{'Pill Text'}</Pill>
     <Flash>
       I am a Flash with a <Flash.Link>Link</Flash.Link>
     </Flash>
