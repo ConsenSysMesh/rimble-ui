@@ -3,6 +3,7 @@
 exports[`Pill component sanity matches default snapshot 1`] = `
 .c0 {
   color: #3259D6;
+  background-color: #FFF;
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 16px;
@@ -32,11 +33,10 @@ exports[`Pill component sanity matches default snapshot 1`] = `
 
 .c2 {
   position: relative;
-  background: none;
   overflow: hidden;
 }
 
-.c2::before {
+.c2::after {
   content: '';
   display: block;
   position: absolute;
@@ -45,8 +45,8 @@ exports[`Pill component sanity matches default snapshot 1`] = `
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: currentColor;
   opacity: 0.12;
+  background: currentColor;
   pointer-events: none;
 }
 
@@ -64,6 +64,7 @@ exports[`Pill component sanity matches default snapshot 1`] = `
 exports[`Pill component sanity matches themed snapshot 1`] = `
 .c0 {
   color: #3259D6;
+  background-color: #FFF;
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 16px;
@@ -93,11 +94,10 @@ exports[`Pill component sanity matches themed snapshot 1`] = `
 
 .c2 {
   position: relative;
-  background: none;
   overflow: hidden;
 }
 
-.c2::before {
+.c2::after {
   content: '';
   display: block;
   position: absolute;
@@ -106,8 +106,8 @@ exports[`Pill component sanity matches themed snapshot 1`] = `
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: currentColor;
   opacity: 0.12;
+  background: currentColor;
   pointer-events: none;
 }
 
