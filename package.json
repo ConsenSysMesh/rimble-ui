@@ -29,7 +29,7 @@
     "mixin-deep": "^2.0.1",
     "polished": "^3.2.0",
     "qrcode.react": "^0.9.3",
-    "rmdi": "^1.0.1",
+    "@rimble/icons": "ConsenSys/rimble-icons",
     "set-value": "^3.0.1",
     "styled-system": "^4.1.0"
   },

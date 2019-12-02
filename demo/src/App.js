@@ -125,6 +125,7 @@ const testComponents = props => (
     />
     <Input />
     <Icon name={'Info'} />
+    <Icon name={'Eth'} />
     <Icon name={'Info'} color="primary" />
     <Tooltip message="Your custom message">
       <span>hover me</span>

@@ -15,8 +15,8 @@ import {
 import theme from '../theme';
 import Box from '../Box';
 import FileInput from './FileInput';
-import IconCheckCircle from 'rmdi/lib/CheckCircle';
-import IconWarning from 'rmdi/lib/Warning';
+import IconCheckCircle from '@rimble/icons/es/CheckCircle';
+import IconWarning from '@rimble/icons/es/Warning';
 
 const StyledInput = styled.input`
   & {
