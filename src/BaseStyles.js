@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { createGlobalStyle } from 'styled-components';
+import { compose, color, typography } from 'styled-system';
+import propTypes from '@styled-system/prop-types';
 import { themeGet } from '@styled-system/theme-get';
 import { normalize } from 'polished';
-import { TYPOGRAPHY, COMMON } from './constants';
 import theme from './theme';
 
 const GlobalStyle = createGlobalStyle`
@@ -47,9 +48,13 @@ const Base = ({ children, ...rest }) => {
   );
 };
 
+const styleProps = compose(
+  color,
+  typography
+);
+
 const BaseStyles = styled(Base)`
-  ${TYPOGRAPHY};
-  ${COMMON};
+  ${styleProps}
 `;
 
 BaseStyles.defaultProps = {
@@ -60,8 +65,7 @@ BaseStyles.defaultProps = {
 };
 
 BaseStyles.propTypes = {
-  ...TYPOGRAPHY.propTypes,
-  ...COMMON.propTypes,
+  ...propTypes.styleProps,
   theme: PropTypes.object,
 };
 
