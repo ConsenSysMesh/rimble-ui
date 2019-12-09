@@ -43,7 +43,6 @@ Pill.defaultProps = {
 
 Pill.propTypes = {
   ...Text.propTypes,
-  theme: PropTypes.object,
 };
 
 Pill.displayName = 'Pill';
