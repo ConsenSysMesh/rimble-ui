@@ -36,12 +36,11 @@ const StyledLink = styled(Text)`
   }
 `;
 
-const Link = React.forwardRef(({ as, ...props }, ref) => (
-  <StyledLink ref={ref} forwardedAs={as} {...props} />
+const Link = React.forwardRef((props, ref) => (
+  <StyledLink ref={ref} forwardedAs={'a'} {...props} />
 ));
 
 Link.defaultProps = {
-  as: 'a',
   color: 'primary',
   hoverColor: 'primary-light',
   activeColor: 'primary-dark',
