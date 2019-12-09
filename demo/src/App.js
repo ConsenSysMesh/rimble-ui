@@ -45,6 +45,8 @@ const testTheme = {
     text: 'black',
     background: 'white',
     primary: 'crimson',
+    'primary-light': 'salmon',
+    'primary-dark': 'red',
   },
 };
 
@@ -212,7 +214,48 @@ const testComponents = props => (
     <Checkbox checked label="Checkbox checked" readOnly />
     <Checkbox disabled label="Checkbox disabled" readOnly />
     <Checkbox disabled checked label="Checkbox checked disabled" readOnly />
-    <Box />
+
+    <Box my={4} opacity={.6}>
+      <Flex>
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+      </Flex>
+      <Flex>
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+      </Flex>
+      <Flex>
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+      </Flex>
+      <Flex>
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+      </Flex>
+    </Box>
+
     <Card m={3} />
     <Card mx="auto" px="4" color="primary">
       <Heading mb={3}>Heading</Heading>
@@ -225,7 +268,6 @@ const testComponents = props => (
       <Button mr={3}>Accept</Button>
       <Button.Outline>Cancel</Button.Outline>
     </Card>
-    <Flex />
     <Table />
     <Image src="https://source.unsplash.com/random/1280x720" />
     <MetaMaskButton>
