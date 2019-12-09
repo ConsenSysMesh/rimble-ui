@@ -144,7 +144,7 @@ const testComponents = props => (
         spotcolor: '#4E3FCE',
       }}
     />
-    <Avatar />
+    <Avatar src={'https://source.unsplash.com/128x128/?people,face,portrait'} />
     <Avatar size="small" />
     <Avatar size="medium" />
     <Avatar size="large" />
