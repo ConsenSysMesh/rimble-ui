@@ -1,8 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { typography } from 'styled-system';
-import propTypes from '@styled-system/prop-types';
 import Box from '../Box';
 import theme from '../theme';
 
@@ -11,7 +9,6 @@ const caps = props => (props.caps ? { textTransform: 'uppercase' } : null);
 const italic = props => (props.italic ? { fontStyle: 'italic' } : null);
 
 const StyledText = styled(Box)`
-  ${typography}
   ${caps}
   ${italic}
 `;
@@ -29,7 +26,6 @@ Text.defaultProps = {
 
 Text.propTypes = {
   ...Box.propTypes,
-  ...propTypes.typography,
   theme: PropTypes.object,
 };
 
