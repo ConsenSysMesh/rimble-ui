@@ -125,7 +125,7 @@ const testComponents = props => (
       textLabels
       address="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2"
     />
-    <Input />
+    <Input placeholder={'placeholder'} />
     <Icon name={'Info'} />
     <Icon name={'Info'} color="primary" />
     <Tooltip message="Your custom message">
