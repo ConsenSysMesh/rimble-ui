@@ -9,6 +9,7 @@ import {
   position,
   flexbox,
   border,
+  typography,
 } from 'styled-system';
 import propTypes from '@styled-system/prop-types';
 import theme from '../theme';
@@ -19,7 +20,8 @@ const styleProps = compose(
   layout,
   position,
   flexbox,
-  border
+  border,
+  typography
 );
 
 const StyledBox = styled('div')`
@@ -41,5 +43,7 @@ Box.propTypes = {
 };
 
 Box.displayName = 'Box';
+
+export { StyledBox };
 
 export default Box;
