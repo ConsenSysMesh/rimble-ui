@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { system } from 'styled-system';
-import Text from '../Text';
+import Box, { StyledBox } from '../Box';
 import theme from '../theme';
 
 const hoverColor = system({
@@ -19,7 +19,7 @@ const activeColor = system({
   },
 });
 
-const StyledLink = styled(Text)`
+const StyledLink = styled(StyledBox)`
   & {
     text-decoration: none;
     cursor: pointer;
@@ -37,7 +37,7 @@ const StyledLink = styled(Text)`
 `;
 
 const Link = React.forwardRef((props, ref) => (
-  <StyledLink ref={ref} forwardedAs={'a'} {...props} />
+  <StyledLink as={'a'} ref={ref} {...props} />
 ));
 
 Link.defaultProps = {
@@ -46,11 +46,10 @@ Link.defaultProps = {
   activeColor: 'primary-dark',
   fontSize: 1,
   fontWeight: 3,
-  theme,
 };
 
 Link.propTypes = {
-  ...Text.propTypes,
+  ...Box.PropTypes,
   theme: PropTypes.object,
 };
 
