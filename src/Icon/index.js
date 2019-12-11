@@ -4,9 +4,9 @@ import { Icon as RimbleIcon } from '@rimble/icons';
 import Box from '../Box';
 import theme from '../theme';
 
-const Icon = React.forwardRef(({ name, size, ...rest }, ref) => (
+const Icon = React.forwardRef(({ name, size, color, ...rest }, ref) => (
   <Box ref={ref} {...rest}>
-    <RimbleIcon name={name} size={size} />
+    <RimbleIcon name={name} size={size} color={color} />
   </Box>
 ));
 

@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { themeGet } from 'styled-system';
-import IconChecked from '@rimble/icons/es/CheckBox';
-import IconUnChecked from '@rimble/icons/es/CheckBoxOutlineBlank';
+import { CheckBoxOutlineBlank } from '@rimble/icons/es/md';
+import { CheckBox } from '@rimble/icons/es/md';
 import Box from '../Box';
 import Text from '../Text';
 import theme from '../theme';
@@ -78,8 +78,8 @@ const Checkbox = React.forwardRef(
           ref={ref}
           {...props}
         />
-        <IconChecked name={'checked'} />
-        <IconUnChecked name={'unchecked'} />
+        <CheckBox name={'checked'} />
+        <CheckBoxOutlineBlank name={'unchecked'} />
       </StyledWrapper>
       <Text
         color={'text'}

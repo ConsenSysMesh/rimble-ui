@@ -15,8 +15,7 @@ import {
 import theme from '../theme';
 import Box from '../Box';
 import FileInput from './FileInput';
-import IconCheckCircle from '@rimble/icons/es/CheckCircle';
-import IconWarning from '@rimble/icons/es/Warning';
+import { CheckCircle, Warning } from '@rimble/icons/es/md';
 
 const StyledInput = styled.input`
   & {
@@ -111,8 +110,8 @@ const WithValidationStyle = React.forwardRef((props, ref) => {
   return (
     <StyledIconWrapper>
       <StyledInput {...props} ref={ref} />
-      <IconCheckCircle className={'icon-valid'} color={colorSuccess} />
-      <IconWarning className={'icon-invalid'} color={colorError} />
+      <CheckCircle className={'icon-valid'} color={colorSuccess} />
+      <Warning className={'icon-invalid'} color={colorError} />
     </StyledIconWrapper>
   );
 });

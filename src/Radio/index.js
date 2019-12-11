@@ -2,8 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { themeGet } from 'styled-system';
-import IconChecked from '@rimble/icons/es/RadioButtonChecked';
-import IconUnChecked from '@rimble/icons/es/RadioButtonUnchecked';
+import { RadioButtonChecked, RadioButtonUnchecked } from '@rimble/icons/es/md/';
 import theme from '../theme';
 import Box from '../Box';
 import Text from '../Text';
@@ -82,8 +81,8 @@ const Radio = React.forwardRef(
           ref={ref}
           {...props}
         />
-        <IconChecked name={'checked'} />
-        <IconUnChecked name={'unchecked'} />
+        <RadioButtonChecked name={'checked'} />
+        <RadioButtonUnchecked name={'unchecked'} />
       </StyledWrapper>
       <Text
         color={'text'}

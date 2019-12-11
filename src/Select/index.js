@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Box from '../Box';
-import ExpandMore from '@rimble/icons/es/ExpandMore';
+import { ExpandMore } from '@rimble/icons/es/md';
 import { StyledInput } from '../Input';
 
 const StyledWrapper = styled(Box)`
@@ -10,14 +10,14 @@ const StyledWrapper = styled(Box)`
     position: relative;
     display: inline-block;
   }
+`;
 
-  > ${ExpandMore} {
-    pointer-events: none;
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-  }
+const StyledExpandMore = styled(ExpandMore)`
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
 `;
 
 const Select = React.forwardRef(
@@ -46,7 +46,7 @@ const Select = React.forwardRef(
           pr={'3rem'}
           {...props}
         />
-        <ExpandMore my={'auto'} mx={3} />
+        <StyledExpandMore size={'1em'} my={'auto'} mx={3} color={'inherit'} />
       </StyledWrapper>
     );
   }
