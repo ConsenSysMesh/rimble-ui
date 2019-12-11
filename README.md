@@ -22,15 +22,12 @@ npm install --save rimble-ui styled-components
 ## Usage
 
 ```jsx
-import React, { Component } from 'react';
-
+import React from 'react';
 import { Button } from 'rimble-ui';
 
-class Example extends Component {
-  render() {
-    return <Button size={'medium'}>Click me!</Button>;
-  }
-}
+const MyComponent = () => {
+  return <Button>Click me!</Button>;
+};
 ```
 
 ## Change log
@@ -38,17 +35,19 @@ class Example extends Component {
 ### 0.11.1
 
 🐛 Bug Fix
+
 - Fixed icon background color on `ToastMessage` component. #381
 - fixed display prop not rendering correctly for `Icon` component. #380
 - fixed disabled styling for `Slider` component. #414
 
-
 ### 0.11.0
 
 🚀 New Feature
+
 - Added `BaseStyles` component
 
 🐛 Bug Fix
+
 - Updated `Text` component to pass `as` prop correctly.
 - Updated `Heading` component to pass `as` prop correctly.
 - Updated `Select` component to adjust width.
@@ -58,6 +57,7 @@ class Example extends Component {
 - Fixed warnings when building library #376.
 
 💅 Enhancement
+
 - Adjusted `EthAddress` component padding.
 - Addeded default font sizes for `h1-h6` elements.
 - Styled `input[type="color"]` for better visibility.
