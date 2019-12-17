@@ -55,7 +55,6 @@ const selectOptions = [
 
 const testComponents = props => (
   <React.Fragment>
-
     <h1>H1 - Quick zephyrs blow, vexing daft Jim.</h1>
     <h2>H1 - Quick zephyrs blow, vexing daft Jim.</h2>
     <h3>H1 - Quick zephyrs blow, vexing daft Jim.</h3>
@@ -70,55 +69,73 @@ const testComponents = props => (
     <Heading as={'h5'}>H5 - Quick zephyrs blow, vexing daft Jim.</Heading>
     <Heading as={'h6'}>H6 - Quick zephyrs blow, vexing daft Jim.</Heading>
 
-    <Heading as={'h1'} fontSize={1}>H1 - Quick zephyrs blow, vexing daft Jim.</Heading>
-    <Heading as={'h2'} fontSize={2}>H2 - Quick zephyrs blow, vexing daft Jim.</Heading>
-    <Heading as={'h3'} fontSize={3}>H3 - Quick zephyrs blow, vexing daft Jim.</Heading>
-    <Heading as={'h4'} fontSize={4}>H4 - Quick zephyrs blow, vexing daft Jim.</Heading>
-    <Heading as={'h5'} fontSize={5}>H5 - Quick zephyrs blow, vexing daft Jim.</Heading>
-    <Heading as={'h6'} fontSize={6}>H6 - Quick zephyrs blow, vexing daft Jim.</Heading>
+    <Heading as={'h1'} fontSize={1}>
+      H1 - Quick zephyrs blow, vexing daft Jim.
+    </Heading>
+    <Heading as={'h2'} fontSize={2}>
+      H2 - Quick zephyrs blow, vexing daft Jim.
+    </Heading>
+    <Heading as={'h3'} fontSize={3}>
+      H3 - Quick zephyrs blow, vexing daft Jim.
+    </Heading>
+    <Heading as={'h4'} fontSize={4}>
+      H4 - Quick zephyrs blow, vexing daft Jim.
+    </Heading>
+    <Heading as={'h5'} fontSize={5}>
+      H5 - Quick zephyrs blow, vexing daft Jim.
+    </Heading>
+    <Heading as={'h6'} fontSize={6}>
+      H6 - Quick zephyrs blow, vexing daft Jim.
+    </Heading>
 
     <Heading fontSize={7}>XL - Quick zephyrs blow, vexing daft Jim.</Heading>
 
-    <Heading as={'h1'} fontSize={6}>H1 - Quick zephyrs blow, vexing daft Jim.</Heading>
+    <Heading as={'h1'} fontSize={6}>
+      H1 - Quick zephyrs blow, vexing daft Jim.
+    </Heading>
 
-    <Heading as={'h2'} fontSize={5}>H2 - Quick zephyrs blow, vexing daft Jim.</Heading>
+    <Heading as={'h2'} fontSize={5}>
+      H2 - Quick zephyrs blow, vexing daft Jim.
+    </Heading>
 
-    <Heading as={'h3'} fontSize={4}>H3 - Quick zephyrs blow, vexing daft Jim.</Heading>
+    <Heading as={'h3'} fontSize={4}>
+      H3 - Quick zephyrs blow, vexing daft Jim.
+    </Heading>
 
-    <Heading as={'h4'} fontSize={3}>H4 - Quick zephyrs blow, vexing daft Jim.</Heading>
+    <Heading as={'h4'} fontSize={3}>
+      H4 - Quick zephyrs blow, vexing daft Jim.
+    </Heading>
 
-    <Heading as={'h5'} fontSize={2}>H5 - Quick zephyrs blow, vexing daft Jim.</Heading>
+    <Heading as={'h5'} fontSize={2}>
+      H5 - Quick zephyrs blow, vexing daft Jim.
+    </Heading>
 
-    <Heading as={'h6'} fontSize={1}>H6 - Quick zephyrs blow, vexing daft Jim.</Heading>
+    <Heading as={'h6'} fontSize={1}>
+      H6 - Quick zephyrs blow, vexing daft Jim.
+    </Heading>
 
     <Heading fontSize={0}>SX - Quick zephyrs blow, vexing daft Jim.</Heading>
 
     <Text fontWeight={1}>
-      1 / 300 —
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
+      1 / 300 — Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
       quibusdam, assumenda officiis.
     </Text>
     <Text fontWeight={2}>
-      2 / 400 —
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
+      2 / 400 — Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
       quibusdam, assumenda officiis.
     </Text>
     <Text fontWeight={3}>
-      3 / 600 —
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
+      3 / 600 — Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
       quibusdam, assumenda officiis.
     </Text>
     <Text fontWeight={4}>
-      4 / 700 —
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
+      4 / 700 — Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
       quibusdam, assumenda officiis.
     </Text>
 
     <Button size={'medium'}>Click me!</Button>
     <Link>I'm a Link!</Link>
-    <EthAddress
-      address="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2"
-    />
+    <EthAddress address="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2" />
     <EthAddress
       textLabels
       address="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2"
@@ -130,6 +147,9 @@ const testComponents = props => (
     <Icon name={'Info'} color="primary" />
     <Icon name={'Eth'} color="primary" />
     <Icon name={'Btc'} color="primary" />
+    <Icon name={'Info'} color="green" />
+    <Icon name={'Eth'} color="green" />
+    <Icon name={'Btc'} color="green" />
     <Tooltip message="Your custom message">
       <span>hover me</span>
     </Tooltip>
@@ -222,9 +242,9 @@ const testComponents = props => (
       <Heading mb={3}>Heading</Heading>
       <Text mb={4}>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam autem
-        ratione doloribus quidem neque provident eius error dignissimos
-        delectus architecto nemo quos alias sunt voluptate impedit, facilis
-        sequi tempore. Amet!
+        ratione doloribus quidem neque provident eius error dignissimos delectus
+        architecto nemo quos alias sunt voluptate impedit, facilis sequi
+        tempore. Amet!
       </Text>
       <Button mr={3}>Accept</Button>
       <Button.Outline>Cancel</Button.Outline>
@@ -232,18 +252,10 @@ const testComponents = props => (
     <Flex />
     <Table />
     <Image src="https://source.unsplash.com/random/1280x720" />
-    <MetaMaskButton>
-      Connect with MetaMask
-    </MetaMaskButton>
-    <MetaMaskButton.Outline>
-      Connect with MetaMask
-    </MetaMaskButton.Outline>
-    <UPortButton>
-      Connect with uPort
-    </UPortButton>
-    <UPortButton.Solid>
-      Connect with uPort
-    </UPortButton.Solid>
+    <MetaMaskButton>Connect with MetaMask</MetaMaskButton>
+    <MetaMaskButton.Outline>Connect with MetaMask</MetaMaskButton.Outline>
+    <UPortButton>Connect with uPort</UPortButton>
+    <UPortButton.Solid>Connect with uPort</UPortButton.Solid>
     <Loader />
     <QR value="test" />
     <Modal />
@@ -301,15 +313,11 @@ export default class App extends Component {
     return (
       <Flex position={'relative'}>
         <Box m={4}>
-          <BaseStyles>
-            {testComponents()}
-          </BaseStyles>
+          <BaseStyles>{testComponents()}</BaseStyles>
         </Box>
         <Box m={4}>
           <ThemeProvider theme={testTheme}>
-            <BaseStyles>
-              {testComponents()}
-            </BaseStyles>
+            <BaseStyles>{testComponents()}</BaseStyles>
           </ThemeProvider>
         </Box>
         <BaseLineGrid />
