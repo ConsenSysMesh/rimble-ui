@@ -1,5 +1,6 @@
 import Field from './';
 import Input from '../Input';
+import Radio from '../Radio';
 import ThemeProvider from '../ThemeProvider';
 import theme from '../theme';
 
@@ -22,6 +23,29 @@ describe('Field component sanity', () => {
       <ThemeProvider theme={theme}>
         <Field label="Themed input label">
           <Input />
+        </Field>
+      </ThemeProvider>
+    );
+    expect(component).toMatchSnapshot();
+  });
+
+  it('supports array of children', () => {
+    const mockOptions = [
+      { value: '1', label: 'One' },
+      { value: '2', label: 'Two' },
+      { value: '3', label: 'Three' },
+    ];
+    const component = render(
+      <ThemeProvider theme={theme}>
+        <Field label="Multiple options">
+          {mockOptions.map(item => (
+            <Radio
+              key={item.value}
+              label={item.label}
+              value={item.value}
+              required
+            />
+          ))}
         </Field>
       </ThemeProvider>
     );
