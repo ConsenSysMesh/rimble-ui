@@ -36,6 +36,7 @@ import {
   theme,
 } from 'rimble-ui';
 
+import TestForm from './components/TestForm';
 import BaseLineGrid from './components/BaseLineGrid';
 
 const testTheme = {
@@ -45,8 +46,12 @@ const testTheme = {
     text: 'black',
     background: 'white',
     primary: 'crimson',
-    'primary-light': 'salmon',
-    'primary-dark': 'red',
+    'primary-light': 'red',
+    'primary-dark': 'darkred',
+    success: 'green',
+    warning: 'orange',
+    danger: 'orangered',
+    info: 'blue',
   },
 };
 
@@ -125,6 +130,9 @@ const testComponents = props => (
       textLabels
       address="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2"
     />
+    <Card my={4}>
+      <TestForm />
+    </Card>
     <Input placeholder={'placeholder'} />
     <Icon name={'Info'} />
     <Icon name={'Info'} color="primary" />
