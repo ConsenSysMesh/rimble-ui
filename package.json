@@ -7,7 +7,8 @@
   "license": "MIT",
   "repository": "ConsenSys/rimble-ui",
   "main": "dist/index.umd.js",
-  "module": "dist/index.es.js",
+  "module": "dist/es/index.js",
+  "sideEffects": false,
   "jsnext:main": "dist/index.es.js",
   "engines": {
     "node": ">=8",
@@ -61,6 +62,7 @@
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
     "babel-plugin-styled-components": "^1.10.6",
+    "babel-plugin-inline-react-svg": "^1.1.0",
     "cross-env": "^5.1.4",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
