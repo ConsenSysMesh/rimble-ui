@@ -17,10 +17,12 @@
   "scripts": {
     "test": "cross-env CI=1 react-scripts test --env=jsdom",
     "test:watch": "react-scripts test --env=jsdom",
-    "build": "rollup -c",
-    "start": "rollup -c -w",
+    "build": "rollup -c && babel ./src -d ./dist/es",
+    "start": "npm-run-all -r -p rollup:watch babel:watch",
     "prepare": "yarn run build",
-    "predeploy": "cd example && yarn install && yarn run build"
+    "predeploy": "cd example && yarn install && yarn run build",
+    "rollup:watch": "rollup -c -w",
+    "babel:watch": "babel ./src -d ./dist/es --watch"
   },
   "dependencies": {
     "@d8660091/react-popper": "^1.0.4",
