@@ -273,8 +273,11 @@ const testComponents = props => (
         delectus architecto nemo quos alias sunt voluptate impedit, facilis
         sequi tempore. Amet!
       </Text>
-      <Button mr={3}>Accept</Button>
-      <Button.Outline>Cancel</Button.Outline>
+      <Flex>
+        <Button mr={3}>Accept</Button>
+        <Button.Outline>Cancel</Button.Outline>
+        <Button.Text ml={'auto'}>Skip</Button.Text>
+      </Flex>
     </Card>
     <Table />
     <Image src="https://source.unsplash.com/random/1280x720" />
