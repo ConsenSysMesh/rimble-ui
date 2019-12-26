@@ -157,7 +157,7 @@ const QRButton = ({ address, ...props }) => {
       <React.Fragment>
         <Tooltip message={text.tooltip}>
           <Button size={'small'} ml={2} p={0} onClick={toggle}>
-            <Icon name={'CenterFocusStrong'} />
+            <Icon name={'CenterFocusStrong'} color={'white'} />
           </Button>
         </Tooltip>
         <AddressQrModal address={address} isOpen={visible} hide={toggle} />
@@ -186,7 +186,7 @@ const CopyButton = ({ clipboardText, ...props }) => {
         {isCopied => (
           <Tooltip message={text.tooltip}>
             <Button size={'small'} p={0}>
-              <Icon name={isCopied ? 'Check' : 'Assignment'} />
+              <Icon name={isCopied ? 'Check' : 'Assignment'} color={'white'} />
             </Button>
           </Tooltip>
         )}

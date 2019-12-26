@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import Button from '../Button';
+import Icon from '../Icon';
+import Flex from '../Flex';
 
 const StyledFileInput = styled('input')`
   & {
@@ -76,11 +78,15 @@ class FileInput extends Component {
           ref={this.fileInput}
           onChange={this.handleChange}
         />
-        <Button
-          icon={this.state.files ? 'CloudDone' : 'CloudUpload'}
-          onClick={this.handleClick}
-        >
-          {this.state.buttonLabel}
+        <Button onClick={this.handleClick}>
+          <Flex alignItems={'center'}>
+            <Icon
+              name={this.state.files ? 'CloudDone' : 'CloudUpload'}
+              color={'white'}
+              mr={2}
+            />
+            {this.state.buttonLabel}
+          </Flex>
         </Button>
       </StyledFileLabel>
     );
