@@ -5,8 +5,7 @@ import { themeGet } from '@styled-system/theme-get';
 import IconCheckCircle from 'rmdi/lib/CheckCircle';
 import IconWarning from 'rmdi/lib/Warning';
 import FileInput from './FileInput';
-import Box, { StyledBox } from '../Box';
-import theme from '../theme';
+import { StyledBox } from '../Box';
 
 const StyledInput = styled(StyledBox).attrs(props => ({
   as: 'input',
@@ -128,7 +127,6 @@ StyledInput.defaultProps = defaultProps;
 Input.defaultProps = defaultProps;
 
 Input.propTypes = {
-  ...Box.propTypes,
   theme: PropTypes.object,
 };
 
