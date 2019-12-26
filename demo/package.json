@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "link:../node_modules/react",
-    "react-dom": "link:../node_modules/react-dom",
+    "react": "file:../node_modules/react",
+    "react-dom": "file:../node_modules/react-dom",
     "react-scripts": "3.3.0",
-    "rimble-ui": "link:.."
+    "rimble-ui": "file:.."
   },
   "scripts": {
     "start": "react-scripts start",
