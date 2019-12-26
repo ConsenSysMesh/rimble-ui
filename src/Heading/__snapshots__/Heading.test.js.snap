@@ -2,22 +2,14 @@
 
 exports[`Heading component sanity matches default snapshot 1`] = `
 .c0 {
+  box-sizing: border-box;
+  font-weight: 600;
+  line-height: 1.25;
   margin: 0;
 }
 
-.c0 {
-  box-sizing: border-box;
-}
-
-.c1 {
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  font-weight: 600;
-  line-height: 1.25;
-}
-
 <h1
-  class="c0 c1"
-  font-family="sansSerif"
+  class="c0 "
   font-size=""
   font-weight="3"
 >
@@ -27,22 +19,14 @@ exports[`Heading component sanity matches default snapshot 1`] = `
 
 exports[`Heading component sanity matches themed snapshot 1`] = `
 .c0 {
+  box-sizing: border-box;
+  font-weight: 600;
+  line-height: 1.25;
   margin: 0;
 }
 
-.c0 {
-  box-sizing: border-box;
-}
-
-.c1 {
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  font-weight: 600;
-  line-height: 1.25;
-}
-
 <h1
-  class="c0 c1"
-  font-family="sansSerif"
+  class="c0 "
   font-size=""
   font-weight="3"
 >

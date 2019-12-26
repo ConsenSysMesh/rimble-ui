@@ -2,14 +2,11 @@
 
 exports[`Icon component sanity matches default snapshot 1`] = `
 .c0 {
+  box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-}
-
-.c0 {
-  box-sizing: border-box;
 }
 
 <div
@@ -32,14 +29,11 @@ exports[`Icon component sanity matches default snapshot 1`] = `
 
 exports[`Icon component sanity matches themed snapshot 1`] = `
 .c0 {
+  box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-}
-
-.c0 {
-  box-sizing: border-box;
 }
 
 <div

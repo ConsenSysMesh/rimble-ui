@@ -2,41 +2,34 @@
 
 exports[`Pill component sanity matches default snapshot 1`] = `
 .c0 {
+  box-sizing: border-box;
   color: #3259D6;
   background-color: #FFF;
-  padding-top: 4px;
-  padding-bottom: 4px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  height: 2rem;
   padding-left: 16px;
   padding-right: 16px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 16px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  height: 32px;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border-radius: 16px;
-}
-
-.c0 {
-  box-sizing: border-box;
 }
 
 .c1 {
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1;
-}
-
-.c2 {
   position: relative;
   overflow: hidden;
 }
 
-.c2::after {
+.c1::after {
   content: '';
   display: block;
   position: absolute;
@@ -51,53 +44,45 @@ exports[`Pill component sanity matches default snapshot 1`] = `
 }
 
 <div
-  class="c0 c1 c2"
+  class="c0 c1"
   color="blue"
   display="inline-flex"
-  font-family="sansSerif"
   font-size="1"
   font-weight="2"
-  height="2"
+  height="2rem"
 />
 `;
 
 exports[`Pill component sanity matches themed snapshot 1`] = `
 .c0 {
+  box-sizing: border-box;
   color: #3259D6;
   background-color: #FFF;
-  padding-top: 4px;
-  padding-bottom: 4px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  height: 2rem;
   padding-left: 16px;
   padding-right: 16px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 16px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  height: 32px;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border-radius: 16px;
-}
-
-.c0 {
-  box-sizing: border-box;
 }
 
 .c1 {
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1;
-}
-
-.c2 {
   position: relative;
   overflow: hidden;
 }
 
-.c2::after {
+.c1::after {
   content: '';
   display: block;
   position: absolute;
@@ -112,12 +97,11 @@ exports[`Pill component sanity matches themed snapshot 1`] = `
 }
 
 <div
-  class="c0 c1 c2"
+  class="c0 c1"
   color="blue"
   display="inline-flex"
-  font-family="sansSerif"
   font-size="1"
   font-weight="2"
-  height="2"
+  height="2rem"
 />
 `;

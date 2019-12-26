@@ -2,7 +2,7 @@
 
 exports[`Field component sanity matches default snapshot 1`] = `
 .c0 {
-  margin-bottom: 16px;
+  box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -14,74 +14,62 @@ exports[`Field component sanity matches default snapshot 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
-}
-
-.c0 {
-  box-sizing: border-box;
-}
-
-.c1 {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 
 .c1 {
   box-sizing: border-box;
-}
-
-.c2 {
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 14px;
   font-weight: 600;
+  margin-bottom: 8px;
   line-height: 1.5;
 }
 
-.c3:after {
+.c2:after {
   content: ' (optional)';
   font-weight: normal;
   font-style: italic;
 }
 
-.c4 {
+.c3 {
+  box-sizing: border-box;
   color: #3F3D4B;
   background-color: #fff;
-  padding: 16px;
-  height: 3rem;
-  border: 1px solid transparent;
-  border-color: #CCC;
-  border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 1rem;
-  line-height: 1;
+  line-height: initial;
+  height: 3rem;
+  padding: 16px;
+  border: 1px solid transparent;
+  border-color: #ccc;
+  border-radius: 4px;
 }
 
-.c4 {
+.c3 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  box-sizing: border-box;
 }
 
-.c4:hover {
+.c3:hover {
   box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
 }
 
-.c4:focus {
+.c3:focus {
   outline: none;
   border-color: #4E3FCE;
 }
 
-.c4:disabled {
+.c3:disabled {
   opacity: 0.4;
   pointer-events: none;
 }
 
-.c4[type="color"] {
+.c3[type="color"] {
   min-width: 3rem;
   padding: 0;
 }
 
-.c4[type="color"]::-webkit-color-swatch-wrapper {
+.c3[type="color"]::-webkit-color-swatch-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -97,7 +85,7 @@ exports[`Field component sanity matches default snapshot 1`] = `
   padding: 0;
 }
 
-.c4[type="color"]::-webkit-color-swatch {
+.c3[type="color"]::-webkit-color-swatch {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
@@ -107,27 +95,29 @@ exports[`Field component sanity matches default snapshot 1`] = `
   border-radius: 100%;
 }
 
-.c4[type="color"]::-moz-color-swatch {
+.c3[type="color"]::-moz-color-swatch {
   height: 2rem;
   width: 2rem;
   border: none;
   border-radius: 100%;
 }
 
-.was-validated .c4:valid {
+.was-validated .c3:valid {
   border-color: #28C081;
 }
 
-.was-validated .c4:valid ~ svg.icon-valid {
+.was-validated .c3:valid ~ svg.icon-valid {
   visibility: visible;
+  color: #28C081;
 }
 
-.was-validated .c4:invalid {
+.was-validated .c3:invalid {
   border-color: #DC2C10;
 }
 
-.was-validated .c4:invalid ~ svg.icon-invalid {
+.was-validated .c3:invalid ~ svg.icon-invalid {
   visibility: visible;
+  color: #DC2C10;
 }
 
 <label
@@ -135,17 +125,15 @@ exports[`Field component sanity matches default snapshot 1`] = `
   display="inline-flex"
 >
   <div
-    class="c1 c2 c3"
-    font-family="sansSerif"
+    class="c1 c2"
     font-size="1"
     font-weight="3"
   >
     Input label
   </div>
   <input
-    class="c4"
+    class="c3"
     color="text"
-    font-family="sansSerif"
     font-size="1rem"
     height="3rem"
   />
@@ -154,7 +142,7 @@ exports[`Field component sanity matches default snapshot 1`] = `
 
 exports[`Field component sanity matches themed snapshot 1`] = `
 .c0 {
-  margin-bottom: 16px;
+  box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -166,74 +154,62 @@ exports[`Field component sanity matches themed snapshot 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
-}
-
-.c0 {
-  box-sizing: border-box;
-}
-
-.c1 {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 
 .c1 {
   box-sizing: border-box;
-}
-
-.c2 {
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 14px;
   font-weight: 600;
+  margin-bottom: 8px;
   line-height: 1.5;
 }
 
-.c3:after {
+.c2:after {
   content: ' (optional)';
   font-weight: normal;
   font-style: italic;
 }
 
-.c4 {
+.c3 {
+  box-sizing: border-box;
   color: #3F3D4B;
   background-color: #fff;
-  padding: 16px;
-  height: 3rem;
-  border: 1px solid transparent;
-  border-color: #CCC;
-  border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 1rem;
-  line-height: 1;
+  line-height: initial;
+  height: 3rem;
+  padding: 16px;
+  border: 1px solid transparent;
+  border-color: #ccc;
+  border-radius: 4px;
 }
 
-.c4 {
+.c3 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  box-sizing: border-box;
 }
 
-.c4:hover {
+.c3:hover {
   box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
 }
 
-.c4:focus {
+.c3:focus {
   outline: none;
   border-color: #4E3FCE;
 }
 
-.c4:disabled {
+.c3:disabled {
   opacity: 0.4;
   pointer-events: none;
 }
 
-.c4[type="color"] {
+.c3[type="color"] {
   min-width: 3rem;
   padding: 0;
 }
 
-.c4[type="color"]::-webkit-color-swatch-wrapper {
+.c3[type="color"]::-webkit-color-swatch-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -249,7 +225,7 @@ exports[`Field component sanity matches themed snapshot 1`] = `
   padding: 0;
 }
 
-.c4[type="color"]::-webkit-color-swatch {
+.c3[type="color"]::-webkit-color-swatch {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
@@ -259,27 +235,29 @@ exports[`Field component sanity matches themed snapshot 1`] = `
   border-radius: 100%;
 }
 
-.c4[type="color"]::-moz-color-swatch {
+.c3[type="color"]::-moz-color-swatch {
   height: 2rem;
   width: 2rem;
   border: none;
   border-radius: 100%;
 }
 
-.was-validated .c4:valid {
+.was-validated .c3:valid {
   border-color: #28C081;
 }
 
-.was-validated .c4:valid ~ svg.icon-valid {
+.was-validated .c3:valid ~ svg.icon-valid {
   visibility: visible;
+  color: #28C081;
 }
 
-.was-validated .c4:invalid {
+.was-validated .c3:invalid {
   border-color: #DC2C10;
 }
 
-.was-validated .c4:invalid ~ svg.icon-invalid {
+.was-validated .c3:invalid ~ svg.icon-invalid {
   visibility: visible;
+  color: #DC2C10;
 }
 
 <label
@@ -287,17 +265,15 @@ exports[`Field component sanity matches themed snapshot 1`] = `
   display="inline-flex"
 >
   <div
-    class="c1 c2 c3"
-    font-family="sansSerif"
+    class="c1 c2"
     font-size="1"
     font-weight="3"
   >
     Themed input label
   </div>
   <input
-    class="c4"
+    class="c3"
     color="text"
-    font-family="sansSerif"
     font-size="1rem"
     height="3rem"
   />

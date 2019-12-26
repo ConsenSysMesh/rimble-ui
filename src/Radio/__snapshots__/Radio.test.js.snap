@@ -2,7 +2,7 @@
 
 exports[`Radio component sanity matches default snapshot 1`] = `
 .c0 {
-  color: #4E3FCE;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -11,11 +11,8 @@ exports[`Radio component sanity matches default snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  color: #4E3FCE;
   opacity: 1;
-}
-
-.c0 {
-  box-sizing: border-box;
 }
 
 .c2 {
@@ -23,20 +20,13 @@ exports[`Radio component sanity matches default snapshot 1`] = `
 }
 
 .c4 {
-  color: #3F3D4B;
-  margin-left: 4px;
-  margin-right: 8px;
-}
-
-.c4 {
   box-sizing: border-box;
-}
-
-.c5 {
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  color: #3F3D4B;
   font-size: 14px;
   font-weight: 600;
   line-height: 1;
+  margin-left: 4px;
+  margin-right: 8px;
 }
 
 .c3 {
@@ -128,9 +118,8 @@ exports[`Radio component sanity matches default snapshot 1`] = `
     </svg>
   </div>
   <div
-    class="c4 c5"
+    class="c4 "
     color="text"
-    font-family="sansSerif"
     font-size="1"
     font-weight="3"
   />
@@ -139,7 +128,7 @@ exports[`Radio component sanity matches default snapshot 1`] = `
 
 exports[`Radio component sanity matches themed snapshot 1`] = `
 .c0 {
-  color: #4E3FCE;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -148,11 +137,8 @@ exports[`Radio component sanity matches themed snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  color: #4E3FCE;
   opacity: 1;
-}
-
-.c0 {
-  box-sizing: border-box;
 }
 
 .c2 {
@@ -160,20 +146,13 @@ exports[`Radio component sanity matches themed snapshot 1`] = `
 }
 
 .c4 {
-  color: #3F3D4B;
-  margin-left: 4px;
-  margin-right: 8px;
-}
-
-.c4 {
   box-sizing: border-box;
-}
-
-.c5 {
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  color: #3F3D4B;
   font-size: 14px;
   font-weight: 600;
   line-height: 1;
+  margin-left: 4px;
+  margin-right: 8px;
 }
 
 .c3 {
@@ -265,9 +244,8 @@ exports[`Radio component sanity matches themed snapshot 1`] = `
     </svg>
   </div>
   <div
-    class="c4 c5"
+    class="c4 "
     color="text"
-    font-family="sansSerif"
     font-size="1"
     font-weight="3"
   />

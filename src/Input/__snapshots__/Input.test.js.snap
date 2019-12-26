@@ -2,24 +2,22 @@
 
 exports[`Input component sanity matches default snapshot 1`] = `
 .c0 {
+  box-sizing: border-box;
   color: #3F3D4B;
   background-color: #fff;
-  padding: 16px;
-  height: 3rem;
-  border: 1px solid transparent;
-  border-color: #CCC;
-  border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 1rem;
-  line-height: 1;
+  line-height: initial;
+  height: 3rem;
+  padding: 16px;
+  border: 1px solid transparent;
+  border-color: #ccc;
+  border-radius: 4px;
 }
 
 .c0 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  box-sizing: border-box;
 }
 
 .c0:hover {
@@ -80,6 +78,7 @@ exports[`Input component sanity matches default snapshot 1`] = `
 
 .was-validated .c0:valid ~ svg.icon-valid {
   visibility: visible;
+  color: #28C081;
 }
 
 .was-validated .c0:invalid {
@@ -88,12 +87,12 @@ exports[`Input component sanity matches default snapshot 1`] = `
 
 .was-validated .c0:invalid ~ svg.icon-invalid {
   visibility: visible;
+  color: #DC2C10;
 }
 
 <input
   class="c0"
   color="text"
-  font-family="sansSerif"
   font-size="1rem"
   height="3rem"
 />
@@ -101,24 +100,22 @@ exports[`Input component sanity matches default snapshot 1`] = `
 
 exports[`Input component sanity matches themed snapshot 1`] = `
 .c0 {
+  box-sizing: border-box;
   color: #3F3D4B;
   background-color: #fff;
-  padding: 16px;
-  height: 3rem;
-  border: 1px solid transparent;
-  border-color: #CCC;
-  border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 1rem;
-  line-height: 1;
+  line-height: initial;
+  height: 3rem;
+  padding: 16px;
+  border: 1px solid transparent;
+  border-color: #ccc;
+  border-radius: 4px;
 }
 
 .c0 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  box-sizing: border-box;
 }
 
 .c0:hover {
@@ -179,6 +176,7 @@ exports[`Input component sanity matches themed snapshot 1`] = `
 
 .was-validated .c0:valid ~ svg.icon-valid {
   visibility: visible;
+  color: #28C081;
 }
 
 .was-validated .c0:invalid {
@@ -187,12 +185,12 @@ exports[`Input component sanity matches themed snapshot 1`] = `
 
 .was-validated .c0:invalid ~ svg.icon-invalid {
   visibility: visible;
+  color: #DC2C10;
 }
 
 <input
   class="c0"
   color="text"
-  font-family="sansSerif"
   font-size="1rem"
   height="3rem"
 />

@@ -2,21 +2,20 @@
 
 exports[`Table component sanity matches default snapshot 1`] = `
 .c0 {
-  color: #333;
+  box-sizing: border-box;
   width: 100%;
   border: 1px solid transparent;
   border-color: #CCC;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-}
-
-.c0 {
-  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  color: #333;
 }
 
 .c1 {
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 14px;
   font-weight: 400;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
 }
 
 .c1 {
@@ -119,21 +118,20 @@ exports[`Table component sanity matches default snapshot 1`] = `
 
 exports[`Table component sanity matches themed snapshot 1`] = `
 .c0 {
-  color: #333;
+  box-sizing: border-box;
   width: 100%;
   border: 1px solid transparent;
   border-color: #CCC;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-}
-
-.c0 {
-  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  color: #333;
 }
 
 .c1 {
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 14px;
   font-weight: 400;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
 }
 
 .c1 {
