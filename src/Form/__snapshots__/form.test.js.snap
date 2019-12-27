@@ -316,10 +316,6 @@ exports[`Form component sanity matches themed snapshot 1`] = `
         width="24"
       >
         <path
-          d="M0 0h24v24H0z"
-          fill="none"
-        />
-        <path
           d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
         />
       </svg>
@@ -332,6 +328,10 @@ exports[`Form component sanity matches themed snapshot 1`] = `
         viewBox="0 0 24 24"
         width="24"
       >
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
         <path
           d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"
         />
@@ -374,10 +374,6 @@ exports[`Form component sanity matches themed snapshot 1`] = `
         width="24"
       >
         <path
-          d="M0 0h24v24H0z"
-          fill="none"
-        />
-        <path
           d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
         />
       </svg>
@@ -390,6 +386,10 @@ exports[`Form component sanity matches themed snapshot 1`] = `
         viewBox="0 0 24 24"
         width="24"
       >
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
         <path
           d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"
         />
@@ -421,10 +421,6 @@ exports[`Form component sanity matches themed snapshot 1`] = `
         width="24"
       >
         <path
-          d="M0 0h24v24H0z"
-          fill="none"
-        />
-        <path
           d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
         />
       </svg>
@@ -440,10 +436,6 @@ exports[`Form component sanity matches themed snapshot 1`] = `
       >
         <path
           d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-        />
-        <path
-          d="M0 0h24v24H0z"
-          fill="none"
         />
       </svg>
     </div>
@@ -766,10 +758,6 @@ exports[`Form component sanity renders children elements 1`] = `
         width="24"
       >
         <path
-          d="M0 0h24v24H0z"
-          fill="none"
-        />
-        <path
           d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
         />
       </svg>
@@ -782,6 +770,10 @@ exports[`Form component sanity renders children elements 1`] = `
         viewBox="0 0 24 24"
         width="24"
       >
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
         <path
           d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"
         />
@@ -824,10 +816,6 @@ exports[`Form component sanity renders children elements 1`] = `
         width="24"
       >
         <path
-          d="M0 0h24v24H0z"
-          fill="none"
-        />
-        <path
           d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
         />
       </svg>
@@ -840,6 +828,10 @@ exports[`Form component sanity renders children elements 1`] = `
         viewBox="0 0 24 24"
         width="24"
       >
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
         <path
           d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"
         />
@@ -871,10 +863,6 @@ exports[`Form component sanity renders children elements 1`] = `
         width="24"
       >
         <path
-          d="M0 0h24v24H0z"
-          fill="none"
-        />
-        <path
           d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
         />
       </svg>
@@ -890,10 +878,6 @@ exports[`Form component sanity renders children elements 1`] = `
       >
         <path
           d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-        />
-        <path
-          d="M0 0h24v24H0z"
-          fill="none"
         />
       </svg>
     </div>
