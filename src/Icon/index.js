@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Icon as RimbleIcon } from '@rimble/icons';
+import RimbleIcon from '@rimble/icons/lib/Icon';
 import Box from '../Box';
 import theme from '../theme';
 

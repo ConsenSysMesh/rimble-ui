@@ -82,7 +82,6 @@ class FileInput extends Component {
           <Flex alignItems={'center'}>
             <Icon
               name={this.state.files ? 'CloudDone' : 'CloudUpload'}
-              color={'white'}
               mr={2}
             />
             {this.state.buttonLabel}

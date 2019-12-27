@@ -23,13 +23,13 @@
   },
   "dependencies": {
     "@d8660091/react-popper": "^1.0.4",
+    "@rimble/icons": "github:ConsenSys/rimble-icons#ml-styled-component-template",
     "@svgr/rollup": "^4.2.0",
     "clipboard": "^2.0.4",
     "ethereum-blockies": "^0.1.1",
     "mixin-deep": "^2.0.1",
     "polished": "^3.2.0",
     "qrcode.react": "^0.9.3",
-    "@rimble/icons": "ConsenSys/rimble-icons#ml-styled-component-template",
     "set-value": "^3.0.1",
     "styled-system": "^4.1.0"
   },
@@ -60,6 +60,7 @@
     "@babel/plugin-syntax-import-meta": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
+    "babel-jest": "^24.9.0",
     "babel-plugin-styled-components": "^1.10.6",
     "cross-env": "^5.1.4",
     "enzyme": "^3.10.0",
@@ -94,6 +95,12 @@
   "jest": {
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
+    ],
+    "transform": {
+      "^.+\\.js?$": "babel-jest"
+    },
+    "transformIgnorePatterns": [
+      "<rootDir>/node_modules/(?!(@rimble)/)"
     ]
   },
   "lint-staged": {
