@@ -284,10 +284,11 @@ exports[`Select component sanity matches default snapshot 1`] = `
       A B C
     </option>
   </styled.input>
-  <ExpandMoreIcon
+  <Styled(SvgExpandMore)
+    color="inherit"
     mx={3}
     my="auto"
-    size={24}
+    size="1em"
   />
 </Styled(Box)>
 `;
@@ -297,11 +298,15 @@ exports[`Select component sanity matches themed snapshot 1`] = `
   box-sizing: border-box;
 }
 
-.c4 {
-  margin-left: 16px;
-  margin-right: 16px;
+.c3 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
   margin-top: auto;
   margin-bottom: auto;
+  margin-left: 16px;
+  margin-right: 16px;
+  color: inherit;
 }
 
 .c2 {
@@ -403,7 +408,7 @@ exports[`Select component sanity matches themed snapshot 1`] = `
   display: inline-block;
 }
 
-.c1 > .c3 {
+.c4 {
   pointer-events: none;
   position: absolute;
   right: 0;
@@ -424,12 +429,11 @@ exports[`Select component sanity matches themed snapshot 1`] = `
   />
   <svg
     class="c3 c4"
+    color="inherit"
     fill="currentcolor"
-    height="24"
-    mx="3"
-    my="auto"
+    height="1em"
     viewBox="0 0 24 24"
-    width="24"
+    width="1em"
   >
     <path
       d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"

@@ -61,21 +61,41 @@ exports[`Form component sanity matches themed snapshot 1`] = `
   box-sizing: border-box;
 }
 
-.c12 {
+.c14 {
   color: #3F3D4B;
   margin-left: 4px;
   margin-right: 8px;
 }
 
-.c12 {
+.c14 {
   box-sizing: border-box;
 }
 
+.c12 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  color: inherit;
+}
+
+.c13 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  color: inherit;
+}
+
 .c7 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
   color: #28C081;
 }
 
 .c8 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
   color: #DC2C10;
 }
 
@@ -201,7 +221,7 @@ exports[`Form component sanity matches themed snapshot 1`] = `
   line-height: 1.5;
 }
 
-.c13 {
+.c15 {
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -291,9 +311,14 @@ exports[`Form component sanity matches themed snapshot 1`] = `
         color="#28C081"
         fill="currentcolor"
         height="24"
+        size="24"
         viewBox="0 0 24 24"
         width="24"
       >
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
         <path
           d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
         />
@@ -303,6 +328,7 @@ exports[`Form component sanity matches themed snapshot 1`] = `
         color="#DC2C10"
         fill="currentcolor"
         height="24"
+        size="24"
         viewBox="0 0 24 24"
         width="24"
       >
@@ -343,9 +369,14 @@ exports[`Form component sanity matches themed snapshot 1`] = `
         color="#28C081"
         fill="currentcolor"
         height="24"
+        size="24"
         viewBox="0 0 24 24"
         width="24"
       >
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
         <path
           d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
         />
@@ -355,6 +386,7 @@ exports[`Form component sanity matches themed snapshot 1`] = `
         color="#DC2C10"
         fill="currentcolor"
         height="24"
+        size="24"
         viewBox="0 0 24 24"
         width="24"
       >
@@ -379,32 +411,44 @@ exports[`Form component sanity matches themed snapshot 1`] = `
         type="checkbox"
       />
       <svg
-        class=""
+        class="c12"
+        color="inherit"
         fill="currentcolor"
         height="24"
         name="checked"
+        size="24"
         viewBox="0 0 24 24"
         width="24"
       >
         <path
-          d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+        <path
+          d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
         />
       </svg>
       <svg
-        class=""
+        class="c13"
+        color="inherit"
         fill="currentcolor"
         height="24"
         name="unchecked"
+        size="24"
         viewBox="0 0 24 24"
         width="24"
       >
         <path
           d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
         />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
       </svg>
     </div>
     <div
-      class="c12 c13"
+      class="c14 c15"
       color="text"
       font-family="sansSerif"
       font-size="1"
@@ -467,21 +511,41 @@ exports[`Form component sanity renders children elements 1`] = `
   box-sizing: border-box;
 }
 
-.c12 {
+.c14 {
   color: #3F3D4B;
   margin-left: 4px;
   margin-right: 8px;
 }
 
-.c12 {
+.c14 {
   box-sizing: border-box;
 }
 
+.c12 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  color: inherit;
+}
+
+.c13 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  color: inherit;
+}
+
 .c7 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
   color: #28C081;
 }
 
 .c8 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
   color: #DC2C10;
 }
 
@@ -607,7 +671,7 @@ exports[`Form component sanity renders children elements 1`] = `
   line-height: 1.5;
 }
 
-.c13 {
+.c15 {
   font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -697,9 +761,14 @@ exports[`Form component sanity renders children elements 1`] = `
         color="#28C081"
         fill="currentcolor"
         height="24"
+        size="24"
         viewBox="0 0 24 24"
         width="24"
       >
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
         <path
           d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
         />
@@ -709,6 +778,7 @@ exports[`Form component sanity renders children elements 1`] = `
         color="#DC2C10"
         fill="currentcolor"
         height="24"
+        size="24"
         viewBox="0 0 24 24"
         width="24"
       >
@@ -749,9 +819,14 @@ exports[`Form component sanity renders children elements 1`] = `
         color="#28C081"
         fill="currentcolor"
         height="24"
+        size="24"
         viewBox="0 0 24 24"
         width="24"
       >
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
         <path
           d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
         />
@@ -761,6 +836,7 @@ exports[`Form component sanity renders children elements 1`] = `
         color="#DC2C10"
         fill="currentcolor"
         height="24"
+        size="24"
         viewBox="0 0 24 24"
         width="24"
       >
@@ -785,32 +861,44 @@ exports[`Form component sanity renders children elements 1`] = `
         type="checkbox"
       />
       <svg
-        class=""
+        class="c12"
+        color="inherit"
         fill="currentcolor"
         height="24"
         name="checked"
+        size="24"
         viewBox="0 0 24 24"
         width="24"
       >
         <path
-          d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+        <path
+          d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
         />
       </svg>
       <svg
-        class=""
+        class="c13"
+        color="inherit"
         fill="currentcolor"
         height="24"
         name="unchecked"
+        size="24"
         viewBox="0 0 24 24"
         width="24"
       >
         <path
           d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
         />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
       </svg>
     </div>
     <div
-      class="c12 c13"
+      class="c14 c15"
       color="text"
       font-family="sansSerif"
       font-size="1"

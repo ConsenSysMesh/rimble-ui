@@ -1039,7 +1039,7 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                         },
                         "attrs": Array [],
                         "componentStyle": ComponentStyle {
-                          "componentId": "sc-bGbZqa",
+                          "componentId": "sc-ldxtDJ",
                           "isStatic": false,
                           "lastClassName": "c0",
                           "rules": Array [
@@ -1170,13 +1170,12 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                         },
                         "displayName": "Styled(styled.button)",
                         "foldedComponentIds": Array [
-                          "sc-gQORMK",
+                          "sc-dHThnQ",
                         ],
                         "render": [Function],
-                        "styledComponentId": "sc-bGbZqa",
+                        "styledComponentId": "sc-ldxtDJ",
                         "target": "button",
                         "toString": [Function],
-                        "usesTheme": false,
                         "warnTooManyClasses": [Function],
                         "withComponent": [Function],
                       }
@@ -3017,7 +3016,7 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                             },
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "sc-bGbZqa",
+                              "componentId": "sc-ldxtDJ",
                               "isStatic": false,
                               "lastClassName": "c0",
                               "rules": Array [
@@ -3148,13 +3147,12 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                             },
                             "displayName": "Styled(styled.button)",
                             "foldedComponentIds": Array [
-                              "sc-gQORMK",
+                              "sc-dHThnQ",
                             ],
                             "render": [Function],
-                            "styledComponentId": "sc-bGbZqa",
+                            "styledComponentId": "sc-ldxtDJ",
                             "target": "button",
                             "toString": [Function],
-                            "usesTheme": false,
                             "warnTooManyClasses": [Function],
                             "withComponent": [Function],
                           }

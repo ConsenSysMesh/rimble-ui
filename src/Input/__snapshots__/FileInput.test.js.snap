@@ -1,14 +1,37 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`File Input component sanity matches default snapshot 1`] = `
+.c5 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  color: inherit;
+}
+
 .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3 {
+  box-sizing: border-box;
+}
+
+.c4 {
+  margin-right: 8px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
-.c3 {
+.c4 {
   box-sizing: border-box;
 }
 
@@ -174,40 +197,73 @@ exports[`File Input component sanity matches default snapshot 1`] = `
     font-weight="3"
     height="3rem"
   >
-    <div
-      class="c3"
-      display="inline-flex"
-    >
-      <svg
-        class=""
-        fill="currentcolor"
-        height="24px"
-        viewBox="0 0 24 24"
-        width="24px"
-      >
-        <path
-          d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"
-        />
-      </svg>
-    </div>
     <span
       class="button-text"
     >
-      Choose file…
+      <div
+        class="c3"
+        display="flex"
+      >
+        <div
+          class="c4"
+          display="inline-flex"
+        >
+          <svg
+            class="c5"
+            color="inherit"
+            fill="currentcolor"
+            height="24px"
+            viewBox="0 0 24 24"
+            width="24px"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M19.35 10.04A7.49 7.49 0 0012 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 000 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"
+            />
+          </svg>
+        </div>
+        Choose file…
+      </div>
     </span>
   </button>
 </label>
 `;
 
 exports[`File Input component sanity matches themed snapshot 1`] = `
+.c5 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  color: inherit;
+}
+
 .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3 {
+  box-sizing: border-box;
+}
+
+.c4 {
+  margin-right: 8px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
-.c3 {
+.c4 {
   box-sizing: border-box;
 }
 
@@ -373,26 +429,36 @@ exports[`File Input component sanity matches themed snapshot 1`] = `
     font-weight="3"
     height="3rem"
   >
-    <div
-      class="c3"
-      display="inline-flex"
-    >
-      <svg
-        class=""
-        fill="currentcolor"
-        height="24px"
-        viewBox="0 0 24 24"
-        width="24px"
-      >
-        <path
-          d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"
-        />
-      </svg>
-    </div>
     <span
       class="button-text"
     >
-      Choose file…
+      <div
+        class="c3"
+        display="flex"
+      >
+        <div
+          class="c4"
+          display="inline-flex"
+        >
+          <svg
+            class="c5"
+            color="inherit"
+            fill="currentcolor"
+            height="24px"
+            viewBox="0 0 24 24"
+            width="24px"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M19.35 10.04A7.49 7.49 0 0012 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 000 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"
+            />
+          </svg>
+        </div>
+        Choose file…
+      </div>
     </span>
   </button>
 </label>
