@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@d8660091/react-popper": "^1.0.4",
-    "@rimble/icons": "github:ConsenSys/rimble-icons#ml-styled-component-template",
+    "@rimble/icons": "github:ConsenSys/rimble-icons",
     "@svgr/rollup": "^4.2.0",
     "clipboard": "^2.0.4",
     "ethereum-blockies": "^0.1.1",
