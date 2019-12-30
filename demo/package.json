@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "file:../node_modules/react",
-    "react-dom": "file:../node_modules/react-dom",
+    "react": "link:../node_modules/react",
+    "react-dom": "link:../node_modules/react-dom",
     "react-scripts": "3.3.0",
-    "rimble-ui": "file:..",
+    "rimble-ui": "link:..",
     "source-map-explorer": "^2.1.2"
   },
   "scripts": {
@@ -30,5 +30,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {}
 }
