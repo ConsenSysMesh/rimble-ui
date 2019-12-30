@@ -101,36 +101,6 @@ describe('Button disabled component sanity', () => {
   });
 });
 
-describe('Button Icon component sanity', () => {
-  it('matches default snapshot', () => {
-    const component = render(<Button icon={'Send'} />);
-    expect(component).toMatchSnapshot();
-  });
-
-  it('matches themed snapshot', () => {
-    const component = render(
-      <ThemeProvider theme={theme}>
-        <Button icon={'Send'} />
-      </ThemeProvider>
-    );
-    expect(component).toMatchSnapshot();
-  });
-});
-
-describe('Button Icon with position prop component sanity', () => {
-  it('matches default snapshot', () => {
-    const component = render(<Button icon={'Send'} iconpos={'right'} />);
-    expect(component).toMatchSnapshot();
-  });
-});
-
-describe('Button Icon only component sanity', () => {
-  it('matches default snapshot', () => {
-    const component = render(<Button icon={'MoreHoriz'} icononly />);
-    expect(component).toMatchSnapshot();
-  });
-});
-
 describe('Loading Button component sanity', () => {
   it('matches default snapshot', () => {
     const component = render(
@@ -138,13 +108,6 @@ describe('Loading Button component sanity', () => {
         <Loader color={'white'} />
       </Button>
     );
-    expect(component).toMatchSnapshot();
-  });
-});
-
-describe('Loading Button component sanity', () => {
-  it('matches default snapshot', () => {
-    const component = render(<Button icon={'MoreHoriz'} icononly />);
     expect(component).toMatchSnapshot();
   });
 });

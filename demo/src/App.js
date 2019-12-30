@@ -11,7 +11,6 @@ import {
   Flash,
   Flex,
   Heading,
-  Icon,
   Image,
   Input,
   Link,
@@ -35,6 +34,8 @@ import {
   ThemeProvider,
   theme,
 } from 'rimble-ui';
+
+import { Eth as IconEth } from '@rimble/icons/es/tokens';
 
 import BaseLineGrid from './components/BaseLineGrid';
 
@@ -141,15 +142,7 @@ const testComponents = props => (
       address="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2"
     />
     <Input />
-    <Icon name={'Info'} />
-    <Icon name={'Eth'} />
-    <Icon name={'Btc'} />
-    <Icon name={'Info'} color="primary" />
-    <Icon name={'Eth'} color="primary" />
-    <Icon name={'Btc'} color="primary" />
-    <Icon name={'Info'} color="green" />
-    <Icon name={'Eth'} color="green" />
-    <Icon name={'Btc'} color="green" />
+
     <Tooltip message="Your custom message">
       <span>hover me</span>
     </Tooltip>
@@ -260,6 +253,14 @@ const testComponents = props => (
     <QR value="test" />
     <Modal />
     <ToastMessage />
+    <ToastMessage message={"I am a message"} secondaryMessage={"I am secondary message"} actionText={"actionText"} actionHref={"http://google.com"} />
+    <ToastMessage colorTheme={"dark"} message={"I am a message"} secondaryMessage={"I am secondary message"} actionText={"actionText"} actionHref={"http://google.com"} />
+    <ToastMessage>
+      <Flex>
+        <IconEth mr={2} />
+        <Text>I am a child</Text>
+      </Flex>
+    </ToastMessage>
     <ToastMessage.Processing />
     <ToastMessage.Success />
     <ToastMessage.Failure />

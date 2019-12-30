@@ -22,7 +22,6 @@ export { default as Flash } from './Flash';
 export { default as Form } from './Form';
 export { default as Field } from './Field';
 export { default as Input } from './Input';
-export { default as Icon } from './Icon';
 export { default as Image } from './Image';
 export { default as Loader } from './Loader';
 export { default as Modal } from './Modal';

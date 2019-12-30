@@ -35,7 +35,6 @@ describe('ToastMessage component sanity', () => {
         secondaryMessage={'secondary message'}
         actionHref={'http://test.com'}
         actionText={'Link'}
-        icon={'InfoOutline'}
       />
     ).dive();
     expect(toastMessage).toMatchSnapshot();
@@ -50,7 +49,6 @@ describe('ToastMessage component sanity', () => {
           secondaryMessage={'secondary message'}
           actionHref={'http://test.com'}
           actionText={'Link'}
-          icon={'InfoOutline'}
         />
       </ThemeProvider>
     );
@@ -84,19 +82,6 @@ describe('ToastMessage component unit tests', () => {
     ).toBe('Lorem ipsum dolor sit.');
   });
 
-  it('displays icon', () => {
-    const toastMessage = shallow(<ToastMessage icon={'Info'} />).dive();
-    expect(toastMessage.exists('Icon')).toEqual(true);
-  });
-
-  it('creates action Link', () => {
-    // const toastMessage = shallow(
-    //   <ToastMessage actionHref={'http://link.com'} actionText={'link text'} />
-    // ).dive();
-    // expect(toastMessage.exists('Link')).toEqual(true);
-    // expect(toastMessage.find('Link').text()).toBe('link text');
-  });
-
   it('creates action Link', () => {
     const toastMessage = mount(
       <ThemeProvider theme={theme}>
@@ -106,7 +91,6 @@ describe('ToastMessage component unit tests', () => {
           secondaryMessage={'secondary message'}
           actionHref={'http://test.com'}
           actionText={'link text'}
-          icon={'InfoOutline'}
         />
       </ThemeProvider>
     );

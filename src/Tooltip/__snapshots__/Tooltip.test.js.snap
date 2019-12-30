@@ -67,7 +67,6 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
   display: inline-flex;
 }
 
-.c0 > div > svg,
 .c0 > span.button-text {
   position: relative;
   z-index: 1;
@@ -235,7 +234,6 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
   display: inline-flex;
 }
 
-.c0 > div > svg,
 .c0 > span.button-text {
   position: relative;
   z-index: 1;
@@ -1039,7 +1037,7 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                         },
                         "attrs": Array [],
                         "componentStyle": ComponentStyle {
-                          "componentId": "sc-ldxtDJ",
+                          "componentId": "sc-EHOje",
                           "isStatic": false,
                           "lastClassName": "c0",
                           "rules": Array [
@@ -1074,16 +1072,12 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
     display: inline-flex;
   }
 
-  ",
-                            "
-  > div > svg,
   > span.button-text {
     position: relative;
     z-index: 1;
     user-select: none;
     pointer-events: none;
   }
-
   > div > svg {
     display: block;
   }
@@ -1170,10 +1164,10 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                         },
                         "displayName": "Styled(styled.button)",
                         "foldedComponentIds": Array [
-                          "sc-dHThnQ",
+                          "sc-bxivhb",
                         ],
                         "render": [Function],
-                        "styledComponentId": "sc-ldxtDJ",
+                        "styledComponentId": "sc-EHOje",
                         "target": "button",
                         "toString": [Function],
                         "warnTooManyClasses": [Function],
@@ -1538,7 +1532,6 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
   display: inline-flex;
 }
 
-.c0 > div > svg,
 .c0 > span.button-text {
   position: relative;
   z-index: 1;
@@ -2212,7 +2205,6 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
   display: inline-flex;
 }
 
-.c0 > div > svg,
 .c0 > span.button-text {
   position: relative;
   z-index: 1;
@@ -3016,7 +3008,7 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                             },
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "sc-ldxtDJ",
+                              "componentId": "sc-EHOje",
                               "isStatic": false,
                               "lastClassName": "c0",
                               "rules": Array [
@@ -3051,16 +3043,12 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
     display: inline-flex;
   }
 
-  ",
-                                "
-  > div > svg,
   > span.button-text {
     position: relative;
     z-index: 1;
     user-select: none;
     pointer-events: none;
   }
-
   > div > svg {
     display: block;
   }
@@ -3147,10 +3135,10 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                             },
                             "displayName": "Styled(styled.button)",
                             "foldedComponentIds": Array [
-                              "sc-dHThnQ",
+                              "sc-bxivhb",
                             ],
                             "render": [Function],
-                            "styledComponentId": "sc-ldxtDJ",
+                            "styledComponentId": "sc-EHOje",
                             "target": "button",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],

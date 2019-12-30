@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import Button from '../Button';
-import Icon from '../Icon';
+import {
+  CloudDone as IconCloudDone,
+  CloudUpload as IconCloudUpload,
+} from '@rimble/icons/es/md';
 import Flex from '../Flex';
 
 const StyledFileInput = styled('input')`
@@ -80,10 +83,11 @@ class FileInput extends Component {
         />
         <Button onClick={this.handleClick}>
           <Flex alignItems={'center'}>
-            <Icon
-              name={this.state.files ? 'CloudDone' : 'CloudUpload'}
-              mr={2}
-            />
+            {this.state.files ? (
+              <IconCloudDone mr={2} />
+            ) : (
+              <IconCloudUpload mr={2} />
+            )}
             {this.state.buttonLabel}
           </Flex>
         </Button>

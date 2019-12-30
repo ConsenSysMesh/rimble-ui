@@ -32,15 +32,13 @@ const StyledOutlineButton = styled(StyledSolidButton)`
   }
 `;
 
-const OutlineButton = React.forwardRef(
-  ({ children, icon, iconpos, ...props }, ref) => {
-    return (
-      <StyledOutlineButton {...props} ref={ref}>
-        <ButtonBody icon={icon} iconpos={iconpos} children={children} />
-      </StyledOutlineButton>
-    );
-  }
-);
+const OutlineButton = React.forwardRef(({ children, ...props }, ref) => {
+  return (
+    <StyledOutlineButton {...props} ref={ref}>
+      <ButtonBody children={children} />
+    </StyledOutlineButton>
+  );
+});
 
 OutlineButton.defaultProps = {
   ...SolidButton.defaultProps,

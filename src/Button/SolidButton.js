@@ -42,15 +42,13 @@ const StyledSolidButton = styled(StyledButton)`
   }
 `;
 
-const SolidButton = React.forwardRef(
-  ({ children, icon, iconpos, ...props }, ref) => {
-    return (
-      <StyledSolidButton {...props} ref={ref}>
-        <ButtonBody icon={icon} iconpos={iconpos} children={children} />
-      </StyledSolidButton>
-    );
-  }
-);
+const SolidButton = React.forwardRef(({ children, ...props }, ref) => {
+  return (
+    <StyledSolidButton {...props} ref={ref}>
+      <ButtonBody children={children} />
+    </StyledSolidButton>
+  );
+});
 
 SolidButton.defaultProps = {
   ...Button.defaultProps,

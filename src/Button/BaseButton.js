@@ -4,7 +4,6 @@ import styled from 'styled-components';
 import { buttonStyle, variant, style } from 'styled-system';
 import { COMMON, LAYOUT, POSITION, BORDERS, TYPOGRAPHY } from '../constants';
 import theme from '../theme';
-import Icon from '../Icon';
 
 const buttonSize = variant({
   prop: 'size',
@@ -36,7 +35,7 @@ const StyledButton = styled('button')`
     align-items: center;
     justify-content: center;
 
-    padding: ${props => (props.icononly ? '0' : props.p)};
+    padding: ${props => props.p};
   }
 
   &:hover {
@@ -52,15 +51,12 @@ const StyledButton = styled('button')`
     display: inline-flex;
   }
 
-  ${'' /* with icon styles */}
-  > div > svg,
   > span.button-text {
     position: relative;
     z-index: 1;
     user-select: none;
     pointer-events: none;
   }
-
   > div > svg {
     display: block;
   }
@@ -88,19 +84,8 @@ const StyledButton = styled('button')`
   ${buttonSize}
 `;
 
-const ButtonBody = ({ children, icon, iconpos }) => {
-  if (icon) {
-    return (
-      <React.Fragment>
-        {icon && !iconpos && <Icon name={icon} />}
-        {icon && iconpos == 'left' && <Icon name={icon} />}
-        {children && <span className="button-text" children={children} />}
-        {icon && iconpos == 'right' && <Icon name={icon} />}
-      </React.Fragment>
-    );
-  } else {
-    return <span className="button-text" children={children} />;
-  }
+const ButtonBody = ({ children }) => {
+  return <span className="button-text" children={children} />;
 };
 
 const Button = React.forwardRef((props, ref) => {
@@ -155,18 +140,6 @@ Button.propTypes = {
    * Sets font and spacing size of button
    */
   size: PropTypes.oneOf(['small', 'medium', 'large']),
-  /**
-   * Sets icon of button
-   */
-  icon: PropTypes.string,
-  /**
-   * Sets icon position on button
-   */
-  iconpos: PropTypes.oneOf(['left', 'right']),
-  /**
-   * Sets padding on button with icon and no text
-   */
-  icononly: PropTypes.bool,
 };
 
 Button.displayName = 'Button';

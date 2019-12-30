@@ -4,7 +4,6 @@ import styled, { keyframes } from 'styled-components';
 import { timingFunctions, ellipsis } from 'polished';
 
 import Box from '../Box';
-import Icon from '../Icon';
 import Text from '../Text';
 import Link from '../Link';
 import Button from '../Button';
@@ -12,6 +11,7 @@ import Button from '../Button';
 import AnimatedIconProcessing from './AnimatedIconProcessing.js';
 import IconPositive from './IconPositive';
 import IconNegative from './IconNegative';
+import { Close as IconClose } from '@rimble/icons/es/md';
 
 const animInKeyframes = keyframes`
   from {
@@ -170,21 +170,11 @@ const ToastMessage = React.forwardRef(({ className, ...props }, ref) => {
     }
   };
 
-  const renderFigure = ({ variant, icon }) => {
+  const renderFigure = ({ variant }) => {
     if (variant && variant !== 'default') {
       return (
         <Box className={'iconBox'} flex={'0 0'} mr={2}>
           {renderVariantSvg(variant)}
-        </Box>
-      );
-    } else if (icon && icon.length) {
-      return (
-        <Box className={'iconBox'} flex={'0 0'} mr={2}>
-          <Icon
-            name={icon}
-            color={!themeIsDark ? 'primary' : 'white'}
-            size={'32px'}
-          />
         </Box>
       );
     } else {
@@ -199,13 +189,9 @@ const ToastMessage = React.forwardRef(({ className, ...props }, ref) => {
           onClick={closeFunction}
           className={'closeBttn'}
           size={'small'}
-          icononly
+          p={0}
         >
-          <Icon
-            name={'Close'}
-            size={'16px'}
-            color={!themeIsDark ? '#666' : '#afafaf'}
-          />
+          <IconClose size={'16px'} color={!themeIsDark ? '#666' : '#afafaf'} />
         </Button.Text>
       );
     } else {
@@ -268,7 +254,6 @@ class ProtoToastMessage extends Component {
     actionHref: '',
     actionText: '',
     variant: '',
-    icon: '',
     colorTheme: 'dark',
     closeElem: true,
   };
@@ -284,7 +269,6 @@ class ProtoToastMessage extends Component {
       actionHref,
       actionText,
       variant,
-      icon,
     } = this.props;
     return (
       <ToastMessage
@@ -318,7 +302,6 @@ class ToastProvider extends React.Component {
       secondaryMessage: '',
       actionHref: '',
       actionText: '',
-      icon: '',
       variant: 'default',
     },
     delay: 3000,
@@ -456,7 +439,6 @@ ToastMessage.defaultProps = {
   actionHref: '',
   actionText: '',
   variant: 'default',
-  icon: '',
   colorTheme: 'light',
   closeElem: false,
 };
@@ -482,10 +464,6 @@ ToastMessage.propTypes = {
    * Sets type of ToastMessage to display
    */
   variant: PropTypes.oneOf(['default', 'success', 'failure', 'processing']),
-  /**
-   * Sets icon to display
-   */
-  icon: PropTypes.string,
   /**
    * Sets background and text color
    */
