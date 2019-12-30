@@ -135,7 +135,21 @@ const testComponents = props => (
       quibusdam, assumenda officiis.
     </Text>
 
-    <Button size={'medium'}>Click me!</Button>
+    <Box>
+      <Button size={'medium'}>Click me!</Button>
+    </Box>
+    <Box>
+      <Button size={'medium'} my={2}>
+        <Flex alignItems={"center"}>
+          <IconEth mr={2} />Icon and text button
+        </Flex>
+      </Button>
+    </Box>
+    <Box>
+      <Button size={'small'} p={0}>
+        <IconEth />
+      </Button>
+    </Box>
     <Link>I'm a Link!</Link>
     <EthAddress address="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2" />
     <EthAddress
