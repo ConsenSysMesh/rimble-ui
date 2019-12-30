@@ -16,26 +16,6 @@ export const dark = () => (
   />
 )
 
-export const icon = () => (
-  <>
-    <ToastMessage
-      message={'Write update here [Required]'}
-      secondaryMessage={'Supporting information for update [Optional]'}
-      icon={'InfoOutline'}
-      actionText={'Link'}
-      actionHref={'#!'}
-    />
-    <ToastMessage
-      message={'Write update here [Required]'}
-      secondaryMessage={'Supporting information for update [Optional]'}
-      icon={'InfoOutline'}
-      actionText={'Link'}
-      actionHref={'#!'}
-      colorTheme={'dark'}
-    />
-  </>
-)
-
 export const success = () => (
   <>
     <ToastMessage
