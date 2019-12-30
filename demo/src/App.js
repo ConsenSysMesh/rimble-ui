@@ -35,7 +35,8 @@ import {
   theme,
 } from 'rimble-ui';
 
-import { Eth as IconEth } from '@rimble/icons/es/tokens';
+import { Accessibility as IconAccessibility, Info as IconInfo } from '@rimble/icons/es/md';
+import { Eth as IconEth, Btc as IconBtc, Dai as IconDai, Rdd as IconRdd } from '@rimble/icons/es/tokens';
 
 import BaseLineGrid from './components/BaseLineGrid';
 
@@ -142,6 +143,36 @@ const testComponents = props => (
       address="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2"
     />
     <Input />
+    <Box>
+      <Text>Plain icons</Text>
+      <IconAccessibility />
+      <IconInfo />
+      <IconEth />
+      <IconBtc />
+      <IconDai />
+      <IconRdd />
+    </Box>
+
+    <Box>
+      <Text>Colored icons</Text>
+      <IconAccessibility color={"green"} />
+      <IconInfo color={"green"} />
+      <IconEth color={"green"} />
+      <IconBtc color={"green"} />
+      <IconDai color={"green"} />
+      <IconRdd color={"green"} />
+    </Box>
+
+    <Box>
+      <Text>Theme-value color (primary)</Text>
+      <Text italic fontSize={1}>Icons do not have a default theme value</Text>
+      <IconAccessibility color={"primary"} />
+      <IconInfo color={"primary"} />
+      <IconEth color={"primary"} />
+      <IconBtc color={"primary"} />
+      <IconDai color={"primary"} />
+      <IconRdd color={"primary"} />
+    </Box>
 
     <Tooltip message="Your custom message">
       <span>hover me</span>
