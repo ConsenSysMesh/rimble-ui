@@ -209,33 +209,41 @@ const ToastMessage = React.forwardRef(({ className, ...props }, ref) => {
       {...props}
     >
       {renderFigure(props)}
-      <StyledTextCell flex={'1 1 auto'} mx={2}>
-        {props.message && (
-          <Text
-            fontSize={1}
-            fontWeight={3}
-            color={!themeIsDark ? 'black' : 'white'}
-          >
-            {props.message}
-          </Text>
-        )}
-        {props.secondaryMessage && (
-          <Text fontSize={1} color={!themeIsDark ? '#666' : '#afafaf'}>
-            {props.secondaryMessage}
-          </Text>
-        )}
-      </StyledTextCell>
-      <Text flex={'0 1'} mr={2} textAlign={'right'} lineHeight={'18px'}>
-        {props.actionText && props.actionHref && (
-          <Link
-            href={props.actionHref}
-            target={'_blank'}
-            color={!themeIsDark ? 'primary' : '#9387FF'}
-          >
-            {props.actionText}
-          </Link>
-        )}
-      </Text>
+      {(props.message || props.secondaryMessage) && (
+        <StyledTextCell flex={'1 1 auto'} mx={2}>
+          {props.message && (
+            <Text
+              fontSize={1}
+              fontWeight={3}
+              color={!themeIsDark ? 'black' : 'white'}
+            >
+              {props.message}
+            </Text>
+          )}
+          {props.secondaryMessage && (
+            <Text fontSize={1} color={!themeIsDark ? '#666' : '#afafaf'}>
+              {props.secondaryMessage}
+            </Text>
+          )}
+        </StyledTextCell>
+      )}
+
+      {props.actionText && (
+        <Text flex={'0 1'} mr={2} textAlign={'right'} lineHeight={'18px'}>
+          {props.actionText && props.actionHref && (
+            <Link
+              href={props.actionHref}
+              target={'_blank'}
+              color={!themeIsDark ? 'primary' : '#9387FF'}
+            >
+              {props.actionText}
+            </Link>
+          )}
+        </Text>
+      )}
+
+      {props.children && props.children}
+
       {renderCloseBttn(props)}
     </StyledToastMessage>
   );
@@ -434,7 +442,7 @@ ToastMessage.Processing = React.forwardRef((props, ref) => (
 ToastMessage.Provider = ToastProvider;
 
 ToastMessage.defaultProps = {
-  message: 'Write update here [Required]',
+  message: '',
   secondaryMessage: '',
   actionHref: '',
   actionText: '',
@@ -472,6 +480,13 @@ ToastMessage.propTypes = {
    * Allows ToastMessage to be closed by user
    */
   closeElem: PropTypes.bool,
+  /**
+   * Render children elements. Do not use with other content props.
+   */
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]),
 };
 
 ToastMessage.displayName = 'ToastMessage';

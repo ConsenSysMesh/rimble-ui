@@ -252,7 +252,7 @@ const testComponents = props => (
     <Loader />
     <QR value="test" />
     <Modal />
-    <ToastMessage />
+    <ToastMessage message={"I am a message"} />
     <ToastMessage message={"I am a message"} secondaryMessage={"I am secondary message"} actionText={"actionText"} actionHref={"http://google.com"} />
     <ToastMessage colorTheme={"dark"} message={"I am a message"} secondaryMessage={"I am secondary message"} actionText={"actionText"} actionHref={"http://google.com"} />
     <ToastMessage>
@@ -261,9 +261,18 @@ const testComponents = props => (
         <Text>I am a child</Text>
       </Flex>
     </ToastMessage>
-    <ToastMessage.Processing />
-    <ToastMessage.Success />
-    <ToastMessage.Failure />
+    <ToastMessage colorTheme={"dark"}>
+      <Flex>
+        <IconEth mr={2} color={"primaryw"} />
+        <Text color={"white"}>I am a child</Text>
+      </Flex>
+    </ToastMessage>
+    <ToastMessage.Processing message={"I am a processing message"} />
+    <ToastMessage.Processing colorTheme={"dark"} message={"I am a processing message"} />
+    <ToastMessage.Success message={"I am a success message"} />
+    <ToastMessage.Success colorTheme={"dark"} message={"I am a success message"} />
+    <ToastMessage.Failure message={"I am a failure message"} />
+    <ToastMessage.Failure colorTheme={"dark"} message={"I am a failure message"} />
     <Pill mr={'2'} mb={'3'}>
       {'Pending'}
     </Pill>
