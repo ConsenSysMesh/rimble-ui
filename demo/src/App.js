@@ -298,6 +298,7 @@ const testComponents = props => (
     <QR value="test" />
     <Modal />
     <ToastMessage message={"I am a message"} />
+    <ToastMessage secondaryMessage={"I am a secondary message"} />
     <ToastMessage message={"I am a message"} secondaryMessage={"I am secondary message"} actionText={"actionText"} actionHref={"http://google.com"} />
     <ToastMessage colorTheme={"dark"} message={"I am a message"} secondaryMessage={"I am secondary message"} actionText={"actionText"} actionHref={"http://google.com"} />
     <ToastMessage>

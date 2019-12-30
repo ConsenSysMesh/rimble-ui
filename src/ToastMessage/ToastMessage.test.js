@@ -8,22 +8,30 @@ describe('ToastMessage component sanity', () => {
   });
 
   it('matches generic snapshot', () => {
-    const toastMessage = shallow(<ToastMessage />).dive();
+    const toastMessage = shallow(
+      <ToastMessage message="test message" />
+    ).dive();
     expect(toastMessage).toMatchSnapshot();
   });
 
   it('matches processing snapshot', () => {
-    const toastMessage = shallow(<ToastMessage.Processing />).dive();
+    const toastMessage = shallow(
+      <ToastMessage.Processing message="test message" />
+    ).dive();
     expect(toastMessage).toMatchSnapshot();
   });
 
   it('matches success snapshot', () => {
-    const toastMessage = shallow(<ToastMessage.Success />).dive();
+    const toastMessage = shallow(
+      <ToastMessage.Success message="test message" />
+    ).dive();
     expect(toastMessage).toMatchSnapshot();
   });
 
   it('matches failure snapshot', () => {
-    const toastMessage = shallow(<ToastMessage.Failure />).dive();
+    const toastMessage = shallow(
+      <ToastMessage.Failure message="test message" />
+    ).dive();
     expect(toastMessage).toMatchSnapshot();
   });
 
@@ -68,18 +76,6 @@ describe('ToastMessage component unit tests', () => {
         .at(0)
         .text()
     ).toBe('Generic message inside Toast');
-  });
-
-  it('displays secondary message', () => {
-    const toastMessage = mount(
-      <ToastMessage secondaryMessage={'Lorem ipsum dolor sit.'} />
-    );
-    expect(
-      toastMessage
-        .find('Text')
-        .at(1)
-        .text()
-    ).toBe('Lorem ipsum dolor sit.');
   });
 
   it('creates action Link', () => {
