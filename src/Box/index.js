@@ -10,6 +10,7 @@ import {
   flexbox,
   border,
   typography,
+  shadow,
 } from 'styled-system';
 import propTypes from '@styled-system/prop-types';
 import theme from '../theme';
@@ -21,7 +22,8 @@ const styleProps = compose(
   position,
   flexbox,
   border,
-  typography
+  typography,
+  shadow
 );
 
 const StyledBox = styled('div')`
