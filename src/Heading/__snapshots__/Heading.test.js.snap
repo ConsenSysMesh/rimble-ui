@@ -5,7 +5,6 @@ exports[`Heading component sanity matches default snapshot 1`] = `
   box-sizing: border-box;
   font-weight: 600;
   line-height: 1.25;
-  margin: 0;
 }
 
 <h1
@@ -22,7 +21,6 @@ exports[`Heading component sanity matches themed snapshot 1`] = `
   box-sizing: border-box;
   font-weight: 600;
   line-height: 1.25;
-  margin: 0;
 }
 
 <h1
