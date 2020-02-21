@@ -1,20 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
 import Box from '../Box';
 import theme from '../theme';
 
-const caps = props => (props.caps ? { textTransform: 'uppercase' } : null);
-
-const italic = props => (props.italic ? { fontStyle: 'italic' } : null);
-
-const StyledText = styled(Box)`
-  ${caps}
-  ${italic}
-`;
-
 const Text = React.forwardRef(({ as, ...props }, ref) => (
-  <StyledText ref={ref} forwardedAs={as} {...props} />
+  <Box ref={ref} forwardedAs={as} {...props} />
 ));
 
 Text.defaultProps = {
