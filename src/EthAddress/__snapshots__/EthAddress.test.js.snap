@@ -43,6 +43,7 @@ exports[`EthAddress component sanity matches default snapshot 1`] = `
   background-color: #999;
   border: none;
   border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   --main-color: #4E3FCE;
   --contrast-color: #fff;
   font-size: 0.75rem;
@@ -182,6 +183,7 @@ exports[`EthAddress component sanity matches default snapshot 1`] = `
   background-color: #999;
   border: none;
   border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   --main-color: #4E3FCE;
   --contrast-color: #fff;
   font-size: 0.75rem;
@@ -316,6 +318,7 @@ exports[`EthAddress component sanity matches default snapshot 1`] = `
   border: 1px solid transparent;
   border-color: #ccc;
   border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
 }
 
 .c2 {
@@ -532,6 +535,7 @@ exports[`EthAddress component sanity matches default snapshot textLabels 1`] = `
   background-color: #999;
   border: none;
   border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   --main-color: #4E3FCE;
   --contrast-color: #fff;
   font-size: 0.75rem;
@@ -669,6 +673,7 @@ exports[`EthAddress component sanity matches default snapshot textLabels 1`] = `
   background-color: #999;
   border: none;
   border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   --main-color: #4E3FCE;
   --contrast-color: #fff;
   font-size: 0.75rem;
@@ -802,6 +807,7 @@ exports[`EthAddress component sanity matches default snapshot textLabels 1`] = `
   border: 1px solid transparent;
   border-color: #ccc;
   border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
 }
 
 .c2 {
@@ -997,6 +1003,7 @@ exports[`EthAddress component sanity matches themed snapshot 1`] = `
   background-color: #999;
   border: none;
   border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   --main-color: #4E3FCE;
   --contrast-color: #fff;
   font-size: 0.75rem;
@@ -1136,6 +1143,7 @@ exports[`EthAddress component sanity matches themed snapshot 1`] = `
   background-color: #999;
   border: none;
   border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   --main-color: #4E3FCE;
   --contrast-color: #fff;
   font-size: 0.75rem;
@@ -1270,6 +1278,7 @@ exports[`EthAddress component sanity matches themed snapshot 1`] = `
   border: 1px solid transparent;
   border-color: #ccc;
   border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
 }
 
 .c2 {
@@ -1486,6 +1495,7 @@ exports[`EthAddress component sanity matches themed snapshot textLabels 1`] = `
   background-color: #999;
   border: none;
   border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   --main-color: #4E3FCE;
   --contrast-color: #fff;
   font-size: 0.75rem;
@@ -1623,6 +1633,7 @@ exports[`EthAddress component sanity matches themed snapshot textLabels 1`] = `
   background-color: #999;
   border: none;
   border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   --main-color: #4E3FCE;
   --contrast-color: #fff;
   font-size: 0.75rem;
@@ -1756,6 +1767,7 @@ exports[`EthAddress component sanity matches themed snapshot textLabels 1`] = `
   border: 1px solid transparent;
   border-color: #ccc;
   border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
 }
 
 .c2 {

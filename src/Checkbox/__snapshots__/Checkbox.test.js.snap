@@ -117,7 +117,7 @@ exports[`Checkbox component sanity matches default snapshot 1`] = `
     </svg>
   </div>
   <div
-    class="c4 "
+    class="c4"
     color="text"
     font-size="1"
     font-weight="3"
@@ -242,7 +242,7 @@ exports[`Checkbox component sanity matches themed snapshot 1`] = `
     </svg>
   </div>
   <div
-    class="c4 "
+    class="c4"
     color="text"
     font-size="1"
     font-weight="3"

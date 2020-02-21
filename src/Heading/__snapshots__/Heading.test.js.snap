@@ -7,13 +7,14 @@ exports[`Heading component sanity matches default snapshot 1`] = `
   line-height: 1.25;
 }
 
-<h1
-  class="c0 "
+<div
+  as="h1"
+  class="c0"
   font-size=""
   font-weight="3"
 >
   Heading 1
-</h1>
+</div>
 `;
 
 exports[`Heading component sanity matches themed snapshot 1`] = `
@@ -23,11 +24,12 @@ exports[`Heading component sanity matches themed snapshot 1`] = `
   line-height: 1.25;
 }
 
-<h1
-  class="c0 "
+<div
+  as="h1"
+  class="c0"
   font-size=""
   font-weight="3"
 >
   Heading 1
-</h1>
+</div>
 `;

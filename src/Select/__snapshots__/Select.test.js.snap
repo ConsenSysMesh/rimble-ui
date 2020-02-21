@@ -267,6 +267,7 @@ exports[`Select component sanity matches themed snapshot 1`] = `
   border: 1px solid transparent;
   border-color: #ccc;
   border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
 }
 
 .c2 {

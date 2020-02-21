@@ -7,6 +7,7 @@ exports[`Card component sanity matches default snapshot 1`] = `
   background-color: #fff;
   border: 1px solid transparent;
   border-color: #eee;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
   padding: 32px;
 }
 
@@ -22,6 +23,7 @@ exports[`Card component sanity matches themed snapshot 1`] = `
   background-color: #fff;
   border: 1px solid transparent;
   border-color: #eee;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
   padding: 32px;
 }
 

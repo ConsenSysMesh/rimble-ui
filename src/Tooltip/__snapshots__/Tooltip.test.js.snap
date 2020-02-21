@@ -18,6 +18,7 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
   background-color: #999;
   border: none;
   border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   --main-color: #4E3FCE;
   --contrast-color: #fff;
 }
@@ -185,6 +186,7 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
   background-color: #999;
   border: none;
   border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   --main-color: #4E3FCE;
   --contrast-color: #fff;
 }
@@ -934,7 +936,7 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                         },
                         "attrs": Array [],
                         "componentStyle": ComponentStyle {
-                          "componentId": "sc-bGbZqa",
+                          "componentId": "sc-eiqfgm",
                           "isStatic": false,
                           "lastClassName": "c0",
                           "rules": Array [
@@ -1055,10 +1057,10 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                         "displayName": "Styled(Styled(styled.div))",
                         "foldedComponentIds": Array [
                           "sc-bdVaJa",
-                          "sc-gQORMK",
+                          "sc-jZIEzD",
                         ],
                         "render": [Function],
-                        "styledComponentId": "sc-bGbZqa",
+                        "styledComponentId": "sc-eiqfgm",
                         "target": "div",
                         "toString": [Function],
                         "usesTheme": true,
@@ -1322,6 +1324,7 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
   background-color: #999;
   border: none;
   border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   --main-color: #4E3FCE;
   --contrast-color: #fff;
 }
@@ -1891,6 +1894,7 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
   background-color: #999;
   border: none;
   border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   --main-color: #4E3FCE;
   --contrast-color: #fff;
 }
@@ -2640,7 +2644,7 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                             },
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "sc-bGbZqa",
+                              "componentId": "sc-eiqfgm",
                               "isStatic": false,
                               "lastClassName": "c0",
                               "rules": Array [
@@ -2761,10 +2765,10 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                             "displayName": "Styled(Styled(styled.div))",
                             "foldedComponentIds": Array [
                               "sc-bdVaJa",
-                              "sc-gQORMK",
+                              "sc-jZIEzD",
                             ],
                             "render": [Function],
-                            "styledComponentId": "sc-bGbZqa",
+                            "styledComponentId": "sc-eiqfgm",
                             "target": "div",
                             "toString": [Function],
                             "usesTheme": true,

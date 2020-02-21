@@ -1729,7 +1729,7 @@ exports[`Select component sanity matches themed snapshot 1`] = `
   width="100%"
 >
   <div
-    class="c2 "
+    class="c2"
     color="inherit"
     display="inherit"
     font-size="2"

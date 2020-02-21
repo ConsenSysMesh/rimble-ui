@@ -9,7 +9,7 @@ exports[`Text component sanity matches default snapshot 1`] = `
 }
 
 <div
-  class="c0 "
+  class="c0"
   font-size="2"
   font-weight="2"
 />
@@ -24,7 +24,7 @@ exports[`Text component sanity matches themed snapshot 1`] = `
 }
 
 <div
-  class="c0 "
+  class="c0"
   font-size="2"
   font-weight="2"
 />

@@ -77,6 +77,7 @@ exports[`Form component sanity matches themed snapshot 1`] = `
   border: 1px solid transparent;
   border-color: #ccc;
   border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
 }
 
 .c5 {
@@ -238,7 +239,7 @@ exports[`Form component sanity matches themed snapshot 1`] = `
     width="1"
   >
     <div
-      class="c2 "
+      class="c2"
       font-size="1"
       font-weight="3"
     >
@@ -286,7 +287,7 @@ exports[`Form component sanity matches themed snapshot 1`] = `
     width="1"
   >
     <div
-      class="c2 "
+      class="c2"
       font-size="1"
       font-weight="3"
     >
@@ -368,7 +369,7 @@ exports[`Form component sanity matches themed snapshot 1`] = `
       </svg>
     </div>
     <div
-      class="c9 "
+      class="c9"
       color="text"
       font-size="1"
       font-weight="3"
@@ -446,6 +447,7 @@ exports[`Form component sanity renders children elements 1`] = `
   border: 1px solid transparent;
   border-color: #ccc;
   border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
 }
 
 .c5 {
@@ -607,7 +609,7 @@ exports[`Form component sanity renders children elements 1`] = `
     width="1"
   >
     <div
-      class="c2 "
+      class="c2"
       font-size="1"
       font-weight="3"
     >
@@ -655,7 +657,7 @@ exports[`Form component sanity renders children elements 1`] = `
     width="1"
   >
     <div
-      class="c2 "
+      class="c2"
       font-size="1"
       font-weight="3"
     >
@@ -737,7 +739,7 @@ exports[`Form component sanity renders children elements 1`] = `
       </svg>
     </div>
     <div
-      class="c9 "
+      class="c9"
       color="text"
       font-size="1"
       font-weight="3"
