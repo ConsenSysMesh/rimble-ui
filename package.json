@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "@d8660091/react-popper": "^1.0.4",
+    "@rimble/icons": "^1.0.1",
     "@styled-system/prop-types": "^5.1.2",
     "@styled-system/theme-get": "^5.1.2",
     "@svgr/rollup": "^4.2.0",
@@ -31,7 +32,6 @@
     "mixin-deep": "^2.0.1",
     "polished": "^3.2.0",
     "qrcode.react": "^0.9.3",
-    "rmdi": "^1.0.1",
     "set-value": "^3.0.1",
     "styled-system": "^5.1.2"
   },
