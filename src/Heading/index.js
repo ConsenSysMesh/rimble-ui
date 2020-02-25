@@ -5,7 +5,6 @@ import Text from '../Text';
 const defaultProps = {
   fontWeight: 3,
   lineHeight: 'title',
-  m: 0,
 };
 
 const Heading = React.forwardRef(({ as, ...props }, ref) => (

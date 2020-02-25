@@ -2,12 +2,9 @@
 
 exports[`Image component sanity matches default snapshot 1`] = `
 .c0 {
-  height: auto;
-  max-width: 100%;
-}
-
-.c0 {
   box-sizing: border-box;
+  max-width: 100%;
+  height: auto;
 }
 
 <img
@@ -19,12 +16,9 @@ exports[`Image component sanity matches default snapshot 1`] = `
 
 exports[`Image component sanity matches themed snapshot 1`] = `
 .c0 {
-  height: auto;
-  max-width: 100%;
-}
-
-.c0 {
   box-sizing: border-box;
+  max-width: 100%;
+  height: auto;
 }
 
 <img

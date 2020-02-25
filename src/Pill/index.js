@@ -6,10 +6,9 @@ import Text from '../Text';
 const StyledPill = styled(Text)`
   & {
     position: relative;
-    background: none;
     overflow: hidden;
   }
-  &::before {
+  &::after {
     content: '';
     display: block;
     position: absolute;
@@ -18,8 +17,8 @@ const StyledPill = styled(Text)`
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: currentColor;
     opacity: 0.12;
+    background: currentColor;
     pointer-events: none;
   }
 `;
@@ -30,11 +29,11 @@ const Pill = React.forwardRef((props, ref) => (
 
 Pill.defaultProps = {
   color: 'dark-gray',
-  fontFamily: 'sansSerif',
+  bg: '#FFF',
   fontSize: 1,
   fontWeight: 2,
   lineHeight: 'solid',
-  height: 2,
+  height: '2rem',
   px: 3,
   py: 1,
   borderRadius: 3,
@@ -44,7 +43,6 @@ Pill.defaultProps = {
 
 Pill.propTypes = {
   ...Text.propTypes,
-  theme: PropTypes.object,
 };
 
 Pill.displayName = 'Pill';

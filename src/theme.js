@@ -1,5 +1,3 @@
-import { tint, shade } from 'polished';
-
 import baseColors, { blurple, blue, green, yellow, red } from './rimble-colors';
 
 // colors
@@ -60,6 +58,7 @@ const colors = {
 // theme.js
 const theme = {
   colors,
+  space: [0, 4, 8, 16, 32, 64, 128, 256],
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64],
   fontWeights: [0, 300, 400, 600, 700],
   letterSpacings: [0, 1, 2, 4, 8],
@@ -73,14 +72,7 @@ const theme = {
     sansSerif: '"Source Sans Pro", -apple-system, sans-serif',
     mono: '"Source Code Pro", -apple-system, monospace',
   },
-  space: [0, 4, 8, 16, 32, 64, 128, 256],
   radii: ['0', '4px', '8px', '16px', '32px'],
-  width: [0, 16, 32, 64, 128, 256],
-  minWidths: [0, 16, 32, 64, 128, 256],
-  maxWidths: [0, 16, 32, 64, 128, 256, 512, 768, 1024, 1536],
-  heights: [0, 16, 32, 64, 128, 256],
-  minHeights: [0, 16, 32, 64, 128, 256],
-  maxHeights: [0, 16, 32, 64, 128, 256],
   borders: [0, '1px solid transparent'],
   borderWidths: ['0', '1px', '2px', '4px'],
   breakpoints: ['40em', '52em', '64em'],
@@ -96,28 +88,28 @@ const theme = {
   zIndices: [0, 9, 99, 999, 9999],
   messageStyle: {
     base: {
-      color: shade(0.4, '#AAA'),
-      backgroundColor: tint(0.9, '#AAA'),
-      borderColor: '#AAA',
+      color: colors['mid-gray'],
+      backgroundColor: colors['near-white'],
+      borderColor: colors['light-silver'],
     },
     success: {
-      color: shade(0.4, green.base),
-      backgroundColor: tint(0.9, green.base),
+      color: green.dark[1],
+      backgroundColor: green.light[1],
       borderColor: green.base,
     },
     warning: {
-      color: shade(0.4, yellow.base),
-      backgroundColor: tint(0.9, yellow.base),
+      color: yellow.dark[1],
+      backgroundColor: yellow.light[1],
       borderColor: yellow.base,
     },
     danger: {
-      color: shade(0.4, red.base),
-      backgroundColor: tint(0.9, red.base),
+      color: red.dark[1],
+      backgroundColor: red.light[1],
       borderColor: red.base,
     },
     info: {
-      color: shade(0.4, blue.base),
-      backgroundColor: tint(0.9, blue.base),
+      color: blue.dark[1],
+      backgroundColor: blue.light[1],
       borderColor: blue.base,
     },
   },
