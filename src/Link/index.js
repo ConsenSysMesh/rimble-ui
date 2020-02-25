@@ -1,23 +1,25 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { style } from 'styled-system';
+import { system } from 'styled-system';
+import Box, { StyledBox } from '../Box';
 import theme from '../theme';
-import Text from '../Text';
 
-const hoverColor = style({
-  prop: 'hoverColor',
-  cssProperty: 'color',
-  key: 'colors',
+const hoverColor = system({
+  hoverColor: {
+    property: 'color',
+    scale: 'colors',
+  },
 });
 
-const activeColor = style({
-  prop: 'activeColor',
-  cssProperty: 'color',
-  key: 'colors',
+const activeColor = system({
+  activeColor: {
+    property: 'color',
+    scale: 'colors',
+  },
 });
 
-const StyledLink = styled(Text)`
+const StyledLink = styled(StyledBox)`
   & {
     text-decoration: none;
     cursor: pointer;
@@ -35,16 +37,10 @@ const StyledLink = styled(Text)`
 `;
 
 const Link = React.forwardRef((props, ref) => (
-  <StyledLink ref={ref} {...props} />
+  <StyledLink as={'a'} ref={ref} {...props} />
 ));
 
-StyledLink.defaultProps = {
-  theme,
-};
-
 Link.defaultProps = {
-  // theme,
-  forwardedAs: 'a',
   color: 'primary',
   hoverColor: 'primary-light',
   activeColor: 'primary-dark',
@@ -53,7 +49,7 @@ Link.defaultProps = {
 };
 
 Link.propTypes = {
-  ...Text.propTypes,
+  ...Box.PropTypes,
   theme: PropTypes.object,
 };
 

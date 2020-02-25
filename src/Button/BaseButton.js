@@ -2,8 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { buttonStyle, variant, style } from 'styled-system';
-import { COMMON, LAYOUT, POSITION, BORDERS, TYPOGRAPHY } from '../constants';
-import theme from '../theme';
+import { StyledBox } from '../Box';
 
 const buttonSize = variant({
   prop: 'size',
@@ -22,7 +21,7 @@ const contrastColor = style({
   key: 'colors',
 });
 
-const StyledButton = styled('button')`
+const StyledButton = styled(StyledBox)`
   & {
     -webkit-font-smoothing: antialiased;
     appearance: none;
@@ -34,7 +33,6 @@ const StyledButton = styled('button')`
     display: inline-flex;
     align-items: center;
     justify-content: center;
-
     padding: ${props => props.p};
   }
 
@@ -72,12 +70,6 @@ const StyledButton = styled('button')`
     margin: 0;
   }
 
-  ${COMMON}
-  ${LAYOUT}
-  ${POSITION}
-  ${BORDERS}
-  ${TYPOGRAPHY}
-
   ${mainColor}
   ${contrastColor}
   ${buttonStyle}
@@ -92,18 +84,11 @@ const Button = React.forwardRef((props, ref) => {
   return <StyledButton {...props} ref={ref} />;
 });
 
-StyledButton.defaultProps = {
-  theme,
-};
-
 Button.defaultProps = {
   // base props
-  // variant: 'primary',
-  // size: 'medium',
   position: 'relative',
   height: '3rem',
   minWidth: '3rem',
-  m: 0,
   px: 4,
   py: 0,
   fontSize: 'inherit',
@@ -119,11 +104,6 @@ Button.defaultProps = {
 };
 
 Button.propTypes = {
-  ...COMMON.propTypes,
-  ...LAYOUT.propTypes,
-  ...POSITION.propTypes,
-  ...BORDERS.propTypes,
-  ...TYPOGRAPHY.propTypes,
   /**
    * Sets theme
    */

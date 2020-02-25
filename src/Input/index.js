@@ -1,26 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-
-import { themeGet, opacity } from 'styled-system';
-import {
-  COMMON,
-  LAYOUT,
-  POSITION,
-  FLEXBOX,
-  BORDERS,
-  TYPOGRAPHY,
-} from '../constants';
-
-import theme from '../theme';
-import Box from '../Box';
+import { themeGet } from '@styled-system/theme-get';
 import FileInput from './FileInput';
-import { CheckCircle, Warning } from '@rimble/icons/es/md';
+import { StyledBox } from '../Box';
+import { CheckCircle, Warning } from '@rimble/icons';
 
-const StyledInput = styled.input`
+const StyledInput = styled(StyledBox).attrs(props => ({
+  as: 'input',
+}))`
   & {
     appearance: none;
-    box-sizing: border-box;
   }
 
   &:hover {
@@ -67,21 +57,16 @@ const StyledInput = styled.input`
     }
     &:valid ~ svg.icon-valid {
       visibility: visible;
+      color: ${themeGet('colors.success')};
     }
     &:invalid {
       border-color: ${themeGet('colors.danger')};
     }
     &:invalid ~ svg.icon-invalid {
       visibility: visible;
+      color: ${themeGet('colors.danger')};
     }
   }}
-
-  ${COMMON}
-  ${LAYOUT}
-  ${POSITION}
-  ${FLEXBOX}
-  ${BORDERS}
-  ${TYPOGRAPHY}
 `;
 
 const StyledIconWrapper = styled.div`
@@ -104,14 +89,11 @@ const StyledIconWrapper = styled.div`
 `;
 
 const WithValidationStyle = React.forwardRef((props, ref) => {
-  const colorSuccess = themeGet('colors.success')(props);
-  const colorError = themeGet('colors.danger')(props);
-
   return (
     <StyledIconWrapper>
       <StyledInput {...props} ref={ref} />
-      <CheckCircle className={'icon-valid'} color={colorSuccess} />
-      <Warning className={'icon-invalid'} color={colorError} />
+      <CheckCircle className={'icon-valid'} />
+      <Warning className={'icon-invalid'} />
     </StyledIconWrapper>
   );
 });
@@ -125,28 +107,25 @@ const Input = React.forwardRef((props, ref) => {
 });
 
 const defaultProps = {
-  theme,
   color: 'text',
   bg: 'background',
-  fontFamily: 'sansSerif',
   fontSize: '1rem',
-  lineHeight: 'solid',
+  lineHeight: 'initial',
   height: '3rem',
   p: 3,
   border: 1,
-  borderColor: 'grey',
+  borderColor: 'moon-gray',
   borderRadius: 1,
   boxShadow: 1,
 };
 
 Input.WithValidationStyle = WithValidationStyle;
 
-Input.defaultProps = defaultProps;
 WithValidationStyle.defaultProps = defaultProps;
 StyledInput.defaultProps = defaultProps;
+Input.defaultProps = defaultProps;
 
 Input.propTypes = {
-  ...Box.propTypes,
   theme: PropTypes.object,
 };
 

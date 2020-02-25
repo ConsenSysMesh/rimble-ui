@@ -35,9 +35,15 @@ import {
   theme,
 } from 'rimble-ui';
 
-import { Accessibility as IconAccessibility, Info as IconInfo } from '@rimble/icons/es/md';
-import { Eth as IconEth, Btc as IconBtc, Dai as IconDai, Rdd as IconRdd } from '@rimble/icons/es/tokens';
-
+import {
+  Accessibility as IconAccessibility,
+  Info as IconInfo,
+  Eth as IconEth,
+  Btc as IconBtc,
+  Dai as IconDai,
+  Rdd as IconRdd,
+} from '@rimble/icons';
+import TestForm from './components/TestForm';
 import BaseLineGrid from './components/BaseLineGrid';
 
 const testTheme = {
@@ -47,6 +53,12 @@ const testTheme = {
     text: 'black',
     background: 'white',
     primary: 'crimson',
+    'primary-light': 'red',
+    'primary-dark': 'darkred',
+    success: 'green',
+    warning: 'orange',
+    danger: 'orangered',
+    info: 'blue',
   },
 };
 
@@ -140,8 +152,9 @@ const testComponents = props => (
     </Box>
     <Box>
       <Button size={'medium'} my={2}>
-        <Flex alignItems={"center"}>
-          <IconEth mr={2} />Icon and text button
+        <Flex alignItems={'center'}>
+          <IconEth mr={2} />
+          Icon and text button
         </Flex>
       </Button>
     </Box>
@@ -156,7 +169,11 @@ const testComponents = props => (
       textLabels
       address="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2"
     />
-    <Input />
+    <Card my={4}>
+      <TestForm />
+    </Card>
+    <Input placeholder={'placeholder'} />
+
     <Box>
       <Text>Plain icons</Text>
       <IconAccessibility />
@@ -169,23 +186,25 @@ const testComponents = props => (
 
     <Box>
       <Text>Colored icons</Text>
-      <IconAccessibility color={"green"} />
-      <IconInfo color={"green"} />
-      <IconEth color={"green"} />
-      <IconBtc color={"green"} />
-      <IconDai color={"green"} />
-      <IconRdd color={"green"} />
+      <IconAccessibility color={'green'} />
+      <IconInfo color={'green'} />
+      <IconEth color={'green'} />
+      <IconBtc color={'green'} />
+      <IconDai color={'green'} />
+      <IconRdd color={'green'} />
     </Box>
 
     <Box>
       <Text>Theme-value color (primary)</Text>
-      <Text italic fontSize={1}>Icons do not have a default theme value</Text>
-      <IconAccessibility color={"primary"} />
-      <IconInfo color={"primary"} />
-      <IconEth color={"primary"} />
-      <IconBtc color={"primary"} />
-      <IconDai color={"primary"} />
-      <IconRdd color={"primary"} />
+      <Text italic fontSize={1}>
+        Icons do not have a default theme value
+      </Text>
+      <IconAccessibility color={'primary'} />
+      <IconInfo color={'primary'} />
+      <IconEth color={'primary'} />
+      <IconBtc color={'primary'} />
+      <IconDai color={'primary'} />
+      <IconRdd color={'primary'} />
     </Box>
 
     <Tooltip message="Your custom message">
@@ -204,7 +223,7 @@ const testComponents = props => (
         spotcolor: '#4E3FCE',
       }}
     />
-    <Avatar />
+    <Avatar src={'https://source.unsplash.com/128x128/?people,face,portrait'} />
     <Avatar size="small" />
     <Avatar size="medium" />
     <Avatar size="large" />
@@ -274,7 +293,48 @@ const testComponents = props => (
     <Checkbox checked label="Checkbox checked" readOnly />
     <Checkbox disabled label="Checkbox disabled" readOnly />
     <Checkbox disabled checked label="Checkbox checked disabled" readOnly />
-    <Box />
+
+    <Box my={4} opacity={0.6}>
+      <Flex>
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+      </Flex>
+      <Flex>
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+      </Flex>
+      <Flex>
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+      </Flex>
+      <Flex>
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+      </Flex>
+    </Box>
+
     <Card m={3} />
     <Card mx="auto" px="4" color="primary">
       <Heading mb={3}>Heading</Heading>
@@ -284,10 +344,12 @@ const testComponents = props => (
         architecto nemo quos alias sunt voluptate impedit, facilis sequi
         tempore. Amet!
       </Text>
-      <Button mr={3}>Accept</Button>
-      <Button.Outline>Cancel</Button.Outline>
+      <Flex>
+        <Button mr={3}>Accept</Button>
+        <Button.Outline>Cancel</Button.Outline>
+        <Button.Text ml={'auto'}>Skip</Button.Text>
+      </Flex>
     </Card>
-    <Flex />
     <Table />
     <Image src="https://source.unsplash.com/random/1280x720" />
     <MetaMaskButton>Connect with MetaMask</MetaMaskButton>
@@ -297,55 +359,16 @@ const testComponents = props => (
     <Loader />
     <QR value="test" />
     <Modal />
-    <ToastMessage message={"I am a message"} />
-    <ToastMessage secondaryMessage={"I am a secondary message"} />
-    <ToastMessage message={"I am a message"} secondaryMessage={"I am secondary message"} actionText={"actionText"} actionHref={"http://google.com"} />
-    <ToastMessage colorTheme={"dark"} message={"I am a message"} secondaryMessage={"I am secondary message"} actionText={"actionText"} actionHref={"http://google.com"} />
-    <ToastMessage>
-      <Flex>
-        <IconEth mr={2} />
-        <Text>I am a child</Text>
-      </Flex>
-    </ToastMessage>
-    <ToastMessage colorTheme={"dark"}>
-      <Flex>
-        <IconEth mr={2} color={"primaryw"} />
-        <Text color={"white"}>I am a child</Text>
-      </Flex>
-    </ToastMessage>
-    <ToastMessage.Processing message={"I am a processing message"} />
-    <ToastMessage.Processing colorTheme={"dark"} message={"I am a processing message"} />
-    <ToastMessage.Success message={"I am a success message"} />
-    <ToastMessage.Success colorTheme={"dark"} message={"I am a success message"} />
-    <ToastMessage.Failure message={"I am a failure message"} />
-    <ToastMessage.Failure colorTheme={"dark"} message={"I am a failure message"} />
-    <Pill mr={'2'} mb={'3'}>
-      {'Pending'}
-    </Pill>
-    <Pill selected={true} mr={'2'} mb={'3'}>
-      {'Pending'}
-    </Pill>
-
-    <Pill color={'primary'} mr={'2'} mb={'3'}>
-      {'Pending'}
-    </Pill>
-    <Pill selected={true} color={'primary'} mr={'2'} mb={'3'}>
-      {'Pending'}
-    </Pill>
-
-    <Pill color={'red'} mr={'2'} mb={'3'}>
-      {'Pending'}
-    </Pill>
-    <Pill selected={true} color={'red'} mr={'2'} mb={'3'}>
-      {'Pending'}
-    </Pill>
-
-    <Pill color={'blue'} mr={'2'} mb={'3'}>
-      {'Pending'}
-    </Pill>
-    <Pill selected={true} color={'blue'} mr={'2'} mb={'3'}>
-      {'Pending'}
-    </Pill>
+    <ToastMessage />
+    <ToastMessage.Processing />
+    <ToastMessage.Success />
+    <ToastMessage.Failure />
+    <Pill>{'Pill Text'}</Pill>
+    <Pill color={'success'}>{'Pill Text'}</Pill>
+    <Pill color={'warning'}>{'Pill Text'}</Pill>
+    <Pill color={'danger'}>{'Pill Text'}</Pill>
+    <Pill color={'info'}>{'Pill Text'}</Pill>
+    <Pill color={'#4B0082'}>{'Pill Text'}</Pill>
     <Flash>
       I am a Flash with a <Flash.Link>Link</Flash.Link>
     </Flash>

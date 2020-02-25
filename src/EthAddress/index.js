@@ -61,8 +61,7 @@ const AddressQrModal = ({ isOpen, hide, address }) => {
       <Portal>
         <ModalBackdrop>
           <Card
-            width={1}
-            maxWidth={6}
+            maxWidth={'100%'}
             bg={colors.background}
             color={colors.foreground}
             border={'none'}
@@ -126,6 +125,8 @@ const AddressQrModal = ({ isOpen, hide, address }) => {
                       readOnly
                       value={address}
                       width={1}
+                      p={'auto'}
+                      pl={3}
                       pr={'5rem'}
                       fontWeight={3}
                     />
@@ -219,7 +220,9 @@ class EthAddress extends Component {
           ref={this.inputRef}
           width={1}
           fontWeight={3}
-          pr={this.props.textLabels ? '13rem' : '6rem'}
+          p={'auto'}
+          pl={3}
+          pr={this.props.textLabels ? '12rem' : '6rem'}
         />
 
         <Flex position={'absolute'} right={0} mr={2}>

@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MetaMaskButton component sanity matches default snapshot 1`] = `
-<Styled(Styled(styled.button))
+<Styled(Styled(Styled(styled.div)))
   bg="silver"
   border="none"
   borderRadius={1}
@@ -13,7 +13,6 @@ exports[`MetaMaskButton component sanity matches default snapshot 1`] = `
   fontWeight={3}
   height="3rem"
   lineHeight={1}
-  m={0}
   mainColor="primary"
   minWidth="3rem"
   position="relative"
@@ -144,14 +143,6 @@ exports[`MetaMaskButton component sanity matches default snapshot 1`] = `
         "sansSerif": "\\"Source Sans Pro\\", -apple-system, sans-serif",
         "serif": "athelas, georgia, times, serif",
       },
-      "heights": Array [
-        0,
-        16,
-        32,
-        64,
-        128,
-        256,
-      ],
       "letterSpacings": Array [
         0,
         1,
@@ -164,31 +155,11 @@ exports[`MetaMaskButton component sanity matches default snapshot 1`] = `
         "solid": 1,
         "title": 1.25,
       },
-      "maxHeights": Array [
-        0,
-        16,
-        32,
-        64,
-        128,
-        256,
-      ],
-      "maxWidths": Array [
-        0,
-        16,
-        32,
-        64,
-        128,
-        256,
-        512,
-        768,
-        1024,
-        1536,
-      ],
       "messageStyle": Object {
         "base": Object {
-          "backgroundColor": "#f6f6f6",
-          "borderColor": "#AAA",
-          "color": "#666",
+          "backgroundColor": "#f4f4f4",
+          "borderColor": "#aaa",
+          "color": "#555",
         },
         "danger": Object {
           "backgroundColor": "#fbe9e7",
@@ -211,22 +182,6 @@ exports[`MetaMaskButton component sanity matches default snapshot 1`] = `
           "color": "#975e18",
         },
       },
-      "minHeights": Array [
-        0,
-        16,
-        32,
-        64,
-        128,
-        256,
-      ],
-      "minWidths": Array [
-        0,
-        16,
-        32,
-        64,
-        128,
-        256,
-      ],
       "opacity": Object {
         "disabled": 0.4,
       },
@@ -253,14 +208,6 @@ exports[`MetaMaskButton component sanity matches default snapshot 1`] = `
         128,
         256,
       ],
-      "width": Array [
-        0,
-        16,
-        32,
-        64,
-        128,
-        256,
-      ],
       "zIndices": Array [
         0,
         9,
@@ -273,7 +220,7 @@ exports[`MetaMaskButton component sanity matches default snapshot 1`] = `
   width="auto"
 >
   <ButtonBody />
-</Styled(Styled(styled.button))>
+</Styled(Styled(Styled(styled.div)))>
 `;
 
 exports[`MetaMaskButton component sanity matches themed snapshot 1`] = `
@@ -403,14 +350,6 @@ exports[`MetaMaskButton component sanity matches themed snapshot 1`] = `
         "sansSerif": "\\"Source Sans Pro\\", -apple-system, sans-serif",
         "serif": "athelas, georgia, times, serif",
       },
-      "heights": Array [
-        0,
-        16,
-        32,
-        64,
-        128,
-        256,
-      ],
       "letterSpacings": Array [
         0,
         1,
@@ -423,31 +362,11 @@ exports[`MetaMaskButton component sanity matches themed snapshot 1`] = `
         "solid": 1,
         "title": 1.25,
       },
-      "maxHeights": Array [
-        0,
-        16,
-        32,
-        64,
-        128,
-        256,
-      ],
-      "maxWidths": Array [
-        0,
-        16,
-        32,
-        64,
-        128,
-        256,
-        512,
-        768,
-        1024,
-        1536,
-      ],
       "messageStyle": Object {
         "base": Object {
-          "backgroundColor": "#f6f6f6",
-          "borderColor": "#AAA",
-          "color": "#666",
+          "backgroundColor": "#f4f4f4",
+          "borderColor": "#aaa",
+          "color": "#555",
         },
         "danger": Object {
           "backgroundColor": "#fbe9e7",
@@ -470,22 +389,6 @@ exports[`MetaMaskButton component sanity matches themed snapshot 1`] = `
           "color": "#975e18",
         },
       },
-      "minHeights": Array [
-        0,
-        16,
-        32,
-        64,
-        128,
-        256,
-      ],
-      "minWidths": Array [
-        0,
-        16,
-        32,
-        64,
-        128,
-        256,
-      ],
       "opacity": Object {
         "disabled": 0.4,
       },
@@ -506,14 +409,6 @@ exports[`MetaMaskButton component sanity matches themed snapshot 1`] = `
         0,
         4,
         8,
-        16,
-        32,
-        64,
-        128,
-        256,
-      ],
-      "width": Array [
-        0,
         16,
         32,
         64,
@@ -542,7 +437,6 @@ exports[`MetaMaskButton component sanity matches themed snapshot 1`] = `
     fontWeight={3}
     height="3rem"
     lineHeight={1}
-    m={0}
     mainColor="primary"
     minWidth="3rem"
     position="relative"

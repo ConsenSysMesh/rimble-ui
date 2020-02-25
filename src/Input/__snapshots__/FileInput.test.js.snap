@@ -1,24 +1,36 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`File Input component sanity matches default snapshot 1`] = `
+.c3 {
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .c2 {
-  color: #fff;
-  background-color: #999;
-  margin: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 32px;
-  padding-right: 32px;
+  box-sizing: border-box;
+  position: relative;
   height: 3rem;
   min-width: 3rem;
-  position: relative;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: inherit;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-weight: 600;
+  line-height: 1;
+  color: #fff;
+  background-color: #999;
   border: none;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  font-size: inherit;
-  font-weight: 600;
-  line-height: 1;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
 }
@@ -140,21 +152,6 @@ exports[`File Input component sanity matches default snapshot 1`] = `
   color: inherit;
 }
 
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c3 {
-  box-sizing: border-box;
-}
-
 .c1 {
   width: 0;
   height: 0;
@@ -177,7 +174,7 @@ exports[`File Input component sanity matches default snapshot 1`] = `
     class="c1"
     type="file"
   />
-  <button
+  <div
     class="c2"
     color="white"
     font-family="sansSerif"
@@ -212,29 +209,41 @@ exports[`File Input component sanity matches default snapshot 1`] = `
         Choose file…
       </div>
     </span>
-  </button>
+  </div>
 </label>
 `;
 
 exports[`File Input component sanity matches themed snapshot 1`] = `
+.c3 {
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .c2 {
-  color: #fff;
-  background-color: #999;
-  margin: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 32px;
-  padding-right: 32px;
+  box-sizing: border-box;
+  position: relative;
   height: 3rem;
   min-width: 3rem;
-  position: relative;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: inherit;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-weight: 600;
+  line-height: 1;
+  color: #fff;
+  background-color: #999;
   border: none;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  font-size: inherit;
-  font-weight: 600;
-  line-height: 1;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
 }
@@ -356,21 +365,6 @@ exports[`File Input component sanity matches themed snapshot 1`] = `
   color: inherit;
 }
 
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c3 {
-  box-sizing: border-box;
-}
-
 .c1 {
   width: 0;
   height: 0;
@@ -393,7 +387,7 @@ exports[`File Input component sanity matches themed snapshot 1`] = `
     class="c1"
     type="file"
   />
-  <button
+  <div
     class="c2"
     color="white"
     font-family="sansSerif"
@@ -428,6 +422,6 @@ exports[`File Input component sanity matches themed snapshot 1`] = `
         Choose file…
       </div>
     </span>
-  </button>
+  </div>
 </label>
 `;

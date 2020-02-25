@@ -2,16 +2,13 @@
 
 exports[`Card component sanity matches default snapshot 1`] = `
 .c0 {
-  background-color: #fff;
-  padding: 32px;
+  box-sizing: border-box;
   position: relative;
+  background-color: #fff;
   border: 1px solid transparent;
   border-color: #eee;
   box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
-}
-
-.c0 {
-  box-sizing: border-box;
+  padding: 32px;
 }
 
 <div
@@ -21,16 +18,13 @@ exports[`Card component sanity matches default snapshot 1`] = `
 
 exports[`Card component sanity matches themed snapshot 1`] = `
 .c0 {
-  background-color: #fff;
-  padding: 32px;
+  box-sizing: border-box;
   position: relative;
+  background-color: #fff;
   border: 1px solid transparent;
   border-color: #eee;
   box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
-}
-
-.c0 {
-  box-sizing: border-box;
+  padding: 32px;
 }
 
 <div

@@ -41,6 +41,7 @@ const Select = React.forwardRef(
           children={renderChildren()}
           ref={ref}
           width={'100%'}
+          p={'auto'}
           py={0}
           pl={3}
           pr={'3rem'}
