@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { themeGet } from '@styled-system/theme-get';
-import { CheckCircle, Warning } from '@rimble/icons';
+import { CheckCircle, Warning } from '@rimble/icons/es/md';
 import FileInput from './FileInput';
 import { StyledBox } from '../Box';
 
@@ -92,8 +92,8 @@ const WithValidationStyle = React.forwardRef((props, ref) => {
   return (
     <StyledIconWrapper>
       <StyledInput {...props} ref={ref} />
-      <CheckCircle className={'icon-valid'} color={colorSuccess} />
-      <Warning className={'icon-invalid'} color={colorError} />
+      <CheckCircle className={'icon-valid'} />
+      <Warning className={'icon-invalid'} />
     </StyledIconWrapper>
   );
 });

@@ -103,7 +103,10 @@
     },
     "transformIgnorePatterns": [
       "<rootDir>/node_modules/(?!(@rimble)/)"
-    ]
+    ],
+    "moduleNameMapper": {
+      "^styled-components$": "<rootDir>/node_modules/styled-components"
+    }
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json,scss,css}": [
