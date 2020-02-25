@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { themeGet } from 'styled-system';
-import { RadioButtonChecked, RadioButtonUnchecked } from '@rimble/icons/es/md/';
+import { themeGet } from '@styled-system/theme-get';
+import { RadioButtonChecked, RadioButtonUnchecked } from '@rimble/icons';
 import theme from '../theme';
 import Box from '../Box';
 import Text from '../Text';

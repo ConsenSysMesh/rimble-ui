@@ -2,14 +2,11 @@
 
 exports[`Flex component sanity matches default snapshot 1`] = `
 .c0 {
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-}
-
-.c0 {
-  box-sizing: border-box;
 }
 
 <div
@@ -20,14 +17,11 @@ exports[`Flex component sanity matches default snapshot 1`] = `
 
 exports[`Flex component sanity matches themed snapshot 1`] = `
 .c0 {
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-}
-
-.c0 {
-  box-sizing: border-box;
 }
 
 <div

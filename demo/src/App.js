@@ -36,6 +36,7 @@ import {
   theme,
 } from 'rimble-ui';
 
+import TestForm from './components/TestForm';
 import BaseLineGrid from './components/BaseLineGrid';
 
 const testTheme = {
@@ -45,6 +46,12 @@ const testTheme = {
     text: 'black',
     background: 'white',
     primary: 'crimson',
+    'primary-light': 'red',
+    'primary-dark': 'darkred',
+    success: 'green',
+    warning: 'orange',
+    danger: 'orangered',
+    info: 'blue',
   },
 };
 
@@ -140,7 +147,10 @@ const testComponents = props => (
       textLabels
       address="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2"
     />
-    <Input />
+    <Card my={4}>
+      <TestForm />
+    </Card>
+    <Input placeholder={'placeholder'} />
     <Icon name={'Info'} />
     <Icon name={'Eth'} />
     <Icon name={'Btc'} />
@@ -166,7 +176,7 @@ const testComponents = props => (
         spotcolor: '#4E3FCE',
       }}
     />
-    <Avatar />
+    <Avatar src={'https://source.unsplash.com/128x128/?people,face,portrait'} />
     <Avatar size="small" />
     <Avatar size="medium" />
     <Avatar size="large" />
@@ -236,7 +246,48 @@ const testComponents = props => (
     <Checkbox checked label="Checkbox checked" readOnly />
     <Checkbox disabled label="Checkbox disabled" readOnly />
     <Checkbox disabled checked label="Checkbox checked disabled" readOnly />
-    <Box />
+
+    <Box my={4} opacity={.6}>
+      <Flex>
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+      </Flex>
+      <Flex>
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+      </Flex>
+      <Flex>
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+      </Flex>
+      <Flex>
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+      </Flex>
+    </Box>
+
     <Card m={3} />
     <Card mx="auto" px="4" color="primary">
       <Heading mb={3}>Heading</Heading>
@@ -246,10 +297,12 @@ const testComponents = props => (
         architecto nemo quos alias sunt voluptate impedit, facilis sequi
         tempore. Amet!
       </Text>
-      <Button mr={3}>Accept</Button>
-      <Button.Outline>Cancel</Button.Outline>
+      <Flex>
+        <Button mr={3}>Accept</Button>
+        <Button.Outline>Cancel</Button.Outline>
+        <Button.Text ml={'auto'}>Skip</Button.Text>
+      </Flex>
     </Card>
-    <Flex />
     <Table />
     <Image src="https://source.unsplash.com/random/1280x720" />
     <MetaMaskButton>Connect with MetaMask</MetaMaskButton>
@@ -263,33 +316,12 @@ const testComponents = props => (
     <ToastMessage.Processing />
     <ToastMessage.Success />
     <ToastMessage.Failure />
-    <Pill mr={'2'} mb={'3'}>
-      {'Pending'}
-    </Pill>
-    <Pill selected={true} mr={'2'} mb={'3'}>
-      {'Pending'}
-    </Pill>
-
-    <Pill color={'primary'} mr={'2'} mb={'3'}>
-      {'Pending'}
-    </Pill>
-    <Pill selected={true} color={'primary'} mr={'2'} mb={'3'}>
-      {'Pending'}
-    </Pill>
-
-    <Pill color={'red'} mr={'2'} mb={'3'}>
-      {'Pending'}
-    </Pill>
-    <Pill selected={true} color={'red'} mr={'2'} mb={'3'}>
-      {'Pending'}
-    </Pill>
-
-    <Pill color={'blue'} mr={'2'} mb={'3'}>
-      {'Pending'}
-    </Pill>
-    <Pill selected={true} color={'blue'} mr={'2'} mb={'3'}>
-      {'Pending'}
-    </Pill>
+    <Pill>{'Pill Text'}</Pill>
+    <Pill color={'success'}>{'Pill Text'}</Pill>
+    <Pill color={'warning'}>{'Pill Text'}</Pill>
+    <Pill color={'danger'}>{'Pill Text'}</Pill>
+    <Pill color={'info'}>{'Pill Text'}</Pill>
+    <Pill color={'#4B0082'}>{'Pill Text'}</Pill>
     <Flash>
       I am a Flash with a <Flash.Link>Link</Flash.Link>
     </Flash>
