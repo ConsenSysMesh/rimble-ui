@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { themeGet } from '@styled-system/theme-get';
 import FileInput from './FileInput';
 import { StyledBox } from '../Box';
-import { CheckCircle, Warning } from '@rimble/icons';
+import { CheckCircle, Warning } from '@rimble/icons/es/md';
 
 const StyledInput = styled(StyledBox).attrs(props => ({
   as: 'input',

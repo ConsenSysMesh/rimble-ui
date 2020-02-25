@@ -1,6 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Checkbox component sanity matches default snapshot 1`] = `
+.c4 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  color: inherit;
+}
+
+.c5 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  color: inherit;
+}
+
 .c0 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -19,7 +33,7 @@ exports[`Checkbox component sanity matches default snapshot 1`] = `
   box-sizing: border-box;
 }
 
-.c4 {
+.c6 {
   box-sizing: border-box;
   color: #3F3D4B;
   font-size: 14px;
@@ -92,32 +106,44 @@ exports[`Checkbox component sanity matches default snapshot 1`] = `
       type="checkbox"
     />
     <svg
-      class=""
+      class="c4"
+      color="inherit"
       fill="currentcolor"
       height="24"
       name="checked"
+      size="24"
       viewBox="0 0 24 24"
       width="24"
     >
       <path
-        d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+        d="M0 0h24v24H0z"
+        fill="none"
+      />
+      <path
+        d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
       />
     </svg>
     <svg
-      class=""
+      class="c5"
+      color="inherit"
       fill="currentcolor"
       height="24"
       name="unchecked"
+      size="24"
       viewBox="0 0 24 24"
       width="24"
     >
       <path
         d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
       />
+      <path
+        d="M0 0h24v24H0z"
+        fill="none"
+      />
     </svg>
   </div>
   <div
-    class="c4"
+    class="c6"
     color="text"
     font-size="1"
     font-weight="3"
@@ -126,6 +152,20 @@ exports[`Checkbox component sanity matches default snapshot 1`] = `
 `;
 
 exports[`Checkbox component sanity matches themed snapshot 1`] = `
+.c4 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  color: inherit;
+}
+
+.c5 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  color: inherit;
+}
+
 .c0 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -144,7 +184,7 @@ exports[`Checkbox component sanity matches themed snapshot 1`] = `
   box-sizing: border-box;
 }
 
-.c4 {
+.c6 {
   box-sizing: border-box;
   color: #3F3D4B;
   font-size: 14px;
@@ -217,32 +257,44 @@ exports[`Checkbox component sanity matches themed snapshot 1`] = `
       type="checkbox"
     />
     <svg
-      class=""
+      class="c4"
+      color="inherit"
       fill="currentcolor"
       height="24"
       name="checked"
+      size="24"
       viewBox="0 0 24 24"
       width="24"
     >
       <path
-        d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+        d="M0 0h24v24H0z"
+        fill="none"
+      />
+      <path
+        d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
       />
     </svg>
     <svg
-      class=""
+      class="c5"
+      color="inherit"
       fill="currentcolor"
       height="24"
       name="unchecked"
+      size="24"
       viewBox="0 0 24 24"
       width="24"
     >
       <path
         d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
       />
+      <path
+        d="M0 0h24v24H0z"
+        fill="none"
+      />
     </svg>
   </div>
   <div
-    class="c4"
+    class="c6"
     color="text"
     font-size="1"
     font-weight="3"

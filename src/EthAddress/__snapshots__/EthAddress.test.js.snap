@@ -16,14 +16,6 @@ exports[`EthAddress component sanity matches default snapshot 1`] = `
   display: flex;
 }
 
-.c6 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
 .c5 {
   box-sizing: border-box;
   width: small;
@@ -97,7 +89,6 @@ exports[`EthAddress component sanity matches default snapshot 1`] = `
   display: inline-flex;
 }
 
-.c5 > div > svg,
 .c5 > span.button-text {
   position: relative;
   z-index: 1;
@@ -237,7 +228,6 @@ exports[`EthAddress component sanity matches default snapshot 1`] = `
   display: inline-flex;
 }
 
-.c7 > div > svg,
 .c7 > span.button-text {
   position: relative;
   z-index: 1;
@@ -301,6 +291,20 @@ exports[`EthAddress component sanity matches default snapshot 1`] = `
   width: 100%;
   background: var(--main-color);
   pointer-events: none;
+}
+
+.c6 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  color: inherit;
+}
+
+.c8 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  color: inherit;
 }
 
 .c2 {
@@ -438,7 +442,7 @@ exports[`EthAddress component sanity matches default snapshot 1`] = `
     display="flex"
   >
     <div>
-      <button
+      <div
         class="c5"
         color="white"
         font-family="sansSerif"
@@ -449,26 +453,27 @@ exports[`EthAddress component sanity matches default snapshot 1`] = `
         <span
           class="button-text"
         >
-          <div
+          <svg
             class="c6"
-            display="inline-flex"
+            color="inherit"
+            fill="currentcolor"
+            height="24"
+            size="24"
+            viewBox="0 0 24 24"
+            width="24"
           >
-            <svg
-              class=""
-              fill="currentcolor"
-              height="24px"
-              viewBox="0 0 24 24"
-              width="24px"
-            >
-              <path
-                d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm2 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"
-              />
-            </svg>
-          </div>
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm2 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"
+            />
+          </svg>
         </span>
-      </button>
+      </div>
     </div>
-    <button
+    <div
       class="c7"
       color="white"
       font-family="sansSerif"
@@ -479,24 +484,25 @@ exports[`EthAddress component sanity matches default snapshot 1`] = `
       <span
         class="button-text"
       >
-        <div
-          class="c6"
-          display="inline-flex"
+        <svg
+          class="c8"
+          color="inherit"
+          fill="currentcolor"
+          height="24"
+          size="24"
+          viewBox="0 0 24 24"
+          width="24"
         >
-          <svg
-            class=""
-            fill="currentcolor"
-            height="24px"
-            viewBox="0 0 24 24"
-            width="24px"
-          >
-            <path
-              d="M12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm-7 7H3v4c0 1.1.9 2 2 2h4v-2H5v-4zM5 5h4V3H5c-1.1 0-2 .9-2 2v4h2V5zm14-2h-4v2h4v4h2V5c0-1.1-.9-2-2-2zm0 16h-4v2h4c1.1 0 2-.9 2-2v-4h-2v4z"
-            />
-          </svg>
-        </div>
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm-7 7H3v4c0 1.1.9 2 2 2h4v-2H5v-4zM5 5h4V3H5c-1.1 0-2 .9-2 2v4h2V5zm14-2h-4v2h4v4h2V5c0-1.1-.9-2-2-2zm0 16h-4v2h4c1.1 0 2-.9 2-2v-4h-2v4z"
+          />
+        </svg>
       </span>
-    </button>
+    </div>
   </div>
 </div>
 `;
@@ -588,7 +594,6 @@ exports[`EthAddress component sanity matches default snapshot textLabels 1`] = `
   display: inline-flex;
 }
 
-.c5 > div > svg,
 .c5 > span.button-text {
   position: relative;
   z-index: 1;
@@ -726,7 +731,6 @@ exports[`EthAddress component sanity matches default snapshot textLabels 1`] = `
   display: inline-flex;
 }
 
-.c6 > div > svg,
 .c6 > span.button-text {
   position: relative;
   z-index: 1;
@@ -927,7 +931,7 @@ exports[`EthAddress component sanity matches default snapshot textLabels 1`] = `
     display="flex"
   >
     <div>
-      <button
+      <div
         class="c5"
         color="white"
         font-family="sansSerif"
@@ -940,9 +944,9 @@ exports[`EthAddress component sanity matches default snapshot textLabels 1`] = `
         >
           Copy
         </span>
-      </button>
+      </div>
     </div>
-    <button
+    <div
       class="c6"
       color="white"
       font-family="sansSerif"
@@ -955,7 +959,7 @@ exports[`EthAddress component sanity matches default snapshot textLabels 1`] = `
       >
         Show QR Code
       </span>
-    </button>
+    </div>
   </div>
 </div>
 `;
@@ -974,14 +978,6 @@ exports[`EthAddress component sanity matches themed snapshot 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-}
-
-.c6 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
 }
 
 .c5 {
@@ -1057,7 +1053,6 @@ exports[`EthAddress component sanity matches themed snapshot 1`] = `
   display: inline-flex;
 }
 
-.c5 > div > svg,
 .c5 > span.button-text {
   position: relative;
   z-index: 1;
@@ -1197,7 +1192,6 @@ exports[`EthAddress component sanity matches themed snapshot 1`] = `
   display: inline-flex;
 }
 
-.c7 > div > svg,
 .c7 > span.button-text {
   position: relative;
   z-index: 1;
@@ -1261,6 +1255,20 @@ exports[`EthAddress component sanity matches themed snapshot 1`] = `
   width: 100%;
   background: var(--main-color);
   pointer-events: none;
+}
+
+.c6 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  color: inherit;
+}
+
+.c8 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  color: inherit;
 }
 
 .c2 {
@@ -1398,7 +1406,7 @@ exports[`EthAddress component sanity matches themed snapshot 1`] = `
     display="flex"
   >
     <div>
-      <button
+      <div
         class="c5"
         color="white"
         font-family="sansSerif"
@@ -1409,26 +1417,27 @@ exports[`EthAddress component sanity matches themed snapshot 1`] = `
         <span
           class="button-text"
         >
-          <div
+          <svg
             class="c6"
-            display="inline-flex"
+            color="inherit"
+            fill="currentcolor"
+            height="24"
+            size="24"
+            viewBox="0 0 24 24"
+            width="24"
           >
-            <svg
-              class=""
-              fill="currentcolor"
-              height="24px"
-              viewBox="0 0 24 24"
-              width="24px"
-            >
-              <path
-                d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm2 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"
-              />
-            </svg>
-          </div>
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm2 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"
+            />
+          </svg>
         </span>
-      </button>
+      </div>
     </div>
-    <button
+    <div
       class="c7"
       color="white"
       font-family="sansSerif"
@@ -1439,24 +1448,25 @@ exports[`EthAddress component sanity matches themed snapshot 1`] = `
       <span
         class="button-text"
       >
-        <div
-          class="c6"
-          display="inline-flex"
+        <svg
+          class="c8"
+          color="inherit"
+          fill="currentcolor"
+          height="24"
+          size="24"
+          viewBox="0 0 24 24"
+          width="24"
         >
-          <svg
-            class=""
-            fill="currentcolor"
-            height="24px"
-            viewBox="0 0 24 24"
-            width="24px"
-          >
-            <path
-              d="M12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm-7 7H3v4c0 1.1.9 2 2 2h4v-2H5v-4zM5 5h4V3H5c-1.1 0-2 .9-2 2v4h2V5zm14-2h-4v2h4v4h2V5c0-1.1-.9-2-2-2zm0 16h-4v2h4c1.1 0 2-.9 2-2v-4h-2v4z"
-            />
-          </svg>
-        </div>
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm-7 7H3v4c0 1.1.9 2 2 2h4v-2H5v-4zM5 5h4V3H5c-1.1 0-2 .9-2 2v4h2V5zm14-2h-4v2h4v4h2V5c0-1.1-.9-2-2-2zm0 16h-4v2h4c1.1 0 2-.9 2-2v-4h-2v4z"
+          />
+        </svg>
       </span>
-    </button>
+    </div>
   </div>
 </div>
 `;
@@ -1548,7 +1558,6 @@ exports[`EthAddress component sanity matches themed snapshot textLabels 1`] = `
   display: inline-flex;
 }
 
-.c5 > div > svg,
 .c5 > span.button-text {
   position: relative;
   z-index: 1;
@@ -1686,7 +1695,6 @@ exports[`EthAddress component sanity matches themed snapshot textLabels 1`] = `
   display: inline-flex;
 }
 
-.c6 > div > svg,
 .c6 > span.button-text {
   position: relative;
   z-index: 1;
@@ -1887,7 +1895,7 @@ exports[`EthAddress component sanity matches themed snapshot textLabels 1`] = `
     display="flex"
   >
     <div>
-      <button
+      <div
         class="c5"
         color="white"
         font-family="sansSerif"
@@ -1900,9 +1908,9 @@ exports[`EthAddress component sanity matches themed snapshot textLabels 1`] = `
         >
           Copy
         </span>
-      </button>
+      </div>
     </div>
-    <button
+    <div
       class="c6"
       color="white"
       font-family="sansSerif"
@@ -1915,7 +1923,7 @@ exports[`EthAddress component sanity matches themed snapshot textLabels 1`] = `
       >
         Show QR Code
       </span>
-    </button>
+    </div>
   </div>
 </div>
 `;

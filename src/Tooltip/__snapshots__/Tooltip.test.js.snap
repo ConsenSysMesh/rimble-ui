@@ -1054,6 +1054,7 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                         "styledComponentId": "sc-ifAKCX",
                         "target": "div",
                         "toString": [Function],
+                        "usesTheme": true,
                         "warnTooManyClasses": [Function],
                         "withComponent": [Function],
                       }
@@ -2752,6 +2753,7 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                             "styledComponentId": "sc-ifAKCX",
                             "target": "div",
                             "toString": [Function],
+                            "usesTheme": true,
                             "warnTooManyClasses": [Function],
                             "withComponent": [Function],
                           }

@@ -904,6 +904,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                 "render": [Function],
               },
               "toString": [Function],
+              "usesTheme": false,
               "warnTooManyClasses": [Function],
               "withComponent": [Function],
             }
@@ -1369,6 +1370,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                     "styledComponentId": "sc-bdVaJa",
                     "target": "div",
                     "toString": [Function],
+                    "usesTheme": true,
                     "warnTooManyClasses": [Function],
                     "withComponent": [Function],
                   }
@@ -1626,6 +1628,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                             "render": [Function],
                           },
                           "toString": [Function],
+                          "usesTheme": false,
                           "warnTooManyClasses": [Function],
                           "withComponent": [Function],
                         }
@@ -2067,6 +2070,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                 "styledComponentId": "sc-bdVaJa",
                                 "target": "div",
                                 "toString": [Function],
+                                "usesTheme": true,
                                 "warnTooManyClasses": [Function],
                                 "withComponent": [Function],
                               }
@@ -3117,6 +3121,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                           "styledComponentId": "sc-bdVaJa",
                                           "target": "div",
                                           "toString": [Function],
+                                          "usesTheme": true,
                                           "warnTooManyClasses": [Function],
                                           "withComponent": [Function],
                                         }
@@ -4176,6 +4181,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                           "styledComponentId": "sc-bdVaJa",
                                           "target": "div",
                                           "toString": [Function],
+                                          "usesTheme": true,
                                           "warnTooManyClasses": [Function],
                                           "withComponent": [Function],
                                         }
@@ -5247,6 +5253,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                               "styledComponentId": "sc-bdVaJa",
                               "target": "div",
                               "toString": [Function],
+                              "usesTheme": true,
                               "warnTooManyClasses": [Function],
                               "withComponent": [Function],
                             }
@@ -5928,6 +5935,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                       "styledComponentId": "sc-bwzfXH",
                                       "target": "div",
                                       "toString": [Function],
+                                      "usesTheme": true,
                                       "warnTooManyClasses": [Function],
                                       "withComponent": [Function],
                                     }
@@ -6257,6 +6265,7 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
         "render": [Function],
       },
       "toString": [Function],
+      "usesTheme": false,
       "warnTooManyClasses": [Function],
       "withComponent": [Function],
     }
@@ -6999,6 +7008,7 @@ exports[`ToastMessage component sanity matches generic snapshot 1`] = `
         "render": [Function],
       },
       "toString": [Function],
+      "usesTheme": false,
       "warnTooManyClasses": [Function],
       "withComponent": [Function],
     }

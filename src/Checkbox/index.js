@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { themeGet } from '@styled-system/theme-get';
-import { CheckBox, CheckBoxOutlineBlank } from '@rimble/icons';
+import { CheckBox, CheckBoxOutlineBlank } from '@rimble/icons/es/md';
 import Box from '../Box';
 import Text from '../Text';
 import theme from '../theme';
