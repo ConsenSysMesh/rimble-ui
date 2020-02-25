@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Icon as RmdIcon } from 'rmdi';
+import { Icon as RmdIcon } from '@rimble/icons';
 import Box from '../Box';
 import theme from '../theme';
 
 const Icon = React.forwardRef(({ name, size, ...rest }, ref) => (
   <Box ref={ref} {...rest}>
-    <RmdIcon.default name={name} size={size} />
+    <RmdIcon name={name} size={size} />
   </Box>
 ));
 

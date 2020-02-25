@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Box from '../Box';
-import ExpandMore from 'rmdi/lib/ExpandMore';
+import { ExpandMore } from '@rimble/icons';
 import { StyledInput } from '../Input';
 
 const StyledWrapper = styled(Box)`
