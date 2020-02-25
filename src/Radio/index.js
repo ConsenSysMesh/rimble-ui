@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { themeGet } from 'styled-system';
+import { themeGet } from '@styled-system/theme-get';
 import IconChecked from 'rmdi/lib/RadioButtonChecked';
 import IconUnChecked from 'rmdi/lib/RadioButtonUnchecked';
 import theme from '../theme';

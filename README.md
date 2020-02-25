@@ -35,13 +35,17 @@ class Example extends Component {
 
 ## Change log
 
+### 0.12.0
+
+🚀 New Feature
+- Updated all components to `styled-system` v5.
+
 ### 0.11.1
 
 🐛 Bug Fix
 - Fixed icon background color on `ToastMessage` component. #381
 - fixed display prop not rendering correctly for `Icon` component. #380
 - fixed disabled styling for `Slider` component. #414
-
 
 ### 0.11.0
 

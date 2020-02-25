@@ -6,50 +6,44 @@ exports[`EthAddress component sanity matches default snapshot 1`] = `
 }
 
 .c4 {
+  box-sizing: border-box;
+  position: absolute;
+  right: 0;
   margin-right: 8px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
-  right: 0;
-}
-
-.c4 {
-  box-sizing: border-box;
 }
 
 .c6 {
+  box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
-.c6 {
-  box-sizing: border-box;
-}
-
 .c5 {
-  color: #fff;
-  background-color: #999;
-  margin: 0;
-  padding: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 32px;
-  padding-right: 32px;
+  box-sizing: border-box;
   width: small;
   height: 3rem;
-  min-width: 3rem;
+  padding: 0;
   position: relative;
+  min-width: 3rem;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: inherit;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-weight: 600;
+  line-height: 1;
+  color: #fff;
+  background-color: #999;
   border: none;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  font-size: inherit;
-  font-weight: 600;
-  line-height: 1;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
   font-size: 0.75rem;
@@ -170,26 +164,26 @@ exports[`EthAddress component sanity matches default snapshot 1`] = `
 }
 
 .c7 {
-  color: #fff;
-  background-color: #999;
-  margin: 0;
-  margin-left: 8px;
-  padding: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 32px;
-  padding-right: 32px;
+  box-sizing: border-box;
   width: small;
   height: 3rem;
-  min-width: 3rem;
+  margin-left: 8px;
+  padding: 0;
   position: relative;
+  min-width: 3rem;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: inherit;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-weight: 600;
+  line-height: 1;
+  color: #fff;
+  background-color: #999;
   border: none;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  font-size: inherit;
-  font-weight: 600;
-  line-height: 1;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
   font-size: 0.75rem;
@@ -310,27 +304,27 @@ exports[`EthAddress component sanity matches default snapshot 1`] = `
 }
 
 .c2 {
+  box-sizing: border-box;
+  width: 100%;
+  font-weight: 600;
+  padding: auto;
+  padding-left: 16px;
+  padding-right: 6rem;
   color: #3F3D4B;
   background-color: #fff;
-  padding: 16px;
-  padding-right: 6rem;
-  width: 100%;
+  font-size: 1rem;
+  line-height: initial;
   height: 3rem;
   border: 1px solid transparent;
-  border-color: #CCC;
+  border-color: #ccc;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 1;
 }
 
 .c2 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  box-sizing: border-box;
 }
 
 .c2:hover {
@@ -391,6 +385,7 @@ exports[`EthAddress component sanity matches default snapshot 1`] = `
 
 .was-validated .c2:valid ~ svg.icon-valid {
   visibility: visible;
+  color: #28C081;
 }
 
 .was-validated .c2:invalid {
@@ -399,6 +394,7 @@ exports[`EthAddress component sanity matches default snapshot 1`] = `
 
 .was-validated .c2:invalid ~ svg.icon-invalid {
   visibility: visible;
+  color: #DC2C10;
 }
 
 .c3 {
@@ -429,7 +425,6 @@ exports[`EthAddress component sanity matches default snapshot 1`] = `
     aria-label="Ethereum Address"
     class="c2 c3"
     color="text"
-    font-family="sansSerif"
     font-size="1rem"
     font-weight="3"
     height="3rem"
@@ -512,38 +507,35 @@ exports[`EthAddress component sanity matches default snapshot textLabels 1`] = `
 }
 
 .c4 {
+  box-sizing: border-box;
+  position: absolute;
+  right: 0;
   margin-right: 8px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
-  right: 0;
-}
-
-.c4 {
-  box-sizing: border-box;
 }
 
 .c5 {
-  color: #fff;
-  background-color: #999;
-  margin: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 32px;
-  padding-right: 32px;
+  box-sizing: border-box;
   width: small;
   height: 3rem;
-  min-width: 3rem;
   position: relative;
+  min-width: 3rem;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: inherit;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-weight: 600;
+  line-height: 1;
+  color: #fff;
+  background-color: #999;
   border: none;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  font-size: inherit;
-  font-weight: 600;
-  line-height: 1;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
   font-size: 0.75rem;
@@ -663,25 +655,25 @@ exports[`EthAddress component sanity matches default snapshot textLabels 1`] = `
 }
 
 .c6 {
-  color: #fff;
-  background-color: #999;
-  margin: 0;
-  margin-left: 8px;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 32px;
-  padding-right: 32px;
+  box-sizing: border-box;
   width: small;
   height: 3rem;
-  min-width: 3rem;
+  margin-left: 8px;
   position: relative;
+  min-width: 3rem;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: inherit;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-weight: 600;
+  line-height: 1;
+  color: #fff;
+  background-color: #999;
   border: none;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  font-size: inherit;
-  font-weight: 600;
-  line-height: 1;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
   font-size: 0.75rem;
@@ -801,27 +793,27 @@ exports[`EthAddress component sanity matches default snapshot textLabels 1`] = `
 }
 
 .c2 {
+  box-sizing: border-box;
+  width: 100%;
+  font-weight: 600;
+  padding: auto;
+  padding-left: 16px;
+  padding-right: 12rem;
   color: #3F3D4B;
   background-color: #fff;
-  padding: 16px;
-  padding-right: 13rem;
-  width: 100%;
+  font-size: 1rem;
+  line-height: initial;
   height: 3rem;
   border: 1px solid transparent;
-  border-color: #CCC;
+  border-color: #ccc;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 1;
 }
 
 .c2 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  box-sizing: border-box;
 }
 
 .c2:hover {
@@ -882,6 +874,7 @@ exports[`EthAddress component sanity matches default snapshot textLabels 1`] = `
 
 .was-validated .c2:valid ~ svg.icon-valid {
   visibility: visible;
+  color: #28C081;
 }
 
 .was-validated .c2:invalid {
@@ -890,6 +883,7 @@ exports[`EthAddress component sanity matches default snapshot textLabels 1`] = `
 
 .was-validated .c2:invalid ~ svg.icon-invalid {
   visibility: visible;
+  color: #DC2C10;
 }
 
 .c3 {
@@ -920,7 +914,6 @@ exports[`EthAddress component sanity matches default snapshot textLabels 1`] = `
     aria-label="Ethereum Address"
     class="c2 c3"
     color="text"
-    font-family="sansSerif"
     font-size="1rem"
     font-weight="3"
     height="3rem"
@@ -973,50 +966,44 @@ exports[`EthAddress component sanity matches themed snapshot 1`] = `
 }
 
 .c4 {
+  box-sizing: border-box;
+  position: absolute;
+  right: 0;
   margin-right: 8px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
-  right: 0;
-}
-
-.c4 {
-  box-sizing: border-box;
 }
 
 .c6 {
+  box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
-.c6 {
-  box-sizing: border-box;
-}
-
 .c5 {
-  color: #fff;
-  background-color: #999;
-  margin: 0;
-  padding: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 32px;
-  padding-right: 32px;
+  box-sizing: border-box;
   width: small;
   height: 3rem;
-  min-width: 3rem;
+  padding: 0;
   position: relative;
+  min-width: 3rem;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: inherit;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-weight: 600;
+  line-height: 1;
+  color: #fff;
+  background-color: #999;
   border: none;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  font-size: inherit;
-  font-weight: 600;
-  line-height: 1;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
   font-size: 0.75rem;
@@ -1137,26 +1124,26 @@ exports[`EthAddress component sanity matches themed snapshot 1`] = `
 }
 
 .c7 {
-  color: #fff;
-  background-color: #999;
-  margin: 0;
-  margin-left: 8px;
-  padding: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 32px;
-  padding-right: 32px;
+  box-sizing: border-box;
   width: small;
   height: 3rem;
-  min-width: 3rem;
+  margin-left: 8px;
+  padding: 0;
   position: relative;
+  min-width: 3rem;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: inherit;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-weight: 600;
+  line-height: 1;
+  color: #fff;
+  background-color: #999;
   border: none;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  font-size: inherit;
-  font-weight: 600;
-  line-height: 1;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
   font-size: 0.75rem;
@@ -1277,27 +1264,27 @@ exports[`EthAddress component sanity matches themed snapshot 1`] = `
 }
 
 .c2 {
+  box-sizing: border-box;
+  width: 100%;
+  font-weight: 600;
+  padding: auto;
+  padding-left: 16px;
+  padding-right: 6rem;
   color: #3F3D4B;
   background-color: #fff;
-  padding: 16px;
-  padding-right: 6rem;
-  width: 100%;
+  font-size: 1rem;
+  line-height: initial;
   height: 3rem;
   border: 1px solid transparent;
-  border-color: #CCC;
+  border-color: #ccc;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 1;
 }
 
 .c2 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  box-sizing: border-box;
 }
 
 .c2:hover {
@@ -1358,6 +1345,7 @@ exports[`EthAddress component sanity matches themed snapshot 1`] = `
 
 .was-validated .c2:valid ~ svg.icon-valid {
   visibility: visible;
+  color: #28C081;
 }
 
 .was-validated .c2:invalid {
@@ -1366,6 +1354,7 @@ exports[`EthAddress component sanity matches themed snapshot 1`] = `
 
 .was-validated .c2:invalid ~ svg.icon-invalid {
   visibility: visible;
+  color: #DC2C10;
 }
 
 .c3 {
@@ -1396,7 +1385,6 @@ exports[`EthAddress component sanity matches themed snapshot 1`] = `
     aria-label="Ethereum Address"
     class="c2 c3"
     color="text"
-    font-family="sansSerif"
     font-size="1rem"
     font-weight="3"
     height="3rem"
@@ -1479,38 +1467,35 @@ exports[`EthAddress component sanity matches themed snapshot textLabels 1`] = `
 }
 
 .c4 {
+  box-sizing: border-box;
+  position: absolute;
+  right: 0;
   margin-right: 8px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
-  right: 0;
-}
-
-.c4 {
-  box-sizing: border-box;
 }
 
 .c5 {
-  color: #fff;
-  background-color: #999;
-  margin: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 32px;
-  padding-right: 32px;
+  box-sizing: border-box;
   width: small;
   height: 3rem;
-  min-width: 3rem;
   position: relative;
+  min-width: 3rem;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: inherit;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-weight: 600;
+  line-height: 1;
+  color: #fff;
+  background-color: #999;
   border: none;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  font-size: inherit;
-  font-weight: 600;
-  line-height: 1;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
   font-size: 0.75rem;
@@ -1630,25 +1615,25 @@ exports[`EthAddress component sanity matches themed snapshot textLabels 1`] = `
 }
 
 .c6 {
-  color: #fff;
-  background-color: #999;
-  margin: 0;
-  margin-left: 8px;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 32px;
-  padding-right: 32px;
+  box-sizing: border-box;
   width: small;
   height: 3rem;
-  min-width: 3rem;
+  margin-left: 8px;
   position: relative;
+  min-width: 3rem;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: inherit;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-weight: 600;
+  line-height: 1;
+  color: #fff;
+  background-color: #999;
   border: none;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  font-size: inherit;
-  font-weight: 600;
-  line-height: 1;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
   font-size: 0.75rem;
@@ -1768,27 +1753,27 @@ exports[`EthAddress component sanity matches themed snapshot textLabels 1`] = `
 }
 
 .c2 {
+  box-sizing: border-box;
+  width: 100%;
+  font-weight: 600;
+  padding: auto;
+  padding-left: 16px;
+  padding-right: 12rem;
   color: #3F3D4B;
   background-color: #fff;
-  padding: 16px;
-  padding-right: 13rem;
-  width: 100%;
+  font-size: 1rem;
+  line-height: initial;
   height: 3rem;
   border: 1px solid transparent;
-  border-color: #CCC;
+  border-color: #ccc;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 1;
 }
 
 .c2 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  box-sizing: border-box;
 }
 
 .c2:hover {
@@ -1849,6 +1834,7 @@ exports[`EthAddress component sanity matches themed snapshot textLabels 1`] = `
 
 .was-validated .c2:valid ~ svg.icon-valid {
   visibility: visible;
+  color: #28C081;
 }
 
 .was-validated .c2:invalid {
@@ -1857,6 +1843,7 @@ exports[`EthAddress component sanity matches themed snapshot textLabels 1`] = `
 
 .was-validated .c2:invalid ~ svg.icon-invalid {
   visibility: visible;
+  color: #DC2C10;
 }
 
 .c3 {
@@ -1887,7 +1874,6 @@ exports[`EthAddress component sanity matches themed snapshot textLabels 1`] = `
     aria-label="Ethereum Address"
     class="c2 c3"
     color="text"
-    font-family="sansSerif"
     font-size="1rem"
     font-weight="3"
     height="3rem"
