@@ -471,7 +471,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   display: inline-flex;
 }
 
-.c6 {
+.c7 {
   box-sizing: border-box;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -480,7 +480,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   margin-right: 8px;
 }
 
-.c7 {
+.c8 {
   box-sizing: border-box;
   font-size: 14px;
   font-weight: 600;
@@ -488,7 +488,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   line-height: 1.5;
 }
 
-.c8 {
+.c9 {
   box-sizing: border-box;
   font-size: 14px;
   color: #666;
@@ -496,7 +496,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   line-height: 1.5;
 }
 
-.c9 {
+.c10 {
   box-sizing: border-box;
   -webkit-flex: 0 1;
   -ms-flex: 0 1;
@@ -508,32 +508,39 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   font-weight: 400;
 }
 
-.c10 {
+.c4 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  color: inherit;
+}
+
+.c11 {
   box-sizing: border-box;
   color: #4E3FCE;
   font-size: 14px;
   font-weight: 600;
 }
 
-.c10 {
+.c11 {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c10:hover {
+.c11:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
   color: #7165d7;
 }
 
-.c10:active {
+.c11:active {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3e32a4;
 }
 
-.c5 {
+.c6 {
   display: inline-block;
   max-width: 100%;
   overflow: hidden;
@@ -580,7 +587,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   display: none;
 }
 
-.c0 > .c4 > div {
+.c0 > .c5 > div {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -1052,7 +1059,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-eZbwru",
+                "componentId": "sc-csJRnm",
                 "isStatic": false,
                 "lastClassName": "c0",
                 "rules": Array [
@@ -1083,7 +1090,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
   }
 
   > ",
-                  ".c4",
+                  ".c5",
                   " > div {
     overflow: hidden;
     white-space: nowrap;
@@ -1121,7 +1128,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                 "theme": [Function],
               },
               "render": [Function],
-              "styledComponentId": "sc-eZbwru",
+              "styledComponentId": "sc-csJRnm",
               "target": Object {
                 "$$typeof": Symbol(react.forward_ref),
                 "displayName": "Box",
@@ -1131,7 +1138,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                 "render": [Function],
               },
               "toString": [Function],
-              "usesTheme": false,
               "warnTooManyClasses": [Function],
               "withComponent": [Function],
             }
@@ -1584,7 +1590,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                     "componentStyle": ComponentStyle {
                       "componentId": "sc-bdVaJa",
                       "isStatic": false,
-                      "lastClassName": "c9",
+                      "lastClassName": "c10",
                       "rules": Array [
                         "
   box-sizing: border-box;
@@ -1600,7 +1606,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                     "styledComponentId": "sc-bdVaJa",
                     "target": "div",
                     "toString": [Function],
-                    "usesTheme": true,
                     "warnTooManyClasses": [Function],
                     "withComponent": [Function],
                   }
@@ -2231,7 +2236,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                             "componentStyle": ComponentStyle {
                               "componentId": "sc-bdVaJa",
                               "isStatic": false,
-                              "lastClassName": "c9",
+                              "lastClassName": "c10",
                               "rules": Array [
                                 "
   box-sizing: border-box;
@@ -2247,7 +2252,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                             "styledComponentId": "sc-bdVaJa",
                             "target": "div",
                             "toString": [Function],
-                            "usesTheme": true,
                             "warnTooManyClasses": [Function],
                             "withComponent": [Function],
                           }
@@ -3277,7 +3281,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                       "componentStyle": ComponentStyle {
                                         "componentId": "sc-bdVaJa",
                                         "isStatic": false,
-                                        "lastClassName": "c9",
+                                        "lastClassName": "c10",
                                         "rules": Array [
                                           "
   box-sizing: border-box;
@@ -3293,7 +3297,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                       "styledComponentId": "sc-bdVaJa",
                                       "target": "div",
                                       "toString": [Function],
-                                      "usesTheme": true,
                                       "warnTooManyClasses": [Function],
                                       "withComponent": [Function],
                                     }
@@ -3508,58 +3511,71 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                       name="InfoOutline"
                                       size="32px"
                                     >
-                                      <InfoOutlineIcon
+                                      <SvgInfoOutline
+                                        color="inherit"
                                         size="32px"
                                       >
-                                        <StyledComponent
-                                          forwardedComponent={
-                                            Object {
-                                              "$$typeof": Symbol(react.forward_ref),
-                                              "_foldedDefaultProps": Object {
-                                                "size": 24,
-                                              },
-                                              "attrs": Array [],
-                                              "componentStyle": ComponentStyle {
-                                                "componentId": "sc-iLVFha",
-                                                "isStatic": false,
-                                                "lastClassName": "jVwufP",
-                                                "rules": Array [
-                                                  [Function],
-                                                  [Function],
-                                                ],
-                                              },
-                                              "displayName": "InfoOutlineIcon",
-                                              "foldedComponentIds": Array [],
-                                              "render": [Function],
-                                              "styledComponentId": "sc-iLVFha",
-                                              "target": [Function],
-                                              "toString": [Function],
-                                              "usesTheme": false,
-                                              "warnTooManyClasses": [Function],
-                                              "withComponent": [Function],
-                                            }
-                                          }
-                                          forwardedRef={null}
+                                        <styled.svg
+                                          color="inherit"
+                                          fill="currentcolor"
+                                          height="32px"
                                           size="32px"
+                                          viewBox="0 0 24 24"
+                                          width="32px"
                                         >
-                                          <Icon
-                                            className=""
+                                          <StyledComponent
+                                            color="inherit"
+                                            fill="currentcolor"
+                                            forwardedComponent={
+                                              Object {
+                                                "$$typeof": Symbol(react.forward_ref),
+                                                "attrs": Array [],
+                                                "componentStyle": ComponentStyle {
+                                                  "componentId": "sc-tVThF",
+                                                  "isStatic": false,
+                                                  "lastClassName": "c4",
+                                                  "rules": Array [
+                                                    "flex: none;",
+                                                    [Function],
+                                                    [Function],
+                                                  ],
+                                                },
+                                                "displayName": "styled.svg",
+                                                "foldedComponentIds": Array [],
+                                                "render": [Function],
+                                                "styledComponentId": "sc-tVThF",
+                                                "target": "svg",
+                                                "toString": [Function],
+                                                "warnTooManyClasses": [Function],
+                                                "withComponent": [Function],
+                                              }
+                                            }
+                                            forwardedRef={null}
+                                            height="32px"
                                             size="32px"
+                                            viewBox="0 0 24 24"
+                                            width="32px"
                                           >
                                             <svg
-                                              className=""
+                                              className="c4"
+                                              color="inherit"
                                               fill="currentcolor"
                                               height="32px"
+                                              size="32px"
                                               viewBox="0 0 24 24"
                                               width="32px"
                                             >
                                               <path
+                                                d="M0 0h24v24H0z"
+                                                fill="none"
+                                              />
+                                              <path
                                                 d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z"
                                               />
                                             </svg>
-                                          </Icon>
-                                        </StyledComponent>
-                                      </InfoOutlineIcon>
+                                          </StyledComponent>
+                                        </styled.svg>
+                                      </SvgInfoOutline>
                                     </Icon>
                                   </div>
                                 </StyledComponent>
@@ -3581,9 +3597,9 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                           "$$typeof": Symbol(react.forward_ref),
                           "attrs": Array [],
                           "componentStyle": ComponentStyle {
-                            "componentId": "c4",
+                            "componentId": "c5",
                             "isStatic": false,
-                            "lastClassName": "c5",
+                            "lastClassName": "c6",
                             "rules": Array [
                               "
   & {
@@ -3606,7 +3622,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                             "theme": [Function],
                           },
                           "render": [Function],
-                          "styledComponentId": "c4",
+                          "styledComponentId": "c5",
                           "target": Object {
                             "$$typeof": Symbol(react.forward_ref),
                             "displayName": "Box",
@@ -3616,7 +3632,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                             "render": [Function],
                           },
                           "toString": [Function],
-                          "usesTheme": false,
                           "warnTooManyClasses": [Function],
                           "withComponent": [Function],
                         }
@@ -3625,12 +3640,12 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                       mx={2}
                     >
                       <Box
-                        className="c4 c5"
+                        className="c5 c6"
                         flex="1 1 auto"
                         mx={2}
                       >
                         <styled.div
-                          className="c4 c5"
+                          className="c5 c6"
                           flex="1 1 auto"
                           mx={2}
                           theme={
@@ -3834,7 +3849,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                           }
                         >
                           <StyledComponent
-                            className="c4 c5"
+                            className="c5 c6"
                             flex="1 1 auto"
                             forwardedComponent={
                               Object {
@@ -4042,7 +4057,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                 "componentStyle": ComponentStyle {
                                   "componentId": "sc-bdVaJa",
                                   "isStatic": false,
-                                  "lastClassName": "c9",
+                                  "lastClassName": "c10",
                                   "rules": Array [
                                     "
   box-sizing: border-box;
@@ -4058,7 +4073,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                 "styledComponentId": "sc-bdVaJa",
                                 "target": "div",
                                 "toString": [Function],
-                                "usesTheme": true,
                                 "warnTooManyClasses": [Function],
                                 "withComponent": [Function],
                               }
@@ -4266,7 +4280,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                             }
                           >
                             <div
-                              className="c6 c4 c5"
+                              className="c7 c5 c6"
                             >
                               <Text
                                 color="black"
@@ -5093,7 +5107,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                           "componentStyle": ComponentStyle {
                                             "componentId": "sc-bdVaJa",
                                             "isStatic": false,
-                                            "lastClassName": "c9",
+                                            "lastClassName": "c10",
                                             "rules": Array [
                                               "
   box-sizing: border-box;
@@ -5109,7 +5123,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                           "styledComponentId": "sc-bdVaJa",
                                           "target": "div",
                                           "toString": [Function],
-                                          "usesTheme": true,
                                           "warnTooManyClasses": [Function],
                                           "withComponent": [Function],
                                         }
@@ -5317,7 +5330,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                       }
                                     >
                                       <div
-                                        className="c7"
+                                        className="c8"
                                         color="black"
                                         fontSize={1}
                                         fontWeight={3}
@@ -6153,7 +6166,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                           "componentStyle": ComponentStyle {
                                             "componentId": "sc-bdVaJa",
                                             "isStatic": false,
-                                            "lastClassName": "c9",
+                                            "lastClassName": "c10",
                                             "rules": Array [
                                               "
   box-sizing: border-box;
@@ -6169,7 +6182,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                           "styledComponentId": "sc-bdVaJa",
                                           "target": "div",
                                           "toString": [Function],
-                                          "usesTheme": true,
                                           "warnTooManyClasses": [Function],
                                           "withComponent": [Function],
                                         }
@@ -6377,7 +6389,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                       }
                                     >
                                       <div
-                                        className="c8"
+                                        className="c9"
                                         color="#666"
                                         fontSize={1}
                                         fontWeight={2}
@@ -7225,7 +7237,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                               "componentStyle": ComponentStyle {
                                 "componentId": "sc-bdVaJa",
                                 "isStatic": false,
-                                "lastClassName": "c9",
+                                "lastClassName": "c10",
                                 "rules": Array [
                                   "
   box-sizing: border-box;
@@ -7241,7 +7253,6 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                               "styledComponentId": "sc-bdVaJa",
                               "target": "div",
                               "toString": [Function],
-                              "usesTheme": true,
                               "warnTooManyClasses": [Function],
                               "withComponent": [Function],
                             }
@@ -7451,7 +7462,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                           }
                         >
                           <div
-                            className="c9"
+                            className="c10"
                             fontSize={2}
                             fontWeight={2}
                           >
@@ -7883,9 +7894,9 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                       },
                                       "attrs": Array [],
                                       "componentStyle": ComponentStyle {
-                                        "componentId": "sc-gyfYDX",
+                                        "componentId": "sc-jwyaWI",
                                         "isStatic": false,
-                                        "lastClassName": "c10",
+                                        "lastClassName": "c11",
                                         "rules": Array [
                                           "
   box-sizing: border-box;
@@ -7920,10 +7931,9 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                         "sc-bdVaJa",
                                       ],
                                       "render": [Function],
-                                      "styledComponentId": "sc-gyfYDX",
+                                      "styledComponentId": "sc-jwyaWI",
                                       "target": "div",
                                       "toString": [Function],
-                                      "usesTheme": true,
                                       "warnTooManyClasses": [Function],
                                       "withComponent": [Function],
                                     }
@@ -8133,7 +8143,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                   }
                                 >
                                   <a
-                                    className="c10"
+                                    className="c11"
                                     color="primary"
                                     fontSize={1}
                                     fontWeight={3}
@@ -8175,7 +8185,7 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "sc-eZbwru",
+        "componentId": "sc-csJRnm",
         "isStatic": false,
         "rules": Array [
           "
@@ -8205,7 +8215,7 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
   }
 
   > ",
-          ".sc-kOdLDR",
+          ".sc-iLVtdg",
           " > div {
     overflow: hidden;
     white-space: nowrap;
@@ -8243,7 +8253,7 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
         "theme": [Function],
       },
       "render": [Function],
-      "styledComponentId": "sc-eZbwru",
+      "styledComponentId": "sc-csJRnm",
       "target": Object {
         "$$typeof": Symbol(react.forward_ref),
         "displayName": "Box",
@@ -8253,7 +8263,6 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
         "render": [Function],
       },
       "toString": [Function],
-      "usesTheme": false,
       "warnTooManyClasses": [Function],
       "withComponent": [Function],
     }
@@ -9130,7 +9139,7 @@ exports[`ToastMessage component sanity matches generic snapshot 1`] = `
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "sc-eZbwru",
+        "componentId": "sc-csJRnm",
         "isStatic": false,
         "rules": Array [
           "
@@ -9160,7 +9169,7 @@ exports[`ToastMessage component sanity matches generic snapshot 1`] = `
   }
 
   > ",
-          ".sc-kOdLDR",
+          ".sc-iLVtdg",
           " > div {
     overflow: hidden;
     white-space: nowrap;
@@ -9198,7 +9207,7 @@ exports[`ToastMessage component sanity matches generic snapshot 1`] = `
         "theme": [Function],
       },
       "render": [Function],
-      "styledComponentId": "sc-eZbwru",
+      "styledComponentId": "sc-csJRnm",
       "target": Object {
         "$$typeof": Symbol(react.forward_ref),
         "displayName": "Box",
@@ -9208,7 +9217,6 @@ exports[`ToastMessage component sanity matches generic snapshot 1`] = `
         "render": [Function],
       },
       "toString": [Function],
-      "usesTheme": false,
       "warnTooManyClasses": [Function],
       "withComponent": [Function],
     }

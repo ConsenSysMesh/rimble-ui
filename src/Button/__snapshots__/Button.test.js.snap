@@ -9,6 +9,13 @@ exports[`Button Icon component sanity matches default snapshot 1`] = `
   display: inline-flex;
 }
 
+.c2 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  color: inherit;
+}
+
 .c0 {
   box-sizing: border-box;
   position: relative;
@@ -154,7 +161,8 @@ exports[`Button Icon component sanity matches default snapshot 1`] = `
     display="inline-flex"
   >
     <svg
-      class=""
+      class="c2"
+      color="inherit"
       fill="currentcolor"
       height="24px"
       viewBox="0 0 24 24"
@@ -177,6 +185,13 @@ exports[`Button Icon component sanity matches themed snapshot 1`] = `
   display: inline-flex;
 }
 
+.c2 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  color: inherit;
+}
+
 .c0 {
   box-sizing: border-box;
   position: relative;
@@ -322,7 +337,8 @@ exports[`Button Icon component sanity matches themed snapshot 1`] = `
     display="inline-flex"
   >
     <svg
-      class=""
+      class="c2"
+      color="inherit"
       fill="currentcolor"
       height="24px"
       viewBox="0 0 24 24"
@@ -343,6 +359,13 @@ exports[`Button Icon only component sanity matches default snapshot 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+}
+
+.c2 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  color: inherit;
 }
 
 .c0 {
@@ -491,7 +514,8 @@ exports[`Button Icon only component sanity matches default snapshot 1`] = `
     display="inline-flex"
   >
     <svg
-      class=""
+      class="c2"
+      color="inherit"
       fill="currentcolor"
       height="24px"
       viewBox="0 0 24 24"
@@ -512,6 +536,13 @@ exports[`Button Icon with position prop component sanity matches default snapsho
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+}
+
+.c2 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  color: inherit;
 }
 
 .c0 {
@@ -659,7 +690,8 @@ exports[`Button Icon with position prop component sanity matches default snapsho
     display="inline-flex"
   >
     <svg
-      class=""
+      class="c2"
+      color="inherit"
       fill="currentcolor"
       height="24px"
       viewBox="0 0 24 24"
@@ -3033,6 +3065,13 @@ exports[`Loading Button component sanity matches default snapshot 2`] = `
   display: inline-flex;
 }
 
+.c2 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  color: inherit;
+}
+
 .c0 {
   box-sizing: border-box;
   position: relative;
@@ -3179,7 +3218,8 @@ exports[`Loading Button component sanity matches default snapshot 2`] = `
     display="inline-flex"
   >
     <svg
-      class=""
+      class="c2"
+      color="inherit"
       fill="currentcolor"
       height="24px"
       viewBox="0 0 24 24"

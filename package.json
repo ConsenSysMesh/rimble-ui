@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@d8660091/react-popper": "^1.0.4",
-    "@rimble/icons": "^1.0.1",
+    "@rimble/icons": "^1.0.2",
     "@styled-system/prop-types": "^5.1.2",
     "@styled-system/theme-get": "^5.1.2",
     "@svgr/rollup": "^4.2.0",
@@ -75,7 +75,7 @@
     "eslint-plugin-react": "^7.10.0",
     "eslint-plugin-standard": "^3.1.0",
     "husky": "^1.3.1",
-    "jest-styled-components": "^6.3.3",
+    "jest-styled-components": "^6.3.4",
     "lint-staged": "^8.1.5",
     "prettier": "^1.16.4",
     "prop-types": "^15.7.2",
@@ -88,7 +88,7 @@
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-url": "^2.2.2",
-    "styled-components": "^4.3.0"
+    "styled-components": "^4.4.1"
   },
   "files": [
     "dist"
@@ -96,6 +96,9 @@
   "jest": {
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
+    ],
+    "transformIgnorePatterns": [
+      "node_modules/(?!(@rimble/icons)/)"
     ]
   },
   "lint-staged": {
