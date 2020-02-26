@@ -1,12 +1,12 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
-import { CheckBox } from '@rimble/icons';
-import { CheckBoxOutlineBlank } from '@rimble/icons';
-import Box from '../Box';
-import Text from '../Text';
-import theme from '../theme';
+import React from 'react'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
+import { themeGet } from '@styled-system/theme-get'
+import { CheckBox } from '@rimble/icons/es/md'
+import { CheckBoxOutlineBlank } from '@rimble/icons/es/md'
+import Box from '../Box'
+import Text from '../Text'
+import theme from '../theme'
 
 const StyledWrapper = styled(Box)`
   & {
@@ -47,7 +47,7 @@ const StyledWrapper = styled(Box)`
   > input:checked ~ svg[name='checked'] {
     display: block;
   }
-`;
+`
 
 const StyledLabel = styled(Box)`
   & {
@@ -56,7 +56,7 @@ const StyledLabel = styled(Box)`
   &:hover input:not(:disabled) ~ svg[name='unchecked'] {
     fill: currentColor;
   }
-`;
+`
 
 const Checkbox = React.forwardRef(
   ({ className, label, name, value, id, ...props }, ref) => (
@@ -93,22 +93,22 @@ const Checkbox = React.forwardRef(
       </Text>
     </StyledLabel>
   )
-);
+)
 
 StyledWrapper.defaultProps = {
   theme,
-};
+}
 
 Checkbox.defaultProps = {
   color: 'primary',
-};
+}
 
 Checkbox.propTypes = {
   ...Box.propTypes,
   theme: PropTypes.object,
   label: PropTypes.string,
-};
+}
 
-Checkbox.displayName = 'Checkbox';
+Checkbox.displayName = 'Checkbox'
 
-export default Checkbox;
+export default Checkbox

@@ -1,11 +1,11 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
-import { CheckCircle } from '@rimble/icons';
-import { Warning } from '@rimble/icons';
-import FileInput from './FileInput';
-import { StyledBox } from '../Box';
+import React from 'react'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
+import { themeGet } from '@styled-system/theme-get'
+import { CheckCircle } from '@rimble/icons/es/md'
+import { Warning } from '@rimble/icons/es/md'
+import FileInput from './FileInput'
+import { StyledBox } from '../Box'
 
 const StyledInput = styled(StyledBox).attrs(props => ({
   as: 'input',
@@ -68,7 +68,7 @@ const StyledInput = styled(StyledBox).attrs(props => ({
       color: ${themeGet('colors.danger')};
     }
   }}
-`;
+`
 
 const StyledIconWrapper = styled.div`
   & {
@@ -87,7 +87,7 @@ const StyledIconWrapper = styled.div`
     right: 1rem;
     visibility: hidden;
   }
-`;
+`
 
 const WithValidationStyle = React.forwardRef((props, ref) => {
   return (
@@ -96,16 +96,16 @@ const WithValidationStyle = React.forwardRef((props, ref) => {
       <CheckCircle className={'icon-valid'} />
       <Warning className={'icon-invalid'} />
     </StyledIconWrapper>
-  );
-});
+  )
+})
 
 const Input = React.forwardRef((props, ref) => {
   if (props.type === 'file') {
-    return <FileInput {...props} ref={ref} />;
+    return <FileInput {...props} ref={ref} />
   } else {
-    return <StyledInput {...props} ref={ref} />;
+    return <StyledInput {...props} ref={ref} />
   }
-});
+})
 
 const defaultProps = {
   color: 'text',
@@ -118,20 +118,20 @@ const defaultProps = {
   borderColor: 'moon-gray',
   borderRadius: 1,
   boxShadow: 1,
-};
+}
 
-Input.WithValidationStyle = WithValidationStyle;
+Input.WithValidationStyle = WithValidationStyle
 
-WithValidationStyle.defaultProps = defaultProps;
-StyledInput.defaultProps = defaultProps;
-Input.defaultProps = defaultProps;
+WithValidationStyle.defaultProps = defaultProps
+StyledInput.defaultProps = defaultProps
+Input.defaultProps = defaultProps
 
 Input.propTypes = {
   theme: PropTypes.object,
-};
+}
 
-Input.displayName = 'Input';
+Input.displayName = 'Input'
 
-export { StyledInput };
+export { StyledInput }
 
-export default Input;
+export default Input

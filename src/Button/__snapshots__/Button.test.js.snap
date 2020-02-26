@@ -171,6 +171,10 @@ exports[`Button Icon component sanity matches default snapshot 1`] = `
       <path
         d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"
       />
+      <path
+        d="M0 0h24v24H0z"
+        fill="none"
+      />
     </svg>
   </div>
 </button>
@@ -346,6 +350,10 @@ exports[`Button Icon component sanity matches themed snapshot 1`] = `
     >
       <path
         d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"
+      />
+      <path
+        d="M0 0h24v24H0z"
+        fill="none"
       />
     </svg>
   </div>
@@ -699,6 +707,10 @@ exports[`Button Icon with position prop component sanity matches default snapsho
     >
       <path
         d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"
+      />
+      <path
+        d="M0 0h24v24H0z"
+        fill="none"
       />
     </svg>
   </div>

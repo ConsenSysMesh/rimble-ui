@@ -1,21 +1,21 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Icon as RmdIcon } from '@rimble/icons';
-import Box from '../Box';
-import theme from '../theme';
+import React from 'react'
+import PropTypes from 'prop-types'
+import RmdIcon from '@rimble/icons/es/Icon'
+import Box from '../Box'
+import theme from '../theme'
 
 const Icon = React.forwardRef(({ name, size, ...rest }, ref) => (
   <Box ref={ref} {...rest}>
     <RmdIcon name={name} size={size} />
   </Box>
-));
+))
 
 Icon.defaultProps = {
   name: '',
   size: '24px',
   display: 'inline-flex',
   theme,
-};
+}
 
 Icon.propTypes = {
   /**
@@ -31,8 +31,8 @@ Icon.propTypes = {
    */
   display: PropTypes.string,
   theme: PropTypes.object,
-};
+}
 
-Icon.displayName = 'Icon';
+Icon.displayName = 'Icon'
 
-export default Icon;
+export default Icon
