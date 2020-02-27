@@ -41,6 +41,12 @@ class Example extends Component {
 
 - Added crypto icons under the `Icon` component.
 
+🐛 Bug Fix
+
+- Fixed `Heading` component `as` prop not working. 
+- Fixed `Text` component `as` prop not working.
+- Fixed `Select` component arrow icon placement.
+
 ### 0.12.0
 
 🚀 New Feature
@@ -149,7 +155,7 @@ class Example extends Component {
 
 - Removed background color on Image component
 
-  0.7.0
+### 0.7.0
 
 - Flash component
 - Custom labels for PublicAddress component
