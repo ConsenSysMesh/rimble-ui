@@ -15,10 +15,6 @@ Heading.defaultProps = {
   fontSize: '',
 }
 
-Heading.propTypes = {
-  ...Text.propTypes,
-}
-
 Heading.displayName = 'Heading'
 
 // H1
