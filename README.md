@@ -35,6 +35,12 @@ class Example extends Component {
 
 ## Change log
 
+### 0.13.1
+
+🐛 Bug Fix
+
+- Added default props for `Heading` component.
+
 ### 0.13.0
 
 🚀 New Feature
@@ -43,7 +49,7 @@ class Example extends Component {
 
 🐛 Bug Fix
 
-- Fixed `Heading` component `as` prop not working. 
+- Fixed `Heading` component `as` prop not working.
 - Fixed `Text` component `as` prop not working.
 - Fixed `Select` component arrow icon placement.
 
