@@ -41,42 +41,74 @@ import { Eth, Btc } from '@rimble/icons'
 import TestForm from './components/TestForm'
 // import BaseLineGrid from './components/BaseLineGrid'
 
-import themeCodefi from './themeCodefi'
+// import themeCodefi from './themeCodefi'
+import CodefiTheme from './ThemeCodefi/index'
+import { ThemeProvider as ThemeUiThemeProvider } from '@theme-ui/core'
 
-Heading.defaultProps = {
-  fontWeight: 'heading',
-  lineHeight: 'heading',
-}
+// Heading.defaultProps = {
+//   fontWeight: 'heading',
+//   lineHeight: 'heading',
+// }
 
-Text.defaultProps = {
-  fontWeight: 'body',
-  lineHeight: 'body',
-}
+// Text.defaultProps = {
+//   fontWeight: 'body',
+//   lineHeight: 'body',
+// }
 
-Button.defaultProps = {
-  position: 'relative',
+// Button.defaultProps = {
+//   position: 'relative',
 
-  mainColor: 'primary',
-  contrastColor: 'white',
+//   mainColor: 'primary',
+//   contrastColor: 'white',
 
-  height: 'auto',
-  px: 6,
-  py: 3,
-  border: 'none',
-  borderRadius: '4px',
+//   height: 'auto',
+//   px: 6,
+//   py: 3,
+//   border: 'none',
+//   borderRadius: '4px',
 
-  lineHeight: '24px',
-  fontWeight: '600',
-}
+//   lineHeight: '24px',
+//   fontWeight: '600',
+// }
 
-Input.defaultProps = {
-  color: 'text',
-  bg: 'background',
+// Input.defaultProps = {
+//   color: 'text',
+//   bg: 'background',
 
-  p: 3,
-  px: 5,
-  border: '1px solid #C2C4CC',
-  borderRadius: '4px',
+//   p: 3,
+//   px: 5,
+//   border: '1px solid #C2C4CC',
+//   borderRadius: '4px',
+// }
+
+const myCodefiTheme = {
+  ...CodefiTheme,
+  buttons: {
+    primary: {
+      position: 'relative',
+      bg: 'primary700',
+      color: 'white',
+
+      height: 'auto',
+      px: 6,
+      py: 3,
+      border: 'none',
+      borderRadius: '4px',
+
+      lineHeight: '24px',
+      fontWeight: 'bold',
+
+      '&:hover': {
+        bg: 'primary800',
+      },
+      '&:active': {
+        bg: 'primary900',
+      },
+      '&:disabled': {
+        bg: 'primary400',
+      },
+    },
+  },
 }
 
 const GlobalInterFont = createGlobalStyle`
@@ -152,8 +184,8 @@ const testComponents = props => (
     <Heading fontSize={0}>SX - Quick zephyrs blow, vexing daft Jim.</Heading>
 
     <Text>
-      default / body / 400 — Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
-      quibusdam, assumenda officiis.
+      default / body / 400 — Lorem ipsum dolor sit amet, consectetur adipisicing
+      elit. Soluta quibusdam, assumenda officiis.
     </Text>
 
     <Text fontWeight={1}>
@@ -398,16 +430,15 @@ export default class App extends Component {
     return (
       <>
         <GlobalInterFont />
-        <ThemeProvider theme={themeCodefi}>
+        <ThemeUiThemeProvider theme={myCodefiTheme}>
           <BaseStyles>
             <Box position={'relative'} m={4}>
-              <Button lineHeight={'24px'} height={'auto'} px={6} py={3} borderRadius={'4px'} fontWeight={'600'}>
-                Action Text
-              </Button>
+              <Button>Action Text</Button>
+              <Button disabled>Disabled</Button>
               {testComponents()}
             </Box>
           </BaseStyles>
-        </ThemeProvider>
+        </ThemeUiThemeProvider>
         {/* <BaseLineGrid /> */}
       </>
     )
