@@ -33,7 +33,7 @@
     "polished": "^3.2.0",
     "qrcode.react": "^0.9.3",
     "set-value": "^3.0.1",
-    "styled-system": "^5.1.2"
+    "styled-system": "^5.1.5"
   },
   "peerDependencies": {
     "prop-types": "^15.7.2",
