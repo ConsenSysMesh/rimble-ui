@@ -11,7 +11,7 @@ const StyledWrapper = styled(Box)`
     display: inline-block;
   }
 
-  > ${ExpandMore} {
+  > svg {
     pointer-events: none;
     position: absolute;
     right: 0;
