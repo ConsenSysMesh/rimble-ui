@@ -936,7 +936,7 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                         },
                         "attrs": Array [],
                         "componentStyle": ComponentStyle {
-                          "componentId": "sc-eiqfgm",
+                          "componentId": "sc-dZtSGr",
                           "isStatic": false,
                           "lastClassName": "c0",
                           "rules": Array [
@@ -1057,13 +1057,12 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                         "displayName": "Styled(Styled(styled.div))",
                         "foldedComponentIds": Array [
                           "sc-bdVaJa",
-                          "sc-jZIEzD",
+                          "sc-eXhMkL",
                         ],
                         "render": [Function],
-                        "styledComponentId": "sc-eiqfgm",
+                        "styledComponentId": "sc-dZtSGr",
                         "target": "div",
                         "toString": [Function],
-                        "usesTheme": true,
                         "warnTooManyClasses": [Function],
                         "withComponent": [Function],
                       }
@@ -2644,7 +2643,7 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                             },
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "sc-eiqfgm",
+                              "componentId": "sc-dZtSGr",
                               "isStatic": false,
                               "lastClassName": "c0",
                               "rules": Array [
@@ -2765,13 +2764,12 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                             "displayName": "Styled(Styled(styled.div))",
                             "foldedComponentIds": Array [
                               "sc-bdVaJa",
-                              "sc-jZIEzD",
+                              "sc-eXhMkL",
                             ],
                             "render": [Function],
-                            "styledComponentId": "sc-eiqfgm",
+                            "styledComponentId": "sc-dZtSGr",
                             "target": "div",
                             "toString": [Function],
-                            "usesTheme": true,
                             "warnTooManyClasses": [Function],
                             "withComponent": [Function],
                           }
