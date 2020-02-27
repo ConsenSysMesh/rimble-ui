@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Box from '../Box'
+import theme from '../theme'
 
 const defaultProps = {
   fontWeight: 3,
@@ -13,6 +14,12 @@ Heading.defaultProps = {
   ...defaultProps,
   as: 'h2',
   fontSize: '',
+  theme,
+}
+
+Heading.propTypes = {
+  ...Box.propTypes,
+  theme: PropTypes.object,
 }
 
 Heading.displayName = 'Heading'
