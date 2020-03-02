@@ -21,7 +21,7 @@ const theme = {
     // Set highly reusable, app-specific values
     text: grayscaleColors.gray900,
     background: brandColors.white,
-    primary: brandColors.blue,
+    primary: primaryColors.primary700,
     secondary: brandColors.greentea,
     accent: accentColors.magenta,
     muted: grayscaleColors.gray700,
