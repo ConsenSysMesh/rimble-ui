@@ -35,6 +35,12 @@ class Example extends Component {
 
 ## Change log
 
+### 0.14.0
+
+🚀 New Feature
+
+- Export ES6 modules for tree shaking 🌳
+
 ### 0.13.1
 
 🐛 Bug Fix

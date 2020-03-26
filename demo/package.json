@@ -6,9 +6,11 @@
     "react": "link:../node_modules/react",
     "react-dom": "link:../node_modules/react-dom",
     "react-scripts": "3.1.2",
-    "rimble-ui": "link:.."
+    "rimble-ui": "link:..",
+    "source-map-explorer": "^2.1.2"
   },
   "scripts": {
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
