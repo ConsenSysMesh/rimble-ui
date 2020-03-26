@@ -1,21 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
 import { StyledInput } from '../Input';
 
 const Textarea = React.forwardRef((props, ref) => (
-  <StyledInput ref={ref} {...props} as={'textarea'} />
+  <StyledInput as={'textarea'} ref={ref} {...props} />
 ));
 
 Textarea.defaultProps = {
-  fontFamily: 'sansSerif',
-  fontSize: '1rem',
-  lineHeight: 'solid',
+  lineHeight: 'copy',
   height: 'auto',
-  border: 1,
-  borderColor: 'grey',
-  borderRadius: 1,
-  boxShadow: 1,
 };
 
 Textarea.propTypes = {

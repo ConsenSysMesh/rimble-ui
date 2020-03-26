@@ -2,19 +2,18 @@
 
 exports[`Select component sanity matches default snapshot 1`] = `
 <Styled(Box)>
-  <styled.input
+  <Styled(styled.div)
     as="select"
     bg="background"
     border={1}
-    borderColor="grey"
+    borderColor="moon-gray"
     borderRadius={1}
     boxShadow={1}
     color="text"
-    fontFamily="sansSerif"
     fontSize="1rem"
     height="3rem"
-    lineHeight="solid"
-    p={3}
+    lineHeight="initial"
+    p="auto"
     pl={3}
     pr="3rem"
     py={0}
@@ -143,14 +142,6 @@ exports[`Select component sanity matches default snapshot 1`] = `
           "sansSerif": "\\"Source Sans Pro\\", -apple-system, sans-serif",
           "serif": "athelas, georgia, times, serif",
         },
-        "heights": Array [
-          0,
-          16,
-          32,
-          64,
-          128,
-          256,
-        ],
         "letterSpacings": Array [
           0,
           1,
@@ -163,31 +154,11 @@ exports[`Select component sanity matches default snapshot 1`] = `
           "solid": 1,
           "title": 1.25,
         },
-        "maxHeights": Array [
-          0,
-          16,
-          32,
-          64,
-          128,
-          256,
-        ],
-        "maxWidths": Array [
-          0,
-          16,
-          32,
-          64,
-          128,
-          256,
-          512,
-          768,
-          1024,
-          1536,
-        ],
         "messageStyle": Object {
           "base": Object {
-            "backgroundColor": "#f6f6f6",
-            "borderColor": "#AAA",
-            "color": "#666",
+            "backgroundColor": "#f4f4f4",
+            "borderColor": "#aaa",
+            "color": "#555",
           },
           "danger": Object {
             "backgroundColor": "#fbe9e7",
@@ -210,22 +181,6 @@ exports[`Select component sanity matches default snapshot 1`] = `
             "color": "#975e18",
           },
         },
-        "minHeights": Array [
-          0,
-          16,
-          32,
-          64,
-          128,
-          256,
-        ],
-        "minWidths": Array [
-          0,
-          16,
-          32,
-          64,
-          128,
-          256,
-        ],
         "opacity": Object {
           "disabled": 0.4,
         },
@@ -246,14 +201,6 @@ exports[`Select component sanity matches default snapshot 1`] = `
           0,
           4,
           8,
-          16,
-          32,
-          64,
-          128,
-          256,
-        ],
-        "width": Array [
-          0,
           16,
           32,
           64,
@@ -283,157 +230,12 @@ exports[`Select component sanity matches default snapshot 1`] = `
     >
       A B C
     </option>
-  </styled.input>
-  <ExpandMoreIcon
+  </Styled(styled.div)>
+  <SvgExpandMore
+    color="inherit"
     mx={3}
     my="auto"
     size={24}
   />
 </Styled(Box)>
-`;
-
-exports[`Select component sanity matches themed snapshot 1`] = `
-.c0 {
-  box-sizing: border-box;
-}
-
-.c4 {
-  margin-left: 16px;
-  margin-right: 16px;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.c2 {
-  color: #3F3D4B;
-  background-color: #fff;
-  padding: 16px;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 16px;
-  padding-right: 3rem;
-  width: 100%;
-  height: 3rem;
-  border: 1px solid transparent;
-  border-color: #CCC;
-  border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  font-size: 1rem;
-  line-height: 1;
-}
-
-.c2 {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  box-sizing: border-box;
-}
-
-.c2:hover {
-  box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
-}
-
-.c2:focus {
-  outline: none;
-  border-color: #4E3FCE;
-}
-
-.c2:disabled {
-  opacity: 0.4;
-  pointer-events: none;
-}
-
-.c2[type="color"] {
-  min-width: 3rem;
-  padding: 0;
-}
-
-.c2[type="color"]::-webkit-color-swatch-wrapper {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 0;
-}
-
-.c2[type="color"]::-webkit-color-swatch {
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  height: 2rem;
-  width: 2rem;
-  border: none;
-  border-radius: 100%;
-}
-
-.c2[type="color"]::-moz-color-swatch {
-  height: 2rem;
-  width: 2rem;
-  border: none;
-  border-radius: 100%;
-}
-
-.was-validated .c2:valid {
-  border-color: #28C081;
-}
-
-.was-validated .c2:valid ~ svg.icon-valid {
-  visibility: visible;
-}
-
-.was-validated .c2:invalid {
-  border-color: #DC2C10;
-}
-
-.was-validated .c2:invalid ~ svg.icon-invalid {
-  visibility: visible;
-}
-
-.c1 {
-  position: relative;
-  display: inline-block;
-}
-
-.c1 > .c3 {
-  pointer-events: none;
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-}
-
-<div
-  class="c0 c1"
->
-  <select
-    class="c2"
-    color="text"
-    font-family="sansSerif"
-    font-size="1rem"
-    height="3rem"
-    width="100%"
-  />
-  <svg
-    class="c3 c4"
-    fill="currentcolor"
-    height="24"
-    mx="3"
-    my="auto"
-    viewBox="0 0 24 24"
-    width="24"
-  >
-    <path
-      d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
-    />
-  </svg>
-</div>
 `;

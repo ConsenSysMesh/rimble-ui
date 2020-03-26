@@ -2,23 +2,23 @@
 
 exports[`Tooltip component sanity matches default snapshot 1`] = `
 .c0 {
-  color: #fff;
-  background-color: #999;
-  margin: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 32px;
-  padding-right: 32px;
+  box-sizing: border-box;
+  position: relative;
   height: 3rem;
   min-width: 3rem;
-  position: relative;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: inherit;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-weight: 600;
+  line-height: 1;
+  color: #fff;
+  background-color: #999;
   border: none;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  font-size: inherit;
-  font-weight: 600;
-  line-height: 1;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
 }
@@ -170,23 +170,23 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
       }
       reference={
         .c0 {
-  color: #fff;
-  background-color: #999;
-  margin: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 32px;
-  padding-right: 32px;
+  box-sizing: border-box;
+  position: relative;
   height: 3rem;
   min-width: 3rem;
-  position: relative;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: inherit;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-weight: 600;
+  line-height: 1;
+  color: #fff;
+  background-color: #999;
   border: none;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  font-size: inherit;
-  font-weight: 600;
-  line-height: 1;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
 }
@@ -492,7 +492,6 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                 fontWeight={3}
                 height="3rem"
                 lineHeight={1}
-                m={0}
                 mainColor="primary"
                 minWidth="3rem"
                 onMouseEnter={[Function]}
@@ -501,7 +500,8 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                 px={4}
                 py={0}
               >
-                <Styled(styled.button)
+                <Styled(Styled(styled.div))
+                  as="button"
                   bg="silver"
                   border="none"
                   borderRadius={1}
@@ -513,7 +513,6 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                   fontWeight={3}
                   height="3rem"
                   lineHeight={1}
-                  m={0}
                   mainColor="primary"
                   minWidth="3rem"
                   onMouseEnter={[Function]}
@@ -646,14 +645,6 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                         "sansSerif": "\\"Source Sans Pro\\", -apple-system, sans-serif",
                         "serif": "athelas, georgia, times, serif",
                       },
-                      "heights": Array [
-                        0,
-                        16,
-                        32,
-                        64,
-                        128,
-                        256,
-                      ],
                       "letterSpacings": Array [
                         0,
                         1,
@@ -666,31 +657,11 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                         "solid": 1,
                         "title": 1.25,
                       },
-                      "maxHeights": Array [
-                        0,
-                        16,
-                        32,
-                        64,
-                        128,
-                        256,
-                      ],
-                      "maxWidths": Array [
-                        0,
-                        16,
-                        32,
-                        64,
-                        128,
-                        256,
-                        512,
-                        768,
-                        1024,
-                        1536,
-                      ],
                       "messageStyle": Object {
                         "base": Object {
-                          "backgroundColor": "#f6f6f6",
-                          "borderColor": "#AAA",
-                          "color": "#666",
+                          "backgroundColor": "#f4f4f4",
+                          "borderColor": "#aaa",
+                          "color": "#555",
                         },
                         "danger": Object {
                           "backgroundColor": "#fbe9e7",
@@ -713,22 +684,6 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                           "color": "#975e18",
                         },
                       },
-                      "minHeights": Array [
-                        0,
-                        16,
-                        32,
-                        64,
-                        128,
-                        256,
-                      ],
-                      "minWidths": Array [
-                        0,
-                        16,
-                        32,
-                        64,
-                        128,
-                        256,
-                      ],
                       "opacity": Object {
                         "disabled": 0.4,
                       },
@@ -755,14 +710,6 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                         128,
                         256,
                       ],
-                      "width": Array [
-                        0,
-                        16,
-                        32,
-                        64,
-                        128,
-                        256,
-                      ],
                       "zIndices": Array [
                         0,
                         9,
@@ -774,6 +721,7 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                   }
                 >
                   <StyledComponent
+                    as="button"
                     bg="silver"
                     border="none"
                     borderRadius={1}
@@ -787,6 +735,7 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                       Object {
                         "$$typeof": Symbol(react.forward_ref),
                         "_foldedDefaultProps": Object {
+                          "as": "button",
                           "theme": Object {
                             "borderWidths": Array [
                               "0",
@@ -911,14 +860,6 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                               "sansSerif": "\\"Source Sans Pro\\", -apple-system, sans-serif",
                               "serif": "athelas, georgia, times, serif",
                             },
-                            "heights": Array [
-                              0,
-                              16,
-                              32,
-                              64,
-                              128,
-                              256,
-                            ],
                             "letterSpacings": Array [
                               0,
                               1,
@@ -931,31 +872,11 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                               "solid": 1,
                               "title": 1.25,
                             },
-                            "maxHeights": Array [
-                              0,
-                              16,
-                              32,
-                              64,
-                              128,
-                              256,
-                            ],
-                            "maxWidths": Array [
-                              0,
-                              16,
-                              32,
-                              64,
-                              128,
-                              256,
-                              512,
-                              768,
-                              1024,
-                              1536,
-                            ],
                             "messageStyle": Object {
                               "base": Object {
-                                "backgroundColor": "#f6f6f6",
-                                "borderColor": "#AAA",
-                                "color": "#666",
+                                "backgroundColor": "#f4f4f4",
+                                "borderColor": "#aaa",
+                                "color": "#555",
                               },
                               "danger": Object {
                                 "backgroundColor": "#fbe9e7",
@@ -978,22 +899,6 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                                 "color": "#975e18",
                               },
                             },
-                            "minHeights": Array [
-                              0,
-                              16,
-                              32,
-                              64,
-                              128,
-                              256,
-                            ],
-                            "minWidths": Array [
-                              0,
-                              16,
-                              32,
-                              64,
-                              128,
-                              256,
-                            ],
                             "opacity": Object {
                               "disabled": 0.4,
                             },
@@ -1020,14 +925,6 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                               128,
                               256,
                             ],
-                            "width": Array [
-                              0,
-                              16,
-                              32,
-                              64,
-                              128,
-                              256,
-                            ],
                             "zIndices": Array [
                               0,
                               9,
@@ -1039,10 +936,16 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                         },
                         "attrs": Array [],
                         "componentStyle": ComponentStyle {
-                          "componentId": "sc-bGbZqa",
+                          "componentId": "sc-dZtSGr",
                           "isStatic": false,
                           "lastClassName": "c0",
                           "rules": Array [
+                            "
+  box-sizing: border-box;
+  ",
+                            [Function],
+                            "
+",
                             "
   & {
     -webkit-font-smoothing: antialiased;
@@ -1055,7 +958,6 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
     display: inline-flex;
     align-items: center;
     justify-content: center;
-
     padding: ",
                             [Function],
                             ";
@@ -1111,22 +1013,6 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
   ",
                             [Function],
                             "
-  ",
-                            [Function],
-                            "
-
-  ",
-                            [Function],
-                            "
-  ",
-                            [Function],
-                            "
-  ",
-                            [Function],
-                            "
-  ",
-                            [Function],
-                            "
 ",
                             "
   & {
@@ -1168,15 +1054,15 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
 ",
                           ],
                         },
-                        "displayName": "Styled(styled.button)",
+                        "displayName": "Styled(Styled(styled.div))",
                         "foldedComponentIds": Array [
-                          "sc-gQORMK",
+                          "sc-bdVaJa",
+                          "sc-eXhMkL",
                         ],
                         "render": [Function],
-                        "styledComponentId": "sc-bGbZqa",
-                        "target": "button",
+                        "styledComponentId": "sc-dZtSGr",
+                        "target": "div",
                         "toString": [Function],
-                        "usesTheme": false,
                         "warnTooManyClasses": [Function],
                         "withComponent": [Function],
                       }
@@ -1184,7 +1070,6 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                     forwardedRef={[Function]}
                     height="3rem"
                     lineHeight={1}
-                    m={0}
                     mainColor="primary"
                     minWidth="3rem"
                     onMouseEnter={[Function]}
@@ -1317,14 +1202,6 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                           "sansSerif": "\\"Source Sans Pro\\", -apple-system, sans-serif",
                           "serif": "athelas, georgia, times, serif",
                         },
-                        "heights": Array [
-                          0,
-                          16,
-                          32,
-                          64,
-                          128,
-                          256,
-                        ],
                         "letterSpacings": Array [
                           0,
                           1,
@@ -1337,31 +1214,11 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                           "solid": 1,
                           "title": 1.25,
                         },
-                        "maxHeights": Array [
-                          0,
-                          16,
-                          32,
-                          64,
-                          128,
-                          256,
-                        ],
-                        "maxWidths": Array [
-                          0,
-                          16,
-                          32,
-                          64,
-                          128,
-                          256,
-                          512,
-                          768,
-                          1024,
-                          1536,
-                        ],
                         "messageStyle": Object {
                           "base": Object {
-                            "backgroundColor": "#f6f6f6",
-                            "borderColor": "#AAA",
-                            "color": "#666",
+                            "backgroundColor": "#f4f4f4",
+                            "borderColor": "#aaa",
+                            "color": "#555",
                           },
                           "danger": Object {
                             "backgroundColor": "#fbe9e7",
@@ -1384,22 +1241,6 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                             "color": "#975e18",
                           },
                         },
-                        "minHeights": Array [
-                          0,
-                          16,
-                          32,
-                          64,
-                          128,
-                          256,
-                        ],
-                        "minWidths": Array [
-                          0,
-                          16,
-                          32,
-                          64,
-                          128,
-                          256,
-                        ],
                         "opacity": Object {
                           "disabled": 0.4,
                         },
@@ -1420,14 +1261,6 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                           0,
                           4,
                           8,
-                          16,
-                          32,
-                          64,
-                          128,
-                          256,
-                        ],
-                        "width": Array [
-                          0,
                           16,
                           32,
                           64,
@@ -1461,7 +1294,7 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                       </ButtonBody>
                     </button>
                   </StyledComponent>
-                </Styled(styled.button)>
+                </Styled(Styled(styled.div))>
               </Button>
             </Component>
           </lifecycle(Component)>
@@ -1474,23 +1307,23 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
 
 exports[`Tooltip component sanity matches themed snapshot 1`] = `
 .c0 {
-  color: #fff;
-  background-color: #999;
-  margin: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 32px;
-  padding-right: 32px;
+  box-sizing: border-box;
+  position: relative;
   height: 3rem;
   min-width: 3rem;
-  position: relative;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: inherit;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-weight: 600;
+  line-height: 1;
+  color: #fff;
+  background-color: #999;
   border: none;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  font-size: inherit;
-  font-weight: 600;
-  line-height: 1;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
 }
@@ -1731,14 +1564,6 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
         "sansSerif": "\\"Source Sans Pro\\", -apple-system, sans-serif",
         "serif": "athelas, georgia, times, serif",
       },
-      "heights": Array [
-        0,
-        16,
-        32,
-        64,
-        128,
-        256,
-      ],
       "letterSpacings": Array [
         0,
         1,
@@ -1751,31 +1576,11 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
         "solid": 1,
         "title": 1.25,
       },
-      "maxHeights": Array [
-        0,
-        16,
-        32,
-        64,
-        128,
-        256,
-      ],
-      "maxWidths": Array [
-        0,
-        16,
-        32,
-        64,
-        128,
-        256,
-        512,
-        768,
-        1024,
-        1536,
-      ],
       "messageStyle": Object {
         "base": Object {
-          "backgroundColor": "#f6f6f6",
-          "borderColor": "#AAA",
-          "color": "#666",
+          "backgroundColor": "#f4f4f4",
+          "borderColor": "#aaa",
+          "color": "#555",
         },
         "danger": Object {
           "backgroundColor": "#fbe9e7",
@@ -1798,22 +1603,6 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
           "color": "#975e18",
         },
       },
-      "minHeights": Array [
-        0,
-        16,
-        32,
-        64,
-        128,
-        256,
-      ],
-      "minWidths": Array [
-        0,
-        16,
-        32,
-        64,
-        128,
-        256,
-      ],
       "opacity": Object {
         "disabled": 0.4,
       },
@@ -1834,14 +1623,6 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
         0,
         4,
         8,
-        16,
-        32,
-        64,
-        128,
-        256,
-      ],
-      "width": Array [
-        0,
         16,
         32,
         64,
@@ -1984,14 +1765,6 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
           "sansSerif": "\\"Source Sans Pro\\", -apple-system, sans-serif",
           "serif": "athelas, georgia, times, serif",
         },
-        "heights": Array [
-          0,
-          16,
-          32,
-          64,
-          128,
-          256,
-        ],
         "letterSpacings": Array [
           0,
           1,
@@ -2004,31 +1777,11 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
           "solid": 1,
           "title": 1.25,
         },
-        "maxHeights": Array [
-          0,
-          16,
-          32,
-          64,
-          128,
-          256,
-        ],
-        "maxWidths": Array [
-          0,
-          16,
-          32,
-          64,
-          128,
-          256,
-          512,
-          768,
-          1024,
-          1536,
-        ],
         "messageStyle": Object {
           "base": Object {
-            "backgroundColor": "#f6f6f6",
-            "borderColor": "#AAA",
-            "color": "#666",
+            "backgroundColor": "#f4f4f4",
+            "borderColor": "#aaa",
+            "color": "#555",
           },
           "danger": Object {
             "backgroundColor": "#fbe9e7",
@@ -2051,22 +1804,6 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
             "color": "#975e18",
           },
         },
-        "minHeights": Array [
-          0,
-          16,
-          32,
-          64,
-          128,
-          256,
-        ],
-        "minWidths": Array [
-          0,
-          16,
-          32,
-          64,
-          128,
-          256,
-        ],
         "opacity": Object {
           "disabled": 0.4,
         },
@@ -2087,14 +1824,6 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
           0,
           4,
           8,
-          16,
-          32,
-          64,
-          128,
-          256,
-        ],
-        "width": Array [
-          0,
           16,
           32,
           64,
@@ -2148,23 +1877,23 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
           }
           reference={
             .c0 {
-  color: #fff;
-  background-color: #999;
-  margin: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 32px;
-  padding-right: 32px;
+  box-sizing: border-box;
+  position: relative;
   height: 3rem;
   min-width: 3rem;
-  position: relative;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: inherit;
+  font-family: "Source Sans Pro",-apple-system,sans-serif;
+  font-weight: 600;
+  line-height: 1;
+  color: #fff;
+  background-color: #999;
   border: none;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  font-size: inherit;
-  font-weight: 600;
-  line-height: 1;
   --main-color: #4E3FCE;
   --contrast-color: #fff;
 }
@@ -2470,7 +2199,6 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                     fontWeight={3}
                     height="3rem"
                     lineHeight={1}
-                    m={0}
                     mainColor="primary"
                     minWidth="3rem"
                     onMouseEnter={[Function]}
@@ -2479,7 +2207,8 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                     px={4}
                     py={0}
                   >
-                    <Styled(styled.button)
+                    <Styled(Styled(styled.div))
+                      as="button"
                       bg="silver"
                       border="none"
                       borderRadius={1}
@@ -2491,7 +2220,6 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                       fontWeight={3}
                       height="3rem"
                       lineHeight={1}
-                      m={0}
                       mainColor="primary"
                       minWidth="3rem"
                       onMouseEnter={[Function]}
@@ -2624,14 +2352,6 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                             "sansSerif": "\\"Source Sans Pro\\", -apple-system, sans-serif",
                             "serif": "athelas, georgia, times, serif",
                           },
-                          "heights": Array [
-                            0,
-                            16,
-                            32,
-                            64,
-                            128,
-                            256,
-                          ],
                           "letterSpacings": Array [
                             0,
                             1,
@@ -2644,31 +2364,11 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                             "solid": 1,
                             "title": 1.25,
                           },
-                          "maxHeights": Array [
-                            0,
-                            16,
-                            32,
-                            64,
-                            128,
-                            256,
-                          ],
-                          "maxWidths": Array [
-                            0,
-                            16,
-                            32,
-                            64,
-                            128,
-                            256,
-                            512,
-                            768,
-                            1024,
-                            1536,
-                          ],
                           "messageStyle": Object {
                             "base": Object {
-                              "backgroundColor": "#f6f6f6",
-                              "borderColor": "#AAA",
-                              "color": "#666",
+                              "backgroundColor": "#f4f4f4",
+                              "borderColor": "#aaa",
+                              "color": "#555",
                             },
                             "danger": Object {
                               "backgroundColor": "#fbe9e7",
@@ -2691,22 +2391,6 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                               "color": "#975e18",
                             },
                           },
-                          "minHeights": Array [
-                            0,
-                            16,
-                            32,
-                            64,
-                            128,
-                            256,
-                          ],
-                          "minWidths": Array [
-                            0,
-                            16,
-                            32,
-                            64,
-                            128,
-                            256,
-                          ],
                           "opacity": Object {
                             "disabled": 0.4,
                           },
@@ -2733,14 +2417,6 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                             128,
                             256,
                           ],
-                          "width": Array [
-                            0,
-                            16,
-                            32,
-                            64,
-                            128,
-                            256,
-                          ],
                           "zIndices": Array [
                             0,
                             9,
@@ -2752,6 +2428,7 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                       }
                     >
                       <StyledComponent
+                        as="button"
                         bg="silver"
                         border="none"
                         borderRadius={1}
@@ -2765,6 +2442,7 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                           Object {
                             "$$typeof": Symbol(react.forward_ref),
                             "_foldedDefaultProps": Object {
+                              "as": "button",
                               "theme": Object {
                                 "borderWidths": Array [
                                   "0",
@@ -2889,14 +2567,6 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                                   "sansSerif": "\\"Source Sans Pro\\", -apple-system, sans-serif",
                                   "serif": "athelas, georgia, times, serif",
                                 },
-                                "heights": Array [
-                                  0,
-                                  16,
-                                  32,
-                                  64,
-                                  128,
-                                  256,
-                                ],
                                 "letterSpacings": Array [
                                   0,
                                   1,
@@ -2909,31 +2579,11 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                                   "solid": 1,
                                   "title": 1.25,
                                 },
-                                "maxHeights": Array [
-                                  0,
-                                  16,
-                                  32,
-                                  64,
-                                  128,
-                                  256,
-                                ],
-                                "maxWidths": Array [
-                                  0,
-                                  16,
-                                  32,
-                                  64,
-                                  128,
-                                  256,
-                                  512,
-                                  768,
-                                  1024,
-                                  1536,
-                                ],
                                 "messageStyle": Object {
                                   "base": Object {
-                                    "backgroundColor": "#f6f6f6",
-                                    "borderColor": "#AAA",
-                                    "color": "#666",
+                                    "backgroundColor": "#f4f4f4",
+                                    "borderColor": "#aaa",
+                                    "color": "#555",
                                   },
                                   "danger": Object {
                                     "backgroundColor": "#fbe9e7",
@@ -2956,22 +2606,6 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                                     "color": "#975e18",
                                   },
                                 },
-                                "minHeights": Array [
-                                  0,
-                                  16,
-                                  32,
-                                  64,
-                                  128,
-                                  256,
-                                ],
-                                "minWidths": Array [
-                                  0,
-                                  16,
-                                  32,
-                                  64,
-                                  128,
-                                  256,
-                                ],
                                 "opacity": Object {
                                   "disabled": 0.4,
                                 },
@@ -2998,14 +2632,6 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                                   128,
                                   256,
                                 ],
-                                "width": Array [
-                                  0,
-                                  16,
-                                  32,
-                                  64,
-                                  128,
-                                  256,
-                                ],
                                 "zIndices": Array [
                                   0,
                                   9,
@@ -3017,10 +2643,16 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                             },
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "sc-bGbZqa",
+                              "componentId": "sc-dZtSGr",
                               "isStatic": false,
                               "lastClassName": "c0",
                               "rules": Array [
+                                "
+  box-sizing: border-box;
+  ",
+                                [Function],
+                                "
+",
                                 "
   & {
     -webkit-font-smoothing: antialiased;
@@ -3033,7 +2665,6 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
     display: inline-flex;
     align-items: center;
     justify-content: center;
-
     padding: ",
                                 [Function],
                                 ";
@@ -3089,22 +2720,6 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
   ",
                                 [Function],
                                 "
-  ",
-                                [Function],
-                                "
-
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
-  ",
-                                [Function],
-                                "
 ",
                                 "
   & {
@@ -3146,15 +2761,15 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
 ",
                               ],
                             },
-                            "displayName": "Styled(styled.button)",
+                            "displayName": "Styled(Styled(styled.div))",
                             "foldedComponentIds": Array [
-                              "sc-gQORMK",
+                              "sc-bdVaJa",
+                              "sc-eXhMkL",
                             ],
                             "render": [Function],
-                            "styledComponentId": "sc-bGbZqa",
-                            "target": "button",
+                            "styledComponentId": "sc-dZtSGr",
+                            "target": "div",
                             "toString": [Function],
-                            "usesTheme": false,
                             "warnTooManyClasses": [Function],
                             "withComponent": [Function],
                           }
@@ -3162,7 +2777,6 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                         forwardedRef={[Function]}
                         height="3rem"
                         lineHeight={1}
-                        m={0}
                         mainColor="primary"
                         minWidth="3rem"
                         onMouseEnter={[Function]}
@@ -3295,14 +2909,6 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                               "sansSerif": "\\"Source Sans Pro\\", -apple-system, sans-serif",
                               "serif": "athelas, georgia, times, serif",
                             },
-                            "heights": Array [
-                              0,
-                              16,
-                              32,
-                              64,
-                              128,
-                              256,
-                            ],
                             "letterSpacings": Array [
                               0,
                               1,
@@ -3315,31 +2921,11 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                               "solid": 1,
                               "title": 1.25,
                             },
-                            "maxHeights": Array [
-                              0,
-                              16,
-                              32,
-                              64,
-                              128,
-                              256,
-                            ],
-                            "maxWidths": Array [
-                              0,
-                              16,
-                              32,
-                              64,
-                              128,
-                              256,
-                              512,
-                              768,
-                              1024,
-                              1536,
-                            ],
                             "messageStyle": Object {
                               "base": Object {
-                                "backgroundColor": "#f6f6f6",
-                                "borderColor": "#AAA",
-                                "color": "#666",
+                                "backgroundColor": "#f4f4f4",
+                                "borderColor": "#aaa",
+                                "color": "#555",
                               },
                               "danger": Object {
                                 "backgroundColor": "#fbe9e7",
@@ -3362,22 +2948,6 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                                 "color": "#975e18",
                               },
                             },
-                            "minHeights": Array [
-                              0,
-                              16,
-                              32,
-                              64,
-                              128,
-                              256,
-                            ],
-                            "minWidths": Array [
-                              0,
-                              16,
-                              32,
-                              64,
-                              128,
-                              256,
-                            ],
                             "opacity": Object {
                               "disabled": 0.4,
                             },
@@ -3398,14 +2968,6 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                               0,
                               4,
                               8,
-                              16,
-                              32,
-                              64,
-                              128,
-                              256,
-                            ],
-                            "width": Array [
-                              0,
                               16,
                               32,
                               64,
@@ -3439,7 +3001,7 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                           </ButtonBody>
                         </button>
                       </StyledComponent>
-                    </Styled(styled.button)>
+                    </Styled(Styled(styled.div))>
                   </Button>
                 </Component>
               </lifecycle(Component)>

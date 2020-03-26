@@ -2,42 +2,33 @@
 
 exports[`Link component sanity matches default snapshot 1`] = `
 .c0 {
+  box-sizing: border-box;
   color: #4E3FCE;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .c0 {
-  box-sizing: border-box;
-}
-
-.c1 {
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.5;
-}
-
-.c2 {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c2:hover {
+.c0:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
   color: #7165d7;
 }
 
-.c2:active {
+.c0:active {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3e32a4;
 }
 
 <a
-  class="c0 c1 c2"
+  class="c0"
   color="primary"
-  font-family="sansSerif"
   font-size="1"
   font-weight="3"
 />
@@ -45,42 +36,33 @@ exports[`Link component sanity matches default snapshot 1`] = `
 
 exports[`Link component sanity matches themed snapshot 1`] = `
 .c0 {
+  box-sizing: border-box;
   color: #4E3FCE;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .c0 {
-  box-sizing: border-box;
-}
-
-.c1 {
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.5;
-}
-
-.c2 {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c2:hover {
+.c0:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
   color: #7165d7;
 }
 
-.c2:active {
+.c0:active {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3e32a4;
 }
 
 <a
-  class="c0 c1 c2"
+  class="c0"
   color="primary"
-  font-family="sansSerif"
   font-size="1"
   font-weight="3"
 />

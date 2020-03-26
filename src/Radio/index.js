@@ -1,12 +1,12 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import { themeGet } from 'styled-system';
-import IconChecked from 'rmdi/lib/RadioButtonChecked';
-import IconUnChecked from 'rmdi/lib/RadioButtonUnchecked';
-import theme from '../theme';
-import Box from '../Box';
-import Text from '../Text';
+import React from 'react'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
+import { themeGet } from '@styled-system/theme-get'
+import { RadioButtonChecked } from '@rimble/icons/es/md'
+import { RadioButtonUnchecked } from '@rimble/icons/es/md'
+import theme from '../theme'
+import Box from '../Box'
+import Text from '../Text'
 
 const StyledWrapper = styled(Box)`
   & {
@@ -47,7 +47,7 @@ const StyledWrapper = styled(Box)`
   > input:checked ~ svg[name='checked'] {
     display: block;
   }
-`;
+`
 
 const StyledLabel = styled(Box)`
   & {
@@ -56,11 +56,11 @@ const StyledLabel = styled(Box)`
   &:hover input:not(:disabled) ~ svg[name='unchecked'] {
     fill: currentColor;
   }
-`;
+`
 
 StyledWrapper.defaultProps = {
   theme,
-};
+}
 
 const Radio = React.forwardRef(
   ({ className, label, name, value, id, ...props }, ref) => (
@@ -82,8 +82,8 @@ const Radio = React.forwardRef(
           ref={ref}
           {...props}
         />
-        <IconChecked name={'checked'} />
-        <IconUnChecked name={'unchecked'} />
+        <RadioButtonChecked name={'checked'} />
+        <RadioButtonUnchecked name={'unchecked'} />
       </StyledWrapper>
       <Text
         color={'text'}
@@ -97,19 +97,19 @@ const Radio = React.forwardRef(
       </Text>
     </StyledLabel>
   )
-);
+)
 
 Radio.defaultProps = {
   theme,
   color: 'primary',
-};
+}
 
 Radio.propTypes = {
   ...Box.propTypes,
   theme: PropTypes.object,
   label: PropTypes.string,
-};
+}
 
-Radio.displayName = 'Radio';
+Radio.displayName = 'Radio'
 
-export default Radio;
+export default Radio

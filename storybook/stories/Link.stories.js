@@ -6,7 +6,7 @@ export default {
 }
 
 export const link = () => (
-  <Link>
+  <Link href={'#!'}>
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam unde incidunt soluta!
   </Link>
 )

@@ -1,27 +1,17 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import React from 'react'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
+import { themeGet } from '@styled-system/theme-get'
+import { CheckCircle } from '@rimble/icons/es/md'
+import { Warning } from '@rimble/icons/es/md'
+import FileInput from './FileInput'
+import { StyledBox } from '../Box'
 
-import { themeGet, opacity } from 'styled-system';
-import {
-  COMMON,
-  LAYOUT,
-  POSITION,
-  FLEXBOX,
-  BORDERS,
-  TYPOGRAPHY,
-} from '../constants';
-
-import theme from '../theme';
-import Box from '../Box';
-import FileInput from './FileInput';
-import IconCheckCircle from 'rmdi/lib/CheckCircle';
-import IconWarning from 'rmdi/lib/Warning';
-
-const StyledInput = styled.input`
+const StyledInput = styled(StyledBox).attrs(props => ({
+  as: 'input',
+}))`
   & {
     appearance: none;
-    box-sizing: border-box;
   }
 
   &:hover {
@@ -68,22 +58,17 @@ const StyledInput = styled.input`
     }
     &:valid ~ svg.icon-valid {
       visibility: visible;
+      color: ${themeGet('colors.success')};
     }
     &:invalid {
       border-color: ${themeGet('colors.danger')};
     }
     &:invalid ~ svg.icon-invalid {
       visibility: visible;
+      color: ${themeGet('colors.danger')};
     }
   }}
-
-  ${COMMON}
-  ${LAYOUT}
-  ${POSITION}
-  ${FLEXBOX}
-  ${BORDERS}
-  ${TYPOGRAPHY}
-`;
+`
 
 const StyledIconWrapper = styled.div`
   & {
@@ -102,57 +87,51 @@ const StyledIconWrapper = styled.div`
     right: 1rem;
     visibility: hidden;
   }
-`;
+`
 
 const WithValidationStyle = React.forwardRef((props, ref) => {
-  const colorSuccess = themeGet('colors.success')(props);
-  const colorError = themeGet('colors.danger')(props);
-
   return (
     <StyledIconWrapper>
       <StyledInput {...props} ref={ref} />
-      <IconCheckCircle className={'icon-valid'} color={colorSuccess} />
-      <IconWarning className={'icon-invalid'} color={colorError} />
+      <CheckCircle className={'icon-valid'} />
+      <Warning className={'icon-invalid'} />
     </StyledIconWrapper>
-  );
-});
+  )
+})
 
 const Input = React.forwardRef((props, ref) => {
   if (props.type === 'file') {
-    return <FileInput {...props} ref={ref} />;
+    return <FileInput {...props} ref={ref} />
   } else {
-    return <StyledInput {...props} ref={ref} />;
+    return <StyledInput {...props} ref={ref} />
   }
-});
+})
 
 const defaultProps = {
-  theme,
   color: 'text',
   bg: 'background',
-  fontFamily: 'sansSerif',
   fontSize: '1rem',
-  lineHeight: 'solid',
+  lineHeight: 'initial',
   height: '3rem',
   p: 3,
   border: 1,
-  borderColor: 'grey',
+  borderColor: 'moon-gray',
   borderRadius: 1,
   boxShadow: 1,
-};
+}
 
-Input.WithValidationStyle = WithValidationStyle;
+Input.WithValidationStyle = WithValidationStyle
 
-Input.defaultProps = defaultProps;
-WithValidationStyle.defaultProps = defaultProps;
-StyledInput.defaultProps = defaultProps;
+WithValidationStyle.defaultProps = defaultProps
+StyledInput.defaultProps = defaultProps
+Input.defaultProps = defaultProps
 
 Input.propTypes = {
-  ...Box.propTypes,
   theme: PropTypes.object,
-};
+}
 
-Input.displayName = 'Input';
+Input.displayName = 'Input'
 
-export { StyledInput };
+export { StyledInput }
 
-export default Input;
+export default Input

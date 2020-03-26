@@ -22,33 +22,59 @@ npm install --save rimble-ui styled-components
 ## Usage
 
 ```jsx
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
-import { Button } from 'rimble-ui';
+import { Button } from 'rimble-ui'
 
 class Example extends Component {
   render() {
-    return <Button size={'medium'}>Click me!</Button>;
+    return <Button size={'medium'}>Click me!</Button>
   }
 }
 ```
 
 ## Change log
 
+### 0.13.1
+
+🐛 Bug Fix
+
+- Added default props for `Heading` component.
+
+### 0.13.0
+
+🚀 New Feature
+
+- Added crypto icons under the `Icon` component.
+
+🐛 Bug Fix
+
+- Fixed `Heading` component `as` prop not working.
+- Fixed `Text` component `as` prop not working.
+- Fixed `Select` component arrow icon placement.
+
+### 0.12.0
+
+🚀 New Feature
+
+- Updated all components to `styled-system` v5.
+
 ### 0.11.1
 
 🐛 Bug Fix
+
 - Fixed icon background color on `ToastMessage` component. #381
 - fixed display prop not rendering correctly for `Icon` component. #380
 - fixed disabled styling for `Slider` component. #414
 
-
 ### 0.11.0
 
 🚀 New Feature
+
 - Added `BaseStyles` component
 
 🐛 Bug Fix
+
 - Updated `Text` component to pass `as` prop correctly.
 - Updated `Heading` component to pass `as` prop correctly.
 - Updated `Select` component to adjust width.
@@ -58,6 +84,7 @@ class Example extends Component {
 - Fixed warnings when building library #376.
 
 💅 Enhancement
+
 - Adjusted `EthAddress` component padding.
 - Addeded default font sizes for `h1-h6` elements.
 - Styled `input[type="color"]` for better visibility.
@@ -134,7 +161,7 @@ class Example extends Component {
 
 - Removed background color on Image component
 
-  0.7.0
+### 0.7.0
 
 - Flash component
 - Custom labels for PublicAddress component

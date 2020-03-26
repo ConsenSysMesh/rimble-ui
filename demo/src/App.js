@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
 import {
   Avatar,
@@ -34,9 +34,12 @@ import {
   BaseStyles,
   ThemeProvider,
   theme,
-} from 'rimble-ui';
+} from 'rimble-ui'
 
-import BaseLineGrid from './components/BaseLineGrid';
+import { Eth, Btc } from '@rimble/icons'
+
+import TestForm from './components/TestForm'
+import BaseLineGrid from './components/BaseLineGrid'
 
 const testTheme = {
   ...theme,
@@ -45,17 +48,22 @@ const testTheme = {
     text: 'black',
     background: 'white',
     primary: 'crimson',
+    'primary-light': 'red',
+    'primary-dark': 'darkred',
+    success: 'green',
+    warning: 'orange',
+    danger: 'orangered',
+    info: 'blue',
   },
-};
+}
 
 const selectOptions = [
   { value: '123', label: 'One Two Three' },
   { value: 'abc', label: 'A B C' },
-];
+]
 
 const testComponents = props => (
   <React.Fragment>
-
     <h1>H1 - Quick zephyrs blow, vexing daft Jim.</h1>
     <h2>H1 - Quick zephyrs blow, vexing daft Jim.</h2>
     <h3>H1 - Quick zephyrs blow, vexing daft Jim.</h3>
@@ -70,62 +78,110 @@ const testComponents = props => (
     <Heading as={'h5'}>H5 - Quick zephyrs blow, vexing daft Jim.</Heading>
     <Heading as={'h6'}>H6 - Quick zephyrs blow, vexing daft Jim.</Heading>
 
-    <Heading as={'h1'} fontSize={1}>H1 - Quick zephyrs blow, vexing daft Jim.</Heading>
-    <Heading as={'h2'} fontSize={2}>H2 - Quick zephyrs blow, vexing daft Jim.</Heading>
-    <Heading as={'h3'} fontSize={3}>H3 - Quick zephyrs blow, vexing daft Jim.</Heading>
-    <Heading as={'h4'} fontSize={4}>H4 - Quick zephyrs blow, vexing daft Jim.</Heading>
-    <Heading as={'h5'} fontSize={5}>H5 - Quick zephyrs blow, vexing daft Jim.</Heading>
-    <Heading as={'h6'} fontSize={6}>H6 - Quick zephyrs blow, vexing daft Jim.</Heading>
+    <Heading as={'h1'} fontSize={1}>
+      H1 - Quick zephyrs blow, vexing daft Jim.
+    </Heading>
+    <Heading as={'h2'} fontSize={2}>
+      H2 - Quick zephyrs blow, vexing daft Jim.
+    </Heading>
+    <Heading as={'h3'} fontSize={3}>
+      H3 - Quick zephyrs blow, vexing daft Jim.
+    </Heading>
+    <Heading as={'h4'} fontSize={4}>
+      H4 - Quick zephyrs blow, vexing daft Jim.
+    </Heading>
+    <Heading as={'h5'} fontSize={5}>
+      H5 - Quick zephyrs blow, vexing daft Jim.
+    </Heading>
+    <Heading as={'h6'} fontSize={6}>
+      H6 - Quick zephyrs blow, vexing daft Jim.
+    </Heading>
 
     <Heading fontSize={7}>XL - Quick zephyrs blow, vexing daft Jim.</Heading>
 
-    <Heading as={'h1'} fontSize={6}>H1 - Quick zephyrs blow, vexing daft Jim.</Heading>
+    <Heading as={'h1'} fontSize={6}>
+      H1 - Quick zephyrs blow, vexing daft Jim.
+    </Heading>
 
-    <Heading as={'h2'} fontSize={5}>H2 - Quick zephyrs blow, vexing daft Jim.</Heading>
+    <Heading as={'h2'} fontSize={5}>
+      H2 - Quick zephyrs blow, vexing daft Jim.
+    </Heading>
 
-    <Heading as={'h3'} fontSize={4}>H3 - Quick zephyrs blow, vexing daft Jim.</Heading>
+    <Heading as={'h3'} fontSize={4}>
+      H3 - Quick zephyrs blow, vexing daft Jim.
+    </Heading>
 
-    <Heading as={'h4'} fontSize={3}>H4 - Quick zephyrs blow, vexing daft Jim.</Heading>
+    <Heading as={'h4'} fontSize={3}>
+      H4 - Quick zephyrs blow, vexing daft Jim.
+    </Heading>
 
-    <Heading as={'h5'} fontSize={2}>H5 - Quick zephyrs blow, vexing daft Jim.</Heading>
+    <Heading as={'h5'} fontSize={2}>
+      H5 - Quick zephyrs blow, vexing daft Jim.
+    </Heading>
 
-    <Heading as={'h6'} fontSize={1}>H6 - Quick zephyrs blow, vexing daft Jim.</Heading>
+    <Heading as={'h6'} fontSize={1}>
+      H6 - Quick zephyrs blow, vexing daft Jim.
+    </Heading>
 
     <Heading fontSize={0}>SX - Quick zephyrs blow, vexing daft Jim.</Heading>
 
     <Text fontWeight={1}>
-      1 / 300 —
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
+      1 / 300 — Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
       quibusdam, assumenda officiis.
     </Text>
     <Text fontWeight={2}>
-      2 / 400 —
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
+      2 / 400 — Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
       quibusdam, assumenda officiis.
     </Text>
     <Text fontWeight={3}>
-      3 / 600 —
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
+      3 / 600 — Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
       quibusdam, assumenda officiis.
     </Text>
     <Text fontWeight={4}>
-      4 / 700 —
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
+      4 / 700 — Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
       quibusdam, assumenda officiis.
     </Text>
 
     <Button size={'medium'}>Click me!</Button>
     <Link>I'm a Link!</Link>
-    <EthAddress
-      address="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2"
-    />
+    <EthAddress address="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2" />
     <EthAddress
       textLabels
       address="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2"
     />
-    <Input />
-    <Icon name={'Info'} />
-    <Icon name={'Info'} color="primary" />
+    <Card my={4}>
+      <TestForm />
+    </Card>
+    <Input placeholder={'placeholder'} />
+
+    <Box>
+      <Text>Icon component from rimble-ui</Text>
+      <Icon name={'Info'} />
+      <Icon name={'Eth'} />
+      <Icon name={'Btc'} />
+    </Box>
+
+    <Box>
+      <Text>
+        Icon component from rimble-ui using "primary" color from theme
+      </Text>
+      <Icon name={'Info'} color="primary" />
+      <Icon name={'Eth'} color="primary" />
+      <Icon name={'Btc'} color="primary" />
+    </Box>
+    <Box>
+      <Text>Icon component from rimble-ui, color="green"</Text>
+      <Icon name={'Info'} color="green" />
+      <Icon name={'Eth'} color="green" />
+      <Icon name={'Btc'} color="green" />
+    </Box>
+    <Box>
+      <Text>Icons imported as components from @rimble/icons</Text>
+      <Eth color="primary" />
+      <Btc color="primary" />
+      <Eth color="green" />
+      <Btc color="green" />
+    </Box>
     <Tooltip message="Your custom message">
       <span>hover me</span>
     </Tooltip>
@@ -142,7 +198,7 @@ const testComponents = props => (
         spotcolor: '#4E3FCE',
       }}
     />
-    <Avatar />
+    <Avatar src={'https://source.unsplash.com/128x128/?people,face,portrait'} />
     <Avatar size="small" />
     <Avatar size="medium" />
     <Avatar size="large" />
@@ -212,34 +268,69 @@ const testComponents = props => (
     <Checkbox checked label="Checkbox checked" readOnly />
     <Checkbox disabled label="Checkbox disabled" readOnly />
     <Checkbox disabled checked label="Checkbox checked disabled" readOnly />
-    <Box />
+
+    <Box my={4} opacity={0.6}>
+      <Flex>
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+      </Flex>
+      <Flex>
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+      </Flex>
+      <Flex>
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+      </Flex>
+      <Flex>
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+        <Box width={1} height={'4rem'} bg={'primary'} m={1} />
+      </Flex>
+    </Box>
+
     <Card m={3} />
     <Card mx="auto" px="4" color="primary">
       <Heading mb={3}>Heading</Heading>
       <Text mb={4}>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam autem
-        ratione doloribus quidem neque provident eius error dignissimos
-        delectus architecto nemo quos alias sunt voluptate impedit, facilis
-        sequi tempore. Amet!
+        ratione doloribus quidem neque provident eius error dignissimos delectus
+        architecto nemo quos alias sunt voluptate impedit, facilis sequi
+        tempore. Amet!
       </Text>
-      <Button mr={3}>Accept</Button>
-      <Button.Outline>Cancel</Button.Outline>
+      <Flex>
+        <Button mr={3}>Accept</Button>
+        <Button.Outline>Cancel</Button.Outline>
+        <Button.Text ml={'auto'}>Skip</Button.Text>
+      </Flex>
     </Card>
-    <Flex />
     <Table />
     <Image src="https://source.unsplash.com/random/1280x720" />
-    <MetaMaskButton>
-      Connect with MetaMask
-    </MetaMaskButton>
-    <MetaMaskButton.Outline>
-      Connect with MetaMask
-    </MetaMaskButton.Outline>
-    <UPortButton>
-      Connect with uPort
-    </UPortButton>
-    <UPortButton.Solid>
-      Connect with uPort
-    </UPortButton.Solid>
+    <MetaMaskButton>Connect with MetaMask</MetaMaskButton>
+    <MetaMaskButton.Outline>Connect with MetaMask</MetaMaskButton.Outline>
+    <UPortButton>Connect with uPort</UPortButton>
+    <UPortButton.Solid>Connect with uPort</UPortButton.Solid>
     <Loader />
     <QR value="test" />
     <Modal />
@@ -247,33 +338,12 @@ const testComponents = props => (
     <ToastMessage.Processing />
     <ToastMessage.Success />
     <ToastMessage.Failure />
-    <Pill mr={'2'} mb={'3'}>
-      {'Pending'}
-    </Pill>
-    <Pill selected={true} mr={'2'} mb={'3'}>
-      {'Pending'}
-    </Pill>
-
-    <Pill color={'primary'} mr={'2'} mb={'3'}>
-      {'Pending'}
-    </Pill>
-    <Pill selected={true} color={'primary'} mr={'2'} mb={'3'}>
-      {'Pending'}
-    </Pill>
-
-    <Pill color={'red'} mr={'2'} mb={'3'}>
-      {'Pending'}
-    </Pill>
-    <Pill selected={true} color={'red'} mr={'2'} mb={'3'}>
-      {'Pending'}
-    </Pill>
-
-    <Pill color={'blue'} mr={'2'} mb={'3'}>
-      {'Pending'}
-    </Pill>
-    <Pill selected={true} color={'blue'} mr={'2'} mb={'3'}>
-      {'Pending'}
-    </Pill>
+    <Pill>{'Pill Text'}</Pill>
+    <Pill color={'success'}>{'Pill Text'}</Pill>
+    <Pill color={'warning'}>{'Pill Text'}</Pill>
+    <Pill color={'danger'}>{'Pill Text'}</Pill>
+    <Pill color={'info'}>{'Pill Text'}</Pill>
+    <Pill color={'#4B0082'}>{'Pill Text'}</Pill>
     <Flash>
       I am a Flash with a <Flash.Link>Link</Flash.Link>
     </Flash>
@@ -290,26 +360,22 @@ const testComponents = props => (
       I am a DANGER Flash with a <Flash.Link>Link</Flash.Link>
     </Flash>
   </React.Fragment>
-);
+)
 
 export default class App extends Component {
   render() {
     return (
       <Flex position={'relative'}>
         <Box m={4}>
-          <BaseStyles>
-            {testComponents()}
-          </BaseStyles>
+          <BaseStyles>{testComponents()}</BaseStyles>
         </Box>
         <Box m={4}>
           <ThemeProvider theme={testTheme}>
-            <BaseStyles>
-              {testComponents()}
-            </BaseStyles>
+            <BaseStyles>{testComponents()}</BaseStyles>
           </ThemeProvider>
         </Box>
         <BaseLineGrid />
       </Flex>
-    );
+    )
   }
 }

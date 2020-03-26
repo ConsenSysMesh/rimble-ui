@@ -1,21 +1,34 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { opacity } from 'styled-system';
-import { COMMON, LAYOUT, POSITION, FLEXBOX, BORDERS } from '../constants';
+import {
+  compose,
+  color,
+  space,
+  layout,
+  position,
+  flexbox,
+  border,
+  typography,
+  shadow,
+} from 'styled-system';
+import propTypes from '@styled-system/prop-types';
 import theme from '../theme';
 
-const StyledBox = styled.div`
-  & {
-    box-sizing: border-box;
-  }
+const styleProps = compose(
+  color,
+  space,
+  layout,
+  position,
+  flexbox,
+  border,
+  typography,
+  shadow
+);
 
-  ${COMMON}
-  ${LAYOUT}
-  ${POSITION}
-  ${FLEXBOX}
-  ${BORDERS}
-  ${opacity}
+const StyledBox = styled('div')`
+  box-sizing: border-box;
+  ${styleProps}
 `;
 
 StyledBox.defaultProps = {
@@ -27,14 +40,12 @@ const Box = React.forwardRef((props, ref) => (
 ));
 
 Box.propTypes = {
-  ...COMMON.propTypes,
-  ...LAYOUT.propTypes,
-  ...POSITION.propTypes,
-  ...FLEXBOX.propTypes,
-  ...BORDERS.propTypes,
+  ...propTypes.styleProps,
   theme: PropTypes.object,
 };
 
 Box.displayName = 'Box';
+
+export { StyledBox };
 
 export default Box;

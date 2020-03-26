@@ -23,6 +23,9 @@ const StyledOverlay = styled(Box)`
 
 StyledOverlay.defaultProps = {
   bg: 'blacks.10',
+  color: 'text',
+  fontSize: '2',
+  fontFamily: 'sansSerif',
   p: 3,
 };
 

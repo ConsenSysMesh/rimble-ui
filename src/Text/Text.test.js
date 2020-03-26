@@ -34,13 +34,4 @@ describe('Text style tests', () => {
 
     expect(tree).toHaveStyleRule('display', 'block');
   });
-
-  it('renders with theme font family', () => {
-    const tree = renderer.create(<Text.span />).toJSON();
-
-    expect(tree).toHaveStyleRule(
-      'font-family',
-      theme.fonts.sansSerif.replace(/\s+(?=([^"]*"[^"]*")*[^"]*$)/g, '')
-    ); // replace all whitespace not inside of double-quotes to properly match style rule output
-  });
 });
