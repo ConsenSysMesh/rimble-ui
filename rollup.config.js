@@ -26,7 +26,7 @@ export default {
       globals: outputGlobals,
     },
     {
-      file: pkg.module,
+      file: './dist/index.esm.js',
       format: 'es',
       name: 'rimble',
       sourcemap: true,
