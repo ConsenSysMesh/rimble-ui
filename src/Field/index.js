@@ -58,7 +58,10 @@ const Field = React.forwardRef(({ label, children, ...props }, ref) => {
 Field.propTypes = {
   // ...Box.propTypes,
   label: PropTypes.string.isRequired,
-  children: PropTypes.element.isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.element),
+    PropTypes.element,
+  ]).isRequired,
 };
 
 Field.displayName = 'Field';
