@@ -5,7 +5,7 @@
   "dependencies": {
     "react": "link:../node_modules/react",
     "react-dom": "link:../node_modules/react-dom",
-    "react-scripts": "3.3.0",
+    "react-scripts": "3.4.1",
     "rimble-ui": "link:..",
     "source-map-explorer": "^2.1.2"
   },
