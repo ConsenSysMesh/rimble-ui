@@ -10,7 +10,9 @@ const StyledWrapper = styled(Box)`
     position: relative;
     display: inline-block;
   }
+`
 
+const StyledExpandMore = styled(ExpandMore)`
   > svg {
     pointer-events: none;
     position: absolute;
@@ -47,7 +49,7 @@ const Select = React.forwardRef(
           pr={'3rem'}
           {...props}
         />
-        <ExpandMore my={'auto'} mx={3} />
+        <StyledExpandMore size={'1em'} my={'auto'} mx={3} color={'inherit'} />
       </StyledWrapper>
     )
   }

@@ -27,15 +27,13 @@ const StyledTextButton = styled(StyledButton)`
   }
 `;
 
-const TextButton = React.forwardRef(
-  ({ children, icon, iconpos, ...props }, ref) => {
-    return (
-      <StyledTextButton {...props} ref={ref}>
-        <ButtonBody icon={icon} iconpos={iconpos} children={children} />
-      </StyledTextButton>
-    );
-  }
-);
+const TextButton = React.forwardRef(({ children, ...props }, ref) => {
+  return (
+    <StyledTextButton {...props} ref={ref}>
+      <ButtonBody children={children} />
+    </StyledTextButton>
+  );
+});
 
 TextButton.defaultProps = {
   ...Button.defaultProps,

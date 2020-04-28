@@ -231,11 +231,11 @@ exports[`Select component sanity matches default snapshot 1`] = `
       A B C
     </option>
   </Styled(styled.div)>
-  <SvgExpandMore
+  <Styled(SvgExpandMore)
     color="inherit"
     mx={3}
     my="auto"
-    size={24}
+    size="1em"
   />
 </Styled(Box)>
 `;

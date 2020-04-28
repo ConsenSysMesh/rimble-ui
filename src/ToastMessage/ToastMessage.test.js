@@ -8,22 +8,30 @@ describe('ToastMessage component sanity', () => {
   });
 
   it('matches generic snapshot', () => {
-    const toastMessage = shallow(<ToastMessage />).dive();
+    const toastMessage = shallow(
+      <ToastMessage message="test message" />
+    ).dive();
     expect(toastMessage).toMatchSnapshot();
   });
 
   it('matches processing snapshot', () => {
-    const toastMessage = shallow(<ToastMessage.Processing />).dive();
+    const toastMessage = shallow(
+      <ToastMessage.Processing message="test message" />
+    ).dive();
     expect(toastMessage).toMatchSnapshot();
   });
 
   it('matches success snapshot', () => {
-    const toastMessage = shallow(<ToastMessage.Success />).dive();
+    const toastMessage = shallow(
+      <ToastMessage.Success message="test message" />
+    ).dive();
     expect(toastMessage).toMatchSnapshot();
   });
 
   it('matches failure snapshot', () => {
-    const toastMessage = shallow(<ToastMessage.Failure />).dive();
+    const toastMessage = shallow(
+      <ToastMessage.Failure message="test message" />
+    ).dive();
     expect(toastMessage).toMatchSnapshot();
   });
 
@@ -35,7 +43,6 @@ describe('ToastMessage component sanity', () => {
         secondaryMessage={'secondary message'}
         actionHref={'http://test.com'}
         actionText={'Link'}
-        icon={'InfoOutline'}
       />
     ).dive();
     expect(toastMessage).toMatchSnapshot();
@@ -50,7 +57,6 @@ describe('ToastMessage component sanity', () => {
           secondaryMessage={'secondary message'}
           actionHref={'http://test.com'}
           actionText={'Link'}
-          icon={'InfoOutline'}
         />
       </ThemeProvider>
     );
@@ -72,31 +78,6 @@ describe('ToastMessage component unit tests', () => {
     ).toBe('Generic message inside Toast');
   });
 
-  it('displays secondary message', () => {
-    const toastMessage = mount(
-      <ToastMessage secondaryMessage={'Lorem ipsum dolor sit.'} />
-    );
-    expect(
-      toastMessage
-        .find('Text')
-        .at(1)
-        .text()
-    ).toBe('Lorem ipsum dolor sit.');
-  });
-
-  it('displays icon', () => {
-    const toastMessage = shallow(<ToastMessage icon={'Info'} />).dive();
-    expect(toastMessage.exists('Icon')).toEqual(true);
-  });
-
-  it('creates action Link', () => {
-    // const toastMessage = shallow(
-    //   <ToastMessage actionHref={'http://link.com'} actionText={'link text'} />
-    // ).dive();
-    // expect(toastMessage.exists('Link')).toEqual(true);
-    // expect(toastMessage.find('Link').text()).toBe('link text');
-  });
-
   it('creates action Link', () => {
     const toastMessage = mount(
       <ThemeProvider theme={theme}>
@@ -106,7 +87,6 @@ describe('ToastMessage component unit tests', () => {
           secondaryMessage={'secondary message'}
           actionHref={'http://test.com'}
           actionText={'link text'}
-          icon={'InfoOutline'}
         />
       </ThemeProvider>
     );

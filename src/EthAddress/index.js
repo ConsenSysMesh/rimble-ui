@@ -8,7 +8,6 @@ import Card from '../Card';
 import Text from '../Text';
 import Tooltip from '../Tooltip';
 
-import Icon from '../Icon';
 import Button from '../Button';
 import Input from '../Input';
 import QR from '../QR';
@@ -17,6 +16,13 @@ import { useHiddenState } from '../Hidden';
 import { ModalBackdrop } from '../Modal';
 
 import Clipboard from './CopyToClipboard';
+
+import {
+  Close as IconClose,
+  Check as IconCheck,
+  CenterFocusStrong as IconCenterFocusStrong,
+  Assignment as IconAssignment,
+} from '@rimble/icons/es/md';
 
 const StyledInput = styled(Input)`
   text-overflow: ellipsis;
@@ -65,7 +71,6 @@ const AddressQrModal = ({ isOpen, hide, address }) => {
             flexDirection={'column'}
           >
             <Button.Text
-              icon={'Close'}
               mainColor={'inherit'}
               p={0}
               borderRadius={'100%'}
@@ -73,7 +78,9 @@ const AddressQrModal = ({ isOpen, hide, address }) => {
               top={0}
               right={0}
               onClick={hide}
-            />
+            >
+              <IconClose />
+            </Button.Text>
 
             <Text
               color={'inherit'}
@@ -130,7 +137,7 @@ const AddressQrModal = ({ isOpen, hide, address }) => {
                       position={'absolute'}
                       right={0}
                     >
-                      {!isCopied ? 'Copy' : <Icon name={'Check'} />}
+                      {!isCopied ? 'Copy' : <IconCheck />}
                     </Button>
                   </Box>
                 )}
@@ -158,7 +165,7 @@ const QRButton = ({ address, ...props }) => {
       <React.Fragment>
         <Tooltip message={text.tooltip}>
           <Button size={'small'} ml={2} p={0} onClick={toggle}>
-            <Icon name={'CenterFocusStrong'} />
+            <IconCenterFocusStrong />
           </Button>
         </Tooltip>
         <AddressQrModal address={address} isOpen={visible} hide={toggle} />
@@ -187,7 +194,7 @@ const CopyButton = ({ clipboardText, ...props }) => {
         {isCopied => (
           <Tooltip message={text.tooltip}>
             <Button size={'small'} p={0}>
-              <Icon name={isCopied ? 'Check' : 'Assignment'} />
+              {isCopied ? <IconCheck /> : <IconAssignment />}
             </Button>
           </Tooltip>
         )}

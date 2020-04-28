@@ -3,17 +3,14 @@
 exports[`File Input component sanity matches default snapshot 1`] = `
 .c3 {
   box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.c4 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  color: inherit;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c2 {
@@ -82,7 +79,6 @@ exports[`File Input component sanity matches default snapshot 1`] = `
   display: inline-flex;
 }
 
-.c2 > div > svg,
 .c2 > span.button-text {
   position: relative;
   z-index: 1;
@@ -148,6 +144,14 @@ exports[`File Input component sanity matches default snapshot 1`] = `
   pointer-events: none;
 }
 
+.c4 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  margin-right: 8px;
+  color: inherit;
+}
+
 .c1 {
   width: 0;
   height: 0;
@@ -178,31 +182,32 @@ exports[`File Input component sanity matches default snapshot 1`] = `
     font-weight="3"
     height="3rem"
   >
-    <div
-      class="c3"
-      display="inline-flex"
-    >
-      <svg
-        class="c4"
-        color="inherit"
-        fill="currentcolor"
-        height="24px"
-        viewBox="0 0 24 24"
-        width="24px"
-      >
-        <path
-          d="M0 0h24v24H0z"
-          fill="none"
-        />
-        <path
-          d="M19.35 10.04A7.49 7.49 0 0012 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 000 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"
-        />
-      </svg>
-    </div>
     <span
       class="button-text"
     >
-      Choose file…
+      <div
+        class="c3"
+        display="flex"
+      >
+        <svg
+          class="c4"
+          color="inherit"
+          fill="currentcolor"
+          height="24"
+          size="24"
+          viewBox="0 0 24 24"
+          width="24"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M19.35 10.04A7.49 7.49 0 0012 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 000 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"
+          />
+        </svg>
+        Choose file…
+      </div>
     </span>
   </button>
 </label>
@@ -211,17 +216,14 @@ exports[`File Input component sanity matches default snapshot 1`] = `
 exports[`File Input component sanity matches themed snapshot 1`] = `
 .c3 {
   box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.c4 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  color: inherit;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c2 {
@@ -290,7 +292,6 @@ exports[`File Input component sanity matches themed snapshot 1`] = `
   display: inline-flex;
 }
 
-.c2 > div > svg,
 .c2 > span.button-text {
   position: relative;
   z-index: 1;
@@ -356,6 +357,14 @@ exports[`File Input component sanity matches themed snapshot 1`] = `
   pointer-events: none;
 }
 
+.c4 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  margin-right: 8px;
+  color: inherit;
+}
+
 .c1 {
   width: 0;
   height: 0;
@@ -386,31 +395,32 @@ exports[`File Input component sanity matches themed snapshot 1`] = `
     font-weight="3"
     height="3rem"
   >
-    <div
-      class="c3"
-      display="inline-flex"
-    >
-      <svg
-        class="c4"
-        color="inherit"
-        fill="currentcolor"
-        height="24px"
-        viewBox="0 0 24 24"
-        width="24px"
-      >
-        <path
-          d="M0 0h24v24H0z"
-          fill="none"
-        />
-        <path
-          d="M19.35 10.04A7.49 7.49 0 0012 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 000 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"
-        />
-      </svg>
-    </div>
     <span
       class="button-text"
     >
-      Choose file…
+      <div
+        class="c3"
+        display="flex"
+      >
+        <svg
+          class="c4"
+          color="inherit"
+          fill="currentcolor"
+          height="24"
+          size="24"
+          viewBox="0 0 24 24"
+          width="24"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M19.35 10.04A7.49 7.49 0 0012 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 000 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"
+          />
+        </svg>
+        Choose file…
+      </div>
     </span>
   </button>
 </label>

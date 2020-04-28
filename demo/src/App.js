@@ -11,7 +11,6 @@ import {
   Flash,
   Flex,
   Heading,
-  Icon,
   Image,
   Input,
   Link,
@@ -36,8 +35,14 @@ import {
   theme,
 } from 'rimble-ui'
 
-import { Eth, Btc } from '@rimble/icons'
-
+import {
+  Accessibility as IconAccessibility,
+  Info as IconInfo,
+  Eth as IconEth,
+  Btc as IconBtc,
+  Dai as IconDai,
+  Rdd as IconRdd,
+} from '@rimble/icons'
 import TestForm from './components/TestForm'
 import BaseLineGrid from './components/BaseLineGrid'
 
@@ -142,7 +147,22 @@ const testComponents = props => (
       quibusdam, assumenda officiis.
     </Text>
 
-    <Button size={'medium'}>Click me!</Button>
+    <Box>
+      <Button size={'medium'}>Click me!</Button>
+    </Box>
+    <Box>
+      <Button size={'medium'} my={2}>
+        <Flex alignItems={'center'}>
+          <IconEth mr={2} />
+          Icon and text button
+        </Flex>
+      </Button>
+    </Box>
+    <Box>
+      <Button size={'small'} p={0}>
+        <IconEth />
+      </Button>
+    </Box>
     <Link>I'm a Link!</Link>
     <EthAddress address="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2" />
     <EthAddress
@@ -155,33 +175,38 @@ const testComponents = props => (
     <Input placeholder={'placeholder'} />
 
     <Box>
-      <Text>Icon component from rimble-ui</Text>
-      <Icon name={'Info'} />
-      <Icon name={'Eth'} />
-      <Icon name={'Btc'} />
+      <Text>Plain icons</Text>
+      <IconAccessibility />
+      <IconInfo />
+      <IconEth />
+      <IconBtc />
+      <IconDai />
+      <IconRdd />
     </Box>
 
     <Box>
-      <Text>
-        Icon component from rimble-ui using "primary" color from theme
+      <Text>Colored icons</Text>
+      <IconAccessibility color={'green'} />
+      <IconInfo color={'green'} />
+      <IconEth color={'green'} />
+      <IconBtc color={'green'} />
+      <IconDai color={'green'} />
+      <IconRdd color={'green'} />
+    </Box>
+
+    <Box>
+      <Text>Theme-value color (primary)</Text>
+      <Text italic fontSize={1}>
+        Icons do not have a default theme value
       </Text>
-      <Icon name={'Info'} color="primary" />
-      <Icon name={'Eth'} color="primary" />
-      <Icon name={'Btc'} color="primary" />
+      <IconAccessibility color={'primary'} />
+      <IconInfo color={'primary'} />
+      <IconEth color={'primary'} />
+      <IconBtc color={'primary'} />
+      <IconDai color={'primary'} />
+      <IconRdd color={'primary'} />
     </Box>
-    <Box>
-      <Text>Icon component from rimble-ui, color="green"</Text>
-      <Icon name={'Info'} color="green" />
-      <Icon name={'Eth'} color="green" />
-      <Icon name={'Btc'} color="green" />
-    </Box>
-    <Box>
-      <Text>Icons imported as components from @rimble/icons</Text>
-      <Eth color="primary" />
-      <Btc color="primary" />
-      <Eth color="green" />
-      <Btc color="green" />
-    </Box>
+
     <Tooltip message="Your custom message">
       <span>hover me</span>
     </Tooltip>

@@ -1,722 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button Icon component sanity matches default snapshot 1`] = `
-.c1 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.c2 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  color: inherit;
-}
-
-.c0 {
-  box-sizing: border-box;
-  position: relative;
-  height: 3rem;
-  min-width: 3rem;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 0;
-  padding-bottom: 0;
-  font-size: inherit;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  font-weight: 600;
-  line-height: 1;
-  color: #fff;
-  background-color: #999;
-  border: none;
-  border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #4E3FCE;
-  --contrast-color: #fff;
-}
-
-.c0 {
-  -webkit-font-smoothing: antialiased;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  white-space: nowrap;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  text-align: center;
-  overflow: hidden;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c0:hover {
-  cursor: pointer;
-}
-
-.c0:disabled {
-  opacity: 0.5;
-  pointer-events: none;
-}
-
-.c0 > span.button-text {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.c0 > div > svg,
-.c0 > span.button-text {
-  position: relative;
-  z-index: 1;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  pointer-events: none;
-}
-
-.c0 > div > svg {
-  display: block;
-}
-
-.c0 > div:first-child > svg {
-  margin-left: -0.5rem;
-  margin-right: .5rem;
-}
-
-.c0 > div:last-child > svg {
-  margin-left: .5rem;
-  margin-right: -0.5rem;
-}
-
-.c0 > div:first-child:last-child > svg {
-  margin: 0;
-}
-
-.c0 {
-  color: var(--contrast-color);
-  background: #FFF;
-  z-index: 0;
-  -webkit-transition: all 0.15s ease;
-  transition: all 0.15s ease;
-}
-
-.c0:hover {
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-}
-
-.c0:hover::before {
-  opacity: 0.9;
-}
-
-.c0:active {
-  box-shadow: none;
-  background: #000;
-}
-
-.c0::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  height: 100%;
-  width: 100%;
-  background: var(--main-color);
-  pointer-events: none;
-}
-
-<button
-  class="c0"
-  color="white"
-  font-family="sansSerif"
-  font-size="inherit"
-  font-weight="3"
-  height="3rem"
->
-  <div
-    class="c1"
-    display="inline-flex"
-  >
-    <svg
-      class="c2"
-      color="inherit"
-      fill="currentcolor"
-      height="24px"
-      viewBox="0 0 24 24"
-      width="24px"
-    >
-      <path
-        d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"
-      />
-      <path
-        d="M0 0h24v24H0z"
-        fill="none"
-      />
-    </svg>
-  </div>
-</button>
-`;
-
-exports[`Button Icon component sanity matches themed snapshot 1`] = `
-.c1 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.c2 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  color: inherit;
-}
-
-.c0 {
-  box-sizing: border-box;
-  position: relative;
-  height: 3rem;
-  min-width: 3rem;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 0;
-  padding-bottom: 0;
-  font-size: inherit;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  font-weight: 600;
-  line-height: 1;
-  color: #fff;
-  background-color: #999;
-  border: none;
-  border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #4E3FCE;
-  --contrast-color: #fff;
-}
-
-.c0 {
-  -webkit-font-smoothing: antialiased;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  white-space: nowrap;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  text-align: center;
-  overflow: hidden;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c0:hover {
-  cursor: pointer;
-}
-
-.c0:disabled {
-  opacity: 0.5;
-  pointer-events: none;
-}
-
-.c0 > span.button-text {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.c0 > div > svg,
-.c0 > span.button-text {
-  position: relative;
-  z-index: 1;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  pointer-events: none;
-}
-
-.c0 > div > svg {
-  display: block;
-}
-
-.c0 > div:first-child > svg {
-  margin-left: -0.5rem;
-  margin-right: .5rem;
-}
-
-.c0 > div:last-child > svg {
-  margin-left: .5rem;
-  margin-right: -0.5rem;
-}
-
-.c0 > div:first-child:last-child > svg {
-  margin: 0;
-}
-
-.c0 {
-  color: var(--contrast-color);
-  background: #FFF;
-  z-index: 0;
-  -webkit-transition: all 0.15s ease;
-  transition: all 0.15s ease;
-}
-
-.c0:hover {
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-}
-
-.c0:hover::before {
-  opacity: 0.9;
-}
-
-.c0:active {
-  box-shadow: none;
-  background: #000;
-}
-
-.c0::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  height: 100%;
-  width: 100%;
-  background: var(--main-color);
-  pointer-events: none;
-}
-
-<button
-  class="c0"
-  color="white"
-  font-family="sansSerif"
-  font-size="inherit"
-  font-weight="3"
-  height="3rem"
->
-  <div
-    class="c1"
-    display="inline-flex"
-  >
-    <svg
-      class="c2"
-      color="inherit"
-      fill="currentcolor"
-      height="24px"
-      viewBox="0 0 24 24"
-      width="24px"
-    >
-      <path
-        d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"
-      />
-      <path
-        d="M0 0h24v24H0z"
-        fill="none"
-      />
-    </svg>
-  </div>
-</button>
-`;
-
-exports[`Button Icon only component sanity matches default snapshot 1`] = `
-.c1 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.c2 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  color: inherit;
-}
-
-.c0 {
-  box-sizing: border-box;
-  position: relative;
-  height: 3rem;
-  min-width: 3rem;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 0;
-  padding-bottom: 0;
-  font-size: inherit;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  font-weight: 600;
-  line-height: 1;
-  color: #fff;
-  background-color: #999;
-  border: none;
-  border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #4E3FCE;
-  --contrast-color: #fff;
-}
-
-.c0 {
-  -webkit-font-smoothing: antialiased;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  white-space: nowrap;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  text-align: center;
-  overflow: hidden;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 0;
-}
-
-.c0:hover {
-  cursor: pointer;
-}
-
-.c0:disabled {
-  opacity: 0.5;
-  pointer-events: none;
-}
-
-.c0 > span.button-text {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.c0 > div > svg,
-.c0 > span.button-text {
-  position: relative;
-  z-index: 1;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  pointer-events: none;
-}
-
-.c0 > div > svg {
-  display: block;
-}
-
-.c0 > div:first-child > svg {
-  margin-left: -0.5rem;
-  margin-right: .5rem;
-}
-
-.c0 > div:last-child > svg {
-  margin-left: .5rem;
-  margin-right: -0.5rem;
-}
-
-.c0 > div:first-child:last-child > svg {
-  margin: 0;
-}
-
-.c0 {
-  color: var(--contrast-color);
-  background: #FFF;
-  z-index: 0;
-  -webkit-transition: all 0.15s ease;
-  transition: all 0.15s ease;
-}
-
-.c0:hover {
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-}
-
-.c0:hover::before {
-  opacity: 0.9;
-}
-
-.c0:active {
-  box-shadow: none;
-  background: #000;
-}
-
-.c0::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  height: 100%;
-  width: 100%;
-  background: var(--main-color);
-  pointer-events: none;
-}
-
-<button
-  class="c0"
-  color="white"
-  font-family="sansSerif"
-  font-size="inherit"
-  font-weight="3"
-  height="3rem"
->
-  <div
-    class="c1"
-    display="inline-flex"
-  >
-    <svg
-      class="c2"
-      color="inherit"
-      fill="currentcolor"
-      height="24px"
-      viewBox="0 0 24 24"
-      width="24px"
-    >
-      <path
-        d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
-      />
-    </svg>
-  </div>
-</button>
-`;
-
-exports[`Button Icon with position prop component sanity matches default snapshot 1`] = `
-.c1 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.c2 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  color: inherit;
-}
-
-.c0 {
-  box-sizing: border-box;
-  position: relative;
-  height: 3rem;
-  min-width: 3rem;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 0;
-  padding-bottom: 0;
-  font-size: inherit;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  font-weight: 600;
-  line-height: 1;
-  color: #fff;
-  background-color: #999;
-  border: none;
-  border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #4E3FCE;
-  --contrast-color: #fff;
-}
-
-.c0 {
-  -webkit-font-smoothing: antialiased;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  white-space: nowrap;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  text-align: center;
-  overflow: hidden;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c0:hover {
-  cursor: pointer;
-}
-
-.c0:disabled {
-  opacity: 0.5;
-  pointer-events: none;
-}
-
-.c0 > span.button-text {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.c0 > div > svg,
-.c0 > span.button-text {
-  position: relative;
-  z-index: 1;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  pointer-events: none;
-}
-
-.c0 > div > svg {
-  display: block;
-}
-
-.c0 > div:first-child > svg {
-  margin-left: -0.5rem;
-  margin-right: .5rem;
-}
-
-.c0 > div:last-child > svg {
-  margin-left: .5rem;
-  margin-right: -0.5rem;
-}
-
-.c0 > div:first-child:last-child > svg {
-  margin: 0;
-}
-
-.c0 {
-  color: var(--contrast-color);
-  background: #FFF;
-  z-index: 0;
-  -webkit-transition: all 0.15s ease;
-  transition: all 0.15s ease;
-}
-
-.c0:hover {
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-}
-
-.c0:hover::before {
-  opacity: 0.9;
-}
-
-.c0:active {
-  box-shadow: none;
-  background: #000;
-}
-
-.c0::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  height: 100%;
-  width: 100%;
-  background: var(--main-color);
-  pointer-events: none;
-}
-
-<button
-  class="c0"
-  color="white"
-  font-family="sansSerif"
-  font-size="inherit"
-  font-weight="3"
-  height="3rem"
->
-  <div
-    class="c1"
-    display="inline-flex"
-  >
-    <svg
-      class="c2"
-      color="inherit"
-      fill="currentcolor"
-      height="24px"
-      viewBox="0 0 24 24"
-      width="24px"
-    >
-      <path
-        d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"
-      />
-      <path
-        d="M0 0h24v24H0z"
-        fill="none"
-      />
-    </svg>
-  </div>
-</button>
-`;
-
 exports[`Button component sanity matches default snapshot 1`] = `
 .c0 {
   box-sizing: border-box;
@@ -784,7 +67,6 @@ exports[`Button component sanity matches default snapshot 1`] = `
   display: inline-flex;
 }
 
-.c0 > div > svg,
 .c0 > span.button-text {
   position: relative;
   z-index: 1;
@@ -931,7 +213,6 @@ exports[`Button component sanity matches themed snapshot 1`] = `
   display: inline-flex;
 }
 
-.c0 > div > svg,
 .c0 > span.button-text {
   position: relative;
   z-index: 1;
@@ -1078,7 +359,6 @@ exports[`Button disabled component sanity matches default snapshot 1`] = `
   display: inline-flex;
 }
 
-.c0 > div > svg,
 .c0 > span.button-text {
   position: relative;
   z-index: 1;
@@ -1226,7 +506,6 @@ exports[`Button disabled component sanity matches themed snapshot 1`] = `
   display: inline-flex;
 }
 
-.c0 > div > svg,
 .c0 > span.button-text {
   position: relative;
   z-index: 1;
@@ -1379,7 +658,6 @@ exports[`Button size variant component sanity matches default snapshot 1`] = `
   display: inline-flex;
 }
 
-.c0 > div > svg,
 .c0 > span.button-text {
   position: relative;
   z-index: 1;
@@ -1530,7 +808,6 @@ exports[`Button size variant component sanity matches default snapshot 2`] = `
   display: inline-flex;
 }
 
-.c0 > div > svg,
 .c0 > span.button-text {
   position: relative;
   z-index: 1;
@@ -1682,7 +959,6 @@ exports[`Button size variant component sanity matches themed snapshot 1`] = `
   display: inline-flex;
 }
 
-.c0 > div > svg,
 .c0 > span.button-text {
   position: relative;
   z-index: 1;
@@ -1833,7 +1109,6 @@ exports[`Button size variant component sanity matches themed snapshot 2`] = `
   display: inline-flex;
 }
 
-.c0 > div > svg,
 .c0 > span.button-text {
   position: relative;
   z-index: 1;
@@ -1981,7 +1256,6 @@ exports[`Button.Outline component sanity matches default snapshot 1`] = `
   display: inline-flex;
 }
 
-.c0 > div > svg,
 .c0 > span.button-text {
   position: relative;
   z-index: 1;
@@ -2154,7 +1428,6 @@ exports[`Button.Outline component sanity matches themed snapshot 1`] = `
   display: inline-flex;
 }
 
-.c0 > div > svg,
 .c0 > span.button-text {
   position: relative;
   z-index: 1;
@@ -2324,7 +1597,6 @@ exports[`Button.Text component sanity matches default snapshot 1`] = `
   display: inline-flex;
 }
 
-.c0 > div > svg,
 .c0 > span.button-text {
   position: relative;
   z-index: 1;
@@ -2455,7 +1727,6 @@ exports[`Button.Text component sanity matches themed snapshot 1`] = `
   display: inline-flex;
 }
 
-.c0 > div > svg,
 .c0 > span.button-text {
   position: relative;
   z-index: 1;
@@ -2589,7 +1860,6 @@ exports[`Link Button Outline component sanity matches default snapshot 1`] = `
   display: inline-flex;
 }
 
-.c0 > div > svg,
 .c0 > span.button-text {
   position: relative;
   z-index: 1;
@@ -2766,7 +2036,6 @@ exports[`Link Button component sanity matches default snapshot 1`] = `
   display: inline-flex;
 }
 
-.c0 > div > svg,
 .c0 > span.button-text {
   position: relative;
   z-index: 1;
@@ -2926,7 +2195,6 @@ exports[`Loading Button component sanity matches default snapshot 1`] = `
   display: inline-flex;
 }
 
-.c0 > div > svg,
 .c0 > span.button-text {
   position: relative;
   z-index: 1;
@@ -3065,182 +2333,5 @@ exports[`Loading Button component sanity matches default snapshot 1`] = `
       </svg>
     </div>
   </span>
-</button>
-`;
-
-exports[`Loading Button component sanity matches default snapshot 2`] = `
-.c1 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.c2 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  color: inherit;
-}
-
-.c0 {
-  box-sizing: border-box;
-  position: relative;
-  height: 3rem;
-  min-width: 3rem;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 0;
-  padding-bottom: 0;
-  font-size: inherit;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
-  font-weight: 600;
-  line-height: 1;
-  color: #fff;
-  background-color: #999;
-  border: none;
-  border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #4E3FCE;
-  --contrast-color: #fff;
-}
-
-.c0 {
-  -webkit-font-smoothing: antialiased;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  white-space: nowrap;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  text-align: center;
-  overflow: hidden;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 0;
-}
-
-.c0:hover {
-  cursor: pointer;
-}
-
-.c0:disabled {
-  opacity: 0.5;
-  pointer-events: none;
-}
-
-.c0 > span.button-text {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.c0 > div > svg,
-.c0 > span.button-text {
-  position: relative;
-  z-index: 1;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  pointer-events: none;
-}
-
-.c0 > div > svg {
-  display: block;
-}
-
-.c0 > div:first-child > svg {
-  margin-left: -0.5rem;
-  margin-right: .5rem;
-}
-
-.c0 > div:last-child > svg {
-  margin-left: .5rem;
-  margin-right: -0.5rem;
-}
-
-.c0 > div:first-child:last-child > svg {
-  margin: 0;
-}
-
-.c0 {
-  color: var(--contrast-color);
-  background: #FFF;
-  z-index: 0;
-  -webkit-transition: all 0.15s ease;
-  transition: all 0.15s ease;
-}
-
-.c0:hover {
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-}
-
-.c0:hover::before {
-  opacity: 0.9;
-}
-
-.c0:active {
-  box-shadow: none;
-  background: #000;
-}
-
-.c0::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  height: 100%;
-  width: 100%;
-  background: var(--main-color);
-  pointer-events: none;
-}
-
-<button
-  class="c0"
-  color="white"
-  font-family="sansSerif"
-  font-size="inherit"
-  font-weight="3"
-  height="3rem"
->
-  <div
-    class="c1"
-    display="inline-flex"
-  >
-    <svg
-      class="c2"
-      color="inherit"
-      fill="currentcolor"
-      height="24px"
-      viewBox="0 0 24 24"
-      width="24px"
-    >
-      <path
-        d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
-      />
-    </svg>
-  </div>
 </button>
 `;

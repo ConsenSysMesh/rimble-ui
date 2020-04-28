@@ -67,7 +67,6 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
   display: inline-flex;
 }
 
-.c0 > div > svg,
 .c0 > span.button-text {
   position: relative;
   z-index: 1;
@@ -235,7 +234,6 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
   display: inline-flex;
 }
 
-.c0 > div > svg,
 .c0 > span.button-text {
   position: relative;
   z-index: 1;
@@ -936,7 +934,7 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                         },
                         "attrs": Array [],
                         "componentStyle": ComponentStyle {
-                          "componentId": "sc-dZtSGr",
+                          "componentId": "sc-ifAKCX",
                           "isStatic": false,
                           "lastClassName": "c0",
                           "rules": Array [
@@ -976,16 +974,12 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
     display: inline-flex;
   }
 
-  ",
-                            "
-  > div > svg,
   > span.button-text {
     position: relative;
     z-index: 1;
     user-select: none;
     pointer-events: none;
   }
-
   > div > svg {
     display: block;
   }
@@ -1057,10 +1051,10 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                         "displayName": "Styled(Styled(styled.div))",
                         "foldedComponentIds": Array [
                           "sc-bdVaJa",
-                          "sc-eXhMkL",
+                          "sc-htpNat",
                         ],
                         "render": [Function],
-                        "styledComponentId": "sc-dZtSGr",
+                        "styledComponentId": "sc-ifAKCX",
                         "target": "div",
                         "toString": [Function],
                         "warnTooManyClasses": [Function],
@@ -1372,7 +1366,6 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
   display: inline-flex;
 }
 
-.c0 > div > svg,
 .c0 > span.button-text {
   position: relative;
   z-index: 1;
@@ -1942,7 +1935,6 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
   display: inline-flex;
 }
 
-.c0 > div > svg,
 .c0 > span.button-text {
   position: relative;
   z-index: 1;
@@ -2643,7 +2635,7 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                             },
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "sc-dZtSGr",
+                              "componentId": "sc-ifAKCX",
                               "isStatic": false,
                               "lastClassName": "c0",
                               "rules": Array [
@@ -2683,16 +2675,12 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
     display: inline-flex;
   }
 
-  ",
-                                "
-  > div > svg,
   > span.button-text {
     position: relative;
     z-index: 1;
     user-select: none;
     pointer-events: none;
   }
-
   > div > svg {
     display: block;
   }
@@ -2764,10 +2752,10 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                             "displayName": "Styled(Styled(styled.div))",
                             "foldedComponentIds": Array [
                               "sc-bdVaJa",
-                              "sc-eXhMkL",
+                              "sc-htpNat",
                             ],
                             "render": [Function],
-                            "styledComponentId": "sc-dZtSGr",
+                            "styledComponentId": "sc-ifAKCX",
                             "target": "div",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],

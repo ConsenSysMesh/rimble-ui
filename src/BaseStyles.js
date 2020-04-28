@@ -48,10 +48,7 @@ const Base = ({ children, ...rest }) => {
   );
 };
 
-const styleProps = compose(
-  color,
-  typography
-);
+const styleProps = compose(color, typography);
 
 const BaseStyles = styled(Base)`
   ${styleProps}

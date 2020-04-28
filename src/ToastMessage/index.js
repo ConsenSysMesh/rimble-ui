@@ -4,7 +4,6 @@ import styled, { keyframes } from 'styled-components';
 import { timingFunctions, ellipsis } from 'polished';
 
 import Box from '../Box';
-import Icon from '../Icon';
 import Text from '../Text';
 import Link from '../Link';
 import Button from '../Button';
@@ -12,6 +11,7 @@ import Button from '../Button';
 import AnimatedIconProcessing from './AnimatedIconProcessing.js';
 import IconPositive from './IconPositive';
 import IconNegative from './IconNegative';
+import { Close as IconClose } from '@rimble/icons/es/md';
 
 const animInKeyframes = keyframes`
   from {
@@ -170,21 +170,11 @@ const ToastMessage = React.forwardRef(({ className, ...props }, ref) => {
     }
   };
 
-  const renderFigure = ({ variant, icon }) => {
+  const renderFigure = ({ variant }) => {
     if (variant && variant !== 'default') {
       return (
         <Box className={'iconBox'} flex={'0 0'} mr={2}>
           {renderVariantSvg(variant)}
-        </Box>
-      );
-    } else if (icon && icon.length) {
-      return (
-        <Box className={'iconBox'} flex={'0 0'} mr={2}>
-          <Icon
-            name={icon}
-            color={!themeIsDark ? 'primary' : 'white'}
-            size={'32px'}
-          />
         </Box>
       );
     } else {
@@ -199,13 +189,9 @@ const ToastMessage = React.forwardRef(({ className, ...props }, ref) => {
           onClick={closeFunction}
           className={'closeBttn'}
           size={'small'}
-          icononly
+          p={0}
         >
-          <Icon
-            name={'Close'}
-            size={'16px'}
-            color={!themeIsDark ? '#666' : '#afafaf'}
-          />
+          <IconClose size={'16px'} color={!themeIsDark ? '#666' : '#afafaf'} />
         </Button.Text>
       );
     } else {
@@ -223,33 +209,41 @@ const ToastMessage = React.forwardRef(({ className, ...props }, ref) => {
       {...props}
     >
       {renderFigure(props)}
-      <StyledTextCell flex={'1 1 auto'} mx={2}>
-        {props.message && (
-          <Text
-            fontSize={1}
-            fontWeight={3}
-            color={!themeIsDark ? 'black' : 'white'}
-          >
-            {props.message}
-          </Text>
-        )}
-        {props.secondaryMessage && (
-          <Text fontSize={1} color={!themeIsDark ? '#666' : '#afafaf'}>
-            {props.secondaryMessage}
-          </Text>
-        )}
-      </StyledTextCell>
-      <Text flex={'0 1'} mr={2} textAlign={'right'} lineHeight={'18px'}>
-        {props.actionText && props.actionHref && (
-          <Link
-            href={props.actionHref}
-            target={'_blank'}
-            color={!themeIsDark ? 'primary' : '#9387FF'}
-          >
-            {props.actionText}
-          </Link>
-        )}
-      </Text>
+      {(props.message || props.secondaryMessage) && (
+        <StyledTextCell flex={'1 1 auto'} mx={2}>
+          {props.message && (
+            <Text
+              fontSize={1}
+              fontWeight={3}
+              color={!themeIsDark ? 'black' : 'white'}
+            >
+              {props.message}
+            </Text>
+          )}
+          {props.secondaryMessage && (
+            <Text fontSize={1} color={!themeIsDark ? '#666' : '#afafaf'}>
+              {props.secondaryMessage}
+            </Text>
+          )}
+        </StyledTextCell>
+      )}
+
+      {props.actionText && (
+        <Text flex={'0 1'} mr={2} textAlign={'right'} lineHeight={'18px'}>
+          {props.actionText && props.actionHref && (
+            <Link
+              href={props.actionHref}
+              target={'_blank'}
+              color={!themeIsDark ? 'primary' : '#9387FF'}
+            >
+              {props.actionText}
+            </Link>
+          )}
+        </Text>
+      )}
+
+      {props.children && props.children}
+
       {renderCloseBttn(props)}
     </StyledToastMessage>
   );
@@ -268,7 +262,6 @@ class ProtoToastMessage extends Component {
     actionHref: '',
     actionText: '',
     variant: '',
-    icon: '',
     colorTheme: 'dark',
     closeElem: true,
   };
@@ -284,7 +277,6 @@ class ProtoToastMessage extends Component {
       actionHref,
       actionText,
       variant,
-      icon,
     } = this.props;
     return (
       <ToastMessage
@@ -318,7 +310,6 @@ class ToastProvider extends React.Component {
       secondaryMessage: '',
       actionHref: '',
       actionText: '',
-      icon: '',
       variant: 'default',
     },
     delay: 3000,
@@ -451,12 +442,11 @@ ToastMessage.Processing = React.forwardRef((props, ref) => (
 ToastMessage.Provider = ToastProvider;
 
 ToastMessage.defaultProps = {
-  message: 'Write update here [Required]',
+  message: '',
   secondaryMessage: '',
   actionHref: '',
   actionText: '',
   variant: 'default',
-  icon: '',
   colorTheme: 'light',
   closeElem: false,
 };
@@ -483,10 +473,6 @@ ToastMessage.propTypes = {
    */
   variant: PropTypes.oneOf(['default', 'success', 'failure', 'processing']),
   /**
-   * Sets icon to display
-   */
-  icon: PropTypes.string,
-  /**
    * Sets background and text color
    */
   colorTheme: PropTypes.oneOf(['light', 'dark']),
@@ -494,6 +480,13 @@ ToastMessage.propTypes = {
    * Allows ToastMessage to be closed by user
    */
   closeElem: PropTypes.bool,
+  /**
+   * Render children elements. Do not use with other content props.
+   */
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]),
 };
 
 ToastMessage.displayName = 'ToastMessage';
