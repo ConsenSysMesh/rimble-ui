@@ -174,7 +174,7 @@ exports[`File Input component sanity matches default snapshot 1`] = `
     class="c1"
     type="file"
   />
-  <div
+  <button
     class="c2"
     color="white"
     font-family="sansSerif"
@@ -209,7 +209,7 @@ exports[`File Input component sanity matches default snapshot 1`] = `
         Choose file…
       </div>
     </span>
-  </div>
+  </button>
 </label>
 `;
 
@@ -387,7 +387,7 @@ exports[`File Input component sanity matches themed snapshot 1`] = `
     class="c1"
     type="file"
   />
-  <div
+  <button
     class="c2"
     color="white"
     font-family="sansSerif"
@@ -422,6 +422,6 @@ exports[`File Input component sanity matches themed snapshot 1`] = `
         Choose file…
       </div>
     </span>
-  </div>
+  </button>
 </label>
 `;

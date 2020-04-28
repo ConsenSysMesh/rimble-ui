@@ -2,6 +2,7 @@
 
 exports[`MetaMaskButton component sanity matches default snapshot 1`] = `
 <Styled(Styled(Styled(styled.div)))
+  as="button"
   bg="silver"
   border="none"
   borderRadius={1}

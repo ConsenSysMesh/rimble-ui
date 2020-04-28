@@ -299,7 +299,7 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
   pointer-events: none;
 }
 
-<div
+<button
           class="c0"
           color="white"
           font-family="sansSerif"
@@ -310,7 +310,7 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
           <span
             class="button-text"
           />
-        </div>
+        </button>
       }
       renderRef={[Function]}
       setReference={[Function]}
@@ -334,7 +334,7 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
         pop={null}
         popper={null}
         reference={
-          <div
+          <button
             class="c0"
             color="white"
             font-family="sansSerif"
@@ -345,7 +345,7 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
             <span
               class="button-text"
             />
-          </div>
+          </button>
         }
         renderRef={[Function]}
         setPop={[Function]}
@@ -373,7 +373,7 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
           pop={null}
           popper={null}
           reference={
-            <div
+            <button
               class="c0"
               color="white"
               font-family="sansSerif"
@@ -384,7 +384,7 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
               <span
                 class="button-text"
               />
-            </div>
+            </button>
           }
           renderRef={[Function]}
           setPop={[Function]}
@@ -414,7 +414,7 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
             pop={null}
             popper={null}
             reference={
-              <div
+              <button
                 class="c0"
                 color="white"
                 font-family="sansSerif"
@@ -425,7 +425,7 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                 <span
                   class="button-text"
                 />
-              </div>
+              </button>
             }
             renderRef={[Function]}
             setPop={[Function]}
@@ -455,7 +455,7 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
               pop={null}
               popper={null}
               reference={
-                <div
+                <button
                   class="c0"
                   color="white"
                   font-family="sansSerif"
@@ -466,7 +466,7 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                   <span
                     class="button-text"
                   />
-                </div>
+                </button>
               }
               renderRef={[Function]}
               setPop={[Function]}
@@ -499,6 +499,7 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                 py={0}
               >
                 <Styled(Styled(styled.div))
+                  as="button"
                   bg="silver"
                   border="none"
                   borderRadius={1}
@@ -718,6 +719,7 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                   }
                 >
                   <StyledComponent
+                    as="button"
                     bg="silver"
                     border="none"
                     borderRadius={1}
@@ -731,6 +733,7 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                       Object {
                         "$$typeof": Symbol(react.forward_ref),
                         "_foldedDefaultProps": Object {
+                          "as": "button",
                           "theme": Object {
                             "borderWidths": Array [
                               "0",
@@ -1054,7 +1057,6 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                         "styledComponentId": "sc-ifAKCX",
                         "target": "div",
                         "toString": [Function],
-                        "usesTheme": true,
                         "warnTooManyClasses": [Function],
                         "withComponent": [Function],
                       }
@@ -1269,7 +1271,7 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                       }
                     }
                   >
-                    <div
+                    <button
                       className="c0"
                       color="white"
                       fontFamily="sansSerif"
@@ -1284,7 +1286,7 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                           className="button-text"
                         />
                       </ButtonBody>
-                    </div>
+                    </button>
                   </StyledComponent>
                 </Styled(Styled(styled.div))>
               </Button>
@@ -1998,7 +2000,7 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
   pointer-events: none;
 }
 
-<div
+<button
               class="c0"
               color="white"
               font-family="sansSerif"
@@ -2009,7 +2011,7 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
               <span
                 class="button-text"
               />
-            </div>
+            </button>
           }
           renderRef={[Function]}
           setReference={[Function]}
@@ -2033,7 +2035,7 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
             pop={null}
             popper={null}
             reference={
-              <div
+              <button
                 class="c0"
                 color="white"
                 font-family="sansSerif"
@@ -2044,7 +2046,7 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                 <span
                   class="button-text"
                 />
-              </div>
+              </button>
             }
             renderRef={[Function]}
             setPop={[Function]}
@@ -2072,7 +2074,7 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
               pop={null}
               popper={null}
               reference={
-                <div
+                <button
                   class="c0"
                   color="white"
                   font-family="sansSerif"
@@ -2083,7 +2085,7 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                   <span
                     class="button-text"
                   />
-                </div>
+                </button>
               }
               renderRef={[Function]}
               setPop={[Function]}
@@ -2113,7 +2115,7 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                 pop={null}
                 popper={null}
                 reference={
-                  <div
+                  <button
                     class="c0"
                     color="white"
                     font-family="sansSerif"
@@ -2124,7 +2126,7 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                     <span
                       class="button-text"
                     />
-                  </div>
+                  </button>
                 }
                 renderRef={[Function]}
                 setPop={[Function]}
@@ -2154,7 +2156,7 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                   pop={null}
                   popper={null}
                   reference={
-                    <div
+                    <button
                       class="c0"
                       color="white"
                       font-family="sansSerif"
@@ -2165,7 +2167,7 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                       <span
                         class="button-text"
                       />
-                    </div>
+                    </button>
                   }
                   renderRef={[Function]}
                   setPop={[Function]}
@@ -2198,6 +2200,7 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                     py={0}
                   >
                     <Styled(Styled(styled.div))
+                      as="button"
                       bg="silver"
                       border="none"
                       borderRadius={1}
@@ -2417,6 +2420,7 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                       }
                     >
                       <StyledComponent
+                        as="button"
                         bg="silver"
                         border="none"
                         borderRadius={1}
@@ -2430,6 +2434,7 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                           Object {
                             "$$typeof": Symbol(react.forward_ref),
                             "_foldedDefaultProps": Object {
+                              "as": "button",
                               "theme": Object {
                                 "borderWidths": Array [
                                   "0",
@@ -2753,7 +2758,6 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                             "styledComponentId": "sc-ifAKCX",
                             "target": "div",
                             "toString": [Function],
-                            "usesTheme": true,
                             "warnTooManyClasses": [Function],
                             "withComponent": [Function],
                           }
@@ -2968,7 +2972,7 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                           }
                         }
                       >
-                        <div
+                        <button
                           className="c0"
                           color="white"
                           fontFamily="sansSerif"
@@ -2983,7 +2987,7 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                               className="button-text"
                             />
                           </ButtonBody>
-                        </div>
+                        </button>
                       </StyledComponent>
                     </Styled(Styled(styled.div))>
                   </Button>

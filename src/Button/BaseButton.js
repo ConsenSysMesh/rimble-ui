@@ -1,25 +1,25 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import { buttonStyle, variant, style } from 'styled-system';
-import { StyledBox } from '../Box';
+import React from 'react'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
+import { buttonStyle, variant, style } from 'styled-system'
+import { StyledBox } from '../Box'
 
 const buttonSize = variant({
   prop: 'size',
   key: 'buttonSizes',
-});
+})
 
 const mainColor = style({
   prop: 'mainColor',
   cssProperty: '--main-color',
   key: 'colors',
-});
+})
 
 const contrastColor = style({
   prop: 'contrastColor',
   cssProperty: '--contrast-color',
   key: 'colors',
-});
+})
 
 const StyledButton = styled(StyledBox)`
   & {
@@ -74,15 +74,19 @@ const StyledButton = styled(StyledBox)`
   ${contrastColor}
   ${buttonStyle}
   ${buttonSize}
-`;
+`
 
 const ButtonBody = ({ children }) => {
-  return <span className="button-text" children={children} />;
-};
+  return <span className="button-text" children={children} />
+}
 
 const Button = React.forwardRef((props, ref) => {
-  return <StyledButton {...props} ref={ref} />;
-});
+  return <StyledButton {...props} ref={ref} />
+})
+
+StyledButton.defaultProps = {
+  as: 'button',
+}
 
 Button.defaultProps = {
   // base props
@@ -101,7 +105,7 @@ Button.defaultProps = {
   mainColor: 'primary',
   contrastColor: 'white',
   border: 'none',
-};
+}
 
 Button.propTypes = {
   /**
@@ -120,10 +124,10 @@ Button.propTypes = {
    * Sets font and spacing size of button
    */
   size: PropTypes.oneOf(['small', 'medium', 'large']),
-};
+}
 
-Button.displayName = 'Button';
+Button.displayName = 'Button'
 
-export { StyledButton, ButtonBody };
+export { StyledButton, ButtonBody }
 
-export default Button;
+export default Button

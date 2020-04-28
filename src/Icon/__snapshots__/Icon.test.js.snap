@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Icon component sanity matches default snapshot 1`] = `
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+<div
+  class="c0"
+  display="inline-flex"
+/>
+`;
+
+exports[`Icon component sanity matches themed snapshot 1`] = `
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+<div
+  class="c0"
+  display="inline-flex"
+/>
+`;

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
 import {
   Avatar,
@@ -33,7 +33,7 @@ import {
   BaseStyles,
   ThemeProvider,
   theme,
-} from 'rimble-ui';
+} from 'rimble-ui'
 
 import {
   Accessibility as IconAccessibility,
@@ -42,9 +42,9 @@ import {
   Btc as IconBtc,
   Dai as IconDai,
   Rdd as IconRdd,
-} from '@rimble/icons';
-import TestForm from './components/TestForm';
-import BaseLineGrid from './components/BaseLineGrid';
+} from '@rimble/icons'
+import TestForm from './components/TestForm'
+import BaseLineGrid from './components/BaseLineGrid'
 
 const testTheme = {
   ...theme,
@@ -60,12 +60,12 @@ const testTheme = {
     danger: 'orangered',
     info: 'blue',
   },
-};
+}
 
 const selectOptions = [
   { value: '123', label: 'One Two Three' },
   { value: 'abc', label: 'A B C' },
-];
+]
 
 const testComponents = props => (
   <React.Fragment>
@@ -385,7 +385,7 @@ const testComponents = props => (
       I am a DANGER Flash with a <Flash.Link>Link</Flash.Link>
     </Flash>
   </React.Fragment>
-);
+)
 
 export default class App extends Component {
   render() {
@@ -401,6 +401,6 @@ export default class App extends Component {
         </Box>
         <BaseLineGrid />
       </Flex>
-    );
+    )
   }
 }
