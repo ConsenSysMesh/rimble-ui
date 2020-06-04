@@ -3,18 +3,18 @@
 exports[`Slider component sanity matches default snapshot 1`] = `
 .c0 {
   box-sizing: border-box;
-  font-size: 1rem;
-  line-height: initial;
-  border-color: #ccc;
-  border-radius: 4px;
   color: #4E3FCE;
   background-color: none;
+  font-size: 1rem;
+  line-height: initial;
   height: 2rem;
-  min-width: 200px;
-  margin: 0;
   padding: 0;
   border: none;
+  border-color: #ccc;
+  border-radius: 4px;
   box-shadow: none;
+  min-width: 200px;
+  margin: 0;
 }
 
 .c0 {
@@ -195,7 +195,7 @@ exports[`Slider component sanity matches default snapshot 1`] = `
 
 <input
   aria-label="range slider"
-  class="c0"
+  class="sc-pIWYI sc-kIPIUN c0"
   color="primary"
   font-size="1rem"
   height="2rem"
@@ -206,18 +206,18 @@ exports[`Slider component sanity matches default snapshot 1`] = `
 exports[`Slider component sanity matches themed snapshot 1`] = `
 .c0 {
   box-sizing: border-box;
-  font-size: 1rem;
-  line-height: initial;
-  border-color: #ccc;
-  border-radius: 4px;
   color: #4E3FCE;
   background-color: none;
+  font-size: 1rem;
+  line-height: initial;
   height: 2rem;
-  min-width: 200px;
-  margin: 0;
   padding: 0;
   border: none;
+  border-color: #ccc;
+  border-radius: 4px;
   box-shadow: none;
+  min-width: 200px;
+  margin: 0;
 }
 
 .c0 {
@@ -398,7 +398,7 @@ exports[`Slider component sanity matches themed snapshot 1`] = `
 
 <input
   aria-label="range slider"
-  class="c0"
+  class="sc-pIWYI sc-kIPIUN c0"
   color="primary"
   font-size="1rem"
   height="2rem"

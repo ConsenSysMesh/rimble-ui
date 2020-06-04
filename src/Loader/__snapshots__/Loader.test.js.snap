@@ -20,8 +20,8 @@ exports[`Loader component sanity matches default snapshot 1`] = `
   height: 100%;
   width: 100%;
   display: block;
-  -webkit-animation: bAyNlV 1000ms linear infinite;
-  animation: bAyNlV 1000ms linear infinite;
+  -webkit-animation: hseeoX 1000ms linear infinite;
+  animation: hseeoX 1000ms linear infinite;
   -webkit-animation-timing-function: cubic-bezier(0.445,0.05,0.55,0.95);
   animation-timing-function: cubic-bezier(0.445,0.05,0.55,0.95);
 }
@@ -92,8 +92,8 @@ exports[`Loader component sanity matches themed snapshot 1`] = `
   height: 100%;
   width: 100%;
   display: block;
-  -webkit-animation: bAyNlV 1000ms linear infinite;
-  animation: bAyNlV 1000ms linear infinite;
+  -webkit-animation: hseeoX 1000ms linear infinite;
+  animation: hseeoX 1000ms linear infinite;
   -webkit-animation-timing-function: cubic-bezier(0.445,0.05,0.55,0.95);
   animation-timing-function: cubic-bezier(0.445,0.05,0.55,0.95);
 }
