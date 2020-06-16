@@ -453,7 +453,7 @@ exports[`EthAddress component sanity matches default snapshot 1`] = `
   >
     <div>
       <button
-        class="c5"
+        class="sc-khKixi c5"
         color="white"
         font-family="sansSerif"
         font-size="inherit"
@@ -488,7 +488,7 @@ exports[`EthAddress component sanity matches default snapshot 1`] = `
       </button>
     </div>
     <button
-      class="c8"
+      class="sc-khKixi c8"
       color="white"
       font-family="sansSerif"
       font-size="inherit"
@@ -948,7 +948,7 @@ exports[`EthAddress component sanity matches default snapshot textLabels 1`] = `
   >
     <div>
       <button
-        class="c5"
+        class="sc-khKixi c5"
         color="white"
         font-family="sansSerif"
         font-size="inherit"
@@ -963,7 +963,7 @@ exports[`EthAddress component sanity matches default snapshot textLabels 1`] = `
       </button>
     </div>
     <button
-      class="c6"
+      class="sc-khKixi c6"
       color="white"
       font-family="sansSerif"
       font-size="inherit"
@@ -1433,7 +1433,7 @@ exports[`EthAddress component sanity matches themed snapshot 1`] = `
   >
     <div>
       <button
-        class="c5"
+        class="sc-khKixi c5"
         color="white"
         font-family="sansSerif"
         font-size="inherit"
@@ -1468,7 +1468,7 @@ exports[`EthAddress component sanity matches themed snapshot 1`] = `
       </button>
     </div>
     <button
-      class="c8"
+      class="sc-khKixi c8"
       color="white"
       font-family="sansSerif"
       font-size="inherit"
@@ -1928,7 +1928,7 @@ exports[`EthAddress component sanity matches themed snapshot textLabels 1`] = `
   >
     <div>
       <button
-        class="c5"
+        class="sc-khKixi c5"
         color="white"
         font-family="sansSerif"
         font-size="inherit"
@@ -1943,7 +1943,7 @@ exports[`EthAddress component sanity matches themed snapshot textLabels 1`] = `
       </button>
     </div>
     <button
-      class="c6"
+      class="sc-khKixi c6"
       color="white"
       font-family="sansSerif"
       font-size="inherit"

@@ -92,7 +92,7 @@ exports[`Input component sanity matches default snapshot 1`] = `
 }
 
 <input
-  class="c0"
+  class="sc-pIWYI c0"
   color="text"
   font-size="1rem"
   height="3rem"
@@ -191,7 +191,7 @@ exports[`Input component sanity matches themed snapshot 1`] = `
 }
 
 <input
-  class="c0"
+  class="sc-pIWYI c0"
   color="text"
   font-size="1rem"
   height="3rem"

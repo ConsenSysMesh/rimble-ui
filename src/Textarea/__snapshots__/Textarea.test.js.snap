@@ -91,8 +91,8 @@ exports[`Textarea component sanity matches default snapshot 1`] = `
   color: #DC2C10;
 }
 
-<textarea
-  class="c0"
+<input
+  class="sc-pIWYI c0"
   color="text"
   font-size="1rem"
   height="auto"
@@ -190,8 +190,8 @@ exports[`Textarea component sanity matches themed snapshot 1`] = `
   color: #DC2C10;
 }
 
-<textarea
-  class="c0"
+<input
+  class="sc-pIWYI c0"
   color="text"
   font-size="1rem"
   height="auto"

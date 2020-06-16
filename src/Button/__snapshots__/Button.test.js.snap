@@ -149,7 +149,7 @@ exports[`Button Icon component sanity matches default snapshot 1`] = `
 }
 
 <button
-  class="c0"
+  class="sc-kcIISf c0"
   color="white"
   font-family="sansSerif"
   font-size="inherit"
@@ -329,7 +329,7 @@ exports[`Button Icon component sanity matches themed snapshot 1`] = `
 }
 
 <button
-  class="c0"
+  class="sc-kcIISf c0"
   color="white"
   font-family="sansSerif"
   font-size="inherit"
@@ -510,7 +510,7 @@ exports[`Button Icon only component sanity matches default snapshot 1`] = `
 }
 
 <button
-  class="c0"
+  class="sc-kcIISf c0"
   color="white"
   font-family="sansSerif"
   font-size="inherit"
@@ -686,7 +686,7 @@ exports[`Button Icon with position prop component sanity matches default snapsho
 }
 
 <button
-  class="c0"
+  class="sc-kcIISf c0"
   color="white"
   font-family="sansSerif"
   font-size="inherit"
@@ -851,7 +851,7 @@ exports[`Button component sanity matches default snapshot 1`] = `
 }
 
 <button
-  class="c0"
+  class="sc-AxjAm sc-kcIISf c0"
   color="white"
   font-family="sansSerif"
   font-size="inherit"
@@ -998,7 +998,7 @@ exports[`Button component sanity matches themed snapshot 1`] = `
 }
 
 <button
-  class="c0"
+  class="sc-AxjAm sc-kcIISf c0"
   color="white"
   font-family="sansSerif"
   font-size="inherit"
@@ -1145,7 +1145,7 @@ exports[`Button disabled component sanity matches default snapshot 1`] = `
 }
 
 <button
-  class="c0"
+  class="sc-AxjAm sc-kcIISf c0"
   color="white"
   disabled=""
   font-family="sansSerif"
@@ -1293,7 +1293,7 @@ exports[`Button disabled component sanity matches themed snapshot 1`] = `
 }
 
 <button
-  class="c0"
+  class="sc-AxjAm sc-kcIISf c0"
   color="white"
   disabled=""
   font-family="sansSerif"
@@ -1446,7 +1446,7 @@ exports[`Button size variant component sanity matches default snapshot 1`] = `
 }
 
 <button
-  class="c0"
+  class="sc-AxjAm sc-kcIISf c0"
   color="white"
   font-family="sansSerif"
   font-size="inherit"
@@ -1597,7 +1597,7 @@ exports[`Button size variant component sanity matches default snapshot 2`] = `
 }
 
 <button
-  class="c0"
+  class="sc-AxjAm sc-kcIISf c0"
   color="white"
   font-family="sansSerif"
   font-size="inherit"
@@ -1749,7 +1749,7 @@ exports[`Button size variant component sanity matches themed snapshot 1`] = `
 }
 
 <button
-  class="c0"
+  class="sc-AxjAm sc-kcIISf c0"
   color="white"
   font-family="sansSerif"
   font-size="inherit"
@@ -1900,7 +1900,7 @@ exports[`Button size variant component sanity matches themed snapshot 2`] = `
 }
 
 <button
-  class="c0"
+  class="sc-AxjAm sc-kcIISf c0"
   color="white"
   font-family="sansSerif"
   font-size="inherit"
@@ -2073,7 +2073,7 @@ exports[`Button.Outline component sanity matches default snapshot 1`] = `
 }
 
 <button
-  class="c0"
+  class="sc-AxjAm sc-kcIISf sc-jwDLgl c0"
   color="white"
   font-family="sansSerif"
   font-size="inherit"
@@ -2246,7 +2246,7 @@ exports[`Button.Outline component sanity matches themed snapshot 1`] = `
 }
 
 <button
-  class="c0"
+  class="sc-AxjAm sc-kcIISf sc-jwDLgl c0"
   color="white"
   font-family="sansSerif"
   font-size="inherit"
@@ -2377,7 +2377,7 @@ exports[`Button.Text component sanity matches default snapshot 1`] = `
 }
 
 <button
-  class="c0"
+  class="sc-AxjAm sc-kcIISf c0"
   color="white"
   font-family="sansSerif"
   font-size="inherit"
@@ -2508,7 +2508,7 @@ exports[`Button.Text component sanity matches themed snapshot 1`] = `
 }
 
 <button
-  class="c0"
+  class="sc-AxjAm sc-kcIISf c0"
   color="white"
   font-family="sansSerif"
   font-size="inherit"
@@ -2681,7 +2681,7 @@ exports[`Link Button Outline component sanity matches default snapshot 1`] = `
 }
 
 <a
-  class="c0"
+  class="sc-AxjAm sc-kcIISf sc-jwDLgl c0"
   color="white"
   font-family="sansSerif"
   font-size="inherit"
@@ -2833,7 +2833,7 @@ exports[`Link Button component sanity matches default snapshot 1`] = `
 }
 
 <a
-  class="c0"
+  class="sc-AxjAm sc-kcIISf c0"
   color="white"
   font-family="sansSerif"
   font-size="inherit"
@@ -3003,14 +3003,14 @@ exports[`Loading Button component sanity matches default snapshot 1`] = `
   height: 100%;
   width: 100%;
   display: block;
-  -webkit-animation: bAyNlV 1000ms linear infinite;
-  animation: bAyNlV 1000ms linear infinite;
+  -webkit-animation: hseeoX 1000ms linear infinite;
+  animation: hseeoX 1000ms linear infinite;
   -webkit-animation-timing-function: cubic-bezier(0.445,0.05,0.55,0.95);
   animation-timing-function: cubic-bezier(0.445,0.05,0.55,0.95);
 }
 
 <button
-  class="c0"
+  class="sc-kcIISf c0"
   color="white"
   font-family="sansSerif"
   font-size="inherit"
@@ -3218,7 +3218,7 @@ exports[`Loading Button component sanity matches default snapshot 2`] = `
 }
 
 <button
-  class="c0"
+  class="sc-kcIISf c0"
   color="white"
   font-family="sansSerif"
   font-size="inherit"
